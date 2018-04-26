@@ -1,0 +1,19 @@
+- name: Exchange Server 2013 管理包指南
+  href: exchange-server-2013-management-pack-guide.md
+  items:
+  - name: 导入 Exchange Server 2013 管理包
+    href: import-the-exchange-server-2013-management-pack.md
+  - name: Exchange Server 2013 Management Pack 入门
+    href: getting-started-with-exchange-server-2013-management-pack.md
+  - name: 使用 Exchange Server 2013 管理包进行故障排除
+    href: using-the-exchange-server-2013-management-pack-for-troubleshooting.md
+  - name: 与部署相关的步骤
+    href: procedures-related-to-deployment.md
+  - name: Procedures related to post-deployment operation
+    href: procedures-related-to-post-deployment-operation.md
+  - name: 了解 Exchange Server 2013 管理包报告系统运行状况的方式
+    href: understanding-how-exchange-server-2013-management-pack-reports-system-health.md
+  - name: 'Appendix A: Exchange health sets'
+    href: appendix-a-exchange-health-sets.md
+  - name: 附录 B：其他资源
+    href: appendix-b-additional-resources.md
