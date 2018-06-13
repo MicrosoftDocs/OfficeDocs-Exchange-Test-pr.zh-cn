@@ -1,0 +1,93 @@
+- name: Exchange Server 2013 混合部署
+  href: exchange-server-hybrid-deployments-exchange-2013-help.md
+  items:
+  - name: “混合配置”向导
+    href: hybrid-configuration-wizard-exchange-2013-help.md
+  - name: 混合配置向导 FAQ
+    href: hybrid-configuration-wizard-faqs-exchange-2013-help.md
+  - name: 混合部署先决条件
+    href: hybrid-deployment-prerequisites-exchange-2013-help.md
+  - name: 混合部署的证书要求
+    href: certificate-requirements-for-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange 混合部署的传输选项
+    href: transport-options-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange 混合部署中的传输路由
+    href: transport-routing-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange 混合部署中的混合管理
+    href: hybrid-management-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange 混合部署中共享的忙/闲信息
+    href: shared-free-busy-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange 混合部署中的服务器角色
+    href: server-roles-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange 混合部署中的 IRM
+    href: irm-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Permissions in Exchange hybrid deployments
+    href: permissions-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: 混合部署中的边缘传输服务器
+    href: edge-transport-servers-with-hybrid-deployments-exchange-2013-help.md
+  - name: 混合部署中的单一登录
+    href: single-sign-on-with-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange ActiveSync 设备设置与 Exchange 混合部署
+    href: exchange-activesync-device-settings-with-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: 混合迁移的性能因素和最佳做法
+    href: performance-factors-and-best-practices-for-hybrid-migrations-exchange-2013-help.md
+  - name: How and when to decommission your on-premises Exchange servers in a hybrid deployment
+    href: how-and-when-to-decommission-your-on-premises-exchange-servers-in-a-hybrid-deployment-exchange-2013-help.md
+  - name: Hybrid Deployment procedures
+    href: hybrid-deployment-procedures-exchange-2013-help.md
+    items:
+    - name: 使用混合配置向导创建混合部署
+      href: create-a-hybrid-deployment-with-the-hybrid-configuration-wizard-exchange-2013-help.md
+    - name: 在混合部署的本地组织和 Exchange Online 组织之间移动邮箱
+      href: move-mailboxes-between-on-premises-and-exchange-online-organizations-in-hybrid-deployments-exchange-2013-help.md
+    - name: 针对混合部署配置旧版本地公用文件夹
+      href: configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+    - name: 针对混合部署配置 Exchange 2013 公用文件夹
+      href: configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+    - name: 配置 Exchange Online 公用文件夹以实现混合部署
+      href: configure-exchange-online-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+    - name: Configure Exchange to support delegated mailbox permissions in a hybrid deployment
+      href: configure-exchange-to-support-delegated-mailbox-permissions-in-a-hybrid-deployment-exchange-2013-help.md
+    - name: 通过 OneDrive for Business 和本地 Exchange 2016 配置新式附件
+      href: configure-document-collaboration-with-onedrive-for-business-and-exchange-2016-on-premises-exchange-2013-help.md
+    - name: 使用本地 Exchange 混合配置 Office 365 组
+      href: configure-office-365-groups-with-on-premises-exchange-hybrid-exchange-2013-help.md
+    - name: Create a cloud-based archive for an on-premises primary mailbox in a hybrid deployment
+      href: create-a-cloud-based-archive-for-an-on-premises-primary-mailbox-in-an-exchange-hybrid-deployment-exchange-online-help.md
+    - name: 为 Office 365 混合简化 Outlook Web App URL
+      href: simplify-the-outlook-web-app-url-for-office-365-hybrid-exchange-2013-help.md
+    - name: 混合部署故障排除
+      href: troubleshoot-a-hybrid-deployment-exchange-2013-help.md
+  - name: Exchange 2013 和 Exchange 2007 的混合部署
+    href: hybrid-deployments-with-exchange-2013-and-exchange-2007-exchange-2013-help.md
+    items:
+    - name: Exchange 2013/Exchange 2007 混合部署中的服务器角色
+      href: server-roles-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2007 混合部署中的混合管理
+      href: hybrid-management-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2007 混合部署中的边缘传输服务器
+      href: edge-transport-servers-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2007 混合部署中的传输选项
+      href: transport-options-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2007 混合部署中的传输路由
+      href: transport-routing-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange 2013 和 Exchange 2010 的混合部署
+    href: hybrid-deployments-with-exchange-2013-and-exchange-2010-exchange-2013-help.md
+    items:
+    - name: Exchange 2013/Exchange 2010 混合部署中的服务器角色
+      href: server-roles-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2010 混合部署中的混合管理
+      href: hybrid-management-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2010 混合部署中的边缘传输服务器
+      href: edge-transport-servers-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2010 混合部署中的传输选项
+      href: transport-options-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2010 混合部署中的传输路由
+      href: transport-routing-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md
+  - name: 关于 Exchange 文档
+    href: about-exchange-documentation-exchange-2013-help.md
+    items:
+    - name: 面向残障人士的辅助功能
+      href: accessibility-for-people-with-disabilities-exchange-2013-help.md
+    - name: 第三方版权声明
+      href: third-party-copyright-notices-exchange-2013-help.md
