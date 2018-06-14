@@ -4,6 +4,7 @@ TOCTitle: '@NoTitle'
 ms:assetid: 5e3d40c1-9230-467e-be80-633407078468
 ms:mtpsurl: https://technet.microsoft.com/zh-cn/library/Ee758046(v=EXCHG.150)
 ms:contentKeyID: 53275723
+ms.author:dstrome
 ms.date: 04/03/2015
 mtps_version: v=EXCHG.150
 ms.translationtype: HT
