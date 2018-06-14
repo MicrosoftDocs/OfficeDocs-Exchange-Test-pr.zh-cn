@@ -4,7 +4,7 @@ TOCTitle: 了解 Exchange Server 2013 管理包报告系统运行状况的方式
 ms:assetid: 6ca8847f-93fe-458d-bd43-7afad7fdd2f4
 ms:mtpsurl: https://technet.microsoft.com/zh-cn/library/Dn195910(v=EXCHG.150)
 ms:contentKeyID: 53275724
-ms.author:dstrome
+ms.author: dstrome
 ms.date: 04/03/2015
 mtps_version: v=EXCHG.150
 ms.translationtype: HT

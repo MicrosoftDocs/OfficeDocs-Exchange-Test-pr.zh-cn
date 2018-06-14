@@ -4,7 +4,7 @@ TOCTitle: Procedures related to post-deployment operation
 ms:assetid: d9613a5c-5661-4bce-9a2c-e2c7b601e723
 ms:mtpsurl: https://technet.microsoft.com/zh-cn/library/Dn198286(v=EXCHG.150)
 ms:contentKeyID: 54652361
-ms.author:dstrome
+ms.author: dstrome
 ms.date: 04/03/2015
 mtps_version: v=EXCHG.150
 ms.translationtype: HT

@@ -4,7 +4,7 @@ TOCTitle: 与部署相关的步骤
 ms:assetid: 6b7682bd-fe3d-43b9-a7db-66c0ac17656f
 ms:mtpsurl: https://technet.microsoft.com/zh-cn/library/Dn195909(v=EXCHG.150)
 ms:contentKeyID: 53275721
-ms.author:dstrome
+ms.author: dstrome
 ms.date: 04/03/2015
 mtps_version: v=EXCHG.150
 ms.translationtype: HT

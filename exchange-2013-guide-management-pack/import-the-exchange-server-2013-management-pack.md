@@ -4,7 +4,7 @@ TOCTitle: 导入 Exchange Server 2013 管理包
 ms:assetid: dc929928-61b8-448b-9ae5-d3fa73a18ee9
 ms:mtpsurl: https://technet.microsoft.com/zh-cn/library/Dn195914(v=EXCHG.150)
 ms:contentKeyID: 53275726
-ms.author:dstrome
+ms.author: dstrome
 ms.date: 04/03/2015
 mtps_version: v=EXCHG.150
 ms.translationtype: HT
