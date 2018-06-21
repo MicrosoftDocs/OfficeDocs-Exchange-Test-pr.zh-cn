@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_<strong>适用于：</strong>Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_<strong>上一次修改主题：</strong>2016-12-09_
 
 您现在阅读的本文档由概念主题和过程主题集合而成，按照主题或 Microsoft Exchange 使用的技术进行组织。从左窗格中的目录、其他帮助主题的链接、搜索结果或自定义收藏夹主题列表可以直接访问每一个主题。
 

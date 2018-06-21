@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_<strong>适用于：</strong>Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_<strong>上一次修改主题：</strong>2016-12-09_
 
 在混合部署中，可以具有既驻留在本地 Exchange 组织中也驻留在 Exchange Online 组织中的邮箱。为了使这两个单独组织对用户及在他们之间交换的邮件表现为一个合并的组织，关键组件是混合传输。通过混合传输，在任一组织中的收件人之间发送的邮件会经过身份验证、加密并使用传输层安全性 (TLS) 传输。这些邮件向 Exchange 组件（如传输规则、日记和反垃圾邮件策略）显示为“内部”。混合传输由混合配置向导自动配置。
 

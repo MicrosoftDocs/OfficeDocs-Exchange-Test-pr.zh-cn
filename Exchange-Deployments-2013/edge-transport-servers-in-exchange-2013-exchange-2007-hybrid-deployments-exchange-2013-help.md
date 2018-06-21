@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 本主题正在进行。  
 
-_**适用于：**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>适用于：</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_<strong>上一次修改主题：</strong>2016-12-09_
 
 使用 Microsoft Exchange 部署的边缘传输服务器部署在组织的内部部署外围网络中。它们是未加入域的计算机，可处理面向 Internet 的邮件流，并充当内部网络中的 Exchange 服务器的 SMTP 中继和智能主机。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 本主题正在进行。  
 
-_**适用于：**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>适用于：</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2015-07-07_
+_<strong>上一次修改主题：</strong>2015-07-07_
 
 随着 Microsoft Exchange Server 2013 引入混合配置向导的最新改进和体系结构更改，配置和管理基于 Exchange 2013 的与 Exchange 2007 混合的部署变得更加简单。无论是要将 Exchange 2007 内部部署与 Exchange Online 组织连接以实现长期共存，还是要作为云迁移策略的一部分，了解混合部署概念都十分重要。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>适用于：</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2016-07-29_
+_<strong>上一次修改主题：</strong>2016-07-29_
 
 本主题讨论来自 Internet 的入站邮件和发送到 Internet 的出站邮件的路由选项。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>适用于：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-01-29_
+_<strong>上一次修改主题：</strong>2016-01-29_
 
 单一登录 (SSO) 使用户可以使用一个用户名和密码访问内部部署组织和 Office 365 组织。它向用户提供了一种熟悉的登录体验，并能够允许管理员使用内部部署 Active Directory 管理工具轻松控制 Exchange Online 组织邮箱的帐户策略。尽管您不需要启用单一登录来配置混合部署，但我们强烈建议您这样做。如果不使用单一登录，用户将需要记住两组不同的凭据，一组用于您的内部部署组织，另一组用于 Office 365。下面是单一登录的其他几个优点：
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>适用于：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2017-07-25_
+_<strong>上一次修改主题：</strong>2017-07-25_
 
 **摘要：**在设置混合部署之前，您的 Exchange 环境需要满足的要求。
 

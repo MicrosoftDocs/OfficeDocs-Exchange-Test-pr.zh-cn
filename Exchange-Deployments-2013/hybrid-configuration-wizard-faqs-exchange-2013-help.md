@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>适用于：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_<strong>上一次修改主题：</strong>2016-12-09_
 
 Microsoft 发布了新的混合配置向导，该向导简化了混合部署的配置，允许更灵活地进行混合配置，并确保始终运行最新版本的体验。此版本的混合向导内置在于 Exchange 2016 和从累积更新 10 开始的 Exchange 2013 版本中，但是，即使正在运行较旧的 Exchange 2013 累积更新 (CU) 或 Exchange 2010 Service Pack 3 (SP3)，仍可以下载新的向导。
 

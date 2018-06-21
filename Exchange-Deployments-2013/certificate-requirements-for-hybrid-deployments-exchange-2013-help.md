@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>适用于：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_<strong>上一次修改主题：</strong>2016-12-09_
 
 在混合部署中，数字证书是保护内部部署 Exchange 组织和 Office 365 之间通信的重要部分。证书允许每个 Exchange 组织信任另一个组织的身份。证书还有助确保每个 Exchange 组织与正确的源通信。
 

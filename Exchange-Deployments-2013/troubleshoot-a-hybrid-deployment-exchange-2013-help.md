@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>适用于：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-04-29_
+_<strong>上一次修改主题：</strong>2016-04-29_
 
 在 Exchange 中使用混合配置向导配置混合部署将极大减少混合部署出现问题的可能性。然而，这里有一些混合配置向导范围之外的典型区域，如果配置不当的话，可能导致混合部署出现问题。本主题将讨论可能出现问题的以下常见区域，并介绍验证或修正问题的基本步骤：
 

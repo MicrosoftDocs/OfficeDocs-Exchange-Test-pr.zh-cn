@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>适用于：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2018-04-16_
+_<strong>上一次修改主题：</strong>2018-04-16_
 
 **摘要：**规划 Exchange 混合部署需要了解的内容。
 
