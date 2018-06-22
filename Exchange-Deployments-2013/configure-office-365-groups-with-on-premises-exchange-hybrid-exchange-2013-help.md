@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**上一次修改主题：**2016-12-06_
+_<strong>上一次修改主题：</strong>2016-12-06_
 
 了解如何使本地 Exchange 用户在混合部署中使用 Office 365 组。
 

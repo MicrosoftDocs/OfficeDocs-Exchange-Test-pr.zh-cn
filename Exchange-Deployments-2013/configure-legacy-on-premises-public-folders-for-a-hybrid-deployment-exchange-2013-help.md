@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
+_<strong>适用于：</strong>Exchange Online, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2018-05-22_
+_<strong>上一次修改主题：</strong>2018-05-22_
 
 **摘要：**使用本文中的步骤同步 Office 365 与 Exchange 2007 本地部署或 Exchange 2010 本地部署之间的公用文件夹。
 
@@ -23,18 +23,8 @@ _**上一次修改主题：**2018-05-22_
 
 本主题介绍在您的用户位于 Office 365 中且 Exchange 2010 SP3 或 Exchange 2007 SP3 RU10 公用文件夹位于本地时，如何对已启用邮件的公用文件夹进行同步。但是，不是由 MailUser 本地对象代表的 Office 365 用户（对目标公用文件夹层次结构是本地的）不能访问旧版或 Exchange 2013 本地公用文件夹。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主题将 Exchange 2010 SP3 和 Exchange 2007 SP3 RU10 服务器称为<em>旧版 Exchange 服务器</em>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本主题将 Exchange 2010 SP3 和 Exchange 2007 SP3 RU10 服务器称为<em>旧版 Exchange 服务器</em>。
 
 
 您可以使用下列脚本同步已启用邮件的公用文件夹，这些脚本由在内部部署环境内运行的 Windows 任务启动。
@@ -90,18 +80,8 @@ _**上一次修改主题：**2018-05-22_
 
 不支持包含 Exchange 2003 公用文件夹的混合配制。如果您的组织运行的是 Exchange 2003，则必须将所有公用文件夹数据库和副本移动至 Exchange 2007 SP3 RU10 或更高版本。Exchange 2003 中不能保留公用文件夹副本。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook 2016 不支持访问 Exchange 2007 旧版公用文件夹。如果有使用 Outlook 2016 的用户，则需要将公用文件夹移动到 Exchange 的最新版本。可在<a href="https://go.microsoft.com/fwlink/p/?linkid=849053">本文</a>找到有关 Outlook 2016 和 Office 2016 与 Exchange 2007 及更早版本兼容性的详细信息。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Outlook 2016 不支持访问 Exchange 2007 旧版公用文件夹。如果有使用 Outlook 2016 的用户，则需要将公用文件夹移动到 Exchange 的最新版本。可在<a href="https://go.microsoft.com/fwlink/p/?linkid=849053">本文</a>找到有关 Outlook 2016 和 Office 2016 与 Exchange 2007 及更早版本兼容性的详细信息。
 
 
 ## 步骤 1：在开始之前，您需要知道什么？
@@ -136,19 +116,9 @@ _**上一次修改主题：**2018-05-22_
 
 1.  如果你的公用文件夹位于 Exchange 2010 或更高版本的服务器上，则需要在所有拥有公用文件夹数据库的邮箱服务器上安装客户端访问服务器角色。这样便可运行 Microsoft Exchange RpcClientAccess 服务，从而使所有客户端都可以对公用文件夹进行访问。Exchange 2007 公用文件夹服务器不需要客户端访问角色，此步骤并非必需步骤。有关详细信息，请参阅[安装 Exchange Server 2010](https://technet.microsoft.com/zh-cn/library/bb124778\(v=exchg.141\).aspx)。对于 Exchange 2007 公用文件夹不需要执行此步骤。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>客户端负载平衡不需要包含此服务器。有关详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/ff625247(v=exchg.141).aspx">了解 Exchange 2010 中的负载平衡</a>。</td>
-    </tr>
-    </tbody>
-    </table>
-
+    > [!NOTE]  
+	> 客户端负载平衡不需要包含此服务器。有关详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/ff625247(v=exchg.141).aspx">了解 Exchange 2010 中的负载平衡</a>。
+    
 
 2.  在每个公用文件夹服务器上创建一个空的邮箱数据库。
     
@@ -160,19 +130,9 @@ _**上一次修改主题：**2018-05-22_
     
         New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>我们建议您只将在步骤 3 中创建的代理邮箱添加至此数据库。不应在此邮箱数据库中创建任何其他邮箱。</td>
-    </tr>
-    </tbody>
-    </table>
-
+    > [!NOTE]    
+	> 我们建议您只将在步骤 3 中创建的代理邮箱添加至此数据库。不应在此邮箱数据库中创建任何其他邮箱。
+    
 
 3.  在新建邮箱数据库内创建一个代理邮箱，并在通讯簿中将其隐藏。该邮箱的 SMTP 会由自动发现返回为 *DefaultPublicFolderMailbox* SMTP，因此通过解析此 SMTP，客户端可以进入旧版 Exchange 服务器以访问公用文件夹。
     
@@ -200,18 +160,8 @@ _**上一次修改主题：**2018-05-22_
 
 目录同步服务不对启用邮件的公用文件夹进行同步。运行以下两个脚本可以对已启用邮件的跨界公用文件夹进行同步。分配给已启用邮件的公用文件夹的特殊权限将需要在云中重新创建，因为跨界权限在混合部署方案中不受支持。有关详细信息，请参阅 [Exchange Server 2013 混合部署](exchange-server-hybrid-deployments-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>已同步的启用邮件的公用文件夹将显示为邮件联系人对象，用于处理邮件流，并且不会在 Exchange 管理中心 中显示。请参阅 Get-MailPublicFolder 命令。要重新创建云中的 SendAs 权限，请使用 Add-RecipientPermission 命令。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 已同步的启用邮件的公用文件夹将显示为邮件联系人对象，用于处理邮件流，并且不会在 Exchange 管理中心 中显示。请参阅 Get-MailPublicFolder 命令。要重新创建云中的 SendAs 权限，请使用 Add-RecipientPermission 命令。
 
 
 1.  在旧版 Exchange 服务器上，运行以下命令将启用邮件的公用文件夹从本地 Active Directory 同步到 O365 中。
@@ -220,19 +170,9 @@ _**上一次修改主题：**2018-05-22_
     
     其中 `Credential` 是您的 Office 365 用户名和密码，`CsvSummaryFile` 是您要以 .csv 格式记录同步操作和错误的文件路径。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在运行此脚本之前，我们建议您先模拟此脚本将在环境中执行的操作，方法是使用 <code>-WhatIf</code> 参数按照如上所述运行此脚本。<br />
-我们还建议您每天都运行此脚本以同步启用邮件的公用文件夹。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在运行此脚本之前，我们建议您先模拟此脚本将在环境中执行的操作，方法是使用 <code>-WhatIf</code> 参数按照如上所述运行此脚本。
+> 我们还建议您每天都运行此脚本以同步启用邮件的公用文件夹。
 
 
 ## 步骤 5：配置 Exchange Online 用户以访问本地公用文件夹
@@ -247,18 +187,8 @@ _**上一次修改主题：**2018-05-22_
 
 您必须等待 ActiveDirectory 同步完成才能查看更改。此过程可能需要 3 个小时才能完成。如果您不想等待每隔三小时进行一次定期同步，可以随时强制执行目录同步。有关强制执行目录同步的详细步骤，请参阅[强制执行目录同步](http://technet.microsoft.com/zh-cn/library/jj151771.aspx)。Office 365 随机选择此命令中提供的一个公用文件夹邮箱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不是由 MailUser 本地对象代表的 Office 365 用户（对目标公用文件夹层次结构是本地的）不能访问旧版或 Exchange 2013 本地公用文件夹。请参阅知识库文章 <a href="https://go.microsoft.com/fwlink/p/?linkid=699451">Exchange 联机用户不能访问旧版本地公用文件夹</a>查找解决方案。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]   
+> 不是由 MailUser 本地对象代表的 Office 365 用户（对目标公用文件夹层次结构是本地的）不能访问旧版或 Exchange 2013 本地公用文件夹。请参阅知识库文章 <a href="https://go.microsoft.com/fwlink/p/?linkid=699451">Exchange 联机用户不能访问旧版本地公用文件夹</a>查找解决方案。
 
 
 ## 我如何知道这有效？

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>适用于：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2017-06-14_
+_<strong>上一次修改主题：</strong>2017-06-14_
 
 Configuring and managing hybrid deployments are easier than ever with the latest improvements to the Hybrid Configuration wizard. Whether you want to connect your Exchange on-premises and Exchange Online organizations for long-term coexistence or as part of a cloud migration strategy, configuring a hybrid deployment is the first step for your Exchange organization.
 

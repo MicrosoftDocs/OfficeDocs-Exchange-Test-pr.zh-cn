@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 本主题正在进行。  
 
-_**适用于：**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>适用于：</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_<strong>上一次修改主题：</strong>2016-12-09_
 
 在 Exchange 2007 内部部署组织中安装运行 Microsoft Exchange Server 2013 的服务器时，会自动在服务器上安装 Exchange 2013 管理工具。您将使用以下工具来配置和管理内部部署 Exchange 和 Exchange Online 组织的混合功能：
 
