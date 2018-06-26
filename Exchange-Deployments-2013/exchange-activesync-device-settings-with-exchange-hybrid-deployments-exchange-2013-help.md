@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server, Exchange Server 2013, Exchange Server 2016_
+_<strong>适用于：</strong>Exchange Online, Exchange Server, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-01-27_
+_<strong>上一次修改主题：</strong>2016-01-27_
 
 当邮箱从 Exchange 内部部署组织移动到 Office 365 时，Exchange ActiveSync 设备将立即自动重新配置。Exchange ActiveSync 将在 Office 365 中查找新邮箱位置，并更新其配置，从而直接与 Office 365 通信。当 Exchange ActiveSync 设备成功重定向到 Office 365 后，此设备不会尝试与内部部署 Exchange 服务器联系。仅少数例外情况外（详情如下），用户不再需要手动设置设备来继续处理邮件。
 

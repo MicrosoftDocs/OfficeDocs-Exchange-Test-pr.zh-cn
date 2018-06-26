@@ -13,9 +13,11 @@ ms.translationtype: HT
 
  
 
-_**适用于：** Exchange Server 2016_
 
-_**上一次修改主题：** 2016-12-09_
+_<strong>适用于：</strong>Exchange Server 2016_
+
+_<strong>上一次修改主题：</strong>2016-12-09_
+
 
 **摘要：** 如何允许本地 Exchange Server 2016 用户在混合配置期间利用 OneDrive for Business 和 SharePoint Online 的文档协作。
 

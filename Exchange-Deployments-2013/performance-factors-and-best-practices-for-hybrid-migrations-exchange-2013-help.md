@@ -13,9 +13,11 @@ ms.translationtype: HT
 
  
 
-_**适用于：** Exchange Server 2016_
 
-_**上一次修改主题：** 2016-12-09_
+_<strong>适用于：</strong>Exchange Server 2016_
+
+_<strong>上一次修改主题：</strong>2016-12-09_
+
 
 在 Office 365 中有许多途径可以将本地电子邮件组织中的数据迁移到 Office 365。在计划迁移到 Office 365 时，一个常见的问题是如何提高数据迁移的性能并优化迁移速度。本文讨论了 Exchange 混合部署的迁移性能，有关其他迁移方法的性能信息，请参阅 [Office 365 迁移性能和最佳做法](http://go.microsoft.com/fwlink/p/?linkid=623651)。
 

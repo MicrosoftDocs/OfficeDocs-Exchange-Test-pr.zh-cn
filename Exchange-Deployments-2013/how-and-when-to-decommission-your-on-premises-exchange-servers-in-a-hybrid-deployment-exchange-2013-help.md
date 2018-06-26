@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server, Exchange Server 2013, Exchange Server 2016_
+_<strong>适用于：</strong>Exchange Online, Exchange Server, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2017-07-27_
+_<strong>上一次修改主题：</strong>2017-07-27_
 
 Read this article if you are ready to move from an Exchange hybrid deployment to a full cloud implementation.
 

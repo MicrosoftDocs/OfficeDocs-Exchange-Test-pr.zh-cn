@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 本主题正在进行。  
 
-_**适用于：**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>适用于：</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_<strong>上一次修改主题：</strong>2016-12-09_
 
 在 Exchange 2007 组织中配置了混合部署后，您需要在现有的 Exchange 2007 组织中至少安装一个具有客户端访问服务器角色和邮箱服务器角色的 Exchange 2013 服务器。Exchange 2013 客户端访问服务器和邮箱服务器协调现有的 Exchange 2007 内部部署组织和 Exchange Online 组织之间的通信。此通信包括内部部署组织与 Exchange Online 组织之间的邮件传输和消息功能。
 

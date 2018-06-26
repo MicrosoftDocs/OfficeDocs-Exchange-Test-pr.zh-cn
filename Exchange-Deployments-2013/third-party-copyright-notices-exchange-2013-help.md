@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_<strong>适用于：</strong>Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-18_
+_<strong>上一次修改主题：</strong>2013-02-18_
 
 Outside In HTML Export © 1991, 2011 Oracle
 

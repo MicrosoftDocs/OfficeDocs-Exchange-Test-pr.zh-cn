@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>适用于：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2018-04-16_
+_<strong>上一次修改主题：</strong>2018-04-16_
 
 边缘传输服务器角色是通常部署在位于 Exchange 组织外围网络中的计算机上的可选角色，旨在使组织的受攻击面降到最小。边缘传输服务器角色可处理所有面向 Internet 的邮件流，并为组织中的内部部署 Exchange 服务器提供 SMTP 中继和智能主机服务。
 

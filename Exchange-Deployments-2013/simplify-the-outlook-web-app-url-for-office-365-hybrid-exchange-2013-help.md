@@ -13,7 +13,9 @@ ms.translationtype: HT
 
  
 
-_**上一次修改主题：** 2016-11-11_
+
+_<strong>上一次修改主题：</strong>2016-11-11_
+
 
 了解如何在混合环境中为云邮箱用户配置 Web 上的 Outlook (Outlook Web App) URL。
 

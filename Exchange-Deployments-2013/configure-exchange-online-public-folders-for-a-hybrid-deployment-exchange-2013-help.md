@@ -13,9 +13,10 @@ ms.translationtype: HT
 
  
 
-_**适用于：** Exchange Server 2013_
+_<strong>适用于：</strong>Exchange Server 2013_
 
-_**上一次修改主题：** 2016-12-15_
+_<strong>上一次修改主题：</strong>2016-12-15_
+
 
 **摘要：** 有关允许本地 Exchange 2013 用户访问 Exchange Online 中的公用文件夹的说明。
 

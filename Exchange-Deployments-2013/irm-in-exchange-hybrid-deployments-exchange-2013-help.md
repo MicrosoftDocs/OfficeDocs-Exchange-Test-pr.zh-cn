@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>适用于：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：** 2016-12-09_
+_<strong>上一次修改主题：</strong>2016-12-09_
 
 **摘要：** IRM 在 Exchange 混合环境中的工作方式，以及如何配置 IRM 以在 Exchange Online 和内部部署 Exchange 服务器之间工作。
 
