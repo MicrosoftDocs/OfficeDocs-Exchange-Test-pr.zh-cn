@@ -17,7 +17,8 @@ _<strong>适用于：</strong>Exchange Online, Exchange Server 2010, Exchange Se
 
 _<strong>上一次修改主题：</strong>2018-05-22_
 
-**摘要：**使用本文中的步骤同步 Office 365 与 Exchange 2007 本地部署或 Exchange 2010 本地部署之间的公用文件夹。
+
+**摘要：** 使用本文中的步骤同步 Office 365 与 Exchange 2007 本地部署或 Exchange 2010 本地部署之间的公用文件夹。
 
 在混合部署中，您的用户可以位于 Exchange Online 中或本地内，或同时位于两者中，并且您的公用文件夹位于 Exchange Online 中或本地内。公用文件夹只能驻留在一个位置，因此您必须决定是将其放在 Exchange Online 中还是本地内。他们无法同时位于两者中。目录同步服务可以将公用文件夹邮箱同步至 Exchange Online 上。但是，已启用邮件的公用文件夹无法跨界同步。
 

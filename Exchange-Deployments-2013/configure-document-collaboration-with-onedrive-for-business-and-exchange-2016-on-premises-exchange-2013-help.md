@@ -13,11 +13,13 @@ ms.translationtype: HT
 
  
 
+
 _<strong>适用于：</strong>Exchange Server 2016_
 
 _<strong>上一次修改主题：</strong>2016-12-09_
 
-**摘要：**如何允许本地 Exchange Server 2016 用户在混合配置期间利用 OneDrive for Business 和 SharePoint Online 的文档协作。
+
+**摘要：** 如何允许本地 Exchange Server 2016 用户在混合配置期间利用 OneDrive for Business 和 SharePoint Online 的文档协作。
 
 最近，在 Office 365 中推出了新的附件选项。在 Exchange 2016 中，该选项被称为“*文档协作*”，它允许本地用户将存储在 OneDrive for Business 上的附件与其 Outlook 网页版客户端直接集成。
 

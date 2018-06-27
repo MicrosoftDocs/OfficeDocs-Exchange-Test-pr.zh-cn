@@ -13,7 +13,9 @@ ms.translationtype: HT
 
  
 
+
 _<strong>上一次修改主题：</strong>2016-11-11_
+
 
 了解如何在混合环境中为云邮箱用户配置 Web 上的 Outlook (Outlook Web App) URL。
 
@@ -23,7 +25,7 @@ _<strong>上一次修改主题：</strong>2016-11-11_
 
 为了让受影响的用户可以使用 Web 上的 Outlook连接邮箱，可以采用下列两种方式之一：
 
-  - **告诉用户新 URL（例如，https://outlook.com/owa/contoso.com）**   这种方式存在以下问题：
+  - **告诉用户新 URL（例如，https://outlook.com/owa/contoso.com）**    这种方式存在以下问题：
     
       - URL 非常复杂。
     
@@ -110,5 +112,5 @@ _<strong>上一次修改主题：</strong>2016-11-11_
 </table>
 
 
-**注意：**联合身份验证要求在 Internet Explorer 的 Intranet 区域中配置 AD FS 终结点（如 <https://go.microsoft.com/fwlink/p/?linkid=834460> 中的主题所述），并要求根据常规 Office 365 指导配置 AD FS。
+**注意：** 联合身份验证要求在 Internet Explorer 的 Intranet 区域中配置 AD FS 终结点（如 <https://go.microsoft.com/fwlink/p/?linkid=834460> 中的主题所述），并要求根据常规 Office 365 指导配置 AD FS。
 
