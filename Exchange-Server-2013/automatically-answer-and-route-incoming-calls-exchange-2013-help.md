@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-08-26_
+_**上一次修改主题：** 2013-08-26_
 
 通过 Microsoft Exchange 统一消息 (UM)，可以根据组织的需要创建一个或多个 UM 自动助理。与其他统一消息组件（例如 UM 拨号计划和 UM IP 网关）不同，您无需创建 UM 自动助理。但是，自动助理可以帮助内部和外部的呼叫者找到组织中存在的用户或部门，并将呼叫转接给他们。本主题讨论统一消息中的 UM 自动助理功能。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2017-04-28_
+_**上一次修改主题：** 2017-04-28_
 
 邮件提示是用户撰写邮件时向其显示的提示性消息。Microsoft Exchange Server 2013 将分析邮件（包括向其发送了邮件的收件人的列表），如果检测到潜在问题，它将使用邮件提示在邮件发送之前通知用户。借助邮件提示提供的信息，发件人可以调整正在撰写的邮件以避免出现不利情况或未送达报告 (NDR)。
 

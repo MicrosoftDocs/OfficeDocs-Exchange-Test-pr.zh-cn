@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-11_
+_**上一次修改主题：** 2012-11-11_
 
 您可以删除现有统一邮件 (UM) 拨号计划。当您删除 UM 拨号计划，它将不再可用于 UM IP 网关，UM 邮箱策略，和 UM 查寻组。如果它已被引用或关联的 UM 邮箱策略、 UM 自动助理、 UM IP 网关或 UM 查寻组，则无法删除 UM 拨号计划。
 

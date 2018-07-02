@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-30_
+_**上一次修改主题：** 2012-10-30_
 
 添加邮箱数据库的副本会自动在现有数据库和数据库副本之间启用连续复制。数据库副本自动分配有格式为 \<*DatabaseName*\>\\\<*HostMailboxServerName*\> 的标识。例如，在服务器 MBX3 上托管的数据库 DB1 的副本会自动分配有标识 DB1\\MBX3。
 

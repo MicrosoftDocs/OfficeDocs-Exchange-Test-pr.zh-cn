@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 “内容传输编码”定义将二进制电子邮件数据转变为 US-ASCII 纯文本格式的方法。此转换允许邮件通过仅支持 US-ASCII 文本邮件的旧版 SMTP 邮件服务器。内容传输编码在 RFC 2045 中定义。传输编码方法存储在邮件中的“内容传输编码”标题字段中。在 Microsoft Exchange Server 2013 中，有以下内容传输编码方法可用：
 

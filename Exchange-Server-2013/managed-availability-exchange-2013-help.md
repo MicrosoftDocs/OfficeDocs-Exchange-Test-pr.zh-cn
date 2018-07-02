@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013 SP1_
+_**适用于：** Exchange Online, Exchange Server 2013 SP1_
 
-_**上一次修改主题：**2017-03-29_
+_**上一次修改主题：** 2017-03-29_
 
 确保用户获得良好的电子邮件体验一直是邮件系统管理员的主要目标。为了帮助确保 Microsoft Exchange Server 2013 组织的可用性和可靠性，必须主动监控系统的所有方面，且必须快速解决检测到的任何问题。在 Exchange 以前的版本中，监控关键系统组件通常涉及使用外部应用程序（如 Microsoft System Center 2012 Operations Manager）收集数据，以及针对在分析收集数据时检测到的问题提供恢复操作。Exchange 2010 和以前版本包括管理包形式的运行状况显示和相关性引擎。这些组件使 Operations Manager 能够确定某一特定组件是否正常运行。此外，Operations Manager 还使用 Exchange 2010 的内置诊断 cmdlet 基础结构对系统的多个方面运行综合事务。
 

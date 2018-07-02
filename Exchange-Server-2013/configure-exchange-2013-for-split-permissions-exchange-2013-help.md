@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 拆分权限使两个不同的组（如 Active Directory 管理员和 Microsoft Exchange Server 2013 管理员）能够管理各自的服务、对象和属性。Active Directory 管理员管理安全主体（如用户），这种安全主体可提供访问 Active Directory 林的权限。Exchange 管理员管理 Active Directory 对象上与 Exchange 相关的属性以及 Exchange 特定的对象创建和管理。
 

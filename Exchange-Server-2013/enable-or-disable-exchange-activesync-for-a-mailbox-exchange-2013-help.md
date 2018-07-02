@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2012-11-13_
+_**上一次修改主题：** 2012-11-13_
 
 可以使用 EAC 或命令行管理程序启用或禁用用户邮箱的 Microsoft Exchange ActiveSync。 Exchange ActiveSync 是一种客户端协议，允许用户将移动设备与其 Exchange 邮箱同步。 在创建用户邮箱时，会默认启用 Exchange ActiveSync。 有关详细信息，请参阅[Exchange ActiveSync](exchange-activesync-exchange-2013-help.md)。
 

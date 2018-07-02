@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-01-28_
+_**上一次修改主题：** 2013-01-28_
 
 传输日志提供有关传输管道所发生事情的信息。以下传输日志在 Microsoft Exchange Server 2013 中可用：
 

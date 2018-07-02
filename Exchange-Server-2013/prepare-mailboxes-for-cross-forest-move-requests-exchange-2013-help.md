@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2017-11-22_
+_**上一次修改主题：** 2017-11-22_
 
-**摘要：** 了解如何准备在Exchange 2013的跨目录林移动邮箱。
+**摘要：**  了解如何准备在Exchange 2013的跨目录林移动邮箱。
 
 Microsoft Exchange 2013支持邮箱移动和迁移使用 Exchange 管理外壳，特别是**New-MoveRequest**和**New-MigrationBatch**的 cmdlet。您还可以通过 Exchange 管理中心 (EAC) 移动邮箱。请注意，可以将 Exchange 2010 和 Exchange 2013 的邮箱移动到 Exchange 2013 林。
 

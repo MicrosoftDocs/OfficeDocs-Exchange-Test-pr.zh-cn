@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-21_
+_**上一次修改主题：** 2013-02-21_
 
 创建统一邮件 (UM) 拨号计划时，您可以配置名称来查找用户拨打电话Outlook语音访问号码或有关联的拨号计划与 UM 自动助理时调用方可以搜索的主要和辅助的方法。调用方可以使用按键输入查找已启用 UM 的用户。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 *主题*定义 MicrosoftOutlook Web App 所使用的背景色、字体、突出显示颜色、图标和标题。每个主题是存储在 MicrosoftExchange 服务器上安装目录的 \\Client Access\\OWA\\prem\\*version*\\resources\\themes 中的媒体文件和级联样式表 (.css) 文件的集合。每个主题存储在 \\themes 各自的子目录中。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-13_
+_**上一次修改主题：** 2015-04-13_
 
 您可以使用所提供的 Exchange 命令行管理程序脚本（位于 %ExchangeInstallPath%Scripts 中）来复制边缘传输服务器的配置。此过程称为*“克隆配置”*。*“克隆配置”*是根据以前配置的源服务器的配置信息部署新的边缘传输服务器的操作。即将以前配置的源服务器的配置信息复制并导出到 XML 文件，然后导入目标服务器。有关该过程的概述，请参阅[边缘传输服务器克隆配置](edge-transport-server-cloned-configuration-exchange-2013-help.md)。
 

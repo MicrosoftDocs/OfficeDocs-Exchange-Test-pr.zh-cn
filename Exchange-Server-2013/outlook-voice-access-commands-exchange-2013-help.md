@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 Outlook语音访问允许启用统一邮件 UM 的用户可以访问其邮箱使用模拟、 数字或移动电话。使用位于Outlook语音访问的菜单系统，启用 UM 的用户可以读取电子邮件，收听语音邮件、 Outlook日历与交互、 访问其个人联系人和管理个人选项，配置其Outlook语音访问 PIN 或录制语音邮件等。本主题包含 Outlook Voice Access 命令和用户如何使用它们时通过调用 Outlook Voice Access 数字访问其邮箱的列表。
 

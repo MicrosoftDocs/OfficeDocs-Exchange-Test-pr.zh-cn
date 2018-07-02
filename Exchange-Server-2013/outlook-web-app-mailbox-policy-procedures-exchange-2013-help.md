@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2012-09-22_
+_**上一次修改主题：** 2012-09-22_
 
 [创建 Outlook Web App 邮箱策略](create-an-outlook-web-app-mailbox-policy-exchange-2013-help.md)
 

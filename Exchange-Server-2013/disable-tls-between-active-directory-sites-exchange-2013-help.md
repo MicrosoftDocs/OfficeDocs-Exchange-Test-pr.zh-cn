@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-19_
+_**上一次修改主题：** 2013-02-19_
 
 Microsoft Exchange Server 2013 支持禁用邮箱服务器之间的 SMTP 通信的 TLS，这些服务器位于特定的拓扑中，其中使用了可压缩 SMTP 通信的 WAN 优化控制器 (WOC) 设备。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 在为组织部署统一消息 (UM) 时，必须正确配置 IP 语音 (VoIP) 网关和 IP 专用交换机 (PBX)。如果正在混合环境中部署 UM，也将需要正确部署会话边界控制器 (SBC)。为此，需要配置接口或 VoIP 网关、IP PBX 和 SBC 的接口，以便与运行 Microsoft Exchange 统一消息呼叫路由器服务的客户端访问服务器和运行 Microsoft Exchange 统一消息服务的邮箱服务器进行通信。
 

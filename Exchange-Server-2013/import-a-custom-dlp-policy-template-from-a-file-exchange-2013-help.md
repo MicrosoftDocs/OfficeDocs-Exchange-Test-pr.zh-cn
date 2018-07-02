@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-08-09_
+_**上一次修改主题：** 2016-08-09_
 
 可以通过导入包含策略信息设置的文件并利用 DLP 策略管理敏感信息。DLP 策略模板可以从 Exchange 独立开发为 XML 文件。但是，策略必须满足特定格式要求才能正常工作。或者可以将从以前版本的 Exchange 导出的策略导入至 Microsoft Exchange Server 2013。
 

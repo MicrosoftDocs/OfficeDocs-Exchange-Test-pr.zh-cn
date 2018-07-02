@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-17_
+_**上一次修改主题：** 2013-02-17_
 
 您可以配置用于侦听的 SIP 请求运行 Microsoft Exchange 统一消息呼叫路由器服务的客户端访问服务器上的传输层安全性 (TLS) 端口。默认情况下，当您安装客户端访问服务器，SIP TLS 的侦听端口号设置为 5061。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 共享权限使您（作为 Microsoft Exchange Server 2013 管理员）可以创建 Active Directory 安全主体（如用户），然后将这些安全主体配置为 Exchange 收件人。与拆分权限不同，拆分权限是在 Exchange 管理员组和 Active Directory 管理员组之间分离管理任务，而使用共享权限则不会分离任务。
 

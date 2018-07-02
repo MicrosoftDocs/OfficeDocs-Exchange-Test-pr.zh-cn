@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-08_
+_**上一次修改主题：** 2015-04-08_
 
 Microsoft Exchange Server 2013 管理员可以手动下载反恶意软件引擎和定义（签名）更新。强烈建议您在将 Exchange 服务器置于生产环境之前将引擎和定义更新下载到 Exchange 服务器上。
 

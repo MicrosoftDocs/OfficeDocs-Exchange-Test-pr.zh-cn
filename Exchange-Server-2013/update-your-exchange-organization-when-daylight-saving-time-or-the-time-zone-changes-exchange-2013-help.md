@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server, Exchange Server 2010, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server, Exchange Server 2010, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 如果组织或某些用户所处的国家或地区更改了其识别夏令时 (DST) 的策略，或更改了与协调世界时 (UTC) 的本地时间偏移，则您可能需要更新 Microsoft Windows、Microsoft Exchange、Microsoft Outlook 或其他程序以适应这些更改。
 

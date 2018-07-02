@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Microsoft Exchange 统一消息 (UM) 包括一种名为\&quot;语言邮件预览\&quot;的功能，该功能使用自动语音识别 (ASR) 将文本版本的语音邮件音频文件添加到语音邮件。ASR 并不完全准确，尤其是在用于通过电话录制包含未知语音和噪音的音频时。某些组织要求以持续不出错（或几乎不出错）的方式转录语音邮件。语音邮件预览伙伴计划将帮助这类组织满足这些要求。
 

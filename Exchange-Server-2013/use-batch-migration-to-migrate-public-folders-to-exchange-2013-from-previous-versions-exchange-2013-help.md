@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2018-03-26_
+_**上一次修改主题：** 2018-03-26_
 
-**摘要：**本文介绍了如何将公用文件夹从 Exchange 2007 或 Exchange 2010 移动到 Exchange 2013。
+**摘要：** 本文介绍了如何将公用文件夹从 Exchange 2007 或 Exchange 2010 移动到 Exchange 2013。
 
 本主题介绍了如何将公用文件夹从 Exchange Server 2010 SP3 RU8 或 Exchange 2007 SP3 RU15 迁移到同一林内的 Microsoft Exchange Server 2013 CU7 或更高版本中。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2016-12-15_
+_**上一次修改主题：** 2016-12-15_
 
 无法继续 Microsoft Exchange Server 2013 安装程序，因为它检测到\&quot;ExecutionPolicy\&quot;组策略对象 (GPO) 定义了一个或两个以下策略：
 

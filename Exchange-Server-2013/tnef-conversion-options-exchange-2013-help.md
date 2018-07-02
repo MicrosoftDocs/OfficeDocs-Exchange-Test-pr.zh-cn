@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 可以指定是应当为离开 Exchange 组织的邮件保留传输中性封装格式 (TNEF) 还是删除该格式。TNEF（也称为 Outlook RTF 格式或 Exchange RTF 格式）是 Microsoft 特定的用于封装 MAPI 邮件属性的格式。MicrosoftOutlook 的所有版本都能完全理解 TNEF。Outlook Web App 将 TNEF 转换为 MAPI，并显示已设置格式的邮件。但是，不了解 TNEF 的其他电子邮件客户端通常将 TNEF 格式的邮件显示为带有 Winmail.dat 或 Win.dat 附件的纯文本邮件。
 

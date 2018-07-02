@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-05_
+_**上一次修改主题：** 2012-11-05_
 
 [创建 UM 智能寻线](create-a-um-hunt-group-exchange-2013-help.md)
 

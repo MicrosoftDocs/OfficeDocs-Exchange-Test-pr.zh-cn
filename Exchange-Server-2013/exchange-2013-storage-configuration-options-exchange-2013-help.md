@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 了解 Microsoft Exchange Server 2013 中的邮箱服务器角色的存储选项和要求是邮箱服务器存储设计解决方案的重要组成部分。
 

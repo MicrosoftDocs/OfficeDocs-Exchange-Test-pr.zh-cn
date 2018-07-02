@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 在统一消息 (UM) 中，呼叫方可以使用双音多频 (DTMF)（也称为按键）和语音输入与系统进行交互。呼叫方可以使用的方法取决于 UM 拨号计划和自动助理的配置方式。
 

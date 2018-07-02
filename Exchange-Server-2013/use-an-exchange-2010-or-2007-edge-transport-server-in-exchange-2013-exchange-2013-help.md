@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Microsoft Exchange Server 2013 Service Pack 1 (SP1) 中提供了边缘传输服务器。然而，您可以继续使用现有 Exchange Server 2007 或在外围网络中部署的 Exchange Server 2010 边缘传输服务器。或者，您可以为新的或升级的 Exchange 2013 组织，在外围网络中安装新的 Exchange 2007 或 Exchange 2010 边缘传输服务器。
 

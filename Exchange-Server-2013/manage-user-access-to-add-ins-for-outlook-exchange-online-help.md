@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2018-04-17_
+_**上一次修改主题：** 2018-04-17_
 
 可以使用 EAC 或 Exchange Online PowerShell 管理用户对适用于 Outlook 的外接程序的访问。
 

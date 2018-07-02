@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 随着 Windows Phone 8、Windows 8 和 Windows RT 的发布，有许多支持 Exchange ActiveSync 和移动设备邮箱策略的设备。每个设备的操作系统支持一套特定的移动设备策略设置。
 

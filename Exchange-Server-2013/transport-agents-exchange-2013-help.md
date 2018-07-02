@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 通过传输代理，您可以在 Exchange 服务器上安装由 Microsoft、第三方供应商或您的组织创建的自定义软件。随后该软件便可以处理通过传输管道的电子邮件。在 Microsoft Exchange Server 2013 中，传输管道由以下进程组成：
 

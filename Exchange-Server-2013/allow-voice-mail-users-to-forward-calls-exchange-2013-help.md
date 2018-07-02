@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 呼叫应答规则功能首先是在Exchange 2010中引入的。启用语音邮件的用户使用此功能，可以控制应如何处理他们的来电。呼叫应答规则应用于传入的调用方式类似于收件箱规则应用于传入的电子邮件。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 您可以启用统一邮件 (UM) 拨号计划信息性通知。信息性通知用于一般公告，更改更频繁地比欢迎问候语，或所需的公司法规遵从性策略的通知。
 

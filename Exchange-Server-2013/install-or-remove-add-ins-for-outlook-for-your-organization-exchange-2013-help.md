@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2017-02-03_
+_**上一次修改主题：** 2017-02-03_
 
 可以使用 EAC 或 Shell 为组织安装或删除适用于 Outlook 的外接程序。
 

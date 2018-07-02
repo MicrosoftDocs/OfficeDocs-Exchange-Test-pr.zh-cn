@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 每个 Microsoft Exchange 邮箱都由 Active Directory 用户帐户以及存储在 Exchange 邮箱数据库中的邮箱数据组成。邮箱的所有配置数据都存储在 Active Directory 用户对象的 Exchange 属性中。邮箱数据库中包含与用户帐户关联的邮箱中的邮件数据。下图显示了邮箱的各个组件。
 

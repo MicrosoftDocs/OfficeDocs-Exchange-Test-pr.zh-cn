@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**适用于：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-14_
+_**上一次修改主题：** 2013-02-14_
 
 以满足个人、 IT 或业务要求，您可能需要关闭或暂时挂起邮件记录管理 (MRM) 为单个用户或邮箱服务器。您可能需要关闭或挂起 MRM 的原因包括 ︰
 

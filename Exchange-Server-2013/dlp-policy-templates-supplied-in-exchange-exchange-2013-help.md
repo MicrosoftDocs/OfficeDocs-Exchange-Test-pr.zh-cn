@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 在 Microsoft Exchange Server 2013 和 Exchange Online 中，可以使用数据丢失预防 (DLP) 策略模板作为构建 DLP 策略的起点，这些策略可帮助满足特定法规和业务策略需求。可以修改模板以便满足组织的特定需求。
 

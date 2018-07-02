@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 您可以配置 Microsoft Outlook 2010 或更高版本中对最终用户可用的一个功能：分层通讯簿 (HAB)。通过 HAB，用户可以使用基于资历或管理结构的组织层次结构，在 Exchange 组织中查找收件人。有关 HAB 的详细信息，请参阅[分层通讯簿](hierarchical-address-books-exchange-2013-help.md)。
 

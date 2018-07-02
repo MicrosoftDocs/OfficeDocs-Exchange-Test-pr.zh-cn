@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-04_
+_**上一次修改主题：** 2013-02-04_
 
 因为 Exchange 管理中心 (EAC) 是 Exchange Server 2013 中提供的一个基于 Web 的管理控制台，因此您可以在 Web 浏览器中使用 ECP 虚拟目录的 URL 访问它。本主题将演示如何查找 ECP 虚拟目录的 URL。
 

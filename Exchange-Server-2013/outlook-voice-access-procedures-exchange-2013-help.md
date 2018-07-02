@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-15_
+_**上一次修改主题：** 2013-02-15_
 
 [启用或禁用 Outlook Voice Access 的用户](enable-or-disable-outlook-voice-access-for-users-exchange-2013-help.md)
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-11-12_
+_**上一次修改主题：** 2015-11-12_
 
 配置高可用性所需的权限取决于执行的步骤和要运行的 cmdlet。有关高可用性的详细信息，请参阅[高可用性和站点恢复](high-availability-and-site-resilience-exchange-2013-help.md)。
 

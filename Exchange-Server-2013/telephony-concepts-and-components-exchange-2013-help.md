@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-25_
+_**上一次修改主题：** 2013-04-25_
 
 如果要在网络上规划和部署 MicrosoftExchange 2013 统一消息 (UM)，则必须了解统一消息和电话网络。本主题概述电话基础结构的概念和组件，将帮助您规划和部署运行 Exchange 2013 统一消息的服务器。
 

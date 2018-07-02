@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 您可以强制用户接收受保护的语音邮件电话功能使用播放收听他们的邮件发件人。或者，如果客户端软件不支持权限管理，用户必须使用Outlook语音访问来侦听消息。
 

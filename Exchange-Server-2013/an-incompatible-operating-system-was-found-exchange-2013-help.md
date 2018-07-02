@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2014-01-30_
+_**上一次修改主题：** 2014-01-30_
 
 Microsoft Exchange Server 2013 安装程序无法继续，因为它检测到了不兼容的操作系统。在安装 Exchange 2013 之前，您必须在此台计算机上安装一个兼容的操作系统。下表展示了与 Exchange 2013 兼容的操作系统。
 

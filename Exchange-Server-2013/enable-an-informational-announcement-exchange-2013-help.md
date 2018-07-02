@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-19_
+_**上一次修改主题：** 2013-04-19_
 
 可以对统一消息 (UM) 自动助理启用信息通知。如果启用了信息通知，它会在营业时间或非营业时间问候语之后立即播放。默认情况下，没有配置信息通知。若要启用信息通知，请创建一个 .wav 或 .wma 文件作为信息通知，然后配置自动助理使用该声音文件。
 

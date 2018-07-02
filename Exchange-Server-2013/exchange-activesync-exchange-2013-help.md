@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 了解 Exchange Server 2013 的 Exchange ActiveSync 客户端协议。您将了解 Exchange ActiveSync 功能，包括安全功能、您可以管理的项目、如何确保其安全，以及如何避免同步到 Windows Phone 7 出现问题。
 

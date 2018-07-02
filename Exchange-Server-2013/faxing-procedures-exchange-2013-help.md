@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-15_
+_**上一次修改主题：** 2013-02-15_
 
 [设置传真服务器 URI 以允许发送传真的伙伴](set-the-partner-fax-server-uri-to-allow-faxing-exchange-2013-help.md)
 

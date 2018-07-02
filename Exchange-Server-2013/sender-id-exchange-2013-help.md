@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 发件人 ID 代理是 Microsoft Exchange Server 2013 中提供的反垃圾邮件代理。发件人 ID 代理依赖于所收到的 SMTP 标头和对发送系统的 DNS 服务的查询，确定要对入站邮件执行的操作（如果有）。
 

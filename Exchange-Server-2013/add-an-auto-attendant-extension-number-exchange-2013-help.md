@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-05_
+_**上一次修改主题：** 2012-11-05_
 
 您可以配置统一邮件 (UM) 自动助理的分机号码或多个分机号码。分机号码添加到 UM 自动助理时，该数字可由调用方能够调入的自动助理。此外，您可能需要添加分机号码，因为有多个调用方可以使用访问自动助理的分机号码。默认情况下，当创建自动助理配置没有分机号码。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 在 Microsoft Exchange Server 2013 和 Exchange Online 中，邮件记录管理 (MRM) 有助于组织管理电子邮件生命周期，并降低与电子邮件和其他通信有关的法律风险。通过 MRM 可更方便地保留为符合公司策略、政府法规或法律要求而需要的邮件以及删除没有法律或商业价值的内容。
 

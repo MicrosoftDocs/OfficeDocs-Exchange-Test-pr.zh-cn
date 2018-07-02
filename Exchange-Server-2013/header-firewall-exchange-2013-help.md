@@ -20,9 +20,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 在 Microsoft Exchange Server 2013 中，“邮件头防火墙”是从入站邮件和出站邮件中删除特定邮件头字段的机制。邮件头防火墙影响两种不同的头字段：
 
@@ -56,9 +56,9 @@ Exchange 中的组织 X-header 和林 X-header
     
     有关组织 X-header 和林 X-header 的示例，请参阅本主题结尾处的 Exchange 中的组织 X-header 和林 X-header部分。
 
-  - **Received:路由邮件头**   接受并将邮件转发到收件人的每个邮件传递服务器向邮件头字段添加此邮件头字段的不同实例。**Received:**邮件头通常包含邮件传递服务器的名称和日期时间戳。
+  - **Received:路由邮件头**   接受并将邮件转发到收件人的每个邮件传递服务器向邮件头字段添加此邮件头字段的不同实例。**Received:** 邮件头通常包含邮件传递服务器的名称和日期时间戳。
 
-  - **Resent-\*:路由头**   Resent 头字段是信息性头字段，可用于确定邮件是否已由用户转发。以下是可用的 Resent 邮件头字段：**Resent-Date:**、**Resent-From:**、**Resent-Sender:**、**Resent-To:**、**Resent-Cc:**、**Resent-Bcc:** 和 **Resent-Message-ID:**。使用 **Resent-** 字段可使邮件在收件人处看似是由原始发件人直接发来的邮件。收件人可以查看该邮件头来了解邮件是谁转发的。
+  - **Resent-\*:路由头**   Resent 头字段是信息性头字段，可用于确定邮件是否已由用户转发。以下是可用的 Resent 邮件头字段：** Resent-Date:** 、**Resent-From:** 、**Resent-Sender:** 、**Resent-To:** 、**Resent-Cc:** 、**Resent-Bcc:**  和 **Resent-Message-ID:** 。使用 **Resent-** 字段可使邮件在收件人处看似是由原始发件人直接发来的邮件。收件人可以查看该邮件头来了解邮件是谁转发的。
 
 Exchange 使用两种不同的方法将邮件头防火墙应用于邮件中存在的组织 X-header、林 X-header 和路由邮件头：
 
@@ -372,13 +372,13 @@ Exchange 使用两种不同的方法将邮件头防火墙应用于邮件中存�
     
     路由邮件头保留在重播目录提交的邮件中。
     
-    是否在重播目录中的邮件内保留组织 X-header 和林 X-header 由 **X-CreatedBy:** 控制。邮件文件中的邮件头字段：
+    是否在重播目录中的邮件内保留组织 X-header 和林 X-header 由 **X-CreatedBy:**  控制。邮件文件中的邮件头字段：
     
-      - 如果 **X-CreatedBy:** 的值是 `MSExchange15`，则组织 X-header 和林 X-header 会保留在邮件中。
+      - 如果 **X-CreatedBy:**  的值是 `MSExchange15`，则组织 X-header 和林 X-header 会保留在邮件中。
     
-      - 如果 **X-CreatedBy:** 的值不是 `MSExchange15`，则组织 X-header 和林 X-header 会从邮件中删除。
+      - 如果 **X-CreatedBy:**  的值不是 `MSExchange15`，则组织 X-header 和林 X-header 会从邮件中删除。
     
-      - 如果邮件文件中不存在 **X-CreatedBy:** 邮件头字段，则组织 X-header 和林 X-header 会从邮件中删除。
+      - 如果邮件文件中不存在 **X-CreatedBy:**  邮件头字段，则组织 X-header 和林 X-header 会从邮件中删除。
 
   - **投递目录**   投递目录由邮箱服务器上的外部连接器使用，用于将邮件发送到不使用 SMTP 来传输邮件的邮件传递服务器。有关外部连接器的详细信息，请参阅[外部连接器](foreign-connectors-exchange-2013-help.md)。
     

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-01-31_
+_**上一次修改主题：** 2014-01-31_
 
 在 Microsoft Exchange Server 2013 中，您可以使用 Exchange 工具箱中的队列查看器或 Exchange 命令行管理程序来管理队列。有关在 Exchange 命令行管理程序中使用队列管理 cmdlet 的详细信息，请参阅[使用 Exchange 命令行管理程序管理队列](use-the-exchange-management-shell-to-manage-queues-exchange-2013-help.md)。
 

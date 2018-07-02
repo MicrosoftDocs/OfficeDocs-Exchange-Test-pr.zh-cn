@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-01-14_
+_**上一次修改主题：** 2015-01-14_
 
 您可以制作独立于 Microsoft Exchange Server 2013 的数据丢失防护 (DLP) 策略模板为 XML 文件，然后使用 Exchange 管理中心或 Exchange 命令行管理程序导入它们。该部分介绍创作和调整 DLP XML 文件以在 DLP 解决方案内使用的流程和详细信息。您无需制作自己的 DLP XML 文件，因为 Exchange 管理中心提供了让您快速使用现有 DLP 策略模板和传输规则扫描邮件的方式。
 

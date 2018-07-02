@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-14_
+_**上一次修改主题：** 2012-11-14_
 
 在为用户启用 UM 将其与 E.164 拨号计划关联时，将创建两个 EUM 代理地址。一个地址包含用户的分机号码，另一个地址包含用户的 E.164 号码。在用户呼叫 Outlook Voice Access 号码时，会使用分机号码。
 

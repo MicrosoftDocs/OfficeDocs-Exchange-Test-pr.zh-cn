@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 您可以启用呼叫者转移呼叫的用户通过自动助理，或阻止他们这样做。默认情况下此选项被启用，并允许调用方将对启用 UM 的用户的呼叫转移与 UM 自动助理的统一邮件 (UM) 拨号计划中。
 

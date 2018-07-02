@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-08_
+_**上一次修改主题：** 2015-04-08_
 
 您可以使用 Exchange 命令行管理程序配置通过远程域发送和接收电子邮件的方式。下面演示如何使用 Exchange 命令行管理程序配置 Exchange 处理外出答复的方式。
 

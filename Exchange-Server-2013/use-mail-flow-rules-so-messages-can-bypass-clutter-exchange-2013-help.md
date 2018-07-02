@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 如果您想要确保收到特定邮件，您可以创建 Exchange 传输规则，以确保这些邮件绕过混乱邮件文件夹。有关混乱邮件的详细信息，请查看[在 Outlook Web App 中使用混乱邮件排序低优先级邮件](https://go.microsoft.com/fwlink/p/?linkid=528411)。
 

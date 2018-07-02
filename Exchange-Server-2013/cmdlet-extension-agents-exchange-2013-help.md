@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 Cmdlet 扩展代理是在 cmdlet 运行时，由 Exchange 2013 cmdlet 调用的 Microsoft Exchange Server 2013 中的组件。顾名思义，cmdlet 扩展代理可扩展 cmdlet 的功能，通过帮助处理数据或执行其他基于 cmdlet 要求的操作来调用这些功能。Cmdlet 扩展代理在任何服务器角色上均可用。
 

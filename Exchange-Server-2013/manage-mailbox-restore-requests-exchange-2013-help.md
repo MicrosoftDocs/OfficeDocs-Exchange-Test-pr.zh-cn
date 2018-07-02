@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 邮箱还原请求用于还原断开连接的邮箱。断开连接的邮箱是邮 Exchange 箱数据库中不与 Active Directory 用户帐户关联的邮箱。在禁用、删除邮箱或将邮箱移到其他数据库时，邮箱就会断开连接。有关详细信息，请参阅[断开连接的邮箱](disconnected-mailboxes-exchange-2013-help.md)。
 

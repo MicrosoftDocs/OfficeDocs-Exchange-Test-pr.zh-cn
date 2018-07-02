@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-01-30_
+_**上一次修改主题：** 2013-01-30_
 
 [设置 UM 自动助理](set-up-a-um-auto-attendant-exchange-2013-help.md)
 

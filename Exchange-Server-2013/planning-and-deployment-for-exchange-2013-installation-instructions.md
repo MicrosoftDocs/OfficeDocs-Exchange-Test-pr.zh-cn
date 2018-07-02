@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 是否需要获取 Exchange 安装指导？本文提供了有关规划 Microsoft Exchange Server 2013 开发的指导，以及你在开发过程中需要查看的文章链接。
 

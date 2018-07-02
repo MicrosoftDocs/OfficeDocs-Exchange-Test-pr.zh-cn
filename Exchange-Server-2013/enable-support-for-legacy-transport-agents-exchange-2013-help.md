@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 在 Microsoft Exchange Server 2013 中，默认情况下支持使用 Microsoft .NET Framework 版本 4.0 创建的传输代理。Exchange 2013 支持使用以前版本的 .NET Framework 创建的传输代理，但是默认情况下不会启用对这些旧版传输代理的支持。若要启用对旧版传输代理的支持，需要修改相应的 XML 应用程序配置文件。需要修改的文件取决于传输代理的安装位置：
 

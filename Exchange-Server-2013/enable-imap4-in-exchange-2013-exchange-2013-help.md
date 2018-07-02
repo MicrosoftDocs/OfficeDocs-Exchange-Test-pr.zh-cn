@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-06-02_
+_**上一次修改主题：** 2016-06-02_
 
 了解如何使用 Microsoft 管理控制台 (MMC) 或 Exchange 命令行管理程序 (EMS) 在 Exchange 2016 中启用 IMAP4 客户端连接。
 

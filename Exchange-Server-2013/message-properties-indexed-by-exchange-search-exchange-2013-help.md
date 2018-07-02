@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-17_
+_**上一次修改主题：** 2015-04-17_
 
 Exchange 搜索索引许多项的属性，包括电子邮件的发件人、收件人、邮件正文和附件。
 
@@ -501,7 +501,7 @@ Exchange 搜索索引许多项的属性，包括电子邮件的发件人、收�
 </table>
 
 
-**有关索引属性的说明：**
+**有关索引属性的说明：** 
 
   - **可查询属性**可由搜索客户端在 AQS 查询中使用，如 `property:value` 对中的 Outlook Web App，例如，`from:bsuneja@cotoso.com`。列于以前表格中的可查询属性子集还可用于就地电子数据的搜索查询。有关这些属性的列表，请参阅[就地电子数据展示的邮件属性和搜索运算符](message-properties-and-search-operators-for-in-place-ediscovery-exchange-2013-help.md)。
 

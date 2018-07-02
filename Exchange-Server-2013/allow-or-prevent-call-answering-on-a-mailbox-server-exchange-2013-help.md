@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-18_
+_**上一次修改主题：** 2012-11-18_
 
 以回答新的呼叫或禁止它这样做的邮箱服务器上，您可以允许 Microsoft Exchange 统一消息服务。默认情况下，邮箱服务器处于启用状态安装后。在设置邮箱服务器接受传入的语音、 传真、 自动助理和 Outlook Voice Access 调用时，您可以使用**Set-ServerComponentState** cmdlet。
 

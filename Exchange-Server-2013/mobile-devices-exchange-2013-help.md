@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-09-24_
+_**上一次修改主题：** 2012-09-24_
 
 用户可通过启用了 MicrosoftExchange ActiveSync 的移动设备随时随地访问其大部分 Microsoft Exchange 邮箱数据。很多不同的移动电话和移动设备都启用了 Exchange ActiveSync。这些设备包括 Windows Phone、Nokia 移动电话、Android 电话和平板电脑、Apple iPhone、iPod 和 iPad。
 

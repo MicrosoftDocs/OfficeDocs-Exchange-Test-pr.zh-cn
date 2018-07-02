@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-06_
+_**上一次修改主题：** 2013-02-06_
 
 ActiveSync.Protocol 运行状况设置监视邮件服务器上 Exchange ActiveSync 通信协议的总体运行状况。如果收到指定 ActiveSync.Protocol 运行状况设置不正常的警报，则表明出现了影响警报中指示的邮件服务器的 ActiveSync 组件的问题。
 

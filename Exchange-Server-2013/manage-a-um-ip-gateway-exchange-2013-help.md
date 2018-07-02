@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-21_
+_**上一次修改主题：** 2013-02-21_
 
 创建统一邮件 (UM) IP 网关之后，可以查看或配置各种设置。例如，您可以配置的 IP 地址或完全合格的域名称 (FQDN)，配置传出呼叫设置，并启用或禁用消息等待指示符。
 

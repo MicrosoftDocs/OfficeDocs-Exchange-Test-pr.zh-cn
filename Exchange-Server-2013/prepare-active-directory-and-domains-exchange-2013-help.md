@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 安装 Microsoft Exchange Server 2013 之前，你需要准备 Active Directory 林及其子域。Exchange 需要准备 Active Directory，使其可以存储关于用户邮箱以及组织中 Exchange 服务器的配置的信息。如果您对 Active Directory 林或域不熟悉，请参阅 [Active Directory 域服务概述](https://go.microsoft.com/fwlink/p/?linkid=399226)。
 

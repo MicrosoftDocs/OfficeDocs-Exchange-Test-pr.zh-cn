@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2010, Exchange Server 2013_
+_**适用于：** Exchange Server 2010, Exchange Server 2013_
 
-_**上一次修改主题：**2014-11-16_
+_**上一次修改主题：** 2014-11-16_
 
 脱机通讯簿 (OAB) 是已下载的地址列表集的副本，因此 Microsoft Outlook 用户可以在与服务器断开连接的情况下访问通讯簿。Microsoft Exchange 生成新的 OAB 文件，然后压缩文件并将其置于本地共享。可以决定脱机工作的用户可以使用哪些地址列表，也可以配置分发通讯簿的方式。
 

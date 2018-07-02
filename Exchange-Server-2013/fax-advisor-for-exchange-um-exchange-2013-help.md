@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Microsoft统一消息 (UM) 依赖于认证的传真的传真增强的功能，如传真路由或出站传真的合作伙伴解决方案。默认情况下，用户不能配置以允许传入传真消息传递到已启用 UM 的用户。Exchange 服务器将传真请求发送到传真认证的合作伙伴解决方案。传真伙伴的服务器接收传真数据，然后将其发送到收件人的邮箱中的电子邮件与传真包含.tif 附件的形式。有关详细信息，请参阅[为语音邮件用户启用接收传真功能](enable-voice-mail-users-to-receive-faxes-exchange-2013-help.md)。
 

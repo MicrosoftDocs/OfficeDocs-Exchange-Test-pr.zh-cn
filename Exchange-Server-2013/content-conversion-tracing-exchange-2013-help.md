@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-09-25_
+_**上一次修改主题：** 2012-09-25_
 
 内容转换跟踪将捕获发生在 Microsoft Exchange Server 2013 邮箱服务器上入站和出站邮件上邮箱传输服务执行的 MAPI 内容转换中的失败。
 

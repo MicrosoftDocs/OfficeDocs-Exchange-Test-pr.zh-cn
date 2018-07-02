@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-01-04_
+_**上一次修改主题：** 2015-01-04_
 
 组织关系可让 Exchange 组织中的用户与 Office 365 组织或其他 Exchange 本地组织共享日历忙/闲信息。您可以通过删除组织关系来禁用与其他组织共享日历。
 

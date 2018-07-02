@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-11-29_
+_**上一次修改主题：** 2012-11-29_
 
 用户可以将多个移动设备配置为与 Microsoft Exchange Server 2013 同步。可以使用 EAC 或命令行管理程序查看与特定用户关联的移动设备的列表。
 

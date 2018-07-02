@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 语音邮件预览是接收语音邮件从统一邮件 (UM) 的用户都可以使用的功能。语音邮件预览提供录音的文本版本，从而增强了现有 UM 语音邮件功能。语音邮件文本将显示在MicrosoftOutlook Web App、 Outlook 2010和更高版本中的电子邮件和其他支持的电子邮件程序。有关详细信息，请参阅[Microsoft 语音技术](http://go.microsoft.com/fwlink/p/?linkid=187348)。
 

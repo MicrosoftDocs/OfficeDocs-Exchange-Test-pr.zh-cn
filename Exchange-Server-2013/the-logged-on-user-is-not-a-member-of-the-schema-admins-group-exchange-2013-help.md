@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2014-12-02_
+_**上一次修改主题：** 2014-12-02_
 
 Microsoft Exchange Server 2013 安装程序无法继续，因为执行 Active Directory 架构更新过程的用户帐户不是 Schema Admins 和 Enterprise Admins 组的成员。
 

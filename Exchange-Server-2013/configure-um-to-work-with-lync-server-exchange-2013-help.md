@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-06-11_
+_**上一次修改主题：** 2013-06-11_
 
 集成 Microsoft Lync Server 和 Exchange 统一消息时，必须在命令行管理程序中运行 ExchUcUtil.ps1 脚本。ExchUcUtil.ps1 脚本会执行下列操作：
 

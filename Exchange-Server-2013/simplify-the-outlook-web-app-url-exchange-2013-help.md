@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-07-16_
+_**上一次修改主题：** 2015-07-16_
 
-**摘要：**使用本文中的过程简化你的组织用户用于访问 Exchange 2013 中的 OWA 的 URL。
+**摘要：** 使用本文中的过程简化你的组织用户用于访问 Exchange 2013 中的 OWA 的 URL。
 
 你可以简化用户用于访问其 Exchange Server 2013 邮箱的 MicrosoftOutlook Web App URL。
 

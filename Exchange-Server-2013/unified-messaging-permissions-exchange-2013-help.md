@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 在运行 Microsoft Exchange 统一消息呼叫路由器服务的客户端访问服务器上以及运行 Microsoft Exchange 统一消息服务的邮箱服务器上执行任务所需的权限将根据所执行的步骤或者要运行的 cmdlet 而有所不同。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2014-12-02_
+_**上一次修改主题：** 2014-12-02_
 
 因检测到当前帐户未登录到 Active Directory 域，Microsoft Exchange Server 2013 安装程序无法继续。必须使用具有 Exchange Server 2013 安装权限的 Active Directory 帐户进行登录。
 

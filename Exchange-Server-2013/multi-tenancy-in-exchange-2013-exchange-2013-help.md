@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 多租户（托管）Exchange 2013 部署是这样定义的：在这种部署中，Exchange 组织配置为承载多个离散组织或业务单位（租户），这些租户通常不共享电子邮件、数据、用户、全局地址列表 (GAL) 或其他常用的 Exchange 对象。通过这种硬件、软件和资源的共享（同时完全保持租户之间的逻辑分隔），组织可以利用标准 Exchange 部署的简单性，同时还能提供多租户功能和服务以满足其托管需求。
 

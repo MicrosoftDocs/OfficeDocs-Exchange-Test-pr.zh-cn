@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-05-21_
+_**上一次修改主题：** 2013-05-21_
 
 Microsoft Exchange Server 2013 识别 Active Directory 站点和数据库可用性组 (DAG) 作为路由边界。但是，Exchange 2013 仍使用 Active Directory 站点拓扑来确定邮件在组织的不同 DAG 或不同站点的 Exchange 服务器中间传输的方式。有关详细信息，请参阅[邮件路由](mail-routing-exchange-2013-help.md)。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-01-23_
+_**上一次修改主题：** 2014-01-23_
 
 在 Microsoft Exchange Server 2013 中，可在邮箱服务器上的传输服务中使用以下反垃圾邮件代理，但是默认情况下不会安装这些代理：
 

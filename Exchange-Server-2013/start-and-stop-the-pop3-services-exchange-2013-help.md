@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-03-13_
+_**上一次修改主题：** 2013-03-13_
 
 默认情况下，Microsoft Exchange POP3 服务和 Microsoft Exchange POP3 后端服务这两项 POP3 服务在运行 MicrosoftExchange Server 2013 的计算机上并未启动。您必须启动这两项服务，才能让电子邮件客户端使用 POP3 连接到 Exchange。当这些服务运行时，Exchange 2013 使用安全套接字层 (SSL) 在端口 110 以及通过端口 995 接受不安全的 POP3 客户端通信。
 

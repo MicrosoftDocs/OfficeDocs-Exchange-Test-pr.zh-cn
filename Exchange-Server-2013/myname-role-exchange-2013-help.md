@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-17_
+_**上一次修改主题：** 2012-10-17_
 
 `MyName`管理角色使各个用户可以查看和修改其全名和他们备注字段。这是在[MyProfileInformation 角色](myprofileinformation-role-exchange-2013-help.md)父角色中创建自定义角色。
 

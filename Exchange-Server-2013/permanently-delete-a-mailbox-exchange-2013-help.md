@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2012-11-16_
+_**上一次修改主题：** 2012-11-16_
 
 永久删除活动邮箱和断开连接的邮箱时，将从 Exchange 邮箱数据库中清除所有邮箱内容，并将永久丢失数据。 在永久删除活动邮箱时，也会删除关联的 Active Directory 用户帐户。
 

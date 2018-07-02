@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-01-07_
+_**上一次修改主题：** 2015-01-07_
 
 通过以下过程，您可以开始在邮件环境中使用数据丢失防护 (DLP) 解决方案。若要了解 DLP 的概念和目标，请参阅[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)。
 

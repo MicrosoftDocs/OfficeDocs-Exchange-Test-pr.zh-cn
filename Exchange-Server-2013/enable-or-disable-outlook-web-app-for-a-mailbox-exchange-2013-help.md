@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2012-11-14_
+_**上一次修改主题：** 2012-11-14_
 
 可以使用 EAC 或命令行管理程序启用或禁用用户邮箱的 Outlook Web App。 在启用 Outlook Web App 时，用户可以使用 Outlook Web App 发送和接收电子邮件。 在禁用 Outlook Web App 时，邮箱将继续接收电子邮件消息，用户可以使用 MAPI 客户端（如 Microsoft Outlook）访问邮箱来发送和接收电子邮件；也可以使用 POP 或 IMAP 电子邮件客户端，前提是邮箱支持通过这些客户端访问。
 
@@ -75,11 +75,11 @@ _**上一次修改主题：**2012-11-14_
 
 4.  在“电子邮件连接”下，执行下列操作之一：
     
-      - 若要禁用 Outlook Web App，请在“Outlook Web App:**已启用**，请单击“禁用”。
+      - 若要禁用 Outlook Web App，请在“Outlook Web App:** 已启用**，请单击“禁用”。
         
         此时将显示一条警告，询问是否确实要禁用 Outlook Web App。单击“是”。
     
-      - 若要启用 Outlook Web App，请在“Outlook Web App:**已禁用**，请单击“启用”。
+      - 若要启用 Outlook Web App，请在“Outlook Web App:** 已禁用**，请单击“启用”。
 
 5.  单击“保存”以保存您所做的更改。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**适用于：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 将 Microsoft Exchange Server 2013 安装到现有的 Microsoft Exchange Server 2010 或 Microsoft Exchange Server 2007 组织中时，您需要了解新组织中的权限工作原理。阅读以下适用于您的组织的部分。
 

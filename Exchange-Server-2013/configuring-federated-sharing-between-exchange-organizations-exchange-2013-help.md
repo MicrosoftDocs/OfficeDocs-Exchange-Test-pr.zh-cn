@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 使用联合共享，您的内部部署 Exchange 组织中的用户可以与同样配置了联合共享的其他 Exchange 组织中的收件人共享忙/闲日历信息。忙/闲共享可以在两个运行 Exchange 2013 的组织之间以及采用混合 Exchange 部署的组织之间实现。若要了解有关联合共享的详细信息，请参阅[共享](sharing-exchange-2013-help.md)。
 

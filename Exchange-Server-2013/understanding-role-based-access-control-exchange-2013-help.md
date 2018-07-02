@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2018-01-31_
+_**上一次修改主题：** 2018-01-31_
 
 *Role Based Access Control* (RBAC) 是用于 Microsoft Exchange Server 2013 的权限模型。通过 RBAC，您不需要修改和管理访问控制列表 (ACL)，而在 Exchange Server 2007 中则需要执行这些操作。ACL 在 Exchange 2007 中带来了多个难题，例如修改 ACL 而不产生意外后果、通过升级来维持 ACL 修改，以及解决由于以非标准方式使用 ACL 而出现的问题。
 

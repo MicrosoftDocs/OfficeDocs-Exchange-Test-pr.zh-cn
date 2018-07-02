@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Microsoft Exchange 2013 支持使用 **New-MoveRequest** 和 **New-MigrationBatch** cmdlet 进行邮箱移动和迁移。您还可以通过 Exchange 管理中心 (EAC) 移动邮箱。可以将邮箱从源 Exchange 林移到目标 Exchange 2010 林中。
 

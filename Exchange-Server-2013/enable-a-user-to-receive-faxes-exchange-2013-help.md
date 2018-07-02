@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 您可以启用统一邮件 (UM) 用户可以接收传真。默认情况下，当您为用户启用统一消息，他们将能够接收传真，如果启用传真和链接到用户的 UM 邮箱策略上配置传真伙伴的 URI。传真可以启用或禁用在 UM 拨号计划、 UM 邮箱策略或启用 UM 的用户的邮箱。
 

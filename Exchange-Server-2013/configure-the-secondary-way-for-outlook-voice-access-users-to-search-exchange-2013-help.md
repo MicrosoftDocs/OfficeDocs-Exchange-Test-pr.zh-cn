@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 当您创建拨号计划时，您可以配置主要和次要*拨由名称的方法*或方法的调用方可以搜索名称。调用方通过名称方法使用这些拨号查找查找并联系时它们调用Outlook语音访问号码或当他们连接到 UM 自动助理与拨号计划相关联的用户的名称。调用方可以使用按键输入查找已启用 UM 的用户。
 

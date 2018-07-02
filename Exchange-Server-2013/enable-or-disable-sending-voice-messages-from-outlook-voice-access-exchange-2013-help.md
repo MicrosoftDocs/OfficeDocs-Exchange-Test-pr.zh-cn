@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-12-13_
+_**上一次修改主题：** 2012-12-13_
 
 您可以让 Outlook Voice Access 用户将语音邮件发送到与同一拨号计划关联且启用 UM 的用户，也可以阻止他们这么做。
 

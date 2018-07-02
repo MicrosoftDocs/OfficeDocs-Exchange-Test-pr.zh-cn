@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 启用统一邮件 UM 的语音邮件用户无法访问其邮箱如何使用 Outlook Voice Access，因为他们尝试登录中使用多次的 PIN 不正确，或者他们忘记了他们的 PIN，可以使用以下过程之一来重置用户的 PIN。重置用户的Outlook语音访问针时，您可以配置 UM 自动生成 PIN 或者您可以手动指定的 PIN。新 PIN 被发送到用户在电子邮件中。您可以指定其他针选项如要求用户在首次登录时重置其 PIN。用户还可以将使用Outlook或Outlook Web App的 UM PIN 重置。
 

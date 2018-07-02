@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Exchange 2013 可用性服务可向 Microsoft Outlook 和 Outlook Web App 客户端提供忙/闲信息。可用性服务通过提供安全、一致、最新的忙/闲信息，改善信息工作者的日历和会议安排体验。
 

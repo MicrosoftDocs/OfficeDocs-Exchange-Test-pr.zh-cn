@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 在为用户启用统一消息 (UM) 时，会将一组默认的 UM 属性应用于用户，用户可以使用统一消息随附的语音邮件功能。为某用户启用语音邮件后，如果为其分配一个链接到 SIP URI 拨号计划的 UM 邮箱策略，则您可以选择为该用户添加一个会话初始协议 (SIP) 地址。如果为其分配一个链接到 E.164 拨号计划的 UM 邮箱策略，您也可以为该用户添加一个 E.164 号码。无论哪种情况，用户必须仍然配置分机号码。
 

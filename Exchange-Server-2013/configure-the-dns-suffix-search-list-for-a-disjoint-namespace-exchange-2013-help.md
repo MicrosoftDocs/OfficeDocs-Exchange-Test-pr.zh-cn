@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 本主题说明如何使用组策略管理控制台 (GPMC) 配置域名系统 (DNS) 后缀搜索列表。在一些 Microsoft Exchange 2013 方案中，如果具有脱节命名空间，则必须配置 DNS 后缀搜索列表以包括多个 DNS 后缀。
 

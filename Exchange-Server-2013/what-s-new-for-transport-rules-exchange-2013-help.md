@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2014-10-03_
+_**上一次修改主题：** 2014-10-03_
 
 在 Exchange Server 2013 中，对传输规则进行了几处改进。本主题简要概述了一些重要更改和增强功能。有关传输规则的详细信息，请参阅[邮件流或传输规则](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)。
 

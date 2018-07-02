@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 *cmdlet*，全称为\&quot;command-let\&quot;，是 Exchange 命令行管理程序中最小的功能单元。Cmdlet 类似于其他命令行管理程序中的内置命令，例如 `cmd.exe` 中的 `dir` 命令。与这些熟悉的命令一样，cmdlet 可以直接从命令行管理程序中的命令行调用，并在命令行管理程序的环境中运行，而不是作为单独的进程运行。
 

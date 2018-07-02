@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-06-25_
+_**上一次修改主题：** 2013-06-25_
 
 本主题说明如何使用命令行管理程序测试语音邮件系统的操作。在执行以下步骤时，运行 Microsoft Exchange 统一消息服务的邮箱服务器启动一个诊断会话初始协议 (SIP) 呼叫，然后返回 UM 服务的健康状况变量。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 安装 Microsoft Exchange Server 2013 后，我们建议您通过运行 **Get-ExchangeServer** cmdlet 并检查安装日志文件来验证安装。如果安装过程失败，或在安装期间出错，则可以使用安装日志文件查找问题的来源。
 

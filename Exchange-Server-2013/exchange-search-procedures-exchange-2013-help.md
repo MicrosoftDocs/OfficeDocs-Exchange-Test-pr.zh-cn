@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-05_
+_**上一次修改主题：** 2013-02-05_
 
 [禁用或启用 Exchange 搜索](disable-or-enable-exchange-search-exchange-2013-help.md)
 

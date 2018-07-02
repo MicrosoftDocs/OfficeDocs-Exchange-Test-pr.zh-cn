@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-11-19_
+_**上一次修改主题：** 2012-11-19_
 
 此主题展示如何在 Microsoft Exchange Server 2013 中启用、禁用、查看 cmdlet 扩展代理以及更改 cmdlet 扩展代理的优先级。有关 Exchange 2013 中的 cmdlet 扩展代理的详细信息，请参阅 [cmdlet 扩展代理](cmdlet-extension-agents-exchange-2013-help.md)。
 

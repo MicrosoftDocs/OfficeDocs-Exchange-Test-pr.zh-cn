@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 对于下列 Microsoft Exchange Server 2013信息权限管理 (IRM) 功能以启用，必须添加到您的组织的[Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx)群集上的超级用户组联盟邮箱 （ Exchange 2013安装程序所创建的系统邮箱）︰
 

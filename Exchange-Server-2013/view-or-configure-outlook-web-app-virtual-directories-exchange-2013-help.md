@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-08-12_
+_**上一次修改主题：** 2013-08-12_
 
 您可以使用 EAC 或命令行管理程序查看或配置 Outlook Web App 虚拟目录的属性。
 

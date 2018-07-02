@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-15_
+_**上一次修改主题：** 2016-12-15_
 
 在 Exchange Server 2013 中配置统一消息 (UM) 的电话网络和数据网络时，必须配置 VoIP 网关，以便这些网关与运行 Microsoft Exchange 统一消息呼呼叫路由器服务的客户端访问服务器以及运行 Microsoft Exchange 统一消息服务的邮箱服务器通信。同时，还必须地配置 VoIP 网关，以便与组织中的专用交换机 (PBX) 通信。可以使用本主题中的信息和链接配置 VoIP 网关以与 PBX 通信。
 

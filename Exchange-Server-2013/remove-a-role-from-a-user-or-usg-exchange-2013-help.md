@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-02_
+_**上一次修改主题：** 2012-10-02_
 
 管理角色分配给用户或通用安全组 (USG) 分配管理角色。如果您删除角色分配，分配该角色的用户将不再有权使用的 cmdlet 上该角色。有关 Microsoft Exchange Server 2013中的管理角色分配的详细信息，请参阅[了解管理角色分配](understanding-management-role-assignments-exchange-2013-help.md)。
 

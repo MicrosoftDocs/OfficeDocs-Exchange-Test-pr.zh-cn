@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-03_
+_**上一次修改主题：** 2012-10-03_
 
 如果要使新的脚本或非Exchange cmdlet 供现有未区分范围角色，可以给未区分范围顶级管理角色添加脚本和非Exchange cmdlet。这些脚本和非Exchange cmdlet 未区分范围顶级管理角色添加为管理角色的项。然后可以通过那些未区分范围顶级角色条目使用它们或顶级角色中派生的任何未区分范围的角色。有关未区分范围的角色条目的详细信息，请参阅[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 

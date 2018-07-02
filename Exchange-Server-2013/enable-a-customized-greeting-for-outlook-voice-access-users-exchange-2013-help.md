@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 默认情况下，每个统一邮件 (UM) 拨号计划欢迎问候语，它已向呼叫者播放，包括Outlook拨入到已配置一个 Outlook Voice Access 数字语音访问用户使用标准的.wav 文件。但是，您可以创建的欢迎问候语的.wav 或.wma 文件，然后在 UM 拨号计划上启用它。
 

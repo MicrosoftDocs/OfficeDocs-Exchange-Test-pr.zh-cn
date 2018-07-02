@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-09-30_
+_**上一次修改主题：** 2013-09-30_
 
 在 Microsoft Exchange Server 2013 中，*安全列表聚合*表示在 Microsoft Outlook 和 Exchange 之间共享的反垃圾邮件功能。此功能从 Outlook 用户配置的反垃圾邮件安全收件人列表、安全发件人列表、阻止发件人列表和联系人数据中收集数据，并使 Exchange 反垃圾邮件代理可以使用这些数据。
 

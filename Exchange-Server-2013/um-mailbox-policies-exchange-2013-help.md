@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-15_
+_**上一次修改主题：** 2012-11-15_
 
 当您启用统一消息的用户时，统一邮件 (UM) 邮箱策略是必需的。创建 UM 邮箱策略应用于语音邮件用户邮箱集合的一组通用的策略或安全设置。UM 邮箱策略用于指定 UM 设置如下所示 ︰
 

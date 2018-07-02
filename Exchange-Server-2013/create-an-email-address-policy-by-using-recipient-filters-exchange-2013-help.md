@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-16_
+_**上一次修改主题：** 2012-10-16_
 
 您可借助命令行管理程序使用收件人筛选器来创建电子邮件地址策略。 有关电子邮件地址策略的详细信息，请参阅[电子邮件地址策略](email-address-policies-exchange-2013-help.md)。
 

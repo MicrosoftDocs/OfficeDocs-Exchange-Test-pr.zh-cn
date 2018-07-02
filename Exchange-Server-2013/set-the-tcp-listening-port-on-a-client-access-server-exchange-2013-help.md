@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-09_
+_**上一次修改主题：** 2013-04-09_
 
 您可以配置一个 TCP 端口，使其用来侦听客户端访问服务器（运行 Microsoft Exchange 统一消息呼叫路由器服务）中的 SIP 请求。默认情况下，安装客户端访问服务器时，SIP TCP 侦听端口号将设置为 5060，且客户端访问服务器以 TCP 模式启动。SIP TCP 侦听端口无法使用 EAC 进行配置。必须使用 **Set-UMCallRouterSettings** cmdlet 来配置 SIP TCP 侦听端口号。
 

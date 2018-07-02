@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-06-16_
+_**上一次修改主题：** 2016-06-16_
 
 接受域是 Microsoft Exchange Server 2013 组织为其发送或接收电子邮件的任何 SMTP 命名空间。接受域包括那些 Exchange 组织对其有权威性的域。当 Exchange 组织为接受域中的收件人处理邮件传递时，该组织即具有权威性。接受域还包括 Exchange 组织为其接收邮件然后中继到组织外部的电子邮件服务器以便传递给收件人的域。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2018-01-17_
+_**上一次修改主题：** 2018-01-17_
 
 就地电子数据展示使用系统邮箱存储就地电子数据展示搜索元数据。此发现系统邮箱的显示名为\&quot;SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}\&quot;。由于系统邮箱在 Exchange 管理中心 (EAC) 中或在 Exchange 地址列表中不可见，因此很少会无意中将其删除。
 

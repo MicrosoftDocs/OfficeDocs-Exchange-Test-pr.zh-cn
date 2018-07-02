@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-16_
+_**上一次修改主题：** 2013-04-16_
 
 当统一邮件 (UM) 用户通过电话连接到语音邮件系统时，它们使用Outlook访问语音导航菜单系统。用户可以访问语音邮件系统之前，系统会提示他们输入他们的 PIN。作为管理员，您可以配置 PIN 设置和要求并执行管理任务，针。用户已启用了语音邮件并已生成 PIN 后，加密用户的邮箱中存储用户的 PIN。
 

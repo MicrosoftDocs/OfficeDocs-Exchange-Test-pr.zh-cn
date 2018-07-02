@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-07-28_
+_**上一次修改主题：** 2016-07-28_
 
 本主题介绍用于匹配数据丢失预防 (DLP) XML 文件（该文件旨在包含您自己的自定义敏感信息类型规则包）中的模式和证据元素的方法。在创建了标准格式的 XML 文件之后，可以使用 Exchange 管理中心 (EAC) 或 Exchange 命令行管理程序导入文件，以便帮助创建 Microsoft Exchange Server 2013 DLP 解决方案。应当已启动 DLP XML 文件，才能使用此处介绍的匹配方法。有关定义自己的 DLP 模板和 XML 文件的详细信息，请参阅[定义您自己的 DLP 模板和信息类型](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)。
 

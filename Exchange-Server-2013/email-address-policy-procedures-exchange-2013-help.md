@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-13_
+_**上一次修改主题：** 2012-10-13_
 
 [创建电子邮件地址策略](create-an-email-address-policy-exchange-2013-help.md)
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**上一次修改主题：**2017-02-28_
+_**上一次修改主题：** 2017-02-28_
 
 本主题介绍如何更新在联合身份验证信任中使用的自签名联合身份验证证书：
 
@@ -83,7 +83,7 @@ _**上一次修改主题：**2017-02-28_
 
 有关语法和参数的详细信息，请参阅 [Set-FederationTrust](https://technet.microsoft.com/zh-cn/library/dd298034\(v=exchg.150\))。
 
-**注意：**命令输出包含一条警告消息，提示你需要更新 DNS 中域所有权 TXT 记录的证明。你将在下一步中执行此操作。
+**注意：** 命令输出包含一条警告消息，提示你需要更新 DNS 中域所有权 TXT 记录的证明。你将在下一步中执行此操作。
 
 ## 步骤 3：更新外部 DNS 中域所有权 TXT 记录的联合身份验证证明
 
@@ -119,7 +119,7 @@ Exchange 将新的联合身份验证证书自动分发到所有服务器，但�
 
     $Servers = Get-ExchangeServer; $Servers | foreach {Get-ExchangeCertificate -Server $_ | Where {$_.Services -match 'Federation'}} | Format-List Identity,Thumbprint,Services,Subject
 
-**注意：**在 Exchange 2010 中，**Test-FederationCertificate** cmdlet 的输出包含服务器名称。Exchange 2013 或更高版本的 cmdlet 的输出不包含服务器名称。
+**注意：** 在 Exchange 2010 中，**Test-FederationCertificate** cmdlet 的输出包含服务器名称。Exchange 2013 或更高版本的 cmdlet 的输出不包含服务器名称。
 
 ## 步骤 5：激活新的联合身份验证证书
 
@@ -129,7 +129,7 @@ Exchange 将新的联合身份验证证书自动分发到所有服务器，但�
 
 有关语法和参数的详细信息，请参阅 [Set-FederationTrust](https://technet.microsoft.com/zh-cn/library/dd298034\(v=exchg.150\))。
 
-**注意：**命令输出包含一条警告消息，提示你需要更新 DNS 中域所有权 TXT 记录的证明（已在步骤 3 中执行此操作）。
+**注意：** 命令输出包含一条警告消息，提示你需要更新 DNS 中域所有权 TXT 记录的证明（已在步骤 3 中执行此操作）。
 
 ## 您如何知道这有效？
 

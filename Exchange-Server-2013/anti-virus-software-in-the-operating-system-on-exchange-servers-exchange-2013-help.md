@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-07-22_
+_**上一次修改主题：** 2016-07-22_
 
 本主题介绍文件级防病毒程序对运行 Microsoft Exchange Server 2013 的计算机的影响。如果按照本主题中所述的建议操作，可以帮助提高 Exchange 组织的安全性并改善运行状况。
 

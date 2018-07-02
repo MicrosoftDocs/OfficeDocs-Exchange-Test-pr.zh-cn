@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-05_
+_**上一次修改主题：** 2012-10-05_
 
 使用 MicrosoftOutlook Web App 邮箱策略创建组织级别策略可管理对 Outlook Web App 中功能的访问权限。
 

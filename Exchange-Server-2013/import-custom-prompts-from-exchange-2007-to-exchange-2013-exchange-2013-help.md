@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-04-08_
+_**上一次修改主题：** 2015-04-08_
 
 您可以将包含自定义问候语、通知、菜单和提示的音频文件从 Exchange 2007 统一消息 (UM) 导入至 Exchange 2013 统一消息。使用命令行管理程序脚本，提示将导入到安装 Microsoft Exchange 2013 时创建的名为 {e0dc1c29-89c3-4034-b678-e6c29d823ed9} 的 Exchange 系统邮箱。该系统邮箱用于在统一消息中存储拨号计划和自动助理自定义问候语、通知、菜单、提示和 UM 报告。
 

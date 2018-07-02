@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-09_
+_**上一次修改主题：** 2012-11-09_
 
 可以指定断开呼叫者之前允许登录尝试连续不成功的次数。此设置的值可以介于 1 到 20 之间。此值设置得太低可能会给用户带来麻烦。对于大多数组织来说，应当将此值设置为默认的 3 次尝试。
 

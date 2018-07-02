@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-05-07_
+_**上一次修改主题：** 2014-05-07_
 
 在创建邮箱数据库之后，通过使用 EAC 或命令行管理程序，可以将其移动到另一个卷、文件夹、位置或路径。有关如何移动非复制邮箱数据库的数据库路径的分步说明，请参阅[Move a mailbox database path](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md)。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-01-01_
+_**上一次修改主题：** 2015-01-01_
 
 联合身份验证信任将建立 Microsoft Exchange 2013 组织和 Azure Active Directory 身份验证系统之间的信任关系，并支持与其他联合 Exchange 组织的联合共享。创建联合身份验证信任之后，通常不必对其进行管理或修改。但是，在某些情况下可能需要添加或删除联盟域，或是重置用于为联合身份验证信任配置组织标识符 (OrgID) 的域。
 

@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-06-19_
+_**上一次修改主题：** 2014-06-19_
 
 本主题介绍如何使用 Microsoft Exchange Server 2013 安装向导将 Exchange 2013 邮箱和客户端访问角色安装在计算机上。有关规划和部署 Exchange 2013 的详细信息，请参阅[规划和部署](planning-and-deployment-for-exchange-2013-installation-instructions.md)。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-13_
+_**上一次修改主题：** 2012-11-13_
 
 您可以启用或禁用统一邮件 (UM) IP 网关的传出呼叫。当清除 UM IP 网关的属性上的**允许拨出电话，通过此 UM IP 网关**选项时，您将配置 UM IP 网关不接受并通过 IP (VoIP) 网关，IP PBX 或会话边框控制器 (SBC) 发送到语音拨出电话。尽管它不影响设置可控制是否可以拨出电话的用户启动 UM IP 网关**通过此 UM IP 网关允许拨出电话**，呼叫转移或从 VoIP 网关，IP PBX 或 SBC 的传入呼叫。
 

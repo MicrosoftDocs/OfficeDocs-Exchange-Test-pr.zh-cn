@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-01-17_
+_**上一次修改主题：** 2013-01-17_
 
 可以使用 Exchange 工具箱中的队列查看器来查看排队等待传递的邮件的属性。
 

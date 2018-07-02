@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 使用混合配置向导时，仅 Exchange 2013 混合部署将配置 OAuth 身份验证。对于 Exchange 2013/2010 与 Exchange 2013/2007 混合部署，Office 365 和内部部署组织之间基于新混合部署 OAuth 的身份验证连接不由混合配置向导配置。默认情况下，这些部署继续使用联合身份验证信任过程。但是，某些 Exchange 2013 功能仅在使用新的 Exchange OAuth 身份验证协议时，才在整个组织内完全可用。
 
@@ -142,7 +142,7 @@ Exchange Server 2013 的此项功能与由世纪互联在中国运营的 Office 
 
 ## 步骤 5：使用 Azure Active Directory 为外部本地 Exchange HTTP 端点注册所有主机名颁发机构
 
-在此步骤中，您必须为可公开访问的本地 Exchange 组织中的每个端点运行该脚本。我们建议您使用通配符（如果可以的话）。例如，假设可通过 **https://mail.contoso.com/ews/exchange.asmx** 从外部访问 Exchange。在这种情况下，可以使用单个通配符：**\*.contoso.com**。这样就可以涵盖 autodiscover.contoso.com 和 mail.contoso.com 端点。不过，不会涵盖顶级域 **contoso.com**。如果 Exchange 2013 客户端访问服务器可通过顶级主机名颁发机构从外部访问，则您必须也将该主机名颁发机构注册为 **contoso.com**。注册其他外部主机名颁发机构并无限制。
+在此步骤中，您必须为可公开访问的本地 Exchange 组织中的每个端点运行该脚本。我们建议您使用通配符（如果可以的话）。例如，假设可通过 **https://mail.contoso.com/ews/exchange.asmx** 从外部访问 Exchange。在这种情况下，可以使用单个通配符：** \*.contoso.com**。这样就可以涵盖 autodiscover.contoso.com 和 mail.contoso.com 端点。不过，不会涵盖顶级域 **contoso.com**。如果 Exchange 2013 客户端访问服务器可通过顶级主机名颁发机构从外部访问，则您必须也将该主机名颁发机构注册为 **contoso.com**。注册其他外部主机名颁发机构并无限制。
 
 如果您不确定本地 Exchange 组织中的外部 Exchange 端点，则可以通过在本地 Exchange 组织的 Exchange PowerShell 中运行以下命令来获取外部配置的 Web 服务端点的列表。
 

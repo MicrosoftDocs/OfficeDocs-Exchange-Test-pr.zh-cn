@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2017-03-27_
+_**上一次修改主题：** 2017-03-27_
 
 本主题向您提供有关 Exchange Server 2013 中的公用文件夹的常见问题列表。有关公用文件夹的详细信息，请参阅[公用文件夹](public-folders-exchange-2013-help.md)。
 

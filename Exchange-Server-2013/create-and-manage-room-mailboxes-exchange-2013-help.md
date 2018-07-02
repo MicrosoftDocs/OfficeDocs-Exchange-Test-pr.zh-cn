@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2017-02-02_
+_**上一次修改主题：** 2017-02-02_
 
 估计完成时间：5 分钟。
 
@@ -294,7 +294,7 @@ _**上一次修改主题：**2017-02-02_
 
 ## 使用 Exchange PowerShell 更改会议室邮箱属性
 
-使用以下 cmdlet 集查看和更改会议室邮箱属性：**Get-Mailbox** 和 **Set-Mailbox** cmdlet 以查看和更改会议室邮箱的一般属性和电子邮件地址。使用 **Get-CalendarProcessing** 和 **Set-CalendarProcessing** cmdlet 查看和更改委派和预定选项。
+使用以下 cmdlet 集查看和更改会议室邮箱属性：** Get-Mailbox** 和 **Set-Mailbox** cmdlet 以查看和更改会议室邮箱的一般属性和电子邮件地址。使用 **Get-CalendarProcessing** 和 **Set-CalendarProcessing** cmdlet 查看和更改委派和预定选项。
 
   - **Get-User** 和 **Set-User**   使用这些 cmdlet 查看和设置一般属性，如位置、部门和公司名。
 

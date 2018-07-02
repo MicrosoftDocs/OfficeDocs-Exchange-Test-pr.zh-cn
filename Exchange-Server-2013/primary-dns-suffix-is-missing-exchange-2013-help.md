@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2014-01-15_
+_**上一次修改主题：** 2014-01-15_
 
 Microsoft Exchange Server 2013 安装程序无法继续运行，因为您正在安装 Exchange 的计算机未配置主要的域名系统 (DNS) 后缀。
 

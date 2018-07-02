@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-05_
+_**上一次修改主题：** 2012-11-05_
 
 默认情况下，当创建统一邮件 (UM) 自动助理时，其状态设置为禁用。创建 UM 自动助理后，您可以向控件更改其状态，是否它可以应答传入呼叫。例如，您可能需要在录制或自定义的提示和消息重新录制时禁用 UM 自动助理。
 

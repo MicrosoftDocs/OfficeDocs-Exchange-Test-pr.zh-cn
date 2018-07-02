@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 默认情况下，Microsoft Exchange Server 2013 安装程序会创建发现邮箱。在 Exchange Online 中也会默认创建发现邮箱。在 Exchange 管理中心 (EAC) 中，可将发现邮箱用作 [就地电子数据展示](in-place-ediscovery-exchange-2013-help.md) 搜索的目标邮箱。可以根据需要创建其他发现邮箱。创建新的发现邮箱后，您必须为适合的用户分配“完全访问”权限，以便他们能够访问复制到发现邮箱的电子数据展示搜索结果。
 

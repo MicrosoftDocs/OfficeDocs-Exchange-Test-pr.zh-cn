@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2018-04-30_
+_**上一次修改主题：** 2018-04-30_
 
-**摘要：** 如何 Exchange 2013 组织中的用户可以快速设置自己的 Outlook iOS 和 Android 使用基本身份验证的帐户。
+**摘要：**  如何 Exchange 2013 组织中的用户可以快速设置自己的 Outlook iOS 和 Android 使用基本身份验证的帐户。
 
 IOS 和 Android 的 outlook 提供 Exchange 管理员帐户配置"推送"到他们的内部用户的使用基本身份验证通过 ActiveSync 协议的能力。此功能适用于任何移动设备管理 (MDM) 提供商为 Android 的 iOS 或[Android 在企业](https://developer.android.com/samples/apprestrictions/index.html)通道使用[管理应用程序配置](https://developer.apple.com/library/content/samplecode/sc2279/introduction/intro.html)通道。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-08-21_
+_**上一次修改主题：** 2012-08-21_
 
 默认情况下，Microsoft Exchange Server 2013 包括多个管理角色组。 下列内置角色组提供一组预配置的角色，您可以将这些角色分配给组织中的各个管理员和专家用户。
 

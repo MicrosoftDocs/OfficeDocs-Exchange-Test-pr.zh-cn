@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2010, Exchange Server 2013_
+_**适用于：** Exchange Server 2010, Exchange Server 2013_
 
-_**上一次修改主题：**2018-04-02_
+_**上一次修改主题：** 2018-04-02_
 
-**摘要：** 本文包含体系结构和有关 Outlook iOS 和 Android 在 Exchange 2013 管理员的安全信息部署环境。
+**摘要：**  本文包含体系结构和有关 Outlook iOS 和 Android 在 Exchange 2013 管理员的安全信息部署环境。
 
 IOS 和 Android 的 Outlook 应用程序旨在将组合在一起的电子邮件、 日历、 联系人和其他文件，使您的组织中做更多的用户从他们的移动设备。 本文提供了该应用程序的存储设计和体系结构的概述，以便 Exchange 管理员可以部署和维护 Exchange 组织中的 Outlook iOS 和 Android。
 

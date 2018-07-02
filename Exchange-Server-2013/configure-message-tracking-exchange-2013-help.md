@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-18_
+_**上一次修改主题：** 2013-02-18_
 
 邮件跟踪可以记录 Microsoft Exchange Server 2013 邮箱服务器中传输服务或邮箱所发送和接收的所有邮件的 SMTP 传输活动。您可以使用邮件跟踪日志进行邮件取证、邮件流分析、报告和故障排除。
 

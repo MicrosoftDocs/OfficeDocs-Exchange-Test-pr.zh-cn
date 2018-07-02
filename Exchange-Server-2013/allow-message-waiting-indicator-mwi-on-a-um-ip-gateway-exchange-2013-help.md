@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-23_
+_**上一次修改主题：** 2013-02-23_
 
 您可以允许或阻止用户的统一邮件 (UM) IP 网关接收到的电话语音邮件通知。如果您启用此设置，UM IP 网关可以接收和发送通知的 SIP 消息的用户。消息等待指示符 (MWI) 默认启用的允许消息等待通知发送给用户，但可以根据需要将其关闭。
 

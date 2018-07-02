@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-16_
+_**上一次修改主题：** 2012-11-16_
 
 可以使用服务管理单元中Microsoft管理控制台 (MMC) 或 cmd.exe 命令提示符下启动客户端访问服务器上的MicrosoftExchange统一消息呼叫路由器服务。默认情况下， MicrosoftExchange统一消息呼叫路由器服务已启动后安装客户端访问服务器。但是，有时可能需要重新启动或MicrosoftExchange统一消息呼叫路由器服务手动停止，例如，已经脱机客户端访问服务器时，必须将其重新联机。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 POP 运行状况设置监视 Microsoft Exchange POP3 服务和 POP3 客户端连接的整体运行状况和可用性。POP 运行状况设置与以下运行状况设置密切相关：
 

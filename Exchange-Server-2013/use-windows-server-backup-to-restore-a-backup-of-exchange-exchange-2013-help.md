@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-06-18_
+_**上一次修改主题：** 2014-06-18_
 
 您可以使用 Windows Server 备份来备份和还原 Exchange 数据库。Exchange 包括 Windows Server 备份的插件，可允许您执行和还原 Exchange 数据的基于卷影复制服务 (VSS) 的备份。有关其他信息，请参阅[使用 Windows 服务器备份来备份和还原 Exchange 数据](using-windows-server-backup-to-back-up-and-restore-exchange-data-exchange-2013-help.md)。
 

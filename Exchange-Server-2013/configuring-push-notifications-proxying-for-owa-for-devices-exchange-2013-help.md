@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 为 Microsoft Exchange 2013 本地部署的 适用于设备的 OWA（OWA for iPhone 和 OWA for iPad）启用推送通知，使用户能够接收其 OWA for iPhone 和 OWA for iPad 的 Outlook Web App 图标上的更新，这些更新将指明用户邮箱中未查看的邮件数量。如果未配置和启用推送通知，那么在不启动应用的情况下，具有 适用于设备的 OWA 的用户将无从知晓收件箱中存在未查看的邮件。当收到新邮件时，用户设备上的 适用于设备的 OWA 徽章将会更新，看上去和以下徽章一样。
 
@@ -242,7 +242,7 @@ OAuth 身份验证通常涉及到三个组件：一台授权服务器和两个�
 
 完成上述步骤后，可以通过以下方式之一测试推送通知：
 
-  - **向用户的邮箱发送测试电子邮件：**
+  - **向用户的邮箱发送测试电子邮件：** 
     
     1.  在移动设备上的 OWA for Devices 中设置帐户，以订阅通知。
     

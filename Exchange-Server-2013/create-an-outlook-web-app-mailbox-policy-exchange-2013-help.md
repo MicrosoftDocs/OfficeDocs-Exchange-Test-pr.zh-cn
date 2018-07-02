@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2013-05-30_
+_**上一次修改主题：** 2013-05-30_
 
 您可以创建 Outlook Web App 邮箱策略来应用一组公用的策略设置。Outlook Web App 邮箱策略用于应用和标准化特定用户组的设置，例如附件设置。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-16_
+_**上一次修改主题：** 2013-04-16_
 
 您可以添加客户端访问和邮箱服务器 SIP URI 拨号计划。客户端访问和邮箱服务器不能与电话分机或 E.164 拨号计划相关联，但服务器将应答所有传入呼叫。
 

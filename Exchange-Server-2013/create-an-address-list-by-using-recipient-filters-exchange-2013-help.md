@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2014-12-16_
+_**上一次修改主题：** 2014-12-16_
 
 本主题介绍了如何使用收件人筛选器创建地址列表。有关地址列表的详细信息，请参阅[地址列表](address-lists-exchange-2013-help.md)。
 

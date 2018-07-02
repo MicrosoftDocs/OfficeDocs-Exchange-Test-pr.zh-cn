@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2017-03-27_
+_**上一次修改主题：** 2017-03-27_
 
 如何启用 Exchange 2013 或交换 2016年用户访问 Exchange 2010 或更早的公用文件夹 （也称为旧版公用文件夹）。
 

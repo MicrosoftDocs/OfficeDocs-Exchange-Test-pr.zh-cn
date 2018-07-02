@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 了解在安装 Exchange 2013 之前您需要知道的 Exchange 2013 要求。例如，您将了解有关硬件、网络和操作系统要求的信息。
 

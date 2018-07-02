@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 启用日记帐报告解密允许日志记录代理将解密受权限保护的邮件的副本附加到日志报告。启用日志报告解密之前，您必须将联合传递邮箱添加到[Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx)服务器上配置的超级用户组。
 

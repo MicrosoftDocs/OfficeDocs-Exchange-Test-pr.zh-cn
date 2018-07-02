@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-14_
+_**上一次修改主题：** 2012-10-14_
 
 对于 Exchange 中的每个脱机通讯簿 (OAB) 分发点，您可以配置两个 URL — 一个只可从公司内部网络访问的内部 URL 和一个可从 Internet 访问的外部 URL。
 

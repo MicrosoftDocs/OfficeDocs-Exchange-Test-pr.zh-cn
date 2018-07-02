@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 Exchange ActiveSync 运行状况设置监视组织中移动客户端的 ActiveSync 服务的总体运行状况。ActiveSync 运行状况设置与下列运行状况设置紧密相关：
 

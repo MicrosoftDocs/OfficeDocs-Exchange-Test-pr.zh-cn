@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-12_
+_**上一次修改主题：** 2012-10-12_
 
 在Exchange Server 2013，您可以使用信息权限管理 (IRM) 日志监视并排除 IRM 操作。默认情况下启用 IRM 记录。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 某些旧版专用交换机 (PBX) 和 IP PBX 电话系统允许呼叫者将语音邮件标记为私人，阻止邮件的预期收件人将其转发给其他人。在集成语音邮件系统中，可通过多种方式访问语音邮件，这使得阻止将标记为私人的语音邮件暴露给非预期收听者更加具有挑战性。
 

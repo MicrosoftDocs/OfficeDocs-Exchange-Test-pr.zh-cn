@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-13_
+_**上一次修改主题：** 2012-10-13_
 
 组的通讯组命名策略仅应用于所创建的用户组。当您或其他管理员使用 Exchange 管理中心 (EAC) 创建通讯组时，组命名策略被忽略，不应用于组名。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 此主题中的内容尚未针对 Microsoft Exchange Server 2013 进行更新。虽然尚未更新，但仍可能适用于 Exchange 2013。如果您仍需要帮助，请查看下面的社区资源。
 
@@ -84,11 +84,11 @@ Exchange 2007 安装程序要求用作域架构主机的域控制器与运行 E
 
 3.  新建以下\&quot;字符串\&quot;值：
     
-    值名称：**SiteName**
+    值名称：** SiteName**
     
-    值类型：**REG\_SZ**
+    值类型：** REG\_SZ**
     
-    值数据：**\<site\_that\_contains\_the\_schema\_master\>**
+    值数据：** \<site\_that\_contains\_the\_schema\_master\>**
 
 4.  退出注册表编辑器，然后重启 Netlogon 服务。此操作会强制 Exchange 服务器加入您指定的站点。
 

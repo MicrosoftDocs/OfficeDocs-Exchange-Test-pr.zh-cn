@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 您可以设置 PIN 策略统一邮件 (UM) 邮箱策略。UM 邮箱策略可以配置来提高通过要求用户以符合预定义的 PIN 策略，为您的组织使用 Outlook Voice Access 的启用 UM 的用户的安全级别。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-11-28_
+_**上一次修改主题：** 2012-11-28_
 
 如果有用户使用 POP3 或 IMAP4 连接其 MicrosoftExchange Server 2013 邮箱，这些用户需要知道连接所需的正确服务器设置。在进行了默认的 Exchange 2013 安装之后，用户无法查找自己的传入 POP3 或 IMAP4 服务器设置或者传出 SMTP 服务器设置。不过，你可以配置 Exchange，以便用户能够使用 MicrosoftOutlook Web App 查找自己的设置。
 

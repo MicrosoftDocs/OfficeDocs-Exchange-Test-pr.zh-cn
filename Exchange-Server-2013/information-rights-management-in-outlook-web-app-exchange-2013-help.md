@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 信息工作者越来越多地使用电子邮件交换敏感信息。为帮助保护此类信息的安全，组织可以使用信息权限管理 (IRM) 对邮件内容应用持久保护。在 Microsoft Exchange Server 2010 之前，对 IRM 保护的有效使用仅限于 Outlook 客户端。Exchange Server 2007 中，Microsoft Outlook Web Access 用户需要下载 Microsoft Internet Explorer 的权限管理外接程序才能访问受 IRM 保护的内容。
 
@@ -84,9 +84,9 @@ _**上一次修改主题：**2016-12-09_
 
 还必须使用 Outlook Web App 命令行管理程序中的 [Set-IRMConfiguration](https://technet.microsoft.com/zh-cn/library/dd979792\(v=exchg.150\)) cmdlet 启用 Exchange 中的 IRM。这将为 Outlook Web App 组织启用 Exchange 2013 中的 IRM。可以为 Outlook Web App 虚拟目录禁用或启用 Outlook Web App 中的 IRM。还可以将 Outlook Web App 中的 IRM 控制在以下粒度级别：
 
-  - **每个 Outlook Web App 虚拟目录：**若要为 Outlook Web App 虚拟目录启用或禁用 Outlook Web App 中的 IRM，请使用 **Set-OWAVirtualDirectory** cmdlet 并将 *IRMEnabled* 参数设置为 `$false` 或 `$true`（默认）。此操作可以为 Exchange 2013 客户端访问服务器上的一个虚拟目录禁用 Outlook Web App 中的 IRM，同时保持其他客户端访问服务器上的另一个虚拟目录上的 IRM 为启用状态。
+  - **每个 Outlook Web App 虚拟目录：** 若要为 Outlook Web App 虚拟目录启用或禁用 Outlook Web App 中的 IRM，请使用 **Set-OWAVirtualDirectory** cmdlet 并将 *IRMEnabled* 参数设置为 `$false` 或 `$true`（默认）。此操作可以为 Exchange 2013 客户端访问服务器上的一个虚拟目录禁用 Outlook Web App 中的 IRM，同时保持其他客户端访问服务器上的另一个虚拟目录上的 IRM 为启用状态。
 
-  - **每个 Outlook Web App 邮箱策略：**若要为 Outlook Web App 邮箱策略启用或禁用 Outlook Web App 中的 IRM，请使用 **Set-OWAMailboxPolicy** cmdlet 并将 *IRMEnabled* 参数设置为 `$false` 或 `$true`（默认）。此操作通过为用户组分配不同的 Outlook Web App 邮箱策略，可以对一组用户启用 Outlook Web App 中的 IRM，而同时对另一组用户禁用 IRM。
+  - **每个 Outlook Web App 邮箱策略：** 若要为 Outlook Web App 邮箱策略启用或禁用 Outlook Web App 中的 IRM，请使用 **Set-OWAMailboxPolicy** cmdlet 并将 *IRMEnabled* 参数设置为 `$false` 或 `$true`（默认）。此操作通过为用户组分配不同的 Outlook Web App 邮箱策略，可以对一组用户启用 Outlook Web App 中的 IRM，而同时对另一组用户禁用 IRM。
 
 有关详细信息，请参阅[启用或禁用客户端访问服务器上的信息权限管理](enable-or-disable-information-rights-management-on-client-access-servers-exchange-2013-help.md)。
 

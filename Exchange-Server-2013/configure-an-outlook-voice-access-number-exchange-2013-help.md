@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 数允许用户启用统一邮件 (UM) 和语音邮件的 Outlook Voice Access 访问使用Outlook语音访问其邮箱。在拨号计划配置 Outlook Voice Access 或订阅者访问号码时，启用 UM 的用户可以连接到数、 登录到他们的邮箱，并访问其电子邮件、 语音邮件、 日历和联系人的个人信息。
 

@@ -18,7 +18,7 @@ _<strong>适用于：</strong>Exchange Server 2013_
 _<strong>上一次修改主题：</strong>2016-12-15_
 
 
-**摘要：** 有关允许本地 Exchange 2013 用户访问 Exchange Online 中的公用文件夹的说明。
+**摘要：**  有关允许本地 Exchange 2013 用户访问 Exchange Online 中的公用文件夹的说明。
 
 在混合部署中，您的用户可以位于 Exchange Online 中，或内部部署内，或同时位于两者中，并且您的公用文件夹位于 Exchange Online 中或内部部署内。有时，您的联机用户可能需要访问 Exchange Server 2013 内部部署环境中的公用文件夹。同样，Exchange 2013 用户可能需要访问 Office 365 或 Exchange Online 中的公用文件夹。
 

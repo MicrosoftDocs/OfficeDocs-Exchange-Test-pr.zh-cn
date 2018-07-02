@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-13_
+_**上一次修改主题：** 2013-02-13_
 
 如果公用文件夹或公用文件夹邮箱的移动请求失败，那么只要满足以下条件，您就可以还原相应的文件夹或邮箱：
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 配置共享和协作功能所需的权限取决于要执行的步骤或要运行的 cmdlet。有关共享和协作的详细信息，请参阅[协作](collaboration-exchange-2013-help.md)和[共享](sharing-exchange-2013-help.md)。
 

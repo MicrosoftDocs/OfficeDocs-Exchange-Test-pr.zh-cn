@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 “反压力”是 Microsoft Exchange 2013 邮箱服务器和边缘传输服务器上存在的 Microsoft Exchange 传输服务的系统资源监视功能。
 

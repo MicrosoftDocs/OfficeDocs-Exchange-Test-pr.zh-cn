@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-02-01_
+_**上一次修改主题：** 2016-02-01_
 
 在 Exchange Server 2013 和 Exchange Online 中，可以使用存档策略自动将邮箱项目移动到个人（内部部署）或基于云的存档。存档策略是使用“移动到存档”保留操作的保留标记。
 
@@ -25,9 +25,9 @@ Exchange 安装程序会创建一个称为“默认 MRM 策略”的保留策略
 
 有关与存档相关的其他管理任务，请参阅：
 
-  - **Exchange Server 2013:** [在 Exchange 2013 中管理就地存档](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md)
+  - **Exchange Server 2013:**  [在 Exchange 2013 中管理就地存档](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md)
 
-  - **Exchange Online:** [在 Exchange Online 中启用或禁用存档邮箱](https://technet.microsoft.com/zh-cn/library/jj984357\(v=exchg.150\))
+  - **Exchange Online:**  [在 Exchange Online 中启用或禁用存档邮箱](https://technet.microsoft.com/zh-cn/library/jj984357\(v=exchg.150\))
 
 <table>
 <thead>

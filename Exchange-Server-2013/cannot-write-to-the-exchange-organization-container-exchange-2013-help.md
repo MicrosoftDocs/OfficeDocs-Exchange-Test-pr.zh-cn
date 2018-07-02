@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2014-11-05_
+_**上一次修改主题：** 2014-11-05_
 
 Microsoft Exchange Server 2013 安装程序无法继续，因为登录的用户没有向 Active Directory 目录服务中的组织容器写入所需的帐户权限。
 

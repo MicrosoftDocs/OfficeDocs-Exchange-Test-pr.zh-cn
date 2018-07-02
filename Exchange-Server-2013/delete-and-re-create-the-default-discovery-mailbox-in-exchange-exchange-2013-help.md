@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-05-04_
+_**上一次修改主题：** 2016-05-04_
 
 您可以使用 Exchange 命令行管理程序删除默认发现邮箱、重新创建，然后向其分配权限。
 

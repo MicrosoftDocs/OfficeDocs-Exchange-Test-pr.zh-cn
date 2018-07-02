@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-05_
+_**上一次修改主题：** 2012-11-05_
 
 删除统一邮件 (UM) 邮箱策略时，将不再可与收件人启用了 UM 的 UM 邮箱策略。如果它被引用的所有已启用 UM 的邮箱，并且不能删除 UM 拨号计划，如果 UM 邮箱策略与它相关联，则无法删除 UM 邮箱策略。
 

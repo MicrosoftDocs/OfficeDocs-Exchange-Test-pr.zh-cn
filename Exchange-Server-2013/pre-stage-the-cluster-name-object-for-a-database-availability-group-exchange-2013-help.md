@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-08-14_
+_**上一次修改主题：** 2014-08-14_
 
 在计算机帐户创建受限制或计算机帐户在非默认计算机容器创建的环境中，您可以预存群集名称对象 (CNO) ，然后通过向其分配权限来配置 CNO。由于 Windows 中计算机对象的权限变更，因此还需要为 Windows Server 2012 和 Windows Server 2012 R2 DAG 成员预先暂存 CNO。在使用运行 Windows Server 2012 或 Windows Server 2012 R2 的邮箱服务器部署数据库可用性组 (DAG) 时，必需预先暂存和设置 CNO，除非您部署的 DAG 不包含群集管理访问点。不包含群集管理访问点的 DAG 不使用 CNO，因此，不需要为这些 DAG 预先暂存 CNO。
 

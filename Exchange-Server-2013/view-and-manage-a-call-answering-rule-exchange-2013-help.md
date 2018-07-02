@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-04-08_
+_**上一次修改主题：** 2015-04-08_
 
 您可以使用命令行管理程序为用户查看或配置一个或多个电话应答规则。您还可以使用 Exchange 命令行管理程序脚本中的 **Get-UMCallAnsweringRule** 或 **Set-UMCallAnsweringRule** cmdlet 为多个用户查看或管理电话应答规则。
 

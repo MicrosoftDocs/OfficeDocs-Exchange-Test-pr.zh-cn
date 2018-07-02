@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2012-11-08_
+_**上一次修改主题：** 2012-11-08_
 
 Microsoft Exchange Server 2013 安装程序无法继续，因为无法在不发生潜在数据丢失的情况下从本地服务器中删除用户邮箱数据库。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-09_
+_**上一次修改主题：** 2012-11-09_
 
 您可以配置它们在断开连接之前，用户连接到 Outlook Voice Access 数字可以输入不正确的数据的次数。此设置适用于Outlook语音访问用户和未经身份验证的呼叫者使用目录搜索。
 

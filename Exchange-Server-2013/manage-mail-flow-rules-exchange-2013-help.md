@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 您可以使用邮件流规则（也称为传输规则），针对通过您的组织传递的邮件查找特定条件并对其进行操作。本主题介绍如何创建、复制、启用或禁用、删除或导入或导出规则、调整其顺序，以及如何监视规则使用情况。
 

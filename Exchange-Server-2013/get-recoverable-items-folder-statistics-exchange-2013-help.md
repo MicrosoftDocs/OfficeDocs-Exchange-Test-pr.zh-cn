@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-01-22_
+_**上一次修改主题：** 2015-01-22_
 
 \&quot;可恢复的邮件\&quot;文件夹包含 Microsoft Outlook 和 Microsoft OfficeOutlook Web App 用户或邮箱助理删除的邮件。已删除邮件保留在此文件夹中的持续时间取决于您为邮箱数据库或邮箱配置的已删除邮件保留时间设置。邮箱数据库默认配置为保留已删除邮件 14 天，\&quot;可恢复的邮件\&quot;警告配额和\&quot;可恢复的邮件\&quot;配额分别默认设置为 20 GB 和 30 GB。不过，如果您已为邮箱启用\&quot;就地保留\&quot;或\&quot;诉讼保留\&quot;，\&quot;可恢复的邮件\&quot;文件夹可以累积超过指定保留期的已删除邮件，还可以维护不同版本的已修改邮箱邮件。
 

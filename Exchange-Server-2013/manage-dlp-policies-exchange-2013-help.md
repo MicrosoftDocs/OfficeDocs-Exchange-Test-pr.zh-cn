@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-01-14_
+_**上一次修改主题：** 2015-01-14_
 
 通过使用 Exchange 管理中心 (EAC) 或命令行管理程序您可以查看、更改或删除 Microsoft Exchange 中现有的数据丢失防护 (DLP) 策略。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2014-11-16_
+_**上一次修改主题：** 2014-11-16_
 
 Exchange 工作负载是一个 Exchange Server 功能、协议或服务，为管理 Exchange 系统资源而明确定义。每个 Exchange 工作负载都会占用系统资源（例如，CPU、邮箱数据库操作或 Active Directory 请求）以运行用户请求或后台工作。Exchange 工作负载的示例包括 Outlook Web App、Exchange ActiveSync、邮箱迁移和邮箱助理。
 

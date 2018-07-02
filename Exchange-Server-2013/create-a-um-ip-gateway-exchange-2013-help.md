@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-16_
+_**上一次修改主题：** 2013-04-16_
 
 创建统一消息 (UM) IP 网关时，启用 Exchange 服务器以连接到新 Voice Over IP (VoIP) 网关、针对会话初始协议 (SIP) 启用的专用交换机 (PBX)、IP PBX 或会话边界控制器 (SBC)。创建 UM IP 网关之后，应当立即创建新的 UM 智能寻线，然后将此 UM 智能寻线与 UM IP 网关进行关联。通过创建一个或多个 UM 智能寻线，可以将 UM IP 网关与一个或多个 UM 拨号计划进行关联。
 

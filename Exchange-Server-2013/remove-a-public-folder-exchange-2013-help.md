@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-11-16_
+_**上一次修改主题：** 2016-11-16_
 
 你可能需要删除组织中不再使用的公用文件夹。若要了解如何确定应删除哪些公用文件夹，请参阅[查看公用文件夹和公用文件夹项目的统计信息](view-statistics-for-public-folders-and-public-folder-items-exchange-2013-help.md)。
 

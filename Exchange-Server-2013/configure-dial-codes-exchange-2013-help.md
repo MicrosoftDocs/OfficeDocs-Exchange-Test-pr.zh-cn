@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 您可以配置拨号代码、 号码的前缀，并由统一消息用于拨号的启用了 UM 的用户的传入和传出呼叫的数字格式。在大多数情况下，您将配置拨号代码、 前缀和数字格式当前在电话网络上配置拨号计划。
 

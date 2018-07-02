@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-11-06_
+_**上一次修改主题：** 2012-11-06_
 
 这些是有关如何删除邮箱数据库的副本的过程。不能按这些过程操作，删除邮箱数据库的最后一个副本。有关删除邮箱数据库最后一个副本的详细步骤，请参阅[删除邮箱数据库](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md)或 [Remove-MailboxDatabase](https://technet.microsoft.com/zh-cn/library/aa997931\(v=exchg.150\))。
 

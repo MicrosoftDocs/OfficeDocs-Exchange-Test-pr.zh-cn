@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-08_
+_**上一次修改主题：** 2015-04-08_
 
 传输代理使用 SMTP 事件对传输管道中运行的邮件进行操作。大多数 Microsoft Exchange Server 2013 中所包含的内置传输代理不可见，也不可管理。然而，您可以在您组织中的 Exchange 服务器上安装和配置第三方传输代理。有关传输代理的详细信息，请参阅[传输代理](transport-agents-exchange-2013-help.md)。
 

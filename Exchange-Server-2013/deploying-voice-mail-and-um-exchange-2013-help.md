@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Exchange 统一消息 (UM) 使您能够为贵组织中的用户提供语音邮件服务。部署统一消息时，必须将 Exchange 服务器部署与贵组织中现有的电话服务系统或 Microsoft Lync Server 集成在一起。要成功进行部署，您需要仔细分析现有电话服务基础结构，并执行正确的计划步骤来部署和管理统一消息中的语音邮件。如果要将 Exchange 与 Lync Server 整合，还必须熟悉此产品。
 

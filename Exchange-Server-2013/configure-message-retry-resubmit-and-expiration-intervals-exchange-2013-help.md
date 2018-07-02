@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-12-16_
+_**上一次修改主题：** 2014-12-16_
 
 在 Microsoft Exchange Server 2013 中，可以在邮箱服务器和边缘传输服务器上的传输服务中配置邮件重试、重新提交和过期间隔。有关这些设置的说明，请参阅[邮件重试间隔、重新提交间隔和过期间隔](message-retry-resubmit-and-expiration-intervals-exchange-2013-help.md)。
 

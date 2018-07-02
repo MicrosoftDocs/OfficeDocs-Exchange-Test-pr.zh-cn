@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 本主题介绍了您可以在 Exchange Server 2013 和 Exchange Online 中使用就地电子数据展示和保留来搜索的 Exchange 电子邮件的属性。此外，本主题还介绍了布尔搜索运算符以及可以用于优化电子数据展示搜索结果的其他搜索查询技术。
 

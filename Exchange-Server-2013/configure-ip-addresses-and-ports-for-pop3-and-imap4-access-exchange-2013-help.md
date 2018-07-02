@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-11-28_
+_**上一次修改主题：** 2012-11-28_
 
 可以使用 EAC 和命令行管理程序配置 Microsoft Exchange POP3 和 IMAP4 服务以使用不同于默认设置的 IP 地址和端口。
 

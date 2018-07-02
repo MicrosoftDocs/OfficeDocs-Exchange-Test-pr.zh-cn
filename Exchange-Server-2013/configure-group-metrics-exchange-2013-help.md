@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-08_
+_**上一次修改主题：** 2015-04-08_
 
 提供有关通讯组及动态通讯组大小的信息的邮件提示依赖于组指标数据。在指定的邮箱服务器上生成组指标数据。有关组指标的详细信息，请参阅[组的指标和邮件提醒](group-metrics-and-mailtips-exchange-2013-help.md)。
 

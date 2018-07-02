@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-19_
+_**上一次修改主题：** 2013-04-19_
 
 在设置了统一邮件 (UM) 时，您必须配置与运行 Microsoft Exchange 统一消息呼叫路由器服务的客户端访问服务器和邮箱服务器Exchange组织中运行 Microsoft Exchange 统一消息服务通信网络上通过 IP (VoIP) 网关，IP Pbx、 SIP 启用 Pbx 或会话边框控制器 (SBCs) 声音。您还必须配置与 VoIP 网关，IP Pbx、 SIP 启用 Pbx 或 SBCs 进行通信的客户端访问和邮箱服务器。
 

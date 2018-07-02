@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-05-10_
+_**上一次修改主题：** 2016-05-10_
 
 您可以启用目录查找，以便呼叫者连接到统一消息 (UM) 自动助理可以查找中使用其电话键盘的目录的名称，但不是能使用语音输入目录中搜索。默认情况下启用此设置。如果禁用此设置，则调用方不能在目录中搜索特定人员使用按键或语音命令。
 

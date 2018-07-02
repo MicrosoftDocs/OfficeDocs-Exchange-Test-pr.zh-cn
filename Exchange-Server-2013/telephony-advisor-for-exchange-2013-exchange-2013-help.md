@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2017-07-25_
+_**上一次修改主题：** 2017-07-25_
 
 统一消息 (UM) 要求将 Microsoft Exchange 与组织的现有电话系统集成起来。要成功进行部署，您需要仔细分析现有电话基础结构，并执行正确的计划步骤来部署统一消息。
 

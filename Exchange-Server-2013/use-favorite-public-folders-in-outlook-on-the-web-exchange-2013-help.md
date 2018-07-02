@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-06-24_
+_**上一次修改主题：** 2016-06-24_
 
 在 Outlook 客户端中，你组织中的用户可以将公用文件夹添加到“**收藏夹**”文件夹中。然后，根据组织策略，他们可以使用 Web 上的 Outlook 以将这些相同的公用文件夹添加到他们的收藏夹，并在他们在 Outlook 客户端中使用的 Web 上的 Outlook 中执行某些功能。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-06_
+_**上一次修改主题：** 2013-02-06_
 
 您的用户每天都随身携带着敏感的公司信息。如果他们中有人丢失了自己的手机，公司数据就可能会落入其他人手中。如果您的用户中有人丢失了自己的手机，您可以使用 Exchange 管理中心 (EAC) 或 Exchange 命令行管理程序擦除手机中所有的公司及用户信息。
 

@@ -18,9 +18,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-20_
+_**上一次修改主题：** 2013-02-20_
 
 Microsoft Exchange Server 2013 使用传递状态通知 (DSN) 向邮件发件人提供未送达报告 (NDR) 和其他状态消息。您可以使用内置 DSN，也可以创建自定义 DSN 邮件以满足组织需求。
 

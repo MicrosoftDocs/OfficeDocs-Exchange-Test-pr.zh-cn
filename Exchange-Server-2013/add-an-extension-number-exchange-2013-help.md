@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-14_
+_**上一次修改主题：** 2012-11-14_
 
 为某个用户启用 UM 并将其与电话分机拨号计划关联时，将为包含该用户的分机号的用户创建 EUM 代理地址。必须为要使用的 UM 至少定义一个分机号码，以便将语音邮件发送到用户的邮箱。在用户呼叫 Outlook Voice Access 号码时，也会使用分机号码。
 

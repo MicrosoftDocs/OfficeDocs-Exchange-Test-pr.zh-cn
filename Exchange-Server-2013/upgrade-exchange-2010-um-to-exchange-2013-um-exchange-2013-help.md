@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 当将使用统一消息 (UM) 的 Microsoft Exchange 2010 组织升级到 Exchange 2013 统一消息时，有些步骤要求执行，而其他已完成的步骤则作为 Exchange 2010 UM 部署的一部分。根据您现有的电话环境，以及创建且配置为可支持 Exchange 2010 中统一消息的 UM 组件，您可能需要部署其他电话设备，包括 Voice over IP (VoIP) 网关、IP 专用交换机 (PBX) 或传统 PBX 或启用 SIP 的 PBX，然后创建和配置 Exchange 2013 UM 需要的任何其他 UM 组件。
 
@@ -155,7 +155,7 @@ UM 语言包允许呼叫者和 Outlook Voice Access 用户能够用多种语言�
 
   - 第三方商业证书
 
-在默认情况下，当安装 Exchange 2013 时，会创建两个自签名证书：**Microsoft Exchange Server 身份验证证书**和 **Microsoft Exchange**。“Microsoft Exchange”自签名证书用于 UM 加密数据，但您必须要为 UM 和 UM 呼叫路由器服务分配证书。该自签名证书可以被复制，然后在导入到 VoIP 网关、IP PBX、以及启用 SIP 的 PBX 上。然而，将 UM 与 Microsoft Lync Server 集成时，该证书不可用。
+在默认情况下，当安装 Exchange 2013 时，会创建两个自签名证书：** Microsoft Exchange Server 身份验证证书**和 **Microsoft Exchange**。“Microsoft Exchange”自签名证书用于 UM 加密数据，但您必须要为 UM 和 UM 呼叫路由器服务分配证书。该自签名证书可以被复制，然后在导入到 VoIP 网关、IP PBX、以及启用 SIP 的 PBX 上。然而，将 UM 与 Microsoft Lync Server 集成时，该证书不可用。
 
 若要使 UM 加密在 Exchange 2013 服务器与 VoIP 网关、IP PBX 以及启用 SIP 的 PBX 间传递的数据，需要执行以下操作：
 

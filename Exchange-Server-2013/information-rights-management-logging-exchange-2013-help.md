@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 在 Microsoft Exchange Server 2013，IRM 日志中记录信息权限管理 (IRM) 操作。IRM 日志可帮助您监视并排除权限管理服务 (RMS) 客户端在Exchange 2013服务器上的与您的组织中Active Directory权限管理服务 (AD RMS) 群集之间的交互。
 

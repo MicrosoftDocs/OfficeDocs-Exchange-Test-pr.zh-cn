@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server, Exchange Server 2013_
+_**适用于：** Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 Microsoft Exchange Server 2013 包括一个大型的根据基于角色的访问控制 (RBAC) 权限模型预定义的权限集，使用它可轻松便捷地向管理员和用户授予权限。你可以使用 Exchange 2013 中的权限功能，以便快速设置并运行新组织。
 

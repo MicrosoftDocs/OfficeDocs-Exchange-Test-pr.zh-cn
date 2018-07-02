@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2017-12-20_
+_**上一次修改主题：** 2017-12-20_
 
 对于 Microsoft Exchange Server 2013，我们已将几种新功能添加到 Microsoft Outlook Web App 并更新了其设计。
 

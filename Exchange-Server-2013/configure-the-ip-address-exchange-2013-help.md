@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-11_
+_**上一次修改主题：** 2012-11-11_
 
 在创建统一消息 (UM) IP 网关之前，您必须先在所用的 VoIP 网关、IP PBX 或会话边界控制器 (SBC) 上设置 IP 地址或完全限定域名 (FQDN)。随后在创建 UM IP 网关时，设置 IP 地址或 FQDN。可以在以后更改 IP 地址或 FQDN。
 

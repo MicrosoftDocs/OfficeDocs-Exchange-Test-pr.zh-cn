@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-09_
+_**上一次修改主题：** 2012-10-09_
 
 如果您要自定义分配给最终用户组的权限，则创建新的自定义管理角色分配策略。您可以根据最终用户的具体要求自定义要创建的分配策略。 有关 Microsoft Exchange Server 2013 中的分配策略的详细信息，请参阅[了解管理角色分配策略](understanding-management-role-assignment-policies-exchange-2013-help.md)。
 

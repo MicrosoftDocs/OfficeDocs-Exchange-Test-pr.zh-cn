@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-21_
+_**上一次修改主题：** 2013-02-21_
 
 您可以启用统一邮件 (UM) 邮箱策略与相关联，如果禁用了用户的语音邮件预览功能。如果启用此设置，用户可以接收语音邮件，在邮件正文中的电子邮件或文本消息的文本。默认设置为启用。
 

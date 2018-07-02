@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 MicrosoftExchange Server 2013 包含许多与 Microsoft SharePoint 2013 和 Microsoft Lync 2013 集成的功能。这些产品结合使用时可提供一整套功能，以实现可能使用站点邮箱的企业电子数据展示和协作之类的方案。
 

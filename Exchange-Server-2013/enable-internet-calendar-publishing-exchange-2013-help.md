@@ -13,11 +13,11 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-08-22_
+_**上一次修改主题：** 2016-08-22_
 
-**摘要：**使用这些过程来启用 Exchange 2013 组织中的 OWA 用户来与外部组织共享日历的忙/闲信息。
+**摘要：** 使用这些过程来启用 Exchange 2013 组织中的 OWA 用户来与外部组织共享日历的忙/闲信息。
 
 Microsoft Exchange Server 2013 组织中的用户可以与非 Exchange 组织中的用户以及具有 Internet 访问权限的其他个人共享日历可用性（忙/闲）信息。Internet 日历发布提供了更好的灵活性并增加了可以共享日历可用性信息的用户的数量。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 Autodiscover.Proxy 运行状况设置可以对客户端访问服务器 (CAS) 上的自动发现代理基础结构的可用性进行监视。Autodiscover.Proxy 运行状况设置与以下运行状况设置紧密相关：
 

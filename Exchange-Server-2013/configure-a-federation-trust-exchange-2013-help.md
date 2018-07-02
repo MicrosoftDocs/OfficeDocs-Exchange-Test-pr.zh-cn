@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2017-07-26_
+_**上一次修改主题：** 2017-07-26_
 
 联合身份验证信任在 Microsoft Exchange 2013 组织和 Azure Active Directory 身份验证系统之间建立信任关系。通过配置联合信任，可以配置与其他联合 Exchange 组织的联合共享以便在收件人之间共享日历忙/闲信息。可以在两个联合 Exchange 2013 组织之间或在联合 Exchange 2013 组织与联合 Exchange 2010 组织之间配置联合共享。您还可以设置与 Office 365 组织的共享。
 
@@ -183,7 +183,7 @@ _**上一次修改主题：**2017-07-26_
     
         Get-FederatedDomainProof -DomainName contoso.com
     
-    **注意：**
+    **注意：** 
     
       - 每个域或子域配置联合身份验证信任需要域所有权 TXT 记录的证明，因此您可能需要运行此命令多次使用不同的*DomainName*值。
     

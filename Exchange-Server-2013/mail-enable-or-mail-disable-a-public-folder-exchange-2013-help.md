@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-06-15_
+_**上一次修改主题：** 2016-06-15_
 
 公用文件夹专为共享访问设计，为收集、组织信息及与您的工作组或组织中的其他人共享信息提供了一种轻松、有效的方式。为公用文件夹启用邮件功能，可以让用户能够向公用文件夹发送电子邮件，借此向此文件夹发布信息。如果公用文件夹启用了邮件功能，Exchange 管理中心 (EAC) 中将可以使用该公用文件夹的其他设置，例如电子邮件地址和邮件配额。在命令行管理程序中，为公用文件夹启用邮件功能之前，您可以使用 **Set-PublicFolder** cmdlet 管理它的所有设置。为公用文件夹启用邮件功能之后，您需要使用 **Set-PublicFolder** 和 **Set-MailPublicFolder** cmdlet 管理这些设置。
 

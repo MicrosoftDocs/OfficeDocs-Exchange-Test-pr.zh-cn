@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2007, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2007, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2018-03-20_
+_**上一次修改主题：** 2018-03-20_
 
 Exchange Server 可支持性矩阵为 Microsoft Exchange 管理员提供了一个集中来源，以便于他们查找有关受支持 Microsoft Exchange 版本的任何配置或所需组件的可用支持级别信息。
 

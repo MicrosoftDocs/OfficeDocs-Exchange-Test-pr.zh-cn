@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-04-08_
+_**上一次修改主题：** 2015-04-08_
 
 您可以设置统一消息 (UM)，以便用户可以在不使用 PIN 的情况下登录到其语音邮件。默认情况下，系统会提示 Outlook Voice Access 用户输入 PIN，以登录到其邮箱并访问其语音邮件、电子邮件、日历、个人联系人、目录和个人选项。
 

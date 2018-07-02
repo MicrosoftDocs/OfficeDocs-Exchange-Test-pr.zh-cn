@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-12-12_
+_**上一次修改主题：** 2012-12-12_
 
 您可以启用或禁用Outlook语音与统一消息 (UM) 邮箱策略相关联的已启用 UM 的用户的访问权。Outlook访问语音是由启用 UM 的用户通过手机访问其邮箱的功能。默认情况下，启用此设置。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-09_
+_**上一次修改主题：** 2013-04-09_
 
 在安装运行 Microsoft Exchange 统一消息呼叫路由器服务的客户端访问服务器之后，可以配置几个选项，包括并发呼叫数、TCP 和传输层安全性 (TLS) 侦听端口、状态和启动模式。
 

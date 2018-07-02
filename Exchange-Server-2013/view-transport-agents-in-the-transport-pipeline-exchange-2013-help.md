@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-08_
+_**上一次修改主题：** 2015-04-08_
 
 您可以使用 Exchange 命令行管理程序在 Microsoft Exchange Server 2013 邮箱服务器和客户端访问服务器上查看传输管道中的传输代理列表。具体来说，**Get-TransportPipeline** cmdlet 可以显示有关传输管道中下列传输代理类型的信息：
 

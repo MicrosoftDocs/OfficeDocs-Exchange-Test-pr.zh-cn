@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 MicrosoftExchange 2013 统一消息 (UM) 要求使用多个 TCP 和用户数据报协议 (UDP) 端口在运行 Exchange 2013 的服务器与其他设备之间建立通信。通过使用这些 IP 端口进行访问，可以使统一消息正常运行。本主题讨论 Exchange 2013 统一消息中使用的 TCP 和 UDP 端口。
 

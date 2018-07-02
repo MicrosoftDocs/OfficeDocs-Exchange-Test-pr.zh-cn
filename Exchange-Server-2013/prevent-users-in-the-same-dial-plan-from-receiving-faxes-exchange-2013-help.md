@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 可以防止已启用 UM 的用户的链接与统一消息 (UM) 拨号计划接收传真消息。默认情况下，为统一消息启用并与 UM 拨号计划链接的用户可以接收传真邮件。但是，有时可能想要阻止用户与特定接收传真 UM 拨号计划相关联的。
 

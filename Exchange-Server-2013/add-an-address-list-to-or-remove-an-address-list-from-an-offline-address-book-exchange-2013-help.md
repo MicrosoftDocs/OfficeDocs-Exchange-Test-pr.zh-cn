@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2014-12-16_
+_**上一次修改主题：** 2014-12-16_
 
 可以使用命令行管理程序向脱机通讯簿 (OAB) 中添加或从中删除地址列表。默认情况下，存在一个名为“默认脱机通讯簿”的 OAB，它包含全局地址列表 (GAL)。OAB 的生成基于 OAB 所包含的地址列表。若要创建用户可以下载的自定义 OAB，您可以向 OAB 中添加或从中删除地址列表。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 部署边缘传输服务器时，它无法访问 Active Directory。若要执行收件人查找和安全列表聚合任务，以及使用相互传输层安全性 (MTLS) 身份验证实现域安全性，边缘传输服务器需要 Active Directory 中的数据。这些数据通过 EdgeSync 复制到边缘传输服务器，边缘传输服务器将所有复制的信息存储在 Active Directory 轻型目录服务 (AD LDS) 中。
 

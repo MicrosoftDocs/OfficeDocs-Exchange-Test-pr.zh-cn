@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-15_
+_**上一次修改主题：** 2012-10-15_
 
 此过程向您演示如何配置接收连接器以便从 Internet 接收电子邮件。
 

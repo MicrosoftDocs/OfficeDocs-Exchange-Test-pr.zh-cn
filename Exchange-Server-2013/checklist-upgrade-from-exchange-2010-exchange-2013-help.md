@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 使用此检查列表可从 Microsoft Exchange 2010 升级到 Exchange 2013。在开始使用此检查表之前，请确保您熟悉以下内容中介绍的概念：
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 使用此检查表安装和部署统一消息 (UM) 和 Microsoft Lync Server 2013。在此主题中，“Lync Server”也指 Lync Server 2010。但是，Microsoft Office Communications Server 2007 R2 也能与统一消息一起部署。
 

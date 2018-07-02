@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-07-21_
+_**上一次修改主题：** 2015-07-21_
 
 MicrosoftExchange Server 2013 和 Exchange Online、Exchange Search 包含用于索引最常见的邮件附件文件格式的筛选器。您也可以安装用于索引其他文件类型的筛选器。
 

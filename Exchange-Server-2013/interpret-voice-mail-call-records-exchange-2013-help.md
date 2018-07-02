@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 若要查看有关调用由 Exchange 服务器处理在某个特定日期的详细的信息，请导出调用数据从调用统计信息报告的那一天。可用的在过去的 90 天内的数据可以帮助您的每日电话使用音频质量或拒绝的呼叫，诊断问题和提供审核或您组织中的 Exchange 服务器上的报表的信息。
 

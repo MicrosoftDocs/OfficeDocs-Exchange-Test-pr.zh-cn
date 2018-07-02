@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Office 365_
+_**适用于：** Exchange Server 2013, Office 365_
 
-_**上一次修改主题：**2012-10-11_
+_**上一次修改主题：** 2012-10-11_
 
 域表示为其设置电子邮件目录和邮箱的 SMTP 命名空间。通过配置与 Microsoft Exchange Server 2013 组织进行交互的域，可以配置 Exchange 如何处理与各个域往来的电子邮件。
 

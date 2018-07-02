@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 每天，信息人员都通过电子邮件传递敏感信息，包括财务报表和数据、客户和员工信息、机密的产品信息和规格信息等。在 Microsoft Exchange Server 2013、Microsoft Outlook 和 Microsoft OfficeOutlook Web App 中，用户可以通过应用 Active Directory 权限管理服务 (AD RMS) 权限策略模板将信息权限管理 (IRM) 保护应用于邮件。这要求在组织中部署 AD RMS。有关 AD RMS 的详细信息，请参阅 [Active Directory 权限管理服务](https://go.microsoft.com/fwlink/p/?linkid=129823)。
 

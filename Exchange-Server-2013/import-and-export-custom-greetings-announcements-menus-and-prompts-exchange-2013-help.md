@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-04-08_
+_**上一次修改主题：** 2015-04-08_
 
 您可以导入和导出已在统一消息 (UM) 拨号计划和自动助理上记录使用的音频文件。例如，如果您使用以前版本的 Exchange 升级一个音频文件，可能想导出或保存该音频文件的副本。或者，在配置一个拨号计划或自动助理之前，需要导入一个已记录的音频提示的副本。
 

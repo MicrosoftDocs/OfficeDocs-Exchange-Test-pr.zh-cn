@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Microsoft Exchange 2010 统一消息故障排除工具是一个名为 **Test-ExchangeUMCallFlow** 的 Exchange 命令行管理程序 cmdlet。可使用该工具对贵组织的统一消息 (UM) 执行一系列诊断测试。如果有任何测试失败，该工具会报告失败原因以及问题的可能解决方案。您只能在 Exchange 2010 或更高版本的服务器上使用 UM 故障排除工具。
 

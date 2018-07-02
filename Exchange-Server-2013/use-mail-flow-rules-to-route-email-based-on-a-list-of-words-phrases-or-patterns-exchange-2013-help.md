@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**上一次修改主题：**2017-10-30_
+_**上一次修改主题：** 2017-10-30_
 
 为了帮助您满足您的组织的电子邮件策略的用户，可以使用Exchange传输规则来确定如何路由电子邮件包含特定的词或模式。对于短的单词或短语列表，您可以使用Exchange 管理中心。对于较长的列表，可能需要使用ExchangeWindows PowerShell的模块可以从文本文件中读取的列表。
 

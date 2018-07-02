@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 当用户访问使用Outlook语音访问统一邮件 (UM) 系统使用电话用户界面 (TUI) 设置。当您修改已启用 UM 的用户的 TUI 配置设置时，您可以修改属性和它们的值对启用 UM 的用户的邮箱。
 

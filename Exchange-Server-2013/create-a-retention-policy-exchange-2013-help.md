@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 在 Exchange Online 和 Exchange Server 2013 中，可以使用保留策略来管理电子邮件生命周期。通过创建保留标记，将它们添加至保留策略，并将策略应用至邮箱用户来应用保留策略。
 

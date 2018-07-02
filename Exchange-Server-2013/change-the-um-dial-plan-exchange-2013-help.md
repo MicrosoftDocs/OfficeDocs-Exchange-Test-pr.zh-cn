@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-05_
+_**上一次修改主题：** 2012-11-05_
 
 您可能需要移动到不同的 UM 拨号计划启用的统一邮件 (UM) 的用户或更改拨号计划与用户相关联。例如，您可以将启用 UM 的用户从电话分机拨号计划移动到 SIP URI 的拨号计划。
 

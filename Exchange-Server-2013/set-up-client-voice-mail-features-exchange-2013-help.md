@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-20_
+_**上一次修改主题：** 2013-02-20_
 
 本主题介绍使启用 Exchange 统一消息 (UM) 访问电子邮件和语音邮件消息在其邮箱的用户的客户端功能。这些功能使您可以提供您的用户简化的访问语音邮件和电子邮件和改进了整体的用户体验。
 

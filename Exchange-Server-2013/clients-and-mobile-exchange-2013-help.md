@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 有许多不同的客户端可用于访问 Microsoft Exchange Server 2013 邮箱中的信息。这些客户端具有台式机程序（例如 Microsoft Outlook、Outlook Web App）以及移动客户端（例如手机、平板电脑和其他移动设备）。这些客户端中的每一个都可提供各种功能。
 

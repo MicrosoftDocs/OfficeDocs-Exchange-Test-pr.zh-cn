@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 您可以配置用于侦听会话启动协议 (SIP) 统一邮件 (UM) IP 网关的请求的 TCP 端口。默认情况下，当您创建 UM IP 网关的 SIP TCP 侦听的端口号设置为 5060。无法配置或通过 EAC 更改 SIP TCP 侦听端口。通过使用**Set-UMIPGateway** cmdlet，您必须配置 SIP TCP 侦听的端口号。
 

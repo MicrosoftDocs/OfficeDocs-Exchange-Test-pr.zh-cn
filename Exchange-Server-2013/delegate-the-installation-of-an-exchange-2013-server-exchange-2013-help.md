@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2014-07-31_
+_**上一次修改主题：** 2014-07-31_
 
 Exchange Server 2013 使您可以将 Exchange 服务器安装委派给不属于 Exchange 2013 组织管理角色组的人员。这有利于安装和设置服务器的人员与管理服务的人员不是同一人的大型公司（如 Exchange）。如果这听起来正是您要做的事情，则本主题对您很适用。
 

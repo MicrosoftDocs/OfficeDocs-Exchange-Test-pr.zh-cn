@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-12-02_
+_**上一次修改主题：** 2014-12-02_
 
 在 Microsoft Exchange Server 2013 中，可以为目标域调整 DNS 查询敏感度，以便遇到 DNS 错误时能更快地进行邮件传递。但是，在某些情况下该调整可能导致传递失败，具体取决于 DNS 错误。
 

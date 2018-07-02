@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2018-04-16_
+_**上一次修改主题：** 2018-04-16_
 
 欢迎使用 Microsoft Exchange Server 2013！本主题包含您要成功部署 Exchange 2013 而需要了解的重要信息。在开始部署之前，请完整阅读本主题。
 
@@ -37,7 +37,7 @@ _**上一次修改主题：**2018-04-16_
 
 ## 安装和部署
 
-  - **msExchProductId 不会反映已安装的 Exchange 2013 的版本：**在 Exchange 扩展您的 Active Directory 架构并准备 Exchange Active Directory 后，系统会更新若干个属性，以便显示准备工作已完成。其中一个属性就是 *msExchangeProductId*，它位于 `Configuration` 命名上下文中的 `CN=<your organization>, CN=Microsoft Exchange, CN=Services, CN=Configuration, DC=<domain>` 容器下。如果您要安装的 Exchange 2013 版本中没有引入 Active Directory 架构更改，则此属性不会进行更新，或可能会显示一个非预期的值。如果此值与要安装的 Exchange 2013 的版本不相符，则可能会产生混淆。
+  - **msExchProductId 不会反映已安装的 Exchange 2013 的版本：** 在 Exchange 扩展您的 Active Directory 架构并准备 Exchange Active Directory 后，系统会更新若干个属性，以便显示准备工作已完成。其中一个属性就是 *msExchangeProductId*，它位于 `Configuration` 命名上下文中的 `CN=<your organization>, CN=Microsoft Exchange, CN=Services, CN=Configuration, DC=<domain>` 容器下。如果您要安装的 Exchange 2013 版本中没有引入 Active Directory 架构更改，则此属性不会进行更新，或可能会显示一个非预期的值。如果此值与要安装的 Exchange 2013 的版本不相符，则可能会产生混淆。
     
     发生这种行为属情理之中，因为 *msExchProductId* 的值不会反映要安装的 Exchange 2013 的版本。此属性反映的是最后更改 Active Directory 架构的 Exchange 2013 版本。为了避免混淆，我们建议您按照[准备 Active Directory 和域](prepare-active-directory-and-domains-exchange-2013-help.md)的[How do you know this worked?](prepare-active-directory-and-domains-exchange-2013-help.md)部分中的步骤操作，验证您的 Active Directory 是否已更新且已为要安装的 Exchange 2013 版本做好了准备。
 

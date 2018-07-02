@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 您可以启用和禁用入站的传真与统一消息 (UM) 邮箱策略相关联的用户。默认情况下，当用户启用了 UM，用户不能接收传真邮件，除非您启用 UM 邮箱策略上的入站传真并指定合作伙伴传真服务器的 URI。如果 Uri 在 UM 邮箱策略上配置，但在 UM 拨号计划或为单个用户禁用允许传入传真的选项，已启用 UM 的用户链接到 UM 邮箱策略仍将无法接收传真。
 

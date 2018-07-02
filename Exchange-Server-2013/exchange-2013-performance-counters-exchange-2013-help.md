@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2017-02-06_
+_**上一次修改主题：** 2017-02-06_
 
 ## Exchange 2013 性能计数器
 

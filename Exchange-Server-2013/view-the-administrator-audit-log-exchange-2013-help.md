@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**上一次修改主题：**2016-05-03_
+_**上一次修改主题：** 2016-05-03_
 
 在 Microsoft Exchange Online Protection (EOP)、Microsoft Exchange Online 和 Microsoft Exchange 2013 中，您可以使用 Exchange 管理中心 (EAC) 搜索和查看\&quot;管理员审核日志\&quot;中的条目。管理员审核日志根据管理员和具有指定管理权限的用户所执行的 Exchange 命令行管理程序 cmdlet 来记录特定的操作。管理员审核日志中的条目向您提供有关所运行的 cmdlet、所使用的参数、运行 cmdlet 的用户以及受影响的对象的相关信息。
 

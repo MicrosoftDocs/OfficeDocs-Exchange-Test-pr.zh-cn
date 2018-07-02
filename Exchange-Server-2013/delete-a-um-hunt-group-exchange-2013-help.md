@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-05_
+_**上一次修改主题：** 2012-11-05_
 
 删除统一消息 (UM) 智能寻线之后，与该 UM 智能寻线关联的 UM IP 网关将不再提供服务或应答传入呼叫。如果删除 UM 智能寻线使 UM IP 网关中没有任何其他已配置的智能寻线，则 UM IP 网关将无法处理 UM 呼叫。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 执行管理角色配置任务所需的权限视所执行的过程或要运行的 cmdlet 而定。有关管理角色的详细信息，请参阅[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 

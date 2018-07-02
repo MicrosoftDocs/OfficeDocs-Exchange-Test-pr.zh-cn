@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-21_
+_**上一次修改主题：** 2013-02-21_
 
 统一消息 (UM) 拨号计划是统一消息的主要组件并且是在网络上成功部署统一消息语音邮件必不可少的。以下各部分讨论了 UM 拨号计划以及如何在 UM 部署中使用它们。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-30_
+_**上一次修改主题：** 2012-11-30_
 
 统一消息 (UM) 结合语音邮件和电子邮件消息到一个可以从许多不同的设备中访问的邮箱。用户可以收听语音邮件通过 Outlook Voice Access 从任何电话或电子邮件收件箱。
 

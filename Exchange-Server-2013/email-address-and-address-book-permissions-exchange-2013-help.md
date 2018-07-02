@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 配置电子邮件地址和通讯簿功能所需的权限取决于要执行的步骤和要运行的 cmdlet。有关电子邮件地址和通讯簿的详细信息，请参阅[电子邮件地址和通讯簿](email-addresses-and-address-books-exchange-2013-help.md)。
 

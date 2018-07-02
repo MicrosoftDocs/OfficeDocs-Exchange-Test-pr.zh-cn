@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2014-12-03_
+_**上一次修改主题：** 2014-12-03_
 
 Microsoft Exchange Server 2013 安装程序无法继续，因为本地计算机上缺少所需的 Windows 功能。您将需要安装此 Windows 功能，然后 Exchange 2013 才能继续运行。
 

@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-24_
+_**上一次修改主题：** 2015-04-24_
 
 Exchange Server 2013 中的脱机通讯簿 (OAB) 是已下载通讯簿副本，通过此通讯簿，Outlook 用户可以在与服务器断开连接的情况下访问信息。Exchange 管理员可以决定脱机工作的用户能够使用哪些通讯簿，还可以配置通讯簿的分发方法（基于 Web 分发或公用文件夹分发）。
 

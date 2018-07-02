@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 信息工作人员经常需要与外部收件人、供应商、合作伙伴和客户协作，并共享其忙/闲（也称为日历可用性）信息。Microsoft Exchange Server 2013 中的联合身份验证可帮助进行这些协作工作。“联合身份验证”指支持“联合共享”（用户与其他外部联盟组织中的收件人共享日历信息的一种简单方法）的基本信任基础结构。若要了解有关联合共享的详细信息，请参阅[共享](sharing-exchange-2013-help.md)。
 
@@ -186,17 +186,17 @@ Contoso 员工使用以下电子邮件地址域之一：contoso.com、contoso.co
 
   - **受信任的 CA**   如果可以，应从受 Windows Live 信任的 CA 颁发 X.509 安全套接字层 (SSL) 证书。但是，可以使用由当前未经 Microsoft 认证的 CA 颁发的证书。有关受信任的 CA 的当前列表，请参阅[联合身份验证信任的受信任根证书颁发机构](trusted-root-certification-authorities-for-federation-trusts-exchange-2013-help.md)。
 
-  - **主题密钥标识符：**该证书必须具有主题密钥标识符字段。商业 CA 颁发的大多数 X.509 证书都具有此标识符。
+  - **主题密钥标识符：** 该证书必须具有主题密钥标识符字段。商业 CA 颁发的大多数 X.509 证书都具有此标识符。
 
-  - **CryptoAPI 加密服务提供程序 (CSP)：**该证书必须使用 CryptoAPI CSP。使用加密 API 的证书：联合身份验证不支持下一代 (CNG) 提供程序。如果使用 Exchange 创建证书请求，则使用 CryptoAPI 提供程序。有关详细信息，请参阅[加密 API：下一代](https://go.microsoft.com/fwlink/?linkid=187890)。
+  - **CryptoAPI 加密服务提供程序 (CSP)：** 该证书必须使用 CryptoAPI CSP。使用加密 API 的证书：联合身份验证不支持下一代 (CNG) 提供程序。如果使用 Exchange 创建证书请求，则使用 CryptoAPI 提供程序。有关详细信息，请参阅[加密 API：下一代](https://go.microsoft.com/fwlink/?linkid=187890)。
 
-  - **RSA 签名算法：**该证书必须使用 RSA 作为签名算法。
+  - **RSA 签名算法：** 该证书必须使用 RSA 作为签名算法。
 
-  - **可导出私钥：**用于生成该证书的私钥必须可导出。在 EAC 中使用“新建 Exchange 证书”向导或在命令行管理程序中使用 [New-ExchangeCertificate](https://technet.microsoft.com/zh-cn/library/aa998327\(v=exchg.150\)) cmdlet 创建证书请求时，可以指定私钥可导出。
+  - **可导出私钥：** 用于生成该证书的私钥必须可导出。在 EAC 中使用“新建 Exchange 证书”向导或在命令行管理程序中使用 [New-ExchangeCertificate](https://technet.microsoft.com/zh-cn/library/aa998327\(v=exchg.150\)) cmdlet 创建证书请求时，可以指定私钥可导出。
 
-  - **当前证书：**该证书必须是当前证书。不能使用过期或已吊销的证书来创建联合身份验证信任。
+  - **当前证书：** 该证书必须是当前证书。不能使用过期或已吊销的证书来创建联合身份验证信任。
 
-  - **增强密钥用法：**证书必须包含增强密钥用法 (EKU) 类型的“客户端身份验证 (1.3.6.1.5.5.7.3.2)”。此使用类型用于向远程计算机证明您的身份。如果使用 EAC 或命令行管理程序生成证书请求，则此使用类型为默认包含项。
+  - **增强密钥用法：** 证书必须包含增强密钥用法 (EKU) 类型的“客户端身份验证 (1.3.6.1.5.5.7.3.2)”。此使用类型用于向远程计算机证明您的身份。如果使用 EAC 或命令行管理程序生成证书请求，则此使用类型为默认包含项。
 
 <table>
 <thead>

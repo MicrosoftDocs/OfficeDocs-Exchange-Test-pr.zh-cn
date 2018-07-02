@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 使用此检查表可帮助将 Exchange 2007 统一消息 (UM) 升级到 Exchange 2013 UM。请确保在将 Exchange 2007 组织和 UM 部署升级到 Exchange 2013 时参考此信息。有关升级到 Exchange 2013 UM 的分步说明，请参阅[升级到 Exchange 2013 UM 的 Exchange 2007 UM](upgrade-exchange-2007-um-to-exchange-2013-um-exchange-2013-help.md)。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-17_
+_**上一次修改主题：** 2012-10-17_
 
 `MyAddressInformation`管理角色使各个用户可以查看和修改其街道地址和工作电话和传真号码。这是在[MyContactInformation 角色](mycontactinformation-role-exchange-2013-help.md)父角色中创建自定义角色。
 

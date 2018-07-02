@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 此主题介绍如何使用 Microsoft Forefront Identity Manager 2010 R2 SP1 在跨林拓扑中部署 Exchange 2013。要在跨林拓扑中部署 Exchange 2013，必须先在各个林中安装 Exchange 2013，然后连接这些林，以便用户可以跨林查看地址和可用性数据。
 

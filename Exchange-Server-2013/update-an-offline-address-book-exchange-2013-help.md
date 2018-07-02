@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-11-15_
+_**上一次修改主题：** 2013-11-15_
 
 创建 OAB 或修改 OAB 设置后，用户在 OAB 生成 (OABGen) 过程完成后才能得到这些更改。
 

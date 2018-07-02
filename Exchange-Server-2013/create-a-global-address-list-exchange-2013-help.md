@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2014-12-16_
+_**上一次修改主题：** 2014-12-16_
 
 全局地址列表 (GAL) 是一个目录，其中包含实现 MicrosoftExchange 的组织中每个组、用户和联系人的条目。如果组织使用通讯簿策略，你可能需要创建额外的 GAL。有关详细信息，请参阅[通讯簿策略](address-book-policies-exchange-2013-help.md)。
 

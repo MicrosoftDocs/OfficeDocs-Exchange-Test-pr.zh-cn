@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-09-23_
+_**上一次修改主题：** 2012-09-23_
 
 [通过互联网创建接收连接器接收电子邮件](create-a-receive-connector-to-receive-email-from-the-internet-exchange-2013-help.md)
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-03_
+_**上一次修改主题：** 2012-10-03_
 
 未区分范围顶级管理角色的管理角色条目引用脚本和非Exchange cmdlet 和其参数，要使可供分配的角色。通过更改角色条目上可用的参数，您可以控制哪些分配与非Exchange cmdlet 的脚本可以执行的任务。有关未区分范围的角色条目的详细信息，请参阅[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 

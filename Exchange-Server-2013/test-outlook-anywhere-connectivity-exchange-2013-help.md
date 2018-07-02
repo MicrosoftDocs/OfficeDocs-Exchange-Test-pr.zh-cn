@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 通过使用 Shell 或 Exchange Remote Connectivity Analyzer (ExRCA)，您可以测试端到端客户端的 Outlook Anywhere 连接。这包括通过自动发现服务、创建用户配置文件和登录用户邮箱执行的连接测试。从自动发现服务中检索所需的全部值。
 

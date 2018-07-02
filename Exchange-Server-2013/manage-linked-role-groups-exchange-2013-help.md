@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-09_
+_**上一次修改主题：** 2012-10-09_
 
 可以使用链接的管理角色组，使外Active Directory目录林中的通用安全组 (USG) 管理中资源Active Directory林的 Microsoft Exchange Server 2013组织的成员。通过将外部林中 USG 关联与链接的角色组，成员的 USG 被授予由分配给链接的角色组的管理角色的权限。有关链接的角色组的详细信息，请参阅[了解管理角色组](understanding-management-role-groups-exchange-2013-help.md)。
 

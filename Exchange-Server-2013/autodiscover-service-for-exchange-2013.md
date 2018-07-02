@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 了解 Microsoft Exchange 2013 的 Exchange 自动发现服务。您将了解 Exchange 自动发现服务的功能、工作原理以及部署选项。
 

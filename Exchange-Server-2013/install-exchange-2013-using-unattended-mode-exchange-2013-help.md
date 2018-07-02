@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-06-19_
+_**上一次修改主题：** 2014-06-19_
 
 要执行无人参与安装，您必须从命令提示符安装 Microsoft Exchange Server 2013。有关规划和部署 Exchange 2013 的详细信息，请参阅[规划和部署](planning-and-deployment-for-exchange-2013-installation-instructions.md)。
 

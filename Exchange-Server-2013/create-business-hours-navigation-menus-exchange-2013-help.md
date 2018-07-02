@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-05_
+_**上一次修改主题：** 2012-11-05_
 
 您可以启用营业时间键映射的统一邮件 (UM) 自动助理。创建 UM 自动助理后，默认的系统提示将用于营业时间主菜单提示，呼叫者将听到后业务时间欢迎问候语问候就会播放。默认营业时间主菜单提示说"欢迎访问Microsoft Exchange自动助理。由于没有键映射定义，默认情况下，没有菜单选项可供调用方，并且他们听到默认的主菜单提示。
 

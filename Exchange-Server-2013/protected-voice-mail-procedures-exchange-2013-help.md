@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-01-30_
+_**上一次修改主题：** 2013-01-30_
 
 [来自已通过身份验证的调用方配置受保护的语音邮件](configure-protected-voice-mail-from-authenticated-callers-exchange-2013-help.md)
 

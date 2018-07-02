@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013 SP1_
+_**适用于：** Exchange Server 2013 SP1_
 
-_**上一次修改主题：**2017-04-14_
+_**上一次修改主题：** 2017-04-14_
 
-**摘要：**
+**摘要：** 
 
 对于本地 Exchange 2013 Service Pack 1 (SP1) 部署，安装和配置 Active Directory 联合身份验证服务 (AD FS) 意味着，您现在可以使用 AD FS 基于声明的身份验证方法连接到 Outlook Web App 和 EAC。您可以将 AD FS 和基于声明的身份验证与 Exchange 2013 SP1 集成。使用基于声明的身份验证可代替传统的身份验证方法，包括以下方法：
 
@@ -177,13 +177,13 @@ Additional information you might want to know
     
       - 用于服务通信的 SSL 证书
         
-          - 主题名称：**adfs.contoso.com**（AD FS 部署名称）
+          - 主题名称：** adfs.contoso.com**（AD FS 部署名称）
         
           - 主题备用名称 (SAN)：无
     
       - 令牌签名证书
         
-          - 主题名称：**tokensigning.contoso.com**
+          - 主题名称：** tokensigning.contoso.com**
         
           - 主题备用名称 (SAN)：无
         
@@ -205,7 +205,7 @@ Additional information you might want to know
     
       - 用于服务通信的 SSL 证书
         
-          - 主题名称：**owa.contoso.com**
+          - 主题名称：** owa.contoso.com**
         
           - 主题备用名称 (SAN)：无
         
@@ -224,7 +224,7 @@ Additional information you might want to know
     
       - AD FS 代理 SSL 证书
         
-          - 主题名称：**adfs.contoso.com**（AD FS 部署名称）
+          - 主题名称：** adfs.contoso.com**（AD FS 部署名称）
         
           - 主题备用名称 (SAN)：无
     
@@ -444,17 +444,17 @@ EAC 使用 ECP 虚拟目录。您可以使用 [Get-EcpVirtualDirectory](https://
 
 3.  运行以下两个 cmdlet 以创建信赖方信任。在此示例中，这还将配置声明规则。
 
-**IssuanceAuthorizationRules.txt 包含：**
+**IssuanceAuthorizationRules.txt 包含：** 
 
     @RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");
 
-**IssuanceTransformRules.txt 包含：**
+**IssuanceTransformRules.txt 包含：** 
 
     @RuleName = "ActiveDirectoryUserSID" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value); 
     
     @RuleName = "ActiveDirectoryUPN" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);
 
-**运行以下命令：**
+**运行以下命令：** 
 
     [string]$IssuanceAuthorizationRules=Get-Content -Path C:\IssuanceAuthorizationRules.txt
     

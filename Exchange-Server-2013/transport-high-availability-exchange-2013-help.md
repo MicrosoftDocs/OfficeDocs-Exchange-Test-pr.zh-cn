@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-15_
+_**上一次修改主题：** 2012-10-15_
 
 在 Microsoft Exchange Server 2013 中，传输高可用性用于在成功传递邮件前后保留邮件的冗余副本。Exchange 2013 改善了在 Exchange Server 2010 中引入的传输高可用性功能（例如卷影冗余和传输暂放），以帮助确保邮件不会在传输中丢失。
 

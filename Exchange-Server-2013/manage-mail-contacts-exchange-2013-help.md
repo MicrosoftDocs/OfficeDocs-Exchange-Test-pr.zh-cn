@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2017-10-04_
+_**上一次修改主题：** 2017-10-04_
 
 邮件联系人都包含有关人或组织交换或Exchange Online组织之外存在的已启用邮件的目录服务对象。每个邮件联系人具有外部电子邮件地址。有关邮件联系人的详细信息，请参阅[收件人](recipients-exchange-2013-help.md)。
 

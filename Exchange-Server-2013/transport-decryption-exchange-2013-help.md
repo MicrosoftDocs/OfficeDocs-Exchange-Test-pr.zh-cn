@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 在 Microsoft Exchange Server 2013、Microsoft Outlook 2010 及更高版本以及 Microsoft OfficeOutlook Web App 中，用户可以使用信息权限管理 (IRM) 功能保护邮件。可创建 Outlook 保护规则，在从 Outlook 2010 客户端中发送邮件之前自动对这些邮件应用 IRM 保护。此外，还可以创建传输保护规则，以对符合规则条件的正在传送中的邮件应用 IRM 保护。利用传输解密机制，可以访问受 IRM 保护的邮件内容，以强制执行邮件策略。
 

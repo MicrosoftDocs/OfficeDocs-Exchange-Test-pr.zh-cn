@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-21_
+_**上一次修改主题：** 2013-02-21_
 
 如果用户报告其统一消息 (UM) 呼叫的音频质量有问题，可使用\&quot;用户呼叫日志\&quot;报告来帮助您分析引起这些问题的原因。
 

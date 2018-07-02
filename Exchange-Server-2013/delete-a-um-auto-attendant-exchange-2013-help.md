@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-30_
+_**上一次修改主题：** 2012-11-30_
 
 删除统一邮件 (UM) 自动助理后，必须由人工接线员回答由 UM 自动助理应答的传入呼叫。如果它与默认 UM 自动助理 UM 拨号计划相关联，则不能删除 UM 自动助理。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 接收连接器控制发送到 Exchange 组织的入站邮件流。会在具有传输服务的运行 Microsoft Exchange Server 2013 的计算机上，或是在客户端访问服务器上的前端服务中配置这些控制器。可以在 Exchange 管理中心 (EAC) 或 Exchange 命令行管理程序中创建它们。
 

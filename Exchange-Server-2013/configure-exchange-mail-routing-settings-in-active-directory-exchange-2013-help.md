@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-08_
+_**上一次修改主题：** 2015-04-08_
 
 默认设置下，Microsoft Exchange Server 2013 将引用 Active Directory 中的 IP 站点链接对象来帮助确定开销最小的路由路径。但是，如果您确定 Active Directory IP 站点链接开销和流量模式对于 Exchange 中的邮件路由并非最佳，则可配置 Active Directory 中仅由 Exchange 使用的设置来帮助优化邮件流。
 

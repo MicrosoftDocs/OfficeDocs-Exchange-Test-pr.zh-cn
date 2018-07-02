@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-21_
+_**上一次修改主题：** 2013-02-21_
 
 在 Exchange Server 2013 中，您可以使用 EAC 或 Shell 来管理证书。EAC 包括新的证书管理用户界面。通过这个新的 UI，可以创建新的证书，编辑现有的证书或删除证书。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 用户可以通过 Microsoft Exchange ActiveSync，在移动电话、平板电脑及其他便携设备上访问其电子邮件、日历、联系人和任务信息。他们还可以使用 Microsoft Exchange ActiveSync 设置自己的签名和自动回复。多种移动电话和设备可与 Exchange ActiveSync 配合使用。
 

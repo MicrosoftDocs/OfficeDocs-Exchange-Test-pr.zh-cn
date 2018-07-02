@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 您可以配置自动语音识别 (ASR) 的用户启用统一邮件 (UM) 和语音邮件功能。在Outlook的语音访问用户的邮箱上启用 ASR 时，用户可以移动邮箱菜单使用声音命令。默认情况下启用 ASR。如果 ASR 处于禁用状态，用户必须使用双音多频 (DTMF)，也称为按键，输入菜单中移动。
 

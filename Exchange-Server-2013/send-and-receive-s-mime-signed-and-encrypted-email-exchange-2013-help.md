@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 在 Microsoft Outlook 中发送或回复 S/MIME 加密邮件与发送或回复未加密邮件类似。有关从 Outlook Web App 等电子邮件程序阅读或发送 S/MIME 加密邮件的详细信息，请参阅[使用 Outlook 发送和回复 S/MIME 加密邮件](https://go.microsoft.com/fwlink/p/?linkid=392520)。
 

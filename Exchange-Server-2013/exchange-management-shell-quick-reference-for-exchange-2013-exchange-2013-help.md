@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 本主题介绍 Microsoft Exchange Server 2013 的正式发布 (RTM) 版本和更新版本中提供的最常用的 cmdlet，并提供它们的用法示例。
 

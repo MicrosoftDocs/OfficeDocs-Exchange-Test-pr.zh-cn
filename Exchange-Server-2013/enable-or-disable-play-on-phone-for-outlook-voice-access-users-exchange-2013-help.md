@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-12-12_
+_**上一次修改主题：** 2012-12-12_
 
 您可以启用或禁用统一邮件 (UM) 邮箱策略相关联的用户的电话功能上播放。此选项默认启用的允许用户通过任何电话播放语音邮件。此选项不可用具有MicrosoftExchange Server 2007服务器上的邮箱启用 UM 的用户。
 

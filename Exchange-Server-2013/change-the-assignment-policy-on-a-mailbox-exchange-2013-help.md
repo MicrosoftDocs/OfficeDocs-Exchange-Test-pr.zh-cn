@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-08_
+_**上一次修改主题：** 2012-10-08_
 
 您可以更改已分配给邮箱的管理角色分配策略。在更改邮箱的分配策略时，所做更改会在用户刷新连接（如用户下次登录到其邮箱或打开邮箱选项页）之后立即生效。有关 Microsoft Exchange Server 2013 中的分配策略的详细信息，请参阅[了解管理角色分配策略](understanding-management-role-assignment-policies-exchange-2013-help.md)。
 

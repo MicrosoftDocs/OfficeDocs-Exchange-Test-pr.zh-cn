@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-18_
+_**上一次修改主题：** 2013-02-18_
 
 电话智能寻线提供了一种将来自单个号码的电话呼叫分配到多个分机或电话号码的方法。在统一消息 (UM) 中，UM 智能寻线是电话智能寻线的逻辑表示形式，它将 UM IP 网关与 UM 拨号计划关联起来。
 

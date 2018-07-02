@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**上一次修改主题：**2018-03-26_
+_**上一次修改主题：** 2018-03-26_
 
-**摘要：**本文介绍了如何将新式公用文件夹从 Exchange 2013 迁移到 Office 365。
+**摘要：** 本文介绍了如何将新式公用文件夹从 Exchange 2013 迁移到 Office 365。
 
 将 Exchange 2013 公用文件夹迁移到 Exchange Online 需要 Exchange Server 2013 CU15 或者更高版本运行于您的内部环境。
 
@@ -137,7 +137,7 @@ _**上一次修改主题：**2018-03-26_
     
         New-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99 -DomainName <target domain> -DomainType InternalRelay
     
-    **示例：**
+    **示例：** 
     
         New-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99 -DomainName "contoso.mail.onmicrosoft.com" -DomainType InternalRelay
     
@@ -316,11 +316,11 @@ _**上一次修改主题：**2018-03-26_
 
 使用以前下载的脚本生成在迁移过程中使用的 .csv 文件。
 
-1.  从 Exchange 命令行管理程序（本地）运行 `Export-ModernPublicFolderStatistics.ps1` 脚本来创建文件夹名称到文件夹大小映射文件。必须具有本地管理员权限才能运行此脚本。生成的文件包含三列：**FolderName**、**FolderSize**，和 **DeletedItemSize**。**FolderSize** 和 **DeletedItemSize** 列的值以字节为单位显示。例如，**\\PublicFolder01,10240, 100** 表示名为 PublicFolder01 的层次结构的根中的公用文件夹大小为 10240 个字节或 10.240 MB，并且其中有 100 个字节的可恢复项。
+1.  从 Exchange 命令行管理程序（本地）运行 `Export-ModernPublicFolderStatistics.ps1` 脚本来创建文件夹名称到文件夹大小映射文件。必须具有本地管理员权限才能运行此脚本。生成的文件包含三列：** FolderName**、**FolderSize**，和 **DeletedItemSize**。**FolderSize** 和 **DeletedItemSize** 列的值以字节为单位显示。例如，**\\PublicFolder01,10240, 100** 表示名为 PublicFolder01 的层次结构的根中的公用文件夹大小为 10240 个字节或 10.240 MB，并且其中有 100 个字节的可恢复项。
     
         .\Export-ModernPublicFolderStatistics.ps1 <Folder-to-size map path>
     
-    **示例：**
+    **示例：** 
     
         .\Export-ModernPublicFolderStatistics.ps1 stats.csv
 
@@ -349,7 +349,7 @@ _**上一次修改主题：**2018-03-26_
     
       - `Folder-to-mailbox map path`是在此步骤中创建的文件夹到邮箱 .csv 文件的文件路径。如果仅指定文件名，则会在本地计算机上的当前 PowerShell 目录中生成此文件。
 
-**示例：**
+**示例：** 
 
     .\ModernPublicFolderToMailboxMapGenerator.ps1 -MailboxSize 25GB -MailboxRecoverableItemSize 1GB -ImportFile .\stats.csv -ExportFile map.csv
 
@@ -567,7 +567,7 @@ _**上一次修改主题：**2018-03-26_
     
         Add-RecipientPermission -Identity <mail-enabled public folder primary SMTP address> -Trustee <name of user to be assigned permission> -AccessRights SendAs
     
-    **示例：**
+    **示例：** 
     
         Add-RecipientPermission -Identity send1 -Trustee Exo1 -AccessRights SendAs
     
@@ -575,7 +575,7 @@ _**上一次修改主题：**2018-03-26_
     
         Set-MailPublicFolder -Identity <name of public folder> -GrantSendOnBehalfTo <user or comma-separated list of users>
     
-    **示例：**
+    **示例：** 
     
         Set-MailPublicFolder send2 -GrantSendOnBehalfTo exo1,exo2
 

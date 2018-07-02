@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-06-09_
+_**上一次修改主题：** 2014-06-09_
 
 无作用域的管理角色可用于向管理员和专家用户提供对 Windows PowerShell 脚本和非 Exchange cmdlet 的访问权限。可以创建无作用域的顶级角色并将脚本或非 Exchange cmdlet 添加到该角色，也可以基于现有的无作用域顶级角色来创建角色。创建并自定义无作用域角色之后，可以将该角色分配到管理角色组、用户和通用安全组 (USG)。不能将无作用域角色分配到管理角色分配策略。有关无作用域角色的详细信息，请参阅[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 

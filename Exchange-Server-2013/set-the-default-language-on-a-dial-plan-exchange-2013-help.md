@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 您可以设置统一邮件 (UM) 拨号计划的默认语言。您创建的每个拨号计划最初将为默认语言使用英语 (EN-US)。英语 (EN-US) 语言包安装在MicrosoftExchange Server 2013的所有版本，并不能删除。
 

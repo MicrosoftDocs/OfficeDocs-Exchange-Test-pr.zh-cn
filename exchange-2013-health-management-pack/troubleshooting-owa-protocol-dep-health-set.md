@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Project Server 2013_
+_**适用于：** Exchange Server 2013, Project Server 2013_
 
-_**上一次修改主题：**2015-11-10_
+_**上一次修改主题：** 2015-11-10_
 
 **OWA.Protocol.DEP** 运行状况设置监视在 Lync 2013 和 Exchange 2013 之间集成的 Outlook Web App 中的即时消息 (IM) 服务的整体运行状况。有关在 Outlook Web App 中启用即时消息的详细信息，请参阅[集成 Microsoft Lync Server 2013 和 Microsoft Outlook Web App 2013](http://go.microsoft.com/fwlink/p/?linkid=280418)。
 

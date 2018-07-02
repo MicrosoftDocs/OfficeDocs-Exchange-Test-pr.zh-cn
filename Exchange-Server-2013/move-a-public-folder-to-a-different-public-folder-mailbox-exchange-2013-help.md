@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-11-16_
+_**上一次修改主题：** 2016-11-16_
 
 如果公用文件夹邮箱的内容开始超过邮箱配额，您可能需要将公用文件夹移动到不同的公用文件夹的邮箱。有几种方法来执行此操作。若要移动一个或多个不包含子文件夹的公用文件夹，您可以使用**PublicFolderMoveRequest** cmdlet。如果您需要移动整个公用文件夹分支 （其中包括父公用文件夹和所有子文件夹），可以使用`Move-PublicFolderBranch.ps1`脚本，当您安装 Exchange 2013 时才可用。
 

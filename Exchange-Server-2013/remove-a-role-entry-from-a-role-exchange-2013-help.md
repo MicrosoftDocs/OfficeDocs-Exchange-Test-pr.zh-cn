@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-03_
+_**上一次修改主题：** 2012-10-03_
 
 管理角色项目管理角色确定 cmdlet 和参数上的管理角色。通过删除角色条目或角色输入参数，您可以限制哪些用户分配管理角色可以执行。有关 Microsoft Exchange Server 2013中的管理角色条目的详细信息，请参阅[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 

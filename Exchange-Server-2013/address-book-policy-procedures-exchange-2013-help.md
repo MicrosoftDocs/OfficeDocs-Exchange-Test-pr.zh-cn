@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-11_
+_**上一次修改主题：** 2012-10-11_
 
 [创建通讯簿策略](create-an-address-book-policy-exchange-2013-help.md)
 

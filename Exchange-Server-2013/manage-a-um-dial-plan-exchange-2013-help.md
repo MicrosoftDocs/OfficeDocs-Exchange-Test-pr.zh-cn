@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2018-04-26_
+_**上一次修改主题：** 2018-04-26_
 
 创建统一消息 (UM) 拨号计划后，您可以查看和配置各种设置。例如，您可以配置 IP 语音 (VoIP) 安全性的级别、音频编解码器和拨号限制。在 UM 拨号计划上配置的设置将通过 UM 邮箱策略影响与该拨号计划相关联的所有用户。
 

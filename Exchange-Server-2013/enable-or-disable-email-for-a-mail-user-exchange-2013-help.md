@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2012-11-14_
+_**上一次修改主题：** 2012-11-14_
 
 您可以在 Exchange 组织中禁用现有邮件用户的电子邮件。当禁用邮件用户的电子邮件时，它被从 Exchange 和您的组织的通讯簿。如果邮件用户通讯组的成员，用户将不再接收发送到组的邮件。此外，Exchange 属性已从 Active Directory 中的用户对象，但在 Active Directory 中保留用户对象和非 Exchange 属性 （如联系人和公司信息）。
 

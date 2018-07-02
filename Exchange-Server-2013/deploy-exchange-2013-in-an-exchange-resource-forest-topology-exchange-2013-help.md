@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 本主题说明如何在 Exchange 资源林拓扑中部署 Microsoft Exchange 2013。Exchange 资源林又称为专用 Exchange 林。本主题假定不存在现有的 Exchange 2013 拓扑。
 

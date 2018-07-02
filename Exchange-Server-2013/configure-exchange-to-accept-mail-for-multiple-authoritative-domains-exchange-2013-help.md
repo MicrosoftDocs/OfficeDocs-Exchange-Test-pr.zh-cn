@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-06-15_
+_**上一次修改主题：** 2016-06-15_
 
 在 Microsoft Exchange Server 2013 中，很容易将多个权威域添加到组织中。但在添加了权威域后，需要确定如何在组织中使用这些权威域。例如：
 

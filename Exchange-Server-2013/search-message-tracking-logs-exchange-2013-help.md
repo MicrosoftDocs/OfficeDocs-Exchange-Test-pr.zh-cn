@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-25_
+_**上一次修改主题：** 2013-02-25_
 
 在 Microsoft Exchange Server 2013 中，邮件跟踪日志详细记录了邮件从邮箱服务器上的传输服务、邮箱服务器上的邮箱和边缘传输服务器来回传输产生的所有邮件活动。
 
@@ -99,7 +99,7 @@ _**上一次修改主题：**2013-02-25_
 
 ## 使用命令行管理程序搜索多个服务器上的邮件跟踪日志条目
 
-一般来说，**MessageID:**头字段中的值在邮件通过整个 Exchange 组织的过程中保持不变。此属性在队列视图实用工具中名为 **InternetMessageId**，而在邮件跟踪日志视图实用工具中名为 **MessageId**。在您确定某邮件的 `MessageID:` 值后，就可以在 Exchange 组织中每台邮箱服务器上的邮件跟踪日志中搜索该邮件的信息。
+一般来说，**MessageID:** 头字段中的值在邮件通过整个 Exchange 组织的过程中保持不变。此属性在队列视图实用工具中名为 **InternetMessageId**，而在邮件跟踪日志视图实用工具中名为 **MessageId**。在您确定某邮件的 `MessageID:` 值后，就可以在 Exchange 组织中每台邮箱服务器上的邮件跟踪日志中搜索该邮件的信息。
 
 若要搜索某邮件在所有邮箱服务器上的全部邮件跟踪日志条目，请使用下列语法：
 
@@ -107,7 +107,7 @@ _**上一次修改主题：**2013-02-25_
 
 本示例使用下列搜索条件搜索所有 Exchange 2013 邮箱服务器上的邮件跟踪日志：
 
-  - 查找与包含 **MessageID:**值 `<ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com>` 的邮件有关的所有条目。请注意，您可以省略尖括号字符 (`<``>`)。如果不省略，您需要在整个 **MessageID:**值的两边添加引号。
+  - 查找与包含 **MessageID:** 值 `<ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com>` 的邮件有关的所有条目。请注意，您可以省略尖括号字符 (`<``>`)。如果不省略，您需要在整个 **MessageID:** 值的两边添加引号。
 
   - 对于每个条目，系统都显示字段 **date-time**、**server-hostname**、**client-hostname**、**source**、**event-id** 和 **recipient-address**。
 

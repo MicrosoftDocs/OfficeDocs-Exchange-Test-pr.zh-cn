@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 执行配置 Microsoft Exchange Server 2013 各种组件的任务所需要的权限取决于要执行的步骤或要运行的 cmdlet。请参见本主题中的各节以获取有关其各自功能的详细信息。
 

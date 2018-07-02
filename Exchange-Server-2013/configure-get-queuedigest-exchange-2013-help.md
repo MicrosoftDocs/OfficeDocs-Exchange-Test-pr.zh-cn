@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-12-16_
+_**上一次修改主题：** 2014-12-16_
 
 **Get-QueueDigest** cmdlet 允许您使用单个命令来查看有关 Exchange 组织中部分或全部队列的信息。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-21_
+_**上一次修改主题：** 2013-02-21_
 
 您可以启用或禁用消息等待指示符与统一消息 (UM) 邮箱策略相关联的用户。消息等待指示符是最传统的语音邮件系统中找到的功能。以其最常见的形式，它在语音邮件订阅者的电话，以指示存在新的语音邮件信息光源灯。消息等待指示符也可以为已启用 UM 的用户的移动电话发送文本消息。默认设置为启用。
 

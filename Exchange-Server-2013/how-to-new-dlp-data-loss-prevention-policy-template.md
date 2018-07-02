@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-01-14_
+_**上一次修改主题：** 2015-01-14_
 
 在 Microsoft Exchange Server 2013 中，可以使用数据丢失预防 (DLP) 策略模板帮助满足组织的邮件策略和遵从性需求。这些模板包含预先生成的规则集，有助于管理与几个常见法律和法规要求关联的邮件数据。要查看 Microsoft 提供的所有模板的列表，请参阅 [在 Exchange 中提供的 DLP 策略模板](dlp-policy-templates-supplied-in-exchange-exchange-2013-help.md)。所提供的示例 DLP 模板可以帮助您管理：
 

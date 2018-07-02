@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2017-07-25_
+_**上一次修改主题：** 2017-07-25_
 
 会话边界控制器 (SBC) 可用于通过专用公共 WAN 连接将内部部署电话网络连接到 Microsoft 数据中心。SBC 位于内部部署 IP 网络的边缘，并与 Microsoft 数据中心中的另一个 SBC 连接。
 

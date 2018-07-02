@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 管理员审核日志包含关于 Exchange 命令行管理程序中已经运行的以及由 Exchange 管理中心 (EAC) 运行的所有 cmdlet 和参数的记录。在 EAC 中运行管理员审核日志报告或者在命令行管理程序中运行 **New-AdminAuditLogSearch** cmdlet 时，会按需创建管理员审核日志。有关审核日志的详细信息，请参阅[管理员审核日志记录](administrator-audit-logging-exchange-2013-help.md)。
 

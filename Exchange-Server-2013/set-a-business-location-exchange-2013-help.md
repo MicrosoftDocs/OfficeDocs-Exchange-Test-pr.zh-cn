@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-23_
+_**上一次修改主题：** 2013-02-23_
 
 可以统一邮件 (UM) 自动助理指定业务的位置，以便播放位置的调用方。默认情况下，不输入任何营业地点。
 

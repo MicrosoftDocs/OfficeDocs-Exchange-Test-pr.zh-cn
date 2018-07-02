@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-21_
+_**上一次修改主题：** 2013-02-21_
 
 删除统一消息 (UM) IP 网关时，Exchange 服务器将不再接受来自与 UM IP 网关相关联的 Voice over IP (VoIP) 网关、已启用会话初始协议 (SIP) 的专用交换机 (PBX)、IP PBX 或会话边界控制器 (SBC) 的传入呼叫。
 

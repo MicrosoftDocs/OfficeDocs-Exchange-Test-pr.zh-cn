@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2013-12-02_
+_**上一次修改主题：** 2013-12-02_
 
 您可以搜索管理员审核日志以查找更改组织、服务器和收件人配置的用户。这对尝试跟踪发生意外行为的原因、标识恶意管理员或者验证是否满足遵从性要求都很有帮助。有关管理员审核日志记录的详细信息，请参阅[管理员审核日志记录](administrator-audit-logging-exchange-2013-help.md)。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2015-09-04_
+_**上一次修改主题：** 2015-09-04_
 
 如果安装了 Microsoft Exchange Server 2013，您可以将其升级到最新的 Exchange 2013 累积更新或 Service Pack。可以使用 Exchange 2013 设置向导升级当前版本的 Exchange 2013。有关最新 Exchange 2013 累积更新或 Service Pack 的详细信息，请参阅 [Exchange 2013 更新](updates-for-exchange-2013-exchange-2013-help.md)。有关 Exchange 2013 的详细信息，请参阅[Exchange 2013 中的新增功能](what-s-new-in-exchange-2013-exchange-2013-help.md)。
 

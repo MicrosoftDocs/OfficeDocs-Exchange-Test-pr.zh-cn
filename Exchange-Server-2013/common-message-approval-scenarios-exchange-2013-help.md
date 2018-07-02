@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2014-09-29_
+_**上一次修改主题：** 2014-09-29_
 
 您的组织可能要求特定类型的邮件得到审批，才能符合法定或合规要求，或者才能实施特定的业务工作流。下面是您使用 Exchange 可以设置的一些常见方案示例：
 

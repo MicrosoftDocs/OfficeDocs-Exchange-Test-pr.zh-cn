@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2013-03-22_
+_**上一次修改主题：** 2013-03-22_
 
 Microsoft Exchange Server 2013 安装程序检测到要在其上尝试安装 Exchange 2013 的计算机是 Active Directory 域控制器。建议不要在域控制器上安装 Exchange 2013。
 

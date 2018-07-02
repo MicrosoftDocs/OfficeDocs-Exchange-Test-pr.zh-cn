@@ -13,13 +13,13 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-29_
+_**上一次修改主题：** 2013-04-29_
 
 您可以使用 EAC 中的“新建 Exchange 证书”向导或命令行管理程序来创建自签名证书或内部公钥基础结构 (PKI) 证书请求。对于统一消息 (UM)，您可以针对 Microsoft Exchange 统一消息服务和 Microsoft Exchange 统一消息呼叫路由器服务使用这些证书之一。您可以针对这两项服务使用同一证书，或每个服务使用不同的证书。此外，对于 UM 服务，您也可以购买并导入第三方商业证书。如果您在使用 UM 自签名证书，您可能需要将客户端访问和邮箱服务器的名称加入主题备用名称 (SAN) 中。
 
-在默认情况下，安装 Exchange Server 2013 时，会创建两个自签名证书：**Microsoft Exchange Server 身份验证证书**和 **Microsoft Exchange**。**Microsoft Exchange** 自签名证书可由 UM 用于加密数据，但您必须为 UM 和 UM 呼叫路由器服务分配该证书。在将证书分配给统一消息服务之后，您可以复制该证书并将其导入 VoIP 网关、IP PBX 和启用 SIP 的 PBX。但是，您需要为统一消息专门创建另一个证书，而不是使用默认的自签名证书。
+在默认情况下，安装 Exchange Server 2013 时，会创建两个自签名证书：** Microsoft Exchange Server 身份验证证书**和 **Microsoft Exchange**。**Microsoft Exchange** 自签名证书可由 UM 用于加密数据，但您必须为 UM 和 UM 呼叫路由器服务分配该证书。在将证书分配给统一消息服务之后，您可以复制该证书并将其导入 VoIP 网关、IP PBX 和启用 SIP 的 PBX。但是，您需要为统一消息专门创建另一个证书，而不是使用默认的自签名证书。
 
 <table>
 <thead>

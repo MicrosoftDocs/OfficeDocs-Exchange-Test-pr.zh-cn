@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-21_
+_**上一次修改主题：** 2013-02-21_
 
 您可以配置统一消息 (UM) 拨号计划，以指定当用户拥有相同或相似姓名时为呼叫者提供的信息。UM 使用此设置区分拥有相同或相似姓名的用户，并将此信息提供给呼叫者。当系统提示呼叫者或 Outlook Voice Access 用户输入字母以查找特定用户时，有时会有多个名称与呼叫者的输入匹配。可以使用一种可用的选项向呼叫者提供详细信息，以帮助呼叫者找到其尝试联系的用户。
 

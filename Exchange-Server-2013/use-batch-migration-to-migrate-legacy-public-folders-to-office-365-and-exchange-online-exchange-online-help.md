@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2018-03-26_
+_**上一次修改主题：** 2018-03-26_
 
-**摘要：**使用这些过程将您的 Exchange 2007 和 Exchange 2010 公用文件夹移动到 Office 365。
+**摘要：** 使用这些过程将您的 Exchange 2007 和 Exchange 2010 公用文件夹移动到 Office 365。
 
 本主题说明如何将您的公用文件夹通过直接转换迁移或暂存迁移从 Exchange Server 2010 Service Pack 3 (SP3) 更新汇总 8 或 Exchange 2007 SP3 更新汇总 15 迁移到 Office 365 或 Exchange Online。
 

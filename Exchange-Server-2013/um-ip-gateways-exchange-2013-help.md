@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2014-06-24_
+_**上一次修改主题：** 2014-06-24_
 
 统一消息 (UM) IP 网关表示物理 IP 语音 (VoIP) 网关、IP 专用交换机 (PBX) 或会话边界控制器 (SBC) 硬件设备。必须先在目录服务中创建 UM IP 网关，才能使用 VoIP 网关、IP PBX 或 SBC 应答语音邮件用户的传入呼叫和发送其传出呼叫。
 

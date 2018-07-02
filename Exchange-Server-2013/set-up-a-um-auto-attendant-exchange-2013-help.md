@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 除了使用户可以访问语音邮件，统一消息 (UM) 还使您可以根据组织的需要创建一个或多个 UM 自动助理。可以使用 UM 自动助理为组织创建语音菜单系统，使外部和内部呼叫者可以找到并呼叫组织中的公司用户或部门或者将呼叫转接给他们。
 

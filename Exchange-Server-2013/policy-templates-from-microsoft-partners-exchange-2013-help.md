@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2013-01-31_
+_**上一次修改主题：** 2013-01-31_
 
 数据丢失预防 (DLP) 功能可以帮助您识别和监视许多敏感信息类别。您在配置 DLP 策略时，拥有从 Microsoft Exchange 外部源导入文件，并使用其作为 DLP 策略模板的选择权。Microsoft 合作伙伴公司可以开发并发布这些模板类型。本主题将更新链接以帮助您在可用的情况下查找这些公司。
 

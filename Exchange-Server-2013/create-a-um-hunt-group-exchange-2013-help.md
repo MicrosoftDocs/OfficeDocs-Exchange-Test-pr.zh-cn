@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-16_
+_**上一次修改主题：** 2013-04-16_
 
 统一消息 (UM) 寻是专用分组交换机 (PBX) 或 IP PBX 查寻组的逻辑表示形式。连接或链接之间的 UM IP 网关和 UM 拨号计划充当 UM 查寻组。
 

@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-03-08_
+_**上一次修改主题：** 2013-03-08_
 
 创建统一邮件 (UM) 自动助理后，由自动助理回答到人工接线员通常会回答外部电话号码的来电。与不同与其他统一消息组件中，如 UM 拨号计划和 UM IP 网关，您无需创建 UM 自动助理。但是，自动助理帮助内部和外部调用方查找用户或组织中存在并传输调用它们的部门。
 

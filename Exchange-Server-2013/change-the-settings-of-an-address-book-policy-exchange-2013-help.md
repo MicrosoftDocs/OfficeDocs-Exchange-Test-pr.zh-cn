@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-03-30_
+_**上一次修改主题：** 2016-03-30_
 
 在创建了通讯簿策略 (ABP) 之后，可以查看或修改名称和分配的全局地址列表 (GAL)、脱机通讯簿 (OAB)、会议室列表和地址列表。
 

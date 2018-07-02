@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2014-03-25_
+_**上一次修改主题：** 2014-03-25_
 
 使用此过程可以删除通讯簿策略 (ABP)。
 

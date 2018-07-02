@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 本主题介绍边缘订阅进程如何设置用于保护 EdgeSync 订阅进程的凭据，以及 EdgeSync 如何使用这些凭据在 Exchange 2013 邮箱服务器和边缘传输服务器之间建立安全 LDAP 连接。有关边缘订阅进程的详细信息，请参阅[边缘订阅](edge-subscriptions-exchange-2013-help.md)。
 

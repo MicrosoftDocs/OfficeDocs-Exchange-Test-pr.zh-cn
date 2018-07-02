@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2014-09-17_
+_**上一次修改主题：** 2014-09-17_
 
 您可以测试统一消息 (UM) 及连接的相关电话设备的运行情况。执行下列步骤时，客户端访问服务器和邮箱服务器会测试语音邮件系统的完全端到端运行情况。这包括连接到客户端访问和邮箱服务器的电话组件，包括 VoIP 网关、专用交换机 (PBX)、IP PBX 和电缆。
 

@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016, Office 365_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016, Office 365_
 
-_**上一次修改主题：**2017-05-19_
+_**上一次修改主题：** 2017-05-19_
 
-**摘要：**最新版本的受支持的 Exchange 拓扑，允许用户使用 Outlook 2016 for Mac 访问公用文件夹。
+**摘要：** 最新版本的受支持的 Exchange 拓扑，允许用户使用 Outlook 2016 for Mac 访问公用文件夹。
 
 与 Outlook 2016 年[4 月 2016年更新](https://go.microsoft.com/fwlink/?linkid=829202)的 Mac 客户端版本，[累积更新 14 (CU14)](https://go.microsoft.com/fwlink/p/?linkid=849432)的交换 2013年和[累积更新 2 (CU 2)](https://go.microsoft.com/fwlink/p/?linkid=849793)交换 2016 年，Outlook 2016 的 Mac 的用户现在可以访问更多类型的拓扑中的公用文件夹之前比。
 

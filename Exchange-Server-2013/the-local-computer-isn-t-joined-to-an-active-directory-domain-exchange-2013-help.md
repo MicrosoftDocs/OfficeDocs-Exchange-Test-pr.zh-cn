@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2013-03-22_
+_**上一次修改主题：** 2013-03-22_
 
 因检测到本地计算机不是 Active Directory 域成员，Microsoft Exchange Server 2013 安装程序无法继续。必须先将本地计算机加入 Active Directory 域，才可以安装 Exchange Server 2013。如果在计算机上登录本地用户帐户（而不是带有足够管理员权限登录的域用户帐户）来安装 Exchange 2013，也可能会看见此消息。
 

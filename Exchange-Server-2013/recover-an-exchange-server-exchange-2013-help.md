@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 通过在 Microsoft Exchange Server 2013 中使用 **Setup /m:RecoverServer** 开关，可以恢复丢失的服务器。运行 Exchange 2013 的计算机的大多数设置都存储在 Active Directory 中。*/m:RecoverServer* 开关使用 Exchange 中存储的设置及其他信息，重建具有相同名称的 Active Directory 服务器。
 

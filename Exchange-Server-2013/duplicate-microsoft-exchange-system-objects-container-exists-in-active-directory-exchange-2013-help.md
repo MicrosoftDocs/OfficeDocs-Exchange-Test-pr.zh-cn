@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2013-02-18_
+_**上一次修改主题：** 2013-02-18_
 
 Microsoft Exchange Server 2013 安装程序无法继续，因为它在 Active Directory 域命名上下文中发现一个重复的 Microsoft Exchange System Objects 容器。当安装程序发现重复的 Microsoft Exchange System Objects 容器时，您必须删除此重复容器，安装程序才能继续运行。如果存在重复的 Microsoft Exchange System Objects 容器，再次运行 **DomainPrep** 不能解决问题。必须标识并删除重复的 Microsoft Exchange System Objects 容器。
 

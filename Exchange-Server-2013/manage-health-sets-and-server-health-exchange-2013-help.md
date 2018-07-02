@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013 SP1_
+_**适用于：** Exchange Online, Exchange Server 2013 SP1_
 
-_**上一次修改主题：**2013-12-02_
+_**上一次修改主题：** 2013-12-02_
 
 您可以使用内置运行状况报告 cmdlet 来执行与托管可用性相关的各种任务，例如：
 

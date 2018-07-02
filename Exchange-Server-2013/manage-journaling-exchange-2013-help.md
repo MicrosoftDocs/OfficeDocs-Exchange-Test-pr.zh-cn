@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 通过记录入站和出站电子邮件通信，日记功能可以帮助组织符合法律法规和组织合规性要求。本主题展示了如何执行与管理 Exchange 2013 和 Exchange Online 中日记相关的基本任务。
 

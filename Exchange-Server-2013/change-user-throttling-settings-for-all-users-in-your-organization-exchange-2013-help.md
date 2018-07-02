@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-08-05_
+_**上一次修改主题：** 2014-08-05_
 
 通过更改默认限制设置，可以控制 Exchange 组织中单个用户的资源使用情况。
 

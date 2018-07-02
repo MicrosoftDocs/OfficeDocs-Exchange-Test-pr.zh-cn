@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 作为租户管理员，您将需要配置用于验证 S/MIME 证书的虚拟证书集合。虚拟证书集合设置为具有 SST 文件名扩展名的证书存储文件类型。SST 文件包含验证 S/MIME 证书时使用的所有根证书和中间证书。
 

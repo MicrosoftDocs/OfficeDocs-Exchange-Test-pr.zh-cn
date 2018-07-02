@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 您可以使用 Exchange Server 2013 中的 RollAlternateServiceAccountPassword.ps1 脚本更新备用服务帐户凭据（ASA 凭据），并将该更新分发给指定的客户端访问服务器。
 

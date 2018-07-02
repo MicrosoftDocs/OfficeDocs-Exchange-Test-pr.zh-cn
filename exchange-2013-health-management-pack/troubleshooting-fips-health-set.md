@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Project Server 2013_
+_**适用于：** Exchange Server 2013, Project Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 **FIPS** 运行状况设置监视 Exchange 服务器上的联邦信息处理标准 (FIPS) 的设置的总体运行状况。有关 FIPS 140 的详细信息，请参阅 [FIPS 140 验证](http://go.microsoft.com/fwlink/p/?linkid=521913)。
 

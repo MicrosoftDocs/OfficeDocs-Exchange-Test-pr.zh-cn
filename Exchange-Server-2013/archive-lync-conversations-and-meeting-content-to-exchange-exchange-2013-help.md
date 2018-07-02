@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 你可以将 Lync Online 内容（如 IM 对话）存档到 Exchange Online 中的用户邮箱。在本地部署中，可以将 Lync 2013 内容存档到 Exchange 2013 邮箱。在联机和本地环境中，此操作需要对用户邮箱设置诉讼保留或就地保留。当邮箱处于保留状态的的用户永久删除 Lync 内容时，已存档的 Lync 内容将保留在用户邮箱的“可恢复的项目”文件夹中。虽然这些内容对用户不可见，但会包含在电子数据展示搜索中。
 

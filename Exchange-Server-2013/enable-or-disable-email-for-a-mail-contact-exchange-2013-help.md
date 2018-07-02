@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-12-05_
+_**上一次修改主题：** 2012-12-05_
 
 您可以在 Exchange 组织中禁用现有邮件联系人的电子邮件。禁用邮件联系人的电子邮件时，它将从交换和您的组织的通讯簿中删除。如果邮件联系人通讯组的成员，该联系人将不再接收发送到组的邮件。此外，Exchange 属性已从 Active Directory 中的已启用邮件的联系人对象，但联系人和非 Exchange 属性 （如联系人和组织信息） 会保留在 Active Directory 中。
 

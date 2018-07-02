@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Microsoft Exchange Server 2013 将所有配置和收件人信息存储在 Active Directory 目录服务数据库中。如果运行 Exchange 2013 的计算机需要有关收件人的信息以及 Exchange 组织的配置信息，则其必须查询 Active Directory 才能访问所需信息。要使 Active Directory 正确运行，必须有可用的 Exchange 2013 服务器。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2012-11-12_
+_**上一次修改主题：** 2012-11-12_
 
 Microsoft Exchange Server 2013 安装程序检测到您试图在 Active Directory 域控制器上运行安装程序，并且存在以下情况之一：
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 您可以配置用户的统一邮件 (UM) 启用 PIN 生存期。PIN 生存期是Outlook语音访问 PIN 将是有效的已启用 UM 的收件人的最大时间。PIN 生存期设置在 UM 邮箱策略上配置并应用于所有已启用 UM 的用户与该 UM 邮箱策略相关联。
 

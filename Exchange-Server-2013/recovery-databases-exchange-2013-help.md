@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-11-02_
+_**上一次修改主题：** 2012-11-02_
 
 恢复数据库 (RDB) 是一种特殊的邮箱数据库，您可以通过它装入还原的邮箱数据库，并且可以在恢复操作中从还原的数据库提取数据。您可以使用 [New-MailboxRestoreRequest](https://technet.microsoft.com/zh-cn/library/ff829875\(v=exchg.150\)) cmdlet 从 RDB 提取数据。提取后，可将数据导出到一个文件夹或者合并到一个现有邮箱中。RDB 使您能够从备份或数据库副本中恢复数据，而不会干扰用户对当前数据的访问。
 

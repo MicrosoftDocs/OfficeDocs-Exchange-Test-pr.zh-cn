@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2017-04-20_
+_**上一次修改主题：** 2017-04-20_
 
 您可以使用[保留标记和保留策略](retention-tags-and-retention-policies-exchange-2013-help.md)来管理电子邮件生命周期。保留策略包含保留标记，您可以使用这些设置指定邮件应在何时自动移动到存档或应在何时删除。
 

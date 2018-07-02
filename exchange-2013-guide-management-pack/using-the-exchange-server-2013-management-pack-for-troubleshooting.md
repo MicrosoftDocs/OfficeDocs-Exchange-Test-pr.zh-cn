@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**上一次修改主题：** 2013-04-09_
+_**上一次修改主题：**  2013-04-09_
 
 [Exchange Server 2013 Management Pack 入门](getting-started-with-exchange-server-2013-management-pack.md)概述了管理包主控板。本主题将引导您了解该管理包如何帮助您对问题进行故障排除。该过程最好通过一个具体的示例说明。以如下方案为例：
 

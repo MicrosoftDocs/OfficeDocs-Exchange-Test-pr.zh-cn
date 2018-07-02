@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-13_
+_**上一次修改主题：** 2012-11-13_
 
 默认情况下，在创建统一消息 (UM) IP 网关时，UM IP 网关的状态设置为启用。在创建 UM IP 网关之后，可以通过将其状态设置为禁用，禁用网关的运行。在禁用 UM IP 网关后，被配置使用的 IP 语音 (VoIP) 网关、IP 专用交换机 (PBX) 或会话边界控制器 (SBC) 将无法处理传入统一消息呼叫。
 

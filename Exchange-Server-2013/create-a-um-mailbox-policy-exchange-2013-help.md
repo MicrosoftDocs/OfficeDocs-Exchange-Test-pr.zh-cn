@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-03-08_
+_**上一次修改主题：** 2013-03-08_
 
 可以创建统一消息 (UM) 邮箱策略，以便对启用 UM 的邮箱集合应用一组常用的 UM 策略设置，例如 PIN 策略设置或拨号限制。UM 邮箱策略将启用 UM 的用户与 UM 拨号计划相链接，并对启用 UM 的邮箱集合应用一组通用策略或安全设置。为启用 UM 的用户应用和标准化 UM 配置设置时，UM 邮箱策略十分有用。
 

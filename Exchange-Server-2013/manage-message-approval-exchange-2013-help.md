@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-05-04_
+_**上一次修改主题：** 2016-05-04_
 
 有时在发送邮件之前再多检查一遍会非常有用。作为 Exchange 管理员，您可以树立这一流程。该流程称为*仲裁*，负责审批的用户称为*仲裁人*。根据需要审批的邮件，您可以使用下面两种方法之一：
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-06_
+_**上一次修改主题：** 2015-03-06_
 
 *垃圾邮件发送者*或恶意发件人使用多种技术向组织发送垃圾邮件。使用单一的工具或方法是无法排除所有垃圾邮件的。但是，Microsoft Exchange Server 2013 提供一种分层、多向和多面的途径来减少不必要邮件。Exchange 使用传输代理提供反垃圾邮件保护，并且 Exchange 2013 中可用的内置代理与 Microsoft Exchange Server 2010 相比几乎没什么变化。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 Microsoft Exchange Server 2013 使用 Windows PowerShell 命令行接口在您通过其管理 Exchange 的服务器或工作站和您正在管理的运行 Exchange 2013 的服务器之间建立远程连接。在 Exchange 2013 中，这称为远程 Exchange 命令行管理程序或远程命令行管理程序。即使您管理的是本地 Exchange 2013 服务器，也可以使用远程命令行管理程序进行连接。有关本地和远程命令行管理程序的详细信息，请参阅[将 PowerShell 与 Exchange 2013 结合使用 (Exchange Management Shell)](https://technet.microsoft.com/zh-cn/library/bb123778\(v=exchg.150\))。
 

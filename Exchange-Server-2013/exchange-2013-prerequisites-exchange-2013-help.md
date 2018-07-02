@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2017-03-20_
+_**上一次修改主题：** 2017-03-20_
 
 本主题介绍了安装 Microsoft Exchange 2013 邮箱、客户端访问以及边缘传输服务器角色所必需的 Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 with Service Pack 1 (SP1) 操作系统必备项的步骤。它还介绍了在 Windows 8、Windows 8.1 和 Windows 7 客户端计算机上安装 Exchange 2013 管理工具所必需的必备项。
 

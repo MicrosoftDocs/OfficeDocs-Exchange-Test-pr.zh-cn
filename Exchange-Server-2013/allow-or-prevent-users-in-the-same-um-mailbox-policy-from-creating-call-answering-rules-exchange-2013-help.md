@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 您可以使用户能够与统一消息 (UM) 邮箱策略配置呼叫应答规则，或阻止他们这样做。如果禁用 UM 拨号计划上配置呼叫应答规则的选项，则呼叫应答规则功能不能启用 UM 的用户与该 UM 邮箱策略相关联。默认设置为启用。
 

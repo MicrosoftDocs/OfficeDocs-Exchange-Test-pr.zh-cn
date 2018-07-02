@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 若要使某种语言显示在 UM 拨号计划或 UM 自动助理上的可用统一消息语言列表中，必须先安装相应的 UM 语言包。您可以通过语言特定的自解压可执行文件或 **setup.exe /AddUmLanguagePack** 命令，在运行 Microsoft Exchange 统一消息服务的邮箱服务器上安装该语言包。在安装 UM 语言包之前，必须先将它下载到邮箱服务器的本地文件夹中。可以从 [Exchange Server 2013 UM 语言包](http://go.microsoft.com/fwlink/p/?linkid=266542) 下载 UM 语言包。每种语言有一个单独的可执行文件。
 

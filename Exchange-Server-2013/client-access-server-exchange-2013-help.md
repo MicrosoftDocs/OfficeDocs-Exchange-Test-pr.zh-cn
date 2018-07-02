@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-07-02_
+_**上一次修改主题：** 2014-07-02_
 
 对于 Microsoft Exchange 2013，对 Exchange 服务器角色进行了主要的体系结构更改。过去 Exchange 2010 和 Exchange 2007 中存在五个服务器角色，而在 Exchange 2013 中，服务器角色的数目减少为三个：客户端访问服务器和邮箱服务器以及 Service Pack 1 的边缘传输服务器角色。
 

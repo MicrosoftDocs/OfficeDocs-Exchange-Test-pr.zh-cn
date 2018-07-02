@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-03-18_
+_**上一次修改主题：** 2016-03-18_
 
 通过自定义数据丢失防护 (DLP) 策略，可以创建条件、规则和操作，借此可帮助满足预先存在的 DLP 模板之一中未涵盖的组织特定需求。
 

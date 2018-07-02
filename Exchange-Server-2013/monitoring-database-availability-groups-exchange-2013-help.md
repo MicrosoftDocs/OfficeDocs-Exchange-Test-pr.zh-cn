@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 针对数据库可用性组 (DAG)、诊断信息收集和低磁盘空间监视阈值配置，您可以使用此主题中的详细信息监视邮箱数据库副本运行状况和状态。
 
@@ -255,7 +255,7 @@ ManagedAvailability 通道包含恢复操作日志和结果以及相关事件。
 
 Exchange 2013 托管可用性每分钟监视数百个系统指标和组件，包括邮箱服务器角色所用卷上的可用磁盘空间量。Exchange 2013 Service Pack 1 (SP1) 之前的版本中，Exchange 监视所有本地卷上的可用空间，包括不含有数据库或日志文件的卷。在 SP1 和更高版本中，仅监控包含 Exchange 数据库和日志文件的卷。在 SP1 中，低容量空间监视器的默认阈值为 200 GB。在 Exchange 2013 累计更新 6 和更高版本中，默认阈值为 180 GB。在 SP1 和更高版本中，通过在每个需要自定义的邮箱服务器上添加以下 DWORD 注册表值（以 MB 为单位）可以配置阈值：
 
-路径：**HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\ExchangeServer\\v15\\Replay\\Parameters**
+路径：** HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\ExchangeServer\\v15\\Replay\\Parameters**
 
 值：*SpaceMonitorLowSpaceThresholdInMB*
 

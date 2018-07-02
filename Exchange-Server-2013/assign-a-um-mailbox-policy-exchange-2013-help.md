@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-30_
+_**上一次修改主题：** 2012-11-30_
 
 当您为用户启用统一邮件 (UM) 和语音邮件时，您必须选择将与该用户的邮箱关联的 UM 邮箱策略。您可以更改用户已启用了 UM 之后，与用户的邮箱关联的 UM 邮箱策略。
 

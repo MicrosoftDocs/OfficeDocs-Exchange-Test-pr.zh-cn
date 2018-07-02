@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-16_
+_**上一次修改主题：** 2012-10-16_
 
 OAB 虚拟目录是 OAB 的分发。默认情况下，安装 Microsoft Exchange Server 2013 时，将在 Internet 信息服务 (IIS) 的默认内部网站中创建一个名为 OAB 的新虚拟目录。如果有从组织防火墙外部连接到 Microsoft Outlook 的客户端用户，则可以添加外部网站。另外，在命令行管理程序中运行 **New-OABVirtualDirectory** cmdlet 时，将在本地 Exchange 服务器的默认 IIS 网站中创建一个名为 OAB 的新虚拟目录。
 

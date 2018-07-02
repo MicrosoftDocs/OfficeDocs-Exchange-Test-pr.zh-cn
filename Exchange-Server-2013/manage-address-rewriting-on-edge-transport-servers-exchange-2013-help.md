@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-08_
+_**上一次修改主题：** 2015-04-08_
 
 您可以在边缘传输服务器上使用 Exchange 命令行管理程序来执行与地址重写和地址重写代理相关的所有管理任务。有关地址重写的详细信息，请参阅[边缘传输服务器上的地址重写](address-rewriting-on-edge-transport-servers-exchange-2013-help.md)。
 

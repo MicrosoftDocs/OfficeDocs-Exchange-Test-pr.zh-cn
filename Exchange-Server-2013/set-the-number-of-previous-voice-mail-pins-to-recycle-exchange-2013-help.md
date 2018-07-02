@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 Outlook语音访问用户拨入到 Outlook Voice Access 编号，这些系统会提示您输入他们的 PIN，这样的语音邮件系统可以对它们进行验证。他们通过身份验证后，他们可以从任何电话访问语音邮件、 电子邮件、 日历，和其邮箱中的个人联系信息。
 

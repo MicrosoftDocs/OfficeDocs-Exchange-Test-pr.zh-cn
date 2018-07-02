@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 每次创建 Exchange 邮件流规则（也称为传输规则）时，您应先进行测试，然后再将其打开。这样，如果您意外创建了一个条件，无法准确执行您所需的操作或以意外的方式与其他规则进行交互，也不会给您带来任何意外结果。
 

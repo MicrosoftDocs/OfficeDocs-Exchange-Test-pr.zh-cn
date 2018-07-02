@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-17_
+_**上一次修改主题：** 2012-10-17_
 
 Microsoft Exchange Server 2013 包含 15 个扩展属性。您可以使用这些属性添加有关收件人的信息，例如员工 ID、组织单位 (OU) 或者其他一些没有现有属性的自定义值。在 Active Directory 中，这些自定义属性标记为 **ms-Exch-Extension-Attribute1** 到 **ms-Exch-Extension-Attribute15**。在 Exchange 命令行管理程序中，相应的参数是 *CustomAttribute1* 到 *CustomAttribute15*。任何 Exchange 组件都不使用这些属性。它们可用于存储 Active Directory 数据，而无须扩展 Active Directory 架构。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 本主题展示了如何使用 Telnet 测试邮件服务器之间的简单邮件传输协议 (SMTP) 通信。默认情况下，SMTP 侦听端口 25。如果在端口 25 上使用 Telnet，则可以输入用于连接 SMTP 服务器和发送邮件的 SMTP 命令，如同 Telnet 会话是 SMTP 邮件服务器一样。还可以查看连接和邮件提交过程中每个步骤成功与否。
 
@@ -208,9 +208,9 @@ _**上一次修改主题：**2016-12-09_
 
 ## 打开 mail1.fabrikam.com 25
 
-**成功响应：** `220 mail1.fabrikam.com Microsoft ESMTP MAIL Service ready at <day-date-time>`
+**成功响应：**  `220 mail1.fabrikam.com Microsoft ESMTP MAIL Service ready at <day-date-time>`
 
-**失败响应：** `Connecting to mail1.fabrikam.com...Could not open connection to the host, on port 25: Connect failed`
+**失败响应：**  `Connecting to mail1.fabrikam.com...Could not open connection to the host, on port 25: Connect failed`
 
 **失败的可能原因**
 
@@ -226,9 +226,9 @@ _**上一次修改主题：**2016-12-09_
 
 ## EHLO contoso.com
 
-**成功响应：** `250 mail1.fabrikam.com Hello [<sourceIPaddress>]`
+**成功响应：**  `250 mail1.fabrikam.com Hello [<sourceIPaddress>]`
 
-**失败响应：** `501 5.5.4 Invalid domain name`
+**失败响应：**  `501 5.5.4 Invalid domain name`
 
 **失败的可能原因**   域名中存在无效字符。或者，目标 SMTP 服务器上有连接限制。
 
@@ -248,21 +248,21 @@ _**上一次修改主题：**2016-12-09_
 
 ## MAIL FROM:chris@contoso.com
 
-**成功响应：** `250 2.1.0 Sender OK`
+**成功响应：**  `250 2.1.0 Sender OK`
 
-**失败响应：** `550 5.1.7 Invalid address`
+**失败响应：**  `550 5.1.7 Invalid address`
 
-**可能的失败原因：**发件人的电子邮件地址中存在语法错误。
+**可能的失败原因：** 发件人的电子邮件地址中存在语法错误。
 
-**失败响应：** `530 5.7.1 Client was not authenticated`
+**失败响应：**  `530 5.7.1 Client was not authenticated`
 
 **失败的可能原因**   目标服务器不接受匿名邮件提交。如果试图使用 Telnet 直接向集线器传输服务器提交邮件，则会看到此错误消息。
 
 ## RCPT TO:kate@fabrikam.com NOTIFY=success,failure
 
-**成功响应：** `250 2.1.5 Recipient OK`
+**成功响应：**  `250 2.1.5 Recipient OK`
 
-**失败响应：** `550 5.1.1 User unknown`
+**失败响应：**  `550 5.1.1 User unknown`
 
 **可能的失败原因**   指定的收件人在组织中不存在。
 

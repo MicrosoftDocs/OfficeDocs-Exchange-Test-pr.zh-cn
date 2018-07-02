@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-08_
+_**上一次修改主题：** 2015-04-08_
 
 连接筛选是连接筛选代理提供的反垃圾邮件功能，仅可用于 Microsoft Exchange 2013 中的边缘传输服务器。连接筛选将启用以下功能：
 

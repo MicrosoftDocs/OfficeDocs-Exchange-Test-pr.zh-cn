@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-12-12_
+_**上一次修改主题：** 2012-12-12_
 
 您可以启用您的统一邮件 (UM) 自动助理自动语音识别 (ASR)。您语音启用后 UM 自动助理，调用方可以口头响应自动助理提示和自动助理的菜单系统中移动。默认情况下，自动助理未启用语音的时创建它。您语音启用后的自动助理，调用方可以使用仅声音命令定位自动助理的菜单系统，并不能使用按键输入。
 

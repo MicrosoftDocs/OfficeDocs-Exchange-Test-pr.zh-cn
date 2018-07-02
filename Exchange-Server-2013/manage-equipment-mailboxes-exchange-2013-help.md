@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2014-10-09_
+_**上一次修改主题：** 2014-10-09_
 
 “设备邮箱”是分配给非特定于位置的资源（例如便携式计算机、投影仪、麦克风或公司汽车）的资源邮箱。在管理员创建设备邮箱之后，用户可通过在会议请求中加入相应的设备邮箱方便地保留设备。您可使用 EAC 和命令行管理程序来创建设备邮箱或更改设备邮箱属性。有关详细信息，请参阅[收件人](recipients-exchange-2013-help.md)。
 
@@ -273,7 +273,7 @@ _**上一次修改主题：**2014-10-09_
 
 ## 使用命令行管理程序更改设备邮箱属性
 
-使用以下 cmdlet 集来查看和更改设备邮箱属性：**Get-Mailbox** 和 **Set-Mailbox** cmdlets 来查看和更改设备邮箱的一般属性和电子邮件地址。使用 **Get-CalendarProcessing** 和 **Set-CalendarProcessing** cmdlet 查看和更改委派和预定选项。
+使用以下 cmdlet 集来查看和更改设备邮箱属性：** Get-Mailbox** 和 **Set-Mailbox** cmdlets 来查看和更改设备邮箱的一般属性和电子邮件地址。使用 **Get-CalendarProcessing** 和 **Set-CalendarProcessing** cmdlet 查看和更改委派和预定选项。
 
   - **Get-User** 和 **Set-User**   使用这些 cmdlet 来查看和设置诸如部门和公司名称等一般属性。
 

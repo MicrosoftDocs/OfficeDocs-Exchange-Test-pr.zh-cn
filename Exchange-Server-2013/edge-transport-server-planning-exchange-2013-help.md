@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 Exchange Service Pack 1 中重新引入了边缘传输服务器角色。边缘传输为 Exchange 组织增强了反垃圾邮件保护。边缘传输服务器还会对在组织之间传输的邮件应用策略。此服务器角色部署在外围网络中和 Active Directory 林之外。边缘传输服务器无法按客户端访问服务器或邮箱服务器所采用的方式直接访问 Active Directory，以获取配置和收件人信息。边缘传输服务器使用 Active Directory 轻型目录服务 (AD LDS) 来在本地存储配置和收件人信息。
 

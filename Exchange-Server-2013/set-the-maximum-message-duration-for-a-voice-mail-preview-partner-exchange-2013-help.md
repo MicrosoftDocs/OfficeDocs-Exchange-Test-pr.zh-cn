@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-13_
+_**上一次修改主题：** 2013-02-13_
 
 统一消息 (UM) 邮箱策略上，您可以设置语音邮件预览合作伙伴的消息的最大持续时间。所设置的最大消息持续时间后，设置将应用于与该邮箱策略链接所有已启用 UM 的用户。
 

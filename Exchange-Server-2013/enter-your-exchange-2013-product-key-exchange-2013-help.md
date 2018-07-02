@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 产品密钥告知 Exchange Server 2013 您已经购买了标准版或企业版的许可证。如果您购买的产品密钥是一个企业版的许可证，它除了可以提供标准版许可证所能提供的一切之外，还允许您每台服务器上安装超过五个数据库。如果您想了解有关 Exchange 许可的详细信息，请参阅 [Exchange 2013：版次和版本](exchange-2013-editions-and-versions-exchange-2013-help.md)。
 

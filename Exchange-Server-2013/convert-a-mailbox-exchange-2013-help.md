@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2017-04-26_
+_**上一次修改主题：** 2017-04-26_
 
 将邮箱转换为其他类型的邮箱与在 Exchange 2010 中的体验非常相似。仍必须使用 Shell 中的 Set-Mailbox cmdlet 来执行转换。
 

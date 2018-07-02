@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-12-13_
+_**上一次修改主题：** 2012-12-13_
 
 您可以允许呼叫者从统一消息 (UM) 自动助理向用户发送语音邮件，或阻止其执行该操作。默认情况下该选项是启用的，允许呼叫者向与 UM 自动助理关联的 UM 拨号计划中的用户发送语音邮件。如果禁用此选项，则自动助理将不会在系统提示期间邀请呼叫者发送语音邮件。
 

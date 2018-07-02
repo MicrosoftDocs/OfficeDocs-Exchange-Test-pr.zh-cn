@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-16_
+_**上一次修改主题：** 2013-04-16_
 
 统一消息 (UM) 拨号计划包含与您的电话服务网络相关的配置信息。UM 拨号计划在启用语音邮件功能的用户的电话分机号码与其邮箱之间建立链接。创建 UM 拨号计划时，可配置拨号计划的分机号码位数、统一资源标识符 (URI) 类型和 IP 语音 (VoIP) 安全性设置。
 

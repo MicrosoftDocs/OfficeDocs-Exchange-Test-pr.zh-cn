@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-11-17_
+_**上一次修改主题：** 2016-11-17_
 
 <table>
 <thead>

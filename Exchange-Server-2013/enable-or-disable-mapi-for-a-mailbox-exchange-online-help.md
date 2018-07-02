@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2017-12-31_
+_**上一次修改主题：** 2017-12-31_
 
 您可以使用Exchange 管理中心或Exchange 命令行管理程序来启用或禁用对用户邮箱的 MAPI。当启用 MAPI 时，可以通过Outlook或其他 MAPI 的电子邮件客户端访问用户的邮箱。当禁用 MAPI 时，它无法访问Outlook或其他 MAPI 客户端。但是，邮箱将继续接收电子邮件，并假设已启用邮箱访问的那些客户端，用户可以访问该邮箱发送和接收电子邮件，使用Outlook Web App、 POP 电子邮件客户端或 IMAP 客户端。
 

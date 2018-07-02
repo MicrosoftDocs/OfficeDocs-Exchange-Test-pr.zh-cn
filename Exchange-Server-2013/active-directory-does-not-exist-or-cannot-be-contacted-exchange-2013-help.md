@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Microsoft Exchange Server 2013 安装程序无法继续，因为无法与有效的 Active Directory 目录服务站点通信。安装程序要求要在其上安装 Exchange 的服务器可以在 Active Directory 中查找配置命名上下文。
 

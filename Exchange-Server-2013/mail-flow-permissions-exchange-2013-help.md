@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 执行与邮件流有关的任务所需的权限视所执行的过程或要运行的 cmdlet 而定。有关传输功能的详细信息，请参阅[邮件流](mail-flow-exchange-2013-help.md)。
 

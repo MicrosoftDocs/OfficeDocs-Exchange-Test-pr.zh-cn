@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 若要成功部署统一消息 (UM)，必须更好地理解基本的电话概念和电话服务组件。在了解电话服务基础知识后，您可以将 UM 集成到 Exchange 组织。基本概念和组件如下所示︰
 

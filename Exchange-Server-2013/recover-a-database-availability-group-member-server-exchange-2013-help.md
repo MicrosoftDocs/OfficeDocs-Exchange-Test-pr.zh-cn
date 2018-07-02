@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 如果作为数据库可用性组 (DAG) 成员的邮箱服务器丢失，或发生故障且无法恢复并需要进行替换时，可执行服务器恢复操作。Microsoft Exchange Server 2013 安装程序包含可用于执行服务器恢复操作的开关 */m:RecoverServer*。运行带有 */m:RecoverServer* 开关的安装程序，会使安装程序从与运行安装程序的服务器同名的服务器 Active Directory 中读取该服务器的配置信息。从 Active Directory 中收集服务器配置信息后，会在该服务器上安装原来的 Exchange 文件和服务，并将存储在 Active Directory 中的角色和设置应用到该服务器。
 
@@ -33,7 +33,7 @@ _**上一次修改主题：**2016-12-09_
     
     1.  打开 ADSIEDIT.MSC 或 LDP.EXE。
     
-    2.  导航到以下位置：**CN=ExServerName,CN=Servers,CN=First Administrative Group,CN=Administrative Groups,CN=ExOrg Name,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=DomainName,CN=Com**
+    2.  导航到以下位置：** CN=ExServerName,CN=Servers,CN=First Administrative Group,CN=Administrative Groups,CN=ExOrg Name,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=DomainName,CN=Com**
     
     3.  右键单击 Exchange 服务器对象，然后单击“属性”。
     

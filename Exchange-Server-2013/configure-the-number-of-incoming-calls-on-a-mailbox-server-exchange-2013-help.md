@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-23_
+_**上一次修改主题：** 2013-02-23_
 
 您可以配置传入邮箱服务器运行 Microsoft Exchange 统一消息服务将接受的并发连接数。这包括所有包括 Outlook Voice Access、 呼叫应答、 自动助理和传真呼叫的传入呼叫。增加在邮箱服务器上的并发连接数，更多系统资源将需要比如果您减少并发调用的次数。减少并发调用的数量是在速度较慢的计算机安装了统一消息服务尤为重要。并发语音呼叫数的范围是 0 到 200 个。默认设置为 100。
 

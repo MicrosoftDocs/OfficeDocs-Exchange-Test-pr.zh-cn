@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2016-12-15_
+_**上一次修改主题：** 2016-12-15_
 
 Microsoft Exchange Server 2013 安装程序无法继续，因为本地计算机需要软件更新。您需要安装此更新后才能继续运行 Exchange 2013 安装程序。
 

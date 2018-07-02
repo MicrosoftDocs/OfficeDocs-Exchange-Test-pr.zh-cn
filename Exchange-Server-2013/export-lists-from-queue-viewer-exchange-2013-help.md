@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-09-25_
+_**上一次修改主题：** 2012-09-25_
 
 该主题说明了如何使用 Exchange 工具箱中的队列查看器导出邮件或队列列表。
 

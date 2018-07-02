@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 可以为 Outlook Voice Access 用户将重置 PIN 之前允许的登录失败次数配置为 1 到 998 之间的某个值。默认值为 5。先在统一消息 (UM) 邮箱策略中配置重置 PIN 之前允许的登录失败次数，然后将其应用于与该 UM 邮箱策略关联的所有 Outlook Voice Access 用户。
 

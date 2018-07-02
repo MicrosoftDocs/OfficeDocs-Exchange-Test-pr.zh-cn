@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-21_
+_**上一次修改主题：** 2013-02-21_
 
 您可以启用统一邮件 (UM) 邮箱策略上的拨号授权。您可以使用邮箱策略上拨号授权禁止验证的 Outlook Voice Access 用户链接到 UM 邮箱策略进行国家/地区或国际电话呼叫，或*outdialing*。之后他们已经连接到 UM 拨号计划配置一个 Outlook Voice Access 电话号码统一消息将传出调用的用户时发生 outdialing。当您在 UM 邮箱策略设置适用于所有已启用 UM 的用户配置设置链接与 UM 邮箱策略。
 

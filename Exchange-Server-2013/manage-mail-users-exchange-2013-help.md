@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 邮件用户与邮件联系人类似。二者都有外部电子邮件地址，都包含有关 Exchange 或 Exchange Online 组织外部人员的信息，并且都可以显示在共享通讯簿和其他地址列表中。但是，与邮件联系人不同，邮件用户在 Exchange 或 Office 365 组织中拥有登录凭据并可以访问资源。有关详细信息，请参阅[收件人](recipients-exchange-2013-help.md)。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-11-28_
+_**上一次修改主题：** 2012-11-28_
 
 可以使用 EAC 或命令行管理程序来管理组织的 IMAP4 连接限制。
 

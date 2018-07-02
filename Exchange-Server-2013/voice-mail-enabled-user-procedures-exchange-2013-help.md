@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-05-03_
+_**上一次修改主题：** 2013-05-03_
 
 [为用户启用语音邮件](enable-a-user-for-voice-mail-exchange-2013-help.md)
 

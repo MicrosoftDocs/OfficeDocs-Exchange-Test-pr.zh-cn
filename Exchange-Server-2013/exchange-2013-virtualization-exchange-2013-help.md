@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2017-08-08_
+_**上一次修改主题：** 2017-08-08_
 
 可以在虚拟环境中部署 Microsoft Exchange Server 2013。本主题概述了支持在硬件虚拟化软件上部署 Exchange 2013 的方案。
 

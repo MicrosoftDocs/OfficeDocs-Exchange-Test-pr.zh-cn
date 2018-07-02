@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 利用电子邮件转发可以将邮箱设置为将发送给该邮箱的电子邮件转发给你的组织内部或外部的其他用户邮箱。
 

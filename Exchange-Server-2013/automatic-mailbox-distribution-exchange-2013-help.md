@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**适用于：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**上一次修改主题：**2013-08-13_
+_**上一次修改主题：** 2013-08-13_
 
 创建或移动邮箱，或者对现有用户启用邮件时，需要在邮箱数据库中存储此邮箱。在 Microsoft Exchange Server 2013 中，可以选择让 Exchange 使用自动邮箱分发为您选择数据库。
 

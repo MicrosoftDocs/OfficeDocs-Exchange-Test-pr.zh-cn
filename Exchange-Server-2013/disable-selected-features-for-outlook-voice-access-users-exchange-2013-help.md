@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 Outlook语音访问包含两个接口 ︰ 电话用户界面 (TUI) 和语音用户界面 (VUI)。默认情况下，当用户拨入Outlook语音访问他们可以访问他们的日历、 电子邮件和个人联系人，并在目录中搜索。外壳程序可用于防止用户访问一个或多个这些功能在使用Outlook语音访问来访问其邮箱时。修改统一邮件 (UM) 邮箱策略上的Outlook语音访问功能时，所做的更改将影响与该 UM 邮箱策略相关联的所有用户。
 

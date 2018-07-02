@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-18_
+_**上一次修改主题：** 2012-11-18_
 
 可以允许客户端访问服务器上的 Microsoft Exchange 统一消息呼叫路由器服务应答新的呼叫，也可以阻止其这样做。默认情况下，客户端访问服务器在安装后就处于启用状态。在设置客户端访问服务器以接受传入的语音、传真、自动助理和 Outlook Voice Access 呼叫时，可使用 **Set-ServerComponentState** cmdlet。
 

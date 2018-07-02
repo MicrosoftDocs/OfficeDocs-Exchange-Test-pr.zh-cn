@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 统一消息 (UM) 在 Microsoft Exchange Server 2013包括相同的功能集为Exchange 2010和Exchange 2007，一些增强功能和体系结构的更改。但是，统一消息不再是一个单独的服务器角色。它现在是在Exchange 2013中提供的与语音相关的功能组件。
 

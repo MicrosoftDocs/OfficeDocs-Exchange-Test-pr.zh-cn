@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-14_
+_**上一次修改主题：** 2012-11-14_
 
 当您启用 um 的用户，并将它们链接到 SIP URI 拨号计划时，创建两个 EUM 代理服务器地址。一个包含该用户的分机号码，另一个包含用户的 SIP 地址。当用户连接到 Outlook Voice Access 数字使用的分机号码。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-09_
+_**上一次修改主题：** 2012-11-09_
 
 您可以配置统一邮件 (UM) IP 网关的 IP 地址或完全合格的域名称 (FQDN)。创建 UM IP 网关时，您必须定义的 IP 地址或配置上的 VoIP 网关，IP PBX 或会话边框控制器 (SBC) 所使用的 FQDN。创建 UM IP 网关之后，可以更改的 IP 地址或 FQDN。
 

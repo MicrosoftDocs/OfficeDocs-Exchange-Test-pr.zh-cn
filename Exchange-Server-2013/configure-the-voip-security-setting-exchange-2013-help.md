@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2014-10-16_
+_**上一次修改主题：** 2014-10-16_
 
 您可以为统一消息 (UM) 拨号计划启用 IP 语音 (VoIP) 安全性。默认情况下，创建 UM 拨号计划时，该拨号计划将使用不安全模式，或者不使用加密。Exchange 服务器可以对单个或多个 UM 拨号计划的呼叫进行应答，也可以对具有不同 VoIP 安全设置的拨号计划的呼叫进行应答。在 Office 365 和 Exchange Online 中要求使用安全模式并且不能将其禁用。
 

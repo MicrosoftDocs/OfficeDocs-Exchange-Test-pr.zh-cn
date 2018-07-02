@@ -13,23 +13,23 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2017-11-16_
+_**上一次修改主题：** 2017-11-16_
 
 您可以使用 CSV 文件批量迁移大量用户邮箱。使用 Exchange 管理中心 (EAC) 或 Exchange 命令行管理程序 中的 **New-MigrationBatch** cmdlet，您可以指定一个 CSV 文件来创建迁移批处理。如果出现以下迁移情况，支持使用 CSV 文件指定要通过迁移批处理迁移的多个用户：
 
   - **移入本地 Exchange 组织**
     
-      - **本地移动：** 本地移动是指将邮箱从一个邮箱数据库移动到另一个邮箱数据库的情况。本地移动发生在单个林内部。
+      - **本地移动：**  本地移动是指将邮箱从一个邮箱数据库移动到另一个邮箱数据库的情况。本地移动发生在单个林内部。
     
-      - **跨林企业移动：**在跨林企业移动中，将邮箱移到一个不同的林。跨林移动可从目标林（邮箱移动的目标林）启动，也可从源林（当前托管邮箱的林）启动。
+      - **跨林企业移动：** 在跨林企业移动中，将邮箱移到一个不同的林。跨林移动可从目标林（邮箱移动的目标林）启动，也可从源林（当前托管邮箱的林）启动。
 
   - **Exchange Online** 中的加入和分离
     
-      - **加入远程移动迁移：**在 Exchange 混合部署中，您可以将邮箱从本地 Exchange 组织移动到 Exchange Online 中。这也称为*加入*远程移动迁移，因为您将邮箱加入到 Exchange Online 中。
+      - **加入远程移动迁移：** 在 Exchange 混合部署中，您可以将邮箱从本地 Exchange 组织移动到 Exchange Online 中。这也称为*加入*远程移动迁移，因为您将邮箱加入到 Exchange Online 中。
     
-      - **分离远程移动迁移：** 您也可以执行\&quot;分离\&quot;远程移动迁移，即将 Exchange Online 邮箱迁移到本地 Exchange 组织中。
+      - **分离远程移动迁移：**  您也可以执行\&quot;分离\&quot;远程移动迁移，即将 Exchange Online 邮箱迁移到本地 Exchange 组织中。
         
         <table>
         <thead>
@@ -44,9 +44,9 @@ _**上一次修改主题：**2017-11-16_
         </tbody>
         </table>
     
-      - **暂存 Exchange 迁移：**您还可以将邮箱的一个子集从本地 Exchange 组织迁移到 Exchange Online 中。这是另一种类型的加入迁移。只能对 Exchange 2003 和 Exchange 2007 邮箱进行暂存 Exchange 迁移。不支持对 Exchange 2010 和 Exchange 2013 邮箱进行暂存迁移。在运行暂存迁移之前，您必须使用目录同步或其他一些设置来设置 Exchange Online 组织中的邮件用户。
+      - **暂存 Exchange 迁移：** 您还可以将邮箱的一个子集从本地 Exchange 组织迁移到 Exchange Online 中。这是另一种类型的加入迁移。只能对 Exchange 2003 和 Exchange 2007 邮箱进行暂存 Exchange 迁移。不支持对 Exchange 2010 和 Exchange 2013 邮箱进行暂存迁移。在运行暂存迁移之前，您必须使用目录同步或其他一些设置来设置 Exchange Online 组织中的邮件用户。
     
-      - **IMAP 迁移：**这种类型的加入迁移将邮箱数据从 IMAP 服务器（包括 Exchange）迁移到 Exchange Online 中。对于 IMAP 迁移，您必须先在 Exchange Online 中设置邮箱，然后才能迁移邮箱数据。
+      - **IMAP 迁移：** 这种类型的加入迁移将邮箱数据从 IMAP 服务器（包括 Exchange）迁移到 Exchange Online 中。对于 IMAP 迁移，您必须先在 Exchange Online 中设置邮箱，然后才能迁移邮箱数据。
 
 <table>
 <thead>

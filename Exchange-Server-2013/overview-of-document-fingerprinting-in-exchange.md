@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2014-09-11_
+_**上一次修改主题：** 2014-09-11_
 
 组织中的信息工作人员每天会处理大量的敏感信息。*“文档指纹”*可识别贵组织中使用的标准表单，以便于您保护此信息。本主题介绍文档指纹所基于的概念。如果您想了解如何创建文档指纹，请参阅[使用文档指纹保护表单数据](protect-form-data-with-document-fingerprinting-exchange-2013-help.md)。
 

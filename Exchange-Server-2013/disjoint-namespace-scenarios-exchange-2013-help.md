@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 本主题提供了有关脱节命名空间的概念以及用于在具有脱节命名空间的域中部署 Microsoft Exchange 2013 的受支持方案的信息。
 

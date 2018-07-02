@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 您可以配置 Outlook Voice Access 用户的统一邮件 (UM) 启用小针长度。在 UM 邮箱策略配置 PIN 设置将应用于所有已启用 UM 的用户与该 UM 邮箱策略相关联。
 

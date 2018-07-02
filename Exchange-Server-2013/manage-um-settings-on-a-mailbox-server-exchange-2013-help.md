@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-11_
+_**上一次修改主题：** 2013-02-11_
 
 安装运行 Microsoft Exchange 统一消息服务的邮箱服务器之后，您可以配置多个选项，其中包括：并发来电数、TCP 和传输层安全性 (TLS) 侦听端口、状态以及 UM 启动模式。
 

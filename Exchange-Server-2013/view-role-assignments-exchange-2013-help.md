@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-03_
+_**上一次修改主题：** 2012-10-03_
 
 管理角色分配向角色受理人分配一个管理角色。有关 Microsoft Exchange Server 2013 中管理角色分配的详细信息，请参阅[了解管理角色分配](understanding-management-role-assignments-exchange-2013-help.md)。
 
@@ -127,13 +127,13 @@ _**上一次修改主题：**2012-10-03_
 
 若要查看使用特定自定义作用域的角色分配列表，需要先确定作用域是收件人作用域、配置作用域、独占收件人作用域，还是独占配置作用域。每个类型的作用域会在 **Get-ManagementRoleAssignment** cmdlet 上使用不同的参数。下面列出了每个作用域及其关联的参数：
 
-  - **收件人作用域：** *CustomRecipientWriteScope*
+  - **收件人作用域：**  *CustomRecipientWriteScope*
 
-  - **配置作用域：** *CustomConfigWriteScope*
+  - **配置作用域：**  *CustomConfigWriteScope*
 
-  - **独占收件人作用域：** *ExclusiveRecipientWriteScope*
+  - **独占收件人作用域：**  *ExclusiveRecipientWriteScope*
 
-  - **独占配置作用域：** *ExclusiveConfigWriteScope*
+  - **独占配置作用域：**  *ExclusiveConfigWriteScope*
 
 每个参数的语法都是相同的。使用与作用域类型匹配的参数指定此作用域的名称。
 

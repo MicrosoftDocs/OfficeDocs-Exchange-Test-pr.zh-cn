@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-05-04_
+_**上一次修改主题：** 2016-05-04_
 
 您可以为启用 UM 的用户将统一消息 (UM) 所使用的多个拨号代码配置为进行内部呼叫和外部呼叫。您经常希望与访问或接入编码、国家/地区号码前缀或者国家/地区内号码格式或国际号码格式一起配置拨号计划，以便控制组织内用户的外拨。本主题介绍拨号代码、号码前缀和号码格式以及如何使用它们控制组织的外拨。
 

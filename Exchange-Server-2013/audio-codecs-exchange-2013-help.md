@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 在统一消息 (UM) 中，使用编解码器来存储语音邮件。另一个编解码器用于 VoIP 网关或 IP 专用交换机 (PBX) 以及运行 Microsoft Exchange 统一消息服务的邮箱服务器或运行 Microsoft Exchange 统一消息呼 叫路由器服务的客户端访问服务器之间。统一消息可以使用下列四种音频编解码器中的任意一种来创建和存储语音邮件：
 

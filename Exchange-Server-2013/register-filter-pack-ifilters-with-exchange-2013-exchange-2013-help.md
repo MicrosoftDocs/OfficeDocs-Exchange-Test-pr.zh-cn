@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 具有附件扫描条件的传输规则在分析附件内容时可执行文本提取。Exchange 2013 可在本机扫描最常用的附件类型。通过在 Exchange 2013 中注册 IFilter，可以包含其他附件类型。此主题介绍了如何注册 Microsoft 和第三方提供商发布的 IFilter。
 

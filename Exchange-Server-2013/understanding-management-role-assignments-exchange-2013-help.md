@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-04_
+_**上一次修改主题：** 2012-10-04_
 
 *“管理角色分配”*是 Microsoft Exchange Server 2013 中基于角色的访问控制 (RBAC) 权限模型的一部分，是管理角色和角色受理人之间的链接。*“角色受理人”*是一个角色组、角色分配策略、用户或通用安全组 (USG)。角色必须分配到角色受理人才能生效。有关 RBAC 的详细信息，请参阅[了解基于角色的访问控制](understanding-role-based-access-control-exchange-2013-help.md)。
 

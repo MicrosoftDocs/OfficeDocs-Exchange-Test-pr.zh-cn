@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server, Exchange Server 2013_
+_**适用于：** Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2014-06-19_
+_**上一次修改主题：** 2014-06-19_
 
 本主题说明了如何在计算机上使用 Microsoft Exchange Server 2013 安装向导来安装 Exchange 2013 边缘传输服务器角色。Exchange 2013 Service Pack 1 (SP1) 或更高版本中边缘传输角色可用。有关规划和部署 Exchange 2013 的详细信息，请参阅[规划和部署](planning-and-deployment-for-exchange-2013-installation-instructions.md)。
 

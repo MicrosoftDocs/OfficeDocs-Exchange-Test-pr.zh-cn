@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 调用统计信息报告可用于查看信息的类型和由您组织中的 Exchange 服务器处理传入呼叫的状态。该报告提供了统计信息的调用转发给或为您的组织中放置的统一邮件 (UM)。您可以使用此信息来跟踪使用情况以进行容量规划、 监视和疑难解答的可用性和 UM，音频质量和排查故障的调用。
 

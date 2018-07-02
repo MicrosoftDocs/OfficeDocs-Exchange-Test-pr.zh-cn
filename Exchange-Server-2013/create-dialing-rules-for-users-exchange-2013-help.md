@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 拨号规则组包括拨号规则条目。拨号规则用于修改之前将其发送到内部电话系统 (PBX) 或者 IP PBX 用于拨出呼叫的电话号码。拨号规则有两个用途 ︰
 

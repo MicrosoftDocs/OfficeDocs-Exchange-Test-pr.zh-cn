@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-12-05_
+_**上一次修改主题：** 2012-12-05_
 
 脱机通讯簿 (OAB) 是已下载的通讯簿副本，以便 Outlook 用户在与服务器断开连接时可以访问其中所包含的信息。可以配置通过在 Set-MailboxServer cmdlet 上使用 *OABGeneratorWorkCycle* 和 *OABGeneratorWorkCycleCheckpoint* 参数生成 OAB 的频率。
 

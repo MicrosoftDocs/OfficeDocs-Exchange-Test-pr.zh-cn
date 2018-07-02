@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2014-06-01_
+_**上一次修改主题：** 2014-06-01_
 
 *邮件提示*是用户在一边撰写电子邮件一边执行下列操作之一时在 Outlook Web App 和 Microsoft Outlook 2010 或更高版本的信息栏中看到的信息性消息：
 

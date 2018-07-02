@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 配置邮件策略和遵从性所需的权限取决于要执行的步骤和要运行的 cmdlet。有关邮件策略和遵从性的详细信息，请参阅[邮件策略和遵从性](messaging-policy-and-compliance-exchange-2013-help.md)。
 

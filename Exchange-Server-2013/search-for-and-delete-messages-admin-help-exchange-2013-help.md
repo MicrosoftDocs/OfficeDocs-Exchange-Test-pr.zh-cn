@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2017-12-20_
+_**上一次修改主题：** 2017-12-20_
 
 管理员可以使用 **Search-Mailbox** cmdlet 来搜索用户邮箱，然后从邮箱中删除邮件。
 

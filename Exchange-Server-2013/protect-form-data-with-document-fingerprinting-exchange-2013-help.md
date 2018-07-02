@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2014-09-11_
+_**上一次修改主题：** 2014-09-11_
 
 如果贵组织使用表单收集敏感信息，用户可能会尝试将这些表单通过电子邮件发送给外部联系人，这就构成了安全风险。Exchange 中的数据丢失防护 (DLP) 可以帮助您通过[文档指纹](overview-of-document-fingerprinting-in-exchange.md)检测此风险，以保护这些敏感信息。要使用文档指纹，只需上载一个空白表单，例如知识产权文档、政府表单或组织内使用的其他标准表单。然后将生成的文档指纹添加到 DLP 策略或传输规则。方法如下：
 

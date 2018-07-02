@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-04_
+_**上一次修改主题：** 2012-10-04_
 
 如果您想要授予访问权限的 cmdlet，您需要将相关的管理角色条目添加到一个管理角色。向角色添加角色条目后，指派角色的用户将能够访问该 cmdlet。有关 Microsoft Exchange Server 2013中的管理角色条目的详细信息，请参阅[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 在 Exchange Server 2013 中，可以建立用于在 DLP 策略规则集中创建事件报告的操作。此外，还可以指示应向其发送报告的人员以及要对原始邮件执行的操作。事件报告可以包含以下任何信息。
 

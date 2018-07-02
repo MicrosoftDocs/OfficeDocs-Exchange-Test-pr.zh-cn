@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-02_
+_**上一次修改主题：** 2015-03-02_
 
 在创建策略时或之后的任何时候，都可以将保留标记添加到保留策略。有关如何创建保留策略（包括如何同时添加保留标记）的详细信息，请参阅[创建保留策略](create-a-retention-policy-exchange-2013-help.md)。
 

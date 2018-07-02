@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-01-23_
+_**上一次修改主题：** 2015-01-23_
 
 默认情况下，Microsoft Exchange Server 2013 不允许您将邮件发送到域外部。要将邮件发送到域外部，您需要创建发送连接器。下图显示了创建发送连接器以向 Internet 发送邮件时的邮件流。
 

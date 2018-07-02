@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2017-11-22_
+_**上一次修改主题：** 2017-11-22_
 
-**摘要：** 了解如何在Exchange 命令行管理程序中使用准备 MoveRequest.ps1 脚本管理跨目录林的邮箱移动和Exchange 2013的迁移。
+**摘要：**  了解如何在Exchange 命令行管理程序中使用准备 MoveRequest.ps1 脚本管理跨目录林的邮箱移动和Exchange 2013的迁移。
 
 Microsoft Exchange 2013支持邮箱移动和迁移使用的**New-MoveRequest**和**New-MigrationBatch**的 cmdlet。您还可以通过 Exchange 管理中心 (EAC) 移动邮箱。您可以移动 Exchange 2013 邮箱的 Exchange 2010 来自源Exchange林到目标的Exchange 2013目录林。
 

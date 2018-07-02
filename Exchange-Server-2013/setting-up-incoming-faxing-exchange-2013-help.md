@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Microsoft 统一消息 (UM) 依赖于通过认证的传真合作伙伴解决方案，实现诸如发送传真或传真路由等增强的传真功能。默认情况下，Exchange 服务器不会配置为允许将传入传真传递给启用 UM 的用户。相反地，Exchange 服务器会将传入传真呼叫重定向至认证的传真合作伙伴解决方案中。传真伙伴的服务器收到传真数据后，以 .tif 附件的形式将传真包含在一封电子邮件中，并将其发送到收件人邮箱。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 组织使用所谓的“拆分权限”模型拆分 Microsoft Exchange Server 2013 对象和 Active Directory 对象的管理。拆分权限使组织可以将特定的权限和相关任务分配给该组织中的特定组。这种工作的分离有助于维护标准和工作流，并且有助于控制组织中的更改。
 

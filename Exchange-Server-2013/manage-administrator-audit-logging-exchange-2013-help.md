@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-05-17_
+_**上一次修改主题：** 2013-05-17_
 
 通过 Microsoft Exchange Server 2013 中的管理员审核日志记录，可以在每次运行指定 cmdlet 时创建一个日志条目。日志条目提供了有关运行的 cmdlet、使用的参数、运行 cmdlet 的用户以及受影响对象的信息。有关管理员审核日志记录的详细信息，请参阅[管理员审核日志记录](administrator-audit-logging-exchange-2013-help.md)。
 

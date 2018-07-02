@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-19_
+_**上一次修改主题：** 2013-04-19_
 
 在营业时间配置统一邮件 (UM) 自动助理时，处于打开状态，您的组织的日期和营业时间问候语的小时数并定义菜单提示呼叫者将听到时它们调用配置自动助理是分机号。如果呼叫者是您定义工作时间之外的时间内达到自动助理，呼叫者将听到非营业时间提示和问候。
 

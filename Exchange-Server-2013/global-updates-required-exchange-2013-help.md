@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2014-12-02_
+_**上一次修改主题：** 2014-12-02_
 
 Microsoft Exchange Server 2013 安装程序无法继续，因为登录的用户没有所需的帐户权限，无法对 Active Directory 目录服务进行全局更新。
 

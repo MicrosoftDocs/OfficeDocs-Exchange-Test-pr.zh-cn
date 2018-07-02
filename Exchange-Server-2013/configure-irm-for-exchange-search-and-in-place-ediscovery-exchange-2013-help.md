@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-11-16_
+_**上一次修改主题：** 2012-11-16_
 
 在 Microsoft Exchange Server 2013，您可以配置信息权限管理 (IRM)，以便Exchange搜索可以索引受 IRM 保护的邮件。
 

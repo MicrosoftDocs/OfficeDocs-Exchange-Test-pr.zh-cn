@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-05_
+_**上一次修改主题：** 2012-11-05_
 
 默认情况下，当创建统一邮件 (UM) IP 网关时，其状态设置为已启用。但是，您可能需要禁用 UM IP 网关将它脱机并不允许它采取传入或传出调用。创建 UM IP 网关之后，可以通过设置其状态变量来启用或禁用控制其操作和功能。
 

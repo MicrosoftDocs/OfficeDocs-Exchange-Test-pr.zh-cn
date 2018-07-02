@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 与之前版本的 Exchange 一样，您可以使用 Microsoft Exchange Server 2013 中的 Exchange 命令行管理程序来查看有关队列和队列中邮件的信息，并对队列和邮件执行管理操作。在 Exchange 2013 中，队列存在于邮箱服务器和边缘传输服务器中。本主题将这些服务器称为*传输服务器*。
 

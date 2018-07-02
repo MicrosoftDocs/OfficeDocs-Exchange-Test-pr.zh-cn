@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2014-10-02_
+_**上一次修改主题：** 2014-10-02_
 
 如果希望用户能够使用 Microsoft Exchange Server 2013 就地电子数据展示，则必须首先通过将他们添加到发现管理角色组来对他们进行授权。发现管理 角色组的成员拥有 Exchange 安装程序创建的发现邮箱的完全访问邮箱权限。
 

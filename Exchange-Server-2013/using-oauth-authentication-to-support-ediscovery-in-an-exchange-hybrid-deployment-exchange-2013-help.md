@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 若要在 Exchange 2013 混合组织中成功执行跨界电子数据展示搜索，必须在 Exchange 本地组织和 Exchange Online 组织之间配置 OAuth（开放授权）身份验证，以便能够使用就地电子数据展示搜索本地和基于云的邮箱。OAuth 身份验证支持 Exchange 混合部署中的以下电子数据展示方案：
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-07-31_
+_**上一次修改主题：** 2014-07-31_
 
 在开始安装 MicrosoftExchange Server 2013 之前请，参阅[规划和部署](planning-and-deployment-for-exchange-2013-installation-instructions.md)以了解重要规划信息以及有关系统要求和先决条件的信息。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 使用 Microsoft Outlook保护规则，您可以通过发送邮件前请先应用在Outlook 2010中的[Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx)模板保护邮件信息权限管理 (IRM)。若要防止应用Outlook保护规则，您可以禁用该规则。从Active DirectoryOutlook保护规则中删除删除规则定义。
 

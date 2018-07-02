@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-04-29_
+_**上一次修改主题：** 2013-04-29_
 
 邮箱数据库是创建和存储邮箱的粒度的单位。邮箱数据库以 Exchange 数据库 (.edb) 文件的形式存储。在 Microsoft Exchange Server 2013 中，每个邮箱数据库均有可供配置的其自己的属性。
 

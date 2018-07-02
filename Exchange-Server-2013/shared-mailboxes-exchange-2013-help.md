@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-06-04_
+_**上一次修改主题：** 2015-06-04_
 
 了解 Microsoft Exchange Server 2013 中的 Exchange 共享邮箱、使用理由，以及如何将委派邮箱转换为 Exchange 共享邮箱。
 
@@ -35,9 +35,9 @@ _**上一次修改主题：**2015-06-04_
 
 共享邮箱是一种没有自身用户名和密码的用户邮箱。因此，用户无法直接登录该邮箱。若要访问共享邮箱，必须先授予用户对邮箱的“代理发送”或“完全访问”权限。完成此操作后，用户便可登录自己的邮箱，然后通过将共享邮箱添加到其 Outlook 的个人资料中，即可访问共享邮箱。在 Exchange 2003 和更早版本中，共享邮箱只是一个管理员可以向其授予委派访问权限的常规邮箱。从 Exchange 2007 开始，共享邮箱变为其自己的收件人类型：
 
-  - **RecipientType：**UserMailbox
+  - **RecipientType：** UserMailbox
 
-  - **RecipientTypeDetails：**SharedMailbox
+  - **RecipientTypeDetails：** SharedMailbox
 
 在上一版本的 Exchange 中，创建共享邮箱是一个多步骤过程，在该过程中您必须使用 Exchange 命令行管理程序来完成某些任务。在 Exchange 2013 中，您可以使用 Exchange 管理中心 (EAC) 来创建共享邮箱，只需一个步骤即可完成。有关详细信息，请参阅[创建共享邮箱](create-a-shared-mailbox-exchange-2013-help.md)。事实上，EAC 具有一个专用于共享邮箱的功能区域。仅需导航到“收件人”\>“共享邮箱”，即可查看共享邮箱的所有管理任务。
 

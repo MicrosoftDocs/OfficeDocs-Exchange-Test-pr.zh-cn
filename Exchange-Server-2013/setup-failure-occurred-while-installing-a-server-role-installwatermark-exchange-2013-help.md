@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 此主题中的内容尚未针对 Microsoft Exchange Server 2013 进行更新。虽然尚未更新，但仍可能适用于 Exchange 2013。如果您仍需要帮助，请查看下面的社区资源。
 
@@ -88,7 +88,7 @@ Exchange 2007 安装程序要求先成功地重新安装之前安装失败的服
     </tbody>
     </table>
     
-    例如，要将集线器传输服务器角色添加到现有的邮箱服务器上，请键入以下内容：**%LocalExchangeInstallationDir%\\bin\\Setup.com /role:HubTransport /Mode:Install**
+    例如，要将集线器传输服务器角色添加到现有的邮箱服务器上，请键入以下内容：** %LocalExchangeInstallationDir%\\bin\\Setup.com /role:HubTransport /Mode:Install**
 
 <table>
 <thead>

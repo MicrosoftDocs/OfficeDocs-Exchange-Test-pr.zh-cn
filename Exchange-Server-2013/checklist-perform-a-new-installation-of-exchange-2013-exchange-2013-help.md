@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 使用此检查表部署 Microsoft Exchange Server 2013。在开始使用此检查表之前，请确保您熟悉以下内容中介绍的概念：
 

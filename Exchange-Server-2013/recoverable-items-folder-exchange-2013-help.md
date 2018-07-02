@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 为了防止出现意外或恶意删除，并协助常在诉讼或调查之前或期间进行的发现工作，Microsoft Exchange Server 2013 和 Exchange Online 使用“可恢复的项目”文件夹。“可恢复的项目”文件夹替换在早期版本的 Exchange 中称为“转储程序”的功能。下列 Exchange 功能会用到“可恢复的项目”文件夹：
 

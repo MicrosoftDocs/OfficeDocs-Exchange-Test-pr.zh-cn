@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Microsoft Exchange Server 2013 包括使用 Microsoft SharePoint Server 2013 和 Microsoft Lync Server 2013 的功能，称为*合作伙伴应用程序*。要确保这些合作伙伴应用程序可以访问其他每个应用程序的资源，需要配置服务器到服务器的身份验证。
 

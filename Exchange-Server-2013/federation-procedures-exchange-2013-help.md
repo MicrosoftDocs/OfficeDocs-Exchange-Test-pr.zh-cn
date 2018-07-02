@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2017-02-28_
+_**上一次修改主题：** 2017-02-28_
 
 [配置联合共享](configure-federated-sharing-exchange-2013-help.md)
 

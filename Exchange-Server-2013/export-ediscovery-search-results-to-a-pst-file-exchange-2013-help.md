@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2017-09-07_
+_**上一次修改主题：** 2017-09-07_
 
 可以使用在Exchange 管理中心 (EAC) eDiscovery 导出工具将适当 eDiscovery 搜索的结果导出到 Outlook 数据文件，也称为 PST 文件。管理员可以分配到您的组织，如人力资源经理或记录管理器内的其他人员或相反法律顾问在法律案件中的搜索结果。搜索结果导出到 PST 文件之后，您或其他用户可以它们在 Outlook 中打开要查看或打印搜索结果中返回的消息。也可以在第三方 eDiscovery 和报告应用程序中打开 PST 文件。本主题演示如何执行此操作，以及解决如果您有任何问题。
 

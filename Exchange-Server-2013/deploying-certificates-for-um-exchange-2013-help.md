@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-29_
+_**上一次修改主题：** 2013-04-29_
 
 您可以使用相互传输层安全性 (相互 TLS) 来启用统一邮件 (UM) Microsoft Exchange 2013 服务器和 VoIP 网关，IP Pbx，会话边框控制器 (SBCs) 之间发送的数据进行加密和 Microsoft Lync Server。证书将用于加密和数字签名的信息到一个电子密钥 （公钥和私钥） 对证书所有者的身份绑定。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Microsoft Exchange Server 2013安装程序无法继续，因为它检测到一个或多个Exchange Server 2007服务器还没有已升级到Exchange Server 2007 Service Pack 3 (SP3) 10 (RU10) 的汇总。您可以安装Exchange 2013之前，您的组织中的所有Exchange 2007服务器必须都升级到 SP3 RU10 的Exchange 2007 。此要求完全包括了Exchange 2007边缘传输服务器。有关详细信息，请参阅[从 Exchange 2007 升级到 Exchange 2013](upgrade-from-exchange-2007-to-exchange-2013-exchange-2013-help.md)。
 

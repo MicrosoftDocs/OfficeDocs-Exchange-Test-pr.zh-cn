@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 您可以启用或禁用常见Outlook语音访问用户的统一邮件 (UM) 针模式。如果您启用或禁用 UM 邮箱策略上设置常见的固定模式，该设置将应用于与该 UM 邮箱策略相关联的所有已启用 UM 的用户。默认情况下，启用 UM 的用户不能创建 PIN 时使用常见的模式。
 

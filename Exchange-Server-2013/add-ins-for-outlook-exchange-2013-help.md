@@ -13,11 +13,11 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2017-03-13_
+_**上一次修改主题：** 2017-03-13_
 
-**摘要：**与 Windows 和 MacIntosh 计算机、移动设备上和 Outlook Web App 中的 Outlook 以及 Outlook 网页版一起使用的 Outlook 外接程序的概述。
+**摘要：** 与 Windows 和 MacIntosh 计算机、移动设备上和 Outlook Web App 中的 Outlook 以及 Outlook 网页版一起使用的 Outlook 外接程序的概述。
 
 Outlook 的外接程序是通过添加用户无需离开 Outlook 就能使用的信息或工具来扩展 Outlook 客户端实用性的应用程序。外接程序由第三方开发人员构建，可以从文件或 URL 或 Office 应用商店进行安装。默认情况下，所有用户都可以都安装外接程序。Exchange 管理员可以使用角色来控制用户安装外接程序的功能。
 
@@ -81,7 +81,7 @@ Outlook 客户端支持各种各样的外接程序，可通过 Office 应用商�
 
 Exchange 管理员在组织中进行管理有几个常见方案。
 
-**如果想要防止最终用户在所有 Outlook 客户端上安装 Outlook 相关外接程序，可对 Exchange 管理中心的角色进行以下更改：**
+**如果想要防止最终用户在所有 Outlook 客户端上安装 Outlook 相关外接程序，可对 Exchange 管理中心的角色进行以下更改：** 
 
   - 若要阻止用户安装 Office 应用商店的外接程序，请删除他们的**我的市场**角色。
 

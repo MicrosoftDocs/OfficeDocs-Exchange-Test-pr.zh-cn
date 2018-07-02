@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-02_
+_**上一次修改主题：** 2012-10-02_
 
 管理角色的作用域确定哪些对象可供用户就可以更改使用的 cmdlet 和分配给用户的参数对象。如果您不再使用的作用域，它可以被删除。有关 Microsoft Exchange Server 2013中的管理角色作用域的详细信息，请参阅[了解管理角色作用域](understanding-management-role-scopes-exchange-2013-help.md)。
 

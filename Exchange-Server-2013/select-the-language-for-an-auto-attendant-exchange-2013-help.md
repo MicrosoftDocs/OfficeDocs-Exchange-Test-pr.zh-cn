@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 您可以配置默认提示语言设置统一邮件 (UM) 自动助理。在 UM 自动助理设置可用的语言使您能够配置默认提示语言上的自动助理。当您使用默认系统提示的自动助理时，这是调用方时自动助理应答传入的呼叫会听到的语言。这个语言设置影响仅在安装了邮箱服务器运行 Microsoft Exchange 统一消息服务之后提供了默认系统提示。此设置不会影响自动助理配置的自定义提示。可用的语言基于邮箱服务器安装了统一消息语言包。
 

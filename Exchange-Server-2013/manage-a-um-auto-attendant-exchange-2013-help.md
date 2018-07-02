@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-30_
+_**上一次修改主题：** 2013-04-30_
 
 创建统一邮件 (UM) 自动助理后，您可以查看或配置各种设置。例如，您可以添加、 删除和编辑与该自动助理关联的分机号码。此外可以启用或禁用自动助理的自动语音识别 (ASR) 并更改用于业务和非工作时间的问候语。
 

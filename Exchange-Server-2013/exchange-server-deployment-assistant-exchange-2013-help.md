@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Exchange Server 部署助理是一种基于 Web 的工具，可帮助进行 Microsoft Exchange Server 2016 和 Exchange Server 2013 部署。部署助理会询问一些有关当前环境的问题，然后生成有助于简化部署的自定义清单和步骤。若要访问部署助理，请参阅 [Exchange Server 部署助理](https://go.microsoft.com/fwlink/p/?linkid=277105)。
 

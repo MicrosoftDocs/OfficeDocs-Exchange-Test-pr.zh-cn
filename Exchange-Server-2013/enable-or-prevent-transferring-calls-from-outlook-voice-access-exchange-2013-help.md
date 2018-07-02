@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 您可以使 Outlook Voice Access 用户传送到用户的统一邮件 (UM) 拨号计划，与相关联的呼叫或阻止他们这样做。默认情况下，同时启用了此选项，并**将保留而不响的用户电话的语音邮件**选项，以便 Outlook Voice Access 用户可以转移呼叫的用户在同一个 UM 拨号计划和为它们留下语音信息。此设置仅适用于 Outlook Voice Access 用户输入他们的 PIN 并进行身份验证。
 

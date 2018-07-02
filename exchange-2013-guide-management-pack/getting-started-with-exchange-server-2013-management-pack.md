@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**上一次修改主题：** 2013-04-08_
+_**上一次修改主题：**  2013-04-08_
 
 Exchange Server 2013 管理包在 SCOM 控制台的“监视”部分中添加容器。当您展开 Exchange Server 2013 容器时，会看到它的下面只有三个视图。
 

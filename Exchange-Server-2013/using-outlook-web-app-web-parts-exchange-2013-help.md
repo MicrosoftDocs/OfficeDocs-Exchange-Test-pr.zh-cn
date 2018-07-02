@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-07-31_
+_**上一次修改主题：** 2015-07-31_
 
 可以使用 MicrosoftOfficeOutlook Web App Web 部件指定要打开的邮箱、该邮箱中要打开的文件夹以及要使用的内容视图。
 
@@ -185,13 +185,13 @@ Exchange 2013 中的 Outlook Web App 对 /owa 虚拟目录请求使用 URL 格�
 
 以下示例显示如何直接访问常见的 Outlook Web App 视图：
 
-  - **收件箱：** https://*\<server name\>*/owa/?cmd=contents\&module=inbox
+  - **收件箱：**  https://*\<server name\>*/owa/?cmd=contents\&module=inbox
 
-  - **日历（今天）：**https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&exsvurl=1
+  - **日历（今天）：** https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&exsvurl=1
 
-  - **日历（每周）：** https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&view=weekly\&exsvurl=1
+  - **日历（每周）：**  https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&view=weekly\&exsvurl=1
 
-  - **日历（每月）：** https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&view=monthly\&exsvurl=1
+  - **日历（每月）：**  https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&view=monthly\&exsvurl=1
 
 ## 详细信息
 

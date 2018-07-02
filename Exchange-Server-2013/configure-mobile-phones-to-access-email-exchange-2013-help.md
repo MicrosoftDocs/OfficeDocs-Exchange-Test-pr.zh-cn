@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-12_
+_**上一次修改主题：** 2015-03-12_
 
 可以配置移动电话（如 Windows 电话）以使用 MicrosoftExchange ActiveSync。您应该对组织中的每部移动电话执行此过程。
 

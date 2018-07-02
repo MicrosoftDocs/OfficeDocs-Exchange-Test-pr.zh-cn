@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-08_
+_**上一次修改主题：** 2015-04-08_
 
 “SMTP 标题”是远程 SMTP 消息服务器连接到运行 Microsoft Exchange Server 2013 的计算机上配置的接收连接器之后收到的 SMTP 连接响应。
 

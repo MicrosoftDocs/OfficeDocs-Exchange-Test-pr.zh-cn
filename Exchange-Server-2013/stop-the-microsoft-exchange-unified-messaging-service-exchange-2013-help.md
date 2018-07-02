@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-16_
+_**上一次修改主题：** 2012-11-16_
 
 可以使用服务管理单元中Microsoft管理控制台 (MMC) 或 cmd.exe 命令提示符处停止在邮箱服务器上的MicrosoftExchange统一消息服务。有时可能需要停止此服务，例如，当您需要将邮箱服务器脱机。MicrosoftExchange统一消息服务停止时，邮箱服务器不能接受和处理传入呼叫。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2012-11-08_
+_**上一次修改主题：** 2012-11-08_
 
 Microsoft Exchange Server 2013 安装程序显示了此警告，因为组织中不存在任何 Exchange Server 2010 或 Exchange Server 2007 服务器角色。
 

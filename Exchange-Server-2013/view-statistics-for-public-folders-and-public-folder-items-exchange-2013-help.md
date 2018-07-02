@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-14_
+_**上一次修改主题：** 2013-02-14_
 
 本主题介绍如何检索公用文件夹的统计信息，例如显示名称、创建时间、上次用户修改时间、上次用户访问时间和项目大小。可以使用此信息对删除或保留公用文件夹作出决策。
 

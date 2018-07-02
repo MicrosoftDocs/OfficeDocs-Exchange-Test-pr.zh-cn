@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 可以在他们的统一邮件 (UM) 或语音邮件 PIN 重置时将发送给用户的电子邮件中包含附加文本。通过在**重置用户的 Outlook Voice Access 针时**框中输入自定义文本，UM 邮箱策略上执行此操作。例如，自定义的文本可以包含已启用 UM 的用户的安全相关信息。
 

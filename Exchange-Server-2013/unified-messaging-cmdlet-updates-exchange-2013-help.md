@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 Exchange Server 2010 中的许多统一消息 (UM) cmdlet 适用于 Exchange Server 2013，但是其中一些 cmdlet 进行了更改。此外，还为 Exchange 2013 添加了新 cmdlet。
 

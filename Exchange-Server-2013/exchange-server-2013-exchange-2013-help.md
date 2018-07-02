@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 欢迎使用 Microsoft Exchange Server 2013！我们知道您迫切希望立即开始，但在您开始使用 Exchange 2013 和此内容之前，应注意几个问题。
 

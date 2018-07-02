@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-05_
+_**上一次修改主题：** 2012-11-05_
 
 您可以启用或禁用呼叫的用户不能启用的统一邮件 (UM)。默认情况下，统一消息允许通过未经身份验证的调用方通过自动助理要转移到已启用 UM 的用户的传入呼叫。启用此设置，从组织外部的用户可以将传输对启用 UM 的用户的呼叫。
 

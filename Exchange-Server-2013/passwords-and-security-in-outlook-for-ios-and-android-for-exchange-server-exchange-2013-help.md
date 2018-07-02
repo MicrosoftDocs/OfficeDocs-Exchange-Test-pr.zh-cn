@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2010, Exchange Server 2013_
+_**适用于：** Exchange Server 2010, Exchange Server 2013_
 
-_**上一次修改主题：**2018-04-01_
+_**上一次修改主题：** 2018-04-01_
 
-**摘要：**本文介绍了密码和安全功能通过 Exchange Server 在 Outlook for iOS 和 Outlook for Android 中的工作原理。
+**摘要：** 本文介绍了密码和安全功能通过 Exchange Server 在 Outlook for iOS 和 Outlook for Android 中的工作原理。
 
 适用于 iOS 和 Android 的 Outlook 应用程序首次在 Exchange 本地环境中运行时，Outlook 生成随机的 AES-128 密钥。此密钥称为*设备密钥*，仅存储在用户的设备上。
 

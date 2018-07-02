@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-12-16_
+_**上一次修改主题：** 2014-12-16_
 
 可以使用命令行更新全局地址列表 (GAL)。GAL 是一个目录，其中包含与组织内实施 MicrosoftExchange 的每个组、用户和联系人对应的项。
 

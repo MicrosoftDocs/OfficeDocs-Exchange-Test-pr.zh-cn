@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 您可以使用共享策略控制 Exchange 组织中的用户与组织外的用户共享日历信息的方式。共享策略允许与不同类型的外部用户进行用户建立的、人对人的日历信息共享。这些策略支持与外部联合组织（如 Office 365 或其他本地 Exchange 组织）、外部非联合组织以及可以访问 Internet 的个人共享日历信息。若要将特定的共享策略应用于用户，请参阅[将共享策略应用于邮箱](apply-a-sharing-policy-to-mailboxes-exchange-2013-help.md)。
 

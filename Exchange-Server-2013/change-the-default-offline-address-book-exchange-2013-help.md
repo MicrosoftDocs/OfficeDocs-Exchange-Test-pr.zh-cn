@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2014-12-16_
+_**上一次修改主题：** 2014-12-16_
 
 默认情况下，在安装邮箱服务器角色时，会创建一个名为“默认脱机通讯簿”的基于 Web 的默认脱机通讯簿 (OAB)。您可以将 Exchange 组织中的任何 OAB 设置为默认 OAB。这一新的默认 OAB 将与所有新创建的邮箱数据库相关联。您的组织中只能有一个默认 OAB。如果删除默认 OAB，MicrosoftExchange 不会将另一个 OAB 自动指定为默认 OAB。您必须手动将另一个 OAB 指定为默认 OAB。
 

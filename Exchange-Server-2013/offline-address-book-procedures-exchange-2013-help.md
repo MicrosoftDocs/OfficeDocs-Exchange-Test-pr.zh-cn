@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-04_
+_**上一次修改主题：** 2012-10-04_
 
 [创建脱机通讯簿](create-an-offline-address-book-exchange-2013-help.md)
 

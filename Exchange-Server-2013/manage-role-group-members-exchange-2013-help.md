@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-08_
+_**上一次修改主题：** 2012-10-08_
 
 本主题介绍如何在 Microsoft Exchange Server 2013 中添加、删除和查看管理角色组的成员。有关 Exchange 2013 中角色组的详细信息，请参阅[了解管理角色组](understanding-management-role-groups-exchange-2013-help.md)。
 

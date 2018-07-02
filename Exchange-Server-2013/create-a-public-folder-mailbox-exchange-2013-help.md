@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2014-10-23_
+_**上一次修改主题：** 2014-10-23_
 
 必须先创建公用文件夹邮箱，然后才能创建公用文件夹。公用文件夹邮箱包含公用文件夹的层次结构信息和内容。您创建的首个公用文件夹邮箱是主层次结构邮箱，包含层次结构的只写拷贝。您创建的其他所有公用文件夹邮箱都是辅邮箱，包含层次结构的只读拷贝。
 

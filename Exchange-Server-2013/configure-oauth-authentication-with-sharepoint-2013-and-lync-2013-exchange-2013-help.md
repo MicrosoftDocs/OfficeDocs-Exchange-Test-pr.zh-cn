@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-03-03_
+_**上一次修改主题：** 2014-03-03_
 
 Exchange Server 2013 允许其他应用程序使用 OAuth 对 Exchange 进行身份验证。应用程序必须配置为 Exchange 2013 中的合作伙伴应用程序。
 

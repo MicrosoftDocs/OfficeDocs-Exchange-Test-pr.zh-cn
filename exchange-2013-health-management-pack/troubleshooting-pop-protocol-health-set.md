@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Project Server 2013_
+_**适用于：** Exchange Server 2013, Project Server 2013_
 
-_**上一次修改主题：**2013-02-11_
+_**上一次修改主题：** 2013-02-11_
 
 POP.Protocol 运行状况设置监视邮箱服务器中的 Microsoft Exchange POP3 协议。如果收到警报指出 POP.Protocol 运行状况设置不正常，则表明存在影响警报中指示的邮箱服务器中的 POP3 协议的问题。
 

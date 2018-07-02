@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-19_
+_**上一次修改主题：** 2013-04-19_
 
 可以定义在假日以及其他情况下，您的组织停止营业的日期和时间。在指定的开始日期与结束日期之间，接通统一消息 (UM) 自动助理的呼叫者将听到您在配置假日日程安排时指定的假日问候语。呼叫者听到您指定的假日问候语之后，系统将向呼叫者播放非营业时间问候语和菜单提示。
 

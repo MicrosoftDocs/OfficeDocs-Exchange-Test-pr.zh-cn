@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-05_
+_**上一次修改主题：** 2012-11-05_
 
 当您查看统一邮件 (UM) 查寻组的属性时，您可以查看与单个 UM 查寻组或所有与单个 UM IP 网关关联的 UM 查寻组关联的属性。如果未指定任何参数，则将返回所有 UM 查寻组。不能使用 EAC 来查看 UM 查寻组属性;您必须使用外壳程序。
 

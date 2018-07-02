@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2017-11-15_
+_**上一次修改主题：** 2017-11-15_
 
 有几个可能要导出或导入保留标记的方案，包括：
 

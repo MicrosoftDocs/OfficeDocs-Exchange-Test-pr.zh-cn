@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-19_
+_**上一次修改主题：** 2013-04-19_
 
 您可以启用自定义的营业时间问候语的统一邮件 (UM) 自动助理。营业时间问候语是第一件事呼叫者将听到当 UM 自动助理应答在上班期间他们呼叫。您可能需要自定义问候语。
 

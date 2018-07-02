@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-05_
+_**上一次修改主题：** 2012-11-05_
 
 可以使用**新的菜单导航条目**页后，可以创建一个或多个键映射为企业或营业时间主菜单提示的自动助理。您可以定义在电话键盘上的键按下时，例如，将呼叫转移到分机号码或另一个自动助理将执行的操作。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 Microsoft Exchange Server 2010 和 Exchange Server 2007 有多个服务器角色：客户端访问、邮箱、集线器传输、统一消息和边缘传输。使用 Exchange Server 2013，我们将服务器角色的数量从五个减少到了三个：客户端访问、邮箱和边缘传输。统一消息现在被认为是 Exchange 2013 中提供的语音相关功能的组件或子功能。（有关该更改的详细信息，请参阅 [Exchange 2013 中的新增功能](what-s-new-in-exchange-2013-exchange-2013-help.md)中的 Exchange 2013 体系结构”。）
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-01-14_
+_**上一次修改主题：** 2015-01-14_
 
 本主题提供有关在使用 RollAlternateServiceAccountPassword.ps1 脚本时可能发生的常见错误的解决方案和信息。
 

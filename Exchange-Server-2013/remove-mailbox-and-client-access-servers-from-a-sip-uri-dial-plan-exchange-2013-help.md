@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-16_
+_**上一次修改主题：** 2013-04-16_
 
 您可以删除客户端访问和邮箱服务器 SIP URI 拨号计划。在部署 Microsoft Lync Server 时，若要启用出站调用才能正常工作，则必须手动添加所有客户端访问和邮箱服务器对您为 Lync 服务器创建的 SIP URI 拨号计划。但是，您可能需要一个客户端访问或邮箱服务器删除 Lync 部署，例如，如果您正在执行维护或使服务器脱机。
 

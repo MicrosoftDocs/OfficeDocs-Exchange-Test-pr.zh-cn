@@ -13,19 +13,19 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-15_
+_**上一次修改主题：** 2013-02-15_
 
 如果您的组织中使用多个脱机通讯簿 (OAB)，则可以通过若干方式指定哪些收件人下载哪些 OAB：
 
   - **按邮箱数据库**   可使用 EAC 或命令行管理程序，通过将邮箱数据库链接到 Office Outlook 2007、Outlook 2010 和 Outlook 2013 客户端的默认 OAB，针对 OAB 下载配置收件人。
 
-  - **按收件人：**通过将 OAB 直接链接到收件人的邮箱，可以在命令行管理程序中使用 **Set-Mailbox** cmdlet 指定下载哪个 OAB。
+  - **按收件人：** 通过将 OAB 直接链接到收件人的邮箱，可以在命令行管理程序中使用 **Set-Mailbox** cmdlet 指定下载哪个 OAB。
 
-  - **按多个收件人：**可以在命令行管理程序中使用管道命令基于公用属性指定多个收件人下载 OAB。
+  - **按多个收件人：** 可以在命令行管理程序中使用管道命令基于公用属性指定多个收件人下载 OAB。
 
-  - **按通讯簿策略：**可以将通讯簿策略 (ABP) 分配给邮箱用户的帐户以指定将哪个 OAB 下载到收件人的邮箱。如果将 ABP 分配给已经分配有 OAB 的用户帐户，则将优先使用显式分配给邮箱的 OAB。有关详细信息，请参阅[将通讯簿策略分配给邮件用户](assign-an-address-book-policy-to-mail-users-exchange-2013-help.md)。
+  - **按通讯簿策略：** 可以将通讯簿策略 (ABP) 分配给邮箱用户的帐户以指定将哪个 OAB 下载到收件人的邮箱。如果将 ABP 分配给已经分配有 OAB 的用户帐户，则将优先使用显式分配给邮箱的 OAB。有关详细信息，请参阅[将通讯簿策略分配给邮件用户](assign-an-address-book-policy-to-mail-users-exchange-2013-help.md)。
 
 有关与 OAB 相关的更多管理任务，请参阅[脱机通讯簿程序](offline-address-book-procedures-exchange-2013-help.md)。
 

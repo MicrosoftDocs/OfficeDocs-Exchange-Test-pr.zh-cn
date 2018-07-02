@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 您可以配置Outlook语音访问用户无法访问其邮箱之前所允许的登录失败的次数。语音邮件用户锁定之前允许的登录失败次数上统一邮件 (UM) 邮箱策略，配置并应用于所有已启用 UM 的用户与该 UM 邮箱策略相关联。默认情况下将它设置为 15。
 

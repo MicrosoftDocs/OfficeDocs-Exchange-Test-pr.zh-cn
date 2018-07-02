@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-06-04_
+_**上一次修改主题：** 2015-06-04_
 
 了解有关 Exchange Server 2013 中的 Exchange DAG 的信息。本文讨论了数据库可用性组 (DAG) 生命周期，以及使用 DAG 实现高可用性和站点恢复的信息。
 

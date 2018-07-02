@@ -17,7 +17,7 @@ _<strong>适用于：</strong>Exchange Online, Exchange Server 2013, Exchange Se
 _<strong>上一次修改主题：</strong>2017-07-25_
 
 
-**摘要：** 在设置混合部署之前，您的 Exchange 环境需要满足的要求。
+**摘要：**  在设置混合部署之前，您的 Exchange 环境需要满足的要求。
 
 在使用“混合配置”向导创建和配置混合部署之前，现有的内部部署 Exchange 组织必须满足特定的要求。如果不满足这些要求，将无法完成“混合配置”向导中的步骤，且无法配置内部部署 Exchange 组织与 Exchange Online 之间的混合部署。
 

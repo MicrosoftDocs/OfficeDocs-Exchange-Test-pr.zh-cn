@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 Outlook Voice Access 包含两个界面：电话用户界面 (TUI) 和语音用户界面 (VUI)。用户在 Exchange 2013 中使用统一消息 (UM) 系统访问某个邮箱时，可以为启用了 UM 的用户配置 TUI 设置。在 UM 邮箱策略上为启用 UM 的用户修改 TUI 设置时，所做更改将影响与 UM 邮箱策略关联的所有用户。可以在 UM 邮箱策略上修改下列 TUI 设置：
 

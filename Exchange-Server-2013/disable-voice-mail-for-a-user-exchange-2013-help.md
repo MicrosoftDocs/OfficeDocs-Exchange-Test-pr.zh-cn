@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-05_
+_**上一次修改主题：** 2012-11-05_
 
 您可以启用 UM 的用户禁用统一邮件 (UM)。当您执行此操作时，用户可以不再使用统一消息中的语音邮件功能。如果您愿意，您禁用 UM 的用户时，您可以保留用户的 UM 设置。
 

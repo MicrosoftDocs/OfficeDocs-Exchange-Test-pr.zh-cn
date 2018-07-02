@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**适用于：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 在 Exchange Server 2013 中，可以使用保留策略或托管文件夹进行邮件记录管理 (MRM)。只有运行 Microsoft Outlook 2010 及更高版本的用户才能访问保留策略的所有客户端功能。但是，保留策略是通过托管文件夹助理应用于邮箱服务器，不管用户使用的 Outlook 客户端版本是什么。较旧的 Outlook 客户端不公开这些功能的 MRM 功能。例如，因为 Outlook 2007 不支持保留策略，所以用户无法将个人标记应用于项目或文件夹。
 

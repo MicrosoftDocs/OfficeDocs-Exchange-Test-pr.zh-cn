@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-15_
+_**上一次修改主题：** 2016-12-15_
 
 Microsoft 努力使每个用户更容易使用其产品和服务。下列各节提供使残障人士更容易使用 Microsoft Exchange 的功能、产品和服务的有关信息：
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 当为用户启用统一消息时，要求您分配一个分机号码和一个将用户关联到 UM 拨号计划的 UM 邮箱策略。用户启用 UM 后，可以为有相同拨号计划的用户分配其他分机号码，但是同一拨号计划中的分机号码必须是唯一的。在一些部署中，用户可能需要在两个独立的拨号计划中分配相同的分机号码。如果是这个情况，您可以将用户关联到辅助 UM 拨号计划。例如，如果用户有两个物理电话或者在不同地点之间出差，这将非常有用。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-14_
+_**上一次修改主题：** 2012-10-14_
 
 将邮箱放在保留挂起，请暂停处理保留策略或邮箱托管的文件夹邮箱策略。如用户暂时被休假或走的情况下旨在保留挂起。
 

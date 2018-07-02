@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-11_
+_**上一次修改主题：** 2012-11-11_
 
 您可以指定系统允许在结束通话之前正在录制语音邮件时的无声的秒数。对于大多数组织，此值应设置为默认值 5 秒。
 

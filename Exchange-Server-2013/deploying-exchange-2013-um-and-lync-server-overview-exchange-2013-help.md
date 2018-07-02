@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 可以将统一消息 (UM) 和 Microsoft Lync Server 一起部署，为组织中的用户提供语音邮件、即时消息、增强的用户在线状态、音频/视频会议以及集成的电子邮件和消息体验。统一消息用于提供语音邮件呼叫应答、Outlook 语音访问和自动助理服务。Microsoft Lync Server 在 Enterprise Voice 中提供更多高级功能，例如即时消息 (IM)、会议和入站或出站呼叫。本主题介绍如何配置统一消息和 Microsoft Lync Server 以支持上述功能。
 

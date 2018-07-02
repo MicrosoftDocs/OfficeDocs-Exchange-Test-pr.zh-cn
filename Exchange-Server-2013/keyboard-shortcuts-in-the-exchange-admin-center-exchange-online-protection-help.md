@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Microsoft 努力使每个用户更容易使用其产品和服务。下列各节提供有关使残障人士更容易使用 Microsoft Exchange 及其他 Microsoft 产品和服务的键盘快捷键的信息。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-11-10_
+_**上一次修改主题：** 2015-11-10_
 
 对客户端和移动设备执行任务所需的权限将视所执行的过程或要运行的 cmdlet 而定。有关客户端和移动设备功能的详细信息，请参阅[客户端和移动](clients-and-mobile-exchange-2013-help.md)。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-25_
+_**上一次修改主题：** 2013-04-25_
 
 语音邮件到达之后，用户就可以选择收听语音邮件信息，通过计算机的扬声器或耳机，或使用播放电话功能。电话功能的重头戏是包含在 Microsoft Outlook 和 Outlook Web App，并设置在电话上播放**语音邮件**选项下的**在电话上的播放**部分中都可用。本主题介绍如何启用统一邮件 UM 的用户可以使用播放电话功能。
 

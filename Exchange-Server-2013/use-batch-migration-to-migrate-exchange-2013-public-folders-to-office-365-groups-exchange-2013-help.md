@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2018-03-26_
+_**上一次修改主题：** 2018-03-26_
 
-**摘要：** 如何将您的 Exchange 2013 公用文件夹移动到 Office 365 组。
+**摘要：**  如何将您的 Exchange 2013 公用文件夹移动到 Office 365 组。
 
 通过一个称为*批迁移*的过程，可以将部分或全部 Exchange 2013 公用文件夹移动到 Office 365 组。组是具有某些优点在公用文件夹上的 microsoft 提供的新协作。[将公用文件夹迁移到 Office 365 组](migrate-your-public-folders-to-office-365-groups-exchange-2013-help.md)有关公用文件夹和组，以及您的组织可能会或可能不会受益于切换到组原因之间的差异的概述，请参阅。
 
@@ -77,7 +77,7 @@ _**上一次修改主题：**2018-03-26_
 
   - **LockAndSavePublicFolderProperties.ps1**。 只读，以防止任何的修改，该脚本会在公用文件夹和它转移与邮件相关的公用文件夹属性 （前提是公用文件夹启用邮件） 到目标组中，其将重新路由电子邮件的公用文件夹到目标组。此脚本还备份权限条目和邮件属性之前对其进行修改。
 
-  - **LockAndSavePublicFolderProperties.strings.psd1:** `LockAndSavePublicFolderProperties.ps1`脚本使用此支持文件。
+  - **LockAndSavePublicFolderProperties.strings.psd1:**  `LockAndSavePublicFolderProperties.ps1`脚本使用此支持文件。
 
   - **UnlockAndRestorePublicFolderProperties.ps1**。 此脚本恢复的访问权限，并使用由`LockandSavePublicFolderProperties.ps1`创建的备份文件的公用文件夹的邮件属性。
 
@@ -286,9 +286,9 @@ _**上一次修改主题：**2018-03-26_
 
 此脚本将读取正在迁移公用文件夹的权限，然后添加成员和所有者到 Office 365 组，如下所示：
 
-  - 用下列权限角色的用户将被添加为成员到 Office 365 中的组。 **权限的角色：** 所有者、 PublishingEditor、 编辑器、 PublishingAuthor、 作者
+  - 用下列权限角色的用户将被添加为成员到 Office 365 中的组。 **权限的角色：**  所有者、 PublishingEditor、 编辑器、 PublishingAuthor、 作者
 
-  - 除上述，以下的最小访问权限与用户权限将还作为成员添加到 Office 365 中的组。 **访问权限：** ReadItems、 CreateItems、 FolderVisible、 EditOwnedItems、 DeleteOwnedItems
+  - 除上述，以下的最小访问权限与用户权限将还作为成员添加到 Office 365 中的组。 **访问权限：**  ReadItems、 CreateItems、 FolderVisible、 EditOwnedItems、 DeleteOwnedItems
 
   - 用户具有访问权限的"所有者"将向组添加为所有者，并与其他有资格的访问权限的用户将被添加为成员。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2017-07-26_
+_**上一次修改主题：** 2017-07-26_
 
 要建立联合身份验证信任关系 Microsoft Exchange Server 2013组织和[Azure Active Directory 验证系统](https://go.microsoft.com/fwlink/p/?linkid=135986)，您需要用来创建信任的Exchange服务器上安装数字证书。我们强烈建议使用自签名的证书。创建并使用Exchange 管理中心 (EAC) 中**启用联合身份验证信任**向导时自动安装一个自签名的证书。
 

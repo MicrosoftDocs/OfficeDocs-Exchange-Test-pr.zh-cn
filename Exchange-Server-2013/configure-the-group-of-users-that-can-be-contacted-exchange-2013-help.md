@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-12-09_
+_**上一次修改主题：** 2012-12-09_
 
 您可以指定的组中的用户的统一邮件 (UM) 自动助理到呼叫时，呼叫者可以联系。默认情况下，调用方可以联系同一与 UM 自动助理关联的拨号计划中的用户。但是，您可以更改允许呼叫转移呼叫或向用户发送语音消息者所在组织的通讯簿，或者对于一组特定的用户的用户分组。
 

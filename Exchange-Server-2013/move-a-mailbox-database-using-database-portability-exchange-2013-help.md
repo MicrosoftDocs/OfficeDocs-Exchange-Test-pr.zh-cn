@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-06-16_
+_**上一次修改主题：** 2014-06-16_
 
 您可以利用数据库可移植性在同一组织中的 Exchange 2013 邮箱服务器之间移动 Microsoft Exchange Server 2013 邮箱数据库。这有助于减少一些故障情况的总恢复时间。若要了解详细信息，请参阅[数据库可移植性](database-portability-exchange-2013-help.md)。
 

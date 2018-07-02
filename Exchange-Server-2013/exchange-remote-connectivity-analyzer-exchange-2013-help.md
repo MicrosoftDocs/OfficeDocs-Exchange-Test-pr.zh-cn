@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-09-22_
+_**上一次修改主题：** 2014-09-22_
 
 MicrosoftExchange 远程连接分析器 (ExRCA) 可帮助您确保正确设置 Exchange 服务器的连接。如果您遇到问题，它还可以帮助您查找并修复这些问题。ExRCA 网站可以运行测试以检查 MicrosoftExchange ActiveSync、Exchange Web 服务、MicrosoftOutlook 和 Internet 电子邮件连接。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-06-25_
+_**上一次修改主题：** 2013-06-25_
 
 安装客户端访问和邮箱服务器并配置统一消息后，您可以使用多个诊断测试和基于软件的电话应用程序来测试电话连接性和统一消息服务的运行情况。
 

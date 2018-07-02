@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 可以使用协议日志记录，在 Exchange 环境中查看 POP3 和 IMAP4 连接。如果要解决与 POP3 或 IMAP4 性能相关的问题，这可能很有用。
 

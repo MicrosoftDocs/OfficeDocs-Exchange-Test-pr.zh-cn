@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-08_
+_**上一次修改主题：** 2015-04-08_
 
 若要建立通过边缘传输服务器的 Internet 邮件，需要将边缘传输服务器订阅到 Active Directory 站点。此将会自动为 Internet 邮件流创建所需的两个发送连接器：
 

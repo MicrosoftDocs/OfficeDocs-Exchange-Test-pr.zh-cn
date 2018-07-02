@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**上一次修改主题：**2017-02-23_
+_**上一次修改主题：** 2017-02-23_
 
 为了满足法律或合规性要求，或者为了满足特定的业务需求，您的组织可能需要阻止或拒绝某些类型的邮件。下面的一些示例展示了您可以使用传输规则在 Exchange 中设置的用于阻止所有附件的常见方案：
 
@@ -51,7 +51,7 @@ _**上一次修改主题：**2017-02-23_
 
 5.  选择相应的条件和操作。
 
-**注意：**在 EAC 中，你可以输入的最小附件大小为 1 KB，这样应该会检测大多数附件。但是，如果要检测每个任意大小的可能附件，则需要在 EAC 中创建规则后使用 PowerShell 将附件大小调整为 1 字节。若要了解如何在本地 Exchange 组织中打开 Exchange 命令行管理程序，请参阅[打开命令行管理程序](https://technet.microsoft.com/zh-cn/library/dd638134\(v=exchg.150\))。若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。若要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection，请参阅[连接到 Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290)。
+**注意：** 在 EAC 中，你可以输入的最小附件大小为 1 KB，这样应该会检测大多数附件。但是，如果要检测每个任意大小的可能附件，则需要在 EAC 中创建规则后使用 PowerShell 将附件大小调整为 1 字节。若要了解如何在本地 Exchange 组织中打开 Exchange 命令行管理程序，请参阅[打开命令行管理程序](https://technet.microsoft.com/zh-cn/library/dd638134\(v=exchg.150\))。若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。若要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection，请参阅[连接到 Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290)。
 
 将 *\<Rule Name\>* 替换为现有规则的名称，然后运行下列命令将附件大小设置为 1 字节：
 

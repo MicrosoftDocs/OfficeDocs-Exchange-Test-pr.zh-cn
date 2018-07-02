@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2014-10-01_
+_**上一次修改主题：** 2014-10-01_
 
 使用保留策略可以对一个或多个保留标记进行分组，并将它们应用于邮箱以执行邮件保留设置。一个邮箱不能有多个保留策略。
 

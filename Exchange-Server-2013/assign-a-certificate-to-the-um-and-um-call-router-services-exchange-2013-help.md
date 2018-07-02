@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-29_
+_**上一次修改主题：** 2013-04-29_
 
 您可以使用 EAC 或外壳指定自签名的内部公钥基础结构 (PKI) 或第三方特定的 Exchange 服务的商业证书。当您使用**New-ExchangeCertificate** cmdlet 将证书分配给 Exchange 服务使用*Services*参数时，系统会提示您将证书分配给 Exchange 服务。如果您使用 EAC 创建证书，新交换证书向导不会提示您将证书分配给 Exchange 服务。您需要编辑的证书并将证书分配通过选择您想要将其分配给哪些的服务。
 

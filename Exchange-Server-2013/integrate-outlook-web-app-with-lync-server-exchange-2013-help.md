@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-17_
+_**上一次修改主题：** 2013-02-17_
 
 Outlook Web App 支持 Outlook Web App 与 Microsoft Lync Server 2013 集成。配置与 Lync Server 2013 的集成并在 Outlook Web App 中启用即时消息 (IM) 后，用户可以使用 Outlook Web App 发起或响应 IM 会话。
 

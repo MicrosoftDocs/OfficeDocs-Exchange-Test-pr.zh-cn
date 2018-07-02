@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2012-07-11_
+_**上一次修改主题：** 2012-07-11_
 
 直推技术是内置于 Microsoft Exchange Server 2013 中的功能。直推技术通过移动电话网络连接或无线网络连接使移动设备保持为当前状态。当有新内容可以准备同步时，它将通知移动设备。
 

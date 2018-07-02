@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-16_
+_**上一次修改主题：** 2012-10-16_
 
 通过移动设备邮箱策略可以将一组通用的安全和移动设备设置应用于一组用户。可以创建多个移动设备邮箱策略。组织中的每个收件人必须拥有已分配给他们的移动设备邮箱策略。安装 Microsoft Exchange Server 2013 时，会创建默认移动设备邮箱策略，并且会将新用户自动分配给此策略。若要将特定用户分配到移动设备邮箱策略，请参阅[从移动邮箱策略添加或删除用户](add-or-remove-users-from-a-mobile-mailbox-policy-exchange-2013-help.md)。
 

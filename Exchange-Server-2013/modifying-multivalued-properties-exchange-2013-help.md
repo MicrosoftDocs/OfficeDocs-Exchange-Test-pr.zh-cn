@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 多值属性是可以包含多个值的属性。例如，**RecipientFilterConfig** 对象上的 **BlockedRecipients** 属性可以接受如下示例中所示的多个收件人地址：
 

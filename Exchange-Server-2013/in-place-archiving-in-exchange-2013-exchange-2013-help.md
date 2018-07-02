@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 *就地存档*有助于重新获得对组织邮件数据的控制，而无需个人存储 (.pst) 文件，并且允许用户在可通过 MicrosoftOutlook 2010 及更高版本和 Microsoft OfficeOutlook Web App 访问的“存档邮箱”中存储邮件。
 

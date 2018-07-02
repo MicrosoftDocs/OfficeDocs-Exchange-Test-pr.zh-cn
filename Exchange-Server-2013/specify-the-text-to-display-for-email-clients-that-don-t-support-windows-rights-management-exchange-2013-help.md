@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 可以指定用户收到受保护的语音邮件但他们的电子邮件客户端不支持信息权限管理 (IRM) 或 Windows 权限管理时发送到用户的文本。
 

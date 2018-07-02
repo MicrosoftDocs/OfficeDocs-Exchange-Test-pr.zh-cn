@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-12-16_
+_**上一次修改主题：** 2012-12-16_
 
 当用户的邮箱启用统一消息 (UM) 语音邮件时，发送一封电子邮件，欢迎您到统一消息的用户。此消息包含 PIN 信息用户将使用第一次访问语音邮件系统。
 

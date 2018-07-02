@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 您可以统一邮件 (UM) 邮箱策略上配置语音邮件预览合作伙伴。UM 邮箱策略上配置语音邮件预览合作伙伴设置，如语音邮件预览合作伙伴 ID 和语音邮件预览合作伙伴地址后，您配置的设置将应用于所有已启用 UM 的用户与该邮箱策略链接。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 Microsoft Exchange 统一消息 (UM) 可以将语音邮件传递到用户的邮箱，还允许用户在其邮箱中接收传真。在 UM 中，传真作为带有扩展名为 .tif 的图像文件附件的电子邮件发送到用户邮箱。用户可以使用能够打开和查看扩展名为 .tif 的图像文件的软件应用程序打开该附加的文件。本主题介绍传真及其在 UM 中的使用方式。
 

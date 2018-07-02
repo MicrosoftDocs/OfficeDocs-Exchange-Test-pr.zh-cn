@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-05-20_
+_**上一次修改主题：** 2013-05-20_
 
 为了安全起见，一些组织可能需要限制用户通过 Internet 访问 Exchange 管理中心 (EAC)。此过程展示了如何禁用对 EAC 的访问权限。此过程不会阻止用户访问 Outlook Web App 中的选项。
 

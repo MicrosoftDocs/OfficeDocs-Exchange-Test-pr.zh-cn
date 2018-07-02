@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-05-18_
+_**上一次修改主题：** 2016-05-18_
 
 Microsoft Exchange Server 2013 添加新的并修改现有的 Active Directory 架构类和属性。本参考主题提供了一个在安装 Exchange 2013 的 RTM 版本或其任何累积更新或服务包时发生的 Active Directory 架构更改的摘要。关于 Active Directory 架构变更的更多信息，请参考 .ldf 文件。.ldf 文件位于 Exchange 安装文件中的 \\amd64\\Setup\\Data\\ 目录中。
 

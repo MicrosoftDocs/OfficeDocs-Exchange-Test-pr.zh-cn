@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-09_
+_**上一次修改主题：** 2012-11-09_
 
 您可以指定哪些用户可以接收已转接的呼叫或语音邮件从 Outlook Voice Access 用户的消息。默认情况下被选中**此拨号计划中**选择。您可以更改此设置以允许 Outlook Voice Access 用户传输调用或向用户位于整个组织对现有 UM 自动助理，或特定的分机号码发送语音消息。
 

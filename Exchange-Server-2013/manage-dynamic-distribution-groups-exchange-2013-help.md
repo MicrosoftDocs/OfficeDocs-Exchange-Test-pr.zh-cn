@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 动态通讯组是启用了邮件的 Active Directory 组对象，创建它们的目的是为了加快 Microsoft Exchange 组织中电子邮件以及其他信息的批量发送速度。
 

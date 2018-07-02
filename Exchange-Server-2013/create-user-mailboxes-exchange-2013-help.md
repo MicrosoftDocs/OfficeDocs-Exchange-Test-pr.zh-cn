@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2013-04-12_
+_**上一次修改主题：** 2013-04-12_
 
 邮箱是 Exchange 组织中信息工作人员最常用的收件人类型。每个邮箱都与一个 Active Directory 用户帐户关联。用户可以使用邮箱发送和接收邮件，并可以存储邮件、约会、任务、便笺和文档。使用 EAC 或命令行管理程序创建用户邮箱。
 

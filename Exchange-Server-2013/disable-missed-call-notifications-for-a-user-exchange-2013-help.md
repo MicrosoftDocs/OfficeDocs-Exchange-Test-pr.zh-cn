@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-12-09_
+_**上一次修改主题：** 2012-12-09_
 
 您可以通过启用或禁用统一邮件 (UM) 邮箱策略未接的电话通知使用 Shell 或 EAC。未接的来电通知是用户没应答传入的呼叫时向用户发送电子邮件，并调用方未留下语音信息。这是比包含留给用户的语音邮件的一个不同的电子邮件消息。
 

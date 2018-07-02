@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-07_
+_**上一次修改主题：** 2013-02-07_
 
 IMAP.Protocol 运行状况设置监视邮箱服务器上的 IMAP4 协议。如果收到一条警报，指示 IMAP.Protocol 运行状况设置不正常，则说明警报中指示的问题对邮箱服务器上的 IMAP4 协议产生了影响。
 

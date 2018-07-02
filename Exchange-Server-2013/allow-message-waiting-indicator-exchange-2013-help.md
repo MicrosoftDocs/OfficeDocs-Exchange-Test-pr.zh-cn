@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 邮件等待指示器 (MWI) 这一功能可以在大多数旧版语音邮件系统中找到。它会提醒客户新的或未听取的语音邮件。此功能最常见的形式是点亮用户电话上的指示灯，以表示存在新的或未听取的语音邮件。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-07-21_
+_**上一次修改主题：** 2015-07-21_
 
 为了实现负载平衡或使资源更靠近地理位置，您可能需要将公用文件夹邮箱移动至不同的邮箱数据库中。与移动常规邮箱类似，您可以使用 **MoveRequest** cmdlet 来移动公用文件夹邮箱。有关移动邮箱的详细信息，请参阅 [Exchange 2013 中的邮箱移动](mailbox-moves-in-exchange-2013-exchange-2013-help.md)。
 

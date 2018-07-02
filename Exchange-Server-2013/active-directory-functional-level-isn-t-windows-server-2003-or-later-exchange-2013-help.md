@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Microsoft Exchange Server 2013 安装程序无法继续，因为它检测到当前 Active Directory 林的林功能级别不是 Windows Server 2003 本地或更高版本。您必须将林功能级别提升到 Windows Server 2003 或更高版本，然后才能安装 Exchange 2013。
 

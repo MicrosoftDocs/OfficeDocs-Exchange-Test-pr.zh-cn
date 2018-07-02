@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-08-16_
+_**上一次修改主题：** 2016-08-16_
 
 了解 Exchange Server 2013 中 POP3 和 IMAP4 协议之间的区别，以及如何配置从各个电子邮件程序访问 Exchange 2013 邮箱的选项。
 

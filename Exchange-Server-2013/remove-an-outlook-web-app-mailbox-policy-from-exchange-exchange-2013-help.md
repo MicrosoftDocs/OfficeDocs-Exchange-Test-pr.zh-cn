@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2013-03-15_
+_**上一次修改主题：** 2013-03-15_
 
 您可以使用 EAC 或命令行管理程序从 Exchange 组织中删除 MicrosoftOutlook Web App 邮箱策略。
 

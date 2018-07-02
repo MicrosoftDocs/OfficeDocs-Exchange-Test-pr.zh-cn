@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 了解服务器运行状况和性能对于设计和维护高性能邮件基础结构至关重要。Microsoft Exchange Server 2013 介绍了服务器运行状况和性能方面的改进。
 

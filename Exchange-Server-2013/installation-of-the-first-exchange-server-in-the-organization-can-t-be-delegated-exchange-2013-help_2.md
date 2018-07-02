@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2014-11-05_
+_**上一次修改主题：** 2014-11-05_
 
 Microsoft Exchange Server 2013 安装程序无法继续，因为登录的用户没有所需的帐户权限，无法在组织中安装第一个 Exchange 2013 服务器。
 

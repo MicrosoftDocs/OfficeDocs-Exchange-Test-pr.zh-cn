@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-10-01_
+_**上一次修改主题：** 2014-10-01_
 
 \&quot;托管文件夹助理\&quot;是 MicrosoftExchange 邮箱助理，它应用保留策略中配置的邮件保留设置。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-08_
+_**上一次修改主题：** 2015-04-08_
 
 在将边缘传输服务器订阅到 Exchange 组织之前，您可以使用 **ConfigureAdam.ps1** 脚本（位于 $env:ExchangeInstallPath\\Scripts 中）修改边缘传输服务器上的默认 Active Directory 轻型目录服务 (AD LDS) 配置。
 

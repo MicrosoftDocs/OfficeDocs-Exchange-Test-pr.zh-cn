@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-04-13_
+_**上一次修改主题：** 2016-04-13_
 
 在创建 Outlook Web App 邮箱策略后，您可以配置多种选项以控制对 Outlook Web App 中用户可用的功能。例如，您可以启用或禁用收件箱规则或创建允许的附件文件类型列表。
 

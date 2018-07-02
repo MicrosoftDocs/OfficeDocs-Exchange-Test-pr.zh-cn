@@ -13,11 +13,11 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-11-09_
+_**上一次修改主题：** 2015-11-09_
 
-**摘要：**如何设置公用文件夹，包括在 EAC 中为其指派权限。
+**摘要：** 如何设置公用文件夹，包括在 EAC 中为其指派权限。
 
 本主题为您演示如何配置公用文件夹以及如何在新组织中或以前从未拥有公用文件夹的组织中运行公用文件夹。
 

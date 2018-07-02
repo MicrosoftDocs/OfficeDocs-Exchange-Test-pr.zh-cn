@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2017-02-08_
+_**上一次修改主题：** 2017-02-08_
 
 您可以指定您的组织中的管理员有权安装和管理用于 Outlook 的外接程序。您还可以指定您的组织中哪些用户具有权限进行安装和管理供自己使用的加载项。
 

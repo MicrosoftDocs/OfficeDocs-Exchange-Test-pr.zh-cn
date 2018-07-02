@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 您可以在 Microsoft Exchange Server 2013 中的自定义传递状态通知 (DSN) 邮件中加入文本，并可将该文本格式化为 HTML 格式。
 

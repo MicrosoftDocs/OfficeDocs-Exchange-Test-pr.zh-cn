@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 您可以允许已启用 UM 的用户来自匿名调用方接收语音邮件或阻止他们这样做。默认情况下，当用户启用统一邮件 (UM) 和语音邮件，它们可以接收调用匿名和不包含呼叫方 ID 信息。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-16_
+_**上一次修改主题：** 2012-11-16_
 
 可以使用服务管理单元中Microsoft管理控制台 (MMC) 或 cmd.exe 命令提示符处启动邮箱服务器上的MicrosoftExchange统一消息服务。默认情况下，邮箱服务器安装后启动MicrosoftExchange统一消息服务。但是，有时可能需要手动重新启动MicrosoftExchange统一消息服务，例如，您已经采取邮箱服务器脱机时，必须将其重新联机。
 

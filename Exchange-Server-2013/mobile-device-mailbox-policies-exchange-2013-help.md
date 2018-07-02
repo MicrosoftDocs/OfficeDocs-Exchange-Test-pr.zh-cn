@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-06-16_
+_**上一次修改主题：** 2016-06-16_
 
 在 MicrosoftExchange Server 2013 中，您可以创建移动设备邮箱策略，将常用的策略集或安全设置应用于一组用户。在 Exchange 2013 组织中部署 Exchange ActiveSync 之后，可以新建移动设备邮箱策略，也可以修改现有策略。安装 Exchange 2013 时，会创建一条默认的移动设备邮箱策略。这条默认的移动设备邮箱策略将自动分配给所有用户。
 

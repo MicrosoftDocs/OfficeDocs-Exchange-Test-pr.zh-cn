@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-12-18_
+_**上一次修改主题：** 2013-12-18_
 
 您可以使用 EAC 或命令行管理程序来导入或导出自签名的内部公钥基础结构 (PKI) 或第三方商业证书。对于统一消息 (UM)，可以使用这些 Microsoft Exchange 统一消息服务和 Microsoft Exchange 统一消息呼叫路由器服务的证书之一。您可以对两种服务使用同样的证书，或对每个服务使用不同的证书。
 

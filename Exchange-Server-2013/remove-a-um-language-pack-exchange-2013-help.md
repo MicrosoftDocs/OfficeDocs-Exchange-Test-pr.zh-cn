@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-14_
+_**上一次修改主题：** 2013-02-14_
 
 可以在运行 Microsoft Exchange 统一消息服务的邮箱服务器上使用 EAC 或命令行管理程序管理统一消息 (UM) 语言。但是，若要从 UM 拨号计划上的列表中删除语言，必须使用 **Setup.exe /RemoveUmLanguagePack** 命令从邮箱服务器中删除相应的 UM 语言包。从邮箱服务器中删除该 UM 语言包后，配置 UM 拨号计划或 UM 自动助理时该语言将不再可用。可通过查看邮箱服务器的属性或使用 **Get-UMService** cmdlet 来查看已安装的 UM 语言包。
 

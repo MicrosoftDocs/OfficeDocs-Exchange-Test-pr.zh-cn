@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2017-10-04_
+_**上一次修改主题：** 2017-10-04_
 
 启用邮件的安全组不仅可用于分发邮件，还可用于授予对 Active Directory 中资源的访问权限。有关详细信息，请参阅[收件人](recipients-exchange-2013-help.md)。
 

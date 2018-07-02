@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-08-21_
+_**上一次修改主题：** 2012-08-21_
 
 默认情况下，Microsoft Exchange Server 2013 包括许多管理角色。以下角色以各种组合形式被分配到管理角色组或管理角色分配策略，可授予其权限以管理和使用由 Exchange 2013 提供的功能。有关角色的详细信息，请参阅[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 
