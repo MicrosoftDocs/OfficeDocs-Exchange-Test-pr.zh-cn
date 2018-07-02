@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>适用于：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2017-10-02_
+_<strong>上一次修改主题：</strong>2017-10-02_
 
 只要具备了基于 Exchange 的混合部署，您可以选择将内部部署 Exchange 邮箱移动到 Exchange Online 组织或将 Exchange Online 邮箱移动到 Exchange 组织。当您在内部部署和 Exchange Online 组织间移动邮箱时，使用迁移批处理执行远程邮箱移动请求。这个方法不必创建用户邮箱和导入用户信息就可以移动现有邮箱。这个方法与将内部部署 Exchange 组织中的用户邮箱迁移到 Exchange Online 作为 Exchange 完整迁移到云中的一部分不同。在本话题中讨论的邮箱移动在内部部署 Exchange 和 Exchange Online 组织间的长期共存关系中是管理的 Exchange 管理的一部分。
 
@@ -67,7 +67,7 @@ _**上一次修改主题：**2017-10-02_
 
 在 Exchange 混合部署中执行场内传输和场外传输远程移动迁移前，建议您创建 Exchange 远程迁移终结点。迁移终结点包含运行 MRS 代理服务的内部部署 Exchange 服务器的连接设置，这需要从 Exchange Online 执行远程移动迁移和执行远程移动迁移到 Exchange Online。
 
-有关分步步骤说明，请参阅[创建迁移终结点](https://technet.microsoft.com/zh-cn/library/jj874458\(v=exchg.150\))。
+有关分步步骤说明，请参阅创建迁移终结点。
 
 ## 步骤 2：启用 MRSProxy 服务
 

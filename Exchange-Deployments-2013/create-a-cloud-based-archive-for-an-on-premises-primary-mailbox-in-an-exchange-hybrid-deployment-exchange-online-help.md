@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>适用于：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2017-01-20_
+_<strong>上一次修改主题：</strong>2017-01-20_
 
 在 Exchange 混合部署中，可以在 Exchange Online 中为本地主邮箱配置基于云的存档邮箱。
 

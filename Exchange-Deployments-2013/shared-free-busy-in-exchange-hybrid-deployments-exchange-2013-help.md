@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_<strong>适用于：</strong>Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-04-29_
+_<strong>上一次修改主题：</strong>2016-04-29_
 
 在位于内部部署和 Exchange Online 组织中的用户之间共享忙/闲（日历可用性）信息是混合部署的主要好处之一。两种组织中的用户都可以查看彼此的日历，就如同这些用户位于同一个物理组织中一样。如此便可以方便且高效地进行会议和资源调度。
 

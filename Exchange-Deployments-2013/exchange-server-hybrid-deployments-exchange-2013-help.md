@@ -13,11 +13,12 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>适用于：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2018-04-16_
+_<strong>上一次修改主题：</strong>2018-04-16_
 
-**摘要：**规划 Exchange 混合部署需要了解的内容。
+
+**摘要：** 规划 Exchange 混合部署需要了解的内容。
 
 混合部署使组织可以将随其现有内部部署 Microsoft Exchange 组织提供的功能丰富的体验和管理控制扩展到云。混合部署可在内部部署 Exchange 组织与 Microsoft Office 365 中的 Exchange Online 之间提供单个 Exchange 组织的无缝观感。此外，混合部署还可以充当中间步骤，以完全移动到 Exchange Online 组织。
 

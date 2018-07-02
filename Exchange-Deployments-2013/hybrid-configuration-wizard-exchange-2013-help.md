@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>适用于：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_<strong>上一次修改主题：</strong>2016-12-09_
 
 本主题将概述对您可用的 Exchange 混合部署配置过程、混合部署功能和选项以及混合配置引擎，这将执行同时配置和更新混合部署所需的核心操作。
 

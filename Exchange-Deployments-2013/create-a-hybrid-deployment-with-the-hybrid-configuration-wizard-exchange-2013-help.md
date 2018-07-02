@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 本主题正在进行。  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>适用于：</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_<strong>上一次修改主题：</strong>2016-12-09_
 
 通过建立混合部署，您可以将随其现有内部部署 Exchange Server 组织提供的功能丰富的体验和管理控制扩展到云。混合部署还使用 Exchange Online 存档，为内部部署邮箱的基于云的存档解决方案提供支持，同时还可作为完全迁移您的内部部署邮箱到 Exchange Online 的中间步骤。
 
