@@ -29,18 +29,8 @@ _<strong>上一次修改主题：</strong>2016-12-09_
 
 在内部部署与混合部署中的 Exchange Online 组织之间路由的邮件要求 Microsoft Exchange Online Protection (EOP) 服务代表 Exchange Online 直接连接到运行 Exchange 2013 或 Exchange 2010 SP3 的边缘传输服务器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您在其他位置具有其他 Exchange 2010 边缘传输服务器，但是这些服务器不处理混合传输，那么这些服务器无需升级到 Exchange 2010 SP3。然而，如果希望 EOP 在未来连接至混合传输的其他边缘传输服务器，那么这些服务器必须使用 Exchange 2010 SP3 升级或升级到 Exchange 2013 边缘传输服务器。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果您在其他位置具有其他 Exchange 2010 边缘传输服务器，但是这些服务器不处理混合传输，那么这些服务器无需升级到 Exchange 2010 SP3。然而，如果希望 EOP 在未来连接至混合传输的其他边缘传输服务器，那么这些服务器必须使用 Exchange 2010 SP3 升级或升级到 Exchange 2013 边缘传输服务器。
 
 
 ## 将边缘传输服务器添加到混合部署

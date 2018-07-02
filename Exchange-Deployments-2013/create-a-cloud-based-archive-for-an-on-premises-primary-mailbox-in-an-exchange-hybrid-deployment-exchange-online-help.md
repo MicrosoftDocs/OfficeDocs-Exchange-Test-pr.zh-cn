@@ -61,20 +61,9 @@ _<strong>上一次修改主题：</strong>2017-01-20_
 
 7.  最长可能要等 30 分钟，目录同步才能完成。完成后才能在 Office 365 中创建相应的用户帐户。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ659053.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Office 365 管理中心 中，依次转到&amp;quot;<strong>运行状况</strong>&amp;quot;&gt;&amp;quot;<strong>目录同步状态</strong>&amp;quot;，查看上次目录同步时间。</td>
-    </tr>
-    </tbody>
-    </table>
-
-
+    > [!TIP]
+	> 在 Office 365 管理中心 中，依次转到&amp;quot;<strong>运行状况</strong>&amp;quot;&gt;&amp;quot;<strong>目录同步状态</strong>&amp;quot;，查看上次目录同步时间。
+    
 8.  在确认本地邮箱新建后已进行过目录同步后，在 Office 365 管理中心 中，依次转到\&quot;**用户**\&quot;\>\&quot;**活动用户**\&quot;，然后选择为新本地邮箱创建的新 Office 365 用户帐户。
 
 9.  在随即显示的用户属性页上，单击\&quot;**产品许可证**\&quot;部分中的\&quot;**编辑**\&quot;。
@@ -121,20 +110,9 @@ _<strong>上一次修改主题：</strong>2017-01-20_
 
 9.  最长可能要等 30 分钟，目录同步才能完成。完成后才能创建基于云的存档邮箱。转到第 2 步，了解如何确认基于云的存档邮箱是否已创建。创建存档邮箱后，用户可以使用 Outlook 或 Web 上的 Outlook 对其进行访问。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ659053.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Office 365 管理中心 中，依次转到&amp;quot;<strong>运行状况</strong>&amp;quot;&gt;&amp;quot;<strong>目录同步状态</strong>&amp;quot;，查看上次运行目录同步的时间。</td>
-    </tr>
-    </tbody>
-    </table>
-
-
+    > [!TIP]
+	> 在 Office 365 管理中心 中，依次转到&amp;quot;<strong>运行状况</strong>&amp;quot;&gt;&amp;quot;<strong>目录同步状态</strong>&amp;quot;，查看上次运行目录同步的时间。
+    
 返回顶部
 
 ## 第 2 步：确认基于云的存档邮箱是否已创建

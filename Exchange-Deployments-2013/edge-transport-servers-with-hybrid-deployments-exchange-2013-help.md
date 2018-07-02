@@ -23,32 +23,12 @@ _<strong>上一次修改主题：</strong>2018-04-16_
 
 想要使用边缘传输服务器的 Exchange 2016 组织可以选择部署 exExchange2k16 边缘传输服务器或运行最新版本的 Exchange 2016 及更高版本、Exchange 2013 或 Exchange 2010 的边缘传输服务器。如果您不想直接向 Internet 公开内部 Exchange 服务器，请使用边缘传输服务器。在混合部署中部署边缘传输服务器时，Exchange Online 将通过 Exchange Online Protection 服务连接到边缘传输服务器传送邮件。然后，边缘传输服务器将把邮件传递到收件人邮箱所在的内部部署 Exchange 邮箱服务器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不要在处理或修改 SMTP 通信的内部部署 Exchange 服务器和 Office 365 之间放置任何服务器、服务或设备。内部部署 Exchange 组织和 Office 365 之间的安全邮件流取决于组织之间发送的邮件中包含的信息。支持允许 TCP 端口 25 上的 SMTP 通信通过而无需修改的防火墙。如果服务器、服务或设备处理内部部署 Exchange 组织和 Office 365 之间发送的邮件，此信息将被删除。如果发生这种情况，该邮件将不再被视为组织内部邮件，并且将会对其应用反垃圾邮件筛选、 传输和日记规则以及可能不适用于它的其他策略。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 不要在处理或修改 SMTP 通信的内部部署 Exchange 服务器和 Office 365 之间放置任何服务器、服务或设备。内部部署 Exchange 组织和 Office 365 之间的安全邮件流取决于组织之间发送的邮件中包含的信息。支持允许 TCP 端口 25 上的 SMTP 通信通过而无需修改的防火墙。如果服务器、服务或设备处理内部部署 Exchange 组织和 Office 365 之间发送的邮件，此信息将被删除。如果发生这种情况，该邮件将不再被视为组织内部邮件，并且将会对其应用反垃圾邮件筛选、 传输和日记规则以及可能不适用于它的其他策略。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您在其他位置具有其他 Exchange 边缘传输服务器，但是这些服务器不处理混合传输，那么这些服务器进行升级以支持混合部署。不过，如果希望 EOP 将来连接到其他边缘传输服务器以实现混合传输，则这些服务器必须运行最新版本的 Exchange 2016 及更高版本、Exchange 2010 或 Exchange 2013。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果您在其他位置具有其他 Exchange 边缘传输服务器，但是这些服务器不处理混合传输，那么这些服务器进行升级以支持混合部署。不过，如果希望 EOP 将来连接到其他边缘传输服务器以实现混合传输，则这些服务器必须运行最新版本的 Exchange 2016 及更高版本、Exchange 2010 或 Exchange 2013。
 
 
 ## 向混合部署添加边缘传输服务器

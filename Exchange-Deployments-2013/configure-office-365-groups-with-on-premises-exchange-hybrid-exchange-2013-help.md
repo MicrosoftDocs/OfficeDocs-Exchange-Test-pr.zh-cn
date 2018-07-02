@@ -19,18 +19,8 @@ _<strong>上一次修改主题：</strong>2016-12-06_
 
 组是 Office 365 的一项服务，它使团队能够更轻松地进行通信、安排会议以及就文档进行协作。任何组成员都可使用与组共享的所有信息，包括从发送到组的电子邮件到存储在组的 OneDrive for Business 或 SharePoint 库中的文件。如果已在本地 Exchange 组织和 Office 365 之间配置了混合部署，则可按照本主题中的步骤使在 Office 365 中创建的组对本地用户可用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对 Exchange 混合部署中的本地用户使用 Office 365 组是一项新功能。因为是新功能，所以可能会在设置时遇到一些问题。请务必查看本主题结尾的已知问题部分，了解可能遇到的问题的修复方法。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 对 Exchange 混合部署中的本地用户使用 Office 365 组是一项新功能。因为是新功能，所以可能会在设置时遇到一些问题。请务必查看本主题结尾的已知问题部分，了解可能遇到的问题的修复方法。
 
 
 ## 先决条件
@@ -110,18 +100,8 @@ Office 365 组的主 SMTP 域称为*组域*。默认情况下，组织中默认�
     <td><p>groups.contoso.com</p></td>
     <td><p>MX</p></td>
     <td><p>groups-contoso-com.mail.protection.outlook.com</p>
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此 DNS 记录值的格式是 <em>&lt;domain key&gt;</em>.mail.protection.outlook.com。要找出你的域密钥是什么，请参阅<a href="https://support.office.com/zh-cn/article/gather-the-information-you-need-to-create-office-365-dns-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67?ui=zh-cn%26rs=zh-cn%26ad=cn">收集创建 Office 365 DNS 记录所需的信息</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 此 DNS 记录值的格式是 <em>&lt;domain key&gt;</em>.mail.protection.outlook.com。要找出你的域密钥是什么，请参阅<a href="https://support.office.com/zh-cn/article/gather-the-information-you-need-to-create-office-365-dns-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67?ui=zh-cn%26rs=zh-cn%26ad=cn">收集创建 Office 365 DNS 记录所需的信息</a>。
 
 </td>
     </tr>
@@ -133,36 +113,15 @@ Office 365 组的主 SMTP 域称为*组域*。默认情况下，组织中默认�
     </tbody>
     </table>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Mt668829.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果将组域的 MX DNS 记录设置为本地 Exchange 服务器，则本地 Exchange 组织用户和 Office 365 组用户之间的邮件流将不能正常工作。</td>
-    </tr>
-    </tbody>
-    </table>
-
-
+    > [!CAUTION]
+	> 如果将组域的 MX DNS 记录设置为本地 Exchange 服务器，则本地 Exchange 组织用户和 Office 365 组用户之间的邮件流将不能正常工作。
+    
 4.  使用以下命令，将组域添加到由本地 Exchange 组织中的混合配置向导创建的混合发送连接器中。
     
         Set-SendConnector -Identity "Outbound to Office 365" -AddressSpaces "contoso.mail.onmicrosoft.com","groups.contoso.com"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果未更新发送连接器，或未将组域添加为本地 Exchange 组织中的接受域，则不会将从本地邮箱发送的邮件传递至组，除非将该组配置为接收来自外部发件人的邮件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果未更新发送连接器，或未将组域添加为本地 Exchange 组织中的接受域，则不会将从本地邮箱发送的邮件传递至组，除非将该组配置为接收来自外部发件人的邮件。
 
 
 ## 您如何知道这有效？

@@ -37,32 +37,12 @@ _<strong>上一次修改主题：</strong>2016-12-09_
 
 当配置混合部署时，您必须使用和配置从受信任的第三方 CA 购买的证书。必须在所有内部部署邮箱（Exchange 2016 及更高版本）、邮箱和客户端访问（Exchange 2013 及之前版本）服务器上安装用于混合安全邮件传输的证书。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果在多个 Active Directory 林中都部署了 Exchange 服务器的组织中配置混合部署，必须对<em>每个</em> Active Directory 林使用单独的第三方 CA 证书。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果在多个 Active Directory 林中都部署了 Exchange 服务器的组织中配置混合部署，必须对<em>每个</em> Active Directory 林使用单独的第三方 CA 证书。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当在本地组织中部署 Exchange 边缘传输服务器时，此证书还必须安装在所有边缘传输服务器上。每个传输服务器必须使用共享相同颁发 CA 和相同主题的证书，以便混合安全邮件正常运行。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 当在本地组织中部署 Exchange 边缘传输服务器时，此证书还必须安装在所有边缘传输服务器上。每个传输服务器必须使用共享相同颁发 CA 和相同主题的证书，以便混合安全邮件正常运行。
 
 
 多种服务，如 AD FS、Exchange联合身份验证、服务和Exchange，各自都需要证书。根据组织，可以决定执行以下操作之一：

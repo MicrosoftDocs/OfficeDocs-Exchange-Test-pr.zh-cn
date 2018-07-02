@@ -190,18 +190,8 @@ Exchange 中的 IRM 依赖于在 Exchange 服务器所在的 Active Directory �
 
 配置了内部部署网络并导出了 TPD 数据后，您需要通过导入 TPD 数据并启用 IRM 来配置 Exchange Online 组织。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每当修改内部部署 AD RMS 配置时，都必须手动在 Exchange Online 组织中应用新配置。为此，请从内部部署 AD RMS 服务器导出 TPD 数据，并将其导入到 Exchange Online 组织中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 每当修改内部部署 AD RMS 配置时，都必须手动在 Exchange Online 组织中应用新配置。为此，请从内部部署 AD RMS 服务器导出 TPD 数据，并将其导入到 Exchange Online 组织中。
 
 
 ## 如何在 Exchange 混合部署中配置 IRM
@@ -260,18 +250,8 @@ Exchange 中的 IRM 依赖于在 Exchange 服务器所在的 Active Directory �
     
         Set-RMSTemplate <template name> -Type Distributed
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>无法修改“不要转发”AD RMS 模板。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 无法修改“不要转发”AD RMS 模板。
 
 
 3.  对要分发的每个 AD RMS 模板重复步骤 2。

@@ -110,16 +110,6 @@ Exchange 2013 CU1 或更高版本通过混合配置向导启用混合部署功�
 
 有关如何下载 Exchange 2013 最新版本的信息，请参阅 [Exchange 2013 更新](https://technet.microsoft.com/library/jj907309)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 Exchange 2013 或 2010 和 Office 365 配置混合部署时，需要对混合服务器授予许可。若要获取用于配置混合部署的免费 Exchange Server 产品密钥，请使用<a href="https://aka.ms/hybridkey">混合版产品密钥工具</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 使用 Exchange 2013 或 2010 和 Office 365 配置混合部署时，需要对混合服务器授予许可。若要获取用于配置混合部署的免费 Exchange Server 产品密钥，请使用<a href="https://aka.ms/hybridkey">混合版产品密钥工具</a>。
 

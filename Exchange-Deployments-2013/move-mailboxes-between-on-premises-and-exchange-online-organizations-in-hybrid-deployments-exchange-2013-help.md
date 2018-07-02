@@ -21,20 +21,9 @@ _<strong>上一次修改主题：</strong>2017-10-02_
 
 有关将本地 Exchange 组织迁移至 Exchange Online 的详细信息，请参阅[将多个电子邮件帐户迁移至 Office 365 的方法](https://go.microsoft.com/fwlink/p/?linkid=524030)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须在内部部署和 Exchange Online 组织间配置一个混合部署以完成本话题中的邮箱移动过程。有关混合部署的更多信息，请参阅 <a href="exchange-server-hybrid-deployments-exchange-2013-help.md">Exchange Server 混合部署</a>。<br />
-<br />
-你需要确保本地的 Skype for Business 2015、Skype for Business Online 和 Exchange Online 全部符合“<a href="hybrid-deployment-prerequisites-exchange-2013-help.md">混合部署先决条件</a>”中指定的要求，然后才能将已启用统一消息 (UM) 的邮箱移动到 Exchange Online。有关如何将本地 UM 邮箱策略映射到 Exchange Online 中的策略的信息，请参阅 <a href="https://technet.microsoft.com/zh-cn/library/bb124903(v=exchg.150)">Set-UMMailboxPolicy</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 必须在内部部署和 Exchange Online 组织间配置一个混合部署以完成本话题中的邮箱移动过程。有关混合部署的更多信息，请参阅 <a href="exchange-server-hybrid-deployments-exchange-2013-help.md">Exchange Server 混合部署</a>。<br />
+> 你需要确保本地的 Skype for Business 2015、Skype for Business Online 和 Exchange Online 全部符合“<a href="hybrid-deployment-prerequisites-exchange-2013-help.md">混合部署先决条件</a>”中指定的要求，然后才能将已启用统一消息 > (UM) 的邮箱移动到 Exchange Online。有关如何将本地 UM 邮箱策略映射到 Exchange Online 中的策略的信息，请参阅 <a href="https://technet.microsoft.com/zh-cn/library/bb124903(v=exchg.150)">Set-UMMailboxPolicy</a>。
 
 
 ## 在开始之前，您需要知道什么？
@@ -49,18 +38,8 @@ _<strong>上一次修改主题：</strong>2017-10-02_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](https://technet.microsoft.com/zh-cn/library/jj150484\(v=exchg.150\))。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ659053.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 步骤 1：创建迁移终结点
@@ -97,34 +76,14 @@ _<strong>上一次修改主题：</strong>2017-10-02_
 
 5.  在“输入 Windows 用户帐户凭据”页上的“内部部署管理员名称”文本字段中，输入内部部署管理员帐户名称，然后在“内部部署管理员密码”文本字段中输入与此帐户关联的密码。例如，“corp\\administrator”和密码。单击“下一步”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您已经创建了一个迁移终结点，那么就会收到此步骤的终结点确认提示。如果您创建了两个或多个迁移终结点，那么您必须在迁移终结点下拉菜单中选择一个终结点。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果您已经创建了一个迁移终结点，那么就会收到此步骤的终结点确认提示。如果您创建了两个或多个迁移终结点，那么您必须在迁移终结点下拉菜单中选择一个终结点。
 
 
 6.  在“确认迁移终结点”页上，验证向导确认迁移终结点时是否会列出内部部署 Exchange 服务器的 FDQN。例如，“mail.contoso.com”。单击“下一步”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>当选择将多个邮箱移动到 Exchange Online 时，Exchange 服务器上的 MRSProxy 服务会自动限制邮箱移动请求。完成邮箱移动操作的总时间取决于选定邮箱的总数、邮箱大小和 MRSProxy 的配置。若要了解有关自定义 MRSProxy 的详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/bb232205(v=exchg.150)">邮件限制</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 当选择将多个邮箱移动到 Exchange Online 时，Exchange 服务器上的 MRSProxy 服务会自动限制邮箱移动请求。完成邮箱移动操作的总时间取决于选定邮箱的总数、邮箱大小和 MRSProxy 的配置。若要了解有关自定义 MRSProxy 的详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/bb232205(v=exchg.150)">邮件限制</a>。
 
 
 7.  在“移动配置”页上的“新迁移批处理名称”文本字段中，输入迁移批处理的名称。使用向下箭头 ![向下键图标](images/JJ906432.ef5ca57d-a033-457b-bd92-6361877c33d0(EXCHG.150).gif "向下键图标") 选择“迁移到 Office 365 的邮箱的目标传递域”。在大多数混合部署中，这是用于 Exchange Online 组织邮箱的主 SMTP 域。例如，contoso.mail.onmicrosoft.com。确认已选中“移动主邮箱及存档邮箱”选项，然后单击“下一步”。
@@ -145,18 +104,8 @@ _<strong>上一次修改主题：</strong>2017-10-02_
 
 5.  在“确认迁移终结点”页上，验证向导确认迁移终结点时是否会列出内部部署 Exchange 服务器的 FDQN。例如，“mail.contoso.com”。单击“下一步”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>当选择将多个邮箱移动到 Exchange Online 时，Exchange 服务器上的 MRSProxy 服务会自动限制邮箱移动请求。完成邮箱移动操作的总时间取决于选定邮箱的总数、邮箱大小和 MRSProxy 的属性。若要了解有关自定义 MRSProxy 的详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/bb232205(v=exchg.150)">邮件限制</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 当选择将多个邮箱移动到 Exchange Online 时，Exchange 服务器上的 MRSProxy 服务会自动限制邮箱移动请求。完成邮箱移动操作的总时间取决于选定邮箱的总数、邮箱大小和 MRSProxy 的属性。若要了解有关自定义 MRSProxy 的详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/bb232205(v=exchg.150)">邮件限制</a>。
 
 
 6.  在“移动配置”页上的“新迁移批处理名称”文本字段中，输入迁移批处理的名称。然后在“迁移到 Office 365 的邮箱的目标传递域”字段中输入目标传递域。在大多数混合部署中，这是用于本地和 Exchange Online 组织邮箱的主 SMTP 域。例如，contoso.com。

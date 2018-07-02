@@ -73,18 +73,8 @@ Exchange 混合部署文档
 
   - **支持跨界邮箱权限** Exchange 混合部署支持在位于本地 Exchange 组织中的邮箱与位于 Office 365 中的邮箱之间使用完全访问和代表发送权限。“发送方式”权限需要其他步骤。此外，可能需要一些额外的配置来支持跨界邮箱权限，具体取决于在本地组织中安装的 Exchange 版本。有关详细信息，请参阅 [Permissions in Exchange hybrid deployments](permissions-in-exchange-hybrid-deployments-exchange-2013-help.md)和[Configure Exchange to support delegated mailbox permissions in a hybrid deployment](configure-exchange-to-support-delegated-mailbox-permissions-in-a-hybrid-deployment-exchange-2013-help.md)中的[委派邮箱权限](permissions-in-exchange-hybrid-deployments-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>自 2018 年 2 月起，将推出支持完全访问权限、发送代表和跨林文件夹权限的功能，预计于 2018 年 4 月完成。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 自 2018 年 2 月起，将推出支持完全访问权限、发送代表和跨林文件夹权限的功能，预计于 2018 年 4 月完成。
 
 
   - **场外传输**  作为日常收件人管理的一部分，您可能需要将 Exchange Online 邮箱移回本地环境。
@@ -101,18 +91,8 @@ Exchange 混合部署文档
 
   - **Exchange 服务器**  如果您想要配置混合部署，至少需要在内部部署组织中配置一个 Exchange 服务器。如果您运行 Exchange 2013 或更低版本，您需要至少安装一台运行邮箱角色和客户端访问角色的服务器。如果您运行 Exchange 2016 或更新版本，至少必须安装一台运行邮箱角色的服务器。如果需要，也可以在外围网络中安装 Exchange 边缘传输服务器，并支持与 Office 365 的安全邮件流。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>我们不支持在外围网络中安装运行邮箱服务器角色或客户端访问服务器角色的 Exchange 服务器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 我们不支持在外围网络中安装运行邮箱服务器角色或客户端访问服务器角色的 Exchange 服务器。
 
 
   - **Microsoft Office 365**   Office 365 服务提供 Exchange Online 组织作为其订阅服务的一部分。配置混合部署的组织需要为迁移到 Exchange Online 组织或者在 Exchange Online 组织中创建的每个邮箱购买一个许可证。
@@ -215,18 +195,8 @@ Exchange 混合部署文档
 
 内部部署组织和 Office 365 组织之间的 Active Directory 同步（由运行 Azure Active Directory Connect 的服务器每三小时执行一次）是配置混合部署的一项要求。目录同步使任一组织中的收件人可以在全局地址列表中看到彼此。它还将同步用户名和密码，使用户可以在内部部署组织和 Office 365 组织中使用相同凭据登录。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您选择使用 AD FS 配置 Azure AD Connect，默认情况下，内部部署用户的用户名和密码将仍会同步到 Office 365。但是，用户将通过 AD FS 对内部部署 Active Directory 进行身份验证，作为其主要身份验证方法。如果出于任何原因，AD FS 无法连接到您的内部部署 Active Directory，客户端将尝试回退并对同步到 Office 365 的用户名和密码进行身份验证。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果您选择使用 AD FS 配置 Azure AD Connect，默认情况下，内部部署用户的用户名和密码将仍会同步到 Office 365。但是，用户将通过 AD FS 对内部部署 Active Directory 进行身份验证，作为其主要身份验证方法。如果出于任何原因，AD FS 无法连接到您的内部部署 Active Directory，客户端将尝试回退并对同步到 Office 365 的用户名和密码进行身份验证。
 
 
 默认情况下，所有 Azure Active Directory 和 Office 365 客户的对象限制为 50,000 个（用户、已启用邮件的联系人、组）。此限制确定可以在 Office 365 组织中创建的对象数。当您验证第一个域时，此对象限制会自动增加至 300,000 个对象。如果您已验证一个域并需要同步 300,000 个以上的对象，或者您没有任何域要验证并需要同步 50,000 个以上的对象，则需要与 Azure Active Directory 支持联系以请求提高对象配额限制。

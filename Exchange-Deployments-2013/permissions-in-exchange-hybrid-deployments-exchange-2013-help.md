@@ -27,18 +27,8 @@ By default, the user that was used to create the Office 365 tenant is made a me
 
 You can add additional administrators in the Exchange Online organization, depending on the management that needs to take place. For example, you can add additional organization administrators and recipient administrators, enable specialist users to perform compliance tasks such as discovery, configure custom permissions, and more. All Exchange Online permissions management for Office 365 administrators must be performed in the Exchange Online organization using either the Exchange Administration Center (EAC) or remote PowerShell.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>There is no transfer of permissions between the on-premises organization and the Office 365 organization. Permissions that you've defined in the on-premises organization must be re-created in the Office 365 organization.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> There is no transfer of permissions between the on-premises organization and the Office 365 organization. Permissions that you've defined in the on-premises organization must be re-created in the Office 365 organization.
 
 
 For more information, see [管理角色组](https://technet.microsoft.com/zh-cn/library/jj657480\(v=exchg.150\)) and [管理角色组成员](https://technet.microsoft.com/zh-cn/library/jj657492\(v=exchg.150\)).
@@ -53,18 +43,8 @@ The following permissions **are** supported:
 
   - **Full Access** A mailbox on an on-premises Exchange server can be granted the **Full Access** permission to an Office 365 mailbox, and vice versa. For example, an Office 365 mailbox can be granted the **Full Access** permission to an on-premises shared mailbox. Users need to open the mailbox using the Outlook desktop client; cross-premises mailbox permissions aren't supported in Outlook on the web.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Users might receive additional credential prompts when they first access a mailbox that’s in the other organization and add it to their Outlook profile.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Users might receive additional credential prompts when they first access a mailbox that’s in the other organization and add it to their Outlook profile.
 
 
   - **Send on Behalf of** A mailbox on an on-premises Exchange server can be granted the **Send on Behalf of** permission to an Office 365 mailbox, and vice versa. For example, an Office 365 mailbox can be granted the **Send on Behalf of** permission to an on-premises shared mailbox. Users need to open the mailbox using the Outlook desktop client; cross-premises mailbox permissions aren't supported in Outlook on the web.
@@ -73,18 +53,8 @@ The following permissions **are** supported:
 
   - **Private items** When adding a delegate the option can be configured to allow a user with folder permissions to see private calendar items.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>As of February 2018 the feature to support Full Access and Send on Behalf Of is being rolled out and expected to be complete by the second quarter of 2018.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> As of February 2018 the feature to support Full Access and Send on Behalf Of is being rolled out and expected to be complete by the second quarter of 2018.
 
 
 The following permissions or capabilities **aren't** supported:

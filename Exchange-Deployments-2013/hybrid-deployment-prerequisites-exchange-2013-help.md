@@ -116,18 +116,8 @@ _<strong>上一次修改主题：</strong>2017-07-25_
 
   - **EdgeSync**   如果已在内部部署组织部署边缘传输服务器，同时希望为混合安全邮件传输配置边缘传输服务器，则必须在使用“混合配置”向导之前配置 EdgeSync。此外，每次向边缘传输服务器应用新的累积更新或更新汇总时，您都需要运行 EdgeSync。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>尽管 EdgeSync 是部署边缘传输服务器的要求，但是当为混合安全邮件传输配置边缘传输服务器时，还需要额外的手动传输配置设置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 尽管 EdgeSync 是部署边缘传输服务器的要求，但是当为混合安全邮件传输配置边缘传输服务器时，还需要额外的手动传输配置设置。
     
     有关详细信息，请参阅[混合部署中的边缘传输服务器](edge-transport-servers-with-hybrid-deployments-exchange-2013-help.md)。
 
@@ -141,19 +131,9 @@ _<strong>上一次修改主题：</strong>2017-07-25_
     
       - 在 Exchange Online 中创建的，镜像本地组织中 UM 邮箱策略名称的 UM 邮箱策略。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>可以将多个本地 UM 邮箱策略映射到 Exchange Online 中的一个 UM 邮箱策略中。如果要执行此操作，需要使用 Exchange 命令行管理程序，手动将每个本地 UM 邮箱策略映射到 Exchange Online 策略。</td>
-        </tr>
-        </tbody>
-        </table>
-    
+        > [!NOTE]
+		> 可以将多个本地 UM 邮箱策略映射到 Exchange Online 中的一个 UM 邮箱策略中。如果要执行此操作，需要使用 Exchange 命令行管理程序，手动将每个本地 UM 邮箱策略映射到 Exchange Online 策略。
+            
     有关详细信息，请查看[与 UM 电话系统集成](https://technet.microsoft.com/zh-cn/library/jj673558\(v=exchg.150\))、[Exchange 2013 电话顾问](https://technet.microsoft.com/zh-cn/library/ee364753\(v=exchg.150\)) 和 [设置云 PBX 语音邮件](https://go.microsoft.com/fwlink/p/?linkid=826207)。
 
 ## 混合部署协议、端口和终结点

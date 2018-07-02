@@ -35,18 +35,8 @@ _<strong>上一次修改主题：</strong>2016-12-09_
 
 这里是“混合配置”向导过程的快速概述。首先，向导将在您的内部部署 Active Directory 中创建 **HybridConfiguration** 对象。此 Active Directory 对象会存储混合部署的混合配置信息，并通过“混合配置”向导进行更新。其次，向导将收集现有内部部署 Exchange 和 Active Directory 拓扑配置数据，Office 365 租户和 Exchange Online 配置数据，定义几个组织参数，然后同时在内部部署组织和 Exchange Online 组织中执行大量配置任务。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用“混合配置”向导之前您需要考虑一些重要因素和满足一些前提条件。您需要满足<a href="hybrid-deployment-prerequisites-exchange-2013-help.md">混合部署先决条件</a>中概括的混合部署的要求。满足这些要求即表示您已准备好使用“混合配置”向导为混合部署配置 Exchange 组织。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 使用“混合配置”向导之前您需要考虑一些重要因素和满足一些前提条件。您需要满足<a href="hybrid-deployment-prerequisites-exchange-2013-help.md">混合部署先决条件</a>中概括的混合部署的要求。满足这些要求即表示您已准备好使用“混合配置”向导为混合部署配置 Exchange 组织。
 
 
 混合部署配置过程的一般阶段是：
@@ -71,18 +61,8 @@ _<strong>上一次修改主题：</strong>2016-12-09_
 
 3.  **进行混合部署配置更改**   在测试混合管理帐户、执行验证和拓扑检查，以及收集在向导过程中定义的配置信息之后，“混合配置”向导会更改配置以创建和启用混合部署。对混合配置进行的所有更改会自动记录在混合配置日志中。默认情况下，混合配置日志位于内部部署邮箱服务器的以下位置：`%UserProfile%\AppData\Roaming\Microsoft\Exchange Hybrid Configuration`。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>入站邮件流由组织的 MX 记录进行控制。“混合配置”向导不会配置混合部署的入站 Internet 电子邮件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 入站邮件流由组织的 MX 记录进行控制。“混合配置”向导不会配置混合部署的入站 Internet 电子邮件。
 
 
 ## 混合配置功能
@@ -139,18 +119,9 @@ _<strong>上一次修改主题：</strong>2016-12-09_
 <td><p>邮件流</p></td>
 <td><p>向导允许您选择和配置要在本地环境与 Exchange Online 组织之间处理安全邮件传输的 Exchange 服务器。在 Exchange 2010 中为集线器传输服务器。在 Exchange 2013 中为客户端访问服务器。在 Exchange 2016 中为邮箱服务器。</p>
 <p>向导会配置内部部署 Exchange 和 Exchange Online 组织，以实现混合邮件路由。通过配置内部部署组织中新的和现有的发送与接收连接器以及 Exchange Online 中的入站与出站连接器，向导使您可以选择从 Exchange Online 组织传递到 Internet 的出站邮件是直接发送到外部邮件收件人，还是通过混合部署包含的内部部署 Exchange 服务器进行路由。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>入站邮件流由组织的 MX 记录进行控制。“混合配置”向导不会配置混合部署的入站 Internet 电子邮件。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]
+> 入站邮件流由组织的 MX 记录进行控制。“混合配置”向导不会配置混合部署的入站 Internet 电子邮件。
 
 </td>
 </tr>
