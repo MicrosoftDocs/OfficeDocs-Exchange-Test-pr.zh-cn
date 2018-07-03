@@ -71,8 +71,7 @@ OAuth 身份验证通常涉及到三个组件：一台授权服务器和两个�
 
 为了配置 Exchange Server 2013 的本地实现到 Office 365 的服务器到服务器身份验证，您必须要完成两个步骤：
 
-  -  
-    **步骤 1 – 向本地 Exchange 服务器的内置令牌颁发者分配证书。**首先，本地 Exchange 管理员必须使用以下 Exchange 命令行管理程序脚本创建证书（如果以前没有创建），并将其分配给本地 Exchange 服务器的内置令牌颁发者。此为一次性流程；创建证书后，该证书将重复用于其他身份验证方案，且不会被替代。请务必将 *$tenantDomain* 的值更新为您的域名。为此，请复制并粘贴以下代码。
+  - **步骤 1 – 向本地 Exchange 服务器的内置令牌颁发者分配证书。** 首先，本地 Exchange 管理员必须使用以下 Exchange 命令行管理程序脚本创建证书（如果以前没有创建），并将其分配给本地 Exchange 服务器的内置令牌颁发者。此为一次性流程；创建证书后，该证书将重复用于其他身份验证方案，且不会被替代。请务必将 *$tenantDomain* 的值更新为您的域名。为此，请复制并粘贴以下代码。
     
     <table>
     <thead>
@@ -167,8 +166,7 @@ OAuth 身份验证通常涉及到三个组件：一台授权服务器和两个�
     </table>
 
 
-  -  
-    **步骤 2 – 将 Office 365 配置为与 Exchange 2013 本地服务器进行通信。** 将 Exchange Server 2013 要与之通信的 Office 365 服务器配置为合作伙伴应用程序。例如，如果 Exchange Server 2013 本地服务器需要与 Office 365 进行通信，则需要将 Exchange 本地服务器配置为合作伙伴应用程序。合作伙伴应用程序是可以与 Exchange 2013 直接交换安全令牌的任何应用程序，而无需通过第三方安全令牌服务器。本地 Exchange 2013 管理员必须使用以下 Exchange 命令行管理程序脚本将 Exchange 2013 要与之通信的 Office 365 租户配置为合作伙伴应用程序。在执行期间，系统将提示输入 Office 365 租户域的管理员用户名和密码（例如，administrator@fabrikam.com）。请务必将 *$CertFile* 的值更新到证书的位置（如果未从以前的脚本创建）。为此，请复制并粘贴以下代码。
+  - **步骤 2 – 将 Office 365 配置为与 Exchange 2013 本地服务器进行通信。** 将 Exchange Server 2013 要与之通信的 Office 365 服务器配置为合作伙伴应用程序。例如，如果 Exchange Server 2013 本地服务器需要与 Office 365 进行通信，则需要将 Exchange 本地服务器配置为合作伙伴应用程序。合作伙伴应用程序是可以与 Exchange 2013 直接交换安全令牌的任何应用程序，而无需通过第三方安全令牌服务器。本地 Exchange 2013 管理员必须使用以下 Exchange 命令行管理程序脚本将 Exchange 2013 要与之通信的 Office 365 租户配置为合作伙伴应用程序。在执行期间，系统将提示输入 Office 365 租户域的管理员用户名和密码（例如，administrator@fabrikam.com）。请务必将 *$CertFile* 的值更新到证书的位置（如果未从以前的脚本创建）。为此，请复制并粘贴以下代码。
     
         # Make sure to update the following $CertFile with the path to the cert if not using the previous script.
         
@@ -252,7 +250,7 @@ OAuth 身份验证通常涉及到三个组件：一台授权服务器和两个�
     
     4.  这应该会在几分钟内生成未查看邮件的计数（将在应用图标上指明）。
 
-  - **启用监控。**测试推送通知或调查通知失败原因的另一种方法是，在您的组织中对邮箱服务器启用监控。本地 Exchange 2013 服务器管理员必须通过以下脚本调用推送通知代理监控。为此，请复制并粘贴以下代码。
+  - **启用监控。** 测试推送通知或调查通知失败原因的另一种方法是，在您的组织中对邮箱服务器启用监控。本地 Exchange 2013 服务器管理员必须通过以下脚本调用推送通知代理监控。为此，请复制并粘贴以下代码。
     
         # Send a push notification to verify connectivity.
         

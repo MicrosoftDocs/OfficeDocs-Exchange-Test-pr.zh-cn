@@ -49,7 +49,7 @@ _**上一次修改主题：** 2016-12-09_
 
 ## 访问 Outlook Web App
 
-您和您的用户可以使用如下 URL 登录到 Outlook Web App：** https://\<域名\>/OWA** 或 **https://mail.\<域名\>/OWA**
+您和您的用户可以使用如下 URL 登录到 Outlook Web App：**https://\<域名\>/OWA** 或 **https://mail.\<域名\>/OWA**
 
 例如，如果您的组织的域是 contoso.com，可以使用 https://contoso.com/OWA 或 https://mail.contoso.com/OWA。在[此处](https://support.microsoft.com/zh-cn/kb/2897680)了解有关访问 Outlook Web App 的详细信息。若要将登录 URL 更改为其他形式或强制重定向到 SSL，请参阅[简化 Outlook Web App 的 URL](simplify-the-outlook-web-app-url-exchange-2013-help.md)。
 

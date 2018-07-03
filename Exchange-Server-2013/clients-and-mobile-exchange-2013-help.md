@@ -51,7 +51,7 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>了解用户如何通过使用 POP3 或 IMAP4 的电子邮件程序访问其 Exchange 2013 电子邮件。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://technet.microsoft.com/zh-cn/library/jj150495(v=exchg.150)">Office Web Apps 服务器集成</a></p></td>
+<td><p>Office Web Apps 服务器集成</p></td>
 <td><p>了解 Microsoft Office Web Apps Server 的集成如何帮助提供 Outlook Web App 中丰富的附件预览功能。</p></td>
 </tr>
 <tr class="odd">
