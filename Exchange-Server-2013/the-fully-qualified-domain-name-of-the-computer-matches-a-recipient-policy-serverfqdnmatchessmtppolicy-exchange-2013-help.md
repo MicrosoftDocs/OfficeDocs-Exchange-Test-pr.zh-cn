@@ -63,5 +63,5 @@ Microsoft Exchange 安装程序要求 Exchange 组织中服务器的 FQDN 不能
 
 4.  单击\&quot;电子邮件地址\&quot;选项卡，然后更改相应的 SMTP 地址。
 
-有关收件人策略命名问题的详细信息，请参阅 Microsoft 知识库文章 288175，"XCON︰ 收件人策略不能与任何组织，5.4.8 中的服务器的 FQDN 匹配的 Ndr"([http://go.microsoft.com/fwlink/?linkid=3052\&kbid=288175](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=288175))。
+有关收件人策略命名问题的详细信息，请参阅 Microsoft 知识库文章 288175，"XCON︰ 收件人策略不能与任何组织，5.4.8 中的服务器的 FQDN 匹配的 Ndr"([http://go.microsoft.com/fwlink/?linkid=3052\&kbid=288175](http://go.microsoft.com/fwlink/?linkid=3052&kbid=288175))。
 

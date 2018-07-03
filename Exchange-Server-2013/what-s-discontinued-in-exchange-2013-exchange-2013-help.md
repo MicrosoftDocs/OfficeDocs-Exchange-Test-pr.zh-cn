@@ -407,7 +407,7 @@ _**上一次修改主题：** 2016-12-09_
 </tr>
 <tr class="odd">
 <td><p>用户数据报协议 (UDP) 通知</p></td>
-<td><p>用户数据报协议 (UDP) 通知的支持已从 Exchange 2013 中删除。这将影响 Outlook 2003 客户端连接到 Exchange 2013 服务器中邮箱时的用户体验。有关详细信息，请参阅 Microsoft 知识库文章 2009942：<a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2009942">Exchange Server 2010 用户以联机模式使用 Outlook 2003 时更新文件夹需要很长时间</a>。</p></td>
+<td><p>用户数据报协议 (UDP) 通知的支持已从 Exchange 2013 中删除。这将影响 Outlook 2003 客户端连接到 Exchange 2013 服务器中邮箱时的用户体验。有关详细信息，请参阅 Microsoft 知识库文章 2009942：<a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=2009942">Exchange Server 2010 用户以联机模式使用 Outlook 2003 时更新文件夹需要很长时间</a>。</p></td>
 </tr>
 </tbody>
 </table>

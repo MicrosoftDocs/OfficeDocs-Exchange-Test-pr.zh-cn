@@ -68,9 +68,9 @@ Exchange 2007 或 Exchange 2010 安装程序要求删除所有 ADC 组件。
 
 有关 ADC 的详细信息，请参阅下列 Microsoft 知识库文章：
 
-  - 325300，"支持网络广播︰ 活动目录连接器简介"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325300](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=325300))。
+  - 325300，"支持网络广播︰ 活动目录连接器简介"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325300](https://go.microsoft.com/fwlink/?linkid=3052&kbid=325300))。
 
-  - 325221，"支持网络广播︰ Microsoft 高级 Active Directory 连接符"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325221](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=325221))。
+  - 325221，"支持网络广播︰ Microsoft 高级 Active Directory 连接符"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325221](https://go.microsoft.com/fwlink/?linkid=3052&kbid=325221))。
 
-  - 312632，"如何安装和配置 Exchange 2000 Server 中的活动目录连接器"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=312632](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=312632))。
+  - 312632，"如何安装和配置 Exchange 2000 Server 中的活动目录连接器"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=312632](https://go.microsoft.com/fwlink/?linkid=3052&kbid=312632))。
 

@@ -125,7 +125,7 @@ _**上一次修改主题：** 2016-12-09_
         </thead>
         <tbody>
         <tr class="odd">
-        <td>为确保 Exchange 2013 和 Exchange 2003 组织之间的忙/闲共享正常工作，<strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 公用文件夹必须位于公用文件夹层次结构中。仅当在 Exchange 2010 安装期间选择创建公用文件夹作为配置 Outlook 2003 支持的客户端设置选项时，才会在 Exchange 2003 组织的 Exchange 2010 邮箱服务器上自动创建此文件夹。此外，仅当 Exchange 2010 邮箱服务器是组织中安装的第一个邮箱服务器时，才会在安装过程中提供此选项。如果未在安装过程中创建 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 公用文件夹，则必须手动创建该文件夹。有关如何创建此公用文件夹的详细信息，请参阅<a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=2555008">在 Microsoft Office 365 企业版环境中使用 Exchange 联合身份验证时如何解决忙/闲问题</a>。</td>
+        <td>为确保 Exchange 2013 和 Exchange 2003 组织之间的忙/闲共享正常工作，<strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 公用文件夹必须位于公用文件夹层次结构中。仅当在 Exchange 2010 安装期间选择创建公用文件夹作为配置 Outlook 2003 支持的客户端设置选项时，才会在 Exchange 2003 组织的 Exchange 2010 邮箱服务器上自动创建此文件夹。此外，仅当 Exchange 2010 邮箱服务器是组织中安装的第一个邮箱服务器时，才会在安装过程中提供此选项。如果未在安装过程中创建 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 公用文件夹，则必须手动创建该文件夹。有关如何创建此公用文件夹的详细信息，请参阅<a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2555008">在 Microsoft Office 365 企业版环境中使用 Exchange 联合身份验证时如何解决忙/闲问题</a>。</td>
         </tr>
         </tbody>
         </table>

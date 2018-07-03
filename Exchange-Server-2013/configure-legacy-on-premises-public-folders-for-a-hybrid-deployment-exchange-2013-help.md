@@ -120,7 +120,7 @@ _**上一次修改主题：** 2018-05-22_
 
 7.  在 Exchange 2007 中，必须分配有 Exchange 组织管理员角色或 Exchange Server 管理员角色。此外，还必须分配有公用文件夹管理员角色和目标服务器的本地管理员组。有关详细信息，请参阅[如何向管理员角色添加用户或组](https://go.microsoft.com/fwlink/p/?linkid=81779)
 
-8.  如果你的 Exchange Server 2007 正在 Windows Server 2008 x64 上运行，那么你必须将其升级到[适用于 Windows Server 2008 x64 Edition 的 Windows PowerShell 2.0 和 WinRM 2.0](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)。如果你的 Exchange Server 2007 正在 Windows Server 2003 x64 上运行，那么你必须将其升级到 Windows PowerShell 2.0。有关详细信息，请参阅[适用于 Windows Server 2003 x64 Edition 的更新](https://www.microsoft.com/zh-cn/download/details.aspx?id=10512)。
+8.  如果你的 Exchange Server 2007 正在 Windows Server 2008 x64 上运行，那么你必须将其升级到[适用于 Windows Server 2008 x64 Edition 的 Windows PowerShell 2.0 和 WinRM 2.0](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)。如果你的 Exchange Server 2007 正在 Windows Server 2003 x64 上运行，那么你必须将其升级到 Windows PowerShell 2.0。有关详细信息，请参阅[适用于 Windows Server 2003 x64 Edition 的更新](https://www.microsoft.com/zh-cn/download/details.aspx?id=10512)。
 
 9.  为了能够跨界访问公用文件夹，用户必须将其 Outlook 客户端升级至 2012 年 11 月的 Outlook 公共更新或更高版本。
     

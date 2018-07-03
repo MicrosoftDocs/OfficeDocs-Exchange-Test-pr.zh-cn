@@ -119,7 +119,7 @@ Exchange 安装程序要求对下列 Exchange 对象启用权限继承：
 <li><p>选择&amp;quot;安全&amp;quot;选项卡，再单击&amp;quot;高级&amp;quot;。</p></li>
 <li><p>选择&amp;quot;允许可继承的权限从父对象传送到此对象和子对象&amp;quot;以重新启用权限继承。</p></li>
 <li><p>选择&amp;quot;确定&amp;quot;两次应用更改。</p></li>
-<li><p>等待 Active Directory 复制，按照 Microsoft 知识库文章 232072&amp;quot;在 Active Directory 直接复制合作伙伴间启动复制&amp;quot;(<a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=232072" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=232072</a>)（英文）中的指示传播更改或强制 Active Directory 复制。</p></li>
+<li><p>等待 Active Directory 复制，按照 Microsoft 知识库文章 232072&amp;quot;在 Active Directory 直接复制合作伙伴间启动复制&amp;quot;(<a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=232072" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=232072</a>)（英文）中的指示传播更改或强制 Active Directory 复制。</p></li>
 </ol></td>
 </tr>
 </tbody>

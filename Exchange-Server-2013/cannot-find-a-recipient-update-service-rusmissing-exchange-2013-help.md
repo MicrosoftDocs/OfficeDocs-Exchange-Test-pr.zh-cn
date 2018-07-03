@@ -54,11 +54,11 @@ Microsoft Exchange 安装程序要求现有 Exchange 组织中的每个域都有
 
 有关收件人更新服务的详细信息，请参阅下列 Microsoft 知识库文章：
 
-  - "如何收件人更新服务应用收件人策略"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=328738](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=328738))。
+  - "如何收件人更新服务应用收件人策略"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=328738](https://go.microsoft.com/fwlink/?linkid=3052&kbid=328738))。
 
-  - "如何收件人更新服务填充地址列表"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253828](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=253828))。
+  - "如何收件人更新服务填充地址列表"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253828](https://go.microsoft.com/fwlink/?linkid=3052&kbid=253828))。
 
-  - "如何检查进度的 Exchange 收件人更新服务"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=246127](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=246127))。
+  - "如何检查进度的 Exchange 收件人更新服务"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=246127](https://go.microsoft.com/fwlink/?linkid=3052&kbid=246127))。
 
-  - "任务执行的 Exchange 收件人更新服务"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253770](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=253770))。
+  - "任务执行的 Exchange 收件人更新服务"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253770](https://go.microsoft.com/fwlink/?linkid=3052&kbid=253770))。
 

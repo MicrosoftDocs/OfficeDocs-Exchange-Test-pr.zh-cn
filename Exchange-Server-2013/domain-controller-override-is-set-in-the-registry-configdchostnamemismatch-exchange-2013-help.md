@@ -27,5 +27,5 @@ Exchange 2007 安装程序要求在 setup 命令中指定的域控制器与使�
 
 若要解决此问题，请再次运行安装程序，同时为 **/DomainController: \<***FQDN of thestatically mapped domain controller***\>** 参数指定静态映射的域控制器。
 
-关于 DSAccess 和目录服务检测，请参阅 Microsoft 知识库文章 250570，"目录服务服务器检测并 DSAccess 使用情况"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=250570](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=250570)) 的详细信息。
+关于 DSAccess 和目录服务检测，请参阅 Microsoft 知识库文章 250570，"目录服务服务器检测并 DSAccess 使用情况"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=250570](https://go.microsoft.com/fwlink/?linkid=3052&kbid=250570)) 的详细信息。
 

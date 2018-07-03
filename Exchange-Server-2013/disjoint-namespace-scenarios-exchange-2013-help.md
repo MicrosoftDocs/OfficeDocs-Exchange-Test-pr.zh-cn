@@ -117,7 +117,7 @@ Exchange 2013 支持下列三种在拥有脱节命名空间的域中部署 Excha
 
   - [组策略常见问题 (FAQ)](https://go.microsoft.com/fwlink/p/?linkid=100128)
 
-  - [Windows Server 2003 中的新 DNS 组策略](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=294785)
+  - [Windows Server 2003 中的新 DNS 组策略](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=294785)
 
   - [组策略](https://go.microsoft.com/fwlink/p/?linkid=268043)
 

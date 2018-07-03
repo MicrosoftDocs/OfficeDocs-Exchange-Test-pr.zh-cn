@@ -27,18 +27,8 @@ _**上一次修改主题：** 2015-03-09_
 
 3.  现在运行 **Get-ManagementRoleAssignment** cmdlet 以查看分配给您的角色组或管理角色，以便确定您是否具有管理该功能所需的权限。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>必须分配了 Role Management 管理角色才能运行 <strong>Get-ManagementRoleAssignment</strong> cmdlet。如果没有运行 <strong>Get-ManagementRoleAssignment</strong> cmdlet 的权限，则请求 Exchange 管理员检索分配给您的角色组或管理角色。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 必须分配了 Role Management 管理角色才能运行 <strong>Get-ManagementRoleAssignment</strong> cmdlet。如果没有运行 <strong>Get-ManagementRoleAssignment</strong> cmdlet 的权限，则请求 Exchange 管理员检索分配给您的角色组或管理角色。
 
 
 如果要将管理一项功能的权限委派给另一个用户，请参阅[委派角色分配](delegate-role-assignments-exchange-2013-help.md)。
@@ -85,18 +75,9 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><a href="organization-management-exchange-2013-help.md">组织管理</a></p>
 <p><a href="view-only-organization-management-exchange-2013-help.md">仅查看组织管理</a></p>
 <p>支持诊断角色</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>未对角色组分配支持诊断角色。有关详细信息，请参阅<a href="add-a-role-to-a-user-or-usg-exchange-2013-help.md">向用户或 USG 添加角色</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 未对角色组分配支持诊断角色。有关详细信息，请参阅<a href="add-a-role-to-a-user-or-usg-exchange-2013-help.md">向用户或 USG 添加角色</a>。
 
 </td>
 </tr>
@@ -108,18 +89,9 @@ _**上一次修改主题：** 2015-03-09_
 <tr class="odd">
 <td><p>导入导出</p></td>
 <td><p>邮箱导入导出角色</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>未对角色组分配邮箱导入导出角色。有关详细信息，请参阅<a href="mailbox-import-export-role-exchange-2013-help.md">邮箱导入导出角色</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 未对角色组分配邮箱导入导出角色。有关详细信息，请参阅<a href="mailbox-import-export-role-exchange-2013-help.md">邮箱导入导出角色</a>。
 
 </td>
 </tr>

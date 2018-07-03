@@ -37,7 +37,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - 确保尚未通过 Windows 更新安装 Windows 远程管理。
 
-  - 安装 Windows PowerShell 和 Windows 远程管理。有关详细信息，请参阅 Microsoft 知识库文章 968930 [Windows Management Framework Core 程序包（Windows PowerShell 2.0 和 WinRM 2.0）](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)。
+  - 安装 Windows PowerShell 和 Windows 远程管理。有关详细信息，请参阅 Microsoft 知识库文章 968930 [Windows Management Framework Core 程序包（Windows PowerShell 2.0 和 WinRM 2.0）](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)。
 
   - 下载 Forefront Identity Manager 2010 R2 SP1。请参阅[下载 Microsoft Forefront Identity Manager 2010 R2 SP1](https://go.microsoft.com/fwlink/p/?linkid=279868)。
 

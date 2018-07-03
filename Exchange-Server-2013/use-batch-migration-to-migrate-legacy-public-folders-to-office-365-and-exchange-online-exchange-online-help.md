@@ -85,7 +85,7 @@ Exchange 支持将您的公用文件夹从以下旧版 Exchange Server 移动至
 
   - 在 Exchange 2007 中，必须分配有 Exchange 组织管理员角色或 Exchange Server 管理员角色。此外，还必须分配有公用文件夹管理员角色和目标服务器的本地管理员组。有关详细信息，请参阅[如何向管理员角色添加用户或组](https://go.microsoft.com/fwlink/p/?linkid=81779)。
 
-  - 在 Exchange 2007 服务器中，升级到 [Windows Server 2008 x64 Edition 的 Windows PowerShell 2.0 和 WinRM 2.0](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)。
+  - 在 Exchange 2007 服务器中，升级到 [Windows Server 2008 x64 Edition 的 Windows PowerShell 2.0 和 WinRM 2.0](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)。
 
   - 迁移之前，如果组织中有任何公用文件夹大于 2 GB，我们建议删除该文件夹的内容或者将其拆分为多个公用文件夹。如果这两个选项都不可行，我们建议您不要将公用文件夹移动到 Office 365 和 Exchange Online。
 

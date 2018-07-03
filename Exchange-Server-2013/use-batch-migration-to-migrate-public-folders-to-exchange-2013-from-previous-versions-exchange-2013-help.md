@@ -83,7 +83,7 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
 
   - 在 Exchange 2007 中，必须分配有 Exchange 组织管理员角色或 Exchange Server 管理员角色。此外，还必须分配有公用文件夹管理员角色和目标服务器的本地管理员组。有关详细信息，请参阅[如何向管理员角色添加用户或组](https://go.microsoft.com/fwlink/p/?linkid=81779)。
 
-  - 在 Exchange 2007 服务器中，升级到[适用于 Windows Server 2008 x64 Edition 的 Windows PowerShell 2.0 和 WinRM 2.0](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)。
+  - 在 Exchange 2007 服务器中，升级到[适用于 Windows Server 2008 x64 Edition 的 Windows PowerShell 2.0 和 WinRM 2.0](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)。
 
   - 开始迁移之前，您应考虑[公用文件夹的限制](limits-for-public-folders-exchange-2013-help.md)。
 
