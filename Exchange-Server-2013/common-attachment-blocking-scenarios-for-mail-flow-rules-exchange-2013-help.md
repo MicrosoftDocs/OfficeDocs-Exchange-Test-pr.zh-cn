@@ -19,17 +19,13 @@ _**上一次修改主题：** 2017-02-23_
 
 为了满足法律或合规性要求，或者为了满足特定的业务需求，您的组织可能需要阻止或拒绝某些类型的邮件。下面的一些示例展示了您可以使用传输规则在 Exchange 中设置的用于阻止所有附件的常见方案：
 
-  -  
-    Example 1: Block messages with attachments, and notify the sender
+  -  Example 1: Block messages with attachments, and notify the sender
 
-  -  
-    Example 2: Notify intended recipients when an inbound message is blocked
+  -  Example 2: Notify intended recipients when an inbound message is blocked
 
-  -  
-    Example 3: Modify the subject line for notifications
+  -  Example 3: Modify the subject line for notifications
 
-  -  
-    Example 4: Apply a rule with a time limit
+  -  Example 4: Apply a rule with a time limit
 
 有关如何阻止特定附件的其他示例，请参阅：
 
