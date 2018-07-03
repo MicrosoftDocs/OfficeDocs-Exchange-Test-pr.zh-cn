@@ -41,7 +41,7 @@ Microsoft Exchange 2010 UM 疑难解答工具是名为 **Test-ExchangeUMCallFlow
     
       - 如果将Windows Vista 或Windows Server 2008计算机上运行该工具，请参阅[Windows Server 2008 x64 Windows Vista x64，以及 Microsoft.NET Framework 3.5 系列更新](https://go.microsoft.com/fwlink/p/?linkid=178998)。
     
-      - Windows 远程管理 (WinRM) 2.0 和 Windows PowerShell V2 (Windows6.0-KB968930.msu)。请参阅 Microsoft 知识库文章 968930，[Windows Management Framework Core 程序包（Windows PowerShell 2.0 和 WinRM 2.0）](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)。
+      - Windows 远程管理 (WinRM) 2.0 和 Windows PowerShell V2 (Windows6.0-KB968930.msu)。请参阅 Microsoft 知识库文章 968930，[Windows Management Framework Core 程序包（Windows PowerShell 2.0 和 WinRM 2.0）](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)。
     
       - Microsoft 统一通信托管的 API 2.0 的核心运行时 (UcmaRuntimeWebDownloadX64.msi)。请参阅[统一的通信管理 API 2.0，核心运行时 （64 位）](https://go.microsoft.com/fwlink/p/?linkid=198175)。
 

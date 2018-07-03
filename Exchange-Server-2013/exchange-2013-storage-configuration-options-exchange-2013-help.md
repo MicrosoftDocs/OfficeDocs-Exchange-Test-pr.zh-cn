@@ -109,7 +109,7 @@ Exchange 用于存储 Exchange 数据的所有存储空间必须为块级存储�
 </ul></td>
 <td><p>支持：Windows Server 2008 和 Windows Server 2008 R2 支持 512 字节扇区磁盘。另外，具有以下内容的 Windows Server 2008 R2 支持 512e 磁盘：</p>
 <ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=982018">Microsoft 知识库文章 982018</a>“现已推出可改善 Windows 7 和 Windows Server 2008 R2 与高级格式磁盘之间兼容性的更新”中介绍的修补程序。</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">Microsoft 知识库文章 982018</a>“现已推出可改善 Windows 7 和 Windows Server 2008 R2 与高级格式磁盘之间兼容性的更新”中介绍的修补程序。</p></li>
 <li><p>Windows Server 2008 R2 Service Pack 1 (SP1) 和 Exchange Server 2010 SP1。</p></li>
 </ul>
 <p>Exchange 2013 和更高版本支持本机 4 千字节 (KB) 扇区磁盘和 512e 磁盘。支持要求数据库的所有副本均位于同一类型的物理磁盘上。例如，以下配置不受支持：在 512 字节扇区磁盘上托管给定数据库的一个副本，而在 512e 磁盘或 4 K 磁盘上托管同一数据库的另一个副本。</p>
@@ -126,7 +126,7 @@ Exchange 用于存储 Exchange 数据的所有存储空间必须为块级存储�
 </ul></td>
 <td><p>支持：Windows Server 2008 和 Windows Server 2008 R2 支持 512 字节扇区磁盘。另外，具有以下内容的 Windows Server 2008 R2 支持 512e 磁盘：</p>
 <ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=982018">Microsoft 知识库文章 982018</a>“现已推出可改善 Windows 7 和 Windows Server 2008 R2 与高级格式磁盘之间兼容性的更新”中介绍的修补程序。</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">Microsoft 知识库文章 982018</a>“现已推出可改善 Windows 7 和 Windows Server 2008 R2 与高级格式磁盘之间兼容性的更新”中介绍的修补程序。</p></li>
 <li><p>Windows Server 2008 R2 Service Pack 1 (SP1) 和 Exchange Server 2010 SP1。</p></li>
 </ul>
 <p>Exchange 2013 和更高版本支持本机 4 千字节 (KB) 扇区磁盘和 512e 磁盘。支持要求数据库的所有副本均位于同一类型的物理磁盘上。例如，以下配置不受支持：在 512 字节扇区磁盘上托管给定数据库的一个副本，而在 512e 磁盘或 4 K 磁盘上托管同一数据库的另一个副本。</p>
@@ -143,7 +143,7 @@ Exchange 用于存储 Exchange 数据的所有存储空间必须为块级存储�
 </ul></td>
 <td><p>支持：Windows Server 2008 和 Windows Server 2008 R2 支持 512 字节扇区磁盘。另外，具有以下内容的 Windows Server 2008 R2 支持 512e 磁盘：</p>
 <ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=982018">Microsoft 知识库文章 982018</a>“现已推出可改善 Windows 7 和 Windows Server 2008 R2 与高级格式磁盘之间兼容性的更新”中介绍的修补程序。</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">Microsoft 知识库文章 982018</a>“现已推出可改善 Windows 7 和 Windows Server 2008 R2 与高级格式磁盘之间兼容性的更新”中介绍的修补程序。</p></li>
 <li><p>Windows Server 2008 R2 Service Pack 1 (SP1) 和 Exchange Server 2010 SP1。</p></li>
 </ul>
 <p>Exchange 2013 和更高版本支持本机 4 千字节 (KB) 扇区磁盘和 512e 磁盘。支持要求数据库的所有副本均位于同一类型的物理磁盘上。例如，以下配置不受支持：在 512 字节扇区磁盘上托管给定数据库的一个副本，而在 512e 磁盘或 4 K 磁盘上托管同一数据库的另一个副本。</p>
@@ -159,7 +159,7 @@ Exchange 用于存储 Exchange 数据的所有存储空间必须为块级存储�
 </ul></td>
 <td><p>支持：Windows Server 2008 和 Windows Server 2008 R2 支持 512 字节扇区磁盘。另外，具有以下内容的 Windows Server 2008 R2 支持 512e 磁盘：</p>
 <ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=982018">Microsoft 知识库文章 982018</a>“现已推出可改善 Windows 7 和 Windows Server 2008 R2 与高级格式磁盘之间兼容性的更新”中介绍的修补程序。</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">Microsoft 知识库文章 982018</a>“现已推出可改善 Windows 7 和 Windows Server 2008 R2 与高级格式磁盘之间兼容性的更新”中介绍的修补程序。</p></li>
 <li><p>Windows Server 2008 R2 Service Pack 1 (SP1) 和 Exchange Server 2010 SP1。</p></li>
 </ul>
 <p>Exchange 2013 和更高版本支持本机 4 千字节 (KB) 扇区磁盘和 512e 磁盘。支持要求数据库的所有副本均位于同一类型的物理磁盘上。例如，以下配置不受支持：在 512 字节扇区磁盘上托管给定数据库的一个副本，而在 512e 磁盘或 4 K 磁盘上托管同一数据库的另一个副本。</p>
@@ -695,7 +695,7 @@ Exchange 用于存储 Exchange 数据的所有存储空间必须为块级存储�
 <td><p>Windows BitLocker（卷加密）</p></td>
 <td><p>Windows BitLocker 是 Windows Server 2008 中的一种数据保护功能。BitLocker 可防止丢失或被盗的计算机上的数据失窃或泄露，并可在计算机停止使用时提供更加安全的数据删除。</p></td>
 <td><p>支持：所有 Exchange 数据库和日志文件。</p></td>
-<td><p>支持：所有 Exchange 数据库和日志文件。Windows 故障转移群集需要 Windows Server 2008 R2 或 Windows Server 2008 R2 SP1 以及以下修补程序：<a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=2446607">如果计算机是故障转移群集节点，则无法在 Windows Server 2008 R2 中的磁盘卷上启用 BitLocker</a>。运行早期版本的 Windows 的 Windows 故障转移群集上不支持启用了 Bitlocker 的 Exchange 卷。</p>
+<td><p>支持：所有 Exchange 数据库和日志文件。Windows 故障转移群集需要 Windows Server 2008 R2 或 Windows Server 2008 R2 SP1 以及以下修补程序：<a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2446607">如果计算机是故障转移群集节点，则无法在 Windows Server 2008 R2 中的磁盘卷上启用 BitLocker</a>。运行早期版本的 Windows 的 Windows 故障转移群集上不支持启用了 Bitlocker 的 Exchange 卷。</p>
 <p>有关 Windows 7 BitLocker 加密的详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=220898">Windows 7 中的 BitLocker 驱动器加密：常见问题</a>。</p></td>
 </tr>
 <tr class="odd">

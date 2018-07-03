@@ -355,7 +355,7 @@ AD RMS 使用基于 XrML 的权限策略模板，允许启用了 IRM 的兼容�
 <tr class="odd">
 <td><p>AD RMS 群集</p></td>
 <td><ul>
-<li><p><strong>操作系统：</strong>需要装有修补程序 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=973247">Windows Server 2008 中的 Active Directory 权限管理服务角色</a>的 Windows Server 2012、Windows Server 2008 R2 或 Windows Server 2008 SP2。</p></li>
+<li><p><strong>操作系统：</strong>需要装有修补程序 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=973247">Windows Server 2008 中的 Active Directory 权限管理服务角色</a>的 Windows Server 2012、Windows Server 2008 R2 或 Windows Server 2008 SP2。</p></li>
 <li><p><strong>服务连接点</strong>Exchange 2010 和可感知 AD RMS 的应用程序使用在 Active Directory 中注册的服务连接点来发现 AD RMS 群集和 URL。通过 AD RMS，可从 AD RMS 安装程序中注册服务连接点。如果用于安装 AD RMS 的帐户不是 Enterprise Admins 安全组成员，则可在安装之后执行服务连接点注册。AD RMS 在 Active Directory 林中仅有一个服务连接点。</p></li>
 <li><p><strong>权限：</strong>必须向以下对象分配对 AD RMS 服务器证书管道（AD RMS 服务器上的 <code>ServerCertification.asmx</code> 文件）的读取和执行权限：</p>
 <ul>
@@ -370,7 +370,7 @@ AD RMS 使用基于 XrML 的权限策略模板，允许启用了 IRM 的兼容�
 <td><p>Exchange</p></td>
 <td><ul>
 <li><p>需要 Exchange 2010 或更高版本。</p></li>
-<li><p>建议将修补程序<a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=973136">修复：基于 .NET Framework 2.0 SP2 的应用程序尝试处理对异步 ASP.NET Web 服务请求的零长度内容响应时，出现 ArgumentNullException 异常错误消息：“值不能为空”</a>用于 Microsoft .NET Framework 2.0 SP2。</p></li>
+<li><p>建议将修补程序<a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=973136">修复：基于 .NET Framework 2.0 SP2 的应用程序尝试处理对异步 ASP.NET Web 服务请求的零长度内容响应时，出现 ArgumentNullException 异常错误消息：“值不能为空”</a>用于 Microsoft .NET Framework 2.0 SP2。</p></li>
 </ul></td>
 </tr>
 <tr class="odd">

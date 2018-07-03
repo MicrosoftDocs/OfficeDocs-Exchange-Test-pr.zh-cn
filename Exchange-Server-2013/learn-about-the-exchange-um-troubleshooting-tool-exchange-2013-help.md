@@ -237,7 +237,7 @@ UM 故障排除工具可帮助您在跨界部署中排查、诊断及修复配�
     </table>
 
 
-  - Windows 远程管理 (WinRM) 2.0 和 Windows PowerShell V2 (Windows6.0-KB968930.msu)   请参阅 Microsoft 知识库文章 968930，[Windows Management Framework Core 程序包（Windows PowerShell 2.0 和 WinRM 2.0）](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)。
+  - Windows 远程管理 (WinRM) 2.0 和 Windows PowerShell V2 (Windows6.0-KB968930.msu)   请参阅 Microsoft 知识库文章 968930，[Windows Management Framework Core 程序包（Windows PowerShell 2.0 和 WinRM 2.0）](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)。
 
   - Microsoft Unified Communications Managed API 2.0 Core Runtime (UcmaRuntimeWebDownloadX64.msi)   请参阅 [Unified Communications Managed API 2.0，Core Runtime（64 位）](https://go.microsoft.com/fwlink/p/?linkid=198175)。
 

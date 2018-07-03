@@ -205,7 +205,7 @@ Exchange 2013 还提供了使管理员可以处理间歇性故障的功能。举
 
 Exchange 2013 还包括一个第三方复制 API，使组织能够使用第三方同步复制解决方案，而不是内置的连续复制功能。Microsoft 支持使用该 API 的第三方解决方案，前提是该解决方案提供了必需功能以替换所有由于使用 API 而禁用的自有连续复制功能。仅当在 DAG 内使用 API 管理和激活邮箱数据库副本时才支持此类解决方案。不支持在这些边界外部使用 API。此外，该解决方案必须满足适用的 Windows 硬件支持要求。（进行支持不需要测试验证）。
 
-部署使用内置第三方复制 API 的解决方案时，请注意解决方案供应商负责解决方案的主要支持。Microsoft 支持复制和非复制解决方案的 Exchange 数据。使用数据复制的解决方案必须遵守 Microsoft 数据复制支持策略，如 Microsoft 知识库文章 895847 [Exchange Server 的多站点数据复制支持](https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=895847)中所述。此外，使用 Windows 故障转移群集资源模型的解决方案必须满足 Windows 群集支持要求，如 Microsoft 知识库文章 943984 [Windows Server 2008 或 Windows Server 2008 R2 故障转移群集的 Microsoft 支持策略](https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=943984)或 [Windows Server 2012 故障转移群集的 Microsoft 支持策略](https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=2775067)中所述。
+部署使用内置第三方复制 API 的解决方案时，请注意解决方案供应商负责解决方案的主要支持。Microsoft 支持复制和非复制解决方案的 Exchange 数据。使用数据复制的解决方案必须遵守 Microsoft 数据复制支持策略，如 Microsoft 知识库文章 895847 [Exchange Server 的多站点数据复制支持](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=895847)中所述。此外，使用 Windows 故障转移群集资源模型的解决方案必须满足 Windows 群集支持要求，如 Microsoft 知识库文章 943984 [Windows Server 2008 或 Windows Server 2008 R2 故障转移群集的 Microsoft 支持策略](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=943984)或 [Windows Server 2012 故障转移群集的 Microsoft 支持策略](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2775067)中所述。
 
 Microsoft 对于使用基于第三方复制 API 的解决方案部署的备份和恢复支持策略与自有连续复制部署的策略相同。
 

@@ -155,7 +155,7 @@ Exchange 2013 支持已升级到 Office 365 最新版本的 Office 365 租户进
 <li><p>单标签域</p></li>
 <li><p>不连续命名空间</p></li>
 </ul>
-<p>有关 Exchange 支持的 DNS 命名空间的详细信息，请参阅 Microsoft 知识库文章 2269838 <a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2269838">Microsoft Exchange 与单标签域、不连续命名空间和分离命名空间的兼容性</a>。</p></td>
+<p>有关 Exchange 支持的 DNS 命名空间的详细信息，请参阅 Microsoft 知识库文章 2269838 <a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=2269838">Microsoft Exchange 与单标签域、不连续命名空间和分离命名空间的兼容性</a>。</p></td>
 </tr>
 <tr class="even">
 <td><p>IPv6 支持</p></td>
@@ -181,7 +181,7 @@ Exchange 2013 支持已升级到 Office 365 最新版本的 Office 365 租户进
 </thead>
 <tbody>
 <tr class="odd">
-<td>在多域环境的将 Active Directory 语言区域设置为日语的 Windows Server 2008 域控制器上，服务器可能不接收在入站复制期间存储在对象上的某些属性。有关详细信息，请参阅 Microsoft 知识库文章 949189 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=949189">使用日语语言区域设置配置的 Windows Server 2008 域控制器配置可能不会在入站复制期间将更新应用于对象的属性</a>。</td>
+<td>在多域环境的将 Active Directory 语言区域设置为日语的 Windows Server 2008 域控制器上，服务器可能不接收在入站复制期间存储在对象上的某些属性。有关详细信息，请参阅 Microsoft 知识库文章 949189 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=949189">使用日语语言区域设置配置的 Windows Server 2008 域控制器配置可能不会在入站复制期间将更新应用于对象的属性</a>。</td>
 </tr>
 </tbody>
 </table>

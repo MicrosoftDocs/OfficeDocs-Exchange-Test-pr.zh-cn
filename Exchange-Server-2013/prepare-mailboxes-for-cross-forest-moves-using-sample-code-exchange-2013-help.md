@@ -27,7 +27,7 @@ Microsoft Exchange 2013 支持使用 **New-MoveRequest** 和 **New-MigrationBatc
 
   - 请从 Microsoft 下载中心中的[准备联机邮箱移动](https://go.microsoft.com/fwlink/p/?linkid=177882) 页下载示例代码。
 
-  - 若要运行示例代码，需要 ILM 2007 Feature Pack 1 Service Pack 1 (SP1)。若要下载该 Feature Pack，请参阅 Microsoft 知识库文章 977791，[Identity Lifecycle Manager 2007 Feature Pack 1 中提供了 Service Pack 1（内部版本 3.3.1139.2）](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=977791)。
+  - 若要运行示例代码，需要 ILM 2007 Feature Pack 1 Service Pack 1 (SP1)。若要下载该 Feature Pack，请参阅 Microsoft 知识库文章 977791，[Identity Lifecycle Manager 2007 Feature Pack 1 中提供了 Service Pack 1（内部版本 3.3.1139.2）](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=977791)。
 
   - 还需要注意以下各项：
     

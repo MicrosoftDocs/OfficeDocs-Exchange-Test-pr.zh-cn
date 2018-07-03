@@ -29,7 +29,7 @@ _**上一次修改主题：** 2016-12-15_
 
 若要继续安装程序，需要暂时删除\&quot;ExecutionPolicy\&quot;GPO 中\&quot;MachinePolicy\&quot;或\&quot;UserPolicy\&quot;的所有定义。
 
-有关如何在**ExecutionPolicy** GPO 中删除**MachinePolicy**或**UserPolicy**的任何定义的信息，请参阅[知识库文章 KB981474](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=981474)。
+有关如何在**ExecutionPolicy** GPO 中删除**MachinePolicy**或**UserPolicy**的任何定义的信息，请参阅[知识库文章 KB981474](https://go.microsoft.com/fwlink/?linkid=3052&kbid=981474)。
 
 <table>
 <thead>

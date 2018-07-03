@@ -233,11 +233,11 @@ _**上一次修改主题：** 2017-03-20_
 
 3.  [Microsoft Unified Communications Managed API 4.0 Core Runtime（64 位）](https://go.microsoft.com/fwlink/p/?linkid=258269)
 
-4.  [Microsoft 知识库文章 KB974405 (Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=974405)
+4.  [Microsoft 知识库文章 KB974405 (Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=974405)
 
-5.  [知识库文章 KB2619234（启用 HTTP 上的 RPC 使用的关联 Cookie/GUID，以同时用于 Windows 7 和 Windows Server 2008 R2 的 RPC 层）](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2619234)
+5.  [知识库文章 KB2619234（启用 HTTP 上的 RPC 使用的关联 Cookie/GUID，以同时用于 Windows 7 和 Windows Server 2008 R2 的 RPC 层）](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2619234)
 
-6.  [知识库文章 KB2533623（不安全的库加载可能允许远程代码执行）](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2533623)
+6.  [知识库文章 KB2533623（不安全的库加载可能允许远程代码执行）](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2533623)
     
     <table>
     <thead>
@@ -309,7 +309,7 @@ _**上一次修改主题：** 2017-03-20_
 
 2.  [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234)
 
-3.  [知识库文章 KB974405 (Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=974405)
+3.  [知识库文章 KB974405 (Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=974405)
 
 ## Windows 8 和 Windows 8.1 先决条件（仅管理工具）
 

@@ -37,7 +37,7 @@ Exchange 2013 安装程序要求更新 Windows，以便 Outlook 无处不在（�
 </table>
 
 
-Microsoft 知识库文章 KB2619234 [有一个修补程序可用于 RPC over HTTP 使用的 Cookie/GUID，以同时用于 Windows 7 和 Windows Server 2008 R2 中的 RPC 层](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=2619234)
+Microsoft 知识库文章 KB2619234 [有一个修补程序可用于 RPC over HTTP 使用的 Cookie/GUID，以同时用于 Windows 7 和 Windows Server 2008 R2 中的 RPC 层](https://go.microsoft.com/fwlink/?linkid=3052&kbid=2619234)
 
 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：[Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612)、 [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542) 或 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351)。
 
