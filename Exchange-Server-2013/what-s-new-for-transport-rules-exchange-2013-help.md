@@ -35,40 +35,29 @@ Exchange 2013 中的数据丢失预防 (DLP) 功能可以帮助组织减少敏�
 
 ## 新谓词
 
-  -  
-    **AttachmentExtensionMatchesWords**   用于检测包含具有特定扩展名的附件的邮件。
+  -  **AttachmentExtensionMatchesWords**   用于检测包含具有特定扩展名的附件的邮件。
 
-  -  
-    **AttachmentHasExecutableContent**   用于检测包含具有可执行文件内容的附件的邮件。
+  -  **AttachmentHasExecutableContent**   用于检测包含具有可执行文件内容的附件的邮件。
 
-  -  
-    **HasSenderOverride** 用于检测发件人在其中选择替代 DLP 策略限制的邮件。
+  -  **HasSenderOverride** 用于检测发件人在其中选择替代 DLP 策略限制的邮件。
 
-  -  
-    **MessageContainsDataClassifications**   用于检测邮件正文和任何附件中的敏感信息。有关可用数据分类的完整列表，请参阅[使用 Exchange 中的敏感信息类型查找什么](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md)。
+  -  **MessageContainsDataClassifications**   用于检测邮件正文和任何附件中的敏感信息。有关可用数据分类的完整列表，请参阅[使用 Exchange 中的敏感信息类型查找什么](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md)。
 
-  -  
-    **MessageSizeOver**   用于检测整体大小大于或等于指定限制的邮件。
+  -  **MessageSizeOver**   用于检测整体大小大于或等于指定限制的邮件。
 
-  -  
-    **SenderIPRanges**   用于检测从一组特定 IP 地址范围发送的邮件。
+  -  **SenderIPRanges**   用于检测从一组特定 IP 地址范围发送的邮件。
 
 ## 新操作
 
-  -  
-    **GenerateIncidentReport**   生成发送给指定 SMTP 地址的事件报告。该操作还有一个名为 *IncidentReportOriginalMail* 的参数，该参数接受以下两个值之一：IncludeOriginalMail 或 DoNotIncludeOriginalMail。
+  -  **GenerateIncidentReport**   生成发送给指定 SMTP 地址的事件报告。该操作还有一个名为 *IncidentReportOriginalMail* 的参数，该参数接受以下两个值之一：IncludeOriginalMail 或 DoNotIncludeOriginalMail。
 
-  -  
-    **NotifySender**   控制如何通知违反 DLP 策略的邮件的发件人。可以选择仅通知发件人并正常路由邮件，也可以选择拒绝邮件并通知发件人。
+  -  **NotifySender**   控制如何通知违反 DLP 策略的邮件的发件人。可以选择仅通知发件人并正常路由邮件，也可以选择拒绝邮件并通知发件人。
 
-  -  
-    **StopRuleProcessing**   停止对邮件处理所有后续规则。
+  -  **StopRuleProcessing**   停止对邮件处理所有后续规则。
 
-  -  
-    **ReportSeverityLevel**   在事件报告中设置指定严重性级别。此操作的值为：Informational、Low、Medium、High 和 Off。
+  -  **ReportSeverityLevel**   在事件报告中设置指定严重性级别。此操作的值为：Informational、Low、Medium、High 和 Off。
 
-  -  
-    **RouteMessageOutboundRequireTLS**   在组织外部路由此邮件时需要传输层安全性 (TLS) 加密。如果不支持 TLS 加密，则会拒绝邮件，不进行传递。
+  -  **RouteMessageOutboundRequireTLS**   在组织外部路由此邮件时需要传输层安全性 (TLS) 加密。如果不支持 TLS 加密，则会拒绝邮件，不进行传递。
 
 ## 传输规则中的其他更改
 

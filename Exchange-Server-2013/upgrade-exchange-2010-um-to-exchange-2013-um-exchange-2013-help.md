@@ -534,14 +534,11 @@ Exchange 2013 客户端访问服务器是针对统一消息的任何入站呼叫
 
 升级到 Exchange 2013 UM 过程的最后一步是将 VoIP 网关、IP PBX 或启用 SIP 的 PBX 配置为向 Exchange 2013 客户端访问服务器发送传入呼叫（包括呼叫者想给用户留下语音邮件、启用 UM 的使用者呼入 Outlook Voice Access，以及呼叫者拨号到 UM 自动助理等呼叫形式）。所有这些呼叫最初是由 VoIP 网关、IP PBX 或启用 SIP 的 PBX 收到，并转发给 Exchange 2013 组织中的 Exchange 2013 客户端访问服务器。有关详细信息，请参阅下列资源：
 
-  -  
-    [UM 服务](um-services-exchange-2013-help.md)
+  -  [UM 服务](um-services-exchange-2013-help.md)
 
-  -  
-    [支持的 VoIP 网关、IP PBX 和 PBX 的配置说明](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+  -  [支持的 VoIP 网关、IP PBX 和 PBX 的配置说明](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
 
-  -  
-    [Exchange 2013 电话顾问](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
+  -  [Exchange 2013 电话顾问](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
 
 ## 步骤 15：禁用 Exchange 2010 统一消息服务器上的呼叫应答功能
 

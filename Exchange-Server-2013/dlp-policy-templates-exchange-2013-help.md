@@ -45,24 +45,19 @@ _**上一次修改主题：** 2015-01-14_
 
 您可创建除 Exchange 之外的符合 Microsoft 提供的特定 XML 架构定义的 DLP 策略模板文件，然后将文件导入系统，从而可从中创建 DLP 策略。通过创建自己的模板文件，可定义 Microsoft 尚未提供的自己的 DLP 策略的模型。这与通过使用 Exchange 管理中心创建 DLP 策略不同，后者通常在策略模板可用后发生。如果创建独立于 Exchange 的策略模板，要将其导入方可使用它来扫描邮件。您也可创建除了 Microsoft 在 Exchange 中定义的敏感信息外，创建自己的敏感信息定义。存在一个 DLP 策略模板文件和分类规则包的单独 XML 架构定义。要开始了解这些信息，请参阅下列信息：
 
-  -  
-    [定义您自己的 DLP 模板和信息类型](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)
+  -  [定义您自己的 DLP 模板和信息类型](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)
 
-  -  
-    [从文件导入自定义 DLP 策略模板](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)
+  -  [从文件导入自定义 DLP 策略模板](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)
 
 ## 包括采用现有传输规则的 DLP 功能
 
 您可将 DLP 检测功能与传统传输规则合并，无需创建新的 DLP 策略。如果在之前版本的 Exchange 中创建了复杂的规则组，并且您希望复制它们或者在 Exchange 2013 中添加敏感信息检测，则可使用 Exchange 管理中心中的传输规则编辑器或 Exchange 命令行管理程序来合并这两个功能。要开始了解这些信息，请参阅下列信息：
 
-  -  
-    [邮件流或传输规则](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md) (Exchange Server 2013)
+  -  [邮件流或传输规则](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md) (Exchange Server 2013)
 
-  -  
-    [Exchange Online 中的邮件流规则（传输规则）](https://technet.microsoft.com/zh-cn/library/jj919238\(v=exchg.150\)) (Exchange Online)
+  -  [Exchange Online 中的邮件流规则（传输规则）](https://technet.microsoft.com/zh-cn/library/jj919238\(v=exchg.150\)) (Exchange Online)
 
-  -  
-    [管理邮件流规则](manage-mail-flow-rules-exchange-2013-help.md)
+  -  [管理邮件流规则](manage-mail-flow-rules-exchange-2013-help.md)
     
     [策略和合规性 cmdlet](https://technet.microsoft.com/zh-cn/library/dd298082\(v=exchg.150\))
 

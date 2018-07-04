@@ -72,11 +72,9 @@ Exchange 管理员可以通过转到“Exchange 管理中心”\>“邮件流”
 
 在此处列出的条件的 Exchange 命令行管理程序 名称为需要 `TransportRule` cmdlet 的参数。
 
-  -  
-    要了解有关该 cmdlet 的详细信息，可参阅 [New-TransportRule](https://technet.microsoft.com/zh-cn/library/bb125138\(v=exchg.150\))。
+  -  要了解有关该 cmdlet 的详细信息，可参阅 [New-TransportRule](https://technet.microsoft.com/zh-cn/library/bb125138\(v=exchg.150\))。
 
-  -  
-    要了解这些条件的属性类型的详细信息，可参阅[Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)。
+  -  要了解这些条件的属性类型的详细信息，可参阅[Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)。
 
 传输规则只检查受支持类型文件的内容。如果传输规则代理遇到的附件不在受支持的文件类型的列表内，则将触发 `AttachmentIsUnsupported` 条件。下一节列出了受支持的文件类型。任何未列出的文件将触发 `AttachmentIsUnsupported` 条件。
 
@@ -213,11 +211,9 @@ Exchange 管理员可以通过转到“Exchange 管理中心”\>“邮件流”
 
 在此处列出的条件的 Exchange 命令行管理程序 名称为需要 `TransportRule` cmdlet 的参数。
 
-  -  
-    要了解有关该 cmdlet 的详细信息，可参阅 [New-TransportRule](https://technet.microsoft.com/zh-cn/library/bb125138\(v=exchg.150\))。
+  -  要了解有关该 cmdlet 的详细信息，可参阅 [New-TransportRule](https://technet.microsoft.com/zh-cn/library/bb125138\(v=exchg.150\))。
 
-  -  
-    要了解这些条件的属性类型的详细信息，可参阅[Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)。
+  -  要了解这些条件的属性类型的详细信息，可参阅[Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)。
 
 ## 传输规则检查支持的可执行文件类型
 
