@@ -27,18 +27,8 @@ _**上一次修改主题：** 2012-10-16_
 
   - 要使用 *RecipientFilter* 参数创建一个自定义筛选器，必须为该筛选器指定一个字符串。 命令行管理程序将 OPath 用于筛选语法。 OPath 是一种为查询对象数据源而设计的查询语言。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果使用收件人筛选器创建或编辑电子邮件地址策略，则不能使用 Exchange 管理中心 (EAC) 编辑电子邮件地址策略。必须使用命令行管理程序。 有关语法和参数的详细信息，请参阅 <a href="https://technet.microsoft.com/zh-cn/library/bb124517(v=exchg.150)">Set-EmailAddressPolicy</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 如果使用收件人筛选器创建或编辑电子邮件地址策略，则不能使用 Exchange 管理中心 (EAC) 编辑电子邮件地址策略。必须使用命令行管理程序。 有关语法和参数的详细信息，请参阅 <a href="https://technet.microsoft.com/zh-cn/library/bb124517(v=exchg.150)">Set-EmailAddressPolicy</a>。
 
 
   - 您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅[电子邮件地址和通讯簿](email-addresses-and-address-books-exchange-2013-help.md)主题中的“电子邮件地址策略”条目。
@@ -47,18 +37,8 @@ _**上一次修改主题：** 2012-10-16_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!warning]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 使用命令行管理程序通过收件人筛选器创建电子邮件地址策略

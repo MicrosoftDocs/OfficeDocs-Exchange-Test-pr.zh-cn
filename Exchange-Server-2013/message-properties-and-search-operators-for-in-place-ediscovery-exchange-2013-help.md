@@ -173,36 +173,16 @@ _**上一次修改主题：** 2016-12-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1   对于收件人属性的值，你可以使用 SMTP 地址、显示名称或别名来指定用户。例如，你可以使用 annb@contoso.com、annb 或“Ann Beebe”指定用户 Ann Beebe。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 1   对于收件人属性的值，你可以使用 SMTP 地址、显示名称或别名来指定用户。例如，你可以使用 annb@contoso.com、annb 或“Ann Beebe”指定用户 Ann Beebe。
 
 
 ## 支持的搜索运算符
 
 使用布尔搜索运算符（如 **AND**、**OR**）可以在搜索查询中包括或排除特定单词，有助于定义更精确的邮箱搜索。使用其他技术（如属性运算符（如 \>= 或 ..）、问号、括号和通配符）有助于优化电子数据展示搜索查询。下表列出了可用于缩小或扩大搜索结果范围的运算符。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须在搜索查询中使用大写的布尔运算符。例如，请使用 <strong>AND</strong>，而不是 <strong>and</strong>。在搜索查询中使用小写的运算符会返回错误。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 必须在搜索查询中使用大写的布尔运算符。例如，请使用 <strong>AND</strong>，而不是 <strong>and</strong>。在搜索查询中使用小写的运算符会返回错误。
 
 
 
@@ -305,18 +285,8 @@ _**上一次修改主题：** 2016-12-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1   为含有日期或数值的属性使用此运算符。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 1   为含有日期或数值的属性使用此运算符。
 
 
 ## 搜索查询不支持的字符

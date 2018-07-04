@@ -19,18 +19,8 @@ _**上一次修改主题：** 2012-10-04_
 
 *“管理角色分配”*是 Microsoft Exchange Server 2013 中基于角色的访问控制 (RBAC) 权限模型的一部分，是管理角色和角色受理人之间的链接。*“角色受理人”*是一个角色组、角色分配策略、用户或通用安全组 (USG)。角色必须分配到角色受理人才能生效。有关 RBAC 的详细信息，请参阅[了解基于角色的访问控制](understanding-role-based-access-control-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主题重点讲述高级 RBAC 功能。如果要管理基本的 Exchange 2013 权限（例如，使用 Exchange 管理中心 (EAC) 向角色组中添加成员或从角色组中删除成员，创建和修改角色组，或创建和修改角色分配策略），请参阅<a href="permissions-exchange-2013-help.md">权限</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 本主题重点讲述高级 RBAC 功能。如果要管理基本的 Exchange 2013 权限（例如，使用 Exchange 管理中心 (EAC) 向角色组中添加成员或从角色组中删除成员，创建和修改角色组，或创建和修改角色分配策略），请参阅<a href="permissions-exchange-2013-help.md">权限</a>。
 
 
 本主题将讨论针对角色组和角色分配策略的角色分配以及针对用户和 USG 的直接角色分配。本主题不讨论针对用户的角色组或角色分配策略的分配。有关角色组和角色分配策略（建议使用这些策略向用户分配权限）的详细信息，请参阅下列主题：
@@ -89,18 +79,8 @@ _**上一次修改主题：** 2012-10-04_
 
 委派角色分配不会提供对管理功能的访问权限。委派角色分配使角色受理人能够将指定角色分配到其他角色受理人。如果角色受理人是一个角色组，则该角色组的任何成员均可将角色分配到另一个角色受理人。默认情况下，只有“组织管理”角色组能够将角色分配到其他角色受理人。默认情况下，只有安装了 Exchange 2013 的用户是“组织管理”角色组的成员。但是，您可以根据需要将其他用户添加到此角色组，或创建其他角色组，并对这些组分配委派角色分配。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>委派角色分配使角色受理人能够将管理角色委派到其他角色受理人。这使得用户不能委派角色组。有关角色组委派的详细信息，请参阅<a href="understanding-management-role-groups-exchange-2013-help.md">了解管理角色组</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 委派角色分配使角色受理人能够将管理角色委派到其他角色受理人。这使得用户不能委派角色组。有关角色组委派的详细信息，请参阅<a href="understanding-management-role-groups-exchange-2013-help.md">了解管理角色组</a>。
 
 
 如果希望用户能够管理某个功能，并对其他用户分配提供使用该功能权限的角色，则进行如下分配：

@@ -23,18 +23,8 @@ _**上一次修改主题：** 2015-03-09_
 
 与包含一组已定义成员的常规通讯组不同，每次向动态通讯组发送邮件时，都将根据所定义的筛选器和条件来计算该组的成员列表。电子邮件发送到动态通讯组时，将被传递到组织中所有与为该动态通讯组定义的条件匹配的收件人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>动态通讯组包含 Active Directory 中属性值与组筛选器匹配的所有收件人。如果修改收件人属性以与筛选器匹配，该收件人可能会无意中成为组成员而开始接收发送给组的邮件。定义良好、一致的帐户设置过程可以降低发生此问题的机率。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 动态通讯组包含 Active Directory 中属性值与组筛选器匹配的所有收件人。如果修改收件人属性以与筛选器匹配，该收件人可能会无意中成为组成员而开始接收发送给组的邮件。定义良好、一致的帐户设置过程可以降低发生此问题的机率。
 
 
 ## 在开始之前，您需要知道什么？
@@ -45,18 +35,8 @@ _**上一次修改主题：** 2015-03-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -71,18 +51,8 @@ _**上一次修改主题：** 2015-03-09_
     
       - \* **显示名称**   使用此框键入显示名称。此名称将出现在共享的通讯簿中、\&quot;收件人:\&quot;行中（电子邮件发送到该组时），以及 EAC 的\&quot;组\&quot;列表中。显示名称是必需的，并且应当是用户友好的，以便用户可以识别它。它在林中必须也是唯一的。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>组命名策略不会应用于动态通讯组。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 组命名策略不会应用于动态通讯组。
     
       - \* **别名**   使用此框可以键入组的别名。别名不能超过 64 个字符，并且在林中必须是唯一的。当用户在电子邮件的\&quot;收件人:\&quot;行中键入别名时，它将解析为该组的显示名称。
     
@@ -152,52 +122,22 @@ _**上一次修改主题：** 2015-03-09_
     </tbody>
     </table>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>你为选定属性输入的值必须与收件人相应属性中显示的值完全相符。例如，如果为&amp;quot;<strong>省/市/自治区</strong>&amp;quot;输入&amp;quot;<strong>Washington</strong>&amp;quot;，但收件人的属性值为&amp;quot;<strong>WA</strong>&amp;quot;，则不会满足条件。另外，你指定的基于文本的值不区分大小写。例如，如果你为&amp;quot;<strong>公司</strong>&amp;quot;属性指定了 <strong>Contoso</strong>，邮件将发送给该值为 <strong>contoso</strong> 的收件人。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 你为选定属性输入的值必须与收件人相应属性中显示的值完全相符。例如，如果为&amp;quot;<strong>省/市/自治区</strong>&amp;quot;输入&amp;quot;<strong>Washington</strong>&amp;quot;，但收件人的属性值为&amp;quot;<strong>WA</strong>&amp;quot;，则不会满足条件。另外，你指定的基于文本的值不区分大小写。例如，如果你为&amp;quot;<strong>公司</strong>&amp;quot;属性指定了 <strong>Contoso</strong>，邮件将发送给该值为 <strong>contoso</strong> 的收件人。
 
 
 6.  在\&quot;**指定词语或短语**\&quot;窗口中，在文本框中键入值。单击\&quot;**添加**\&quot;，然后单击\&quot;**确定**\&quot;。
 
 7.  要添加另一条规则来定义成员身份的条件，请在创建的前一条规则下单击\&quot;添加规则\&quot;。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果要添加多条规则来定义成员身份，收件人必须满足每条规则的条件才能收到发送给组的邮件。换言之，每条规则都以布尔操作符 <strong>AND</strong> 相连。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 如果要添加多条规则来定义成员身份，收件人必须满足每条规则的条件才能收到发送给组的邮件。换言之，每条规则都以布尔操作符 <strong>AND</strong> 相连。
 
 
 8.  完成后，单击\&quot;保存\&quot;创建动态通讯组。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果希望为除了 EAC 中的可用属性以外的属性指定规则，必须使用 Shell 创建动态通讯组。请注意，具有自定义收件人筛选器的动态通讯组的筛选器和条件设置只能通过使用 Shell 进行管理。有关如何使用自定义查询创建动态通讯组的示例，请参阅下面一节的&amp;quot;使用 Shell 创建动态通讯组&amp;quot;。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果希望为除了 EAC 中的可用属性以外的属性指定规则，必须使用 Shell 创建动态通讯组。请注意，具有自定义收件人筛选器的动态通讯组的筛选器和条件设置只能通过使用 Shell 进行管理。有关如何使用自定义查询创建动态通讯组的示例，请参阅下面一节的&amp;quot;使用 Shell 创建动态通讯组&amp;quot;。
 
 
 ## 使用命令行管理程序创建动态通讯组
@@ -288,18 +228,8 @@ _**上一次修改主题：** 2015-03-09_
     
     若要从列表中删除个人或组，请从列表中选择相应的个人或组，然后单击\&quot;删除\&quot;![删除图标](images/JJ657492.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "删除图标")。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您已将此组配置为只允许组织内部的发件人向此组发送邮件，则从邮件联系人发送的电子邮件将被拒绝，即使这些联系人已添加到此列表中也是如此。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 如果您已将此组配置为只允许组织内部的发件人向此组发送邮件，则从邮件联系人发送的电子邮件将被拒绝，即使这些联系人已添加到此列表中也是如此。
 
 
 ## 邮件审批
@@ -328,49 +258,19 @@ _**上一次修改主题：** 2015-03-09_
     
       - \&quot;SMTP\&quot;   这是默认的地址类型。单击此按钮，然后在\&quot;\* 电子邮件地址\&quot;框中键入新的 SMTP 地址。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>若要让新地址称为该组的主 SMTP 地址，请选中&amp;quot;将其作为回复地址&amp;quot;复选框。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 若要让新地址称为该组的主 SMTP 地址，请选中&amp;quot;将其作为回复地址&amp;quot;复选框。
     
       - \&quot;自定义地址类型\&quot;   单击此按钮，然后在\&quot;\* 电子邮件地址\&quot;框中键入一个支持的非 SMTP 电子邮件地址。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>除 X.400 地址以外，Exchange 不验证自定义地址的格式是否正确。您必须确保所指定的自定义地址符合该地址类型的格式要求。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 除 X.400 地址以外，Exchange 不验证自定义地址的格式是否正确。您必须确保所指定的自定义地址符合该地址类型的格式要求。
 
 
   - **编辑**   要更改与组关联的电子邮件地址，请从列表中选择该地址，然后单击\&quot;编辑\&quot;![编辑图标](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "编辑图标")。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若要让现有地址成为该组的主 SMTP 地址，请选中&amp;quot;将其作为回复地址&amp;quot;复选框。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 若要让现有地址成为该组的主 SMTP 地址，请选中&amp;quot;将其作为回复地址&amp;quot;复选框。
 
 
   - **移除**   要删除与组关联的电子邮件地址，请从列表中选择该地址，然后单击\&quot;移除\&quot;![删除图标](images/JJ657492.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "删除图标")。
@@ -381,18 +281,8 @@ _**上一次修改主题：** 2015-03-09_
 
 使用此部分可以添加邮件提示，以便在用户向该组发送邮件时提醒用户存在潜在的问题。邮件提示是在将该组添加到新电子邮件的\&quot;收件人\&quot;、\&quot;抄送\&quot;或\&quot;密件抄送\&quot;行时，信息栏中显示的文本。例如，对于较大的组，可添加邮件提示来提醒潜在的发送人：他们的邮件将会发送给很多人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>邮件提示可包含 HTML 标记，但不允许包含脚本。自定义邮件提示的长度不能超过 175 个显示的字符。此字符限制不计入 HTML 标记。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 邮件提示可包含 HTML 标记，但不允许包含脚本。自定义邮件提示的长度不能超过 175 个显示的字符。此字符限制不计入 HTML 标记。
 
 
 ## 组代理

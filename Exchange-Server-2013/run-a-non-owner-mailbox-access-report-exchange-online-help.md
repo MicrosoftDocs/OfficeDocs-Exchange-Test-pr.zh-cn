@@ -29,18 +29,8 @@ Exchange 管理中心 (EAC) 中的非所有者邮箱访问报告将会列出由�
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 启用邮箱审核日志记录
@@ -81,18 +71,8 @@ Exchange 管理中心 (EAC) 中的非所有者邮箱访问报告将会列出由�
 
 3.  要查看特定邮箱的非所有者访问，请从邮箱列表中选择邮箱。在详细信息窗格中查看搜索结果。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要缩小搜索结果的范围吗？选择开始日期、结束日期或同时选择这两个日期，并选择要搜索的特定邮箱。单击“搜索”再次运行此报告。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 要缩小搜索结果的范围吗？选择开始日期、结束日期或同时选择这两个日期，并选择要搜索的特定邮箱。单击“搜索”再次运行此报告。
 
 
 ## 搜索特定类型的非所有者访问
@@ -129,18 +109,8 @@ Exchange 管理中心 (EAC) 中的非所有者邮箱访问报告将会列出由�
 
 下表列出了并非由所有者执行的操作，这些操作可通过邮箱审核日志进行记录。在表中，**是**表示可为该登录类型记录操作，**否**表示操作无法记录。星号 (**\***) 表示为邮箱启用邮箱审核日志记录时，将默认记录操作。如果想要跟踪默认情况下不会记录的操作，则必须使用 PowerShell 启用对这些操作的记录。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>分配了用户邮箱“完全访问”权限的管理员被视为委派用户。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 分配了用户邮箱“完全访问”权限的管理员被视为委派用户。
 
 
 
@@ -230,18 +200,8 @@ Exchange 管理中心 (EAC) 中的非所有者邮箱访问报告将会列出由�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>*  如果为邮箱启用了审核功能，则默认为已审核。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> *  如果为邮箱启用了审核功能，则默认为已审核。
 
 
 返回顶部

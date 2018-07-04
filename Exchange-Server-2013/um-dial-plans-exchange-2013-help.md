@@ -51,18 +51,8 @@ UM 拨号计划镜像了电话服务拨号计划。电话拨号计划是在 PBX 
 
 统一信息要求创建至少一个 UM 拨号计划。无论创建一个还是多个拨号计划，组织中的所有 Exchange 服务器将会应答传入呼叫。还必须有单个或多个与拨号计划关联的 UM IP 网关。在内部部署和混合部署中，在安装 Exchange 服务器和关联 UM IP 网关后，所有 Exchange 服务器将会应答所有拨号计划的传入呼叫。然而，对于内部部署和混合部署，当集成 Exchange 和 Lync Server 时，必须创建 SIP URI 拨号计划。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每次创建 UM 拨号计划时，也会创建一个默认 UM 邮箱策略。UM 邮箱策略将命名为 &lt;<em>Dial Plan Name</em>&gt; 默认策略。可以删除或以不同的方式配置此 UM 邮箱策略。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 每次创建 UM 拨号计划时，也会创建一个默认 UM 邮箱策略。UM 邮箱策略将命名为 &lt;<em>Dial Plan Name</em>&gt; 默认策略。可以删除或以不同的方式配置此 UM 邮箱策略。
 
 
 如果在创建第一个 UM IP 网关时指定了 UM 拨号计划，则还会创建默认 UM 智能寻线。创建这些组件可让 Exchange 服务器接收来自 VoIP 网关、IP PBX 或 SBC 的呼叫，然后为与 UM 拨号计划关联的用户处理那些传入呼叫。在内部部署或混合部署中，在有呼叫进入 VoIP 网关、IP PBX 或 SBC 时，它会将此呼叫转发到客户端访问服务器。然后客户端服务器会将呼叫转发至邮箱服务器，并且邮箱服务器将尝试将用户的分机号码与关联的 UM 拨号计划匹配。

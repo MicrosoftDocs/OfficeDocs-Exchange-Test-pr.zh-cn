@@ -43,18 +43,8 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 使用 Forefront Identity Manager 2010 R2 SP1 在跨林拓扑中部署 Exchange 2013
@@ -65,18 +55,8 @@ _**上一次修改主题：** 2016-12-09_
     
       - [使用安装向导安装 Exchange 2013](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md)
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>本主题假设您尚无现有的 Exchange 2007 或 Exchange 2010 拓扑。如果存在现有的 Exchange 拓扑并且要进行升级，请参阅<a href="upgrade-from-exchange-2010-to-exchange-2013-exchange-2013-help.md">从 Exchange 2010 升级至 Exchange 2013</a> 或<a href="upgrade-from-exchange-2007-to-exchange-2013-exchange-2013-help.md">从 Exchange 2007 升级到 Exchange 2013</a>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 本主题假设您尚无现有的 Exchange 2007 或 Exchange 2010 拓扑。如果存在现有的 Exchange 拓扑并且要进行升级，请参阅<a href="upgrade-from-exchange-2010-to-exchange-2013-exchange-2013-help.md">从 Exchange 2010 升级至 Exchange 2013</a> 或<a href="upgrade-from-exchange-2007-to-exchange-2013-exchange-2013-help.md">从 Exchange 2007 升级到 Exchange 2013</a>。
 
 
 2.  在每个林中，使用 Active Directory 用户和计算机创建一个容器，FIM 2010 R2 SP1 将在其中为另一个林中的各邮箱创建联系人。建议将此容器命名为 **FromFIM**。若要创建该容器，请选择要在其中创建容器的域，右键单击该域，选择“新建”\>“组织单位”。在“新建对象 - 组织单位”中，键入 **FromFIM**，再单击“确定”。
@@ -89,34 +69,14 @@ _**上一次修改主题：** 2016-12-09_
     
       - [Forefront Identity Manager 2010 R2 文档路线图](https://go.microsoft.com/fwlink/p/?linkid=279871)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>虽然这些资源讨论的是 Exchange 2010，但 FIM 2010 R2 SP1 也同样支持 Exchange 2013。确保为 Exchange 2013 在 FIM 2010 R2 SP1 中配置“扩展”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 虽然这些资源讨论的是 Exchange 2010，但 FIM 2010 R2 SP1 也同样支持 Exchange 2013。确保为 Exchange 2013 在 FIM 2010 R2 SP1 中配置“扩展”。
     
     1.  在“配置扩展”页面上，在“配置分区显示名称”下，在“配置”旁边，选择“Exchange 2013”。您会看到“Exchange 2013 RPS URI”字段。输入 Exchange 2013 客户端访问服务器的 URI 以确保远程 Powershell 连接正常。“Exchange 2013 RPS URI”应为以下格式：http://CAS\_Server\_FQDN/Powershell。单击“确定”。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>确保用于连接到 Exchange 2013 林的管理员凭据还可向该林进行远程 PowerShell 连接。<br />
-        下图说明了如何为 Exchange 2013 选择配置。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 确保用于连接到 Exchange 2013 林的管理员凭据还可向该林进行远程 PowerShell 连接。
+        > 下图说明了如何为 Exchange 2013 选择配置。
         
         **为 Exchange 2013 配置 GalSync 管理代理**
         

@@ -33,18 +33,8 @@ _**上一次修改主题：** 2015-03-09_
 
 有关管理作用域筛选器的详细信息，请参阅[了解管理角色作用域筛选器](understanding-management-role-scope-filters-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在更改任何管理角色组件（包括独占作用域）时，都应该考虑 Active Directory 复制时间。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 在更改任何管理角色组件（包括独占作用域）时，都应该考虑 Active Directory 复制时间。
 
 
 如果对象包含在多个独占作用域中，则将对象分配给任何一个独占作用域都能提供对这些对象的访问权限。有关详细信息，请参阅本主题后面的独占作用域和常规作用域交互。

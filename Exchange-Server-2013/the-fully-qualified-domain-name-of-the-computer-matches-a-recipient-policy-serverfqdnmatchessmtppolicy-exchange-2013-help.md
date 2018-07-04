@@ -39,18 +39,8 @@ Microsoft Exchange 安装程序要求 Exchange 组织中服务器的 FQDN 不能
 
 4.  单击**确定**以关闭**系统属性**对话框。系统将提示您重新启动计算机以应用所做的更改。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要重命名的计算机是域控制器，请参阅&quot;重命名域控制器&quot;(<a href="https://go.microsoft.com/fwlink/?linkid=66828">https://go.microsoft.com/fwlink/?LinkId=66828</a>)。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果要重命名的计算机是域控制器，请参阅&quot;重命名域控制器&quot;(<a href="https://go.microsoft.com/fwlink/?linkid=66828">https://go.microsoft.com/fwlink/?LinkId=66828</a>)。
 
 
 修改收件人策略的 SMTP 地址

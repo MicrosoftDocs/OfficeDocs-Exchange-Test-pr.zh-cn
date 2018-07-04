@@ -122,18 +122,8 @@ _**上一次修改主题：** 2016-12-09_
 
   - `Bcc`
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在邮件头的可选 <code>Bcc</code> 邮件头字段中找到的任何电子邮件地址都将得到正确处理。在 <code>Bcc</code> 收件人提升为不可见的邮件信封收件人后，将从邮件头中删除，以保护其身份。如果邮件仅包含 <code>Bcc</code> 收件人，则<strong>Undisclosed Recipients</strong>的值将添加到邮件头中的 <code>To</code> 字段。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 在邮件头的可选 <code>Bcc</code> 邮件头字段中找到的任何电子邮件地址都将得到正确处理。在 <code>Bcc</code> 收件人提升为不可见的邮件信封收件人后，将从邮件头中删除，以保护其身份。如果邮件仅包含 <code>Bcc</code> 收件人，则<strong>Undisclosed Recipients</strong>的值将添加到邮件头中的 <code>To</code> 字段。
 
 
 作为邮件提交过程的一部分，分拣目录会将其自身的 `Received` 头字段添加到邮件中。应用以下格式的 `Received` 头字段：
@@ -170,38 +160,18 @@ _**上一次修改主题：** 2016-12-09_
     
         X-Sender: <bob@fabrikam.com> BODY=7bit RET=HDRS ENVID=12345ABCD auth=<someAuth>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>这些参数是通常由发送服务器生成的邮件信封值。在导出的邮件文件中可以看到类似的参数。<br />
-    <code>RET</code> 指定无法传递邮件时，是将整个邮件还是只将邮件头返回给发件人。<code>RET</code> 的值可以是 <code>HDRS</code> 或 <code>FULL</code>。<code> ENVID</code> 是邮件信封标识符。<code>BODY</code> 指定邮件的文本编码。<code>auth</code> 指定邮件服务器的身份验证机制（如 RFC 2554 中所述）。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 这些参数是通常由发送服务器生成的邮件信封值。在导出的邮件文件中可以看到类似的参数。<br />
+    > <code>RET</code> 指定无法传递邮件时，是将整个邮件还是只将邮件头返回给发件人。<code>RET</code> 的值可以是 <code>HDRS</code> 或 <code>FULL</code>。<code> ENVID</code> 是邮件信封标识符。<code>BODY</code> 指定邮件的文本编码。<code>auth</code> 指定邮件服务器的身份验证机制（如 RFC 2554 中所述）。
 
 
   - **X-Receiver**   此 X-Header 替换典型 SMTP 邮件中的 `To` 邮件头字段要求。必须至少存在一个包含一个电子邮件地址的 `X-Receiver` 字段。允许多个收件人具有多个 `X-Receiver` 字段。尽管收件人的电子邮件客户端会将 `To` 邮件头字段（如果存在该字段）的值显示为邮件的收件人，但是重播目录将忽略 `To` 邮件头字段。其他可选参数可能在 `X-Receiver` 字段中，如下例所示。
     
         X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>这些参数是通常由发送服务器生成的邮件信封值。在导出的邮件文件中可以看到类似的参数。这些参数与发送状态通知 (DSN) 邮件有关（如 RFC 1891 中所述）。<br />
-    <code>NOTIFY</code> 的值可以是 <code>NEVER</code>、<code>DELAY</code> 或 <code>FAILURE</code>。<code>ORcpt</code> 用于保留邮件的原始收件人。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 这些参数是通常由发送服务器生成的邮件信封值。在导出的邮件文件中可以看到类似的参数。这些参数与发送状态通知 (DSN) 邮件有关（如 RFC 1891 中所述）。<br />
+    > <code>NOTIFY</code> 的值可以是 <code>NEVER</code>、<code>DELAY</code> 或 <code>FAILURE</code>。<code>ORcpt</code> 用于保留邮件的原始收件人。
 
 
 对于重播目录中的邮件文件，下表中所述的 X-Header 是可选的：
@@ -269,36 +239,16 @@ _**上一次修改主题：** 2016-12-09_
 
   - **传递失败**   格式正确的邮件文件可与无法成功提交以进行传递的有效发件人一起生成一个未送达报告 (NDR)。格式不正确的内容或分拣目录邮件限制违规也可能导致 NDR。如果在邮件处理期间生成了 NDR，则原始邮件文件将附加到 NDR 邮件中，并且邮件文件将会从分拣目录或重播目录中删除。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>提交到传输管道的格式正确的邮件可能会在以后遇到传递失败的问题，并将随 NDR 返回至发件人。这种失败可能由与分拣目录或重播目录无关的传输问题所引起，例如邮件传递路径沿途的消息服务器故障或路由故障。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 提交到传输管道的格式正确的邮件可能会在以后遇到传递失败的问题，并将随 NDR 返回至发件人。这种失败可能由与分拣目录或重播目录无关的传输问题所引起，例如邮件传递路径沿途的消息服务器故障或路由故障。
 
 
   - **死信** 分类为*死信*的邮件具有严重的问题，这些问题将阻止分拣目录或重播目录提交邮件进行传递。导致产生死信的另一种情况是，邮件格式正确，但是收件人无效，因为发件人无效，所以无法向发件人发送 NDR 邮件。
     
     确定为死信的邮件文件将保留在分拣目录或重播目录，并将从 *\<filename\>*.eml 重命名为 *\<filename\>*.bad。如果 *\<filename\>*.bad 文件已存在，该文件将重命名为 *\<filename\>\<datetime\>*.bad。如果分拣目录或重播目录中存在死信，则将生成事件日志错误，但是相同的死信邮件不会生成重复的事件日志错误。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>将邮件文件复制到分拣目录以供传递之前，请始终在其他位置撰写和保存邮件文件。分拣目录每 5 秒钟轮询一次新邮件。因此，如果您尝试在分拣目录自身中撰写和保存邮件文件，则分拣目录可能会在您完成撰写之前尝试处理邮件文件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 将邮件文件复制到分拣目录以供传递之前，请始终在其他位置撰写和保存邮件文件。分拣目录每 5 秒钟轮询一次新邮件。因此，如果您尝试在分拣目录自身中撰写和保存邮件文件，则分拣目录可能会在您完成撰写之前尝试处理邮件文件。
 
 
 返回顶部

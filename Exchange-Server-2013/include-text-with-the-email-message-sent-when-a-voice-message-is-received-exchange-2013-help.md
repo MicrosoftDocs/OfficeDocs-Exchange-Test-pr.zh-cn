@@ -19,18 +19,8 @@ _**上一次修改主题：** 2012-12-16_
 
 您可以启用统一邮件 (UM) 语音邮件的用户收到一封语音邮件时发送的电子邮件中包含附加文本。默认情况下，有语音邮件附带的文本仅指示用户已收到语音邮件。但是，您可以创建自定义消息 UM 邮箱策略上的**当用户收到语音邮件**框中添加文本。例如，文本可以包括信息系统的安全策略和说明的正确的方式来处理您的组织中的语音邮件。添加的文字后，它将包括与 UM 邮箱策略相关联的已启用 UM 的用户收到语音邮件时，会发送每封电子邮件中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>语音邮件附带的自定义文本限制为 512 个字符，可以包括简单 HTML 文本。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 语音邮件附带的自定义文本限制为 512 个字符，可以包括简单 HTML 文本。
 
 
 有关与 UM 邮箱策略相关的其他管理任务，请参阅 [UM 邮箱策略过程](um-mailbox-policy-procedures-exchange-2013-help.md)。
@@ -47,18 +37,8 @@ _**上一次修改主题：** 2012-12-16_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？

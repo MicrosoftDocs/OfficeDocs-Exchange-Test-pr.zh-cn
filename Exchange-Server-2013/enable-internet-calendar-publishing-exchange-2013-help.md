@@ -29,18 +29,8 @@ Microsoft Exchange Server 2013 组织中的用户可以与非 Exchange 组织中
 
 3.  专门为 Internet 日历发布创建一个共享策略，或者更新默认的共享策略以支持匿名域。任何一种方法都允许 Exchange 组织中的用户邀请具有 Internet 访问权限的其他用户通过访问发布的 URL 来查看有限的日历可用性信息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>完成第 3 步后，用户将需要从 Outlook 发布其日历。用户可将日历发布创建的 URL 提供给其组织外部人员。一个 URL 可使收件人使用 Outlook 或 Outlook Web App 来订阅日历，其他 URL 可使收件人在 Web 浏览器中查看日历。每个用户均可控制其他用户可看到的信息量。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 完成第 3 步后，用户将需要从 Outlook 发布其日历。用户可将日历发布创建的 URL 提供给其组织外部人员。一个 URL 可使收件人使用 Outlook 或 Outlook Web App 来订阅日历，其他 URL 可使收件人在 Web 浏览器中查看日历。每个用户均可控制其他用户可看到的信息量。
 
 
 有关与共享策略相关的其他管理任务，请参阅[共享策略](sharing-policies-exchange-2013-help.md)。
@@ -59,37 +49,17 @@ Microsoft Exchange Server 2013 组织中的用户可以与非 Exchange 组织中
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您该如何做？
 
 ## 步骤 1：使用命令行管理程序配置 Web 代理 URL
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只有组织中已经存在 Web 代理 URL 时，才需要执行这一步骤。否则，请跳到步骤 2。<br />
-不能使用 Exchange 管理中心 (EAC) 配置 Web 代理 URL。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 只有组织中已经存在 Web 代理 URL 时，才需要执行这一步骤。否则，请跳到步骤 2。
+> 不能使用 Exchange 管理中心 (EAC) 配置 Web 代理 URL。
 
 
 本示例在邮箱服务器 MAIL01 上配置 Web 代理 URL。
@@ -106,18 +76,8 @@ Microsoft Exchange Server 2013 组织中的用户可以与非 Exchange 组织中
 
 ## 步骤 2：使用命令行管理程序启用发布虚拟目录
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不能使用 EAC 启用发布虚拟目录。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 不能使用 EAC 启用发布虚拟目录。
 
 
 本示例在客户端访问服务器 CAS01 上启用发布虚拟目录。
@@ -136,18 +96,8 @@ Microsoft Exchange Server 2013 组织中的用户可以与非 Exchange 组织中
 
 ## 步骤 3：专门为 Internet 日历发布创建或配置一个共享策略。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>第 3 步中的下列选项仅适用于 Exchange Online 环境。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 第 3 步中的下列选项仅适用于 Exchange Online 环境。
 
 
 可以选择为 Internet 日历发布创建共享策略（选项 1），或为 Internet 日历发布配置默认共享策略（选项 2）。借助这两个选项，可以选择使用 EAC 或 Shell。

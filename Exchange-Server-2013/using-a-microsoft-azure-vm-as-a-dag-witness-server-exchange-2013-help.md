@@ -33,36 +33,16 @@ _**上一次修改主题：** 2016-12-09_
 
 2014 年 6 月，Microsoft Azure 引入了多站点 VPN 支持，让组织可以将多个数据中心连接到同一个 Azure 虚拟网络。这一更改也使得具有两个数据中心的组织能够将 Microsoft Azure 用作放置 DAG 见证服务器的第三个位置。要了解有关 Azure 中的多站点 VPN 功能的更多信息，请参阅[配置多站点 VPN](http://go.microsoft.com/fwlink/?linkid=522621)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>该配置使用 Azure 虚拟机和多站点 VPN 来部署见证服务器，而无需使用 Azure 云见证。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 该配置使用 Azure 虚拟机和多站点 VPN 来部署见证服务器，而无需使用 Azure 云见证。
 
 
 ## Microsoft Azure 文件服务器见证
 
 下图简要介绍了将 Microsoft Azure 文件服务器 VM 用作 DAG 见证的过程。您需要一个 Azure 虚拟网络、一个将您的数据中心连接到 Azure 虚拟网络的多站点 VPN、一个域控制器以及一个部署在 Azure 虚拟机上的文件服务器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>从技术上讲，使用单个 Azure VM 即可实现这一目的并将文件见证共享放置在域控制器上。但是，这将导致不必要的特权提升。因此，不建议使用此配置。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 从技术上讲，使用单个 Azure VM 即可实现这一目的并将文件见证共享放置在域控制器上。但是，这将导致不必要的特权提升。因此，不建议使用此配置。
 
 
 **Microsoft Azure 上的 DAG 见证服务器**
@@ -81,18 +61,8 @@ _**上一次修改主题：** 2016-12-09_
 
 4.  配置 DAG 见证
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本文中指南的大部分内容都涉及 Microsoft Azure 配置。因此，必要时将使用 Azure 文档的链接。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 本文中指南的大部分内容都涉及 Microsoft Azure 配置。因此，必要时将使用 Azure 文档的链接。
 
 
 ## 先决条件
@@ -125,18 +95,8 @@ _**上一次修改主题：** 2016-12-09_
 
 4.  对于您要添加的其他所有 DNS 服务器，重复步骤 1 到步骤 3。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>不会按照轮循机制方式使用您注册的 DNS 服务器。Azure VM 将使用列出的第一个 DNS 服务器，并且只有在第一个服务器不可用的情况下才使用其他服务器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 不会按照轮循机制方式使用您注册的 DNS 服务器。Azure VM 将使用列出的第一个 DNS 服务器，并且只有在第一个服务器不可用的情况下才使用其他服务器。
 
 
 5.  重复步骤 1 到步骤 3，添加您将要为部署到 Microsoft Azure 上的域控制器使用的 IP 地址。
@@ -169,18 +129,8 @@ _**上一次修改主题：** 2016-12-09_
 
 5.  选中“站点到站点连接”下的“配置站点到站点 VPN”复选框。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>切勿选中“使用 ExpressRoute”，因为这将阻止设置多站点 VPN 所需的必要配置更改。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 切勿选中“使用 ExpressRoute”，因为这将阻止设置多站点 VPN 所需的必要配置更改。
 
 
 6.  在“本地网络”下，选择您配置的两个内部部署网络中的一个。
@@ -215,18 +165,8 @@ _**上一次修改主题：** 2016-12-09_
 
 要在 Azure 端建立 VPN 网关，请按照[在管理门户中配置虚拟网络网关](http://msdn.microsoft.com/zh-cn/library/azure/jj156210.aspx)的[启动虚拟网络网关](http://msdn.microsoft.com/zh-cn/library/azure/jj156210.aspx#bkmk_startgateway)部分中的说明操作。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅执行该文章的“启动虚拟网络网关”部分中的步骤，请勿继续执行后续操作。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 仅执行该文章的“启动虚拟网络网关”部分中的步骤，请勿继续执行后续操作。
 
 
 ## 导出虚拟网络配置设置
@@ -327,18 +267,8 @@ Microsoft Azure 为支持的 VPN 设备提供 VPN 设备配置脚本。单击虚
 
 通过在 Azure 管理门户中查看虚拟网络仪表板，您还可以对连接进行验证。两个站点的“状态”列将显示为“已连接”。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>成功建立连接后，状态更改可能需要几分钟才能在 Azure 管理门户中显示。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 成功建立连接后，状态更改可能需要几分钟才能在 Azure 管理门户中显示。
 
 
 ## 阶段 3：配置虚拟机
@@ -353,18 +283,8 @@ Microsoft Azure 为支持的 VPN 设备提供 VPN 设备配置脚本。单击虚
         
         Get-AzureVM Azure-FSW | Set-AzureStaticVNetIP -IPAddress 10.0.0.11 | Update-AzureVM
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>带有首选 IP 地址的 VM 将尝试使用该地址。但是，如果该地址已被分配给不同的 VM，则带有首选 IP 地址配置的 VM 将不会启动。为了避免这种情况，确保您使用的 IP 地址没有分配给其他 VM。有关详细信息，请参阅<a href="http://msdn.microsoft.com/zh-cn/library/azure/dn630228.aspx">为 VM 配置静态内部 IP 地址</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 带有首选 IP 地址的 VM 将尝试使用该地址。但是，如果该地址已被分配给不同的 VM，则带有首选 IP 地址配置的 VM 将不会启动。为了避免这种情况，确保您使用的 IP 地址没有分配给其他 VM。有关详细信息，请参阅<a href="http://msdn.microsoft.com/zh-cn/library/azure/dn630228.aspx">为 VM 配置静态内部 IP 地址</a>。
 
 
 3.  使用您组织采用的标准设置 Azure 上的域控制器 VM。

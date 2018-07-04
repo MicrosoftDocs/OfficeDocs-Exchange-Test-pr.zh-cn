@@ -21,18 +21,8 @@ Internet 日历发布的禁用方式取决于其启用方式。如果创建了�
 
 如果禁用 Internet 日历发布，则被配置为使用共享策略的用户将无法与策略中指定的\&quot;匿名\&quot;Internet 域共享日历信息。但是，在配置为使用专用于 Internet 日历发布的共享策略的所有用户将策略设置从其邮箱中删除之前，无法删除或禁用该共享策略。有关更改用户的共享策略设置的详细信息，请参阅[管理用户邮箱](manage-user-mailboxes-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果禁用或删除共享策略，则被指定使用该策略的用户将继续共享信息，直到共享策略助理开始运行。要指定共享策略助理的运行频率，请使用带有 <em>SharingPolicySchedule</em> 参数的 <a href="https://technet.microsoft.com/zh-cn/library/aa998651(v=exchg.150)">Set-MailboxServer</a> cmdlet。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果禁用或删除共享策略，则被指定使用该策略的用户将继续共享信息，直到共享策略助理开始运行。要指定共享策略助理的运行频率，请使用带有 <em>SharingPolicySchedule</em> 参数的 <a href="https://technet.microsoft.com/zh-cn/library/aa998651(v=exchg.150)">Set-MailboxServer</a> cmdlet。
 
 
 若要完全禁用 Internet 日历发布，还应禁用用于日历发布的 Outlook Web App 虚拟目录。执行此操作后，将无法访问先前由 Exchange 组织用户与外部 Internet 用户共享的发布日历链接。本主题后面将详细说明该步骤。
@@ -47,18 +37,8 @@ Internet 日历发布的禁用方式取决于其启用方式。如果创建了�
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您该如何做？
@@ -105,34 +85,14 @@ Internet 日历发布的禁用方式取决于其启用方式。如果创建了�
 
 有关语法和参数的详细信息，请参阅 [Get-SharingPolicy](https://technet.microsoft.com/zh-cn/library/dd335081\(v=exchg.150\))。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 步骤 2：使用命令行管理程序禁用 Outlook Web App 虚拟目录\&quot;匿名\&quot;功能
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不能使用 EAC 禁用 Outlook Web App 虚拟目录的&amp;quot;匿名&amp;quot;功能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 不能使用 EAC 禁用 Outlook Web App 虚拟目录的&amp;quot;匿名&amp;quot;功能。
 
 
 此示例在客户端访问服务器 CAS01 上禁用 Outlook Web App 虚拟目录的\&quot;匿名\&quot;功能。
@@ -149,16 +109,6 @@ Internet 日历发布的禁用方式取决于其启用方式。如果创建了�
 
 有关语法和参数的详细信息，请参阅 [Get-OwaVirtualDirectory](https://technet.microsoft.com/zh-cn/library/aa998588\(v=exchg.150\))。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 

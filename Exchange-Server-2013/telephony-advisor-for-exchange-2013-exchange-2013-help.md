@@ -51,18 +51,8 @@ _**上一次修改主题：** 2017-07-25_
 
   - **支持的会话边界控制器的配置说明**   这些配置说明包含的设置和其他信息在配置会话边界控制器(SBCs) 以与混合部署和 Exchange Online UM 部署的统一消息服务器通信时很有用。有关详细信息，请参阅[受支持的会话边界控制器的配置说明](configuration-notes-for-supported-session-border-controllers-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange 联机 UM 支持第三方 PBX 系统，通过直接连接从客户操作 SBCs 将在 7 月 2018年结束。 请 Exchange 团队博客<a href="https://blogs.technet.microsoft.com/exchange/2017/07/18/discontinuation-of-support-for-session-border-controllers-in-exchange-online-unified-messaging/">终止的会话边框中的控制器联机 Exchange 支持统一消息</a>的详细信息，参阅。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Exchange 联机 UM 支持第三方 PBX 系统，通过直接连接从客户操作 SBCs 将在 7 月 2018年结束。 请 Exchange 团队博客<a href="https://blogs.technet.microsoft.com/exchange/2017/07/18/discontinuation-of-support-for-session-border-controllers-in-exchange-online-unified-messaging/">终止的会话边框中的控制器联机 Exchange 支持统一消息</a>的详细信息，参阅。
 
 
 在接洽统一消息专家之前，您应当能够回答他们将询问您的一些关键问题。知晓以下问题的答案有助于让您和 UM 专家之间的会话更有效率：

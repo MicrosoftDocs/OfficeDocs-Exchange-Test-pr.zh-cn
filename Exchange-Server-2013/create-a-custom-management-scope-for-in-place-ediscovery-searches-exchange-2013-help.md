@@ -111,18 +111,8 @@ _**上一次修改主题：** 2015-01-21_
 
     Add-DistributionGroupMember -Identity "Ottawa Users" -Member "Ottawa Discovery Mailbox"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要打开发现邮箱并查看搜索结果，发现管理员必须分配有发现邮箱的完全访问权限。有关详细信息，请参阅<a href="create-a-discovery-mailbox-exchange-2013-help.md">创建发现邮箱</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 要打开发现邮箱并查看搜索结果，发现管理员必须分配有发现邮箱的完全访问权限。有关详细信息，请参阅<a href="create-a-discovery-mailbox-exchange-2013-help.md">创建发现邮箱</a>。
 
 
 ## 您如何知道这有效？

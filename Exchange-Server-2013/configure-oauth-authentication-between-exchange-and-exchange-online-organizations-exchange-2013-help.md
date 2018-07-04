@@ -29,19 +29,9 @@ _**上一次修改主题：** 2016-12-09_
 
 我们建议所有实现 Exchange 2013 和 Exchange Online 混合部署的混合 Exchange 组织在使用混合部署向导配置混合部署之后都要配置 Exchange OAuth 身份验证。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您的内部部署组织仅运行安装有累积更新 5 或更高版本的 Exchange 2013 服务器，请运行混合部署向导而不是执行本主题中的步骤。<br />
-Exchange Server 2013 的此项功能与由世纪互联在中国运营的 Office 365 不完全兼容，可能需要遵循一些功能限制。有关详细信息，请参阅<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解由世纪互联运营的 Office 365</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果您的内部部署组织仅运行安装有累积更新 5 或更高版本的 Exchange 2013 服务器，请运行混合部署向导而不是执行本主题中的步骤。
+> Exchange Server 2013 的此项功能与由世纪互联在中国运营的 Office 365 不完全兼容，可能需要遵循一些功能限制。有关详细信息，请参阅<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解由世纪互联运营的 Office 365</a>。
 
 
 ## 在开始之前，您需要知道什么？
@@ -54,18 +44,8 @@ Exchange Server 2013 的此项功能与由世纪互联在中国运营的 Office 
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 如何在本地 Exchange 和 Exchange Online 组织之间配置 OAuth 身份验证？
@@ -148,18 +128,8 @@ Exchange Server 2013 的此项功能与由世纪互联在中国运营的 Office 
 
     Get-WebServicesVirtualDirectory | FL ExternalUrl
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要成功运行以下脚本，必须将 Azure Active Directory 的 Windows PowerShell 连接到 Microsoft Online Azure AD 租户，如上述部分中的步骤 4 所述。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 若要成功运行以下脚本，必须将 Azure Active Directory 的 Windows PowerShell 连接到 Microsoft Online Azure AD 租户，如上述部分中的步骤 4 所述。
 
 
 1.  将以下文本保存到名为 **RegisterEndpoints.ps1**（示例名称）的 PowerShell 脚本文件中。本示例使用通配符将所有的端点注册为 contoso.com。用本地 Exchange 组织的主机名颁发机构替换 **contoso.com**。
@@ -197,18 +167,8 @@ Exchange Server 2013 的此项功能与由世纪互联在中国运营的 Office 
 
   - https://\<主 SMTP 域\>/autodiscover/autodiscover.svc
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以在本地和 Office 365 租户中使用 <a href="https://technet.microsoft.com/zh-cn/library/dn551183(v=exchg.150)">Get-IntraOrganizationConfiguration</a> cmdlet，以确定 <a href="https://technet.microsoft.com/zh-cn/library/dn551178(v=exchg.150)">New-IntraOrganizationConnector</a> cmdlet 所需的端点值。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 您可以在本地和 Office 365 租户中使用 <a href="https://technet.microsoft.com/zh-cn/library/dn551183(v=exchg.150)">Get-IntraOrganizationConfiguration</a> cmdlet，以确定 <a href="https://technet.microsoft.com/zh-cn/library/dn551178(v=exchg.150)">New-IntraOrganizationConnector</a> cmdlet 所需的端点值。
 
 
 使用 Windows PowerShell 运行以下 cmdlet：
@@ -237,36 +197,16 @@ Exchange Server 2013 的此项功能与由世纪互联在中国运营的 Office 
 
   - 任何现有的 Exchange 2010/2007 邮箱服务器和客户端访问服务器都应用了最新的累积更新 (CU) 或 Service Pack (SP)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>现有的 Exchange 2010/2007 邮箱服务器可以继续使用 Exchange 2010/2007 客户端访问服务器，作为非混合功能连接的前端服务器。只有 Office 365 租户的混合部署功能请求需要连接到 Exchange 2013 服务器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 现有的 Exchange 2010/2007 邮箱服务器可以继续使用 Exchange 2010/2007 客户端访问服务器，作为非混合功能连接的前端服务器。只有 Office 365 租户的混合部署功能请求需要连接到 Exchange 2013 服务器。
 
 
 在指向内部部署 Exchange 2013 SP1 客户端访问服务器的 Exchange Web 服务终结点的 Exchange 2013 之前的客户端访问服务器上，必须配置 *AvailabilityAddressSpace*。此终结点是步骤 5 之前介绍的同一个终结点，您也可以通过在本地 Exchange 2013 SP1 客户端访问服务器上运行以下 cmdlet 来确定此终结点：
 
     Get-WebServicesVirtualDirectory | FL AdminDisplayVersion,ExternalUrl
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果从多个服务器返回虚拟目录信息，请确保使用为 Exchange 2013 SP1 客户端访问服务器返回的终结点。它将显示 <em>AdminDisplayVersion</em> 参数的 15.0（内部版本 847.32）或更高版本。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果从多个服务器返回虚拟目录信息，请确保使用为 Exchange 2013 SP1 客户端访问服务器返回的终结点。它将显示 <em>AdminDisplayVersion</em> 参数的 15.0（内部版本 847.32）或更高版本。
 
 
 要配置 *AvailabilityAddressSpace*，请使用 Exchange PowerShell 并在内部部署组织中运行以下 cmdlet：
@@ -277,18 +217,8 @@ Exchange Server 2013 的此项功能与由世纪互联在中国运营的 Office 
 
 您可以使用 [Test-OAuthConnectivity](https://technet.microsoft.com/zh-cn/library/jj218623\(v=exchg.150\)) cmdlet 验证 OAuth 配置是否正确。此 cmdlet 可验证本地 Exchange 和 Exchange Online 终结点能否成功对对方的请求进行身份验证。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>通过远程 PowerShell 连接到您的 Exchange Online 组织时，您可能需要结合使用 <em>AllowClobber</em> 参数和 <strong>Import-PSSession</strong> cmdlet，以将最新的命令导入本地 PowerShell 会话。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 通过远程 PowerShell 连接到您的 Exchange Online 组织时，您可能需要结合使用 <em>AllowClobber</em> 参数和 <strong>Import-PSSession</strong> cmdlet，以将最新的命令导入本地 PowerShell 会话。
 
 
 若要验证您的本地 Exchange 组织能否成功连接到 Exchange Online，请在本地组织的 Exchange PowerShell 中运行以下命令：
@@ -301,34 +231,14 @@ Exchange Server 2013 的此项功能与由世纪互联在中国运营的 Office 
 
 例如 Test-OAuthConnectivity -Service EWS -TargetUri https://lync.contoso.com/metadata/json/1 -Mailbox ExchangeOnlineBox1 -Verbose | fl
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以忽略“SMTP 地址没有与其关联的邮箱。”错误。只需关注 <em>ResultTask</em> 参数是否返回值“成功”即可。例如，测试输出的最后一部分应显示：<br />
-<code>ResultType: Success</code><br />
-<code>Identity: Microsoft.Exchange.Security.OAuth.ValidationResultNodeId</code><br />
-<code>IsValid: True</code><br />
-<code>ObjectState: New</code></td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 可以忽略“SMTP 地址没有与其关联的邮箱。”错误。只需关注 <em>ResultTask</em> 参数是否返回值“成功”即可。例如，测试输出的最后一部分应显示：
+> <code>ResultType: Success</code><br />
+> <code>Identity: Microsoft.Exchange.Security.OAuth.ValidationResultNodeId</code><br />
+> <code>IsValid: True</code><br />
+> <code>ObjectState: New</code>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 

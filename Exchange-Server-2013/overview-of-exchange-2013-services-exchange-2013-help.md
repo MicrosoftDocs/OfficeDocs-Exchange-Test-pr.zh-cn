@@ -63,18 +63,9 @@ _**上一次修改主题：** 2017-10-20_
 <td><p>Microsoft Exchange 反垃圾邮件更新</p></td>
 <td><p>MSExchangeAntispamUpdate</p></td>
 <td><p>提供Exchange SmartScreen 垃圾邮件定义更新。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2016 年 11 月 1 日起，Microsoft 停止为 Exchange 和 Outlook 中的 SmartScreen 筛选器生成垃圾邮件定义更新。现有的 SmartScreen 垃圾邮件定义将予以保留，但其效力可能会随时间的推移而逐渐降低。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">停止为 Outlook 和 Exchange 中的 SmartScreen 提供支持</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 2016 年 11 月 1 日起，Microsoft 停止为 Exchange 和 Outlook 中的 SmartScreen 筛选器生成垃圾邮件定义更新。现有的 SmartScreen 垃圾邮件定义将予以保留，但其效力可能会随时间的推移而逐渐降低。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">停止为 Outlook 和 Exchange 中的 SmartScreen 提供支持</a>。
 
 </td>
 <td><p>自动</p></td>
@@ -443,18 +434,8 @@ _**上一次修改主题：** 2017-10-20_
 <td><p>Microsoft Exchange 反垃圾邮件更新</p></td>
 <td><p>MSExchangeAntispamUpdate</p></td>
 <td><p>提供Exchange SmartScreen 垃圾邮件定义更新。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2016 年 11 月 1 日起，Microsoft 停止为 Exchange 和 Outlook 中的 SmartScreen 筛选器生成垃圾邮件定义更新。现有的 SmartScreen 垃圾邮件定义将予以保留，但其效力可能会随时间的推移而逐渐降低。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">停止为 Outlook 和 Exchange 中的 SmartScreen 提供支持</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 2016 年 11 月 1 日起，Microsoft 停止为 Exchange 和 Outlook 中的 SmartScreen 筛选器生成垃圾邮件定义更新。现有的 SmartScreen 垃圾邮件定义将予以保留，但其效力可能会随时间的推移而逐渐降低。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">停止为 Outlook 和 Exchange 中的 SmartScreen 提供支持</a>。
 
 </td>
 <td><p>自动</p></td>

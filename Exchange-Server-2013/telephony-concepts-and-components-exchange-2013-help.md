@@ -63,18 +63,8 @@ IP 网关
 
 电路交换网络中存在专用的连接。专用连接是在两个节点之间建立的电路或信道，以便可以进行通信。在两个节点之间建立呼叫之后，只有这两个节点可以使用该连接。其中一个节点结束呼叫时，将取消连接。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>PSTN 是全球公用电路交换电话网络的组合。此组合类似于 Internet 是全球公用 IP 数据包交换网络的组合。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> PSTN 是全球公用电路交换电话网络的组合。此组合类似于 Internet 是全球公用 IP 数据包交换网络的组合。
 
 
 电路交换网络有两种基本类型：模拟和数字。模拟网络用于语音传输。许多年来，PSTN 只是模拟网络，但是现在，基于电路的网络（例如 PSTN）已从模拟网络转换为数字网络。为了支持通过数字网络传输模拟语音传输信号，必须将模拟传输信号编码或转换为数字格式，然后再传入电话 WAN。在连接的接收端，必须将数字信号解码或转换回模拟信号格式。
@@ -83,18 +73,8 @@ IP 网关
 
 与数据包交换网络相比，电路交换有一个很大的优点。在电路交换网络中使用电路时，您在使用该电路的时间内将拥有整个电路，不会与其他用户争用。数据包交换网络则不是这种情况。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>同步数字层次结构 (SDH) 已成为大多数 PSTN 网络的主要传输协议。SDH 通过光纤网络携带。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 同步数字层次结构 (SDH) 已成为大多数 PSTN 网络的主要传输协议。SDH 通过光纤网络携带。
 
 
 返回页首
@@ -105,18 +85,8 @@ IP 网关
 
 在数据包交换网络（例如 Internet）中，数据包通过最佳路由传输到目标地址，但是并非在两个主机间传输的所有数据包都通过相同的路由，即使是来自一封邮件的数据包也是如此。这几乎可以确定数据包将在不同时间无顺序地到达。在数据包交换网络中，数据包（邮件或邮件片断）通过可能由其他节点共享的数据链路在两个节点之间分别路由。数据包交换与电路交换不同，与网络节点的多个连接将共享可用带宽。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于电路交换，所有数据包沿着一条路径按顺序到达接收端。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 对于电路交换，所有数据包沿着一条路径按顺序到达接收端。
 
 
 使用数据包交换网络，可通过 Internet 在全球范围内进行数据通信。公用数据网络或数据包交换网络与 PSTN 在数据通信方面互为补充。
@@ -131,18 +101,8 @@ IP 网关
 
 旧式 PBX 是充当交换机的电话设备，用于在电话或电路交换网络中切换呼叫。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>旧式 PBX 是无法传递 IP 数据包的 PBX。在很多公司，旧式 PBX 已更换为 IP PBX。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 旧式 PBX 是无法传递 IP 数据包的 PBX。在很多公司，旧式 PBX 已更换为 IP PBX。
 
 
 PBX 是大部分大中型公司都在使用的电话设备。PBX 使 PBX 的用户或订阅者可以共享一定数量的外线，从而拨打被视为 PBX 外部的电话。与为公司中每个用户提供专用的外线电话相比，PBX 解决方案成本要低得多。PBX 可以连接电话、传真机、调制解调器以及许多其他的通信设备。
@@ -159,18 +119,8 @@ PBX 设备通常安装在企业的办公场所，可以在位于并在企业场�
 
   - 连接在一起或联网的两个或更多 PBX 的组合。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2013 UM 拨号计划可以跨越多个 PBX 或 IP PBX。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Exchange 2013 UM 拨号计划可以跨越多个 PBX 或 IP PBX。
 
 
 返回页首
@@ -197,34 +147,14 @@ IP 电话 (VoIP) 技术包含的硬件和软件使用户可以使用基于 IP �
 
 VoIP 网关是将旧式 PBX 连接到 LAN 的第三方硬件设备或产品。VoIP 网关允许 PBX 系统与运行 Microsoft Exchange 统一消息和统一消息呼叫路由器服务的 Exchange 2013 邮箱和客户端访问服务器进行通信。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>VoIP 网关还可以连接到使用 VoIP（而不是 PSTN 电路交换协议）的 PBX 系统。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> VoIP 网关还可以连接到使用 VoIP（而不是 PSTN 电路交换协议）的 PBX 系统。
 
 
 Exchange 2013 统一消息依靠 VoIP 网关的以下能力：将 PBX 中基于 TDM 或电话电路交换的协议（例如 ISDN 和 QSIG）转换为基于 IP 或 VoIP 的协议（例如会话初始协议 (SIP)、实时传输协议 (RTP) 或用于实时传真传输的 T.38）。VoIP 网关对统一消息的功能和运行是不可或缺的。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>安装了 VoIP 网关、IP PBX 或启用了 SIP 的 PBX 之后，必须创建用于代表物理设备的 UM IP 网关。在创建了 UM IP 网关后，使用 UM IP 网关链接的客户端访问服务器和邮箱服务器将向 VoIP 网关、IP PBX 或启用了 SIP 的 PBX 发送 SIP OPTIONS 请求，以确保设备有响应。如果 VoIP 网关对邮箱服务器的 SIP OPTIONS 请求没有响应，邮箱服务器将记录一个 ID 为 1088 的事件，表明请求失败。若要解决此问题，请确保 VoIP 网关、IP PBX 或启用了 SIP 的 PBX 可用并且联机，并且客户端访问服务器和邮箱服务器上的统一消息配置均正确。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 安装了 VoIP 网关、IP PBX 或启用了 SIP 的 PBX 之后，必须创建用于代表物理设备的 UM IP 网关。在创建了 UM IP 网关后，使用 UM IP 网关链接的客户端访问服务器和邮箱服务器将向 VoIP 网关、IP PBX 或启用了 SIP 的 PBX 发送 SIP OPTIONS 请求，以确保设备有响应。如果 VoIP 网关对邮箱服务器的 SIP OPTIONS 请求没有响应，邮箱服务器将记录一个 ID 为 1088 的事件，表明请求失败。若要解决此问题，请确保 VoIP 网关、IP PBX 或启用了 SIP 的 PBX 可用并且联机，并且客户端访问服务器和邮箱服务器上的统一消息配置均正确。
 
 
 有关 IP PBX 和 PBX 配置的详细信息，请参阅[PBX 和 IP PBX 配置](pbx-and-ip-pbx-configurations-exchange-2013-help.md)。

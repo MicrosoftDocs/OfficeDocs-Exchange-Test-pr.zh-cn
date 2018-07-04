@@ -87,18 +87,8 @@ Outlook 2007、Outlook 2010、 Outlook 2013 和 Outlook 2011 针对 Mac 用户�
 
   - 访问运行早期版本 Exchange 的服务器上的公用文件夹
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在已启用邮件的公用文件夹中，您只能创建包含元素<strong>使用特定模板答复</strong>的公用文件夹规则。包含<strong>使用特定模板答复</strong>的预先存在的规则可能将继续在未启用邮件的公用文件夹上工作，但无法通过此模板元素在这些文件夹中创建新规则或编辑现有规则。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在已启用邮件的公用文件夹中，您只能创建包含元素<strong>使用特定模板答复</strong>的公用文件夹规则。包含<strong>使用特定模板答复</strong>的预先存在的规则可能将继续在未启用邮件的公用文件夹上工作，但无法通过此模板元素在这些文件夹中创建新规则或编辑现有规则。
 
 
 在混合方案中，跨内部公用文件夹不支持 Outlook 网页版和 Outlook 2011 for Mac。用户必须与公用文件夹处于相同位置才能通过 Outlook 2011 for Mac 或 Outlook 网页版对其访问。如果遵循[混合部署过程](https://technet.microsoft.com/zh-cn/library/jj200788\(v=exchg.150\).aspx)下的过程操作，且 Outlook 2016 for Mac 的 2016 年 4 月更新已安装在所有客户端上，则 Outlook 2016 for Mac 的用户可以在混合方案中访问公用文件夹。

@@ -95,18 +95,8 @@ TNEF 转换选项的优先级顺序
 
 发件人可以控制发送到 Exchange 组织外所有收件人的 TNEF 邮件的默认 TNEF 邮件转换选项。这些选项称为“Internet 邮件格式”选项。这些选项仅应用于远程收件人，不应用于 Exchange 组织中的收件人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下列选项定义当包含 Outlook RTF 格式的邮件发送到外部收件人时如何处理这些邮件。如果使用的邮件格式是 HTML 或纯文本，则这些设置不适用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 下列选项定义当包含 Outlook RTF 格式的邮件发送到外部收件人时如何处理这些邮件。如果使用的邮件格式是 HTML 或纯文本，则这些设置不适用。
 
 
 在 Outlook 中有下列 TNEF 转换选项：

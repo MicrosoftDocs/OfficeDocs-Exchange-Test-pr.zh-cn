@@ -21,18 +21,8 @@ _**上一次修改主题：** 2014-01-28_
 
 若要了解与滞后邮箱数据库副本相关的其他信息，请查看[管理邮箱数据库副本](managing-mailbox-database-copies-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>激活滞后的邮箱数据库副本所需的时间直接取决于重播日志文件的多少和硬件重播日志文件的速度。应看到的日志重播速度至少为每个数据库每秒钟两个日志文件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 激活滞后的邮箱数据库副本所需的时间直接取决于重播日志文件的多少和硬件重播日志文件的速度。应看到的日志重播速度至少为每个数据库每秒钟两个日志文件。
 
 
 ## 在开始之前，您需要知道什么？
@@ -47,36 +37,16 @@ _**上一次修改主题：** 2014-01-28_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
 
 ## 使用命令行管理程序将滞后的邮箱数据库副本激活到特定时间点
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不能使用 EAC 将滞后邮箱数据库副本激活到特定时间点。而是使用命令行管理程序和命令行执行一系列步骤。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 不能使用 EAC 将滞后邮箱数据库副本激活到特定时间点。而是使用命令行管理程序和命令行执行一系列步骤。
 
 
 1.  此示例将挂起通过使用 [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/zh-cn/library/dd351074\(v=exchg.150\)) cmdlet 激活的滞后副本的复制操作。
@@ -85,18 +55,8 @@ _**上一次修改主题：** 2014-01-28_
 
 2.  或者（若要保留滞后副本），为数据库副本及其日志文件创建一个副本。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此时，继续在现有卷上执行此过程会导致副本在写入性能方面受到影响。如果不想发生这样的情况，可以将数据库和日志文件复制到另一个卷以执行恢复。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 此时，继续在现有卷上执行此过程会导致副本在写入性能方面受到影响。如果不想发生这样的情况，可以将数据库和日志文件复制到另一个卷以执行恢复。
 
 
 3.  确定必须将哪些日志文件重播到数据库中才能符合此恢复过程的时间要求（根据日志文件的日期和时间，如 Windows 资源管理器中所示）。在此之后创建的所有日志都应移至另一目录，直到恢复过程结束，并且不再需要这些日志。
@@ -107,31 +67,11 @@ _**上一次修改主题：** 2014-01-28_
     
         Eseutil.exe /r eXX /a
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在前面的示例中，<em>XX</em> 是数据库的日志生成前缀（例如，E00、E01、E02 等等）。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 在前面的示例中，<em>XX</em> 是数据库的日志生成前缀（例如，E00、E01、E02 等等）。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此步骤可能会花费相当长的时间，这取决于多种因素，如重播延迟时间的长度、该期间内生成的日志文件数量以及硬件将这些日志重播到进行恢复的数据库的速度。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 此步骤可能会花费相当长的时间，这取决于多种因素，如重播延迟时间的长度、该期间内生成的日志文件数量以及硬件将这些日志重播到进行恢复的数据库的速度。
 
 
 6.  日志重播完成后，数据库将处于干净关闭状态，可以对其进行复制并用于恢复目的。
@@ -152,18 +92,8 @@ _**上一次修改主题：** 2014-01-28_
     
     2.  或者（若要保留滞后副本），为数据库副本及其日志文件创建一个副本。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>此时，继续在现有卷上执行此过程会导致副本在写入性能方面受到影响。如果不想发生这样的情况，可以将数据库和日志文件复制到另一个卷以执行恢复。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 此时，继续在现有卷上执行此过程会导致副本在写入性能方面受到影响。如果不想发生这样的情况，可以将数据库和日志文件复制到另一个卷以执行恢复。
 
 
 2.  此示例将通过使用 [Move-ActiveMailboxDatabase](https://technet.microsoft.com/zh-cn/library/dd298068\(v=exchg.150\)) cmdlet 以及 *SkipLagChecks* 参数激活滞后的邮箱数据库副本。
@@ -180,18 +110,8 @@ _**上一次修改主题：** 2014-01-28_
     
     2.  或者（若要保留滞后副本），为数据库副本及其日志文件创建一个副本。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>此时，继续在现有卷上执行此过程会导致副本在写入性能方面受到影响。如果不想发生这样的情况，可以将数据库和日志文件复制到另一个卷以执行恢复。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 此时，继续在现有卷上执行此过程会导致副本在写入性能方面受到影响。如果不想发生这样的情况，可以将数据库和日志文件复制到另一个卷以执行恢复。
 
 
 2.  通过查找 ESEUTIL 数据库头输出中的\&quot;所需的日志:\&quot;值来确定滞后数据库副本所需的日志

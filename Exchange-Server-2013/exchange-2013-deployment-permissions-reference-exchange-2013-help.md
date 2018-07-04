@@ -174,18 +174,8 @@ _**上一次修改主题：** 2016-12-09_
 
 本节中的权限表说明在执行 `Setup /PrepareAD` 命令时设置的权限。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本节中描述的权限是当您使用共享权限模型部署 Exchange 2013 时配置的默认权限。如果您已经使用 Active Directory 拆分权限模型部署了Exchange 2013，默认权限将有所不同。有关使用 Active Directory 拆分权限以及共享和拆分权限模型时的默认权限更改的详细信息，请参阅<a href="understanding-split-permissions-exchange-2013-help.md">了解拆分权限</a>中的 <a href="understanding-split-permissions-exchange-2013-help.md">Active Directory split permissions</a>。如果您在安装 Exchange 时不选择使用 Active Directory 拆分权限，Exchange 将使用共享权限。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 本节中描述的权限是当您使用共享权限模型部署 Exchange 2013 时配置的默认权限。如果您已经使用 Active Directory 拆分权限模型部署了Exchange 2013，默认权限将有所不同。有关使用 Active Directory 拆分权限以及共享和拆分权限模型时的默认权限更改的详细信息，请参阅<a href="understanding-split-permissions-exchange-2013-help.md">了解拆分权限</a>中的 <a href="understanding-split-permissions-exchange-2013-help.md">Active Directory split permissions</a>。如果您在安装 Exchange 时不选择使用 Active Directory 拆分权限，Exchange 将使用共享权限。
 
 
 ## Microsoft Exchange 容器权限
@@ -1712,18 +1702,8 @@ _**上一次修改主题：** 2016-12-09_
 
 下列各表说明在执行 `Setup /PrepareDomain` 命令时设置的权限。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本节中描述的权限是当您使用共享权限模型部署 Exchange 2013 时配置的默认权限。如果您已经使用 Active Directory 拆分权限模型部署了Exchange 2013，默认权限将有所不同。有关使用 Active Directory 拆分权限以及共享和拆分权限模型时的默认权限更改的详细信息，请参阅<a href="understanding-split-permissions-exchange-2013-help.md">了解拆分权限</a>中的 <a href="understanding-split-permissions-exchange-2013-help.md">Active Directory split permissions</a>。如果您在安装 Exchange 时不选择使用 Active Directory 拆分权限，Exchange 将使用共享权限。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 本节中描述的权限是当您使用共享权限模型部署 Exchange 2013 时配置的默认权限。如果您已经使用 Active Directory 拆分权限模型部署了Exchange 2013，默认权限将有所不同。有关使用 Active Directory 拆分权限以及共享和拆分权限模型时的默认权限更改的详细信息，请参阅<a href="understanding-split-permissions-exchange-2013-help.md">了解拆分权限</a>中的 <a href="understanding-split-permissions-exchange-2013-help.md">Active Directory split permissions</a>。如果您在安装 Exchange 时不选择使用 Active Directory 拆分权限，Exchange 将使用共享权限。
 
 
 ### 对象的可分辨名称：DC=\<domain\>

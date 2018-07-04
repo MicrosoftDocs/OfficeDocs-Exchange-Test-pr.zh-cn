@@ -33,18 +33,8 @@ _**上一次修改主题：** 2013-02-22_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -59,18 +49,8 @@ _**上一次修改主题：** 2013-02-22_
 
 4.  单击\&quot;保存\&quot;。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您清除此复选框并清除&amp;quot;允许呼叫者为用户留下语音消息&amp;quot;复选框，&amp;quot;用于搜索通讯簿的选项&amp;quot;会被禁用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果您清除此复选框并清除&amp;quot;允许呼叫者为用户留下语音消息&amp;quot;复选框，&amp;quot;用于搜索通讯簿的选项&amp;quot;会被禁用。
 
 
 ## 使用命令行管理工具启用或禁止从 UM 自动助理将呼叫转移到用户。

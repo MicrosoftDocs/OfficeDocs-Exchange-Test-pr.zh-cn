@@ -216,18 +216,8 @@ Exchange 2013 使用“生成表格”存储和清理队列数据库中的邮件
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在您安装 Exchange 累积更新 (CU) 时，您在 Exchange XML 应用程序配置文件（例如，客户端访问服务器上的 web.config 文件，或邮箱服务器上的 EdgeTransport.exe.config 文件）中针对每个服务器所做的任何自定义设置都将被覆盖。请务必保存此类信息，以便在安装累积更新后，您可以轻松地重新配置服务器。安装 Exchange CU 后，您必须重新配置这些设置。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在您安装 Exchange 累积更新 (CU) 时，您在 Exchange XML 应用程序配置文件（例如，客户端访问服务器上的 web.config 文件，或邮箱服务器上的 EdgeTransport.exe.config 文件）中针对每个服务器所做的任何自定义设置都将被覆盖。请务必保存此类信息，以便在安装累积更新后，您可以轻松地重新配置服务器。安装 Exchange CU 后，您必须重新配置这些设置。
 
 
 返回顶部
@@ -513,18 +503,8 @@ Exchange 2013 测量邮件进入和离开队列的速率并将这些值存储在
 
 Exchange 2013 介绍了 **Get-QueueDigest** cmdlet，它在指定范围内提供了一个高级别、聚合的视图以查看所有服务器上的队列状态，例如，DAG、Active Directory 站点、服务器列表或整个 Active Directory 林。请注意，外围网络中已订阅的边缘传输服务器上的队列不包括在结果中。此外，**Get-QueueDigest** 在边缘传输服务器中可用，但结果仅限于边缘传输服务器上的队列。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，<strong>Get-QueueDigest</strong> cmdlet 显示包含 10 封或更多邮件的传递队列，而且结果每一到两分钟更新一次。有关如何更改这些默认值的说明，请参阅 <a href="configure-get-queuedigest-exchange-2013-help.md">配置 Get-QueueDigest</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 默认情况下，<strong>Get-QueueDigest</strong> cmdlet 显示包含 10 封或更多邮件的传递队列，而且结果每一到两分钟更新一次。有关如何更改这些默认值的说明，请参阅 <a href="configure-get-queuedigest-exchange-2013-help.md">配置 Get-QueueDigest</a>。
 
 
 下表说明了可以对队列或队列中的邮件执行的管理任务。

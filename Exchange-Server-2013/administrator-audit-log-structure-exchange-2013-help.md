@@ -119,18 +119,9 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><code>N/A</code></p></td>
 <td><p>此标记包含由运行的 cmdlet 修改的所有属性。<code>Property</code> 标记是此标记的子级。</p>
 <p>每个 <code>Event</code> 标记有一个 <code>ModifiedProperties</code> 标记。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅当 <strong>Set-AdminAuditLogConfig</strong> cmdlet 上的 <em>LogLevel</em> 参数设置 <code>Verbose</code> 时，才会填充此标记。</td>
-</tr>
-</tbody>
-</table>
+
+> [!important]
+> 仅当 <strong>Set-AdminAuditLogConfig</strong> cmdlet 上的 <em>LogLevel</em> 参数设置 <code>Verbose</code> 时，才会填充此标记。
 
 </td>
 </tr>
@@ -173,18 +164,8 @@ _**上一次修改主题：** 2015-03-09_
 
   - 修改了对象 `david` 中的以下两个属性：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在此示例中，因为 <code>Set-AdminAuditLogConfig</code> cmdlet 上的 <em>LogLevel</em> 参数设置为 <code>Verbose</code>，因此将修改后的属性保存到了审核日志中。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 在此示例中，因为 <code>Set-AdminAuditLogConfig</code> cmdlet 上的 <em>LogLevel</em> 参数设置为 <code>Verbose</code>，因此将修改后的属性保存到了审核日志中。
     
       - *ProhibitSendReceiveQuota*，其新值为 `10GB`，替换了旧值 `35GB`
 

@@ -87,18 +87,8 @@ _**上一次修改主题：** 2015-04-07_
     
       - *StartDate* 和 *EndDate*   这些参数指定默认发现邮箱中搜索结果的日期范围以包括在搜索结果中。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>对于日期，使用短日期格式 mm/dd/yyyy，即使本地计算机的“区域选项”设置以不同格式配置（如 dd/mm/yyyy）也是如此。例如，使用 <strong>03/01/2014</strong> 可指定 2014 年 3 月 1 日。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 对于日期，使用短日期格式 mm/dd/yyyy，即使本地计算机的“区域选项”设置以不同格式配置（如 dd/mm/yyyy）也是如此。例如，使用 <strong>03/01/2014</strong> 可指定 2014 年 3 月 1 日。
     
       - *TargetMailbox*   此参数指定应该将搜索结果复制到名为“Discovery Mailbox Backup 01”的发现邮箱中。
     

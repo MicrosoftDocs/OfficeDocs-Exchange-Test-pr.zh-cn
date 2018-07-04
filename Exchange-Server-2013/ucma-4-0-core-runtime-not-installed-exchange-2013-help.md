@@ -23,18 +23,8 @@ Exchange 2013 安装程序要求在计算机上安装统一通信托管 API 4.0 
 
 从以下 URL 下载并安装 64 位更新，然后在“准备情况检查”页上单击“重试”。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果此项更新要求重新启动以完成安装，则需要退出 Exchange 2013 安装程序，重新启动，然后再启动安装程序。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果此项更新要求重新启动以完成安装，则需要退出 Exchange 2013 安装程序，重新启动，然后再启动安装程序。
 
 
 [统一通信托管 API 4.0 运行](https://go.microsoft.com/fwlink/p/?linkid=258269)

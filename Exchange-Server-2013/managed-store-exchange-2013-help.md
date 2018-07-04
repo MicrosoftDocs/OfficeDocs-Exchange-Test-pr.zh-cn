@@ -65,18 +65,8 @@ Exchange 早期版本中单个存储示例的另一挑战是，虽然可扩展�
 
 Exchange 2013 使用的静态算法根据物理 RAM 为每个存储工作进程的 ESE 缓存分配内存。这被称为数据库的“最大缓存目标”。25% 的总服务器内存分配给了 ESE 缓存。这被称为“服务器缓存大小目标”。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 Active Directory 中 <em>InformationStore</em> 对象的 <em>msExchESEParamCacheSizeMax</em> 属性可以覆盖服务器缓存大小目标和分配给 ESE 缓存存储的内存量（为在所有存储进程中进行分配所配置的值为 32 KB 页面数量）。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 使用 Active Directory 中 <em>InformationStore</em> 对象的 <em>msExchESEParamCacheSizeMax</em> 属性可以覆盖服务器缓存大小目标和分配给 ESE 缓存存储的内存量（为在所有存储进程中进行分配所配置的值为 32 KB 页面数量）。
 
 
 此缓存的静态量分配到主动和被动副本。只有当为主动数据库副本服务时，存储工作进程才会将最大缓存目标分配给存储工作进程。20% 的最大缓存目标分配给被动数据库副本。存储保留剩余部分，并在数据库从被动转为主动时将剩余部分分配给工作进程。

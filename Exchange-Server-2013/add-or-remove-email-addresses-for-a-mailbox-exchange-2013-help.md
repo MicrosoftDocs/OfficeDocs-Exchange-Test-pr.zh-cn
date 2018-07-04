@@ -19,18 +19,8 @@ _**上一次修改主题：** 2016-12-09_
 
 您可以为同一个邮箱配置多个电子邮件地址。这些附加地址称为“*代理地址*”。用户可以使用代理地址接收发送给其他电子邮件地址的电子邮件。任何发送到用户的代理地址的电子邮件都会传递给其主电子邮件地址，该地址也称为“*主 SMTP 地址*”或者“*默认答复地址*”。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果你使用的是 Office 365 企业版，则应按照以下文章中的说明添加或删除用户邮箱的电子邮件地址：<a href="https://go.microsoft.com/fwlink/p/?linkid=8347775">Office 365 管理中心：在 Office 365 中向用户添加更多电子邮件别名</a></td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果你使用的是 Office 365 企业版，则应按照以下文章中的说明添加或删除用户邮箱的电子邮件地址：<a href="https://go.microsoft.com/fwlink/p/?linkid=8347775">Office 365 管理中心：在 Office 365 中向用户添加更多电子邮件别名</a>
 
 
 有关与收件人管理相关的其他管理任务，请参阅[收件人](recipients-exchange-2013-help.md)中的“收件人文档”表。
@@ -57,34 +47,14 @@ _**上一次修改主题：** 2016-12-09_
 
 3.  在邮箱属性页上，单击“**电子邮件地址**”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在“<strong>电子邮件地址</strong>”页上，主 SMTP 地址以黑体字显示在地址列表中，“<strong>类型</strong>”列中是大写的 <strong>SMTP</strong> 值。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 在“<strong>电子邮件地址</strong>”页上，主 SMTP 地址以黑体字显示在地址列表中，“<strong>类型</strong>”列中是大写的 <strong>SMTP</strong> 值。
 
 
 4.  单击“**添加**![添加图标](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "添加图标")”，然后单击 **SMTP** 将 SMTP 电子邮件地址添加到此邮箱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>SMTP 是默认的电子邮件地址类型。也可以向邮箱添加 Exchange 统一消息 (EUM) 地址或自定义地址。有关详细信息，请参阅<a href="manage-user-mailboxes-exchange-2013-help.md">管理用户邮箱</a>主题中的“更改用户邮箱属性”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > SMTP 是默认的电子邮件地址类型。也可以向邮箱添加 Exchange 统一消息 (EUM) 地址或自定义地址。有关详细信息，请参阅<a href="manage-user-mailboxes-exchange-2013-help.md">管理用户邮箱</a>主题中的“更改用户邮箱属性”。
 
 
 5.  在“**电子邮件地址**”框中键入新的 SMTP 地址，然后单击“**确定**”。
@@ -203,18 +173,8 @@ _**上一次修改主题：** 2016-12-09_
 
     Import-CSV "C:\Users\Administrator\Desktop\AddEmailAddress.csv" | ForEach {Set-Mailbox $_.Mailbox -EmailAddresses @{add=$_.NewEmailAddress}}
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>该 CSV 文件第一行中的列名 (<code>Mailbox,NewEmailAddress</code>) 可以是任意值。无论你使用的列名如何，请确保在 Shell 命令中使用相同的列名。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 该 CSV 文件第一行中的列名 (<code>Mailbox,NewEmailAddress</code>) 可以是任意值。无论你使用的列名如何，请确保在 Shell 命令中使用相同的列名。
 
 
 ## 您如何知道操作成功？
@@ -235,16 +195,6 @@ _**上一次修改主题：** 2016-12-09_
 
   - 验证每个邮箱的结果中是否包含新电子邮件地址。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 

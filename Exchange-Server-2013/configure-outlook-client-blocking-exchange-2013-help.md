@@ -113,18 +113,8 @@ _**上一次修改主题：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>进行任何更改之前，请注意修补程序和 Service Pack 版本可能会影响客户版本字符串。限制客户端访问时要小心谨慎，因为服务器端 Exchange 组件也必须使用 MAPI 进行登录。一些组件将其客户端版本报告为组件名称（如 SMTP 或 OLE DB），而其他组件报告 Exchange 内部版本号（如 6.0.4712.0）。因此，请避免限制版本号以 6.&lt;<em>x</em>.<em>x</em>.&gt; 开头的客户端。例如，若要完全阻止 MAPI 访问，请指定两个范围以便服务器组件可以登录，而不是指定 <strong>0.0.0-6.5535.65535.65535</strong>。例如，指定如下范围：<strong>0.0.0-5.9.9; 7.0.0-</strong>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 进行任何更改之前，请注意修补程序和 Service Pack 版本可能会影响客户版本字符串。限制客户端访问时要小心谨慎，因为服务器端 Exchange 组件也必须使用 MAPI 进行登录。一些组件将其客户端版本报告为组件名称（如 SMTP 或 OLE DB），而其他组件报告 Exchange 内部版本号（如 6.0.4712.0）。因此，请避免限制版本号以 6.&lt;<em>x</em>.<em>x</em>.&gt; 开头的客户端。例如，若要完全阻止 MAPI 访问，请指定两个范围以便服务器组件可以登录，而不是指定 <strong>0.0.0-6.5535.65535.65535</strong>。例如，指定如下范围：<strong>0.0.0-5.9.9; 7.0.0-</strong>.
 
 
 在执行这些步骤之后，请注意当阻止用户访问其邮箱时，他们会收到以下警告消息。
@@ -178,18 +168,8 @@ _**上一次修改主题：** 2015-03-09_
 
 此示例阻止了版本 12.0.0 之前的 Outlook 客户端访问 Exchange 2010 或更高版本客户端访问服务器上的邮箱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>与 <em>BlockedClientVersions</em> 参数一起使用的值是示例值。您可以通过解析 <code>%ExchangeInstallPath%Logging\RPC Client Access</code> 处的 RPC 客户端访问日志文件，确定正确的客户端软件版本。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 与 <em>BlockedClientVersions</em> 参数一起使用的值是示例值。您可以通过解析 <code>%ExchangeInstallPath%Logging\RPC Client Access</code> 处的 RPC 客户端访问日志文件，确定正确的客户端软件版本。
 
 
     Set-RpcClientAccess -Server CAS01 -BlockedClientVersions "0.0.0-5.65535.65535;7.0.0;8.02.4-11.65535.65535"

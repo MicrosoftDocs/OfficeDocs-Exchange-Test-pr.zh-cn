@@ -29,18 +29,8 @@ _**上一次修改主题：** 2014-12-16_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -107,18 +97,8 @@ _**上一次修改主题：** 2014-12-16_
 
     Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>客户端访问服务器上的前端传输服务的 <strong>Set-FrontEndTransportService</strong> cmdlet 也提供 <em>TransientFailureRetryCount</em> 和 <em>TransientFailureRetryInterval</em> 参数。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 客户端访问服务器上的前端传输服务的 <strong>Set-FrontEndTransportService</strong> cmdlet 也提供 <em>TransientFailureRetryCount</em> 和 <em>TransientFailureRetryInterval</em> 参数。
 
 
 ## 配置瞬间失败重试次数、瞬间失败重试间隔和出站连接失败重试间隔
@@ -149,18 +129,8 @@ _**上一次修改主题：** 2014-12-16_
 
     Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>客户端访问服务器上的前端传输服务的 <strong>Set-FrontEndTransportService</strong> cmdlet 也提供 <em>TransientFailureRetryCount</em> 和 <em>TransientFailureRetryInterval</em> 参数。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 客户端访问服务器上的前端传输服务的 <strong>Set-FrontEndTransportService</strong> cmdlet 也提供 <em>TransientFailureRetryCount</em> 和 <em>TransientFailureRetryInterval</em> 参数。
 
 
 ## 使用命令行管理程序配置邮件重试间隔
@@ -179,18 +149,8 @@ _**上一次修改主题：** 2014-12-16_
 
 可以使用 EAC 或命令行管理程序配置延迟 DSN 通知超时间隔。此设置仅适用于本地传输服务器。只能使用命令行管理程序启用或禁用将延迟 DSN 邮件发送到内部和外部发件人。这些设置适用于组织中所有的传输服务器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2007 集线器传输服务器上，所有 <em>ExternalDSN*</em> 和 <em>InternalDSN*</em> 参数在 <strong>Set-TransportServer</strong> cmdlet 都可用，在 <strong>Set-TransportConfig</strong> cmdlet 上不可用。如果组织中有任何 Exchange 2007 集线器传输服务器，则需要在每个 Exchange 2007 集线器传输服务器上使用 <strong>Set-TransportServer</strong> cmdlet 对这些值进行更改。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在 Exchange 2007 集线器传输服务器上，所有 <em>ExternalDSN*</em> 和 <em>InternalDSN*</em> 参数在 <strong>Set-TransportServer</strong> cmdlet 都可用，在 <strong>Set-TransportConfig</strong> cmdlet 上不可用。如果组织中有任何 Exchange 2007 集线器传输服务器，则需要在每个 Exchange 2007 集线器传输服务器上使用 <strong>Set-TransportServer</strong> cmdlet 对这些值进行更改。
 
 
 ## 使用 EAC 配置延迟 DSN 邮件通知超时间隔

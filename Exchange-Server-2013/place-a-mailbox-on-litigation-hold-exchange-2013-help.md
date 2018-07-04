@@ -19,18 +19,8 @@ _**上一次修改主题：** 2016-10-18_
 
 将邮箱置于“诉讼保留”以保留所有的邮箱内容，包括已删除项和已修改项的原始版本。当您将用户邮箱置于诉讼保留状态时，用户的存档邮箱（如果已启用）中的内容也会置于保留状态。已删除和修改的项会在指定时段内保留，或直到您将邮箱从“诉讼保留”中删除。所有此类邮箱项目均会返回到[就地电子数据展示](in-place-ediscovery-exchange-2013-help.md)搜索中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>“诉讼保留”会保留用户邮箱中“可恢复项目”文件夹中的项。根据已删除或修改的项目的编号和大小，邮箱的“可恢复项目”文件夹的大小可能迅速增加。默认情况下，为“可恢复项目”文件夹配置了较高的配额。在 Exchange Online 中，当您将邮箱置于诉讼保留状态时，此配额会自动增加。在 Exchange Server 2013 中，我们建议您每周监视置于诉讼保留状态的邮箱，以确保它们没有达到“可恢复项目”配额的限制。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> “诉讼保留”会保留用户邮箱中“可恢复项目”文件夹中的项。根据已删除或修改的项目的编号和大小，邮箱的“可恢复项目”文件夹的大小可能迅速增加。默认情况下，为“可恢复项目”文件夹配置了较高的配额。在 Exchange Online 中，当您将邮箱置于诉讼保留状态时，此配额会自动增加。在 Exchange Server 2013 中，我们建议您每周监视置于诉讼保留状态的邮箱，以确保它们没有达到“可恢复项目”配额的限制。
 
 
 ## 在开始之前，您需要知道什么？
@@ -81,18 +71,8 @@ _**上一次修改主题：** 2016-10-18_
 
     Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当您将邮箱无限期置于诉讼保留状态时（不指定持续时间），将 <em>LitigationHoldDuration</em> 属性邮箱的值设置为 <code>Unlimited</code>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 当您将邮箱无限期置于诉讼保留状态时（不指定持续时间），将 <em>LitigationHoldDuration</em> 属性邮箱的值设置为 <code>Unlimited</code>。
 
 
 ## 使用命令行管理程序将邮箱置于诉讼保留状态并将项目保留指定的持续时间

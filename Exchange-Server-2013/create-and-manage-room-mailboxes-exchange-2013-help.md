@@ -27,18 +27,8 @@ _**上一次修改主题：** 2017-02-02_
 
   - 您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅[收件人权限](recipients-permissions-exchange-2013-help.md)主题中的“收件人设置权限”部分。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您运行的是 Exchange 2013 混合方案，请务必在适当的位置上创建会议室邮箱。在本地为您的本地组织创建会议室邮箱，并且应在云中为 Exchange Online 端创建会议室邮箱。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果您运行的是 Exchange 2013 混合方案，请务必在适当的位置上创建会议室邮箱。在本地为您的本地组织创建会议室邮箱，并且应在云中为 Exchange Online 端创建会议室邮箱。
 
 
 
@@ -54,18 +44,8 @@ _**上一次修改主题：** 2017-02-02_
     
       - “会议室名称”   使用此框可以键入会议室邮箱的名称。这是在 Exchange 管理中心的资源邮箱列表和贵组织的通讯簿中列出的名称。此名称必填，同时不能超过 64 个字符。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>尽管存在描述会议室详细信息的其他字段（例如，“位置”和“容量”），但可以考虑使用一致的命名约定来总结会议室名称中最重要的详细信息。为什么？通过这样做，当用户在会议请求中从通讯簿选择会议室时，可以轻易地查看详细信息。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!tip]
+        > 尽管存在描述会议室详细信息的其他字段（例如，“位置”和“容量”），但可以考虑使用一致的命名约定来总结会议室名称中最重要的详细信息。为什么？通过这样做，当用户在会议请求中从通讯簿选择会议室时，可以轻易地查看详细信息。
     
       - “\* 电子邮件地址”   会议室邮箱具有电子邮件地址，因此可以收到预订请求。电子邮件地址由 @ 符号左侧的别名（必须在林中是唯一的）和右侧的域名组成。电子邮件地址必填。
     
@@ -219,18 +199,8 @@ _**上一次修改主题：** 2017-02-02_
 
 使用“联系信息”部分来查看或更改会议室的联系信息。该页上的信息显示在通讯簿中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以使用“州/省”框为动态通讯组、电子邮件地址策略或地址列表创建收件人条件。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 可以使用“州/省”框为动态通讯组、电子邮件地址策略或地址列表创建收件人条件。
 
 
 ## 电子邮件地址
@@ -245,31 +215,11 @@ _**上一次修改主题：** 2017-02-02_
     
       - “自定义地址类型”   单击此按钮，然后在“\* 电子邮件地址”框中键入一个支持的非 SMTP 电子邮件地址。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>除 X.400 地址以外，Exchange 不验证自定义地址的格式是否正确。您必须确保所指定的自定义地址符合该地址类型的格式要求。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 除 X.400 地址以外，Exchange 不验证自定义地址的格式是否正确。您必须确保所指定的自定义地址符合该地址类型的格式要求。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>当添加新电子邮件地址时，您将拥有使其成为主 SMTP 地址的选项。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 当添加新电子邮件地址时，您将拥有使其成为主 SMTP 地址的选项。
 
 
   - “基于应用到此收件人的电子邮件地址策略自动更新电子邮件地址”   选中此复选框可基于对组织中电子邮件地址策略所做的更改自动更新收件人的电子邮件地址。
@@ -278,18 +228,8 @@ _**上一次修改主题：** 2017-02-02_
 
 使用“邮件提示”部分可添加邮件提示，以便在用户向会议室邮箱发送预订请求之前提醒用户存在潜在的问题。邮件提示是在将此收件人添加到新电子邮件的“收件人”、“抄送”或“密件抄送”行中时，信息栏中显示的文本。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>邮件提示可包含 HTML 标记，但不允许包含脚本。自定义邮件提示的长度不能超过 175 个显示的字符。此字符限制不计入 HTML 标记。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 邮件提示可包含 HTML 标记，但不允许包含脚本。自定义邮件提示的长度不能超过 175 个显示的字符。此字符限制不计入 HTML 标记。
 
 
 ## 使用 Exchange PowerShell 更改会议室邮箱属性
@@ -342,16 +282,6 @@ _**上一次修改主题：** 2017-02-02_
 
 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 

@@ -25,18 +25,8 @@ _**上一次修改主题：** 2013-07-02_
 
   - **内部部署 Exchange 组织与 Exchange Online 之间的远程移动迁移**   对于加入和分离远程移动迁移，必须在内部部署组织中的客户端访问服务器上启用 MRS 代理终结点。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果使用 EAC 移动邮箱，则跨林移动和加入远程移动迁移属于拉取移动类型，这是因为请求是从目标环境发出的。分离远程移动迁移属于推送移动类型，因为请求是从源环境发出的。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果使用 EAC 移动邮箱，则跨林移动和加入远程移动迁移属于拉取移动类型，这是因为请求是从目标环境发出的。分离远程移动迁移属于推送移动类型，因为请求是从源环境发出的。
 
 
 ## 在开始之前，您需要知道什么？
@@ -51,18 +41,8 @@ _**上一次修改主题：** 2013-07-02_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -89,18 +69,8 @@ _**上一次修改主题：** 2013-07-02_
 
     Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabled $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如上所述，应当在组织中的每个客户端访问服务器上启用 MRS 代理终结点。将新客户端访问服务器添加到组织后，运行上述命令。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如上所述，应当在组织中的每个客户端访问服务器上启用 MRS 代理终结点。将新客户端访问服务器添加到组织后，运行上述命令。
 
 
 ## 您如何知道操作成功？

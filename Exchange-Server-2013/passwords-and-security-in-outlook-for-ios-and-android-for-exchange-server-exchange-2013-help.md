@@ -41,18 +41,8 @@ Outlook 服务在运行时解密密码后，该服务可以连接到 Exchange �
 
   - 设备上没有可用的 Internet 连接，导致 Outlook 无法与 Exchange 同步。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook 不会仅仅因为用户在一段时间内没有打开应用（例如周末或休假期间）而变为非活动状态。只要启用后台应用刷新（这是 Outlook for iOS 和 Outlook for Android 的默认设置），推送通知和电子邮件后台同步等功能将被视为处于活动状态。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Outlook 不会仅仅因为用户在一段时间内没有打开应用（例如周末或休假期间）而变为非活动状态。只要启用后台应用刷新（这是 Outlook for iOS 和 Outlook for Android 的默认设置），推送通知和电子邮件后台同步等功能将被视为处于活动状态。
 
 
 **从硬盘刷新加密密码和邮件缓存**

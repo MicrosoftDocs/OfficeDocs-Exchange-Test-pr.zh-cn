@@ -156,18 +156,9 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>MSExchange Managed Folder Assistant</p></td>
 <td><p>指示基于用户操作（例如，当用户选择带有个人标记的邮件并选择&amp;quot;使用文件夹策略&amp;quot;时）分配了默认策略标记 (DPT) 的项目数。</p>
 <p>如果向新用户分配了一个带有 DPT 的保留策略，则计数器会按根据该保留策略分配 DPT 的项目数进行递增。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果用户具有带有 DPT 的保留策略，则通过传输到达的新邮件会获取默认标记，而此计数器不会对此进行跟踪。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 如果用户具有带有 DPT 的保留策略，则通过传输到达的新邮件会获取默认标记，而此计数器不会对此进行跟踪。
 
 </td>
 </tr>

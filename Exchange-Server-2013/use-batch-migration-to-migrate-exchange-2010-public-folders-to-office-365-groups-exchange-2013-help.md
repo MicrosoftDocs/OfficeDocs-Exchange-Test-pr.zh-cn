@@ -57,18 +57,8 @@ _**上一次修改主题：** 2018-04-30_
 
 继续之前，请验证您已经下载并保存的所有下面的脚本和文件：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>请确保将所有脚本和文件都保存到同一位置。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 请确保将所有脚本和文件都保存到同一位置。
 
 
   - **AddMembersToGroups.ps1**。 此脚本将添加成员和所有者到 Office 365 组基于源公用文件夹中的权限项。
@@ -224,18 +214,8 @@ _**上一次修改主题：** 2018-04-30_
 
 当公用文件夹中的数据大部分有迁移到 Office 365 组时，可以将公用文件夹设为只读的 Exchange 2010 服务器上运行脚本`LockAndSavePublicFolderProperties.ps1` 。此步骤可确保在迁移完成之前，任何新的数据添加到公用文件夹。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果没有已启用邮件的公用文件夹 (MEPFs) 在公众之间要迁移的文件夹此步骤将 SMTP 地址，例如 MEPFs，某些属性复制到 Office 365 中的相应组，然后禁用邮件的公用文件夹。因为迁移 MEPFs 将会禁用邮件功能之后执行此脚本，您将开始看到电子邮件发送至 MEPFs，而是接收到相应的组中。有关详细信息，请参阅本文中稍后介绍的迁移脚本。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果没有已启用邮件的公用文件夹 (MEPFs) 在公众之间要迁移的文件夹此步骤将 SMTP 地址，例如 MEPFs，某些属性复制到 Office 365 中的相应组，然后禁用邮件的公用文件夹。因为迁移 MEPFs 将会禁用邮件功能之后执行此脚本，您将开始看到电子邮件发送至 MEPFs，而是接收到相应的组中。有关详细信息，请参阅本文中稍后介绍的迁移脚本。
 
 
 在下面的命令：
@@ -276,18 +256,8 @@ _**上一次修改主题：** 2018-04-30_
 
 完成这一步 （批次状态为**已完成**） 后，验证所有的数据，已复制到 Office 365 组。此时，只要您满意组体验，您可以开始迁移公用文件夹删除您的 Exchange 2010 环境。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>虽然有支持回滚迁移并返回到公用文件夹的过程，这可能不后源公用文件夹已被删除。 请参阅如何执行回滚到公用文件夹从 Office 365 组？的详细信息。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 虽然有支持回滚迁移并返回到公用文件夹的过程，这可能不后源公用文件夹已被删除。 请参阅如何执行回滚到公用文件夹从 Office 365 组？的详细信息。
 
 
 ## 已知问题

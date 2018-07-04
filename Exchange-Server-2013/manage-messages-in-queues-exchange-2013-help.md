@@ -27,18 +27,8 @@ _**上一次修改主题：** 2014-05-07_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -59,18 +49,8 @@ _**上一次修改主题：** 2014-05-07_
 
 5.  若要删除特定队列中的所有邮件，请单击\&quot;队列\&quot;选项卡。选择一个队列，单击鼠标右键，然后选择\&quot;删除邮件(发送 NDR)\&quot;或\&quot;删除邮件(不发送 NDR)\&quot;。此时将出现一个对话框，确认所选操作并显示\&quot;是否要继续?\&quot;。单击\&quot;是\&quot;。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果使用已筛选的列表，则显示的页可能不包含筛选器中的所有项目。在这种情况下，将出现一个显示以下内容的提示：<strong>此操作将影响此页上的所有项目。若要扩展此操作的作用域以包含此筛选器中的所有项目，请选中以下复选框，然后单击&amp;quot;确定&amp;quot;。</strong></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果使用已筛选的列表，则显示的页可能不包含筛选器中的所有项目。在这种情况下，将出现一个显示以下内容的提示：<strong>此操作将影响此页上的所有项目。若要扩展此操作的作用域以包含此筛选器中的所有项目，请选中以下复选框，然后单击&amp;quot;确定&amp;quot;。</strong>
 
 
 ## 使用命令行管理程序删除邮件

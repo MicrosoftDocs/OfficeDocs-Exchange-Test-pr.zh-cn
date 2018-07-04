@@ -64,18 +64,9 @@ Exchange 安装程序要求对下列 Exchange 对象启用权限继承：
 <p><strong>值</strong>︰ 1</p></li>
 <li><p>退出注册表编辑器。</p></li>
 </ol>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，此配置对象属性框的&amp;quot;安全&amp;quot;选项卡未启用。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 默认情况下，此配置对象属性框的&amp;quot;安全&amp;quot;选项卡未启用。
 
 </li>
 <li><p>打开 Exchange 系统管理器，找到有问题的对象，右键单击该对象，并选择&amp;quot;属性&amp;quot;。</p></li>
@@ -88,18 +79,8 @@ Exchange 安装程序要求对下列 Exchange 对象启用权限继承：
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果不正确地修改 Active Directory 对象的属性，使用 ADSI 编辑，LDP 工具，或者另一个 LDAP 版本 3 客户端时，可能会导致严重的问题。这些问题可能要求您重新安装 Microsoft Windows Server™ 2003年和 / 或 Exchange Server。修改 Active Directory 对象属性需要您自担风险。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 如果不正确地修改 Active Directory 对象的属性，使用 ADSI 编辑，LDP 工具，或者另一个 LDAP 版本 3 客户端时，可能会导致严重的问题。这些问题可能要求您重新安装 Microsoft Windows Server™ 2003年和 / 或 Exchange Server。修改 Active Directory 对象属性需要您自担风险。
 
 
 

@@ -21,18 +21,8 @@ _**上一次修改主题：** 2016-03-18_
 
 可供您在单个策略中使用的规则条件包括所有传统传输规则以及 [使用 Exchange 中的敏感信息类型查找什么](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md) 中显示的敏感信息类型。有关传输规则的详细信息，请参阅[邮件流或传输规则](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md) (Exchange 2013) 或[Exchange Online 中的邮件流规则（传输规则）](https://technet.microsoft.com/zh-cn/library/jj919238\(v=exchg.150\)) (Exchange Online)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在生产环境中运行 DLP 策略时，应在测试模式下启用这些策略。在此类测试中，建议配置示例用户邮箱并发送调用测试策略的测试邮件以便确认结果。有关测试的详细信息，请参阅<a href="test-a-mail-flow-rule-exchange-2013-help.md">测试邮件流规则</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 在生产环境中运行 DLP 策略时，应在测试模式下启用这些策略。在此类测试中，建议配置示例用户邮箱并发送调用测试策略的测试邮件以便确认结果。有关测试的详细信息，请参阅<a href="test-a-mail-flow-rule-exchange-2013-help.md">测试邮件流规则</a>。
 
 
 有关创建自定义 DLP 策略的更多管理任务，请参阅 [DLP 过程](dlp-procedures-exchange-2013-help.md)(Exchange 2013) 或 [DLP 过程](https://technet.microsoft.com/zh-cn/library/jj938003\(v=exchg.150\)) (Exchange Online)。
@@ -47,32 +37,12 @@ _**上一次修改主题：** 2016-03-18_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由于客户环境存在着差异，所以 Microsoft 客户支持服务 (CSS) 无法参与自定义正则表达式脚本（“RegEx 脚本”）的开发或测试。对于 RegEX 自定义脚本的开发、测试和调试，Office 365 客户将需要依靠内部 IT 资源。此外，Office 365 客户可以选择使用外部咨询资源，如 Microsoft 咨询服务 (MCS)。无论脚本开发资源是什么，CSS EXO 和 EOP 支持工程师都不得帮助客户自定义 RegEx 脚本查询。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 由于客户环境存在着差异，所以 Microsoft 客户支持服务 (CSS) 无法参与自定义正则表达式脚本（“RegEx 脚本”）的开发或测试。对于 RegEX 自定义脚本的开发、测试和调试，Office 365 客户将需要依靠内部 IT 资源。此外，Office 365 客户可以选择使用外部咨询资源，如 Microsoft 咨询服务 (MCS)。无论脚本开发资源是什么，CSS EXO 和 EOP 支持工程师都不得帮助客户自定义 RegEx 脚本查询。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 使用 EAC 创建自定义 DLP 策略，而无需任何现有规则
@@ -81,18 +51,8 @@ _**上一次修改主题：** 2016-03-18_
 
 2.  单击“添加”![添加图标](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "添加图标") 图标旁边的箭头，然后选择“新建自定义策略”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果单击“添加”<img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="添加图标" alt="添加图标" /> 图标（而不是箭头），则会基于模板创建新策略。有关使用模板的详细信息，请参阅<a href="how-to-new-dlp-data-loss-prevention-policy-template.md">从模板创建 DLP 策略</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 如果单击“添加”<img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="添加图标" alt="添加图标" /> 图标（而不是箭头），则会基于模板创建新策略。有关使用模板的详细信息，请参阅<a href="how-to-new-dlp-data-loss-prevention-policy-template.md">从模板创建 DLP 策略</a>。
 
 
 3.  在“新自定义策略”页上，填写下列字段：

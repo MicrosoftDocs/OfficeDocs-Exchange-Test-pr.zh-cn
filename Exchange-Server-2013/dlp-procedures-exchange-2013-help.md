@@ -29,18 +29,8 @@ _**上一次修改主题：** 2015-01-07_
 
 [查看 DLP 策略检测报告](view-dlp-policy-detection-reports-exchange-2013-help.md)   跟踪策略违规。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>数据丢失防护是一项高级功能，要求使用企业版客户端访问许可证 (CAL)。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 数据丢失防护是一项高级功能，要求使用企业版客户端访问许可证 (CAL)。
 
 
 ## 详细信息

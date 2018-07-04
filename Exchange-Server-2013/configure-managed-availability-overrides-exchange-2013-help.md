@@ -21,18 +21,8 @@ _**上一次修改主题：** 2015-11-30_
 
 有两种覆盖类型：局部和全局。顾名思义，局部覆盖仅在其创建所在的服务器上可用，全局覆盖用于将覆盖应用到多个服务器。对于特定的持续时间或特定版本的 Exchange，可以创建这两种覆盖，但不能同时创建。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>创建覆盖时，它不会立即生效。Microsoft Exchange 运行状况管理服务每隔 10 分钟检查一次配置更改，并将加载检测到的任何配置更改。如果您不想等待，可以重新启动该服务。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 创建覆盖时，它不会立即生效。Microsoft Exchange 运行状况管理服务每隔 10 分钟检查一次配置更改，并将加载检测到的任何配置更改。如果您不想等待，可以重新启动该服务。
 
 
 有关与托管可用性相关的其他管理任务，请参阅[管理运行状况设置和服务器运行状况](manage-health-sets-and-server-health-exchange-2013-help.md)。
@@ -45,18 +35,8 @@ _**上一次修改主题：** 2015-11-30_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -71,18 +51,8 @@ _**上一次修改主题：** 2015-11-30_
 
     Add-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertyName> -PropertyValue <Value> -Version <15.01.xxxx.xxx>
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在创建覆盖时，<em>Identity</em> 参数中使用的值区分大小写。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在创建覆盖时，<em>Identity</em> 参数中使用的值区分大小写。
 
 
 本示例在名为 EXCH03 的服务器上添加了一个将响应器 `ActiveDirectoryConnectivityConfigDCServerReboot` 禁用 20 天的局部覆盖。
@@ -125,18 +95,8 @@ _**上一次修改主题：** 2015-11-30_
 
     Add-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertytoOverride> -PropertyValue <NewPropertyValue> -ApplyVersion <15.01.xxxx.xxx>
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在创建覆盖时，<em>Identity</em> 参数中使用的值区分大小写。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在创建覆盖时，<em>Identity</em> 参数中使用的值区分大小写。
 
 
 此示例添加了一个将 `OnPremisesInboundProxy` 探测器禁用 30 天的全局覆盖。

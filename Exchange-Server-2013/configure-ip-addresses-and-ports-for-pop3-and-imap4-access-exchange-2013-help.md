@@ -19,18 +19,8 @@ _**上一次修改主题：** 2012-11-28_
 
 可以使用 EAC 和命令行管理程序配置 Microsoft Exchange POP3 和 IMAP4 服务以使用不同于默认设置的 IP 地址和端口。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 Internet 协议版本 4 (IPv4) 格式、 Internet 协议版本 6 (IPv6) 格式或同时使用这两种格式输入 IP 地址和 IP 地址范围。 Windows Server 2008 的默认安装支持 IPv4 和 IPv6。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 使用 Internet 协议版本 4 (IPv4) 格式、 Internet 协议版本 6 (IPv6) 格式或同时使用这两种格式输入 IP 地址和 IP 地址范围。 Windows Server 2008 的默认安装支持 IPv4 和 IPv6。
 
 
 有关与 POP3 和 IMAP4 相关的详细信息，请参阅[Exchange Server 2013 中的 POP3 和 IMAP4](pop3-and-imap4-in-exchange-server-2013-exchange-2013-help.md)。
@@ -43,18 +33,8 @@ _**上一次修改主题：** 2012-11-28_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？

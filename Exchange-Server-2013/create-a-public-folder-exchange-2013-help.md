@@ -23,25 +23,12 @@ _**上一次修改主题：** 2014-02-24_
 
 默认情况下，公用文件夹继承其父文件夹的设置，包括权限设置。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关存储配额和公用文件夹的限制的详细信息，请参阅以下主题：
-<ul>
-<li><p>若要了解 Office 365 中的公用文件夹，请参阅 <a href="https://go.microsoft.com/fwlink/?linkid=391188">Exchange Online 限制</a>。</p></li>
-<li><p>有关本地 Exchange Server 2013 中的公用文件夹的信息，请参阅<a href="limits-for-public-folders-exchange-2013-help.md">公用文件夹的限制</a>。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 有关存储配额和公用文件夹的限制的详细信息，请参阅以下主题：
+> <ul>
+> <li><p>若要了解 Office 365 中的公用文件夹，请参阅 <a href="https://go.microsoft.com/fwlink/?linkid=391188">Exchange Online 限制</a>。</p></li>
+> <li><p>有关本地 Exchange Server 2013 中的公用文件夹的信息，请参阅<a href="limits-for-public-folders-exchange-2013-help.md">公用文件夹的限制</a>。</p></li>
+> </ul>
 
 
 有关管理公用文件夹相关的更多管理任务，请参阅[公用文件夹程序](public-folder-procedures-exchange-2013-help.md)。
@@ -72,18 +59,8 @@ _**上一次修改主题：** 2014-02-24_
 
 4.  在\&quot;公用文件夹\&quot;中，键入公用文件夹的名称。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在创建公用文件夹时，不要在名称内使用反斜线 (\)。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 在创建公用文件夹时，不要在名称内使用反斜线 (\)。
 
 
 5.  在\&quot;路径\&quot;框中，验证公用文件夹的路径。如果不是所需路径，请单击\&quot;取消\&quot;并按照此过程的步骤 2 操作。
@@ -96,18 +73,8 @@ _**上一次修改主题：** 2014-02-24_
 
     New-PublicFolder -Name Reports -Path \Marketing\2013
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在创建公用文件夹时，不要在名称内使用反斜线 (\)。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 在创建公用文件夹时，不要在名称内使用反斜线 (\)。
 
 
 有关语法和参数的详细信息，请参阅 [New-PublicFolder](https://technet.microsoft.com/zh-cn/library/aa996405\(v=exchg.150\))。
@@ -126,16 +93,6 @@ _**上一次修改主题：** 2014-02-24_
     
         Get-PublicFolder -Recurse
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 

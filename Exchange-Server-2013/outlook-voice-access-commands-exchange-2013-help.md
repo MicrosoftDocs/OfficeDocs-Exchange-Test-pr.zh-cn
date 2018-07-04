@@ -187,18 +187,8 @@ Outlook语音访问允许启用统一邮件 UM 的用户可以访问其邮箱使
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您需要访问电子邮件，在您删除它使用Outlook语音访问后，您可以使用Outlook Web App或Outlook电子邮件回相应的文件夹将从移动到已删除邮件文件夹。不能使用Outlook语音访问来访问已删除邮件文件夹。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果您需要访问电子邮件，在您删除它使用Outlook语音访问后，您可以使用Outlook Web App或Outlook电子邮件回相应的文件夹将从移动到已删除邮件文件夹。不能使用Outlook语音访问来访问已删除邮件文件夹。
 
 
 ## 日历选项命令参考

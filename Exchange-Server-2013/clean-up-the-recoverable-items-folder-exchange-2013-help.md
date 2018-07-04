@@ -57,18 +57,8 @@ _**上一次修改主题：** 2015-09-30_
 
     Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要删除邮箱中的项目而不将这些项目复制到另一个邮箱，请在不带 <em>TargetMailbox</em> 和 <em>TargetFolder</em> 参数的情况下使用上面的命令。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 若要删除邮箱中的项目而不将这些项目复制到另一个邮箱，请在不带 <em>TargetMailbox</em> 和 <em>TargetFolder</em> 参数的情况下使用上面的命令。
 
 
 有关详细的语法和参数信息，请参阅 [Search-Mailbox](https://technet.microsoft.com/zh-cn/library/dd298173\(v=exchg.150\))。
@@ -99,18 +89,8 @@ _**上一次修改主题：** 2015-09-30_
     
       - *UseDatabaseRetentionDefaults*
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果 <em>UseDatabaseQuotaDefaults</em> 参数设置为 <code>$true</code>，则不会应用以前的配额设置。会应用在邮箱数据库上配置的对应配额设置，即使填充了单个邮箱设置也是如此。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果 <em>UseDatabaseQuotaDefaults</em> 参数设置为 <code>$true</code>，则不会应用以前的配额设置。会应用在邮箱数据库上配置的对应配额设置，即使填充了单个邮箱设置也是如此。
     
         Get-Mailbox "Gurinder Singh" | Format-List RecoverableItemsQuota, RecoverableItemsWarningQuota, ProhibitSendQuota, ProhibitSendReceiveQuota, UseDatabaseQuotaDefaults, RetainDeletedItemsFor, UseDatabaseRetentionDefaults
 
@@ -138,36 +118,16 @@ _**上一次修改主题：** 2015-09-30_
     
         Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果邮箱位于数据库可用性组 (DAG) 中的某个邮箱数据库上，则必须在托管数据库副本的每个 DAG 成员上禁用托管文件夹助理。如果该数据库故障转移到另一个服务器，则这可防止该服务器上的托管文件夹助理删除邮箱数据。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 如果邮箱位于数据库可用性组 (DAG) 中的某个邮箱数据库上，则必须在托管数据库副本的每个 DAG 成员上禁用托管文件夹助理。如果该数据库故障转移到另一个服务器，则这可防止该服务器上的托管文件夹助理删除邮箱数据。
 
 
 8.  禁用单个项目恢复并从诉讼保留中删除邮箱。
     
         Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在运行此命令后，可能需要一小时来禁用单个项目恢复或诉讼保留。建议您仅当此期间过后才执行下一个步骤。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 在运行此命令后，可能需要一小时来禁用单个项目恢复或诉讼保留。建议您仅当此期间过后才执行下一个步骤。
 
 
 9.  将项目从“可恢复的项目”文件夹复制到发现搜索邮箱中的某个文件夹，并删除源邮箱中的内容。
@@ -178,36 +138,16 @@ _**上一次修改主题：** 2015-09-30_
     
         Search-Mailbox -Identity "Gurinder Singh" -SearchQuery "Subject:'Your bank statement'" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>不是一定要将项目复制到发现搜索邮箱。可以将邮件复制到任何邮箱。但是，为了防止访问可能敏感的邮箱数据，建议将邮件复制到仅限经过授权的记录管理员访问的邮箱。默认情况下，仅限发现管理角色组的成员访问默认发现搜索邮箱。有关详细信息，请参阅<a href="in-place-ediscovery-exchange-2013-help.md">就地电子数据展示</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 不是一定要将项目复制到发现搜索邮箱。可以将邮件复制到任何邮箱。但是，为了防止访问可能敏感的邮箱数据，建议将邮件复制到仅限经过授权的记录管理员访问的邮箱。默认情况下，仅限发现管理角色组的成员访问默认发现搜索邮箱。有关详细信息，请参阅<a href="in-place-ediscovery-exchange-2013-help.md">就地电子数据展示</a>。
 
 
 10. 如果邮箱以前处于诉讼保留或启用了单个项目恢复，请再次启用这些功能。
     
         Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在运行此命令后，可能需要一小时来启用单个项目恢复或诉讼保留。建议仅当此期间过后，才启用托管文件夹助理并允许客户端访问（步骤 11 和 12）。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 在运行此命令后，可能需要一小时来启用单个项目恢复或诉讼保留。建议仅当此期间过后，才启用托管文件夹助理并允许客户端访问（步骤 11 和 12）。
 
 
 11. 将以下配额恢复为在步骤 1 中记下的值：

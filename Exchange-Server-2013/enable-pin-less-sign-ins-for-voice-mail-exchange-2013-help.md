@@ -19,18 +19,8 @@ _**上一次修改主题：** 2015-04-08_
 
 您可以设置统一消息 (UM)，以便用户可以在不使用 PIN 的情况下登录到其语音邮件。默认情况下，系统会提示 Outlook Voice Access 用户输入 PIN，以登录到其邮箱并访问其语音邮件、电子邮件、日历、个人联系人、目录和个人选项。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>为启用了语音邮件的单个用户或用户组启用无 PIN 登录会降低语音邮件的安全级别，并给组织带来安全风险。</td>
-</tr>
-</tbody>
-</table>
+> [!warning]
+> 为启用了语音邮件的单个用户或用户组启用无 PIN 登录会降低语音邮件的安全级别，并给组织带来安全风险。
 
 
 若要启用无 PIN 登录，必须在 UM 邮箱策略上将参数 *AllowPinlessVoiceMailAccess* 设置为 `$true`，并在 UM 邮箱上将参数 *PinlessAccessToVoiceMailEnabled* 设置为 `$true`。默认情况下，这两个参数都设置为 `$false`，这便要求 Outlook Voice Access 用户在访问其语音邮件时输入其 PIN。

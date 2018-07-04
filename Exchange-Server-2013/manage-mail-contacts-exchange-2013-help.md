@@ -29,18 +29,8 @@ _**上一次修改主题：** 2017-10-04_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -73,18 +63,8 @@ _**上一次修改主题：** 2017-10-04_
         
         若要选择一个不同的 OU，请单击\&quot;浏览\&quot;。该对话框显示林中的指定作用域内的所有 OU。选择所需的 OU，然后单击\&quot;确定\&quot;。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>&amp;quot;组织单元&amp;quot;框仅在 Exchange Server 2013 中可用。在 Exchange Online 中不可用。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > &amp;quot;组织单元&amp;quot;框仅在 Exchange Server 2013 中可用。在 Exchange Online 中不可用。
 
 
 4.  完成后，请单击\&quot;保存\&quot;。
@@ -171,36 +151,16 @@ _**上一次修改主题：** 2017-10-04_
 
 使用\&quot;电子邮件选项\&quot;部分可以添加或删除邮件联系人的代理地址或编辑现有的代理地址。邮件联系人的主 SMTP 地址也显示在此部分中，但无法更改它。要更改它，必须在\&quot;常规\&quot;部分更改联系人的外部电子邮件地址。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>电子邮件选项</strong>部分只是在Exchange Server 2013中可用。不在Exchange Online中可用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> <strong>电子邮件选项</strong>部分只是在Exchange Server 2013中可用。不在Exchange Online中可用。
 
 
 ## 邮件提示
 
 使用\&quot;邮件提示\&quot;部分可添加邮件提示，以便在用户向此收件人发送邮件之前提醒用户存在潜在的问题。邮件提示是在将此收件人添加到新电子邮件的\&quot;收件人\&quot;、\&quot;抄送\&quot;或\&quot;密件抄送\&quot;行中时，信息栏中显示的文本。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>邮件提示可包含 HTML 标记，但不允许包含脚本。自定义邮件提示的长度不能超过 175 个显示的字符。此字符限制不计入 HTML 标记。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 邮件提示可包含 HTML 标记，但不允许包含脚本。自定义邮件提示的长度不能超过 175 个显示的字符。此字符限制不计入 HTML 标记。
 
 
 ## 使用命令行管理程序更改邮件联系人属性
@@ -261,18 +221,8 @@ _**上一次修改主题：** 2017-10-04_
 
 2.  在联系人列表中，选择两个或更多邮件联系人。无法批量编辑邮件联系人和邮件用户的组合。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>按住 Shift 键并单击第一个邮件联系人，然后单击最后一个要编辑的邮件联系人，可以选择多个相邻的邮件联系人。按住 Ctrl 键并单击每个要编辑的邮件联系人，也可以选择多个邮件联系人。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!tip]
+    > 按住 Shift 键并单击第一个邮件联系人，然后单击最后一个要编辑的邮件联系人，可以选择多个相邻的邮件联系人。按住 Ctrl 键并单击每个要编辑的邮件联系人，也可以选择多个邮件联系人。
 
 
 3.  在\&quot;详细信息\&quot;窗格中的\&quot;批量编辑\&quot;下，单击\&quot;联系人信息\&quot;或\&quot;组织\&quot;下的\&quot;更新\&quot;。

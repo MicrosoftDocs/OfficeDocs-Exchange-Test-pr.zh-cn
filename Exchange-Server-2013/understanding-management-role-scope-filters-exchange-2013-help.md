@@ -110,18 +110,9 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>Sales (True)</p></td>
 <td><p>IT Manager (True)</p></td>
 <td><p>因为 <strong>Title</strong> 的计算结果为 True，所以结果为 True。<strong>City</strong> 和 <strong>Department</strong> 的比较结果将被丢弃，因为 <strong>Title</strong> 的计算结果为 True，已满足筛选器查询条件。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>&amp;quot;IT Manager&amp;quot;和筛选器查询匹配，因为使用了 <strong>Like</strong> 比较运算符，当筛选器查询中使用通配符 (*) 时，该字符串和部分字符串匹配。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> &amp;quot;IT Manager&amp;quot;和筛选器查询匹配，因为使用了 <strong>Like</strong> 比较运算符，当筛选器查询中使用通配符 (*) 时，该字符串和部分字符串匹配。
 
 </td>
 </tr>

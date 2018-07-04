@@ -33,18 +33,8 @@ _**上一次修改主题：** 2016-12-09_
 
 下表描述了可在反垃圾邮件报告中出现的筛选器信息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>反垃圾邮件报告只显示已应用于特定邮件的筛选器的信息。通常，反垃圾邮件报告不包含下表中列出的所有信息。例如，你可能会收到以下反垃圾邮件报告：<code>DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures</code>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 反垃圾邮件报告只显示已应用于特定邮件的筛选器的信息。通常，反垃圾邮件报告不包含下表中列出的所有信息。例如，你可能会收到以下反垃圾邮件报告：<code>DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures</code>。
 
 
 ### 反垃圾邮件报告中的筛选器信息

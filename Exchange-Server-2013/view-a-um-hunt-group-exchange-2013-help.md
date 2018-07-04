@@ -37,18 +37,8 @@ _**上一次修改主题：** 2012-11-05_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 使用命令行管理程序查看 UM 智能寻线的属性
@@ -61,16 +51,6 @@ _**上一次修改主题：** 2012-11-05_
 
     Get-UMHuntGroup -identity MyUMIPGateway\MyUMHuntGroup | Format-List
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当您使用<strong>Get-UMHuntGroup</strong> cmdlet 时，不能输入只有 UM 查寻组的名称。您还必须包含与该 UM 查寻组关联的 UM IP 网关的名称。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 当您使用<strong>Get-UMHuntGroup</strong> cmdlet 时，不能输入只有 UM 查寻组的名称。您还必须包含与该 UM 查寻组关联的 UM IP 网关的名称。
 

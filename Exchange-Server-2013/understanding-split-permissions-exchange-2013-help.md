@@ -58,34 +58,14 @@ RBAC 是存在于每个运行 Exchange 2013 的服务器上的组件。RBAC 检�
 
 如果 RBAC 允许某个操作继续进行，则该操作将在 Exchange 受信任子系统的上下文而不是用户的上下文中执行。Exchange 受信任子系统是一个具有高权限的通用安全组 (USG)，对 Exchange 组织中所有与 Exchange 相关的对象具有读/写访问权限。它还是 Administrators 本地安全组和 Exchange Windows 权限 USG 的成员，允许 Exchange 创建和管理 Active Directory 对象。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>请勿对 Exchange 受信任子系统安全组的成员身份进行任何手动更改。此外，请勿将它添加到对象访问控制列表 (ACL) 或从中删除它。自行更改 Exchange 受信任子系统 USG 可能会对 Exchange 组织造成无法修复的损坏。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 请勿对 Exchange 受信任子系统安全组的成员身份进行任何手动更改。此外，请勿将它添加到对象访问控制列表 (ACL) 或从中删除它。自行更改 Exchange 受信任子系统 USG 可能会对 Exchange 组织造成无法修复的损坏。
 
 
 请务必了解，用户在使用 Active Directory 管理工具时所具有的 Exchange 权限并不重要。如果用户已通过 RBAC 获得授权，可以在 Exchange 管理工具中执行某个操作，则无论该用户的 Active Directory 权限如何，他/她都可以执行该操作。反之，如果用户是 Active Directory 中的 Enterprise Admin，但未得到在 Exchange 管理工具中执行某个操作（如创建邮箱）的授权，则该操作无法成功执行，因为该用户不具备 RBAC 所要求的权限。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>虽然 RBAC 权限模型不适用于“Active Directory 用户和计算机”管理工具，但“Active Directory 用户和计算机”无法管理 Exchange 配置。因此，虽然某个用户可能有权修改 Active Directory 对象的某些属性（如用户的显示名称），但该用户必须使用 Exchange 管理工具并且必须获得 RBAC 的授权才能管理 Exchange 属性。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 虽然 RBAC 权限模型不适用于“Active Directory 用户和计算机”管理工具，但“Active Directory 用户和计算机”无法管理 Exchange 配置。因此，虽然某个用户可能有权修改 Active Directory 对象的某些属性（如用户的显示名称），但该用户必须使用 Exchange 管理工具并且必须获得 RBAC 的授权才能管理 Exchange 属性。
 
 
 返回顶部
@@ -151,18 +131,8 @@ Exchange 2013 支持以下两种类型的拆分权限：
 
   - **Active Directory 拆分权限**   从任何 Active Directory 用户、服务或服务器完全删除了用于在 Exchange 域分区中创建安全主体的权限。RBAC 中未提供用于创建安全主体的任何选项。必须使用 Active Directory 管理工具在 Active Directory 中创建安全主体。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>虽然可以通过在安装了 Exchange 2013 的计算机上运行安装程序来启用或禁用 Active Directory 拆分权限，但 Active Directory 拆分权限配置可同时应用于 Exchange 2013 和 Exchange 2010 服务器。但是，它不会对 Microsoft Exchange Server 2007 服务器产生任何影响。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 虽然可以通过在安装了 Exchange 2013 的计算机上运行安装程序来启用或禁用 Active Directory 拆分权限，但 Active Directory 拆分权限配置可同时应用于 Exchange 2013 和 Exchange 2010 服务器。但是，它不会对 Microsoft Exchange Server 2007 服务器产生任何影响。
 
 
 如果您的组织选择使用拆分权限模型而不是共享权限，则建议您使用 RBAC 拆分权限模型。RBAC 拆分权限模型可提供显著提高的灵活性，同时可提供与 Active Directory 拆分权限几乎相同的管理分离，只不过 Exchange 服务器和服务可以在 RBAC 拆分权限模型中创建安全主体。
@@ -290,52 +260,22 @@ Exchange 服务器和 Exchange 受信任子系统也有权代表用户以及�
 
   - 您不希望 Exchange 服务器或代表其使用 Exchange 的第三方程序创建安全主体。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>通过使用安装向导，或通过在从命令行运行 <code>setup.exe</code> 时使用 <em>ActiveDirectorySplitPermissions</em> 参数，可以在安装 Exchange 2013 时选择切换为 Active Directory 拆分权限。也可以通过从命令行重新运行 <code>setup.exe</code>，在安装了 Active Directory 后启用或禁用 Exchange 2013 拆分权限。若要启用 Active Directory 拆分权限，请将 <em>ActiveDirectorySplitPermissions</em> 参数设置为 <code>true</code>。若要禁用该拆分权限，请将此参数设置为 <code>false</code>。您必须始终随 <em>ActiveDirectorySplitPermissions</em> 参数一起指定 <em>PrepareAD</em> 开关。<br />
-如果同一林中有多个域，则还必须在应用 Active Directory 拆分权限时指定 <em>PrepareAllDomains</em> 开关，或在每个域中运行带有 <em>PrepareDomain</em> 开关的安装程序。如果选择在每个域中运行带有 <em>PrepareDomain</em> 开关的安装程序而非使用 <em>PrepareAllDomains</em> 开关，则必须准备每个包含以下项的域：Exchange 服务器、启用了邮件功能的对象，或者可由 Exchange 服务器访问的全局编录服务器。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 通过使用安装向导，或通过在从命令行运行 <code>setup.exe</code> 时使用 <em>ActiveDirectorySplitPermissions</em> 参数，可以在安装 Exchange 2013 时选择切换为 Active Directory 拆分权限。也可以通过从命令行重新运行 <code>setup.exe</code>，在安装了 Active Directory 后启用或禁用 Exchange 2013 拆分权限。若要启用 Active Directory 拆分权限，请将 <em>ActiveDirectorySplitPermissions</em> 参数设置为 <code>true</code>。若要禁用该拆分权限，请将此参数设置为 <code>false</code>。您必须始终随 <em>ActiveDirectorySplitPermissions</em> 参数一起指定 <em>PrepareAD</em> 开关。<br />
+> 如果同一林中有多个域，则还必须在应用 Active Directory 拆分权限时指定 <em>PrepareAllDomains</em> 开关，或在每个域中运行带有 <em>PrepareDomain</em> 开关的安装程序。如果选择在每个域中运行带有 <em>PrepareDomain</em> 开关的安装程序而非使用 <em>PrepareAllDomains</em> 开关，则必须准备每个包含以下项的域：Exchange 服务器、启用了邮件功能的对象，或者可由 Exchange 服务器访问的全局编录服务器。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您已在域控制器上安装了 Exchange 2010 或 Exchange 2013，则不能启用 Active Directory 拆分权限。<br />
-在您启用或禁用 Active Directory 拆分权限后，我们建议您重启组织中的 Exchange 2010 和 Exchange 2013 服务器，以强制这些服务器选取具有更新后权限的新 Active Directory 访问令牌。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果您已在域控制器上安装了 Exchange 2010 或 Exchange 2013，则不能启用 Active Directory 拆分权限。<br />
+> 在您启用或禁用 Active Directory 拆分权限后，我们建议您重启组织中的 Exchange 2010 和 Exchange 2013 服务器，以强制这些服务器选取具有更新后权限的新 Active Directory 访问令牌。
 
 
 Exchange 2013 通过删除 ExchangeWindows 权限安全组的权限和成员身份来实现 Active Directory 拆分权限。在共享权限 RBAC 拆分权限中，向此安全组授予了对整个 Active Directory 中的许多非 Exchange 对象和属性的权限。通过删除此安全组的权限和成员身份，可防止 Exchange 管理员和服务创建或修改这些非 Exchange Active Directory 对象。
 
 有关在启用或禁用 Exchange 拆分权限时，对 Windows Exchange 权限安全组和其他 Active Directory 组件进行的更改的列表，请参阅下表。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在启用 Exchange 拆分权限时，删除了使 Active Directory 管理员可以创建安全主体的角色组角色分配。这样做是为了删除对某些 cmdlet 的访问权限，否则在运行这些 cmdlet 时会生成错误，因为它们无权创建关联 Active Directory 对象。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在启用 Exchange 拆分权限时，删除了使 Active Directory 管理员可以创建安全主体的角色组角色分配。这样做是为了删除对某些 cmdlet 的访问权限，否则在运行这些 cmdlet 时会生成错误，因为它们无权创建关联 Active Directory 对象。
 
 
 ### Active Directory 拆分权限更改

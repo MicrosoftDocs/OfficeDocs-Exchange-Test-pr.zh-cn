@@ -87,18 +87,8 @@ Exchange 2013 是一种具有 Active Directory 站点感知功能的应用程序
 
 默认情况下，只要 Exchange 2013 服务器启动，它就会绑定到其所属站点中随机选择的域控制器和全局编录服务器。通过使用 Exchange 命令行管理程序中的 **Get-ExchangeServer** cmdlet 可以查看所选目录服务器。您还可以使用 **Set-ExchangeServer** cmdlet 来配置 Exchange 2013 服务器应绑定到的域控制器的静态列表或者应被排除的域控制器的列表。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以将 Windows Server 2008 域控制器配置为只读目录服务器。如果希望在远程站点中部署域控制器或全局编录服务器来进行身份验证和授权，但又不希望允许该站点的管理员将更改写入 Active Directory，此项配置将十分有用。但是，不能在仅包含只读目录服务器的任何站点中部署 Exchange 2013 服务器。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 可以将 Windows Server 2008 域控制器配置为只读目录服务器。如果希望在远程站点中部署域控制器或全局编录服务器来进行身份验证和授权，但又不希望允许该站点的管理员将更改写入 Active Directory，此项配置将十分有用。但是，不能在仅包含只读目录服务器的任何站点中部署 Exchange 2013 服务器。
 
 
 ## 邮箱服务器角色

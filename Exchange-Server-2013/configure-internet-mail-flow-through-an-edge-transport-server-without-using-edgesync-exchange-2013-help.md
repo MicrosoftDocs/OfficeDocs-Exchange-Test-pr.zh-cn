@@ -33,18 +33,8 @@ _**上一次修改主题：** 2017-01-23_
 
   - 您需要在 Active Directory 中创建用户帐户，并将此帐户添加到 Exchange Server 计算机上的通用安全组。边缘传输服务器上的发送连接器使用此帐户对 Exchange 组织中的目标邮箱服务器进行身份验证。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>该帐户被授予与运行 Exchange Server 的计算机关联的权限。确保保护帐户凭据以避免误用该帐户。可以将该帐户配置为仅允许登录特定的计算机。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 该帐户被授予与运行 Exchange Server 的计算机关联的权限。确保保护帐户凭据以避免误用该帐户。可以将该帐户配置为仅允许登录特定的计算机。
 
 
 ## 边缘传输服务器步骤
@@ -63,18 +53,8 @@ _**上一次修改主题：** 2017-01-23_
 
 以下各节将引导您完成准备边缘传输服务器与 Exchange 组织进行通信所需的所有配置步骤。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只能使用命令行管理程序在边缘传输服务器上执行这些步骤。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 只能使用命令行管理程序在边缘传输服务器上执行这些步骤。
 
 
 ## 步骤 1：创建一个配置为向 Internet 发送邮件的发送连接器
@@ -99,18 +79,8 @@ _**上一次修改主题：** 2017-01-23_
 
 使用 **New-SendConnector** cmdlet 创建发送连接器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在创建发送连接器之前，首先需要运行 <strong>Get-Credential</strong> 命令，以保存将在临时变量中使用的用户名和密码。需要执行此操作是因为 <strong>New-SendConnector</strong> cmdlet 不接受纯文本格式的用户凭据。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在创建发送连接器之前，首先需要运行 <strong>Get-Credential</strong> 命令，以保存将在临时变量中使用的用户名和密码。需要执行此操作是因为 <strong>New-SendConnector</strong> cmdlet 不接受纯文本格式的用户凭据。
 
 
 此发送连接器要求进行以下配置：

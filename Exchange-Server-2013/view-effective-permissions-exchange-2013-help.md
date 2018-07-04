@@ -23,18 +23,8 @@ _**上一次修改主题：** 2012-10-09_
 
 使用 *Role* 参数时，*GetEffectiveUsers* 开关与 **Get-ManagementRoleAssignment** cmdlet 一起使用。通过使用特定的角色指定此开关，**Get-ManagementRoleAssignment** cmdlet 会检查分配给该角色的所有角色代理人，例如角色组、分配策略和 USG，并列出每种角色代理人的成员。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>GetEffectiveUser</em> 开关不会列出作为链接的外部角色组成员的用户。如果找到链接角色组，会显示“所有链接组成员”，而不是用户列表。有关多个林中的权限的详细信息，请参阅<a href="understanding-multiple-forest-permissions-exchange-2013-help.md">了解多林权限</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> <em>GetEffectiveUser</em> 开关不会列出作为链接的外部角色组成员的用户。如果找到链接角色组，会显示“所有链接组成员”，而不是用户列表。有关多个林中的权限的详细信息，请参阅<a href="understanding-multiple-forest-permissions-exchange-2013-help.md">了解多林权限</a>。
 
 
 有关管理角色、角色组和分配策略的详细信息，请参阅[了解基于角色的访问控制](understanding-role-based-access-control-exchange-2013-help.md)。有关管理角色分配的详细信息，请参阅[了解管理角色分配](understanding-management-role-assignments-exchange-2013-help.md)。
@@ -51,18 +41,8 @@ _**上一次修改主题：** 2012-10-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 使用命令行管理程序列出所有有效用户

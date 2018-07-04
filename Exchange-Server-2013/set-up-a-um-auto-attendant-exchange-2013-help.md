@@ -39,18 +39,8 @@ _**上一次修改主题：** 2015-03-09_
 
 3.  确定自动助理的营业和非营业时间并使用\&quot;营业时间\&quot;设置营业时间。虽然这不是必需的，但是还可以确定此自动助理的假日日程安排。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>还应对助理设置时区。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 还应对助理设置时区。
 
 
 4.  确定是需要标准系统生成的营业和非营业时间问候语还是为它们创建自定义录音。

@@ -49,18 +49,8 @@ _**上一次修改主题：** 2016-12-09_
 
     New-TransportRule -Name <name_of_the_rule> -SubjectContainsWords "Meeting" -SetHeaderName "X-MS-Exchange-Organization-BypassClutter" -SetHeaderValue "true"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在此示例中，“X-MS-Exchange-Organization-BypassClutter”和“true”区分大小写。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 在此示例中，“X-MS-Exchange-Organization-BypassClutter”和“true”区分大小写。
 
 
 有关语法和参数的详细信息，请参阅 [New-TransportRule](https://technet.microsoft.com/zh-cn/library/bb125138\(v=exchg.150\))。
@@ -69,16 +59,6 @@ _**上一次修改主题：** 2016-12-09_
 
 你可以检查电子邮件头以查看是否由于待筛选邮件传输规则绕过导致电子邮件登录收件箱。在已应用待筛选邮件绕过传输规则的组织中，从邮箱中挑选电子邮件。查看邮件上标记的邮件头，你应该会看到 **X-MS-Exchange-Organization-BypassClutter: true** 邮件头。这意味着正在绕过。有关如何查找邮件头的信息，请参阅[查看电子邮件的 Internet 邮件头](https://go.microsoft.com/fwlink/p/?linkid=822530)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>日历项目（如接受、发送或拒绝的会议）不会有这些邮件头。我们很快会将待筛选邮件功能扩展到这些日历项目。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 日历项目（如接受、发送或拒绝的会议）不会有这些邮件头。我们很快会将待筛选邮件功能扩展到这些日历项目。
 

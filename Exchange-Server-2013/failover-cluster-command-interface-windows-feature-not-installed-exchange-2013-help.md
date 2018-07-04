@@ -23,18 +23,8 @@ Exchange 2013 安装程序要求首先在计算机上安装“故障转移群集
 
 执行下列操作以在此计算机上安装 Windows 功能。如果此项更新要求重新启动以完成安装，则需要退出 Exchange 2013 安装程序，重新启动，然后再启动安装程序。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可能需要安装其他 Windows 功能或更新，Exchange 2013 安装程序才能继续运行。有关所需的 Windows 功能和更新的完整列表，请查看 <a href="exchange-2013-prerequisites-exchange-2013-help.md">Exchange 2013 先决条件</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 可能需要安装其他 Windows 功能或更新，Exchange 2013 安装程序才能继续运行。有关所需的 Windows 功能和更新的完整列表，请查看 <a href="exchange-2013-prerequisites-exchange-2013-help.md">Exchange 2013 先决条件</a>。
 
 
 1.  在本地计算机上打开 Windows PowerShell。

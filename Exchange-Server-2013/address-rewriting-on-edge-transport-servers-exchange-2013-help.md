@@ -21,18 +21,8 @@ _**上一次修改主题：** 2015-03-09_
 
 您创建的地址重写条目指定了内部地址（要更改的电子邮件地址）和外部地址（所需的最终电子邮件地址）。您可以指定是在入站和出站邮件中对电子邮件地址进行重写，还是仅在出站邮件中对电子邮件地址进行重写。您可以为单个用户（chris@contoso.com 至 support@contoso.com）、单一域（contoso.com 至 fabrikam.com）中的所有用户、或者含有例外的多个子域（\*.fabrikam.com 至 contoso.com，legal.fabrikam.com 除外）中的用户创建地址写入条目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不论您打算如何使用地址重写，都需要验证所生成的电子邮件地址在您的组织中是否具有唯一性，这样便可以避免重复。这是因为地址重写不会验证重写的电子邮件地址的唯一性。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 不论您打算如何使用地址重写，都需要验证所生成的电子邮件地址在您的组织中是否具有唯一性，这样便可以避免重复。这是因为地址重写不会验证重写的电子邮件地址的唯一性。
 
 
 **目录**

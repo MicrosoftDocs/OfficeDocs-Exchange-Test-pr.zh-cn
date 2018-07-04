@@ -125,18 +125,8 @@ ImportEdgeConfig.ps1 脚本（位于 %ExchangeInsallPath%Scripts 中）将执行
 
 通过在任何目标服务器上执行此步骤，可以克隆现有边缘传输服务器的配置，或将服务器还原到特定配置。运行 ImportEdgeConfig.ps1 脚本（位于 %ExchangeInsallPath%Scripts 中）脚本可以验证和导入新配置。运行此脚本之后，目标服务器的配置将与中间 XML 文件和应答文件中的设置匹配。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建议您先备份现有服务器配置，然后再执行导入配置过程，以便在克隆操作失败时，可以将服务器还原到先前的稳定状态。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 建议您先备份现有服务器配置，然后再执行导入配置过程，以便在克隆操作失败时，可以将服务器还原到先前的稳定状态。
 
 
 此步骤使用应答文件中提供的特定于服务器的信息。如果应答文件中未指定某项设置，则使用中间 XML 文件中的数据。在脚本修改配置之前，脚本将验证中间 XML 文件和应答文件中的数据。
@@ -270,18 +260,8 @@ ImportEdgeConfig.ps1 脚本（位于 %ExchangeInsallPath%Scripts 中）将执行
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果稍后将边缘传输服务器订阅到 Exchange 组织，<strong>InternalSMTPServers</strong> 属性的值将在 EdgeSync 进程中被覆盖。有关详细信息，请参阅<a href="edge-subscriptions-exchange-2013-help.md">边缘订阅</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果稍后将边缘传输服务器订阅到 Exchange 组织，<strong>InternalSMTPServers</strong> 属性的值将在 EdgeSync 进程中被覆盖。有关详细信息，请参阅<a href="edge-subscriptions-exchange-2013-help.md">边缘订阅</a>。
 
 
 返回顶部

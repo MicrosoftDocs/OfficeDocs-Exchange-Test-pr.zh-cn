@@ -21,25 +21,12 @@ _**上一次修改主题：** 2015-11-09_
 
 本主题为您演示如何配置公用文件夹以及如何在新组织中或以前从未拥有公用文件夹的组织中运行公用文件夹。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关存储配额和公用文件夹的限制的详细信息，请参阅以下主题：
-<ul>
-<li><p>若要了解 Office 365 中的公用文件夹，请参阅 <a href="https://go.microsoft.com/fwlink/?linkid=391188">Exchange Online 限制</a>。</p></li>
-<li><p>有关本地 Exchange Server 2013 中的公用文件夹的信息，请参阅<a href="limits-for-public-folders-exchange-2013-help.md">公用文件夹的限制</a>。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 有关存储配额和公用文件夹的限制的详细信息，请参阅以下主题：
+> <ul>
+> <li><p>若要了解 Office 365 中的公用文件夹，请参阅 <a href="https://go.microsoft.com/fwlink/?linkid=391188">Exchange Online 限制</a>。</p></li>
+> <li><p>有关本地 Exchange Server 2013 中的公用文件夹的信息，请参阅<a href="limits-for-public-folders-exchange-2013-help.md">公用文件夹的限制</a>。</p></li>
+> </ul>
 
 
 有关与 Exchange Server 2013 中公用文件夹相关的其他管理任务，请参阅[公用文件夹程序](public-folder-procedures-exchange-2013-help.md)。
@@ -54,18 +41,8 @@ _**上一次修改主题：** 2015-11-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您该如何做？

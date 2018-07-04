@@ -241,18 +241,8 @@ Exchange 命令行管理程序提供了可用来设置命令输出格式的多�
 
 若要使用此脚本，请将其保存到要运行脚本的计算机上的 `C:\Program Files\Microsoft\Exchange Server\V15\Scripts` 目录中。将文件命名为 `Out-Ie.ps1`。保存文件后，即可将脚本作为普通 cmdlet 使用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要在 Exchange 2013 中运行脚本，必须将脚本添加到无作用域的管理角色，而且您必须已直接获得或通过管理角色组获得管理角色。有关详细信息，请参阅<a href="understanding-management-roles-exchange-2013-help.md">了解管理角色</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 若要在 Exchange 2013 中运行脚本，必须将脚本添加到无作用域的管理角色，而且您必须已直接获得或通过管理角色组获得管理角色。有关详细信息，请参阅<a href="understanding-management-roles-exchange-2013-help.md">了解管理角色</a>。
 
 
 `Out-Ie` 脚本假定其收到的数据是有效的 HTML 格式。若要将要查看的数据转换为 HTML 格式，必须将命令的结果通过管道传递给 **ConvertTo-Html** cmdlet。然后，可以将该命令的结果通过管道传递给 `Out-Ie` 脚本。以下示例说明了如何在 Internet Explorer 窗口中查看目录列表：

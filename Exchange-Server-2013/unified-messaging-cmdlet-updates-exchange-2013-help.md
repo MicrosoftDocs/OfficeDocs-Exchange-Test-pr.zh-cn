@@ -91,36 +91,18 @@ Exchange Server 2010 中的许多统一消息 (UM) cmdlet 适用于 Exchange Ser
 <tr class="even">
 <td><p>Disable-UMService</p></td>
 <td><p><code>-Identity &lt;UMServerIdParameter&gt; [-Confirm [&lt;SwitchParameter&gt;]] [-DomainController &lt;Fqdn&gt;] [-Immediate &lt;$true | $false&gt;] [-WhatIf [&lt;SwitchParameter&gt;]]</code></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此 cmdlet 仅适用于 Exchange 2007 和 2010 UM 服务器。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 此 cmdlet 仅适用于 Exchange 2007 和 2010 UM 服务器。
 
 </td>
 </tr>
 <tr class="odd">
 <td><p>Enable-UMService</p></td>
 <td><p><code>-Identity &lt;UMServerIdParameter&gt; [-Confirm [&lt;SwitchParameter&gt;]] [-DomainController &lt;Fqdn&gt;] [-WhatIf [&lt;SwitchParameter&gt;]]</code></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此 cmdlet 仅适用于 Exchange 2007 和 2010 UM 服务器。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 此 cmdlet 仅适用于 Exchange 2007 和 2010 UM 服务器。
 
 </td>
 </tr>

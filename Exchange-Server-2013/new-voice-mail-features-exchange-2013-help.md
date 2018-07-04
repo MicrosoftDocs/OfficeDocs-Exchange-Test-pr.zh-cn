@@ -49,18 +49,8 @@ UCMA 4.0 如文字语音转换 (TTS) 和自动语音识别 (ASR) 使用相同版
 
   - UCMA 4.0 提供更准确的语音引擎翻译和更具可扩展性的语音平台支持跨多个产品。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当您正在安装Exchange 2013安装 UCMA 4.0。有关 UCMA 4.0 和安装要求的详细信息，请参阅<a href="exchange-2013-prerequisites-exchange-2013-help.md">Exchange 2013 先决条件</a>。要升级到最新的 UCMA 版本，必须先卸载以前的版本 UCMA，使用添加/删除程序安装。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 当您正在安装Exchange 2013安装 UCMA 4.0。有关 UCMA 4.0 和安装要求的详细信息，请参阅<a href="exchange-2013-prerequisites-exchange-2013-help.md">Exchange 2013 先决条件</a>。要升级到最新的 UCMA 版本，必须先卸载以前的版本 UCMA，使用添加/删除程序安装。
 
 
 ## 语音邮件预览改进

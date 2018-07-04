@@ -64,18 +64,9 @@ _**上一次修改主题：** 2015-03-09_
 <tr class="even">
 <td><p><strong> </strong></p></td>
 <td><p>安装所需的客户端访问服务器和邮箱服务器。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在配置 VoIP 网关或 IP PBX 以将 UM SIP 和 RTP 通信发送到 Exchange 2013 客户端访问服务器之前，您应在您的组织内部署至少一个 Exchange 2013 邮箱服务器。</td>
-</tr>
-</tbody>
-</table>
+
+> [!warning]
+> 在配置 VoIP 网关或 IP PBX 以将 UM SIP 和 RTP 通信发送到 Exchange 2013 客户端访问服务器之前，您应在您的组织内部署至少一个 Exchange 2013 邮箱服务器。
 
 </td>
 <td><p><a href="install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md">使用安装向导安装 Exchange 2013</a></p></td>

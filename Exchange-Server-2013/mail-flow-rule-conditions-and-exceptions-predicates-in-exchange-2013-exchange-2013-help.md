@@ -304,18 +304,8 @@ _**上一次修改主题：** 2017-12-20_
 
 ## 邮件主题或正文
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在邮件已通过 MIME 内容传输编码方法（用于以 ACSII 文本方式在 SMTP 服务器之间传输二进制消息）解码<em>后</em>，搜索邮件中主题或其他头字段中的字词或文本模式。不能使用条件或例外来搜索邮件中主题或其他头字段的原始（通常为 Base64）编码值。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在邮件已通过 MIME 内容传输编码方法（用于以 ACSII 文本方式在 SMTP 服务器之间传输二进制消息）解码<em>后</em>，搜索邮件中主题或其他头字段中的字词或文本模式。不能使用条件或例外来搜索邮件中主题或其他头字段的原始（通常为 Base64）编码值。
 
 
 
@@ -752,18 +742,9 @@ _**上一次修改主题：** 2017-12-20_
 <p><em>ExceptIfMessageTypeMatches</em></p></td>
 <td><p><code>MessageType</code></p></td>
 <td><p>指定类型的邮件。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当Outlook或Outlook Web App配置为转发邮件时， <strong>ForwardingSmtpAddress</strong>属性将添加到邮件中。消息类型不会更改为<code>AutoForward</code>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 当Outlook或Outlook Web App配置为转发邮件时， <strong>ForwardingSmtpAddress</strong>属性将添加到邮件中。消息类型不会更改为<code>AutoForward</code>。
 
 </td>
 <td><p>Exchange 2010 或更高版本</p></td>
@@ -812,18 +793,8 @@ _**上一次修改主题：** 2017-12-20_
 
 ## 邮件头
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在邮件已通过 MIME 内容传输编码方法（用于以 ACSII 文本方式在 SMTP 服务器之间传输二进制消息）解码<em>后</em>，搜索邮件中主题或其他头字段中的字词或文本模式。不能使用条件或例外来搜索邮件中主题或其他头字段的原始（通常为 Base64）编码值。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在邮件已通过 MIME 内容传输编码方法（用于以 ACSII 文本方式在 SMTP 服务器之间传输二进制消息）解码<em>后</em>，搜索邮件中主题或其他头字段中的字词或文本模式。不能使用条件或例外来搜索邮件中主题或其他头字段的原始（通常为 Base64）编码值。
 
 
 
@@ -1008,18 +979,8 @@ _**上一次修改主题：** 2017-12-20_
 
 下表介绍了条件和例外中使用的属性类型。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果该属性是一个字符串，不允许有尾随空格。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果该属性是一个字符串，不允许有尾随空格。
 
 
 
@@ -1146,18 +1107,9 @@ _**上一次修改主题：** 2017-12-20_
 <li><p><strong>审批请求</strong> (<code>ApprovalRequest</code>)</p></li>
 <li><p><strong>已读回执</strong> (<code>ReadReceipt</code>)</p></li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当Outlook或Outlook Web App配置为转发邮件时， <strong>ForwardingSmtpAddress</strong>属性将添加到邮件中。消息类型不会更改为<code>AutoForward</code>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 当Outlook或Outlook Web App配置为转发邮件时， <strong>ForwardingSmtpAddress</strong>属性将添加到邮件中。消息类型不会更改为<code>AutoForward</code>。
 
 </td>
 </tr>
@@ -1210,18 +1162,9 @@ _**上一次修改主题：** 2017-12-20_
 <li><p>发件人的电子邮件地址不位于接受域中。</p></li>
 <li><p>发件人的电子邮件地址位于配置为外部中继域的接受域中。</p></li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要确定邮件联系人在组织内部还是外部，可将发件人地址与组织的接受域进行比较。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 要确定邮件联系人在组织内部还是外部，可将发件人地址与组织的接受域进行比较。
 
 </td>
 </tr>

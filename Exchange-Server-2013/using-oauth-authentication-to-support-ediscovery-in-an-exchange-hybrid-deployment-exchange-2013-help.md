@@ -63,18 +63,9 @@ OAuth 身份验证通常涉及到三方：一台授权服务器和两个需要�
 <tr class="even">
 <td><p>使用管理员或合规部主管从 Exchange 内部部署组织启动的电子数据展示搜索，搜索内部部署邮箱。</p></td>
 <td><p>否</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如上文所述，如果内部部署邮箱与基于云的存档邮箱一起配置，则都需要 OAuth 身份验证。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 如上文所述，如果内部部署邮箱与基于云的存档邮箱一起配置，则都需要 OAuth 身份验证。
 
 </td>
 </tr>

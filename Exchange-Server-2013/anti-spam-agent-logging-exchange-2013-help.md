@@ -31,18 +31,8 @@ _**上一次修改主题：** 2015-03-09_
 
   - 发件人 ID 代理
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>“连接筛选”代理和“边缘规则”代理在邮箱服务器上不可用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> “连接筛选”代理和“边缘规则”代理在邮箱服务器上不可用。
 
 
 写入代理日志中的信息取决于代理、SMTP 事件和对邮件执行的操作。
@@ -120,18 +110,8 @@ Exchange 使用循环日志记录，并基于文件大小和文件期限对代�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>“连接筛选”代理和“边缘规则”代理在邮箱服务器上不可用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> “连接筛选”代理和“边缘规则”代理在邮箱服务器上不可用。
 
 
 有关代理、SMTP 事件和代理优先级的详细信息，请参阅[传输代理](transport-agents-exchange-2013-help.md)。

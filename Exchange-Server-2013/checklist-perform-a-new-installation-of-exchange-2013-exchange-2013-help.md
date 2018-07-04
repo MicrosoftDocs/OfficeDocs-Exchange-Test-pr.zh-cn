@@ -25,18 +25,8 @@ _**上一次修改主题：** 2015-03-09_
 
 该检查表提供了针对典型情况的指导，因此是一个通用的检查表。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange Server 部署助理将为您提供有关如何部署 Exchange Server 的自定义分步指导。部署助理可帮助您部署 Exchange Server 2013 的全新安装，将早期版本升级到 Exchange 2013，或配置 Exchange 2013 和 Exchange Online 的混合部署。若要了解详细信息，请参阅 <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Exchange Server 部署助理将为您提供有关如何部署 Exchange Server 的自定义分步指导。部署助理可帮助您部署 Exchange Server 2013 的全新安装，将早期版本升级到 Exchange 2013，或配置 Exchange 2013 和 Exchange Online 的混合部署。若要了解详细信息，请参阅 <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。
 
 
 ## Exchange 2013 的新安装检查表
@@ -72,18 +62,9 @@ _**上一次修改主题：** 2015-03-09_
 <tr class="odd">
 <td> </td>
 <td><p>4. 配置非连续命名空间。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此步骤是可选的。仅当组织运行脱节命名空间时，才需执行此步骤。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 此步骤是可选的。仅当组织运行脱节命名空间时，才需执行此步骤。
 
 </td>
 <td><p><a href="disjoint-namespace-scenarios-exchange-2013-help.md">非连续命名空间应用场景</a></p></td>
@@ -101,18 +82,9 @@ _**上一次修改主题：** 2015-03-09_
 <tr class="even">
 <td><p></p></td>
 <td><p>7. 安装边缘传输服务器角色。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此为可选步骤。只有当您想安装边缘传输服务器时，才是必需步骤。有关详细信息，请参阅<a href="edge-transport-servers-exchange-2013-help.md">边缘传输服务器</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 此为可选步骤。只有当您想安装边缘传输服务器时，才是必需步骤。有关详细信息，请参阅<a href="edge-transport-servers-exchange-2013-help.md">边缘传输服务器</a>。
 
 </td>
 <td><p><a href="install-the-exchange-2013-edge-transport-role-using-the-setup-wizard-exchange-2013-help.md">使用安装向导安装 Exchange 2013 边缘传输角色</a></p></td>
@@ -141,18 +113,9 @@ _**上一次修改主题：** 2015-03-09_
 <tr class="odd">
 <td> </td>
 <td><p>12. 在虚拟目录上配置设置，包括脱机通讯簿、Exchange Web 服务、Exchange 管理中心 (EAC)、Outlook Web App 和 Exchange ActiveSync 虚拟目录。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要使用 Exchange Web 服务、Outlook Anywhere 或脱机通讯簿，此步骤是必需的。如果需要更改 EAC、Outlook Web App 或 Exchange ActiveSync 的任何默认设置，可能也需要此步骤。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 如果要使用 Exchange Web 服务、Outlook Anywhere 或脱机通讯簿，此步骤是必需的。如果需要更改 EAC、Outlook Web App 或 Exchange ActiveSync 的任何默认设置，可能也需要此步骤。
 
 </td>
 <td><p><a href="configure-mail-flow-and-client-access-exchange-2013-help.md">Step 4: Configure external URLs</a></p>
@@ -166,18 +129,9 @@ _**上一次修改主题：** 2015-03-09_
 <tr class="odd">
 <td> </td>
 <td><p>14. 配置统一消息。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此步骤是可选的。仅当要在组织中使用统一消息时，才需执行此步骤。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 此步骤是可选的。仅当要在组织中使用统一消息时，才需执行此步骤。
 
 </td>
 <td><p><a href="deploying-voice-mail-and-um-exchange-2013-help.md">部署语音邮件和 UM</a></p></td>
@@ -185,18 +139,9 @@ _**上一次修改主题：** 2015-03-09_
 <tr class="even">
 <td><p></p></td>
 <td><p>15. 配置其他统一消息和 Lync Server 设置。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此步骤是可选的。只有当已经在组织中配置了统一消息，且希望将其与 Lync Server 集成时，才需要此步骤。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 此步骤是可选的。只有当已经在组织中配置了统一消息，且希望将其与 Lync Server 集成时，才需要此步骤。
 
 </td>
 <td><p><a href="deploying-exchange-2013-um-and-lync-server-overview-exchange-2013-help.md">部署 Exchange 2013 UM 和 Lync Server 概述</a></p></td>

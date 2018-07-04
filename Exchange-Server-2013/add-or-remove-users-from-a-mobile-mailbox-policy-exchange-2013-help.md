@@ -19,18 +19,8 @@ _**上一次修改主题：** 2015-07-16_
 
 通过移动设备邮箱策略可以将一组通用的安全和移动设备设置应用于一组用户。可以创建多个移动设备邮箱策略。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>安装 Microsoft Exchange Server 2013 时，将创建默认的移动设备邮箱策略，并且该策略会自动分配给所有用户。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 安装 Microsoft Exchange Server 2013 时，将创建默认的移动设备邮箱策略，并且该策略会自动分配给所有用户。
 
 
 有关与移动设备邮箱策略相关的更多管理任务，请参阅[移动设备邮箱策略](mobile-device-mailbox-policies-exchange-2013-help.md)。
@@ -45,18 +35,8 @@ _**上一次修改主题：** 2015-07-16_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -122,18 +102,8 @@ _**上一次修改主题：** 2015-07-16_
         Get-Mailbox | where { $_.CustomAttribute1 -match "Manager"
          } | Set-CASMailbox -activesyncmailboxpolicy(Get-ActiveSyncMailboxPolicy "Contoso").Identity
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>可以用 <code>CustomAttribute1</code> 替换 <strong>Get-Mailbox</strong> 对象的任何属性。若要查看完整列表，请键入：<code>Get-Mailbox username |fl</code>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 可以用 <code>CustomAttribute1</code> 替换 <strong>Get-Mailbox</strong> 对象的任何属性。若要查看完整列表，请键入：<code>Get-Mailbox username |fl</code>.
 
 
 ## 您如何知道这有效？

@@ -85,18 +85,8 @@ _**上一次修改主题：** 2014-02-21_
 
     New-SendConnector -Name "EdgeSync - Site-A to Internet" -Usage Custom -AddressSpaces SMTP:*;100 -DNSRoutingEnabled $false -SmartHosts 192.168.10.1 -SmartHostAuthMechanism None -SourceTransportServers EdgeSubscriptionName
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此示例未指定任何智能主机身份验证机制。在您自己的 Exchange 组织中创建智能主机连接器时，确保配置了正确的身份验证机制并提供了所有必要的凭据。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 此示例未指定任何智能主机身份验证机制。在您自己的 Exchange 组织中创建智能主机连接器时，确保配置了正确的身份验证机制并提供了所有必要的凭据。
 
 
 ## 为外部中继域配置发送连接器

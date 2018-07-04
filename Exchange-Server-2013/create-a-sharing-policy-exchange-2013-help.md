@@ -19,18 +19,8 @@ _**上一次修改主题：** 2015-04-07_
 
 您可以使用共享策略控制 Exchange 组织中的用户与组织外的用户共享日历信息的方式。共享策略允许与不同类型的外部用户进行用户建立的、人对人的日历信息共享。这些策略支持与外部联合组织（如 Office 365 或其他本地 Exchange 组织）、外部非联合组织以及可以访问 Internet 的个人共享日历信息。若要将特定的共享策略应用于用户，请参阅[将共享策略应用于邮箱](apply-a-sharing-policy-to-mailboxes-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>创建共享策略是在 Exchange 组织中设置联合共享的若干步骤之一。首先需要建立与本地 Exchange 组织的 Azure Active Directory 身份验证系统的联合身份验证信任，然后才能与其他联合 Exchange 组织共享日历信息。Internet 共享策略不需要联合身份验证信任。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 创建共享策略是在 Exchange 组织中设置联合共享的若干步骤之一。首先需要建立与本地 Exchange 组织的 Azure Active Directory 身份验证系统的联合身份验证信任，然后才能与其他联合 Exchange 组织共享日历信息。Internet 共享策略不需要联合身份验证信任。
 
 
 若要了解有关联合共享的详细信息，请参阅[共享](sharing-exchange-2013-help.md)。
@@ -151,16 +141,6 @@ _**上一次修改主题：** 2015-04-07_
 
     Get-SharingPolicy <policy name> | format-list
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 

@@ -79,18 +79,9 @@ Outlook 使用 .pst 文件将数据存储在用户计算机本地或网络共享
 <tr class="odd">
 <td><p>Outlook 2013、Outlook 2010、Outlook 2007 和 Outlook Web App</p></td>
 <td><p>是。Outlook 2013、Outlook 2010、Outlook 2007 和 Outlook Web App 用户可以将其主邮箱中的项目复制或移动到其存档邮箱，还可以使用保留策略将项目移动到存档。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook 2010 及更高版本和 Outlook 2007 用户还可以将 .pst 文件中的项目复制或移动到其存档邮箱。Outlook 2007 用户需要 2011 年 2 月的 Office 2007 累计更新。Outlook 2010 及更高版本和 Outlook 2007 对存档支持存在一些差异。有关详细信息，请参阅 Exchange 工作组日志文章，<a href="https://blogs.technet.com/b/exchange/archive/2010/12/20/3411710.aspx">是的，在弗吉尼亚，Outlook 2007 中存在 Exchange 2010 存档支持</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> Outlook 2010 及更高版本和 Outlook 2007 用户还可以将 .pst 文件中的项目复制或移动到其存档邮箱。Outlook 2007 用户需要 2011 年 2 月的 Office 2007 累计更新。Outlook 2010 及更高版本和 Outlook 2007 对存档支持存在一些差异。有关详细信息，请参阅 Exchange 工作组日志文章，<a href="https://blogs.technet.com/b/exchange/archive/2010/12/20/3411710.aspx">是的，在弗吉尼亚，Outlook 2007 中存在 Exchange 2010 存档支持</a>。
 
 </td>
 </tr>
@@ -102,18 +93,8 @@ Outlook 使用 .pst 文件将数据存储在用户计算机本地或网络共享
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>就地存档是一项高级功能，要求使用 Exchange 企业客户端访问许可证 (CAL)。有关如何对 Exchange 进行许可的详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/?linkid=237292">Exchange Server 许可</a>。有关访问存档邮箱所需的 Outlook 版本的详细信息，请参阅<a href="https://go.microsoft.com/fwlink/?linkid=237276">个人存档和保留策略的许可要求</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 就地存档是一项高级功能，要求使用 Exchange 企业客户端访问许可证 (CAL)。有关如何对 Exchange 进行许可的详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/?linkid=237292">Exchange Server 许可</a>。有关访问存档邮箱所需的 Outlook 版本的详细信息，请参阅<a href="https://go.microsoft.com/fwlink/?linkid=237276">个人存档和保留策略的许可要求</a>。
 
 
 Outlook 不会在用户的计算机上创建存档邮箱的本地副本，即使其被配置为使用缓存 Exchange 模式也是如此。用户只能在联机模式下访问存档邮箱。
@@ -140,18 +121,8 @@ Outlook 不会在用户的计算机上创建存档邮箱的本地副本，即使
 
   - **使用保留策略移动邮件**   可以使用保留策略自动将邮件移动到存档。用户还可以应用个人标记来将邮件移动到存档。有关存档和保留策略的详细信息，请参阅本主题后面的存档和保留策略。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>个人标记仅可用于 Outlook Web App 以及 Outlook 2010 和更高版本。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 个人标记仅可用于 Outlook Web App 以及 Outlook 2010 和更高版本。
 
 
   - **从 .pst 文件导入邮件**   在 Exchange 2013 中，可以使用邮箱导入请求将邮件从 .pst 文件导入用户的存档或主邮箱。有关详细信息，请参阅[邮箱导入和导出请求](mailbox-import-and-export-requests-exchange-2013-help.md)。还可以使用 PST 捕获工具在组织的计算机上搜索 .pst 文件，并将 .pst 文件数据导入用户的存档。
@@ -168,18 +139,8 @@ Outlook 不会在用户的计算机上创建存档邮箱的本地副本，即使
 
 Exchange 2013 安装程序会创建默认存档和保留策略，即“默认 MRM 策略”。该策略包含具有“移动到存档”操作的保留标记，如下表所示。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2010 中，Exchange 安装程序所创建的默认存档和保留策略名为“默认存档和保留策略”。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在 Exchange 2010 中，Exchange 安装程序所创建的默认存档和保留策略名为“默认存档和保留策略”。
 
 
 
@@ -238,18 +199,8 @@ Exchange 2013 安装程序会创建默认存档和保留策略，即“默认 MR
 
   - 如何应用个人标记（显示在 Outlook 和 Outlook Web App 的“存档策略”菜单中）。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果将保留策略应用于具有存档邮箱的用户，该保留策略将替换默认 MRM 策略。可以通过“移动到存档”操作创建一个或多个保留标记，然后将这些标记链接到保留策略。还可以将默认“移动到存档”标记（由安装程序创建并链接到“默认 MRM 策略”）添加到您创建的任何保留策略。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果将保留策略应用于具有存档邮箱的用户，该保留策略将替换默认 MRM 策略。可以通过“移动到存档”操作创建一个或多个保留标记，然后将这些标记链接到保留策略。还可以将默认“移动到存档”标记（由安装程序创建并链接到“默认 MRM 策略”）添加到您创建的任何保留策略。
 
 
 有关 Outlook 2010 及更高版本中遵从性和存档的信息，请参阅[规划 Outlook 2010 中的遵从性和存档](https://go.microsoft.com/fwlink/?linkid=210902)。
@@ -313,18 +264,8 @@ Exchange 2013 安装程序会创建默认存档和保留策略，即“默认 MR
 
   - **就地电子数据展示**   当发现管理员执行就地电子数据展示搜索时，同时也会搜索用户的存档邮箱。当从 Exchange 管理中心 (EAC) 创建发现搜索时，没有排除存档邮箱的选项。使用 Exchange 命令行管理程序创建发现搜索时，可以通过使用 *DoNotIncludeArchive* 开关排除存档。有关详细信息，请参阅[New-MailboxSearch](https://technet.microsoft.com/zh-cn/library/dd298064\(v=exchg.150\))。若要了解详细信息，请参阅[就地电子数据展示](in-place-ediscovery-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您不能使用就地电子数据展示搜索断开连接的邮箱。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 您不能使用就地电子数据展示搜索断开连接的邮箱。
 
 
   - **就地保留和诉讼保留**   如果将邮箱置于就地保留或诉讼保留，保留将同时置于主邮箱和存档邮箱。若要了解有关就地保留和诉讼保留的更多信息，请参阅[就地保留和诉讼保留](in-place-hold-and-litigation-hold-exchange-2013-help.md)。
@@ -341,18 +282,8 @@ Exchange 2013 安装程序会创建默认存档和保留策略，即“默认 MR
 
   - **移动存档邮箱**   可将用户的存档邮箱移动到相同邮箱服务器的其他邮箱数据库，也可以移动到其他服务器，而与主邮箱无关。要移动用户的存档邮箱，必须创建邮箱移动请求。有关详细信息，请参阅[管理内部部署移动](manage-on-premises-moves-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>不支持在 Exchange Server 的不同版本上查找用户的邮箱和存档。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 不支持在 Exchange Server 的不同版本上查找用户的邮箱和存档。
 
 
   - **禁用存档邮箱**   您可能希望禁用用户的存档邮箱以进行故障排除，或者要将主邮箱移动到不支持就地存档的 Exchange 版本。禁用存档与禁用主邮箱类似。有关详细信息，请参阅[在 Exchange 2013 中管理就地存档](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md)。在内部部署中，禁用的存档邮箱将保留在邮箱数据库中，直到达到了该数据库的已删除邮箱保留期。在此期间，用户可以重新将该存档连接到邮箱用户。达到了已删除邮箱保留期时，已断开连接的存档邮箱将从邮箱数据库中清除。

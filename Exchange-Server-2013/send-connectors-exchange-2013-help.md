@@ -21,18 +21,8 @@ _**上一次修改主题：** 2012-10-15_
 
 运行传输服务的 Exchange 2013 邮箱服务器需要发送连接器将邮件传递给到达其目标的途径中的下一个跃点。在邮箱服务器上创建的发送连接器存储在 Active Directory 中，可供组织中运行传输服务的所有邮箱服务器使用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当部署 Exchange 2013 时，在配置发送连接器以将出站邮件路由到 Internet 之前，无法形成出站邮件流。有关详细信息，请参阅<a href="create-a-send-connector-for-email-sent-to-the-internet-exchange-2013-help.md">为发送到 Internet 的电子邮件创建发送连接器</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 当部署 Exchange 2013 时，在配置发送连接器以将出站邮件路由到 Internet 之前，无法形成出站邮件流。有关详细信息，请参阅<a href="create-a-send-connector-for-email-sent-to-the-internet-exchange-2013-help.md">为发送到 Internet 的电子邮件创建发送连接器</a>。
 
 
 ## 选择发送连接器的类型

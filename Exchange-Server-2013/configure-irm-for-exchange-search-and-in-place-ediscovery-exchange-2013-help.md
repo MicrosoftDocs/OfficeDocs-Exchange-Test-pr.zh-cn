@@ -21,18 +21,8 @@ _**上一次修改主题：** 2012-11-16_
 
 当发现管理角色组的成员执行一个[就地电子数据展示](in-place-ediscovery-exchange-2013-help.md)搜索时，搜索结果中返回并复制到指定的搜索发现邮箱受 IRM 保护的消息。此外，发现管理角色组的成员可以使用Outlook Web App来访问已复制到发现邮箱发现搜索的结果受 IRM 保护的邮件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>搜索管理角色组的成员无法访问到另一个邮箱或.pst 文件从发现邮箱导出受 IRM 保护的邮件。只能通过使用Outlook Web App，可以访问受 IRM 保护发现邮箱中的邮件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 搜索管理角色组的成员无法访问到另一个邮箱或.pst 文件从发现邮箱导出受 IRM 保护的邮件。只能通过使用Outlook Web App，可以访问受 IRM 保护发现邮箱中的邮件。
 
 
 关于 IRM 的更多管理任务，请参阅[信息权限管理过程](information-rights-management-procedures-exchange-2013-help.md)。
@@ -51,18 +41,8 @@ _**上一次修改主题：** 2012-11-16_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -71,18 +51,8 @@ _**上一次修改主题：** 2012-11-16_
 
 本示例配置 IRM 允许Exchange搜索索引受 IRM 保护的邮件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，将<em>SearchEnabled</em>参数设置为<code>$true</code>。若要禁用索引的受 IRM 保护的邮件，请将其设置为<code>$false</code>。禁用索引的受 IRM 保护的邮件，会使他们当用户搜索他们的邮箱时，或当发现经理使用就地 eDiscovery 搜索结果中返回。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 默认情况下，将<em>SearchEnabled</em>参数设置为<code>$true</code>。若要禁用索引的受 IRM 保护的邮件，请将其设置为<code>$false</code>。禁用索引的受 IRM 保护的邮件，会使他们当用户搜索他们的邮箱时，或当发现经理使用就地 eDiscovery 搜索结果中返回。
 
 
     Set-IRMConfiguration -SearchEnabled $true
@@ -93,18 +63,8 @@ _**上一次修改主题：** 2012-11-16_
 
 本示例允许访问受 IRM 保护的邮件驻留在发现邮箱发现管理角色组的成员。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，将<em>EDiscoverySuperUserEnabled</em>参数设置为<code>$true</code>。若要禁用访问受 IRM 保护的电子邮件，发现管理角色组的成员，请将其设置为<code>$false</code>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 默认情况下，将<em>EDiscoverySuperUserEnabled</em>参数设置为<code>$true</code>。若要禁用访问受 IRM 保护的电子邮件，发现管理角色组的成员，请将其设置为<code>$false</code>。
 
 
     Set-IRMConfiguration -EDiscoverySuperUserEnabled $true

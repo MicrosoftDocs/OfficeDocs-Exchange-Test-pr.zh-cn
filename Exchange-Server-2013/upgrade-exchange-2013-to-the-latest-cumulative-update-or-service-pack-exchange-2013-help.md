@@ -19,18 +19,8 @@ _**上一次修改主题：** 2015-09-04_
 
 如果安装了 Microsoft Exchange Server 2013，您可以将其升级到最新的 Exchange 2013 累积更新或 Service Pack。可以使用 Exchange 2013 设置向导升级当前版本的 Exchange 2013。有关最新 Exchange 2013 累积更新或 Service Pack 的详细信息，请参阅 [Exchange 2013 更新](updates-for-exchange-2013-exchange-2013-help.md)。有关 Exchange 2013 的详细信息，请参阅[Exchange 2013 中的新增功能](what-s-new-in-exchange-2013-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>将 Exchange 2013 升级到较新的累积更新或 Service Pack 后，不能卸载新版本以还原到之前的版本。如果卸载新版本，将从服务器中删除 Exchange。</td>
-</tr>
-</tbody>
-</table>
+> [!warning]
+> 将 Exchange 2013 升级到较新的累积更新或 Service Pack 后，不能卸载新版本以还原到之前的版本。如果卸载新版本，将从服务器中删除 Exchange。
 
 
 ## 在开始之前，您需要知道什么？
@@ -41,34 +31,14 @@ _**上一次修改主题：** 2015-09-04_
 
   - 确保您计划在其中安装累积更新或 Service Pack 的所有服务器都满足系统要求和先决条件。有关详细信息，请参阅 [Exchange 2013 系统要求](exchange-2013-system-requirements-exchange-2013-help.md) 和 [Exchange 2013 先决条件](exchange-2013-prerequisites-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在您安装 Exchange 累积更新 (CU) 时，您在 Exchange XML 应用程序配置文件（例如，客户端访问服务器上的 web.config 文件，或邮箱服务器上的 EdgeTransport.exe.config 文件）中针对每个服务器所做的任何自定义设置都将被覆盖。请务必保存此类信息，以便在安装累积更新后，您可以轻松地重新配置服务器。安装 Exchange CU 后，您必须重新配置这些设置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!warning]
+    > 在您安装 Exchange 累积更新 (CU) 时，您在 Exchange XML 应用程序配置文件（例如，客户端访问服务器上的 web.config 文件，或邮箱服务器上的 EdgeTransport.exe.config 文件）中针对每个服务器所做的任何自定义设置都将被覆盖。请务必保存此类信息，以便在安装累积更新后，您可以轻松地重新配置服务器。安装 Exchange CU 后，您必须重新配置这些设置。
 
 
   - 安装累积更新或 Service Pack 后，必须重新启动计算机，以便能够对注册表和操作系统做出更改。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 安装 Exchange 2013 累积更新或 Service Pack

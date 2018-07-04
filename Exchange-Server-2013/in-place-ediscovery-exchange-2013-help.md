@@ -17,18 +17,8 @@ _**适用于：** Exchange Online, Exchange Server 2013_
 
 _**上一次修改主题：** 2017-01-17_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange Online（Office 365 和 Exchange Online 独立计划）中新建就地电子数据展示搜索的截止时间为 2017 年 7 月 1 日，我们已推迟了这一最后期限。不过，今年晚些时候或明年初，将无法在 Exchange Online 中新建就地电子数据展示搜索。若要创建电子数据展示搜索，请开始在 Office 365 安全与合规中心使用<a href="https://go.microsoft.com/fwlink/?linkid=847843">内容搜索</a>。在我们取消新建就地电子数据展示搜索后，仍可以修改现有就地电子数据展示搜索，并且在 Exchange Server 2013 和 Exchange 混合部署中新建就地电子数据展示搜索也仍将受支持。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在 Exchange Online（Office 365 和 Exchange Online 独立计划）中新建就地电子数据展示搜索的截止时间为 2017 年 7 月 1 日，我们已推迟了这一最后期限。不过，今年晚些时候或明年初，将无法在 Exchange Online 中新建就地电子数据展示搜索。若要创建电子数据展示搜索，请开始在 Office 365 安全与合规中心使用<a href="https://go.microsoft.com/fwlink/?linkid=847843">内容搜索</a>。在我们取消新建就地电子数据展示搜索后，仍可以修改现有就地电子数据展示搜索，并且在 Exchange Server 2013 和 Exchange 混合部署中新建就地电子数据展示搜索也仍将受支持。
 
 
 如果您的组织遵循法定发现要求（与组织策略、合规性或诉讼相关），Microsoft Exchange Server 2013 和 Exchange Online 中的就地电子数据展示可以帮助您对邮箱内的相关内容执行发现搜索。Exchange 2013 和 Exchange Online 还提供联合搜索功能以及与 Microsoft SharePoint 2013 和 Microsoft SharePoint Online 的集成。您可以使用 SharePoint 中的电子数据展示中心搜索并保留与某个案例相关的所有内容，包括 SharePoint 2013 和 SharePoint Online 网站、文档、SharePoint（仅限 SharePoint 2013）编入索引的文件共享、Exchange 中的邮箱内容以及存档的 Lync 2013 内容。您还可以在 Exchange 混合环境中使用就地电子数据展示，在同一搜索中搜索内部部署邮箱和基于云的邮箱。
@@ -67,18 +57,8 @@ Exchange 混合部署中的电子数据展示
 
 就地电子数据展示文档
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>就地电子数据展示是一项强大的功能，利用它，具有正确权限的用户可能可以访问存储在 Exchange 2013 或 Exchange Online 组织中的所有邮件记录。控制和监视发现活动是很重要的，这些活动包括将成员添加至 Discovery Management 角色组、分配 Mailbox Search 管理角色以及分配对发现邮箱的邮箱访问权限。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 就地电子数据展示是一项强大的功能，利用它，具有正确权限的用户可能可以访问存储在 Exchange 2013 或 Exchange Online 组织中的所有邮件记录。控制和监视发现活动是很重要的，这些活动包括将成员添加至 Discovery Management 角色组、分配 Mailbox Search 管理角色以及分配对发现邮箱的邮箱访问权限。
 
 
 ## 就地电子数据展示的工作原理
@@ -113,18 +93,8 @@ Exchange 混合部署中的电子数据展示
 
 默认情况下，不会向任何用户或 Exchange 管理员分配执行与就地电子数据展示相关的任务所需的权限。作为组织管理角色组成员的 Exchange 管理员可向发现管理角色组添加用户，并可创建自定义角色组，将发现管理员的作用域限制为用户的子集。有关将用户添加到 Discovery Management 角色组的详细信息，请参阅[在 Exchange 中分配电子数据展示权限](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果用户未添加到 Discovery Management 角色组或未分配 Mailbox Search 角色，则不会在 EAC 中显示“就地电子数据展示和保留”用户界面，且就地电子数据展示 cmdlet 在 Exchange 命令行管理程序中不可用。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果用户未添加到 Discovery Management 角色组或未分配 Mailbox Search 角色，则不会在 EAC 中显示“就地电子数据展示和保留”用户界面，且就地电子数据展示 cmdlet 在 Exchange 命令行管理程序中不可用。
 
 
 RBAC 角色更改的审核（默认情况下会启用）可确保保留了适当的记录，以便跟踪发现管理角色组的分配。您可以使用管理员角色组报告搜索对管理员角色组所做的更改。有关详细信息，请参阅[搜索角色组更改或管理员审核日志](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)。
@@ -189,19 +159,9 @@ Exchange 2013 安装程序会创建一个显示名为“发现搜索邮箱”的
 
 已添加至发现管理角色组的用户可以执行就地电子数据展示搜索。可以在 EAC 中使用基于 Web 的界面执行搜索。这可以使非技术人员（如记录管理员、合规事务主管或是法律和 HR 专家）可以更加轻松地使用就地电子数据展示。还可以使用命令行管理程序执行搜索。有关详细信息，请参阅[创建就地电子数据展示搜索](create-an-in-place-ediscovery-search-exchange-2013-help.md)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在内部部署组织中，可以使用就地电子数据展示搜索位于 Exchange 2013 邮箱服务器上的邮箱。若要搜索位于 Exchange 2010 邮箱服务器上的邮箱，请对 Exchange 2010 服务器使用多邮箱搜索。<br />
-在混合部署（即有些邮箱存在于内部部署邮箱服务器，有些邮箱存在于基于云的组织中的环境）中，可以在内部部署组织中使用 EAC 对基于云的邮箱执行就地电子数据展示搜索。如果要将邮件复制到发现邮箱，则必须选择一个内部部署发现邮箱。来自搜索结果中返回的基于云的邮箱的邮件会被复制到指定的内部部署发现邮箱。有关混合部署的详细信息，请参阅 <a href="https://technet.microsoft.com/zh-cn/library/jj200581(v=exchg.150)">Exchange Server 混合部署</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在内部部署组织中，可以使用就地电子数据展示搜索位于 Exchange 2013 邮箱服务器上的邮箱。若要搜索位于 Exchange 2010 邮箱服务器上的邮箱，请对 Exchange 2010 服务器使用多邮箱搜索。<br />
+> 在混合部署（即有些邮箱存在于内部部署邮箱服务器，有些邮箱存在于基于云的组织中的环境）中，可以在内部部署组织中使用 EAC 对基于云的邮箱执行就地电子数据展示搜索。如果要将邮件复制到发现邮箱，则必须选择一个内部部署发现邮箱。来自搜索结果中返回的基于云的邮箱的邮件会被复制到指定的内部部署发现邮箱。有关混合部署的详细信息，请参阅 <a href="https://technet.microsoft.com/zh-cn/library/jj200581(v=exchg.150)">Exchange Server 混合部署</a>。
 
 
 EAC 中的“就地电子数据展示和保留”向导使您可以创建就地电子数据展示搜索，还可使用就地保留将搜索结果置于保留状态。在创建就地电子数据展示搜索时，会在就地电子数据展示系统邮箱中创建搜索对象。可以通过操纵该对象来启动、停止、修改或删除搜索。在创建搜索之后，可以选择获取搜索结果的估计，这包括可帮助确定查询有效性的关键字统计信息。还可以对搜索中返回的项目进行实时预览，从而使您可以查看邮件内容、从每个源邮箱返回的邮件数以及邮件总数。可以使用此信息在需要时进一步微调查询。
@@ -224,18 +184,8 @@ EAC 中的“就地电子数据展示和保留”向导使您可以创建就地�
         
         Exchange 2013 还支持将关键字查询语言 (KQL) 语法用于就地电子数据展示搜索。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>就地电子数据展示不支持正则表达式。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 就地电子数据展示不支持正则表达式。
         
         逻辑运算符必须使用大写，以将其作为运算符而非关键字处理，例如 **AND** 和 **OR**。我们建议对任何混用多个逻辑运算符的查询使用显式圆括号，以避免出现错误或误解。例如，如果要搜索包含 WordA 或 WordB 以及 WordC 或 WordD 的邮件，则必须使用 **(WordA OR WordB) AND (WordC OR WordD)**。
     
@@ -259,20 +209,10 @@ EAC 中的“就地电子数据展示和保留”向导使您可以创建就地�
 
   - **受 IRM 保护的项目**   使用信息权限管理 (IRM) 保护的邮件会由 Exchange 搜索编入索引，因此在匹配查询参数时会包括在搜索结果中。必须使用 Active Directory 权限管理服务 (AD RMS) 群集保护邮件，此群集应与邮箱服务器处于同一 Active Directory 林中。有关详细信息，请参阅[信息权限管理](information-rights-management-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>当由于解密失败或 IRM 被禁用，Exchange 搜索无法将受 IRM 保护的邮件编入索引时，不会将受保护的邮件添加到失败项目的列表。如果选择了用于在搜索结果中包括不可搜索的项目的选项，则结果中可能不包括无法解密的受 IRM 保护的邮件。<br />
-    若要在搜索中包括受 IRM 保护的邮件，可以创建其他搜索以包括具有 .rpmsg 附件的邮件。可以使用查询字符串 <code>attachment:rpmsg</code> 在指定邮箱中搜索所有受 IRM 保护的邮件（无论是否成功编入了索引）。当某个搜索返回与搜索条件匹配的邮件（包括成功编入索引的受 IRM 保护的邮件）时，这可能会导致部分搜索结果重复。该搜索不会返回无法编入索引的受 IRM 保护的邮件。<br />
-    对所有受 IRM 保护的邮件执行的第二次搜索还包括在第一次搜索返回且成功编入索引的受 IRM 保护的邮件。此外，第二次搜索返回的受 IRM 保护的邮件可能与用于第一次搜索的搜索条件（如关键字）不匹配。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 当由于解密失败或 IRM 被禁用，Exchange 搜索无法将受 IRM 保护的邮件编入索引时，不会将受保护的邮件添加到失败项目的列表。如果选择了用于在搜索结果中包括不可搜索的项目的选项，则结果中可能不包括无法解密的受 IRM 保护的邮件。<br />
+    > 若要在搜索中包括受 IRM 保护的邮件，可以创建其他搜索以包括具有 .rpmsg 附件的邮件。可以使用查询字符串 <code>attachment:rpmsg</code> 在指定邮箱中搜索所有受 IRM 保护的邮件（无论是否成功编入了索引）。当某个搜索返回与搜索条件匹配的邮件（包括成功编入索引的受 IRM 保护的邮件）时，这可能会导致部分搜索结果重复。该搜索不会返回无法编入索引的受 IRM 保护的邮件。<br />
+    > 对所有受 IRM 保护的邮件执行的第二次搜索还包括在第一次搜索返回且成功编入索引的受 IRM 保护的邮件。此外，第二次搜索返回的受 IRM 保护的邮件可能与用于第一次搜索的搜索条件（如关键字）不匹配。
 
 
   - **重复数据删除**   在将搜索结果复制到发现邮箱时，可以对搜索结果启用“重复数据删除”功能以便仅将特定邮件的一个实例复制到发现邮箱。重复数据删除具有以下好处：
@@ -289,18 +229,8 @@ EAC 中的“就地电子数据展示和保留”向导使您可以创建就地�
 
 在完成就地电子数据展示搜索之后，可以在 EAC 的详细信息窗格中查看搜索结果估计。估计包括返回的项目数和这些项目的总大小。还可以查看关键字统计信息，这些统计信息可返回有关针对搜索查询中使用的每个关键字返回的项目数的详细信息。此类信息可用于确定查询有效性。如果查询范围太广，则可能返回大得多的数据集，这可能需要更多资源用于审阅并会提高电子数据展示成本。如果查询范围太窄，则可能会显著减少返回的记录数，或是完全不返回任何记录。可以使用估计和关键字统计信息来微调查询，以满足要求。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2013 中，关键字统计信息还包括非关键字属性（如搜索查询中指定的日期、邮件类型和发件人/收件人）的统计信息。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在 Exchange 2013 中，关键字统计信息还包括非关键字属性（如搜索查询中指定的日期、邮件类型和发件人/收件人）的统计信息。
 
 
 还可以预览搜索结果，以便进一步确保返回的邮件包含所搜索的内容并在需要时进一步微调查询。电子数据展示搜索预览会显示从搜索的每个邮箱中返回的邮件数以及搜索返回的邮件总数。预览会快速生成，而无需将邮件复制到发现邮箱。
@@ -347,18 +277,8 @@ EAC 中的“就地电子数据展示和保留”向导使您可以创建就地�
 
   - **完整日志记录**   完整日志记录包含搜索返回的所有邮件的信息。此信息以逗号分隔值 (.csv) 文件的形式提供，该文件会附加到包含基本日志记录信息的电子邮件中。搜索的名称将用作 .csv 文件的名称。出于遵从性或保留记录的目的，可能需要此信息。若要启用完整日志记录，必须在 EAC 中将搜索结果复制到发现邮箱时选择**启用完整日志记录**选项。如果使用命令行管理程序，则使用 *LogLevel* 参数指定完整日志记录选项。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>还可以在使用命令行管理程序创建或修改就地电子数据展示搜索时禁用日志记录。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 还可以在使用命令行管理程序创建或修改就地电子数据展示搜索时禁用日志记录。
 
 
 除了在将搜索结果复制到发现邮箱时包含的搜索日志之外，Exchange 还记录 EAC 或命令行管理程序用于创建、修改或删除就地电子数据展示搜索的 cmdlet。此信息记录在管理员审核日志条目中。有关详细信息，请参阅[管理员审核日志记录](administrator-audit-logging-exchange-2013-help.md)。
@@ -379,54 +299,24 @@ EAC 中的“就地电子数据展示和保留”向导使您可以创建就地�
 
 员工离开组织时，一般会禁用或删除其邮箱。在禁用了邮箱后，会将其从用户帐户断开连接，但仍会将其保留在邮箱中一段时间（默认为 30 天）。托管文件夹助理不会处理断开连接的邮箱，并且在此期间不会应用任何保留策略。您将无法搜索断开的邮箱的内容。达到了为邮箱数据库配置的已删除邮箱保留期时，会将该邮箱从邮箱数据库中清除。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange Online 中，就地电子数据展示可以搜索非活动邮箱的内容。非活动邮箱是指置于就地保留或诉讼保留然后被删除的邮箱。只要非活动邮箱置于保留状态，就能被保留。非活动邮箱从就地保留状态移除或诉讼保留被禁用时，就会永久删除。有关详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/dn144876(v=exchg.150)">在 Exchange Online 中管理非活动邮箱</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 在 Exchange Online 中，就地电子数据展示可以搜索非活动邮箱的内容。非活动邮箱是指置于就地保留或诉讼保留然后被删除的邮箱。只要非活动邮箱置于保留状态，就能被保留。非活动邮箱从就地保留状态移除或诉讼保留被禁用时，就会永久删除。有关详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/dn144876(v=exchg.150)">在 Exchange Online 中管理非活动邮箱</a>。
 
 
 在内部部署中，如果组织要求对已离开组织的员工的邮件应用保留设置，或者需要保留前员工的邮箱供当前或未来电子数据展示搜索使用，请勿禁用或删除邮箱。您可以执行以下步骤以确保邮箱不能访问，并且不会向其传递新邮件。
 
 1.  使用“Active Directory 用户和计算机”或是其他 Active Directory 或帐户设置工具或脚本，禁用 Active Directory 用户帐户。这样可以阻止使用关联的用户帐户登录邮箱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>拥有完全访问邮箱权限的用户仍能够访问邮箱。若要阻止他人访问，必须从邮箱中删除其完全访问权限。有关如何删除某个邮箱的完全访问邮箱权限的信息，请参阅<a href="manage-permissions-for-recipients-exchange-online-help.md">管理收件人的权限</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 拥有完全访问邮箱权限的用户仍能够访问邮箱。若要阻止他人访问，必须从邮箱中删除其完全访问权限。有关如何删除某个邮箱的完全访问邮箱权限的信息，请参阅<a href="manage-permissions-for-recipients-exchange-online-help.md">管理收件人的权限</a>。
 
 
 2.  将邮箱用户可以发送或接收的邮件的邮件大小限制设置为一个很小的值，如 1 KB。这样可阻止通过该邮箱发送和接收新邮件。有关详细信息，请参阅[配置邮箱的邮件大小限制](configure-message-size-limits-for-a-mailbox-exchange-2013-help.md)。
 
 3.  配置邮件的传递限制，使任何人都无法向其发送邮件。有关详细信息，请参阅[配置邮箱的邮件传递限制](configure-message-delivery-restrictions-for-a-mailbox-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须执行以上步骤以及组织要求的任何其他帐户管理过程，但不禁用或删除邮箱或是删除关联用户帐户。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 必须执行以上步骤以及组织要求的任何其他帐户管理过程，但不禁用或删除邮箱或是删除关联用户帐户。
 
 
 在计划为邮件保留管理 (MRM) 或就地电子数据展示实现邮箱保留时，必须考虑员工流动率。长期保留前员工的邮箱需要邮箱服务器上的额外存储，还会导致 Active Directory 数据库增大，因为要求将关联的用户帐户也保留相同的时间。此外，还可能要求更改组织的帐户设置和管理流程。
@@ -458,18 +348,9 @@ EAC 中的“就地电子数据展示和保留”向导使您可以创建就地�
 <td><p>DiscoveryMaxConcurrency</p></td>
 <td><p>可以同时在组织中运行的就地电子数据展示搜索的最大数量。</p></td>
 <td><p>2</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果在仍在运行前两个搜索时启动电子数据展示搜索，第三个搜索不会排队，而将会失败。您必须等到之前的搜索中有一个完成，然后才能成功启动一个新搜索。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 如果在仍在运行前两个搜索时启动电子数据展示搜索，第三个搜索不会排队，而将会失败。您必须等到之前的搜索中有一个完成，然后才能成功启动一个新搜索。
 
 </td>
 </tr>
@@ -483,18 +364,9 @@ EAC 中的“就地电子数据展示和保留”向导使您可以创建就地�
 <td><p>DiscoveryMaxStatsSearchMailboxes</p></td>
 <td><p>可以在仍然允许您查看关键字统计信息的单个就地电子数据展示搜索中搜索到的最大邮箱数。</p></td>
 <td><p>100</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>运行电子数据展示搜索估计后，您可以查看关键字统计信息。这些统计信息显示有关搜索查询中使用的每个关键字返回的项目数的详细信息。如果搜索中包括 100 个以上的源邮箱，则在试图查看关键字统计信息时会返回一个错误。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 运行电子数据展示搜索估计后，您可以查看关键字统计信息。这些统计信息显示有关搜索查询中使用的每个关键字返回的项目数的详细信息。如果搜索中包括 100 个以上的源邮箱，则在试图查看关键字统计信息时会返回一个错误。
 
 </td>
 </tr>
@@ -517,18 +389,8 @@ EAC 中的“就地电子数据展示和保留”向导使您可以创建就地�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1   如果在 Office 365 组织的 SharePoint Online 中的电子数据展示中心内启动电子数据展示搜索，一次最多可以搜索 1,500 个邮箱。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 1   如果在 Office 365 组织的 SharePoint Online 中的电子数据展示中心内启动电子数据展示搜索，一次最多可以搜索 1,500 个邮箱。
 
 
 在 Exchange Server 2013 中，您可以更改这些参数的默认值以适合您的要求，或创建其他限制策略并将其分配给具有委派发现管理权限的用户。在 Exchange Online 中，这些限制参数的默认值是不能更改的。

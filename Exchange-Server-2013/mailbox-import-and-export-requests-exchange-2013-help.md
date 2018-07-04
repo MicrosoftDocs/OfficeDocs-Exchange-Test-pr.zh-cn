@@ -75,18 +75,8 @@ _**上一次修改主题：** 2015-04-07_
 
 使用 **MailboxImportRequest** cmdlet 集将数据从 .pst 文件导入到邮箱或个人存档中。下面是从 .pst 文件导入邮箱数据时可以指定的选项的列表：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>导入数据的邮箱必须已经存在。您不能将数据导入没有邮箱的用户帐户。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 导入数据的邮箱必须已经存在。您不能将数据导入没有邮箱的用户帐户。
 
 
   - 可以将数据导入不同于从中导出该数据的其他用户帐户。例如，可以从 john@contoso.com 导出数据，并将数据导入到 legaldiscovery@contoso.com。

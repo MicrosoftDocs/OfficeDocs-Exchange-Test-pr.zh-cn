@@ -51,18 +51,8 @@ _**上一次修改主题：** 2015-08-20_
 
   - **邮件头大小限制**   这些限制应用于邮件中存在的所有邮件头字段的总大小。不考虑邮件正文或附件的大小。因为邮件头字段是纯文本，所以邮件头的大小由每个邮件头的字符数和邮件头字段的总数确定。每个文本字符占用 1 字节。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>某些第三方防火墙或代理服务器应用其自身的邮件头大小限制。这些第三方防火墙或代理服务器处理包含多于 50 个字符或包含非 US-ASCII 字符的附件文件名的邮件可能有困难。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 某些第三方防火墙或代理服务器应用其自身的邮件头大小限制。这些第三方防火墙或代理服务器处理包含多于 50 个字符或包含非 US-ASCII 字符的附件文件名的邮件可能有困难。
 
 
   - **邮件大小限制**   这些限制应用于邮件的总大小，包括邮件头、邮件正文及所有附件。邮件大小限制可用于传入邮件和传出邮件。对于内部邮件流，Exchange 使用自定义 `X-MS-Exchange-Organization-OriginalSize:` 邮件头在邮件进入 Exchange 组织时记录其原始邮件大小。只要检查邮件的指定邮件大小限制，就会使用当前邮件大小或原始邮件大小头的较低值。邮件的大小可能会由于内容转换、编码和代理处理等原因而有所变化。
@@ -125,18 +115,9 @@ _**上一次修改主题：** 2015-08-20_
 </tr>
 <tr class="odd">
 <td><p>每封邮件的最大收件人数</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> <p></p>
 
 </td>
 <td><p>5000</p></td>
@@ -195,18 +176,9 @@ _**上一次修改主题：** 2015-08-20_
 </tr>
 <tr class="even">
 <td><p>通过接收连接器的最大邮件大小</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由于邮件编码和内容转换，实际邮件大小可能较小。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 由于邮件编码和内容转换，实际邮件大小可能较小。
 
 </td>
 <td><p><strong>邮箱服务器上的传输服务</strong></p>
@@ -225,18 +197,9 @@ _**上一次修改主题：** 2015-08-20_
 <p>200（对于客户端代理接收连接器）</p>
 <p><strong>客户端访问服务器上的前端传输服务</strong></p>
 <p>200（对于默认前端、客户端前端和客户端代理前端接收连接器）。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果因为匿名发件人致使收件人数目超出，则只接受前 200 个收件人的邮件。大多数 SMTP 邮件服务器都会检测收件人限制是否有效。SMTP 邮件服务器在将邮件传递给所有收件人之前，会在 200 个收件人的组中继续重新发送邮件。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 如果因为匿名发件人致使收件人数目超出，则只接受前 200 个收件人的邮件。大多数 SMTP 邮件服务器都会检测收件人限制是否有效。SMTP 邮件服务器在将邮件传递给所有收件人之前，会在 200 个收件人的组中继续重新发送邮件。
 
 </td>
 <td><p>Cmdlet：<strong>New-ReceiveConnector</strong>、<strong>Set-ReceiveConnector</strong></p>
@@ -314,18 +277,9 @@ _**上一次修改主题：** 2015-08-20_
 <td><p>Outlook Web App   35 MB</p>
 <p>Exchange ActiveSync   10 MB</p>
 <p>Exchange Web 服务   64 MB</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>与 Base64 编码相关的开销导致这些值会比实际可用的最大邮件大小高出大约 33%。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 与 Base64 编码相关的开销导致这些值会比实际可用的最大邮件大小高出大约 33%。
 
 </td>
 <td><p>您可以在客户端访问服务器上的相应 web.config XML 应用程序配置文件中配置这些值。有关详细信息，请参阅<a href="configure-client-specific-message-size-limits-exchange-2013-help.md">配置客户端特定的邮件大小限制</a>。</p></td>
@@ -369,18 +323,9 @@ _**上一次修改主题：** 2015-08-20_
 <p>参数：<em>MaxSendSize</em></p></td>
 <td><p>对于邮箱：</p>
 <p>“收件人”&gt;“邮箱”&gt;“编辑”<img src="images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="编辑图标" alt="编辑图标" />&gt;“邮箱功能”&gt;“邮箱流”&gt;“邮件大小限制”&gt;“查看详细信息”&gt;“已发送邮件”</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于其他收件人类型，不可使用 EAC 配置该设置。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 对于其他收件人类型，不可使用 EAC 配置该设置。
 
 </td>
 </tr>
@@ -400,18 +345,9 @@ _**上一次修改主题：** 2015-08-20_
 <p>参数：<em>MaxReceiveSize</em></p></td>
 <td><p>对于邮箱：</p>
 <p>“收件人”&gt;“邮箱”&gt;“编辑”<img src="images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="编辑图标" alt="编辑图标" />&gt;“邮箱功能”&gt;“邮箱流”&gt;“邮件大小限制”&gt;“查看详细信息”&gt;“已接收邮件”</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于其他收件人类型，不可使用 EAC 配置该设置。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 对于其他收件人类型，不可使用 EAC 配置该设置。
 
 </td>
 </tr>

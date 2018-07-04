@@ -31,18 +31,8 @@ _**上一次修改主题：** 2014-05-27_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -89,34 +79,14 @@ _**上一次修改主题：** 2014-05-27_
 
   - “\* 用户登录名”   这是用户用于登录邮箱和登录到域的名称。通常，用户登录名由 @ 符号左侧的用户别名以及用户帐户所在的 @ 符号右侧的域名组成。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Exchange Online 中，此框被标记为“用户 ID”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 在 Exchange Online 中，此框被标记为“用户 ID”。
 
 
   - “下次登录时需要更改密码”   如果希望用户在下次登录邮箱时重置其密码，请选中此复选框。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此复选框在 Exchange Online 中不可用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 此复选框在 Exchange Online 中不可用。
 
 
   - “从地址列表中隐藏”   选中此复选框可以防止收件人显示在通讯簿以及在 Exchange 组织中定义的其他地址列表中。选中此复选框后，用户仍可使用电子邮件地址向收件人发送邮件。
@@ -125,34 +95,14 @@ _**上一次修改主题：** 2014-05-27_
 
   - “组织单位”   此只读框显示包含用户帐户的组织单位 (OU)。必须使用 Active Directory 用户和计算机才能将此用户帐户移动到不同的 OU。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此框在 Exchange Online 中不可用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 此框在 Exchange Online 中不可用。
 
 
   - “邮箱数据库”   此只读框显示托管此邮箱的邮箱数据库的名称。若要将邮箱移动到一个不同的数据库，请在邮箱列表中选择它，然后在“详细信息”窗格中单击“将邮箱移动到其他数据库”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此选项在 Exchange Online 中不可用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 此选项在 Exchange Online 中不可用。
 
 
   - “自定义属性”   此部分显示为用户邮箱定义的自定义属性。要指定自定义属性值，请单击“编辑”。最多可为收件人指定 15 个自定义属性。
@@ -165,34 +115,14 @@ _**上一次修改主题：** 2014-05-27_
 
   - “邮箱使用情况”   此区域显示邮箱的总体大小和已使用总体邮箱配额的百分比。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>为了获取前两个框中显示的信息，EAC 将查询托管邮箱的邮箱数据库。如果 EAC 无法与包含邮箱数据库的 Exchange 存储通信，这些框将为空。如果用户还没有首次登录邮箱，则会显示警告消息。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 为了获取前两个框中显示的信息，EAC 将查询托管邮箱的邮箱数据库。如果 EAC 无法与包含邮箱数据库的 Exchange 存储通信，这些框将为空。如果用户还没有首次登录邮箱，则会显示警告消息。
 
 
 单击“更多选项”以查看或更改邮箱存储配额和邮箱的已删除邮件保留设置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>这些设置在 Exchange Online 中的 EAC 中不可用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 这些设置在 Exchange Online 中的 EAC 中不可用。
 
 
   - “存储配额设置”   若要自定义邮箱的这些设置而不使用邮箱数据库默认设置，请单击“为此邮箱自定义设置”，键入一个新值，然后单击“保存”。
@@ -215,18 +145,8 @@ _**上一次修改主题：** 2014-05-27_
 
 使用“联系信息”部分来查看或更改用户联系信息。该页上的信息显示在通讯簿中。单击“更多选项”以显示额外框。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以使用“州/省”框为动态通讯组、电子邮件地址策略或地址列表创建收件人条件。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 可以使用“州/省”框为动态通讯组、电子邮件地址策略或地址列表创建收件人条件。
 
 
 邮箱用户可以使用 Outlook 或 Outlook Web App 查看和更改其自己的联系人信息。但他们无法在“便笺”和“网页”框中更改此信息。
@@ -257,35 +177,15 @@ _**上一次修改主题：** 2014-05-27_
     
       - “自定义地址类型”   单击此按钮，然后在“\* 电子邮件地址”框中键入一个支持的非 SMTP 电子邮件地址。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>除 X.400 地址以外，Exchange 不验证自定义地址的格式是否正确。您必须确保所指定的自定义地址符合该地址类型的格式要求。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 除 X.400 地址以外，Exchange 不验证自定义地址的格式是否正确。您必须确保所指定的自定义地址符合该地址类型的格式要求。
     
       - **将其作为回复地址**   在 Exchange Online 中，您可以选中此复选框将此新电子邮件地址设置为邮箱的主 SMTP 地址。此复选框在 Exchange 2013 中的 EAC 中不可用。
 
   - “基于应用到此收件人的电子邮件地址策略自动更新电子邮件地址”   选中此复选框可基于对组织中电子邮件地址策略所做的更改自动更新收件人的电子邮件地址。此框在默认情况下处于选中状态。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此复选框在 Exchange Online 中不可用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 此复选框在 Exchange Online 中不可用。
 
 
   - **将其作为回复地址**
@@ -304,18 +204,8 @@ _**上一次修改主题：** 2014-05-27_
 
   - “统一消息” 默认情况下禁用此功能。启用统一消息 (UM) 时，用户将能够使用组织的 UM 功能并使用一组默认的 UM 属性。单击“启用”为邮箱启用 UM。有关如何启用 UM 的信息，请参阅[为用户启用语音邮件](enable-a-user-for-voice-mail-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>必须有 UM 拨号计划以及 UM 邮箱策略方可启用 UM。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 必须有 UM 拨号计划以及 UM 邮箱策略方可启用 UM。
 
 
   - “移动设备”   使用此部分可查看和更改 Exchange ActiveSync（默认情况下会启用）的设置。Exchange ActiveSync 支持从移动设备访问 Exchange 邮箱。单击“禁用 Exchange ActiveSync”可为邮箱禁用此功能。
@@ -338,18 +228,8 @@ _**上一次修改主题：** 2014-05-27_
     
       - “URL”   使用此框可以提供指向某网站的 URL，该网站提供有关邮箱上的诉讼保留的信息或指南。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>只有在使用 Outlook 2010 或更高版本时，这些框中的文本才会显示在用户的邮箱中，但不会显示在 Outlook Web App 或其他电子邮件客户端中。若要在 Outlook 中查看“说明”和 URL 框中的文本，请单击“文件”选项卡，在“信息”页上的“帐户设置”下，您将会看到诉讼保留注释。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 只有在使用 Outlook 2010 或更高版本时，这些框中的文本才会显示在用户的邮箱中，但不会显示在 Outlook Web App 或其他电子邮件客户端中。若要在 Outlook 中查看“说明”和 URL 框中的文本，请单击“文件”选项卡，在“信息”页上的“帐户设置”下，您将会看到诉讼保留注释。
 
 
   - “存档”   如果用户没有存档邮箱，则禁用此功能。要启用存档邮箱，请单击“启用”。如果用户具有存档邮箱，则会显示存档邮箱的大小和使用情况统计信息。单击“编辑详细信息”来查看和更改以下存档邮箱设置：
@@ -364,18 +244,8 @@ _**上一次修改主题：** 2014-05-27_
     
       - “达到该限度时发出警告 (GB)”   该框显示在向用户发出警告之前存档邮箱的最大存储限制。如果存档邮箱大小达到或超过指定值，Exchange 将向用户发送警告消息。要更改该限制，可在框中键入新的值或从下拉列表中选择一个值。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>在 Exchange Online 中不能更改存档邮箱的存档配额和警告发出配额。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 在 Exchange Online 中不能更改存档邮箱的存档配额和警告发出配额。
 
 
   - “传递选项”   用于将发送给用户的电子邮件转发给另一个收件人并设置该用户可以向其发送邮件的收件人最大数目。单击“查看详细信息”可查看和更改这些设置。
@@ -386,34 +256,14 @@ _**上一次修改主题：** 2014-05-27_
     
       - “收件人限制”   该设置控制用户可向其发送信息的收件人最大数目。选择“最大收件人数”复选框以限制电子邮件的“收件人:”、“抄送:”和“密件抄送:”框中允许的最大收件人数，然后指定最大收件人数。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>对于内部部署 Exchange 组织，收件人数目不受限。对于 Exchange 在线组织，限制是 500 个收件人。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 对于内部部署 Exchange 组织，收件人数目不受限。对于 Exchange 在线组织，限制是 500 个收件人。
 
 
   - “邮件大小限制”   这些设置控制用户可以发送和接收的邮件大小。单击“查看详细信息”可查看和更改发送和接收的邮件的最大大小。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Exchange Online 中不能更改这些设置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 在 Exchange Online 中不能更改这些设置。
     
       - “已发送消息”   要指定该用户发送的消息的最大大小，可选择“最大消息大小 (KB)”复选框并在框中键入值。邮件大小必须介于 0 到 2,097,151 KB 之间。如果用户发送大于该指定大小的邮件，则会将该邮件返回至用户，并向其显示一条描述性的错误消息。
     
@@ -443,18 +293,8 @@ _**上一次修改主题：** 2014-05-27_
 
 使用“邮件提示”部分可添加邮件提示，以便在用户向此收件人发送邮件时告知用户潜在问题。邮件提示是在将此收件人添加到新电子邮件的“收件人”、“抄送”或“密件抄送”框中时，信息栏中显示的文本。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>邮件提示可包含 HTML 标记，但不允许包含脚本。自定义邮件提示的长度不能超过 175 个显示的字符。此字符限制不计入 HTML 标记。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 邮件提示可包含 HTML 标记，但不允许包含脚本。自定义邮件提示的长度不能超过 175 个显示的字符。此字符限制不计入 HTML 标记。
 
 
 ## 邮箱委派
@@ -537,18 +377,8 @@ _**上一次修改主题：** 2014-05-27_
 
   - **委派权限**   为用户或组分配允许他们从其他邮箱打开或发送邮件的权限。您可以为用户或组分配“完全”、“代理发送”和“代表发送”权限。请查看[管理收件人的权限](manage-permissions-for-recipients-exchange-online-help.md)，获取详细信息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>完成此任务估计需要 2 分钟时间，但是如果要更改多个属性或功能，时间可能会更长。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 完成此任务估计需要 2 分钟时间，但是如果要更改多个属性或功能，时间可能会更长。
 
 
 ## 使用 EAC 批量编辑用户邮箱
@@ -557,18 +387,8 @@ _**上一次修改主题：** 2014-05-27_
 
 2.  在邮箱列表中，选择两个或多个邮箱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>通过按住 Shift 键的同时单击第一个邮箱，然后单击要编辑的最后一个邮箱，可以选择多个相邻的邮箱。按住 Ctrl 键的同时单击要编辑的每个邮箱，也可以选择多个不相邻的邮箱。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!tip]
+    > 通过按住 Shift 键的同时单击第一个邮箱，然后单击要编辑的最后一个邮箱，可以选择多个相邻的邮箱。按住 Ctrl 键的同时单击要编辑的每个邮箱，也可以选择多个不相邻的邮箱。
 
 
 3.  在“详细信息”窗格中的“批量编辑”下，选择要编辑的邮箱属性或功能。

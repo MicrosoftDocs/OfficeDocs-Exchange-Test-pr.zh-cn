@@ -19,18 +19,8 @@ _**上一次修改主题：** 2013-04-19_
 
 在设置了统一邮件 (UM) 时，您必须配置与运行 Microsoft Exchange 统一消息呼叫路由器服务的客户端访问服务器和邮箱服务器Exchange组织中运行 Microsoft Exchange 统一消息服务通信网络上通过 IP (VoIP) 网关，IP Pbx、 SIP 启用 Pbx 或会话边框控制器 (SBCs) 声音。您还必须配置与 VoIP 网关，IP Pbx、 SIP 启用 Pbx 或 SBCs 进行通信的客户端访问和邮箱服务器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在将客户端访问服务器和邮箱服务器连接到数据网络上的 VoIP 网关、IP PBX、启用了 SIP 的 PBX 或 SBC 之后，您必须创建所需的 UM 组件，同时为用户启用统一消息，使其能使用语音邮件系统。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在将客户端访问服务器和邮箱服务器连接到数据网络上的 VoIP 网关、IP PBX、启用了 SIP 的 PBX 或 SBC 之后，您必须创建所需的 UM 组件，同时为用户启用统一消息，使其能使用语音邮件系统。
 
 
 ## 步骤

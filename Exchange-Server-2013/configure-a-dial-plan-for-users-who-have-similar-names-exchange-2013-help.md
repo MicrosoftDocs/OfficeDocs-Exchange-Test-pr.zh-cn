@@ -21,18 +21,8 @@ _**上一次修改主题：** 2013-02-21_
 
 您可以在 UM 拨号计划和 UM 自动助理上设置此设置。当创建 UM 自动助理时，它将继承与自动助理关联的拨号计划的设置。默认情况下，不会为拨号计划配置此设置，所以不会为呼叫者提供其他信息以帮助他们找到正确的用户。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于为了让拥有相似姓名的用户能正常工作而包含的信息，您必须为您 Microsoft Exchange 组织中的收件人提供职务、部门和位置信息。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 对于为了让拥有相似姓名的用户能正常工作而包含的信息，您必须为您 Microsoft Exchange 组织中的收件人提供职务、部门和位置信息。
 
 
 有关与 UM 拨号计划相关的其他管理任务，请参阅 [UM 拨号计划过程](um-dial-plan-procedures-exchange-2013-help.md)。
@@ -47,18 +37,8 @@ _**上一次修改主题：** 2013-02-21_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？

@@ -17,18 +17,8 @@ _**适用于：** Exchange Online, Exchange Server 2013_
 
 _**上一次修改主题：** 2017-01-17_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange Online（Office 365 和 Exchange Online 独立计划）中新建就地电子数据展示搜索的截止时间为 2017 年 7 月 1 日，我们已推迟了这一最后期限。不过，今年晚些时候或明年初，将无法在 Exchange Online 中新建就地电子数据展示搜索。若要创建电子数据展示搜索，请开始在 Office 365 安全与合规中心使用<a href="https://go.microsoft.com/fwlink/?linkid=847843">内容搜索</a>。在我们取消新建就地电子数据展示搜索后，仍可以修改现有就地电子数据展示搜索，并且在 Exchange Server 2013 和 Exchange 混合部署中新建就地电子数据展示搜索也仍将受支持。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在 Exchange Online（Office 365 和 Exchange Online 独立计划）中新建就地电子数据展示搜索的截止时间为 2017 年 7 月 1 日，我们已推迟了这一最后期限。不过，今年晚些时候或明年初，将无法在 Exchange Online 中新建就地电子数据展示搜索。若要创建电子数据展示搜索，请开始在 Office 365 安全与合规中心使用<a href="https://go.microsoft.com/fwlink/?linkid=847843">内容搜索</a>。在我们取消新建就地电子数据展示搜索后，仍可以修改现有就地电子数据展示搜索，并且在 Exchange Server 2013 和 Exchange 混合部署中新建就地电子数据展示搜索也仍将受支持。
 
 
 使用 [就地电子数据展示](in-place-ediscovery-exchange-2013-help.md) 搜索所有邮箱内容，包括 [就地保留和诉讼保留](in-place-hold-and-litigation-hold-exchange-2013-help.md) 上的用户的已删除项目和已修改项目的原始版本。
@@ -51,18 +41,8 @@ _**上一次修改主题：** 2017-01-17_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 使用 EAC 创建就地电子数据展示搜索
@@ -77,18 +57,8 @@ _**上一次修改主题：** 2017-01-17_
 
 4.  在“邮箱”页上，选择要搜索的邮箱。您可以跨所有邮箱搜索或选择要搜索的特定邮箱。在 Exchange Online 中，您还可以选择 Office 365 组作为搜索的内容源。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您无法使用“搜索所有邮箱”选项将所有邮箱置于保留状态。要创建“就地保留”，您必须选择“指定要搜索的邮箱”。有关更多详细信息，请参阅<a href="create-or-remove-an-in-place-hold-exchange-2013-help.md">创建或删除就地保留</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 您无法使用“搜索所有邮箱”选项将所有邮箱置于保留状态。要创建“就地保留”，您必须选择“指定要搜索的邮箱”。有关更多详细信息，请参阅<a href="create-or-remove-an-in-place-hold-exchange-2013-help.md">创建或删除就地保留</a>。
 
 
 5.  在“搜索查询”页上，填写下列字段：
@@ -99,19 +69,9 @@ _**上一次修改主题：** 2017-01-17_
         
         ![配置电子数据展示搜索查询](images/Dd298021.a3626569-8700-421e-8b4e-7ec520b28272(EXCHG.150).png "配置电子数据展示搜索查询")  
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>由运行搜索时创建的搜索查询中的“<strong>OR</strong>”运算符连接“<strong>发件人:</strong>”和“<strong>收件人/抄送/密件抄送:</strong>”字段。这意味着，由任何指定用户发送或接收的邮件（并且匹配其他搜索条件）都包含在此搜索结果中。<br />
-    日期由 <strong>AND</strong> 运算符连接。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 由运行搜索时创建的搜索查询中的“<strong>OR</strong>”运算符连接“<strong>发件人:</strong>”和“<strong>收件人/抄送/密件抄送:</strong>”字段。这意味着，由任何指定用户发送或接收的邮件（并且匹配其他搜索条件）都包含在此搜索结果中。
+    > 日期由 <strong>AND</strong> 运算符连接。
 
 
 6.  在“就地保留设置”页面上，您可以选中“将与所选邮箱中的搜索查询匹配的内容置于保留状态”复选框，然后选择以下选项之一将项目置于就地保留状态：
@@ -120,18 +80,8 @@ _**上一次修改主题：** 2017-01-17_
     
       - “指定保留项目的天数（相对于收到日期）” 使用此选项以在指定周期内保留项目。例如，如果您的组织需要将所有邮件至少保留七年，可使用此选项。可使用“基于时间”的就地保留以及保持政策，确保在七年后删除项目。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>当出于法律目的“就地保留”邮箱或项目时，通常建议无限期保持项目，并在完成案件或调查后删除保留。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!important]
+        > 当出于法律目的“就地保留”邮箱或项目时，通常建议无限期保持项目，并在完成案件或调查后删除保留。
 
 
 7.  单击“完成”保存搜索，并返回根据您指定的条件进行搜索后返回的项目的估计总大小和总数。估计显示在详细信息窗格。单击“刷新”![刷新图标](images/Dd353189.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif "刷新图标")，更新详细信息窗格中显示的信息。
@@ -156,34 +106,14 @@ _**上一次修改主题：** 2017-01-17_
 
   - 日志级别：完整
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您在运行就地电子数据展示搜索时未指定额外搜索参数，结果将返回指定源邮箱中的所有项目。如果您未指定要搜索的邮箱，则会搜索 Exchange 或 Exchange Online 组织中的所有邮箱。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果您在运行就地电子数据展示搜索时未指定额外搜索参数，结果将返回指定源邮箱中的所有项目。如果您未指定要搜索的邮箱，则会搜索 Exchange 或 Exchange Online 组织中的所有邮箱。
 
 
     New-MailboxSearch "Discovery-CaseId012" -StartDate "01/01/2009" -EndDate "12/31/2011" -SourceMailboxes "DG-Finance" -TargetMailbox "Discovery Search Mailbox" -SearchQuery '"Contoso" AND "Project A"' -MessageTypes Email -IncludeUnsearchableItems -LogLevel Full
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 <em>StartDate</em> 和 <em>EndDate</em> 参数时，您必须使用日期格式“mm/dd/yyyy”，即使您的本地计算机设置配置为使用其他日期格式（如“dd/mm/yyyy”），也是如此。例如，若要搜索从 2013 年 4 月 1 日到 2013 年 7 月 1 日发送的邮件，则分别使用 <strong>04/01/2013</strong> 和 <strong>07/01/2013</strong> 作为开始日期和结束日期。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 使用 <em>StartDate</em> 和 <em>EndDate</em> 参数时，您必须使用日期格式“mm/dd/yyyy”，即使您的本地计算机设置配置为使用其他日期格式（如“dd/mm/yyyy”），也是如此。例如，若要搜索从 2013 年 4 月 1 日到 2013 年 7 月 1 日发送的邮件，则分别使用 <strong>04/01/2013</strong> 和 <strong>07/01/2013</strong> 作为开始日期和结束日期。
 
 
 本示例创建名为 HRCase090116 的就地电子数据展示搜索，这会搜索由 Alex Darrow 于 2015 年发送给 Sara Davis 的电子邮件。
@@ -210,18 +140,8 @@ _**上一次修改主题：** 2017-01-17_
     
       - 单击详细信息窗格中的“预览搜索结果”可以预览完成搜索估计后的结果。选择此选项以打开“电子数据展示搜索预览”窗口。从搜索的邮箱返回的所有邮件都会显示。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>搜索的邮箱列于“电子数据展示搜索预览”窗口的右窗格中。对于每个邮箱，系统还会显示所返回的项目数量以及这些项目的总大小。搜索返回的所有项目列于右窗格中，可以按最近或最远日期进行排序。无法通过单击左窗格中的邮箱在右窗格中显示每个邮箱中的项目。若要查看从特定邮箱返回的项目，您可以复制搜索结果并在发现邮箱中查看项目。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 搜索的邮箱列于“电子数据展示搜索预览”窗口的右窗格中。对于每个邮箱，系统还会显示所返回的项目数量以及这些项目的总大小。搜索返回的所有项目列于右窗格中，可以按最近或最远日期进行排序。无法通过单击左窗格中的邮箱在右窗格中显示每个邮箱中的项目。若要查看从特定邮箱返回的项目，您可以复制搜索结果并在发现邮箱中查看项目。
     
     ![估计或预览搜索结果](images/Dd353189.57e0fc2d-71bf-42aa-aa4b-4a77148f2b43(EXCHG.150).gif "估计或预览搜索结果")  
 

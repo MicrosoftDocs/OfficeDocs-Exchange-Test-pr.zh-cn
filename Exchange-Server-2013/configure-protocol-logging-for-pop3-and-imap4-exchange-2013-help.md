@@ -29,18 +29,8 @@ _**上一次修改主题：** 2012-11-27_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -52,18 +42,8 @@ _**上一次修改主题：** 2012-11-27_
     Set-ImapSettings -Server "CAS01" -ProtocolLogEnabled $true
     Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>为 POP3 或 IMAP4 更改了协议日志记录设置之后，必须重新启动所使用的任何服务：POP3 或 IMAP4。有关如何重新启动 POP3 服务和 IMAP4 服务的信息，请参阅<a href="start-and-stop-the-pop3-services-exchange-2013-help.md">启动和停止 POP3 服务</a>和<a href="start-and-stop-the-imap4-services-exchange-2013-help.md">启动和停止 IMAP4 服务</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 为 POP3 或 IMAP4 更改了协议日志记录设置之后，必须重新启动所使用的任何服务：POP3 或 IMAP4。有关如何重新启动 POP3 服务和 IMAP4 服务的信息，请参阅<a href="start-and-stop-the-pop3-services-exchange-2013-help.md">启动和停止 POP3 服务</a>和<a href="start-and-stop-the-imap4-services-exchange-2013-help.md">启动和停止 IMAP4 服务</a>。
 
 
 有关语法和参数的详细信息，请参阅 [Set-ImapSettings](https://technet.microsoft.com/zh-cn/library/aa998252\(v=exchg.150\)) 和 [Set-PopSettings](https://technet.microsoft.com/zh-cn/library/aa997154\(v=exchg.150\))。
@@ -75,18 +55,8 @@ _**上一次修改主题：** 2012-11-27_
     Set-ImapSettings -Server "CAS01" -protocolLogEnabled $false
     Set-PopSettings -Server "CAS01" -protocolLogEnabled $false
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>为 POP3 或 IMAP4 更改了协议日志记录设置之后，必须重新启动所使用的任何服务：POP3 或 IMAP4。有关如何重新启动 POP3 服务和 IMAP4 服务的信息，请参阅<a href="start-and-stop-the-pop3-services-exchange-2013-help.md">启动和停止 POP3 服务</a>和<a href="start-and-stop-the-imap4-services-exchange-2013-help.md">启动和停止 IMAP4 服务</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 为 POP3 或 IMAP4 更改了协议日志记录设置之后，必须重新启动所使用的任何服务：POP3 或 IMAP4。有关如何重新启动 POP3 服务和 IMAP4 服务的信息，请参阅<a href="start-and-stop-the-pop3-services-exchange-2013-help.md">启动和停止 POP3 服务</a>和<a href="start-and-stop-the-imap4-services-exchange-2013-help.md">启动和停止 IMAP4 服务</a>。
 
 
 有关语法和参数的详细信息，请参阅 [Set-ImapSettings](https://technet.microsoft.com/zh-cn/library/aa998252\(v=exchg.150\)) 和 [Set-PopSettings](https://technet.microsoft.com/zh-cn/library/aa997154\(v=exchg.150\))。
@@ -123,18 +93,8 @@ _**上一次修改主题：** 2012-11-27_
     
         Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota unlimited
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>为 POP3 或 IMAP4 更改了协议日志记录设置之后，必须重新启动所使用的任何服务：POP3 或 IMAP4。有关如何重新启动 POP3 服务和 IMAP4 服务的信息，请参阅<a href="start-and-stop-the-pop3-services-exchange-2013-help.md">启动和停止 POP3 服务</a>和<a href="start-and-stop-the-imap4-services-exchange-2013-help.md">启动和停止 IMAP4 服务</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 为 POP3 或 IMAP4 更改了协议日志记录设置之后，必须重新启动所使用的任何服务：POP3 或 IMAP4。有关如何重新启动 POP3 服务和 IMAP4 服务的信息，请参阅<a href="start-and-stop-the-pop3-services-exchange-2013-help.md">启动和停止 POP3 服务</a>和<a href="start-and-stop-the-imap4-services-exchange-2013-help.md">启动和停止 IMAP4 服务</a>。
 
 
 有关语法和参数的详细信息，请参阅 [Set-ImapSettings](https://technet.microsoft.com/zh-cn/library/aa998252\(v=exchg.150\)) 和 [Set-PopSettings](https://technet.microsoft.com/zh-cn/library/aa997154\(v=exchg.150\))。

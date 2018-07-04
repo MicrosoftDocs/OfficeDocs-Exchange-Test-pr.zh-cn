@@ -27,20 +27,10 @@ DLP 策略是包含条件集的简单数据包，这些数据包由您在 Exchan
 
 除了可自定义的 DLP 策略本身之外，还可以通知电子邮件发件人他们可能将违反一个策略 — 甚至在发送有问题的邮件之前进行此操作。您可以通过配置策略提示来实现这点。策略提示类似于邮件提示，可配置为在 Microsoft Outlook 2013 客户端中提供简短说明，提供有关邮件创建者可能违反策略的信息。在 Exchange Online 的最新版本和 Exchange 2013 SP1 中，策略提示也会显示在 Outlook Web App 和 适用于设备的 OWA 中。有关详细信息，请参阅[策略提示](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange Online：DLP 是一项高级功能，要求使用 Exchange Online 计划 2 订阅。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=286154">Exchange Online Licensing</a>（Exchange Online 授权）。<br />
-Exchange 2013：DLP 是一项高级功能，要求使用 Exchange 企业客户端访问许可证 (CAL)。有关 CAL 和服务器授权的详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server Licensing</a>（Exchange Server 授权）。<br />
-<strong>Exchange Enterprise CAL with Services：</strong>如果您是拥有混合部署的 Exchange Enterprise CAL with Services 客户（即您的某些邮箱是本地的，某些邮箱位于 Exchange Online 中），则有一个需要注意的行为区分。DLP 策略在 Exchange Online 中应用。因此，从一个内部部署用户发送到另一个内部部署用户的邮件不应用 DLP 策略，因为该邮件没有离开内部部署基础结构。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Exchange Online：DLP 是一项高级功能，要求使用 Exchange Online 计划 2 订阅。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=286154">Exchange Online Licensing</a>（Exchange Online 授权）。<br />
+> Exchange 2013：DLP 是一项高级功能，要求使用 Exchange 企业客户端访问许可证 (CAL)。有关 CAL 和服务器授权的详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server Licensing</a>（Exchange Server 授权）。<br />
+> <strong>Exchange Enterprise CAL with Services：</strong>如果您是拥有混合部署的 Exchange Enterprise CAL with Services 客户（即您的某些邮箱是本地的，某些邮箱位于 Exchange Online 中），则有一个需要注意的行为区分。DLP 策略在 Exchange Online 中应用。因此，从一个内部部署用户发送到另一个内部部署用户的邮件不应用 DLP 策略，因为该邮件没有离开内部部署基础结构。
 
 
 要查找与数据丢失防护相关的管理任务吗？请参阅 [DLP 过程](dlp-procedures-exchange-2013-help.md) (Exchange 2013) 或 [DLP 过程](https://technet.microsoft.com/zh-cn/library/jj938003\(v=exchg.150\)) (Exchange Online)。

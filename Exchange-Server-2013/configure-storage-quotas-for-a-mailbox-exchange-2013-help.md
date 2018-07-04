@@ -21,18 +21,8 @@ _**上一次修改主题：** 2015-07-07_
 
 通过存储配额，可以控制邮箱大小，并能管理邮箱数据库的增长。当邮箱达到或超过指定的存储配额时，Exchange 会向邮箱所有者发送描述性通知。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>存储配额针对的是运行 cmdlet <code>Get-MailboxStatistics</code> 时由属性 <code>TotalItemSize</code> 定义的给定邮箱大小。有关详细信息，请参阅 <a href="https://technet.microsoft.com/zh-cn/library/bb124612(v=exchg.150)">Get-MailboxStatistics</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 存储配额针对的是运行 cmdlet <code>Get-MailboxStatistics</code> 时由属性 <code>TotalItemSize</code> 定义的给定邮箱大小。有关详细信息，请参阅 <a href="https://technet.microsoft.com/zh-cn/library/bb124612(v=exchg.150)">Get-MailboxStatistics</a>。
 
 
 通常是按数据库配置存储配额。也就是说，为邮箱数据库配置的存储配额应用于该数据库中的所有邮箱。若要详细了解如何管理每个数据库邮箱的设置，请参阅[管理 Exchange 2013 中的邮箱数据库](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md)。
@@ -47,18 +37,8 @@ _**上一次修改主题：** 2015-07-07_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您要做什么？
@@ -75,18 +55,8 @@ _**上一次修改主题：** 2015-07-07_
     
       - “**在达到该限度时发出警告(GB)**”   此框显示向用户发出警告的存储配额上限。如果邮箱大小达到或超过指定值，Exchange 会向用户发送警告消息。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>只有当此设置的值大于“<strong>禁止发送</strong>”配额中指定的值的一半时，与“<strong>发出警告</strong>”配额相关联的消息才会发送给用户。例如，如果将“<strong>禁止发送</strong>”配额设置为 8 MB，至少必须将“<strong>发出警告</strong>”配额设置为 4 MB。否则，不会发送与“<strong>发出警告</strong>”配额相关联的消息。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!important]
+        > 只有当此设置的值大于“<strong>禁止发送</strong>”配额中指定的值的一半时，与“<strong>发出警告</strong>”配额相关联的消息才会发送给用户。例如，如果将“<strong>禁止发送</strong>”配额设置为 8 MB，至少必须将“<strong>发出警告</strong>”配额设置为 4 MB。否则，不会发送与“<strong>发出警告</strong>”配额相关联的消息。
     
       - “**在达到该限度时禁止发送(GB)**”   此框显示邮箱的“*禁止发送*”限制。如果邮箱大小达到或超过指定的限制，Exchange 会阻止用户发送新邮件，并显示描述性错误消息。
     
@@ -98,18 +68,8 @@ _**上一次修改主题：** 2015-07-07_
 
 此示例将 Joe Healy 的邮箱的“发出警告”、“禁止发送”、“禁止发送和接收”配额分别设置为 24.5 GB、24.75 GB 和 25 GB。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>为了确保使用邮箱的自定义设置，而非邮箱数据库默认设置，必须将 <em>UseDatabaseQuotaDefaults</em> 参数设置为 <code>$false</code>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 为了确保使用邮箱的自定义设置，而非邮箱数据库默认设置，必须将 <em>UseDatabaseQuotaDefaults</em> 参数设置为 <code>$false</code>。
 
 
     Set-Mailbox -Identity "Joe Healy" -IssueWarningQuota 24.5gb -ProhibitSendQuota 24.75gb -ProhibitSendReceiveQuota 25gb -UseDatabaseQuotaDefaults $false

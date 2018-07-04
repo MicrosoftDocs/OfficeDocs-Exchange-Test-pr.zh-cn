@@ -19,18 +19,8 @@ _**上一次修改主题：** 2012-10-12_
 
 在 Microsoft Exchange Server 2013，信息权限管理 (IRM) 是默认启用的内部消息。这允许您创建传输保护规则和 Microsoft Outlook保护规则，以 IRM 保护的邮件在传输过程中和 Microsoft Outlook 2010和更高版本的客户端上。有关内部消息启用 IRM 的Exchange Server 2013，如传输解密、 日记规则解密，可使用 Microsoft OfficeOutlook Web App和 IRM 中 Microsoft Exchange ActiveSync中的所有其他 IRM 功能的先决条件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange的组织中的所有 IRM 功能中都禁用禁用 IRM 的内部消息。Outlook （例如，能够读取、 答复、 转发、 和创建受 IRM 保护的邮件，使用Active Directory权限管理服务 (AD RMS) 服务器） 中的客户端的 IRM 功能不受影响。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Exchange的组织中的所有 IRM 功能中都禁用禁用 IRM 的内部消息。Outlook （例如，能够读取、 答复、 转发、 和创建受 IRM 保护的邮件，使用Active Directory权限管理服务 (AD RMS) 服务器） 中的客户端的 IRM 功能不受影响。
 
 
 关于 IRM 的更多管理任务，请参阅[信息权限管理过程](information-rights-management-procedures-exchange-2013-help.md)。
@@ -45,18 +35,8 @@ _**上一次修改主题：** 2012-10-12_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 使用命令行管理程序为内部邮件启用 IRM

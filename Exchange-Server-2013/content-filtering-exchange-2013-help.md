@@ -17,18 +17,8 @@ _**适用于：** Exchange Server 2013_
 
 _**上一次修改主题：** 2016-12-09_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2016 年 11 月 1 日起，Microsoft 停止为 Exchange 和 Outlook 中的 SmartScreen 筛选器生成垃圾邮件定义更新。现有的 SmartScreen 垃圾邮件定义将予以保留，但其效力可能会随时间的推移而逐渐降低。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">停止为 Outlook 和 Exchange 中的 SmartScreen 提供支持</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 2016 年 11 月 1 日起，Microsoft 停止为 Exchange 和 Outlook 中的 SmartScreen 筛选器生成垃圾邮件定义更新。现有的 SmartScreen 垃圾邮件定义将予以保留，但其效力可能会随时间的推移而逐渐降低。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">停止为 Outlook 和 Exchange 中的 SmartScreen 提供支持</a>。
 
 
 内容筛选器代理对入站电子邮件进行评估，并估算入站邮件是合法邮件或垃圾邮件的概率。与其他许多筛选技术不同，内容筛选器代理使用有统计学意义的电子邮件样本的特征。此样本中包含合法邮件，可以降低出错的机率。由于内容筛选器代理既能识别合法邮件的特征，又能识别垃圾邮件的特征，因此其准确度得到了提高。内容筛选器代理的更新通过 [Microsoft 更新](https://go.microsoft.com/fwlink/p/?linkid=54836)定期提供。
@@ -57,18 +47,8 @@ _**上一次修改主题：** 2016-12-09_
 
 也可以通过为每项操作指定不同的 SCL 分级来调整 SCL 阈值行为。有关如何根据组织要求调整 SCL 阈值以及有关每个收件人的 SCL 阈值的详细信息，请参阅[垃圾邮件可信度阈值](spam-confidence-level-threshold-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>智能邮件筛选器不会扫描大于 11 MB 的邮件。此类邮件不经扫描直接通过内容筛选器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 智能邮件筛选器不会扫描大于 11 MB 的邮件。此类邮件不经扫描直接通过内容筛选器。
 
 
 ## 允许短语和阻止短语
@@ -99,18 +79,8 @@ _**上一次修改主题：** 2016-12-09_
 
 通过使用 Exchange 命令行管理程序配置内容筛选器代理。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅会在本地计算机上进行您对 Exchange 命令行管理程序中的内容筛选器代理进行的配置更改。如果您在组织中的多个 Exchange 服务器上运行内容筛选器，则必须对每个计算机进行内容筛选器配置更改。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 仅会在本地计算机上进行您对 Exchange 命令行管理程序中的内容筛选器代理进行的配置更改。如果您在组织中的多个 Exchange 服务器上运行内容筛选器，则必须对每个计算机进行内容筛选器配置更改。
 
 
 内容筛选器代理依据更新来确定邮件是否是垃圾邮件以及是否可传递。这些更新包含：有关钓鱼网站、Microsoft SmartScreen 垃圾邮件试探性方法的更新数据，以及其他智能邮件筛选器更新。内容筛选器更新通常包含约 6 MB 数据，这些数据的有效期长于其他反垃圾邮件更新数据的有效期。

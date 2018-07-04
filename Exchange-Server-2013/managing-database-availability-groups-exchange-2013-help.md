@@ -51,18 +51,8 @@ DAG 网络
 
 DAG 使用 Windows 故障转移群集技术的子集，如群集检测信号、群集网络以及群集数据库（用于存储更改的或可以快速更改的数据，例如数据库状态从活动更改为被动或相反的情况，或从装入更改为卸除或相反的情况）。因为 DAG 依赖于 Windows 故障转移群集，所以只能在运行 Windows Server 2008 R2 Enterprise 或 Datacenter 操作系统、Windows Server 2012 Standard 或 Datacenter 操作系统，或者 Windows Server 2012 R2 Standard 或 Datacenter 操作系统的 Exchange 2013 邮箱服务器上创建。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由 DAG 创建和使用的故障转移群集必须专用于 DAG。该群集不能用于任何其他高可用性解决方案或任何其他用途。例如，故障转移群集不能用于对其他应用程序或服务进行群集。不支持将某个 DAG 的基础故障转移群集用于该 DAG 以外的用途。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 由 DAG 创建和使用的故障转移群集必须专用于 DAG。该群集不能用于任何其他高可用性解决方案或任何其他用途。例如，故障转移群集不能用于对其他应用程序或服务进行群集。不支持将某个 DAG 的基础故障转移群集用于该 DAG 以外的用途。
 
 
 ## DAG 见证服务器和见证目录
@@ -81,35 +71,15 @@ DAG 使用 Windows 故障转移群集技术的子集，如群集检测信号、�
 
 无论将哪个服务器用作见证服务器，如果在预期的见证服务器上启用了 Windows 防火墙，则必须为文件和打印机共享启用 Windows 防火墙例外。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果指定的见证服务器不是 Exchange 2013 或 Exchange 2010 服务器，则必须在创建 DAG 之前将 Exchange 受信任子系统通用安全组 (USG) 添加到见证服务器上的本地 Administrators 组中。需要这些安全权限来确保 Exchange 可以根据需要在见证服务器上创建并共享目录。<br />
-见证服务器使用 SMB 端口 445。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果指定的见证服务器不是 Exchange 2013 或 Exchange 2010 服务器，则必须在创建 DAG 之前将 Exchange 受信任子系统通用安全组 (USG) 添加到见证服务器上的本地 Administrators 组中。需要这些安全权限来确保 Exchange 可以根据需要在见证服务器上创建并共享目录。<br />
+见证服务器使用 SMB 端口 445。
 
 
 见证服务器和见证目录不需具有容错能力，也不需使用任何形式的冗余或高可用性。无需对见证服务器使用群集文件服务器或采用其他任何形式的恢复机制。其原因是多方面的。对于大型 DAG（例如，六个成员或更多），只有在发生多个故障时才需要见证服务器。由于六成员 DAG 可以承受多达两个投票者故障，而不会丢失仲裁，因此三个投票者发生故障后才需要见证服务器来维持仲裁。此外，如果故障影响到了当前的见证服务器（例如，由于硬件故障而丢失了见证服务器），则可以使用 [Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/zh-cn/library/dd297934\(v=exchg.150\)) cmdlet 配置新的见证服务器和见证目录（前提是拥有仲裁）。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果见证服务器丢失了存储内容，或有人更改了见证目录或共享权限，则还可以使用 <strong>Set-DatabaseAvailabilityGroup</strong> cmdlet 在原始位置配置见证服务器和见证目录。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果见证服务器丢失了存储内容，或有人更改了见证目录或共享权限，则还可以使用 <strong>Set-DatabaseAvailabilityGroup</strong> cmdlet 在原始位置配置见证服务器和见证目录。
 
 
 ## 见证服务器放置的注意事项
@@ -185,18 +155,8 @@ DAG 的见证服务器放置将取决于业务需求和组织的可用选项。E
 
 DAG 形成后，最初使用多数节点仲裁模型。将第二个邮箱服务器添加到 DAG 后，仲裁将自动更改为多数节点和文件共享仲裁模型。发生此更改后，DAG 的群集将开始使用见证服务器来维持仲裁。如果见证目录不存在，Exchange 会自动创建该目录并将其共享，使 DAG 的 CNO 计算机帐户具有对该共享的完全控制权限。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不支持使用属于分布式文件系统 (DFS) 命名空间的文件共享。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 不支持使用属于分布式文件系统 (DFS) 命名空间的文件共享。
 
 
 如果创建 DAG 之前在见证服务器上启用了 Windows 防火墙，那么防火墙可能会阻止创建 DAG。Exchange 使用 Windows Management Instrumentation (WMI) 在见证服务器上创建目录和文件共享。如果启用了见证服务器上的 Windows 防火墙，但没有针对 WMI 配置防火墙例外，那么 **New-DatabaseAvailabilityGroup** cmdlet 将会失败，并出现错误。如果指定了见证服务器，但未指定见证目录，则会收到以下错误消息。
@@ -258,18 +218,8 @@ DAG 形成后，最初使用多数节点仲裁模型。将第二个邮箱服务�
 
 创建 DAG 之后，可以在 EAC 中使用管理数据库可用性组向导，或在命令行管理程序中使用 **Add-DatabaseAvailabilityGroupServer** 或 **Remove-DatabaseAvailabilityGroupServer** cmdlet 向 DAG 中添加服务器或从 DAG 中删除服务器。有关如何管理 DAG 成员身份的详细步骤，请参阅[管理数据库可用性组成员身份](manage-database-availability-group-membership-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>作为 DAG 成员的每个邮箱服务器也是 DAG 使用的基础群集中的一个节点。因此，在任何时候，邮箱服务器都只能是一个 DAG 的成员。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 作为 DAG 成员的每个邮箱服务器也是 DAG 使用的基础群集中的一个节点。因此，在任何时候，邮箱服务器都只能是一个 DAG 的成员。
 
 
 如果添加到 DAG 的邮箱服务器没有安装故障转移群集组件，则用于添加服务器的方法（例如，**Add-DatabaseAvailabilityGroupServer** cmdlet 或管理数据库可用性组向导）会安装故障转移群集功能。
@@ -306,36 +256,16 @@ DAG 形成后，最初使用多数节点仲裁模型。将第二个邮箱服务�
 
   - 使用已装入数据库的信息更新群集数据库。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>自动更改仲裁模型。如果仲裁模型没有自动更改为正确的模型，则可以运行仅包含 <em>Identity</em> 参数的 <strong>Set-DatabaseAvailabilityGroup</strong> cmdlet 来更正 DAG 仲裁设置。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 自动更改仲裁模型。如果仲裁模型没有自动更改为正确的模型，则可以运行仅包含 <em>Identity</em> 参数的 <strong>Set-DatabaseAvailabilityGroup</strong> cmdlet 来更正 DAG 仲裁设置。
 
 
 ## 预先暂存 DAG 的群集名称对象
 
 CNO 是在 Active Directory 中创建的一个计算机帐户，与群集名称资源相关联。群集名称资源与 CNO 绑定，该 CNO 是支持 Kerberos 的对象，充当群集标识并提供群集的安全上下文。在将第一个成员添加到该 DAG 时形成了 DAG 基础群集以及该群集的 CNO。将第一个服务器添加到 DAG 时，远程 Powershell 将与正在添加的邮箱服务器上的 Microsoft Exchange 复制服务取得联系。如果还未安装故障转移群集功能，Microsoft Exchange 复制服务将安装该功能，并开始群集创建过程。Microsoft Exchange 复制服务在 LOCAL SYSTEM 安全上下文中运行，并且群集创建也正是在此上下文中执行。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您的 DAG 成员运行 Windows Server 2012，则必须在将第一个服务器添加到 DAG 中之前预先暂存 CNO。如果您的 DAG 成员运行 Windows Server 2012 R2，并且创建的 DAG 没有群集管理访问点，那么将不会创建 CNO，并且不需要为 DAG 创建 CNO。</td>
-</tr>
-</tbody>
-</table>
+> [!warning]
+> 如果您的 DAG 成员运行 Windows Server 2012，则必须在将第一个服务器添加到 DAG 中之前预先暂存 CNO。如果您的 DAG 成员运行 Windows Server 2012 R2，并且创建的 DAG 没有群集管理访问点，那么将不会创建 CNO，并且不需要为 DAG 创建 CNO。
 
 
 如果计算机帐户的创建环境受限，或者计算机帐户创建于默认计算机容器之外的其他容器中，则可以预先暂存并设置 CNO。您可为 CNO 创建和禁用计算机帐户，然后执行以下操作之一：
@@ -472,18 +402,8 @@ DAG 网络包含一个或多个用于复制流量或 MAPI 流量的子网。每�
 
 在双网络适配器配置中，通常有一个网络专用于复制流量，另一个网络主要用于 MAPI 流量。还可以向每个 DAG 成员添加网络适配器，并将其他 DAG 网络配置为复制网络。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用多个复制网络时，无法指定网络使用优先顺序。Exchange 会从复制网络组中随机选择一个复制网络用于日志传送。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 使用多个复制网络时，无法指定网络使用优先顺序。Exchange 会从复制网络组中随机选择一个复制网络用于日志传送。
 
 
 在 Exchange 2010 中，在许多情况下需要手动配置 DAG 网络。默认情况下，在 Exchange 2013 中，由系统自动配置 DAG 网络。因为您可以创建或修改 DAG 网络，所以必须首先通过运行以下命令启用手动 DAG 网络控制：
@@ -502,18 +422,8 @@ DAG 网络包含一个或多个用于复制流量或 MAPI 流量的子网。每�
 
   - **启用复制**   在 EAC 中，选中复选框使 DAG 网络专门用于复制通信，并阻止 MAPI 通信。清除此复选框可以阻止使用 DAG 网络进行复制通信，并启用 MAPI 通信。在命令行管理程序中，使用 [Set-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/zh-cn/library/dd298008\(v=exchg.150\)) cmdlet 中的 *ReplicationEnabled* 参数可以启用和禁用复制。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 MAPI 网络上禁用复制并不保证系统不会将 MAPI 网络用于复制。当配置的所有复制网络都脱机、出现故障或由于其他原因而不可用，只有 MAPI 网络保留（该网络配置为禁用复制）时，系统使用 MAPI 网络进行复制。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在 MAPI 网络上禁用复制并不保证系统不会将 MAPI 网络用于复制。当配置的所有复制网络都脱机、出现故障或由于其他原因而不可用，只有 MAPI 网络保留（该网络配置为禁用复制）时，系统使用 MAPI 网络进行复制。
 
 
 系统创建的初始 DAG 网络（例如 MapiDagNetwork 和 ReplicationDagNetwork01）基于群集服务枚举的子网。每个 DAG 成员都必须具有相同数目的网络适配器，并且每个网络适配器都必须具有唯一子网上的 IPv4 地址（也可以具有 IPv6 地址）。多个 DAG 成员可以具有相同子网上的 IPv4 地址，但是特定 DAG 成员中的每个网络适配器和 IP 地址对必须处于唯一子网上。此外，只有用于 MAPI 网络的适配器才应配置有默认网关。复制网络不应配置有默认网关。

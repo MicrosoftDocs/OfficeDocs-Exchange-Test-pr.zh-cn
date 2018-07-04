@@ -75,16 +75,6 @@ _**上一次修改主题：** 2013-04-29_
     
     **Start-CsWindowsService**和**Stop-CsWindowsService** cmdlet 都类似于一般 Windows PowerShell cmdlet **Start-Service**和**Stop-Service**。如果需要，您可以使用**Start-Service**或**Stop-Service** cmdlet 启动和停止 Lync Server 服务。但是， **Start-CsWindowsServiceStop-CsWindowsService** cmdlet 包括容易地停止和启动 Lync 服务器服务的远程计算机上的*ComputerName*参数。若要执行此操作，您可以包括跟远程计算机的完全限定的域名 (FQDN) 的*ComputerName*参数。**Start-Service**和**Stop-Service** cmdlet 没有可比较的参数。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>要使 UM 与 Lync Server 完全集成，还必须在组织中的任何客户端访问服务器或邮箱服务器上运行 ExchUcUtil.ps1 脚本。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 要使 UM 与 Lync Server 完全集成，还必须在组织中的任何客户端访问服务器或邮箱服务器上运行 ExchUcUtil.ps1 脚本。
 

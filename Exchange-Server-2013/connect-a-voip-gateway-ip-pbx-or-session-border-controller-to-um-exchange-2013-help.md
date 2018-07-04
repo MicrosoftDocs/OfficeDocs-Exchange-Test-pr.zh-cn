@@ -19,18 +19,8 @@ _**上一次修改主题：** 2016-12-09_
 
 在为组织部署统一消息 (UM) 时，必须正确配置 IP 语音 (VoIP) 网关和 IP 专用交换机 (PBX)。如果正在混合环境中部署 UM，也将需要正确部署会话边界控制器 (SBC)。为此，需要配置接口或 VoIP 网关、IP PBX 和 SBC 的接口，以便与运行 Microsoft Exchange 统一消息呼叫路由器服务的客户端访问服务器和运行 Microsoft Exchange 统一消息服务的邮箱服务器进行通信。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果使用 Web 浏览器对 VoIP 网关、IP PBX 或 SBC 执行管理任务，则通过网络发送的 HTTP 请求不会被加密。若要提高网络上 VoIP 网关、IP PBX 或 SBC 的安全级别，请使用 Internet 协议安全 (IPsec) 或安全套接字层 (SSL) 帮助保护通过网络传输的管理凭据和数据。我们还建议使用强大的身份验证机制和复杂的管理密码来保护设备的管理凭据。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果使用 Web 浏览器对 VoIP 网关、IP PBX 或 SBC 执行管理任务，则通过网络发送的 HTTP 请求不会被加密。若要提高网络上 VoIP 网关、IP PBX 或 SBC 的安全级别，请使用 Internet 协议安全 (IPsec) 或安全套接字层 (SSL) 帮助保护通过网络传输的管理凭据和数据。我们还建议使用强大的身份验证机制和复杂的管理密码来保护设备的管理凭据。
 
 
 ## 电话 IP 设备接口
@@ -63,16 +53,6 @@ _**上一次修改主题：** 2016-12-09_
 
 客户端访问服务器和邮箱服务器将仅与列为受信任会话初始协议 (SIP) 对等项的 VoIP 网关、IP PBX 或 SBC 通信。当多个 DNS 主机共享同一 IP 地址时，将记录一个 ID 为 1175 的事件。如果已使用网络上 VoIP 网关的 (FQDN) 配置 DNS 区域，则可能会发生此事件。统一消息通过检索邮箱服务器上统一消息 Web 服务虚拟目录的内部 URL，然后使用此 URL 生成受信任 SIP 对等项的 FQDN 列表来防止未经授权的请求。两个 FQDN 解析为同一个 IP 地址后，将记录该事件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果将 VoIP 网关、IP PBX 或 SBC 配置为具备 FQDN，并且 VoIP 网关、IP PBX 或 SBC 的 DNS 记录在启动统一消息服务后已更改，则必须重新启动 MicrosoftExchange 统一消息服务。如果不重新启动该服务，邮箱服务器将无法定位 VoIP 网关、IP PBX 或 SBC。这是因为邮箱服务器在内存中为所有 VoIP 网关、IP PBX 或 SBC 维护了一个缓存，且仅当该服务重启或者当 VoIP 网关、IP PBX 或 SBC 的配置更改时，才会执行 DNS 解析。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果将 VoIP 网关、IP PBX 或 SBC 配置为具备 FQDN，并且 VoIP 网关、IP PBX 或 SBC 的 DNS 记录在启动统一消息服务后已更改，则必须重新启动 MicrosoftExchange 统一消息服务。如果不重新启动该服务，邮箱服务器将无法定位 VoIP 网关、IP PBX 或 SBC。这是因为邮箱服务器在内存中为所有 VoIP 网关、IP PBX 或 SBC 维护了一个缓存，且仅当该服务重启或者当 VoIP 网关、IP PBX 或 SBC 的配置更改时，才会执行 DNS 解析。
 

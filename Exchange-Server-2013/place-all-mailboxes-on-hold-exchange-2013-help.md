@@ -17,18 +17,8 @@ _**适用于：** Exchange Online, Exchange Server 2013_
 
 _**上一次修改主题：** 2017-01-18_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange Online（Office 365 和 Exchange Online 独立计划）中新建就地保留的截止时间为 2017 年 7 月 1 日，我们已推迟了这一最后期限。不过，今年晚些时候或明年初，将无法在 Exchange Online 中新建就地保留。作为就地保留的备选方法，可以在 Office 365 安全与合规中心使用<a href="https://go.microsoft.com/fwlink/?linkid=780738">电子数据展示服务案例</a>或<a href="https://go.microsoft.com/fwlink/?linkid=827811">保留策略</a>。在我们取消新建就地保留后，仍可以修改现有就地保留，并且在 Exchange Server 2013 和 Exchange 混合部署中新建就地保留也仍将受支持。此外，也仍可以将邮箱置于诉讼保留。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在 Exchange Online（Office 365 和 Exchange Online 独立计划）中新建就地保留的截止时间为 2017 年 7 月 1 日，我们已推迟了这一最后期限。不过，今年晚些时候或明年初，将无法在 Exchange Online 中新建就地保留。作为就地保留的备选方法，可以在 Office 365 安全与合规中心使用<a href="https://go.microsoft.com/fwlink/?linkid=780738">电子数据展示服务案例</a>或<a href="https://go.microsoft.com/fwlink/?linkid=827811">保留策略</a>。在我们取消新建就地保留后，仍可以修改现有就地保留，并且在 Exchange Server 2013 和 Exchange 混合部署中新建就地保留也仍将受支持。此外，也仍可以将邮箱置于诉讼保留。
 
 
 您的组织可能需要将所有邮箱数据保存一段指定的时间。您可以使用诉讼保留或就地保留满足这一要求。当您将一个邮箱置于诉讼保留或就地保留状态后，修改或永久删除的邮箱邮件将保存在“可恢复邮件”文件夹中。有关详细信息，请参阅[就地保留和诉讼保留](in-place-hold-and-litigation-hold-exchange-2013-help.md)。
@@ -121,18 +111,8 @@ _**上一次修改主题：** 2017-01-18_
 
 您可以使用 EAC 选择多达 500 个邮箱并将其置于保留状态。有关详细信息，请参阅[创建或删除就地保留](create-or-remove-an-in-place-hold-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要将多于 500 个用户置于就地保留状态，请使用 Shell。请参阅 <a href="https://technet.microsoft.com/zh-cn/library/dd298064(v=exchg.150)">New-MailboxSearch</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 要将多于 500 个用户置于就地保留状态，请使用 Shell。请参阅 <a href="https://technet.microsoft.com/zh-cn/library/dd298064(v=exchg.150)">New-MailboxSearch</a>。
 
 
 ## 详细信息

@@ -33,18 +33,8 @@ UM features that operate differently for secondary dial plans
 
 如果您正在使用电话分机拨号计划，并且需要为用户提供相同的分机号码，您将需要创建一个辅助拨号计划，启用为用户启用 UM 并为用户提供相同分机号码。这是因为每个分机号码在拨号计划中必须是唯一的。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对可以为启用 UM 的用户添加的辅助分机号码的数量没有限制。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 对可以为启用 UM 的用户添加的辅助分机号码的数量没有限制。
 
 
 有时，用户可能在不同地点之间出差，拥有两个或更多电话，或者可能希望通过一个直接拨入 (DID) 分机号码接收语音邮件，而通过另一个 DID 分机号码接收传真。为此，必须再为用户邮箱添加一个 DID 分机号码，在某些情况下需添加辅助拨号计划。

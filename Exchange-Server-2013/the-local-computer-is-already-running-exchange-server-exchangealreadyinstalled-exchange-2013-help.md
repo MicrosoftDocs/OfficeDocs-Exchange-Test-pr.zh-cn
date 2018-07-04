@@ -39,18 +39,8 @@ Exchange 2007 安装程序要求本地计算机不能安装现有的 Microsoft 
 
 5.  在组件选择页的操作列表中，单击每个已安装的组件旁边的向下箭头，然后单击\&quot;删除\&quot;。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>对于已安装的组件，操作列表中会显示相应的选中标记。在您单击&amp;quot;删除&amp;quot;后，选中标记就会替换为&amp;quot;删除&amp;quot;一词。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 对于已安装的组件，操作列表中会显示相应的选中标记。在您单击&amp;quot;删除&amp;quot;后，选中标记就会替换为&amp;quot;删除&amp;quot;一词。
 
 
 6.  单击**\&quot;下一步\&quot;**两次。

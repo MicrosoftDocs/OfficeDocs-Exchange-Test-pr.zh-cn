@@ -41,18 +41,8 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 使用安装程序 /m:RecoverServer 恢复服务器
@@ -69,18 +59,8 @@ _**上一次修改主题：** 2016-12-09_
     
         Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果要删除的 DAG 成员处于脱机状态，并且无法将其联机，则必须向上述命令中添加 <em>ConfigurationOnly</em> 参数。如果使用 <em>ConfigurationOnly</em> 开关，则必须从群集手动退出节点。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果要删除的 DAG 成员处于脱机状态，并且无法将其联机，则必须向上述命令中添加 <em>ConfigurationOnly</em> 参数。如果使用 <em>ConfigurationOnly</em> 开关，则必须从群集手动退出节点。
 
 
 4.  在 Active Directory 中重置服务器的计算机帐户。有关详细步骤，请参阅[重置计算机帐户](http://go.microsoft.com/fwlink/p/?linkid=167188)。

@@ -23,36 +23,16 @@ SBC 需要使用数字证书对内部部署组织和 Microsoft 数据中心之�
 
 在混合或联机部署中，一个 UM IP 网关代表一个 SBC。证书中的使用者公用名称必须与您创建的 UM IP 网关\&quot;地址\&quot;框中的完全限定域名 (FQDN) 值匹配。例如，如果在 UM IP 网关上指定了 FQDN 地址 sbcexternal.contoso.com，则应确保证书中的使用者名称和使用者备用名称包含相同的值：sbcexternal.contoso.com。使用的名称区分大小写，因此请确保证书和 UM IP 网关上的大小写相同。如果使用 Acme Packet SBC 并且公用名称与 UM IP 网关的 FQDN 不匹配，则会拒绝呼叫，并出现 403 错误。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>因为 SBC 设计为处于网络边缘，所以也将它们当作防火墙使用。如果您在组织的防火墙之后设置 SBC，则可能会导致配置问题并且不支持连接到 Office 365。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 因为 SBC 设计为处于网络边缘，所以也将它们当作防火墙使用。如果您在组织的防火墙之后设置 SBC，则可能会导致配置问题并且不支持连接到 Office 365。
 
 
 ## 支持的会话边界控制器
 
 已成功测试以下 SBC 与 Exchange 混合和联机部署的互操作性。请注意，SBC 的功能和兼容性可能有所差异，并且它们的设置方式可能因网络上的其他设备而异。请咨询 SBC 制造商以了解是否存在针对混合或联机部署中的统一消息的特定配置说明。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 联机 UM 支持第三方 PBX 系统，通过直接连接从客户操作 SBCs 将在 7 月 2018年结束。 请 Exchange 团队博客<a href="https://blogs.technet.microsoft.com/exchange/2017/07/18/discontinuation-of-support-for-session-border-controllers-in-exchange-online-unified-messaging/">终止的会话边框中的控制器联机 Exchange 支持统一消息</a>的详细信息，参阅。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Exchange 联机 UM 支持第三方 PBX 系统，通过直接连接从客户操作 SBCs 将在 7 月 2018年结束。 请 Exchange 团队博客<a href="https://blogs.technet.microsoft.com/exchange/2017/07/18/discontinuation-of-support-for-session-border-controllers-in-exchange-online-unified-messaging/">终止的会话边框中的控制器联机 Exchange 支持统一消息</a>的详细信息，参阅。
 
 
 
@@ -91,18 +71,9 @@ SBC 需要使用数字证书对内部部署组织和 Microsoft 数据中心之�
 <tr class="odd">
 <td><p><a href="https://www.cisco.com/c/dam/en/us/solutions/collateral/enterprise-networks/unified-access/cube-asr-release-10-0.pdf">Cisco</a></p></td>
 <td><p>ASR 1000</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须已安装 IOS 15.4(3)S3 或更高版本。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 必须已安装 IOS 15.4(3)S3 或更高版本。
 
 </td>
 <td><p><strong>有关如何设置设备的最新说明，请与硬件供应商联系。</strong></p></td>

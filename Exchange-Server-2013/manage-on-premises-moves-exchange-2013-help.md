@@ -39,18 +39,8 @@ _**上一次修改主题：** 2013-02-25_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -105,18 +95,8 @@ _**上一次修改主题：** 2013-02-25_
 
 3.  在“移动配置”页面上，为新的批次指定名称。选择您需要存档邮箱的哪些选项以及邮箱数据位置，然后单击“新建”。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>确保不要将“错误项限制”设置为超过 50 个项目。如果超过 50 项，移动可能会失败。如果要将“错误项限制”设置为超过 50 个项目，必须使用 Exchange 命令行管理程序并将 <em>AcceptLargeDataLoss</em> 参数设置为 True。</td>
-</tr>
-</tbody>
-</table>
+> [!warning]
+> 确保不要将“错误项限制”设置为超过 50 个项目。如果超过 50 项，移动可能会失败。如果要将“错误项限制”设置为超过 50 个项目，必须使用 Exchange 命令行管理程序并将 <em>AcceptLargeDataLoss</em> 参数设置为 True。
 
 
 ## 使用命令行管理程序创建批处理移动请求

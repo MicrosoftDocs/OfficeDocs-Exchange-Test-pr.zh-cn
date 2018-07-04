@@ -21,18 +21,8 @@ _**上一次修改主题：** 2013-02-11_
 
 安装运行 Microsoft Exchange 统一消息服务的邮箱服务器之后，您可以配置多个选项，其中包括：并发来电数、TCP 和传输层安全性 (TLS) 侦听端口、状态以及 UM 启动模式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>它不具有必需的 UM 拨号计划加入邮箱服务器，它可以处理之前调用的统一邮件 (UM)，除正在集成 UM 和 Microsoft Office 通信服务器 2007 R2 或 Microsoft Lync Server 时。默认情况下，组织中的所有邮箱服务器都都可以应答传入呼叫。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 它不具有必需的 UM 拨号计划加入邮箱服务器，它可以处理之前调用的统一邮件 (UM)，除正在集成 UM 和 Microsoft Office 通信服务器 2007 R2 或 Microsoft Lync Server 时。默认情况下，组织中的所有邮箱服务器都都可以应答传入呼叫。
 
 
 有关统一消息和邮箱服务器相关的其他管理任务，请参阅 [UM 服务过程](um-services-procedures-exchange-2013-help.md)。
@@ -47,18 +37,8 @@ _**上一次修改主题：** 2013-02-11_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？

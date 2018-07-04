@@ -21,18 +21,8 @@ _**上一次修改主题：** 2016-08-22_
 
 SSL 卸载的最大优势之一是能够更轻松地管理所使用的证书。无需为安装了 SP1 的每台客户端访问服务器安装单独的 SSL 证书，而是使用单个 SSL 证书并将此证书导入所有客户端访问服务器。所使用的证书可以是一个现有的或新创建的 SSL 证书。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 Internet 信息服务 (IIS) 管理器、Exchange 命令行管理程序或命令行界面配置 SSL 卸载时，请注意存在“<strong>默认网站</strong>”和“<strong>Exchange 后端</strong>”网站。对于 SSL 卸载，仅配置“<strong>默认网站</strong>”，对“<strong>Exchange 后端</strong>”网站不做任何更改。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 使用 Internet 信息服务 (IIS) 管理器、Exchange 命令行管理程序或命令行界面配置 SSL 卸载时，请注意存在“<strong>默认网站</strong>”和“<strong>Exchange 后端</strong>”网站。对于 SSL 卸载，仅配置“<strong>默认网站</strong>”，对“<strong>Exchange 后端</strong>”网站不做任何更改。
 
 
 **目录**
@@ -79,18 +69,8 @@ Configuring SSL offloading for Outlook 无处不在
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 为 Outlook Web App 配置 SSL 卸载
@@ -196,18 +176,8 @@ Configuring SSL offloading for Outlook 无处不在
     
       - 使用 Internet 信息服务 (IIS) 管理器：在 Internet 信息服务 (IIS) 管理器的“操作”窗格中，单击“重新启动”。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必须等待服务主机进程将 Active Directory 中的任何更改应用到 Internet 信息服务 (IIS)，间隔为 15 分钟，即使当您在客户端访问服务器上重新启动 IIS 时也是如此。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 您必须等待服务主机进程将 Active Directory 中的任何更改应用到 Internet 信息服务 (IIS)，间隔为 15 分钟，即使当您在客户端访问服务器上重新启动 IIS 时也是如此。
 
 
 返回顶部
@@ -376,18 +346,8 @@ Configuring SSL offloading for Outlook 无处不在
 
 如果您在具有多台 Exchange 2013 客户端访问服务器的大型组织中工作，您可能希望加速已执行的前述步骤。您可以复制以下脚本中的命令并粘贴到记事本中，进行任何更改，使用 .ps1 扩展名保存文件，然后从 Exchange 命令行管理程序运行该文件。根据您的需要，可以使用两个脚本为单个或多个客户端访问服务器的所有协议和服务配置 SSL 卸载。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于 <strong>Set-OutlookAnywhere</strong> cmdlet 条目，将“MyServer”替换为客户端访问服务器的名称。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 对于 <strong>Set-OutlookAnywhere</strong> cmdlet 条目，将“MyServer”替换为客户端访问服务器的名称。
 
 
 **使用 Set-WebConfigurationProperty**
@@ -405,18 +365,8 @@ Configuring SSL offloading for Outlook 无处不在
 
 **使用 appcmd**
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于 <strong>Set-OutlookAnywhere</strong> cmdlet 条目，将“MyServer”替换为客户端访问服务器的名称。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 对于 <strong>Set-OutlookAnywhere</strong> cmdlet 条目，将“MyServer”替换为客户端访问服务器的名称。
 
 
     Set-OutlookAnywhere -Identity MyServer\Rpc* -Externalhostname MyServer.mail.contoso.com -ExternalClientsRequireSsl $True -ExternalClientAuthenticationMethod Basic

@@ -39,18 +39,8 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -79,34 +69,21 @@ _**上一次修改主题：** 2016-12-09_
 
 8.  如果要添加其他条件或操作，则选择窗口底部的“更多选项”。
     
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>仅可以使用以下条件：
-    <ul>
-    <li><p><strong>SentTo（收件人为）</strong></p></li>
-    <li><p><strong>SentToScope（收件人位于）</strong></p></li>
-    <li><p><strong>From（发件人为）</strong></p></li>
-    <li><p><strong>FromMemberOf（发件人为以下组的成员）</strong></p></li>
-    <li><p><strong>FromScope（发件人位于）</strong></p></li>
-    </ul>
-    不可以使用下列操作：
-    <ul>
-    <li><p><strong>RejectMessageReasonText（拒绝该邮件并给出说明）</strong></p></li>
-    <li><p><strong>RejectMessageEnhancedStatusCode（拒绝具有以下增强状态代码的邮件）</strong></p></li>
-    <li><p><strong>DeletedMessage（在不通知任何人的情况下删除邮件）</strong></p></li>
-    </ul></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 仅可以使用以下条件：
+    > <ul>
+    > <li><p><strong>SentTo（收件人为）</strong></p></li>
+    > <li><p><strong>SentToScope（收件人位于）</strong></p></li>
+    > <li><p><strong>From（发件人为）</strong></p></li>
+    > <li><p><strong>FromMemberOf（发件人为以下组的成员）</strong></p></li>
+    > <li><p><strong>FromScope（发件人位于）</strong></p></li>
+    > </ul>
+    > 不可以使用下列操作：
+    > <ul>
+    > <li><p><strong>RejectMessageReasonText（拒绝该邮件并给出说明）</strong></p></li>
+    > <li><p><strong>RejectMessageEnhancedStatusCode（拒绝具有以下增强状态代码的邮件）</strong></p></li>
+    > <li><p><strong>DeletedMessage（在不通知任何人的情况下删除邮件）</strong></p></li>
+    > </ul>
 
 
 9.  在“选择此规则的模式”列表中，选择是否要强制执行规则。建议首先测试该规则。

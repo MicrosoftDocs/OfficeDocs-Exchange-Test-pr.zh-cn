@@ -25,18 +25,8 @@ _**上一次修改主题：** 2016-12-09_
 
 当客户端访问服务器上启用了 IRM 时， Outlook Web App用户将可以通过应用在 AD RMS 群集上创建一个[Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx)模板的 IRM 保护的邮件。Outlook Web App用户可以查看受 IRM 保护的邮件并支持附件。在启用 IRM 客户端访问服务器上之前，必须将联盟邮箱添加 AD RMS 群集上的超级用户组。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当他们从 AD RMS 群集申请许可证，超级用户组被授予了所有者的成员使用许可证。这允许他们解密该群集的 RMS 保护的所有内容。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 当他们从 AD RMS 群集申请许可证，超级用户组被授予了所有者的成员使用许可证。这允许他们解密该群集的 RMS 保护的所有内容。
 
 
 关于 IRM 的更多管理任务，请参阅[信息权限管理过程](information-rights-management-procedures-exchange-2013-help.md)。

@@ -94,18 +94,8 @@ _**上一次修改主题：** 2015-03-09_
 
 2.  删除、移动或重命名包含 Exchange 内容索引目录的文件夹。此文件夹命名为 `%ExchangeInstallPath\Mailbox\<name of mailbox database>_Catalog\<GUID>12.1.Single`。例如，您可能会将该文件夹重命名为 `C:\Program Files\Microsoft\Exchange Server\V15\Mailbox\Mailbox Database 0657134726_Catalog\F0627A72-9F1D-494A-839A-D7C915C279DB12.1.Single_OLD`。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>删除此文件夹会腾出额外的磁盘空间。或者，您可能想要出于故障诊断目的移动或重命名该文件夹。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 删除此文件夹会腾出额外的磁盘空间。或者，您可能想要出于故障诊断目的移动或重命名该文件夹。
 
 
 3.  运行以下命令以重启 Microsoft Exchange Search 和 Microsoft Exchange Search Host Controller 服务。

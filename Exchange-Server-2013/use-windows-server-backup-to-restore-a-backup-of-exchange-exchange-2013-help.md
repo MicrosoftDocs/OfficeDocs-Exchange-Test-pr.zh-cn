@@ -29,18 +29,8 @@ _**上一次修改主题：** 2014-06-18_
 
   - 在将数据库还原到其原始位置时，数据库可能保留异常关闭状态并且可由系统装入。当还原至备用位置时（例如，准备使用一个恢复数据库），必须通过使用 Exchange 数据库实用程序 (Eseutil.exe) 手动使数据库进入干净关闭状态。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 使用 Windows Server 备份还原 Exchange 的备份
@@ -61,18 +51,8 @@ _**上一次修改主题：** 2014-06-18_
 
 6.  在\&quot;选择恢复类型\&quot;页面上，选择\&quot;应用程序\&quot;，然后单击\&quot;下一步\&quot;。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果&amp;quot;应用程序&amp;quot;在选项中不可用，则表示选择还原的备份是一个文件夹级的备份，而不是卷级备份。当通过 Windows 服务器备份对 Exchange 数据进行备份时，您必须执行卷级备份。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果&amp;quot;应用程序&amp;quot;在选项中不可用，则表示选择还原的备份是一个文件夹级的备份，而不是卷级备份。当通过 Windows 服务器备份对 Exchange 数据进行备份时，您必须执行卷级备份。
 
 
 7.  在\&quot;选择应用程序\&quot;页面上，确认在\&quot;应用程序\&quot;字段中已选中 Exchange。单击\&quot;查看详细信息\&quot;以查看备份的应用程序组件。如果您要恢复的备份是最新的，将会显示**\&quot;不执行应用程序数据库前滚恢复\&quot;**复选框。如果要阻止 Windows Server 备份通过提交所有未提交的事务日志来前滚正在恢复的数据库，请选中此复选框。单击\&quot;下一步\&quot;。

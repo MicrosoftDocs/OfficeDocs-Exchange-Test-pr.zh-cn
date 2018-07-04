@@ -27,18 +27,8 @@ _**上一次修改主题：** 2016-12-09_
 
 传输保护规则允许对 IRM 保护的邮件使用传输规则，具体做法是应用 [Active Directory 权限管理服务](https://go.microsoft.com/fwlink/p/?linkid=129823) (AD RMS) 权限策略模板。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>AD RMS 是一种信息保护技术，适用于启用了权限管理服务 (RMS) 的应用程序和客户端，以便以联机和脱机方式保护敏感信息。若要在内部部署的 Exchange 部署中使用 IRM 保护，Exchange 2013 要求在 Windows Server 2008 或更高版本上运行内部部署 AD RMS 部署。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> AD RMS 是一种信息保护技术，适用于启用了权限管理服务 (RMS) 的应用程序和客户端，以便以联机和脱机方式保护敏感信息。若要在内部部署的 Exchange 部署中使用 IRM 保护，Exchange 2013 要求在 Windows Server 2008 或更高版本上运行内部部署 AD RMS 部署。
 
 
 AD RMS 使用基于 XML 的策略模板，从而使启用 IRM 的兼容应用程序可以应用一致的保护策略。在 Windows Server 2008 及更高版本中，AD RMS 服务器提供了可用于枚举和获取模板的 Web 服务。Exchange 2013 附带有“不要转发”模板。
@@ -47,19 +37,9 @@ AD RMS 使用基于 XML 的策略模板，从而使启用 IRM 的兼容应用程
 
 可以在内部 AD RMS 部署中创建其他 RMS 模板，以满足组织中的权限保护要求。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果从 AD RMS 服务器中删除了权限策略模板，则必须修改任何使用已删除模板的传输保护规则。如果传输保护规则继续使用已删除的权限策略模板，则 AD RMS 服务器将无法对任何收件人认证内容，且会向发件人发送未送达报告 (NDR)。<br />
-在 Windows Server 2008 和更高版本中，可以存档而不是删除权限策略模板。存档模板仍可以用于认证内容，但是创建或修改传输保护规则时，存档模板不会包含在模板列表中。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果从 AD RMS 服务器中删除了权限策略模板，则必须修改任何使用已删除模板的传输保护规则。如果传输保护规则继续使用已删除的权限策略模板，则 AD RMS 服务器将无法对任何收件人认证内容，且会向发件人发送未送达报告 (NDR)。<br />
+> 在 Windows Server 2008 和更高版本中，可以存档而不是删除权限策略模板。存档模板仍可以用于认证内容，但是创建或修改传输保护规则时，存档模板不会包含在模板列表中。
 
 
 有关创建 AD RMS 模板的详细信息，请参阅 [AD RMS 权限策略模板部署分步指南](https://go.microsoft.com/fwlink/p/?linkid=136593)。

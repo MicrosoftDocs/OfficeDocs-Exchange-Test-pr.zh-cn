@@ -43,35 +43,15 @@ _**上一次修改主题：** 2015-04-07_
     
       - 可以指定 DAG 的名称、将\&quot;见证服务器\&quot;字段留空，并指定要在见证服务器上创建并共享的目录。在这种情况下，向导将搜索没有安装邮箱服务器角色的客户端访问服务器，在该服务器上自动创建并共享指定的见证目录，然后配置 DAG 以使用该客户端访问服务器作为其见证服务器。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您指定的见证服务器不是 Exchange 2013 或 Exchange 2010 服务器，则必须将 Exchange 受信任子系统通用安全组添加到见证服务器上的本地管理员组中。需要这些安全权限来确保 Exchange 可以根据需要在见证服务器上创建并共享目录。如果未配置正确权限，将会返回以下错误：<br />
-    <code>Error: An error occurred during discovery of the database availability group topology. Error: An error occurred while attempting a cluster operation. Error: Cluster API &quot;AddClusterNode() (MaxPercentage=12) failed with 0x80070005. Error: Access is denied.&quot;</code></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 如果您指定的见证服务器不是 Exchange 2013 或 Exchange 2010 服务器，则必须将 Exchange 受信任子系统通用安全组添加到见证服务器上的本地管理员组中。需要这些安全权限来确保 Exchange 可以根据需要在见证服务器上创建并共享目录。如果未配置正确权限，将会返回以下错误：
+    > <code>Error: An error occurred during discovery of the database availability group topology. Error: An error occurred while attempting a cluster operation. Error: Cluster API &quot;AddClusterNode() (MaxPercentage=12) failed with 0x80070005. Error: Access is denied.&quot;</code>
 
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -88,18 +68,8 @@ _**上一次修改主题：** 2015-04-07_
     
       - **见证服务器**   使用该字段指定 DAG 的见证服务器。如果将该字段留空，系统将尝试自动选择没有安装于计算机上的本地 Active Directory 站点中的客户端访问服务器，并将邮箱服务器用作见证服务器。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果指定见证服务器，则必须使用主机名 (FQDN) 或完全限定的域名 (FQDN)。不支持使用 IP 地址或通配符名称。此外，见证服务器不能是 DAG 的成员。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 如果指定见证服务器，则必须使用主机名 (FQDN) 或完全限定的域名 (FQDN)。不支持使用 IP 地址或通配符名称。此外，见证服务器不能是 DAG 的成员。
     
       - **见证目录**   使用该字段键入指向将用于存储见证数据的见证服务器上的目录的路径。如果该目录不存在，系统将会在见证服务器上为您创建该目录。如果将该字段留空，将在见证服务器上创建默认目录 (%SystemDrive%\\DAGFileShareWitnesses\\\<DAG FQDN\>)。
     

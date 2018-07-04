@@ -35,18 +35,8 @@ _**上一次修改主题：** 2017-05-19_
 
 下表总结了用户通过 Outlook 2016 for Mac 客户端尝试访问 Exchange 2013、Exchange 2016 和 Exchange Online 中公用文件夹时所支持的拓扑。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下表中显示的方案假设 Outlook 2016 for Mac 的 2016 年 4 月更新已应用于所有客户端。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 下表中显示的方案假设 Outlook 2016 for Mac 的 2016 年 4 月更新已应用于所有客户端。
 
 
 

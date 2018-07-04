@@ -19,18 +19,8 @@ _**上一次修改主题：** 2017-12-31_
 
 您可以使用Exchange 管理中心或Exchange 命令行管理程序来启用或禁用对用户邮箱的 MAPI。当启用 MAPI 时，可以通过Outlook或其他 MAPI 的电子邮件客户端访问用户的邮箱。当禁用 MAPI 时，它无法访问Outlook或其他 MAPI 客户端。但是，邮箱将继续接收电子邮件，并假设已启用邮箱访问的那些客户端，用户可以访问该邮箱发送和接收电子邮件，使用Outlook Web App、 POP 电子邮件客户端或 IMAP 客户端。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，在创建用户邮箱时会启用对 Outlook Web App 以及 MAPI、POP3 和 IMAP4 电子邮件客户端的支持。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 默认情况下，在创建用户邮箱时会启用对 Outlook Web App 以及 MAPI、POP3 和 IMAP4 电子邮件客户端的支持。
 
 
 有关与电子邮件客户端访问邮箱相关的其他管理任务，请参阅下列主题：
@@ -49,18 +39,8 @@ _**上一次修改主题：** 2017-12-31_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？

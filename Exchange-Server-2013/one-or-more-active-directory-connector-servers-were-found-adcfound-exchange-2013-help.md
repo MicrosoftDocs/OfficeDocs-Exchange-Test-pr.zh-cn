@@ -46,18 +46,9 @@ Exchange 2007 或 Exchange 2010 安装程序要求删除所有 ADC 组件。
 <li><p>将<strong>启动类型</strong>更改为<strong>禁用</strong>。下次计算机启动时，将无法启动 ADC 服务。</p></li>
 <li><p>单击&amp;quot;应用&amp;quot;，然后单击&amp;quot;确定&amp;quot;。</p></li>
 <li><p>要卸载 ADC 服务，请使用 Microsoft Exchange 2000 Server 或 Microsoft Exchange Server 2003年光盘上的 Active Directory 安装向导。打开 \ADC\I386 文件夹，然后双击 Setup.exe 程序。按照提示<strong>删除所有</strong>ADC 服务组件。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>第 6 步，并<strong>删除所有</strong>ADC 组件来解决此问题，您必须完成。若要禁用 ADC 服务不足。</td>
-</tr>
-</tbody>
-</table>
+
+> [!important]
+> 第 6 步，并<strong>删除所有</strong>ADC 组件来解决此问题，您必须完成。若要禁用 ADC 服务不足。
 
 </li>
 </ol></td>

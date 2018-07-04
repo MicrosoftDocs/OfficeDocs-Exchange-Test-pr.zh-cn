@@ -47,18 +47,8 @@ Exchange 2007 安装程序要求在卸载集线器传输角色之前，应从�
     
     4.  在值框中，单击\&quot;浏览\&quot;按钮来选择当前充当扩展服务器的桥头服务器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>以下步骤是可选的。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 以下步骤是可选的。
 
 
 1.  单击\&quot;添加表达式\&quot;指定其他筛选条件。仅显示满足所有筛选条件的邮件。

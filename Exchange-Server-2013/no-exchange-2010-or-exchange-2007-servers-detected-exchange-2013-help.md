@@ -19,18 +19,8 @@ _**上一次修改主题：** 2012-11-08_
 
 Microsoft Exchange Server 2013 安装程序显示了此警告，因为组织中不存在任何 Exchange Server 2010 或 Exchange Server 2007 服务器角色。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您继续执行 Exchange Server 2013 安装，以后会无法将 Exchange 2010 或 Exchange 2007 服务器添加到组织中。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 如果您继续执行 Exchange Server 2013 安装，以后会无法将 Exchange 2010 或 Exchange 2007 服务器添加到组织中。
 
 
 在部署 Exchange 2013 之前，请考虑以下因素，可能需要您在部署 Exchange 2013 之前首先部署 Exchange 2010 或 Exchange 2007 服务器：

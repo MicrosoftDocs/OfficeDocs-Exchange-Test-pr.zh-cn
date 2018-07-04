@@ -21,33 +21,13 @@ _**上一次修改主题：** 2015-01-14_
 
 寻找与 DLP 策略模板相关的管理任务？请参阅 [DLP 过程](dlp-procedures-exchange-2013-help.md) (Exchange Server 2013) 或 [DLP 过程](https://technet.microsoft.com/zh-cn/library/jj938003\(v=exchg.150\)) (Exchange Online)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2013：DLP 是一项高级功能，要求使用 Exchange 企业客户端访问许可证 (CAL)。有关 CAL 和服务器授权的详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server Licensing</a>（Exchange Server 授权）。<br />
-Exchange Online：DLP 是一项高级功能，要求使用 Exchange Online 计划 2 订阅。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=286154">Exchange Online Licensing</a>（Exchange Online 授权）。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Exchange 2013：DLP 是一项高级功能，要求使用 Exchange 企业客户端访问许可证 (CAL)。有关 CAL 和服务器授权的详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server Licensing</a>（Exchange Server 授权）。
+> Exchange Online：DLP 是一项高级功能，要求使用 Exchange Online 计划 2 订阅。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=286154">Exchange Online Licensing</a>（Exchange Online 授权）。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>这超出本文档范围，推荐了有关敏感信息规则的文件打包或部署指导的业务模式，或讨论如何分发此类规则。此外，本文档不会讨论保护机制，如自定义开发规则的加密，也不会讨论如何部署此类机制。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 这超出本文档范围，推荐了有关敏感信息规则的文件打包或部署指导的业务模式，或讨论如何分发此类规则。此外，本文档不会讨论保护机制，如自定义开发规则的加密，也不会讨论如何部署此类机制。
 
 
 ## 扩展信息类型以满足您的需要

@@ -25,18 +25,8 @@ _**上一次修改主题：** 2015-04-07_
 
 该检查表提供了针对典型升级情况的指导，因此是一个通用的检查表。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange Server 部署助理将为您提供有关如何部署 Exchange Server 的自定义分步指导。部署助理可帮助您部署 Exchange Server 2013 的全新安装，将早期版本升级到 Exchange 2013，或配置 Exchange 2013 和 Exchange Online 的混合部署。若要了解详细信息，请参阅 <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Exchange Server 部署助理将为您提供有关如何部署 Exchange Server 的自定义分步指导。部署助理可帮助您部署 Exchange Server 2013 的全新安装，将早期版本升级到 Exchange 2013，或配置 Exchange 2013 和 Exchange Online 的混合部署。若要了解详细信息，请参阅 <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。
 
 
 ## 从 Exchange 2010 升级到 Exchange 2013 的检查表
@@ -73,18 +63,9 @@ _**上一次修改主题：** 2015-04-07_
 <tr class="odd">
 <td><p></p></td>
 <td><p>4. 配置脱节命名空间</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此步骤是可选的。仅当组织运行脱节命名空间时，才需执行此步骤。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 此步骤是可选的。仅当组织运行脱节命名空间时，才需执行此步骤。
 
 </td>
 <td><p><a href="configure-the-dns-suffix-search-list-for-a-disjoint-namespace-exchange-2013-help.md">为非连续命名空间配置 DNS 后缀搜索列表</a></p></td>
@@ -109,19 +90,10 @@ _**上一次修改主题：** 2015-04-07_
 <tr class="odd">
 <td><p></p></td>
 <td><p>8. 配置 Exchange 相关虚拟目录</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要使用 Exchange Web 服务、Outlook Anywhere 或脱机通讯簿，此步骤是必需的。当您需要更改 Exchange 控制面板、Microsoft OfficeOutlook Web App 或 Exchange ActiveSync 的任何默认设置时，也可能需要此步骤。<br />
-</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 如果要使用 Exchange Web 服务、Outlook Anywhere 或脱机通讯簿，此步骤是必需的。当您需要更改 Exchange 控制面板、Microsoft OfficeOutlook Web App 或 Exchange ActiveSync 的任何默认设置时，也可能需要此步骤。<br />
+
 
 </td>
 <td><p><a href="exchange-2013-client-access-server-configuration-exchange-2013-help.md">Exchange 2013 客户端访问服务器配置</a></p></td>
@@ -140,18 +112,9 @@ _**上一次修改主题：** 2015-04-07_
 <tr class="even">
 <td><p></p></td>
 <td><p>11. 配置统一消息</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此步骤是可选的。仅当要在组织中使用统一消息时，才需执行此步骤。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 此步骤是可选的。仅当要在组织中使用统一消息时，才需执行此步骤。
 
 </td>
 <td><p><a href="upgrade-exchange-2010-um-to-exchange-2013-um-exchange-2013-help.md">将 Exchange 2010 UM 升级到 Exchange 2013 UM</a></p>
@@ -160,18 +123,9 @@ _**上一次修改主题：** 2015-04-07_
 <tr class="odd">
 <td><p></p></td>
 <td><p>12. 配置边缘传输服务器</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此步骤是可选的。只有当组织使用的是边缘传输服务器时，才有必要。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 此步骤是可选的。只有当组织使用的是边缘传输服务器时，才有必要。
 
 </td>
 <td><p><a href="configure-internet-mail-flow-through-a-subscribed-edge-transport-server-exchange-2013-help.md">配置通过所订阅的边缘传输服务器的 Internet 邮件流</a></p></td>

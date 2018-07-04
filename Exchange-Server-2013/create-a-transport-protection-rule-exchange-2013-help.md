@@ -19,18 +19,8 @@ _**上一次修改主题：** 2016-12-09_
 
 可以使用传输保护规则（基于属性，如发件人、收件人、邮件主题和内容）对邮件应用永久权限保护。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在生产环境中创建传输规则之前，我们建议创建一个测试环境并进行全面测试。本主题中创建传输规则的示例。可以通过使用适当的传输规则谓词和根据您的需求的值创建传输规则。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 在生产环境中创建传输规则之前，我们建议创建一个测试环境并进行全面测试。本主题中创建传输规则的示例。可以通过使用适当的传输规则谓词和根据您的需求的值创建传输规则。
 
 
 有关信息权限管理 (IRM) 的其他管理任务，请参阅[信息权限管理过程](information-rights-management-procedures-exchange-2013-help.md)。
@@ -49,18 +39,8 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -77,18 +57,8 @@ _**上一次修改主题：** 2016-12-09_
     
       - **如果，应用该规则**  选择一个条件并输入所需的任何值的情况。若要添加更多条件，请单击**添加条件**。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果不选择任何条件，创建传输保护规则时，Exchange 2013 与组织中的传输服务的服务器处理的所有消息都是受 IRM 保护。IRM 保护所有邮件都需要更多的资源。因此，我们建议相应地规划您的邮箱服务器和部署 AD RMS。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!important]
+        > 如果不选择任何条件，创建传输保护规则时，Exchange 2013 与组织中的传输服务的服务器处理的所有消息都是受 IRM 保护。IRM 保护所有邮件都需要更多的资源。因此，我们建议相应地规划您的邮箱服务器和部署 AD RMS。
     
       - **执行以下操作**   选择\&quot;将权限保护应用于邮件\&quot;，然后使用\&quot;选择 RMS 模板\&quot;对话框选择一个模板。
     
@@ -106,18 +76,8 @@ _**上一次修改主题：** 2016-12-09_
 
   - 本示例创建传输保护规则保护 BusinessCriticalProject。包含"关键业务"与**不要转发**模板的主题字段中的短语规则 IRM 保护消息。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在此示例中使用<code>SubjectContainsWords</code>谓词。可以使用传输规则谓词的任意组合以形成条件和例外的规则。有关可用的谓词的信息，请参阅<a href="mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md">传输规则条件（谓词）</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 在此示例中使用<code>SubjectContainsWords</code>谓词。可以使用传输规则谓词的任意组合以形成条件和例外的规则。有关可用的谓词的信息，请参阅<a href="mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md">传输规则条件（谓词）</a>。
     
         New-TransportRule -Name "Protect-BusinessCriticalProject" -SubjectContainsWords "Business Critical" -ApplyRightsProtectionTemplate "Do Not Forward"
     

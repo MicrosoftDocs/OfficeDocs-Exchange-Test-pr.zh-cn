@@ -17,18 +17,8 @@ _**适用于：** Exchange Server 2013_
 
 _**上一次修改主题：** 2016-11-17_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2016 年 11 月 1 日起，Microsoft 停止为 Exchange 和 Outlook 中的 SmartScreen 筛选器生成垃圾邮件定义更新。现有的 SmartScreen 垃圾邮件定义将予以保留，但其效力可能会随时间的推移而逐渐降低。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">停止为 Outlook 和 Exchange 中的 SmartScreen 提供支持</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 2016 年 11 月 1 日起，Microsoft 停止为 Exchange 和 Outlook 中的 SmartScreen 筛选器生成垃圾邮件定义更新。现有的 SmartScreen 垃圾邮件定义将予以保留，但其效力可能会随时间的推移而逐渐降低。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">停止为 Outlook 和 Exchange 中的 SmartScreen 提供支持</a>。
 
 
 在 Microsoft Exchange Server 2013 中，可以根据垃圾邮件可信度 (SCL) 阈值定义特定操作。例如，可以为在运行内容筛选器代理的 Exchange 服务器上拒绝、删除或隔离邮件定义不同的阈值。
@@ -142,18 +132,8 @@ _**上一次修改主题：** 2016-11-17_
 
   - **在用户邮箱（每个收件人 SCL 配置）上**   使用 **Set-Mailbox** cmdlet 在单个邮箱上启用或禁用及设置每个收件人的 SCL 删除、拒绝、隔离和\&quot;垃圾邮件\&quot;文件夹阈值。只能使用 **Set-Mailbox** cmdlet 在单个邮箱上启用或禁用 SCL 垃圾邮件文件夹阈值。每个收件人的 SCL 删除、拒绝和隔离阈值将存储在 Active Directory 中，并由 Microsoft Exchange EdgeSync 服务复制到订阅的边缘传输服务器。即使已经设置每个传输服务器的 SCL 配置，内容筛选器代理仍将使用每个收件人的 SCL 阈值配置。因此，如果已经设置每个收件人的 SCL 阈值，则内容筛选器代理将对特定用户使用每个收件人的 SCL 阈值，而不是内容筛选器代理上的 SCL 配置。有关示例，请参阅[在邮箱上配置反垃圾邮件设置](configure-anti-spam-settings-on-mailboxes-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>不会对通过通讯组接收的邮件强制执行每个收件人的 SCL 阈值。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 不会对通过通讯组接收的邮件强制执行每个收件人的 SCL 阈值。
     
     对 **Set-Mailbox** cmdlet 可用的 SCL 参数与对 **Set-ContentFilterConfig** 和 **Set-OrganizationConfig** cmdlet 可用的参数相同：
     

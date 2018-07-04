@@ -19,18 +19,8 @@ _**上一次修改主题：** 2015-07-21_
 
 MicrosoftExchange Server 2013 和 Exchange Online、Exchange Search 包含用于索引最常见的邮件附件文件格式的筛选器。您也可以安装用于索引其他文件类型的筛选器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2013 中，安装并注册 Microsoft Office Filter Pack 并不是一项强制性要求。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在 Exchange 2013 中，安装并注册 Microsoft Office Filter Pack 并不是一项强制性要求。
 
 
 管理或使用 Exchange Search 以及独立功能（如 [就地电子数据展示](in-place-ediscovery-exchange-2013-help.md)）时，请注意不可搜索的项目和已禁用索引功能或不包含可以索引的内容的文件格式的区别：
@@ -41,18 +31,8 @@ MicrosoftExchange Server 2013 和 Exchange Online、Exchange Search 包含用于
 
   - **已禁用的文件格式** 在本地组织中，管理员可以禁用指定文件格式的索引。包含此类已禁用格式的附件的邮件也会作为不可搜索的项目返回。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>尽管邮件附件可能不可搜索或者使用不能编制索引的文件格式，但仍可对邮件正文和其他元数据编制索引，以便能在搜索结果中返回邮件。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 尽管邮件附件可能不可搜索或者使用不能编制索引的文件格式，但仍可对邮件正文和其他元数据编制索引，以便能在搜索结果中返回邮件。
 
 
 有关与本地组织中的 Exchange Search 相关的其他管理任务，请参阅[Exchange 搜索过程](exchange-search-procedures-exchange-2013-help.md)。

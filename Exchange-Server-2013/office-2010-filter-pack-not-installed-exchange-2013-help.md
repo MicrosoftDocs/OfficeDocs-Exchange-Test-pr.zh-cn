@@ -23,34 +23,14 @@ Exchange 2013 安装程序要求在计算机上安装 Microsoft Office 2010 Filt
 
 从以下 URL 下载并安装 64 位更新，然后在“准备情况检查”页上单击“重试”。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果此项更新要求重新启动以完成安装，则需要退出 Exchange 2013 安装程序，重新启动，然后再启动安装程序。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果此项更新要求重新启动以完成安装，则需要退出 Exchange 2013 安装程序，重新启动，然后再启动安装程序。
 
 
 [Microsoft Office 2010 Filter Pack](https://go.microsoft.com/fwlink/p/?linkid=191548)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>还必须安装 Microsoft Office 2010 Filter Pack Service Pack 1 64 位更新。有关详细信息，请参阅<a href="office-2010-filter-pack-sp1-not-installed-exchange-2013-help.md">未安装 Office 2010 Filter Pack SP1</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 还必须安装 Microsoft Office 2010 Filter Pack Service Pack 1 64 位更新。有关详细信息，请参阅<a href="office-2010-filter-pack-sp1-not-installed-exchange-2013-help.md">未安装 Office 2010 Filter Pack SP1</a>。
 
 
 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：[Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612)、 [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542) 或 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351)。

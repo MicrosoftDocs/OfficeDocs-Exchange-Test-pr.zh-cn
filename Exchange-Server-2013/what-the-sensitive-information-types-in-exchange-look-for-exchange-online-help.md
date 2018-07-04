@@ -7483,18 +7483,9 @@ Exchange 中的数据丢失防护 (DLP) 包括 80 种可供你在 DLP 策略中�
 <tr class="odd">
 <td><p>格式</p></td>
 <td><p>9 个数字，可以是格式化模式，也可以是非格式化模式</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果在 2011 年中旬前发布，则 SSN 具有强格式，即数字的某部分必须介于某个有效的范围中（但是没有校验和）。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 如果在 2011 年中旬前发布，则 SSN 具有强格式，即数字的某部分必须介于某个有效的范围中（但是没有校验和）。
 
 </td>
 </tr>

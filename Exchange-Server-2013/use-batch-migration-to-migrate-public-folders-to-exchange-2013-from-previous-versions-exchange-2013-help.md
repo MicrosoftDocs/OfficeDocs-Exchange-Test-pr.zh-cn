@@ -23,18 +23,8 @@ _**上一次修改主题：** 2018-03-26_
 
 我们将 Exchange 2010 SP3 RU8 和 Exchange 2007 SP3 RU15 服务器称为*旧版 Exchange 服务器*。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本文中所述的批处理迁移方法是将旧版公用文件夹迁移到 Exchange 2013 支持的唯一方法。公用文件夹迁移的旧串行迁移方法即将弃用且不再受 Microsoft 支持。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 本文中所述的批处理迁移方法是将旧版公用文件夹迁移到 Exchange 2013 支持的唯一方法。公用文件夹迁移的旧串行迁移方法即将弃用且不再受 Microsoft 支持。
 
 
 您需要使用 **\*MigrationBatch** cmdlet 执行迁移，并使用 **\*PublicFolderMigrationRequest** cmdlet 进行故障排除。此外，您还会用到以下 PowerShell 脚本：
@@ -95,18 +85,8 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您该如何做？
@@ -165,18 +145,8 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
         
             Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>重置这些属性后，您必须等待 Exchange 检测到新设置。此过程最多可能需要两个小时才能完成。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!warning]
+    > 重置这些属性后，您必须等待 Exchange 检测到新设置。此过程最多可能需要两个小时才能完成。
 
 
 有关语法和参数的详细信息，请参阅下列主题：
@@ -201,18 +171,8 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
     
     现有的迁移请求可以是下列两种类型之一：批处理迁移或串行迁移。用于检测每种类型请求和删除每种类型请求的命令如下所示。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在删除迁移请求之前，请务必了解现有公用文件夹的存在原因。运行以下命令可以确定上一个请求的提出时间并诊断可能发生的任何问题。您可能需要与组织中的其他管理员沟通，以确定更改原因。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 在删除迁移请求之前，请务必了解现有公用文件夹的存在原因。运行以下命令可以确定上一个请求的提出时间并诊断可能发生的任何问题。您可能需要与组织中的其他管理员沟通，以确定更改原因。
     
     下面的示例会发现任何现有的串行迁移请求。
     
@@ -242,18 +202,8 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
     
     3.  如果存在任何公用文件夹，请运行以下 PowerShell 命令将其删除。请确保您已保存公用文件夹中的所有信息。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>删除后，公用文件夹中的所有信息都会永久删除。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 删除后，公用文件夹中的所有信息都会永久删除。
         
             Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
         
@@ -291,18 +241,8 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
 
 2.  运行 `PublicFolderToMailboxMapGenerator.ps1` 脚本，创建公用文件夹到邮箱的映射文件。此文件用于计算 Exchange 2013 邮箱服务器上公用文件夹邮箱的正确数量。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果公用文件夹的名称中包含反斜杠&amp;quot;\&amp;quot;，则公用文件夹会在父公用文件夹中进行创建。我们建议您查看 .csv 文件，并编辑所有包含反斜杠的名称。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果公用文件夹的名称中包含反斜杠&amp;quot;\&amp;quot;，则公用文件夹会在父公用文件夹中进行创建。我们建议您查看 .csv 文件，并编辑所有包含反斜杠的名称。
     
         .\PublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes> <Folder to size map path> <Folder to mailbox map path>
     
@@ -324,18 +264,8 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
 
 迁移 Exchange 2007 和 Exchange 2010 公用文件夹的步骤不同。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>无论是从 Exchange 2007 还是 Exchange 2010 进行迁移，使用适当的 cmdlet 创建批处理迁移请求后，您便可以在 EAC 中查看和管理这些请求。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 无论是从 Exchange 2007 还是 Exchange 2010 进行迁移，使用适当的 cmdlet 创建批处理迁移请求后，您便可以在 EAC 中查看和管理这些请求。
 
 
 **迁移 Exchange 2007 公用文件夹**
@@ -406,18 +336,8 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
 
     Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果由于某种原因，迁移批处理文件未完成（<strong>PublicFolderMigrationComplete</strong> 显示 <strong>False</strong>），请在旧版服务器上重启信息存储 (IS)。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果由于某种原因，迁移批处理文件未完成（<strong>PublicFolderMigrationComplete</strong> 显示 <strong>False</strong>），请在旧版服务器上重启信息存储 (IS)。
 
 
 有关语法和参数的详细信息，请参阅 [Set-OrganizationConfig](https://technet.microsoft.com/zh-cn/library/aa997443\(v=exchg.150\))。
@@ -460,18 +380,8 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
     
         Get-Mailbox -PublicFolder | Set-Mailbox -PublicFolder -IsExcludedFromServingHierarchy $false
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>完成初始迁移验证后，请勿使用 <em>IsExcludedFromServingHierarchy</em> 参数，因为 Exchange Online 的自动存储管理服务使用此参数。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 完成初始迁移验证后，请勿使用 <em>IsExcludedFromServingHierarchy</em> 参数，因为 Exchange Online 的自动存储管理服务使用此参数。
 
 
 4.  在旧版 Exchange 服务器中，运行以下命令，以指示公用文件夹迁移已完成：
@@ -514,18 +424,8 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
 
 如果您在迁移过程中遇到问题，并且需要重新激活旧版 Exchange 公用文件夹，请按照下列步骤操作。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您将迁移回滚到旧版 Exchange 服务器，则会丢失发送到启用邮件的公用文件夹的所有电子邮件，或在迁移后发布到 Exchange 2013 公用文件夹中的内容。为了保存此内容，您必须将公用文件夹内容导出到 .pst 文件中，然后在回滚完成后将它再导入旧版公用文件夹中。</td>
-</tr>
-</tbody>
-</table>
+> [!warning]
+> 如果您将迁移回滚到旧版 Exchange 服务器，则会丢失发送到启用邮件的公用文件夹的所有电子邮件，或在迁移后发布到 Exchange 2013 公用文件夹中的内容。为了保存此内容，您必须将公用文件夹内容导出到 .pst 文件中，然后在回滚完成后将它再导入旧版公用文件夹中。
 
 
 1.  在旧版 Exchange 服务器中，运行以下命令，解除锁定旧版 Exchange 公用文件夹。此进程可能需要几个小时才会完成。

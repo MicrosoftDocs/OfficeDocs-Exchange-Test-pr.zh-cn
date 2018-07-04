@@ -69,18 +69,8 @@ Exchange 组织可以包含数千个收件人。如果要在默认地址列表�
 
   - 使地址列表的名称一目了然，以便用户只根据列表名称就能立即知道其中包含的收件人类型。如果命名地址列表有困难，可以减少创建的列表数目，并提醒用户可以使用 GAL 查找组织中的任何人。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>默认情况下，在 Exchange Online 中，地址列表角色不会分配给任何角色组。若要使用需要地址列表角色的任意 cmdlet，您需要向角色组添加此角色。有关详细信息，请参阅<a href="manage-role-groups-exchange-2013-help.md">管理角色组</a>主题中的“向角色组添加角色”部分。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 默认情况下，在 Exchange Online 中，地址列表角色不会分配给任何角色组。若要使用需要地址列表角色的任意 cmdlet，您需要向角色组添加此角色。有关详细信息，请参阅<a href="manage-role-groups-exchange-2013-help.md">管理角色组</a>主题中的“向角色组添加角色”部分。
 
 
 有关在 Exchange 2013 中创建地址列表的详细说明，请参阅[创建地址列表](create-an-address-list-exchange-2013-help.md)。有关在 Exchange Online 中创建地址列表的详细说明，请参阅[管理 Exchange Online 中的地址列表](https://technet.microsoft.com/zh-cn/library/jj983798\(v=exchg.150\))。

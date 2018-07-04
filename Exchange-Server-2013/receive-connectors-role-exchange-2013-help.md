@@ -51,18 +51,8 @@ _**上一次修改主题：** 2015-03-09_
 
 另外，还可以从内置角色组、创建的角色组、用户和 USG 中删除此角色。但是，在该角色与角色组或 USG 之间必须始终至少有一个委派角色分配。不能删除最后一个委派角色分配。此限制有助于避免您将自己锁定在系统之外。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在该角色与角色组或 USG 之间必须至少有一个委派角色分配。如果最后一个分配面向用户，则不能删除与此角色相关联的最后一个委派角色分配。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 在该角色与角色组或 USG 之间必须至少有一个委派角色分配。如果最后一个分配面向用户，则不能删除与此角色相关联的最后一个委派角色分配。
 
 
 有关如何在此角色与角色组、用户和 USG 之间添加或删除分配的详细信息，请参阅下列主题：
@@ -170,18 +160,8 @@ _**上一次修改主题：** 2015-03-09_
 
 如果决定需要创建此角色的自定义版本，则必须创建此角色的子角色并自定义新角色。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>通过以下信息可以执行高级权限管理。自定义管理角色可能大大增加权限模型的复杂性。如果用未正确配置的自定义角色替换内置管理角色，则可能导致某些功能无法正常运行。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 通过以下信息可以执行高级权限管理。自定义管理角色可能大大增加权限模型的复杂性。如果用未正确配置的自定义角色替换内置管理角色，则可能导致某些功能无法正常运行。
 
 
 以下是创建自定义角色并将其分配给角色受理人的最常见步骤：
@@ -206,16 +186,6 @@ _**上一次修改主题：** 2015-03-09_
     
       - [向用户或 USG 添加角色](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果希望除角色创建用户以外的其他用户也能够分配新的自定义角色，请确保向至少一个角色受理人添加委派角色分配。有关详细信息，请参阅<a href="delegate-role-assignments-exchange-2013-help.md">委派角色分配</a>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!important]
+        > 如果希望除角色创建用户以外的其他用户也能够分配新的自定义角色，请确保向至少一个角色受理人添加委派角色分配。有关详细信息，请参阅<a href="delegate-role-assignments-exchange-2013-help.md">委派角色分配</a>。
 

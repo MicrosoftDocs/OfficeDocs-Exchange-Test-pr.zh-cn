@@ -19,18 +19,8 @@ _**上一次修改主题：** 2018-03-26_
 
 将 Exchange 2013 公用文件夹迁移到 Exchange Online 需要 Exchange Server 2013 CU15 或者更高版本运行于您的内部环境。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果组织中存在 Exchange 2013 和 Exchange 2016 公用文件夹，并且你想要将它们都移动到 Exchange Online，请使用<a href="https://go.microsoft.com/fwlink/p/?linkid=845314">本文的 Exchange 2016 版本</a>来规划和执行迁移。Exchange 2013 服务器仍需要安装 CU15 或更高版本。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果组织中存在 Exchange 2013 和 Exchange 2016 公用文件夹，并且你想要将它们都移动到 Exchange Online，请使用<a href="https://go.microsoft.com/fwlink/p/?linkid=845314">本文的 Exchange 2016 版本</a>来规划和执行迁移。Exchange 2013 服务器仍需要安装 CU15 或更高版本。
 
 
 ## 在开始之前，您需要知道什么？
@@ -43,18 +33,8 @@ _**上一次修改主题：** 2018-03-26_
 
   - 在开始执行公用文件夹迁移之前，如果组织中任何单个公用文件夹的大小超过 25 GB，建议你从该文件夹中删除内容以减小其大小，或者将公用文件夹的内容分为多个较小的公用文件夹。请注意，此处提到的 25 GB 限制只适用于公用文件夹，而不适用于相关文件夹可能带有的任何子级文件夹或子文件夹。如果这两种方法都不可行，建议你不要将公用文件夹移动到 Exchange Online。有关详细信息，请参阅 [Exchange Online 限制](https://go.microsoft.com/fwlink/p/?linkid=391188)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果 Exchange Online 中当前公用文件夹配额小于 25 GB，可以使用 <a href="https://go.microsoft.com/fwlink/p/?linkid=844062">Set-OrganizationConfig cmdlet</a>通过 DefaultPublicFolderIssueWarningQuota 和 DefaultPublicFolderProhibitPostQuota 参数来增加大小。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果 Exchange Online 中当前公用文件夹配额小于 25 GB，可以使用 <a href="https://go.microsoft.com/fwlink/p/?linkid=844062">Set-OrganizationConfig cmdlet</a>通过 DefaultPublicFolderIssueWarningQuota 和 DefaultPublicFolderProhibitPostQuota 参数来增加大小。
 
 
   - 在 Office 365 和 Exchange Online 中，可以创建最多 1000 个公用文件夹邮箱。
@@ -77,18 +57,8 @@ _**上一次修改主题：** 2018-03-26_
 
   - 在开始之前，请通读本文。某些步骤需要故障时间。故障时间期间，任何人都无法访问公用文件夹。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 步骤 1：下载迁移脚本
@@ -151,18 +121,8 @@ _**上一次修改主题：** 2018-03-26_
     
         Get-AcceptedDomain | Where { $_.DomainName -eq "<target domain>" } | Set-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果你希望 Exchange Online 中已启用邮件的公用文件夹接收来自 Internet 的外部电子邮件，必须禁用 Exchange Online 和 Exchange Online Protection (EOP) 中的基于目录的边缘阻止 (DBEB)。有关详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/dn600322(v=exchg.150)">使用基于目录的边缘阻止拒绝发送给无效收件人的邮件</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果你希望 Exchange Online 中已启用邮件的公用文件夹接收来自 Internet 的外部电子邮件，必须禁用 Exchange Online 和 Exchange Online Protection (EOP) 中的基于目录的边缘阻止 (DBEB)。有关详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/dn600322(v=exchg.150)">使用基于目录的边缘阻止拒绝发送给无效收件人的邮件</a>。
 
 
 2.  如果公用文件夹名包含反斜杠**\\**或正斜杠**/**，它可能无法在迁移过程中迁移到其指定邮箱。在迁移之前，重命名所有此类文件夹以删除这些字符
@@ -183,18 +143,8 @@ _**上一次修改主题：** 2018-03-26_
         
             Get-OrganizationConfig | Format-List PublicFoldersLockedforMigration, PublicFolderMigrationComplete, PublicFolderMailboxesLockedForNewConnections, PublicFolderMailboxesMigrationComplete
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果 <code>PublicFoldersLockedforMigration</code> 或 <code>PublicFolderMigrationComplete</code> 参数是 <code>$true</code>，则意味着你曾在某个时刻迁移了旧版公用文件夹。在继续执行步骤 3b 之前，请确保已停止使用任何旧版公用文件夹数据库。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 如果 <code>PublicFoldersLockedforMigration</code> 或 <code>PublicFolderMigrationComplete</code> 参数是 <code>$true</code>，则意味着你曾在某个时刻迁移了旧版公用文件夹。在继续执行步骤 3b 之前，请确保已停止使用任何旧版公用文件夹数据库。
     
     2.  如果返回值设置为 `$true` 的任何以上内容，请运行以下命令，将其设置为 `$false`：
         
@@ -202,18 +152,8 @@ _**上一次修改主题：** 2018-03-26_
 
 4.  若要验证完成后迁移是否成功，建议在所有相应的 Exchange 2013 服务器上运行以下命令。这将获取当前公用文件夹部署的快照，可在以后使用当前部署与新迁移的公用文件夹进行比较。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>由于 Exchange 组织的大小各异，它可能需要一些时间来运行这些命令。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 由于 Exchange 组织的大小各异，它可能需要一些时间来运行这些命令。
     
       - 运行以下命令以获取原始源文件夹结构的快照。
         
@@ -243,18 +183,8 @@ _**上一次修改主题：** 2018-03-26_
     
     4.  请确保未选择的**Exchange 邮件的公用文件夹**。如果选择，您可以继续下一节，*在 Exchange 联机系统必备组件的步骤*。如果选择它，单击以清除复选框，然后单击**下一步**。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您看不到<strong>Exchange 邮件的公用文件夹</strong>作为<strong>可选功能，</strong>在屏幕上的选项，可以退出 Microsoft Azure 活动目录连接并前进到下一节，<em>在 Exchange 联机系统必备组件的步骤</em>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 如果您看不到<strong>Exchange 邮件的公用文件夹</strong>作为<strong>可选功能，</strong>在屏幕上的选项，可以退出 Microsoft Azure 活动目录连接并前进到下一节，<em>在 Exchange 联机系统必备组件的步骤</em>。
     
     5.  清除的**Exchange 邮件的公用文件夹**选择后，保留直到您正在**准备配置**屏幕中，单击**下一步**，然后单击**配置**。
 
@@ -326,18 +256,8 @@ _**上一次修改主题：** 2018-03-26_
 
 2.  运行 `ModernPublicFolderToMailboxMapGenerator.ps1` 脚本，在 Exchange Online 目的地创建将源公用文件夹映射到公用文件夹邮箱的 .csv 文件。此文件用于计算 Exchange Online 中公用文件夹邮箱的正确数量。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>由<code>ModernPublicFolderToMailboxMapGenerator.ps1</code>生成的文件将不包含在您的组织中的每个公用文件夹的名称。它包含的引用指向父文件夹大文件夹树，或文件夹的名称自身都较大。您可以将此文件的&quot;异常&quot;文件用来确保某些文件夹树以及大文件夹获取放入特定公用文件夹的邮件框。是正常的看不到公用文件夹在此文件中的每一个。（除非明确提到在另一行中的映射文件，将其定向到一个不同的公用文件夹的邮箱），还将到与其父文件夹相同的公用文件夹邮箱迁移此映射文件中列出的任何文件夹的子文件夹。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 由<code>ModernPublicFolderToMailboxMapGenerator.ps1</code>生成的文件将不包含在您的组织中的每个公用文件夹的名称。它包含的引用指向父文件夹大文件夹树，或文件夹的名称自身都较大。您可以将此文件的&quot;异常&quot;文件用来确保某些文件夹树以及大文件夹获取放入特定公用文件夹的邮件框。是正常的看不到公用文件夹在此文件中的每一个。（除非明确提到在另一行中的映射文件，将其定向到一个不同的公用文件夹的邮箱），还将到与其父文件夹相同的公用文件夹邮箱迁移此映射文件中列出的任何文件夹的子文件夹。
     
         .\ModernPublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes><Maximum mailbox recoverable item size in bytes><Folder-to-size map path><Folder-to-mailbox map path>
     
@@ -353,18 +273,8 @@ _**上一次修改主题：** 2018-03-26_
 
     .\ModernPublicFolderToMailboxMapGenerator.ps1 -MailboxSize 25GB -MailboxRecoverableItemSize 1GB -ImportFile .\stats.csv -ExportFile map.csv
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果唯一的公用文件夹的邮箱中 Exchange Online 数超过 100 个，我们不支持对 Exchange 联机迁移公用文件夹。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果唯一的公用文件夹的邮箱中 Exchange Online 数超过 100 个，我们不支持对 Exchange 联机迁移公用文件夹。
 
 
 ## 步骤 4：在 Exchange Online 中创建公用文件夹邮箱
@@ -412,18 +322,8 @@ _**上一次修改主题：** 2018-03-26_
         
         New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -NotificationEmails <email addresses for migration notifications>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>用逗号分隔多个电子邮件地址。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 用逗号分隔多个电子邮件地址。
     
     其中， `folder_mapping.csv`是映射文件中生成*步骤 3： 创建.csv 文件*。请务必提供完整的文件路径。如果出于任何原因移动映射文件，请务必使用新的位置。
 
@@ -453,19 +353,9 @@ _**上一次修改主题：** 2018-03-26_
 
     Set-OrganizationConfig -PublicFolderMailboxesLockedForNewConnections $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您不能访问<code>-PublicFolderMailboxesLockedForNewConnections</code>参数，可能是因为将 Active Directory CU 在升级期间，未准备好因为我们建议在上面<em>您需要知道在开始之前？</em><a href="prepare-active-directory-and-domains-exchange-2013-help.md">准备 Active Directory 和域</a>的详细信息，请参阅。<br />
-另请注意，在迁移公用文件夹本身<strong>之前</strong>，应首先迁移任何需要访问公用文件夹的用户。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果您不能访问<code>-PublicFolderMailboxesLockedForNewConnections</code>参数，可能是因为将 Active Directory CU 在升级期间，未准备好因为我们建议在上面<em>您需要知道在开始之前？</em><a href="prepare-active-directory-and-domains-exchange-2013-help.md">准备 Active Directory 和域</a>的详细信息，请参阅。<br />
+> 另请注意，在迁移公用文件夹本身<strong>之前</strong>，应首先迁移任何需要访问公用文件夹的用户。
 
 
 如果组织在多个 Exchange 2013 服务器上具有公用文件夹邮箱，你需要等待 AD 复制完成。完成后，可以确认所有公用文件夹邮箱已选取 `PublicFolderMailboxesLockedForNewConnections` 标志，并确认整个组织中，用户最近对其公用文件夹所做的所有待定更改都已聚合。整个过程可能需要几个小时的时间。

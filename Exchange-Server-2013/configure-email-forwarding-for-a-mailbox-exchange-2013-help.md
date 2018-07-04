@@ -19,18 +19,8 @@ _**上一次修改主题：** 2016-12-09_
 
 利用电子邮件转发可以将邮箱设置为将发送给该邮箱的电子邮件转发给你的组织内部或外部的其他用户邮箱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果你使用的是 Office 365 企业版，则应按照以下文章中的说明配置电子邮件转发：<a href="https://go.microsoft.com/fwlink/p/?linkid=834774">Office 365 管理中心：在 Office 365 中配置电子邮件转发</a></td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果你使用的是 Office 365 企业版，则应按照以下文章中的说明配置电子邮件转发：<a href="https://go.microsoft.com/fwlink/p/?linkid=834774">Office 365 管理中心：在 Office 365 中配置电子邮件转发</a>
 
 
 如果组织使用的是本地 Exchange 或混合 Exchange 环境，则你应使用本地 Exchange 管理中心 (EAC) 创建和管理共享邮箱。

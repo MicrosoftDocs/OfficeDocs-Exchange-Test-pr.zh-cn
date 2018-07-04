@@ -27,18 +27,8 @@ _**上一次修改主题：** 2017-10-04_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -55,18 +45,8 @@ _**上一次修改主题：** 2017-10-04_
     
       - **\* 显示名称**   使用此框键入显示名称。此名称将出现在共享的通讯簿中、\&quot;收件人:\&quot;行中（电子邮件发送到该组时），以及 EAC 的\&quot;组\&quot;列表中。显示名称是必需的，并且应当是用户友好的，以便用户可以识别它。它在林中必须也是唯一的。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果已应用组命名策略，则必须遵循对组织强制执行的命名约束。有关详细信息，请参阅<a href="create-a-distribution-group-naming-policy-exchange-2013-help.md">创建通讯组命名策略</a>。如果要替代组织的组命名策略，请参阅<a href="override-the-distribution-group-naming-policy-exchange-2013-help.md">重命名策略的通讯组</a>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 如果已应用组命名策略，则必须遵循对组织强制执行的命名约束。有关详细信息，请参阅<a href="create-a-distribution-group-naming-policy-exchange-2013-help.md">创建通讯组命名策略</a>。如果要替代组织的组命名策略，请参阅<a href="override-the-distribution-group-naming-policy-exchange-2013-help.md">重命名策略的通讯组</a>。
     
       - **\*别名**   在此框中键入安全组的别名。别名的长度不能超过 64 个字符，并且在林中必须是唯一的。当用户在电子邮件的\&quot;收件人:\&quot;行中键入别名时，别名会解析为相应组的显示名称。
     
@@ -88,18 +68,8 @@ _**上一次修改主题：** 2017-10-04_
 
 4.  完成后，请单击\&quot;保存\&quot;以创建安全组。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，所有启用邮件的新安全组都要求对所有发件人进行身份验证。这样一来，可防止外部发件人将邮件发送到启用邮件的安全组。若要将启用邮件的安全组配置为接受所有收件人发送的邮件，必须修改相应组的邮件传递限制设置。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 默认情况下，所有启用邮件的新安全组都要求对所有发件人进行身份验证。这样一来，可防止外部发件人将邮件发送到启用邮件的安全组。若要将启用邮件的安全组配置为接受所有收件人发送的邮件，必须修改相应组的邮件传递限制设置。
 
 
 ## 使用命令行管理程序创建安全组
@@ -160,18 +130,8 @@ _**上一次修改主题：** 2017-10-04_
 
   - **在地址列表中隐藏此组** 如果你不希望用户在通讯簿中看到此组，请选中此复选框。选中此复选框后，发件人必须在\&quot;收件人:\&quot;或\&quot;抄送:\&quot;行上键入组的别名或电子邮件地址，才能将邮件发送到相应组。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>应考虑隐藏安全组，原因是这些组通常用于向组成员分配权限，而不是用于发送电子邮件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!tip]
+    > 应考虑隐藏安全组，原因是这些组通常用于向组成员分配权限，而不是用于发送电子邮件。
 
 
   - **部门**   此只读框显示包含安全组的部门 (OU)。必须使用 Active Directory 用户和计算机，才能将组移到其他 OU 中。
@@ -190,18 +150,8 @@ _**上一次修改主题：** 2017-10-04_
 
 在此部分中可以指定用户是否需要获得所有者批准才能加入组。如果你选中\&quot;**需要所有者审批**\&quot;复选框，一名或多名组所有者会收到请求审批加入组的电子邮件。如前所述，只有所有者才能从组中删除成员。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由于存在与安全相关的限制，因此无法对启用邮件的安全组使用这个选项。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 由于存在与安全相关的限制，因此无法对启用邮件的安全组使用这个选项。
 
 
 ## 传递管理
@@ -216,18 +166,8 @@ _**上一次修改主题：** 2017-10-04_
     
     若要从列表中删除个人或组，请从列表中选择相应的个人或组，然后单击\&quot;删除\&quot;![删除图标](images/JJ657492.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "删除图标")。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您已将此组配置为只允许组织内部的发件人向此组发送邮件，则从邮件联系人发送的电子邮件将被拒绝，即使这些联系人已添加到此列表中也是如此。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 如果您已将此组配置为只允许组织内部的发件人向此组发送邮件，则从邮件联系人发送的电子邮件将被拒绝，即使这些联系人已添加到此列表中也是如此。
 
 
 ## 邮件审批
@@ -256,49 +196,19 @@ _**上一次修改主题：** 2017-10-04_
     
       - \&quot;SMTP\&quot;   这是默认的地址类型。单击此按钮，然后在\&quot;\* 电子邮件地址\&quot;框中键入新的 SMTP 地址。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>若要将新地址设为相应组的主 SMTP 地址，请选中&amp;quot;<strong>将此设为答复地址</strong>&amp;quot;复选框。仅当未选中&amp;quot;<strong>基于应用到此收件人的电子邮件地址策略自动更新电子邮件地址</strong>&amp;quot;复选框时，才能看到此复选框。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 若要将新地址设为相应组的主 SMTP 地址，请选中&amp;quot;<strong>将此设为答复地址</strong>&amp;quot;复选框。仅当未选中&amp;quot;<strong>基于应用到此收件人的电子邮件地址策略自动更新电子邮件地址</strong>&amp;quot;复选框时，才能看到此复选框。
     
       - \&quot;自定义地址类型\&quot;   单击此按钮，然后在\&quot;\* 电子邮件地址\&quot;框中键入一个支持的非 SMTP 电子邮件地址。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>除 X.400 地址以外，Exchange 不验证自定义地址的格式是否正确。您必须确保所指定的自定义地址符合该地址类型的格式要求。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 除 X.400 地址以外，Exchange 不验证自定义地址的格式是否正确。您必须确保所指定的自定义地址符合该地址类型的格式要求。
 
 
   - \&quot;编辑\&quot;   要更改与组关联的电子邮件地址，在列表中选择该地址，然后单击\&quot;编辑\&quot;![编辑图标](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "编辑图标")。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若要将现有地址设为相应组的主 SMTP 地址，请选中&amp;quot;<strong>将此设为答复地址</strong>&amp;quot;复选框。如前所述，仅当未选中&amp;quot;<strong>基于应用到此收件人的电子邮件地址策略自动更新电子邮件地址</strong>&amp;quot;复选框时，才能看到此复选框。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 若要将现有地址设为相应组的主 SMTP 地址，请选中&amp;quot;<strong>将此设为答复地址</strong>&amp;quot;复选框。如前所述，仅当未选中&amp;quot;<strong>基于应用到此收件人的电子邮件地址策略自动更新电子邮件地址</strong>&amp;quot;复选框时，才能看到此复选框。
 
 
   - \&quot;移除\&quot;   要删除与组关联的电子邮件地址，在列表中选择该地址，然后单击\&quot;移除\&quot;![删除图标](images/JJ657492.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "删除图标")。
@@ -309,18 +219,8 @@ _**上一次修改主题：** 2017-10-04_
 
 使用此部分可以添加邮件提示，以便在用户向该组发送邮件时提醒用户存在潜在的问题。邮件提示是在将该组添加到新电子邮件的\&quot;收件人\&quot;、\&quot;抄送\&quot;或\&quot;密件抄送\&quot;行时，信息栏中显示的文本。例如，对于较大的组，可添加邮件提示来提醒潜在的发送人：他们的邮件将会发送给很多人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>邮件提示可包含 HTML 标记，但不允许包含脚本。自定义邮件提示的长度不能超过 175 个显示的字符。此字符限制不计入 HTML 标记。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 邮件提示可包含 HTML 标记，但不允许包含脚本。自定义邮件提示的长度不能超过 175 个显示的字符。此字符限制不计入 HTML 标记。
 
 
 ## 组代理

@@ -31,18 +31,8 @@ _**上一次修改主题：** 2015-04-08_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -57,18 +47,8 @@ _**上一次修改主题：** 2015-04-08_
 
     Set-ContentFilterConfig -Enabled $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当禁用内容筛选时，仍会启用基础内容筛选器代理。若要禁用内容筛选器代理，请运行命令：<code>Disable-TransportAgent &quot;Content Filter Agent&quot;</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 当禁用内容筛选时，仍会启用基础内容筛选器代理。若要禁用内容筛选器代理，请运行命令：<code>Disable-TransportAgent &quot;Content Filter Agent&quot;</code>.
 
 
 ## 您如何知道这有效？
@@ -209,18 +189,8 @@ _**上一次修改主题：** 2015-04-08_
 
     Set-ContentFilterConfig -SCLDeleteEnabled <$true | $false> -SCLDeleteThreshold <Value> -SCLRejectEnabled <$true | $false> -SCLRejectThreshold <Value> -SCLQuarantineEnabled <$true | $false> -SCLQuarantineThreshold <Value>
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>删除操作优先于拒绝操作，拒绝操作优先于隔离操作。因此，删除操作的 SCL 阈值应大于拒绝操作的 SCL 阈值，拒绝操作的 SCL 阈值又应大于隔离操作的 SCL 阈值。默认情况下仅启用拒绝操作，其 SCL 阈值为 7。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 删除操作优先于拒绝操作，拒绝操作优先于隔离操作。因此，删除操作的 SCL 阈值应大于拒绝操作的 SCL 阈值，拒绝操作的 SCL 阈值又应大于隔离操作的 SCL 阈值。默认情况下仅启用拒绝操作，其 SCL 阈值为 7。
 
 
 本示例为 SCL 阈值配置以下值：

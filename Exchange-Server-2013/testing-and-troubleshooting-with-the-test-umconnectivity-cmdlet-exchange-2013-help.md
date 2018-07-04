@@ -35,16 +35,6 @@ _**上一次修改主题：** 2013-06-25_
 
   - **远程测试** **Test-UMConnectivity** cmdlet 通过 VoIP 网关发出呼叫来尝试连接到远程客户端访问服务器。连接后，它将对远程客户端访问服务器和媒体路径执行连接性检查。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果收到以下消息，则应重启 MicrosoftExchange 统一消息服务，因为该服务已停止或未响应：&amp;quot;Test-UMConnectivity 任务在尝试进行呼叫时遇到错误。详细信息:无法建立连接。&amp;quot;</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果收到以下消息，则应重启 MicrosoftExchange 统一消息服务，因为该服务已停止或未响应：&amp;quot;Test-UMConnectivity 任务在尝试进行呼叫时遇到错误。详细信息:无法建立连接。&amp;quot;
 

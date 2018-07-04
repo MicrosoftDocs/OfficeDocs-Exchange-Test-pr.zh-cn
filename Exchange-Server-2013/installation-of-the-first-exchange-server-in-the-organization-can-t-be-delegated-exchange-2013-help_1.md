@@ -21,18 +21,8 @@ Microsoft Exchange Server 2013 安装程序无法继续，因为登录的用户�
 
 虽然 Exchange 2013 安装程序允许使用委派安装连续服务器角色，但是安装程序要求在组织中安装第一个 Exchange 2013 服务器时，所登录的用户是 Enterprise Admins Windows 安全组的成员。这是因为，Exchange 2013 安装程序会在安装期间在 Active Directory 的 Exchange 组织容器中创建和配置对象。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果以前没有为 Exchange 2013 准备 Active Directory 架构，则所登录的用户必须是 Schema Admins Windows 安全组的成员。或者，Schema Admins Windows 组的其他成员用户也可以在安装 Exchange 2013 之前准备 Active Directory 架构。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果以前没有为 Exchange 2013 准备 Active Directory 架构，则所登录的用户必须是 Schema Admins Windows 安全组的成员。或者，Schema Admins Windows 组的其他成员用户也可以在安装 Exchange 2013 之前准备 Active Directory 架构。
 
 
 若要解决此问题，请将已登录的用户添加为 Enterprise Admins 安全组的成员。或者，登录到属于 Enterprise Admins 安全组的帐户。然后再次运行 Exchange 2013 安装程序。

@@ -19,34 +19,14 @@ _**上一次修改主题：** 2017-07-26_
 
 联合身份验证信任在 Microsoft Exchange 2013 组织和 Azure Active Directory 身份验证系统之间建立信任关系。通过配置联合信任，可以配置与其他联合 Exchange 组织的联合共享以便在收件人之间共享日历忙/闲信息。可以在两个联合 Exchange 2013 组织之间或在联合 Exchange 2013 组织与联合 Exchange 2010 组织之间配置联合共享。您还可以设置与 Office 365 组织的共享。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>创建联合身份验证信任是在 Exchange 组织中设置联合共享的若干步骤之一。若要查看所有步骤，请参阅<a href="configure-federated-sharing-exchange-2013-help.md">配置联合共享</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 创建联合身份验证信任是在 Exchange 组织中设置联合共享的若干步骤之一。若要查看所有步骤，请参阅<a href="configure-federated-sharing-exchange-2013-help.md">配置联合共享</a>。
 
 
 有关与联合身份验证相关的更多管理任务，请参阅[联合程序](federation-procedures-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange Server 2013 的此项功能与由世纪互联在中国运营的 Office 365 不完全兼容，可能需要遵循一些功能限制。有关详细信息，请参阅<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解由世纪互联运营的 Office 365</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> Exchange Server 2013 的此项功能与由世纪互联在中国运营的 Office 365 不完全兼容，可能需要遵循一些功能限制。有关详细信息，请参阅<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解由世纪互联运营的 Office 365</a>。
 
 
 ## 在开始之前，您需要知道什么？
@@ -103,50 +83,20 @@ _**上一次修改主题：** 2017-07-26_
 
 6.  在\&quot;选择接受的域\&quot;中，从列表中选择主共享域，然后单击\&quot;确定\&quot;。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您选择的域将用于配置联合身份验证信任的 OrgID。有关 OrgID 的详细信息，请参阅<a href="federation-exchange-2013-help.md">联盟</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 您选择的域将用于配置联合身份验证信任的 OrgID。有关 OrgID 的详细信息，请参阅<a href="federation-exchange-2013-help.md">联盟</a>。
 
 
 7.  记下生成的主共享域联盟的域证明。您将使用此字符串以公用 DNS 服务器上创建一个 TXT 记录。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>联盟的域证明是字母数字字符的字符串。若要避免输入的错误，我们建议您从 EAC，复制字符串并将其粘贴到文本编辑器 （如记事本）。可以然后将其从文本编辑器中复制到剪贴板，并将它粘贴到<strong>文本</strong>字段中创建 TXT 记录时。如果使用创建 TXT 记录不正确的联盟域验证字符串、 Azure AD身份验证系统将无法验证域所有权证明和您不能将其添加到联盟的组织标识符。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 联盟的域证明是字母数字字符的字符串。若要避免输入的错误，我们建议您从 EAC，复制字符串并将其粘贴到文本编辑器 （如记事本）。可以然后将其从文本编辑器中复制到剪贴板，并将它粘贴到<strong>文本</strong>字段中创建 TXT 记录时。如果使用创建 TXT 记录不正确的联盟域验证字符串、 Azure AD身份验证系统将无法验证域所有权证明和您不能将其添加到联盟的组织标识符。
 
 
 8.  在**第 2 步**中，单击**添加**![添加图标](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "添加图标")将其他域添加到组织中需要联合共享功能的用户将使用的电子邮件地址的联盟信任。例如，如果您有使用其电子邮件地址，例如 sales.contoso.com 在一个子域中的用户，您将 sales.contoso.com 域添加到联合身份验证信任。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>将为选择的每个额外域创建一个联合域证明字符串。必须为每个额外域在公用 DNS 上创建单独的 TXT 记录。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 将为选择的每个额外域创建一个联合域证明字符串。必须为每个额外域在公用 DNS 上创建单独的 TXT 记录。
 
 
 9.  使用为每个域创建的联合域证明字符串，在公用 DNS 服务器上为每个域创建 TXT 记录。根据公用 DNS 主机的更新计划，DNS 更改的复制可能需要 15 分钟或更久。
@@ -231,16 +181,6 @@ _**上一次修改主题：** 2017-07-26_
 
 有关语法和参数的详细信息，请参阅 [Get-FederationTrust](https://technet.microsoft.com/zh-cn/library/dd351262\(v=exchg.150\)) 和 [Get-FederationInformation](https://technet.microsoft.com/zh-cn/library/dd351221\(v=exchg.150\))。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 

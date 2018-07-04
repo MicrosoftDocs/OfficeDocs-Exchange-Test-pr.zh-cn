@@ -49,18 +49,8 @@ Specifically, this new architecture has the following improvements:
 
 5.  **Unlocks new features on iOS and Android:**  This update enables the Outlook app to take advantage of native Office 365 features that are not supported in Exchange on-premises today, such as leveraging full Exchange Online search and Focused Inbox. These features will only be available when using Outlook for iOS and Android.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Device management through the on-premises Exchange Admin Center is not possible. Intune is required to manage mobile devices.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Device management through the on-premises Exchange Admin Center is not possible. Intune is required to manage mobile devices.
 
 
 ## Data security, access, and auditing controls
@@ -173,18 +163,8 @@ When an organization decides to standardize how users access Exchange data, usin
 
 The policies leverage the grant control [Require approved client app](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference), which ensures only Microsoft apps that have integrated the Intune SDK are granted access.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is leveraged. For more information, see <a href="https://docs.microsoft.com/intune/app-based-conditional-access-intune">App-based conditional access with Intune</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is leveraged. For more information, see <a href="https://docs.microsoft.com/intune/app-based-conditional-access-intune">App-based conditional access with Intune</a>.
 
 
 In order to block other mobile device clients (such as the native mail client included in the mobile operating system) from connecting to your on-premises environment (which authenticate via basic authentication against on-premises Active Directory), you have two options:
@@ -195,18 +175,8 @@ In order to block other mobile device clients (such as the native mail client in
 
 2.  You can leverage an on-premises conditional access policy within Intune after installing the on-premises Exchange connector. For more information, see [Create a conditional access policy for Exchange on-premises and legacy Exchange Online Dedicated](https://docs.microsoft.com/intune/conditional-access-exchange-create#configure-exchange-on-premises-access).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>When implementing either of the above on-premises options, be aware that it may impact users connecting to Exchange on their mobile devices.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> When implementing either of the above on-premises options, be aware that it may impact users connecting to Exchange on their mobile devices.
 
 
 ## Create an Intune app protection policy
@@ -229,18 +199,8 @@ Create Intune app protection policies for both iOS and Android using the steps d
 
 In addition to the above minimum policy requirements, you should consider deploying advanced protection policy settings like **Restrict cut, copy and paste with other apps** to further prevent corporate data leakage. For more information on the available settings, see [Android app protection policy settings in Microsoft Intune](https://docs.microsoft.com/intune/app-protection-policy-settings-android) and [iOS app protection policy settings](https://docs.microsoft.com/intune/app-protection-policy-settings-ios).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>To apply Intune app protection policies against apps on Android devices that are not enrolled in Intune, the user must also install the Intune Company Portal. For more information, see <a href="https://docs.microsoft.com/en-us/intune/app-protection-enabled-apps-android">What to expect when your Android app is managed by app protection policies</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> To apply Intune app protection policies against apps on Android devices that are not enrolled in Intune, the user must also install the Intune Company Portal. For more information, see <a href="https://docs.microsoft.com/en-us/intune/app-protection-enabled-apps-android">What to expect when your Android app is managed by app protection policies</a>.
 
 
 ## Enable hybrid Modern Authentication
@@ -259,18 +219,8 @@ If you have already enabled hybrid Modern Authentication to support other versio
     
         New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Block
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Once this rule is created, users who are using Outlook for iOS and Android with Basic authentication will be blocked.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+> Once this rule is created, users who are using Outlook for iOS and Android with Basic authentication will be blocked.
 
 
 3.  Ensure your EAS maxRequestLength is configured to match your transport configuration’s MaxSendSize/MaxReceiveSize:
@@ -327,18 +277,8 @@ The following features are not supported for on-premises mailboxes using hybrid 
 
 With ExpressRoute, there is no private IP space for ExpressRoute connections, nor can there be “private” DNS resolution. That means that any endpoint your company wants to use over ExpressRoute must resolve in public DNS. If that endpoint resolves to an IP that is contained in the advertised prefixes associated with the ExpressRoute circuit (your company must configure those prefixes in the Azure portal when you enable Microsoft peering on the ExpressRoute connection), then the outbound connection from Exchange Online to your on-premises environment will route through the ExpressRoute circuit. Your company will have to ensure that the return traffic associated with these connections goes through the ExpressRoute circuit (avoiding asymmetric routing).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Because your company will be adding the Exchange ActiveSync namespace to the advertised prefixes in the ExpressRoute circuit, the only way to reach the Exchange ActiveSync endpoint will be via the ExpressRoute. In other words, the only mobile device that will be able to connect to on-premises via the ActiveSync namespace will be Outlook for iOS and Android. All other ActiveSync clients (such as mobile devices' native mail clients) will be unable to connect to the on-premises environment as the connection will not be established from the Microsoft Cloud. This is because there can’t be any overlaps of the public IP space advertised to Microsoft on the ExpressRoute circuit and the public IP space advertised on your Internet circuit(s).</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Because your company will be adding the Exchange ActiveSync namespace to the advertised prefixes in the ExpressRoute circuit, the only way to reach the Exchange ActiveSync endpoint will be via the ExpressRoute. In other words, the only mobile device that will be able to connect to on-premises via the ActiveSync namespace will be Outlook for iOS and Android. All other ActiveSync clients (such as mobile devices' native mail clients) will be unable to connect to the on-premises environment as the connection will not be established from the Microsoft Cloud. This is because there can’t be any overlaps of the public IP space advertised to Microsoft on the ExpressRoute circuit and the public IP space advertised on your Internet circuit(s).
 
 
 **Q:**  Given only four weeks of message data is synchronized to Exchange Online, does this mean that search queries executed in Outlook for iOS and Android cannot return information beyond the data available on the local device?

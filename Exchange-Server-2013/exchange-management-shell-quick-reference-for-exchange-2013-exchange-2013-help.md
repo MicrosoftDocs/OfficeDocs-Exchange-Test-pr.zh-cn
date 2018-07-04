@@ -19,18 +19,8 @@ _**上一次修改主题：** 2015-03-09_
 
 本主题介绍 Microsoft Exchange Server 2013 的正式发布 (RTM) 版本和更新版本中提供的最常用的 cmdlet，并提供它们的用法示例。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>稍后我们还将添加关于 Exchange 2013 其他方面的更多内容。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 稍后我们还将添加关于 Exchange 2013 其他方面的更多内容。
 
 
 有关 Exchange 中的 Exchange 2013 命令行管理程序及所有可用 cmdlet 的详细信息，请参阅下列主题：

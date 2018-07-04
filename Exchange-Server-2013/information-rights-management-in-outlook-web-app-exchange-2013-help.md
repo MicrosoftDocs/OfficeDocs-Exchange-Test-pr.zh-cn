@@ -29,47 +29,17 @@ _**上一次修改主题：** 2016-12-09_
 
   - **受 IRM 保护的附件**   用户从 Outlook Web App 中发送受 IRM 保护的邮件时，邮件中附加的任何文件也会受到相同的 IRM 保护，并且使用与邮件相同的权限策略模板进行保护。在 Exchange 2013 中，IRM 保护应用于与 Microsoft OfficeWord、Excel 和 PowerPoint 相关联的文件，以及 .xps 文件和电子邮件。仅当附件尚未受 IRM 保护时，可将 IRM 保护应用于该附件。若要了解有关 Active Directory 权限管理服务 (AD RMS) 权限策略模板的详细信息，请参阅[信息权限管理](information-rights-management-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Outlook Web App 中的 IRM 仅保护此节中提到的受支持文件附件。使用不支持的文件格式的附件将不受保护。当 Outlook Web App 用户要保护某封邮件但附加的文件类型不受支持时，系统将显示通知，告知用户仅可保护受支持的文件类型。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Outlook Web App 中的 IRM 仅保护此节中提到的受支持文件附件。使用不支持的文件格式的附件将不受保护。当 Outlook Web App 用户要保护某封邮件但附加的文件类型不受支持时，系统将显示通知，告知用户仅可保护受支持的文件类型。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>IRM 保护不可应用于已使用 S/MIME 签名或加密的邮件。若要应用 IRM 保护，必须从邮件中删除 S/MIME 签名和加密。对于受 IRM 保护的邮件，此规则同样适用；用户不能使用 S/MIME 对这些邮件进行签名或加密。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > IRM 保护不可应用于已使用 S/MIME 签名或加密的邮件。若要应用 IRM 保护，必须从邮件中删除 S/MIME 签名和加密。对于受 IRM 保护的邮件，此规则同样适用；用户不能使用 S/MIME 对这些邮件进行签名或加密。
 
 
   - **读取受 IRM 保护的邮件**   发件人使用组织的 AD RMS 群集保护的邮件呈现在 Outlook Web App 的预览窗格中。无需安装任何外接程序，且计算机无需在 AD RMS 部署中注册。在用户打开邮件或在预览窗格中查看邮件时，将使用由预许可代理添加的使用许可证解密该邮件。解密后，邮件将显示在预览窗格中。如果预许可不可用，Outlook Web App 将从 AD RMS 服务器申请一个许可证，然后呈现该邮件。在 Outlook Web App 中读取受 IRM 保护的附件时，Web-Ready 文档查看不可用。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Outlook Web App 中的 IRM 不能阻止用户以 Outlook 和其他 Office 应用程序的方式使用打印屏幕功能捕捉屏幕。这会影响“提取”权限，如果在 AD RMS 权限策略模板中指定，该权限可阻止对邮件内容进行复制。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Outlook Web App 中的 IRM 不能阻止用户以 Outlook 和其他 Office 应用程序的方式使用打印屏幕功能捕捉屏幕。这会影响“提取”权限，如果在 AD RMS 权限策略模板中指定，该权限可阻止对邮件内容进行复制。
 
 
   - **跨浏览器多平台 IRM 支持**Outlook Web App 中的 IRM 提供跨浏览器的多平台 IRM 支持。Outlook Web App 支持的所有浏览器都支持 Exchange 2013 中的 IRM，包括 Apple Macintosh 和 Linux 操作系统。若要了解有关支持的浏览器和操作系统的详细信息，请参阅[支持 Outlook Web App 的浏览器](https://go.microsoft.com/fwlink/p/?linkid=129362)。

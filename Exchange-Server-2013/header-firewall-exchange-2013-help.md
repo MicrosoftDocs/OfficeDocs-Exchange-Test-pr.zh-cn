@@ -154,18 +154,9 @@ Exchange 使用两种不同的方法将邮件头防火墙应用于邮件中存�
 <li><p>集线器传输服务器</p></li>
 <li><p>边缘传输服务器</p></li>
 <li><p>Exchange Servers</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅在集线器传输服务器上</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 仅在集线器传输服务器上
 
 </li>
 </ul></td>
@@ -190,18 +181,9 @@ Exchange 使用两种不同的方法将邮件头防火墙应用于邮件中存�
 <li><p>集线器传输服务器</p></li>
 <li><p>边缘传输服务器</p></li>
 <li><p>Exchange Servers</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅集线器传输服务器</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 仅集线器传输服务器
 
 </li>
 <li><p>外部安全服务器</p></li>
@@ -276,18 +258,9 @@ Exchange 使用两种不同的方法将邮件头防火墙应用于邮件中存�
 <li><p>集线器传输服务器</p></li>
 <li><p>边缘传输服务器</p></li>
 <li><p>Exchange Servers</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅在集线器传输服务器上</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 仅在集线器传输服务器上
 
 </li>
 <li><p>外部安全服务器</p></li>
@@ -301,18 +274,9 @@ Exchange 使用两种不同的方法将邮件头防火墙应用于邮件中存�
 <li><p>集线器传输服务器</p></li>
 <li><p>边缘传输服务器</p></li>
 <li><p>Exchange Servers</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅在集线器传输服务器上</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 仅在集线器传输服务器上
 
 </li>
 <li><p>外部安全服务器</p></li>

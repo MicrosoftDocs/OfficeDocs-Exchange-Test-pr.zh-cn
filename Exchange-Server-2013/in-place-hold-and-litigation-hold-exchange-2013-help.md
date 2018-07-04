@@ -17,18 +17,8 @@ _**适用于：** Exchange Online, Exchange Server 2013_
 
 _**上一次修改主题：** 2017-11-15_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange Online（Office 365 和 Exchange Online 独立计划）中新建就地保留的截止时间为 2017 年 7 月 1 日，我们已推迟了这一最后期限。不过，今年晚些时候或明年初，将无法在 Exchange Online 中新建就地保留。作为就地保留的备选方法，可以在 Office 365 安全与合规中心使用<a href="https://go.microsoft.com/fwlink/?linkid=780738">电子数据展示服务案例</a>或<a href="https://go.microsoft.com/fwlink/?linkid=827811">保留策略</a>。在我们取消新建就地保留后，仍可以修改现有就地保留，并且在 Exchange Server 2013 和 Exchange 混合部署中新建就地保留也仍将受支持。此外，也仍可以将邮箱置于诉讼保留。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在 Exchange Online（Office 365 和 Exchange Online 独立计划）中新建就地保留的截止时间为 2017 年 7 月 1 日，我们已推迟了这一最后期限。不过，今年晚些时候或明年初，将无法在 Exchange Online 中新建就地保留。作为就地保留的备选方法，可以在 Office 365 安全与合规中心使用<a href="https://go.microsoft.com/fwlink/?linkid=780738">电子数据展示服务案例</a>或<a href="https://go.microsoft.com/fwlink/?linkid=827811">保留策略</a>。在我们取消新建就地保留后，仍可以修改现有就地保留，并且在 Exchange Server 2013 和 Exchange 混合部署中新建就地保留也仍将受支持。此外，也仍可以将邮箱置于诉讼保留。
 
 
 当存在诉讼的合理预期时，需要组织保留与事实相关的以电子方式存储的信息 (ESI)，包括电子邮件。这种预期通常会在知道事实的细节之前发生，并且保留内容通常很广泛。组织可能需要保留与特定主题相关的所有电子邮件，或特定个人的所有电子邮件。可能会采用以下度量标准来保留电子邮件，具体取决于组织的电子发现（电子数据展示）实践：
@@ -93,18 +83,8 @@ _**上一次修改主题：** 2017-11-15_
 
   - **基于查询的保留**   如果您的组织根据特定的查询参数保留项目，则可以使用基于查询的就地保留。您可以指定诸如关键字、开始日期和结束日期、发件人和收件人地址以及邮件类型这样的查询参数。创建基于查询的就地保留之后，会保留与查询参数匹配的所有现有邮箱项目和将来项目（包括在以后日期接收的邮件）。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>通常由于无法索引附件，标记为不可搜索的项目也会被保留，因为无法确定它们是否与查询参数相匹配。有关不可搜索项目的详细信息，请参阅 <a href="unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md">Exchange 电子数据展示中不可搜索的项目</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 通常由于无法索引附件，标记为不可搜索的项目也会被保留，因为无法确定它们是否与查询参数相匹配。有关不可搜索项目的详细信息，请参阅 <a href="unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md">Exchange 电子数据展示中不可搜索的项目</a>。
 
 
   - **基于时间的保留**   就地保留和诉讼保留都允许您指定保留项目的持续时间。持续时间从接收或创建邮箱项目的日期计算得到。
@@ -121,18 +101,8 @@ _**上一次修改主题：** 2017-11-15_
 
 同时将邮箱置于一个或多个就地保留和诉讼保留（无持续时间）中时，将无限期保留所有项目或一直保留到删除保留。如果删除诉讼保留而用户仍置于一个或多个就地保留中，则将匹配就地保留条件的项目在保留设置中保留指定的时间段。将 Exchange 2010 中诉讼保留的邮箱移到 Exchange 2013 邮箱服务器时，将继续应用诉讼保留设置，从而确保在移动期间和之后继续满足合规性要求。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当您将邮箱置于就地保留或诉讼保留中时，该保留将置于主邮箱和存档邮箱中。如果将 Exchange 混合部署中的内部部署主邮箱置于保留状态，则也会将基于云的存档邮箱（如果已启用）置于保留状态。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 当您将邮箱置于就地保留或诉讼保留中时，该保留将置于主邮箱和存档邮箱中。如果将 Exchange 混合部署中的内部部署主邮箱置于保留状态，则也会将基于云的存档邮箱（如果已启用）置于保留状态。
 
 
 有关详细信息，请参阅：
@@ -145,34 +115,14 @@ _**上一次修改主题：** 2017-11-15_
 
 已添加到基于[发现管理](discovery-management-exchange-2013-help.md)角色的访问控制 (RBAC) 角色组或分配了合法保留和邮箱搜索管理角色的已获授权的用户可以将邮箱用户置于就地保留中。可以将该任务委派给组织的法律部门中的记录管理员、遵从性管理者或律师，同时分配最低特权。有关分配 发现管理 角色组的详细信息，请参阅[在 Exchange 中分配电子数据展示权限](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2010 中，合法保留角色向用户提供了足以将邮箱置于诉讼保留中的权限。在 Exchange 2013 中，您可以使用相同的权限来将邮箱置于无限保留或基于时间的就地保留中。但是，要创建基于查询的就地保留，必须向用户分配邮箱搜索角色。发现管理 角色组已分配有这两个角色。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 在 Exchange 2010 中，合法保留角色向用户提供了足以将邮箱置于诉讼保留中的权限。在 Exchange 2013 中，您可以使用相同的权限来将邮箱置于无限保留或基于时间的就地保留中。但是，要创建基于查询的就地保留，必须向用户分配邮箱搜索角色。发现管理 角色组已分配有这两个角色。
 
 
 在 Exchange 2013 中，就地保留功能与就地电子数据展示搜索集成。可以使用 Exchange 管理中心 (EAC) 的“就地电子数据展示和保留”向导或 Exchange 命令行管理程序中的 **New-MailboxSearch** 和相关 cmdlet 将邮箱置于就地保留中。要了解有关将邮箱置于就地保留中的更多信息，请参阅[创建或删除就地保留](create-or-remove-an-in-place-hold-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果使用 Exchange Online Archiving 为本地邮箱设置基于云的存档，则必须从本地 Exchange 2013 组织管理就地保留。使用 DirSync 自动将保留设置传播到基于云的存档。如前面所述，当将本地邮箱置于保留状态时，相应的基于云的存档也被置于保留状态。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果使用 Exchange Online Archiving 为本地邮箱设置基于云的存档，则必须从本地 Exchange 2013 组织管理就地保留。使用 DirSync 自动将保留设置传播到基于云的存档。如前面所述，当将本地邮箱置于保留状态时，相应的基于云的存档也被置于保留状态。
 
 
 许多组织都需要用户在置于保留时得到通知。此外，当邮箱置于保留时，不需要挂起适用于邮箱用户的任何保留策略。由于邮件继续按预期方式进行删除，因此用户可能不会注意到他们置于保留中。如果您的组织需要保留中的用户得到通知，则可以将通知邮件添加到邮箱用户的 **Retention Comment** 属性中，并使用 **RetentionUrl** 属性链接到提供详细信息的网页。Outlook 2010 及更高版本在 Backstage 区域显示通知和 URL。必须使用命令行管理程序来添加和管理邮箱的这些属性。
@@ -249,18 +199,8 @@ _**上一次修改主题：** 2017-11-15_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>从与会者获得会议响应并且更新会议的跟踪信息时，组织者邮箱中的日历项目将禁用“写入时复制”功能。对于设置了提醒的日历项和项目，ReminderTime 和 ReminderSignalTime 属性的“写入时复制”功能禁用。对这些属性的更改并不是由“写入时复制”功能捕获的。对 RSS 源的更改并不是由“写入时复制”功能捕获的。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 从与会者获得会议响应并且更新会议的跟踪信息时，组织者邮箱中的日历项目将禁用“写入时复制”功能。对于设置了提醒的日历项和项目，ReminderTime 和 ReminderSignalTime 属性的“写入时复制”功能禁用。对这些属性的更改并不是由“写入时复制”功能捕获的。对 RSS 源的更改并不是由“写入时复制”功能捕获的。
 
 
 尽管“DiscoveryHold”、“清除”和“版本”文件夹对用户不可见，但“可恢复的项目”文件夹中的所有项目由 Exchange 搜索编制索引，并且可使用就地电子数据展示来发现。从就地保留或诉讼保留中删除邮箱用户后，“DiscoveryHold”、“Purges”和“Version”文件夹中的项目将被托管文件夹助理清除。
@@ -337,18 +277,8 @@ Exchange 2013、Microsoft Lync 2013 和 Microsoft SharePoint 2013 提供集成�
 
   - 如果本地邮箱处于诉讼保留或就地保留状态，则“可恢复的项目”文件夹中的任何内容都会移动到 Exchange Online 邮箱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当您将 Exchange Online 邮箱移动（分离）到本地 Exchange 2013 组织中时，也会对“可恢复的项目”文件夹中的保留设置和内容进行保存。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 当您将 Exchange Online 邮箱移动（分离）到本地 Exchange 2013 组织中时，也会对“可恢复的项目”文件夹中的保留设置和内容进行保存。
 
 
 还有其他一些方法可以将本地电子邮件数据迁移到 Office 365，例如，使用暂存 Exchange 迁移或直接转换 Exchange 迁移。
@@ -357,18 +287,8 @@ Exchange 2013、Microsoft Lync 2013 和 Microsoft SharePoint 2013 提供集成�
 
   - 直接转换迁移可用于将邮箱从 Exchange 2003、Exchange 2007 和 Exchange 2010 迁移到 Office 365。如上文所述，Exchange 2003 和 Exchange 2007 邮箱都没有可迁移的“可恢复的项目”文件夹。因为在 Exchange 2010 中引入了“可恢复的项目”文件夹，所以当您使用直接转换迁移来迁移 Exchange 2010 邮箱时，“可恢复的项目”文件夹中的内容就会被迁移到 Office 365。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于 Exchange 2013 和 Exchange 2010，推荐采用 Exchange 混合部署作为将本地邮箱迁移到 Office 365 的方法。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 对于 Exchange 2013 和 Exchange 2010，推荐采用 Exchange 混合部署作为将本地邮箱迁移到 Office 365 的方法。
 
 
 返回顶部

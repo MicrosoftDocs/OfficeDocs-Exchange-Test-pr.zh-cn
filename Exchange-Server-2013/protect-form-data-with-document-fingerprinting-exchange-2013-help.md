@@ -47,18 +47,8 @@ _**上一次修改主题：** 2014-09-11_
 
 ## 使用 Shell 创建基于文档指纹的分类规则包
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>尽管您可以在 Shell 中创建和修改分类规则包，但您会发现在 EAC 中创建文档指纹更简单一点。我们建议您先在 EAC 中尝试，然后再在 Shell 中尝试执行此过程。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 尽管您可以在 Shell 中创建和修改分类规则包，但您会发现在 EAC 中创建文档指纹更简单一点。我们建议您先在 EAC 中尝试，然后再在 Shell 中尝试执行此过程。
 
 
 DLP 使用分类规则包检测邮件中的敏感内容。要创建基于文档指纹的分类规则包，请使用 **New-Fingerprint** 和 **New-DataClassification** cmdlet。由于 **New-Fingerprint** 的结果不会在数据分类规则以外存储，因此请始终在相同 PowerShell 会话中运行 **New-Fingerprint** 和 **New-DataClassification** 或 **Set-DataClassification**。以下示例基于文件 C:\\My Documents\\Contoso Employee Template.docx 创建新的文档指纹。由于新的指纹存储为变量，因此可以在相同 PowerShell 会话中使用 **New-DataClassification** cmdlet。

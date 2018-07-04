@@ -33,18 +33,8 @@ _**上一次修改主题：** 2015-04-08_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 希望执行何种操作？
@@ -69,24 +59,11 @@ _**上一次修改主题：** 2015-04-08_
 
     Set-TransportService Exchange01 -PickupDirectoryPath "D:\Pickup Directory" -PickupDirectoryMaxHeaderSize 96KB -PickupDirectoryMaxRecipientsPerMessage 250 -PickupDirectoryMaxMessagesPerMinute 200
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>将 <em>PickupDirectoryPath</em> 参数的值设置为 <code>$null</code> 可禁用分拣目录。</p></li>
-<li><p><em>PickupDirectoryPath</em> 参数和 <em>ReplayDirectoryPath</em> 参数指定的目录不得相同。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> <ul>
+> <li><p>将 <em>PickupDirectoryPath</em> 参数的值设置为 <code>$null</code> 可禁用分拣目录。</p></li>
+> <li><p><em>PickupDirectoryPath</em> 参数和 <em>ReplayDirectoryPath</em> 参数指定的目录不得相同。</p></li>
+> </ul>
 
 
 ## 使用命令行管理程序配置重播目录
@@ -105,24 +82,11 @@ _**上一次修改主题：** 2015-04-08_
 
     Set-TransportService Exchange01 -ReplayDirectoryPath "D:\Replay Directory" -PickupDirectoryMaxMessagesPerMinute 200
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>将 <em>ReplayDirectoryPath</em> 参数的值设置为 <code>$null</code> 可禁用重播目录。</p></li>
-<li><p><em>PickupDirectoryPath</em> 参数和 <em>ReplayDirectoryPath</em> 参数指定的目录不得相同。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> <ul>
+> <li><p>将 <em>ReplayDirectoryPath</em> 参数的值设置为 <code>$null</code> 可禁用重播目录。</p></li>
+> <li><p><em>PickupDirectoryPath</em> 参数和 <em>ReplayDirectoryPath</em> 参数指定的目录不得相同。</p></li>
+> </ul>
 
 
 ## 您如何知道这有效？

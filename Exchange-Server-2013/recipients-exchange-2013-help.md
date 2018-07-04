@@ -65,18 +65,9 @@ Exchange 包含几种显式收件人类型。每个收件人类型在 Exchange �
 <tr class="odd">
 <td><p>邮件林联系人</p></td>
 <td><p>表示另一个林中收件人对象的邮件联系人。邮件林联系人通常由 Microsoft Identity Integration Server (MIIS) 同步创建。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>邮件林联系人是只读的收件人对象，只能通过 MIIS 或类似的自定义同步来更新。不能使用 EAC 或命令行管理程序删除或修改邮件林联系人。</td>
-</tr>
-</tbody>
-</table>
+
+> [!important]
+> 邮件林联系人是只读的收件人对象，只能通过 MIIS 或类似的自定义同步来更新。不能使用 EAC 或命令行管理程序删除或修改邮件林联系人。
 
 </td>
 </tr>
@@ -141,36 +132,16 @@ Exchange 包含几种显式收件人类型。每个收件人类型在 Exchange �
 
 每个邮箱由 Active Directory 用户以及存储在 Exchange 邮箱数据库中的邮箱数据组成（如下图所示）。邮箱的所有配置数据都存储在 Exchange 用户对象的 Active Directory 属性中。邮箱数据库包含与用户帐户关联的邮箱中的实际数据。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>为新用户或现有用户创建邮箱时，将邮箱需要的 Exchange 属性添加到 Active Directory 中的用户对象。在邮箱收到邮件或用户登录邮箱之前，系统不会创建相关的邮箱数据。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 为新用户或现有用户创建邮箱时，将邮箱需要的 Exchange 属性添加到 Active Directory 中的用户对象。在邮箱收到邮件或用户登录邮箱之前，系统不会创建相关的邮箱数据。
 
 
 **邮箱组件**
 
 ![组成邮箱的部分](images/Bb201680.5fcb5e6d-656e-42ae-871f-0eef8aea456b(EXCHG.150).gif "组成邮箱的部分")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您删除邮箱，则存储在 Exchange 邮箱数据库中的邮箱数据将被标记为删除，而且关联的用户帐户也将从 Active Directory 中删除。若要保留用户帐户，仅删除邮箱数据，则必须禁用邮箱。</td>
-</tr>
-</tbody>
-</table>
+> [!warning]
+> 如果您删除邮箱，则存储在 Exchange 邮箱数据库中的邮箱数据将被标记为删除，而且关联的用户帐户也将从 Active Directory 中删除。若要保留用户帐户，仅删除邮箱数据，则必须禁用邮箱。
 
 
 ## 邮箱类型
@@ -257,18 +228,8 @@ Exchange 支持下列邮箱类型：
 
 通讯组是启用邮件的 Active Directory 组对象，主要用于向多个收件人分发邮件。任何收件人类型都可以是通讯组的成员。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>请注意 Active Directory 和 Exchange 的术语差异。在 Active Directory 中，通讯组是指任何不具有安全上下文的组，而无论它是否已启用邮件。在 Exchange 中，所有启用邮件的组都称为通讯组，无论它们是否具有安全性上下文。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 请注意 Active Directory 和 Exchange 的术语差异。在 Active Directory 中，通讯组是指任何不具有安全上下文的组，而无论它是否已启用邮件。在 Exchange 中，所有启用邮件的组都称为通讯组，无论它们是否具有安全性上下文。
 
 
 Exchange 支持下列通讯组类型：
@@ -279,18 +240,8 @@ Exchange 支持下列通讯组类型：
 
   - **启用邮件的非通用组**   这些是启用邮件的 Active Directory 全局或本地组对象。只能创建通用通讯组或对其启用邮件。可以具有从早期版本的 Exchange 中迁移来的、并非通用组的启用邮件组。这些组仍然可以使用 EAC 或命令行管理程序进行管理。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若要将本地域或全局组转换为通用组，可以使用命令行管理程序中的 <a href="https://technet.microsoft.com/zh-cn/library/bb123770(v=exchg.150)">Set-Group</a> cmdlet。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 若要将本地域或全局组转换为通用组，可以使用命令行管理程序中的 <a href="https://technet.microsoft.com/zh-cn/library/bb123770(v=exchg.150)">Set-Group</a> cmdlet。
 
 
 ## 动态通讯组
@@ -299,18 +250,8 @@ Exchange 支持下列通讯组类型：
 
 与常规通讯组不同，每次向动态通讯组发送邮件时，都将根据指定的筛选器和条件来计算该动态通讯组的成员列表。当一封电子邮件发送到某个动态通讯组时，这封电子邮件会同时传递给组织中与此动态通讯组定义的条件匹配的所有收件人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>动态通讯组包含在发送邮件时 Active Directory 中其属性与组筛选器相匹配的所有收件人。如果将收件人属性修改为与组筛选器相匹配的属性，则该收件人可能会无意中成为组成员，并开始接收发送到动态通讯组的邮件。定义完善且一致的帐户设置过程可降低发生此问题的机率。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 动态通讯组包含在发送邮件时 Active Directory 中其属性与组筛选器相匹配的所有收件人。如果将收件人属性修改为与组筛选器相匹配的属性，则该收件人可能会无意中成为组成员，并开始接收发送到动态通讯组的邮件。定义完善且一致的帐户设置过程可降低发生此问题的机率。
 
 
 若要创建动态通讯组的收件人筛选器，可以使用固有筛选器。“固有筛选器”是一种常用的筛选器，可用来满足各种收件人筛选标准。可以使用这些筛选器指定想要在动态通讯组中包含的收件人类型。此外，还可以指定收件人必须满足的条件列表。可以根据下列属性创建固有条件：
@@ -343,18 +284,8 @@ Exchange 支持下列通讯组类型：
 
 另一种方案是针对不想要维护 Exchange 邮箱的用户创建组织中的邮件用户。例如，收购后，被收购的公司可能自己维护其单独的邮件基础结构，但是可能还需要访问您的网络中的资源。对于这些用户，可为其创建邮件用户，而不为其创建邮箱用户。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 EAC 中，您可以使用“收件人”&gt;“联系人”页面创建和管理邮件用户。暂无单独的邮件用户页面。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在 EAC 中，您可以使用“收件人”&gt;“联系人”页面创建和管理邮件用户。暂无单独的邮件用户页面。
 
 
 ## 启用邮件的公用文件夹
@@ -369,18 +300,8 @@ Microsoft Exchange 收件人是提供统一的已知邮件发件人的一个特�
 
 Microsoft Exchange 收件人不是典型的收件人对象（例如邮箱、邮件用户或邮件联系人），并且该收件人不是使用典型的收件人工具进行管理的。但是，可以在命令行管理程序中使用 [Set-OrganizationConfig](https://technet.microsoft.com/zh-cn/library/aa997443\(v=exchg.150\)) cmdlet 来配置 Microsoft Exchange 收件人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>将系统生成的邮件发送给外部发件人时，不使用 Microsoft Exchange 收件人作为邮件的发件人。使用 <a href="https://technet.microsoft.com/zh-cn/library/bb124151(v=exchg.150)">Set-TransportConfig</a> cmdlet 中的 <em>ExternalPostmasterAddress</em> 参数所指定的电子邮件地址。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 将系统生成的邮件发送给外部发件人时，不使用 Microsoft Exchange 收件人作为邮件的发件人。使用 <a href="https://technet.microsoft.com/zh-cn/library/bb124151(v=exchg.150)">Set-TransportConfig</a> cmdlet 中的 <em>ExternalPostmasterAddress</em> 参数所指定的电子邮件地址。
 
 
 ## 收件人文档

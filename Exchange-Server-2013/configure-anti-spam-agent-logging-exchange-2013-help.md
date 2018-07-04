@@ -31,18 +31,8 @@ _**上一次修改主题：** 2015-04-08_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 使用命令行管理程序配置反垃圾邮件代理日志记录
@@ -69,24 +59,11 @@ _**上一次修改主题：** 2015-04-08_
 
     Set-TransportService Mailbox01 -AgentLogPath "D:\Anti-Spam Agent Log" -AgentLogMaxFileSize 20MB -AgentLogMaxDirectorySize 400MB -AgentLogMaxAge 14.00:00:00
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>如果将 <em>AgentLogPath</em> 参数的值设置为 <code>$null</code>，将有效地禁用代理日志记录。但是当 <em>AgentLogEnabled</em> 参数的值为 <code>$true</code> 时，如果将 <em>AgentLogPath</em> 设置为 <code>$null</code>，就会生成事件日志错误。禁用代理日志记录的首选方法是将 <em>AgentLogEnabled</em> 设置为 <code>$false</code>。</p></li>
-<li><p>将 <em>AgentLogMaxAge</em> 参数设置为值 <code>00:00:00</code>，可以防止由于期限问题而自动删除代理日志文件。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> <ul>
+> <li><p>如果将 <em>AgentLogPath</em> 参数的值设置为 <code>$null</code>，将有效地禁用代理日志记录。但是当 <em>AgentLogEnabled</em> 参数的值为 <code>$true</code> 时，如果将 <em>AgentLogPath</em> 设置为 <code>$null</code>，就会生成事件日志错误。禁用代理日志记录的首选方法是将 <em>AgentLogEnabled</em> 设置为 <code>$false</code>。</p></li>
+> <li><p>将 <em>AgentLogMaxAge</em> 参数设置为值 <code>00:00:00</code>，可以防止由于期限问题而自动删除代理日志文件。</p></li>
+> </ul>
 
 
 有关语法和参数的详细信息，请参阅 [Set-TransportService](https://technet.microsoft.com/zh-cn/library/jj215682\(v=exchg.150\)) 中的 *AgentLog* 参数。

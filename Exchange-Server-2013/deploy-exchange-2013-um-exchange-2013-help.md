@@ -89,18 +89,8 @@ _**上一次修改主题：** 2016-12-09_
 
 2.  部署新的 Exchange 2013 组织。有关详细信息，请参阅[使用安装向导安装 Exchange 2013](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在配置 VoIP 网关或 IP PBX 以将 UM SIP 和 RTP 通信发送到 Exchange 2013 客户端访问服务器之前，您应在组织内部署至少一个 Exchange 2013 邮箱服务器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!warning]
+    > 在配置 VoIP 网关或 IP PBX 以将 UM SIP 和 RTP 通信发送到 Exchange 2013 客户端访问服务器之前，您应在组织内部署至少一个 Exchange 2013 邮箱服务器。
 
 
 3.  验证是否已正确安装客户端访问和邮箱服务器。建议在安装服务器之后验证安装并检查服务器安装日志。有关详细信息，请参阅[验证 Exchange 2013 安装](verify-an-exchange-2013-installation-exchange-2013-help.md)。
@@ -113,18 +103,8 @@ UM 语言包允许呼叫者和 Outlook Voice Access 用户能够用多种语言�
 
 从 [Exchange Server 2013 UM 语言包](https://go.microsoft.com/fwlink/p/?linkid=266542)下载 UM 语言包后，可以使用 Setup.exe 命令或运行 *\<UMLanguagePack\>*.exe 安装程序来添加 UM 语言包。然而，您必须使用 Setup.exe 命令以删除 UM 语言包。不存在可用于在邮箱服务器中添加或删除语言的 Exchange 命令行管理程序 cmdlet。有关如何安装 UM 语言包的详细信息，请参阅[安装 UM 语言包](install-a-um-language-pack-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，当您安装邮箱服务器时，会安装语言“美国英语”(en-US)。它无法删除，除非您从计算机中删除邮箱服务器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 默认情况下，当您安装邮箱服务器时，会安装语言“美国英语”(en-US)。它无法删除，除非您从计算机中删除邮箱服务器。
 
 
 部署之前
@@ -149,18 +129,8 @@ UM 拨号计划是运行统一消息以及在网络上成功部署统一消息�
     
       - **名称**：键入拨号计划的名称。UM 拨号计划名称是必需的，并且必须是唯一的。键入的此名称在 EAC 和命令行管理程序中仅用于显示目的。UM 拨号计划名称的最大长度为 64 个字符，可以包括空格。但是，不能包括下列任何字符：" / \\ \[ \] : ; | = , + \* ? \< \>.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>尽管拨号计划名称的框可以接受 64 个字符，但是拨号计划的名称不得超过 49 个字符。这是因为创建拨号计划时，还创建了其名称为 <em>&lt;DialPlanName&gt;</em> 默认策略的默认 UM 邮箱策略。UM 拨号计划和 UM 邮箱策略的 <em>name</em> 参数都可以是 64 个字符长。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!important]
+        > 尽管拨号计划名称的框可以接受 64 个字符，但是拨号计划的名称不得超过 49 个字符。这是因为创建拨号计划时，还创建了其名称为 <em>&lt;DialPlanName&gt;</em> 默认策略的默认 UM 邮箱策略。UM 拨号计划和 UM 邮箱策略的 <em>name</em> 参数都可以是 64 个字符长。
     
       - **分机号码长度(位)**   输入拨号计划中分机号码的位数。分机号码位数基于在 PBX 上创建的电话拨号计划。例如，如果与电话拨号计划关联的用户拨打 4 位的分机号码来呼叫同一电话拨号计划中的另一个用户，则应选择 4 作为分机号码中的位数。
         
@@ -176,18 +146,8 @@ UM 拨号计划是运行统一消息以及在网络上成功部署统一消息�
 
 3.  单击“保存”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在以前的 Exchange 版本中，必须将统一消息服务器添加至 UM 拨号计划。在 Exchange 2013 中，客户端访问和邮箱服务器不能与电话分机或 E.164 拨号计划关联。客户端访问服务器和邮箱服务器将应答所有类型拨号计划的所有传入呼叫。但是，如果您将 UM 与 Microsoft Lync Server 集成，则必须将所有客户端访问和邮箱服务器添加至所有 SIP URI 拨号计划以使呼叫路由正常对 Lync Server 发挥作用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 在以前的 Exchange 版本中，必须将统一消息服务器添加至 UM 拨号计划。在 Exchange 2013 中，客户端访问和邮箱服务器不能与电话分机或 E.164 拨号计划关联。客户端访问服务器和邮箱服务器将应答所有类型拨号计划的所有传入呼叫。但是，如果您将 UM 与 Microsoft Lync Server 集成，则必须将所有客户端访问和邮箱服务器添加至所有 SIP URI 拨号计划以使呼叫路由正常对 Lync Server 发挥作用。
 
 
 部署之前
@@ -362,18 +322,8 @@ UM IP 网关表示 VoIP 网关硬件设备或 IP PBX。结合使用 UM IP 网关
 
   - [为语音邮件用户启用接收传真功能](enable-voice-mail-users-to-receive-faxes-exchange-2013-help.md)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要将统一消息环境与 Microsoft Lync Server 集成，则应考虑其他规划因素。有关详细信息，请参阅<a href="deploying-exchange-2013-um-and-lync-server-overview-exchange-2013-help.md">部署 Exchange 2013 UM 和 Lync Server 概述</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果要将统一消息环境与 Microsoft Lync Server 集成，则应考虑其他规划因素。有关详细信息，请参阅<a href="deploying-exchange-2013-um-and-lync-server-overview-exchange-2013-help.md">部署 Exchange 2013 UM 和 Lync Server 概述</a>。
 
 
 部署之前

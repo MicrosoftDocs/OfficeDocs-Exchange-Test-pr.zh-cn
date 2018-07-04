@@ -21,18 +21,8 @@ Microsoft Exchange Server 2013 安装程序无法继续运行，因为您正在�
 
 要解决此问题，请通过下面的步骤在计算机上添加主要的 DNS 后缀，然后再次运行安装程序。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>安装 Exchange 2013 后，不支持更改计算机名称或主要的 DNS 后缀。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 安装 Exchange 2013 后，不支持更改计算机名称或主要的 DNS 后缀。
 
 
 1.  以本地 Administrators 组成员身份登录到您要在其上安装边缘传输角色的计算机。

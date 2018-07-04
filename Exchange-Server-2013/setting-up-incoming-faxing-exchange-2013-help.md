@@ -41,36 +41,16 @@ UM 将传入传真呼叫转发到专用传真合作伙伴解决方案，此解�
 
 可以为内部部署组织或混合组织设置传真之前，您需要成功地部署客户端访问服务器和邮箱服务器，并配置支持的 Voice over IP (VoIP) 网关，从而允许传真。有关如何部署 UM 的详细信息，请参阅[部署 Exchange 2013 UM](deploy-exchange-2013-um-exchange-2013-help.md)。关于如何部署 VoIP 网关和 IP 专用交换机 (PBX) 的详细信息，请参阅[将 UM 连接到电话系统](connect-um-to-your-telephone-system-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在统一消息和 MicrosoftOffice Communications Server 2007 R2 或 Microsoft Lync Server 相集成的环境中，不支持使用 T.38 或 G.711 发送和接收传真。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 在统一消息和 MicrosoftOffice Communications Server 2007 R2 或 Microsoft Lync Server 相集成的环境中，不支持使用 T.38 或 G.711 发送和接收传真。
 
 
 ## 步骤 2：配置传真合作伙伴服务器
 
 接下来，您需要启用传入传真，您需要在您的组织中每个 UM 邮箱策略上配置传真伙伴的 URI。若要成功部署传入传真，必须使用 Exchange 统一消息集成认证的传真合作伙伴解决方案。有关详细信息，请参阅[对于 Exchange UM 传真顾问](fax-advisor-for-exchange-um-exchange-2013-help.md)。有关传真经认证的合作伙伴的列表，请参阅[Microsoft 查明其传真合作伙伴](https://go.microsoft.com/fwlink/?linkid=190238)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由于传真合作伙伴服务器在组织之外，防火墙端口必须配置为允许 T.38 协议端口以便能够通过基于 IP 的网络传真。默认情况下，T.38 协议使用 TCP 端口 6004。它也可以使用用户数据报协议 (UDP) 端口 6044，但是这将由硬件制造商定义。防火墙端口必须配置为允许传真数据，该传真数据使用 TCP 或 UDP 端口或制造商定义的端口范围。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 由于传真合作伙伴服务器在组织之外，防火墙端口必须配置为允许 T.38 协议端口以便能够通过基于 IP 的网络传真。默认情况下，T.38 协议使用 TCP 端口 6004。它也可以使用用户数据报协议 (UDP) 端口 6044，但是这将由硬件制造商定义。防火墙端口必须配置为允许传真数据，该传真数据使用 TCP 或 UDP 端口或制造商定义的端口范围。
 
 
 ## 步骤 3：在统一消息上启用传真
@@ -125,18 +105,8 @@ UM 将传入传真呼叫转发到专用传真合作伙伴解决方案，此解�
 
   - 验证每个 UM 拨号计划是否允许与该拨号计划关联的用户接收传真。默认情况下，所有与拨号计划关联的用户都能接收传真。要使启用 UM 的用户在他们的邮箱接收传真邮件，每个 VoIP 网关或 IP PBX 必须配置为接受传入传真呼叫。还必须使与拨号计划关联的用户能够接收传真邮件。有关如何使与拨号计划相关联的用户接收传真或阻止其接收传真的详细信息，请参阅[允许用户接收传真](enable-a-user-to-receive-faxes-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果禁止在拨号计划上接收传真邮件，则与拨号计划关联的所有用户都不能接收传真邮件，即使您将单个用户的属性配置为允许接收传真邮件也是如此。在 UM 拨号计划上启用或禁用传真功能优先于单个启用 UM 的用户的设置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果禁止在拨号计划上接收传真邮件，则与拨号计划关联的所有用户都不能接收传真邮件，即使您将单个用户的属性配置为允许接收传真邮件也是如此。在 UM 拨号计划上启用或禁用传真功能优先于单个启用 UM 的用户的设置。
 
 
   - 配置与启用 UM 的用户关联的 UM 邮箱策略。UM 邮箱策略必须配置为允许传入传真，包括传真合作伙伴的 URI 以及传真合作伙伴服务器的名称。*FaxServerURI* 参数必须使用以下形式：sip:\<*传真服务器 URI*\>:\<*端口*\>;\<*传输*\>，其中\&quot;传真服务器 URI\&quot;是传真合作伙伴服务器的完全限定域名 (FQDN) 或 IP 地址。\&quot;端口\&quot;是传真服务器侦听传入传真呼叫的端口，而\&quot;传输\&quot;是用于传入传真的传输协议（UDP、TCP 或传输层安全性 (TLS)）。例如，您可以按如下方式配置一个 UM 邮箱策略来接收传真。
@@ -145,18 +115,8 @@ UM 将传入传真呼叫转发到专用传真合作伙伴解决方案，此解�
 
   - 有关详细信息，请参阅[设置传真服务器 URI 以允许发送传真的伙伴](set-the-partner-fax-server-uri-to-allow-faxing-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>尽管您可以通过分号分隔在格式中包含多个 <em>FaxServerURI</em> 条目，只有一个条目可以使用。这个参数仅允许使用一个条目，并且添加多个条目将使您无法平衡传真请求负载。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!warning]
+    > 尽管您可以通过分号分隔在格式中包含多个 <em>FaxServerURI</em> 条目，只有一个条目可以使用。这个参数仅允许使用一个条目，并且添加多个条目将使您无法平衡传真请求负载。
 
 
   - 验证启用 UM 的邮箱是否可以接收传真邮件。默认情况下，所有与拨号计划关联的用户都能接收传真。但是，由于禁用了其邮箱接收传真的功能，可能会有用户无法接收传真的情况。有关如何使已启用 UM 的用户可以接收传真的详细信息，请参阅[允许用户接收传真](enable-a-user-to-receive-faxes-exchange-2013-help.md)。

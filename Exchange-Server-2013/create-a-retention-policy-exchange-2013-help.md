@@ -47,33 +47,13 @@ _**上一次修改主题：** 2016-12-09_
     
       - **已自动应用于整个邮箱(默认)**   选择此选项可创建默认策略标记 (DPT)。可以使用 DPT 创建默认删除策略和默认存档策略，这些策略适用于邮箱中的所有项目。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>不能使用 EAC 创建 DPT 以删除语音邮件项目。有关如何创建 DPT 以删除语音邮件项目的详细信息，请参见下面的命令行管理程序示例。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 不能使用 EAC 创建 DPT 以删除语音邮件项目。有关如何创建 DPT 以删除语音邮件项目的详细信息，请参见下面的命令行管理程序示例。
     
       - **已自动应用于特定文件夹**   选择此选项可为默认的文件夹（如“收件箱”或“已删除的邮件”等）创建保留策略标记 (RPT)。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>您只能使用“删除并允许恢复”或“永久删除”操作创建 RPT。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 您只能使用“删除并允许恢复”或“永久删除”操作创建 RPT。
     
       - **已由用户应用于项目和文件夹(个人)**   选择此选项可创建个人标记。这些标记允许 Outlook 和 Outlook Web App 用户将不同于应用于父文件夹或整个邮箱的设置的存档或删除设置应用于邮件或文件夹。
 
@@ -89,18 +69,8 @@ _**上一次修改主题：** 2016-12-09_
         
           - **永久删除**   选择该选项从邮箱数据库永久删除项目。
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>将会保留遵从就地保留或诉讼保留的邮箱或项目并在就地电子数据展示搜索中返回。有关详细信息，请参阅<a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">就地保留和诉讼保留</a>。</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!important]
+            > 将会保留遵从就地保留或诉讼保留的邮箱或项目并在就地电子数据展示搜索中返回。有关详细信息，请参阅<a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">就地保留和诉讼保留</a>。
         
           - **移动到存档**   该操作仅在创建 DPT 或个人标记时有用。选择此操作可将邮件移到用户的就地存档。
     
@@ -162,18 +132,8 @@ _**上一次修改主题：** 2016-12-09_
         
           - 任意数量的个人标记
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>尽管可以将任意数量的个人标记添加到保留策略，但是过多使用不同保留设置的个人标记可能会使用户混淆。建议链接到保留策略的个人标记不要超过 10 个。</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!NOTE]
+            > 尽管可以将任意数量的个人标记添加到保留策略，但是过多使用不同保留设置的个人标记可能会使用户混淆。建议链接到保留策略的个人标记不要超过 10 个。
         
         可以创建保留策略但不向其添加任何保留标记，但不会移动或删除应用该策略的邮箱中的邮件。也可以在创建保留策略后在保留策略中添加和删除保留标记。
 
@@ -201,16 +161,6 @@ _**上一次修改主题：** 2016-12-09_
 
 2.  使用 Outlook 或 Outlook Web App 登录邮箱，并验证是否已根据策略配置删除邮件或将其移动至存档。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 

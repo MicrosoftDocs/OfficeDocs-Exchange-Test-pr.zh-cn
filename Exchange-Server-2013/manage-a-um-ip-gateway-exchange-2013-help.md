@@ -35,18 +35,8 @@ _**上一次修改主题：** 2013-02-21_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -91,18 +81,8 @@ _**上一次修改主题：** 2013-02-21_
 
     Set-UMIPGateway -Identity MyUMIPGateway -Simulator $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在将对 UM IP 网关配置进行的所有更改复制到与 UM IP 网关同一 UM 拨号计划中的 Exchange 服务器之前，存在一个延迟期。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 在将对 UM IP 网关配置进行的所有更改复制到与 UM IP 网关同一 UM 拨号计划中的 Exchange 服务器之前，存在一个延迟期。
 
 
 该示例可防止名为 `MyUMIPGateway` 的 UM IP 网关接受传入呼叫并阻止传出呼叫，可设置 IPv6 地址，并允许 UM IP 网关使用 IPv4 和 IPV6 地址。

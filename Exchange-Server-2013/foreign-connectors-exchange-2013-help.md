@@ -21,18 +21,8 @@ _**上一次修改主题：** 2012-09-25_
 
 外部网关服务器可以通过使用存在于邮箱服务器传输服务中的分拣目录或重播目录将邮件发送到 Exchange 2013 组织。提交您复制到每个目录的格式正确的电子邮件文件，以传递到 Exchange 邮箱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在必须将出站邮件发送到非 SMTP 系统中的大多数情况下，我们建议使用“传递代理”连接器，因为这些连接器可以对邮件队列进行管理，邮件不必写入到文件系统中，并且还有其他优势。<a href="delivery-agents-and-delivery-agent-connectors-exchange-2013-help.md">传递代理和传递代理连接器</a>主题提供了更多详细信息。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 在必须将出站邮件发送到非 SMTP 系统中的大多数情况下，我们建议使用“传递代理”连接器，因为这些连接器可以对邮件队列进行管理，邮件不必写入到文件系统中，并且还有其他优势。<a href="delivery-agents-and-delivery-agent-connectors-exchange-2013-help.md">传递代理和传递代理连接器</a>主题提供了更多详细信息。
 
 
 ## 详细信息

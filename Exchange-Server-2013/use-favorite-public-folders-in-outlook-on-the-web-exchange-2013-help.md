@@ -23,18 +23,8 @@ _**上一次修改主题：** 2016-06-24_
 
 用户必须先使用 Outlook 客户端将公用文件夹添加到“**收藏夹**”文件夹中，然后才能对“**收藏夹**”文件夹中的公用文件夹执行特定任务。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关创建和配置公用文件夹的详细信息，组织中的用户可参阅<a href="https://support.office.com/zh-cn/article/create-a-public-folder-in-outlook-d5981360-28d3-4c8f-a373-c98ae570420a?ui=en-us%26rs=en-us%26ad=us">在 Outlook 中创建公用文件夹</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 有关创建和配置公用文件夹的详细信息，组织中的用户可参阅<a href="https://support.office.com/zh-cn/article/create-a-public-folder-in-outlook-d5981360-28d3-4c8f-a373-c98ae570420a?ui=en-us%26rs=en-us%26ad=us">在 Outlook 中创建公用文件夹</a>。
 
 
 1.  在 Outlook 中，转到“**文件夹**”视图。依次单击导航栏上的三个点和“**文件夹**”。
@@ -48,34 +38,14 @@ _**上一次修改主题：** 2016-06-24_
 
 3.  右键单击要添加到“收藏夹”中的公用文件夹，然后选择“添加到收藏夹...”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>默认情况下，“收藏夹”文件夹位于导航栏中“所有公用文件夹”文件夹的正下方。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 默认情况下，“收藏夹”文件夹位于导航栏中“所有公用文件夹”文件夹的正下方。
 
 
 4.  在“**添加到收藏夹**”对话框中，你可以选择为此文件夹重新命名一个仅在“**收藏夹**”中显示的名称。单击“**添加**”，将此文件夹添加到“**收藏夹**”。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>公用文件夹有多种类型。公用文件夹必须是“邮件和文章”、“日历”或“联系人”项目类型，这样用户才能使用 Web 上的 Outlook 中收藏的公用文件夹。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 公用文件夹有多种类型。公用文件夹必须是“邮件和文章”、“日历”或“联系人”项目类型，这样用户才能使用 Web 上的 Outlook 中收藏的公用文件夹。
 
 
 ## 在 Web 上的 Outlook 中添加收藏的公用文件夹。

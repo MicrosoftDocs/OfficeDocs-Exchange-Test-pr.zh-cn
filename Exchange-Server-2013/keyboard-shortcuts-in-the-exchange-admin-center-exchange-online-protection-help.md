@@ -44,36 +44,18 @@ Microsoft 努力使每个用户更容易使用其产品和服务。下列各节�
 <tr class="even">
 <td><p>在 EAC 中下拉菜单中的项目之间移动</p></td>
 <td><p>上箭头键和下箭头键。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>这种情况下不支持将 Tab 和 Shift-Tab 用于在菜单项目之间移动。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 这种情况下不支持将 Tab 和 Shift-Tab 用于在菜单项目之间移动。
 
 </td>
 </tr>
 <tr class="odd">
 <td><p>在列表中从一个项目移动到另一个项目</p></td>
 <td><p>上箭头键、下箭头键、Home 键、End 键、Page Up 键、Page Down 键。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>还可以使用向上键、向下键、向左键和向右键在选项按钮之间或在一组关联复选框中移动。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 还可以使用向上键、向下键、向左键和向右键在选项按钮之间或在一组关联复选框中移动。
 
 </td>
 </tr>

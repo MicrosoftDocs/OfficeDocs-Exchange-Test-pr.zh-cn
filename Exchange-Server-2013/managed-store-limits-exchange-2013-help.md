@@ -19,18 +19,8 @@ _**上一次修改主题：** 2016-09-15_
 
 在 MicrosoftExchange Server 2013 中，对 Exchange 托管存储施加了连接和使用限制，以防止单个应用程序或单个用户使用与托管存储之间的所有可用连接。如果允许单个用户或应用程序使用所有连接，则其他用户或应用程序将无法访问托管存储，这可能导致停机。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于具有管理特权的帐户进行的任何连接，会话限制最大值已增加到 64,000。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 对于具有管理特权的帐户进行的任何连接，会话限制最大值已增加到 64,000。
 
 
 ## 术语
@@ -178,32 +168,12 @@ Exchange 2013 中的连接限制类型如下：
 
 你可以修改默认会话限制。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要修改会话限制，则需要在任何数据库可用性组 (DAG) 中的所有邮箱服务器上修改这些限制。如果未在所有服务器上进行相同更改，则结果会不一致。若要提高对客户端访问服务器的会话限制，必须在限制策略中提高 <code>RCAMaxConcurrency</code> 值。有关详细信息，请参阅 <a href="https://technet.microsoft.com/zh-cn/library/dd298094(v=exchg.150)">Set-ThrottlingPolicy</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果要修改会话限制，则需要在任何数据库可用性组 (DAG) 中的所有邮箱服务器上修改这些限制。如果未在所有服务器上进行相同更改，则结果会不一致。若要提高对客户端访问服务器的会话限制，必须在限制策略中提高 <code>RCAMaxConcurrency</code> 值。有关详细信息，请参阅 <a href="https://technet.microsoft.com/zh-cn/library/dd298094(v=exchg.150)">Set-ThrottlingPolicy</a>。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>未正确编辑注册表可能造成严重问题，也许需要您重新安装操作系统。未正确编辑注册表造成的问题可能无法解决。在编辑注册表之前，请备份所有有价值的数据。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 未正确编辑注册表可能造成严重问题，也许需要您重新安装操作系统。未正确编辑注册表造成的问题可能无法解决。在编辑注册表之前，请备份所有有价值的数据。
 
 
 1.  启动注册表编辑器 (regedit)。
@@ -324,32 +294,12 @@ Exchange 2013 中的连接限制类型如下：
 
 你可以限制 MAPI 客户端可以同时使用的最大资源数。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要修改打开项目限制，则需要在任何 DAG 和客户端访问阵列中的所有邮箱服务器上修改这些限制。如果未在所有服务器上进行相同更改，则结果会不一致。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果要修改打开项目限制，则需要在任何 DAG 和客户端访问阵列中的所有邮箱服务器上修改这些限制。如果未在所有服务器上进行相同更改，则结果会不一致。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>未正确编辑注册表可能造成严重问题，也许需要您重新安装操作系统。未正确编辑注册表造成的问题可能无法解决。在编辑注册表之前，请备份所有有价值的数据。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 未正确编辑注册表可能造成严重问题，也许需要您重新安装操作系统。未正确编辑注册表造成的问题可能无法解决。在编辑注册表之前，请备份所有有价值的数据。
 
 
 1.  启动注册表编辑器 (regedit)。

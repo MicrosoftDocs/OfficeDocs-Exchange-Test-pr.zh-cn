@@ -23,27 +23,14 @@ _**上一次修改主题：** 2016-12-09_
 
 如果您不输入产品密钥，您的服务器就会自动许可为试用版。试用版功能与 Exchange 标准版相同，如果您想在购买之前试用 Exchange，或在实验室中运行检测，它会很有帮助。唯一的区别就是，您对许可为试用版的 Exchange 服务器的试用期只有 180 天。如果您想使服务器的使用天数超过 180 天，就需要输入产品密钥，否则 Exchange 管理中心 (EAC) 将提醒您需要输入产品密钥才能使服务器获得许可证。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我们已经注意到此页面的访问用户在查找关于如何安装或激活 Office 的信息。如果您是其中之一，请查看这些页面：
-<ul>
-<li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=403360">安装 Office</a></p></li>
-<li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=403361">需要关于您的 Office 产品密钥的帮助?</a></p></li>
-</ul>
-如果您想要在 Exchange 2010 服务器上输入产品密钥，请转到<a href="http://go.microsoft.com/fwlink/p/?linkid=403370">输入 Exchange 2010 产品密钥</a>。<br />
-如果您想要在 Exchange 2013 服务器上输入产品密钥，您就来对了地方！请继续阅读。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 我们已经注意到此页面的访问用户在查找关于如何安装或激活 Office 的信息。如果您是其中之一，请查看这些页面：
+> <ul>
+> <li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=403360">安装 Office</a></p></li>
+> <li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=403361">需要关于您的 Office 产品密钥的帮助?</a></p></li>
+> </ul>
+> 如果您想要在 Exchange 2010 服务器上输入产品密钥，请转到<a href="http://go.microsoft.com/fwlink/p/?linkid=403370">输入 Exchange 2010 产品密钥</a>。<br />
+> 如果您想要在 Exchange 2013 服务器上输入产品密钥，您就来对了地方！请继续阅读。
 
 
 ## 在开始之前，您需要知道什么？
@@ -60,18 +47,8 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -100,18 +77,8 @@ _**上一次修改主题：** 2016-12-09_
 
 本示例将使用 **set-ExchangeServer** cmdlet 输入产品密钥。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以在同一服务器上再次执行该命令，将其从标准版许可证升级到企业版许可证。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 可以在同一服务器上再次执行该命令，将其从标准版许可证升级到企业版许可证。
 
 
     Set-ExchangeServer ExServer01 -ProductKey aaaaa-aaaaa-aaaaa-aaaaa-aaaaa

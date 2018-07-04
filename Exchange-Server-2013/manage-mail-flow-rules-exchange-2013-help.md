@@ -19,18 +19,8 @@ _**上一次修改主题：** 2016-12-09_
 
 您可以使用邮件流规则（也称为传输规则），针对通过您的组织传递的邮件查找特定条件并对其进行操作。本主题介绍如何创建、复制、启用或禁用、删除或导入或导出规则、调整其顺序，以及如何监视规则使用情况。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>为确保您的规则按预期方式工作，一定要全面测试每个规则以及规则之间的交互。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 为确保您的规则按预期方式工作，一定要全面测试每个规则以及规则之间的交互。
 
 
 对本程序使用的方案感兴趣？请参阅以下主题：
@@ -67,18 +57,8 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -87,18 +67,8 @@ _**上一次修改主题：** 2016-12-09_
 
 您可以通过设置数据丢失防护 (DLP) 策略、创建一个新规则或者复制一个规则来创建邮件流规则。您可以使用 Exchange 管理中心 (EAC) 或 Exchange 命令行管理程序。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>创建或修改邮件流规则后，可能需要花费 30 分钟将新的或已更新的规则应用到电子邮件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 创建或修改邮件流规则后，可能需要花费 30 分钟将新的或已更新的规则应用到电子邮件。
 
 
 ## 使用 DLP 策略创建邮件流规则
@@ -147,18 +117,8 @@ EAC 使您能够通过使用模板或复制现有规则来创建邮件流规则�
         
           - 在“使用以下严重性级别审核此规则”下，选择一个级别，用来指定此规则的严重级别。邮件流规则组规则的 Office 365 活动报告按严重性级别进行匹配。严重性级别只是一个筛选器，可方便用户使用这些报告。严重性级别对规则的处理优先级没有任何影响。
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>如果您清除“使用以下严重性级别审核此规则”复选框，则规则匹配不会显示在规则报告中。</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!NOTE]
+            > 如果您清除“使用以下严重性级别审核此规则”复选框，则规则匹配不会显示在规则报告中。
     
     4.  设置规则的模式。您可以使用两种测试模式之中的一种来测试该规，而不会影响邮件流。当满足条件时，两种测试模式都可以将某个条目添加到邮件跟踪。
         
@@ -216,18 +176,8 @@ EAC 使您能够通过使用模板或复制现有规则来创建邮件流规则�
 
 ## 查看或修改邮件流规则
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>创建或修改邮件流规则后，可能需要花费 30 分钟将新的或已更新的规则应用到电子邮件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 创建或修改邮件流规则后，可能需要花费 30 分钟将新的或已更新的规则应用到电子邮件。
 
 
 ## 使用 EAC 查看或修改邮件流规则
@@ -396,18 +346,8 @@ EAC 使您能够通过使用模板或复制现有规则来创建邮件流规则�
 
 如果您正在使用 Exchange Online 或 Exchange Online Protection，您可以通过使用规则报告来检查每一条规则的匹配次数。为了包含在报告中，必须选中规则的“使用以下严重性级别审核此规则”复选框。可以联机查看报告，或下载所有邮件保护报告的 Excel 版本。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>虽然大部分数据会在 24 小时内出现在报告中，但有些数据可能需要长达 5 天才会出现。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 虽然大部分数据会在 24 小时内出现在报告中，但有些数据可能需要长达 5 天才会出现。
 
 
 ## 使用 Office 365 管理中心生成一个报告规则

@@ -31,19 +31,9 @@ Exchange 2007 安装程序要求目标安装路径中不能存在 Microsoft Exc
 
 1.  在\&quot;我的电脑\&quot;或 Windows 资源管理器中，找到目标安装路径。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>默认情况下，数据库文件位于：<br />
-    &lt;systemDrive&gt;:\Program Files\Microsoft\Exchange Server\Mailbox\First Storage Group。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 默认情况下，数据库文件位于：<br />
+    > &lt;systemDrive&gt;:\Program Files\Microsoft\Exchange Server\Mailbox\First Storage Group。
 
 
 2.  用鼠标右键单击要删除的文件，然后选择\&quot;删除\&quot;。

@@ -29,18 +29,8 @@ _**上一次修改主题：** 2012-10-16_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -55,36 +45,16 @@ _**上一次修改主题：** 2012-10-16_
 
 可以使用 EAC 创建新的移动设备邮箱策略。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只能在 EAC 中设置移动设备邮箱策略设置的子集。若要设置所有移动设备邮箱策略设置，则需要使用命令行管理程序。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 只能在 EAC 中设置移动设备邮箱策略设置的子集。若要设置所有移动设备邮箱策略设置，则需要使用命令行管理程序。
 
 
 1.  在 EAC 中，单击“移动”\>“移动设备邮箱策略”，然后单击“新建”。
 
 2.  使用各种复选框和下拉列表来配置移动设备邮箱策略的设置。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>选择“这是默认策略”，以使新的移动邮箱策略成为默认移动邮箱策略。将移动邮箱策略设置为默认策略后，在新建用户时会将所有新用户自动分配到此策略。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!warning]
+    > 选择“这是默认策略”，以使新的移动邮箱策略成为默认移动邮箱策略。将移动邮箱策略设置为默认策略后，在新建用户时会将所有新用户自动分配到此策略。
 
 
 3.  单击“保存”。
@@ -93,18 +63,8 @@ _**上一次修改主题：** 2012-10-16_
 
 可以使用 New-MobileDeviceMailboxPolicy cmdlet 创建新的移动设备邮箱策略。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有两个 cmdlet 可用来创建新的移动设备邮箱策略。<strong>New-ActiveSyncMailboxPolicy</strong> cmdlet 和 <strong>New-MobileDeviceMailboxPolicy</strong> cmdlet 可执行相同的任务。在未来版本的 Microsoft Exchange Server 中，<strong>New-ActiveSyncMailboxPolicy</strong> cmdlet 将被删除。我们建议更新脚本和使用 <strong>New-MobileDeviceMailboxPolicy</strong> cmdlet 的过程。</td>
-</tr>
-</tbody>
-</table>
+> [!warning]
+> 有两个 cmdlet 可用来创建新的移动设备邮箱策略。<strong>New-ActiveSyncMailboxPolicy</strong> cmdlet 和 <strong>New-MobileDeviceMailboxPolicy</strong> cmdlet 可执行相同的任务。在未来版本的 Microsoft Exchange Server 中，<strong>New-ActiveSyncMailboxPolicy</strong> cmdlet 将被删除。我们建议更新脚本和使用 <strong>New-MobileDeviceMailboxPolicy</strong> cmdlet 的过程。
 
 
 1.  在此命令行管理程序中，运行以下命令。
@@ -131,18 +91,8 @@ _**上一次修改主题：** 2012-10-16_
 
 可以使用 EAC 编辑移动设备邮箱策略。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只能在 EAC 中编辑移动设备邮箱策略设置的子集。若要编辑所有移动设备邮箱策略设置，则需要使用命令行管理程序。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 只能在 EAC 中编辑移动设备邮箱策略设置的子集。若要编辑所有移动设备邮箱策略设置，则需要使用命令行管理程序。
 
 
 1.  在 EAC 中，单击“移动”\>“移动设备邮箱策略”。
@@ -157,18 +107,8 @@ _**上一次修改主题：** 2012-10-16_
 
 可以使用命令行管理程序编辑移动设备邮箱策略。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有两个 cmdlet 可用来编辑移动设备邮箱策略。Set-ActiveSyncMailboxPolicy cmdlet 和 Set-MobileDeviceMailboxPolicy cmdlet 可执行相同的任务。在未来版本的 Microsoft Exchange Server 中，<strong>Set-ActiveSyncMailboxPolicy</strong> cmdlet 将被删除。我们建议更新脚本和使用 <strong>Set-MobileDeviceMailboxPolicy</strong> cmdlet 的过程。</td>
-</tr>
-</tbody>
-</table>
+> [!warning]
+> 有两个 cmdlet 可用来编辑移动设备邮箱策略。Set-ActiveSyncMailboxPolicy cmdlet 和 Set-MobileDeviceMailboxPolicy cmdlet 可执行相同的任务。在未来版本的 Microsoft Exchange Server 中，<strong>Set-ActiveSyncMailboxPolicy</strong> cmdlet 将被删除。我们建议更新脚本和使用 <strong>Set-MobileDeviceMailboxPolicy</strong> cmdlet 的过程。
 
 
 1.  在此命令行管理程序中，运行以下命令。
