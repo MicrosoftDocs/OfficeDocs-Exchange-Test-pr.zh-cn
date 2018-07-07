@@ -57,16 +57,5 @@ _**上一次修改主题：** 2012-11-14_
 
   - [Operations Manager 2007 管理包和报表创作资源](http://go.microsoft.com/fwlink/?linkid=246388)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn195905.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>非 Microsoft 站点上的所有信息和内容均由该网站的所有者或用户提供。对于这些网站上的信息，Microsoft 不作任何明示、暗示或法定的担保。</td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]
+> 非 Microsoft 站点上的所有信息和内容均由该网站的所有者或用户提供。对于这些网站上的信息，Microsoft 不作任何明示、暗示或法定的担保。
