@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 因为在域名系统 (DNS) 数据库中找不到此计算机的主机 (A) 记录，所以 Microsoft Exchange Server 2013 安装程序无法继续进行。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-01-14_
+_**上一次修改主题：** 2015-01-14_
 
 在 Microsoft Exchange Server 2013 中，可以使用数据丢失预防 (DLP) 策略模板帮助满足组织的邮件策略和遵从性需求。这些模板包含预先生成的规则集，有助于管理与几个常见法律和法规要求关联的邮件数据。要查看 Microsoft 提供的所有模板的列表，请参阅 [在 Exchange 中提供的 DLP 策略模板](dlp-policy-templates-supplied-in-exchange-exchange-2013-help.md)。所提供的示例 DLP 模板可以帮助您管理：
 
@@ -31,18 +31,8 @@ Exchange 2013: [查看 DLP 策略检测报告](view-dlp-policy-detection-reports
 
 Exchange Online: [查看 DLP 策略检测报告](https://technet.microsoft.com/zh-cn/library/dn904484\(v=exchg.150\))
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在生产环境中运行 DLP 策略时，应在测试模式下启用这些策略。在此类测试中，建议配置示例用户邮箱并发送调用测试策略的测试邮件以便确认结果。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 在生产环境中运行 DLP 策略时，应在测试模式下启用这些策略。在此类测试中，建议配置示例用户邮箱并发送调用测试策略的测试邮件以便确认结果。
 
 
 有关通过模板创建 DLP 策略的其他管理任务，请参阅 [DLP 过程](dlp-procedures-exchange-2013-help.md) (Exchange Server 2013) 或 [DLP 过程](https://technet.microsoft.com/zh-cn/library/jj938003\(v=exchg.150\)) (Exchange Online)。
@@ -59,36 +49,16 @@ Exchange Online: [查看 DLP 策略检测报告](https://technet.microsoft.com/z
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 使用 EAC 通过模板配置 DLP 策略
 
 1.  在 EAC 中，导航到“合规管理”\>“数据丢失防护”，然后单击“添加”![添加图标](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "添加图标")。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您也可以通过其他方法选择此操作：单击“添加”<img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="添加图标" alt="添加图标" /> 图标旁边的箭头，然后从下拉菜单中选择“根据模板新建 DLP 策略”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 您也可以通过其他方法选择此操作：单击“添加”<img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="添加图标" alt="添加图标" /> 图标旁边的箭头，然后从下拉菜单中选择“根据模板新建 DLP 策略”。
 
 
 2.  在“根据模板新建 DLP 策略”页面上，填写下列字段：
@@ -103,18 +73,8 @@ Exchange Online: [查看 DLP 策略检测报告](https://technet.microsoft.com/z
     
     5.  单击“保存”可完成策略创建。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>除了特定模板中的规则之外，组织可能还具有应用于邮件环境中监管数据的其他期望或公司策略。Exchange 2013 使您可以方便地更改基本模板，以便添加操作，从而使 Exchange 邮件环境符合自己的要求。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 除了特定模板中的规则之外，组织可能还具有应用于邮件环境中监管数据的其他期望或公司策略。Exchange 2013 使您可以方便地更改基本模板，以便添加操作，从而使 Exchange 邮件环境符合自己的要求。
 
 
 在 Exchange 2013 环境中保存了策略之后，可以通过编辑这些策略中的规则来修改策略。示例规则更改可能包括使特定人员从策略中排除，或是在发现邮件包含敏感内容时发送通知并阻止邮件传递。有关编辑策略和规则的详细信息，请参阅[管理 DLP 策略](manage-dlp-policies-exchange-2013-help.md)。

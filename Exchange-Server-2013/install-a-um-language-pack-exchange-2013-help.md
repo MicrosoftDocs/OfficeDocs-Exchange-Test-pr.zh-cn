@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 若要使某种语言显示在 UM 拨号计划或 UM 自动助理上的可用统一消息语言列表中，必须先安装相应的 UM 语言包。您可以通过语言特定的自解压可执行文件或 **setup.exe /AddUmLanguagePack** 命令，在运行 Microsoft Exchange 统一消息服务的邮箱服务器上安装该语言包。在安装 UM 语言包之前，必须先将它下载到邮箱服务器的本地文件夹中。可以从 [Exchange Server 2013 UM 语言包](http://go.microsoft.com/fwlink/p/?linkid=266542) 下载 UM 语言包。每种语言有一个单独的可执行文件。
 
 在安装相应的 UM 语言包后，可通过查看 UM 拨号计划的“设置”页面上的下拉列表或 UM 自动助理的“常规”页面上的“自动语音界面的语言”下拉列表来查看已安装 UM 语言包的列表。此外，还可以将 UM 拨号计划和自动助理的默认语言配置为英语 (en-US) 以外的语言。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft Exchange Server 2007 或 Exchange 2007 Service Pack 1 (SP1)、SP2 或 SP3 或者 Exchange 2010 Service Pack 1 SP1、SP2 或 SP3 的 UM 语言包不能用在 Exchange 2013 邮箱服务器上。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Microsoft Exchange Server 2007 或 Exchange 2007 Service Pack 1 (SP1)、SP2 或 SP3 或者 Exchange 2010 Service Pack 1 SP1、SP2 或 SP3 的 UM 语言包不能用在 Exchange 2013 邮箱服务器上。
 
 
 有关与 UM 语言相关的其他任务，请参阅 [UM 语言、 提示和问候过程](um-languages-prompts-and-greetings-procedures-exchange-2013-help.md)。
@@ -47,18 +37,8 @@ _**上一次修改主题：**2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -89,18 +69,8 @@ _**上一次修改主题：**2016-12-09_
 
     setup.exe /AddUmLanguagePack:es-MX,de-DE /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果不使用 /IAcceptExchangeServerLicenseTerms 参数，则将看到以下错误：欢迎使用 Microsoft Exchange Server 2013 无人参与安装程序。您需要接受许可条款才能安装 Microsoft Exchange Server 2013。若要阅读许可协议，请访问 http://go.microsoft.com/fwlink/p/?LinkId=150127。若要接受许可协议，请将 /IAcceptExchangeServerLicenseTerms 参数添加到运行的命令中。有关详细信息，请运行 setup /?。</td>
-</tr>
-</tbody>
-</table>
+> [!warning]
+> 如果不使用 /IAcceptExchangeServerLicenseTerms 参数，则将看到以下错误：欢迎使用 Microsoft Exchange Server 2013 无人参与安装程序。您需要接受许可条款才能安装 Microsoft Exchange Server 2013。若要阅读许可协议，请访问 http://go.microsoft.com/fwlink/p/?LinkId=150127。若要接受许可协议，请将 /IAcceptExchangeServerLicenseTerms 参数添加到运行的命令中。有关详细信息，请运行 setup /?。
 
 
 有关可用 UM 语言包和区域性代码的详细信息，请参阅[UM 语言、提示和问候语](um-languages-prompts-and-greetings-exchange-2013-help.md)。

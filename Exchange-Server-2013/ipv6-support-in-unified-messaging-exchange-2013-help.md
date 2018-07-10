@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 Internet 协议版本 6 (IPv6) 是 Internet 协议 (IP) 的最新版本。IPv6 旨在修正上一版本 IP 协议 IPv4 中的许多不足之处。在 Microsoft Exchange Server 2010 中，仅在也使用 IPv4 时才支持 IPv6。不支持纯 IPv6 Exchange 环境。仅在运行 Exchange 2010 的计算机上同时启用 IPv6 和 IPv4 且网络同时支持这两种 IP 地址版本时，才支持使用 IPv6 地址和 IP 地址范围。但是，由于 IPv4 和 IPv6 是完全不同的协议，所以 IPv4 网络无法直接与 IPv6 网络进行通信，反之亦然。为克服这一缺点，网络管理员需要部署路由器等设备，以便可以在 IPv4 网络与 IPv6 网络之间路由信息。如果同时使用 IPv4 和 IPv6 来部署 Exchange 2010，则除了统一消息 (UM) 以外的所有服务器角色均可从使用 IPv6 地址的设备、服务器和客户端收发数据。在 Exchange 2013 中，统一消息不再是 Exchange 2007 和 Exchange 2010 中的传输服务器角色、客户端访问服务器角色和邮箱服务器角色那样的独立服务器角色。与 UM 相关的组件和语音服务只在客户端访问服务器和邮箱服务器上运行。
 

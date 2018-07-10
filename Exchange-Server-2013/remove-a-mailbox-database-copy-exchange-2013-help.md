@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-11-06_
+_**上一次修改主题：** 2012-11-06_
 
 这些是有关如何删除邮箱数据库的副本的过程。不能按这些过程操作，删除邮箱数据库的最后一个副本。有关删除邮箱数据库最后一个副本的详细步骤，请参阅[删除邮箱数据库](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md)或 [Remove-MailboxDatabase](https://technet.microsoft.com/zh-cn/library/aa997931\(v=exchg.150\))。
 
@@ -35,18 +35,8 @@ _**上一次修改主题：**2012-11-06_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？

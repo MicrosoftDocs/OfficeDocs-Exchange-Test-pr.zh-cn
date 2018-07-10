@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 移动邮箱时，它将从*源邮箱数据库*移动到*目标邮箱数据库*。目标邮箱数据库可以位于不同的 Active Directory 站点中不同域的相同服务器或不同服务器上，还可以位于另一个林中。
 
@@ -57,32 +57,12 @@ Microsoft Exchange Server 2013 引入了*批处理移动*和*迁移端点*的概
 
 在 Exchange 2013 中，必须使用 Exchange 2013 管理中心 (EAC) 和 Exchange 命令行管理程序在 Exchange 2007、Exchange 2010 和 Exchange 2013 之间移动邮箱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>通过使用 EAC 或者移动请求或迁移批处理 cmdlet，您还可以在 Exchange 2013 中执行单个邮箱移动，类似于 Exchange Server 2010。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 通过使用 EAC 或者移动请求或迁移批处理 cmdlet，您还可以在 Exchange 2013 中执行单个邮箱移动，类似于 Exchange Server 2010。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不能将内部部署邮箱从 Exchange Server 2003 移动到 Exchange 2013。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 不能将内部部署邮箱从 Exchange Server 2003 移动到 Exchange 2013。
 
 
 有关管理新的和现有移动的详细信息，请参阅[管理内部部署移动](manage-on-premises-moves-exchange-2013-help.md)。

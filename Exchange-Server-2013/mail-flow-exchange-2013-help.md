@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 在 Microsoft Exchange Server 2013 中，邮件流通过传输管道进行。*传输管道*是协同工作的服务、连接、组件和队列的集合，用于将所有邮件路由到组织内邮箱服务器上的传输服务中的分类程序。
 
@@ -59,18 +59,8 @@ _**上一次修改主题：**2015-03-09_
 
   - **安装在不同计算机上的邮箱服务器和客户端访问服务器**   在此配置中，入站邮件流将绕过客户端访问服务器。邮件从边缘传输服务器上的传输服务流到邮箱服务器上的传输服务。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您在外围网络中安装了 Exchange 2010 或 Exchange 2007 边缘传输服务器，则邮件流会直接在边缘传输服务器与邮箱服务器上的传输服务之间进行。有关详细信息，请参阅<a href="use-an-exchange-2010-or-2007-edge-transport-server-in-exchange-2013-exchange-2013-help.md">在 Exchange 2013 中使用 Exchange 2010 或 2007 边缘传输服务器</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果您在外围网络中安装了 Exchange 2010 或 Exchange 2007 边缘传输服务器，则邮件流会直接在边缘传输服务器与邮箱服务器上的传输服务之间进行。有关详细信息，请参阅<a href="use-an-exchange-2010-or-2007-edge-transport-server-in-exchange-2013-exchange-2013-help.md">在 Exchange 2013 中使用 Exchange 2010 或 2007 边缘传输服务器</a>。
 
 
 ## 来自内部发件人的邮件

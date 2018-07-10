@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 在统一消息 (UM) 中，使用编解码器来存储语音邮件。另一个编解码器用于 VoIP 网关或 IP 专用交换机 (PBX) 以及运行 Microsoft Exchange 统一消息服务的邮箱服务器或运行 Microsoft Exchange 统一消息呼 叫路由器服务的客户端访问服务器之间。统一消息可以使用下列四种音频编解码器中的任意一种来创建和存储语音邮件：
 
@@ -27,18 +27,8 @@ _**上一次修改主题：**2016-12-09_
 
   - G.711 Pulse Code Modulation (PCM) Linear
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>G.711（PCMA 和 PCMU）和 G.723.1 编解码器是用于 IP 网关以及客户端访问和邮箱服务器之间的 VoIP 编解码器。</td>
-</tr>
-</tbody>
-</table>
+> [!warning]
+> G.711（PCMA 和 PCMU）和 G.723.1 编解码器是用于 IP 网关以及客户端访问和邮箱服务器之间的 VoIP 编解码器。
 
 
 规划 UM 系统时，作为规划的一部分，需要根据组织的需求选择正确的音频编解码器。本主题讨论 UM 可以使用的音频编解码器，并将帮助您规划 UM 部署。
@@ -155,34 +145,14 @@ G.711 是为用于音频编码解码器而开发的一项标准。G.711 标准�
 
 用于记录语音邮件的 RTAudio 宽带或高保真音频也可作为音频编码解码器。但是，只有成功地将统一消息与 [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=202010) 集成之后，使用 RTAudio 的高保真音频才可用。若要启用 RTAudio 作为窄带或宽带线路编解码器，必须将 UM 拨号计划配置为会话初始协议 (SIP) URI 类型的拨号计划，并且必须将拨号计划上的呼叫应答编解码器设置为 MP3 或 WMA 格式，方可启用宽带音频 (16Khz)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在未部署 Lync Server 的环境中无法使用 RTAudio。这是因为，在未集成 Lync Server 的环境中，拨号计划会被设置为电话分机或 E.164，而不是 SIP URI。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 在未部署 Lync Server 的环境中无法使用 RTAudio。这是因为，在未集成 Lync Server 的环境中，拨号计划会被设置为电话分机或 E.164，而不是 SIP URI。
 
 
 每次传入呼叫有两种媒体流：入站到客户端访问服务器的媒体流和从邮箱服务器出站的媒体流。将拨号计划类型设置为 SIP URI 并将拨号计划上的呼叫应答编解码器设置为 MP3 或 WMA 格式时，客户端访问服务器将尝试为入站媒体流选择 RTAudio VoIP 编解码器。如果协商成功，入站媒体流的 RTAudio 编解码器将用于应答呼叫或从 Lync 客户端或服务器发起的呼叫。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用电话播放功能发出的呼叫不使用 RTAudio 编解码器。使用电话播放功能发出的呼叫的入站媒体流将使用 G.711 或 G.723.1 编解码器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 使用电话播放功能发出的呼叫不使用 RTAudio 编解码器。使用电话播放功能发出的呼叫的入站媒体流将使用 G.711 或 G.723.1 编解码器。
 
 
 使用 RTAudio 编解码器时，将录制高保真的语音邮件，并根据拨号计划的配置方式将其存储为扩展名为 .mp3 或 .wma 的音频文件。在 Outlook 或 Outlook Web App 中为用户播放语音邮件时，用户将听到高保真的语音邮件。如果协商未成功，将使用 G.711 或 G.723.1 编解码器。G.711 和 G.723.1 编解码器均是窄带编解码器。使用这两种编解码器作为 VoIP 编解码器时，将录制语音邮件并将其存储为扩展名为 .mp3 或 .wma 的窄带音频文件。
@@ -249,18 +219,8 @@ UM 语音邮件的大小取决于包含语音数据的附件的大小。而附�
 
 下图显示了对于可以在 UM 中使用的三种音频编码解码器，音频文件的大小如何依赖于语音邮件录音的持续时间。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在此图中，用于应答呼叫的语音邮件的平均长度大约为 30 秒。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在此图中，用于应答呼叫的语音邮件的平均长度大约为 30 秒。
 
 
 **音频文件大小**
@@ -275,18 +235,8 @@ UM 语音邮件的大小取决于包含语音数据的附件的大小。而附�
 
 WMA 是三种编解码器中压缩率最高的音频编码解码器。压缩率为每 10 秒的音频大约 11,000 个字节。但是，与 .wav 文件格式相比，.wma 文件格式的文件头部分要大得多。.wma 文件的文件头部分大约为 7 KB，而 .wav 文件的文件头部分小于 100 个字节。尽管 WMA 音频录音超过 15 秒，却仍小于 GSM 音频录音。因此，若要获得文件最小但是质量最高的音频文件，请使用 WMA 音频编解码器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您对 OWA for Devices 使用从内部部署发送推送通知，则不能使用 WMA 格式。OWA for Devices 仅支持 MP3 文件格式。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果您对 OWA for Devices 使用从内部部署发送推送通知，则不能使用 WMA 格式。OWA for Devices 仅支持 MP3 文件格式。
 
 
 ## G.711 PCM Linear

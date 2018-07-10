@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-16_
+_**上一次修改主题：** 2013-04-16_
 
 创建统一消息 (UM) IP 网关时，启用 Exchange 服务器以连接到新 Voice Over IP (VoIP) 网关、针对会话初始协议 (SIP) 启用的专用交换机 (PBX)、IP PBX 或会话边界控制器 (SBC)。创建 UM IP 网关之后，应当立即创建新的 UM 智能寻线，然后将此 UM 智能寻线与 UM IP 网关进行关联。通过创建一个或多个 UM 智能寻线，可以将 UM IP 网关与一个或多个 UM 拨号计划进行关联。
 
@@ -33,18 +33,8 @@ _**上一次修改主题：**2013-04-16_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？

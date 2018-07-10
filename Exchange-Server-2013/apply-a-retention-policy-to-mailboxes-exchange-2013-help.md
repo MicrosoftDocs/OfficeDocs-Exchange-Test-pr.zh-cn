@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2014-10-01_
+_**上一次修改主题：** 2014-10-01_
 
 使用保留策略可以对一个或多个保留标记进行分组，并将它们应用于邮箱以执行邮件保留设置。一个邮箱不能有多个保留策略。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>邮件将在链接到策略的保留标记中所定义的设置时间过期。这些设置包括将邮件移动到存档或将其永久删除等操作。将保留策略应用到一个或多个邮箱之前，我们建议您先对策略进行测试并检查每个与之相关联的保留标记。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 邮件将在链接到策略的保留标记中所定义的设置时间过期。这些设置包括将邮件移动到存档或将其永久删除等操作。将保留策略应用到一个或多个邮箱之前，我们建议您先对策略进行测试并检查每个与之相关联的保留标记。
 
 
 有关与邮件记录管理 (IRM) 相关的其他管理任务，请参阅[邮件记录管理程序](messaging-records-management-procedures-exchange-2013-help.md)。
@@ -43,18 +33,8 @@ _**上一次修改主题：**2014-10-01_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？

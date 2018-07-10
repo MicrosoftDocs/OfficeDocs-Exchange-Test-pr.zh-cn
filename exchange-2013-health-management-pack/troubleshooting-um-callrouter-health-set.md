@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 Microsoft Exchange 统一消息 (UM) 呼叫路由器运行状况设置监视 UM 呼叫路由器服务的整体运行状况。
 
@@ -122,7 +122,7 @@ Microsoft Exchange 统一消息 (UM) 呼叫路由器运行状况设置监视 UM 
 
 续订 CAS 上的 UM 呼叫路由器服务证书。
 
-**其他故障排除步骤：**
+**其他故障排除步骤：** 
 
 1.  启动 IIS 管理器，然后连接到报告问题的服务器，以确定 **MSExchangeServicesAppPool** 应用程序池是否正在运行。
 

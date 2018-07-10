@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2012-06-05_
+_**上一次修改主题：** 2012-06-05_
 
 此主题中的内容尚未针对 Microsoft Exchange Server 2013 进行更新。虽然尚未更新，但仍可能适用于 Exchange 2013。如果您仍需要帮助，请查看下面的社区资源。
 
@@ -31,19 +31,9 @@ Exchange 2007 安装程序要求目标安装路径中不能存在 Microsoft Exc
 
 1.  在\&quot;我的电脑\&quot;或 Windows 资源管理器中，找到目标安装路径。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>默认情况下，数据库文件位于：<br />
-    &lt;systemDrive&gt;:\Program Files\Microsoft\Exchange Server\Mailbox\First Storage Group。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 默认情况下，数据库文件位于：<br />
+    > &lt;systemDrive&gt;:\Program Files\Microsoft\Exchange Server\Mailbox\First Storage Group。
 
 
 2.  用鼠标右键单击要删除的文件，然后选择\&quot;删除\&quot;。

@@ -13,22 +13,12 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您需要 Office 365 或 Exchange Online 中有关 NDR 的帮助，请参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=524931">在 Office 365 中以电子邮件的方式发送未送达报告</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果您需要 Office 365 或 Exchange Online 中有关 NDR 的帮助，请参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=524931">在 Office 365 中以电子邮件的方式发送未送达报告</a>。
 
 
 如果在传送邮件时出现问题，Exchange Server 2013 将向邮件发件人发送一封传送状态通知 (DSN)。这些系统生成的消息也被称为退回邮件，它们包含错误代码、有关该问题的技术细节，并且有时还包含邮件发件人采取的故障排除步骤。未送达报告 (NDR) 邮件是一种常见的状态通知。对于电子邮件管理员来说，本主题描述了可能的原因和针对许多 NDR 状态代码的解决方案。它还说明如何读取和解释 NDR 邮件。

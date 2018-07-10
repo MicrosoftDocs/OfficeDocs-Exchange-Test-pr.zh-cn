@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-11_
+_**上一次修改主题：** 2012-11-11_
 
 在创建统一消息 (UM) IP 网关之前，您必须先在所用的 VoIP 网关、IP PBX 或会话边界控制器 (SBC) 上设置 IP 地址或完全限定域名 (FQDN)。随后在创建 UM IP 网关时，设置 IP 地址或 FQDN。可以在以后更改 IP 地址或 FQDN。
 
@@ -35,18 +35,8 @@ _**上一次修改主题：**2012-11-11_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -59,18 +49,8 @@ _**上一次修改主题：**2012-11-11_
 
 3.  单击“保存”保存更改。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果在 UM IP 网关上使用 FQDN 而不是 IP 地址，请验证已创建正确的 DNS 记录。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果在 UM IP 网关上使用 FQDN 而不是 IP 地址，请验证已创建正确的 DNS 记录。
 
 
 ## 使用命令行管理程序在 UM IP 网关上配置 IP 地址

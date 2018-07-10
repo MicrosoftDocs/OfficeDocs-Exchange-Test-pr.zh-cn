@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2012-11-29_
+_**上一次修改主题：** 2012-11-29_
 
 可以使用 EAC 或命令行管理程序对是否将邮件传递给单个收件人进行限制。 邮件传递限制可用于控制谁可以向组织中的用户发送邮件。 例如，可以将邮箱配置为接受或拒绝特定用户发送的邮件，或者配置为仅接受来自 Exchange 组织中的用户的邮件。
 
@@ -41,18 +41,8 @@ _**上一次修改主题：**2012-11-29_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -91,18 +81,8 @@ _**上一次修改主题：**2012-11-29_
 
     Set-Mailbox -Identity "Robin Wood" -AcceptMessagesOnlyFrom "Lori Penor","Jeff Phillips" -AcceptMessagesOnlyFromDLMembers "Legal Team 1"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要将邮箱配置为仅接受来自个别发件人的邮件，则必须使用 <em>AcceptMessagesOnlyFrom</em> 参数。 如果要将邮箱配置为仅接受来自作为特定通讯组成员的发件人的邮件，则必须使用 <em>AcceptMessagesOnlyFromDLMembers</em> 参数。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果要将邮箱配置为仅接受来自个别发件人的邮件，则必须使用 <em>AcceptMessagesOnlyFrom</em> 参数。 如果要将邮箱配置为仅接受来自作为特定通讯组成员的发件人的邮件，则必须使用 <em>AcceptMessagesOnlyFromDLMembers</em> 参数。
 
 
 此示例将用户 David Pelton 添加到 Robin Wood 的邮箱接受其邮件的用户列表中。
@@ -121,18 +101,8 @@ _**上一次修改主题：**2012-11-29_
 
     Set-Mailbox -Identity "Robin Wood" -RejectMessagesFromDLMembers @{add="Legal Team 3"}
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要将邮箱配置为拒绝来自个别发件人的邮件，则必须使用 <em>RejectMessagesFrom</em> 参数。 如果要将邮箱配置为拒绝来自作为特定通讯组成员的发件人的邮件，则必须使用 <em>RejectMessagesFromDLMembers</em> 参数。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果要将邮箱配置为拒绝来自个别发件人的邮件，则必须使用 <em>RejectMessagesFrom</em> 参数。 如果要将邮箱配置为拒绝来自作为特定通讯组成员的发件人的邮件，则必须使用 <em>RejectMessagesFromDLMembers</em> 参数。
 
 
 有关与配置不同类型的收件人的传递限制相关的详细语法和参数信息，请参阅下列主题：

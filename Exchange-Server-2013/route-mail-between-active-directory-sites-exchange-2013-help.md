@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Active Directory 站点是基于网络物理方面的逻辑配置组件。创建 Active Directory 站点的主要目的是定义网络中的哪些子网通过优化 Active Directory 复制通信控制的方式建立连接。Microsoft Exchange Server 2013 将数据库可用性组 (DAG) 和 Active Directory 站点识别为路由边界，Exchange 2013 服务器根据 Active Directory 站点拓扑制定路由决策。
 

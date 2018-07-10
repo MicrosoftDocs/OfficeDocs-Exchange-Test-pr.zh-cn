@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-08-12_
+_**上一次修改主题：** 2013-08-12_
 
 您可以使用 EAC 或命令行管理程序查看或配置 Outlook Web App 虚拟目录的属性。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange Online 中，管理员无法查看或配置 Outlook Web App 虚拟目录。</td>
-</tr>
-</tbody>
-</table>
+> [!warning]
+> 在 Exchange Online 中，管理员无法查看或配置 Outlook Web App 虚拟目录。
 
 
 如果使用命令行管理程序查看 Outlook Web App 虚拟目录的属性，则返回的信息是可用信息的一个子集。例如，如果使用 **Get-OWAVirtualDirectory** cmdlet 查看属性，Exchange 会返回下列信息：
@@ -53,18 +43,8 @@ _**上一次修改主题：**2013-08-12_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -77,9 +57,7 @@ _**上一次修改主题：**2013-08-12_
 
 2.  在结果窗格中，单击选择要查看或编辑的虚拟目录，然后单击\&quot;编辑\&quot;。
 
-3.  
-    
-    在\&quot;常规\&quot;选项卡上，可以查看 Outlook Web App 默认网站的各项属性，还可以指定外部 URL 和内部 URL。查看或选择以下选项：
+3.  在\&quot;常规\&quot;选项卡上，可以查看 Outlook Web App 默认网站的各项属性，还可以指定外部 URL 和内部 URL。查看或选择以下选项：
     
       - **服务器**：（只读。）\&quot;服务器\&quot;中显示托管 Outlook Web App 虚拟目录的服务器的名称。
     
@@ -95,9 +73,7 @@ _**上一次修改主题：**2013-08-12_
     
       - **外部 URL**：在此文本框中，指定用于从 Internet 访问此网站的 URL。默认情况下，\&quot;外部 URL\&quot;为空。对于面向 Internet 的客户端访问服务器，应将\&quot;外部 URL\&quot;设置为在该 Active Directory 站点的 DNS 中发布的值。对于未连接到 Internet 的 Exchange 2013 服务器，\&quot;外部 URL\&quot;设置应保留为空。
 
-4.  
-    
-    在\&quot;身份验证\&quot;选项卡上，指定身份验证方法、登录格式和登录域。
+4.  在\&quot;身份验证\&quot;选项卡上，指定身份验证方法、登录格式和登录域。
     
       - **使用一个或多个标准身份验证方法**：选择此选项可以使用以下一种或多种标准身份验证方法：
         
@@ -109,18 +85,8 @@ _**上一次修改主题：**2013-08-12_
     
       - **使用基于表单的身份验证**：基于表单的身份验证可为 Outlook Web App 虚拟目录提供增强的安全性。基于表单的身份验证将为 Outlook Web App 创建登录页。可以配置基于表单的身份验证所使用的登录提示类型。例如，可以将基于表单的身份验证配置为要求用户以域名\\用户名的格式在 Outlook Web App 登录页上提供域和用户名的信息。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>除非启用 SSL，否则基于表单的身份验证不会提供安全通道。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!important]
+        > 除非启用 SSL，否则基于表单的身份验证不会提供安全通道。
         
         选择下列选项之一：
         
@@ -134,33 +100,13 @@ _**上一次修改主题：**2013-08-12_
     
     在\&quot;功能\&quot;选项卡上，指定要在虚拟目录上为 Outlook Web App 用户启用或禁用的功能。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>各个用户的功能设置将覆盖虚拟目录设置。通过使用 <strong>Set-CASMailbox</strong> cmdlet，或通过使用 Outlook Web App 邮箱策略，可以更改单个用户的分段设置。有关详细信息，请参阅 <a href="outlook-web-app-mailbox-policies-exchange-2013-help.md">Outlook Web App 邮箱策略</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 各个用户的功能设置将覆盖虚拟目录设置。通过使用 <strong>Set-CASMailbox</strong> cmdlet，或通过使用 Outlook Web App 邮箱策略，可以更改单个用户的分段设置。有关详细信息，请参阅 <a href="outlook-web-app-mailbox-policies-exchange-2013-help.md">Outlook Web App 邮箱策略</a>。
     
     使用复选框来启用或禁用功能。默认情况下，显示最常用的功能。要查看可以启用或禁用的所有功能，可单击\&quot;更多选项\&quot;。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>通过使用&amp;quot;高级客户端&amp;quot;复选框启用或禁用 Outlook Web App 标准版本的选项已被废除，将从设置中删除。始终启用 Outlook Web App 标准版本。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 通过使用&amp;quot;高级客户端&amp;quot;复选框启用或禁用 Outlook Web App 标准版本的选项已被废除，将从设置中删除。始终启用 Outlook Web App 标准版本。
 
 
 6.  

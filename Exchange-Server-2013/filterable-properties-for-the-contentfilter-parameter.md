@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-09-10_
+_**上一次修改主题：** 2015-09-10_
 
 本主题列出了 *ContentFilter* 参数的可筛选属性。*ContentFilter* 参数用于将邮件导出到与筛选器匹配的 .pst 文件。*ContentFilter* 参数用在 [New-MailboxExportRequest](https://technet.microsoft.com/zh-cn/library/ff607299\(v=exchg.150\)) cmdlet 中。
 

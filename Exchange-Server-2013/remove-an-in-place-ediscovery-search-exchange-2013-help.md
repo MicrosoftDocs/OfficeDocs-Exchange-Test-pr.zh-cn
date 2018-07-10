@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-07-14_
+_**上一次修改主题：** 2014-07-14_
 
 在 Microsoft Exchange Server 2013 中，可以使用就地电子数据展示来搜索邮箱内容。可以随时删除就地电子数据展示搜索。删除就地电子数据展示搜索时，搜索结果将从发现邮箱中删除。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>删除就地电子数据展示搜索将删除复制到发现邮箱的所有搜索结果。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 删除就地电子数据展示搜索将删除复制到发现邮箱的所有搜索结果。
 
 
 ## 在开始之前，您需要知道什么？
@@ -63,16 +53,6 @@ _**上一次修改主题：**2014-07-14_
 
   - 使用 **Get-MailboxSearch** cmdlet 检索就地电子数据展示搜索。有关如何检索就地电子数据展示搜索的示例，请参阅 [Get-MailboxSearch](https://technet.microsoft.com/zh-cn/library/dd351021\(v=exchg.150\)) 中的\&quot;示例\&quot;部分。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 

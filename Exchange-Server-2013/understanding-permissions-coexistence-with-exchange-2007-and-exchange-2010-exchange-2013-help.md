@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**适用于：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 将 Microsoft Exchange Server 2013 安装到现有的 Microsoft Exchange Server 2010 或 Microsoft Exchange Server 2007 组织中时，您需要了解新组织中的权限工作原理。阅读以下适用于您的组织的部分。
 
@@ -251,18 +251,8 @@ Exchange 2007 提供以下预定义的管理员角色：
 
 如果您希望 Exchange 2007 管理员管理 Exchange 2013 服务器，则必须将 Exchange 2007 管理员添加为一个或多个 Exchange 2013 角色组的成员。可以将用户或 USG 添加到角色组中。然后，为角色组授予的权限会应用于作为成员添加的用户或 USG。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果使用域本地或全局 Active Directory 安全组，则在需要将其添加为 Exchange 2013 角色组的成员时，必须将其更改为 USG。Exchange 2013 只支持 USG。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果使用域本地或全局 Active Directory 安全组，则在需要将其添加为 Exchange 2013 角色组的成员时，必须将其更改为 USG。Exchange 2013 只支持 USG。
 
 
 下表说明了 Exchange 2007 管理员角色和 Exchange 2013 角色组之间的映射。
@@ -326,18 +316,8 @@ Exchange 2007 提供以下预定义的管理员角色：
 
 完成这些步骤之后，Exchange 2007 管理员将成为映射到相应 Exchange 2013 对象的特定角色组的成员。Exchange 2007 管理员可以使用 Exchange 2013 管理工具来管理 Exchange 2013 服务器和收件人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>通常，Exchange 2007 服务器和收件人必须使用 Exchange 2007 管理工具进行管理，Exchange 2013 服务器和收件人必须使用 Exchange 2013 管理工具进行管理。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 通常，Exchange 2007 服务器和收件人必须使用 Exchange 2007 管理工具进行管理，Exchange 2013 服务器和收件人必须使用 Exchange 2013 管理工具进行管理。
 
 
 如果内置角色组没有提供要授予某些管理员的一组特定权限，则可以创建自定义角色组。创建自定义角色组时，可以选择要向其添加的角色。可以定义希望角色组的成员进行管理的特定功能。例如，如果希望管理员只管理通讯组，则可以创建一个自定义角色组，然后只选择通讯组角色。执行此操作之后，该自定义角色组的成员只能管理通讯组。有关如何创建自定义角色组的详细信息，请参阅[管理角色组](manage-role-groups-exchange-2013-help.md)。

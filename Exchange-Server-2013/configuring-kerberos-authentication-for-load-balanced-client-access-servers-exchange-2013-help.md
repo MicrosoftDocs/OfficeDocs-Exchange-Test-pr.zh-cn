@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
-**摘要：**介绍在 Exchange 2013 中如何对负载平衡的客户端访问服务器进行 Kerberos 身份验证。
+**摘要：** 介绍在 Exchange 2013 中如何对负载平衡的客户端访问服务器进行 Kerberos 身份验证。
 
 要对负载平衡的客户端访问服务器进行 Kerberos 身份验证，您需完成本文所述的配置步骤。
 
@@ -25,32 +25,12 @@ _**上一次修改主题：**2016-12-09_
 
 所有共享同一命名空间和 URL 的客户端访问服务器都需要使用相同的备用服务帐户凭据。一般情况下，Exchange 每个版本的林中有一个帐户就足够了。*备用服务帐户凭据*或 *ASA 凭据*。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2010 和 Exchange 2013 无法共享相同的 ASA 凭据。您需要为 Exchange 2013 创建新的 ASA 凭据。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> Exchange 2010 和 Exchange 2013 无法共享相同的 ASA 凭据。您需要为 Exchange 2013 创建新的 ASA 凭据。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由于共享命名空间支持 CNAME 记录，Microsoft 建议使用 A 记录。这样可确保客户端根据共享名称（而不是服务器 FQDN）正确发出 Kerberos 票证请求。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 由于共享命名空间支持 CNAME 记录，Microsoft 建议使用 A 记录。这样可确保客户端根据共享名称（而不是服务器 FQDN）正确发出 Kerberos 票证请求。
 
 
 设置 ASA 凭据时，请牢记这些准则：
@@ -75,7 +55,7 @@ _**上一次修改主题：**2016-12-09_
     
         New-ADComputer [-Name] <string> [-AccountPassword <SecureString>] [-AllowReversiblePasswordEncryption <System.Nullable[boolean]>] [-Description <string>] [-Enabled <System.Nullable[bool]>]
     
-    **示例：**
+    **示例：** 
     
         New-ADComputer -Name EXCH2013ASA -AccountPassword (Read-Host 'Enter password' -AsSecureString) -Description 'Alternate Service Account credentials for Exchange' -Enabled:$True -SamAccountName EXCH2013ASA
     
@@ -85,7 +65,7 @@ _**上一次修改主题：**2016-12-09_
     
         Set-ADComputer [-Name] <string> [-add @{<attributename>="<value>"]
     
-    **示例：**
+    **示例：** 
     
         Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
     
@@ -298,18 +278,8 @@ SPN 值必须与网络负载平衡器（而不是单个服务器）的服务名�
 
 ## 将服务主体名称 (SPN) 与 ASA 凭据相关联
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>请勿将 SPN 与 ASA 凭据关联，除非已将该凭据部署到至少一个 Exchange Server，如之前在将 ASA 凭据部署到第一个 Exchange 2013 客户端访问服务器中所述。否则，您将遇到 Kerberos 身份验证错误。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 请勿将 SPN 与 ASA 凭据关联，除非已将该凭据部署到至少一个 Exchange Server，如之前在将 ASA 凭据部署到第一个 Exchange 2013 客户端访问服务器中所述。否则，您将遇到 Kerberos 身份验证错误。
 
 
 将 SPN 与 ASA 凭据相关联之前，您需确认目标 SPN 尚未与林中的其他帐户相关联。ASA 凭据必须是林中与这些 SPN 相关联的唯一帐户。可以通过从命令行运行 **setspn** 命令来验证在林中没有与 SPN 关联的其他帐户。

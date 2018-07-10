@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-11-01_
+_**上一次修改主题：** 2013-11-01_
 
 [对内部邮件启用或禁用 IRM](enable-or-disable-irm-for-internal-messages-exchange-2013-help.md)
 

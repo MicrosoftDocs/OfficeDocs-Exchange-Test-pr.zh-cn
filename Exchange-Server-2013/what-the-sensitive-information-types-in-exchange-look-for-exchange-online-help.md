@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2018-05-03_
+_**上一次修改主题：** 2018-05-03_
 
 Exchange 中的数据丢失防护 (DLP) 包括 80 种可供你在 DLP 策略中使用的敏感信息类型。本主题列出了所有这些敏感信息的类型，并显示了 DLP 策略在检测每种类型时查找的内容。敏感信息类型通过正则表达式或函数可以识别的模式进行定义。此外，可以使用如关键字与校验和之类的确定证据来识别敏感信息类型。评估过程还使用了可信度和邻近度。
 
@@ -7483,18 +7483,9 @@ Exchange 中的数据丢失防护 (DLP) 包括 80 种可供你在 DLP 策略中�
 <tr class="odd">
 <td><p>格式</p></td>
 <td><p>9 个数字，可以是格式化模式，也可以是非格式化模式</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果在 2011 年中旬前发布，则 SSN 具有强格式，即数字的某部分必须介于某个有效的范围中（但是没有校验和）。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 如果在 2011 年中旬前发布，则 SSN 具有强格式，即数字的某部分必须介于某个有效的范围中（但是没有校验和）。
 
 </td>
 </tr>

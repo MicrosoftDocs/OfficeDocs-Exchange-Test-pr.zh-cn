@@ -17,7 +17,7 @@ _<strong>适用于：</strong>Exchange Online, Exchange Server 2013, Exchange Se
 
 _<strong>上一次修改主题：</strong>2016-12-09_
 
-**摘要：** IRM 在 Exchange 混合环境中的工作方式，以及如何配置 IRM 以在 Exchange Online 和内部部署 Exchange 服务器之间工作。
+**摘要：**  IRM 在 Exchange 混合环境中的工作方式，以及如何配置 IRM 以在 Exchange Online 和内部部署 Exchange 服务器之间工作。
 
 信息权限管理 (IRM) 通过对电子邮件和附件提供持久联机和脱机保护来帮助防止敏感信息泄露。内部部署组织中的 Exchange 以及 Office 365 企业版中的 Exchange Online 都支持 IRM。但是，这两种实现之间有一些不同；您必须在 Exchange Online 组织中配置 IRM，然后该组织中的用户才能使用该功能。
 

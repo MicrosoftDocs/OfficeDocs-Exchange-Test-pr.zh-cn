@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 Microsoft Exchange Server 2013 体系结构与 Exchange Server 2007 和 Exchange Server 2010 中的体系结构不同。在 Exchange 2007 和 Exchange 2010 中，服务器类型分为多个服务器角色：客户端访问、邮箱、集线器传输和统一消息。在 Exchange 2013 中，服务器角色合并为两种服务器类型，来自这些服务器角色的所有组件或服务都在相同物理服务器上或在两个称为“客户端访问”和“邮箱”的单独服务器上运行。在新模型中，运行 Microsoft Exchange 统一消息呼叫路由器服务的客户端访问服务器会将从传入呼叫生成的会话初始化协议 (SIP) 流量重定向到邮箱服务器。随后会建立从 VoIP 网关或 IP 专用交换机 (PBX) 到托管用户邮箱的邮箱服务器的媒体（实时传输协议 (RTP) 或安全 RTP (SRTP)）通道。在 Exchange 2013 中，邮箱服务器的进程与 Exchange 2007 和 Exchange 2010 中的统一消息服务器角色相同。邮箱服务器同时运行 Microsoft Exchange 统一消息服务和 UM 工作进程。客户端访问服务器运行 Microsoft Exchange 统一消息呼叫路由器服务，该服务接收传入呼叫并将其转发到邮箱服务器。
 

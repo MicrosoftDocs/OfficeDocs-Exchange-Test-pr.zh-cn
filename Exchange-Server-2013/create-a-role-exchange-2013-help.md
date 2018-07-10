@@ -13,26 +13,16 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-17_
+_**上一次修改主题：** 2012-10-17_
 
 您可以创建一个管理角色，更改管理角色项、 添加一个作用域，如果需要然后将该角色分配给角色受托人。很少需要执行此过程。我们建议您检查而不是创建一个管理角色中是否可以使用内置的管理角色。内置管理角色的列表，请参阅[内置管理角色](built-in-management-roles-exchange-2013-help.md)。
 
 有关 Microsoft Exchange Server 2013 中管理角色的详细信息，请参阅[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主题不讨论如何创建未区分范围的管理角色。有关如何创建未区分范围的管理角色的信息，请参阅<a href="create-an-unscoped-role-exchange-2013-help.md">创建一个未区分范围的角色</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 本主题不讨论如何创建未区分范围的管理角色。有关如何创建未区分范围的管理角色的信息，请参阅<a href="create-an-unscoped-role-exchange-2013-help.md">创建一个未区分范围的角色</a>。
 
 
 若要了解与角色相关的其他管理任务，请查看[高级权限](advanced-permissions-exchange-2013-help.md)。
@@ -47,18 +37,8 @@ _**上一次修改主题：**2012-10-17_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您该如何做？
@@ -115,18 +95,8 @@ _**上一次修改主题：**2012-10-17_
 
   - 创建具有在步骤 3 中创建的自定义或独占作用域的角色分配。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在角色和管理角色分配策略之间创建分配时，不能指定作用域。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 在角色和管理角色分配策略之间创建分配时，不能指定作用域。
 
 
 您可以分配新角色到角色组、 角色分配策略、 用户或通用安全组 (USG)。有关详细信息，请参阅下列主题 ︰

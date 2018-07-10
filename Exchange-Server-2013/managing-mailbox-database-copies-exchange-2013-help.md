@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-08-26_
+_**上一次修改主题：** 2016-08-26_
 
 在创建、配置并使用邮箱服务器成员填充数据库可用性组 (DAG) 之后，可以使用 Exchange 管理中心 (EAC) 或 Exchange 命令行管理程序通过灵活和精细的方式添加邮箱数据库副本。
 
@@ -57,18 +57,8 @@ _**上一次修改主题：**2016-08-26_
 
 除选择特定的源服务器为邮箱数据库副本设定种子外，还可以使用命令行管理程序指定要使用的 DAG 网络，并且可以选择在种子设定操作期间替代 DAG 网络的压缩和加密设置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对上下文索引目录设定种子仅可通过 MAPI 网络实现。如果在 Update-MailboxDatabaseCopy cmdlet 中使用 <code>-Network</code> 参数，这也同样适用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 对上下文索引目录设定种子仅可通过 MAPI 网络实现。如果在 Update-MailboxDatabaseCopy cmdlet 中使用 <code>-Network</code> 参数，这也同样适用。
 
 
 若要指定要用于种子设定的网络，请在运行 [Update-MailboxDatabaseCopy](https://technet.microsoft.com/zh-cn/library/dd335201\(v=exchg.150\)) cmdlet 的同时使用 *Network* 参数，并指定要使用的 DAG 网络。如果不使用 *Network* 参数，则系统会使用以下默认行为来选择要用于种子设定操作的网络：

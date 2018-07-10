@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 客户端访问服务器上启用信息权限管理 (IRM) 启用下列功能︰
 
@@ -25,18 +25,8 @@ _**上一次修改主题：**2016-12-09_
 
 当客户端访问服务器上启用了 IRM 时， Outlook Web App用户将可以通过应用在 AD RMS 群集上创建一个[Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx)模板的 IRM 保护的邮件。Outlook Web App用户可以查看受 IRM 保护的邮件并支持附件。在启用 IRM 客户端访问服务器上之前，必须将联盟邮箱添加 AD RMS 群集上的超级用户组。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当他们从 AD RMS 群集申请许可证，超级用户组被授予了所有者的成员使用许可证。这允许他们解密该群集的 RMS 保护的所有内容。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 当他们从 AD RMS 群集申请许可证，超级用户组被授予了所有者的成员使用许可证。这允许他们解密该群集的 RMS 保护的所有内容。
 
 
 关于 IRM 的更多管理任务，请参阅[信息权限管理过程](information-rights-management-procedures-exchange-2013-help.md)。
@@ -57,9 +47,9 @@ _**上一次修改主题：**2016-12-09_
     
     您可以控制 IRM 中Outlook Web App以下级别︰
     
-      - **每个 Outlook Web App 虚拟目录：**若要为 Outlook Web App 虚拟目录启用或禁用 Outlook Web App 中的 IRM，请使用 **Set-OWAVirtualDirectory** cmdlet 并将 *IRMEnabled* 参数设置为 `$false` 或 `$true`（默认）。此操作可以为 Exchange 2013 客户端访问服务器上的一个虚拟目录禁用 Outlook Web App 中的 IRM，同时保持其他客户端访问服务器上的另一个虚拟目录上的 IRM 为启用状态。
+      - **每个 Outlook Web App 虚拟目录：** 若要为 Outlook Web App 虚拟目录启用或禁用 Outlook Web App 中的 IRM，请使用 **Set-OWAVirtualDirectory** cmdlet 并将 *IRMEnabled* 参数设置为 `$false` 或 `$true`（默认）。此操作可以为 Exchange 2013 客户端访问服务器上的一个虚拟目录禁用 Outlook Web App 中的 IRM，同时保持其他客户端访问服务器上的另一个虚拟目录上的 IRM 为启用状态。
     
-      - **每个 Outlook Web App 邮箱策略：**若要为 Outlook Web App 邮箱策略启用或禁用 Outlook Web App 中的 IRM，请使用 **Set-OWAMailboxPolicy** cmdlet 并将 *IRMEnabled* 参数设置为 `$false` 或 `$true`（默认）。此操作通过为用户组分配不同的 Outlook Web App 邮箱策略，可以对一组用户启用 Outlook Web App 中的 IRM，而同时对另一组用户禁用 IRM。
+      - **每个 Outlook Web App 邮箱策略：** 若要为 Outlook Web App 邮箱策略启用或禁用 Outlook Web App 中的 IRM，请使用 **Set-OWAMailboxPolicy** cmdlet 并将 *IRMEnabled* 参数设置为 `$false` 或 `$true`（默认）。此操作通过为用户组分配不同的 Outlook Web App 邮箱策略，可以对一组用户启用 Outlook Web App 中的 IRM，而同时对另一组用户禁用 IRM。
     
     您可以控制每个Exchange ActiveSync邮箱策略Exchange ActiveSync IRM。若要禁用或启用 IRM 中Exchange ActiveSyncExchange ActiveSync邮箱策略，使用**Set-ActiveSyncMailboxPolicy** cmdlet 并将*IRMEnabled*参数设置为`$false`或`$true` （默认值）。这允许您在Exchange ActiveSync为一组用户启用 IRM 和禁用它的另一组用户通过将他们分配到不同的Exchange ActiveSync邮箱策略。
 

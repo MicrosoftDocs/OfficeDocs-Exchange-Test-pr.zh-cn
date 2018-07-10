@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 邮件用户与邮件联系人类似。二者都有外部电子邮件地址，都包含有关 Exchange 或 Exchange Online 组织外部人员的信息，并且都可以显示在共享通讯簿和其他地址列表中。但是，与邮件联系人不同，邮件用户在 Exchange 或 Office 365 组织中拥有登录凭据并可以访问资源。有关详细信息，请参阅[收件人](recipients-exchange-2013-help.md)。
 
@@ -29,18 +29,8 @@ _**上一次修改主题：**2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -57,26 +47,14 @@ _**上一次修改主题：**2016-12-09_
     
       - 要为此邮件用户的外部电子邮件地址指定一个 SMTP 电子邮件地址，请单击“SMTP”。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Exchange 可以验证 SMTP 地址的格式是否正确。如果条目与 SMTP 格式不一致，则在单击“保存”以创建邮件用户时会显示一条错误消息。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Exchange 可以验证 SMTP 地址的格式是否正确。如果条目与 SMTP 格式不一致，则在单击“保存”以创建邮件用户时会显示一条错误消息。
     
       - 要指定自定义地址类型，单击选项按钮，然后键入自定义地址类型。例如，可以指定 X.500 地址、GroupWise 地址或 Lotus Notes 地址。
 
 4.  在“\* 外部电子邮件地址”框中键入此邮件用户的外部电子邮件地址。发送给此邮件用户的电子邮件将会转发到此电子邮件地址。此框是必填的。
 
-5.  
-    
-    选择下列选项之一：
+5.  选择下列选项之一：
     
       - **现有用户**   选择该选项可为现有用户启用邮件功能。
         
@@ -84,9 +62,7 @@ _**上一次修改主题：**2016-12-09_
     
       - **新建用户**   选择该选项可以在 Active Directory 中创建新用户帐户，并为该用户启用邮件功能。如果您选择此选项，则必须提供必需的用户帐户信息。
 
-6.  
-    
-    如果在步骤 5 中选择了“新建用户”，请在“新建邮件用户”页面上填写下列各框。否则，跳转到步骤 7。
+6.  如果在步骤 5 中选择了“新建用户”，请在“新建邮件用户”页面上填写下列各框。否则，跳转到步骤 7。
     
       - **名**   使用此框键入邮件用户的名。
     
@@ -96,67 +72,27 @@ _**上一次修改主题：**2016-12-09_
     
       - “\* 显示姓名”   使用此框可以键入用户的显示姓名。这是在 EAC 的联系人列表和组织的通讯簿中列出的名称。默认情况下将使用“名字”、“缩写”和“姓氏”框中所输入的姓名填充此框。如果未使用这些框，则仍然必须在此框中键入姓名，因为这是必填的。姓名不能超过 64 个字符。
     
-      - **\* 姓名** 使用此框键入邮件用户的姓名。此名称会在目录服务中列出。还可使用“名字”、“缩写”和“姓氏”框中所输入的姓名填充此框。如果未使用这些框，则还必须在此框中键入姓名，因为此框是必需的。此姓名不能超过 64 个字符。
+      - \* **姓名** 使用此框键入邮件用户的姓名。此名称会在目录服务中列出。还可使用“名字”、“缩写”和“姓氏”框中所输入的姓名填充此框。如果未使用这些框，则还必须在此框中键入姓名，因为此框是必需的。此姓名不能超过 64 个字符。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>“姓名”框仅在 Exchange Server 2013 中可用。在 Exchange Online 中不可用。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > “姓名”框仅在 Exchange Server 2013 中可用。在 Exchange Online 中不可用。
     
       - “组织单位”   可选择非默认的组织单位 (OU)（属于收件人作用域）。如果将收件人作用域设置为林，则默认值设置为域中的“用户”容器，该域包含运行 EAC 的计算机。如果将收件人作用域设置为特定域，则将默认选择该域中的“用户”容器。如果将收件人范围设置为某个特定 OU，则默认情况下，将选择该 OU。
         
         若要选择一个不同的 OU，请单击“浏览”。该对话框显示林中的指定作用域内的所有 OU。选择所需的 OU，然后单击“确定”。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>“组织单元”框仅在 Exchange Server 2013 中可用。在 Exchange Online 中不可用。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > “组织单元”框仅在 Exchange Server 2013 中可用。在 Exchange Online 中不可用。
     
-      - **\* 用户登录名**   使用此框键入邮件用户用于登录域的名称。用户登录名由 (@) 符号左侧的用户名和右侧的后缀组成。通常，后缀是用户帐户所在域的域名。
+      - \* **用户登录名**   使用此框键入邮件用户用于登录域的名称。用户登录名由 (@) 符号左侧的用户名和右侧的后缀组成。通常，后缀是用户帐户所在域的域名。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>在 Exchange Online 中，此框被标记为“用户 ID”。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 在 Exchange Online 中，此框被标记为“用户 ID”。
     
-      - **\* 新密码**   使用此框键入邮件用户登录域时必须使用的密码。
+      - \* **新密码**   使用此框键入邮件用户登录域时必须使用的密码。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>请确保所提供的密码符合在其中创建用户帐户的域的密码长度、复杂程度和历史要求。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 请确保所提供的密码符合在其中创建用户帐户的域的密码长度、复杂程度和历史要求。
     
       - “\* 确认密码”   使用此框可以确认在“密码”框中键入的密码。
     
@@ -164,9 +100,7 @@ _**上一次修改主题：**2016-12-09_
         
         如果选中此复选框，在初次登录时，将通过对话框提示新邮件用户更改密码。在成功更改密码之前，将不允许邮件用户执行任何任务。
 
-7.  
-    
-    完成后，请单击“保存”来创建邮件用户。
+7.  完成后，请单击“保存”来创建邮件用户。
 
 ## 使用命令行管理程序创建邮件用户
 
@@ -244,42 +178,22 @@ _**上一次修改主题：**2016-12-09_
 
   - “\* 显示名称”   此名称将会出现在组织通讯簿中的“收件人:”和“发件人：”电子邮件和 EAC 的联系人列表中的行。此姓名不能在显示名之前或之后包含空格。
 
-  - **\* 用户登录名**   用户使用此名可登录域。在 Exchange Online 中，这是用户用来登录 Office 365 的用户 ID。
+  - \* **用户登录名**   用户使用此名可登录域。在 Exchange Online 中，这是用户用来登录 Office 365 的用户 ID。
 
   - **在地址列表中隐藏**   选中此复选框可以防止邮件用户显示在通讯簿以及在 Exchange 组织中定义的其他地址列表中。选中此复选框后，用户仍可使用电子邮件地址向收件人发送邮件。
 
   - **下次登录时需要更改密码**   如果希望用户在下次登录域时重置密码，请选中此复选框。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此框在 Exchange Online 中不可用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 此框在 Exchange Online 中不可用。
 
 
 单击“更多选项”查看或更改以下这些额外的属性：
 
   - **组织单位**   此只读框显示包含邮件用户帐户的组织单位 (OU)。您必须使用 Active Directory 用户和计算机移动帐户到其他 OU。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此框在 Exchange Online 中不可用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 此框在 Exchange Online 中不可用。
 
 
   - **自定义属性**   此部分显示为邮件用户定义的自定义属性。要指定自定义属性值，请单击“编辑”![编辑图标](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "编辑图标")。最多可为收件人指定 15 个自定义属性。
@@ -288,18 +202,8 @@ _**上一次修改主题：**2016-12-09_
 
 使用“联系信息”部分来查看或更改用户联系信息。该页上的信息显示在通讯簿中。单击“更多选项”以显示额外框。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以使用“州/省”框为动态通讯组、电子邮件地址策略或地址列表创建收件人条件。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 可以使用“州/省”框为动态通讯组、电子邮件地址策略或地址列表创建收件人条件。
 
 
 ## 组织
@@ -326,36 +230,16 @@ _**上一次修改主题：**2016-12-09_
     
       - “自定义地址类型”   单击此按钮，然后在“\* 电子邮件地址”框中键入一个支持的非 SMTP 电子邮件地址。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>除 X.400 地址以外，Exchange 不验证自定义地址的格式是否正确。您必须确保所指定的自定义地址符合该地址类型的格式要求。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 除 X.400 地址以外，Exchange 不验证自定义地址的格式是否正确。您必须确保所指定的自定义地址符合该地址类型的格式要求。
 
 
   - **设置外部电子邮件地址**   使用此框可以更改邮件用户的外部地址。发送给此邮件用户的电子邮件将会转发到此电子邮件地址。
 
   - “基于应用到此收件人的电子邮件地址策略自动更新电子邮件地址”   选中此复选框可基于对组织中电子邮件地址策略所做的更改自动更新收件人的电子邮件地址。此框在默认情况下处于选中状态。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此框在 Exchange Online 中不可用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 此框在 Exchange Online 中不可用。
 
 
 ## 邮件流设置
@@ -392,18 +276,8 @@ _**上一次修改主题：**2016-12-09_
 
 使用“邮件提示”部分可添加邮件提示，以便在用户向此收件人发送邮件之前提醒用户存在潜在的问题。邮件提示是在将此收件人添加到新电子邮件的“收件人”、“抄送”或“密件抄送”行中时，信息栏中显示的文本。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>邮件提示可包含 HTML 标记，但不允许包含脚本。自定义邮件提示的长度不能超过 175 个显示的字符。此字符限制不计入 HTML 标记。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 邮件提示可包含 HTML 标记，但不允许包含脚本。自定义邮件提示的长度不能超过 175 个显示的字符。此字符限制不计入 HTML 标记。
 
 
 ## 使用命令行管理程序更改邮件用户属性
@@ -472,18 +346,8 @@ _**上一次修改主题：**2016-12-09_
 
 2.  在联系人列表中，选择两个或两个以上邮件用户。无法批量编辑邮件联系人和邮件用户的组合。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以选择多个相邻的邮件用户，方法是按住 Shift 键，单击要编辑的第一个邮件用户，然后单击最后一个邮件用户。您也可以按住 Ctrl 键并单击要编辑的每个联系人来选择多个邮件用户。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!tip]
+    > 您可以选择多个相邻的邮件用户，方法是按住 Shift 键，单击要编辑的第一个邮件用户，然后单击最后一个邮件用户。您也可以按住 Ctrl 键并单击要编辑的每个联系人来选择多个邮件用户。
 
 
 3.  在“详细信息”窗格的“批量编辑”下面，单击“联系人信息”或“组织”下的“更新”。
@@ -504,41 +368,18 @@ _**上一次修改主题：**2016-12-09_
 
 本节提供了有关使用 Exchange Online 中的目录同步管理电子邮件用户的信息。目录同步可为混合客户以及 Active Directory 是本地的完全托管的 Exchange Online 客户提供本地和云托管的邮箱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您使用目录同步来管理收件人，那么您仍然可以在 Office 365 管理中心中添加和管理用户，但是他们无法与您的本地 Active Directory 同步。这是因为目录同步只能将来自本地 Active Directory 的收件人同步到云。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果您使用目录同步来管理收件人，那么您仍然可以在 Office 365 管理中心中添加和管理用户，但是他们无法与您的本地 Active Directory 同步。这是因为目录同步只能将来自本地 Active Directory 的收件人同步到云。
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建议将目录同步用于以下功能：
-<ul>
-<li><p><strong>Outlook 白名单和黑名单</strong> 当同步到服务时，这些列表将优先于服务中的垃圾邮件筛选。这允许用户在每个用户或每个域的基础上管理他们自己的白名单和黑名单。</p></li>
-<li><p><strong>基于目录的边缘阻止 (DBEB)</strong> 有关 DBEB 的详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/dn600322(v=exchg.150)">使用基于目录的边缘阻止拒绝发送给无效收件人的邮件</a>。</p></li>
-<li><p><strong>最终用户垃圾邮件隔离</strong> 若要访问最终用户垃圾邮件隔离邮箱，最终用户必须具有有效 Office 365 用户 ID 和密码。有本地邮箱的客户必须是有效的电子邮件用户。</p></li>
-<li><p><strong>传输规则</strong> - 在使用目录同步时，您现有的 Active Directory 用户和组将自动上传到云，而且您可以随后创建针对特定用户和/或组的传输规则，无需通过 EAC 或远程 Windows PowerShell 手动添加它们。请注意，<a href="https://go.microsoft.com/fwlink/?linkid=507569">动态通讯组</a>无法通过目录同步进行同步。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 建议将目录同步用于以下功能：
+> <ul>
+> <li><p><strong>Outlook 白名单和黑名单</strong> 当同步到服务时，这些列表将优先于服务中的垃圾邮件筛选。这允许用户在每个用户或每个域的基础上管理他们自己的白名单和黑名单。</p></li>
+> <li><p><strong>基于目录的边缘阻止 (DBEB)</strong> 有关 DBEB 的详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/dn600322(v=exchg.150)">使用基于目录的边缘阻止拒绝发送给无效收件人的邮件</a>。</p></li>
+> <li><p><strong>最终用户垃圾邮件隔离</strong> 若要访问最终用户垃圾邮件隔离邮箱，最终用户必须具有有效 Office 365 用户 ID 和密码。有本地邮箱的客户必须是有效的电子邮件用户。</p></li>
+> <li><p><strong>传输规则</strong> - 在使用目录同步时，您现有的 Active Directory 用户和组将自动上传到云，而且您可以随后创建针对特定用户和/或组的传输规则，无需通过 EAC 或远程 Windows PowerShell 手动添加它们。请注意，<a href="https://go.microsoft.com/fwlink/?linkid=507569">动态通讯组</a>无法通过目录同步进行同步。</p></li>
+> </ul>
 
 
 **开始之前**
@@ -553,18 +394,8 @@ _**上一次修改主题：**2016-12-09_
 
 3.  按[使用配置向导同步目录](http://go.microsoft.com/fwlink/?linkid=308912)中所述，同步目录。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>完成 Azure Active Directory 同步工具配置向导后，“MSOL_AD_SYNC”帐户即在 Active Directory 林中创建。此帐户用于读取和同步您的本地 Active Directory 信息。为了使目录同步正常工作，请确保本地目录同步服务器上的 TCP 443 处于打开状态。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 完成 Azure Active Directory 同步工具配置向导后，“MSOL_AD_SYNC”帐户即在 Active Directory 林中创建。此帐户用于读取和同步您的本地 Active Directory 信息。为了使目录同步正常工作，请确保本地目录同步服务器上的 TCP 443 处于打开状态。
 
 
 4.  按[激活同步用户](http://go.microsoft.com/fwlink/p/?linkid=308913)中所述，激活同步用户。

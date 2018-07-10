@@ -13,26 +13,16 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 您可以配置用户的统一邮件 (UM) 启用 PIN 生存期。PIN 生存期是Outlook语音访问 PIN 将是有效的已启用 UM 的收件人的最大时间。PIN 生存期设置在 UM 邮箱策略上配置并应用于所有已启用 UM 的用户与该 UM 邮箱策略相关联。
 
 可以在 UM 邮箱策略上配置几个针相关设置。PIN 生存期设置控制的时间间隔，以天为单位，从日期Outlook语音访问用户上次更改其 PIN 到它们将不得不再次改变他们的 PIN 的日期。范围是 0 到 999 之间，默认值为 60 天。如果输入 0，则用户的 PIN 不会过期。建议您不配置此设置为 0，因为通过这样可以显著降低网络的安全性。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当用户的 PIN 将要过期时，统一消息不会向用户发出通知。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 当用户的 PIN 将要过期时，统一消息不会向用户发出通知。
 
 
 有关 Outlook Voice Access PIN 安全相关的其他任务，请参阅 [针的安全程序](pin-security-procedures-exchange-2013-help.md)。
@@ -49,18 +39,8 @@ _**上一次修改主题：**2013-02-22_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？

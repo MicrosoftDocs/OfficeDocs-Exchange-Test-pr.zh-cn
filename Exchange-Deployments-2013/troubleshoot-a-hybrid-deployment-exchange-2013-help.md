@@ -142,12 +142,11 @@ _<strong>上一次修改主题：</strong>2016-04-29_
 
   - **消息：“在服务器 \<服务器名称\> 上找不到默认接收连接器”**   当下列属性中所列的任一 Exchange 服务器上的接收连接器未在 TCP 端口 25 上侦听 IPv4 和 IPv6 协议时，会出现此消息：`(Get-HybridConfiguration).ReceivingTransportServers.`
     
-      -  
-        若要在运行 `(Get-HybridConfiguration).ReceivingTransportServers.` 时验证所列 Exchange 服务器上的接收连接器是否绑定正确，可以在Exchange 命令行管理程序中运行以下命令。
+      -    若要在运行 `(Get-HybridConfiguration).ReceivingTransportServers.` 时验证所列 Exchange 服务器上的接收连接器是否绑定正确，可以在Exchange 命令行管理程序中运行以下命令。
         
-            Get-ReceiveConnector -Server <Server Name> | FT Identity, Bindings
+      Get-ReceiveConnector -Server <Server Name> | FT Identity, Bindings
         
-        您应当查看针对 Exchange 服务器所列的下列条目：`{[::]:25, 0.0.0.0:25}`
+      您应当查看针对 Exchange 服务器所列的下列条目：`{[::]:25, 0.0.0.0:25}`
         
-        如果绑定未列出，您需要使用 **Set-ReceiveConnector** cmdlet 的 *Bindings* 参数将其添加至接收连接器。有关详细信息，请参阅 [Set-ReceiveConnector](https://technet.microsoft.com/zh-cn/library/bb125140\(v=exchg.150\))。
+      如果绑定未列出，您需要使用 **Set-ReceiveConnector** cmdlet 的 *Bindings* 参数将其添加至接收连接器。有关详细信息，请参阅 [Set-ReceiveConnector](https://technet.microsoft.com/zh-cn/library/bb125140\(v=exchg.150\))。
 

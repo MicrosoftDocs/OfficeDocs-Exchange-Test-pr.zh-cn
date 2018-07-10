@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2014-11-05_
+_**上一次修改主题：** 2014-11-05_
 
 Microsoft Exchange Server 2013 安装程序无法继续，因为它检测到一个或多个 Microsoft Exchange Server 2010 服务器的 Exchange Server 2010 还未升级到 Service Pack 3 (SP3)。在安装 Exchange 2013 之前，贵组织中的所有 Exchange 2010 服务器必须升级到 Exchange 2010 SP3。此要求包括 Exchange 2010 边缘传输服务器。有关详细信息，请参阅[从 Exchange 2010 升级至 Exchange 2013](upgrade-from-exchange-2010-to-exchange-2013-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>将 Exchange 2010 边缘传输服务器升级到 Exchange 2010 SP3 后，必须在你的 Exchange 组织和每个边缘传输服务器之间重新创建边缘订阅，以便在 Active Directory 中更新其服务器版本。若要详细了解如何在 Exchange 2010 中重新创建边缘订阅，请参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=269724">管理边缘订阅</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 将 Exchange 2010 边缘传输服务器升级到 Exchange 2010 SP3 后，必须在你的 Exchange 组织和每个边缘传输服务器之间重新创建边缘订阅，以便在 Active Directory 中更新其服务器版本。若要详细了解如何在 Exchange 2010 中重新创建边缘订阅，请参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=269724">管理边缘订阅</a>。
 
 
 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：[Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612)、 [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542) 或 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351)。

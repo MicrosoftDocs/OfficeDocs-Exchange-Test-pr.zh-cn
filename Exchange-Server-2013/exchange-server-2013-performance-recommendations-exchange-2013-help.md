@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Exchange Server 2013当您的环境已适当调整了大小并进行过规划时，性能调整和故障排除最有效。虽然 Exchange 2013 旨在简化基本资源基础结构，但它仍会消耗大量的系统资源，如内存、存储容量和 CPU 容量。
 
@@ -25,18 +25,8 @@ Exchange Server 2013当您的环境已适当调整了大小并进行过规划时
 
 Exchange 2013 中的体系结构更改已经在 TechNet 和 [Exchange 团队博客](https://go.microsoft.com/fwlink/p/?linkid=35786)中作出了说明。我们将首先介绍几个应该考虑的高级别更改，以便更好地了解性能成本和大小调整。接下来，我们介绍了一个建议引用的列表，以进一步提供这些重要领域的上下文和背景。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>请参阅 <a href="exchange-2013-virtualization-exchange-2013-help.md">Exchange 2013 虚拟化</a>，了解有关在虚拟化环境中部署 Exchange Server 2013 的性能优化指导。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 请参阅 <a href="exchange-2013-virtualization-exchange-2013-help.md">Exchange 2013 虚拟化</a>，了解有关在虚拟化环境中部署 Exchange Server 2013 的性能优化指导。
 
 
 在 Exchange 2013 中，客户端访问服务器角色是一个无状态代理服务器。现在，客户端访问服务器角色的主要职责是对传入的请求进行身份验证，然后将每个请求代理到相应的邮箱服务器和托管用户邮箱主动副本的服务器。这意味着，不再需要在客户端访问服务器和负载平衡器之间为特定协议配置关联。

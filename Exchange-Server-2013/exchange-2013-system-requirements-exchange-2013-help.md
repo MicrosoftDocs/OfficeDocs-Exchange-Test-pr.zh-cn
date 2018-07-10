@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 了解在安装 Exchange 2013 之前您需要知道的 Exchange 2013 要求。例如，您将了解有关硬件、网络和操作系统要求的信息。
 
@@ -155,7 +155,7 @@ Exchange 2013 支持已升级到 Office 365 最新版本的 Office 365 租户进
 <li><p>单标签域</p></li>
 <li><p>不连续命名空间</p></li>
 </ul>
-<p>有关 Exchange 支持的 DNS 命名空间的详细信息，请参阅 Microsoft 知识库文章 2269838 <a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2269838">Microsoft Exchange 与单标签域、不连续命名空间和分离命名空间的兼容性</a>。</p></td>
+<p>有关 Exchange 支持的 DNS 命名空间的详细信息，请参阅 Microsoft 知识库文章 2269838 <a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=2269838">Microsoft Exchange 与单标签域、不连续命名空间和分离命名空间的兼容性</a>。</p></td>
 </tr>
 <tr class="even">
 <td><p>IPv6 支持</p></td>
@@ -173,18 +173,8 @@ Exchange 2013 支持已升级到 Office 365 最新版本的 Office 365 租户进
 
 使用 64 位 Active Directory 域控制器可以提高 Exchange 2013 的目录服务性能。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在多域环境的将 Active Directory 语言区域设置为日语的 Windows Server 2008 域控制器上，服务器可能不接收在入站复制期间存储在对象上的某些属性。有关详细信息，请参阅 Microsoft 知识库文章 949189 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=949189">使用日语语言区域设置配置的 Windows Server 2008 域控制器配置可能不会在入站复制期间将更新应用于对象的属性</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在多域环境的将 Active Directory 语言区域设置为日语的 Windows Server 2008 域控制器上，服务器可能不接收在入站复制期间存储在对象上的某些属性。有关详细信息，请参阅 Microsoft 知识库文章 949189 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=949189">使用日语语言区域设置配置的 Windows Server 2008 域控制器配置可能不会在入站复制期间将更新应用于对象的属性</a>。
 
 
 ## 在目录服务器上安装 Exchange 2013
@@ -284,26 +274,13 @@ Exchange 2013 支持已升级到 Office 365 最新版本的 Office 365 租户进
 
 下表列出了用于 Exchange 2013 的受支持的操作系统。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不支持在 Windows Server Core 模式中运行的计算机上安装 Exchange 2013。计算机必须运行 Windows Server 的完全安装。如果要在 Windows Server Core 模式中运行的计算机上安装 Exchange 2013，您必须通过执行以下某项操作，将服务器转换为 Windows Server 的完全安装：
-<ul>
-<li><p><strong>Windows Server 2008 R2</strong>   重新安装 Windows Server 并选择“完全安装”选项。</p></li>
-<li><p><strong>Windows Server 2012 R2</strong> 或 <strong>Windows Server 2012</strong>   通过运行以下命令将 Windows Server Core 模式服务器转换为完全安装。</p>
-<pre><code>Install-WindowsFeature Server-Gui-Mgmt-Infra, Server-Gui-Shell -Restart</code></pre></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 不支持在 Windows Server Core 模式中运行的计算机上安装 Exchange 2013。计算机必须运行 Windows Server 的完全安装。如果要在 Windows Server Core 模式中运行的计算机上安装 Exchange 2013，您必须通过执行以下某项操作，将服务器转换为 Windows Server 的完全安装：
+> <ul>
+> <li><p><strong>Windows Server 2008 R2</strong>   重新安装 Windows Server 并选择“完全安装”选项。</p></li>
+> <li><p><strong>Windows Server 2012 R2</strong> 或 <strong>Windows Server 2012</strong>   通过运行以下命令将 Windows Server Core 模式服务器转换为完全安装。</p>
+> <pre><code>Install-WindowsFeature Server-Gui-Mgmt-Infra, Server-Gui-Shell -Restart</code></pre></li>
+> </ul>
 
 
 **Exchange 2013 的受支持的操作系统**
@@ -425,18 +402,8 @@ Exchange 2013 支持 Outlook 和 Entourage for Mac 的下列版本：
 
 有关 Exchange 支持的 Outlook 版本列表，请参阅 [Outlook 更新](https://go.microsoft.com/fwlink/p/?linkid=513459)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>强烈建议您安装最新可用的 Service Pack 和可用更新，以便您的用户在连接到 Exchange 时获得可能的最佳体验。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 强烈建议您安装最新可用的 Service Pack 和可用更新，以便您的用户在连接到 Exchange 时获得可能的最佳体验。
 
 
 不支持版本低于 Outlook 2007 的 Outlook 客户端。不支持 Mac 操作系统上需要 DAV 的电子邮件客户端，例如 Entourage 2008 for Mac RTM 和 Entourage 2004。

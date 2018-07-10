@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-06-16_
+_**上一次修改主题：** 2016-06-16_
 
 接受域是 Microsoft Exchange Server 2013 组织为其发送或接收电子邮件的任何 SMTP 命名空间。接受域包括那些 Exchange 组织对其有权威性的域。当 Exchange 组织为接受域中的收件人处理邮件传递时，该组织即具有权威性。接受域还包括 Exchange 组织为其接收邮件然后中继到组织外部的电子邮件服务器以便传递给收件人的域。
 
@@ -39,18 +39,8 @@ Accepted domains and email address policies
 
 存在三种类型的接受域：权威、内部中继和外部中继。在以下部分中描述这些接受域类型。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您已在外围网络中订阅了边缘传输服务器，请在 Exchange 组织中的邮箱服务器上配置接受的域。在 EdgeSync 同步期间，接受的域配置会复制到边缘传输服务器。有关详细信息，请参阅<a href="edge-subscriptions-exchange-2013-help.md">边缘订阅</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果您已在外围网络中订阅了边缘传输服务器，请在 Exchange 组织中的邮箱服务器上配置接受的域。在 EdgeSync 同步期间，接受的域配置会复制到边缘传输服务器。有关详细信息，请参阅<a href="edge-subscriptions-exchange-2013-help.md">边缘订阅</a>。
 
 
 ## 权威域

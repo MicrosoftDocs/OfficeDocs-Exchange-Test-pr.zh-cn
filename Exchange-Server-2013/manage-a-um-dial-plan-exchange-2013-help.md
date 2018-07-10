@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2018-04-26_
+_**上一次修改主题：** 2018-04-26_
 
 创建统一消息 (UM) 拨号计划后，您可以查看和配置各种设置。例如，您可以配置 IP 语音 (VoIP) 安全性的级别、音频编解码器和拨号限制。在 UM 拨号计划上配置的设置将通过 UM 邮箱策略影响与该拨号计划相关联的所有用户。
 
@@ -33,18 +33,8 @@ _**上一次修改主题：**2018-04-26_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -63,18 +53,8 @@ _**上一次修改主题：**2018-04-26_
     
       - 虽然 UM 拨号计划名称中可以包含空格，但是，如果将统一消息与 Office Communications Server 2007 R2 或 Microsoft Lync Server 集成，则拨号计划的名称不能包含空格。因此，如果创建的拨号计划的显示名称中包含空格，但要与 Office Communications Server 2007 R2 或 Lync Server 集成，则必须先删除该拨号计划，然后另外创建一个显示名称中不包含空格的拨号计划。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>尽管拨号计划名称的框可以接受 64 个字符，但是拨号计划的名称不得超过 49 个字符。如果尝试创建的拨号计划名称包含的字符数超过 49 个，将收到错误消息。该消息称不能生成 UM 邮箱策略，因为 UM 拨号计划的名称太长。发生这种情况的原因是，如前所述，在创建拨号计划时，还会创建一个名为 <em>&lt;DialPlanName&gt;</em> 默认策略的默认 UM 邮箱策略。在向拨号计划名称中加入默认策略中的 15 个字符时，字符的总长度将超出限制。UM 拨号计划和 UM 邮箱策略的 <em>name</em> 参数都可以是 64 个字符。但是，如果拨号计划的名称超过 49 字符，默认 UM 邮箱策略的名称将超过 64 字符，则这是不允许的。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!important]
+        > 尽管拨号计划名称的框可以接受 64 个字符，但是拨号计划的名称不得超过 49 个字符。如果尝试创建的拨号计划名称包含的字符数超过 49 个，将收到错误消息。该消息称不能生成 UM 邮箱策略，因为 UM 拨号计划的名称太长。发生这种情况的原因是，如前所述，在创建拨号计划时，还会创建一个名为 <em>&lt;DialPlanName&gt;</em> 默认策略的默认 UM 邮箱策略。在向拨号计划名称中加入默认策略中的 15 个字符时，字符的总长度将超出限制。UM 拨号计划和 UM 邮箱策略的 <em>name</em> 参数都可以是 64 个字符。但是，如果拨号计划的名称超过 49 字符，默认 UM 邮箱策略的名称将超过 64 字符，则这是不允许的。
     
       - **分机号码长度(位)**  这是与此拨号计划相关联的用户的分机号码的位数。例如，如果与拨号计划相关联的用户拨打了 4 位的分机号码以呼叫同一拨号计划中的其他用户，则您应选择 4 作为分机中的号码位数。
         
@@ -88,18 +68,8 @@ _**上一次修改主题：**2018-04-26_
         
           - **E.164** E.164 是用于公共电话系统的国际编号计划，其中每个指定的号码都包含国家/地区代码、国内目的地代码和订阅者号码。将采用以下格式列出通过 VoIP 网关和 PBX 或 IP PBX 发送的呼叫方和被叫方信息：电话：+14255550123。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>创建拨号计划之后，将无法更改拨号计划类型，除非删除该拨号计划，然后重新创建正确的拨号计划类型。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 创建拨号计划之后，将无法更改拨号计划类型，除非删除该拨号计划，然后重新创建正确的拨号计划类型。
     
       - **VoIP 安全模式**   使用此下拉列表为 UM 拨号计划选择 VoIP 安全设置。可以为拨号计划选择以下安全设置之一：
         
@@ -253,18 +223,8 @@ _**上一次修改主题：**2018-04-26_
         
         对于内部部署而言，添加其他语言使 Outlook Voice Access 可以使用除美国英语以外的其他语言。例如，如果 Outlook Voice Access 用户通过桌面上的电话，使用 Outlook Voice Access 号码呼入，则系统将使用英语的预录话务员语音向该用户发出问候。即使同一用户在 Outlook Web App 中选择其他语言（如法语），菜单仍以美国英语显示。若要使用户可以听到法语的预录话务员菜单，必须安装相应的语言包。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>对于 Exchange Online 而言，所有语言均可使用。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 对于 Exchange Online 而言，所有语言均可使用。
 
 
 8.  **拨号规则**   使用此页可指定启用 UM 的用户拨打国家/地区内和国际长途电话的拨号规则。拨号规则上定义的每个条目确定特定拨号规则组内的用户可以拨打的电话类型。使用“拨号规则”页配置拨号规则后，必须将 UM 拨号计划、UM 邮箱策略或 UM 自动助理配置为使用相应的拨号规则。将 UM 邮箱策略配置为使用拨号规则组后，配置的拨号限制会应用到与 UM 邮箱策略关联的所有启用 UM 的用户。例如，可以将拨号规则组配置为不要求与拨号计划关联的用户在拨打国家/地区内电话号码时拨打外线接入编码。可以配置下列各项：
@@ -279,18 +239,8 @@ _**上一次修改主题：**2018-04-26_
         
           - **注释** 使用此文本框输入您要添加或修改的拨号规则的注释或描述。默认情况下，此文本框为空。
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>如果正与 Office Communications Server 2007 R2 或 Microsoft Lync Server 集成，您可能会发现配置统一消息中的拨号规则或拨号规则组没有必要。Office Communications Server 2007 R2 和 Lync Server 用于执行组织中用户的呼叫路由和号码转换，此外，代表用户进行呼叫时也会执行此操作。</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!NOTE]
+            > 如果正与 Office Communications Server 2007 R2 或 Microsoft Lync Server 集成，您可能会发现配置统一消息中的拨号规则或拨号规则组没有必要。Office Communications Server 2007 R2 和 Lync Server 用于执行组织中用户的呼叫路由和号码转换，此外，代表用户进行呼叫时也会执行此操作。
     
       - **国际规则** 使用此文本框可添加、删除或编辑由 UM 邮箱策略使用的国际拨号规则组。
         
@@ -302,18 +252,8 @@ _**上一次修改主题：**2018-04-26_
         
           - **注释** 使用此文本框输入您要添加或修改的拨号规则的注释或描述。默认情况下，此文本框为空。
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>对于内部部署而言，如果正与 Office Communications Server 2007 R2 或 Microsoft Lync Server 集成，您可能会发现配置统一消息中的拨号规则或拨号规则组没有必要。Office Communications Server 2007 R2 或 Lync Server 用于执行组织中用户的呼叫路由和号码转换，此外，代表用户进行呼叫时也会执行此操作。</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!NOTE]
+            > 对于内部部署而言，如果正与 Office Communications Server 2007 R2 或 Microsoft Lync Server 集成，您可能会发现配置统一消息中的拨号规则或拨号规则组没有必要。Office Communications Server 2007 R2 或 Lync Server 用于执行组织中用户的呼叫路由和号码转换，此外，代表用户进行呼叫时也会执行此操作。
 
 
 9.  **拨号身份验证**   使用此页可以为呼叫 UM 拨号计划上配置的 Outlook Voice Access 号码的呼叫者选择拨号规则。通过配置拔号规则组和拔号限制，可以限制在未经身份验证的用户或 Outlook Voice Access 用户呼叫拔号计划上配置的 Outlook Voice Access 号码时，呼叫者可以使用的呼叫类型。可以配置下列各项：

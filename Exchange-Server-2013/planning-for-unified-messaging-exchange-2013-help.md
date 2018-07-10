@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 规划统一消息 (UM) 部署时，必须要考虑许多因素才能成功部署 UM。必须了解统一消息的不同要素以及各个组件和功能，以便合理规划统一消息的基础结构和部署。在组织中部署统一消息时，分配一些时间来进行规划和处理这些问题将有助于防止出现各种状况。
 
@@ -79,18 +79,8 @@ UM 在一个存储中提供语音邮件、传真和电子邮件传送服务，�
 
 有关 Microsoft Lync Server 的详细信息，请参阅 [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>规划和部署统一消息可能会带来一定的挑战。根据在 Exchange 和语音邮件系统方面的技术经验，可能需要从统一消息专家那里获取帮助。Exchange 统一消息专家将帮助确保从旧有或第三方语音邮件系统顺利过渡到 Exchange 统一消息。执行新部署或升级旧有语音邮件系统需要大量 VoIP 网关、PBX 和统一消息方面的知识。有关如何联系统一消息专家的详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/p/?linkid=262708">Microsoft Exchange Server 2013 Unified Messaging (UM) Specialists（Microsoft Exchange Server 2013 统一消息 (UM) 专家）</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 规划和部署统一消息可能会带来一定的挑战。根据在 Exchange 和语音邮件系统方面的技术经验，可能需要从统一消息专家那里获取帮助。Exchange 统一消息专家将帮助确保从旧有或第三方语音邮件系统顺利过渡到 Exchange 统一消息。执行新部署或升级旧有语音邮件系统需要大量 VoIP 网关、PBX 和统一消息方面的知识。有关如何联系统一消息专家的详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/p/?linkid=262708">Microsoft Exchange Server 2013 Unified Messaging (UM) Specialists（Microsoft Exchange Server 2013 统一消息 (UM) 专家）</a>。
 
 
 ## 部署步骤

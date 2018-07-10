@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-03-26_
+_**上一次修改主题：** 2014-03-26_
 
 通过使用分层通讯簿 (HAB)，最终用户可以利用组织的分层结构查找通讯簿中的收件人。通常，用户仅限于默认全局地址列表 (GAL) 及其收件人属性，GAL 的结构通常不会反映组织中收件人的管理或资历关系。能够自定义 HAB 以反映您的组织独特的业务结构，这可以为您的用户提供查找内部收件人的高效方法。
 
@@ -41,18 +41,8 @@ _**上一次修改主题：**2014-03-26_
 
   - Amy Alberts 为 `25`
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果没有设置 <em>SeniorityIndex</em> 参数，或两个或更多用户的此参数值相同，那么 HAB 排序顺序使用 <em>PhoneticDisplayName</em> 参数值，以字母升序顺序列出用户。如果没有设置 <em>PhoneticDisplayName</em> 参数值，HAB 排序顺序默认为 <em>DisplayName</em> 参数值，并以字母升序顺序列出用户。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果没有设置 <em>SeniorityIndex</em> 参数，或两个或更多用户的此参数值相同，那么 HAB 排序顺序使用 <em>PhoneticDisplayName</em> 参数值，以字母升序顺序列出用户。如果没有设置 <em>PhoneticDisplayName</em> 参数值，HAB 排序顺序默认为 <em>DisplayName</em> 参数值，并以字母升序顺序列出用户。
 
 
 ## 配置分层通讯簿

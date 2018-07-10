@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-14_
+_**上一次修改主题：** 2012-10-14_
 
 [创建保留策略](create-a-retention-policy-exchange-2013-help.md)
 

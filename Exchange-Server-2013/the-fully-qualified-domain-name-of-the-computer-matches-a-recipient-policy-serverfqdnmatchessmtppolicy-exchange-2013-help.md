@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 此主题中的内容尚未针对 Microsoft Exchange Server 2013 进行更新。虽然尚未更新，但仍可能适用于 Exchange 2013。如果您仍需要帮助，请查看下面的社区资源。
 
@@ -39,18 +39,8 @@ Microsoft Exchange 安装程序要求 Exchange 组织中服务器的 FQDN 不能
 
 4.  单击**确定**以关闭**系统属性**对话框。系统将提示您重新启动计算机以应用所做的更改。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要重命名的计算机是域控制器，请参阅&quot;重命名域控制器&quot;(<a href="https://go.microsoft.com/fwlink/?linkid=66828">https://go.microsoft.com/fwlink/?LinkId=66828</a>)。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果要重命名的计算机是域控制器，请参阅&quot;重命名域控制器&quot;(<a href="https://go.microsoft.com/fwlink/?linkid=66828">https://go.microsoft.com/fwlink/?LinkId=66828</a>)。
 
 
 修改收件人策略的 SMTP 地址
@@ -63,5 +53,5 @@ Microsoft Exchange 安装程序要求 Exchange 组织中服务器的 FQDN 不能
 
 4.  单击\&quot;电子邮件地址\&quot;选项卡，然后更改相应的 SMTP 地址。
 
-有关收件人策略命名问题的详细信息，请参阅 Microsoft 知识库文章 288175，"XCON︰ 收件人策略不能与任何组织，5.4.8 中的服务器的 FQDN 匹配的 Ndr"([http://go.microsoft.com/fwlink/?linkid=3052\&kbid=288175](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=288175))。
+有关收件人策略命名问题的详细信息，请参阅 Microsoft 知识库文章 288175，"XCON︰ 收件人策略不能与任何组织，5.4.8 中的服务器的 FQDN 匹配的 Ndr"([http://go.microsoft.com/fwlink/?linkid=3052\&kbid=288175](http://go.microsoft.com/fwlink/?linkid=3052&kbid=288175))。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-08_
+_**上一次修改主题：** 2015-04-08_
 
 发件人 ID 功能由发件人 ID 代理提供。发件人 ID 根据假设的发件人域所有者来验证发件人的 IP 地址，从而验证电子邮件的来源。对来自 Internet 的未经过身份验证的入站邮件执行发件人 ID 筛选。这些邮件将作为外部邮件处理。
 
@@ -31,18 +31,8 @@ _**上一次修改主题：**2015-04-08_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -57,18 +47,8 @@ _**上一次修改主题：**2015-04-08_
 
     Set-SenderIDConfig -Enabled $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>禁用发件人 ID 时，基础发件人 ID 代理仍启用。要禁用发件人 ID 代理，请运行以下命令：<code>Disable-TransportAgent &quot;Sender ID Agent&quot;</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 禁用发件人 ID 时，基础发件人 ID 代理仍启用。要禁用发件人 ID 代理，请运行以下命令：<code>Disable-TransportAgent &quot;Sender ID Agent&quot;</code>.
 
 
 ## 您如何知道这有效？

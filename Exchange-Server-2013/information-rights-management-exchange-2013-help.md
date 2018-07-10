@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 信息工作人员每天都会使用电子邮件交换敏感信息，例如财务报告和数据、法律合同、机密产品信息、销售报告和规划、竞争分析、研究和专利信息，以及客户和员工信息。因为用户现在随处都可以访问他们的电子邮件，所以邮箱已成为包含大量潜在敏感信息的存储库。因此，信息泄露可能对组织构成严重威胁。为防止信息泄露，Microsoft Exchange Server 2013 包括了信息权限管理 (IRM) 功能，此功能可对电子邮件和附件提供持久联机和脱机保护。
 
@@ -49,11 +49,11 @@ IRM 要求
 
 以下是信息泄露导致的一些后果：
 
-  - **经济损失：**由于业务损失或是法院或监管机构收取的罚款和惩罚性赔偿，信息泄露可能会产生经济方面的影响，具体取决于企业规模、行业和当地法规。上市公司还可能由于媒体的负面报道而面临着损失市值的风险。
+  - **经济损失：** 由于业务损失或是法院或监管机构收取的罚款和惩罚性赔偿，信息泄露可能会产生经济方面的影响，具体取决于企业规模、行业和当地法规。上市公司还可能由于媒体的负面报道而面临着损失市值的风险。
 
-  - **对形象和信誉的损害：**信息泄露可能会损害组织在客户面前的形象和信誉。此外，根据通信的性质，电子邮件泄露可能会成为使发件人和组织陷入尴尬境地的潜在原因。
+  - **对形象和信誉的损害：** 信息泄露可能会损害组织在客户面前的形象和信誉。此外，根据通信的性质，电子邮件泄露可能会成为使发件人和组织陷入尴尬境地的潜在原因。
 
-  - **失去竞争优势：**信息泄露造成的最严重威胁之一是失去业务上的竞争优势。泄露战略计划或泄露合并和收购信息可能会导致收入或市值受到损失。其他威胁包括丢失研究信息、分析数据和其他知识产权。
+  - **失去竞争优势：** 信息泄露造成的最严重威胁之一是失去业务上的竞争优势。泄露战略计划或泄露合并和收购信息可能会导致收入或市值受到损失。其他威胁包括丢失研究信息、分析数据和其他知识产权。
 
 什么是信息泄露？
 
@@ -103,18 +103,8 @@ IRM 要求
 
 AD RMS 使用基于可扩展权限标记语言 (XrML) 的证书和许可证，验证计算机和用户并保护内容。使用 AD RMS 保护文档或邮件等内容时，将会附加包含授权用户对内容所拥有的权限的 XrML 许可证。若要访问受 IRM 保护的内容，启用了 AD RMS 的应用程序必须为来自 AD RMS 群集的授权用户购买使用许可证。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2013 中，预许可代理会将使用许可证附加到组织中使用 AD RMS 群集保护的邮件上。有关详细信息，请参阅本主题后面的预许可。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在 Exchange 2013 中，预许可代理会将使用许可证附加到组织中使用 AD RMS 群集保护的邮件上。有关详细信息，请参阅本主题后面的预许可。
 
 
 用于创建内容的应用程序必须已启用 RMS，以使用 AD RMS 对内容应用持久保护。Microsoft Office 应用程序（如 Word、Excel、PowerPoint 和 Outlook）启用了 RMS，可用于创建和使用受保护的内容。
@@ -155,28 +145,18 @@ AD RMS 使用基于 XrML 的权限策略模板，允许启用了 IRM 的兼容�
 
 在 Exchange 2010 中，可使用以下方法对邮件应用 IRM 保护：
 
-  - **由 Outlook 用户手动进行：**Outlook 用户可使用他们可使用的 AD RMS 权限策略模板对邮件进行 IRM 保护。此过程使用的是 Outlook 而非 Exchange 中的 IRM 功能。但是，可以使用 Exchange 访问这些邮件，并执行相关操作（如应用传输规则）强制执行组织的邮件策略。有关使用 Outlook 中 IRM 的详细信息，请参阅[用于电子邮件的 IRM 简介](https://go.microsoft.com/fwlink/p/?linkid=166897)。
+  - **由 Outlook 用户手动进行：** Outlook 用户可使用他们可使用的 AD RMS 权限策略模板对邮件进行 IRM 保护。此过程使用的是 Outlook 而非 Exchange 中的 IRM 功能。但是，可以使用 Exchange 访问这些邮件，并执行相关操作（如应用传输规则）强制执行组织的邮件策略。有关使用 Outlook 中 IRM 的详细信息，请参阅[用于电子邮件的 IRM 简介](https://go.microsoft.com/fwlink/p/?linkid=166897)。
 
-  - **由 Outlook Web App 用户手动进行：**启用 Outlook Web App 中的 IRM 后，用户可以对其发送的邮件执行 IRM 保护，并查看其接收到的受 IRM 保护的邮件。在 Exchange 2013 累计更新 1 (CU1) 中，Outlook Web App 用户还可以使用 Web-Ready 文档查看来查看受 IRM 保护的附件。有关 Outlook Web App 中的 IRM 的详细信息，请参阅[Outlook Web App 中的信息权限管理](information-rights-management-in-outlook-web-app-exchange-2013-help.md)。
+  - **由 Outlook Web App 用户手动进行：** 启用 Outlook Web App 中的 IRM 后，用户可以对其发送的邮件执行 IRM 保护，并查看其接收到的受 IRM 保护的邮件。在 Exchange 2013 累计更新 1 (CU1) 中，Outlook Web App 用户还可以使用 Web-Ready 文档查看来查看受 IRM 保护的附件。有关 Outlook Web App 中的 IRM 的详细信息，请参阅[Outlook Web App 中的信息权限管理](information-rights-management-in-outlook-web-app-exchange-2013-help.md)。
 
-  - **由 Windows Mobile 和 Exchange ActiveSync 设备用户手动进行：**在 Exchange 2010 的正式发布 (RTM) 版本中，Windows Mobile 设备的用户可以查看和创建受 IRM 保护的邮件。这要求用户将其受支持的 Windows Mobile 设备连接到计算机并针对 IRM 激活这些设备。在 Exchange 2010 SP1 中，可以启用 Microsoft Exchange ActiveSync 中的 IRM，以允许 Exchange ActiveSync 设备（包括 Windows Mobile 设备）的用户查看、答复、转发和创建受 IRM 保护的邮件。有关 Exchange ActiveSync 中的 IRM 的详细信息，请参阅[Exchange ActiveSync 中的信息权限管理](information-rights-management-in-exchange-activesync-exchange-2013-help.md)。
+  - **由 Windows Mobile 和 Exchange ActiveSync 设备用户手动进行：** 在 Exchange 2010 的正式发布 (RTM) 版本中，Windows Mobile 设备的用户可以查看和创建受 IRM 保护的邮件。这要求用户将其受支持的 Windows Mobile 设备连接到计算机并针对 IRM 激活这些设备。在 Exchange 2010 SP1 中，可以启用 Microsoft Exchange ActiveSync 中的 IRM，以允许 Exchange ActiveSync 设备（包括 Windows Mobile 设备）的用户查看、答复、转发和创建受 IRM 保护的邮件。有关 Exchange ActiveSync 中的 IRM 的详细信息，请参阅[Exchange ActiveSync 中的信息权限管理](information-rights-management-in-exchange-activesync-exchange-2013-help.md)。
 
-  - **在 Outlook 2010 及更高版本中自动进行：**可创建 Outlook 保护规则，以便在 Outlook 2010 及更高版本中自动对邮件进行 IRM 保护。Outlook 保护规则将自动部署到 Outlook 2010 客户端，且当用户撰写邮件时，Outlook 2010 将应用 IRM 保护。有关 Outlook 保护规则的详细信息，请参阅[Outlook 保护规则](outlook-protection-rules-exchange-2013-help.md)。
+  - **在 Outlook 2010 及更高版本中自动进行：** 可创建 Outlook 保护规则，以便在 Outlook 2010 及更高版本中自动对邮件进行 IRM 保护。Outlook 保护规则将自动部署到 Outlook 2010 客户端，且当用户撰写邮件时，Outlook 2010 将应用 IRM 保护。有关 Outlook 保护规则的详细信息，请参阅[Outlook 保护规则](outlook-protection-rules-exchange-2013-help.md)。
 
-  - **在邮箱服务器上自动进行：**可创建传输保护规则，以在 Exchange 2013 邮箱服务器上自动对邮件进行 IRM 保护。有关传输保护规则的详细信息，请参阅[传输保护规则](transport-protection-rules-exchange-2013-help.md)。
+  - **在邮箱服务器上自动进行：** 可创建传输保护规则，以在 Exchange 2013 邮箱服务器上自动对邮件进行 IRM 保护。有关传输保护规则的详细信息，请参阅[传输保护规则](transport-protection-rules-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>对已经受 IRM 保护的邮件将不再应用 IRM 保护。例如，如果用户在 Outlook 或 Outlook Web App 中对邮件进行了 IRM 保护，则不会使用传输保护规则对邮件应用 IRM 保护。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 对已经受 IRM 保护的邮件将不再应用 IRM 保护。例如，如果用户在 Outlook 或 Outlook Web App 中对邮件进行了 IRM 保护，则不会使用传输保护规则对邮件应用 IRM 保护。
 
 
 什么是信息泄露？
@@ -235,24 +215,14 @@ AD RMS 使用基于 XrML 的权限策略模板，允许启用了 IRM 的兼容�
 
 为强制执行邮件策略和法规遵从性，必须拥有对加密邮件内容的访问权限。为满足诉讼、监管审核或内部调查的电子数据展示要求，还必须能够搜索加密的邮件。为了帮助执行此类任务，Exchange 2013 包括以下 IRM 功能：
 
-  - **传输解密：**若要应用邮件策略，传输规则代理等传输代理应拥有对邮件内容的访问权限。传输解密允许安装在 Exchange 2013 服务器上的传输代理访问邮件内容。有关详细信息，请参阅[传输解密](transport-decryption-exchange-2013-help.md)。
+  - **传输解密：** 若要应用邮件策略，传输规则代理等传输代理应拥有对邮件内容的访问权限。传输解密允许安装在 Exchange 2013 服务器上的传输代理访问邮件内容。有关详细信息，请参阅[传输解密](transport-decryption-exchange-2013-help.md)。
 
-  - **日记报告解密：**若要满足遵从性或业务要求，组织可使用日记功能保留邮件内容。日记代理为要记录的邮件创建日记报告，并且在报告中包括了有关邮件的元数据。原始邮件将会附加到日记报告中。如果日记报告中的邮件受 IRM 保护，则日记报告解密会将邮件的明文副本附加到日记报告中。有关详细信息，请参阅[日记报告解密](journal-report-decryption-exchange-2013-help.md)。
+  - **日记报告解密：** 若要满足遵从性或业务要求，组织可使用日记功能保留邮件内容。日记代理为要记录的邮件创建日记报告，并且在报告中包括了有关邮件的元数据。原始邮件将会附加到日记报告中。如果日记报告中的邮件受 IRM 保护，则日记报告解密会将邮件的明文副本附加到日记报告中。有关详细信息，请参阅[日记报告解密](journal-report-decryption-exchange-2013-help.md)。
 
-  - **Exchange 搜索的 IRM 解密：**通过 Exchange 搜索的 IRM 解密，Exchange 搜索可以在受 IRM 保护的邮件中建立内容索引。当发现管理员执行就地电子数据展示搜索时，搜索结果中会返回已编制索引的受 IRM 保护的邮件。有关详细信息，请参阅[就地电子数据展示](in-place-ediscovery-exchange-2013-help.md)。
+  - **Exchange 搜索的 IRM 解密：** 通过 Exchange 搜索的 IRM 解密，Exchange 搜索可以在受 IRM 保护的邮件中建立内容索引。当发现管理员执行就地电子数据展示搜索时，搜索结果中会返回已编制索引的受 IRM 保护的邮件。有关详细信息，请参阅[就地电子数据展示](in-place-ediscovery-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Exchange 2010 SP1 及更高版本中，发现管理角色组的成员可访问由发现搜索返回并位于发现邮箱中的受 IRM 保护的邮件。要启用此功能，请将 <em>EDiscoverySuperUserEnabled</em> 参数与 <a href="https://technet.microsoft.com/zh-cn/library/dd979792(v=exchg.150)">Set-IRMConfiguration</a> cmdlet 配合使用。有关详细信息，请参阅<a href="configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help.md">为 Exchange 搜索和就地 eDiscovery 配置 IRM</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 在 Exchange 2010 SP1 及更高版本中，发现管理角色组的成员可访问由发现搜索返回并位于发现邮箱中的受 IRM 保护的邮件。要启用此功能，请将 <em>EDiscoverySuperUserEnabled</em> 参数与 <a href="https://technet.microsoft.com/zh-cn/library/dd979792(v=exchg.150)">Set-IRMConfiguration</a> cmdlet 配合使用。有关详细信息，请参阅<a href="configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help.md">为 Exchange 搜索和就地 eDiscovery 配置 IRM</a>。
 
 
 若要启用这些解密功能，Exchange 服务器必须拥有对邮件的访问权限。将联合邮箱（由 Exchange 安装程序创建的系统邮箱）添加到 AD RMS 服务器上的超级用户组可完成此操作。有关详细信息，请参阅[将联合身份验证邮箱添加到 AD RMS 超级用户组](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md)。
@@ -269,18 +239,8 @@ AD RMS 使用基于 XrML 的权限策略模板，允许启用了 IRM 的兼容�
 
 在 Exchange 2013 中，使用邮箱服务器上的传输服务中的传输代理启用 IRM 功能。IRM 代理由 Exchange 安装程序安装在邮箱服务器上。无法使用传输代理的管理任务控制 IRM 代理。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2013 中，IRM 代理为内置代理。内置代理不包含在 <strong>Get-TransportAgent</strong> cmdlet 所返回的代理列表中。有关详细信息，请参阅<a href="transport-agents-exchange-2013-help.md">传输代理</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在 Exchange 2013 中，IRM 代理为内置代理。内置代理不包含在 <strong>Get-TransportAgent</strong> cmdlet 所返回的代理列表中。有关详细信息，请参阅<a href="transport-agents-exchange-2013-help.md">传输代理</a>。
 
 
 下表列出了在邮箱服务器上的传输服务中实施的 IRM 代理。
@@ -355,7 +315,7 @@ AD RMS 使用基于 XrML 的权限策略模板，允许启用了 IRM 的兼容�
 <tr class="odd">
 <td><p>AD RMS 群集</p></td>
 <td><ul>
-<li><p><strong>操作系统：</strong>需要装有修补程序 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=973247">Windows Server 2008 中的 Active Directory 权限管理服务角色</a>的 Windows Server 2012、Windows Server 2008 R2 或 Windows Server 2008 SP2。</p></li>
+<li><p><strong>操作系统：</strong>需要装有修补程序 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=973247">Windows Server 2008 中的 Active Directory 权限管理服务角色</a>的 Windows Server 2012、Windows Server 2008 R2 或 Windows Server 2008 SP2。</p></li>
 <li><p><strong>服务连接点</strong>Exchange 2010 和可感知 AD RMS 的应用程序使用在 Active Directory 中注册的服务连接点来发现 AD RMS 群集和 URL。通过 AD RMS，可从 AD RMS 安装程序中注册服务连接点。如果用于安装 AD RMS 的帐户不是 Enterprise Admins 安全组成员，则可在安装之后执行服务连接点注册。AD RMS 在 Active Directory 林中仅有一个服务连接点。</p></li>
 <li><p><strong>权限：</strong>必须向以下对象分配对 AD RMS 服务器证书管道（AD RMS 服务器上的 <code>ServerCertification.asmx</code> 文件）的读取和执行权限：</p>
 <ul>
@@ -370,7 +330,7 @@ AD RMS 使用基于 XrML 的权限策略模板，允许启用了 IRM 的兼容�
 <td><p>Exchange</p></td>
 <td><ul>
 <li><p>需要 Exchange 2010 或更高版本。</p></li>
-<li><p>建议将修补程序<a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=973136">修复：基于 .NET Framework 2.0 SP2 的应用程序尝试处理对异步 ASP.NET Web 服务请求的零长度内容响应时，出现 ArgumentNullException 异常错误消息：“值不能为空”</a>用于 Microsoft .NET Framework 2.0 SP2。</p></li>
+<li><p>建议将修补程序<a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=973136">修复：基于 .NET Framework 2.0 SP2 的应用程序尝试处理对异步 ASP.NET Web 服务请求的零长度内容响应时，出现 ArgumentNullException 异常错误消息：“值不能为空”</a>用于 Microsoft .NET Framework 2.0 SP2。</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -390,32 +350,12 @@ AD RMS 使用基于 XrML 的权限策略模板，允许启用了 IRM 的兼容�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>“AD RMS 群集”是用于在组织中进行 AD RMS 部署（包括单个服务器部署）的术语。AD RMS 是一项 Web 服务。它不要求您安装 Windows Server 故障转移群集。为实现高可用性和负载平衡，可在群集中部署多个 AD RMS 服务器，并使用网络负载平衡。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> “AD RMS 群集”是用于在组织中进行 AD RMS 部署（包括单个服务器部署）的术语。AD RMS 是一项 Web 服务。它不要求您安装 Windows Server 故障转移群集。为实现高可用性和负载平衡，可在群集中部署多个 AD RMS 服务器，并使用网络负载平衡。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在生产环境中，不支持在同一台服务器上安装 AD RMS 和 Exchange。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 在生产环境中，不支持在同一台服务器上安装 AD RMS 和 Exchange。
 
 
 Exchange 2013 IRM 功能支持 Microsoft Office 文件格式。可通过部署自定义保护程序将 IRM 保护扩展到其他文件格式。有关自定义保护程序的详细信息，请参阅[独立软件供应商](https://go.microsoft.com/fwlink/p/?linkid=210336)中的“信息保护和控制合作伙伴”。

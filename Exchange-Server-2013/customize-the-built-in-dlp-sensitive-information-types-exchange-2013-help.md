@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-05-26_
+_**上一次修改主题：** 2016-05-26_
 
 在电子邮件中查找敏感信息时，您需要使用所谓的*规则*来描述此信息。数据丢失预防 (DLP) 包括针对您可能会立即用到的最常见敏感信息类型的 51 个规则。要使用这些规则，您必须将其包含在策略中。您可能会发现需要调整这些内置规则以满足组织的特定需求，您可以通过创建自定义敏感信息类型来实现这一点。本主题介绍如何自定义包含现有规则集的 XML 文件，以检测更广泛的潜在信用卡信息。
 
@@ -47,18 +47,8 @@ _**上一次修改主题：**2016-05-26_
 
 3.  键入 **Set-Content -path "C:\\custompath\\exportedRules.xml" -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection**，创建包含所有这些数据的格式化 XML 文件。(**Set-content** 是将 XML 写入文件的 cmdlet 部分。）
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>确保使用规则包实际存储的文件位置。<strong>C:\custompath\</strong> 是占位符。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 确保使用规则包实际存储的文件位置。<strong>C:\custompath\</strong> 是占位符。
 
 
 ## 查找您想在 XML 中修改的规则
@@ -204,18 +194,8 @@ _**上一次修改主题：**2016-05-26_
 
 3.  在 Exchange 命令行管理程序 或 Exchange Online PowerShell 中，键入 **New-ClassificationRuleCollection -FileData (Get-Content -Path "C:\\custompath\\MyNewRulePack.xml " -Encoding Byte)**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>确保使用规则包实际存储的文件位置。<strong>C:\custompath\</strong> 是占位符。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 确保使用规则包实际存储的文件位置。<strong>C:\custompath\</strong> 是占位符。
 
 
 4.  要确认，请键入“Y”，然后按“Enter”键。

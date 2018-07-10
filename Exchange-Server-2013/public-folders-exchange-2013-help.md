@@ -13,47 +13,27 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2017-03-27_
+_**上一次修改主题：** 2017-03-27_
 
 公用文件夹专为共享访问设计，为收集、组织信息及与您的工作组或组织中的其他人共享信息提供了一种轻松、有效的方式。公用文件夹帮助以易于浏览的深层次结构组织内容。用户将在 Outlook 中看到完整层次结构，这便于他们浏览感兴趣的内容。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>公用文件夹在以下 Outlook 客户端中可用：适用于 Exchange 2013 的 Outlook Web App、Outlook 2007、Outlook 2010、Outlook 2013 和 Outlook for Mac。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 公用文件夹在以下 Outlook 客户端中可用：适用于 Exchange 2013 的 Outlook Web App、Outlook 2007、Outlook 2010、Outlook 2013 和 Outlook for Mac。
 
 
 公用文件夹还可以用作通讯组的存档方法。当为公用文件夹启用邮件并将其添加为通讯组成员时，发送到组的电子邮件将自动添加到公用文件夹以供以后参考。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须使用 Outlook 2007 或更高版本访问 Exchange 2013 服务器上的公用文件夹。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 必须使用 Outlook 2007 或更高版本访问 Exchange 2013 服务器上的公用文件夹。
 
 
 公用文件夹不具有以下用途：
 
   - **数据存档**有邮箱限制的用户有时会使用公用文件夹而非邮箱来存档数据。建议不要采取该做法，因为这会影响公用文件夹中的存储量，并且削弱了邮箱限制的目标。替代方法是，建议使用[Exchange 2013 中的就地存档](in-place-archiving-in-exchange-2013-exchange-2013-help.md)作为存档解决方案。
 
-  - **文档共享和协作：**公用文件夹不提供版本控制或其他文档管理功能，如受控的签入和签出功能以及自动通知内容变更。我们建议改用 [SharePoint](https://go.microsoft.com/fwlink/?linkid=282474) 作为文档共享解决方案。
+  - **文档共享和协作：** 公用文件夹不提供版本控制或其他文档管理功能，如受控的签入和签出功能以及自动通知内容变更。我们建议改用 [SharePoint](https://go.microsoft.com/fwlink/?linkid=282474) 作为文档共享解决方案。
 
 要了解有关 Exchange 2013 中公用文件夹和其他协作方法的详细信息，请参阅[协作](collaboration-exchange-2013-help.md)。
 
@@ -91,18 +71,8 @@ _**上一次修改主题：**2017-03-27_
 
   - **辅助层次结构邮箱**   辅助层次结构邮箱也包含公用文件夹内容，以及公用文件夹层次结构的只读副本。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>公用文件夹邮箱不支持保留策略。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 公用文件夹邮箱不支持保留策略。
 
 
 管理公用文件夹邮箱可采用以下两种方法：
@@ -133,36 +103,16 @@ _**上一次修改主题：**2017-03-27_
 
   - 文件夹在公用文件夹树中的位置（包括其父文件夹和子文件夹）
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>层次结构不存储有关已启用邮件公用文件夹的电子邮件地址的信息。电子邮件地址存储在 Active Directory 中的目录对象中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 层次结构不存储有关已启用邮件公用文件夹的电子邮件地址的信息。电子邮件地址存储在 Active Directory 中的目录对象中。
 
 
 ## 层次结构同步
 
 公用文件夹层次结构同步过程使用增量更改同步 (ICS)，它提供了监视机制并将更改与 Exchange 存储层次结构或内容同步。更改包括创建、修改和删除文件夹和邮件。当用户连接到并使用内容邮箱时，每 15 分钟发生一次同步。如果没有用户连接到内容邮箱，则触发同步的频率将下降（每 24 小时同步一次）。如果在主层次结构中执行写入操作（例如创建文件夹），则立即（同步）触发与内容邮箱的同步。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由于只有一个层次结构的可写副本，因此文件夹创建代理到内容邮箱用户连接的层次结构邮箱。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 由于只有一个层次结构的可写副本，因此文件夹创建代理到内容邮箱用户连接的层次结构邮箱。
 
 
 在大型组织中，当您创建新公用文件夹邮箱时，层次结构必须在用户连接到该公用文件夹之前与它同步。否则，用户在与 Outlook 连接时可能看到不完整的公用文件夹结构。要在用户未尝试连接到新公用文件夹邮箱的情况下允许一定时间让此同步发生，请在创建公用文件夹邮箱时在 **New-Mailbox** cmdlet 中设置 *IsExcludedFromServingHierarchy* 参数。此参数阻止用户连接到新创建的公用文件夹邮箱。当同步完成时，运行 [Set-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123981\(v=exchg.150\)) cmdlet，其中 *IsExcludedFromServingHierarchy* 参数设置为 `false` 以指示已可以连接到公用文件夹邮箱。还可以使用 [Get-PublicFolderMailboxDiagnostics](https://technet.microsoft.com/zh-cn/library/jj218720\(v=exchg.150\)) cmdlet 按 *SyncInfo* 和 *AssistantInfo* 属性查看同步状态。
@@ -173,18 +123,8 @@ _**上一次修改主题：**2017-03-27_
 
 公用文件夹内容可以包括电子邮件、公告、文档和电子表格。内容存储在公用文件夹邮箱中，但是不跨多个公用文件夹邮箱复制。所有用户访问同一公用文件夹邮箱来获取同样的内容集。尽管提供了公用文件夹内容的全文搜索，当仍不能跨公用文件夹搜索公用文件夹内容，且 Exchange Search 不编制内容索引。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook Web App 受支持，但是有一定限制。可以添加和删除收藏夹文件夹，并执行项目级别操作，例如创建、编辑、删除公告和答复公告。但是，不能从 Outlook Web App 创建或删除公用文件夹。此外，在 Outlook Web App 中，您只能将“邮件”、“文章”、“日历”和“联系人”公用文件夹添加到收藏夹列表中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Outlook Web App 受支持，但是有一定限制。可以添加和删除收藏夹文件夹，并执行项目级别操作，例如创建、编辑、删除公告和答复公告。但是，不能从 Outlook Web App 创建或删除公用文件夹。此外，在 Outlook Web App 中，您只能将“邮件”、“文章”、“日历”和“联系人”公用文件夹添加到收藏夹列表中。
 
 
 ## 迁移公用文件夹

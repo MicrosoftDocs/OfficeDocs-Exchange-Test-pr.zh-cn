@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2014-09-11_
+_**上一次修改主题：** 2014-09-11_
 
 如果贵组织使用表单收集敏感信息，用户可能会尝试将这些表单通过电子邮件发送给外部联系人，这就构成了安全风险。Exchange 中的数据丢失防护 (DLP) 可以帮助您通过[文档指纹](overview-of-document-fingerprinting-in-exchange.md)检测此风险，以保护这些敏感信息。要使用文档指纹，只需上载一个空白表单，例如知识产权文档、政府表单或组织内使用的其他标准表单。然后将生成的文档指纹添加到 DLP 策略或传输规则。方法如下：
 
@@ -47,18 +47,8 @@ _**上一次修改主题：**2014-09-11_
 
 ## 使用 Shell 创建基于文档指纹的分类规则包
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>尽管您可以在 Shell 中创建和修改分类规则包，但您会发现在 EAC 中创建文档指纹更简单一点。我们建议您先在 EAC 中尝试，然后再在 Shell 中尝试执行此过程。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 尽管您可以在 Shell 中创建和修改分类规则包，但您会发现在 EAC 中创建文档指纹更简单一点。我们建议您先在 EAC 中尝试，然后再在 Shell 中尝试执行此过程。
 
 
 DLP 使用分类规则包检测邮件中的敏感内容。要创建基于文档指纹的分类规则包，请使用 **New-Fingerprint** 和 **New-DataClassification** cmdlet。由于 **New-Fingerprint** 的结果不会在数据分类规则以外存储，因此请始终在相同 PowerShell 会话中运行 **New-Fingerprint** 和 **New-DataClassification** 或 **Set-DataClassification**。以下示例基于文件 C:\\My Documents\\Contoso Employee Template.docx 创建新的文档指纹。由于新的指纹存储为变量，因此可以在相同 PowerShell 会话中使用 **New-DataClassification** cmdlet。

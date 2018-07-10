@@ -13,26 +13,16 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-03-22_
+_**上一次修改主题：** 2013-03-22_
 
 您可以自定义统一消息 (UM) 自动助理在营业时间之外要使用的菜单提示。创建 UM 自动助理之后，系统将使用默认系统提示（\&quot;欢迎使用统一消息\&quot;）作为呼叫者在播放非营业时间欢迎问候语之后听到的菜单提示。尽管不得替换或更改系统提示语，但您可以自定义用于 UM 自动助理的问候语和菜单提示。创建自定义的非营业时间菜单提示音频文件之后，必须在 UM 自动助理中为非营业时间启用菜单导航条目。
 
 如果只希望将组织或公司的名称包括在默认系统提示中，则可在 UM 自动助理上的\&quot;公司名称\&quot;框中输入该名称。有关详细信息，请参阅[输入公司名称](enter-a-business-name-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须在自动助理中配置营业时间。配置营业时间之后，系统将自动设置非营业时间。有关详细信息，请参阅<a href="configure-business-hours-exchange-2013-help.md">配置工作时间</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 必须在自动助理中配置营业时间。配置营业时间之后，系统将自动设置非营业时间。有关详细信息，请参阅<a href="configure-business-hours-exchange-2013-help.md">配置工作时间</a>。
 
 
 关于 UM 自动助理的更多管理任务，请参阅[UM 自动助理过程](um-auto-attendant-procedures-exchange-2013-help.md)。
@@ -51,18 +41,8 @@ _**上一次修改主题：**2013-03-22_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -75,18 +55,8 @@ _**上一次修改主题：**2013-03-22_
 
 3.  在\&quot;UM 自动助理\&quot;页面 \>\&quot;菜单导航\&quot;的\&quot;非营业时间菜单导航\&quot;下，单击\&quot;更改\&quot;，然后单击\&quot;浏览\&quot;，以找到自定义的非营业时间菜单提示文件。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>用于菜单提示的文件必须是 .wav 或 .wma 文件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 用于菜单提示的文件必须是 .wav 或 .wma 文件。
 
 
 4.  在找到该文件后，请单击\&quot;打开\&quot;，然后再单击\&quot;保存\&quot;。

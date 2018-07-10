@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-06-16_
+_**上一次修改主题：** 2014-06-16_
 
 您可以利用数据库可移植性在同一组织中的 Exchange 2013 邮箱服务器之间移动 Microsoft Exchange Server 2013 邮箱数据库。这有助于减少一些故障情况的总恢复时间。若要了解详细信息，请参阅[数据库可移植性](database-portability-exchange-2013-help.md)。
 
@@ -27,53 +27,23 @@ _**上一次修改主题：**2014-06-16_
 
   - 无法使用 EAC 以利用数据库可移植性将用户邮箱移动到已恢复数据库或拨号音数据库。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 使用命令行管理程序，利用数据库可移植性将用户邮箱移动到已恢复数据库或拨号音数据库
 
 1.  验证要移动的数据库是否处于干净关闭状态。如果数据库不处于干净关闭状态，则执行软恢复。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>执行软恢复时，任何未提交的日志文件都会提交到数据库。如果没有所有需要的日志文件，则无法完成软恢复过程。继续执行步骤 2。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 执行软恢复时，任何未提交的日志文件都会提交到数据库。如果没有所有需要的日志文件，则无法完成软恢复过程。继续执行步骤 2。
     
     要将所有未提交的日志文件提交到数据库，请在命令提示符下运行以下命令。
     
         ESEUTIL /R <Enn>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>&lt;E<em>nn</em>&gt; 为要将日志文件重播到的数据库指定日志文件前缀。由 &lt;E<em>nn</em>&gt; 指定的日志文件前缀是 Eseutil /r 的必需参数。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > &lt;E<em>nn</em>&gt; 为要将日志文件重播到的数据库指定日志文件前缀。由 &lt;E<em>nn</em>&gt; 指定的日志文件前缀是 Eseutil /r 的必需参数。
 
 
 2.  使用下面的语法在服务器上创建数据库：

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Exchange 2013 可用性服务可向 Microsoft Outlook 和 Outlook Web App 客户端提供忙/闲信息。可用性服务通过提供安全、一致、最新的忙/闲信息，改善信息工作者的日历和会议安排体验。
 
@@ -67,18 +67,8 @@ Outlook 使用 Exchange 自动发现服务来获取可用性服务的 URL。有�
 
 内部 URL 通过 Intranet 使用，外部 URL 通过 Internet 使用。如果您要让内部和外部流量均使用同一 URL，请确保 DNS 已正确配置为将内部流量直接路由至内部 URL。同时，确保此 URL 可从内部和外部访问。为了使自动发现服务和可用性服务能够正常运行，必须对 DNS 进行配置，以便 mail.\<*域名*\>.com 和 autodiscover.mail.\<*域名*\>.com 指向负载平衡解决方案的虚拟 IP (VIP)，其中 \<*域名*\> 是您的域的名称。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关详细信息，请参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=45959">网络负载平衡技术参考指南</a>和<a href="https://go.microsoft.com/fwlink/p/?linkid=49315">网络负载平衡群集</a>。您还可以搜索第三方负载平衡软件网站。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 有关详细信息，请参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=45959">网络负载平衡技术参考指南</a>和<a href="https://go.microsoft.com/fwlink/p/?linkid=49315">网络负载平衡群集</a>。您还可以搜索第三方负载平衡软件网站。
 
 
 ## 用于检索忙/闲信息的方法

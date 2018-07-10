@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2010, Exchange Server 2013_
+_**适用于：** Exchange Server 2010, Exchange Server 2013_
 
-_**上一次修改主题：**2018-04-30_
+_**上一次修改主题：** 2018-04-30_
 
-**摘要：** 如何将 Exchange 2010 公用文件夹移动到 Office 365 组。
+**摘要：**  如何将 Exchange 2010 公用文件夹移动到 Office 365 组。
 
 通过一个称为*批迁移*的过程，可以将 Exchange 2010 公用文件夹的部分或全部移至 Office 365 组。组是具有某些优点在公用文件夹上的 microsoft 提供的新协作。[将公用文件夹迁移到 Office 365 组](migrate-your-public-folders-to-office-365-groups-exchange-2013-help.md)有关公用文件夹和组，以及您的组织可能会或可能不会受益于切换到组原因之间的差异的概述，请参阅。
 
@@ -57,18 +57,8 @@ _**上一次修改主题：**2018-04-30_
 
 继续之前，请验证您已经下载并保存的所有下面的脚本和文件：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>请确保将所有脚本和文件都保存到同一位置。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 请确保将所有脚本和文件都保存到同一位置。
 
 
   - **AddMembersToGroups.ps1**。 此脚本将添加成员和所有者到 Office 365 组基于源公用文件夹中的权限项。
@@ -77,7 +67,7 @@ _**上一次修改主题：**2018-04-30_
 
   - **LockAndSavePublicFolderProperties.ps1**。 只读，以防止任何的修改，该脚本会在公用文件夹和它转移与邮件相关的公用文件夹属性 （前提是公用文件夹启用邮件） 到目标组中，其将重新路由电子邮件的公用文件夹到目标组。此脚本还备份权限条目和邮件属性之前对其进行修改。
 
-  - **LockAndSavePublicFolderProperties.strings.psd1:** `LockAndSavePublicFolderProperties.ps1`脚本使用此支持文件。
+  - **LockAndSavePublicFolderProperties.strings.psd1:**  `LockAndSavePublicFolderProperties.ps1`脚本使用此支持文件。
 
   - **UnlockAndRestorePublicFolderProperties.ps1**。 此脚本恢复的访问权限，并使用由`LockandSavePublicFolderProperties.ps1`创建的备份文件的公用文件夹的邮件属性。
 
@@ -224,18 +214,8 @@ _**上一次修改主题：**2018-04-30_
 
 当公用文件夹中的数据大部分有迁移到 Office 365 组时，可以将公用文件夹设为只读的 Exchange 2010 服务器上运行脚本`LockAndSavePublicFolderProperties.ps1` 。此步骤可确保在迁移完成之前，任何新的数据添加到公用文件夹。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果没有已启用邮件的公用文件夹 (MEPFs) 在公众之间要迁移的文件夹此步骤将 SMTP 地址，例如 MEPFs，某些属性复制到 Office 365 中的相应组，然后禁用邮件的公用文件夹。因为迁移 MEPFs 将会禁用邮件功能之后执行此脚本，您将开始看到电子邮件发送至 MEPFs，而是接收到相应的组中。有关详细信息，请参阅本文中稍后介绍的迁移脚本。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果没有已启用邮件的公用文件夹 (MEPFs) 在公众之间要迁移的文件夹此步骤将 SMTP 地址，例如 MEPFs，某些属性复制到 Office 365 中的相应组，然后禁用邮件的公用文件夹。因为迁移 MEPFs 将会禁用邮件功能之后执行此脚本，您将开始看到电子邮件发送至 MEPFs，而是接收到相应的组中。有关详细信息，请参阅本文中稍后介绍的迁移脚本。
 
 
 在下面的命令：
@@ -276,18 +256,8 @@ _**上一次修改主题：**2018-04-30_
 
 完成这一步 （批次状态为**已完成**） 后，验证所有的数据，已复制到 Office 365 组。此时，只要您满意组体验，您可以开始迁移公用文件夹删除您的 Exchange 2010 环境。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>虽然有支持回滚迁移并返回到公用文件夹的过程，这可能不后源公用文件夹已被删除。 请参阅如何执行回滚到公用文件夹从 Office 365 组？的详细信息。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 虽然有支持回滚迁移并返回到公用文件夹的过程，这可能不后源公用文件夹已被删除。 请参阅如何执行回滚到公用文件夹从 Office 365 组？的详细信息。
 
 
 ## 已知问题
@@ -306,9 +276,9 @@ _**上一次修改主题：**2018-04-30_
 
 此脚本将读取正在迁移公用文件夹的权限，然后添加成员和所有者到 Office 365 组，如下所示：
 
-  - 用下列权限角色的用户将被添加为成员到 Office 365 中的组。 **权限的角色：** 所有者、 PublishingEditor、 编辑器、 PublishingAuthor、 作者
+  - 用下列权限角色的用户将被添加为成员到 Office 365 中的组。 **权限的角色：**  所有者、 PublishingEditor、 编辑器、 PublishingAuthor、 作者
 
-  - 除上述，以下的最小访问权限与用户权限将还作为成员添加到 Office 365 中的组。 **访问权限：** ReadItems、 CreateItems、 FolderVisible、 EditOwnedItems、 DeleteOwnedItems
+  - 除上述，以下的最小访问权限与用户权限将还作为成员添加到 Office 365 中的组。 **访问权限：**  ReadItems、 CreateItems、 FolderVisible、 EditOwnedItems、 DeleteOwnedItems
 
   - 用户具有访问权限的"所有者"将向组添加为所有者，并与其他有资格的访问权限的用户将被添加为成员。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-08_
+_**上一次修改主题：** 2012-10-08_
 
 您可以更改已分配给邮箱的管理角色分配策略。在更改邮箱的分配策略时，所做更改会在用户刷新连接（如用户下次登录到其邮箱或打开邮箱选项页）之后立即生效。有关 Microsoft Exchange Server 2013 中的分配策略的详细信息，请参阅[了解管理角色分配策略](understanding-management-role-assignment-policies-exchange-2013-help.md)。
 
@@ -29,18 +29,8 @@ _**上一次修改主题：**2012-10-08_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 使用 EAC 更改邮箱的分配策略
@@ -65,18 +55,8 @@ _**上一次修改主题：**2012-10-08_
 
 ## 使用命令行管理程序可在分配了特定分配策略的一组邮箱上更改分配策略
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不能使用 EAC 一次更改一组邮箱的分配策略。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 不能使用 EAC 一次更改一组邮箱的分配策略。
 
 
 此过程使用了管道传输、**Where** cmdlet 和 *WhatIf* 参数。有关这些概念的详细信息，请参阅下列主题：

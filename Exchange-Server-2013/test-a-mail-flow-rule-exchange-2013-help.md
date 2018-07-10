@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 每次创建 Exchange 邮件流规则（也称为传输规则）时，您应先进行测试，然后再将其打开。这样，如果您意外创建了一个条件，无法准确执行您所需的操作或以意外的方式与其他规则进行交互，也不会给您带来任何意外结果。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>创建规则后等待 30 分钟，然后再对其进行测试。如果您创建规则后立即进行测试，可能会产生不一致的行为。如果您使用 Exchange Server 并且具有多台 Exchange 服务器，可能需要更长时间以便所有服务器接收该规则。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 创建规则后等待 30 分钟，然后再对其进行测试。如果您创建规则后立即进行测试，可能会产生不一致的行为。如果您使用 Exchange Server 并且具有多台 Exchange 服务器，可能需要更长时间以便所有服务器接收该规则。
 
 
 ## 步骤 1：在测试模式下创建规则
@@ -115,18 +105,8 @@ _**上一次修改主题：**2016-12-09_
 
 5.  选择“保存”。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>为避免意外，请向用户介绍新规则。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 为避免意外，请向用户介绍新规则。
 
 
 ## 疑难解答建议
@@ -155,18 +135,8 @@ _**上一次修改主题：**2016-12-09_
 
 若要查看规则报告，请在Office 365 管理中心中选择**“报告”**。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>虽然大部分数据会在 24 小时内出现在报告中，但有些数据可能需要长达 5 天才会出现。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 虽然大部分数据会在 24 小时内出现在报告中，但有些数据可能需要长达 5 天才会出现。
 
 
 ![显示规则使用情况的报告](images/Dn831862.df5bf202-741d-432a-b71d-b37143f0ec0a(EXCHG.150).png "显示规则使用情况的报告")

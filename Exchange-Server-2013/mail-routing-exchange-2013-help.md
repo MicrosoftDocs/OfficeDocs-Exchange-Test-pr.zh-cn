@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 Microsoft Exchange Server 2013 组织中所有邮箱服务器上存在的传输服务的主要任务是将接收自用户和外部来源的邮件路由到最终目标。路由决策在邮件分类期间做出。分类程序是邮箱服务器上的传输服务的一个组件，处理所有传入邮件并根据有关目标的信息确定要对邮件执行的操作。
 
@@ -93,18 +93,8 @@ Exchange 2013 中存在以下传递组类型：
     
       - 当向 Active Directory 站点订阅边缘传输服务器时。无法从其他 Active Directory 站点直接访问这些订阅的边缘传输服务器。请注意，边缘传输服务器可能为 Exchange 2013、Exchange 2010 或 Exchange 2007。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>仅当传递组为 Active Directory 站点时才使用延迟扇出。当多个收件人共享最低成本路由路径的任何部分时，延迟扇出会尝试减少邮件传输数。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 仅当传递组为 Active Directory 站点时才使用延迟扇出。当多个收件人共享最低成本路由路径的任何部分时，延迟扇出会尝试减少邮件传输数。
 
 
   - **服务器列表**   这是配置为通讯组扩展服务器的一台或多台 Exchange 2010 或 Exchange 2007 集线器传输服务器或 Exchange 2013 邮箱服务器的集合。通讯组扩展服务器是由此传递组提供服务的路由目标。

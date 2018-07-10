@@ -13,26 +13,16 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 可以在他们的统一邮件 (UM) 或语音邮件 PIN 重置时将发送给用户的电子邮件中包含附加文本。通过在**重置用户的 Outlook Voice Access 针时**框中输入自定义文本，UM 邮箱策略上执行此操作。例如，自定义的文本可以包含已启用 UM 的用户的安全相关信息。
 
 默认情况下，如果登录尝试失败次数超过 5 次，统一消息或语音邮件系统会重置用于 Outlook Voice Access 的 PIN。用户也可以使用 Outlook Web App 或 Outlook 2010 或更高版本随附的 UM 功能，或者使用 Outlook 电话的 Voice Access，重置其 PIN。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此框中输入的文本限制为 512 个字符，可以包含简单的 HTML 文本。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 此框中输入的文本限制为 512 个字符，可以包含简单的 HTML 文本。
 
 
 有关 Outlook Voice Access PIN 安全性相关的其他任务，请参阅 [针的安全程序](pin-security-procedures-exchange-2013-help.md)。
@@ -49,18 +39,8 @@ _**上一次修改主题：**2013-02-22_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？

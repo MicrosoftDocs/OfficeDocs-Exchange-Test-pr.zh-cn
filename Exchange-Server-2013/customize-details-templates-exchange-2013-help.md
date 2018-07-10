@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-09-25_
+_**上一次修改主题：** 2012-09-25_
 
 使用详细信息模板编辑器可以自定义对象属性的客户端图形用户界面 (GUI) 的表示形式，可使用 MicrosoftOutlook 中的地址列表访问这些属性。例如，用户在 Outlook 中打开地址列表时，特定对象的属性按照 Exchange 组织中详细信息模板的定义来表示。可以通过改变字段大小、添加或删除字段、添加或删除选项卡以及重排字段来自定义对象。这些模板的布局因语言而异。
 
@@ -61,33 +61,13 @@ _**上一次修改主题：**2012-09-25_
     
       - 若要删除对象，请选择该对象，然后按 Delete 键。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>详细信息模板编辑器不包含&amp;quot;撤消&amp;quot;按钮，您也不能使用键盘快捷方式撤消某个操作。若要撤消对模板进行的添加操作，您必须使用 DELETE 键。若要撤消删除操作，您必须重新应用设置。您还可以在退出详细信息模板编辑器时不保存所做更改，从而还原到初始设置。若要撤消已保存的更改，您可以还原模板。如果您还原模板，则会丢失所有自定义设置，且模板会还原至原始配置。若要详细了解如何还原详细信息模板，请参阅<a href="restore-a-details-template-to-the-default-configuration-exchange-2013-help.md">还原到默认配置的详细信息模板</a>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 详细信息模板编辑器不包含&amp;quot;撤消&amp;quot;按钮，您也不能使用键盘快捷方式撤消某个操作。若要撤消对模板进行的添加操作，您必须使用 DELETE 键。若要撤消删除操作，您必须重新应用设置。您还可以在退出详细信息模板编辑器时不保存所做更改，从而还原到初始设置。若要撤消已保存的更改，您可以还原模板。如果您还原模板，则会丢失所有自定义设置，且模板会还原至原始配置。若要详细了解如何还原详细信息模板，请参阅<a href="restore-a-details-template-to-the-default-configuration-exchange-2013-help.md">还原到默认配置的详细信息模板</a>。
     
       - 若要在工具箱窗格中添加\&quot;编辑\&quot;文本框、列表框、多值下拉框或多值列表框，请将对象拖动到设计窗格中。单击属性窗格中的属性下拉框，然后选择将由 Exchange 使用的属性，设置对象的属性。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>必须将对象与属性相关联，这样 Exchange 才能使用它。此外，属性还确定了在 Outlook 中向最终用户显示的内容。如果您不选择属性，则系统会自动随机选择某个属性。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 必须将对象与属性相关联，这样 Exchange 才能使用它。此外，属性还确定了在 Outlook 中向最终用户显示的内容。如果您不选择属性，则系统会自动随机选择某个属性。
     
       - 若要添加分组框，请将对象拖到设计窗格中。然后，在属性窗格中的\&quot;文本\&quot;框内键入名称。使用分组框可以对相似对象进行分组。
     
@@ -97,18 +77,8 @@ _**上一次修改主题：**2012-09-25_
     
       - 若要更改选项卡上各对象的 Tab 键顺序，以便用户可以使用 Tab 键按您所需的顺序导航对象，请在设计窗格中选择相应的对象。然后，在属性窗格中，使用\&quot;TabIndex\&quot;框更改顺序。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>若要确保用户不能使用 Tab 键访问对象的标签（例如，&amp;quot;名称&amp;quot;或&amp;quot;别名&amp;quot;），请更改标签的次序以便这些标签处在 Tab 键次序的最后。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 若要确保用户不能使用 Tab 键访问对象的标签（例如，&amp;quot;名称&amp;quot;或&amp;quot;别名&amp;quot;），请更改标签的次序以便这些标签处在 Tab 键次序的最后。
 
 
 5.  要保存对详细信息模板的更改，请在\&quot;文件\&quot;菜单上，单击\&quot;保存\&quot;。

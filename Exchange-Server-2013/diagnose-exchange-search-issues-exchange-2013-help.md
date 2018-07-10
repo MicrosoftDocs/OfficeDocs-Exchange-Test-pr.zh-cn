@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Exchange Search 可对 Exchange 邮箱中的邮箱和受支持附件编制索引。Exchange 搜索增加了电子邮件的数量以及邮箱大小和存储配额、为用户配置了存档邮箱，并引入了可执行发现搜索的就地电子数据展示，已成为 Microsoft Exchange Server 2013 组织中关键的邮箱服务器组件。Exchange 搜索存在的问题可能会影响用户工作效率和就地电子数据展示功能。
 
@@ -33,18 +33,8 @@ Exchange Search 可对 Exchange 邮箱中的邮箱和受支持附件编制索引
 
 您可以使用 [Get-FailedContentIndexDocuments](https://technet.microsoft.com/zh-cn/library/dd351154\(v=exchg.150\)) cmdlet 检索 Exchange 搜索无法成功编制索引的不可搜索邮箱项目的列表。可以对邮箱服务器、邮箱数据库或特定邮箱运行 cmdlet。Cmdlet 会返回每个不可搜索项目的详细信息。无法搜索邮箱项目的原因有若干个。例如，可能是因为电子邮件中可能包含无法编制索引以供搜索的附件文件类型，也可能是因为搜索筛选器未安装或已禁用。如果相应文件类型的搜索筛选器可用，则您可以将它安装在 exExchangeNoVersionExchange 服务器上。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由 Microsoft 提供的搜索筛选器已经过测试并由 Microsoft 提供支持。我们建议您先在测试环境中测试所有的第三方搜索筛选器，然后再将此类搜索筛选器安装在生产环境中的 exExchangeNoVersionExchange 服务器上。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 由 Microsoft 提供的搜索筛选器已经过测试并由 Microsoft 提供支持。我们建议您先在测试环境中测试所有的第三方搜索筛选器，然后再将此类搜索筛选器安装在生产环境中的 exExchangeNoVersionExchange 服务器上。
 
 
 若要详细了解不可搜索的项目，请参阅：
@@ -63,7 +53,7 @@ Exchange Search 可对 Exchange 邮箱中的邮箱和受支持附件编制索引
     
     2.  在“服务”中，确认“Microsoft Exchange 搜索”服务的“状态”为“已启动”。
 
-2.  **检查邮箱数据库配置：**用户邮箱数据库的 *IndexEnabled* 参数是否设置为 true？如果是，请转至步骤 3。如果不是，请在命令行管理程序中运行以下命令以验证 *IndexEnabled* 标志是否设置为 true。
+2.  **检查邮箱数据库配置：** 用户邮箱数据库的 *IndexEnabled* 参数是否设置为 true？如果是，请转至步骤 3。如果不是，请在命令行管理程序中运行以下命令以验证 *IndexEnabled* 标志是否设置为 true。
     
         Get-MailboxDatabase | Format-Table Name,IndexEnabled
     
@@ -91,19 +81,19 @@ Exchange Search 可对 Exchange 邮箱中的邮箱和受支持附件编制索引
     
     若要了解如何使用性能监视器，请参阅 [Windows Server 2008 中性能和可靠性监视的入门指南](https://go.microsoft.com/fwlink/p/?linkid=178005)
 
-4.  **检查数据库副本索引运行状况：**内容索引状态是否正常？使用 **Get-MailboxDatabaseCopyStatus** cmdlet 可检查数据库副本的内容索引运行状况。
+4.  **检查数据库副本索引运行状况：** 内容索引状态是否正常？使用 **Get-MailboxDatabaseCopyStatus** cmdlet 可检查数据库副本的内容索引运行状况。
     
         Get-MailboxDatabaseCopyStatus -Server $env:ComputerName | Format-Table Name,Status,ContentIndex* -Auto
     
     有关语法和参数的详细信息，请参阅 [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/zh-cn/library/dd298044\(v=exchg.150\))。
 
-5.  **运行 Test-ExchangeSearch cmdlet：**如果邮箱数据库已爬网，则可以对邮箱数据库或特定邮箱运行 **Test-ExchangeSearch** cmdlet。
+5.  **运行 Test-ExchangeSearch cmdlet：** 如果邮箱数据库已爬网，则可以对邮箱数据库或特定邮箱运行 **Test-ExchangeSearch** cmdlet。
     
         Test-ExchangeSearch -Identity AlanBrewer@contoso.com
     
     有关语法和参数的详细信息，请参阅 [Test-ExchangeSearch](https://technet.microsoft.com/zh-cn/library/bb124733\(v=exchg.150\))。
 
-6.  **检查应用程序事件日志：**使用事件查看器或命令行管理程序检查应用程序事件日志中与搜索相关的错误消息。检查以下事件源。
+6.  **检查应用程序事件日志：** 使用事件查看器或命令行管理程序检查应用程序事件日志中与搜索相关的错误消息。检查以下事件源。
     
       - **MSExchangeFastSearch**
     
@@ -117,5 +107,5 @@ Exchange Search 可对 Exchange 邮箱中的邮箱和受支持附件编制索引
     
     2.  在“服务”中，右键单击“Microsoft Exchange 搜索”，然后单击“停止”。服务停止后，再次右键单击此服务，然后单击“开始”。
 
-8.  **重新设定搜索目录种子：**在某些情况下，例如搜索目录损坏时，您可能需要对该目录重新设定种子。如果需要对搜索目录重新设定种子，Exchange Search 将在应用程序事件日志中记录，向您发出通知。有关对搜索目录重新设定种子的详细信息，请参阅[重新设定搜索目录种子](reseed-the-search-catalog-exchange-2013-help.md)。
+8.  **重新设定搜索目录种子：** 在某些情况下，例如搜索目录损坏时，您可能需要对该目录重新设定种子。如果需要对搜索目录重新设定种子，Exchange Search 将在应用程序事件日志中记录，向您发出通知。有关对搜索目录重新设定种子的详细信息，请参阅[重新设定搜索目录种子](reseed-the-search-catalog-exchange-2013-help.md)。
 

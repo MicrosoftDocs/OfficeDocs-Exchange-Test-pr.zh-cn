@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-05-03_
+_**上一次修改主题：** 2013-05-03_
 
 [启用 UM IP 网关的传出呼叫](enable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md)
 

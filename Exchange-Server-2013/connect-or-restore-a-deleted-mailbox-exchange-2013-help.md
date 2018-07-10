@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-05-04_
+_**上一次修改主题：** 2015-05-04_
 
 可以使用 EAC 或命令行管理程序将已删除的邮箱连接到 Active Directory 用户帐户。在删除邮箱时，Exchange 会将邮箱保留在邮箱数据库中，并将邮箱切换到禁用状态。关联的 Active Directory 用户帐户也会被删除。邮箱会保留到被删除邮箱的保留期（默认为 30 天）结束，然后会从邮箱数据库中永久删除（即*清除*）。
 
@@ -41,18 +41,8 @@ _**上一次修改主题：**2015-05-04_
     
     对于内部部署 Exchange 组织，也可以在“Active Directory 用户和计算机”中验证此信息。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在连接删除的链接邮箱、资源邮箱或共享邮箱时，要将邮箱连接到的 Active Directory 用户帐户必须处于禁用状态。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 在连接删除的链接邮箱、资源邮箱或共享邮箱时，要将邮箱连接到的 Active Directory 用户帐户必须处于禁用状态。
 
 
   - 若要验证邮箱数据库中存在要将用户帐户连接到的已删除邮箱，并且这些邮箱不是软删除的邮箱，请运行以下命令。
@@ -81,18 +71,8 @@ _**上一次修改主题：**2015-05-04_
     
     将显示在 Exchange 组织中选定的 Exchange 服务器上断开连接的邮箱列表。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>这个断开连接邮箱列表包括了禁用的、删除的和软删除的邮箱。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 这个断开连接邮箱列表包括了禁用的、删除的和软删除的邮箱。
 
 
 3.  单击要将用户连接到的已删除邮箱，然后单击“连接”。
@@ -109,36 +89,16 @@ _**上一次修改主题：**2015-05-04_
 
 在命令行管理程序中使用 **Connect-Mailbox** cmdlet 可将删除的邮箱连接到未启用邮件的用户帐户。必须指定要连接的邮箱的类型。以下示例展示了用于重新连接用户邮箱、链接邮箱、会议室邮箱、设备邮箱和共享邮箱的语法。在所有示例中，可选的 *Alias* 参数用于指定电子邮件别名，即电子邮件地址中 @ 符号的左侧部分。如果不包括 *Alias* 参数，则使用 *User* 或 *LinkedMasterAccount* 参数中指定的值为重新连接的邮箱的电子邮件地址创建别名。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如前所述，在连接链接邮箱、资源邮箱或共享邮箱时，要将邮箱链接到的 Active Directory 用户帐户必须处于禁用状态。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如前所述，在连接链接邮箱、资源邮箱或共享邮箱时，要将邮箱链接到的 Active Directory 用户帐户必须处于禁用状态。
 
 
 此示例将连接用户邮箱。*Identity* 参数指定邮箱数据库 MBXDB01 中保留的已删除邮箱的显示名。*User* 参数指定要将邮箱连接到的 Active Directory 用户帐户。
 
     Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>还可以使用 <code>LegacyDN</code> 或 <code>MailboxGuid</code> 属性的值来标识删除的邮箱。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 还可以使用 <code>LegacyDN</code> 或 <code>MailboxGuid</code> 属性的值来标识删除的邮箱。
 
 
 本示例将连接链接的邮箱。*Identity* 参数指定邮箱数据库 MBXDB02 上的已删除邮箱。*LinkedMasterAccount* 参数指定帐户林中要将邮箱连接到的 Active Directory 用户帐户。*LinkedDomainController* 参数指定帐户林中的域控制器。
@@ -157,18 +117,8 @@ _**上一次修改主题：**2015-05-04_
 
     Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printer Support" -Alias corpprint -Shared
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>还可以使用 <code>LegacyDN</code> 或 <code>MailboxGuid</code> 值来标识删除的邮箱。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 还可以使用 <code>LegacyDN</code> 或 <code>MailboxGuid</code> 值来标识删除的邮箱。
 
 
 有关语法和参数的详细信息，请参阅 [Connect-Mailbox](https://technet.microsoft.com/zh-cn/library/aa997878\(v=exchg.150\))。
@@ -193,18 +143,8 @@ _**上一次修改主题：**2015-05-04_
 
 默认情况下，在成功完成邮箱还原请求之后，会将邮箱保留 30 天后再删除。可以使用 **Remove-StoreMailbox** cmdlet 将其提前删除。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不能使用 EAC 还原删除的邮箱。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 不能使用 EAC 还原删除的邮箱。
 
 
 ## 使用命令行管理程序还原已删除的邮箱
@@ -235,18 +175,8 @@ _**上一次修改主题：**2015-05-04_
 
 2.  利用步骤 1 返回的信息，搜索 Active Directory 中的“已删除对象”容器以获取公用文件夹邮箱的 GUID 和包含已删除公用文件夹邮箱的邮箱数据库的 GUID 或名称。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以使用自定义脚本或 Ldp 实用程序搜索已删除对象，该实用程序可以通过在 Powershell 提示符处键入 <strong>ldp.exe</strong> 打开。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!tip]
+    > 您可以使用自定义脚本或 Ldp 实用程序搜索已删除对象，该实用程序可以通过在 Powershell 提示符处键入 <strong>ldp.exe</strong> 打开。
 
 
 当知道了已删除公用文件夹邮箱 GUID 和包含该公用文件夹邮箱的邮箱数据库的名称或 GUID 后，运行以下命令来还原公用文件夹邮箱。
@@ -263,18 +193,8 @@ _**上一次修改主题：**2015-05-04_
     
         Connect-Mailbox -Identity <public folder mailbox GUID> -Database <database name or GUID> -User <mailUserName>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><code>Identity</code> 参数指定 Exchange 数据库中要连接到 Active Directory 用户对象的邮箱对象。上面的示例指定了公用文件夹邮箱的 GUID，但您也可以使用“显示名称”值或 LegacyExchangeDN 值。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > <code>Identity</code> 参数指定 Exchange 数据库中要连接到 Active Directory 用户对象的邮箱对象。上面的示例指定了公用文件夹邮箱的 GUID，但您也可以使用“显示名称”值或 LegacyExchangeDN 值。
 
 
 3.  根据下面的示例，在公用文件夹邮箱上运行 `Update-StoreMailboxState`：

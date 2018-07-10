@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Microsoft Exchange Server 2013安装程序无法继续，因为安装活动目录轻量级目录服务 (AD LDS) 的尝试失败。
 

@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-08_
+_**上一次修改主题：** 2015-04-08_
 
 收件人筛选由收件人筛选器代理提供。当收件人筛选在 Exchange 服务器上启动时，将筛选来自 Internet 但未经验证的入站邮件。这些邮件将作为外部邮件处理。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>尽管收件人筛选代理在邮箱服务器上可用，但不应对其进行配置。当邮箱服务器上的收件人筛选检测到包含其他有效收件人的邮件中具有无效或受阻止接收人，邮件会被拒绝。如果在邮箱服务器上安装反垃圾邮件代理，将默认启用收件人筛选器代理。但是，未将其配置为阻止任何收件人。有关详细信息，请参阅<a href="enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md">在邮箱服务器上启用反垃圾邮件功能</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 尽管收件人筛选代理在邮箱服务器上可用，但不应对其进行配置。当邮箱服务器上的收件人筛选检测到包含其他有效收件人的邮件中具有无效或受阻止接收人，邮件会被拒绝。如果在邮箱服务器上安装反垃圾邮件代理，将默认启用收件人筛选器代理。但是，未将其配置为阻止任何收件人。有关详细信息，请参阅<a href="enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md">在邮箱服务器上启用反垃圾邮件功能</a>。
 
 
 ## 在开始之前，您需要知道什么？
@@ -51,18 +41,8 @@ _**上一次修改主题：**2015-04-08_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -77,18 +57,8 @@ _**上一次修改主题：**2015-04-08_
 
     Set-RecipientFilterConfig -Enabled $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>禁用收件人筛选时，基本&amp;quot;收件人筛选&amp;quot;代理仍启用。若要禁用收件人筛选器代理，请运行以下命令：<code>Disable-TransportAgent &quot;Recipient Filter Agent&quot;</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 禁用收件人筛选时，基本&amp;quot;收件人筛选&amp;quot;代理仍启用。若要禁用收件人筛选器代理，请运行以下命令：<code>Disable-TransportAgent &quot;Recipient Filter Agent&quot;</code>.
 
 
 ## 您如何知道这有效？

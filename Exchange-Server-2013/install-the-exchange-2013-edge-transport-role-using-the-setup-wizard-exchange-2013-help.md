@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server, Exchange Server 2013_
+_**适用于：** Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2014-06-19_
+_**上一次修改主题：** 2014-06-19_
 
 本主题说明了如何在计算机上使用 Microsoft Exchange Server 2013 安装向导来安装 Exchange 2013 边缘传输服务器角色。Exchange 2013 Service Pack 1 (SP1) 或更高版本中边缘传输角色可用。有关规划和部署 Exchange 2013 的详细信息，请参阅[规划和部署](planning-and-deployment-for-exchange-2013-installation-instructions.md)。
 
@@ -23,18 +23,8 @@ _**上一次修改主题：**2014-06-19_
 
 如果您想在计算机上安装 Exchange 2013 邮箱或客户端访问角色，请参阅[使用安装向导安装 Exchange 2013](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md)。边缘传输角色不能安装在与邮箱或客户端访问服务器角色相同的计算机上。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>你是否曾听说过 Exchange Server 部署助理？它是一款免费的联机工具，它将询问您一些问题并专门为您创建自定义部署检查表，以帮助您在组织中快速部署 Exchange 2013。若您想要了解关于它的详细信息，请转到 <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 你是否曾听说过 Exchange Server 部署助理？它是一款免费的联机工具，它将询问您一些问题并专门为您创建自定义部署检查表，以帮助您在组织中快速部署 Exchange 2013。若您想要了解关于它的详细信息，请转到 <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。
 
 
 有关安装之后要完成的任务的信息，请参阅 [Exchange 2013 安装后任务](exchange-2013-post-installation-tasks-exchange-2013-help.md)。
@@ -57,34 +47,14 @@ _**上一次修改主题：**2014-06-19_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在服务器上安装 Exchange 之后，不得更改服务器名称。不支持在安装了 Exchange 服务器角色之后重命名服务器。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 在服务器上安装 Exchange 之后，不得更改服务器名称。不支持在安装了 Exchange 服务器角色之后重命名服务器。
 
 
 ## 安装 Exchange Server 2013
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要下载 Exchange 2013 的最新版本，请参阅 <a href="updates-for-exchange-2013-exchange-2013-help.md">Exchange 2013 更新</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 若要下载 Exchange 2013 的最新版本，请参阅 <a href="updates-for-exchange-2013-exchange-2013-help.md">Exchange 2013 更新</a>。
 
 
 1.  登录到要安装 Exchange 2013 的计算机。
@@ -93,18 +63,8 @@ _**上一次修改主题：**2014-06-19_
 
 3.  通过双击 `Setup.exe` 启动 Exchange 2013 安装程序
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果启用了用户访问控制 (UAC)，则必须右键单击 <code>Setup.exe</code> 并选择“以管理员身份运行”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 如果启用了用户访问控制 (UAC)，则必须右键单击 <code>Setup.exe</code> 并选择“以管理员身份运行”。
 
 
 4.  在“检查更新？”页面，选择是否希望安装程序连接到 Internet 并下载 Exchange 2013 的产品和安全更新。如果您选择“连接到 Internet 并检查更新”，安装程序将下载更新，并在应用这些更新后继续。如果您选择“现在不检查更新”，您可在随后手动下载和安装更新。我们建议您现在下载并安装更新。单击“下一步”继续。
@@ -127,18 +87,8 @@ _**上一次修改主题：**2014-06-19_
     
     选择“自动安装要安装 Exchange Server 所需的 Windows Server 角色和功能”让安装向导安装必需的 Windows 组件。您可能需要重新启动计算机以完成一些 Windows 功能的安装。如果不选择该选项，您必须手动安装 Windows 功能。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此选项仅安装 Exchange 所需的 Windows 功能。您必须手动安装其他必备组件。有关详细信息，请参阅<a href="exchange-2013-prerequisites-exchange-2013-help.md">Exchange 2013 先决条件</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 此选项仅安装 Exchange 所需的 Windows 功能。您必须手动安装其他必备组件。有关详细信息，请参阅<a href="exchange-2013-prerequisites-exchange-2013-help.md">Exchange 2013 先决条件</a>。
     
     单击“下一步”继续。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2017-04-28_
+_**上一次修改主题：** 2017-04-28_
 
 可以使用邮件流规则（也称为传输规则）识别通过 Exchange 2013 组织进行传递的邮件并对其进行操作。邮件流规则与 Outlook 和 Outlook Web App 中提供的收件箱规则类似。主要区别在于邮件流规则在邮件传输过程中对其进行操作，而不是在邮件传递到邮箱后进行操作。邮件流规则包含更丰富的条件、例外和操作集，让你能灵活实现多种类型的邮件策略。
 
@@ -253,7 +253,7 @@ _**上一次修改主题：**2017-04-28_
 
 在邮箱服务器上创建和配置的邮件流规则存储在 Active Directory 中，这些规则通过组织中所有邮箱服务器上的传输服务读取并应用。创建、修改或删除邮件流规则时，此更改会在组织中的域控制器间进行复制。这样，Exchange 可以为整个组织提供一致的邮件流规则集。
 
-**注意：**
+**注意：** 
 
   - 域控制器之间的复制取决于不受 Exchange 控制的因素（例如，Active Directory 网站数量和网络链接的速度）。因此，在组织中实现邮件流规则时，需要考虑复制延迟。有关 Active Directory 复制的详细信息，请参阅[使用 Windows PowerShell 进行 Active Directory 复制和拓扑管理简介](https://go.microsoft.com/fwlink/p/?linkid=274904)。
 
@@ -271,20 +271,10 @@ Exchange 2013 中有两种常见的混合环境方案：
     
     在混合环境中，本地 Exchange 组织和 UNRESOLVED\_TOKEN\_VAL(Office365) 之间不存在规则复制。因此，你在 Exchange 中创建规则时，需要在 UNRESOLVED\_TOKEN\_VAL(Office365) 中创建匹配规则。你在 UNRESOLVED\_TOKEN\_VAL(Office365) 中创建的规则存储在云中，但你在本地组织中创建的规则存储在本地 Active Directory 中。在混合环境中管理规则时，通过设置为可同时在两个环境进行更改，或者在一个环境中进行更改，然后导出规则并将其导入到另一个环境中，可使这两个规则集保持同步。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>即使 UNRESOLVED_TOKEN_VAL(Office365) 和 Exchange Server 中可用的条件和操作之间有巨大的重叠，两者仍然有差异。如果你计划在两处位置创建相同的规则，请确保要使用的所有条件和操作都可用。要查看 UNRESOLVED_TOKEN_VAL(Office365) 中的可用条件和操作列表，请参阅下列主题：<br />
-    <a href="https://technet.microsoft.com/zh-cn/library/jj919235(v=exchg.150)">在联机 Exchange 邮件流规则条件和例外 （谓语）</a><br />
-    <a href="https://technet.microsoft.com/zh-cn/library/jj919237(v=exchg.150)">联机在 Exchange 邮件流规则操作</a></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 即使 UNRESOLVED_TOKEN_VAL(Office365) 和 Exchange Server 中可用的条件和操作之间有巨大的重叠，两者仍然有差异。如果你计划在两处位置创建相同的规则，请确保要使用的所有条件和操作都可用。要查看 UNRESOLVED_TOKEN_VAL(Office365) 中的可用条件和操作列表，请参阅下列主题：<br />
+    > <a href="https://technet.microsoft.com/zh-cn/library/jj919235(v=exchg.150)">在联机 Exchange 邮件流规则条件和例外 （谓语）</a><br />
+    > <a href="https://technet.microsoft.com/zh-cn/library/jj919237(v=exchg.150)">联机在 Exchange 邮件流规则操作</a>
 
 
   - **与 Exchange 2010 或 Exchange 2007 共存**

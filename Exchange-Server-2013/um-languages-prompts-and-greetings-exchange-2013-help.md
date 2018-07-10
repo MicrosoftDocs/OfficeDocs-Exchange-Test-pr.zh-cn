@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 可以安装并配置语言包，以便在统一消息 (UM) 环境中支持多种语言。
 
@@ -61,18 +61,8 @@ UM 自动助理语言
 
 UM 语言包中包含特定语言的预先录制的提示、TTS 转换支持，在某些情况下还包含 ASR 支持。在多语言环境中，可能必须安装额外的 UM 语言包，因为有些呼叫者喜欢使用其他语言的提示，或者会接收多种语言的电子邮件。若要支持邮箱服务器朗读包含多种语言的电子邮件的功能，必须安装多个 UM 语言包，因为必须指示 TTS 转换系统根据要朗读的邮件文本来选择语言。如果尚未安装统一消息语言包，如果将电子邮件读回给用户，电子邮件将不合逻辑或不清楚。安装相应的语言包可让 TTS 引擎通过使用正确语言对 Outlook Voice Access 用户读出电子邮件和日历项目，并且还提供特定语言的预先记录的提示以用于统一消息。在有些情况下，它们还可以提供 ASR 支持。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>TTS 引擎将文本转换为语音，但是不会将语音转换为文本。启用 UM 的用户可以将包含语音文件附件的电子邮件发送给其他用户。但是，不能创建基于文本的电子邮件并发送给其他用户。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> TTS 引擎将文本转换为语音，但是不会将语音转换为文本。启用 UM 的用户可以将包含语音文件附件的电子邮件发送给其他用户。但是，不能创建基于文本的电子邮件并发送给其他用户。
 
 
 安装语言包时，安装程序将执行下列操作：
@@ -87,18 +77,8 @@ UM 语言包中包含特定语言的预先录制的提示、TTS 转换支持，�
 
 从 Exchange Server 2013 UM 语言包下载 UM 语言包后，可以使用 **Setup.exe** 命令或运行 *\<UMLanguagePack\>*.exe 安装程序来添加 UM 语言包。但是，必须使用 Setup.exe 命令以删除 UM 语言包。不存在可用于在邮箱服务器中添加或删除语言的 Exchange 命令行管理程序 cmdlet。有关如何安装 UM 语言包的详细信息，请参阅[安装 UM 语言包](install-a-um-language-pack-exchange-2013-help.md)。有关如何删除 UM 语言包的详细信息，请参阅[删除 UM 语言包](remove-a-um-language-pack-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，当您安装邮箱服务器时，会安装“美国英语”(en-US) 语言包。它无法删除，除非您从计算机中删除邮箱服务器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 默认情况下，当您安装邮箱服务器时，会安装“美国英语”(en-US) 语言包。它无法删除，除非您从计算机中删除邮箱服务器。
 
 
 返回顶部
@@ -335,18 +315,8 @@ UM 语言包中包含特定语言的预先录制的提示、TTS 转换支持，�
 
   - 用户的默认语音邮件问候语
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>用户录制了个性化语音邮件问候语后，就不再使用 TTS 版本的语音问候语了。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 用户录制了个性化语音邮件问候语后，就不再使用 TTS 版本的语音问候语了。
 
 
 ## 自动语音识别

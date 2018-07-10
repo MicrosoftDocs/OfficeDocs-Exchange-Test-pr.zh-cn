@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2014-12-16_
+_**上一次修改主题：** 2014-12-16_
 
 通过通讯簿策略 (ABP)，可以将用户分入特定的组，从而生成组织全局地址列表 (GAL) 的自定义视图。创建 ABP 时，可以为策略分配 GAL、脱机通讯簿 (OAB)、会议室列表以及一个或多个地址列表。然后，可以将 ABP 分配给邮箱用户，向他们提供对 Outlook 和 Outlook Web App 中自定义 GAL 的访问权限。目标是简化机制，为需要多个 GAL 的本地组织实现 GAL 分段。有关 ABP 的详细信息，请参阅[通讯簿策略](address-book-policies-exchange-2013-help.md)。
 
@@ -43,15 +43,15 @@ _**上一次修改主题：**2014-12-16_
 
 此示例将创建具有下列设置的 ABP：
 
-  - **名称：**All Fabrikam ABP
+  - **名称：** All Fabrikam ABP
 
-  - **GAL：**All Fabrikam
+  - **GAL：** All Fabrikam
 
-  - **OAB：**Fabrikam-All-OAB
+  - **OAB：** Fabrikam-All-OAB
 
-  - **会议室列表：**All Fabrikam Rooms
+  - **会议室列表：** All Fabrikam Rooms
 
-  - **地址列表：**All Fabrikam、All Fabrikam Mailboxes、All Fabrikam DLs 和 All Fabrikam Contacts
+  - **地址列表：** All Fabrikam、All Fabrikam Mailboxes、All Fabrikam DLs 和 All Fabrikam Contacts
 
 <!-- end list -->
 

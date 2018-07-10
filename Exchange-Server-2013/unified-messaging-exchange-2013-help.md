@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 统一消息 (UM) 使用户可以使用语音邮件和其他功能，包括 Outlook Voice Access 和呼叫应答规则。UM 将语音邮件和电子邮件并入一个可通过许多不同设备访问的邮箱。用户可从其电子邮件“收件箱”中收听邮件，也可通过任意电话使用 Outlook Voice Access 来收听邮件。您可控制用户如何从 UM 拨打传出呼叫，以及用户呼入您的组织时获得的体验。
 

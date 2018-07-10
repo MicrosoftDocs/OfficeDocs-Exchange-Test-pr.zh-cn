@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-07-21_
+_**上一次修改主题：** 2016-07-21_
 
 收件人（包括用户、资源、联系人和组）是 Active Directory 中任何已启用邮件的对象，Microsoft Exchange 可以向其传递或路由邮件。为了使收件人可以发送或接收电子邮件，收件人必须有电子邮件地址。电子邮件地址策略为收件人生成主电子邮件地址和辅电子邮件地址，以便其可以接收和发送电子邮件。
 
@@ -112,18 +112,8 @@ Exchange 将策略应用于符合收件人筛选条件的所有收件人：
     
       - Exchange 统一消息代理地址（EUM 代理地址）
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Exchange 中，所有非 SMTP 电子邮件地址都被视为自定义地址。Exchange 不会为 X.400、GroupWise 或 Lotus Notes 电子邮件地址类型提供唯一的对话框或属性页。如果添加非 SMTP 自定义电子邮件地址，则必须具有相应的动态链接库 (DLL) 文件。如果没有提供相应的 DLL 文件，则无法创建自定义电子邮件地址策略。以下错误将记录到事件查看器中：&amp;quot;在‘i386’计算机上，丢失了 Microsoft Exchange 目录中的‘SADF’地址类型的电子邮件地址描述对象&amp;quot;。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 在 Exchange 中，所有非 SMTP 电子邮件地址都被视为自定义地址。Exchange 不会为 X.400、GroupWise 或 Lotus Notes 电子邮件地址类型提供唯一的对话框或属性页。如果添加非 SMTP 自定义电子邮件地址，则必须具有相应的动态链接库 (DLL) 文件。如果没有提供相应的 DLL 文件，则无法创建自定义电子邮件地址策略。以下错误将记录到事件查看器中：&amp;quot;在‘i386’计算机上，丢失了 Microsoft Exchange 目录中的‘SADF’地址类型的电子邮件地址描述对象&amp;quot;。
 
 
 有关如何创建电子邮件地址策略的详细说明，请参阅下列主题：

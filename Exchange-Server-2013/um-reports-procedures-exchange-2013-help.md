@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-09_
+_**上一次修改主题：** 2012-11-09_
 
 [查看您的组织中语音邮件拨打](review-the-voice-mail-calls-in-your-organization-exchange-2013-help.md)
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2018-01-17_
+_**上一次修改主题：** 2018-01-17_
 
 就地电子数据展示使用系统邮箱存储就地电子数据展示搜索元数据。此发现系统邮箱的显示名为\&quot;SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}\&quot;。由于系统邮箱在 Exchange 管理中心 (EAC) 中或在 Exchange 地址列表中不可见，因此很少会无意中将其删除。
 
@@ -35,19 +35,9 @@ _**上一次修改主题：**2018-01-17_
 
 2.  使用命令行管理程序启用发现系统邮箱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>无法使用 EAC 启用发现系统邮箱。<br />
-    下面的命令必须运行相同的目录中提取 Exchange 安装媒体的位置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 无法使用 EAC 启用发现系统邮箱。
+    > 下面的命令必须运行相同的目录中提取 Exchange 安装媒体的位置。
     
     若要重新创建搜索系统邮箱，请运行以下命令：
     
@@ -57,16 +47,6 @@ _**上一次修改主题：**2018-01-17_
 
 若要验证是否成功重新创建了发现系统邮箱，请将 **Get-Mailbox** cmdlet 与 *Arbitration* 开关结合使用来检索系统邮箱。查看该命令的结果以验证是否重新创建了系统邮箱 `SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}`。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 

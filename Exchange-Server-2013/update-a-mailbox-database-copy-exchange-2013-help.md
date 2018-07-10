@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-11-02_
+_**上一次修改主题：** 2012-11-02_
 
 更新（亦称为\&quot;*种子设定*\&quot;）是将邮箱数据库副本添加到数据库可用性组 (DAG) 中另一邮箱服务器的过程。新添加的副本将成为被动副本的基线数据库，其中将重播从主动副本复制的日志文件。在下列情况下必须设定种子：
 
@@ -49,18 +49,8 @@ _**上一次修改主题：**2012-11-02_
 
 可以同时为多个数据库副本设定种子。不过，若同时为多个副本设定种子，只能对数据库文件设定种子，并省略内容索引目录。为此，可以结合使用 *DatabaseOnly* 参数和 [Update-MailboxDatabaseCopy](https://technet.microsoft.com/zh-cn/library/dd335201\(v=exchg.150\)) cmdlet。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果在从同一源为多个目标设定种子时不使用 <em>DatabaseOnly</em> 参数，此任务将失败，出现 SeedInProgressException 错误 FE1C6491。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果在从同一源为多个目标设定种子时不使用 <em>DatabaseOnly</em> 参数，此任务将失败，出现 SeedInProgressException 错误 FE1C6491。
 
 
 若要了解与邮箱数据库副本相关的其他管理任务，请查看[管理邮箱数据库副本](managing-mailbox-database-copies-exchange-2013-help.md)。
@@ -77,18 +67,8 @@ _**上一次修改主题：**2012-11-02_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？

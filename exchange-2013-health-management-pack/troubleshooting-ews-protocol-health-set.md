@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Project Server 2013_
+_**适用于：** Exchange Server 2013, Project Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 EWS.Protocol 运行状况设置监视邮箱服务器上的 Exchange Web 服务 (EWS) 通信协议。EWS.Protocol 运行状况设置与下列运行状况设置紧密相关：
 

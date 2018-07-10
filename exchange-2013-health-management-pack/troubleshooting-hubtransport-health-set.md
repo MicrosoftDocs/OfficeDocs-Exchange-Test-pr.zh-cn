@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 **HubTransport** 运行状况设置监视邮箱服务器上负责路由组织内邮件的传输管道的整体运行状况。有关详细信息，请参阅[邮件流](https://technet.microsoft.com/zh-cn/library/aa996349\(v=exchg.150\))。
 

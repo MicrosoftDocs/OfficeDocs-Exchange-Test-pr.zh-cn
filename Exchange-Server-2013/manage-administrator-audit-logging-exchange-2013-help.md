@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-05-17_
+_**上一次修改主题：** 2013-05-17_
 
 通过 Microsoft Exchange Server 2013 中的管理员审核日志记录，可以在每次运行指定 cmdlet 时创建一个日志条目。日志条目提供了有关运行的 cmdlet、使用的参数、运行 cmdlet 的用户以及受影响对象的信息。有关管理员审核日志记录的详细信息，请参阅[管理员审核日志记录](administrator-audit-logging-exchange-2013-help.md)。
 
@@ -35,18 +35,8 @@ _**上一次修改主题：**2013-05-17_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -89,18 +79,8 @@ _**上一次修改主题：**2013-05-17_
 
   - `*Region`
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要在运行某个命令时创建审核日志条目，则该命令必须至少包括一个或多个参数，这些参数存在于使用 <em>AdminAuditLogCmdlets</em> 参数指定的至少一个或多个 cmdlet 上。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果要在运行某个命令时创建审核日志条目，则该命令必须至少包括一个或多个参数，这些参数存在于使用 <em>AdminAuditLogCmdlets</em> 参数指定的至少一个或多个 cmdlet 上。
 
 
 此示例审核前面列表中指定的参数。
@@ -123,20 +103,10 @@ _**上一次修改主题：**2013-05-17_
 
   - **ss**   保留审核日志条目的秒数
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以将审核日志期限设置为小于当前期限的值。如果您这样做，则会删除寿命超过新期限的所有审核日志条目。<br />
-如果将期限设置为 0，则 Exchange 会删除审核日志中的所有条目。<br />
-建议您仅向高度信任的用户授予配置审核日志期限的权限。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 可以将审核日志期限设置为小于当前期限的值。如果您这样做，则会删除寿命超过新期限的所有审核日志条目。<br />
+> 如果将期限设置为 0，则 Exchange 会删除审核日志中的所有条目。<br />
+> 建议您仅向高度信任的用户授予配置审核日志期限的权限。
 
 
 此示例指定两年零六个月的期限。

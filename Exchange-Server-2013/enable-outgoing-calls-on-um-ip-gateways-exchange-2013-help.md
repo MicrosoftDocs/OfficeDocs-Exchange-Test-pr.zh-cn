@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-13_
+_**上一次修改主题：** 2012-11-13_
 
 如果打出的电话已被禁用，则可以启用统一邮件 (UM) IP 网关的传出呼叫。当选择 UM IP 网关的属性上的**允许拨出电话，通过此 UM IP 网关**选项时，您将配置 UM IP 网关以接受并通过专用分组交换机 (PBX) 为会话启动协议 (SIP)、 IP PBX 或会话边框控制器 (SBC) 启用的 IP (VoIP) 网关发送到语音拨出电话。尽管设置可控制是否可以拨出电话的用户启动 UM IP 网关**通过此 UM IP 网关允许拨出呼叫**，但并不影响呼叫转移或从 VoIP 网关的来电，PBX 启用 IP PBX 或 SBC 的 SIP。
 
@@ -43,18 +43,8 @@ _**上一次修改主题：**2012-11-13_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？

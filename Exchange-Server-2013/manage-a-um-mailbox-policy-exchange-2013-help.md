@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 在创建统一消息 (UM) 邮箱策略之后，可以查看和配置多种设置。例如，可以配置 UM 功能（如\&quot;语音邮件预览\&quot;或\&quot;在电话上播放\&quot;），以及诸如\&quot;受保护的语音邮件\&quot;和 PIN 策略设置等其他与安全相关的选项。
 
@@ -35,18 +35,8 @@ _**上一次修改主题：**2013-02-22_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -77,18 +67,8 @@ _**上一次修改主题：**2013-02-22_
         
           - **允许未接来电通知**   选中或取消选中此复选框可以为与 UM 邮箱策略关联的用户启用或禁用未接来电通知。未接来电通知是当用户未应答传入呼叫时发送到用户邮箱中的电子邮件。这不同于包含为用户留言的语音邮件的电子邮件。
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>在集成统一消息和内部部署 Lync Server 时，邮箱位于 Exchange 2007 或 Exchange 2010 邮箱服务器上的用户不可使用未接来电通知。如果用户在呼叫发送至统一消息之前断开连接，则会生成未接来电通知。</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!NOTE]
+            > 在集成统一消息和内部部署 Lync Server 时，邮箱位于 Exchange 2007 或 Exchange 2010 邮箱服务器上的用户不可使用未接来电通知。如果用户在呼叫发送至统一消息之前断开连接，则会生成未接来电通知。
             
             通常，用户未应答传入呼叫时，会收到两封电子邮件：包含语音邮件的电子邮件和未接来电通知邮件。默认情况下，在创建 UM 邮箱策略时将启用未接来电通知。
         
@@ -116,9 +96,9 @@ _**上一次修改主题：**2013-02-22_
             
             此文本框中提供的文本可以为纯文本。如果您要强调文本或添加指向其他内容的超级链接，它还可以包含简单的 HTML 格式标记。
             
-            **示例 1：** 如果对语音邮件服务有任何问题或建议，请致电帮助中心，分机号码为 4200。
+            **示例 1：**  如果对语音邮件服务有任何问题或建议，请致电帮助中心，分机号码为 4200。
             
-            **示例 2：** 如果对\<b\>语音邮件服务\</b\>有任何问题或建议，请致电帮助中心，分机号码为 4200，或访问我们的网站 \<a href=\&quot;http://emp.contoso.com/itinfo/vmail\&quot;\>\</a\>。
+            **示例 2：**  如果对\<b\>语音邮件服务\</b\>有任何问题或建议，请致电帮助中心，分机号码为 4200，或访问我们的网站 \<a href=\&quot;http://emp.contoso.com/itinfo/vmail\&quot;\>\</a\>。
         
           - **在重置用户的 Outlook Voice Access PIN 时**   重置 UM PIN 时，发送到启用了 UM 的用户的电子邮件中将包含在此文本框中输入的文本。
             

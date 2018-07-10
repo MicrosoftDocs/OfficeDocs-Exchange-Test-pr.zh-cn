@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 你可以将 Lync Online 内容（如 IM 对话）存档到 Exchange Online 中的用户邮箱。在本地部署中，可以将 Lync 2013 内容存档到 Exchange 2013 邮箱。在联机和本地环境中，此操作需要对用户邮箱设置诉讼保留或就地保留。当邮箱处于保留状态的的用户永久删除 Lync 内容时，已存档的 Lync 内容将保留在用户邮箱的“可恢复的项目”文件夹中。虽然这些内容对用户不可见，但会包含在电子数据展示搜索中。
 
@@ -23,18 +23,8 @@ _**上一次修改主题：**2016-12-09_
 
 ![将 Lync 项目置于保留状态](images/Dn508399.691d2324-9fac-4689-8527-c78d387e0e3e(EXCHG.150).jpg "将 Lync 项目置于保留状态")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>还可以配置就地保留以排除 Lync 项目。例如，相对于其他内容类型，组织可能更倾向于在短时间内保留即时消息和语音邮件项目。若要实施此类保留策略，可创建就地保留以长时间保留内容（例如 7 年），并将 Lync 项目从此保留中排除。然后，可创建保留时间更短且仅保留 Lync 项目的其他就地保留。用户还可以指定内容的保留时间。有关创建具有特定持续时间的保留的详细信息，请参阅<a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">就地保留和诉讼保留</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 还可以配置就地保留以排除 Lync 项目。例如，相对于其他内容类型，组织可能更倾向于在短时间内保留即时消息和语音邮件项目。若要实施此类保留策略，可创建就地保留以长时间保留内容（例如 7 年），并将 Lync 项目从此保留中排除。然后，可创建保留时间更短且仅保留 Lync 项目的其他就地保留。用户还可以指定内容的保留时间。有关创建具有特定持续时间的保留的详细信息，请参阅<a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">就地保留和诉讼保留</a>。
 
 
 有关将用户置于保留状态的分步说明，请参阅以下主题：

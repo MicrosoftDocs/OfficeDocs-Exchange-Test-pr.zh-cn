@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2017-11-22_
+_**上一次修改主题：** 2017-11-22_
 
-**摘要：** 了解如何在Exchange 命令行管理程序中使用准备 MoveRequest.ps1 脚本管理跨目录林的邮箱移动和Exchange 2013的迁移。
+**摘要：**  了解如何在Exchange 命令行管理程序中使用准备 MoveRequest.ps1 脚本管理跨目录林的邮箱移动和Exchange 2013的迁移。
 
 Microsoft Exchange 2013支持邮箱移动和迁移使用的**New-MoveRequest**和**New-MigrationBatch**的 cmdlet。您还可以通过 Exchange 管理中心 (EAC) 移动邮箱。您可以移动 Exchange 2013 邮箱的 Exchange 2010 来自源Exchange林到目标的Exchange 2013目录林。
 
@@ -39,18 +39,8 @@ Microsoft Exchange 2013支持邮箱移动和迁移使用的**New-MoveRequest**�
     
       - 安装了 Exchange 2013 的目标林，这是邮箱将要移动到的位置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 使用 Prepare-MoveRequest.ps1 脚本为跨林移动准备邮箱
@@ -59,18 +49,8 @@ Microsoft Exchange 2013支持邮箱移动和迁移使用的**New-MoveRequest**�
 
 若要为远程林域控制器分配特定身份验证凭据，必须首先运行 Windows PowerShell **Get-Credential** cmdlet，并在临时变量中存储用户输入。运行 **Get-Credential** cmdlet 时，该 cmdlet 会要求输入在对远程林域控制器进行身份验证期间使用的帐户用户名和密码。随后您便可以在 Prepare-MoveRequest.ps1 脚本中使用临时变量。有关 **Get-Credential** cmdlet 的详细信息，请参阅 [Get-Credential](https://go.microsoft.com/fwlink/p/?linkid=142122)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>请确保在调用此脚本时，对本地林和远程林使用两个不同的凭据。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 请确保在调用此脚本时，对本地林和远程林使用两个不同的凭据。
 
 
 1.  运行以下命令以获取本地林和远程林凭据。
@@ -129,18 +109,9 @@ Microsoft Exchange 2013支持邮箱移动和迁移使用的**New-MoveRequest**�
 <td><p>可选</p></td>
 <td><p><em>DisableEmailAddressPolicy</em> 参数指定在目标林中创建 <strong>MailUser</strong> 对象时是否应禁用电子邮件地址策略 (EAP)。</p>
 <p>当指定此参数时，不会应用目标林中的 EAP。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当指定此参数时，<strong>MailUser</strong> 对象的本地林域中的电子邮件地址映射不会具有标记。这通常由 EAP 进行标记。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 当指定此参数时，<strong>MailUser</strong> 对象的本地林域中的电子邮件地址映射不会具有标记。这通常由 EAP 进行标记。
 
 </td>
 </tr>

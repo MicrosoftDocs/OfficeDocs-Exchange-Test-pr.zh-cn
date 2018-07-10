@@ -13,22 +13,12 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2017-01-18_
+_**上一次修改主题：** 2017-01-18_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange Online（Office 365 和 Exchange Online 独立计划）中新建就地保留的截止时间为 2017 年 7 月 1 日，我们已推迟了这一最后期限。不过，今年晚些时候或明年初，将无法在 Exchange Online 中新建就地保留。作为就地保留的备选方法，可以在 Office 365 安全与合规中心使用<a href="https://go.microsoft.com/fwlink/?linkid=780738">电子数据展示服务案例</a>或<a href="https://go.microsoft.com/fwlink/?linkid=827811">保留策略</a>。在我们取消新建就地保留后，仍可以修改现有就地保留，并且在 Exchange Server 2013 和 Exchange 混合部署中新建就地保留也仍将受支持。此外，也仍可以将邮箱置于诉讼保留。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在 Exchange Online（Office 365 和 Exchange Online 独立计划）中新建就地保留的截止时间为 2017 年 7 月 1 日，我们已推迟了这一最后期限。不过，今年晚些时候或明年初，将无法在 Exchange Online 中新建就地保留。作为就地保留的备选方法，可以在 Office 365 安全与合规中心使用<a href="https://go.microsoft.com/fwlink/?linkid=780738">电子数据展示服务案例</a>或<a href="https://go.microsoft.com/fwlink/?linkid=827811">保留策略</a>。在我们取消新建就地保留后，仍可以修改现有就地保留，并且在 Exchange Server 2013 和 Exchange 混合部署中新建就地保留也仍将受支持。此外，也仍可以将邮箱置于诉讼保留。
 
 
 就地保留将保留所有邮箱内容，包括已删除项目和已修改项目的原始版本。所有此类邮箱项目均会返回到[就地电子数据展示](in-place-ediscovery-exchange-2013-help.md)搜索中。将用户的邮箱置于就地保留时，相应的存档邮箱（如果已启用）中的内容也将置于保留状态，并在电子数据展示搜索中返回。
@@ -79,20 +69,10 @@ _**上一次修改主题：**2017-01-18_
     
       - **基于条件筛选**   单击此按钮以指定搜索条件，包括关键词、开始和结束日期、发件人和收件人地址以及邮件类型。创建基于查询的保留时，只会保留与搜索条件相匹配的项。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>将公用文件夹置于就地保留状态时，还保留了与公用文件夹层次结构同步过程相关的电子邮件。这可能会导致保存数千个与层次结构同步相关的电子邮件项。这些邮件可能会填满公用文件夹邮箱上可恢复项目文件夹的存储配额。为了防止发生此状况，可以创建一个基于查询的就地保留，并将下列 <code>property:value</code> 对添加到搜索查询：<br />
-        <code>NOT(subject:HierarchySync*)</code><br />
-        其结果是，主题行中包含短语“HierarchySync”的任何邮件（与公用文件夹层次结构的同步相关）都不会置于保留状态。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!tip]
+        > 将公用文件夹置于就地保留状态时，还保留了与公用文件夹层次结构同步过程相关的电子邮件。这可能会导致保存数千个与层次结构同步相关的电子邮件项。这些邮件可能会填满公用文件夹邮箱上可恢复项目文件夹的存储配额。为了防止发生此状况，可以创建一个基于查询的就地保留，并将下列 <code>property:value</code> 对添加到搜索查询：
+        > <code>NOT(subject:HierarchySync*)</code>
+        > 其结果是，主题行中包含短语“HierarchySync”的任何邮件（与公用文件夹层次结构的同步相关）都不会置于保留状态。
 
 
 6.  在“就地保留设置”页面上，选中“将与所选邮箱中的搜索查询匹配的内容置于保留状态”复选框，然后选择以下选项之一：
@@ -105,18 +85,8 @@ _**上一次修改主题：**2017-01-18_
 
 下例将创建一个名为 Hold-CaseId012 的就地保留并将邮箱 joe@contoso.com 添加到其中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果没有指定就地保留的其他搜索参数，指定源邮箱中的所有项目会放于保留中。如果未指定 <em>ItemHoldPeriod</em> 参数，项目将无限期保留或保留到邮箱从保留中删除或保留被删除。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果没有指定就地保留的其他搜索参数，指定源邮箱中的所有项目会放于保留中。如果未指定 <em>ItemHoldPeriod</em> 参数，项目将无限期保留或保留到邮箱从保留中删除或保留被删除。
 
 
     New-MailboxSearch "Hold-CaseId012"-SourceMailboxes "joe@contoso.com" -InPlaceHoldEnabled $true
@@ -135,18 +105,8 @@ _**上一次修改主题：**2017-01-18_
 
 ## 删除就地保留
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2013 中，邮箱搜索用于就地保留和就地电子数据展示。您无法删除用于就地保留的邮箱搜索。必须先禁用就地保留，操作方法为清除“就地保留设置”页面的“将与所选邮箱中的搜索查询匹配的内容置于保留状态”复选框或者在命令行管理程序中将 <em>InPlaceHoldEnabled</em> 参数设置为 <code>$false</code>。也可以使用搜索中指定的 <em>SourceMailboxes</em> 参数删除邮箱。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 在 Exchange 2013 中，邮箱搜索用于就地保留和就地电子数据展示。您无法删除用于就地保留的邮箱搜索。必须先禁用就地保留，操作方法为清除“就地保留设置”页面的“将与所选邮箱中的搜索查询匹配的内容置于保留状态”复选框或者在命令行管理程序中将 <em>InPlaceHoldEnabled</em> 参数设置为 <code>$false</code>。也可以使用搜索中指定的 <em>SourceMailboxes</em> 参数删除邮箱。
 
 
 **使用 EAC 删除就地保留**

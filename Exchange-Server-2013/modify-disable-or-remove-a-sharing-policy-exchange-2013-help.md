@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-02-15_
+_**上一次修改主题：** 2014-02-15_
 
 通过共享策略，Exchange 组织中的各个用户可以与其他联合 Exchange 组织、非联合 Exchange 组织以及各个 Internet 用户共享日历忙/闲信息。在正常操作过程中，您可能希望更改某些共享策略属性，例如修改共享规则、更改忙/闲访问级别、临时禁用共享策略或删除完整的共享策略。
 
@@ -31,18 +31,8 @@ _**上一次修改主题：**2014-02-15_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -79,18 +69,8 @@ _**上一次修改主题：**2014-02-15_
 
 ## 使用 EAC 删除共享策略
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在删除某个共享策略之前，该共享策略必须从所有用户邮箱中删除。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 在删除某个共享策略之前，该共享策略必须从所有用户邮箱中删除。
 
 
 1.  导航到\&quot;组织\&quot;\>\&quot;共享\&quot;。

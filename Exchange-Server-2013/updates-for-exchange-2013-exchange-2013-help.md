@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2018-03-20_
+_**上一次修改主题：** 2018-03-20_
 
 了解 Microsoft Exchange Server 2013 的更新流程有何变更。本文还列出了一些链接，便于你了解最新版和旧版 Exchange 2013 中的诸多功能和改进。
 

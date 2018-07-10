@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Microsoft Exchange 统一消息 (UM) 包括一种名为\&quot;语言邮件预览\&quot;的功能，该功能使用自动语音识别 (ASR) 将文本版本的语音邮件音频文件添加到语音邮件。ASR 并不完全准确，尤其是在用于通过电话录制包含未知语音和噪音的音频时。某些组织要求以持续不出错（或几乎不出错）的方式转录语音邮件。语音邮件预览伙伴计划将帮助这类组织满足这些要求。
 
@@ -59,18 +59,8 @@ VoIP or media gateways and IP PBX support
 
 注册语音邮件预览伙伴后，组织中的 Exchange 服务器将附带音频文件的语音邮件重定向到语音邮件预览伙伴，而不为语音邮件生成语音邮件预览文本，也不将语音邮件提交到用户邮箱。然后将带有语音邮件预览伙伴生成的语音邮件预览文本的电子邮件提交到组织中的 Exchange 服务器，以传递到收件人邮箱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我们建议计划部署统一消息的所有客户都获取 UM 专家的协助。UM 专家可帮助您确保有平稳过渡到 UM 从传统语音邮件系统。执行新部署或升级旧的语音邮件系统需要有关 VoIP 网关，IP Pbx、 Pbx，会话边框控制器 (SBCs) 的重要知识和统一消息传递。有关如何联系 UM 专家的详细信息，请参阅<a href="http://go.microsoft.com/fwlink/p/?linkid=262708">Microsoft Exchange Server 2013年统一消息 (UM) 专家</a>或<a href="https://go.microsoft.com/fwlink/p/?linkid=261951">Microsoft 查明其统一消息</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 我们建议计划部署统一消息的所有客户都获取 UM 专家的协助。UM 专家可帮助您确保有平稳过渡到 UM 从传统语音邮件系统。执行新部署或升级旧的语音邮件系统需要有关 VoIP 网关，IP Pbx、 Pbx，会话边框控制器 (SBCs) 的重要知识和统一消息传递。有关如何联系 UM 专家的详细信息，请参阅<a href="http://go.microsoft.com/fwlink/p/?linkid=262708">Microsoft Exchange Server 2013年统一消息 (UM) 专家</a>或<a href="https://go.microsoft.com/fwlink/p/?linkid=261951">Microsoft 查明其统一消息</a>。
 
 
 返回顶部

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2012-11-16_
+_**上一次修改主题：** 2012-11-16_
 
 永久删除活动邮箱和断开连接的邮箱时，将从 Exchange 邮箱数据库中清除所有邮箱内容，并将永久丢失数据。 在永久删除活动邮箱时，也会删除关联的 Active Directory 用户帐户。
 
@@ -31,18 +31,8 @@ _**上一次修改主题：**2012-11-16_
 
   - [连接或还原已删除的邮箱](connect-or-restore-a-deleted-mailbox-exchange-2013-help.md)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不能使用 EAC 永久删除活动邮箱或断开连接的邮箱。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 不能使用 EAC 永久删除活动邮箱或断开连接的邮箱。
 
 
 ## 在开始之前，您需要知道什么？
@@ -53,18 +43,8 @@ _**上一次修改主题：**2012-11-16_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -77,18 +57,8 @@ _**上一次修改主题：**2012-11-16_
 
     Remove-Mailbox -Identity <identity> -Permanent $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果不加入 <em>Permanent</em> 参数，则在默认情况下，删除的邮箱在被永久删除之前，将在邮箱数据库中保留 30 天。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果不加入 <em>Permanent</em> 参数，则在默认情况下，删除的邮箱在被永久删除之前，将在邮箱数据库中保留 30 天。
 
 
 有关语法和参数的详细信息，请参阅 [Remove-Mailbox](https://technet.microsoft.com/zh-cn/library/aa995948\(v=exchg.150\))。
@@ -123,18 +93,8 @@ _**上一次修改主题：**2012-11-16_
 
     Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -ne $null } | fl DisplayName,MailboxGuid,Database,DisconnectReason
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 <strong>Remove-StoreMailbox</strong> cmdlet 永久删除断开连接的邮箱时，将从邮箱数据库中清除其所有内容，并会永久丢失数据。</td>
-</tr>
-</tbody>
-</table>
+> [!warning]
+> 使用 <strong>Remove-StoreMailbox</strong> cmdlet 永久删除断开连接的邮箱时，将从邮箱数据库中清除其所有内容，并会永久丢失数据。
 
 
 此示例从邮箱数据库 MBD01 中永久删除 GUID 为 2ab32ce3-fae1-4402-9489-c67e3ae173d3 的禁用邮箱。

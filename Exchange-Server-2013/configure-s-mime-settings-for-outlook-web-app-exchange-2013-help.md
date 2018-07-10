@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-08_
+_**上一次修改主题：** 2015-04-08_
 
 作为 Exchange 2013 和 Exchange Online 组织管理员，您可以设置 Outlook Web App，以允许发送和接收受 S/MIME 保护的邮件。使用 `SMIMEConfig` cmdlet 可通过 Exchange 命令行管理程序界面管理此功能。
 

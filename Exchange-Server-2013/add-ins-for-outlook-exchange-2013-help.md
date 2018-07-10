@@ -13,58 +13,28 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2017-03-13_
+_**上一次修改主题：** 2017-03-13_
 
-**摘要：**与 Windows 和 MacIntosh 计算机、移动设备上和 Outlook Web App 中的 Outlook 以及 Outlook 网页版一起使用的 Outlook 外接程序的概述。
+**摘要：** 与 Windows 和 MacIntosh 计算机、移动设备上和 Outlook Web App 中的 Outlook 以及 Outlook 网页版一起使用的 Outlook 外接程序的概述。
 
 Outlook 的外接程序是通过添加用户无需离开 Outlook 就能使用的信息或工具来扩展 Outlook 客户端实用性的应用程序。外接程序由第三方开发人员构建，可以从文件或 URL 或 Office 应用商店进行安装。默认情况下，所有用户都可以都安装外接程序。Exchange 管理员可以使用角色来控制用户安装外接程序的功能。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关从最终用户角度看待适用于 Outlook 的外接程序的信息，请查看 Office.com 上的帮助主题<a href="https://go.microsoft.com/fwlink/p/?linkid=2823">已安装的外接程序</a>。该主题提供了有关适用于 Outlook 的外接程序的概述，同时还展示了一些可能会默认安装的适用于 Outlook 的外接程序。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 有关从最终用户角度看待适用于 Outlook 的外接程序的信息，请查看 Office.com 上的帮助主题<a href="https://go.microsoft.com/fwlink/p/?linkid=2823">已安装的外接程序</a>。该主题提供了有关适用于 Outlook 的外接程序的概述，同时还展示了一些可能会默认安装的适用于 Outlook 的外接程序。
 
 
 ## Office 应用商店外接程序和自定义外接程序
 
 Outlook 客户端支持各种各样的外接程序，可通过 Office 应用商店获取这些外接程序。Outlook 还支持自定义外接程序，你可以在组织中创建自定义外接程序并将其分发给用户。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不支持特定区域内的邮箱或组织访问 Office 应用商店。如果在“<strong>组织</strong>”&gt;“<strong>外接程序</strong>”&gt; <img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="添加图标" alt="添加图标" /> 下的“<strong>Exchange 管理中心</strong>”中未看到“<strong>从 Office 应用商店添加</strong>”选项，则可以从 URL 或文件位置安装适用于 Outlook 的外接程序。有关详细信息，请与服务提供商联系。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 不支持特定区域内的邮箱或组织访问 Office 应用商店。如果在“<strong>组织</strong>”&gt;“<strong>外接程序</strong>”&gt; <img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="添加图标" alt="添加图标" /> 下的“<strong>Exchange 管理中心</strong>”中未看到“<strong>从 Office 应用商店添加</strong>”选项，则可以从 URL 或文件位置安装适用于 Outlook 的外接程序。有关详细信息，请与服务提供商联系。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，会安装一些适用于 Outlook 的外接程序。适用于 Outlook 的默认外接程序仅针对英语语言内容进行激活。例如，邮件正文中的德语邮政地址不会激活必应地图外接程序。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 默认情况下，会安装一些适用于 Outlook 的外接程序。适用于 Outlook 的默认外接程序仅针对英语语言内容进行激活。例如，邮件正文中的德语邮政地址不会激活必应地图外接程序。
 
 
 ## 外接程序访问和安装
@@ -81,7 +51,7 @@ Outlook 客户端支持各种各样的外接程序，可通过 Office 应用商�
 
 Exchange 管理员在组织中进行管理有几个常见方案。
 
-**如果想要防止最终用户在所有 Outlook 客户端上安装 Outlook 相关外接程序，可对 Exchange 管理中心的角色进行以下更改：**
+**如果想要防止最终用户在所有 Outlook 客户端上安装 Outlook 相关外接程序，可对 Exchange 管理中心的角色进行以下更改：** 
 
   - 若要阻止用户安装 Office 应用商店的外接程序，请删除他们的**我的市场**角色。
 

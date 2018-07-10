@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2017-03-27_
+_**上一次修改主题：** 2017-03-27_
 
 与以前的 Exchange 版本相比，Exchange 2013 对系统资源要求更高。通过正确调整 Exchange 2013 的基础结构的大小以及对该基础结构内与 Exchange 相关的组件进行建议的配置，您可以为执行最佳部署打下坚实的基础。
 

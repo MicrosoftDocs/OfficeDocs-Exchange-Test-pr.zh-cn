@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2010, Exchange Server 2013_
+_**适用于：** Exchange Server 2010, Exchange Server 2013_
 
-_**上一次修改主题：**2018-04-01_
+_**上一次修改主题：** 2018-04-01_
 
-**摘要：**本文介绍 Exchange Active Sync 如何帮助你在 Exchange 本地组织中使用 Outlook for iOS 和 Outlook for Android 管理移动设备。
+**摘要：** 本文介绍 Exchange Active Sync 如何帮助你在 Exchange 本地组织中使用 Outlook for iOS 和 Outlook for Android 管理移动设备。
 
 Microsoft 建议使用 Exchange ActiveSync 管理用于访问本地环境中的 Exchange 邮箱的移动设备。Exchange ActiveSync 是一种 Microsoft Exchange 同步协议，它允许移动电话访问运行 Microsoft Exchange 的服务器上的组织信息。
 
@@ -43,42 +43,22 @@ Exchange ActiveSync 使管理员能够远程擦除设备（如设备受到侵害
 
 由于 Outlook for iOS 和 Outlook for Android 在 Exchange 中的用户移动设备下显示为单个移动设备关联，因此远程擦除命令将从运行与该用户关联的Outlook（iPhone、iPad、Android）的所有设备中删除数据并删除同步关系。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由于 Outlook for iOS 和 Outlook for Android 依托的云架构，远程设备擦除的结果不会报告给 Exchange。即使擦除成功，状态仍将显示为&amp;quot;<strong>正在挂起</strong>&amp;quot;。这是一个已知的问题，解决方案正在开发中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 由于 Outlook for iOS 和 Outlook for Android 依托的云架构，远程设备擦除的结果不会报告给 Exchange。即使擦除成功，状态仍将显示为&amp;quot;<strong>正在挂起</strong>&amp;quot;。这是一个已知的问题，解决方案正在开发中。
 
 
 ## 设备标识符和访问控制
 
 由于 Outlook for iOS 和 Outlook for Android 的基于云的体系结构，Exchange 中每个用户的 Outlook 连接显示为单个移动设备标识符 (ID)。这意味着每个用户的移动设备访问控制应用于与此设备 ID 相关联的所有设备。此实现创建两个不同于传统 Exchange ActiveSync 设备访问控制工作原理的条件。
 
-  - **阻止：**阻止规则会在所有设备和支持的操作系统上阻止 Outlook。用户无法阻止单个设备或操作系统。
+  - **阻止：** 阻止规则会在所有设备和支持的操作系统上阻止 Outlook。用户无法阻止单个设备或操作系统。
 
-  - **隔离：**隔离过程基于每个用户进行，而不是基于每个设备。一旦用户将设备从隔离中释放，就可以在任意数量的其他设备上按需安装和配置 Outlook。由于该用户已从隔离中释放，与该用户关联的所有新设备都不会被隔离。
+  - **隔离：** 隔离过程基于每个用户进行，而不是基于每个设备。一旦用户将设备从隔离中释放，就可以在任意数量的其他设备上按需安装和配置 Outlook。由于该用户已从隔离中释放，与该用户关联的所有新设备都不会被隔离。
 
 移动设备邮箱策略就位时，将适用于所有关联的设备。因此，如果为特定邮箱强制执行 PIN 锁定，则连接到该邮箱的所有设备都需要 PIN。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由于设备 ID 不受任何<em>物理设备</em> ID 约束，设备 ID 可自行更改。出现这种情况时，如果将设备 ID 用于管理用户设备，则会造成意想不到的后果，因为 Exchange 可能会意外地阻止或隔离现有的&amp;quot;允许&amp;quot;设备。因此，我们建议管理员仅基于设备类型或设备模型来设置允许/阻止设备的移动设备策略。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 由于设备 ID 不受任何<em>物理设备</em> ID 约束，设备 ID 可自行更改。出现这种情况时，如果将设备 ID 用于管理用户设备，则会造成意想不到的后果，因为 Exchange 可能会意外地阻止或隔离现有的&amp;quot;允许&amp;quot;设备。因此，我们建议管理员仅基于设备类型或设备模型来设置允许/阻止设备的移动设备策略。
 
 
 ## 使用 Exchange ActiveSync 常见问题解答进行设备管理

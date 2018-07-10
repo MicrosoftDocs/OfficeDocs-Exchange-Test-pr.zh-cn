@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 本主题展示了如何使用 Telnet 测试邮件服务器之间的简单邮件传输协议 (SMTP) 通信。默认情况下，SMTP 侦听端口 25。如果在端口 25 上使用 Telnet，则可以输入用于连接 SMTP 服务器和发送邮件的 SMTP 命令，如同 Telnet 会话是 SMTP 邮件服务器一样。还可以查看连接和邮件提交过程中每个步骤成功与否。
 
@@ -39,18 +39,8 @@ _**上一次修改主题：**2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您该如何做？
@@ -71,18 +61,8 @@ _**上一次修改主题：**2016-12-09_
 
 4.  键入要查找其 MX 记录的域名。例如，若要查找 fabrikam.com 域的 MX 记录，请键入 **fabrikam.com.**，然后按 Enter。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>尾随句点 (<strong>.</strong>) 表示 FQDN。使用尾随句点可防止无意中将为网络配置的默认 DNS 后缀添加到域名中。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 尾随句点 (<strong>.</strong>) 表示 FQDN。使用尾随句点可防止无意中将为网络配置的默认 DNS 后缀添加到域名中。
     
     输出的命令将与以下内容类似：
     
@@ -95,18 +75,8 @@ _**上一次修改主题：**2016-12-09_
 
 5.  准备结束 Nslookup 会话时，请键入 **exit** 并按 Enter 键。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>组织的内部网络规定的防火墙或 Internet 代理限制可能会阻止您使用 Nslookup 工具查询 Internet 上的公用 DNS 服务器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 组织的内部网络规定的防火墙或 Internet 代理限制可能会阻止您使用 Nslookup 工具查询 Internet 上的公用 DNS 服务器。
 
 
 ## 第 3 步：在端口 25 上使用 Telnet 测试 SMTP 通信
@@ -125,25 +95,12 @@ _**上一次修改主题：**2016-12-09_
 
   - **邮件正文**   这是一封测试邮件
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Telnet 客户端中的命令不区分大小写。为清楚起见，SMTP 命令动词均使用大写。</p></li>
-<li><p>在 Telnet 会话中连接目标 SMTP 服务器后，无法使用 Backspace 键。如果在键入 SMTP 命令时出错，必须按 ENTER，然后重新键入命令。无法识别的 SMTP 命令或语法错误会导致生成如下错误消息：</p>
-<pre><code>500 5.3.3 Unrecognized command</code></pre></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> <ul>
+> <li><p>Telnet 客户端中的命令不区分大小写。为清楚起见，SMTP 命令动词均使用大写。</p></li>
+> <li><p>在 Telnet 会话中连接目标 SMTP 服务器后，无法使用 Backspace 键。如果在键入 SMTP 命令时出错，必须按 ENTER，然后重新键入命令。无法识别的 SMTP 命令或语法错误会导致生成如下错误消息：</p>
+> <pre><code>500 5.3.3 Unrecognized command</code></pre></li>
+> </ul>
 
 
 1.  在命令提示符处，键入 **telnet**，然后按 Enter。此命令将打开 Telnet 会话。
@@ -192,25 +149,15 @@ _**上一次修改主题：**2016-12-09_
 
   - RCPT TO:kate@fabrikam.com NOTIFY=success,failure
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>RFC 2821 中定义的 3 位数 SMTP 响应代码对所有 SMTP 邮件服务器都一样。对于某些 SMTP 邮件服务器，文本说明可能略有不同。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > RFC 2821 中定义的 3 位数 SMTP 响应代码对所有 SMTP 邮件服务器都一样。对于某些 SMTP 邮件服务器，文本说明可能略有不同。
 
 
 ## 打开 mail1.fabrikam.com 25
 
-**成功响应：** `220 mail1.fabrikam.com Microsoft ESMTP MAIL Service ready at <day-date-time>`
+**成功响应：**  `220 mail1.fabrikam.com Microsoft ESMTP MAIL Service ready at <day-date-time>`
 
-**失败响应：** `Connecting to mail1.fabrikam.com...Could not open connection to the host, on port 25: Connect failed`
+**失败响应：**  `Connecting to mail1.fabrikam.com...Could not open connection to the host, on port 25: Connect failed`
 
 **失败的可能原因**
 
@@ -226,43 +173,33 @@ _**上一次修改主题：**2016-12-09_
 
 ## EHLO contoso.com
 
-**成功响应：** `250 mail1.fabrikam.com Hello [<sourceIPaddress>]`
+**成功响应：**  `250 mail1.fabrikam.com Hello [<sourceIPaddress>]`
 
-**失败响应：** `501 5.5.4 Invalid domain name`
+**失败响应：**  `501 5.5.4 Invalid domain name`
 
 **失败的可能原因**   域名中存在无效字符。或者，目标 SMTP 服务器上有连接限制。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>EHLO 是 RFC 2821 中定义的已扩展简单邮件传输协议 (ESMTP) 命令动词。ESMTP 服务器可在初始连接时公布其功能。这些功能包括其可接受的邮件大小上限，以及支持的身份验证方法。HELO 是 RFC 821 中定义的旧版 SMTP 命令动词。大多数 SMTP 邮件服务器都支持 ESMTP 和 EHLO。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> EHLO 是 RFC 2821 中定义的已扩展简单邮件传输协议 (ESMTP) 命令动词。ESMTP 服务器可在初始连接时公布其功能。这些功能包括其可接受的邮件大小上限，以及支持的身份验证方法。HELO 是 RFC 821 中定义的旧版 SMTP 命令动词。大多数 SMTP 邮件服务器都支持 ESMTP 和 EHLO。
 
 
 ## MAIL FROM:chris@contoso.com
 
-**成功响应：** `250 2.1.0 Sender OK`
+**成功响应：**  `250 2.1.0 Sender OK`
 
-**失败响应：** `550 5.1.7 Invalid address`
+**失败响应：**  `550 5.1.7 Invalid address`
 
-**可能的失败原因：**发件人的电子邮件地址中存在语法错误。
+**可能的失败原因：** 发件人的电子邮件地址中存在语法错误。
 
-**失败响应：** `530 5.7.1 Client was not authenticated`
+**失败响应：**  `530 5.7.1 Client was not authenticated`
 
 **失败的可能原因**   目标服务器不接受匿名邮件提交。如果试图使用 Telnet 直接向集线器传输服务器提交邮件，则会看到此错误消息。
 
 ## RCPT TO:kate@fabrikam.com NOTIFY=success,failure
 
-**成功响应：** `250 2.1.5 Recipient OK`
+**成功响应：**  `250 2.1.5 Recipient OK`
 
-**失败响应：** `550 5.1.1 User unknown`
+**失败响应：**  `550 5.1.1 User unknown`
 
 **可能的失败原因**   指定的收件人在组织中不存在。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-20_
+_**上一次修改主题：** 2013-04-20_
 
 部署了组织的所有必需电话设备之后（包括 VoIP 网关、IP PBX 和启用了 SIP 的 PBX 或 Microsoft Lync Server），您需要创建所有统一消息 (UM) 组件，从而使您的电话设备能够与组织中的服务器进行通信。
 

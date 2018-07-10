@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-25_
+_**上一次修改主题：** 2013-02-25_
 
 移动请求是将邮箱从一个邮箱数据库移动到另一个邮箱数据库的过程。本地移动请求是在单林内发生的邮箱移动。在 Microsoft Exchange Server 2013 中，邮箱和个人存档邮箱可以驻留在单独的数据库中。使用移动请求功能，可以将主邮箱及其关联的存档移动到同一数据库或分别移动到单独的数据库中。本主题中的过程将有助于进行内部部署邮箱移动。
 
@@ -39,18 +39,8 @@ _**上一次修改主题：**2013-02-25_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -105,18 +95,8 @@ _**上一次修改主题：**2013-02-25_
 
 3.  在“移动配置”页面上，为新的批次指定名称。选择您需要存档邮箱的哪些选项以及邮箱数据位置，然后单击“新建”。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>确保不要将“错误项限制”设置为超过 50 个项目。如果超过 50 项，移动可能会失败。如果要将“错误项限制”设置为超过 50 个项目，必须使用 Exchange 命令行管理程序并将 <em>AcceptLargeDataLoss</em> 参数设置为 True。</td>
-</tr>
-</tbody>
-</table>
+> [!warning]
+> 确保不要将“错误项限制”设置为超过 50 个项目。如果超过 50 项，移动可能会失败。如果要将“错误项限制”设置为超过 50 个项目，必须使用 Exchange 命令行管理程序并将 <em>AcceptLargeDataLoss</em> 参数设置为 True。
 
 
 ## 使用命令行管理程序创建批处理移动请求

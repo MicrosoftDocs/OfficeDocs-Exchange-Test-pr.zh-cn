@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 共享权限使您（作为 Microsoft Exchange Server 2013 管理员）可以创建 Active Directory 安全主体（如用户），然后将这些安全主体配置为 Exchange 收件人。与拆分权限不同，拆分权限是在 Exchange 管理员组和 Active Directory 管理员组之间分离管理任务，而使用共享权限则不会分离任务。
 
@@ -61,18 +61,8 @@ _**上一次修改主题：**2015-04-07_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -92,18 +82,8 @@ _**上一次修改主题：**2015-04-07_
         New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Organization Management" -Delegating
         New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management" -Delegating
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>必须为包含&amp;quot;邮件收件人创建&amp;quot;角色和&amp;quot;安全组创建和成员身份&amp;quot;角色的委派角色分配的角色组（此过程中的 Active Directory 管理员角色组）分配&amp;quot;角色管理&amp;quot;角色来运行 <strong>New-ManagementRoleAssignment</strong> cmdlet。可以委派&amp;quot;角色管理&amp;quot;角色的角色受理人必须将该角色分配给 Active Directory 管理员角色组。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 必须为包含&amp;quot;邮件收件人创建&amp;quot;角色和&amp;quot;安全组创建和成员身份&amp;quot;角色的委派角色分配的角色组（此过程中的 Active Directory 管理员角色组）分配&amp;quot;角色管理&amp;quot;角色来运行 <strong>New-ManagementRoleAssignment</strong> cmdlet。可以委派&amp;quot;角色管理&amp;quot;角色的角色受理人必须将该角色分配给 Active Directory 管理员角色组。
 
 
 2.  使用以下命令向 组织管理 和 收件人管理 角色组添加\&quot;邮件收件人创建\&quot;角色的常规角色分配。
@@ -121,18 +101,8 @@ _**上一次修改主题：**2015-04-07_
 
 如果不再希望 Active Directory 管理员能够使用 Exchange 管理工具创建或管理 Active Directory 对象，您可以选择删除授予他们的权限。如果要删除 Active Directory 管理员的权限，请执行此过程。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>虽然您可以删除 Active Directory 管理员的权限，使其不能使用 Exchange 管理工具管理 Active Directory 对象，但如果其 Active Directory 权限允许，Active Directory 管理员仍可以继续使用 Active Directory 管理工具管理 Active Directory 对象。然而，他们将无法管理 Active Directory 对象上特定于 Exchange 的属性。有关详细信息，请参阅<a href="understanding-split-permissions-exchange-2013-help.md">了解拆分权限</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 虽然您可以删除 Active Directory 管理员的权限，使其不能使用 Exchange 管理工具管理 Active Directory 对象，但如果其 Active Directory 权限允许，Active Directory 管理员仍可以继续使用 Active Directory 管理工具管理 Active Directory 对象。然而，他们将无法管理 Active Directory 对象上特定于 Exchange 的属性。有关详细信息，请参阅<a href="understanding-split-permissions-exchange-2013-help.md">了解拆分权限</a>。
 
 
 若要删除 Active Directory 管理员与 Exchange 相关的拆分权限，请执行下列操作：
@@ -155,18 +125,8 @@ _**上一次修改主题：**2015-04-07_
 
 要从 Active Directory 拆分权限切换到 Exchange 2013 共享权限，必须重新运行 Exchange 安装以在 Active Directory 组织中禁用 Exchange 拆分权限，然后在角色组与\&quot;邮件收件人创建\&quot;角色和\&quot;安全组创建和成员身份\&quot;角色之间创建角色分配。在默认共享权限配置中，组织管理 角色组包含上述所有角色。因此，此过程将使用 组织管理 角色组。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此过程中的 setup.com 命令对 Active Directory 进行更改。必须使用具有进行这些更改所需的权限的帐户。此帐户不能是有权使用 <strong>New-ManagementRoleAssignment</strong> cmdlet 创建角色分配的帐户。使用具有成功完成这一过程的每一步骤所需的权限的帐户。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 此过程中的 setup.com 命令对 Active Directory 进行更改。必须使用具有进行这些更改所需的权限的帐户。此帐户不能是有权使用 <strong>New-ManagementRoleAssignment</strong> cmdlet 创建角色分配的帐户。使用具有成功完成这一过程的每一步骤所需的权限的帐户。
 
 
 要从 Active Directory 拆分权限切换到共享权限，请执行以下操作：
@@ -183,18 +143,8 @@ _**上一次修改主题：**2015-04-07_
 
 3.  重新启动组织中的 Exchange 2013 服务器。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您组织中有 Exchange 2010 服务器，则还需要重启这些服务器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果您组织中有 Exchange 2010 服务器，则还需要重启这些服务器。
 
 
 有关语法和参数的详细信息，请参阅 [New-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd335193\(v=exchg.150\))。

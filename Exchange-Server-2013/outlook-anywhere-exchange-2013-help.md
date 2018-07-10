@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 在 Microsoft Exchange Server 2013 中，Outlook Anywhere 功能（以前称为 HTTP 上的 RPC）让使用 MicrosoftOutlook 2013、Outlook 2010 或 Outlook 2007 的客户端可以通过支持 HTTP 上的 RPC 功能的 Windows 网络组件，从公司网络外部或通过 Internet 连接到各自的 Exchange 服务器。本主题介绍 Outlook 无处不在功能并列出了使用 Outlook 无处不在的益处。
 

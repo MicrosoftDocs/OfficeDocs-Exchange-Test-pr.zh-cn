@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-01-18_
+_**上一次修改主题：** 2013-01-18_
 
 您可以对用户启用或禁用 IMAP4。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对用户启用或禁用 IMAP4 后，必须重新启动 Microsoft Exchange IMAP4 服务和 Microsoft Exchange IMAP4 后端服务。有关如何重新启动 IMAP4 服务的详细信息，请参阅<a href="start-and-stop-the-imap4-services-exchange-2013-help.md">启动和停止 IMAP4 服务</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 对用户启用或禁用 IMAP4 后，必须重新启动 Microsoft Exchange IMAP4 服务和 Microsoft Exchange IMAP4 后端服务。有关如何重新启动 IMAP4 服务的详细信息，请参阅<a href="start-and-stop-the-imap4-services-exchange-2013-help.md">启动和停止 IMAP4 服务</a>。
 
 
 有关管理用户邮箱的其他信息，请参阅[管理用户邮箱](manage-user-mailboxes-exchange-2013-help.md)。
@@ -45,18 +35,8 @@ _**上一次修改主题：**2013-01-18_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -71,9 +51,9 @@ _**上一次修改主题：**2013-01-18_
     
     在结果窗格的“电子邮件连接”下，执行以下操作之一：
     
-      - 若要为用户禁用 IMAP4，在“IMAP4:**已启用**，请单击“禁用”。
+      - 若要为用户禁用 IMAP4，在“IMAP4:** 已启用**，请单击“禁用”。
     
-      - 若要为用户启用 IMAP4，在“IMAP4:**已禁用**，请单击“启用”。
+      - 若要为用户启用 IMAP4，在“IMAP4:** 已禁用**，请单击“启用”。
 
 4.  单击“保存”。
 
@@ -97,9 +77,9 @@ _**上一次修改主题：**2013-01-18_
     
     在结果窗格中，查看“电子邮件连接”下的内容。
     
-      - 如果为用户启用 IMAP4，您将看到“IMAP4:**已启用**。
+      - 如果为用户启用 IMAP4，您将看到“IMAP4:** 已启用**。
     
-      - 如果未对用户启用 IMAP4，您将看到“IMAP4:**已禁用**。
+      - 如果未对用户启用 IMAP4，您将看到“IMAP4:** 已禁用**。
 
 4.  单击“保存”。
 

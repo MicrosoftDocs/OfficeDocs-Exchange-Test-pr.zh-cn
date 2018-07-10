@@ -13,25 +13,15 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-05-07_
+_**上一次修改主题：** 2014-05-07_
 
 默认情况下，对所有新邮箱数据库启用 Exchange 搜索，不要求附加配置。但是，如果要使 Exchange 搜索停止为邮箱内容编制索引，可以对单个邮箱数据库或整个邮箱服务器禁用 Exchange 搜索。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>禁用 Exchange 搜索会影响用户以联机模式使用 Outlook 或在 Windows Mobile 设备上所执行全文搜索的功能和性能。<br />
-<a href="in-place-ediscovery-exchange-2013-help.md">就地电子数据展示</a> 也依赖于 Exchange 搜索。如果对某个邮箱数据库或邮箱服务器禁用 Exchange 搜索，则就地电子数据展示搜索将不会从该数据库或服务器返回任何邮件。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 禁用 Exchange 搜索会影响用户以联机模式使用 Outlook 或在 Windows Mobile 设备上所执行全文搜索的功能和性能。
+> <a href="in-place-ediscovery-exchange-2013-help.md">就地电子数据展示</a> 也依赖于 Exchange 搜索。如果对某个邮箱数据库或邮箱服务器禁用 Exchange 搜索，则就地电子数据展示搜索将不会从该数据库或服务器返回任何邮件。
 
 
 有关与 Exchange 搜索相关的其他管理任务，请参阅 [Exchange 搜索过程](exchange-search-procedures-exchange-2013-help.md)。
@@ -54,18 +44,8 @@ _**上一次修改主题：**2014-05-07_
 
 您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅[收件人权限](recipients-permissions-exchange-2013-help.md)主题中的“Exchange 搜索”条目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不能使用 EAC 为邮箱数据库禁用或启用 Exchange 搜索。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 不能使用 EAC 为邮箱数据库禁用或启用 Exchange 搜索。
 
 
 此命令对名为 EXCH01 的邮箱数据库禁用 Exchange 搜索。
@@ -92,18 +72,8 @@ _**上一次修改主题：**2014-05-07_
 
 3.  在“**常规”**选项卡上的**“启动类型”**列表中，选择**“已禁用”**以禁用该服务，或选择**“自动”**以自动启动它。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>启动类型会在下次重新启动服务器后尝试启动服务时或手动启动服务时影响服务。在下一步中，服务将手动停止或启动。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 启动类型会在下次重新启动服务器后尝试启动服务时或手动启动服务时影响服务。在下一步中，服务将手动停止或启动。
 
 
 4.  单击**“停止”**以停止该服务，或单击**“启动”**以启动该服务。

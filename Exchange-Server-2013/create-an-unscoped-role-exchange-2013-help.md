@@ -13,38 +13,18 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-06-09_
+_**上一次修改主题：** 2014-06-09_
 
 无作用域的管理角色可用于向管理员和专家用户提供对 Windows PowerShell 脚本和非 Exchange cmdlet 的访问权限。可以创建无作用域的顶级角色并将脚本或非 Exchange cmdlet 添加到该角色，也可以基于现有的无作用域顶级角色来创建角色。创建并自定义无作用域角色之后，可以将该角色分配到管理角色组、用户和通用安全组 (USG)。不能将无作用域角色分配到管理角色分配策略。有关无作用域角色的详细信息，请参阅[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>无作用域角色的功能非常强大，因为顾名思义，无作用域角色就是指未应用任何管理作用域。这意味着它们所包含的脚本和非 Exchange cmdlet 可以针对您的 Exchange 组织中的任何对象运行。在将脚本或非 Exchange cmdlet 添加到无作用域角色时，以及分配无作用域角色时，应考虑上述情况。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 无作用域角色的功能非常强大，因为顾名思义，无作用域角色就是指未应用任何管理作用域。这意味着它们所包含的脚本和非 Exchange cmdlet 可以针对您的 Exchange 组织中的任何对象运行。在将脚本或非 Exchange cmdlet 添加到无作用域角色时，以及分配无作用域角色时，应考虑上述情况。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要创建包含 Exchange cmdlet 的角色，则必须创建基于现有管理角色的角色。有关创建包含 Exchange cmdlet 的角色的详细信息，请参阅<a href="create-a-role-exchange-2013-help.md">创建角色</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果要创建包含 Exchange cmdlet 的角色，则必须创建基于现有管理角色的角色。有关创建包含 Exchange cmdlet 的角色的详细信息，请参阅<a href="create-a-role-exchange-2013-help.md">创建角色</a>。
 
 
 若要了解与角色相关的其他管理任务，请查看[高级权限](advanced-permissions-exchange-2013-help.md)。
@@ -65,18 +45,8 @@ _**上一次修改主题：**2014-06-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -117,18 +87,8 @@ _**上一次修改主题：**2014-06-09_
 
     Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Add-ManagementRoleEntry</strong> cmdlet 执行基本验证，以确保仅添加该脚本中存在的参数。但是，添加角色条目之后就不再进行其他验证。如果以后要添加或删除参数，则必须手动更新包含该脚本的角色条目。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> <strong>Add-ManagementRoleEntry</strong> cmdlet 执行基本验证，以确保仅添加该脚本中存在的参数。但是，添加角色条目之后就不再进行其他验证。如果以后要添加或删除参数，则必须手动更新包含该脚本的角色条目。
 
 
 ## 步骤 2b：添加非 Exchange cmdlet 角色条目
@@ -147,36 +107,16 @@ _**上一次修改主题：**2014-06-09_
 
     Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Add-ManagementRoleEntry</strong> cmdlet 执行基本验证，以确保仅添加该 cmdlet 中存在的参数。但是，添加角色条目之后就不再进行其他验证。如果以后要更改 cmdlet 或者添加或删除参数，则必须手动更新包含该 cmdlet 的角色条目。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> <strong>Add-ManagementRoleEntry</strong> cmdlet 执行基本验证，以确保仅添加该 cmdlet 中存在的参数。但是，添加角色条目之后就不再进行其他验证。如果以后要更改 cmdlet 或者添加或删除参数，则必须手动更新包含该 cmdlet 的角色条目。
 
 
 ## 步骤 3：分配管理角色
 
 创建和配置角色时的最后一步是将其分配给角色受理人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不能对分配无作用域角色的角色分配配置管理作用域。无论选择为角色组、用户还是 USG 创建角色分配，都必须选择用于创建无管理作用域的角色分配的选项。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 不能对分配无作用域角色的角色分配配置管理作用域。无论选择为角色组、用户还是 USG 创建角色分配，都必须选择用于创建无管理作用域的角色分配的选项。
 
 
 可以将新角色分配给角色组、用户或 USG。有关详细信息，请参阅下列主题：
@@ -195,18 +135,8 @@ _**上一次修改主题：**2014-06-09_
 
 可以基于现有的无作用域角色创建新的无作用域子角色。创建角色时，将把现有角色及其管理角色条目复制到新角色。现有角色将成为新子角色的父级。如果要基于其他无作用域角色创建无作用域角色，则必须选择包含所有需要使用的 cmdlet 和参数的角色，然后将不需要的 cmdlet 和参数删除。子级无作用域角色不能拥有父角色中不存在的管理角色条目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果需要创建一个无作用域角色，使其包含其他任何无作用域角色中都不存在的脚本或非 Exchange cmdlet，应创建无作用域顶级角色。有关详细信息，请参阅本主题前面所述的Create an unscoped top-level management role。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果需要创建一个无作用域角色，使其包含其他任何无作用域角色中都不存在的脚本或非 Exchange cmdlet，应创建无作用域顶级角色。有关详细信息，请参阅本主题前面所述的Create an unscoped top-level management role。
 
 
 使用以下语法创建新角色。
@@ -239,18 +169,8 @@ _**上一次修改主题：**2014-06-09_
 
 创建和配置角色时的最后一步是将其分配给角色受理人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不能对分配无作用域角色的角色分配配置管理作用域。无论选择为角色组、用户还是 USG 创建角色分配，都必须选择用于创建无管理作用域的角色分配的选项。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 不能对分配无作用域角色的角色分配配置管理作用域。无论选择为角色组、用户还是 USG 创建角色分配，都必须选择用于创建无管理作用域的角色分配的选项。
 
 
 可以将新角色分配给角色组、用户或 USG。有关详细信息，请参阅下列主题：

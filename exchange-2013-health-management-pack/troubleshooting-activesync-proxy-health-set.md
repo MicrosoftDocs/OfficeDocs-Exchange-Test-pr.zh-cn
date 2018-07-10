@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-09-22_
+_**上一次修改主题：** 2014-09-22_
 
 ActiveSync.Proxy 运行状况设置监视客户端访问服务器 (CAS) 中的 Exchange ActiveSync 基础结构的运行状况。如果您接收到 ActiveSync.Proxy 运行状况设置不正常的警报，这表明在警报中指示的 CAS 上存在影响 Exchange ActiveSync 组件的问题。
 

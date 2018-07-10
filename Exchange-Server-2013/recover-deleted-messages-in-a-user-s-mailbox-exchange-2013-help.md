@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 （本主题目标用户是 Exchange 管理员。）
 
 管理员可以搜索和恢复用户邮箱中的已删除电子邮件。这包括用户永久删除（清除）的项目（可使用 Outlook 或 Outlook Web App 中的“恢复已删除项目”功能进行恢复）或由自动进程删除的项目（如分配到用户邮箱的保留策略）。在这种情况下，用户无法恢复已清除的项目。不过，如果已删除项目的保留期尚未过期，则管理员可以恢复已清除的邮件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>除了使用此步骤搜索并恢复删除的项目（如果启用了单个项目恢复或诉讼保留，则会将这些项目移动到 Recoverable Items\Purges 文件夹中）外，还可以使用此步骤搜索驻留在邮箱中其他文件夹的项目并从源邮箱删除项目（也称为“搜索和破坏”）。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 除了使用此步骤搜索并恢复删除的项目（如果启用了单个项目恢复或诉讼保留，则会将这些项目移动到 Recoverable Items\Purges 文件夹中）外，还可以使用此步骤搜索驻留在邮箱中其他文件夹的项目并从源邮箱删除项目（也称为“搜索和破坏”）。
 
 
 ## 在开始之前，您需要知道什么？
@@ -49,18 +39,8 @@ _**上一次修改主题：**2016-12-09_
     
       - **目标邮箱**   目标邮箱指将要恢复其中的邮件的发现邮箱。Exchange 安装程序将创建一个默认发现邮箱。Exchange Online 中也会默认创建发现邮箱。如果需要，您可以创建其他发现邮箱。有关详细信息，请参阅[创建发现邮箱](create-a-discovery-mailbox-exchange-2013-help.md)。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>使用 <strong>Search-Mailbox</strong> cmdlet 时，也可以指定不是发现邮箱的目标邮箱。但是，不能将同一个邮箱指定为源邮箱和目标邮箱。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 使用 <strong>Search-Mailbox</strong> cmdlet 时，也可以指定不是发现邮箱的目标邮箱。但是，不能将同一个邮箱指定为源邮箱和目标邮箱。
     
       - **搜索条件**   条件包括发件人、收件人或邮件中的关键字（词或短语）。
 
@@ -94,19 +74,9 @@ _**上一次修改主题：**2016-12-09_
 
 您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅[邮件策略和遵从性权限](messaging-policy-and-compliance-permissions-exchange-2013-help.md)主题中的“就地 eDiscovery”条目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以在 Exchange 管理中心 (EAC) 中使用就地电子数据展示来搜索缺少的项目。但是，在使用 EAC 时，不能将搜索限制到“可恢复的项目”文件夹。即使是未删除的邮件，也会作为与搜索参数匹配的邮件返回。在将邮件恢复到指定的发现邮箱之后，可能需要检查搜索结果并删除不必要的邮件，然后将剩余的邮件恢复到用户的邮箱或将其导出到 .pst 文件。<br />
-有关如何使用 EAC 执行 In-Place eDiscovery 搜索的详细信息，请参阅<a href="create-an-in-place-ediscovery-search-exchange-2013-help.md">创建就地电子数据展示搜索</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 您可以在 Exchange 管理中心 (EAC) 中使用就地电子数据展示来搜索缺少的项目。但是，在使用 EAC 时，不能将搜索限制到“可恢复的项目”文件夹。即使是未删除的邮件，也会作为与搜索参数匹配的邮件返回。在将邮件恢复到指定的发现邮箱之后，可能需要检查搜索结果并删除不必要的邮件，然后将剩余的邮件恢复到用户的邮箱或将其导出到 .pst 文件。<br />
+> 有关如何使用 EAC 执行 In-Place eDiscovery 搜索的详细信息，请参阅<a href="create-an-in-place-ediscovery-search-exchange-2013-help.md">创建就地电子数据展示搜索</a>。
 
 
 恢复进程的第一步是在源邮箱中搜索邮件。使用以下方法之一来搜索用户邮箱并将邮箱复制到发现邮箱。
@@ -121,18 +91,8 @@ _**上一次修改主题：**2016-12-09_
 
     Search-Mailbox "April Stewart" -SearchQuery "from:'Ken Kwok' AND seattle" -TargetMailbox "Discovery Search Mailbox" -TargetFolder "April Stewart Recovery" -LogLevel Full
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 <strong>Search-Mailbox</strong> cmdlet 时，可以通过使用 <em>SearchQuery</em> 参数来指定使用关键字查询语言 (KQL) 设置格式的查询来界定搜索范围。也可以使用 <em>SearchDumpsterOnly</em> 开关，以便仅搜索“可恢复的项目”文件夹中的项目。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 使用 <strong>Search-Mailbox</strong> cmdlet 时，可以通过使用 <em>SearchQuery</em> 参数来指定使用关键字查询语言 (KQL) 设置格式的查询来界定搜索范围。也可以使用 <em>SearchDumpsterOnly</em> 开关，以便仅搜索“可恢复的项目”文件夹中的项目。
 
 
 有关详细的语法和参数信息，请参阅 [Search-Mailbox](https://technet.microsoft.com/zh-cn/library/dd298173\(v=exchg.150\))。
@@ -145,18 +105,8 @@ _**上一次修改主题：**2016-12-09_
 
 您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅[邮件策略和遵从性权限](messaging-policy-and-compliance-permissions-exchange-2013-help.md)主题中的“就地 eDiscovery”条目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不能使用 EAC 还原已恢复的项目。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 不能使用 EAC 还原已恢复的项目。
 
 
 将邮件恢复到发现邮箱后，可以使用 **Search-Mailbox** cmdlet 将邮件还原到用户的邮箱中。在 Exchange 2013 中，您还可以使用 **New-MailboxExportRequest** 和 **New-MailboxImportRequest** cmdlet 将邮件导出到 .pst 文件或从中导入邮件。

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 在 Exchange 2013 中查看所有最新功能。
 
@@ -63,18 +63,8 @@ Exchange 2013 体系结构
 
 Exchange 工作负载管理
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关早期版本的 Exchange 中已删除、停用或被 Exchange Server 2013 取代的功能的信息，请参阅 <a href="what-s-discontinued-in-exchange-2013-exchange-2013-help.md">Exchange 2013 中的削减内容</a>。此外，您可能还会对<a href="release-notes-for-exchange-2013-exchange-2013-help.md">Exchange 2013 发行说明</a>感兴趣。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 有关早期版本的 Exchange 中已删除、停用或被 Exchange Server 2013 取代的功能的信息，请参阅 <a href="what-s-discontinued-in-exchange-2013-exchange-2013-help.md">Exchange 2013 中的削减内容</a>。此外，您可能还会对<a href="release-notes-for-exchange-2013-exchange-2013-help.md">Exchange 2013 发行说明</a>感兴趣。
 
 
 ## Exchange 管理中心
@@ -215,18 +205,8 @@ Exchange 2013 包括针对就地存档、保留和电子数据展示的以下改
     
       - **就地电子数据展示和保留向导**   发现管理员可以使用新的就地电子数据展示和保留向导来执行电子数据展示和保留操作。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果 SharePoint 2013 不可用，则 Exchange 管理中心中提供电子数据展示功能的子集。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 如果 SharePoint 2013 不可用，则 Exchange 管理中心中提供电子数据展示功能的子集。
 
 
   - **使用 Outlook Web App 跨主邮箱和存档邮箱进行搜索**   在 Outlook Web App 中，用户可以使用跨主邮箱和存档邮箱进行搜索。不再需要进行两个单独的搜索。

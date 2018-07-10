@@ -13,26 +13,16 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 您可以使用下面的自动检查，以验证您的配置并帮助您更新环境。
 
 如果您已经拥有 Office 365 用户帐户，请选择\&quot;登录\&quot;，而无需 Azure ID 帐户。在运行检查时，可能要求您再次输入用户帐户。如果是这样，您的用户帐户的格式为 username@youroffice365login.domain 和您的密码。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您收到同步警告消息中的 Office 365 门户、 同步服务器事件日志或从 Microsoft Online Services 的非正常运行目录同步通知电子邮件中的错误，可能会出现某种类型的目录同步问题。<a href="https://aka.ms/dsup">目录同步疑难解答</a>是基于 Web 的诊断工具，专门用于帮助标识同步失败的常见类型和制定有针对性的解决方案，对发现的任何问题。在目录同步服务器，必须运行目录同步疑难解答。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果您收到同步警告消息中的 Office 365 门户、 同步服务器事件日志或从 Microsoft Online Services 的非正常运行目录同步通知电子邮件中的错误，可能会出现某种类型的目录同步问题。<a href="https://aka.ms/dsup">目录同步疑难解答</a>是基于 Web 的诊断工具，专门用于帮助标识同步失败的常见类型和制定有针对性的解决方案，对发现的任何问题。在目录同步服务器，必须运行目录同步疑难解答。
 
 
 ## 先决条件

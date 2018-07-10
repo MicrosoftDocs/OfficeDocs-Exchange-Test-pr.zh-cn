@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-10-22_
+_**上一次修改主题：** 2014-10-22_
 
 可用性服务可以改善信息工作人员的忙/闲数据，方法是为运行 MicrosoftOutlook 的客户端提供安全、一致并且最新的忙/闲信息。默认情况下，随 Exchange Server 2013 一起安装此服务。在所有连接客户端均运行 Outlook 的跨林拓扑中，可用性服务是检索忙/闲信息的唯一方法。可以使用命令行管理程序配置跨林拓扑的可用性服务。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不能使用 EAC 配置跨林拓扑的可用性服务。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 不能使用 EAC 配置跨林拓扑的可用性服务。
 
 
 ## 在受信任和不受信任的林中使用可用性服务
@@ -55,18 +45,8 @@ _**上一次修改主题：**2014-10-22_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -82,18 +62,8 @@ _**上一次修改主题：**2014-10-22_
 
     Add-AvailabilityAddressSpace -Forestname ContosoForest.com -AccessMethod PerUserFB -UseServiceAccount:$true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要配置双向跨林可用性，请在目标林中重复这些步骤。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 若要配置双向跨林可用性，请在目标林中重复这些步骤。
 
 
 如果选择配置受信任的跨林可用性，并选择使用服务帐户（而不是指定组织范围或每个用户的凭据），则必须扩展权限，如“通过命令行管理程序使用服务帐户配置受信任的跨林可用性”部分中的示例所示。在目标林中执行该步骤可以授予源林中的邮箱服务器序列化原始用户上下文的权限。

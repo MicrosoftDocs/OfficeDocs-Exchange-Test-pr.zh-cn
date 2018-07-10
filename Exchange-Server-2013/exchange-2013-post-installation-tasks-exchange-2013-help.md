@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 在完成了 Microsoft Exchange Server 2013 的安装之后，阅读以下主题可帮助您配置新的 Exchange 2013 组织。
 

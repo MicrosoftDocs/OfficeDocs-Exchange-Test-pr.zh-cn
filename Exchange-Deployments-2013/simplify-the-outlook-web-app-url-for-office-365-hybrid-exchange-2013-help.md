@@ -55,7 +55,7 @@ _<strong>上一次修改主题：</strong>2016-11-11_
     
         Set-OrganizationRelationship -TargetOWAUrl http://cloudowa.contoso.com/owa
     
-    **注意：**
+    **注意：** 
     
       - 请使用 http，而不是 https。
     
@@ -112,5 +112,5 @@ _<strong>上一次修改主题：</strong>2016-11-11_
 </table>
 
 
-**注意：** 联合身份验证要求在 Internet Explorer 的 Intranet 区域中配置 AD FS 终结点（如 <https://go.microsoft.com/fwlink/p/?linkid=834460> 中的主题所述），并要求根据常规 Office 365 指导配置 AD FS。
+**注意：**  联合身份验证要求在 Internet Explorer 的 Intranet 区域中配置 AD FS 终结点（如 <https://go.microsoft.com/fwlink/p/?linkid=834460> 中的主题所述），并要求根据常规 Office 365 指导配置 AD FS。
 

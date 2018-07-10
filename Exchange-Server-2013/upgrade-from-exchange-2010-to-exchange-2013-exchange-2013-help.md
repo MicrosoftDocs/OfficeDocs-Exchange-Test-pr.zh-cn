@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 Microsoft Exchange Server 2010 和 Exchange Server 2007 有多个服务器角色：客户端访问、邮箱、集线器传输、统一消息和边缘传输。使用 Exchange Server 2013，我们将服务器角色的数量从五个减少到了三个：客户端访问、邮箱和边缘传输。统一消息现在被认为是 Exchange 2013 中提供的语音相关功能的组件或子功能。（有关该更改的详细信息，请参阅 [Exchange 2013 中的新增功能](what-s-new-in-exchange-2013-exchange-2013-help.md)中的 Exchange 2013 体系结构”。）
 
@@ -27,18 +27,8 @@ Microsoft Exchange Server 2010 和 Exchange Server 2007 有多个服务器角色
 
 您无法将现有的 Exchange 2003 组织直接升级到 Exchange 2013。必须先将 Exchange 2003 组织升级到 Exchange 2007 或 Exchange 2010 组织，然后再将 Exchange 2007 或 Exchange 2010 组织升级到 Exchange 2013。建议您将组织从 Exchange 2003 升级到 Exchange 2010，然后从 Exchange 2010 升级到 Exchange 2013。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在升级到 Exchange 2013 之前，需要从组织中删除 Exchange 2003 的所有实例。</td>
-</tr>
-</tbody>
-</table>
+> [!warning]
+> 在升级到 Exchange 2013 之前，需要从组织中删除 Exchange 2003 的所有实例。
 
 
 可以将你的所有 Exchange 2003 邮箱都迁移到 Exchange Online。有关此方法的详细信息，请参阅[将多个电子邮件帐户迁移到 Office 365 的方法](https://go.microsoft.com/fwlink/p/?linkid=524030)。

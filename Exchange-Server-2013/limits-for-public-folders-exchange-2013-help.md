@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 在 Exchange Server 2013 中，我们已将公用文件夹从传统数据库体系结构移至邮箱体系结构中。这一转变让公用文件夹能够从数据库可用性组 (DAG) 的弹性机制及其他历时多年创建的邮箱增强功能等事项中获益。但是，有新的限制和性能注意事项应该予以考虑。在本文档中，针对您所拥有的可能会影响公用文件夹性能和连接的配置选项，我们提供了一些高级别指南。
 
@@ -23,18 +23,8 @@ _**上一次修改主题：**2016-12-09_
 
 下表列出了本地 Exchange Server 2013 中公用文件夹的限制。除非特别指出限制是推荐值，否则此表列出的值就是公用文件夹的支持限制。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要了解针对 Office 365 的 Exchange Online 限制，请参阅 <a href="https://go.microsoft.com/fwlink/?linkid=391188">Exchange Online 限制</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 若要了解针对 Office 365 的 Exchange Online 限制，请参阅 <a href="https://go.microsoft.com/fwlink/?linkid=391188">Exchange Online 限制</a>。
 
 
 

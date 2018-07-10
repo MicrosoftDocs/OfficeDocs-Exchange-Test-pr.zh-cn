@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Microsoft统一消息 (UM) 依赖于认证的传真的传真增强的功能，如传真路由或出站传真的合作伙伴解决方案。默认情况下，用户不能配置以允许传入传真消息传递到已启用 UM 的用户。Exchange 服务器将传真请求发送到传真认证的合作伙伴解决方案。传真伙伴的服务器接收传真数据，然后将其发送到收件人的邮箱中的电子邮件与传真包含.tif 附件的形式。有关详细信息，请参阅[为语音邮件用户启用接收传真功能](enable-voice-mail-users-to-receive-faxes-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我们建议计划部署统一消息的所有客户都获取统一消息专家的协助。统一消息专家可帮助您确保有平稳过渡到统一消息从传统语音邮件系统。执行新部署或升级旧的语音邮件系统需要重大的 Pbx 和统一消息有关的知识。有关如何联系统一消息专家的详细信息，请参阅<a href="http://go.microsoft.com/fwlink/p/?linkid=262708">Microsoft Exchange Server 2013年统一消息 (UM) 专家</a>或<a href="https://go.microsoft.com/fwlink/p/?linkid=261951">Microsoft 查明其统一消息</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 我们建议计划部署统一消息的所有客户都获取统一消息专家的协助。统一消息专家可帮助您确保有平稳过渡到统一消息从传统语音邮件系统。执行新部署或升级旧的语音邮件系统需要重大的 Pbx 和统一消息有关的知识。有关如何联系统一消息专家的详细信息，请参阅<a href="http://go.microsoft.com/fwlink/p/?linkid=262708">Microsoft Exchange Server 2013年统一消息 (UM) 专家</a>或<a href="https://go.microsoft.com/fwlink/p/?linkid=261951">Microsoft 查明其统一消息</a>。
 
 
 ## Exchange 统一消息传真伙伴计划
@@ -49,18 +39,8 @@ Microsoft统一消息 (UM) 依赖于认证的传真的传真增强的功能，�
 
 [Microsoft 统一通信开放式互操作性计划](http://go.microsoft.com/fwlink/p/?linkid=140722)资格计划专门用于 VoIP 网关和 IP PBX，可以确保客户将合格的电话网关和 IP PBX 以及 Microsoft 统一通信软件结合使用时，拥有无缝的安装体验和支持体验。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在统一消息和 Communications Server 2007 R2 或 Microsoft Lync Server 相集成的环境中，不支持使用 T.38 或 G.711 发送和接收传真。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 在统一消息和 Communications Server 2007 R2 或 Microsoft Lync Server 相集成的环境中，不支持使用 T.38 或 G.711 发送和接收传真。
 
 
 ## 部署和配置传真

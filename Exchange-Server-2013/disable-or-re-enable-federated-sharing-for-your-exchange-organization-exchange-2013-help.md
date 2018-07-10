@@ -13,42 +13,22 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-02-17_
+_**上一次修改主题：** 2014-02-17_
 
 有时您可能需要临时禁用组织的联合共享。您不用删除现有联合信任或者删除将来可能需要的组织关系和共享策略，只需禁用联合信任的组织标识符 (OrgID)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于使用 Office 365 的混合部署，为您的本地服务器禁用联合信任也将禁用混合功能，例如共享日历闲/忙信息、邮件提示和邮件跟踪。但是，如果禁用了内部部署组织的联合身份验证信任，将不会在混合部署中禁用安全邮件传输。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 对于使用 Office 365 的混合部署，为您的本地服务器禁用联合信任也将禁用混合功能，例如共享日历闲/忙信息、邮件提示和邮件跟踪。但是，如果禁用了内部部署组织的联合身份验证信任，将不会在混合部署中禁用安全邮件传输。
 
 
 有关联合身份验证信任的详细信息，请参阅[联盟](federation-exchange-2013-help.md)。若要了解有关联合共享的详细信息，请参阅[共享](sharing-exchange-2013-help.md)。
 
 关于混合共享的更多管理任务，请参阅[联合程序](federation-procedures-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange Server 2013 的此项功能与由世纪互联在中国运营的 Office 365 不完全兼容，可能需要遵循一些功能限制。有关详细信息，请参阅<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解由世纪互联运营的 Office 365</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> Exchange Server 2013 的此项功能与由世纪互联在中国运营的 Office 365 不完全兼容，可能需要遵循一些功能限制。有关详细信息，请参阅<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解由世纪互联运营的 Office 365</a>。
 
 
 ## 在开始之前，您需要知道什么？
@@ -81,16 +61,6 @@ _**上一次修改主题：**2014-02-17_
 
     Get-FederatedOrganizationIdentifier
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 

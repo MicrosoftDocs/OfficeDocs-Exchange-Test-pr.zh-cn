@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 自动邮箱分发是 Microsoft Exchange Server 2013 中的一种功能，可在您未显式指定数据库时，随机选择邮箱数据库以存储新邮箱或移动的邮箱。当您要允许初级管理员或技术支持人员创建邮箱而无需了解应在哪些邮箱数据库上创建邮箱时，此功能可能会十分有用。
 
@@ -41,18 +41,8 @@ _**上一次修改主题：**2015-04-07_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您该如何做？
@@ -61,18 +51,8 @@ _**上一次修改主题：**2015-04-07_
 
 在此步骤中，需决定要在数据库作用域中包含的数据库。此外，还需决定是否要指定数据库的静态列表，或是否要创建仅包含与指定条件匹配的数据库的数据库筛选器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>与数据库作用域关联的角色分配仅应用到连接到运行 Microsoft Exchange Server 2010 Service Pack 1 (SP1) 或更高版本或者 Exchange 2013 的服务器的用户。如果分配了与数据库作用域关联的角色分配的用户连接到之前的 Exchange 2010 SP1 服务器，则角色分配不会应用到此用户，并且不会将角色分配提供的任何权限授予此用户。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 与数据库作用域关联的角色分配仅应用到连接到运行 Microsoft Exchange Server 2010 Service Pack 1 (SP1) 或更高版本或者 Exchange 2013 的服务器的用户。如果分配了与数据库作用域关联的角色分配的用户连接到之前的 Exchange 2010 SP1 服务器，则角色分配不会应用到此用户，并且不会将角色分配提供的任何权限授予此用户。
 
 
 ## 使用数据库列表作用域
@@ -147,18 +127,8 @@ _**上一次修改主题：**2015-04-07_
 
 如果要向角色组添加成员，请参阅[管理角色组成员](manage-role-group-members-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果向此角色组添加成员以限制他们可以在哪些数据库上创建用户或将邮箱移动到哪些数据库，请确保他们不是可以授予额外权限的其他角色组的成员。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果向此角色组添加成员以限制他们可以在哪些数据库上创建用户或将邮箱移动到哪些数据库，请确保他们不是可以授予额外权限的其他角色组的成员。
 
 
 ## 步骤 4：从角色组删除成员（如果适用）

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 使用审核日志记录可通过跟踪管理员所做的特定更改来解决配置问题，并帮助您满足法规、遵从性以及诉讼等要求。Microsoft Exchange 提供两种类型的审核日志记录：
 
@@ -47,18 +47,8 @@ _**上一次修改主题：**2016-12-09_
     
       - [查看并导出外部管理审核日志](https://technet.microsoft.com/zh-cn/library/dn505728\(v=exchg.150\))
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>默认情况下，管理员审核日志条目保留 90 天。当某个条目超过 90 天时，会删除该条目。不能在基于云的组织中更改此设置。但是，可以使用 <strong>Set-AdminAuditLog</strong> cmdlet 在内部部署 Exchange 组织中更改它。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 默认情况下，管理员审核日志条目保留 90 天。当某个条目超过 90 天时，会删除该条目。不能在基于云的组织中更改此设置。但是，可以使用 <strong>Set-AdminAuditLog</strong> cmdlet 在内部部署 Exchange 组织中更改它。
 
 
   - **导出邮箱审核日志**   在为某个邮箱启用邮箱审核日志记录之后，Microsoft Exchange 会将非邮箱所有者对邮箱数据所执行的操作记录存储到邮箱审核日志中，此日志位于所审核的邮箱的隐藏文件夹中。还可以将邮箱审核日志配置到日志所有者操作中。此日志中的条目指示谁访问过该邮箱以及访问时间、所执行的操作以及操作是否成功。当搜索邮箱审核日志中的条目并导出它们时，Microsoft Exchange 会先将搜索结果保存到一个 XML 文件中，然后再将其附加到电子邮件。有关详细信息，请参阅[导出邮箱审核日志](export-mailbox-audit-logs-exchange-2013-help.md)。
@@ -144,18 +134,8 @@ _**上一次修改主题：**2016-12-09_
 
 这样，用户便可选择 EAC 中的“合规性管理”\>“审核”以运行任何报告。用户还可以导出邮箱审核日志，并导出和查看管理员审核日志。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要让某个用户运行审核报告，但不导出审核日志，则使用前面的命令以分配“仅查看审核日志”角色。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 要让某个用户运行审核报告，但不导出审核日志，则使用前面的命令以分配“仅查看审核日志”角色。
 
 
 ## 配置 Outlook Web App 以允许 XML 附件

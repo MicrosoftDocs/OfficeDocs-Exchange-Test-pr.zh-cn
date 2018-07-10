@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-11-13_
+_**上一次修改主题：** 2012-11-13_
 
 可以使用 EAC 或命令行管理程序将已禁用的邮箱连接到 Active Directory 用户帐户。 在禁用邮箱时，Exchange 会将邮箱保留在邮箱数据库中，并将邮箱切换到禁用状态。 Exchange 属性也会从对应的 Active Directory 用户帐户中删除，但用户帐户会保留。 邮箱会保留到被删除邮箱的保留期（默认为 30 天）结束，然后会从邮箱数据库中永久删除（即*清除*）。
 
@@ -49,18 +49,8 @@ _**上一次修改主题：**2012-11-13_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -75,18 +65,8 @@ _**上一次修改主题：**2012-11-13_
     
     将显示在 Exchange 组织中选定的 Exchange 服务器上断开连接的邮箱列表。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>这个断开连接邮箱列表包括了禁用的、删除的和软删除的邮箱。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 这个断开连接邮箱列表包括了禁用的、删除的和软删除的邮箱。
 
 
 3.  单击要重新连接的已禁用邮箱，再单击“连接”。
@@ -111,18 +91,8 @@ _**上一次修改主题：**2012-11-13_
 
     Connect-Mailbox -Identity "Corporate Shared Mailbox" -Database "Mailbox Database 03" -User "Corporate Shared Mailbox" -Alias corpshared -Shared
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果在运行 <strong>Connect-Mailbox</strong> cmdlet 时不包括 <em>Alias</em> 参数，则使用<em>User</em> 或 <em>LinkedMasterAccount</em> 参数中指定的值为重新连接的邮箱创建电子邮件地址别名。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果在运行 <strong>Connect-Mailbox</strong> cmdlet 时不包括 <em>Alias</em> 参数，则使用<em>User</em> 或 <em>LinkedMasterAccount</em> 参数中指定的值为重新连接的邮箱创建电子邮件地址别名。
 
 
 有关语法和参数的详细信息，请参阅 [Connect-Mailbox](https://technet.microsoft.com/zh-cn/library/aa997878\(v=exchg.150\))。

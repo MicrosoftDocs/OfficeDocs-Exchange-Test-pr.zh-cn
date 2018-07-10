@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-18_
+_**上一次修改主题：** 2012-11-18_
 
 可以允许客户端访问服务器上的 Microsoft Exchange 统一消息呼叫路由器服务应答新的呼叫，也可以阻止其这样做。默认情况下，客户端访问服务器在安装后就处于启用状态。在设置客户端访问服务器以接受传入的语音、传真、自动助理和 Outlook Voice Access 呼叫时，可使用 **Set-ServerComponentState** cmdlet。
 
@@ -23,18 +23,8 @@ _**上一次修改主题：**2012-11-18_
 
 在 Exchange 2007 和 Exchange 2010 中，有一个状态参数可用于控制统一消息服务器的运行状态。在 Exchange 2013 中，没有可用于在客户端访问服务器上的 **Set-UMCallRouterSettings** cmdlet 上实现该目的状态参数。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>除非要将 UM 与 Microsoft Office Communications Server 2007 R2 或 Microsoft Lync Server 集成，否则不需要将客户端访问服务器和邮箱服务器添加到 UM 拨号计划上就能处理统一消息的呼叫。默认情况下，组织中的所有客户端访问服务器和邮箱服务器都可用于应答传入呼叫。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 除非要将 UM 与 Microsoft Office Communications Server 2007 R2 或 Microsoft Lync Server 集成，否则不需要将客户端访问服务器和邮箱服务器添加到 UM 拨号计划上就能处理统一消息的呼叫。默认情况下，组织中的所有客户端访问服务器和邮箱服务器都可用于应答传入呼叫。
 
 
 有关与客户端访问服务器相关的其他管理任务，请参阅 [UM 服务过程](um-services-procedures-exchange-2013-help.md)。
@@ -53,18 +43,8 @@ _**上一次修改主题：**2012-11-18_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 使用命令行管理程序可允许或阻止客户端访问服务器上的呼叫应答

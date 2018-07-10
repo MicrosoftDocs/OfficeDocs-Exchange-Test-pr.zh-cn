@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server, Exchange Server 2010, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server, Exchange Server 2010, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 如果组织或某些用户所处的国家或地区更改了其识别夏令时 (DST) 的策略，或更改了与协调世界时 (UTC) 的本地时间偏移，则您可能需要更新 Microsoft Windows、Microsoft Exchange、Microsoft Outlook 或其他程序以适应这些更改。
 
@@ -31,7 +31,7 @@ _**上一次修改主题：**2016-12-09_
 
 因为在 DST 或时区更改时更新了 Office 365 身份验证系统，所以所有 Office 365 客户端计算机都需要进行更新，否则可能会遇到连接问题。
 
-  - 确保所有客户端和台式计算机都安装了 Windows DST 更新。有关详细信息，请参阅[如何配置 Microsoft Windows 操作系统夏令时](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=914387)。
+  - 确保所有客户端和台式计算机都安装了 Windows DST 更新。有关详细信息，请参阅[如何配置 Microsoft Windows 操作系统夏令时](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=914387)。
 
 ## 步骤 2：在所有服务器上安装 Windows DST 更新
 
@@ -47,7 +47,7 @@ _**上一次修改主题：**2016-12-09_
 
 2.  向需要更新其计算机的用户发送邮件，以便为其提供指向合适工具的链接。
 
-下表显示用户应在何时运行 [Exchange 日历更新工具](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=930879)或 [Microsoft Office Outlook 时区数据更新工具](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667)。查找组织的服务器所运行的版本，然后确定用户所运行的客户端程序。
+下表显示用户应在何时运行 [Exchange 日历更新工具](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=930879)或 [Microsoft Office Outlook 时区数据更新工具](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667)。查找组织的服务器所运行的版本，然后确定用户所运行的客户端程序。
 
 
 <table>
@@ -69,45 +69,45 @@ _**上一次修改主题：**2016-12-09_
 </tr>
 <tr class="odd">
 <td><p><strong>Exchange 2003 内部部署</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=930879">Exchange 日历工具</a>或</p>
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Microsoft Office Outlook 时区数据更新工具</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=930879">Exchange 日历工具</a>或</p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Microsoft Office Outlook 时区数据更新工具</a></p></td>
 <td><p>不需要执行任何操作</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Exchange 2007 内部部署</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=930879">Exchange 日历工具</a>或</p>
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Microsoft Office Outlook 时区数据更新工具</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=930879">Exchange 日历工具</a>或</p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Microsoft Office Outlook 时区数据更新工具</a></p></td>
 <td><p>不需要执行任何操作</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Exchange 2010 内部部署</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=930879">Exchange 日历工具</a>或</p>
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Microsoft Office Outlook 时区数据更新工具</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=930879">Exchange 日历工具</a>或</p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Microsoft Office Outlook 时区数据更新工具</a></p></td>
 <td><p>不需要执行任何操作</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Exchange 2013 本地环境</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Microsoft Office Outlook 时区数据更新工具</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Microsoft Office Outlook 时区数据更新工具</a></p></td>
 <td><p>不需要执行任何操作</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>BPOS-S (Exchange 2007)</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Microsoft Office Outlook 时区数据更新工具</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Microsoft Office Outlook 时区数据更新工具</a></p></td>
 <td><p>不需要执行任何操作</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>BPOS-D (Exchange 2010)</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Microsoft Office Outlook 时区数据更新工具</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Microsoft Office Outlook 时区数据更新工具</a></p></td>
 <td><p>不需要执行任何操作</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Office 365 (Exchange 2010)</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Microsoft Office Outlook 时区数据更新工具</a>（Outlook 2003 不支持）</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Microsoft Office Outlook 时区数据更新工具</a>（Outlook 2003 不支持）</p></td>
 <td><p>无需任何操作</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Office 365 (Exchange 2013)</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Microsoft Office Outlook 时区数据更新工具</a>（Outlook 2003 不支持）</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Microsoft Office Outlook 时区数据更新工具</a>（Outlook 2003 不支持）</p></td>
 <td><p>无需任何操作</p></td>
 </tr>
 <tr class="odd">

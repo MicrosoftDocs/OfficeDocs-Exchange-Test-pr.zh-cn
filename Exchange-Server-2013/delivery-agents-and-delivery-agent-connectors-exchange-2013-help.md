@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 传递代理可以从 SMTP Exchange Server 环境向不使用 SMTP 协议的系统传递邮件。每个传递代理都与一个传递代理连接器关联，该连接器会安排路由到传递代理的邮件排队等待处理，然后传递到非 SMTP 设备或系统。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>虽然外部连接器体系结构仍保留在 Microsoft Exchange 2013 中，但我们建议尽可能将传递代理用于将邮件路由到非 SMTP 系统。这样做的主要原因是，可以对邮件使用队列管理，无需管理指向投递目录的文件传输，并且可以验证邮件传递是否成功。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 虽然外部连接器体系结构仍保留在 Microsoft Exchange 2013 中，但我们建议尽可能将传递代理用于将邮件路由到非 SMTP 系统。这样做的主要原因是，可以对邮件使用队列管理，无需管理指向投递目录的文件传输，并且可以验证邮件传递是否成功。
 
 
 **目录**

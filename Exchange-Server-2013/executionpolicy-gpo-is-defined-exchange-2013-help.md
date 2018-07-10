@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2016-12-15_
+_**上一次修改主题：** 2016-12-15_
 
 无法继续 Microsoft Exchange Server 2013 安装程序，因为它检测到\&quot;ExecutionPolicy\&quot;组策略对象 (GPO) 定义了一个或两个以下策略：
 
@@ -29,20 +29,10 @@ _**上一次修改主题：**2016-12-15_
 
 若要继续安装程序，需要暂时删除\&quot;ExecutionPolicy\&quot;GPO 中\&quot;MachinePolicy\&quot;或\&quot;UserPolicy\&quot;的所有定义。
 
-有关如何在**ExecutionPolicy** GPO 中删除**MachinePolicy**或**UserPolicy**的任何定义的信息，请参阅[知识库文章 KB981474](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=981474)。
+有关如何在**ExecutionPolicy** GPO 中删除**MachinePolicy**或**UserPolicy**的任何定义的信息，请参阅[知识库文章 KB981474](https://go.microsoft.com/fwlink/?linkid=3052&kbid=981474)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>虽然此知识库文章是针对 Exchange 2010 撰写的，但也适用于 Exchange 2013 累积更新和 Service Pack。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 虽然此知识库文章是针对 Exchange 2010 撰写的，但也适用于 Exchange 2013 累积更新和 Service Pack。
 
 
 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：[Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612)、 [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542) 或 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351)。

@@ -13,32 +13,19 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Office 365 Enterprise_
+_**适用于：** Exchange Online, Exchange Server 2013, Office 365 Enterprise_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 **估计完成时间：5 分钟**
 
 共享邮箱可让贵组织中的人员组方便地通过共用帐户（例如 info@contoso.com 或 support@contoso.com）监视和发送电子邮件。如果组中有人回复发送至共享邮箱的邮件，则该电子邮件看起来是由共享邮箱发送而不是从单个用户发送的。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果你使用的是 Office 365 企业版，则应在 Office 365 管理中心创建共享邮箱。
-<ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=834766">在 Office 365 管理中心创建共享邮箱</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果你使用的是 Office 365 企业版，则应在 Office 365 管理中心创建共享邮箱。
+> <ul>
+> <li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=834766">在 Office 365 管理中心创建共享邮箱</a></p></li>
+> </ul>
 
 
 如果组织使用的是混合 Exchange 环境，则应使用本地 Exchange 管理中心 (EAC) 创建和管理共享邮箱。若要了解有关共享邮箱的详细信息，请参阅 [共享邮箱](shared-mailboxes-exchange-2013-help.md)。
@@ -57,18 +44,8 @@ _**上一次修改主题：**2016-12-09_
 
 3.  若要授予“完全访问”或“代理发送”权限，可单击“添加”![添加图标](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "添加图标")，然后选择要对其授予权限的用户。您可以使用 **CTRL** 键来选择多个用户。不清楚要使用什么权限？请参阅本主题后面部分中的您应使用哪些权限？。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>“完全访问”权限允许用户打开邮箱，以及创建和修改其中的项目。“代理发送”权限允许除邮箱所有者以外的任何人从该共享邮箱发送电子邮件。这两个权限是成功操作共享邮箱所必需的。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > “完全访问”权限允许用户打开邮箱，以及创建和修改其中的项目。“代理发送”权限允许除邮箱所有者以外的任何人从该共享邮箱发送电子邮件。这两个权限是成功操作共享邮箱所必需的。
 
 
 4.  单击“保存”保存您的更改，并创建共享邮箱。
@@ -81,18 +58,8 @@ _**上一次修改主题：**2016-12-09_
 
 3.  若要授予或移除“完全访问”和“代理发送”权限”，单击“添加”![添加图标](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "添加图标") 或“移除”![删除图标](images/JJ657492.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "删除图标")，然后选择您想要授予权限的用户。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>“完全访问”权限允许用户打开邮箱，以及创建和修改其中的项目。“代理发送”权限允许除邮箱所有者以外的任何人从该共享邮箱发送电子邮件。这两个权限是成功操作共享邮箱所必需的。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > “完全访问”权限允许用户打开邮箱，以及创建和修改其中的项目。“代理发送”权限允许除邮箱所有者以外的任何人从该共享邮箱发送电子邮件。这两个权限是成功操作共享邮箱所必需的。
 
 
 4.  单击“保存”保存更改。
@@ -109,18 +76,8 @@ _**上一次修改主题：**2016-12-09_
 
 该示例可创建共享的邮箱销售部门，并对安全组 MarketingSG 授予“完全访问权限”和“代表发送”权限。将对属于安全组成员的用户授予邮箱的权限。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>该示例假定您已经创建了安全组 MarketingSG，并且该安全组已启用邮件。请参阅<a href="manage-mail-enabled-security-groups-exchange-2013-help.md">管理启用邮件的安全组</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 该示例假定您已经创建了安全组 MarketingSG，并且该安全组已启用邮件。请参阅<a href="manage-mail-enabled-security-groups-exchange-2013-help.md">管理启用邮件的安全组</a>。
 
 
     New-Mailbox -Shared -Name "Sales Department" -DisplayName "Sales Department" -Alias Sales | Set-Mailbox -GrantSendOnBehalfTo MarketingSG | Add-MailboxPermission -User MarketingSG -AccessRights FullAccess -InheritanceType All
@@ -141,16 +98,6 @@ _**上一次修改主题：**2016-12-09_
 
 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 

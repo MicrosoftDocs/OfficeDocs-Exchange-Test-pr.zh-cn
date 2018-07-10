@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-27_
+_**上一次修改主题：** 2015-03-27_
 
 您可以通过设置传输规则，在组织中检查电子邮件附件。Exchange 提供传输规则，作为邮件安全性和合规性的一部分，这些传输规则可以提供检查电子邮件附件的功能。当您检查附件时，您可以根据这些附件的内容或特征对经过检查的邮件采取操作。以下是您使用传输规则可以执行的一些与附件相关的任务：
 
@@ -72,11 +72,9 @@ Exchange 管理员可以通过转到“Exchange 管理中心”\>“邮件流”
 
 在此处列出的条件的 Exchange 命令行管理程序 名称为需要 `TransportRule` cmdlet 的参数。
 
-  -  
-    要了解有关该 cmdlet 的详细信息，可参阅 [New-TransportRule](https://technet.microsoft.com/zh-cn/library/bb125138\(v=exchg.150\))。
+  -  要了解有关该 cmdlet 的详细信息，可参阅 [New-TransportRule](https://technet.microsoft.com/zh-cn/library/bb125138\(v=exchg.150\))。
 
-  -  
-    要了解这些条件的属性类型的详细信息，可参阅[Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)。
+  -  要了解这些条件的属性类型的详细信息，可参阅[Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)。
 
 传输规则只检查受支持类型文件的内容。如果传输规则代理遇到的附件不在受支持的文件类型的列表内，则将触发 `AttachmentIsUnsupported` 条件。下一节列出了受支持的文件类型。任何未列出的文件将触发 `AttachmentIsUnsupported` 条件。
 
@@ -213,11 +211,9 @@ Exchange 管理员可以通过转到“Exchange 管理中心”\>“邮件流”
 
 在此处列出的条件的 Exchange 命令行管理程序 名称为需要 `TransportRule` cmdlet 的参数。
 
-  -  
-    要了解有关该 cmdlet 的详细信息，可参阅 [New-TransportRule](https://technet.microsoft.com/zh-cn/library/bb125138\(v=exchg.150\))。
+  -  要了解有关该 cmdlet 的详细信息，可参阅 [New-TransportRule](https://technet.microsoft.com/zh-cn/library/bb125138\(v=exchg.150\))。
 
-  -  
-    要了解这些条件的属性类型的详细信息，可参阅[Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)。
+  -  要了解这些条件的属性类型的详细信息，可参阅[Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)。
 
 ## 传输规则检查支持的可执行文件类型
 

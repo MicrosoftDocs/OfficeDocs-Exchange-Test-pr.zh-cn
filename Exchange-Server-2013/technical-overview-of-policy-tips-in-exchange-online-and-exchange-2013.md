@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-07-22_
+_**上一次修改主题：** 2015-07-22_
 
 您可以创建包含*策略提示*通知消息的数据丢失防护 (DLP) 策略来帮助组织的 Microsoft Outlook、Outlook Web App (OWA) 和 OWA for Devices 电子邮件用户避免以不当方式发送敏感信息。与 Microsoft Exchange Server 2010 中引入的邮件提示类似，策略提示通知消息会在用户撰写电子邮件时显示在 Outlook 中。只有当发件人的电子邮件的某些信息可能违反现有某项 DLP 策略，并且策略的规则会在满足设定条件时通知发件人时，才会显示策略提示通知消息。有关数据丢失防护的更多常规信息，请参阅[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)。
 
@@ -27,25 +27,12 @@ _**上一次修改主题：**2015-07-22_
 
 如果策略提示通知让组织中正在撰写邮件的发件人实时了解到组织的相关要求和标准，将可以降低他们违反组织强制执行的各种标准的可能。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Exchange Online：DLP 是一项高级功能，要求使用 Exchange Online 计划 2 订阅。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=286154">Exchange Online Licensing</a>（Exchange Online 授权）。</p></li>
-<li><p>Exchange 2013：DLP 是一项高级功能，要求使用 Exchange 企业客户端访问许可证 (CAL)。有关 CAL 和服务器授权的详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server Licensing</a>（Exchange Server 授权）。</p></li>
-<li><p>如果组织使用的是 Exchange 2013 SP1 或 Exchange Online，则人们可使用策略提示从 Outlook 2013、Outlook Web App 或 适用于设备的 OWA 发送邮件。但是，如果组织目前使用的是 Exchange 2013，则人们仅可以使用策略提示从 Outlook 2013 发送电子邮件。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> <ul>
+> <li><p>Exchange Online：DLP 是一项高级功能，要求使用 Exchange Online 计划 2 订阅。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=286154">Exchange Online Licensing</a>（Exchange Online 授权）。</p></li>
+> <li><p>Exchange 2013：DLP 是一项高级功能，要求使用 Exchange 企业客户端访问许可证 (CAL)。有关 CAL 和服务器授权的详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server Licensing</a>（Exchange Server 授权）。</p></li>
+> <li><p>如果组织使用的是 Exchange 2013 SP1 或 Exchange Online，则人们可使用策略提示从 Outlook 2013、Outlook Web App 或 适用于设备的 OWA 发送邮件。但是，如果组织目前使用的是 Exchange 2013，则人们仅可以使用策略提示从 Outlook 2013 发送电子邮件。</p></li>
+> </ul>
 
 
 ## 策略提示的默认文本和规则选项

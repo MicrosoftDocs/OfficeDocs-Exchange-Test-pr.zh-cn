@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 若要查看有关调用由 Exchange 服务器处理在某个特定日期的详细的信息，请导出调用数据从调用统计信息报告的那一天。可用的在过去的 90 天内的数据可以帮助您的每日电话使用音频质量或拒绝的呼叫，诊断问题和提供审核或您组织中的 Exchange 服务器上的报表的信息。
 
@@ -33,18 +33,8 @@ _**上一次修改主题：**2013-02-22_
     
     导出的文件将命名为 um\_cdr\_*YYYY-MM-DD*.csv，其中 *YYYY-MM-DD* 表示运行报告的年、月、日。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在报告页面上，可以下载 Microsoft Excel 模板用来导入特定日期的 .csv 文件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 在报告页面上，可以下载 Microsoft Excel 模板用来导入特定日期的 .csv 文件。
 
 
 5.  使用诸如 Excel 这样的应用程序来处理 .csv 文件并生成您自己的自定义报告。
@@ -53,18 +43,8 @@ _**上一次修改主题：**2013-02-22_
 
 您导出的 UM 呼叫数据包含以下有关 UM 当日所处理的每个呼叫的详细信息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在&amp;quot;呼叫统计信息&amp;quot;报告中，日期采用 UTC 时间。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在&amp;quot;呼叫统计信息&amp;quot;报告中，日期采用 UTC 时间。
 
 
   - **CallStartTime**日期和 UM 处理该调用，以 utc 格式的时间。UTC 时间和日期都在下面的格式 ︰ *YYYY-MM-DD hh:mm:SSZ*，其中*YYYY* = 年， *MM* = *DD*月 = 日， *hh* = 小时，24 小时的时间， *mm* = 分钟，ss = 秒。Z 表示祖鲁语，这是一种方法来表示 UTC (如 +*hh*:*mm*或*hh*:*mm*，这将使从 UTC 偏移量)。由于本报告中所有的通话时间以 UTC 时间，这将始终是 Z。
@@ -147,18 +127,8 @@ _**上一次修改主题：**2013-02-22_
 
   - **NMOS 分数** 网络意味着意见分数 (NMOS) 调用。NMOS 表明好的音频质量待命为数字，范围是从 1 到 5，5 表示极好。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><strong>请注意</strong>  最大的 NMOS 调用可能取决于正在使用的音频编解码器。NMOS 可能可以很短是长时间少于 10 秒的呼叫。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > <strong>请注意</strong>  最大的 NMOS 调用可能取决于正在使用的音频编解码器。NMOS 可能可以很短是长时间少于 10 秒的呼叫。
 
 
   - **NMOSDegradation** 从所使用的音频编解码器可能位于顶部的值 NMOS 音频质量下降量。例如，如果调用的 NMOS 下降值是 1.2，呼叫报告 NMOS 3.3，这个特定的调用的最长的 NMOS 将 4.5 (1.2 + 3.3)。

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 尝试删除仲裁邮箱时，可能收到以下错误消息：
 
@@ -56,18 +56,8 @@ _**上一次修改主题：**2015-03-09_
     $AMDN = $AM.DistinguishedName
     Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq $AMDN}
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仲裁邮箱是使用可分辨名称 (DN) 指定的。如果您知道仲裁邮箱的 DN，可以运行单一命令：<code>Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq &lt;DN&gt;}</code>。<code>Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq &lt;DN&gt;}</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 仲裁邮箱是使用可分辨名称 (DN) 指定的。如果您知道仲裁邮箱的 DN，可以运行单一命令：<code>Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq &lt;DN&gt;}</code>。<code>Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq &lt;DN&gt;}</code>.
 
 
 ## 步骤 2：使用命令行管理程序指定其他仲裁邮箱或者禁用对收件人的仲裁

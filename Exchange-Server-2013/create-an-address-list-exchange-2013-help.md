@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-12_
+_**上一次修改主题：** 2012-10-12_
 
 地址列表是收件人和其他 Active Directory 对象的集合。每个地址列表都可以包含一种或多种类型的对象（如用户、联系人、组、公用文件夹、会议和其他资源）。地址列表还提供了一种在 Active Directory 中对启用邮件对象进行分区的机制，从而满足特定用户组的需求。
 
@@ -31,18 +31,8 @@ _**上一次修改主题：**2012-10-12_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -55,18 +45,8 @@ _**上一次修改主题：**2012-10-12_
 
 3.  默认情况下，Exchange 创建包含组织中所有成员的地址列表。若要创建唯一自定义地址列表，请单击\&quot;**添加规则**\&quot;。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果不添加规则，将创建一个地址列表，其对于其中一个默认地址列表是冗余的。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 如果不添加规则，将创建一个地址列表，其对于其中一个默认地址列表是冗余的。
 
 
 4.  在列表中，选择筛选选项（例如\&quot;自定义属性 1\&quot;）。

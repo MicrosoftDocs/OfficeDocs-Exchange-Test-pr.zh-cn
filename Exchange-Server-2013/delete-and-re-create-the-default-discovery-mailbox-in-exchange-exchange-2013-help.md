@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-05-04_
+_**上一次修改主题：** 2016-05-04_
 
 您可以使用 Exchange 命令行管理程序删除默认发现邮箱、重新创建，然后向其分配权限。
 
@@ -58,18 +58,8 @@ _**上一次修改主题：**2016-05-04_
 
 ## 使用 Exchange 命令行管理程序 删除并重新创建默认发现邮箱
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您无法使用 Exchange 管理中心 (EAC)，因为发现邮箱无法在 EAC 中显示。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 您无法使用 Exchange 管理中心 (EAC)，因为发现邮箱无法在 EAC 中显示。
 
 
 1.  运行以下命令删除默认发现邮箱。

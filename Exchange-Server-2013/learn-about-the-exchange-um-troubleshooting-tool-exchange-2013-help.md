@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Microsoft Exchange 2010 统一消息故障排除工具是一个名为 **Test-ExchangeUMCallFlow** 的 Exchange 命令行管理程序 cmdlet。可使用该工具对贵组织的统一消息 (UM) 执行一系列诊断测试。如果有任何测试失败，该工具会报告失败原因以及问题的可能解决方案。您只能在 Exchange 2010 或更高版本的服务器上使用 UM 故障排除工具。
 
 UM 故障排除工具可用于测试语音邮件在内部部署和跨界部署的环境中是否都能正常运行。您可以在包括 Microsoft Office Communications Server 2007 R2 或 Microsoft Lync Server 2010 或更高版本的 UM 部署中，或在包括 VoIP 网关、IP 专用交换机 (IP PBX) 或会话边界控制器 (SBC) 的 UM 部署中使用此工具。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>UM 故障排除工具用于测试和故障排除。而 <strong>Test-UMConnectivity</strong> cmdlet 应当用于监视。<strong>Test-UMConnectivity</strong> cmdlet 与 System Center Operations Manager (SCOM) 管理包配合使用，这些管理包用于监视 Exchange 2010 UM 服务器或 Exchange 2013 客户端访问和邮箱服务器和电话组件。<strong>Test-UMConnectivity</strong> cmdlet 可对邮箱执行本地 SIP 测试和本地登录测试，并可作为 SCOM 任务运行。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> UM 故障排除工具用于测试和故障排除。而 <strong>Test-UMConnectivity</strong> cmdlet 应当用于监视。<strong>Test-UMConnectivity</strong> cmdlet 与 System Center Operations Manager (SCOM) 管理包配合使用，这些管理包用于监视 Exchange 2010 UM 服务器或 Exchange 2013 客户端访问和邮箱服务器和电话组件。<strong>Test-UMConnectivity</strong> cmdlet 可对邮箱执行本地 SIP 测试和本地登录测试，并可作为 SCOM 任务运行。
 
 
 若要下载 UM 故障排除工具，请参阅[统一消息故障排除工具](https://go.microsoft.com/fwlink/p/?linkid=182625)。
@@ -223,21 +213,11 @@ UM 故障排除工具可帮助您在跨界部署中排查、诊断及修复配�
 
   - Microsoft .NET Framework 3.5 Service Pack 1 (SP1)   请参阅 [Microsoft .NET Framework 3.5 Service Pack 1](https://go.microsoft.com/fwlink/p/?linkid=152380)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果将在 Windows Vista 或 Windows Server 2008 计算机上运行该工具，请参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=178998">适用于 Windows Vista x64 和 Windows Server 2008 x64 的 Microsoft .NET Framework 3.5 产品系列更新</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果将在 Windows Vista 或 Windows Server 2008 计算机上运行该工具，请参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=178998">适用于 Windows Vista x64 和 Windows Server 2008 x64 的 Microsoft .NET Framework 3.5 产品系列更新</a>。
 
 
-  - Windows 远程管理 (WinRM) 2.0 和 Windows PowerShell V2 (Windows6.0-KB968930.msu)   请参阅 Microsoft 知识库文章 968930，[Windows Management Framework Core 程序包（Windows PowerShell 2.0 和 WinRM 2.0）](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)。
+  - Windows 远程管理 (WinRM) 2.0 和 Windows PowerShell V2 (Windows6.0-KB968930.msu)   请参阅 Microsoft 知识库文章 968930，[Windows Management Framework Core 程序包（Windows PowerShell 2.0 和 WinRM 2.0）](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)。
 
   - Microsoft Unified Communications Managed API 2.0 Core Runtime (UcmaRuntimeWebDownloadX64.msi)   请参阅 [Unified Communications Managed API 2.0，Core Runtime（64 位）](https://go.microsoft.com/fwlink/p/?linkid=198175)。
 

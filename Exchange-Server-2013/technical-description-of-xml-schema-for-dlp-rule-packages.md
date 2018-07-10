@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-07-28_
+_**上一次修改主题：** 2016-07-28_
 
 本主题中的 XML 架构和指导会帮助你开始创建自己的基本数据丢失预防 (DLP) XML 文件，这些文件在一个分类规则包中定义你自己的敏感信息类型。创建一个格式正确的 XML 文件后，可使用 Exchange 管理中心或 Exchange 命令行管理程序将其导入，以帮助创建一个 Microsoft Exchange Server 2013 DLP 解决方案。XML 文件是一个自定义的 DLP 策略模板，可包含作为你的分类规则包的 XML。有关将你自己的 DLP 模板定义为 XML 文件的概述，请参阅[定义您自己的 DLP 模板和信息类型](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)。
 

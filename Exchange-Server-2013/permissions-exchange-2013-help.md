@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server, Exchange Server 2013_
+_**适用于：** Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 Microsoft Exchange Server 2013 包括一个大型的根据基于角色的访问控制 (RBAC) 权限模型预定义的权限集，使用它可轻松便捷地向管理员和用户授予权限。你可以使用 Exchange 2013 中的权限功能，以便快速设置并运行新组织。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>一些 RBAC 功能和概念为高级功能，因此本主题将不对其进行讨论。如果本主题中讨论的功能无法满足您的需求，并且您希望进一步自定义权限模型，请参阅<a href="understanding-role-based-access-control-exchange-2013-help.md">了解基于角色的访问控制</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 一些 RBAC 功能和概念为高级功能，因此本主题将不对其进行讨论。如果本主题中讨论的功能无法满足您的需求，并且您希望进一步自定义权限模型，请参阅<a href="understanding-role-based-access-control-exchange-2013-help.md">了解基于角色的访问控制</a>。
 
 
 需要所有权限主题的列表？请参阅权限文档。
@@ -77,18 +67,8 @@ Exchange 2013 包括大约 86 个可用于授予权限的角色。有关 Exchang
 
 为了能够更轻松地为管理员分配多个角色，Exchange 2013 包含了角色组。角色组是 Exchange 2013 使用的特殊通用安全组 (USG)，可以包含 Active Directory 用户、USG 及其他角色组。将一个角色分配给角色组时，会将该角色授予的权限授予该角色组的所有成员。这使你可以一次将许多角色分配给许多角色组成员。角色组通常覆盖更广泛的管理区域，如收件人管理。角色组只能与管理角色一起使用，而不能与最终用户角色一起使用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以在不使用角色组的情况下将角色直接分配给用户或 USG。但是，这种角色分配方法是一个高级过程，本主题将不做介绍。建议你使用角色组来管理权限。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 可以在不使用角色组的情况下将角色直接分配给用户或 USG。但是，这种角色分配方法是一个高级过程，本主题将不做介绍。建议你使用角色组来管理权限。
 
 
 下图显示了用户、角色组和角色之间的关系。
@@ -116,18 +96,9 @@ Exchange 2013 包括若干内置角色组，每个角色组都提供管理 Excha
 <tr class="odd">
 <td><p><a href="organization-management-exchange-2013-help.md">组织管理</a></p></td>
 <td><p>组织管理 角色组成员的管理员具有对整个 Exchange 2013 组织的管理访问权限，并且几乎可以对任意 Exchange 2013 对象执行任何任务，某些情况除外，例如 <code>Discovery Management</code> 角色。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由于 组织管理 角色组是一个强大的角色，因此只有执行可能影响整个 Exchange 组织的组织级别管理任务的用户或 USG 才可以是此角色组的成员。</td>
-</tr>
-</tbody>
-</table>
+
+> [!important]
+> 由于 组织管理 角色组是一个强大的角色，因此只有执行可能影响整个 Exchange 组织的组织级别管理任务的用户或 USG 才可以是此角色组的成员。
 
 </td>
 </tr>
@@ -219,18 +190,8 @@ Exchange 2013 组织可以有多个角色分配策略，以便为组织中不同
 
 Exchange 2013 包括数个角色组，将权限分离为特定管理区域。如果这些现有角色组提供了管理员管理 Exchange 2013 组织所需的权限，则只需将管理员添加为相应角色组的成员。将管理员添加到角色组后，管理员就可以管理与该角色组相关的功能。若要向角色组中添加成员或删除其中的成员，请在 EAC 中打开该角色组，然后向成员列表中添加成员或从中删除成员。有关内置角色组的列表，请参阅[内置的角色组](built-in-role-groups-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果某个管理员为多个角色组的成员，则 Exchange 2013 授予该管理员其所属的角色组提供的所有权限。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果某个管理员为多个角色组的成员，则 Exchange 2013 授予该管理员其所属的角色组提供的所有权限。
 
 
 如果 Exchange 2013 中提供的角色组没有你所需的权限，则可以使用 EAC 创建角色组并添加具有你所需权限的角色。对于新建的角色组，需执行以下操作：
@@ -249,18 +210,8 @@ Exchange 2013 包括数个角色组，将权限分离为特定管理区域。如
 
 也可以修改现有角色组。使用与上图类似的 EAC 对话框，可以同时向现有角色组中添加角色和成员，以及从其中删除角色和成员。通过向角色组中添加角色和从其中删除角色，可以为该角色组的成员启用和禁用管理功能。有关可以添加到角色组的角色列表，请参阅[内置管理角色](built-in-management-roles-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>尽管可以更改分配给内置角色组的角色，但建议您复制内置角色组、修改角色组副本，然后将成员添加到角色组副本。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 尽管可以更改分配给内置角色组的角色，但建议您复制内置角色组、修改角色组副本，然后将成员添加到角色组副本。
 
 
 基于角色的权限
@@ -295,26 +246,13 @@ Exchange 2013 包括名为“默认角色分配策略”的角色分配策略。
 
 如果要更改默认的角色分配策略，必须使用命令行管理程序。在更改默认角色分配策略时，任何创建时未明确指定角色分配策略的新建邮箱都将与新的默认角色分配策略相关联。选择新的默认角色分配策略时，与现有邮箱关联的角色分配策略不会发生变化。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果选中具有子角色的角色对应的复选框，则同时还会选中其子角色对应的复选框。如果清除具有子角色的角色对应的复选框，则同时还会清除其子角色对应的复选框。<br />
-有关如何创建角色分配策略或更改现有角色分配策略的详细步骤，请参阅下列主题：
-<ul>
-<li><p><a href="manage-role-assignment-policies-exchange-2013-help.md">管理角色分配策略</a></p></li>
-<li><p><a href="change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md">更改邮箱的分配策略</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果选中具有子角色的角色对应的复选框，则同时还会选中其子角色对应的复选框。如果清除具有子角色的角色对应的复选框，则同时还会清除其子角色对应的复选框。<br />
+> 有关如何创建角色分配策略或更改现有角色分配策略的详细步骤，请参阅下列主题：
+> <ul>
+> <li><p><a href="manage-role-assignment-policies-exchange-2013-help.md">管理角色分配策略</a></p></li>
+> <li><p><a href="change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md">更改邮箱的分配策略</a></p></li>
+> </ul>
 
 
 基于角色的权限

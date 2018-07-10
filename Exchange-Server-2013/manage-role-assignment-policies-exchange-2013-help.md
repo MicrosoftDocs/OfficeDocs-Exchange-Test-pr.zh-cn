@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-09_
+_**上一次修改主题：** 2012-10-09_
 
 如果您要自定义分配给最终用户组的权限，则创建新的自定义管理角色分配策略。您可以根据最终用户的具体要求自定义要创建的分配策略。 有关 Microsoft Exchange Server 2013 中的分配策略的详细信息，请参阅[了解管理角色分配策略](understanding-management-role-assignment-policies-exchange-2013-help.md)。
 
@@ -29,18 +29,8 @@ _**上一次修改主题：**2012-10-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -51,18 +41,8 @@ _**上一次修改主题：**2012-10-09_
 
 ## 使用 EAC 创建新分配策略
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 Exchange 管理中心 (EAC) 只能创建显式分配策略。如果要创建新的默认分配策略，则必须使用 Exchange 命令行管理程序。有关详细信息，请参阅本主题后面的“使用命令行管理程序创建默认分配策略”部分。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 使用 Exchange 管理中心 (EAC) 只能创建显式分配策略。如果要创建新的默认分配策略，则必须使用 Exchange 命令行管理程序。有关详细信息，请参阅本主题后面的“使用命令行管理程序创建默认分配策略”部分。
 
 
 1.  在 EAC 中，导航至“权限”\>“使用角色”，然后单击“添加”![添加图标](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "添加图标")。
@@ -223,18 +203,8 @@ _**上一次修改主题：**2012-10-09_
 
 您可以更改为新创建的邮箱分配的管理角色分配策略。 更改默认角色分配策略将不会更改分配给现有邮箱的分配策略。要更改分配给现有邮箱的分配策略，请参阅[更改邮箱的分配策略](change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不能使用 EAC 更改默认分配策略。 需要使用命令行管理程序。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 不能使用 EAC 更改默认分配策略。 需要使用命令行管理程序。
 
 
 ## 使用命令行管理程序更改默认分配策略
@@ -247,18 +217,8 @@ _**上一次修改主题：**2012-10-09_
 
     Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>将为新邮箱分配默认分配策略，即使此策略尚未分配管理角色也是如此。 邮箱分配的未分配管理角色的分配策略无法访问 Microsoft Outlook Web App 中的任何邮箱配置功能。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 将为新邮箱分配默认分配策略，即使此策略尚未分配管理角色也是如此。 邮箱分配的未分配管理角色的分配策略无法访问 Microsoft Outlook Web App 中的任何邮箱配置功能。
 
 
 有关语法和参数的详细信息，请参阅 [Set-RoleAssignmentPolicy](https://technet.microsoft.com/zh-cn/library/dd638090\(v=exchg.150\))。

@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-07-31_
+_**上一次修改主题：** 2015-07-31_
 
 可以使用 MicrosoftOfficeOutlook Web App Web 部件指定要打开的邮箱、该邮箱中要打开的文件夹以及要使用的内容视图。
 
 使用 Outlook Web App Web 部件可以直接通过 URL 访问 Outlook Web App 内容。URL 可以在 Web 浏览器中输入，也可以嵌入应用程序。通常不以手动方式创建 Web 部件。而是根据在用户界面 (UI) 中作出的选择以编程方式创建 Web 部件，或直接将其嵌入应用程序（如 SharePoint Server 页）中。然后，UI 后面的代码创建 URL。Outlook Web App Web 部件的一项用途是在 Sharepoint 页上显示用户的收件箱或日历。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要使用 Outlook Web App Web 部件，用户的邮箱和通过 Web 部件打开的邮箱必须位于同一 Active Directory 林中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 若要使用 Outlook Web App Web 部件，用户的邮箱和通过 Web 部件打开的邮箱必须位于同一 Active Directory 林中。
 
 
 ## 使用 Outlook Web Access Web 部件的权限
@@ -123,18 +113,9 @@ Exchange 2013 中的 Outlook Web App 对 /owa 虚拟目录请求使用 URL 格�
 <li><p>Calendar   每日</p></li>
 <li><p>Messages   邮件</p></li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认视图的字符串将自动采用 URL 编码。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 默认视图的字符串将自动采用 URL 编码。
 
 <p>视图的默认排序是在 Outlook Web App 客户端打开文件夹时文件夹的排序方式。</p>
 <p>标识视图的字符串未本地化，并且不区分大小写。</p></td>
@@ -185,13 +166,13 @@ Exchange 2013 中的 Outlook Web App 对 /owa 虚拟目录请求使用 URL 格�
 
 以下示例显示如何直接访问常见的 Outlook Web App 视图：
 
-  - **收件箱：** https://*\<server name\>*/owa/?cmd=contents\&module=inbox
+  - **收件箱：**  https://*\<server name\>*/owa/?cmd=contents\&module=inbox
 
-  - **日历（今天）：**https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&exsvurl=1
+  - **日历（今天）：** https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&exsvurl=1
 
-  - **日历（每周）：** https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&view=weekly\&exsvurl=1
+  - **日历（每周）：**  https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&view=weekly\&exsvurl=1
 
-  - **日历（每月）：** https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&view=monthly\&exsvurl=1
+  - **日历（每月）：**  https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&view=monthly\&exsvurl=1
 
 ## 详细信息
 

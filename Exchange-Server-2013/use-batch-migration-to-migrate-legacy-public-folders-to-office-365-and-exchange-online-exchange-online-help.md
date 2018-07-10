@@ -13,28 +13,18 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2018-03-26_
+_**上一次修改主题：** 2018-03-26_
 
-**摘要：**使用这些过程将您的 Exchange 2007 和 Exchange 2010 公用文件夹移动到 Office 365。
+**摘要：** 使用这些过程将您的 Exchange 2007 和 Exchange 2010 公用文件夹移动到 Office 365。
 
 本主题说明如何将您的公用文件夹通过直接转换迁移或暂存迁移从 Exchange Server 2010 Service Pack 3 (SP3) 更新汇总 8 或 Exchange 2007 SP3 更新汇总 15 迁移到 Office 365 或 Exchange Online。
 
 本主题将 Exchange 2010 SP3 RU8 和 Exchange 2007 SP3 RU15 服务器称为*旧版 Exchange 服务器*。此外，本主题中的步骤同时适用于 Exchange Online 和 Office 365。本主题中的术语可以互换使用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本文中所述的批处理迁移方法是将旧版公用文件夹迁移到 Office 365 和 Exchange Online 的唯一受支持方法。公用文件夹迁移的旧串行迁移方法即将弃用且不再受 Microsoft 支持。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 本文中所述的批处理迁移方法是将旧版公用文件夹迁移到 Office 365 和 Exchange Online 的唯一受支持方法。公用文件夹迁移的旧串行迁移方法即将弃用且不再受 Microsoft 支持。
 
 
 我们建议您不要使用 Outlook 的 PST 导出功能将公用文件夹迁移到 Office 365 或 Exchange Online。Office 365 和 Exchange Online 公用文件夹邮箱增长使用自动拆分功能进行管理，此功能可在公用文件夹邮箱超过大小配额时对其进行拆分。当您使用 PST 导出功能迁移公用文件夹时，自动拆分无法应对公用文件夹邮箱的突然增长，您可能必须至少等待两星期，自动拆分才会将数据从主邮箱中移出。我们建议您使用本文档中基于 cmdlet 的说明将公用文件夹迁移到 Office 365 和 Exchange Online。但是，如果您选择使用 PST 导出迁移公用文件夹，请参阅本主题后面的使用 Outlook PST 导出将公用文件夹迁移到 Office 365部分。
@@ -85,7 +75,7 @@ Exchange 支持将您的公用文件夹从以下旧版 Exchange Server 移动至
 
   - 在 Exchange 2007 中，必须分配有 Exchange 组织管理员角色或 Exchange Server 管理员角色。此外，还必须分配有公用文件夹管理员角色和目标服务器的本地管理员组。有关详细信息，请参阅[如何向管理员角色添加用户或组](https://go.microsoft.com/fwlink/p/?linkid=81779)。
 
-  - 在 Exchange 2007 服务器中，升级到 [Windows Server 2008 x64 Edition 的 Windows PowerShell 2.0 和 WinRM 2.0](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)。
+  - 在 Exchange 2007 服务器中，升级到 [Windows Server 2008 x64 Edition 的 Windows PowerShell 2.0 和 WinRM 2.0](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)。
 
   - 迁移之前，如果组织中有任何公用文件夹大于 2 GB，我们建议删除该文件夹的内容或者将其拆分为多个公用文件夹。如果这两个选项都不可行，我们建议您不要将公用文件夹移动到 Office 365 和 Exchange Online。
 
@@ -101,18 +91,8 @@ Exchange 支持将您的公用文件夹从以下旧版 Exchange Server 移动至
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您该如何做？
@@ -173,18 +153,8 @@ Exchange 支持将您的公用文件夹从以下旧版 Exchange Server 移动至
         
             Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在重置这些属性之后，必须等待 Exchange 检测到新设置。这可能需要两个小时才能完成。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!warning]
+    > 在重置这些属性之后，必须等待 Exchange 检测到新设置。这可能需要两个小时才能完成。
 
 
 4.  为了在迁移结束时进行验证，我们建议您先在旧版 Exchange 服务器上运行以下 Exchange 命令行管理程序 命令，获取当前公用文件夹部署的快照。
@@ -213,18 +183,8 @@ Exchange 支持将您的公用文件夹从以下旧版 Exchange Server 移动至
     
     4.  请确保未选择的**Exchange 邮件的公用文件夹**。如果选择，您可以继续下一节， *Office 365 或 Exchange Online 中步骤的先决条件*。如果选择它，单击以清除复选框，然后单击**下一步**。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您看不到<strong>Exchange 邮件的公用文件夹</strong>作为<strong>可选功能，</strong>在屏幕上的选项，可以退出 Microsoft Azure 活动目录连接并前进到下一节， <em>Office 365 或 Exchange Online 中步骤的先决条件</em>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 如果您看不到<strong>Exchange 邮件的公用文件夹</strong>作为<strong>可选功能，</strong>在屏幕上的选项，可以退出 Microsoft Azure 活动目录连接并前进到下一节， <em>Office 365 或 Exchange Online 中步骤的先决条件</em>。
     
     5.  清除的**Exchange 邮件的公用文件夹**选择后，保留直到您正在**准备配置**屏幕中，单击**下一步**，然后单击**配置**。
 
@@ -252,18 +212,8 @@ Exchange 支持将您的公用文件夹从以下旧版 Exchange Server 移动至
     
     现有的迁移请求可以是下列两种类型之一：批处理迁移或串行迁移。用于检测每种类型请求和删除每种类型请求的命令如下所示。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在删除迁移请求之前，请务必了解现有公用文件夹的存在原因。运行以下命令可以确定上一个请求的提出时间并诊断可能发生的任何问题。您可能需要与组织中的其他管理员沟通，以确定更改原因。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 在删除迁移请求之前，请务必了解现有公用文件夹的存在原因。运行以下命令可以确定上一个请求的提出时间并诊断可能发生的任何问题。您可能需要与组织中的其他管理员沟通，以确定更改原因。
     
     下面的示例会发现任何现有的串行迁移请求。
     
@@ -283,18 +233,8 @@ Exchange 支持将您的公用文件夹从以下旧版 Exchange Server 移动至
 
 2.  确保 Office 365 中不存在任何公用文件夹或公用文件夹邮箱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果看 Office 365 或联机 Exchange 中的公用文件夹，请务必确定为什么他们有和您的组织中谁之前删除公用文件夹和公用文件夹的邮箱启动公用文件夹层次结构。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 如果看 Office 365 或联机 Exchange 中的公用文件夹，请务必确定为什么他们有和您的组织中谁之前删除公用文件夹和公用文件夹的邮箱启动公用文件夹层次结构。
     
     1.  在 Office 365 或 Exchange Online PowerShell 中，运行以下命令，检查是否存在任何公用文件夹邮箱。
         
@@ -355,18 +295,8 @@ Exchange 支持将您的公用文件夹从以下旧版 Exchange Server 移动至
     
         .\PublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes> <Folder to size map path> <Folder to mailbox map path>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>公用文件夹的邮箱的映射文件不应超过 1000 行。如果此文件超过 1000 行，公用文件夹结构需要进行简化。继续执行的文件大于 1000 行不推荐，会导致迁移错误。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 公用文件夹的邮箱的映射文件不应超过 1000 行。如果此文件超过 1000 行，公用文件夹结构需要进行简化。继续执行的文件大于 1000 行不推荐，会导致迁移错误。
     
       - 在运行脚本之前，使用以下 cmdlet 来检查您联机 Exchange 组织中的当前公用文件夹限制。然后，记下的公用文件夹的当前配额值。 `Get-OrganizationConfig | fl *quota*`
         
@@ -382,35 +312,15 @@ Exchange 支持将您的公用文件夹从以下旧版 Exchange Server 移动至
         
           - 在开始迁移批之前，分割的公用文件夹到多个公用文件夹，每个 2 GB 或更少。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果公用文件夹是大于 30 GB，而如果它不可行，若要删除内容或将其拆分到多个公用文件夹，则建议您不要到 Exchange 联机移动公用文件夹。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 如果公用文件夹是大于 30 GB，而如果它不可行，若要删除内容或将其拆分到多个公用文件夹，则建议您不要到 Exchange 联机移动公用文件夹。
     
       - *Folder to size map path*等于时运行`Export-PublicFolderStatistics.ps1`脚本创建.csv 文件的文件路径。
     
       - *Folder to mailbox map path*等于文件的名称和您在此步骤中创建的文件夹到邮箱.csv 文件的路径。如果您指定的文件名，该文件是本地计算机上的当前 PowerShell 目录中生成。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>将运行的脚本并生成的.csv 文件之后，任何新的公用文件夹或对现有的公用文件夹的更新将不会收集。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 将运行的脚本并生成的.csv 文件之后，任何新的公用文件夹或对现有的公用文件夹的更新将不会收集。
 
 
 ## 步骤 4：在 Exchange Online 中创建公用文件夹邮箱
@@ -429,18 +339,8 @@ Exchange 支持将您的公用文件夹从以下旧版 Exchange Server 移动至
     
     `Credential` 是您的 Office 365 用户名和密码。`CsvSummaryFile` 是您要以 .CSV 格式记录同步操作和错误的文件路径。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>我们建议您先模拟脚本操作，然后再实际运行此脚本（为此，可使用 <code>-WhatIf</code> 参数）。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 我们建议您先模拟脚本操作，然后再实际运行此脚本（为此，可使用 <code>-WhatIf</code> 参数）。
 
 
 2.  在旧版 Exchange 服务器上，获取运行迁移请求所需的以下信息：
@@ -477,18 +377,8 @@ Exchange 支持将您的公用文件夹从以下旧版 Exchange Server 移动至
 
 4.  最后，在 Exchange Online PowerShell 中，运行以下命令，创建迁移请求。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>以下 Exchange 命令行管理程序 示例中的身份验证方法必须匹配您的 Outlook 无处不在 设置，否则命令将失败。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 以下 Exchange 命令行管理程序 示例中的身份验证方法必须匹配您的 Outlook 无处不在 设置，否则命令将失败。
     
         $PfEndpoint = New-MigrationEndpoint -PublicFolder -Name PublicFolderEndpoint -RPCProxyServer $Source_OutlookAnywhereExternalHostName -Credentials $Source_Credential -SourceMailboxLegacyDN $Source_RemoteMailboxLegacyDN -PublicFolderDatabaseServerLegacyDN $Source_RemotePublicFolderServerLegacyDN -Authentication Basic
         
@@ -608,18 +498,8 @@ Exchange 支持将您的公用文件夹从以下旧版 Exchange Server 移动至
 
 在迁移完成且您已验证 Exchange Online 公用文件夹可按预期方式工作后，您应该删除旧版 Exchange 服务器中的公用文件夹数据库。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>因为你的所有邮箱在公用文件夹迁移前已被迁移至 Office 365，所以我们强烈建议你通过 Office 365（分散式邮件流）而非你本地环境的集中式邮件流传送流量。如果选择保持集中式邮件流，则可能导致公用文件夹的传送问题，因为你已从你的本地组织中删除公用文件夹邮箱数据库。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 因为你的所有邮箱在公用文件夹迁移前已被迁移至 Office 365，所以我们强烈建议你通过 Office 365（分散式邮件流）而非你本地环境的集中式邮件流传送流量。如果选择保持集中式邮件流，则可能导致公用文件夹的传送问题，因为你已从你的本地组织中删除公用文件夹邮箱数据库。
 
 
   - 若要详细了解如何从 Exchange 2007 服务器中删除公用文件夹数据库，请参阅[删除公用文件夹数据库](https://go.microsoft.com/fwlink/?linkid=123678)。
@@ -630,18 +510,8 @@ Exchange 支持将您的公用文件夹从以下旧版 Exchange Server 移动至
 
 如果在迁移过程中遇到问题，并且需要重新激活旧版 Exchange 公用文件夹，请执行以下步骤。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您将迁移回滚到旧版 Exchange 服务器，将丢失发送到已启用邮箱的公用文件夹中的任何电子邮件或迁移后投递到公用文件夹的内容。为保存此内容，需将公用文件夹内容导出到 .pst 文件，然后在回滚完成时将它导入到旧版公用文件夹。</td>
-</tr>
-</tbody>
-</table>
+> [!warning]
+> 如果您将迁移回滚到旧版 Exchange 服务器，将丢失发送到已启用邮箱的公用文件夹中的任何电子邮件或迁移后投递到公用文件夹的内容。为保存此内容，需将公用文件夹内容导出到 .pst 文件，然后在回滚完成时将它导入到旧版公用文件夹。
 
 
 1.  在旧版 Exchange 服务器中，运行以下命令解锁旧版 Exchange 公用文件夹。此进程可能需要几个小时。
@@ -684,26 +554,13 @@ Exchange 支持将您的公用文件夹从以下旧版 Exchange Server 移动至
 
 6.  使用 EAC 设置公用文件夹的权限。有关详细信息，请遵循[设置新组织中的公用文件夹](set-up-public-folders-in-a-new-organization-exchange-2013-help.md)主题中的[Step 3: Assign permissions to the public folder](set-up-public-folders-in-a-new-organization-exchange-2013-help.md)。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您已经启动 PST 迁移并且遇到主邮箱已满的问题，您有两个选择来恢复 PST 迁移：
-<ol>
-<li><p>等待自动拆分将数据从主邮箱中移出。此过程可能最多需要两星期。但是，在自动拆分完成之前，全满公用文件夹邮箱中的所有公用文件夹都无法接收新内容。</p></li>
-<li><p><a href="create-a-public-folder-mailbox-exchange-2013-help.md">创建公用文件夹邮箱</a>，然后使用 <strong>New-PublicFolder</strong> cmdlet 与 <em>Mailbox</em> 参数在辅助公用文件夹邮箱中创建其余的公用文件夹。本示例将在辅助公用文件夹邮箱中创建一个名为 PF201 的新公用文件夹。</p>
-<pre><code>New-PublicFolder -Name PF201 -Mailbox SecondaryPFMbx</code></pre></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
+> [!warning]
+> 如果您已经启动 PST 迁移并且遇到主邮箱已满的问题，您有两个选择来恢复 PST 迁移：
+> <ol>
+> <li><p>等待自动拆分将数据从主邮箱中移出。此过程可能最多需要两星期。但是，在自动拆分完成之前，全满公用文件夹邮箱中的所有公用文件夹都无法接收新内容。</p></li>
+> <li><p><a href="create-a-public-folder-mailbox-exchange-2013-help.md">创建公用文件夹邮箱</a>，然后使用 <strong>New-PublicFolder</strong> cmdlet 与 <em>Mailbox</em> 参数在辅助公用文件夹邮箱中创建其余的公用文件夹。本示例将在辅助公用文件夹邮箱中创建一个名为 PF201 的新公用文件夹。</p>
+> <pre><code>New-PublicFolder -Name PF201 -Mailbox SecondaryPFMbx</code></pre></li>
+> </ol>
 
 
 ## 刚开始接触 Office 365？

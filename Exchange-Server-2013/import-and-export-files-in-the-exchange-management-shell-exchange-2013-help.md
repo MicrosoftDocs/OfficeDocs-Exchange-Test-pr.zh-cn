@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 Microsoft Exchange Server 2013 使用 Windows PowerShell 命令行接口在您通过其管理 Exchange 的服务器或工作站和您正在管理的运行 Exchange 2013 的服务器之间建立远程连接。在 Exchange 2013 中，这称为远程 Exchange 命令行管理程序或远程命令行管理程序。即使您管理的是本地 Exchange 2013 服务器，也可以使用远程命令行管理程序进行连接。有关本地和远程命令行管理程序的详细信息，请参阅[将 PowerShell 与 Exchange 2013 结合使用 (Exchange Management Shell)](https://technet.microsoft.com/zh-cn/library/bb123778\(v=exchg.150\))。
 
@@ -31,18 +31,8 @@ Exchange 2013 中的远程命令行管理程序包含两个会话，本地会话
 
 在连接到远程 Exchange 服务器时，会在计算机上的本地会话与 Exchange 服务器上的远程会话之间建立连接。此连接使您可以在本地会话中的远程 Exchange 服务器上运行 Exchange cmdlet，即使本地计算机没有安装任何 Exchange cmdlet 也是如此。即使 Exchange cmdlet 表现为在本地计算机上运行，实际上是在 Exchange 服务器上运行。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>即使在 Exchange 2013 服务器上打开命令行管理程序，也会发生相同的连接过程并创建两个会话。这意味着必须使用相同的新语法来导入和导出文件，无论是在 Exchange 2013 服务器上还是从远程客户端工作站打开了命令行管理程序。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 即使在 Exchange 2013 服务器上打开命令行管理程序，也会发生相同的连接过程并创建两个会话。这意味着必须使用相同的新语法来导入和导出文件，无论是在 Exchange 2013 服务器上还是从远程客户端工作站打开了命令行管理程序。
 
 
 在远程 Exchange 服务器上的远程会话中运行的 Exchange cmdlet 不能访问本地文件系统。这意味着您无法仅靠使用 Exchange cmdlet 将文件导入到本地文件系统中或将其从中导出。需要使用其他语法将文件传输到本地文件系统或从中传输出来，以便在远程 Exchange 服务器上运行的 Exchange cmdlet 可以使用该数据。有关所需语法的详细信息，请参阅本主题后面的\&quot;在远程命令行管理程序中导入和导出文件\&quot;。
@@ -154,18 +144,8 @@ Exchange 2013 中的远程命令行管理程序包含两个会话，本地会话
 
 例如，以下命令导出存储在由 **Export-SomeData** 虚构 cmdlet 创建的对象上的 **FileData** 属性中的数据。导出的数据存储在您在本地计算机上指定的文件中，在此示例中为 MyData.dat。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此步骤使用 <strong>ForEach</strong> cmdlet、对象以及管道传输。有关 each 的详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/aa998260(v=exchg.150)">管道传输</a>和<a href="https://technet.microsoft.com/zh-cn/library/aa996386(v=exchg.150)">结构化数据</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 此步骤使用 <strong>ForEach</strong> cmdlet、对象以及管道传输。有关 each 的详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/aa998260(v=exchg.150)">管道传输</a>和<a href="https://technet.microsoft.com/zh-cn/library/aa996386(v=exchg.150)">结构化数据</a>。
 
 
     Export-SomeData | ForEach { $_.FileData | Add-Content C:\MyData.dat -Encoding Byte }

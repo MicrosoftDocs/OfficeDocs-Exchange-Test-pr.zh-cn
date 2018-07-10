@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 Exchange 在您的 Exchange Online 和内部部署 Exchange 组织中创建保留策略“默认 MRM 策略”。此策略会自动应用于 Exchange Online 中的新用户。在内部部署组织中，当您为邮箱创建存档时，将应用此策略。您可以随时更改应用于用户的保留策略。
 

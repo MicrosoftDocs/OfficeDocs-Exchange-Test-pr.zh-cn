@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-15_
+_**上一次修改主题：** 2016-12-15_
 
 Microsoft 努力使每个用户更容易使用其产品和服务。下列各节提供使残障人士更容易使用 Microsoft Exchange 的功能、产品和服务的有关信息：
 
@@ -43,18 +43,8 @@ Microsoft Exchange 帮助中的每个图示（包括屏幕快照、图表、流�
 
 下列各节提供使残障人士更容易使用 Microsoft Windows 的功能、产品和服务的有关信息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本节中的信息只适用于在美国获得 Microsoft 产品使用许可的用户。如果从美国以外获得此产品，请访问 <a href="https://www.microsoft.com/enable">Microsoft 辅助功能网站</a> 获取 Microsoft 支持服务部门的电话号码和地址列表。可以与分支机构联系，了解本节中所述的产品和服务类型在你所在的地区是否可用。可以在 Microsoft 产品中的辅助功能网站上详细了解 Microsoft 产品中包括的辅助功能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 本节中的信息只适用于在美国获得 Microsoft 产品使用许可的用户。如果从美国以外获得此产品，请访问 <a href="https://www.microsoft.com/enable">Microsoft 辅助功能网站</a> 获取 Microsoft 支持服务部门的电话号码和地址列表。可以与分支机构联系，了解本节中所述的产品和服务类型在你所在的地区是否可用。可以在 Microsoft 产品中的辅助功能网站上详细了解 Microsoft 产品中包括的辅助功能。
 
 
 ## Windows 的辅助功能

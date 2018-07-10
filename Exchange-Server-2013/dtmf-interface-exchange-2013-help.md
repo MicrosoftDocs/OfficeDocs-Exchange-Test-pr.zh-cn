@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 在统一消息 (UM) 中，呼叫方可以使用双音多频 (DTMF)（也称为按键）和语音输入与系统进行交互。呼叫方可以使用的方法取决于 UM 拨号计划和自动助理的配置方式。
 
@@ -152,18 +152,8 @@ DTMF 要求呼叫方在电话软键盘上按下与统一消息菜单选项对应
 
 有时，为用户启用 UM 后，用户的名、姓或电子邮件别名会发生变化。用户的 DTMF 映射值不会自动更新。如果呼叫方输入新的用户名或电子邮件别名，但用户的 DTMF 映射还没有更新以反映用户名或电子邮件别名的变化，那么呼叫方将无法在目录中定位用户，无法向用户发送邮件，也无法将呼叫转移给用户。如果在为用户启用 UM 后必须更新用户的 DTMF 映射，可以使用带有 *-CreateDtmfMap* 参数的 **Set-User** cmdlet。如果希望为多个已启用 UM 的用户更新 DTMF 映射，也可以使用此 cmdlet 创建 Exchange 命令行管理程序脚本。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我们建议您不要使用 ADSI 编辑器等工具手动更改用户的 DTMF 值，因为这可能会导致配置不一致或其他错误。建议您仅使用 <strong>Set-UMService</strong> 或 <strong>Set-User</strong> cmdlet 创建或更新用户的 DTMF 映射。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 我们建议您不要使用 ADSI 编辑器等工具手动更改用户的 DTMF 值，因为这可能会导致配置不一致或其他错误。建议您仅使用 <strong>Set-UMService</strong> 或 <strong>Set-User</strong> cmdlet 创建或更新用户的 DTMF 映射。
 
 
 ## 详细信息

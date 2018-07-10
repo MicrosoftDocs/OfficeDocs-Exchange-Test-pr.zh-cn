@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-03-17_
+_**上一次修改主题：** 2016-03-17_
 
 “收件人解析”是展开并解析邮件中的所有收件人的过程。解析收件人的操作是将收件人与 Microsoft Exchange 组织中对应的 Active Directory 对象进行匹配。展开收件人的操作是将所有通讯组展开成各个收件人的列表。通过收件人解析，可以正确地将邮件限制和备选收件人应用于每个收件人。
 
@@ -37,7 +37,7 @@ _**上一次修改主题：**2016-03-17_
 
 ## 收件人电子邮件地址
 
-顶级解析从某封邮件并从“邮件信封”的初始的、未展开的收件人列表开始。“邮件信封”包含用于在 SMTP 邮件服务器之间传输邮件的命令。发件人的电子邮件地址包含在 **MAIL FROM:** 命令中。每个收件人的电子邮件地址分别包含在各自的 **RCPT TO:** 命令中。信封发件人和信封收件人通常通过邮件头中的 `To:`、`From:`、`Cc:` 和 `Bcc:` 头字段的发件人和收件人创建。但是，并非始终如此。邮件中的 `To:`、`From:`、`Cc:` 和 `Bcc:` 头字段很容易伪造，可能与用于传输邮件的实际发件人电子邮件地址和收件人电子邮件地址不匹配。
+顶级解析从某封邮件并从“邮件信封”的初始的、未展开的收件人列表开始。“邮件信封”包含用于在 SMTP 邮件服务器之间传输邮件的命令。发件人的电子邮件地址包含在 **MAIL FROM:**  命令中。每个收件人的电子邮件地址分别包含在各自的 **RCPT TO:**  命令中。信封发件人和信封收件人通常通过邮件头中的 `To:`、`From:`、`Cc:` 和 `Bcc:` 头字段的发件人和收件人创建。但是，并非始终如此。邮件中的 `To:`、`From:`、`Cc:` 和 `Bcc:` 头字段很容易伪造，可能与用于传输邮件的实际发件人电子邮件地址和收件人电子邮件地址不匹配。
 
 ## 封装电子邮件地址
 
@@ -53,18 +53,8 @@ IMCEA 封装方法使用以下语法：`IMCEA<Type>-<address>@<domain>`
 
 占位符 \<*Type*\> 标识非 SMTP 地址的类型，例如 `EX`、`X400` 或 `FAX`。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>尽管 <code>SMTP</code> 和 <code>X500</code> 在理论上是 &lt;<em>Type</em>&gt; 的有效值，但是，Exchange 收件人解析拒绝任何使用其中任一类型的 IMCEA 编码地址。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 尽管 <code>SMTP</code> 和 <code>X500</code> 在理论上是 &lt;<em>Type</em>&gt; 的有效值，但是，Exchange 收件人解析拒绝任何使用其中任一类型的 IMCEA 编码地址。
 
 
 占位符 \<*address*\> 是编码的原始地址。占位符 \<*domain*\> 代表用于封装非 SMTP 地址的 SMTP 域，例如 contoso.com。
@@ -156,7 +146,7 @@ Active Directory 查询将缺少关键属性或关键属性格式不正确的对
 
   - 对于所有其他电子邮件地址类型，使用收件人的 **proxyAddresses** Active Directory 属性作为 LDAP 筛选器。
 
-如果邮件中使用的电子邮件地址与对应的 Active Directory 对象的主 SMTP 地址不匹配，分类程序将在邮件中重写电子邮件地址，以匹配主 SMTP 地址。原始电子邮件地址保存在邮件信封中 **RCPT TO:** 命令的 `ORCPT=` 条目中。
+如果邮件中使用的电子邮件地址与对应的 Active Directory 对象的主 SMTP 地址不匹配，分类程序将在邮件中重写电子邮件地址，以匹配主 SMTP 地址。原始电子邮件地址保存在邮件信封中 **RCPT TO:**  命令的 `ORCPT=` 条目中。
 
 ## 发件人邮件限制
 
@@ -176,18 +166,8 @@ Active Directory 查询将缺少关键属性或关键属性格式不正确的对
 
   - **通讯组和动态通讯组**   通讯组基于 **memberOf** Active Directory 属性展开。动态通讯组使用 Active Directory 查询定义展开。如果对组设置了 *ExpansionServer* 参数，则不是由当前服务器展开该组。通讯组将被路由到指定的服务器进行展开。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果选择组织中的特定传输服务器作为展开服务器，通讯组的使用将取决于展开服务器的可用性。如果展开服务器不可用，任何发送给该通讯组的邮件均将无法送达。如果计划对通讯组使用特定的展开服务器，为了降低服务中断的风险，应考虑对这些服务器实现高可用性解决方案。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果选择组织中的特定传输服务器作为展开服务器，通讯组的使用将取决于展开服务器的可用性。如果展开服务器不可用，任何发送给该通讯组的邮件均将无法送达。如果计划对通讯组使用特定的展开服务器，为了降低服务中断的风险，应考虑对这些服务器实现高可用性解决方案。
 
 
   - **备选收件人**   邮箱和已启用邮件的公用文件夹可能会设置 *ForwardingAddress* 参数。*ForwardingAddress* 参数将所有邮件重定向到指定的备选收件人。这称为“转发收件人”。如果在 *ForwardingAddress* 参数中指定了备用传递地址，并将 *DeliverToMailboxAndForward* 参数设置为 `$true`，邮件将传递给原始收件人和备选收件人。这称为“送达并转发收件人”。
@@ -224,18 +204,8 @@ Active Directory 查询将缺少关键属性或关键属性格式不正确的对
 
   - **ReportToOriginatorEnabled**   此参数使送达报告发送给向此通讯组发送的电子邮件的发件人。有效值为 `$true` 或 `$false`。默认值为 `$true`。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><em>ReportToManagerEnabled</em> 参数和 <em>ReportToOriginatorEnabled</em> 参数的值不能同时为 <code>$true</code>。如果一个参数设置为 <code>$true</code>，另一个参数必须设置为 <code>$false</code>。两个参数的值可以同时为 <code>$false</code>。这样将抑制所有送达报告邮件的所有重定向。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > <em>ReportToManagerEnabled</em> 参数和 <em>ReportToOriginatorEnabled</em> 参数的值不能同时为 <code>$true</code>。如果一个参数设置为 <code>$true</code>，另一个参数必须设置为 <code>$false</code>。两个参数的值可以同时为 <code>$false</code>。这样将抑制所有送达报告邮件的所有重定向。
 
 
 下表介绍可用的送达报告邮件：
@@ -244,7 +214,7 @@ Active Directory 查询将缺少关键属性或关键属性格式不正确的对
 
   - **传递状态通知 (DSN)**   此报告介绍尝试传递邮件的结果。有关 DSN 邮件的详细信息，请参阅 [Exchange 2013 中的 DSN 和 NDR](dsns-and-ndrs-in-exchange-2013-exchange-2013-help.md)。
 
-  - **邮件处理通知 (MDN)**   此报告介绍邮件在成功地传递给收件人之后的状态。已读通知 (RN) 和未读通知 (NRN) 均是 MDN 邮件的示例。MDN 邮件在 RFC 2298 中定义，由邮件头中的 **Disposition-Notification-To:** 头字段控制。使用 `Disposition-Notification-To:` 头字段的 MDN 设置与许多不同的邮件服务器兼容。MDN 设置还可以使用 Microsoft Outlook 和 Exchange 中的 MAPI 属性进行定义。
+  - **邮件处理通知 (MDN)**   此报告介绍邮件在成功地传递给收件人之后的状态。已读通知 (RN) 和未读通知 (NRN) 均是 MDN 邮件的示例。MDN 邮件在 RFC 2298 中定义，由邮件头中的 **Disposition-Notification-To:**  头字段控制。使用 `Disposition-Notification-To:` 头字段的 MDN 设置与许多不同的邮件服务器兼容。MDN 设置还可以使用 Microsoft Outlook 和 Exchange 中的 MAPI 属性进行定义。
 
   - **未送达报告 (NDR)**   此报告向邮件发件人指示邮件无法传递给指定的收件人。
 
@@ -268,7 +238,7 @@ Active Directory 查询将缺少关键属性或关键属性格式不正确的对
 
   - 如果报告重定向设置为邮件发件人，则不会修改报告请求设置。
 
-  - 如果未设置报告重定向，则将抑制所有报告请求设置。`NOTIFY=NEVER` 条目将添加到邮件信封中每个收件人的 **RCPT TO:** 中。
+  - 如果未设置报告重定向，则将抑制所有报告请求设置。`NOTIFY=NEVER` 条目将添加到邮件信封中每个收件人的 **RCPT TO:**  中。
 
   - 如果报告重定向设置为通讯组主管，将抑制所有报告请求设置，发送给通讯组主管的 NDR 邮件除外。
 
@@ -364,13 +334,13 @@ Active Directory 查询将缺少关键属性或关键属性格式不正确的对
 
 如果满足下列条件，收件人解析将拆分邮件：
 
-  - 更新邮件信封的 **MAIL FROM:** 中的邮件发件人时。例如，当通讯组的 *ReportToManagerEnabled* 参数的值为 `$true` 时。
+  - 更新邮件信封的 **MAIL FROM:**  中的邮件发件人时。例如，当通讯组的 *ReportToManagerEnabled* 参数的值为 `$true` 时。
 
   - 必须抑制自动答复邮件（例如 DSN、OOF 邮件和重新调用报告）时。
 
   - 展开备选收件人时。
 
-  - 当 **Resent-From:** 头字段必须添加到邮件头时。Resent 头字段是信息性头字段，可用于确定邮件是否已由用户转发。使用 Resent 头字段，该邮件在收件人处看似是由原始发件人直接发来的邮件。收件人可以查看该邮件头来了解转发邮件的用户。Resent 头字段在 RFC 2822 的 3.6.6 节中定义。
+  - 当 **Resent-From:**  头字段必须添加到邮件头时。Resent 头字段是信息性头字段，可用于确定邮件是否已由用户转发。使用 Resent 头字段，该邮件在收件人处看似是由原始发件人直接发来的邮件。收件人可以查看该邮件头来了解转发邮件的用户。Resent 头字段在 RFC 2822 的 3.6.6 节中定义。
 
   - 必须传输展开通讯组的历史记录时。
 
@@ -378,18 +348,8 @@ Active Directory 查询将缺少关键属性或关键属性格式不正确的对
 
 如果展开的收件人数过多，分类程序会将邮件拆分为多个副本。通过进行拆分，可以减少展开邮件期间使用的系统资源。邮件中的最大信封收件人数由 `%ExchangeInstallPath%Bin\EdgeTransport.exe.config` 应用程序配置文件中的 *ExpansionSizeLimit* 项控制。默认值为 1000。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建议您不要在生产环境中的 Exchange 传输服务器上修改 <em>ExpansionSizeLimit</em> 项的值。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 建议您不要在生产环境中的 Exchange 传输服务器上修改 <em>ExpansionSizeLimit</em> 项的值。
 
 
 返回顶部

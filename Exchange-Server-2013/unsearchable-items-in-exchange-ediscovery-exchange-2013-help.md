@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 在 Exchange Server 2013 和 Exchange Online 的就地电子数据展示中，不可搜索的项目是指 Exchange 搜索无法检索或只部分检索的邮箱项目。不可搜索的项目通常包含无法检索的电子邮件文件附件。下面解释了为什么电子邮件文件附件无法进行检索且返回为不可搜索的项目的几个原因：
 

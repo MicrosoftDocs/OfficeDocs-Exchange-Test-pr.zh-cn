@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-06-25_
+_**上一次修改主题：** 2013-06-25_
 
 在组织内安装了客户端访问和邮箱服务器后，您可能需要测试统一消息 (UM) 的功能。在下列情况中，您将要使用包括在 Exchange 2013 中的诊断工具和 cmdlet 或 UM 故障排除工具：
 

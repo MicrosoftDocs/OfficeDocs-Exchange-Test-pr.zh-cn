@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 Exchange ActiveSync、Outlook Web App、POP3、IMAP4、自动发现服务、Exchange Web 服务和可用性服务的客户端协议管理任务在三个不同的区域进行：Exchange 管理中心 (EAC)、Exchange 命令行管理程序和 Internet 信息服务 (IIS) 管理器。每个位置所管理的设置因客户端协议而异。
 

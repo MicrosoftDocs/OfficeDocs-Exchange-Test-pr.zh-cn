@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2014-06-24_
+_**上一次修改主题：** 2014-06-24_
 
 统一消息 (UM) IP 网关表示物理 IP 语音 (VoIP) 网关、IP 专用交换机 (PBX) 或会话边界控制器 (SBC) 硬件设备。必须先在目录服务中创建 UM IP 网关，才能使用 VoIP 网关、IP PBX 或 SBC 应答语音邮件用户的传入呼叫和发送其传出呼叫。
 
@@ -33,18 +33,8 @@ UM IP 网关的 IPv6 支持
 
 通常，*网关*一词用于表示连接两个不兼容网络的物理设备。通过 Exchange 统一消息和其他统一消息解决方案，可以使用 VoIP 网关在基于公用电话交换网 (PSTN)/时分多路复用 (TDM) 或基于电路交换的电话网络与 IP 或分组交换的数据网络之间进行转换。IP PBX 也可以在 PSTN 网络和分组交换的网络之间进行转换，因此使用 IP PBX 时，不需要 VoIP 网关。只有将旧有 PBX 硬件设备连接到 UM 部署时才需要 VoIP 网关。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>分组交换网络中的数据包（邮件或邮件片段）分别在路由器、交换机、VoIP 网关、IP PBX 和 SBC 等设备之间路由。与电路交换网相比，后者在两个节点之间建立专用连接，在通信期间独占使用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 分组交换网络中的数据包（邮件或邮件片段）分别在路由器、交换机、VoIP 网关、IP PBX 和 SBC 等设备之间路由。与电路交换网相比，后者在两个节点之间建立专用连接，在通信期间独占使用。
 
 
 Exchange 统一消息依靠 VoIP 网关的以下能力：将 PBX 中基于 TDM 或电话电路交换的协议（例如综合业务数字网络 (ISDN) 或 QSIG）转换为基于 VoIP 或 IP 的协议（例如会话初始协议 (SIP)、实时传输协议 (RTP) 或用于实时传真传输的 T.38）。
@@ -91,18 +81,8 @@ Exchange UM 必须仍然直接与在其软件或固件中不能支持 IPv6 的 S
 
 3.  在配置了 UM IP 网关之后，还必须在网络上将 VoIP 网络、IP PBX 和 SBC 配置为支持 IPv6。有关详细信息，请联系硬件供应商以了解支持 IPv6 的设备列表以及如何正确配置它们。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每个拨号计划的 UM IP 网关的最大值为 200,。如果您创建了多于 200 个网关，则 UM 服务将不会启动。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 每个拨号计划的 UM IP 网关的最大值为 200,。如果您创建了多于 200 个网关，则 UM 服务将不会启动。
 
 
 ## 启用和禁用 UM IP 网关

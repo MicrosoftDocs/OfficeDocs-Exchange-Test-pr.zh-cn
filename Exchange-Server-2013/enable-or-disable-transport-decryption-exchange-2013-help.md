@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 启用传输解密允许 Microsoft Exchange Server 2013上的传输规则代理邮箱服务器访问受保护的信息权限管理 (IRM) 的邮件中的内容。因此，其他传输代理可以访问消息内容，并可能对其进行更改。例如，传输规则代理可能需要检查邮件的内容和应用传输规则 （例如，应用于邮件的免责声明的规则）。要成功解密受 IRM 保护的邮件，必须将联合传递邮箱添加到[Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx)服务器上配置的超级用户组中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当超级用户组的成员从 AD RMS 群集中请求许可证时，系统会授予他们所有者使用许可证。这样，他们便可以解密由 AD RMS 群集创建的所有受 RMS 保护的内容。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 当超级用户组的成员从 AD RMS 群集中请求许可证时，系统会授予他们所有者使用许可证。这样，他们便可以解密由 AD RMS 群集创建的所有受 RMS 保护的内容。
 
 
 当启用传输解密时，可以指定下列设置：
@@ -57,18 +47,8 @@ _**上一次修改主题：**2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？

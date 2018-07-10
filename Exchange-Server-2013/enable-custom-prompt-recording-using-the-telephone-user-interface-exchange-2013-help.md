@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2014-09-17_
+_**上一次修改主题：** 2014-09-17_
 
 您可以使用命令行管理程序并通过电话用户界面 (TUI)，为统一消息 (UM) 拨号计划和自动助理录制自定义提示以及问候语。当要使用 EAC 或命令行管理程序更改自定义问候语或通知时，或者在发生紧急情况（如组织由于恶劣天气而关闭）时，该功能非常有用。在 UM 自动助理中更改自定义问候语或通知时，必须在 UM 自动助理链接到的拨号计划上进行 TUI 提示录制。
 
@@ -35,18 +35,8 @@ _**上一次修改主题：**2014-09-17_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -63,34 +53,14 @@ _**上一次修改主题：**2014-09-17_
 
 4.  为该域用户邮箱启用统一消息。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>仅允许将管理提示和问候语的管理员访问该用户帐户的分机号码和 PIN。该用户帐户仅用于通过电话管理提示。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 仅允许将管理提示和问候语的管理员访问该用户帐户的分机号码和 PIN。该用户帐户仅用于通过电话管理提示。
 
 
 5.  创建并保存一个将用作 UM 拨号计划或自动助理的自定义问候语的 .wav 或 .wma 文件。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>自定义提示不能使用 MP3 文件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 自定义提示不能使用 MP3 文件。
 
 
 6.  使用 EAC 或命令行管理程序将拨号计划配置为使用自定义欢迎问候语，或者将自动助理配置为使用营业时间或非营业时间问候语。有关配置拨号计划的详细信息，请参阅[启用 Outlook Voice Access 用户自定义的问候语](enable-a-customized-greeting-for-outlook-voice-access-users-exchange-2013-help.md)。有关配置自动助理的详细信息，请参阅[启用自定义的营业时间问候语](enable-a-customized-business-hours-greeting-exchange-2013-help.md)或[启用自定义非-营业时间问候语](enable-a-customized-non-business-hours-greeting-exchange-2013-help.md)。
@@ -99,18 +69,8 @@ _**上一次修改主题：**2014-09-17_
     
         Set-UMDialPlan -identity MyUMDialPlan -TUIPromptEditingEnabled $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须先登录设置了录制提示的邮箱，才能录制自定义提示或问候语。录制了新的提示或问候语后，必须注销并重新登录，才能在使用 TUI 时听到新的提示或问候语。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 必须先登录设置了录制提示的邮箱，才能录制自定义提示或问候语。录制了新的提示或问候语后，必须注销并重新登录，才能在使用 TUI 时听到新的提示或问候语。
 
 
 ## 在 UM 自动助理中执行 TUI 提示录制

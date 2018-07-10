@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-01-04_
+_**上一次修改主题：** 2015-01-04_
 
 联合身份验证信任将建立 Microsoft Exchange 2013 组织和 Azure Active Directory 身份验证系统之间的信任关系，并支持与其他联合 Exchange 组织的共享。从本地 Exchange 组织删除联合信任将禁用与其他联合 Exchange 组织以及将您的组织作为混合部署的一部分连接的 Office 365 组织之间的联合共享。在删除联合身份验证信任之前，应当仔细考虑对您组织的整体影响。
 
 有关联合身份验证的更多管理任务，请参阅[联合程序](federation-procedures-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange Server 2013 的此项功能与由世纪互联在中国运营的 Office 365 不完全兼容，可能需要遵循一些功能限制。有关详细信息，请参阅<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解由世纪互联运营的 Office 365</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> Exchange Server 2013 的此项功能与由世纪互联在中国运营的 Office 365 不完全兼容，可能需要遵循一些功能限制。有关详细信息，请参阅<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解由世纪互联运营的 Office 365</a>。
 
 
 ## 在开始之前，您需要知道什么？

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-16_
+_**上一次修改主题：** 2012-10-16_
 
 OAB 虚拟目录是 OAB 的分发。默认情况下，安装 Microsoft Exchange Server 2013 时，将在 Internet 信息服务 (IIS) 的默认内部网站中创建一个名为 OAB 的新虚拟目录。如果有从组织防火墙外部连接到 Microsoft Outlook 的客户端用户，则可以添加外部网站。另外，在命令行管理程序中运行 **New-OABVirtualDirectory** cmdlet 时，将在本地 Exchange 服务器的默认 IIS 网站中创建一个名为 OAB 的新虚拟目录。
 
@@ -23,18 +23,8 @@ OAB 虚拟目录是 OAB 的分发。默认情况下，安装 Microsoft Exchange 
 
 有关与 OAB 相关的更多管理任务，请参阅[脱机通讯簿程序](offline-address-book-procedures-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>创建 OAB 虚拟目录之前，请确保用户了解所做的更改。此步骤会中断用户的 OAB 下载进程。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 创建 OAB 虚拟目录之前，请确保用户了解所做的更改。此步骤会中断用户的 OAB 下载进程。
 
 
 ## 在开始之前，您需要知道什么？
@@ -55,36 +45,16 @@ OAB 虚拟目录是 OAB 的分发。默认情况下，安装 Microsoft Exchange 
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 使用命令行管理程序创建 OAB 虚拟目录
 
 若要创建带有所有默认值的 OAB 虚拟目录，可以运行不带任何参数的 **New-OABVirtualDirectory** cmdlet。使用以下步骤创建具有自定义设置的 OAB 虚拟目录。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>创建 OAB 虚拟目录时，推荐启用 SSL。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 创建 OAB 虚拟目录时，推荐启用 SSL。
 
 
 此示例将在启用 SSL 且具有外部 URL 的 CASServer01 客户端访问服务器上创建 OAB 虚拟目录。

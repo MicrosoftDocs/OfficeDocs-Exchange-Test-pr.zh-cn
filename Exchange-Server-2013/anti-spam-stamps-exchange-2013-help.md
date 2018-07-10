@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 当邮件通过对来自 Internet 的入站邮件进行筛选的反垃圾邮件功能时，反垃圾邮件标记通过对邮件应用诊断元数据或标记（如发件人特定的信息、问题验证结果和内容筛选结果），帮助你诊断与垃圾邮件相关的问题。有三个反垃圾邮件标记：网络钓鱼可能性等级标记、垃圾邮件可信度标记和发件人 ID 标记。
 
@@ -33,18 +33,8 @@ _**上一次修改主题：**2016-12-09_
 
 下表描述了可在反垃圾邮件报告中出现的筛选器信息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>反垃圾邮件报告只显示已应用于特定邮件的筛选器的信息。通常，反垃圾邮件报告不包含下表中列出的所有信息。例如，你可能会收到以下反垃圾邮件报告：<code>DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures</code>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 反垃圾邮件报告只显示已应用于特定邮件的筛选器的信息。通常，反垃圾邮件报告不包含下表中列出的所有信息。例如，你可能会收到以下反垃圾邮件报告：<code>DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures</code>。
 
 
 ### 反垃圾邮件报告中的筛选器信息

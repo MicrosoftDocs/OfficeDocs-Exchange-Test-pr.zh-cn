@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-05_
+_**上一次修改主题：** 2012-10-05_
 
 使用 MicrosoftOutlook Web App 邮箱策略创建组织级别策略可管理对 Outlook Web App 中功能的访问权限。
 
@@ -39,18 +39,8 @@ Outlook Web App 功能也可通过配置 Outlook Web App 虚拟目录进行管�
 
 默认的 Outlook Web App 邮箱策略在安装 Exchange 时自动创建。默认情况下，在默认 Outlook Web App 邮箱策略上启用所有选项。可以根据组织需要创建多个 Outlook Web App 邮箱策略。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认的 Outlook Web App 邮箱策略不会自动应用到任何邮箱。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 默认的 Outlook Web App 邮箱策略不会自动应用到任何邮箱。
 
 
 有关创建或删除邮箱策略的信息，请参阅[创建 Outlook Web App 邮箱策略](create-an-outlook-web-app-mailbox-policy-exchange-2013-help.md)和[从 Exchange 中删除 Outlook Web App 邮箱策略](remove-an-outlook-web-app-mailbox-policy-from-exchange-exchange-2013-help.md)。

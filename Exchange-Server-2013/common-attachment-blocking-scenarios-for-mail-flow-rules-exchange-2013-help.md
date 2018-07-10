@@ -13,23 +13,19 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**上一次修改主题：**2017-02-23_
+_**上一次修改主题：** 2017-02-23_
 
 为了满足法律或合规性要求，或者为了满足特定的业务需求，您的组织可能需要阻止或拒绝某些类型的邮件。下面的一些示例展示了您可以使用传输规则在 Exchange 中设置的用于阻止所有附件的常见方案：
 
-  -  
-    Example 1: Block messages with attachments, and notify the sender
+  -  Example 1: Block messages with attachments, and notify the sender
 
-  -  
-    Example 2: Notify intended recipients when an inbound message is blocked
+  -  Example 2: Notify intended recipients when an inbound message is blocked
 
-  -  
-    Example 3: Modify the subject line for notifications
+  -  Example 3: Modify the subject line for notifications
 
-  -  
-    Example 4: Apply a rule with a time limit
+  -  Example 4: Apply a rule with a time limit
 
 有关如何阻止特定附件的其他示例，请参阅：
 
@@ -51,7 +47,7 @@ _**上一次修改主题：**2017-02-23_
 
 5.  选择相应的条件和操作。
 
-**注意：**在 EAC 中，你可以输入的最小附件大小为 1 KB，这样应该会检测大多数附件。但是，如果要检测每个任意大小的可能附件，则需要在 EAC 中创建规则后使用 PowerShell 将附件大小调整为 1 字节。若要了解如何在本地 Exchange 组织中打开 Exchange 命令行管理程序，请参阅[打开命令行管理程序](https://technet.microsoft.com/zh-cn/library/dd638134\(v=exchg.150\))。若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。若要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection，请参阅[连接到 Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290)。
+**注意：** 在 EAC 中，你可以输入的最小附件大小为 1 KB，这样应该会检测大多数附件。但是，如果要检测每个任意大小的可能附件，则需要在 EAC 中创建规则后使用 PowerShell 将附件大小调整为 1 字节。若要了解如何在本地 Exchange 组织中打开 Exchange 命令行管理程序，请参阅[打开命令行管理程序](https://technet.microsoft.com/zh-cn/library/dd638134\(v=exchg.150\))。若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。若要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection，请参阅[连接到 Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290)。
 
 将 *\<Rule Name\>* 替换为现有规则的名称，然后运行下列命令将附件大小设置为 1 字节：
 
@@ -126,18 +122,8 @@ _**上一次修改主题：**2017-02-23_
 
   - 第二个规则阻止邮件，并使用原始邮件的新主题向发件人发送通知邮件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>这两个规则必须具有完全相同的条件。由于规则是按顺序进行处理，因此第一个规则先添加&amp;quot;无法送达&amp;quot;一词，然后第二个规则再阻止邮件并通知收件人。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 这两个规则必须具有完全相同的条件。由于规则是按顺序进行处理，因此第一个规则先添加&amp;quot;无法送达&amp;quot;一词，然后第二个规则再阻止邮件并通知收件人。
 
 
 下面展示了第一个规则（如果您想向主题添加\&quot;无法送达\&quot;一词的话）：

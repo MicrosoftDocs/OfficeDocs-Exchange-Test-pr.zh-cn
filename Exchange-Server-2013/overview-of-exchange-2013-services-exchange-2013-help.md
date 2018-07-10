@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2017-10-20_
+_**上一次修改主题：** 2017-10-20_
 
 在Exchange Server 2013的安装时，安装程序运行一的组在 Microsoft Windows中安装新的服务的任务。服务是一个后台进程，可以在服务器的启动Windows服务控制管理器启动。服务是可执行文件配合独立和无需管理员干预。服务可以使用图形用户界面 (GUI) 模式或控制台模式运行。
 
@@ -63,18 +63,9 @@ _**上一次修改主题：**2017-10-20_
 <td><p>Microsoft Exchange 反垃圾邮件更新</p></td>
 <td><p>MSExchangeAntispamUpdate</p></td>
 <td><p>提供Exchange SmartScreen 垃圾邮件定义更新。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2016 年 11 月 1 日起，Microsoft 停止为 Exchange 和 Outlook 中的 SmartScreen 筛选器生成垃圾邮件定义更新。现有的 SmartScreen 垃圾邮件定义将予以保留，但其效力可能会随时间的推移而逐渐降低。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">停止为 Outlook 和 Exchange 中的 SmartScreen 提供支持</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 2016 年 11 月 1 日起，Microsoft 停止为 Exchange 和 Outlook 中的 SmartScreen 筛选器生成垃圾邮件定义更新。现有的 SmartScreen 垃圾邮件定义将予以保留，但其效力可能会随时间的推移而逐渐降低。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">停止为 Outlook 和 Exchange 中的 SmartScreen 提供支持</a>。
 
 </td>
 <td><p>自动</p></td>
@@ -443,18 +434,8 @@ _**上一次修改主题：**2017-10-20_
 <td><p>Microsoft Exchange 反垃圾邮件更新</p></td>
 <td><p>MSExchangeAntispamUpdate</p></td>
 <td><p>提供Exchange SmartScreen 垃圾邮件定义更新。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2016 年 11 月 1 日起，Microsoft 停止为 Exchange 和 Outlook 中的 SmartScreen 筛选器生成垃圾邮件定义更新。现有的 SmartScreen 垃圾邮件定义将予以保留，但其效力可能会随时间的推移而逐渐降低。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">停止为 Outlook 和 Exchange 中的 SmartScreen 提供支持</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 2016 年 11 月 1 日起，Microsoft 停止为 Exchange 和 Outlook 中的 SmartScreen 筛选器生成垃圾邮件定义更新。现有的 SmartScreen 垃圾邮件定义将予以保留，但其效力可能会随时间的推移而逐渐降低。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=835894">停止为 Outlook 和 Exchange 中的 SmartScreen 提供支持</a>。
 
 </td>
 <td><p>自动</p></td>

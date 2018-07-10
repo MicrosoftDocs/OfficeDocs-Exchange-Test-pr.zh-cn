@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-12-02_
+_**上一次修改主题：** 2014-12-02_
 
 在 Microsoft Exchange Server 2013 中，可以为目标域调整 DNS 查询敏感度，以便遇到 DNS 错误时能更快地进行邮件传递。但是，在某些情况下该调整可能导致传递失败，具体取决于 DNS 错误。
 
@@ -57,16 +57,6 @@ Exchange 服务器查询配置的 DNS 服务器，以查找传递邮件所需的
 
 在 `Normal` 模式和 `Lenient` 模式下，从不缓存无效 MX 记录的 DNS 查询结果。下一次执行 DNS 查询时，会尝试解析目标域的 MX 记录。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在您安装 Exchange 累积更新 (CU) 时，您在 Exchange XML 应用程序配置文件（例如，客户端访问服务器上的 web.config 文件，或邮箱服务器上的 EdgeTransport.exe.config 文件）中针对每个服务器所做的任何自定义设置都将被覆盖。请务必保存此类信息，以便在安装累积更新后，您可以轻松地重新配置服务器。安装 Exchange CU 后，您必须重新配置这些设置。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在您安装 Exchange 累积更新 (CU) 时，您在 Exchange XML 应用程序配置文件（例如，客户端访问服务器上的 web.config 文件，或邮箱服务器上的 EdgeTransport.exe.config 文件）中针对每个服务器所做的任何自定义设置都将被覆盖。请务必保存此类信息，以便在安装累积更新后，您可以轻松地重新配置服务器。安装 Exchange CU 后，您必须重新配置这些设置。
 

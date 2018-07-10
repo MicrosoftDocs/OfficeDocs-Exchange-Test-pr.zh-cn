@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-04_
+_**上一次修改主题：** 2012-10-04_
 
 *Identity* 参数是可以与大多数 cmdlet 一起使用的特殊参数。通过 *Identity* 参数，可以访问引用 MicrosoftExchange Server 2013 中特定对象的唯一标识符。此功能允许您针对特定的 Exchange 2013 对象执行操作。
 

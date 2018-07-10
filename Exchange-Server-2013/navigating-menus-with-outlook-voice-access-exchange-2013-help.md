@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-23_
+_**上一次修改主题：** 2013-04-23_
 
 Outlook访问语音是在统一邮件 (UM) 使用户能够检索电子邮件和语音邮件消息使用和管理他们的日历和个人联系人的模拟、 数字或移动电话的功能。他们可以使用他们的电话键盘或语音命令，与其邮箱进行交互，但必须使用数字小键盘上他们的电话来搜索您单位的目录中的用户。
 
@@ -231,18 +231,8 @@ Managing personal options and contacts
 
 ![隐藏电子邮件会话](images/Dn205138.edd4d500-9eb4-4f83-9292-6829d768d974(EXCHG.150).gif "隐藏电子邮件会话")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当对话处于隐藏状态时，则将它隐藏仅为当前会话。如果用户注销，然后登录到他们的邮箱，语音邮件系统将读取电子邮件的同一对话中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 当对话处于隐藏状态时，则将它隐藏仅为当前会话。如果用户注销，然后登录到他们的邮箱，语音邮件系统将读取电子邮件的同一对话中。
 
 
 返回顶部
@@ -443,18 +433,8 @@ Managing personal options and contacts
 
 如果某用户必须与客户经理联系，告诉他/她某个客户的重要信息，用户可以呼叫 Outlook Voice Access 号码，通过电话软键盘使用目录搜索功能找到该客户经理，然后拨打其电话。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>用户必须使用电话软键盘才能访问&amp;quot;个人选项&amp;quot;菜单。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 用户必须使用电话软键盘才能访问&amp;quot;个人选项&amp;quot;菜单。
 
 
 ## 录制个人问候语
@@ -491,18 +471,8 @@ Managing personal options and contacts
 
 ![录制您的个人问候语](images/Dn205138.4201f8a8-453c-4c6c-a8a4-29e862cd9649(EXCHG.150).gif "录制您的个人问候语")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>更改电话问候语时，用户还可以根据需要选择启用还是禁用自动答复电子邮件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 更改电话问候语时，用户还可以根据需要选择启用还是禁用自动答复电子邮件。
 
 
 返回顶部

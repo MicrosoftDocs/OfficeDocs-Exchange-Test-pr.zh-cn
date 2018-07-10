@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 此页面提供已经由 Microsoft 或 VoIP 网关合作伙伴创建和测试的配置说明的链接。Microsoft 或合作伙伴使用新的 VoIP 网关和 PBX 或 IP PBX 配置部署统一消息时，将记录先决条件和配置设置。该信息用于创建配置说明。
 

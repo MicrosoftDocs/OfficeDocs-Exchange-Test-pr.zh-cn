@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-05_
+_**上一次修改主题：** 2012-10-05_
 
 您可以通过 Exchange ActiveSync 虚拟目录来管理 Exchange Server 2013 中的多个 Exchange ActiveSync 应用程序设置。 虚拟目录由 Internet Information Services (IIS) 使用，允许访问 Web 应用程序，例如 Exchange ActiveSync。 您可以为 Exchange ActiveSync 进行管理的一些虚拟目录设置包括认证、安全和报告。
 

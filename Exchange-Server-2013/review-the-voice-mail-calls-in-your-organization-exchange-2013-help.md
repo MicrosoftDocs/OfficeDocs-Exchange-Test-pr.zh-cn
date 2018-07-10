@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 调用统计信息报告可用于查看信息的类型和由您组织中的 Exchange 服务器处理传入呼叫的状态。该报告提供了统计信息的调用转发给或为您的组织中放置的统一邮件 (UM)。您可以使用此信息来跟踪使用情况以进行容量规划、 监视和疑难解答的可用性和 UM，音频质量和排查故障的调用。
 
@@ -57,18 +57,8 @@ _**上一次修改主题：**2013-02-22_
     
     导出的文件将被命名为 um\_cdr\_*YYYY-MM-DD*.csv，其中*YYYY-MM-DD*是年、 月和日运行报告。有关详细信息，请参阅[解释语音邮件呼叫记录](interpret-voice-mail-call-records-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在报告页面上，可以下载 Microsoft Excel 模板用来导入特定日期的 .csv 文件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 在报告页面上，可以下载 Microsoft Excel 模板用来导入特定日期的 .csv 文件。
 
 
 返回顶部

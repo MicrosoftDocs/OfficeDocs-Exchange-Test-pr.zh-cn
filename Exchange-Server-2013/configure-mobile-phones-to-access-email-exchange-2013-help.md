@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-12_
+_**上一次修改主题：** 2015-03-12_
 
 可以配置移动电话（如 Windows 电话）以使用 MicrosoftExchange ActiveSync。您应该对组织中的每部移动电话执行此过程。
 
@@ -25,18 +25,8 @@ _**上一次修改主题：**2015-03-12_
 
   - 在组织中已启用 Exchange ActiveSync。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关在移动电话或平板电脑上设置基于 Microsoft Exchange 的电子邮件的设备专用信息，请参阅<a href="https://support.office.com/zh-cn/article/set-up-a-mobile-device-using-office-365-for-business-7dabb6cb-0046-40b6-81fe-767e0b1f014f">使用 Office 365 商业版设置移动设备</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 有关在移动电话或平板电脑上设置基于 Microsoft Exchange 的电子邮件的设备专用信息，请参阅<a href="https://support.office.com/zh-cn/article/set-up-a-mobile-device-using-office-365-for-business-7dabb6cb-0046-40b6-81fe-767e0b1f014f">使用 Office 365 商业版设置移动设备</a>。
 
 
 ## 配置移动电话以使用 Exchange ActiveSync

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-01-21_
+_**上一次修改主题：** 2015-01-21_
 
 您可以使用自定义管理范围，允许特定用户或组使用就地电子数据展示来搜索 Exchange 2013 或 Exchange Online 组织中的部分邮箱。例如，您可能希望发现管理员仅搜索特定位置或部门的用户邮箱。您可以通过创建自定义管理作用域来执行此操作。此自定义的管理作用域使用收件人筛选器来控制哪些邮箱可以搜索。收件人筛选器作用域根据收件人类型或其他收件人属性，使用筛选器指向特定收件人。
 
@@ -111,18 +111,8 @@ _**上一次修改主题：**2015-01-21_
 
     Add-DistributionGroupMember -Identity "Ottawa Users" -Member "Ottawa Discovery Mailbox"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要打开发现邮箱并查看搜索结果，发现管理员必须分配有发现邮箱的完全访问权限。有关详细信息，请参阅<a href="create-a-discovery-mailbox-exchange-2013-help.md">创建发现邮箱</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 要打开发现邮箱并查看搜索结果，发现管理员必须分配有发现邮箱的完全访问权限。有关详细信息，请参阅<a href="create-a-discovery-mailbox-exchange-2013-help.md">创建发现邮箱</a>。
 
 
 ## 您如何知道这有效？

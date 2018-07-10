@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013 SP1_
+_**适用于：** Exchange Server 2013 SP1_
 
-_**上一次修改主题：**2015-12-02_
+_**上一次修改主题：** 2015-12-02_
 
 切换和故障转移是 Microsoft Exchange Server 2013 中的两种中断形式：
 

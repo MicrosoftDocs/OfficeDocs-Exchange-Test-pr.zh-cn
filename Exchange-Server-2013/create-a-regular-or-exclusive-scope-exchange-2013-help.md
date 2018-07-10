@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 管理角色作用域确定向用户提供哪些对象，以便可以使用 cmdlet 以及为其分配的参数更改这些对象。通过添加管理作用域，您可以配置管理角色分配，以便用户可以管理组织中的特定服务器、数据库、收件人和其他对象，同时限制更改其他对象。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>创建常规或独占作用域时，将覆盖在分配的管理角色上定义的写入作用域。不能覆盖在管理角色上配置的读取作用域。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 创建常规或独占作用域时，将覆盖在分配的管理角色上定义的写入作用域。不能覆盖在管理角色上配置的读取作用域。
 
 
 可以创建自定义管理作用域以及添加或更改管理角色分配。如果要使用预制的管理作用域或组织单位 (OU) 管理作用域创建管理角色分配，请参阅[向用户或 USG 添加角色](add-a-role-to-a-user-or-usg-exchange-2013-help.md)。
@@ -53,18 +43,8 @@ _**上一次修改主题：**2015-04-07_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您该如何做？
@@ -87,18 +67,8 @@ _**上一次修改主题：**2015-04-07_
 
     New-ManagementScope -Name "Mailboxes in Sales OU" -RecipientRestrictionFilter { RecipientType -eq 'UserMailbox' } -RecipientRoot "contoso.com/Sales OU"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果希望将筛选器应用到管理角色的整个隐式读取作用域而不只是特定 OU 内的读取作用域，则可以省略 <em>RecipientRoot</em> 参数。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果希望将筛选器应用到管理角色的整个隐式读取作用域而不只是特定 OU 内的读取作用域，则可以省略 <em>RecipientRoot</em> 参数。
 
 
 有关语法和参数的详细信息，请参阅 [New-ManagementScope](https://technet.microsoft.com/zh-cn/library/dd335137\(v=exchg.150\))。
@@ -137,18 +107,8 @@ _**上一次修改主题：**2015-04-07_
 
 基于数据库筛选器的配置作用域是使用 **New-ManagementScope** cmdlet 上的 *DatabaseRestrictionFilter* 参数创建的。使用数据库筛选器可以创建一个作用域，该作用域仅适用于与您指定的筛选器匹配的数据库。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>与数据库作用域关联的角色分配仅应用到连接到运行 Microsoft Exchange Server 2010 Service Pack 1 (SP1) 或更高版本或者 Exchange 2013 的服务器的用户。如果分配了与数据库作用域相关联的角色分配的用户连接到之前的 Exchange 2010 SP1 服务器，则角色分配不会应用于此用户，并且也不会向此用户授予角色分配提供的任何权限。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 与数据库作用域关联的角色分配仅应用到连接到运行 Microsoft Exchange Server 2010 Service Pack 1 (SP1) 或更高版本或者 Exchange 2013 的服务器的用户。如果分配了与数据库作用域相关联的角色分配的用户连接到之前的 Exchange 2010 SP1 服务器，则角色分配不会应用于此用户，并且也不会向此用户授予角色分配提供的任何权限。
 
 
 有关管理作用域筛选器的详细信息和可筛选数据库属性的列表，请参阅[了解管理角色作用域筛选器](understanding-management-role-scope-filters-exchange-2013-help.md)。
@@ -167,18 +127,8 @@ _**上一次修改主题：**2015-04-07_
 
 基于数据库列表的配置作用域是使用 **New-ManagementScope** cmdlet 上的 *DatabaseList* 参数创建的。使用数据库列表作用域可以创建一个作用域，该作用域仅适用于您在列表中指定的数据库。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>与数据库作用域关联的角色分配仅应用于连接到运行 Microsoft Exchange Server 2010 Service Pack 1 (SP1) 或更高版本或者 Exchange 2013 的服务器的用户。如果分配了与数据库作用域相关联的角色分配的用户连接到之前的 Exchange 2010 SP1 服务器，则角色分配不会应用于此用户，并且也不会向此用户授予角色分配提供的任何权限。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 与数据库作用域关联的角色分配仅应用于连接到运行 Microsoft Exchange Server 2010 Service Pack 1 (SP1) 或更高版本或者 Exchange 2013 的服务器的用户。如果分配了与数据库作用域相关联的角色分配的用户连接到之前的 Exchange 2010 SP1 服务器，则角色分配不会应用于此用户，并且也不会向此用户授予角色分配提供的任何权限。
 
 
 使用以下语法创建数据库列表作用域。
@@ -195,18 +145,8 @@ _**上一次修改主题：**2015-04-07_
 
 可将使用 **New-ManagementScope** cmdlet 创建的任何作用域指定为独占作用域。若要创建独占作用域，请在上述某一节中使用相同命令创建基于收件人筛选器的作用域、基于服务器筛选器的作用域、基于服务器列表的作用域、基于数据库筛选器的作用域或基于数据库列表的作用域，然后向该命令中添加 *Exclusive* 开关。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在创建独占管理作用域时，仅分配有包含要修改对象的独占作用域的角色接受者才可以访问这些对象。只有分配了具有独占作用域角色的管理员才可以访问这些独占或受保护的对象。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 在创建独占管理作用域时，仅分配有包含要修改对象的独占作用域的角色接受者才可以访问这些对象。只有分配了具有独占作用域角色的管理员才可以访问这些独占或受保护的对象。
 
 
 此示例创建基于收件人筛选器的独占作用域，该作用域与 Executives 部门中的任何用户匹配。

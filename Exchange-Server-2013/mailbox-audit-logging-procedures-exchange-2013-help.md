@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2010-07-16_
+_**上一次修改主题：** 2010-07-16_
 
 [启用或禁用邮箱的邮箱审核日志记录](enable-or-disable-mailbox-audit-logging-for-a-mailbox-exchange-2013-help.md)
 

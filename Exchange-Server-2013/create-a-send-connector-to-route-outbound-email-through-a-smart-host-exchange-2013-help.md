@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-07_
+_**上一次修改主题：** 2013-02-07_
 
 在某些情况下，可能需要通过第三方智能主机路由电子邮件，例如，当您有一个网络设备，并希望对出站邮件执行策略检查。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>第三方智能主机必须使用 SMTP 进行传输。如果不是这样，则应使用外部连接器或传递代理连接器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 第三方智能主机必须使用 SMTP 进行传输。如果不是这样，则应使用外部连接器或传递代理连接器。
 
 
 对本程序使用的方案感兴趣？请参阅下列主题：
@@ -47,18 +37,8 @@ _**上一次修改主题：**2013-02-07_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 可以使用 EAC 创建通过智能主机路由出站电子邮件的发送连接器
@@ -71,18 +51,8 @@ _**上一次修改主题：**2013-02-07_
     
     对于“智能主机身份验证”，选择智能主机所需的身份验证类型。如果选择“基本身份验证”，则必须提供用户名和密码。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果选择基本身份验证，我们建议您使用加密连接，因为基本身份验证将以明文方式发送用户名和密码。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果选择基本身份验证，我们建议您使用加密连接，因为基本身份验证将以明文方式发送用户名和密码。
 
 
 4.  在“地址空间”下，单击“添加”![添加图标](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "添加图标")。在“添加域”窗口中，确保 SMTP 作为“类型”列出。对于“完全限定域名 (FQDN)”，输入 \* 指定将此发送连接器应用到发送给任何域的邮件。单击“保存”。

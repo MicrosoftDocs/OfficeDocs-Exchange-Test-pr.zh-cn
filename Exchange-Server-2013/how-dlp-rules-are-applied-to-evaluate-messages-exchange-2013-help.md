@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 您可以在 Microsoft Exchange 数据丢失预防 (DLP) 策略内设置敏感信息规则，以检测电子邮件中非常具体的数据。本主题将帮助您了解如何应用这些规则以及如何评估邮件。如果您了解如何强制执行规则，则可以为您的电子邮件用户避免工作流中断，并获得高度准确的 DLP 检测。让我们使用 Microsoft 提供的信用卡信息规则作为示例。当您激活传输规则或 DLP 策略时，Exchange 传输规则代理将用户发送的所有邮件与您创建的规则集进行对比。
 

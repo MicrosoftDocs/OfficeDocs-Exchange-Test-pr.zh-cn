@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2014-06-18_
+_**上一次修改主题：** 2014-06-18_
 
 Microsoft Exchange Server 2013 提供管理功能和其他增强功能，可改善对传输层安全性 (TLS) 的总体管理。使用这项功能时，您需要了解一些与 TLS 有关的功能。某些术语和概念适用于多项与 TLS 有关的功能。本主题提供了每项功能的简要介绍，目的是帮助您了解与 TLS 和域安全性功能集有关的一些差异和常用术语：
 

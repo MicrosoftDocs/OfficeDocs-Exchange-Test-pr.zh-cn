@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 MicrosoftExchange Server 2013 包含许多与 Microsoft SharePoint 2013 和 Microsoft Lync 2013 集成的功能。这些产品结合使用时可提供一整套功能，以实现可能使用站点邮箱的企业电子数据展示和协作之类的方案。
 
@@ -114,18 +114,8 @@ OAuth 是许多网站和 Web 服务使用的标准授权协议。它允许客户
 
 Exchange 2013 安装程序会使用友好名称 Microsoft Exchange Server 身份验证证书来创建自签名证书。该证书会复制到 Exchange 2013 组织中的所有前端服务器。证书的指纹在 Exchange 2013 的授权配置中与其服务名称（表示内部部署 Exchange 2013 的已知 GUID）一起指定。Exchange 使用授权配置发布其身份验证元数据文档。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2013 创建的默认服务器身份验证证书有效期为五年。必须确保授权配置包含当前证书。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> Exchange 2013 创建的默认服务器身份验证证书有效期为五年。必须确保授权配置包含当前证书。
 
 
 当 Exchange 2013 通过 Exchange Web 服务 (EWS) 从合作伙伴应用程序收到访问请求时，它会分析 https 请求的 `www-authenticate` 标头（其中包含调用服务器使用其私钥签名的访问令牌）。身份验证模块会使用合作伙伴应用程序配置验证访问令牌。随后基于向应用程序授予的 RBAC 权限来授予对资源的访问权限。如果访问令牌代表用户，则会检查向用户授予的 RBAC 权限。例如，如果用户使用 SharePoint 2013 中的电子数据展示中心执行电子数据展示搜索，则 Exchange 会检查用户是否为发现管理角色组的成员，或是否分配了邮箱搜索角色并且搜索的邮箱是否处于 RBAC 角色分配的作用域内。有关更多详细信息，请参阅[权限](permissions-exchange-2013-help.md)。

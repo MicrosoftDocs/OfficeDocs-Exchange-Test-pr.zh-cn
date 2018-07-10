@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Exchange 统一消息 (UM) 使您能够为贵组织中的用户提供语音邮件服务。部署统一消息时，必须将 Exchange 服务器部署与贵组织中现有的电话服务系统或 Microsoft Lync Server 集成在一起。要成功进行部署，您需要仔细分析现有电话服务基础结构，并执行正确的计划步骤来部署和管理统一消息中的语音邮件。如果要将 Exchange 与 Lync Server 整合，还必须熟悉此产品。
 
@@ -29,18 +29,8 @@ Exchange 统一消息 (UM) 使您能够为贵组织中的用户提供语音邮�
 
   - Microsoft Office Communications Server 2007 R2 或 Microsoft Lync Server 2010 或 2013
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在托管或混合环境中部署 Exchange UM 时，必须部署会话边界控制器 (SBC)。SBC 不支持将 UM 连接到电话服务网络，亦不支持为组织提供拨号音。但是，它们却可以使用通过公用或专用 WAN 的 IP 协议将您的内部 UM 部署连接到数据中心。</td>
-</tr>
-</tbody>
-</table>
+> [!warning]
+> 在托管或混合环境中部署 Exchange UM 时，必须部署会话边界控制器 (SBC)。SBC 不支持将 UM 连接到电话服务网络，亦不支持为组织提供拨号音。但是，它们却可以使用通过公用或专用 WAN 的 IP 协议将您的内部 UM 部署连接到数据中心。
 
 
 **电话硬件**   选择正确的 VoIP 网关、IP PBX 或 SBC，只是将电话服务网络与 UM 集成的第一步。您必须配置这些设备并使它们能与 UM 配合使用，部署必需的客户端访问服务器和邮箱服务器，以及创建和配置需要的所有 UM 组件。借助这些组件，您可以将基于电路的协议网络连接到 IP 数据网络，并为组织内的用户启用语音邮件功能。有关详细信息，请参阅[Exchange 2013 电话顾问](telephony-advisor-for-exchange-2013-exchange-2013-help.md)。
@@ -67,18 +57,8 @@ Exchange 统一消息 (UM) 使您能够为贵组织中的用户提供语音邮�
 
 2.  验证是否已经正确安装了统一消息所需的客户端访问和邮箱服务器。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在配置 VoIP 网关或 IP PBX 以将 UM SIP 和 RTP 通信发送到 Exchange 2013 客户端访问服务器之前，您应在您的组织内部署至少一个 Exchange 2013 邮箱服务器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!warning]
+    > 在配置 VoIP 网关或 IP PBX 以将 UM SIP 和 RTP 通信发送到 Exchange 2013 客户端访问服务器之前，您应在您的组织内部署至少一个 Exchange 2013 邮箱服务器。
 
 
 3.  创建和配置必需的统一消息组件，包括 UM 拨号计划、UM IP 网关、UM 智能寻线和 UM 邮箱策略。

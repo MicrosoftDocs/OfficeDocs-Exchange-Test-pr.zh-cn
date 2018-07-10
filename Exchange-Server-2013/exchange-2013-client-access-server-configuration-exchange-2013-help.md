@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2017-07-25_
+_**上一次修改主题：** 2017-07-25_
 
 在安装了 Exchange 2013 客户端访问服务器之后，可以执行各种配置任务。虽然 Exchange 2013 中的客户端访问服务器不针对客户端协议进行处理，但是需要将几个设置应用于客户端访问服务器，包括虚拟目录设置和证书设置。
 
@@ -39,18 +39,8 @@ _**上一次修改主题：**2017-07-25_
     
         Get-OutlookAnywhere | Set-OutlookAnywhere -InternalHostname "internalServer.contoso.com" -InternalClientAuthenticationMethod Ntlm -InternalClientsRequireSsl $true -ExternalHostname "externalServer.company.com" -ExternalClientAuthenticationMethod Basic -ExternalClientsRequireSsl $true -IISAuthenticationMethods Negotiate,NTLM,Basic
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>虽然 Exchange 2013 支持 Outlook Anywhere HTTP“协商”身份验证，但仅当环境中的所有服务器运行 Exchange 2013 时才能使用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!tip]
+    > 虽然 Exchange 2013 支持 Outlook Anywhere HTTP“协商”身份验证，但仅当环境中的所有服务器运行 Exchange 2013 时才能使用。
 
 
   - 若要配置 Exchange ActiveSync，请运行以下命令。

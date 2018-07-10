@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-06-04_
+_**上一次修改主题：** 2015-06-04_
 
 了解有关 Exchange Server 2013 中的 Exchange DAG 的信息。本文讨论了数据库可用性组 (DAG) 生命周期，以及使用 DAG 实现高可用性和站点恢复的信息。
 
@@ -37,18 +37,8 @@ DAG 中的任何服务器可以承载来自 DAG 中任何其他服务器的邮�
 
 DAG 利用了“增量部署”这一概念，这是指能够在安装 Exchange 之后为所有邮箱服务器和数据库部署服务和数据可用性。在部署 Exchange 2013 邮箱服务器后，您可以创建 DAG，将邮箱服务器添加到 DAG，然后在 DAG 成员之间复制邮箱数据库。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>支持创建包含物理邮箱服务器与虚拟邮箱服务器组合的 DAG，前提是这些服务器和解决方案符合 <a href="exchange-2013-system-requirements-exchange-2013-help.md">Exchange 2013 系统要求</a>和 <a href="exchange-2013-virtualization-exchange-2013-help.md">Exchange 2013 虚拟化</a>中提出的要求。对于所有 Exchange 高可用性配置，必须确保 DAG 中所有邮箱服务器大小均已经过适当调整，可以处理计划中断和非计划中断过程中的必要工作负载。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 支持创建包含物理邮箱服务器与虚拟邮箱服务器组合的 DAG，前提是这些服务器和解决方案符合 <a href="exchange-2013-system-requirements-exchange-2013-help.md">Exchange 2013 系统要求</a>和 <a href="exchange-2013-virtualization-exchange-2013-help.md">Exchange 2013 虚拟化</a>中提出的要求。对于所有 Exchange 高可用性配置，必须确保 DAG 中所有邮箱服务器大小均已经过适当调整，可以处理计划中断和非计划中断过程中的必要工作负载。
 
 
 通过使用 [New-DatabaseAvailabilityGroup](https://technet.microsoft.com/zh-cn/library/dd351107\(v=exchg.150\)) cmdlet 创建 DAG。DAG 最初创建时是 Active Directory 中的一个空对象。该目录对象用于存储 DAG 的相关信息，比如服务器成员身份信息和某些 DAG 配置设置。将第一个服务器添加到 DAG 时，将为 DAG 自动创建故障转移群集。此故障转移群集由 DAG 独占使用，并且此群集必须专用于 DAG。不支持将此群集用于任何其他用途。

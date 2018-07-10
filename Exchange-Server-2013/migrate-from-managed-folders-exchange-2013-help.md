@@ -13,40 +13,20 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 在 Microsoft Exchange Server 2013 中，邮件传递记录管理 (MRM) 的执行通过使用保留标记和保留策略来进行。保留策略是一组可以应用到邮箱的保留标记。有关更多详细信息，请参阅[保留标记和保留策略](retention-tags-and-retention-policies-exchange-2013-help.md)。作为在 Exchange Server 2007 中引入的 MRM 技术，托管文件夹在此处不受支持。
 
 应用了托管文件夹邮箱策略的邮箱可以进行迁移，从而使用保留策略。为此，必须创建与链接至用户托管文件夹邮箱策略的托管文件夹等效的保留标记。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在生产环境中从托管文件夹迁移到保留策略之前，建议您先在测试环境中测试此过程。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 在生产环境中从托管文件夹迁移到保留策略之前，建议您先在测试环境中测试此过程。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以将邮箱置于保留挂起，暂停对保留策略或托管文件夹邮箱策略的处理。在迁移场景中，将邮箱置于保留挂起非常有用，可避免在测试邮箱或少数生产邮箱上测试新策略设置之前删除邮件或移动邮件至存档。有关详细信息，请参阅<a href="place-a-mailbox-on-retention-hold-exchange-2013-help.md">放置的邮箱上保留挂起</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 您可以将邮箱置于保留挂起，暂停对保留策略或托管文件夹邮箱策略的处理。在迁移场景中，将邮箱置于保留挂起非常有用，可避免在测试邮箱或少数生产邮箱上测试新策略设置之前删除邮件或移动邮件至存档。有关详细信息，请参阅<a href="place-a-mailbox-on-retention-hold-exchange-2013-help.md">放置的邮箱上保留挂起</a>。
 
 
 有关与 MRM 相关的其他管理任务，请参阅[邮件记录管理程序](messaging-records-management-procedures-exchange-2013-help.md)。
@@ -57,18 +37,8 @@ _**上一次修改主题：**2015-04-07_
 
 托管文件夹支持对文件夹进行不同的托管内容设置，每个都拥有不同的消息类型（如电子邮件项或日历项）。保留标记不需要单独的托管内容设置对象，因为保留设置是在标记属性中指定的。除了可以为语音邮件创建默认策略标记 (DPT) 外，不支持为特定邮件类创建保留标记。此外，保留标记不允许使用托管文件夹助理执行的日记。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>用于向日记邮箱发送邮件副本和日记报告的日记规则由日记代理在传输管道中强制应用，并且独立于 MRM。有关更多详细信息，请参阅<a href="journaling-exchange-2013-help.md">日记</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 用于向日记邮箱发送邮件副本和日记报告的日记规则由日记代理在传输管道中强制应用，并且独立于 MRM。有关更多详细信息，请参阅<a href="journaling-exchange-2013-help.md">日记</a>。
 
 
 下表对使用保留标记或托管文件夹时可用的 MRM 功能进行了比较。
@@ -177,18 +147,8 @@ _**上一次修改主题：**2015-04-07_
 
 4.  删除该托管文件夹邮箱策略，并将此保留策略应用至用户邮箱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>将保留策略应用于用户并运行托管文件夹助理后，用户邮箱中的托管文件夹将变为非托管状态。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 将保留策略应用于用户并运行托管文件夹助理后，用户邮箱中的托管文件夹将变为非托管状态。
 
 
 在以下步骤中，Contoso 邮箱的下列托管文件夹应用了托管文件夹邮箱策略。
@@ -276,35 +236,15 @@ _**上一次修改主题：**2015-04-07_
 
   - **根据托管文件夹及其相应托管内容设置创建保留标记**   通过此方法，您需要使用 **New-RetentionPolicyTag** cmdlet 和 *ManagedFolderToUpgrade* 参数。指定此参数时，相应的保留标记将自动应用于托管文件夹。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果要移植的托管文件夹具有不同邮件类的多个托管内容设置，将只创建一个保留标记，且会将所有托管内容设置的最长保留时间用作已移植标记的保留时间，而不考虑托管内容设置的邮件类。<br />
-    例如，查看托管文件夹 Corp-DeletedItems 的下列托管内容设置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 如果要移植的托管文件夹具有不同邮件类的多个托管内容设置，将只创建一个保留标记，且会将所有托管内容设置的最长保留时间用作已移植标记的保留时间，而不考虑托管内容设置的邮件类。<br />
+    > 例如，查看托管文件夹 Corp-DeletedItems 的下列托管内容设置。
 
 
   - **通过手动指定保留设置创建保留标记**   通过此方法，您需要使用 **New-RetentionPolicyTag** cmdlet 而不需要使用 *ManagedFolderToUpgrade* 参数。您若不指定此参数，则添加到该策略的所有保留策略标记均将应用于默认文件夹，且默认策略标记将应用于整个邮箱。但是，任何添加到该策略的个人标记都不会自动应用于托管文件夹。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果是在包含 Exchange 2013 和 Exchange 2010 服务器的混合环境中，您可以在 Exchange 2010 服务器的 Exchange 管理控制台 (EMC) 上使用&amp;quot;移植托管文件夹&amp;quot;向导，将托管文件夹及相应托管内容设置轻松移植至保留标记。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果是在包含 Exchange 2013 和 Exchange 2010 服务器的混合环境中，您可以在 Exchange 2010 服务器的 Exchange 管理控制台 (EMC) 上使用&amp;quot;移植托管文件夹&amp;quot;向导，将托管文件夹及相应托管内容设置轻松移植至保留标记。
 
 
 **根据托管文件夹创建保留标记**
@@ -323,18 +263,8 @@ _**上一次修改主题：**2015-04-07_
 
 **手动创建保留标记**
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您也可以使用 EAC 手动创建保留标记（不根据托管文件夹内的设置）。有关详细信息，请参阅<a href="create-a-retention-policy-exchange-2013-help.md">创建保留策略</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 您也可以使用 EAC 手动创建保留标记（不根据托管文件夹内的设置）。有关详细信息，请参阅<a href="create-a-retention-policy-exchange-2013-help.md">创建保留策略</a>。
 
 
 本示例根据托管文件夹及 Contoso 托管文件夹邮箱策略中显示的相应托管内容设置创建保留标记。手动指定保留设置，无需使用 *ManagedFolderToUpgrade* 参数。
@@ -353,18 +283,8 @@ _**上一次修改主题：**2015-04-07_
 
 您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅 [邮件策略和遵从性权限](messaging-policy-and-compliance-permissions-exchange-2013-help.md)主题中的\&quot;邮件记录管理\&quot;条目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您也可以使用 EAC 创建保留策略并将保留标记添加至策略。有关详细信息，请参阅<a href="create-a-retention-policy-exchange-2013-help.md">创建保留策略</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 您也可以使用 EAC 创建保留策略并将保留标记添加至策略。有关详细信息，请参阅<a href="create-a-retention-policy-exchange-2013-help.md">创建保留策略</a>。
 
 
 本示例创建了保留策略 RP-Corp，并将新建的保留标记链接至策略。
@@ -385,18 +305,8 @@ _**上一次修改主题：**2015-04-07_
 
 您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅 [邮件策略和遵从性权限](messaging-policy-and-compliance-permissions-exchange-2013-help.md)主题中的\&quot;应用保留策略\&quot;条目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您也可以使用 EAC 将保留策略应用于用户。有关详细信息，请参阅<a href="apply-a-retention-policy-to-mailboxes-exchange-2013-help.md">将保留策略应用于邮箱</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 您也可以使用 EAC 将保留策略应用于用户。有关详细信息，请参阅<a href="apply-a-retention-policy-to-mailboxes-exchange-2013-help.md">将保留策略应用于邮箱</a>。
 
 
 本示例将新建的保留策略 RP-Corp 应用于邮箱用户 Ken Kwok。

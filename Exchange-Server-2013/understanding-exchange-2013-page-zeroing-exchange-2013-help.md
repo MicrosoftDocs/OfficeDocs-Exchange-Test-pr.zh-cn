@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 ## Exchange 2013 中的页清零
 
 *清零*是一种安全机制，可对已删除数据写入零或二进制模式，使其更加难以恢复。在 Exchange Server 2013 中，ESE 数据库使用*页*作为其存储单位，从而实现了*页清零*。页清零默认启用，且无法禁用。页清零操作会记录在事务日志文件中，从而以相似方式对数据库的所有副本进行页清零。对活动数据库上的页清零会使该页在数据库的被动副本上被清零。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>没有机制可供可扩展存储引擎 (ESE) 用于使重复利用清零的页优先于分配新空间。分配顺序空间分配的表会有意跳过碎片化或清零的页，以便使用新的或空闲的顺序页。这种方法可以减少数据库 IOP。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 没有机制可供可扩展存储引擎 (ESE) 用于使重复利用清零的页优先于分配新空间。分配顺序空间分配的表会有意跳过碎片化或清零的页，以便使用新的或空闲的顺序页。这种方法可以减少数据库 IOP。
 
 
 在 Exchange 2013 中，页清零可以在服务器执行清零功能时，减轻对服务器的性能影响。这包括：
@@ -167,18 +157,8 @@ _**上一次修改主题：**2016-12-09_
 
   - MSExchange 数据库 -\> 数据库维护清零的页/秒：指示页清零的速率。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要了解如何启用这些计数器，请参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=101194">如何启用扩展的 ESE 性能计数器</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 若要了解如何启用这些计数器，请参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=101194">如何启用扩展的 ESE 性能计数器</a>。
 
 
 页清零是一种数据库维护功能，因此，与运行时事务的页清零和由于后台数据库维护导致的页清零相关的性能信息，都会包括在这些计数器中。

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 此主题中的内容尚未针对 Microsoft Exchange Server 2013 进行更新。虽然尚未更新，但仍可能适用于 Exchange 2013。如果您仍需要帮助，请查看下面的社区资源。
 
@@ -37,19 +37,9 @@ Exchange 2007 安装程序要求用作域架构主机的域控制器与运行 E
 
 1.  在命令提示符处键入 **regsvr32 schmmgmt.dll**
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果显示以下对话框，则表示已成功注册 <strong>RegSvr32</strong>：<br />
-    schmmgmt.dll 中的 DllRegisterServer 已成功注册。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果显示以下对话框，则表示已成功注册 <strong>RegSvr32</strong>：<br />
+    > schmmgmt.dll 中的 DllRegisterServer 已成功注册。
 
 
 2.  若要打开新的管理控制台，请依次单击\&quot;开始\&quot;和\&quot;运行\&quot;，然后键入 **mmc**。
@@ -84,11 +74,11 @@ Exchange 2007 安装程序要求用作域架构主机的域控制器与运行 E
 
 3.  创建以下新\&quot;**字符串**\&quot;值：
     
-    值名称：**SiteName**
+    值名称：** SiteName**
     
-    值类型：**REG\_SZ**
+    值类型：** REG\_SZ**
     
-    值数据：**\<site\_that\_contains\_the\_schema\_master\>**
+    值数据：** \<site\_that\_contains\_the\_schema\_master\>**
 
 4.  退出注册表编辑器，然后重新启动 Netlogon 服务。该操作将强制 Exchange 服务器加入您指定的站点。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-12_
+_**上一次修改主题：** 2012-10-12_
 
 [创建地址列表](create-an-address-list-exchange-2013-help.md)
 

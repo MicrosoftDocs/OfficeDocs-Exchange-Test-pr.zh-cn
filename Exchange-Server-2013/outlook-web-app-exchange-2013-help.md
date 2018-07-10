@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 了解有关 Outlook Web App（在 2010 年之前的 Microsoft Exchange 版本中称为 Outlook Web Access）的信息。本文提供了简要概述，其中包含指向帮助性信息的链接。
 
@@ -23,18 +23,8 @@ _**上一次修改主题：**2016-12-09_
 
 客户端访问服务器角色为 Outlook Web App 提供代理和重定向服务。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2010 之前的 Microsoft Exchange 版本中，Outlook Web App 称为 Outlook Web Access。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在 Exchange 2010 之前的 Microsoft Exchange 版本中，Outlook Web App 称为 Outlook Web Access。
 
 
 有关新功能的信息，请参阅[Exchange 2013 中的新增功能](what-s-new-in-exchange-2013-exchange-2013-help.md)。有关 Exchange 2013 中的客户端访问服务器角色的信息，请参阅[客户端访问服务器](client-access-server-exchange-2013-help.md)。

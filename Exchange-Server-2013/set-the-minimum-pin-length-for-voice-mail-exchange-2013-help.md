@@ -13,26 +13,16 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 您可以配置 Outlook Voice Access 用户的统一邮件 (UM) 启用小针长度。在 UM 邮箱策略配置 PIN 设置将应用于所有已启用 UM 的用户与该 UM 邮箱策略相关联。
 
 Outlook已启用 UM 的用户使用语音访问来访问他们的语音邮件、 电子邮件、 日历和位于其邮箱中的个人联系信息。但是，它们可以访问其邮箱之前，他们必须输入 PIN，所以他们可以通过语音邮件系统进行身份验证。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要更改最小针长度值，现有 Outlook Voice Access 用户将会提示您输入的新 PIN，包含新的最小小数位数，然后才能继续。默认值为 6。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果要更改最小针长度值，现有 Outlook Voice Access 用户将会提示您输入的新 PIN，包含新的最小小数位数，然后才能继续。默认值为 6。
 
 
 有关 Outlook Voice Access PIN 安全性相关的其他任务，请参阅 [针的安全程序](pin-security-procedures-exchange-2013-help.md)。
@@ -49,18 +39,8 @@ Outlook已启用 UM 的用户使用语音访问来访问他们的语音邮件、
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？

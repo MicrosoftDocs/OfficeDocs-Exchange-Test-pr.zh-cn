@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**上一次修改主题：** 2013-04-17_
+_**上一次修改主题：**  2013-04-17_
 
 此部分包含您在使用 Exchange Server 2013 管理包时可用作参考的步骤。有关与部署后操作相关的步骤，请参阅[Procedures related to post-deployment operation](procedures-related-to-post-deployment-operation.md)。
 

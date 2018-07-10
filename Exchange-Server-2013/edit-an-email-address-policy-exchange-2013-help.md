@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-12-10_
+_**上一次修改主题：** 2012-12-10_
 
 电子邮件地址策略为您的收件人（包括用户、联系人和组）生成主电子邮件地址和辅电子邮件地址，以便接收人可以接收和发送电子邮件。
 
@@ -35,18 +35,8 @@ _**上一次修改主题：**2012-12-10_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!warning]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -75,18 +65,8 @@ _**上一次修改主题：**2012-12-10_
 
     Set-EmailAddressPolicy -Identity "South East Offices" -ConditionalStateorProvince "Georgia","Alabama","Louisiana","Texas"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>虽然已经将电子邮件地址策略应用到 Georgia、Alabama、和 Louisiana 中的收件人，但必须将它们包含在参数中，因为参数会覆盖值；参数不会将值附加到现有值。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 虽然已经将电子邮件地址策略应用到 Georgia、Alabama、和 Louisiana 中的收件人，但必须将它们包含在参数中，因为参数会覆盖值；参数不会将值附加到现有值。
 
 
 有关语法和参数的详细信息，请参阅 [Set-EmailAddressPolicy](https://technet.microsoft.com/zh-cn/library/bb124517\(v=exchg.150\))。

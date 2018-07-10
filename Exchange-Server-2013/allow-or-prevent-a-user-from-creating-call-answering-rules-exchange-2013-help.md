@@ -13,26 +13,16 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 可以指定单个用户能够创建和管理他们自己呼叫应答通过配置其邮箱属性的规则。默认情况下，他们可以创建呼叫应答规则。
 
 通过配置 UM 拨号计划或 UM 邮箱策略上的电话应用规则，可以为启用了统一消息 (UM) 的多个用户启用或禁用电话应答规则。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>EAC 不能用于配置此功能。必须使用外壳程序来启用或禁用语音邮件用户呼叫应答规则。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> EAC 不能用于配置此功能。必须使用外壳程序来启用或禁用语音邮件用户呼叫应答规则。
 
 
 有关与允许用户转移呼叫相关的更多管理任务，请参阅[转发调用过程](forwarding-calls-procedures-exchange-2013-help.md)。
@@ -51,18 +41,8 @@ _**上一次修改主题：**2013-02-22_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 使用命令行管理程序为启用 UM 的用户启用或禁用呼叫应答规则

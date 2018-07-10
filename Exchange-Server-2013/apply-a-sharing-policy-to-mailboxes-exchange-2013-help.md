@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-02-15_
+_**上一次修改主题：** 2014-02-15_
 
 共享策略是联合共享的一部分并允许与不同类型的外部用户进行用户建立的、人对人的日历信息共享。管理员应用于用户邮箱的共享策略决定了用户可以共享的访问级别，以及可以与谁共享。如果不做任何更改，则默认共享策略适用于所有用户。如果创建了新的共享策略，必须将该策略应用到邮箱，才能生效。共享策略可应用至单个用户邮箱或同时应用至多个用户邮箱。管理员还可以禁用用户的共享策略，以阻止对日历的外部访问。
 
@@ -85,16 +85,6 @@ _**上一次修改主题：**2014-02-15_
     
         Get-Mailbox <user name> | format-list
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 

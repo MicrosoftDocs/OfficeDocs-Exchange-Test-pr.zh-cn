@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-07_
+_**上一次修改主题：** 2013-02-07_
 
 IMAP.Proxy 运行状况设置监视 IMAP4 代理基础结构在客户端访问服务器 (CAS) 上的可用性。如果您接收到 POP.Proxy 运行状况设置不正常的警报，这表明在警报指示的 CAS 上发现了一个影响 IMAP 组件的问题。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-11-30_
+_**上一次修改主题：** 2012-11-30_
 
 您可以配置语音启用统一邮件 (UM) 自动助理具有双音多频 (DTMF) 回退自动助理。当 UM 启用语音的自动助理不能理解或识别由调用方提供的语音输入使用 DTMF 回退自动助理。如果已配置 DTMF 回退自动助理，调用方必须 DTMF 输入，也称为按键输入，用于导航的自动助理的菜单系统、 拼写的用户的名称，或使用自定义菜单提示。如果已配置没有 DTMF 回退自动助理，，因为系统不能理解调用方所说的内容超过了语音输入的最大数量，系统将在响应此提示:"很抱歉，我不能帮。请回电后面。"
 
@@ -35,18 +35,8 @@ _**上一次修改主题：**2012-11-30_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -61,18 +51,8 @@ _**上一次修改主题：**2012-11-30_
 
 4.  在\&quot;选择 UM 自动助理\&quot;页上，选择要用作 DTMF 回退自动助理的自动助理，然后单击\&quot;保存\&quot;。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须先启用语音自动语音助理，才能浏览已设置的 DTMF 回退自动助理。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 必须先启用语音自动语音助理，才能浏览已设置的 DTMF 回退自动助理。
 
 
 ## 使用命令行管理程序配置启用语音且具有 DTMF 回退自动助理的自动助理

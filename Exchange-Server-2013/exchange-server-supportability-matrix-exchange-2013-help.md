@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2007, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2007, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2018-03-20_
+_**上一次修改主题：** 2018-03-20_
 
 Exchange Server 可支持性矩阵为 Microsoft Exchange 管理员提供了一个集中来源，以便于他们查找有关受支持 Microsoft Exchange 版本的任何配置或所需组件的可用支持级别信息。
 
@@ -78,18 +78,8 @@ Exchange 2007到达末尾在 4 月 11，2017，每个[Microsoft 生命周期策�
 
 下表标识了可以运行每个 Exchange 版本的操作系统平台。支持的平台用 X 字符标识。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不支持下表中未列出的 Windows Server 和 Windows 客户端版本使用任何版本的 Exchange。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 不支持下表中未列出的 Windows Server 和 Windows 客户端版本使用任何版本的 Exchange。
 
 
 
@@ -446,18 +436,8 @@ Exchange 2007到达末尾在 4 月 11，2017，每个[Microsoft 生命周期策�
 
 下表标识出支持与 Outlook Web App 或 Web 上的 Outlook 精简（基本）版本一起使用的 Web 浏览器。支持的浏览器用 X 字符标识。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook Web App Basic (Outlook Web App Light) 支持在移动浏览器中使用。但是，如果在移动浏览器中出现呈现或验证问题，请确定在支持的浏览器的完整客户端中是否可使用 Outlook Web App Light 再现该问题。例如，在 Safari、Chrome 或 Internet Explorer 中测试使用 Outlook Web App Light。如果无法在完整客户端中再现问题，我们建议您联系移动设备供应商获得帮助。在这些情况下，我们根据情况与供应商合作。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Outlook Web App Basic (Outlook Web App Light) 支持在移动浏览器中使用。但是，如果在移动浏览器中出现呈现或验证问题，请确定在支持的浏览器的完整客户端中是否可使用 Outlook Web App Light 再现该问题。例如，在 Safari、Chrome 或 Internet Explorer 中测试使用 Outlook Web App Light。如果无法在完整客户端中再现问题，我们建议您联系移动设备供应商获得帮助。在这些情况下，我们根据情况与供应商合作。
 
 
 
@@ -748,33 +728,13 @@ Exchange 2007到达末尾在 4 月 11，2017，每个[Microsoft 生命周期策�
 
 下表标识了可与每个 Exchange 版本一起使用的 Microsoft.NET Framework 版本。支持的版本用 X 字符标识。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>任何版本的 Exchange 都不支持下表中未列出的 .NET Framework 版本。</strong>这包括 .NET Framework 的次要版本和修补级别版本。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> <strong>任何版本的 Exchange 都不支持下表中未列出的 .NET Framework 版本。</strong>这包括 .NET Framework 的次要版本和修补级别版本。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不受支持的 CU Exchange 升级到当前的 CU 和任何中间 CUs 可用时，您应升级到最新版本的.NET 支持的第一个，然后立即升级到当前的 CU 的交换。此方法不是取代需要跟您的 Exchange 服务器上，到目前为止，在最新的支持的 CU。<br />
-Microsoft 不做任何评论，升级失败不会使用这种方法，这可能会导致与 Microsoft 支持服务的需要。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 不受支持的 CU Exchange 升级到当前的 CU 和任何中间 CUs 可用时，您应升级到最新版本的.NET 支持的第一个，然后立即升级到当前的 CU 的交换。此方法不是取代需要跟您的 Exchange 服务器上，到目前为止，在最新的支持的 CU。
+> Microsoft 不做任何评论，升级失败不会使用这种方法，这可能会导致与 Microsoft 支持服务的需要。
 
 
 

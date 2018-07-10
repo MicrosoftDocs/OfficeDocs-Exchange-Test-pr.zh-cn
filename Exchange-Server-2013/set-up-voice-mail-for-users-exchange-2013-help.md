@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2012-10-13_
+_**上一次修改主题：** 2012-10-13_
 
 在连接了电话服务网络或将 Microsoft Lync Server 与 Exchange 统一消息 (UM) 集成并创建和配置了所需 UM 组件之后，需要为用户设置语音邮件。
 

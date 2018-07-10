@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 为了防止出现意外或恶意删除，并协助常在诉讼或调查之前或期间进行的发现工作，Microsoft Exchange Server 2013 和 Exchange Online 使用“可恢复的项目”文件夹。“可恢复的项目”文件夹替换在早期版本的 Exchange 中称为“转储程序”的功能。下列 Exchange 功能会用到“可恢复的项目”文件夹：
 
@@ -274,18 +274,8 @@ _**上一次修改主题：**2016-12-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当会议组织者收到与会者响应，会议跟踪信息得到更新时，写入时复制页面保护不会保存会议版本。而且写入时复制页面保护不会捕获对 RSS 源的更改。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 当会议组织者收到与会者响应，会议跟踪信息得到更新时，写入时复制页面保护不会保存会议版本。而且写入时复制页面保护不会捕获对 RSS 源的更改。
 
 
 当邮箱不再处于就地保留或诉讼保留，保存在“版本”文件夹中的已修改项目的副本将被删除。

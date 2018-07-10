@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 本主题介绍了安装 Microsoft Exchange Server 2013 组织所需的权限。与管理角色组关联的通用安全组 (USG)，以及其他 Windows 安全组和安全主体，均添加到了各种 Active Directory 对象的访问控制列表 (ACL) 中。ACL 控制每个对象上可执行的操作。通过了解授予给每个角色组、安全组或安全主体的权限，可以确定安装 Exchange 2013 所需的最低权限。
 
@@ -23,15 +23,15 @@ _**上一次修改主题：**2016-12-09_
 
 每个权限表的列包含以下信息：
 
-  - **帐户：**允许或拒绝权限的安全主体。
+  - **帐户：** 允许或拒绝权限的安全主体。
 
-  - **ACE 类型：**访问控制条目 (ACE) 类型。
+  - **ACE 类型：** 访问控制条目 (ACE) 类型。
     
-      - **允许 ACE：**“允许 ACE”允许与 ACE 关联的用户或组访问邮件。
+      - **允许 ACE：** “允许 ACE”允许与 ACE 关联的用户或组访问邮件。
     
-      - **拒绝 ACE：**“拒绝 ACE”阻止与 ACE 关联的用户或组访问邮件。
+      - **拒绝 ACE：** “拒绝 ACE”阻止与 ACE 关联的用户或组访问邮件。
 
-  - **继承：**用于子对象的继承类型。
+  - **继承：** 用于子对象的继承类型。
     
       - “所有”指示权限应用于该对象及其所有子对象。
     
@@ -39,11 +39,11 @@ _**上一次修改主题：**2016-12-09_
     
       - “无”指示这些权限只应用于该对象。
 
-  - **权限：**为帐户授予的权限。
+  - **权限：** 为帐户授予的权限。
 
-  - **针对属性/应用于：**在某些情况下，权限只应用于给定的属性、属性集或对象类。此处指定了这些受限的权限。
+  - **针对属性/应用于：** 在某些情况下，权限只应用于给定的属性、属性集或对象类。此处指定了这些受限的权限。
 
-  - **注释：**如果适用，此列说明需要这些权限的原因并提供有关权限的其他信息。
+  - **注释：** 如果适用，此列说明需要这些权限的原因并提供有关权限的其他信息。
 
 权限通常按在 Active Directory Service Interfaces (ADSI) Edit (AdsiEdit.msc) 上（在 **View/Edit** 选项卡上 **Advanced** 视图中的 **Security** 属性页）使用的名称在表中列出。ADSI Edit **Security** 属性页上列出很简洁的权限视图。LDP 工具 (Ldp.exe) 直接使用数字值显示访问掩码。安装代码通过预定义的常量引用权限。
 
@@ -174,18 +174,8 @@ _**上一次修改主题：**2016-12-09_
 
 本节中的权限表说明在执行 `Setup /PrepareAD` 命令时设置的权限。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本节中描述的权限是当您使用共享权限模型部署 Exchange 2013 时配置的默认权限。如果您已经使用 Active Directory 拆分权限模型部署了Exchange 2013，默认权限将有所不同。有关使用 Active Directory 拆分权限以及共享和拆分权限模型时的默认权限更改的详细信息，请参阅<a href="understanding-split-permissions-exchange-2013-help.md">了解拆分权限</a>中的 <a href="understanding-split-permissions-exchange-2013-help.md">Active Directory split permissions</a>。如果您在安装 Exchange 时不选择使用 Active Directory 拆分权限，Exchange 将使用共享权限。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 本节中描述的权限是当您使用共享权限模型部署 Exchange 2013 时配置的默认权限。如果您已经使用 Active Directory 拆分权限模型部署了Exchange 2013，默认权限将有所不同。有关使用 Active Directory 拆分权限以及共享和拆分权限模型时的默认权限更改的详细信息，请参阅<a href="understanding-split-permissions-exchange-2013-help.md">了解拆分权限</a>中的 <a href="understanding-split-permissions-exchange-2013-help.md">Active Directory split permissions</a>。如果您在安装 Exchange 时不选择使用 Active Directory 拆分权限，Exchange 将使用共享权限。
 
 
 ## Microsoft Exchange 容器权限
@@ -1712,18 +1702,8 @@ _**上一次修改主题：**2016-12-09_
 
 下列各表说明在执行 `Setup /PrepareDomain` 命令时设置的权限。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本节中描述的权限是当您使用共享权限模型部署 Exchange 2013 时配置的默认权限。如果您已经使用 Active Directory 拆分权限模型部署了Exchange 2013，默认权限将有所不同。有关使用 Active Directory 拆分权限以及共享和拆分权限模型时的默认权限更改的详细信息，请参阅<a href="understanding-split-permissions-exchange-2013-help.md">了解拆分权限</a>中的 <a href="understanding-split-permissions-exchange-2013-help.md">Active Directory split permissions</a>。如果您在安装 Exchange 时不选择使用 Active Directory 拆分权限，Exchange 将使用共享权限。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 本节中描述的权限是当您使用共享权限模型部署 Exchange 2013 时配置的默认权限。如果您已经使用 Active Directory 拆分权限模型部署了Exchange 2013，默认权限将有所不同。有关使用 Active Directory 拆分权限以及共享和拆分权限模型时的默认权限更改的详细信息，请参阅<a href="understanding-split-permissions-exchange-2013-help.md">了解拆分权限</a>中的 <a href="understanding-split-permissions-exchange-2013-help.md">Active Directory split permissions</a>。如果您在安装 Exchange 时不选择使用 Active Directory 拆分权限，Exchange 将使用共享权限。
 
 
 ### 对象的可分辨名称：DC=\<domain\>

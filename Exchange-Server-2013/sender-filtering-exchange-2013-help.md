@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-12_
+_**上一次修改主题：** 2012-10-12_
 
 发件人筛选依赖于 MAIL FROM: SMTP 邮件头来确定要对入站电子邮件执行的操作（如果有）。发件人筛选由发件人筛选器代理提供。
 
@@ -27,18 +27,8 @@ _**上一次修改主题：**2012-10-12_
 
 您可以指定被阻止的发件人并定义发件人筛选器代理对来自被阻止发件人的邮件处理方式。有关如何配置发件人筛选器代理的详细信息，请参阅[管理发件人筛选](manage-sender-filtering-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>MAIL FROM:SMTP 邮件头可能带欺骗性质。因此，不应只依靠发件人筛选器代理。应配合使用发件人筛选器代理和发件人 ID 代理。发件人 ID 代理使用发送服务器的来源 IP 地址来验证 MAIL FROM: SMTP 邮件头中的域与已注册的域是否匹配。有关发件人 ID 代理的详细信息，请参阅<a href="sender-id-exchange-2013-help.md">发件人 ID</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> MAIL FROM:SMTP 邮件头可能带欺骗性质。因此，不应只依靠发件人筛选器代理。应配合使用发件人筛选器代理和发件人 ID 代理。发件人 ID 代理使用发送服务器的来源 IP 地址来验证 MAIL FROM: SMTP 邮件头中的域与已注册的域是否匹配。有关发件人 ID 代理的详细信息，请参阅<a href="sender-id-exchange-2013-help.md">发件人 ID</a>。
 
 
 ## 使用发件人筛选器代理阻止邮件

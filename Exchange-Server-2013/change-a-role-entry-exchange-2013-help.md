@@ -13,40 +13,20 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-03_
+_**上一次修改主题：** 2012-10-03_
 
 管理角色中的每个管理角色条目表示一个 cmdlet。通过添加参数或删除参数从角色项，然后添加到管理角色，您可以控制这些参数是否可在该 cmdlet。有关 Microsoft Exchange Server 2013中的管理角色条目的详细信息，请参阅[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 
 无法修改内置管理角色上的角色条目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主题不讨论如何修改未区分范围的管理角色条目未区分范围的管理角色。有关如何修改未区分范围的角色条目的详细信息，请参阅<a href="create-a-role-exchange-2013-help.md">创建角色</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 本主题不讨论如何修改未区分范围的管理角色条目未区分范围的管理角色。有关如何修改未区分范围的角色条目的详细信息，请参阅<a href="create-a-role-exchange-2013-help.md">创建角色</a>。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要添加或从角色中移除参数，必须使用<em>AddParameter</em>或<em>RemoveParameter</em>参数。如果您运行<strong>Set-ManagementRoleEntry</strong> cmdlet 时省略了使用<em>AddParameter</em>或<em>RemoveParameter</em>参数，仅使用<em>Parameters</em>参数指定的参数将包括角色条目中。该角色条目中的所有其他参数都将被删除。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 若要添加或从角色中移除参数，必须使用<em>AddParameter</em>或<em>RemoveParameter</em>参数。如果您运行<strong>Set-ManagementRoleEntry</strong> cmdlet 时省略了使用<em>AddParameter</em>或<em>RemoveParameter</em>参数，仅使用<em>Parameters</em>参数指定的参数将包括角色条目中。该角色条目中的所有其他参数都将被删除。
 
 
 若要了解与角色相关的其他管理任务，请查看[高级权限](advanced-permissions-exchange-2013-help.md)。
@@ -65,18 +45,8 @@ _**上一次修改主题：**2012-10-03_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -115,18 +85,8 @@ _**上一次修改主题：**2012-10-03_
 
 当您想要使几个参数只能出现在 cmdlet 并排除所有其他参数，从角色中删除所有参数是最有用。如果您不想要有权 cmdlet 的角色，而只删除参数不是完全在角色中删除关联的角色条目。有关如何从角色中删除一个角色条目的详细信息，请参阅[从角色中删除一个角色条目](remove-a-role-entry-from-a-role-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您不能撤消删除操作。如果错误地从角色条目中删除所有参数，您必须再次手动添加它们。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 您不能撤消删除操作。如果错误地从角色条目中删除所有参数，您必须再次手动添加它们。
 
 
 若要删除角色条目中的所有参数，请使用以下语法。

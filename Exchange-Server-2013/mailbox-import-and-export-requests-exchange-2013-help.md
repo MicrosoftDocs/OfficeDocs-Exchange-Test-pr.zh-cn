@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 使用 Exchange 命令行管理程序中的 **MailboxImportRequest** 或 **MailboxExportRequest** cmdlet 集，您可以从 .pst 文件导入数据或将数据导出到这些文件。发出邮箱导入或导出请求后，由 Microsoft Exchange 邮箱复制服务 (MRS) 异步完成该过程。MRS 驻留在所有 Exchange 2010 客户端访问服务器上，该服务负责移动邮箱以及导入和导出 .pst 文件。
 
@@ -75,18 +75,8 @@ _**上一次修改主题：**2015-04-07_
 
 使用 **MailboxImportRequest** cmdlet 集将数据从 .pst 文件导入到邮箱或个人存档中。下面是从 .pst 文件导入邮箱数据时可以指定的选项的列表：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>导入数据的邮箱必须已经存在。您不能将数据导入没有邮箱的用户帐户。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 导入数据的邮箱必须已经存在。您不能将数据导入没有邮箱的用户帐户。
 
 
   - 可以将数据导入不同于从中导出该数据的其他用户帐户。例如，可以从 john@contoso.com 导出数据，并将数据导入到 legaldiscovery@contoso.com。

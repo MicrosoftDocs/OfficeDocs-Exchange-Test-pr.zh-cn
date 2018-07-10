@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 设置组织关系以便与外部商业合作伙伴共享日历信息。可以在两个联合 Exchange 2013 组织之间或在联合 Exchange 2013 组织与联合 Exchange 2010 组织之间配置组织关系。您还可以在本地 Exchange 组织和 Office 365 组织之间设置组织关系。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>创建组织关系是在 Exchange 组织中设置联合共享的若干步骤之一，需要为内部部署 Exchange 组织配置联合身份验证信任。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 创建组织关系是在 Exchange 组织中设置联合共享的若干步骤之一，需要为内部部署 Exchange 组织配置联合身份验证信任。
 
 
 若要了解有关联合共享的详细信息，请参阅[共享](sharing-exchange-2013-help.md)。
@@ -123,16 +113,6 @@ _**上一次修改主题：**2015-04-07_
 
     Get-OrganizationRelationship | format-list
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 

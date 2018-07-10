@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-04_
+_**上一次修改主题：** 2013-02-04_
 
 因为 Exchange 管理中心 (EAC) 是 Exchange Server 2013 中提供的一个基于 Web 的管理控制台，因此您可以在 Web 浏览器中使用 ECP 虚拟目录的 URL 访问它。本主题将演示如何查找 ECP 虚拟目录的 URL。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ECP 是为 Exchange Server 2010 开发的基于 Web 的用户界面。虚拟目录的 EAC cmdlet 仍然使用“ECP”这个名称，并且这些 cmdlet 可用于管理 Exchange 2010 和 Exchange 2013 ECP 虚拟目录。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> ECP 是为 Exchange Server 2010 开发的基于 Web 的用户界面。虚拟目录的 EAC cmdlet 仍然使用“ECP”这个名称，并且这些 cmdlet 可用于管理 Exchange 2010 和 Exchange 2013 ECP 虚拟目录。
 
 
 有关 EAC 的详细信息，请参阅 [Exchange 2013 中的 Exchange 管理中心](exchange-admin-center-in-exchange-2013-exchange-2013-help.md)。
@@ -45,18 +35,8 @@ _**上一次修改主题：**2013-02-04_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 使用命令行管理程序查找 ECP 虚拟目录的内部和外部 URL

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Project Server 2013_
+_**适用于：** Exchange Server 2013, Project Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 DataProtection 运行状况设置监视数据库可用性组 (DAG) 中数据库的冗余。
 

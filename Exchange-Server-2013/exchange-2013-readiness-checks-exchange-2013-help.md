@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-09-10_
+_**上一次修改主题：** 2012-09-10_
 
 本节中的主题详细介绍安装 Exchange 时 Microsoft Exchange Server 2013 执行的准备情况检查。准备情况检查可确保您的 Active Directory 林和 Exchange 服务器已准备好安装 Exchange 2013。各项准备情况检查主题均提供相应的做法，用来解决运行准备情况检查时发现的问题。如果安装过程中显示准备情况检查，那么您只能执行该准备情况检查中列出的步骤。
 

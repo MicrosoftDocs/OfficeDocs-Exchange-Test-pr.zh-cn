@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-08_
+_**上一次修改主题：** 2013-02-08_
 
 Microsoft Exchange Server 2013 增强了对服务器和客户端的语言支持。本主题列出了 Exchange 2013 中服务器和客户端可用的语言。
 

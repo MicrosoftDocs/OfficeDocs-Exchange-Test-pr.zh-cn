@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-03_
+_**上一次修改主题：** 2012-10-03_
 
 管理角色分配向角色受理人分配一个管理角色。通过更改角色分配，可以对已分配角色的角色受理人所能够更改的对象进行控制。应用到角色分配的管理角色作用域会覆盖角色的隐式写入作用域。但是，角色的隐式读取作用域仍然适用。应用的作用域无法返回角色隐式读取作用域之外的对象。
 
@@ -37,18 +37,8 @@ _**上一次修改主题：**2012-10-03_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -161,7 +151,7 @@ _**上一次修改主题：**2012-10-03_
 
 若要更改独占收件人或独占配置作用域，可以使用本主题前面的“使用命令行管理程序在角色分配上更改收件人筛选器作用域”、“使用命令行管理程序在角色分配上更改服务器筛选器或基于列表的配置作用域”和“使用命令行管理程序在角色分配上更改数据库筛选器或基于列表的配置作用域”各节中提供的步骤。唯一差别在于更改独占作用域时，必须指定以下独占参数（取决于是更改独占收件人作用域，还是独占配置作用域）：
 
-  - **独占收件人作用域：**使用 *ExclusiveRecipientWriteScope* 参数代替 *CustomRecipientWriteScope* 参数。
+  - **独占收件人作用域：** 使用 *ExclusiveRecipientWriteScope* 参数代替 *CustomRecipientWriteScope* 参数。
 
   - **独占服务器和数据库配置作用域**   使用 *ExclusiveConfigWriteScope* 参数代替 *CustomConfigWriteScope* 参数。
 

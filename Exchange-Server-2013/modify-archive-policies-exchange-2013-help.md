@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-02-01_
+_**上一次修改主题：** 2016-02-01_
 
 在 Exchange Server 2013 和 Exchange Online 中，可以使用存档策略自动将邮箱项目移动到个人（内部部署）或基于云的存档。存档策略是使用“移动到存档”保留操作的保留标记。
 
@@ -25,22 +25,12 @@ Exchange 安装程序会创建一个称为“默认 MRM 策略”的保留策略
 
 有关与存档相关的其他管理任务，请参阅：
 
-  - **Exchange Server 2013:** [在 Exchange 2013 中管理就地存档](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md)
+  - **Exchange Server 2013:**  [在 Exchange 2013 中管理就地存档](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md)
 
-  - **Exchange Online:** [在 Exchange Online 中启用或禁用存档邮箱](https://technet.microsoft.com/zh-cn/library/jj984357\(v=exchg.150\))
+  - **Exchange Online:**  [在 Exchange Online 中启用或禁用存档邮箱](https://technet.microsoft.com/zh-cn/library/jj984357\(v=exchg.150\))
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 混合部署中，您可以为内部部署主邮箱启用基于云的存储邮箱。如果向内部部署邮箱分配存档策略，项目将移动到基于云的存档。如果将某个项目移动到存档邮箱，不会在内部部署邮箱中保留它的副本。如果将内部部署邮箱置于保留状态，存档策略仍会将项目移动到基于云的存档邮箱，项目将在其中保存保留指定的时间。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在 Exchange 混合部署中，您可以为内部部署主邮箱启用基于云的存储邮箱。如果向内部部署邮箱分配存档策略，项目将移动到基于云的存档。如果将某个项目移动到存档邮箱，不会在内部部署邮箱中保留它的副本。如果将内部部署邮箱置于保留状态，存档策略仍会将项目移动到基于云的存档邮箱，项目将在其中保存保留指定的时间。
 
 
 ## 在开始之前，您需要知道什么？
@@ -51,18 +41,8 @@ Exchange 安装程序会创建一个称为“默认 MRM 策略”的保留策略
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -73,23 +53,11 @@ Exchange 安装程序会创建一个称为“默认 MRM 策略”的保留策略
 
 2.  在此列表视图中，选择标记“默认移动到存档 2 年”，然后单击“编辑”![编辑图标](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "编辑图标")。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>可以单击“类型”列按类型对保留标记进行排序。默认存档策略显示为类型“默认”并且具有“存档”保留操作。或者，可以单击“名称”按名称对保留标记进行排序。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!tip]
+    > 可以单击“类型”列按类型对保留标记进行排序。默认存档策略显示为类型“默认”并且具有“存档”保留操作。或者，可以单击“名称”按名称对保留标记进行排序。
 
 
-3.  
-    
-    在“保留标记”中，查看或修改以下设置，然后单击“保存”：
+3.  在“保留标记”中，查看或修改以下设置，然后单击“保存”：
     
       - **名称** 此框位于页面顶部，可用于查看或更改标记名称。
     
@@ -101,31 +69,11 @@ Exchange 安装程序会创建一个称为“默认 MRM 策略”的保留策略
         
           - **从不**   单击此按钮可禁用标记。如果 DPT 已禁用，则该标记不再应用于邮箱。
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>邮箱助理将不再处理应用了已禁用的保留标记的项目。如果要阻止将某个标记应用于项目，我们建议您禁用此标记，而不是将其删除。删除某个标记时，该标记配置也会从 Active Directory 中删除，且邮箱助理会处理所有邮件以删除该标记。</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!important]
+            > 邮箱助理将不再处理应用了已禁用的保留标记的项目。如果要阻止将某个标记应用于项目，我们建议您禁用此标记，而不是将其删除。删除某个标记时，该标记配置也会从 Active Directory 中删除，且邮箱助理会处理所有邮件以删除该标记。
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>如果用户将某个标记应用于项目，并认为此项目永不会移动，日后启用此标记可能会移动用户原本要保留在主邮箱中的项目。</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!NOTE]
+            > 如果用户将某个标记应用于项目，并认为此项目永不会移动，日后启用此标记可能会移动用户原本要保留在主邮箱中的项目。
         
           - **项目达到以下期限(天)时**   单击此按钮可指定项目在特定期限之后移动到存档。默认情况下，此设置配置为在两年（730 天）之后将项目移动到存档。若要修改此设置，请在相应文本框中，键入保留期的天数。值的范围是 1 到 24,855 天。
     

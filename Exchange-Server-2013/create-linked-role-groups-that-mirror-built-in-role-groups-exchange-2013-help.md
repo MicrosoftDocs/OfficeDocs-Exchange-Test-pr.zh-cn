@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-03_
+_**上一次修改主题：** 2012-10-03_
 
 在 Microsoft Exchange Server 2013中使用链接的管理角色组，可以在外部用户目录林中链接与通用安全组 (USG) Exchange 2013资源目录林中的角色组。当您希望用户目录林中的帐户管理员管理服务器资源目录林中运行Exchange时，这非常有用。有关链接的角色组的详细信息，请参阅[了解管理角色组](understanding-management-role-groups-exchange-2013-help.md)。
 
@@ -49,18 +49,8 @@ _**上一次修改主题：**2012-10-03_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 使用命令行管理程序创建复制内置角色组的链接角色组
@@ -95,9 +85,9 @@ _**上一次修改主题：**2012-10-03_
 
 本示例假定以下值分别用于每个参数：
 
-  - **LinkedForeignGroup：** `Organization Management Administrators`
+  - **LinkedForeignGroup：**  `Organization Management Administrators`
 
-  - **LinkedDomainController：** `DC01.users.contoso.com`
+  - **LinkedDomainController：**  `DC01.users.contoso.com`
 
 通过使用前面的值，本示例可将 组织管理 角色组重新创建为链接角色组。
 
@@ -130,13 +120,13 @@ _**上一次修改主题：**2012-10-03_
 
 本示例假定以下值分别用于每个参数：
 
-  - **LinkedDomainController：** `DC01.users.contoso.com`
+  - **LinkedDomainController：**  `DC01.users.contoso.com`
 
-  - **要重新创建为链接角色组的内置角色组：** `Recipient Management, Server Management`
+  - **要重新创建为链接角色组的内置角色组：**  `Recipient Management, Server Management`
 
-  - **Recipient Management 链接角色组的外部组：** `Recipient Management Administrators`
+  - **Recipient Management 链接角色组的外部组：**  `Recipient Management Administrators`
 
-  - **Server Management 链接角色组的外部组：** `Server Management Administrators`
+  - **Server Management 链接角色组的外部组：**  `Server Management Administrators`
 
 通过使用前面的值，本示例可将 收件人管理 和 Server Management 角色组重新创建为链接角色组。
 

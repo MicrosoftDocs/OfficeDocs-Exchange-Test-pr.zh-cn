@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Project Server 2013_
+_**适用于：** Exchange Server 2013, Project Server 2013_
 
-_**上一次修改主题：**2013-02-11_
+_**上一次修改主题：** 2013-02-11_
 
 SiteMailbox 运行状况设置监视组织中站点邮箱的整体运行状况以及辅助功能。
 

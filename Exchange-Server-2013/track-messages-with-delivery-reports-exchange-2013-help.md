@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-13_
+_**上一次修改主题：** 2012-10-13_
 
 送达报告是 Exchange 管理中心 (EAC) 中的一个邮件跟踪工具，可用于按照某个特定主题搜索组织通讯簿中的用户发送或接收的电子邮件的传递状态。可以跟踪通过组织中的任何特定邮箱收发的邮件的传递信息。邮件正文的内容不会在送达报告中返回，但是主题行会显示在结果中。可以在发送或接收邮件之后的最多 14 天内跟踪邮件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>“送达报告”可以跟踪用户使用 Microsoft Outlook 或 Outlook Web App 电子邮件客户端发送的邮件，但不跟踪从 POP 或 IMAP 电子邮件客户端（如 Windows Mail、Outlook Express 或 Mozilla Thunderbird）发送的邮件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> “送达报告”可以跟踪用户使用 Microsoft Outlook 或 Outlook Web App 电子邮件客户端发送的邮件，但不跟踪从 POP 或 IMAP 电子邮件客户端（如 Windows Mail、Outlook Express 或 Mozilla Thunderbird）发送的邮件。
 
 
 ## 在开始之前，您需要知道什么？
@@ -55,7 +45,7 @@ _**上一次修改主题：**2012-10-13_
 
 2.  输入以下信息：
     
-      - **\* 要搜索的邮箱：**单击“浏览”可从通讯簿中选择所需邮箱，然后单击“确定”。选择要搜索的邮箱是必需的操作。
+      - **\* 要搜索的邮箱：** 单击“浏览”可从通讯簿中选择所需邮箱，然后单击“确定”。选择要搜索的邮箱是必需的操作。
     
       - 选择下列选项之一：
         

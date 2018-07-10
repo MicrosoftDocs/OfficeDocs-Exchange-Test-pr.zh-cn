@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013 SP1_
+_**适用于：** Exchange Online, Exchange Server 2013 SP1_
 
-_**上一次修改主题：**2017-03-29_
+_**上一次修改主题：** 2017-03-29_
 
 确保用户获得良好的电子邮件体验一直是邮件系统管理员的主要目标。为了帮助确保 Microsoft Exchange Server 2013 组织的可用性和可靠性，必须主动监控系统的所有方面，且必须快速解决检测到的任何问题。在 Exchange 以前的版本中，监控关键系统组件通常涉及使用外部应用程序（如 Microsoft System Center 2012 Operations Manager）收集数据，以及针对在分析收集数据时检测到的问题提供恢复操作。Exchange 2010 和以前版本包括管理包形式的运行状况显示和相关性引擎。这些组件使 Operations Manager 能够确定某一特定组件是否正常运行。此外，Operations Manager 还使用 Exchange 2010 的内置诊断 cmdlet 基础结构对系统的多个方面运行综合事务。
 
@@ -83,18 +83,8 @@ Exchange 2013 中的服务器角色合并和其他体系结构更改要求对 Ex
 
 反复探测器的基础知识如下所示：启动每个 *RecurrenceIntervalSeconds*，并检查（或探测）某些方面的运行状况。如果组件运行状况良好，则探测器将判定为合格，并将信息性事件传入或写入 *ResultType* 为 3 的 Microsoft.Exchange.ActiveMonitoring\\ProbeResult 通道。如果检查失败或者超时，探测器将判定为故障，并将错误事件写入同一通道。*ResultType* 为 4 表示检查未通过，*ResultType* 为 1 表示超时。如果超时，达到 *MaxRetryAttempts* 属性的值，则许多探测器将重新运行。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>注意</strong> ProbeResult crimson 通道会因为处理数百个每隔几分钟运行一次的探测器以及记录事件而变得非常繁忙，因此如果您对生产环境中的事件日志尝试高成本的查询时，会对您的 Exchange 服务器性能产生真正的影响。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> <strong>注意</strong> ProbeResult crimson 通道会因为处理数百个每隔几分钟运行一次的探测器以及记录事件而变得非常繁忙，因此如果您对生产环境中的事件日志尝试高成本的查询时，会对您的 Exchange 服务器性能产生真正的影响。
 
 
 通知是指不是由运行状况管理器框架运行的，而是由服务器上的一些其他服务运行的探测器。这些服务自行执行监测，然后通过直接写入探测结果将数据反馈到托管可用性框架中。在 ProbeDefinition 通道中无法看到这些探测器，因为该通道只描述由托管可用性框架运行的探测器。例如，ServerOneCopyMonitor 监视器由 MSExchangeDAGMgmt 服务写入的探测结果触发。该服务执行自己的监视，确定是否有问题，并记录探测结果。大多数通知探测器必须能够记录导致监视器不正常的红色事件，以及使监视器重新恢复正常的绿色事件。

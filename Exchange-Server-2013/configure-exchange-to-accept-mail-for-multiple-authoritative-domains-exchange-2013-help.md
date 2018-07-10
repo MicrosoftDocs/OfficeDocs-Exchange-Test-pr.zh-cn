@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-06-15_
+_**上一次修改主题：** 2016-06-15_
 
 在 Microsoft Exchange Server 2013 中，很容易将多个权威域添加到组织中。但在添加了权威域后，需要确定如何在组织中使用这些权威域。例如：
 
@@ -47,18 +47,8 @@ _**上一次修改主题：**2016-06-15_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您该如何做？
@@ -133,18 +123,8 @@ _**上一次修改主题：**2016-06-15_
 
     Set-EmailAddressPolicy "Default Policy" -EnabledEmailAddressTemplates SMTP:@fourthcoffee.com,smtp:@contoso.com
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>大写字母形式的 <code>SMTP</code> 限定符指定主（答复）地址。小写字母形式的 <code>smtp</code> 限定符指定代理（辅）地址。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 大写字母形式的 <code>SMTP</code> 限定符指定主（答复）地址。小写字母形式的 <code>smtp</code> 限定符指定代理（辅）地址。
 
 
 若要将更新的电子邮件地址策略应用于收件人，请使用以下语法。
@@ -187,18 +167,8 @@ _**上一次修改主题：**2016-06-15_
 
 5.  **创建规则以进一步定义应用此电子邮件地址策略的收件人**   单击\&quot;添加规则\&quot;以限制将应用此策略的收件人。这将创建布尔\&quot;And\&quot;语句。根据需要多次重复此步骤。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果应用过多规则，则可能将电子邮件地址策略限制到不包含任何用户的程度。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > 如果应用过多规则，则可能将电子邮件地址策略限制到不包含任何用户的程度。
 
 
 6.  单击\&quot;预览应用策略的收件人\&quot;来查看将向其应用该策略的收件人。

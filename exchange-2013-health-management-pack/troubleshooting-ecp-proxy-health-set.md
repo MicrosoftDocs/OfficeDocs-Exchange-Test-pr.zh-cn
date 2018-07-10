@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 ECP.Proxy 运行状况设置监视 Exchange 管理中心 (EAC) 代理基础结构在客户端访问服务器 (CAS) 上的可用性。ECP.Proxy 运行状况设置与以下运行状况设置密切相关：
 

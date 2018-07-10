@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 信息工作者经常会使用电子邮件交换敏感信息。为帮助保护此类信息的安全，组织可以使用信息权限管理 (IRM) 对邮件内容应用持久保护。由于越来越多地使用移动设备访问电子邮件，因此移动设备用户可创建和使用受 IRM 保护的内容，这一点很重要。
 
@@ -94,18 +94,9 @@ Exchange ActiveSync 中的 IRM 不会将客户端访问服务器上受 IRM 保�
 <td><p>对移动设备启用加密。</p></td>
 <td><p>选中“要求提供密码”复选框，然后选中“要求对设备加密”复选框。</p></td>
 <td><p>将 <em>RequireDeviceEncryption</em> 参数设置为 <code>$true</code>。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>将 <em>RequireDeviceEncryption</em> 参数设置为 <code>$true</code> 时，将无法连接不支持设备加密的移动设备。</td>
-</tr>
-</tbody>
-</table>
+
+> [!important]
+> 将 <em>RequireDeviceEncryption</em> 参数设置为 <code>$true</code> 时，将无法连接不支持设备加密的移动设备。
 
 </td>
 </tr>

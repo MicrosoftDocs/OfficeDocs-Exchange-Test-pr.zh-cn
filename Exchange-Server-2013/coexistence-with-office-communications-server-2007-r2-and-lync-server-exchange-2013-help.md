@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 Communications Server 2007 R2 和 Lync Server 提供了许多最终用户功能，其中包括即时消息 (IM)、状态和 多方 IM；它们的语音邮件功能可以与 Exchange 统一消息 (UM) 集成。对于集成 Lync Server 2010 或 2013 的部署，可以为用户启用 Enterprise Voice，使启用了语音邮件的用户可以通过使用 Lync Server 组件访问其语音邮件。
 

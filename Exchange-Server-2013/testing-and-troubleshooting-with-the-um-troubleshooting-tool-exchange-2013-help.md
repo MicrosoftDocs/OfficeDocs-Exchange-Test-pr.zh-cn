@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Microsoft Exchange 2010 UM 疑难解答工具是名为 **Test-ExchangeUMCallFlow** 的 Exchange 命令行管理程序 cmdlet。您可以使用此 cmdlet 来诊断电话应答方案的配置错误，并测试语音邮件能否同时在本地和跨界 Microsoft Exchange Server 2010 Service Pack 1 (SP1) 或更高版本 UM 部署中正常工作。您可以在使用 Microsoft Office、Microsoft Lync Server 2010 或更高版本进行部署时使用此 cmdlet，也可以在使用 VoIP 网关、IP PBX 或会话边界控制器 (SBC) 进行 UM 部署时使用此 cmdlet。
 
@@ -27,18 +27,8 @@ Microsoft Exchange 2010 UM 疑难解答工具是名为 **Test-ExchangeUMCallFlow
 
 默认情况下，当您在运行该 UM 故障排除工具，它使用登录到该计算机时使用的凭据。所使用的凭据是指那些为调用方指定了。您必须设置或指定您在`SIPClient`模式下运行 UM 故障诊断工具时要使用的凭据。但是，您不需要在`Gateway`模式下运行 UM 故障诊断工具时设置凭据。如果您将在`SIPClient`模式下使用 UM 故障诊断工具，必须满足几个其他办公室通信服务器 2007 R2 或 Lync Server 要求和先决条件。有关详细信息，请参阅[清单︰ 部署 Office 通信服务器 2007 R2 和 Exchange 2010 统一消息](https://go.microsoft.com/fwlink/p/?linkid=311961)或[检查表：将 Exchange 2013 UM 与 Lync Server 集成](checklist-integrate-exchange-2013-um-with-lync-server-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Test-ExchangeUMCallFlow</strong> cmdlet 必须仅用于测试已安装 Exchange 2010 Service Pack 1 (SP1) 的 Microsoft Exchange Server 2010 统一消息服务器或 Microsoft Exchange 2013 的语音邮件功能。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> <strong>Test-ExchangeUMCallFlow</strong> cmdlet 必须仅用于测试已安装 Exchange 2010 Service Pack 1 (SP1) 的 Microsoft Exchange Server 2010 统一消息服务器或 Microsoft Exchange 2013 的语音邮件功能。
 
 
 **Test-ExchangeUMCallFlow** cmdlet 可以安装在本地 Exchange 2010 统一消息服务器、Exchange 2013 邮箱服务器，或运行下列操作系统的其他 64 位计算机上：
@@ -55,7 +45,7 @@ Microsoft Exchange 2010 UM 疑难解答工具是名为 **Test-ExchangeUMCallFlow
 
   - Microsoft .NET Framework 3.5 Windows Vista x64 和Windows Server 2008 x64 系列更新更新如果将Windows Vista或Windows Server 2008计算机上运行该工具。若要下载此更新，请参阅[Windows Server 2008 x64 Windows Vista x64，以及 Microsoft.NET Framework 3.5 系列更新](https://go.microsoft.com/fwlink/p/?linkid=178998)。
 
-  - Windows Remote Management (WinRM) 2.0 和 Windows PowerShell V2 (Windows6.0-KB968930.msu)。有关详细信息，请参阅 Microsoft 知识库文章 968930 [Windows Management Framework Core 程序包（Windows PowerShell 2.0 和 WinRM 2.0）](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)。
+  - Windows Remote Management (WinRM) 2.0 和 Windows PowerShell V2 (Windows6.0-KB968930.msu)。有关详细信息，请参阅 Microsoft 知识库文章 968930 [Windows Management Framework Core 程序包（Windows PowerShell 2.0 和 WinRM 2.0）](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)。
 
   - 统一的通信管理 AP1 2.0，核心运行时 （64 位）。下载 UcmaRuntimeWebDownloadX64.msi 程序文件，请参阅[托管 API 2.0 统一通信、 核心运行时 （64 位）](https://go.microsoft.com/fwlink/p/?linkid=198175)。
 

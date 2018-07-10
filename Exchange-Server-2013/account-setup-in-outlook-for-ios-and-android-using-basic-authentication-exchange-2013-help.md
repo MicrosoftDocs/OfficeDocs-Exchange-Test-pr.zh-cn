@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2018-04-30_
+_**上一次修改主题：** 2018-04-30_
 
-**摘要：** 如何 Exchange 2013 组织中的用户可以快速设置自己的 Outlook iOS 和 Android 使用基本身份验证的帐户。
+**摘要：**  如何 Exchange 2013 组织中的用户可以快速设置自己的 Outlook iOS 和 Android 使用基本身份验证的帐户。
 
 IOS 和 Android 的 outlook 提供 Exchange 管理员帐户配置"推送"到他们的内部用户的使用基本身份验证通过 ActiveSync 协议的能力。此功能适用于任何移动设备管理 (MDM) 提供商为 Android 的 iOS 或[Android 在企业](https://developer.android.com/samples/apprestrictions/index.html)通道使用[管理应用程序配置](https://developer.apple.com/library/content/samplecode/sc2279/introduction/intro.html)通道。
 
@@ -33,18 +33,8 @@ IOS 和 Android 的 outlook 提供 Exchange 管理员帐户配置"推送"到他�
 
 如果使用的 Microsoft Intune 作为您的移动设备管理提供程序，下面的步骤允许您部署的内部邮箱，可以利用与 ActiveSync 协议基本身份验证的帐户配置设置。创建配置后，您可以向一组用户，在下一个部分中，指定配置设置所述分配设置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您组织中的用户使用 iOS 和 Android 的工作设备，您需要创建单独的应用程序配置策略为每个平台。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果您组织中的用户使用 iOS 和 Android 的工作设备，您需要创建单独的应用程序配置策略为每个平台。
 
 
 1.  登录到 Azure 的门户。
@@ -67,18 +57,8 @@ IOS 和 Android 的 outlook 提供 Exchange 管理员帐户配置"推送"到他�
 
 10. 选择**配置设置**。**配置设置**刀片式服务器，定义将提供配置 Outlook，iOS 和 Android 的键/值对。您输入的键值对定义键值对的部分中，本文中稍后介绍。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>要输入键/值对，您必须使用配置设计器或输入 XML 属性列表之间进行选择。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 要输入键/值对，您必须使用配置设计器或输入 XML 属性列表之间进行选择。
 
 
 11. 操作完成后，请选择**确定**。

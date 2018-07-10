@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 在 Microsoft Exchange Server 2013 中，邮箱高可用性的主要机制为数据库可用性组 (DAG)。有关 DAG 的详细信息，请参见[管理数据库可用性组](managing-database-availability-groups-exchange-2013-help.md)。“传输转储程序”最先在 Exchange 2007 中引入，并在 Exchange 2010 中得到进一步改善，以便在邮件成功提供给 DAG 中的邮箱后，提供冗余的邮件副本。在 Exchange 2010 中，传输转储程序通过维持尚未复制到 DAG 中被动邮箱数据库副本的一队成功交付的邮件，帮助防止数据丢失。如果邮箱数据库或服务器故障需要创建邮箱数据库的过期副本，则会自动将传输转储程序中的邮件重新传递至邮箱数据库新的活动副本。
 

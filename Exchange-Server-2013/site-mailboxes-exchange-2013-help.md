@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 电子邮件和文档传统上保存在两个唯一且单独的数据存储库中。大多数组织通过两个媒体进行协作。难题在于使用不同的客户端访问电子邮件和文档。这通常会导致用户工作效率降低和用户体验降级。
 
@@ -99,18 +99,8 @@ _**上一次修改主题：**2016-12-09_
 
 使用 SharePoint 中的电子数据展示控制台时，网站邮箱会包括在就地电子数据展示范围内，因为您可以针对用户邮箱或网站邮箱执行关键字搜索。此外，您还可以将网站邮箱置于合法保留状态。有关详细信息，请参阅[就地电子数据展示](in-place-ediscovery-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要在 Office 365 中将网站邮箱置于法定保留状态，必须向其分配 Exchange Online（计划 2）许可证。如果向网站邮箱分配的是 Exchange Online（计划 1）许可证，必须向其分配单独的 Exchange Online 存档许可证才能将其置于保留状态。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 要在 Office 365 中将网站邮箱置于法定保留状态，必须向其分配 Exchange Online（计划 2）许可证。如果向网站邮箱分配的是 Exchange Online（计划 1）许可证，必须向其分配单独的 Exchange Online 存档许可证才能将其置于保留状态。
 
 
 网站邮箱的工作方式

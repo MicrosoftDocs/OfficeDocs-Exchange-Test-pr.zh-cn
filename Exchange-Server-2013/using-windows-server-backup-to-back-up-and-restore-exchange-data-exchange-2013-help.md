@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Microsoft 的[首选体系结构](https://blogs.technet.com/b/exchange/archive/2014/04/21/the-preferred-architecture.aspx)的Exchange Server 2013利用了称为Exchange本机数据保护的概念。Exchange本机数据保护依赖本机Exchange功能来保护您的邮箱数据，而无需使用传统的备份。但如果您想要创建的备份，包括插件Windows Server备份 (WSB) 使您能够创建 Exchange 的基于卷影复制服务 VSS 备份Exchange数据的Exchange 。若要支持 Exchange 的备份，您必须安装 WSB 功能。
 

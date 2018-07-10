@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Project Server 2013_
+_**适用于：** Exchange Server 2013, Project Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 Exchange Web 服务 (EWS) 运行状况设置监视 EWS 服务的整体运行状况。EWS 运行状况设置与以下运行状况设置密切相关：
 

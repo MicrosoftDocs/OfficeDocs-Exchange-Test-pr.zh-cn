@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 此主题中的内容尚未针对 Microsoft Exchange Server 2013 进行更新。虽然尚未更新，但仍可能适用于 Exchange 2013。如果您仍需要帮助，请查看下面的社区资源。
 
@@ -64,18 +64,9 @@ Exchange 安装程序要求对下列 Exchange 对象启用权限继承：
 <p><strong>值</strong>︰ 1</p></li>
 <li><p>退出注册表编辑器。</p></li>
 </ol>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，此配置对象属性框的&amp;quot;安全&amp;quot;选项卡未启用。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 默认情况下，此配置对象属性框的&amp;quot;安全&amp;quot;选项卡未启用。
 
 </li>
 <li><p>打开 Exchange 系统管理器，找到有问题的对象，右键单击该对象，并选择&amp;quot;属性&amp;quot;。</p></li>
@@ -88,18 +79,8 @@ Exchange 安装程序要求对下列 Exchange 对象启用权限继承：
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果不正确地修改 Active Directory 对象的属性，使用 ADSI 编辑，LDP 工具，或者另一个 LDAP 版本 3 客户端时，可能会导致严重的问题。这些问题可能要求您重新安装 Microsoft Windows Server™ 2003年和 / 或 Exchange Server。修改 Active Directory 对象属性需要您自担风险。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 如果不正确地修改 Active Directory 对象的属性，使用 ADSI 编辑，LDP 工具，或者另一个 LDAP 版本 3 客户端时，可能会导致严重的问题。这些问题可能要求您重新安装 Microsoft Windows Server™ 2003年和 / 或 Exchange Server。修改 Active Directory 对象属性需要您自担风险。
 
 
 
@@ -119,7 +100,7 @@ Exchange 安装程序要求对下列 Exchange 对象启用权限继承：
 <li><p>选择&amp;quot;安全&amp;quot;选项卡，再单击&amp;quot;高级&amp;quot;。</p></li>
 <li><p>选择&amp;quot;允许可继承的权限从父对象传送到此对象和子对象&amp;quot;以重新启用权限继承。</p></li>
 <li><p>选择&amp;quot;确定&amp;quot;两次应用更改。</p></li>
-<li><p>等待 Active Directory 复制，按照 Microsoft 知识库文章 232072&amp;quot;在 Active Directory 直接复制合作伙伴间启动复制&amp;quot;(<a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=232072" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=232072</a>)（英文）中的指示传播更改或强制 Active Directory 复制。</p></li>
+<li><p>等待 Active Directory 复制，按照 Microsoft 知识库文章 232072&amp;quot;在 Active Directory 直接复制合作伙伴间启动复制&amp;quot;(<a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=232072" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=232072</a>)（英文）中的指示传播更改或强制 Active Directory 复制。</p></li>
 </ol></td>
 </tr>
 </tbody>

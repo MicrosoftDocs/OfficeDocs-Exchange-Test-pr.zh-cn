@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-05-26_
+_**上一次修改主题：** 2016-05-26_
 
 下面介绍了与 Microsoft Exchange Server 2013（大多数的内置反垃圾邮件功能与 Microsoft Exchange Server 2010 相同）相比，在云（Microsoft Exchange Online 或 Microsoft Exchange Online Protection）中使用 Exchange 反垃圾邮件保护的好处：
 

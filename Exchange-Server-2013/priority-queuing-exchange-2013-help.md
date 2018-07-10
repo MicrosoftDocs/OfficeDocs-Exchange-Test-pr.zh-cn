@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 *排队优先级*是 Microsoft Exchange Server 2013 的一项功能，该功能使发件人定义的邮件优先级能够影响邮箱服务器上传输服务对邮件的处理。
 

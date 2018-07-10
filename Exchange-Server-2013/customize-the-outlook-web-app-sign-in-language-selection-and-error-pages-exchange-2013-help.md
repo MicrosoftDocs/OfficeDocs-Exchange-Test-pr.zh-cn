@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 本主题解释如何对 Outlook Web App 自定义登录页、语言选择页和错误页的颜色和图像。
 
@@ -23,18 +23,8 @@ Outlook Web App号中、 语言中选择和错误页上创建了基于主题的�
 
 如果用户有多个支持 Outlook Web App 的服务器并想要让这些服务器都使用相同的登陆页、语言页和错误页，则必须将修改的文件复制到每个服务器上。还应该创建自定义文件的备份副本。如果重新安装或升级 Exchange，将覆盖主题文件夹中的所有文件。重新安装或升级完成后，必须将自定义文件复制回相应的文件夹。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>开始创建自定义登陆页和注销页前，备份将要修改的所有文件的副本。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 开始创建自定义登陆页和注销页前，备份将要修改的所有文件的副本。
 
 
 有关创建自定义主题的信息，请参阅[为 Outlook Web App 创建主题](create-a-theme-for-outlook-web-app-exchange-2013-help.md)。
@@ -47,18 +37,8 @@ Outlook Web App号中、 语言中选择和错误页上创建了基于主题的�
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -135,16 +115,6 @@ Outlook Web App号中、 语言中选择和错误页上创建了基于主题的�
 
 5.  刷新浏览器窗口。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要查看所做修改的效果，可以在保存每个修改后保持正在编辑的 .css 文件处于打开状态并刷新浏览器窗口。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 若要查看所做修改的效果，可以在保存每个修改后保持正在编辑的 .css 文件处于打开状态并刷新浏览器窗口。
 

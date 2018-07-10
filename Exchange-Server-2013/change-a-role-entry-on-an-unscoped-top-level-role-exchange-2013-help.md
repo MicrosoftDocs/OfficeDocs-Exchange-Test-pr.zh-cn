@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-03_
+_**上一次修改主题：** 2012-10-03_
 
 未区分范围顶级管理角色的管理角色条目引用脚本和非Exchange cmdlet 和其参数，要使可供分配的角色。通过更改角色条目上可用的参数，您可以控制哪些分配与非Exchange cmdlet 的脚本可以执行的任务。有关未区分范围的角色条目的详细信息，请参阅[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要更改包含 Exchange cmdlet 的管理角色的角色条目，请参阅<a href="change-a-role-entry-exchange-2013-help.md">更改角色条目</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果要更改包含 Exchange cmdlet 的管理角色的角色条目，请参阅<a href="change-a-role-entry-exchange-2013-help.md">更改角色条目</a>。
 
 
 若要了解与角色相关的其他管理任务，请查看[高级权限](advanced-permissions-exchange-2013-help.md)。
@@ -51,18 +41,8 @@ _**上一次修改主题：**2012-10-03_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -97,18 +77,8 @@ _**上一次修改主题：**2012-10-03_
 
   - 指定*UnscopedTopLevel*参数，以指示您要更改未区分范围的顶级角色上的角色项。如果不指定此参数，未区分范围角色的角色项更改时，将发生错误。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您不能撤消删除操作。如果您误删除角色条目中的参数，则必须再次手动添加它。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 您不能撤消删除操作。如果您误删除角色条目中的参数，则必须再次手动添加它。
 
 
 若要删除角色条目中的参数，请使用以下语法。
@@ -133,18 +103,8 @@ _**上一次修改主题：**2012-10-03_
 
 如果您不想要有权访问脚本或非Exchange cmdlet 的角色，而只删除参数不是完全在角色中删除关联的角色条目。有关如何从角色中删除一个角色条目的详细信息，请参阅[从角色中删除一个角色条目](remove-a-role-entry-from-a-role-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您不能撤消删除操作。如果错误地从角色条目中删除所有参数，您必须再次手动添加它们。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 您不能撤消删除操作。如果错误地从角色条目中删除所有参数，您必须再次手动添加它们。
 
 
 若要删除角色条目中的所有参数，请使用以下语法。
@@ -165,18 +125,8 @@ _**上一次修改主题：**2012-10-03_
 
   - 指定*UnscopedTopLevel*参数，以指示您要更改未区分范围角色上的角色项。如果不指定此参数，未区分范围的顶级角色的角色项更改时，将发生错误。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>指定只有<em>Parameters</em>参数时，只在命令中指定的参数包含在角色条目。所有其它参数将被移除。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 指定只有<em>Parameters</em>参数时，只在命令中指定的参数包含在角色条目。所有其它参数将被移除。
 
 
 若要指定一组特定的参数，请使用以下语法。

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2017-02-06_
+_**上一次修改主题：** 2017-02-06_
 
 ## Exchange 2013 性能计数器
 
@@ -270,18 +270,8 @@ _**上一次修改主题：**2017-02-06_
 
 下表显示了活动日志 I/O 延迟要求计数器及其可接受的阈值。在超出阈值时，客户体验会下降。例如，用户可能会体验到邮件传递延迟或缓慢的系统性能。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2013 中的普通存储延迟指导与 Exchange 2010 中的指导非常相似。可以在<a href="https://go.microsoft.com/fwlink/p/?linkid=525622">邮箱服务器计数器</a>中找到更多数据库计数器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Exchange 2013 中的普通存储延迟指导与 Exchange 2010 中的指导非常相似。可以在<a href="https://go.microsoft.com/fwlink/p/?linkid=525622">邮箱服务器计数器</a>中找到更多数据库计数器。
 
 
 
@@ -499,18 +489,8 @@ _**上一次修改主题：**2017-02-06_
 
 下表显示了可接受的阈值和有关信息存储计数器的信息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2013 中的普通存储延迟指导与 Exchange 2010 中的指导非常相似。可以在<a href="https://go.microsoft.com/fwlink/p/?linkid=525622">邮箱服务器计数器</a>中找到更多信息存储计数器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Exchange 2013 中的普通存储延迟指导与 Exchange 2010 中的指导非常相似。可以在<a href="https://go.microsoft.com/fwlink/p/?linkid=525622">邮箱服务器计数器</a>中找到更多信息存储计数器。
 
 
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 安装统一消息 (UM) 后，您也安装了一组常见的默认音频文件，这些文件用于语音邮件系统和菜单提示、问候语以及信息通知。虽然您可以创建功能完整的 UM 自动助理或仅使用默认语音提示的拨号计划，但这些提示会因为过于普通而无法用作许多公司的可接受公共接口。本主题讨论 UM 拨号计划和自动助理使用的系统和菜单提示、问候语及信息通知，以及其在呼叫方访问语音邮件系统时的工作方式。
 
@@ -113,18 +113,8 @@ UM 自动助理的问候语、信息通知和菜单提示
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不支持修改已安装的系统提示语。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 不支持修改已安装的系统提示语。
 
 
 语音提示和问候语概述
@@ -143,32 +133,12 @@ UM 自动助理的问候语、信息通知和菜单提示
 
   - “若要与某人联系，只需说出其姓名即可。”
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不支持修改已安装的系统提示。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 不支持修改已安装的系统提示。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在邮箱服务器上启动后，统一消息服务会验证所有系统提示是否可用。如果找不到系统提示，统一消息会返回错误。若要修复返回的错误，请使用事件查看器找到事件，然后将“事件属性”窗口中列出的文件从安装 DVD 复制到邮箱服务器上的相应文件夹中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在邮箱服务器上启动后，统一消息服务会验证所有系统提示是否可用。如果找不到系统提示，统一消息会返回错误。若要修复返回的错误，请使用事件查看器找到事件，然后将“事件属性”窗口中列出的文件从安装 DVD 复制到邮箱服务器上的相应文件夹中。
 
 
 ## UM 拨号计划的问候语和信息通知

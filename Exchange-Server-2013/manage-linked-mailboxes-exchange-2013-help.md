@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-11-27_
+_**上一次修改主题：** 2012-11-27_
 
 链接邮箱是由独立的受信任林中的用户访问的邮箱。 如果组织在资源林中部署 Exchange，则可能需要使用链接邮箱。 资源林方案使组织可以将 Exchange 集中在单个林中，同时允许使用位于一个或多个受信任林（称为*帐户林*）中的用户帐户访问 Exchange 组织。 在部署了 Exchange 的林中不存在要访问链接邮箱的用户帐户。 因此，创建与 Exchange 相同的林中存在的已禁用用户帐户并将其与对应链接邮箱关联。
 
@@ -25,18 +25,8 @@ _**上一次修改主题：**2012-11-27_
 
 ![具有资源林的复杂 Exchange 组织](images/Aa998031.706725cf-e520-4b89-a275-acd8fb58943a(EXCHG.150).gif "具有资源林的复杂 Exchange 组织")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须设置 Exchange 林与至少一个帐户林之间的信任，然后您才能创建链接邮箱。 您至少必须设置单向的传出信任，以便 Exchange 林信任帐户林。 有关详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/jj156983(v=exchg.150)">了解有关设置林信任以支持链接的邮箱的详细信息</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 必须设置 Exchange 林与至少一个帐户林之间的信任，然后您才能创建链接邮箱。 您至少必须设置单向的传出信任，以便 Exchange 林信任帐户林。 有关详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/jj156983(v=exchg.150)">了解有关设置林信任以支持链接的邮箱的详细信息</a>。
 
 
 ## 在开始之前，您需要知道什么？
@@ -53,18 +43,8 @@ _**上一次修改主题：**2012-11-27_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -81,18 +61,8 @@ _**上一次修改主题：**2012-11-27_
 
 4.  如果您的组织已配置 Exchange 林信任帐户林的单向传出信任，则系统会提示您提供帐户林中的管理员凭据，以便您可以获得对信任林中域控制器的访问权限。 键入帐户林中的管理员帐户的用户名和密码，然后单击“下一步”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您已创建双向信任或已创建帐户林信任 Exchange 林的另一个单向传出信任，则系统将不会提示您提供管理员凭据。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果您已创建双向信任或已创建帐户林信任 Exchange 林的另一个单向传出信任，则系统将不会提示您提供管理员凭据。
 
 
 5.  完成“选择链接主帐户”页上的以下框。
@@ -111,36 +81,16 @@ _**上一次修改主题：**2012-11-27_
     
       - **\* 用户登录名**   使用此框可以键入创建链接邮箱所需的用户登录名。 在此处键入用户名。 如果未指定别名，则此名称将用在链接邮箱的电子邮件地址的左侧部分。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>因为在您创建链接邮箱时会禁用在 Exchange 林中创建的用户帐户，所以用户不使用用户登录名来登录到链接邮箱。 他们使用其帐户林中的凭据登录。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 因为在您创建链接邮箱时会禁用在 Exchange 林中创建的用户帐户，所以用户不使用用户登录名来登录到链接邮箱。 他们使用其帐户林中的凭据登录。
 
 
 7.  单击“更多选项”配置下面的框。 否则，请跳到步骤 8 以保存新的链接邮箱。
     
       - **别名**   键入指定链接邮箱的电子邮件别名的别名。 用户的别名是电子邮件地址中 (@) 符号左侧的部分。 它在林中必须是唯一的。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您将此框保留为空，则会对电子邮件别名使用“用户登录名称”的用户名部分中的值。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 如果您将此框保留为空，则会对电子邮件别名使用“用户登录名称”的用户名部分中的值。
     
       - **名字**、**姓名缩写**、**姓氏**
     
@@ -176,18 +126,8 @@ _**上一次修改主题：**2012-11-27_
 
 您也可同时为多个链接邮箱更改属性。 有关详细信息，请参阅[管理用户邮箱](manage-user-mailboxes-exchange-2013-help.md)主题中的“批量编辑用户邮箱”部分。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>完成此任务的估计时间将会根据您要查看或更改的属性数量而异。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 完成此任务的估计时间将会根据您要查看或更改的属性数量而异。
 
 
 ## 使用 EAC 更改链接邮箱属性
@@ -248,18 +188,8 @@ _**上一次修改主题：**2012-11-27_
 
   - “邮箱使用情况”   此区域显示邮箱的总体大小和已使用总体邮箱配额的百分比。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>为了获取前两个框中显示的信息，EAC 将查询托管邮箱的邮箱数据库。 如果 EAC 无法与包含邮箱数据库的 Exchange 存储通信，这些框将为空。 如果用户还没有首次登录邮箱，则会显示警告消息。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 为了获取前两个框中显示的信息，EAC 将查询托管邮箱的邮箱数据库。 如果 EAC 无法与包含邮箱数据库的 Exchange 存储通信，这些框将为空。 如果用户还没有首次登录邮箱，则会显示警告消息。
 
 
 单击“更多选项”以查看或更改邮箱存储配额和邮箱的已删除邮件保留设置。
@@ -292,18 +222,8 @@ _**上一次修改主题：**2012-11-27_
     
       - “自定义地址类型”   单击此按钮，然后在“\* 电子邮件地址”框中键入一个支持的非 SMTP 电子邮件地址。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>除 X.400 地址以外，Exchange 不验证自定义地址的格式是否正确。 您必须确保所指定的自定义地址符合该地址类型的格式要求。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 除 X.400 地址以外，Exchange 不验证自定义地址的格式是否正确。 您必须确保所指定的自定义地址符合该地址类型的格式要求。
 
 
   - **基于应用到此收件人的电子邮件地址策略自动更新电子邮件地址**   如果您希望在更改组织中的电子邮件地址策略时自动更新收件人的电子邮件地址，则选中此复选框。 此框在默认情况下处于选中状态。
@@ -322,18 +242,8 @@ _**上一次修改主题：**2012-11-27_
 
   - **统一消息** 默认情况下禁用此功能。 启用统一消息 (UM) 时，用户将能够使用组织的 UM 功能，并且向用户应用一组默认的 UM 属性。 单击“启用”为邮箱启用 UM。 有关如何启用 UM 的信息，请参阅[为用户启用语音邮件](enable-a-user-for-voice-mail-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>必须有 UM 拨号计划以及 UM 邮箱策略方可启用 UM。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 必须有 UM 拨号计划以及 UM 邮箱策略方可启用 UM。
 
 
   - **移动设备**   使用此部分可查看和更改 Exchange ActiveSync（默认情况下会启用）的设置。 Exchange ActiveSync 支持从移动设备访问 Exchange 邮箱。 单击“禁用 Exchange ActiveSync”可为邮箱禁用此功能。
@@ -356,18 +266,8 @@ _**上一次修改主题：**2012-11-27_
     
       - “URL”   使用此框可以提供指向某网站的 URL，该网站提供有关邮箱上的诉讼保留的信息或指南。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>只有在使用 Outlook 2010 或更高版本时，这些框的文本才会显示在用户的邮箱中。 但不会显示在 Outlook Web App 或其他电子邮件客户端中。 要在 Outlook 中查看“说明”和“URL”框中的文本，请单击“文件”选项卡，在“信息”页上的“帐户设置”下，您将会看到诉讼保留注释。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 只有在使用 Outlook 2010 或更高版本时，这些框的文本才会显示在用户的邮箱中。 但不会显示在 Outlook Web App 或其他电子邮件客户端中。 要在 Outlook 中查看“说明”和“URL”框中的文本，请单击“文件”选项卡，在“信息”页上的“帐户设置”下，您将会看到诉讼保留注释。
 
 
   - **存档**   如果用户没有存档邮箱，则禁用此功能。 要启用存档邮箱，请单击“启用”。 如果用户具有存档邮箱，则会显示存档邮箱的大小和使用情况统计信息。 单击“编辑详细信息”来查看和更改以下存档邮箱设置：
@@ -390,18 +290,8 @@ _**上一次修改主题：**2012-11-27_
     
       - **收件人限制**   此设置控制用户可将邮件发送到的收件人最大数目。 选中“最大收件人数”复选框限制电子邮件的“收件人:”、“抄送:”和“密件抄送:”行上允许的收件人数， 然后指定最大收件人数。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>对于内部部署 Exchange 组织，收件人数目不受限。 对于 Exchange 在线组织，限制是 500 个收件人。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > 对于内部部署 Exchange 组织，收件人数目不受限。 对于 Exchange 在线组织，限制是 500 个收件人。
 
 
   - **邮件大小限制**   这些设置控制用户可以发送和接收的邮件大小。 单击“编辑详细信息”可查看和更改发送和接收的邮件的最大大小。
@@ -434,18 +324,8 @@ _**上一次修改主题：**2012-11-27_
 
 使用“邮件提示”部分可添加邮件提示，以便在用户向此收件人发送邮件时告知用户潜在问题。 邮件提示是在将收件人添加到新电子邮件的“收件人”、“抄送”或“密件抄送”行中时，信息栏中显示的文本。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>邮件提示可包含 HTML 标记，但不允许包含脚本。 自定义邮件提示的长度不能超过 175 个显示的字符。 此字符限制不计入 HTML 标记。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 邮件提示可包含 HTML 标记，但不允许包含脚本。 自定义邮件提示的长度不能超过 175 个显示的字符。 此字符限制不计入 HTML 标记。
 
 
 ## 邮箱委派

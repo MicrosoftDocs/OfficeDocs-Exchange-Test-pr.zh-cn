@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 当为用户启用统一消息时，要求您分配一个分机号码和一个将用户关联到 UM 拨号计划的 UM 邮箱策略。用户启用 UM 后，可以为有相同拨号计划的用户分配其他分机号码，但是同一拨号计划中的分机号码必须是唯一的。在一些部署中，用户可能需要在两个独立的拨号计划中分配相同的分机号码。如果是这个情况，您可以将用户关联到辅助 UM 拨号计划。例如，如果用户有两个物理电话或者在不同地点之间出差，这将非常有用。
 
@@ -33,18 +33,8 @@ UM features that operate differently for secondary dial plans
 
 如果您正在使用电话分机拨号计划，并且需要为用户提供相同的分机号码，您将需要创建一个辅助拨号计划，启用为用户启用 UM 并为用户提供相同分机号码。这是因为每个分机号码在拨号计划中必须是唯一的。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对可以为启用 UM 的用户添加的辅助分机号码的数量没有限制。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 对可以为启用 UM 的用户添加的辅助分机号码的数量没有限制。
 
 
 有时，用户可能在不同地点之间出差，拥有两个或更多电话，或者可能希望通过一个直接拨入 (DID) 分机号码接收语音邮件，而通过另一个 DID 分机号码接收传真。为此，必须再为用户邮箱添加一个 DID 分机号码，在某些情况下需添加辅助拨号计划。

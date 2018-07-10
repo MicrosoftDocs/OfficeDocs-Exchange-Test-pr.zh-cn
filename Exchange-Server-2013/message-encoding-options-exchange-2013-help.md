@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Exchange 中可使用的邮件编码选项可指定邮件特性，例如 MIME 和非 MIME 字符集、二进制编码以及附件格式。您可以在以下位置指定邮件编码选项：
 
@@ -101,13 +101,13 @@ Outlook Web App 中可用的邮件编码选项
 
 配置邮件联系人或邮件用户的邮件编码选项后，选项将应用于发送到特定收件人的所有邮件。对于组织中的邮件联系人和邮件用户，可用于邮件编码的配置选项如下：
 
-  - **UsePreferMessageFormat：**此参数指定为邮件联系人配置的邮件格式设置是否覆盖为远程域配置的全局设置。如果禁用该设置，Exchange 将忽略该收件人的其他邮件编码选项并且由远程域的配置或邮件发送人配置的设置确定。
+  - **UsePreferMessageFormat：** 此参数指定为邮件联系人配置的邮件格式设置是否覆盖为远程域配置的全局设置。如果禁用该设置，Exchange 将忽略该收件人的其他邮件编码选项并且由远程域的配置或邮件发送人配置的设置确定。
 
-  - **MessageFormat：**此参数指定邮件格式。可以指定 Text 或 Mime 作为邮件格式。此设置值依赖于 *MessageBodyFormat* 参数。如果邮件正文格式为 Html 或 TextAndHtml，则必须将此参数设置为 Mime。
+  - **MessageFormat：** 此参数指定邮件格式。可以指定 Text 或 Mime 作为邮件格式。此设置值依赖于 *MessageBodyFormat* 参数。如果邮件正文格式为 Html 或 TextAndHtml，则必须将此参数设置为 Mime。
 
-  - **MessageBodyFormat：**此参数指定邮件正文格式。可以指定 Text、Html 或 TextAndHtml。此设置值依赖于 *MessageFormat* 参数。如果邮件格式为 Text，则此参数也必须设置为 Text。
+  - **MessageBodyFormat：** 此参数指定邮件正文格式。可以指定 Text、Html 或 TextAndHtml。此设置值依赖于 *MessageFormat* 参数。如果邮件格式为 Text，则此参数也必须设置为 Text。
 
-  - **MacAttachmentFormat：**此参数指定邮件的 Apple Macintosh 操作系统附件格式。可以指定 BinHex、UuEncode、AppleSingle 或 AppleDouble。此设置值依赖于 *MessageFormat* 参数。如果邮件格式设置为 Text，则必须将此参数设置为 BinHex 或 UuEncode。如果邮件格式设置为 Mime，则必须将此参数设置为 BinHex、AppleSingle 或 AppleDouble。
+  - **MacAttachmentFormat：** 此参数指定邮件的 Apple Macintosh 操作系统附件格式。可以指定 BinHex、UuEncode、AppleSingle 或 AppleDouble。此设置值依赖于 *MessageFormat* 参数。如果邮件格式设置为 Text，则必须将此参数设置为 BinHex 或 UuEncode。如果邮件格式设置为 Mime，则必须将此参数设置为 BinHex、AppleSingle 或 AppleDouble。
 
 您需要在 Exchange 命令行管理程序中使用这些参数为邮件用户和邮件联系人设置邮件编码选项。有关详细信息，请参阅下列主题：
 

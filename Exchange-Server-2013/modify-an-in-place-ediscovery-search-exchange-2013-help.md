@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-08-27_
+_**上一次修改主题：** 2014-08-27_
 
 创建就地电子数据展示搜索之后，您可以对其进行修改，以更改搜索参数。例如，您可以更改要搜索的邮箱、日期范围、关键字、日志记录选项，也可以指定不同的发现邮箱来存储搜索结果。重新启动搜索时，将使用您对搜索属性所做的所有更改。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果就地电子数据展示搜索正在运行，您必须先停止搜索，然后才能对其进行修改。重新启动搜索时，上次运行搜索得到的结果将从发现邮箱中删除。不过，以前运行的搜索的日志将会得到保存。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 如果就地电子数据展示搜索正在运行，您必须先停止搜索，然后才能对其进行修改。重新启动搜索时，上次运行搜索得到的结果将从发现邮箱中删除。不过，以前运行的搜索的日志将会得到保存。
 
 
 ## 在开始之前，您需要知道什么？
@@ -57,18 +47,8 @@ _**上一次修改主题：**2014-08-27_
     
       - 在\&quot;邮箱\&quot;页面上，修改要搜索的邮箱。您可以跨所有邮箱搜索，或选择要搜索的特定邮箱。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>您无法使用&amp;quot;搜索所有邮箱&amp;quot;选项以将所有邮箱放在保留的 Exchange 2013 邮箱服务器上。要创建&amp;quot;就地保留&amp;quot;，您必须选择&amp;quot;指定要搜索的邮箱&amp;quot;。有关更多详细信息，请参阅<a href="create-or-remove-an-in-place-hold-exchange-2013-help.md">创建或删除就地保留</a>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!important]
+        > 您无法使用&amp;quot;搜索所有邮箱&amp;quot;选项以将所有邮箱放在保留的 Exchange 2013 邮箱服务器上。要创建&amp;quot;就地保留&amp;quot;，您必须选择&amp;quot;指定要搜索的邮箱&amp;quot;。有关更多详细信息，请参阅<a href="create-or-remove-an-in-place-hold-exchange-2013-help.md">创建或删除就地保留</a>。
     
       - 在\&quot;搜索查询\&quot;页面上，修改下列字段：
         
@@ -82,18 +62,8 @@ _**上一次修改主题：**2014-08-27_
         
           - \&quot;指定保留项目的天数（相对于收到日期）\&quot; 使用此选项以在指定周期内保留项目。例如，如果您的组织需要将所有邮件至少保留七年，可使用此选项。可使用\&quot;基于时间\&quot;的就地保留以及保持政策，确保在七年后删除项目。
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>当出于法律目的&amp;quot;就地保留&amp;quot;邮箱或项目时，通常建议无限期保持项目，并在完成案件或调查后删除保留。</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!important]
+            > 当出于法律目的&amp;quot;就地保留&amp;quot;邮箱或项目时，通常建议无限期保持项目，并在完成案件或调查后删除保留。
 
 
 4.  单击\&quot;保存\&quot;。
@@ -112,28 +82,15 @@ _**上一次修改主题：**2014-08-27_
 
   - 使用命令行管理程序的 **Get-MailboxSearch** cmdlet 检查搜索的属性。关于如何检查邮箱搜索的属性的示例，请参阅位于 [Get-MailboxSearch](https://technet.microsoft.com/zh-cn/library/dd351021\(v=exchg.150\)) 的\&quot;示例\&quot;部分。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果使用 Exchange Online 中的 <strong>Get-MailboxSearch</strong> 检索有关电子数据展示搜索的信息，您必须指定搜索名称，以返回搜索属性的完整列表，例如，<code>Get-MailboxSearch &quot;Contoso Legal Case&quot;</code>。如果您在不使用任何参数的情况下运行 <strong>Get-MailboxSearch</strong> cmdlet，则不会返回以下属性：
-<ul>
-<li><p>SourceMailboxes</p></li>
-<li><p>Sources</p></li>
-<li><p>SearchQuery</p></li>
-<li><p>ResultsLink</p></li>
-<li><p>PreviewResultsLink</p></li>
-<li><p>Errors</p></li>
-</ul>
-原因是需要通过很多资源为组织中的所有电子数据展示搜索返回这些属性。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果使用 Exchange Online 中的 <strong>Get-MailboxSearch</strong> 检索有关电子数据展示搜索的信息，您必须指定搜索名称，以返回搜索属性的完整列表，例如，<code>Get-MailboxSearch &quot;Contoso Legal Case&quot;</code>。如果您在不使用任何参数的情况下运行 <strong>Get-MailboxSearch</strong> cmdlet，则不会返回以下属性：
+> <ul>
+> <li><p>SourceMailboxes</p></li>
+> <li><p>Sources</p></li>
+> <li><p>SearchQuery</p></li>
+> <li><p>ResultsLink</p></li>
+> <li><p>PreviewResultsLink</p></li>
+> <li><p>Errors</p></li>
+> </ul>
+> 原因是需要通过很多资源为组织中的所有电子数据展示搜索返回这些属性。
 

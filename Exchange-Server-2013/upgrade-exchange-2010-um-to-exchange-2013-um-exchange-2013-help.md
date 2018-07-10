@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 当将使用统一消息 (UM) 的 Microsoft Exchange 2010 组织升级到 Exchange 2013 统一消息时，有些步骤要求执行，而其他已完成的步骤则作为 Exchange 2010 UM 部署的一部分。根据您现有的电话环境，以及创建且配置为可支持 Exchange 2010 中统一消息的 UM 组件，您可能需要部署其他电话设备，包括 Voice over IP (VoIP) 网关、IP 专用交换机 (PBX) 或传统 PBX 或启用 SIP 的 PBX，然后创建和配置 Exchange 2013 UM 需要的任何其他 UM 组件。
 
@@ -29,34 +29,14 @@ _**上一次修改主题：**2016-12-09_
 
   - 检查是否已正确安装和配置了运行 Microsoft Exchange 统一消息呼叫路由器（UM 呼叫路由器）服务的客户端访问服务器以及运行 Microsoft Exchange 统一消息服务 (UM) 的邮箱服务器。有关 UM 服务的详细信息，请参阅 [UM 服务](um-services-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在配置 VoIP 网关或 IP PBX 以将 UM SIP 和 RTP 通信发送到 Exchange 2013 客户端访问服务器之前，您应在组织内部署至少一个 Exchange 2013 邮箱服务器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!warning]
+    > 在配置 VoIP 网关或 IP PBX 以将 UM SIP 和 RTP 通信发送到 Exchange 2013 客户端访问服务器之前，您应在组织内部署至少一个 Exchange 2013 邮箱服务器。
 
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您该如何做？
@@ -67,18 +47,8 @@ UM 语言包允许呼叫者和 Outlook Voice Access 用户能够用多种语言�
 
 默认情况下，当您安装 Exchange 2013 邮箱服务器时，会安装“美国英语”(en-US) 语言包。这是您的拨号计划的唯一可用语言选项，除非您安装了另一个 UM 语言包。（不能删除美国英语，除非要从计算机中删除邮箱服务器。）在 Exchange 2013 邮箱服务器上安装 UM 语言包后，当您配置拨号计划的默认语言时，与该语言包关联的语言将被列为可用选项。在默认情况下，由于创建自动助理时将 UM 自动助理关联到 UM 拨号计划，所以将使用关联的 UM 拨号计划的默认语言设置。但是，创建 UM 自动助理后，可以更改此设置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果美国英语是要为您的拨号计划提供的唯一语言，则可以跳过此步骤并转到步骤 2。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果美国英语是要为您的拨号计划提供的唯一语言，则可以跳过此步骤并转到步骤 2。
 
 
 从 [Exchange Server 2013 UM 语言包](https://go.microsoft.com/fwlink/p/?linkid=266542)下载 UM 语言包后，可以使用 setup.exe 命令或运行 *\<UMLanguagePack\>*.exe 安装程序来添加 UM 语言包。有关详细信息，请参阅[安装 UM 语言包](install-a-um-language-pack-exchange-2013-help.md)。
@@ -155,7 +125,7 @@ UM 语言包允许呼叫者和 Outlook Voice Access 用户能够用多种语言�
 
   - 第三方商业证书
 
-在默认情况下，当安装 Exchange 2013 时，会创建两个自签名证书：**Microsoft Exchange Server 身份验证证书**和 **Microsoft Exchange**。“Microsoft Exchange”自签名证书用于 UM 加密数据，但您必须要为 UM 和 UM 呼叫路由器服务分配证书。该自签名证书可以被复制，然后在导入到 VoIP 网关、IP PBX、以及启用 SIP 的 PBX 上。然而，将 UM 与 Microsoft Lync Server 集成时，该证书不可用。
+在默认情况下，当安装 Exchange 2013 时，会创建两个自签名证书：** Microsoft Exchange Server 身份验证证书**和 **Microsoft Exchange**。“Microsoft Exchange”自签名证书用于 UM 加密数据，但您必须要为 UM 和 UM 呼叫路由器服务分配证书。该自签名证书可以被复制，然后在导入到 VoIP 网关、IP PBX、以及启用 SIP 的 PBX 上。然而，将 UM 与 Microsoft Lync Server 集成时，该证书不可用。
 
 若要使 UM 加密在 Exchange 2013 服务器与 VoIP 网关、IP PBX 以及启用 SIP 的 PBX 间传递的数据，需要执行以下操作：
 
@@ -175,35 +145,15 @@ UM 语言包允许呼叫者和 Outlook Voice Access 用户能够用多种语言�
     
     6.  验证所包含的域是否正确，然后选择“完成”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>当使用 EAC 创建证书时，系统不会提示您为证书启用服务。证书创建完成之后，可以使用 EAC 启用服务。有关如何为服务启用证书的详细信息，请参阅<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">将证书分配给该 UM 和 UM 呼叫路由器服务</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 当使用 EAC 创建证书时，系统不会提示您为证书启用服务。证书创建完成之后，可以使用 EAC 启用服务。有关如何为服务启用证书的详细信息，请参阅<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">将证书分配给该 UM 和 UM 呼叫路由器服务</a>。
     
     在命令行管理程序中运行以下命令来创建 Exchange 自签名证书。
     
         New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果通过使用 <em>Services</em> 参数指定想启用的服务，系统会提示您为创建的证书启用服务。在此示例中，系统会提示您为统一消息和统一消息呼叫路由器服务启用证书。有关如何为服务启用证书的详细信息，请参阅<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">将证书分配给该 UM 和 UM 呼叫路由器服务</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果通过使用 <em>Services</em> 参数指定想启用的服务，系统会提示您为创建的证书启用服务。在此示例中，系统会提示您为统一消息和统一消息呼叫路由器服务启用证书。有关如何为服务启用证书的详细信息，请参阅<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">将证书分配给该 UM 和 UM 呼叫路由器服务</a>。
 
 
   - 导入要用于组织中所有 Exchange 2013 客户端访问服务器和邮箱服务器的证书。如果使用 Exchange 2013 自签名证书，您需要复制证书，并将其导入到 VoIP 网关、IP PBX 或启用 SIP 的 PBX 中。如果使用 Exchange 2010 的自签名证书，主题备用名称 (SAN) 必须包含所有 Exchange 2013 服务器的计算机名称。如果组织中有 Exchange 2010 统一消息服务器，则可以使用 Exchange 2013 自签名证书，但您必须将 Exchange 2010 统一消息服务器的计算机名称添加到 Exchange 2013 证书中的 SAN。
@@ -396,18 +346,8 @@ UM IP 网关代表物理 Voice over IP (VoIP) 网关、IP PBX 或启用 SIP 的 
 
     New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您不可以配置或更改 UM 智能寻线的设置。如果要更改 UM 智能寻线的配置设置，则必须将其删除并使用正确设置添加新的 UM 智能寻线。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 您不可以配置或更改 UM 智能寻线的设置。如果要更改 UM 智能寻线的配置设置，则必须将其删除并使用正确设置添加新的 UM 智能寻线。
 
 
 ## 步骤 10：创建或配置 UM 自动助理
@@ -464,34 +404,14 @@ UM IP 网关代表物理 Voice over IP (VoIP) 网关、IP PBX 或启用 SIP 的 
 
 3.  在“新建 UM 邮箱策略”页面上，在“名称”框中，输入新的 UM 邮箱策略的名称。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>使用此框可为 UM 邮箱策略指定唯一名称。此名称是 EAC 中出现的显示名。如果在创建 UM 邮箱策略后必须要更改其显示名，则必须首先删除现有的 UM 邮箱策略，然后创建具有相应名称的其他 UM 邮箱策略。如果有任何启用 UM 的用户关联了 UM 邮箱策略，那么您不可以删除该 UM 邮箱策略。UM 邮箱策略名称是必需的，但其仅用于显示目的。由于您的组织可能使用多个 UM 邮箱策略，因此建议您使用对 UM 邮箱策略有意义的名称。UM 邮箱策略名称的最大长度为 64 个字符，可以包括空格。但是，不能包括下列任何字符：&quot; / \ [ ] : ; | = , + * ? &lt; &gt;.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 使用此框可为 UM 邮箱策略指定唯一名称。此名称是 EAC 中出现的显示名。如果在创建 UM 邮箱策略后必须要更改其显示名，则必须首先删除现有的 UM 邮箱策略，然后创建具有相应名称的其他 UM 邮箱策略。如果有任何启用 UM 的用户关联了 UM 邮箱策略，那么您不可以删除该 UM 邮箱策略。UM 邮箱策略名称是必需的，但其仅用于显示目的。由于您的组织可能使用多个 UM 邮箱策略，因此建议您使用对 UM 邮箱策略有意义的名称。UM 邮箱策略名称的最大长度为 64 个字符，可以包括空格。但是，不能包括下列任何字符：&quot; / \ [ ] : ; | = , + * ? &lt; &gt;.
 
 
 4.  单击“保存”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>保存 UM 邮箱策略后，会启用所有默认设置，包括 PIN 策略、语音邮件功能以及“受保护的语音邮件”设置。如果想自定义或更改刚创建的 UM 邮箱策略的任何默认设置，可使用 <strong>Set-UMMailbox</strong> cmdlet 或 EAC 来进行操作。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 保存 UM 邮箱策略后，会启用所有默认设置，包括 PIN 策略、语音邮件功能以及“受保护的语音邮件”设置。如果想自定义或更改刚创建的 UM 邮箱策略的任何默认设置，可使用 <strong>Set-UMMailbox</strong> cmdlet 或 EAC 来进行操作。
 
 
 如果需要，可以在命令行管理程序中运行以下命令，以创建 UM 邮箱策略。
@@ -614,14 +534,11 @@ Exchange 2013 客户端访问服务器是针对统一消息的任何入站呼叫
 
 升级到 Exchange 2013 UM 过程的最后一步是将 VoIP 网关、IP PBX 或启用 SIP 的 PBX 配置为向 Exchange 2013 客户端访问服务器发送传入呼叫（包括呼叫者想给用户留下语音邮件、启用 UM 的使用者呼入 Outlook Voice Access，以及呼叫者拨号到 UM 自动助理等呼叫形式）。所有这些呼叫最初是由 VoIP 网关、IP PBX 或启用 SIP 的 PBX 收到，并转发给 Exchange 2013 组织中的 Exchange 2013 客户端访问服务器。有关详细信息，请参阅下列资源：
 
-  -  
-    [UM 服务](um-services-exchange-2013-help.md)
+  -  [UM 服务](um-services-exchange-2013-help.md)
 
-  -  
-    [支持的 VoIP 网关、IP PBX 和 PBX 的配置说明](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+  -  [支持的 VoIP 网关、IP PBX 和 PBX 的配置说明](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
 
-  -  
-    [Exchange 2013 电话顾问](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
+  -  [Exchange 2013 电话顾问](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
 
 ## 步骤 15：禁用 Exchange 2010 统一消息服务器上的呼叫应答功能
 
@@ -645,18 +562,8 @@ Exchange 2013 客户端访问服务器是针对统一消息的任何入站呼叫
 
     Disable-UMServer -Identity MyUMServer -Immediate $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以使用 Exchange 2010 UM 服务器的 <strong>Disable-UMServer</strong> cmdlet 或 Exchange 2013 邮箱服务器的 <strong>Disable-UMService</strong> cmdlet 禁用呼叫应答功能。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 您可以使用 Exchange 2010 UM 服务器的 <strong>Disable-UMServer</strong> cmdlet 或 Exchange 2013 邮箱服务器的 <strong>Disable-UMService</strong> cmdlet 禁用呼叫应答功能。
 
 
 ## 步骤 16：将 Exchange 2010 统一消息服务器从拨号计划中删除
@@ -692,18 +599,8 @@ Exchange 2013 客户端访问服务器是针对统一消息的任何入站呼叫
 
     Set-UMServer -id MyUMServer -DialPlans SipDP1
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以在 Exchange 2010 统一消息服务器上的命令行管理程序中使用 <strong>Set-UMServer</strong> cmdlet 或在 Exchange 2013 邮箱服务器上使用 <strong>Set-UMService</strong> cmdlet 将 Exchange 2010 UM 服务器从单个或多个拨号计划中删除。例如，若要将 UM 服务器从所有拨号计划中删除，请运行以下命令：<code>Set-UMServer -identity MyUMServer -DialPlans $null</code></td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 可以在 Exchange 2010 统一消息服务器上的命令行管理程序中使用 <strong>Set-UMServer</strong> cmdlet 或在 Exchange 2013 邮箱服务器上使用 <strong>Set-UMService</strong> cmdlet 将 Exchange 2010 UM 服务器从单个或多个拨号计划中删除。例如，若要将 UM 服务器从所有拨号计划中删除，请运行以下命令：<code>Set-UMServer -identity MyUMServer -DialPlans $null</code>
 
 
 ## 您如何知道操作成功？

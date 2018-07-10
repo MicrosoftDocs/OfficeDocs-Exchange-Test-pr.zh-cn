@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 统一消息 (UM) 调用报告提供有关调用转发到或由 UM 放置信息。使用这些报告来监视、 故障排除和 UM 报告为您的组织。可以通过使用调用统计工具来访问统一消息调用统计报告并通过用户调用日志工具访问已启用 UM 的用户的呼叫日志。
 

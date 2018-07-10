@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Microsoft Exchange Server 2013 包括使用 Microsoft SharePoint Server 2013 和 Microsoft Lync Server 2013 的功能，称为*合作伙伴应用程序*。要确保这些合作伙伴应用程序可以访问其他每个应用程序的资源，需要配置服务器到服务器的身份验证。
 
@@ -35,18 +35,8 @@ Microsoft Exchange Server 2013 包括使用 Microsoft SharePoint Server 2013 和
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您该如何做？
@@ -70,16 +60,6 @@ Microsoft Exchange Server 2013 包括使用 Microsoft SharePoint Server 2013 和
 
 将需要使用 SharePoint 2013 执行电子数据展示搜索的用户添加到 Exchange 2013 中的发现管理角色组。有关详细信息，请参阅[在 Exchange 中分配电子数据展示权限](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>将用户添加到发现管理角色组之后，用户即可使用就地电子数据展示来搜索所有 Exchange 2013 邮箱并访问用户邮箱中可能敏感的电子邮件内容。默认情况下，不向任何用户分配此权限，包括组织管理角色组的成员。向任何用户分配此权限之前，与组织的法律或 HR 部门进行核查。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 将用户添加到发现管理角色组之后，用户即可使用就地电子数据展示来搜索所有 Exchange 2013 邮箱并访问用户邮箱中可能敏感的电子邮件内容。默认情况下，不向任何用户分配此权限，包括组织管理角色组的成员。向任何用户分配此权限之前，与组织的法律或 HR 部门进行核查。
 

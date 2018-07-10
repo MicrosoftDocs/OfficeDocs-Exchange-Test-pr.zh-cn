@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 *管理角色组*是在 Microsoft Exchange Server 2013 的基于角色的访问控制 (RBAC) 权限模型中使用的通用安全组 (USG)。管理角色组可简化向用户组分配管理角色。角色组的所有成员都被授予相同的角色集。为角色组分配的角色有管理员和专家角色，这类角色用于在 Exchange 2013 中定义主要管理任务（如组织管理、收件人管理和其他任务）。角色组使您能够更容易地将范围更广的权限集分配到管理员组或专家用户组。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主题重点讲述高级 RBAC 功能。如果要管理基本的 Exchange 2013 权限（例如，使用 Exchange 管理中心 (EAC) 向角色组中添加成员或从角色组中删除成员，创建和修改角色组，或创建和修改角色分配策略），请参阅<a href="permissions-exchange-2013-help.md">权限</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 本主题重点讲述高级 RBAC 功能。如果要管理基本的 Exchange 2013 权限（例如，使用 Exchange 管理中心 (EAC) 向角色组中添加成员或从角色组中删除成员，创建和修改角色组，或创建和修改角色分配策略），请参阅<a href="permissions-exchange-2013-help.md">权限</a>。
 
 
 **目录**
@@ -49,18 +39,8 @@ _**上一次修改主题：**2015-03-09_
 
 角色组创建工作流
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要将权限分配到用户以管理其拥有的邮箱或通讯组，请参阅<a href="understanding-management-role-assignment-policies-exchange-2013-help.md">了解管理角色分配策略</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果要将权限分配到用户以管理其拥有的邮箱或通讯组，请参阅<a href="understanding-management-role-assignment-policies-exchange-2013-help.md">了解管理角色分配策略</a>。
 
 
 ## 角色组层
@@ -71,13 +51,13 @@ _**上一次修改主题：**2015-03-09_
 
   - **管理角色组** *管理角色组*是一个特殊的 USG，它包含属于角色组成员的邮箱、USG 以及其他角色组。可以在此处添加和删除成员，并且它还是向其分配管理角色的对象。角色组中所有角色的组合定义添加到角色组的成员可以在 Exchange 组织中管理的所有事情。
 
-  - **管理角色分配：** *“管理角色分配”*链接管理角色和角色组。将管理角色分配到角色组，将使角色组的成员能够使用此管理角色中定义的 cmdlet 和参数。角色分配可以使用管理作用域来控制何处能够使用此分配。有关详细信息，请参阅[了解管理角色分配](understanding-management-role-assignments-exchange-2013-help.md)。
+  - **管理角色分配：**  *“管理角色分配”*链接管理角色和角色组。将管理角色分配到角色组，将使角色组的成员能够使用此管理角色中定义的 cmdlet 和参数。角色分配可以使用管理作用域来控制何处能够使用此分配。有关详细信息，请参阅[了解管理角色分配](understanding-management-role-assignments-exchange-2013-help.md)。
 
-  - **管理角色作用域：** *“管理角色作用域”*是对角色分配产生影响的作用域。将角色与作用域分配到角色组时，管理作用域会专门指定允许该分配进行管理的对象。然后会将此分配及其作用域指定给角色组的成员，从而限制这些成员可以管理的内容。作用域可以由服务器或数据库、组织单位或是服务器、数据库或收件人对象上的筛选器的列表组成。有关详细信息，请参阅[了解管理角色作用域](understanding-management-role-scopes-exchange-2013-help.md)。
+  - **管理角色作用域：**  *“管理角色作用域”*是对角色分配产生影响的作用域。将角色与作用域分配到角色组时，管理作用域会专门指定允许该分配进行管理的对象。然后会将此分配及其作用域指定给角色组的成员，从而限制这些成员可以管理的内容。作用域可以由服务器或数据库、组织单位或是服务器、数据库或收件人对象上的筛选器的列表组成。有关详细信息，请参阅[了解管理角色作用域](understanding-management-role-scopes-exchange-2013-help.md)。
 
-  - **管理角色：** *“管理角色”*是一组管理角色条目的容器。角色用于定义特定任务，这些任务可以由分配该角色的角色组成员执行。有关详细信息，请参阅[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
+  - **管理角色：**  *“管理角色”*是一组管理角色条目的容器。角色用于定义特定任务，这些任务可以由分配该角色的角色组成员执行。有关详细信息，请参阅[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 
-  - **管理角色条目：** *“管理角色条目”*是管理角色上的单个条目，这些条目可提供对 cmdlet、脚本和其他特殊权限（允许执行特定任务）的访问。通常，角色条目由管理角色以及分配了该角色的角色组可以访问的一个 cmdlet 或脚本及若干参数构成。
+  - **管理角色条目：**  *“管理角色条目”*是管理角色上的单个条目，这些条目可提供对 cmdlet、脚本和其他特殊权限（允许执行特定任务）的访问。通常，角色条目由管理角色以及分配了该角色的角色组可以访问的一个 cmdlet 或脚本及若干参数构成。
 
 下图显示了前面列表中的每个角色组层以及每个层如何与其他层相关。
 
@@ -130,18 +110,9 @@ _**上一次修改主题：**2015-03-09_
 <td><p><a href="add-a-role-entry-to-a-role-exchange-2013-help.md">向角色添加角色</a></p>
 <p><a href="change-a-role-entry-exchange-2013-help.md">更改角色条目</a></p>
 <p><a href="remove-a-role-entry-from-a-role-exchange-2013-help.md">从角色中删除一个角色条目</a></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>更改角色组中管理角色的管理角色条目是一项高级任务，大多数情况下不需要执行此操作。相反，您可以使用符合要求的预先存在的管理角色。有关详细信息，请参阅<a href="built-in-role-groups-exchange-2013-help.md">内置的角色组</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 更改角色组中管理角色的管理角色条目是一项高级任务，大多数情况下不需要执行此操作。相反，您可以使用符合要求的预先存在的管理角色。有关详细信息，请参阅<a href="built-in-role-groups-exchange-2013-help.md">内置的角色组</a>。
 
 </td>
 </tr>
@@ -237,9 +208,9 @@ _**上一次修改主题：**2015-03-09_
 
 链接角色组由两部分组成：
 
-  - **链接角色组：**链接角色组是将外部 USG 与分配到角色组的管理角色分配相关联的容器对象。
+  - **链接角色组：** 链接角色组是将外部 USG 与分配到角色组的管理角色分配相关联的容器对象。
 
-  - **外部 USG：**外部 USG 包含应当授予由链接角色组提供权限的成员。
+  - **外部 USG：** 外部 USG 包含应当授予由链接角色组提供权限的成员。
 
 创建链接角色组时，您需要在外部林（包含您需要依靠其来管理 Exchange 林的用户）和 USG（包含那些成员用户、外部 USG 名称和访问外部林所需的凭据）中提供域控制器。Exchange 会将外部 USG 的安全标识符 (SID) 添加到链接角色组。因为 USG SID 是外部 USG 的唯一标识，所以当具有多个外部林时，我们强烈建议您在角色组的名称中指定外部林。
 
@@ -259,18 +230,8 @@ _**上一次修改主题：**2015-03-09_
 
 如果没有在角色组上设置 **ManagedBy** 属性，则只有属于 组织管理 角色成员的用户或直接/间接分配了“角色管理”管理角色的用户可以修改角色组或角色组成员身份。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>分配给某个角色组的角色可能会使用委派角色分配来进行分配。使用委派角色分配，分配了委派角色的角色组成员可以将该角色分配给另一个角色组、分配策略、用户或 USG。角色组的成员只能分配该角色，并且无法委派角色组，除非它们也被添加到了 <strong>ManagedBy</strong> 属性。有关委派角色分配的详细信息，请参阅<a href="understanding-management-role-assignments-exchange-2013-help.md">了解管理角色分配</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 分配给某个角色组的角色可能会使用委派角色分配来进行分配。使用委派角色分配，分配了委派角色的角色组成员可以将该角色分配给另一个角色组、分配策略、用户或 USG。角色组的成员只能分配该角色，并且无法委派角色组，除非它们也被添加到了 <strong>ManagedBy</strong> 属性。有关委派角色分配的详细信息，请参阅<a href="understanding-management-role-assignments-exchange-2013-help.md">了解管理角色分配</a>。
 
 
 有关如何管理角色组委派的详细信息，请参阅[管理角色组](manage-role-groups-exchange-2013-help.md)。

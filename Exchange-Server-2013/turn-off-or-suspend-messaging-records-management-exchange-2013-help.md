@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**适用于：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-14_
+_**上一次修改主题：** 2013-02-14_
 
 以满足个人、 IT 或业务要求，您可能需要关闭或暂时挂起邮件记录管理 (MRM) 为单个用户或邮箱服务器。您可能需要关闭或挂起 MRM 的原因包括 ︰
 
@@ -87,36 +87,16 @@ _**上一次修改主题：**2013-02-14_
 
 若要关闭组织的 MRM，删除所有保留标记和除 ArbitrationMailbox 策略，就由 Exchange 安装程序创建的保留策略。完成此步骤后，不会强制执行保留策略。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>保留策略还包括移动到归档文件标记，将邮件移动到用户的存档邮箱中。如果您删除已移动到存档标记的保留策略，则必须应用该策略的用户将不再有邮件移动到存档中的托管文件夹助理。<br />
-若要避免这种情况，从组织中删除仅删除并允许恢复永久删除标记并使让移动到存档标记应用的策略。另外，拥有的用户和已启用存档无法手动项目移至存档邮箱使用Outlook或Outlook Web App。<br />
-删除之前保留标记或保留策略，我们建议您检查要删除的标记设置。不要删除标记移动到归档保留操作。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 保留策略还包括移动到归档文件标记，将邮件移动到用户的存档邮箱中。如果您删除已移动到存档标记的保留策略，则必须应用该策略的用户将不再有邮件移动到存档中的托管文件夹助理。<br />
+> 若要避免这种情况，从组织中删除仅删除并允许恢复永久删除标记并使让移动到存档标记应用的策略。另外，拥有的用户和已启用存档无法手动项目移至存档邮箱使用Outlook或Outlook Web App。<br />
+> 删除之前保留标记或保留策略，我们建议您检查要删除的标记设置。不要删除标记移动到归档保留操作。
 
 
 您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅 [邮件策略和遵从性权限](messaging-policy-and-compliance-permissions-exchange-2013-help.md)主题中的\&quot;邮件记录管理\&quot;条目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在下列命令中加入 <em>WhatIf</em> 开关，以模拟某一命令执行的操作。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在下列命令中加入 <em>WhatIf</em> 开关，以模拟某一命令执行的操作。
 
 
 此示例从 Exchange 组织中移除了所有的删除标记，Exchange 安装程序创建的 ArbitrationMailbox 策略中使用的\&quot;永不删除\&quot;标记除外。

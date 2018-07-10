@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-19_
+_**上一次修改主题：** 2013-04-19_
 
 [创建 UM 证书](create-certificates-for-um-exchange-2013-help.md)
 

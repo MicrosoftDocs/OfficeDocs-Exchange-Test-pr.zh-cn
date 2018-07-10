@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-11-12_
+_**上一次修改主题：** 2012-11-12_
 
 可以使用 EAC 和命令行管理程序以配置用户邮箱的邮件大小限制。这些限制控制用户可以发送和接收的邮件的大小。默认情况下，创建了邮箱时，系统不会对发送和接收的邮件的大小进行限制。
 
@@ -23,18 +23,8 @@ _**上一次修改主题：**2012-11-12_
 
 有关与用户邮箱相关的其他管理任务，请参阅[管理用户邮箱](manage-user-mailboxes-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>还可以控制邮件用户发送和接收的邮件的大小，以及来自共享邮箱的邮件的大小。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 还可以控制邮件用户发送和接收的邮件的大小，以及来自共享邮箱的邮件的大小。
 
 
 ## 在开始之前，您需要知道什么？
@@ -45,18 +35,8 @@ _**上一次修改主题：**2012-11-12_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？

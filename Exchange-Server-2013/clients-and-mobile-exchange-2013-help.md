@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 有许多不同的客户端可用于访问 Microsoft Exchange Server 2013 邮箱中的信息。这些客户端具有台式机程序（例如 Microsoft Outlook、Outlook Web App）以及移动客户端（例如手机、平板电脑和其他移动设备）。这些客户端中的每一个都可提供各种功能。
 
@@ -51,7 +51,7 @@ _**上一次修改主题：**2015-03-09_
 <td><p>了解用户如何通过使用 POP3 或 IMAP4 的电子邮件程序访问其 Exchange 2013 电子邮件。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://technet.microsoft.com/zh-cn/library/jj150495(v=exchg.150)">Office Web Apps 服务器集成</a></p></td>
+<td><p>Office Web Apps 服务器集成</p></td>
 <td><p>了解 Microsoft Office Web Apps Server 的集成如何帮助提供 Outlook Web App 中丰富的附件预览功能。</p></td>
 </tr>
 <tr class="odd">

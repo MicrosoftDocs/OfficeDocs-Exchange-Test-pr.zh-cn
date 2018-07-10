@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**适用于：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**上一次修改主题：**2013-08-13_
+_**上一次修改主题：** 2013-08-13_
 
 创建或移动邮箱，或者对现有用户启用邮件时，需要在邮箱数据库中存储此邮箱。在 Microsoft Exchange Server 2013 中，可以选择让 Exchange 使用自动邮箱分发为您选择数据库。
 
@@ -23,18 +23,8 @@ _**上一次修改主题：**2013-08-13_
 
 未在 **New-Mailbox** 和 **Enable-Mailbox** cmdlet 上指定 *Database* 参数或者未在 **New-MoveRequest** cmdlet 上指定 *TargetDatabase* 参数时，将使用自动分发。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅当在 Exchange 2013 服务器上创建邮箱、将邮箱移动到 Exchange 2013 服务器或者对用户启用邮件时，才会执行自动邮箱分发。必须从运行 Exchange 2013 的服务器运行 <strong>New-Mailbox</strong>、<strong>New-MoveRequest</strong> 和 <strong>Enable-Mailbox</strong> cmdlet。Exchange 不会重新分发邮箱以基于服务器负载自动在数据库之间分配负载。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 仅当在 Exchange 2013 服务器上创建邮箱、将邮箱移动到 Exchange 2013 服务器或者对用户启用邮件时，才会执行自动邮箱分发。必须从运行 Exchange 2013 的服务器运行 <strong>New-Mailbox</strong>、<strong>New-MoveRequest</strong> 和 <strong>Enable-Mailbox</strong> cmdlet。Exchange 不会重新分发邮箱以基于服务器负载自动在数据库之间分配负载。
 
 
 以下过程用于查找适合的邮箱数据库，其中新邮箱或移动的邮箱将位于此数据库上：
@@ -57,18 +47,8 @@ _**上一次修改主题：**2013-08-13_
 
 默认情况下，自动邮箱分发可以选择本地 Exchange 2013 站点的 Active Directory 服务器上的所有联机和运行状况良好的邮箱数据库，以存储新邮箱或移动的邮箱。但是，出于各种原因，可能要从分发过程中排除某些数据库。例如，可能要将邮箱数据库指定为日记数据库，只有手动指定的邮箱应位于此数据库上。或者，可能要从轮换中暂时删除数据库，以执行计划的维护。Exchange 2013 向您提供了选项，可以使用 *IsExcludedFromProvisioning* 参数（可使用 **Set-MailboxDatabase** cmdlet 来设置该参数）从排除过程中永久或暂时排除数据库。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>其他两个参数（即 <em>IsSuspendedFromProvisioning</em> 和 <em>IsExcludedFromInitialProvisioning</em>）在 <strong>Set-MailboxDatabase</strong> cmdlet 上也可用。在 Exchange 将来的版本中将删除这些参数，并且不支持它们的使用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 其他两个参数（即 <em>IsSuspendedFromProvisioning</em> 和 <em>IsExcludedFromInitialProvisioning</em>）在 <strong>Set-MailboxDatabase</strong> cmdlet 上也可用。在 Exchange 将来的版本中将删除这些参数，并且不支持它们的使用。
 
 
 *IsExcludedFromProvisioning* 参数具有两个有效值，即 `$True` 和 `$False`。将该属性设置为 `$True` 时，邮箱数据库将从自动分发过程中排除。将其设置为 `$False` 时，邮箱数据库将包括在自动分发过程中。默认值为 `$False`。

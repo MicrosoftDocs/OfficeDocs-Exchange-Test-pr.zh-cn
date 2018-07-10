@@ -13,25 +13,15 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2017-12-20_
+_**上一次修改主题：** 2017-12-20_
 
 对于 Microsoft Exchange Server 2013，我们已将几种新功能添加到 Microsoft Outlook Web App 并更新了其设计。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关在 Exchange Server 2013 组织中使用 Outlook Web App 的详细信息，请参阅 <a href="outlook-web-app-exchange-2013-help.md">Outlook Web App</a>。<br />
-您组织中的 Outlook Web App 用户现在可以在收藏夹中添加或删除公用文件夹。以前，这只能在 Outlook 中完成。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 有关在 Exchange Server 2013 组织中使用 Outlook Web App 的详细信息，请参阅 <a href="outlook-web-app-exchange-2013-help.md">Outlook Web App</a>。
+> 您组织中的 Outlook Web App 用户现在可以在收藏夹中添加或删除公用文件夹。以前，这只能在 Outlook 中完成。
 
 
 ## 在 Outlook Web App 中的应用程序
@@ -156,32 +146,12 @@ Outlook Web App 强调同时支持触摸使用的简化用户界面，从而增�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在之前的版本中，Outlook Web App 有一个内置拼写检查器。在 Exchange Server 2013 中，Outlook Web App 依赖于 Web 浏览器进行拼写检查，Internet Explorer 10 之前的版本不提供该功能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在之前的版本中，Outlook Web App 有一个内置拼写检查器。在 Exchange Server 2013 中，Outlook Web App 依赖于 Web 浏览器进行拼写检查，Internet Explorer 10 之前的版本不提供该功能。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在使用 Internet Explorer 8 时，Office 365 的用户将被限制为使用 Outlook Web App 简易版。在使用 Internet Explorer 8 时，其邮箱位于本地托管的 Exchange Server 上的用户将继续查看 Outlook Web App 标准版，但速度可能较慢，或者性能可能令人不满意。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在使用 Internet Explorer 8 时，Office 365 的用户将被限制为使用 Outlook Web App 简易版。在使用 Internet Explorer 8 时，其邮箱位于本地托管的 Exchange Server 上的用户将继续查看 Outlook Web App 标准版，但速度可能较慢，或者性能可能令人不满意。
 
 
 ### 其他 Windows 操作系统和浏览器组合
@@ -217,18 +187,8 @@ Outlook Web App 强调同时支持触摸使用的简化用户界面，从而增�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>未列出的操作系统和浏览器组合显示 Outlook Web App 的基本版本。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 未列出的操作系统和浏览器组合显示 Outlook Web App 的基本版本。
 
 
 ## 平板电脑和智能手机支持的浏览器
@@ -328,18 +288,8 @@ Outlook Web App 强调同时支持触摸使用的简化用户界面，从而增�
 
 在本周的 Garage 系列中了解有关 OWA for Android 的更多背景信息。请参阅[后台运行的 Garage 系列：处于发展中的 Exchange ActiveSync 和 OWA for Devices](https://blogs.office.com/2014/6/11/the-garage-series-under-the-hood-evolving-exchange-activesync-and-owa-for-devices)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此应用程序将不会使用 Outlook.com（以前称为 Hotmail）邮箱。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 此应用程序将不会使用 Outlook.com（以前称为 Hotmail）邮箱。
 
 
 ## 不可用的功能

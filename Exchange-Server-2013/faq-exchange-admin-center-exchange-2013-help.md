@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 本主题提供了一系列有关 Microsoft Exchange Server 2013 中新的 Exchange 管理中心 (EAC) 的常见问题。还有其他此处未回答的关于 EAC 的问题？给我们发送电子邮件，地址是 [Ex2013HelpFeedback@microsoft.com](mailto:ex2013helpfeedback@microsoft.com)。
 

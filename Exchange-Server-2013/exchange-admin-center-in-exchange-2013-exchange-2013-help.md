@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-17_
+_**上一次修改主题：** 2015-03-17_
 
 Exchange 管理中心 (EAC) 是 Microsoft Exchange Server 2013 中提供的一个基于 Web 的管理控制台，该控制台针对 Exchange 内部部署、联机部署和混合部署进行了优化。EAC 替换了 Exchange 管理控制台 (EMC) 和 Exchange 控制面板 (ECP)，这是用于管理 Exchange Server 2010 的两个界面。
 
@@ -179,18 +179,8 @@ EAC 中有一个通知查看器，可显示长时间运行的进程的状态，�
 
 为获得最佳 EAC 体验，使用标记为“最佳”的操作系统和浏览器组合之一。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不支持上表中未列出的其他操作系统和浏览器组合（包括 touch）。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 不支持上表中未列出的其他操作系统和浏览器组合（包括 touch）。
 
 
   - “**最佳**”：支持所有功能并经过完全测试。

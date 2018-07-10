@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-04-15_
+_**上一次修改主题：** 2013-04-15_
 
 借助自动重新设定种子功能，可在发生磁盘故障后快速还原数据库冗余。如果某个磁盘出现故障，那么该磁盘上存储的数据库副本会自动重新设定种子到邮箱服务器上预配置的备用磁盘。可按本主题中介绍的步骤操作，为数据库可用性组 (DAG) 配置自动重新设定种子。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>自动重新设定种子功能不会为你执行任何先决条件配置任务。手动正确安装磁盘、向系统添加备用磁盘、更换故障磁盘以及格式化新磁盘必须都由管理员完成。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 自动重新设定种子功能不会为你执行任何先决条件配置任务。手动正确安装磁盘、向系统添加备用磁盘、更换故障磁盘以及格式化新磁盘必须都由管理员完成。
 
 
 有关 DAG 的更多管理任务，请参阅[管理数据库可用性组](managing-database-availability-groups-exchange-2013-help.md)。
@@ -47,18 +37,8 @@ _**上一次修改主题：**2013-04-15_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您该如何做？

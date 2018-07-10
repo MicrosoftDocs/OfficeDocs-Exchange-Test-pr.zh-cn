@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-09-30_
+_**上一次修改主题：** 2013-09-30_
 
 在 Microsoft Exchange Server 2013 中，*安全列表聚合*表示在 Microsoft Outlook 和 Exchange 之间共享的反垃圾邮件功能。此功能从 Outlook 用户配置的反垃圾邮件安全收件人列表、安全发件人列表、阻止发件人列表和联系人数据中收集数据，并使 Exchange 反垃圾邮件代理可以使用这些数据。
 
@@ -51,18 +51,8 @@ Enabling safelist aggregation
 
   - **安全域**   该域是 SMTP 地址中 @ 符号后面的部分。例如，contoso.com 是 masato@contoso.com 地址中的域。Outlook 用户可以向安全列表中添加发送域。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>默认情况下，Exchange 在安全列表聚合过程中不包含域。但是，您可以将安全列表聚合配置为包含反垃圾邮件代理的安全域数据。有关详细信息，请参阅<a href="configure-content-filtering-to-use-safe-domain-data-exchange-2013-help.md">配置内容筛选以使用安全域数据</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 默认情况下，Exchange 在安全列表聚合过程中不包含域。但是，您可以将安全列表聚合配置为包含反垃圾邮件代理的安全域数据。有关详细信息，请参阅<a href="configure-content-filtering-to-use-safe-domain-data-exchange-2013-help.md">配置内容筛选以使用安全域数据</a>。
 
 
   - **外部联系人**   安全列表聚合中可以包含两种类型的外部联系人。第一种类型的外部联系人包含 Outlook 用户已向其发送邮件的联系人。只有 Outlook 用户在 Outlook 2007 中的\&quot;垃圾邮件\&quot;设置中选择了相应的选项，此类联系人才会添加到安全发件人列表中。
@@ -75,18 +65,8 @@ Enabling safelist aggregation
 
 安全列表集合存储在用户的邮箱服务器上。用户在安全列表集合中最多可以有 1024 个唯一条目。Exchange 2013 带有一个邮箱助理（称为垃圾邮件选项邮箱助理），可监视对邮箱的安全列表集合的更改。它还会将这些更改复制到 Active Directory（安全列表集合存储在后者的每个用户对象中）。如果将安全列表集合存储在 Active Directory 的用户对象中，则将使用 Exchange 2013 的反垃圾邮件功能聚合安全列表集合，并针对最少的存储和复制优化安全列表集合。Exchange 在内容筛选过程中使用安全列表集合数据。如果您已经在您的外围网络中订阅了边缘传输服务器，则 Microsoft Exchange EdgeSync 服务将复制安全列表集合至边缘传统服务器上的 Active Directory Lightweight Directory Service (AD LDS) 实例。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>尽管安全收件人数据存储于 Outlook 中且可以聚合到安全列表集合中，但内容筛选功能不会对安全收件人数据进行操作。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 尽管安全收件人数据存储于 Outlook 中且可以聚合到安全列表集合中，但内容筛选功能不会对安全收件人数据进行操作。
 
 
 返回顶部

@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 管理角色是 Microsoft Exchange Server 2013 中所使用的基于角色的访问控制 (RBAC) 权限模型的组成部分。角色充当 cmdlet 的逻辑分组，这些 cmdlet 组合在一起提供查看或修改 Exchange 2013 组件配置（如邮箱、传输规则和收件人）的访问权限。管理角色可以进一步组合到称为管理角色组和管理角色分配策略的更大分组，从而实现管理功能区域和收件人配置。角色组和角色分配策略分别为管理员和最终用户分配权限。有关管理角色组和管理角色分配策略的详细信息，请参阅[了解基于角色的访问控制](understanding-role-based-access-control-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主题重点讲述高级 RBAC 功能。如果要管理基本的 Exchange 2013 权限（例如，使用 Exchange 管理中心 (EAC) 向角色组中添加成员或从角色组中删除成员，创建和修改角色组，或创建和修改角色分配策略），请参阅<a href="permissions-exchange-2013-help.md">权限</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 本主题重点讲述高级 RBAC 功能。如果要管理基本的 Exchange 2013 权限（例如，使用 Exchange 管理中心 (EAC) 向角色组中添加成员或从角色组中删除成员，创建和修改角色组，或创建和修改角色分配策略），请参阅<a href="permissions-exchange-2013-help.md">权限</a>。
 
 
 **目录**
@@ -65,9 +55,9 @@ Exchange 2013 提供了多种内置管理角色，您可以使用这些角色来
 
   - **邮件收件人**   使管理员可以管理邮箱、联系人和邮件用户。
 
-  - **传输规则：**使获得该角色的管理员或专家用户能够管理传输规则功能。
+  - **传输规则：** 使获得该角色的管理员或专家用户能够管理传输规则功能。
 
-  - **通讯组：**使获得该角色的管理员或专家用户能够管理通讯组和通讯组成员。
+  - **通讯组：** 使获得该角色的管理员或专家用户能够管理通讯组和通讯组成员。
 
   - **MyPersonalInformation**   使最终用户可以修改其家庭电话号码和网站地址。
 
@@ -75,18 +65,8 @@ Exchange 2013 提供了多种内置管理角色，您可以使用这些角色来
 
 可以使用 Exchange 2013 中附带的内置角色，并以任意方式对其进行组合，以创建适合您业务的权限模型。例如，如果要让某个角色组的成员管理收件人和公用文件夹，则将 Mail Recipients 和 Public Folders 角色都分配给该角色组。通常，角色将分配给角色组或角色分配策略。如果要更细致地控制权限，还可以将管理角色直接分配给用户。建议使用角色组和角色分配策略而不是直接使用用户角色分配，以简化权限模型。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您只能将最终用户管理角色分配到角色分配策略。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 您只能将最终用户管理角色分配到角色分配策略。
 
 
 内置管理角色无法更改。但是，可以基于内置管理角色创建管理角色，然后将这些新角色分配到角色组或角色分配策略。然后，可以更改新的管理角色以满足您的需要。这是高级任务，一般极少需要执行此过程。
@@ -246,13 +226,13 @@ Seattle Recipient Administrators 自定义角色是 Mail Recipients 内置角色
 
 管理角色类型分为以下类别：
 
-  - **管理或专家：**与管理或专家角色类型关联的角色在 Exchange 组织中具有更广泛的影响作用域。此角色类型的角色可以启用以下任务：服务器或收件人管理、组织配置、合规性管理和审核等。
+  - **管理或专家：** 与管理或专家角色类型关联的角色在 Exchange 组织中具有更广泛的影响作用域。此角色类型的角色可以启用以下任务：服务器或收件人管理、组织配置、合规性管理和审核等。
 
-  - **以用户为中心：**与以用户为中心的角色类型关联的角色具有与单个用户密切相关的影响范围。此角色类型的角色可以启用以下任务：用户配置文件配置与自我管理、对用户拥有的通讯组的管理等。
+  - **以用户为中心：** 与以用户为中心的角色类型关联的角色具有与单个用户密切相关的影响范围。此角色类型的角色可以启用以下任务：用户配置文件配置与自我管理、对用户拥有的通讯组的管理等。
     
     与以用户为中心角色类型相关联的角色名称，以及以用户为中心的角色类型名称均以 My 开头。
 
-  - **专用：**与专用角色类型相关联的角色可以启用不属于管理或以用户为中心角色类型的任务。此角色类型的角色可以启用诸如应用程序模拟和使用非 Exchange cmdlet 或脚本等任务。
+  - **专用：** 与专用角色类型相关联的角色可以启用不属于管理或以用户为中心角色类型的任务。此角色类型的角色可以启用诸如应用程序模拟和使用非 Exchange cmdlet 或脚本等任务。
 
 下表列出了 Exchange 2013 中的所有“管理”管理角色类型，以及该角色类型允许的配置将应用于整个 Exchange 组织，还是仅应用于单台服务器。有关与这些角色类型相关联的每个管理角色的详细信息，包括每个角色的描述、谁可以通过分配该角色而获益以及其他信息，请参阅[内置管理角色](built-in-management-roles-exchange-2013-help.md)。
 
@@ -279,18 +259,9 @@ Seattle Recipient Administrators 自定义角色是 Mail Recipients 内置角色
 <td><p><code>ActiveDirectoryPermissions</code></p></td>
 <td><p><a href="active-directory-permissions-role-exchange-2013-help.md">Active Directory 权限角色</a></p></td>
 <td><p>与此角色类型相关联的角色使管理员能够配置组织中的 Active Directory 权限。使用 Active Directory 权限或访问控制列表 (ACL) 的部分功能包括传输“接收”和“发送”连接器以及邮箱的“代理发送”和“代表发送”权限。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>直接在 Active Directory 对象上设置的权限不能通过 RBAC 强制应用。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 直接在 Active Directory 对象上设置的权限不能通过 RBAC 强制应用。
 
 </td>
 <td><p>组织</p></td>
@@ -614,18 +585,9 @@ Seattle Recipient Administrators 自定义角色是 Mail Recipients 内置角色
 <td><p><code>SupportDiagnostics</code></p></td>
 <td><p><a href="support-diagnostics-role-exchange-2013-help.md">支持诊断角色</a></p></td>
 <td><p>与此角色类型相关联的角色使管理员能够在 Microsoft 支持服务人员的指导下在组织中执行高级诊断。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>与此角色类型相关联的角色授予对 cmdlet 和脚本的权限，而且这些 cmdlet 和脚本只应当在 Microsoft 客户服务和支持人员的指导下使用。</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]
+> 与此角色类型相关联的角色授予对 cmdlet 和脚本的权限，而且这些 cmdlet 和脚本只应当在 Microsoft 客户服务和支持人员的指导下使用。
 
 </td>
 <td><p>组织</p></td>

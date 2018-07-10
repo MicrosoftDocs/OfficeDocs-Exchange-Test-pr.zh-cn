@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server, Exchange Server 2013_
+_**适用于：** Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2014-05-26_
+_**上一次修改主题：** 2014-05-26_
 
 安装 Exchange 2013 时，将会更改您的 Active Directory 林和域。Exchange 执行此操作是为了使其可以存储关于组织中 Exchange 服务器、邮箱以及与 Exchange 相关的其他对象的信息。这些更改将在 Exchange 2013 命令行设置过程中，在您运行 Exchange 2013 安装向导或运行 *PrepareSchema*、*PrepareAD* 和 *PrepareDomains* 命令时进行（在[准备 Active Directory 和域](prepare-active-directory-and-domains-exchange-2013-help.md)中查看如何使用这些命令）。如果您想了解 Exchange 对 Active Directory 所做的更改，则本主题非常适合您。它说明了在 Active Directory 准备的每个步骤中 Exchange 执行的操作。
 

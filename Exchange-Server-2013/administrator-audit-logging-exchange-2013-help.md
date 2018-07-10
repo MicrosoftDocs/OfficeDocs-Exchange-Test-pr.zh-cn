@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2018-03-05_
+_**上一次修改主题：** 2018-03-05_
 
 您可以使用 Microsoft Exchange Server 2013 中的管理员审核日志记录来记录用户或管理员在组织中进行更改的时间。通过保留更改日志，您可以跟踪对进行更改的人员所做的更改、随着更改的实施使用更改的详细记录来扩充更改日志、遵守法规要求和发现请求等等。
 
@@ -41,39 +41,19 @@ Admin Audit Log agent
 
 Cmdlet，无论他们在哪里运行，审核如果 cmdlet 是在审核列表和一个 cmdlet 或者该 cmdlet 的详细参数在参数审核列表。审核日志将显示已采取何种措施修改Exchange组织中的对象而不是已查看过哪些对象。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果某个 cmdlet 调用管理审核日志 cmdlet 扩展代理之前发生错误，则可能不会记录该 cmdlet。如果在调用管理审核日志代理之后发生错误，则会记录该 cmdlet 以及关联的错误。有关详细信息，请参阅本主题后面的Admin Audit Log Agent一节。<br />
-使用 Microsoft Exchange Server 2010 管理工具所做的更改将会记录；但是，使用 Microsoft Exchange Server 2007 管理工具所做的更改不会记录。<br />
-在打开了命令行管理程序的计算机上，在对审核日志配置进行更改之后，所做的更改会每隔 60 分钟刷新一次。如果想要立即应用所做的更改，请在每台计算机上关闭并重新打开命令行管理程序。<br />
-命令运行后，最多可能需要 15 分钟才会出现在审核日志搜索结果中。这是因为审核日志条目必须先编制索引，然后才能进行搜索。如果命令未显示在管理员审核日志中，请等待几分钟，然后再次运行搜索。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果某个 cmdlet 调用管理审核日志 cmdlet 扩展代理之前发生错误，则可能不会记录该 cmdlet。如果在调用管理审核日志代理之后发生错误，则会记录该 cmdlet 以及关联的错误。有关详细信息，请参阅本主题后面的Admin Audit Log Agent一节。
+> 使用 Microsoft Exchange Server 2010 管理工具所做的更改将会记录；但是，使用 Microsoft Exchange Server 2007 管理工具所做的更改不会记录。
+> 在打开了命令行管理程序的计算机上，在对审核日志配置进行更改之后，所做的更改会每隔 60 分钟刷新一次。如果想要立即应用所做的更改，请在每台计算机上关闭并重新打开命令行管理程序。
+> 命令运行后，最多可能需要 15 分钟才会出现在审核日志搜索结果中。这是因为审核日志条目必须先编制索引，然后才能进行搜索。如果命令未显示在管理员审核日志中，请等待几分钟，然后再次运行搜索。
 
 
 ## 审核日志记录配置
 
 默认情况下，如果启用审核日志记录，则日志条目创建每次运行时任何 cmdlet。如果您不想审核每个运行的 cmdlet，您可以配置审核日志审核的 cmdlet 和感兴趣的参数。您可以使用**Set-AdminAuditLogConfig** cmdlet 配置审核日志。与此 cmdlet 使用在以下各节中引用的参数。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>无论 <strong>Set-AdministratorAuditLog</strong> cmdlet 是否包括在要审核的 cmdlet 列表中，也无论是启用还是禁用了审核日志记录，始终都会记录对管理员审核日志配置进行的更改。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 无论 <strong>Set-AdministratorAuditLog</strong> cmdlet 是否包括在要审核的 cmdlet 列表中，也无论是启用还是禁用了审核日志记录，始终都会记录对管理员审核日志配置进行的更改。
 
 
 运行命令后，Exchange 将检查所使用的 cmdlet。如果所运行的 cmdlet 与随 *AdminAuditLogConfigCmdlets* 参数提供的任何 cmdlet 匹配，则 Exchange 随后将检查在 *AdminAuditLogConfigParameters* 参数中指定的参数。如果参数列表中至少有一个或多个参数匹配，则 Exchange 将记录使用 *AdminAuditLogMailbox* 参数指定的邮箱中运行的 cmdlet。以下各部分详细介绍审核日志记录配置的各个方面。
@@ -104,20 +84,10 @@ Cmdlet，无论他们在哪里运行，审核如果 cmdlet 是在审核列表和
 
 您必须使用 `dd` 字段指定多年时间。例如，365 天等于一年；730 天等于两年；913 天等于两年零六个月。例如，若要将审核日志期限设置为两年零六个月，请使用语法 `913.00:00:00`。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以将审核日志期限设置为小于当前期限的值。如果执行此操作，则会删除寿命超过新期限的所有审核日志条目。<br />
-如果将期限设置为 0，则 Exchange 会删除审核日志中的所有条目。<br />
-建议您仅向高度信任的用户授予配置审核日志期限的权限。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 可以将审核日志期限设置为小于当前期限的值。如果执行此操作，则会删除寿命超过新期限的所有审核日志条目。
+> 如果将期限设置为 0，则 Exchange 会删除审核日志中的所有条目。
+> 建议您仅向高度信任的用户授予配置审核日志期限的权限。
 
 
 ## 详细日志记录
@@ -175,18 +145,9 @@ Cmdlet，无论他们在哪里运行，审核如果 cmdlet 是在审核列表和
 <tr class="odd">
 <td><p><code>ModifiedProperties</code></p></td>
 <td><p>此字段包含在 <code>ObjectModified</code> 字段中的对象上修改的属性。属性的旧值和存储的新值也存储在此字段中，但是在默认输出中不可见。有关如何访问此字段中的其他信息的详细信息，请参阅<a href="search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md">搜索角色组更改或管理员审核日志</a>。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅当 <strong>Set-AdminAuditLogConfig</strong> cmdlet 中的 <em>LogLevel</em> 参数设置为 <code>Verbose</code> 时，此字段才会填充。</td>
-</tr>
-</tbody>
-</table>
+
+> [!important]
+> 仅当 <strong>Set-AdminAuditLogConfig</strong> cmdlet 中的 <em>LogLevel</em> 参数设置为 <code>Verbose</code> 时，此字段才会填充。
 
 </td>
 </tr>
@@ -270,18 +231,8 @@ EAC 中的\&quot;审核\&quot;页面包括若干个报告，提供有关各种�
 
 在运行 **New-AdminAuditLogSearch** cmdlet 之后，Exchange 可能最多需要 15 分钟将报告传递给指定收件人。附加了 XML 文件的报告最大可以为 10 MB。XML 文件包含Audit Log Contents中的表所述的相同信息。有关 XML 文件结构的详细信息，请参阅[管理员审核日志结构](administrator-audit-log-structure-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，Outlook Web App 不允许您打开 XML 附件。您可以将 Exchange 配置为允许使用 Outlook Web App 查看 XML 附件，也可以使用其他电子邮件客户端（例如，Microsoft Outlook）查看该附件。有关如何将 Outlook Web App 配置为允许查看 XML 附件的信息，请参阅<a href="view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md">查看或配置 Outlook Web App 虚拟目录</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 默认情况下，Outlook Web App 不允许您打开 XML 附件。您可以将 Exchange 配置为允许使用 Outlook Web App 查看 XML 附件，也可以使用其他电子邮件客户端（例如，Microsoft Outlook）查看该附件。有关如何将 Outlook Web App 配置为允许查看 XML 附件的信息，请参阅<a href="view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md">查看或配置 Outlook Web App 虚拟目录</a>。
 
 
 有关如何使用 **New-AdminAuditLogSearch** cmdlet 的信息，请参阅[搜索角色组更改或管理员审核日志](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)。

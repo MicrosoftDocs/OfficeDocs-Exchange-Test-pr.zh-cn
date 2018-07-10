@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2017-04-28_
+_**上一次修改主题：** 2017-04-28_
 
 邮件提示是用户撰写邮件时向其显示的提示性消息。Microsoft Exchange Server 2013 将分析邮件（包括向其发送了邮件的收件人的列表），如果检测到潜在问题，它将使用邮件提示在邮件发送之前通知用户。借助邮件提示提供的信息，发件人可以调整正在撰写的邮件以避免出现不利情况或未送达报告 (NDR)。
 
@@ -127,18 +127,9 @@ _**上一次修改主题：**2017-04-28_
 <p>默认情况下，此邮件提示处于关闭状态。可使用 <strong>Set-OrganizationConfig</strong> cmdlet 将其打开。有关详细信息，请参阅<a href="mailtips-over-organization-relationships-exchange-2013-help.md">有关组织关系的邮件提示</a>。</p>
 <p>如果您的部分用户邮箱驻留在 Exchange Online 上并且您与 Exchange Online 方案共存，则表示组织中远程部分的远程域对象上的设置会直接影响如何处理此邮件提示。</p>
 <p>如果远程域配置为内部域（通过将远程域对象上的 <em>IsInternal</em> 参数设置为 <code>$true</code>），则会将此远程域中的所有收件人都视为内部收件人，因此不会显示“外部收件人”邮件提示。然而，如果远程域未配置为内部域，则会将该域中的收件人视为外部收件人，并在撰写发往这些收件人的邮件时将显示此邮件提示。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在撰写发往远程域中的通讯组的邮件时，不会评估此邮件提示。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 在撰写发往远程域中的通讯组的邮件时，不会评估此邮件提示。
 
 </td>
 </tr>
@@ -175,18 +166,9 @@ _**上一次修改主题：**2017-04-28_
 <li><p>收件人邮箱上的最大接收大小设置</p></li>
 <li><p>组织的最大邮件大小限制</p></li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>组织中连接器上的邮件大小限制将不予以考虑，因为其实施比较复杂。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 组织中连接器上的邮件大小限制将不予以考虑，因为其实施比较复杂。
 
 </td>
 </tr>

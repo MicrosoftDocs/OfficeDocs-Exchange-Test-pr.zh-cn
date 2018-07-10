@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-01-14_
+_**上一次修改主题：** 2015-01-14_
 
 本主题提供有关在使用 RollAlternateServiceAccountPassword.ps1 脚本时可能发生的常见错误的解决方案和信息。
 
@@ -59,18 +59,8 @@ _**上一次修改主题：**2015-01-14_
 
 在删除了 RPC 客户端访问服务之后，[Get-ClientAccessArray](https://technet.microsoft.com/zh-cn/library/dd297976\(v=exchg.150\)) 不会将该服务器作为阵列成员返回，并且脚本不会将其作为目标。在该服务器再次正常运行之后，可以使用 **New-RpcClientAccess** cmdlet 重新添加 RPC 客户端访问服务。在重新添加 RPC 客户端访问服务时，请务必在受影响的服务器上重新启动 Microsoft Exchange 通讯簿服务。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在从服务器中删除 RPC 客户端访问服务之前，请参阅 <a href="https://technet.microsoft.com/zh-cn/library/dd298151(v=exchg.150)">Remove-RPCClientAccess</a> 主题。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 在从服务器中删除 RPC 客户端访问服务之前，请参阅 <a href="https://technet.microsoft.com/zh-cn/library/dd298151(v=exchg.150)">Remove-RPCClientAccess</a> 主题。
 
 
 ## 详细信息

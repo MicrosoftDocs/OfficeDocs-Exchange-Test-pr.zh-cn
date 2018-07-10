@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 您可以启用和禁用入站的传真与统一消息 (UM) 邮箱策略相关联的用户。默认情况下，当用户启用了 UM，用户不能接收传真邮件，除非您启用 UM 邮箱策略上的入站传真并指定合作伙伴传真服务器的 URI。如果 Uri 在 UM 邮箱策略上配置，但在 UM 拨号计划或为单个用户禁用允许传入传真的选项，已启用 UM 的用户链接到 UM 邮箱策略仍将无法接收传真。
 
@@ -35,18 +35,8 @@ _**上一次修改主题：**2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -59,18 +49,8 @@ _**上一次修改主题：**2016-12-09_
 
 3.  在**UM 邮箱策略**页 \>**常规**，**合作伙伴传真服务器 URI**框中，输入 TCP 或 TLS URI。例如︰ *sip:faxserver1.contoso.com:5060;transport=tcp*或*sip:faxserver2.contoso.com:5061;transport=tls*
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>虽然框中可以包含多个传真服务器 URI，将使用只有一个。如果输入两个 Uri，则将使用第一个。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 虽然框中可以包含多个传真服务器 URI，将使用只有一个。如果输入两个 Uri，则将使用第一个。
 
 
 4.  单击\&quot;保存\&quot;保存更改。

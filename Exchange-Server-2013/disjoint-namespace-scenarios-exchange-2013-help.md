@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 本主题提供了有关脱节命名空间的概念以及用于在具有脱节命名空间的域中部署 Microsoft Exchange 2013 的受支持方案的信息。
 
@@ -41,18 +41,8 @@ Exchange 2013 和脱节命名空间
 
   - **NetBIOS 域名**   通常情况下，NetBIOS 域名是 DNS 域名的子域。例如，如果 DNS 域名是 contoso.com，则 NetBIOS 域名是 contoso。如果 DNS 域名是 corp.contoso.com，则 NetBIOS 域名是 corp。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要查找运行 Windows Server 2008 的计算机的 DNS 和 NetBIOS 信息，请参阅查看运行 Windows Server 2008 的计算机的 DNS 和 NetBIOS 名称信息。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 要查找运行 Windows Server 2008 的计算机的 DNS 和 NetBIOS 信息，请参阅查看运行 Windows Server 2008 的计算机的 DNS 和 NetBIOS 名称信息。
 
 
 Active Directory 域中的计算机还具有主 DNS 后缀，并且可以包含其他 DNS 后缀。默认情况下，主 DNS 后缀与 DNS 域名相同。有关如何更改主 DNS 后缀的详细步骤，请参阅本主题中后面部分的步骤。
@@ -79,18 +69,8 @@ Exchange 2013 支持下列三种在拥有脱节命名空间的域中部署 Excha
 
 下列各部分详细介绍了这些方案。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在本主题中所述的脱节命名空间方案中，支持运行 Exchange 2013。但是，如果脱节命名空间方案不是本主题所述方案之一，则必须使用 Microsoft 服务来部署 Exchange 2013。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=94845">Microsoft 服务</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在本主题中所述的脱节命名空间方案中，支持运行 Exchange 2013。但是，如果脱节命名空间方案不是本主题所述方案之一，则必须使用 Microsoft 服务来部署 Exchange 2013。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=94845">Microsoft 服务</a>。
 
 
 ## 方案：主 DNS 后缀与 DNS 域名不相同
@@ -117,7 +97,7 @@ Exchange 2013 支持下列三种在拥有脱节命名空间的域中部署 Excha
 
   - [组策略常见问题 (FAQ)](https://go.microsoft.com/fwlink/p/?linkid=100128)
 
-  - [Windows Server 2003 中的新 DNS 组策略](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=294785)
+  - [Windows Server 2003 中的新 DNS 组策略](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=294785)
 
   - [组策略](https://go.microsoft.com/fwlink/p/?linkid=268043)
 

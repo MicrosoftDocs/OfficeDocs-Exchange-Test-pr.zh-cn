@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 默认情况下，用户无法发出传出呼叫。要指定用户可以发出的呼叫类型，首先需要创建拨号规则，然后在 UM 拨号计划、UM 邮箱策略或 UM 自动助理中对这些拨号规则组进行授权。在可以对拨号规则组授权之前，必须定义 UM 拨号计划中的拨号规则。有关详细信息，请参阅[创建用户的拨号规则](create-dialing-rules-for-users-exchange-2013-help.md)。
 

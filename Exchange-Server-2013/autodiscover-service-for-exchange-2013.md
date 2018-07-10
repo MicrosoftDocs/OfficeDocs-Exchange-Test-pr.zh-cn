@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 了解 Microsoft Exchange 2013 的 Exchange 自动发现服务。您将了解 Exchange 自动发现服务的功能、工作原理以及部署选项。
 
@@ -73,36 +73,16 @@ MicrosoftExchange 2013 包括一项名为自动发现服务的服务。本主题
 
 SCP 对象包含林的自动发现服务 URL 的权威列表。可使用 **Set-ClientAccessServer** cmdlet 更新 SCP 对象。有关详细信息，请参阅[Set-ClientAccessServer](https://technet.microsoft.com/zh-cn/library/bb125157\(v=exchg.150\))。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在运行 <strong>Set-ClientAccessServer</strong> cmdlet 之前，请确保客户端访问服务器上通过身份验证的用户帐户对 SCP 对象具有读取权限。如果用户没有正确的权限，他们将无法搜索和读取项目。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 在运行 <strong>Set-ClientAccessServer</strong> cmdlet 之前，请确保客户端访问服务器上通过身份验证的用户帐户对 SCP 对象具有读取权限。如果用户没有正确的权限，他们将无法搜索和读取项目。
 
 
 有关 SCP 对象的详细信息，请参阅[发布服务连接点](https://go.microsoft.com/fwlink/p/?linkid=72744)。
 
 对于外部访问，或在使用 DNS 时，客户端通过使用用户电子邮件地址中的主 SMTP 域地址找到 Internet 上的自动发现服务。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须在 Outlook 客户端的 DNS 中提供托管服务 (SRV) 资源记录，才能使用 DNS 发现自动发现服务。有关详细信息，请参阅有关配置 DNS 的 Windows 文档，还可以参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=85214">白皮书：Exchange 2007 自动发现服务</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 必须在 Outlook 客户端的 DNS 中提供托管服务 (SRV) 资源记录，才能使用 DNS 发现自动发现服务。有关详细信息，请参阅有关配置 DNS 的 Windows 文档，还可以参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=85214">白皮书：Exchange 2007 自动发现服务</a>。
 
 
 根据是否已在独立站点上配置自动发现服务，自动发现服务的 URL 将是 https://\<*smtp-address-domain*\>/autodiscover/autodiscover.xml 或 https://autodiscover\<*smtp-address-domain*\>/autodiscover/autodiscover.xml，其中 ://\<*smtp-address-domain*\> 是主 SMTP 域地址。例如，如果用户的电子邮件地址是 tony@contoso.com，则主 SMTP 域地址是 contoso.com。当客户端连接到 Active Directory 时，客户端将查找在安装期间创建的 SCP 对象。在包括多个客户端访问服务器的部署中，将为每个客户端访问服务器创建一个自动发现 SCP 对象。SCP 对象包含 *ServiceBindingInfo* 属性，该属性具有客户端访问服务器的完全限定的域名 (FQDN)，格式为 https://CAS01/autodiscover/autodiscover.xml，其中 CAS01 是客户端访问服务器的 FQDN。Outlook 2007、Outlook 2010 或 Outlook 2013 客户端使用用户凭据对 Active Directory 进行身份验证，并搜索自动发现 SCP 对象。在客户端获取并枚举自动发现服务的实例后，客户端将连接到枚举列表中的第一个客户端访问服务器，并将获取连接到用户邮箱和可用 Exchange 功能所需的 XML 数据形式的配置文件信息。

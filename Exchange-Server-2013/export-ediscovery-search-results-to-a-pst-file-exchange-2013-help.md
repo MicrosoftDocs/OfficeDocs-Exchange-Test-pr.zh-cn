@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2017-09-07_
+_**上一次修改主题：** 2017-09-07_
 
 可以使用在Exchange 管理中心 (EAC) eDiscovery 导出工具将适当 eDiscovery 搜索的结果导出到 Outlook 数据文件，也称为 PST 文件。管理员可以分配到您的组织，如人力资源经理或记录管理器内的其他人员或相反法律顾问在法律案件中的搜索结果。搜索结果导出到 PST 文件之后，您或其他用户可以它们在 Outlook 中打开要查看或打印搜索结果中返回的消息。也可以在第三方 eDiscovery 和报告应用程序中打开 PST 文件。本主题演示如何执行此操作，以及解决如果您有任何问题。
 
@@ -53,18 +53,8 @@ _**上一次修改主题：**2017-09-07_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 使用 Exchange 管理中心 将就地电子数据展示搜索结果导出到 PST
@@ -83,25 +73,12 @@ _**上一次修改主题：**2017-09-07_
     
       - 单击\&quot;包括不可搜索的项目\&quot;复选框以包括无法搜索的邮箱项目（例如，带无法被 Exchange 搜索编入索引的文件类型附件的邮件）。不可搜索的项目会被导出到一个单独的 PST 文件中。
         
-        <table>
-        <colgroup>
-        <col style="width: 100%" />
-        </colgroup>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果邮箱包含大量不可搜索的项目，在导出电子数据展示搜索结果时包括不可搜索的项目将需要更长时间。为了减少导出搜索结果所需的时间，并防止出现大型 PST 导出文件，请考虑以下建议：
-        <ul>
-        <li><p>创建多个电子数据展示搜索，每个搜索负责搜索较少数量的源邮箱。</p></li>
-        <li><p>如果您导出特定日期范围内的所有邮箱内容（但未在搜索条件中指定任何关键字），则该日期范围内的所有不可搜索项目都将自动包含在搜索结果中。因此，请不要选中&amp;quot;包括不可搜索的项目&amp;quot;复选框。</p></li>
-        </ul></td>
-        </tr>
-        </tbody>
-        </table>
+        > [!important]
+        > 如果邮箱包含大量不可搜索的项目，在导出电子数据展示搜索结果时包括不可搜索的项目将需要更长时间。为了减少导出搜索结果所需的时间，并防止出现大型 PST 导出文件，请考虑以下建议：
+        > <ul>
+        > <li><p>创建多个电子数据展示搜索，每个搜索负责搜索较少数量的源邮箱。</p></li>
+        > <li><p>如果您导出特定日期范围内的所有邮箱内容（但未在搜索条件中指定任何关键字），则该日期范围内的所有不可搜索项目都将自动包含在搜索结果中。因此，请不要选中&amp;quot;包括不可搜索的项目&amp;quot;复选框。</p></li>
+        > </ul>
 
 
 4.  单击\&quot;开始\&quot;将搜索结果导出到 PST 文件。

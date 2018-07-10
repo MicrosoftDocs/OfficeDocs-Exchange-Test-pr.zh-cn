@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 本主题介绍边缘订阅进程如何设置用于保护 EdgeSync 订阅进程的凭据，以及 EdgeSync 如何使用这些凭据在 Exchange 2013 邮箱服务器和边缘传输服务器之间建立安全 LDAP 连接。有关边缘订阅进程的详细信息，请参阅[边缘订阅](edge-subscriptions-exchange-2013-help.md)。
 
@@ -101,18 +101,8 @@ EdgeSync 复制帐户
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ESBRA 凭据以明文形式写入边缘订阅文件。必须在整个订阅进程中保护此文件。将边缘订阅文件导入 Exchange 组织后，应该立即将边缘订阅文件从边缘传输服务器、用于将文件导入 Exchange 组织的网络共享以及任何可移动媒体中删除。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> ESBRA 凭据以明文形式写入边缘订阅文件。必须在整个订阅进程中保护此文件。将边缘订阅文件导入 Exchange 组织后，应该立即将边缘订阅文件从边缘传输服务器、用于将文件导入 Exchange 组织的网络共享以及任何可移动媒体中删除。
 
 
 返回顶部

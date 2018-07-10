@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Microsoft Exchange Server 2013 无法继续，因为 Active Directory 林中有一台或多台计算机在运行 Exchange 2000 Server 或 Exchange Server 2003。必须将所有的 Exchange 2000 和 Exchange 2003 服务器从林中删除，然后才能安装 Exchange 2013。邮箱、公用文件夹以及其他所有 Exchange 对象或组件都必须升级为 Exchange Server 2007 或 Exchange Server 2010。你不能从 Exchange 2000 或 Exchange 2003 直接升级到 Exchange 2013。
 

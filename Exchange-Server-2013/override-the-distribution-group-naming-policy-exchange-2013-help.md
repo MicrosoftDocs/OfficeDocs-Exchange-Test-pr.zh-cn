@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-13_
+_**上一次修改主题：** 2012-10-13_
 
 组的通讯组命名策略仅应用于所创建的用户组。当您或其他管理员使用 Exchange 管理中心 (EAC) 创建通讯组时，组命名策略被忽略，不应用于组名。
 
@@ -29,18 +29,8 @@ _**上一次修改主题：**2012-10-13_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -67,18 +57,8 @@ _**上一次修改主题：**2012-10-13_
 
     Set-DistributionGroup -Identity "Goverment_Contracts_NWRegion" -Name "Government_ContractEstimates_NWRegion" -DisplayName "Government_ContractEstimates_NWRegion" -IgnoreNamingPolicy
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>请务必包括<em>DisplayName</em>参数，当您重命名组。如果不这样做，旧的名称仍将显示在收件人上的共享的地址簿:，抄送:，并从 ︰ 在电子邮件中的行。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 请务必包括<em>DisplayName</em>参数，当您重命名组。如果不这样做，旧的名称仍将显示在收件人上的共享的地址簿:，抄送:，并从 ︰ 在电子邮件中的行。
 
 
 ## 您如何知道这有效？

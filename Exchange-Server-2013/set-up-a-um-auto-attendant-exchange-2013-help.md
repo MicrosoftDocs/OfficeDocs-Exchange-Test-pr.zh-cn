@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 除了使用户可以访问语音邮件，统一消息 (UM) 还使您可以根据组织的需要创建一个或多个 UM 自动助理。可以使用 UM 自动助理为组织创建语音菜单系统，使外部和内部呼叫者可以找到并呼叫组织中的公司用户或部门或者将呼叫转接给他们。
 
@@ -39,18 +39,8 @@ _**上一次修改主题：**2015-03-09_
 
 3.  确定自动助理的营业和非营业时间并使用\&quot;营业时间\&quot;设置营业时间。虽然这不是必需的，但是还可以确定此自动助理的假日日程安排。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>还应对助理设置时区。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 还应对助理设置时区。
 
 
 4.  确定是需要标准系统生成的营业和非营业时间问候语还是为它们创建自定义录音。

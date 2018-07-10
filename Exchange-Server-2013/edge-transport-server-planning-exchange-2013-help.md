@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 Exchange Service Pack 1 中重新引入了边缘传输服务器角色。边缘传输为 Exchange 组织增强了反垃圾邮件保护。边缘传输服务器还会对在组织之间传输的邮件应用策略。此服务器角色部署在外围网络中和 Active Directory 林之外。边缘传输服务器无法按客户端访问服务器或邮箱服务器所采用的方式直接访问 Active Directory，以获取配置和收件人信息。边缘传输服务器使用 Active Directory 轻型目录服务 (AD LDS) 来在本地存储配置和收件人信息。
 
 您可以向现有 Exchange 2013 组织添加边缘传输服务器。在安装边缘传输服务器时，不必执行任何其他 Active Directory 准备步骤。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您要向现有 Exchange 2010 或 Exchange 2007 组织添加边缘传输，将需要在旧版服务器上安装特定汇总更新，然后再安装 Exchange 2013 边缘传输。有关详细信息，请参阅 <a href="exchange-2013-system-requirements-exchange-2013-help.md">Exchange 2013 系统要求</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果您要向现有 Exchange 2010 或 Exchange 2007 组织添加边缘传输，将需要在旧版服务器上安装特定汇总更新，然后再安装 Exchange 2013 边缘传输。有关详细信息，请参阅 <a href="exchange-2013-system-requirements-exchange-2013-help.md">Exchange 2013 系统要求</a>。
 
 
 规划部署边缘传输服务器时，应当考虑以下问题：
@@ -96,18 +86,8 @@ Exchange Service Pack 1 中重新引入了边缘传输服务器角色。边缘�
     </tbody>
     </table>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>边缘传输服务器角色使用非标准 LDAP 端口。本主题中指定的端口是在安装边缘传输服务器角色时配置的 LDAP 通信端口。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 边缘传输服务器角色使用非标准 LDAP 端口。本主题中指定的端口是在安装边缘传输服务器角色时配置的 LDAP 通信端口。
 
 
   - **EdgeSync**   推荐的部署过程是创建一个边缘订阅，从而将边缘传输服务器订阅到 Exchange 组织。创建边缘订阅时，会将收件人和配置数据从 Active Directory 复制到 AD LDS。将边缘传输服务器订阅到 Active Directory 站点。然后，该站点的邮箱服务器上运行的 MicrosoftExchange EdgeSync 服务将通过同步 Active Directory 中的数据来定期更新 AD LDS。边缘订阅过程自动提供启用从 Exchange 组织到 Internet 的邮件流（通过边缘传输服务器）所需的发送连接器。如果在边缘传输服务器上使用查找收件人或安全列表聚合功能，则必须将边缘传输服务器订阅到组织。

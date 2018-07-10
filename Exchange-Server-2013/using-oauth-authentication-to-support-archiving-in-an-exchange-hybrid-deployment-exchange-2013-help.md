@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 如果您位于 Exchange 2013 混合部署中并使用 Exchange Online Archiving (EOA) for Exchange Server，您必须在升级到 Exchange 2013 累积更新 5 (CU5) 之后在内部部署组织和 Exchange Online 组织之间配置 OAuth 身份验证。通过 EOA，可以对具有内部部署邮箱的用户使用基于云的存档。在此方案中，内部部署邮箱服务器上的邮件记录管理 (MRM) 助手将应用存档策略，并将邮件从用户邮箱自动移动到基于云的存档。在 Exchange 2013 CU5 中，它使用 OAuth 身份验证。
 

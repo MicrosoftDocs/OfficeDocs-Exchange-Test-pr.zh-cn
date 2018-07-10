@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 每天，信息人员都通过电子邮件传递敏感信息，包括财务报表和数据、客户和员工信息、机密的产品信息和规格信息等。在 Microsoft Exchange Server 2013、Microsoft Outlook 和 Microsoft OfficeOutlook Web App 中，用户可以通过应用 Active Directory 权限管理服务 (AD RMS) 权限策略模板将信息权限管理 (IRM) 保护应用于邮件。这要求在组织中部署 AD RMS。有关 AD RMS 的详细信息，请参阅 [Active Directory 权限管理服务](https://go.microsoft.com/fwlink/p/?linkid=129823)。
 
@@ -29,35 +29,15 @@ _**上一次修改主题：**2016-12-09_
 
 在 Outlook 服务器上创建 Exchange 2013 保护规则时，会使用 Exchange Web 服务将这些规则自动分发到 Outlook 2010。要对 Outlook 2010 应用规则，指定的 AD RMS 权限策略模板必须能够在用户的计算机上可用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果将权限策略模板从 AD RMS 服务器中删除，必须修改使用该删除模板的任何 Outlook 保护规则。如果 Outlook 保护规则继续使用已删除的权限策略模板，并在组织中启用传输解密，则解密代理将无法解密使用不再可用的模板保护的邮件。如果将传输解密配置为必要操作，那么传输服务将拒绝邮件并向发件人发送未送达报告 (NDR)。有关传输解密的详细信息，请参阅<a href="transport-decryption-exchange-2013-help.md">传输解密</a>。有关 AD RMS 权限策略模板的更多详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=179455">AD RMS 策略模板注意事项</a>。<br />
-在 Windows Server 2008 和更高版本中，可以存档而不是删除权限策略模板。存档的模板仍然可以用于许可证内容，但是如果创建或修改 Outlook 保护规则，存档的模板则不会包含在模板列表中。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果将权限策略模板从 AD RMS 服务器中删除，必须修改使用该删除模板的任何 Outlook 保护规则。如果 Outlook 保护规则继续使用已删除的权限策略模板，并在组织中启用传输解密，则解密代理将无法解密使用不再可用的模板保护的邮件。如果将传输解密配置为必要操作，那么传输服务将拒绝邮件并向发件人发送未送达报告 (NDR)。有关传输解密的详细信息，请参阅<a href="transport-decryption-exchange-2013-help.md">传输解密</a>。有关 AD RMS 权限策略模板的更多详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=179455">AD RMS 策略模板注意事项</a>。<br />
+> 在 Windows Server 2008 和更高版本中，可以存档而不是删除权限策略模板。存档的模板仍然可以用于许可证内容，但是如果创建或修改 Outlook 保护规则，存档的模板则不会包含在模板列表中。
 
 
 Outlook 保护规则类似于传输保护规则。两者均根据邮件条件进行应用，并且两者都通过应用 AD RMS 权限保护模板来保护邮件。但是，传输保护规则由传输规则代理应用到邮箱服务器上的传输服务。Outlook 保护规则在邮件从用户的计算机中发出之前应用到 Outlook 2010。由 Outlook 保护规则保护的邮件会在应用了 IRM 保护的情况下进入传输管道。此外，由 Outlook 保护规则保护的邮件也会以加密格式保存在发件人邮箱的“已发送邮件”文件夹中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果在 Exchange 组织中启用了传输解密，则传输服务上的解密代理可以解密组织中使用 AD RMS 服务器由 Outlook 保护规则进行 IRM 保护的邮件。传输服务上安装的传输规则代理和其他传输代理可以检查邮件内容。有关传输解密的详细信息，请参阅<a href="transport-decryption-exchange-2013-help.md">传输解密</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果在 Exchange 组织中启用了传输解密，则传输服务上的解密代理可以解密组织中使用 AD RMS 服务器由 Outlook 保护规则进行 IRM 保护的邮件。传输服务上安装的传输规则代理和其他传输代理可以检查邮件内容。有关传输解密的详细信息，请参阅<a href="transport-decryption-exchange-2013-help.md">传输解密</a>。
 
 
 使用传输保护规则时，不会向用户显示邮件在传输服务上是否自动受到保护。将 Outlook 保护规则应用于 Outlook 2010 中的邮件时，用户就会知道邮件是否受到 IRM 保护。如果需要，用户还可以选择其他的权限策略模板。

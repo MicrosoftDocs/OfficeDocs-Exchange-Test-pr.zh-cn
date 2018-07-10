@@ -13,42 +13,22 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 *cmdlet*，全称为\&quot;command-let\&quot;，是 Exchange 命令行管理程序中最小的功能单元。Cmdlet 类似于其他命令行管理程序中的内置命令，例如 `cmd.exe` 中的 `dir` 命令。与这些熟悉的命令一样，cmdlet 可以直接从命令行管理程序中的命令行调用，并在命令行管理程序的环境中运行，而不是作为单独的进程运行。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>自 Microsoft Exchange Server 2007 发布以来，Exchange 2013 内部使用 cmdlet 的方式已由于 Windows PowerShell 远程功能的使用而发生了更改。这些更改对使用 cmdlet 所需的方式并没有影响，但为管理 Exchange 服务器的方式提供了更大的灵活性。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 自 Microsoft Exchange Server 2007 发布以来，Exchange 2013 内部使用 cmdlet 的方式已由于 Windows PowerShell 远程功能的使用而发生了更改。这些更改对使用 cmdlet 所需的方式并没有影响，但为管理 Exchange 服务器的方式提供了更大的灵活性。
 
 
 Cmdlet 通常用于重复性管理任务，并且在命令行管理程序中，为 Exchange 特定的管理任务提供几百个 cmdlet。这些 cmdlet 还可以用于基本 Exchange PowerShell 命令行管理程序设计中包括的非 Windows 系统 cmdlet。有关如何打开 Exchange 命令行管理程序的信息，请参阅[打开命令行管理程序](https://technet.microsoft.com/zh-cn/library/dd638134\(v=exchg.150\))。
 
 命令行管理程序中的所有 cmdlet 均以动词-名词对的形式表示。动词-名词对始终由连字符 (-) 分隔（不加空格），并且 cmdlet 名词始终为单数形式。动词指的是 cmdlet 执行的操作。名词指的是 cmdlet 执行操作的对象。例如，在 **Get-SystemMessage** cmdlet 中，动词是 **Get**，而名词是 **SystemMessage**。管理某个特定功能的所有命令行管理程序 cmdlet 共享同一个名词。下表提供了在命令行管理程序中可用的部分动词示例。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，如果省略动词，则命令行管理程序会假定 <strong>Get</strong> 动词。例如，呼叫 <strong>Mailbox</strong> 时，检索的结果与呼叫 <strong>Get-Mailbox</strong> 时检索的结果相同。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 默认情况下，如果省略动词，则命令行管理程序会假定 <strong>Get</strong> 动词。例如，呼叫 <strong>Mailbox</strong> 时，检索的结果与呼叫 <strong>Get-Mailbox</strong> 时检索的结果相同。
 
 
 ### Exchange 命令行管理程序中的动词示例
@@ -76,18 +56,9 @@ Cmdlet 通常用于重复性管理任务，并且在命令行管理程序中，�
 <tr class="odd">
 <td><p><strong>Get</strong></p></td>
 <td><p><strong>Get</strong> cmdlet 可以检索有关特定 Exchange 对象的信息。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>大多数 <strong>Get</strong> cmdlet 在运行时仅返回摘要信息。若要在运行命令时通知 <strong>Get</strong> cmdlet 返回详细信息，请将命令管道传输至 <strong>Format-List</strong> cmdlet 中。有关 <strong>Format-List</strong> 命令的详细信息，请参阅<a href="working-with-command-output-exchange-2013-help.md">使用命令输出</a>。有关管道传输的详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/aa998260(v=exchg.150)">管道传输</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 大多数 <strong>Get</strong> cmdlet 在运行时仅返回摘要信息。若要在运行命令时通知 <strong>Get</strong> cmdlet 返回详细信息，请将命令管道传输至 <strong>Format-List</strong> cmdlet 中。有关 <strong>Format-List</strong> 命令的详细信息，请参阅<a href="working-with-command-output-exchange-2013-help.md">使用命令输出</a>。有关管道传输的详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/aa998260(v=exchg.150)">管道传输</a>。
 
 </td>
 </tr>

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 在 Microsoft Exchange Server 2013 中，我们正在通过引入新的功能和体系结构更改来增强早期版本的 Exchange。Exchange 2013 中的统一消息 (UM) 包含与 Exchange 2010 和 Exchange 2007 相同的功能集，但是统一消息不再是单独的服务器角色。它现在是 Exchange 2013 中提供的语音相关功能的组件。
 
@@ -45,18 +45,8 @@ UCMA 4.0 支持统一消息中的新功能，如将相同版本的语音引擎�
 
   - UCMA 4.0 安装程序包括 Exchange 2013 的所有先决条件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>UCMA 4.0 会在安装 Exchange 2013 时安装。有关 UCMA 4.0 和安装要求的详细信息，请参阅 <a href="exchange-2013-prerequisites-exchange-2013-help.md">Exchange 2013 先决条件</a>。若要升级到 UCMA 的最新版本，必须先使用“添加/删除程序”卸载任何已安装的以前版本的 UCMA。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> UCMA 4.0 会在安装 Exchange 2013 时安装。有关 UCMA 4.0 和安装要求的详细信息，请参阅 <a href="exchange-2013-prerequisites-exchange-2013-help.md">Exchange 2013 先决条件</a>。若要升级到 UCMA 的最新版本，必须先使用“添加/删除程序”卸载任何已安装的以前版本的 UCMA。
 
 
 ## 语音邮件预览改进

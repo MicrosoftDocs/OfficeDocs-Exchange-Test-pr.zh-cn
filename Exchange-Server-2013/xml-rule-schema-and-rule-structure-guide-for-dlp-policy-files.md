@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 本概述阐明了用于数据丢失防护 (DLP) 策略模板文件的 XML 架构定义组件，还提供了 XML 格式的示例策略文件。这有助于您在开始之前了解整个 DLP 体系结构和规则开发流程。有关详细信息，请参阅[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)和[定义您自己的 DLP 模板和信息类型](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)。
 

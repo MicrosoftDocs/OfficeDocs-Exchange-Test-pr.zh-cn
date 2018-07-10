@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-04-19_
+_**上一次修改主题：** 2013-04-19_
 
 在营业时间配置统一邮件 (UM) 自动助理时，处于打开状态，您的组织的日期和营业时间问候语的小时数并定义菜单提示呼叫者将听到时它们调用配置自动助理是分机号。如果呼叫者是您定义工作时间之外的时间内达到自动助理，呼叫者将听到非营业时间提示和问候。
 
@@ -23,18 +23,8 @@ EAC 有多个默认日程安排选项。例如，大多数公司都是从上午 
 
 默认情况下，不论呼叫者每天何时呼叫 UM 自动助理，自动助理将会播放营业时间提示和问候语。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>设置 UM 自动助理的营业时间和非营业时间的日程安排时，请确保时区配置正确。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 设置 UM 自动助理的营业时间和非营业时间的日程安排时，请确保时区配置正确。
 
 
 有关与 UM 自动助理相关的更多管理任务，请参阅 [UM 自动助理过程](um-auto-attendant-procedures-exchange-2013-help.md)。
@@ -51,18 +41,8 @@ EAC 有多个默认日程安排选项。例如，大多数公司都是从上午 
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？

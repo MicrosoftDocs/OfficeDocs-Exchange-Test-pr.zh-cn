@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2014-07-31_
+_**上一次修改主题：** 2014-07-31_
 
 Exchange Server 2013 使您可以将 Exchange 服务器安装委派给不属于 Exchange 2013 组织管理角色组的人员。这有利于安装和设置服务器的人员与管理服务的人员不是同一人的大型公司（如 Exchange）。如果这听起来正是您要做的事情，则本主题对您很适用。
 
@@ -33,18 +33,8 @@ Exchange Server 2013 使您可以将 Exchange 服务器安装委派给不属于 
     
       - 拒绝对 Exchange 公用文件夹存储对象的 CreateChild 和 DeleteChild 权限。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>公用文件夹在组织级别中进行管理；因此，只有 Exchange 管理员可以创建和删除公用文件夹存储。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 公用文件夹在组织级别中进行管理；因此，只有 Exchange 管理员可以创建和删除公用文件夹存储。
 
 
   - 将服务器的 Active Directory 计算机帐户添加到 Exchange 服务器组。

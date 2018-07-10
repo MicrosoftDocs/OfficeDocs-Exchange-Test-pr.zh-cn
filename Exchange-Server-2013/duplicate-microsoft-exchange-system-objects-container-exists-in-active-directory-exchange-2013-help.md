@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2013-02-18_
+_**上一次修改主题：** 2013-02-18_
 
 Microsoft Exchange Server 2013 安装程序无法继续，因为它在 Active Directory 域命名上下文中发现一个重复的 Microsoft Exchange System Objects 容器。当安装程序发现重复的 Microsoft Exchange System Objects 容器时，您必须删除此重复容器，安装程序才能继续运行。如果存在重复的 Microsoft Exchange System Objects 容器，再次运行 **DomainPrep** 不能解决问题。必须标识并删除重复的 Microsoft Exchange System Objects 容器。
 
@@ -35,18 +35,8 @@ Microsoft Exchange Server 2013 安装程序无法继续，因为它在 Active Di
 
 7.  在 Active Directory 对话框中单击“是”来确认删除。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要立即复制更改，必须手动启动域控制器之间的复制。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果要立即复制更改，必须手动启动域控制器之间的复制。
 
 
 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：[Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612)、 [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542) 或 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351)。

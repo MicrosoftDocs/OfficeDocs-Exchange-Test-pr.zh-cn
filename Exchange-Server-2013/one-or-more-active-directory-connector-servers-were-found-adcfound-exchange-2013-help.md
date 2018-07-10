@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2016-12-15_
+_**上一次修改主题：** 2016-12-15_
 
 此主题中的内容尚未针对 Microsoft Exchange Server 2013 进行更新。虽然尚未更新，但仍可能适用于 Exchange 2013。如果您仍需要帮助，请查看下面的社区资源。
 
@@ -46,18 +46,9 @@ Exchange 2007 或 Exchange 2010 安装程序要求删除所有 ADC 组件。
 <li><p>将<strong>启动类型</strong>更改为<strong>禁用</strong>。下次计算机启动时，将无法启动 ADC 服务。</p></li>
 <li><p>单击&amp;quot;应用&amp;quot;，然后单击&amp;quot;确定&amp;quot;。</p></li>
 <li><p>要卸载 ADC 服务，请使用 Microsoft Exchange 2000 Server 或 Microsoft Exchange Server 2003年光盘上的 Active Directory 安装向导。打开 \ADC\I386 文件夹，然后双击 Setup.exe 程序。按照提示<strong>删除所有</strong>ADC 服务组件。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>第 6 步，并<strong>删除所有</strong>ADC 组件来解决此问题，您必须完成。若要禁用 ADC 服务不足。</td>
-</tr>
-</tbody>
-</table>
+
+> [!important]
+> 第 6 步，并<strong>删除所有</strong>ADC 组件来解决此问题，您必须完成。若要禁用 ADC 服务不足。
 
 </li>
 </ol></td>
@@ -68,9 +59,9 @@ Exchange 2007 或 Exchange 2010 安装程序要求删除所有 ADC 组件。
 
 有关 ADC 的详细信息，请参阅下列 Microsoft 知识库文章：
 
-  - 325300，"支持网络广播︰ 活动目录连接器简介"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325300](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=325300))。
+  - 325300，"支持网络广播︰ 活动目录连接器简介"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325300](https://go.microsoft.com/fwlink/?linkid=3052&kbid=325300))。
 
-  - 325221，"支持网络广播︰ Microsoft 高级 Active Directory 连接符"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325221](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=325221))。
+  - 325221，"支持网络广播︰ Microsoft 高级 Active Directory 连接符"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325221](https://go.microsoft.com/fwlink/?linkid=3052&kbid=325221))。
 
-  - 312632，"如何安装和配置 Exchange 2000 Server 中的活动目录连接器"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=312632](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=312632))。
+  - 312632，"如何安装和配置 Exchange 2000 Server 中的活动目录连接器"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=312632](https://go.microsoft.com/fwlink/?linkid=3052&kbid=312632))。
 

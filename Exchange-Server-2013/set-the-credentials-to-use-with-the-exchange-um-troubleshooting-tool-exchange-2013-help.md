@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Microsoft Exchange 2010 UM 疑难解答工具是名为 **Test-ExchangeUMCallFlow** 的 Exchange 命令行管理程序 cmdlet。您可以使用此 cmdlet 来诊断电话应答方案的配置错误，并测试语音邮件能否同时在本地和跨界 Microsoft Exchange Server 2010 Service Pack 1 (SP1) 或更高版本 UM 部署中正常工作。您可以在使用 Microsoft Office、Microsoft Lync Server 2010 或更高版本进行部署时使用此 cmdlet，也可以在使用 VoIP 网关、IP PBX 或会话边界控制器 (SBC) 进行 UM 部署时使用此 cmdlet。
 
@@ -39,34 +39,14 @@ Microsoft Exchange 2010 UM 疑难解答工具是名为 **Test-ExchangeUMCallFlow
 
   - 安装 UM 疑难解答工具。有关详细步骤，请参阅[安装 Exchange UM 故障排除工具](install-the-exchange-um-troubleshooting-tool-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果要在<code>SIPClient</code>模式下使用 UM 故障排除工具，还有其他几个办公室通信服务器 2007 R2 或 Microsoft Lync Server 要求和先决条件。有关详细信息，请参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=311961">清单︰ 部署 Office 通信服务器 2007 R2 和 Exchange 2010 统一消息</a>或<a href="checklist-integrate-exchange-2013-um-with-lync-server-exchange-2013-help.md">检查表：将 Exchange 2013 UM 与 Lync Server 集成</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 如果要在<code>SIPClient</code>模式下使用 UM 故障排除工具，还有其他几个办公室通信服务器 2007 R2 或 Microsoft Lync Server 要求和先决条件。有关详细信息，请参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=311961">清单︰ 部署 Office 通信服务器 2007 R2 和 Exchange 2010 统一消息</a>或<a href="checklist-integrate-exchange-2013-um-with-lync-server-exchange-2013-help.md">检查表：将 Exchange 2013 UM 与 Lync Server 集成</a>。
 
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 设置要用于 UM 故障排除工具的凭据

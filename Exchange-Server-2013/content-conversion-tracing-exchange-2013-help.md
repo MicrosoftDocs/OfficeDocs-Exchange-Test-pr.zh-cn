@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-09-25_
+_**上一次修改主题：** 2012-09-25_
 
 内容转换跟踪将捕获发生在 Microsoft Exchange Server 2013 邮箱服务器上入站和出站邮件上邮箱传输服务执行的 MAPI 内容转换中的失败。
 
@@ -51,18 +51,8 @@ _**上一次修改主题：**2012-09-25_
 
   - 系统：完全控制
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>内容转换跟踪将复制电子邮件的完整内容。 为了避免不利地披露机密信息，需要对内容转换跟踪文件的位置设置适当的安全权限。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 内容转换跟踪将复制电子邮件的完整内容。 为了避免不利地披露机密信息，需要对内容转换跟踪文件的位置设置适当的安全权限。
 
 
 返回顶部

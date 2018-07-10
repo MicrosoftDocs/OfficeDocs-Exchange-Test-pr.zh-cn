@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 Microsoft Exchange Server 2013允许您使用 Microsoft Exchange Online 或其他Exchange组织配置的组织关系。建立一个组织的关系，可以增强用户体验，在处理与其他组织。例如，可以共享忙 / 闲数据、 配置安全邮件流和跨这两个组织启用邮件跟踪。
 

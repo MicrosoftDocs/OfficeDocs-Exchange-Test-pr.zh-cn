@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-07-14_
+_**上一次修改主题：** 2014-07-14_
 
 从 Exchange Server 4.0 到 Exchange Server 2010 的所有 Exchange Server 早期版本均支持信息存储进程单个示例 (Store.exe) 在邮箱服务器角色上运行。此单个存储示例托管服务器上的所有数据库：主动、被动、延迟和恢复。在以前的 Exchange 体系结构中，邮箱服务器上托管的不同数据库之间还有少量（如果有的话）的隔离。单个邮箱数据库存在的问题之一是，可能会对其他所有数据库产生负面影响，其邮箱损坏产生的崩溃可能影响为所有数据库驻留在服务器上的用户提供的服务。
 
@@ -65,18 +65,8 @@ Exchange 早期版本中单个存储示例的另一挑战是，虽然可扩展�
 
 Exchange 2013 使用的静态算法根据物理 RAM 为每个存储工作进程的 ESE 缓存分配内存。这被称为数据库的“最大缓存目标”。25% 的总服务器内存分配给了 ESE 缓存。这被称为“服务器缓存大小目标”。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 Active Directory 中 <em>InformationStore</em> 对象的 <em>msExchESEParamCacheSizeMax</em> 属性可以覆盖服务器缓存大小目标和分配给 ESE 缓存存储的内存量（为在所有存储进程中进行分配所配置的值为 32 KB 页面数量）。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 使用 Active Directory 中 <em>InformationStore</em> 对象的 <em>msExchESEParamCacheSizeMax</em> 属性可以覆盖服务器缓存大小目标和分配给 ESE 缓存存储的内存量（为在所有存储进程中进行分配所配置的值为 32 KB 页面数量）。
 
 
 此缓存的静态量分配到主动和被动副本。只有当为主动数据库副本服务时，存储工作进程才会将最大缓存目标分配给存储工作进程。20% 的最大缓存目标分配给被动数据库副本。存储保留剩余部分，并在数据库从被动转为主动时将剩余部分分配给工作进程。

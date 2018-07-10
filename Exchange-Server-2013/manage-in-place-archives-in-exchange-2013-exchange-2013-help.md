@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-02-01_
+_**上一次修改主题：** 2016-02-01_
 
 “就地存档”有助于您重新获得对组织的邮件数据的控制，而无需个人存储 (.pst) 文件，并且可让您满足组织的邮件保留和电子数据展示需求。启用存档时，用户可以将邮件存储在存档邮箱（可使用 MicrosoftOutlook 和 Outlook Web App 访问）中。
 
@@ -29,18 +29,8 @@ _**上一次修改主题：**2016-02-01_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -55,45 +45,21 @@ _**上一次修改主题：**2016-02-01_
 
 3.  在“新建用户邮箱”页面中，在“别名”框中键入此用户的别名。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您将此框保留为空，则会对别名使用您在“用户登录名”框中键入的值。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果您将此框保留为空，则会对别名使用您在“用户登录名”框中键入的值。
 
 
-4.  
-    
-    选择下列选项之一：
+4.  选择下列选项之一：
     
       - **现有用户**   单击此按钮然后单击“浏览”可打开“选择用户 – 整个林”对话框。此对话框显示尚未启用邮件功能或没有 Exchange 邮箱的林中的 Active Directory 用户帐户的列表。选择想要为其启用邮件功能的用户帐户，然后单击“确定”。如果选择此选项，则不必提供用户帐户信息，因为这些信息已存在于 Active Directory 中。
     
       - **新建用户**   单击此按钮可在 Active Directory 中创建一个新的用户帐户，并为此用户创建一个邮箱。如果您选择此选项，则必须提供必需的用户帐户信息。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>与用户邮箱关联的 Active Directory 帐户必须与 Exchange 服务器驻留在相同的林中。要为受信任的林中存在的用户帐户创建邮箱，必须创建一个链接邮箱。有关详细信息，请参阅<a href="manage-linked-mailboxes-exchange-2013-help.md">管理链接的邮箱</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 与用户邮箱关联的 Active Directory 帐户必须与 Exchange 服务器驻留在相同的林中。要为受信任的林中存在的用户帐户创建邮箱，必须创建一个链接邮箱。有关详细信息，请参阅<a href="manage-linked-mailboxes-exchange-2013-help.md">管理链接的邮箱</a>。
 
 
-5.  
-    
-    单击“更多选项”配置下列设置。
+5.  单击“更多选项”配置下列设置。
     
       - **邮箱数据库**   单击“浏览”选择用于存储邮箱的邮箱数据库。如果未选择数据库，Exchange 将会自动分配一个数据库。
     
@@ -105,9 +71,7 @@ _**上一次修改主题：**2016-02-01_
     
       - **通讯簿策略**   使用此列表可为邮箱选择通讯簿策略 (ABP)。ABP 包含一个全局地址列表 (GAL)、一个脱机通讯簿 (OAB)、一个会议室列表以及一组地址列表。在分配给邮箱用户时，ABP 使这些用户可以访问 Outlook 和 Outlook Web App 中的自定义 GAL。若要了解详细信息，请参阅[通讯簿策略](address-book-policies-exchange-2013-help.md)。
 
-6.  
-    
-    完成后，请单击“保存”创建邮箱。
+6.  完成后，请单击“保存”创建邮箱。
 
 ## 使用命令行管理程序
 
@@ -142,18 +106,8 @@ _**上一次修改主题：**2016-02-01_
 
 3.  在详细信息窗格中的“就地存档”下，单击“启用”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>也可以通过选择多个邮箱（使用 Shift 或 Ctrl 键）批量启用存档。选择多个邮箱后，在详细信息窗格中，单击“更多选项”。然后在“存档”下单击“启用”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!tip]
+    > 也可以通过选择多个邮箱（使用 Shift 或 Ctrl 键）批量启用存档。选择多个邮箱后，在详细信息窗格中，单击“更多选项”。然后在“存档”下单击“启用”。
 
 
 4.  在“创建就地存档”页面上，单击“确定”让 Exchange 自动为存档选择邮箱数据库，或单击“浏览”指定一个数据库。
@@ -186,18 +140,8 @@ _**上一次修改主题：**2016-02-01_
 
 您可能需要禁用用户的存档以便进行故障排除，或者为了将邮箱移动到不支持就地存档的 Exchange 版本。如果禁用内部部署存档，则该存档中的所有信息将保留在邮箱数据库中，直到超过邮箱保留时间并永久删除内部部署存档。（默认情况下，Exchange 会将断开连接的邮箱（包括存档邮箱）保留三十天。）
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>禁用存档后将从邮箱中删除存档，并在邮箱数据库中将其标记为删除。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 禁用存档后将从邮箱中删除存档，并在邮箱数据库中将其标记为删除。
 
 
 如果要将内部部署存档重新连接到该邮箱，可使用 [Connect-Mailbox](https://technet.microsoft.com/zh-cn/library/aa997878\(v=exchg.150\)) cmdlet 和 *Archive* 参数。
@@ -210,18 +154,8 @@ _**上一次修改主题：**2016-02-01_
 
 3.  在详细信息窗格中的“就地存档”下，单击“禁用”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>也可以通过选择多个邮箱（使用 Shift 或 Ctrl 键）批量禁用存档。选择多个邮箱后，在详细信息窗格中，单击“更多选项”。然后在“存档”下单击“禁用”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!tip]
+    > 也可以通过选择多个邮箱（使用 Shift 或 Ctrl 键）批量禁用存档。选择多个邮箱后，在详细信息窗格中，单击“更多选项”。然后在“存档”下单击“禁用”。
 
 
 ## 使用命令行管理程序
@@ -281,32 +215,12 @@ _**上一次修改主题：**2016-02-01_
 
 禁用存档邮箱后，它将断开连接。已断开连接的存档邮箱将在邮箱数据库中保留一段指定的时间。默认情况下，Exchange 会将已断开连接的存档保留 30 天。在此期间，可以通过将存档与现有邮箱相关联来恢复存档。可以修改已删除邮箱的保留期限，以延长或缩短删除邮箱或存档的保留期限。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果对用户禁用存档，然后对该相同用户启用存档，则用户将获取一个新存档。新存档将不包含用户已断开连接的存档中的数据。如果要将用户重新连接到他或她的已断开连接的存档，则必须执行此过程。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 如果对用户禁用存档，然后对该相同用户启用存档，则用户将获取一个新存档。新存档将不包含用户已断开连接的存档中的数据。如果要将用户重新连接到他或她的已断开连接的存档，则必须执行此过程。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不能使用 EAC 将已断开连接的存档连接到邮箱用户。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 不能使用 EAC 将已断开连接的存档连接到邮箱用户。
 
 
 ## 使用命令行管理程序

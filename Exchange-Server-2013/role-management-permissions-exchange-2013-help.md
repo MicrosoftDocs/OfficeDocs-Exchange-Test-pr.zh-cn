@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 执行管理角色配置任务所需的权限视所执行的过程或要运行的 cmdlet 而定。有关管理角色的详细信息，请参阅[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 
@@ -27,18 +27,8 @@ _**上一次修改主题：**2015-03-09_
 
 3.  现在运行 **Get-ManagementRoleAssignment** cmdlet 以查看分配给您的角色组或管理角色，以便确定您是否具有管理该功能所需的权限。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>必须分配了 Role Management 管理角色才能运行 <strong>Get-ManagementRoleAssignment</strong> cmdlet。如果没有运行 <strong>Get-ManagementRoleAssignment</strong> cmdlet 的权限，则请求 Exchange 管理员检索分配给您的角色组或管理角色。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 必须分配了 Role Management 管理角色才能运行 <strong>Get-ManagementRoleAssignment</strong> cmdlet。如果没有运行 <strong>Get-ManagementRoleAssignment</strong> cmdlet 的权限，则请求 Exchange 管理员检索分配给您的角色组或管理角色。
 
 
 如果要将管理一项功能的权限委派给另一个用户，请参阅[委派角色分配](delegate-role-assignments-exchange-2013-help.md)。
@@ -95,18 +85,9 @@ _**上一次修改主题：**2015-03-09_
 <tr class="odd">
 <td><p>Active Directory 拆分权限</p></td>
 <td><p><a href="organization-management-exchange-2013-help.md">组织管理</a></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要运行带有 <em>PrepareAD</em> 和 <em>ActiveDirectorySplitPermissions</em> 参数的 <code>setup.exe</code> 命令，所用帐户必须是 Schema Admins 和 Enterprise Administrators 组的成员。</td>
-</tr>
-</tbody>
-</table>
+
+> [!important]
+> 要运行带有 <em>PrepareAD</em> 和 <em>ActiveDirectorySplitPermissions</em> 参数的 <code>setup.exe</code> 命令，所用帐户必须是 Schema Admins 和 Enterprise Administrators 组的成员。
 
 </td>
 </tr>

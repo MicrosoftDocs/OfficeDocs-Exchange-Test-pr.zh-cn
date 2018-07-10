@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2017-01-26_
+_**上一次修改主题：** 2017-01-26_
 
 在 Microsoft Exchange Server 2013 中，当邮件通过 Exchange 组织时，会应用多种不同的邮件大小限制。有关详细信息，请参阅[邮件大小限制](message-size-limits-exchange-2013-help.md)。
 
@@ -225,18 +225,8 @@ _**上一次修改主题：**2017-01-26_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 使用记事本配置客户端特定的邮件大小限制
@@ -266,7 +256,7 @@ _**上一次修改主题：**2017-01-26_
 
 如果不使用记事本，还可以配置命令行中客户端特定的邮件大小限制。打开 Exchange 服务器上提升的命令提示符（通过选择“**以管理员身份运行**”打开一个命令提示符窗口）并为要配置的限制运行相应命令。
 
-**注意：**
+**注意：** 
 
   - 命令中的大小值为默认值，可能需要对其进行更改。
 

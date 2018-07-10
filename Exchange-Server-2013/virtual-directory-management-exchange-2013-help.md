@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-05_
+_**上一次修改主题：** 2012-10-05_
 
 通过虚拟目录访问许多用于 Exchange Server 2013 的客户端协议。Internet 信息服务 (IIS) 使用虚拟目录来访问 Web 应用程序，例如，Exchange ActiveSync、Outlook Web App 或自动发现服务。可以在 Exchange 2013 上管理各种虚拟目录设置，包括身份验证、安全和报告设置。
 

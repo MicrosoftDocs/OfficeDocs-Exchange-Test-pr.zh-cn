@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-08_
+_**上一次修改主题：** 2012-10-08_
 
 本主题显示如何添加、删除、复制和查看 Microsoft Exchange Server 2013 中的管理角色组。它还显示如何添加、删除和列出角色组上的管理角色，以及如何更改角色组上的管理作用域和委派。有关 Exchange 2013 中角色组的详细信息，请参阅[了解管理角色组](understanding-management-role-groups-exchange-2013-help.md)。
 
@@ -29,18 +29,8 @@ _**上一次修改主题：**2012-10-08_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -81,18 +71,8 @@ _**上一次修改主题：**2012-10-08_
 
 如果您拥有的角色组包含您希望授予用户的权限，但您希望在无须手动添加所有其他角色的情况下应用其他管理作用域，或删除或添加一个或两个管理角色，则您可以复制现有角色组。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果已经使用 Exchange 命令行管理程序在角色组上配置多个管理角色作用域或独占作用域，则无法使用 EAC 复制角色组。如果已经在角色组上配置多个作用域或独占作用域，则必须使用本主题中后面的命令行管理程序复制角色组。有关管理角色作用域的详细信息，请参阅<a href="understanding-management-role-scopes-exchange-2013-help.md">了解管理角色作用域</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果已经使用 Exchange 命令行管理程序在角色组上配置多个管理角色作用域或独占作用域，则无法使用 EAC 复制角色组。如果已经在角色组上配置多个作用域或独占作用域，则必须使用本主题中后面的命令行管理程序复制角色组。有关管理角色作用域的详细信息，请参阅<a href="understanding-management-role-scopes-exchange-2013-help.md">了解管理角色作用域</a>。
 
 
 1.  在 EAC 中，导航到\&quot;权限\&quot; \> \&quot;管理员角色\&quot;。
@@ -216,18 +196,8 @@ _**上一次修改主题：**2012-10-08_
 
 ## 使用 EAC 将管理角色添加到角色组
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果已经使用命令行管理程序在角色组上配置多个管理角色作用域或独占作用域，则无法使用 EAC 向角色组中添加角色。如果已在角色组上配置多个作用域或独占作用域，则必须使用本主题后面的命令行管理程序步骤将角色添加到角色组。有关管理角色作用域的详细信息，请参阅<a href="understanding-management-role-scopes-exchange-2013-help.md">了解管理角色作用域</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果已经使用命令行管理程序在角色组上配置多个管理角色作用域或独占作用域，则无法使用 EAC 向角色组中添加角色。如果已在角色组上配置多个作用域或独占作用域，则必须使用本主题后面的命令行管理程序步骤将角色添加到角色组。有关管理角色作用域的详细信息，请参阅<a href="understanding-management-role-scopes-exchange-2013-help.md">了解管理角色作用域</a>。
 
 
 1.  在 EAC 中，导航到\&quot;权限\&quot; \> \&quot;管理员角色\&quot;。
@@ -344,35 +314,15 @@ _**上一次修改主题：**2012-10-08_
 
 从管理角色组中删除角色是吊销授予给一组管理员或专家用户的权限的最佳且最简单的方式。如果你不希望管理员或专家用户拥有管理某一功能的权限，则将管理角色从管理这些权限的管理角色组中删除。删除角色后，角色组的成员将不再拥有管理该功能的权限。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>一些角色组（例如 组织管理 角色组）会限制可以从角色组中删除哪些角色。有关详细信息，请参阅<a href="understanding-management-role-groups-exchange-2013-help.md">了解管理角色组</a>。<br />
-如果管理员为另一个角色组（该角色组包含授予权限以管理功能的管理角色）的成员，您需要从其他角色组中删除此管理员，或从其他角色组中删除授予管理功能权限的角色。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 一些角色组（例如 组织管理 角色组）会限制可以从角色组中删除哪些角色。有关详细信息，请参阅<a href="understanding-management-role-groups-exchange-2013-help.md">了解管理角色组</a>。<br />
+如果管理员为另一个角色组（该角色组包含授予权限以管理功能的管理角色）的成员，您需要从其他角色组中删除此管理员，或从其他角色组中删除授予管理功能权限的角色。
 
 
 ## 使用 EAC 从角色组中删除管理角色
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果已经使用命令行管理程序在角色组上配置多个作用域或独占作用域，则无法使用 EAC 从角色组中删除角色。如果你已经在角色组上配置多个作用域或独占作用域，你必须使用本主题中稍后介绍的命令行管理程序步骤将角色从角色组中删除。有关管理角色作用域的详细信息，请参阅<a href="understanding-management-role-scopes-exchange-2013-help.md">了解管理角色作用域</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 如果已经使用命令行管理程序在角色组上配置多个作用域或独占作用域，则无法使用 EAC 从角色组中删除角色。如果你已经在角色组上配置多个作用域或独占作用域，你必须使用本主题中稍后介绍的命令行管理程序步骤将角色从角色组中删除。有关管理角色作用域的详细信息，请参阅<a href="understanding-management-role-scopes-exchange-2013-help.md">了解管理角色作用域</a>。
 
 
 1.  在 EAC 中，导航到\&quot;权限\&quot; \> \&quot;管理员角色\&quot;。
@@ -425,18 +375,8 @@ Exchange 2013 包括在未创建自定义作用域时，默认应用于角色分
 
 在使用 EAC 更改某个角色组上的作用域时，你实际更改的是该角色组与分配给该角色组的每个管理角色之间所有角色分配上的作用域。如果你要更改特定角色分配上的作用域，则必须使用本主题后面的命令行管理程序步骤。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于角色与角色组之间的角色分配，如果你使用命令行管理程序在这些角色分配上配置了多个作用域或独占作用域，则不能使用 EAC 管理这些角色分配上的作用域。如果你在这些角色分配上配置了多个作用域或独占作用域，则必须使用本主题后面的命令行管理程序步骤管理这些作用域。有关管理角色作用域的详细信息，请参阅<a href="understanding-management-role-scopes-exchange-2013-help.md">了解管理角色作用域</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 对于角色与角色组之间的角色分配，如果你使用命令行管理程序在这些角色分配上配置了多个作用域或独占作用域，则不能使用 EAC 管理这些角色分配上的作用域。如果你在这些角色分配上配置了多个作用域或独占作用域，则必须使用本主题后面的命令行管理程序步骤管理这些作用域。有关管理角色作用域的详细信息，请参阅<a href="understanding-management-role-scopes-exchange-2013-help.md">了解管理角色作用域</a>。
 
 
 1.  在 EAC 中，导航到\&quot;权限\&quot; \> \&quot;管理员角色\&quot;。
@@ -473,18 +413,8 @@ Exchange 2013 包括在未创建自定义作用域时，默认应用于角色分
 
     Get-ManagementRoleAssignment -RoleAssignee "Sales Recipient Management" | Set-ManagementRoleAssignment -CustomRecipientWriteScope "Direct Sales Employees"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以使用 <em>WhatIf</em> 开关来验证仅更改了你要更改的角色分配。使用 <em>WhatIf</em> 开关运行上述命令以验证结果，然后删除 <em>WhatIf</em> 开关以应用更改。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 可以使用 <em>WhatIf</em> 开关来验证仅更改了你要更改的角色分配。使用 <em>WhatIf</em> 开关运行上述命令以验证结果，然后删除 <em>WhatIf</em> 开关以应用更改。
 
 
 有关更改管理角色分配的详细信息，请参阅[更改角色分配](change-a-role-assignment-exchange-2013-help.md)。
@@ -545,33 +475,13 @@ Exchange 2013 包括在未创建自定义作用域时，默认应用于角色分
 
 角色组委派是指可以向角色组中添加或从中删除成员或更改角色组属性的用户或通用安全组 (USG)。通过添加或删除角色组委派，可以控制允许哪个用户管理角色组。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>向角色组添加委派之后，该角色组将只能由该角色组上的委派进行管理，或由直接或间接获得 Role Management 管理角色的用户进行管理。<br />
-如果用户已直接或间接获得 Role Management 角色，但尚未添加为该角色组的委派，则该用户必须使用 <strong>Add-RoleGroupMember</strong>、<strong>Remove-RoleGroupMember</strong>、<strong>Update-RoleGroupMember</strong> 和 <strong>Set-RoleGroup</strong> cmdlet 上的 <em>BypassSecurityGroupManagerCheck</em> 开关来管理角色组。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 向角色组添加委派之后，该角色组将只能由该角色组上的委派进行管理，或由直接或间接获得 Role Management 管理角色的用户进行管理。<br />
+> 如果用户已直接或间接获得 Role Management 角色，但尚未添加为该角色组的委派，则该用户必须使用 <strong>Add-RoleGroupMember</strong>、<strong>Remove-RoleGroupMember</strong>、<strong>Update-RoleGroupMember</strong> 和 <strong>Set-RoleGroup</strong> cmdlet 上的 <em>BypassSecurityGroupManagerCheck</em> 开关来管理角色组。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不能使用 EAC 将委派添加到角色组。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 不能使用 EAC 将委派添加到角色组。
 
 
 ## 使用命令行管理程序将委派添加到角色组
@@ -586,18 +496,8 @@ Exchange 2013 包括在未创建自定义作用域时，默认应用于角色分
     
         $RoleGroup.ManagedBy += (Get-User <user to add>).Identity
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果要添加 USG，请使用 <strong>Get-Group</strong> cmdlet。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果要添加 USG，请使用 <strong>Get-Group</strong> cmdlet。
 
 
 3.  请对要添加的每个委派重复步骤 2。
@@ -626,18 +526,8 @@ Exchange 2013 包括在未创建自定义作用域时，默认应用于角色分
     
         $RoleGroup.ManagedBy -= (Get-User <user to remove>).Identity
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果要删除 USG，请使用 <strong>Get-Group</strong> cmdlet。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果要删除 USG，请使用 <strong>Get-Group</strong> cmdlet。
 
 
 3.  请对要删除的每个委派重复步骤 2。

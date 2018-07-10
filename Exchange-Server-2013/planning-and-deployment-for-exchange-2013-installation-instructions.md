@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 是否需要获取 Exchange 安装指导？本文提供了有关规划 Microsoft Exchange Server 2013 开发的指导，以及你在开发过程中需要查看的文章链接。
 
 以下各节包含有关规划然后部署 Microsoft Exchange Server 2013 的信息的链接。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>确保在开始部署之前阅读 <a href="release-notes-for-exchange-2013-exchange-2013-help.md">Exchange 2013 发行说明</a>主题。发行说明包含有关在部署期间和之后可能遇到的问题的重要信息。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 确保在开始部署之前阅读 <a href="release-notes-for-exchange-2013-exchange-2013-help.md">Exchange 2013 发行说明</a>主题。发行说明包含有关在部署期间和之后可能遇到的问题的重要信息。
 
 
 **目录**
@@ -49,18 +39,8 @@ _**上一次修改主题：**2016-12-09_
 
 使用以下链接可访问有助于您规划组织内 Exchange Server 2013 部署的信息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>请参阅本主题后面部分中有关在测试环境中安装 Exchange 2013 的建立测试环境。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 请参阅本主题后面部分中有关在测试环境中安装 Exchange 2013 的建立测试环境。
 
 
   - [邮箱和客户端访问服务器](mailbox-and-client-access-servers-exchange-2013-help.md)  
@@ -228,34 +208,14 @@ Exchange 2013 的安装程序包括以下几种安装模式：
 
   - **更新**   当您已安装了 Exchange 并要安装累积更新或 Service Pack 时，选择使用此模式。可以通过 Exchange 安装向导和无人值守安装使用此模式。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange 2013 不支持从以前版本的 Exchange 进行就地升级。此模式仅用于安装累积更新或 Service Pack。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Exchange 2013 不支持从以前版本的 Exchange 进行就地升级。此模式仅用于安装累积更新或 Service Pack。
 
 
   - **RecoverServer**   在服务器发生灾难性故障，您需要恢复数据时使用此模式。必须使用与出现故障的服务器相同的完全限定域名 (FQDN) 来安装服务器，然后使用 **/m:RecoverServer** 开关运行安装程序。不要指定要还原的角色。安装程序在 Active Directory 中检测 Exchange Server 对象，并自动安装相应的文件和配置。恢复服务器后，可以还原数据库并重新配置其他所有设置。若要在 **RecoverServer** 模式下运行，则服务器上不能安装 Exchange。Exchange 服务器对象必须位于 Active Directory 中。只能在无人值守安装过程中使用此模式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必须完成一种模式的安装后才能使用另一种模式。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 您必须完成一种模式的安装后才能使用另一种模式。
 
 
 ## 详细信息

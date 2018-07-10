@@ -55,9 +55,9 @@ _<strong>上一次修改主题：</strong>2016-07-29_
 
 本地和 Exchange Online 组织中发送到收件人的路径取决于在混合部署中决定如何配置 MX 记录。首选方法是配置 MX 记录，使其指向 Office 365 中的 Exchange Online Protection (EOP)，因为该配置提供最准确的垃圾邮件筛选。混合邮件配置向导不配置本地或 Exchange Online 组织的进站 Internet 邮件的路由。如果想要更改进站 Internet 邮件传递的方式，则必须手动配置 MX 记录。
 
-  - **如果更改你的 MX 记录使其指向 Office 365 中的 Exchange Online Protection 服务：** 这是混合部署推荐的配置。所有发送到任一组织中的任何收件人的邮件都将首先通过 Exchange Online 组织路由。发往位于本地组织中的收件人的邮件会首先通过 Exchange Online 组织路由，随后传递到本地组织中的收件人。如果你的 Exchange Online 组织中的收件人数量比本地组织中的多，并且如果你希望邮件被 EOP 筛选，则推荐该路由。Exchange Online Protection 需要该配置选项，以提供对垃圾邮件的扫描和阻止。
+  - **如果更改你的 MX 记录使其指向 Office 365 中的 Exchange Online Protection 服务：**  这是混合部署推荐的配置。所有发送到任一组织中的任何收件人的邮件都将首先通过 Exchange Online 组织路由。发往位于本地组织中的收件人的邮件会首先通过 Exchange Online 组织路由，随后传递到本地组织中的收件人。如果你的 Exchange Online 组织中的收件人数量比本地组织中的多，并且如果你希望邮件被 EOP 筛选，则推荐该路由。Exchange Online Protection 需要该配置选项，以提供对垃圾邮件的扫描和阻止。
 
-  - **如果决定保持 MX 记录指向本地组织：** 所有发送到任一组织中的任何收件人的邮件将首先通过你的本地组织路由。发往位于 Exchange Online 中的收件人的邮件会首先通过本地组织进行路由，随后传递到 Exchange Online 中的收件人。对于具有合规性策略（该策略要求日记解决方案检查发送到和发送至组织的邮件）的组织。如果选取了该选项，则 Exchange Online Protection 将不能有效地扫描垃圾邮件。
+  - **如果决定保持 MX 记录指向本地组织：**  所有发送到任一组织中的任何收件人的邮件将首先通过你的本地组织路由。发往位于 Exchange Online 中的收件人的邮件会首先通过本地组织进行路由，随后传递到 Exchange Online 中的收件人。对于具有合规性策略（该策略要求日记解决方案检查发送到和发送至组织的邮件）的组织。如果选取了该选项，则 Exchange Online Protection 将不能有效地扫描垃圾邮件。
 
 有关详细信息，请参阅 [Exchange Online 和 Office 365 邮件流最佳做法（概述）](https://technet.microsoft.com/zh-cn/library/jj937232\(v=exchg.150\))。
 

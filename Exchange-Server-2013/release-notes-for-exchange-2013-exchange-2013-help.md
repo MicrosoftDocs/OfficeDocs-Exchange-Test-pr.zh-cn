@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2018-04-16_
+_**上一次修改主题：** 2018-04-16_
 
 欢迎使用 Microsoft Exchange Server 2013！本主题包含您要成功部署 Exchange 2013 而需要了解的重要信息。在开始部署之前，请完整阅读本主题。
 
@@ -37,7 +37,7 @@ _**上一次修改主题：**2018-04-16_
 
 ## 安装和部署
 
-  - **msExchProductId 不会反映已安装的 Exchange 2013 的版本：**在 Exchange 扩展您的 Active Directory 架构并准备 Exchange Active Directory 后，系统会更新若干个属性，以便显示准备工作已完成。其中一个属性就是 *msExchangeProductId*，它位于 `Configuration` 命名上下文中的 `CN=<your organization>, CN=Microsoft Exchange, CN=Services, CN=Configuration, DC=<domain>` 容器下。如果您要安装的 Exchange 2013 版本中没有引入 Active Directory 架构更改，则此属性不会进行更新，或可能会显示一个非预期的值。如果此值与要安装的 Exchange 2013 的版本不相符，则可能会产生混淆。
+  - **msExchProductId 不会反映已安装的 Exchange 2013 的版本：** 在 Exchange 扩展您的 Active Directory 架构并准备 Exchange Active Directory 后，系统会更新若干个属性，以便显示准备工作已完成。其中一个属性就是 *msExchangeProductId*，它位于 `Configuration` 命名上下文中的 `CN=<your organization>, CN=Microsoft Exchange, CN=Services, CN=Configuration, DC=<domain>` 容器下。如果您要安装的 Exchange 2013 版本中没有引入 Active Directory 架构更改，则此属性不会进行更新，或可能会显示一个非预期的值。如果此值与要安装的 Exchange 2013 的版本不相符，则可能会产生混淆。
     
     发生这种行为属情理之中，因为 *msExchProductId* 的值不会反映要安装的 Exchange 2013 的版本。此属性反映的是最后更改 Active Directory 架构的 Exchange 2013 版本。为了避免混淆，我们建议您按照[准备 Active Directory 和域](prepare-active-directory-and-domains-exchange-2013-help.md)的[How do you know this worked?](prepare-active-directory-and-domains-exchange-2013-help.md)部分中的步骤操作，验证您的 Active Directory 是否已更新且已为要安装的 Exchange 2013 版本做好了准备。
 
@@ -117,32 +117,12 @@ _**上一次修改主题：**2018-04-16_
     
     要在客户端访问服务器上安装、卸载或管理传输代理，请在要管理的客户端访问服务器上执行以下操作：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dd876845.Caution(EXCHG.150).gif" title="小心" alt="小心" />小心：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>不支持加载 <code>Microsoft.Exchange.Management.PowerShell.SnapIn</code>Windows PowerShell 管理单元并运行 <strong>*-TransportAgent</strong> cmdlet 以外的 cmdlet，因为这可能会对 Exchange 部署造成无法修复的损坏。<br />
-    您必须是要在其中安装、卸载或管理传输代理的客户端访问服务器上的本地管理员。我们不支持修改 Exchange 文件、目录或 Active Directory 对象的访问控制列表 (ACL)。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > 不支持加载 <code>Microsoft.Exchange.Management.PowerShell.SnapIn</code>Windows PowerShell 管理单元并运行 <strong>*-TransportAgent</strong> cmdlet 以外的 cmdlet，因为这可能会对 Exchange 部署造成无法修复的损坏。<br />
+    > 您必须是要在其中安装、卸载或管理传输代理的客户端访问服务器上的本地管理员。我们不支持修改 Exchange 文件、目录或 Active Directory 对象的访问控制列表 (ACL)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>仅在客户端访问服务器上执行下面的过程。如果要在邮箱服务器上管理传输代理，则不需要加载 ExchangeWindows 管理单元。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 仅在客户端访问服务器上执行下面的过程。如果要在邮箱服务器上管理传输代理，则不需要加载 ExchangeWindows 管理单元。
     
     1.  打开一个新的 Windows PowerShell 窗口。
     
@@ -182,18 +162,8 @@ _**上一次修改主题：**2018-04-16_
 
   - **当您升级到 Exchange 2013 SP1 时，MAPI over HTTP 可能会遇到性能不佳的问题**   如果您从 Exchange 2013 累积更新升级到 Exchange 2013 SP1 并启用 MAPI over HTTP，使用该协议连接到 Exchange 2013 SP1 服务器的客户端可能遇到性能不佳的问题。这是因为在从累积更新升级到 Exchange 2013 SP1 的过程中未配置所需设置。如果您从 Exchange 2013 RTM 升级到 Exchange 2013 SP1，或者安装新的 Exchange 2013 SP1 或更高版本服务器，则不会出现此问题。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>这只是 MAPI over HTTP 协议在客户端访问服务器上是否启用的问题。默认情况下它处于禁用状态。如果 MAPI over HTTP 禁用，客户端将转为使用 RPC over HTTP 协议。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 这只是 MAPI over HTTP 协议在客户端访问服务器上是否启用的问题。默认情况下它处于禁用状态。如果 MAPI over HTTP 禁用，客户端将转为使用 RPC over HTTP 协议。
     
     要解决此问题，请执行下列步骤：
     

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-07-28_
+_**上一次修改主题：** 2016-07-28_
 
 本主题介绍用于匹配数据丢失预防 (DLP) XML 文件（该文件旨在包含您自己的自定义敏感信息类型规则包）中的模式和证据元素的方法。在创建了标准格式的 XML 文件之后，可以使用 Exchange 管理中心 (EAC) 或 Exchange 命令行管理程序导入文件，以便帮助创建 Microsoft Exchange Server 2013 DLP 解决方案。应当已启动 DLP XML 文件，才能使用此处介绍的匹配方法。有关定义自己的 DLP 模板和 XML 文件的详细信息，请参阅[定义您自己的 DLP 模板和信息类型](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)。
 
@@ -47,18 +47,8 @@ _**上一次修改主题：**2016-07-28_
 
 可以使用完全匹配或基于文字匹配的算法来执行匹配。完全匹配使用区分大小写的算法，该算法在特定语言中搜索文本。文字匹配基于文字边界应用匹配算法。要匹配的项可以使用 Term 子元素内嵌在 Keyword 定义中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 regex 的基于常量的匹配风格以获得更出色的效率和性能。仅在基于常量的匹配不充分并且需要正则表达式的灵活性时使用 regex 匹配。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 使用 regex 的基于常量的匹配风格以获得更出色的效率和性能。仅在基于常量的匹配不充分并且需要正则表达式的灵活性时使用 regex 匹配。
 
 
     <Keyword id="Word_Example">
@@ -85,18 +75,8 @@ _**上一次修改主题：**2016-07-28_
 
 另一种常用匹配方法基于正则表达式。正则表达式匹配的灵活性使之成为实现如驾驶证号码、地址这类数据匹配的常见选择。常用正则表达式语法用于定义正则表达式模式。此处的表提供一些可以使用的最常用正则表达式令牌的示例。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 regex 的基于常量的匹配风格以获得更出色的效率和性能。仅在基于常量的匹配不充分并且需要正则表达式的灵活性时使用 regex 匹配。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 使用 regex 的基于常量的匹配风格以获得更出色的效率和性能。仅在基于常量的匹配不充分并且需要正则表达式的灵活性时使用 regex 匹配。
 
 
 
@@ -219,8 +199,7 @@ Regex 元素具有一个“id”属性，该属性在对应的实体或关联规
     </Regex>
     ...
     <Regex id="ItinFormatted">
-        (?:^|[\s\,\:])(?:9\d{2})[- ](?:[78]\d[-  
-         ]\d{4})(?:$|[\s\,]|\.\s)
+        (?:^|[\s\,\:])(?:9\d{2})[- ](?:[78]\d[-       ]\d{4})(?:$|[\s\,]|\.\s)
     </Regex>
     ...
     <Regex id="NorthCarolinaDriversLicenseNumber">

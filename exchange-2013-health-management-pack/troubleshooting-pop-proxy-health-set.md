@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-11_
+_**上一次修改主题：** 2013-02-11_
 
 POP.Proxy 运行状况设置监视 Microsoft Exchange POP3 代理基础结构在客户端访问服务器 (CAS) 上的可行性。如果您接收到 POP.Proxy 运行状况设置不正常的警报，这表明在警报中指示的 CAS 上存在影响 POP 组件的问题。
 

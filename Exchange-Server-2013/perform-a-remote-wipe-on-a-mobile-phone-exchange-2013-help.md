@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-06_
+_**上一次修改主题：** 2013-02-06_
 
 您的用户每天都随身携带着敏感的公司信息。如果他们中有人丢失了自己的手机，公司数据就可能会落入其他人手中。如果您的用户中有人丢失了自己的手机，您可以使用 Exchange 管理中心 (EAC) 或 Exchange 命令行管理程序擦除手机中所有的公司及用户信息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主题还提供有关如何使用 MicrosoftOutlook Web App 对电话执行远程擦除的说明。用户必须登录 Outlook Web App 才能执行远程擦除。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 本主题还提供有关如何使用 MicrosoftOutlook Web App 对电话执行远程擦除的说明。用户必须登录 Outlook Web App 才能执行远程擦除。
 
 
 ## 在开始之前，您需要知道什么？
@@ -43,18 +33,8 @@ _**上一次修改主题：**2013-02-06_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？

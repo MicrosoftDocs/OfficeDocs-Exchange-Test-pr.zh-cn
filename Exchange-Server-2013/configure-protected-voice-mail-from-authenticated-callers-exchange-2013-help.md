@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2013-02-22_
+_**上一次修改主题：** 2013-02-22_
 
 您可以配置统一消息应答传入的呼叫，然后确定是否它将应用保护到语音邮件使用的加密方法。当受保护语音消息 ︰
 
@@ -41,18 +41,8 @@ _**上一次修改主题：**2013-02-22_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -65,11 +55,11 @@ _**上一次修改主题：**2013-02-22_
 
 3.  在\&quot;UM 邮箱策略\&quot;页面 \>\&quot;受保护的语音邮件\&quot;上，在\&quot;保护来自已通过身份验证的呼叫者的语音邮件\&quot;下，选择以下选项之一：
     
-      - **无：**如果不希望对发送给启用 UM 的用户的任何语音邮件应用保护，则使用该设置。
+      - **无：** 如果不希望对发送给启用 UM 的用户的任何语音邮件应用保护，则使用该设置。
     
-      - **私人：**若要统一消息仅对由呼叫者标记为私人的语音邮件应用保护，请使用此设置。
+      - **私人：** 若要统一消息仅对由呼叫者标记为私人的语音邮件应用保护，请使用此设置。
     
-      - **全部：**若要统一消息对所有语音邮件（包括未标记为私人的邮件）应用保护，请使用此设置。
+      - **全部：** 若要统一消息对所有语音邮件（包括未标记为私人的邮件）应用保护，请使用此设置。
 
 4.  单击\&quot;保存\&quot;。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-05-07_
+_**上一次修改主题：** 2014-05-07_
 
 在创建邮箱数据库之后，通过使用 EAC 或命令行管理程序，可以将其移动到另一个卷、文件夹、位置或路径。有关如何移动非复制邮箱数据库的数据库路径的分步说明，请参阅[Move a mailbox database path](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md)。
 
@@ -35,34 +35,14 @@ _**上一次修改主题：**2014-05-07_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 使用命令行管理程序将复制邮箱数据库移动到新路径
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不能使用 EAC 将复制邮箱数据库移动到新路径。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 不能使用 EAC 将复制邮箱数据库移动到新路径。
 
 
 1.  记下要移动的邮箱数据库的所有副本的任何重播延迟设置或截断延迟设置。通过使用 [Get-MailboxDatabase](https://technet.microsoft.com/zh-cn/library/bb124924\(v=exchg.150\)) cmdlet 可以获取此信息，如本例中所示。
@@ -77,18 +57,8 @@ _**上一次修改主题：**2014-05-07_
 
 4.  将邮箱数据库路径移动到新位置。有关详细步骤，请参阅[Move a mailbox database path](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在移动操作期间，必须卸除要移动的数据库。在完成移动之前，此过程将导致服务中断，并将使正在移动的数据库上的所有用户都会遭遇邮箱中断的问题。移动操作完成后，会自动装入数据库。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 在移动操作期间，必须卸除要移动的数据库。在完成移动之前，此过程将导致服务中断，并将使正在移动的数据库上的所有用户都会遭遇邮箱中断的问题。移动操作完成后，会自动装入数据库。
 
 
 5.  在以前包含移动邮箱数据库被动副本的每个邮箱服务器上创建必要的文件夹结构。例如，如果将数据库移动到了 C:\\mountpoints\\DB1，则必须在将要承载邮箱数据库副本的每个邮箱服务器上创建此同一路径。

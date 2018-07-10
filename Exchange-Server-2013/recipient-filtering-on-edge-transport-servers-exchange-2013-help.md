@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2014-05-07_
+_**上一次修改主题：** 2014-05-07_
 
 收件人筛选是 Microsoft Exchange Server 2013 中的\&quot;反垃圾邮件功能\&quot;，根据 RCPT TO SMTP 头确定对入站邮件执行哪些操作（如果有）。收件人筛选由收件人筛选器代理执行。
 

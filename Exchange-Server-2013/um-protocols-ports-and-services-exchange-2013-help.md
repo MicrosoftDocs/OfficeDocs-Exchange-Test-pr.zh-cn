@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 MicrosoftExchange 2013 统一消息 (UM) 要求使用多个 TCP 和用户数据报协议 (UDP) 端口在运行 Exchange 2013 的服务器与其他设备之间建立通信。通过使用这些 IP 端口进行访问，可以使统一消息正常运行。本主题讨论 Exchange 2013 统一消息中使用的 TCP 和 UDP 端口。
 
@@ -23,18 +23,8 @@ MicrosoftExchange 2013 统一消息 (UM) 要求使用多个 TCP 和用户数据�
 
 Exchange 2013 统一消息功能和服务依靠静态和动态 TCP 和 UDP 端口，确保运行 Microsoft Exchange 统一消息呼叫路由器服务的客户端访问服务器和运行 Microsoft Exchange 统一消息服务的邮箱服务器正常工作。安装 Exchange 2013 后，将为 Exchange 添加静态入站 Windows 防火墙规则。如果更改客户端访问和邮箱服务器所使用的 TCP 端口，则可能还需要重新配置 Windows 防火墙规则才能使统一消息正常工作。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在运行 UM 组件和服务的 Exchange 2013 客户端访问和邮箱服务器上，Exchange 安装程序将创建入站防火墙规则，这些规则允许入站通信，而且没有任何 TCP 端口限制。添加 UM 服务的以下入站规则：</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 在运行 UM 组件和服务的 Exchange 2013 客户端访问和邮箱服务器上，Exchange 安装程序将创建入站防火墙规则，这些规则允许入站通信，而且没有任何 TCP 端口限制。添加 UM 服务的以下入站规则：
 
 
 1.  **SESWorker (GFW) (TCP-In)**

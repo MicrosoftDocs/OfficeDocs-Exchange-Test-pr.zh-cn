@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2013-02-19_
+_**上一次修改主题：** 2013-02-19_
 
 在 Microsoft Exchange Server 2010 中，邮箱服务器角色承载了邮箱数据库和公用文件夹数据库，并且还提供了电子邮件存储。而现在，在 Exchange Server 2013 中，邮箱服务器角色还包含了客户端访问协议、传输服务、邮箱数据库和统一消息组件。
 

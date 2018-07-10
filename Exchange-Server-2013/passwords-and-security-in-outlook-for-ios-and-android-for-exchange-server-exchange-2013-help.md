@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2010, Exchange Server 2013_
+_**适用于：** Exchange Server 2010, Exchange Server 2013_
 
-_**上一次修改主题：**2018-04-01_
+_**上一次修改主题：** 2018-04-01_
 
-**摘要：**本文介绍了密码和安全功能通过 Exchange Server 在 Outlook for iOS 和 Outlook for Android 中的工作原理。
+**摘要：** 本文介绍了密码和安全功能通过 Exchange Server 在 Outlook for iOS 和 Outlook for Android 中的工作原理。
 
 适用于 iOS 和 Android 的 Outlook 应用程序首次在 Exchange 本地环境中运行时，Outlook 生成随机的 AES-128 密钥。此密钥称为*设备密钥*，仅存储在用户的设备上。
 
@@ -41,18 +41,8 @@ Outlook 服务在运行时解密密码后，该服务可以连接到 Exchange �
 
   - 设备上没有可用的 Internet 连接，导致 Outlook 无法与 Exchange 同步。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook 不会仅仅因为用户在一段时间内没有打开应用（例如周末或休假期间）而变为非活动状态。只要启用后台应用刷新（这是 Outlook for iOS 和 Outlook for Android 的默认设置），推送通知和电子邮件后台同步等功能将被视为处于活动状态。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Outlook 不会仅仅因为用户在一段时间内没有打开应用（例如周末或休假期间）而变为非活动状态。只要启用后台应用刷新（这是 Outlook for iOS 和 Outlook for Android 的默认设置），推送通知和电子邮件后台同步等功能将被视为处于活动状态。
 
 
 **从硬盘刷新加密密码和邮件缓存**

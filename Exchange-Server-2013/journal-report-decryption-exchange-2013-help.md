@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-16_
+_**上一次修改主题：** 2012-10-16_
 
 在 Microsoft Exchange Server 2013，信息权限管理 (IRM) 允许 Microsoft Outlook 2010及更高版本，Microsoft OfficeOutlook Web App用户保护他们的邮件。您可以创建Outlook保护规则之前它们被从Outlook 2010客户端发送自动对邮件应用 IRM 保护。您还可以创建传输保护规则适用于与规则条件匹配的邮件在传输过程中的 IRM 保护。
 
@@ -33,34 +33,14 @@ _**上一次修改主题：**2012-10-16_
 
 日志报告解密允许您在日志报告，原、 受 IRM 保护的邮件并保存受 IRM 保护的邮件的纯文本副本。如果 IRM 保护的邮件，包含由您的组织中Active Directory权限管理服务 (AD RMS) 群集保护任何支持的附件，这些附件也会解密。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要使用日记帐报告解密，必须具有Exchange企业客户端访问许可证 (CAL)。日志报告解密只支持高级日志记录。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 若要使用日记帐报告解密，必须具有Exchange企业客户端访问许可证 (CAL)。日志报告解密只支持高级日志记录。
 
 
 由日志报告解密代理，专注于法规遵从性的传输代理执行解密。在**OnCategorizedMessage**事件日志报告解密代理激发。受保护的邮件传输中使用传输加密代理，引发**OnRoutedMessage**事件，到达日记帐报告解密代理之前已经加密规则的保护。日志报告解密代理对这些消息进行解密。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在Exchange 2013，日志报告解密代理是内置代理。内置代理不包括在返回的<strong>Get-TransportAgent</strong> cmdlet 的代理的列表。有关详细信息，请参阅<a href="transport-agents-exchange-2013-help.md">传输代理</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在Exchange 2013，日志报告解密代理是内置代理。内置代理不包括在返回的<strong>Get-TransportAgent</strong> cmdlet 的代理的列表。有关详细信息，请参阅<a href="transport-agents-exchange-2013-help.md">传输代理</a>。
 
 
 该代理解密以下类型的受 IRM 保护的邮件：
@@ -73,36 +53,16 @@ _**上一次修改主题：**2012-10-16_
 
   - 使用传输保护规则在传送过程中自动受 IRM 保护的邮件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只是由您的组织中 AD RMS 服务器受 IRM 保护的邮件被解密由日志报告解密代理。代理不会解密附件，如果它不受保护邮件时 （并因此不会有相同的使用许可证），或者受 IRM 保护的文件附加到未受保护的邮件。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 只是由您的组织中 AD RMS 服务器受 IRM 保护的邮件被解密由日志报告解密代理。代理不会解密附件，如果它不受保护邮件时 （并因此不会有相同的使用许可证），或者受 IRM 保护的文件附加到未受保护的邮件。
 
 
 ## 配置日志报告解密
 
 日志报告解密是 configuredb 在Exchange命令行管理程序中使用[Set-IRMConfiguration](https://technet.microsoft.com/zh-cn/library/dd979792\(v=exchg.150\)) cmdlet。但是，在配置日志报告解密之前，您必须分配Exchange 2013服务器解密是由 AD RMS 服务器受 IRM 保护的内容的权限。若要执行此操作，您添加到您的组织的 AD RMS 群集上配置的超级用户组联盟邮箱。有关详细信息，请参阅[将联合身份验证邮箱添加到 AD RMS 超级用户组](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在跨林 AD RMS 部署中（即每个林中都部署有 AD RMS 群集），必须将联合邮箱添加到每个林中 AD RMS 群集的超级用户组，以使 Exchange 2013 传输服务器可解密针对每个 AD RMS 群集进行保护的邮件。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 在跨林 AD RMS 部署中（即每个林中都部署有 AD RMS 群集），必须将联合邮箱添加到每个林中 AD RMS 群集的超级用户组，以使 Exchange 2013 传输服务器可解密针对每个 AD RMS 群集进行保护的邮件。
 
 
 有关如何配置日志报告解密的信息，请参阅[启用或禁用日记报告解密](enable-or-disable-journal-report-decryption-exchange-2013-help.md)。

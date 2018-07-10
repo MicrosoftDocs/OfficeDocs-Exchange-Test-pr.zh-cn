@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2015-01-14_
+_**上一次修改主题：** 2015-01-14_
 
 通过使用 Exchange 管理中心 (EAC) 或命令行管理程序您可以查看、更改或删除 Microsoft Exchange 中现有的数据丢失防护 (DLP) 策略。
 
@@ -31,31 +31,18 @@ _**上一次修改主题：**2015-01-14_
 
   - 对于任何 DLP 策略，您可以选择以下三种模式之一：
     
-      -  
-        **强制**   针对所有邮件和受支持的文件类型评估策略中的规则。如果检测到符合策略条件的数据，则可能会中断邮件流。会执行策略中所述的所有操作。
+      -    **强制**   针对所有邮件和受支持的文件类型评估策略中的规则。如果检测到符合策略条件的数据，则可能会中断邮件流。会执行策略中所述的所有操作。
     
-      -  
-        **使用测量提示测试 DLP 策略**   针对所有邮件和受支持的文件类型评估策略中的规则。如果检测到符合策略条件的数据，则不会中断邮件流。即，不会阻止邮件。如果配置了策略提示，则会向用户显示这些策略提示。
+      -    **使用测量提示测试 DLP 策略**   针对所有邮件和受支持的文件类型评估策略中的规则。如果检测到符合策略条件的数据，则不会中断邮件流。即，不会阻止邮件。如果配置了策略提示，则会向用户显示这些策略提示。
     
-      -  
-        **不使用策略提示测试 DLP 策略**   针对所有邮件和受支持的文件类型评估策略中的规则。如果检测到符合策略条件的数据，则不会中断邮件流。即，不会阻止邮件。如果配置了策略提示，则不会向用户显示这些策略提示。
+      -    **不使用策略提示测试 DLP 策略**   针对所有邮件和受支持的文件类型评估策略中的规则。如果检测到符合策略条件的数据，则不会中断邮件流。即，不会阻止邮件。如果配置了策略提示，则不会向用户显示这些策略提示。
 
   - DLP 策略中的每个规则均有自己的模式设置。当策略模式与此策略中的规则模式不同时，规则设置具有较高优先级，将根据其模式进行评估。
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -72,18 +59,8 @@ _**上一次修改主题：**2015-01-14_
 
 3.  在“编辑 DLP 策略”页上，单击“规则”。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以创建 DLP 策略并将其保留为非激活或禁用模式。在此模式下，不强制执行策略，并且可以在测试或开始强制执行它之前更改与其规则关联的任何谓词、操作或值。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 可以创建 DLP 策略并将其保留为非激活或禁用模式。在此模式下，不强制执行策略，并且可以在测试或开始强制执行它之前更改与其规则关联的任何谓词、操作或值。
 
 
 ## 使用命令行管理程序查看现有 DLP 策略的详细信息

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 垃圾邮件隔离是内容筛选器代理的一项功能，可以减小丢失合法邮件的风险。垃圾邮件隔离功能提供了一个临时存储位置，用来存储视为垃圾邮件以及不应传递到组织内用户邮箱中的邮件。
 
@@ -35,18 +35,8 @@ _**上一次修改主题：**2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 您想执行什么操作？
@@ -134,7 +124,7 @@ _**上一次修改主题：**2016-12-09_
         
           - *\<OfficeVersion\>*   对于 Outlook 2007，值为 `Office12`。对于 Outlook 2010，值为 `Office14`。对于 Outlook 2013，值为 `Office15`。
         
-          - *\<LCID\>*   此值为您的区域设置 ID (LCID) 值。例如，美国英语的 LCID 是 1033。有关详细信息，请参阅 [KB221435：Word 中支持的区域设置标识符列表](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid+=+221435)。
+          - *\<LCID\>*   此值为您的区域设置 ID (LCID) 值。例如，美国英语的 LCID 是 1033。有关详细信息，请参阅 [KB221435：Word 中支持的区域设置标识符列表](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid+=+221435)。
     
       - **名称**   对于此过程的其余部分，假定文件命名为 `QTNE.cfg`。文件名称并不重要，但一定要在该值前后加上引号，以便文件以 QTNE.cfg 格式（而非 QTNE.cfg.txt）格式保存。
     
@@ -142,18 +132,8 @@ _**上一次修改主题：**2016-12-09_
     
         "C:\Program Files (x86)\Microsoft Office\Office15\Forms\1033\QTNE.cfg"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果 Windows 用户访问控制 (UAC) 阻止您将文件保存在正确的位置，则先将其保存到一个临时位置，然后再进行复制。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果 Windows 用户访问控制 (UAC) 阻止您将文件保存在正确的位置，则先将其保存到一个临时位置，然后再进行复制。
 
 
 ## 步骤 2：配置 Outlook 使用自定义的 Outlook 窗体

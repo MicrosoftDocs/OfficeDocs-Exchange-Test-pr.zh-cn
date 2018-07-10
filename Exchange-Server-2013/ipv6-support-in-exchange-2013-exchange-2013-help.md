@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Internet 协议版本 6 (IPv6) 是 Internet 协议 (IP) 的最新版本。IPv6 旨在修正上一版本 IP 协议 IPv4 中的许多不足之处。
 
@@ -91,18 +91,9 @@ IPv6 地址基础知识
 <li><p>智能主机 IP 地址</p></li>
 <li><p>边缘传输服务器上配置的发送连接器的 <em>SourceIPAddress</em> 参数</p></li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要为 <em>SourceIPAddress</em> 参数指定 IPv6 地址，请确保正确配置了相应的 DNS AAAA 和邮件交换 (MX) 记录。如果远程邮件传送服务器对指定的 IPv6 地址尝试进行任何种类的反向查找测试，则这样可帮助确保邮件妥投。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 如果要为 <em>SourceIPAddress</em> 参数指定 IPv6 地址，请确保正确配置了相应的 DNS AAAA 和邮件交换 (MX) 记录。如果远程邮件传送服务器对指定的 IPv6 地址尝试进行任何种类的反向查找测试，则这样可帮助确保邮件妥投。
 
 <p>有关详细信息，请参阅<a href="send-connectors-exchange-2013-help.md">发送连接器</a>。</p></td>
 </tr>

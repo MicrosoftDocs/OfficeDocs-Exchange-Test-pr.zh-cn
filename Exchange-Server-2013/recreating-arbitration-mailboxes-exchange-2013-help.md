@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**上一次修改主题：**2018-01-17_
+_**上一次修改主题：** 2018-01-17_
 
-**摘要：** 有关仲裁邮箱Exchange 2013以及如何重新创建它们。
+**摘要：**  有关仲裁邮箱Exchange 2013以及如何重新创建它们。
 
 Exchange 2013带有五个称为*仲裁邮箱*的系统邮箱。用于存储不同类型的系统数据和用于管理消息处理审批工作流使用仲裁的邮箱。图表下方列出了每种类型的仲裁邮箱，他们的职责。
 
@@ -85,18 +85,8 @@ Exchange 2013带有五个称为*仲裁邮箱*的系统邮箱。用于存储不�
 
 请按照以下说明重新创建特定类型的仲裁邮箱。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>以下各节中的所有步骤必须都运行相同的目录中提取 Exchange 安装媒体的位置。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 以下各节中的所有步骤必须都运行相同的目录中提取 Exchange 安装媒体的位置。
 
 
 ## 重新创建 Microsoft Exchange 联盟邮箱
@@ -175,16 +165,6 @@ Exchange 2013带有五个称为*仲裁邮箱*的系统邮箱。用于存储不�
 
 查看命令来验证已重新创建该适当的系统邮箱，或者按名称或从上面的表中，显示名称的结果。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 

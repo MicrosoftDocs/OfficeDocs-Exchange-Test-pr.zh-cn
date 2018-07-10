@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2016-08-16_
+_**上一次修改主题：** 2016-08-16_
 
 了解 Exchange Server 2013 中 POP3 和 IMAP4 协议之间的区别，以及如何配置从各个电子邮件程序访问 Exchange 2013 邮箱的选项。
 
@@ -53,18 +53,8 @@ POP3 和 IMAP4 协议具有下列优点和局限性：
 
 POP3 和 IMAP4 电子邮件应用程序不使用 POP3 和 IMAP4 向电子邮件服务器发送邮件；它们依赖 SMTP 协议来发送邮件。安装 Exchange 时会自动创建用于从使用 POP3 或 IMAP4 的客户端应用程序接收电子邮件提交的连接器。有关连接器的详细信息，请参阅[接收连接器](receive-connectors-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每次用户使用基于 POP 或 IMAP 的电子邮件程序打开 Office 365 电子邮件时，都可能遇到几秒钟的延迟。延迟是由代理服务器所致，因为这会给身份验证带来额外的跃点。代理服务器首先查找分配的 pod 服务器（客户端访问服务器），然后再对此服务器进行身份验证。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 每次用户使用基于 POP 或 IMAP 的电子邮件程序打开 Office 365 电子邮件时，都可能遇到几秒钟的延迟。延迟是由代理服务器所致，因为这会给身份验证带来额外的跃点。代理服务器首先查找分配的 pod 服务器（客户端访问服务器），然后再对此服务器进行身份验证。
 
 
 ## POP3 和 IMAP4 跨站点连接
@@ -81,18 +71,8 @@ POP3 和 IMAP4 电子邮件应用程序不使用 POP3 和 IMAP4 向电子邮件�
 
 **IMAP4** 与使用 POP3 的电子邮件客户端应用程序相比，使用 IMAP4 的电子邮件客户端应用程序更为灵活，通常提供的功能更多。默认情况下，当 IMAP4 电子邮件应用程序将电子邮件下载到客户端计算机，下载邮件的副本会保留在电子邮件服务器上。正是由于用户的电子邮件副本保留在电子邮件服务器上，用户可以从多台计算机上访问相同的电子邮件。使用 IMAP4 电子邮件，用户可以访问并创建电子邮件服务器上的多个电子邮件文件夹。然后用户可以从位于多个位置的计算机上访问服务器上的任何邮件。例如，大多数 IMAP4 应用程序可以配置为在服务器上保留用户已发送项目的副本，以便他们可以从任何其他计算机上查看他们的已发送项目。IMAP4 支持大多数 IMAP4 应用程序支持的其他功能。例如，某些 IMAP4 应用程序包含的一项功能可让用户仅查看服务器上电子邮件的邮件头（发件人和主题），然后仅下载要阅读的邮件。IMAP4 也不支持公用文件夹访问。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>IMAP4 和 POP3 客户端对 Exchange 日历信息的访问也受到限制。有关详细信息，请参阅 <a href="configure-calendar-options-for-pop3-exchange-2013-help.md">配置 POP3 的日历选项</a> 和 <a href="configure-calendar-options-for-imap4-exchange-2013-help.md">配置 IMAP4 的日历选项</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> IMAP4 和 POP3 客户端对 Exchange 日历信息的访问也受到限制。有关详细信息，请参阅 <a href="configure-calendar-options-for-pop3-exchange-2013-help.md">配置 POP3 的日历选项</a> 和 <a href="configure-calendar-options-for-imap4-exchange-2013-help.md">配置 IMAP4 的日历选项</a>。
 
 
 ## 发送和接收 POP3 和 IMAP4 电子邮件应用程序的选项
@@ -115,18 +95,8 @@ POP3 和 IMAP4 电子邮件应用程序不使用 POP3 和 IMAP4 向电子邮件�
 
 如果运行 POP3 或 IMAP4 电子邮件应用程序的设备或计算机始终连接到 Internet，则用户可能需要将电子邮件应用程序配置为定时发送和接收邮件。通过定时连接到服务器，用户可使其电子邮件应用程序与服务器上的最新信息保持同步。然而，如果运行 POP3 或 IMAP4 电子邮件应用程序的设备或计算机不是始终连接到 Internet，则用户可能需要将电子邮件应用程序配置为手动发送和接收邮件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果用户使用的是与 IMAP4 兼容的电子邮件应用程序（支持 IMAP4 IDLE 命令），则用户几乎可以实时将电子邮件发送到他们的 Exchange 邮箱并从其邮箱接收电子邮件。要使这种连接方法正常工作，电子邮件服务器应用程序和客户端应用程序必须都支持 IMAP4 IDLE 命令。大多数情况下，用户不必配置其 IMAP4 应用程序的任何设置即可使用此连接方法。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果用户使用的是与 IMAP4 兼容的电子邮件应用程序（支持 IMAP4 IDLE 命令），则用户几乎可以实时将电子邮件发送到他们的 Exchange 邮箱并从其邮箱接收电子邮件。要使这种连接方法正常工作，电子邮件服务器应用程序和客户端应用程序必须都支持 IMAP4 IDLE 命令。大多数情况下，用户不必配置其 IMAP4 应用程序的任何设置即可使用此连接方法。
 
 
 ## POP3 和 IMAP4 应用程序

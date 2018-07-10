@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 为 Microsoft Exchange 2013 本地部署的 适用于设备的 OWA（OWA for iPhone 和 OWA for iPad）启用推送通知，使用户能够接收其 OWA for iPhone 和 OWA for iPad 的 Outlook Web App 图标上的更新，这些更新将指明用户邮箱中未查看的邮件数量。如果未配置和启用推送通知，那么在不启动应用的情况下，具有 适用于设备的 OWA 的用户将无从知晓收件箱中存在未查看的邮件。当收到新邮件时，用户设备上的 适用于设备的 OWA 徽章将会更新，看上去和以下徽章一样。
 
@@ -53,39 +53,18 @@ Exchange Server 2013 采用的方法是对服务器到服务器身份验证使�
 
 OAuth 身份验证通常涉及到三个组件：一台授权服务器和两个需要互相进行通信的领域。授权服务器（也称为安全令牌服务器）向需要通信的两个领域颁发安全令牌；这些令牌会确认来自一个领域的通信是否应受另一个领域信任。例如，授权服务器可能会颁发令牌来验证某个特定 Lync Server 2013 领域的用户是否能够访问指定的 Exchange 2013 领域；反之亦然。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>领域是一个安全容器。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 领域是一个安全容器。
 
 
 但是，对于本地服务器到服务器身份验证，无需使用第三方令牌服务器。服务器产品（例如 Lync Server 2013 和 Exchange 2013）都具有内置的令牌服务器，可用于其他支持服务器到服务器身份验证的 Microsoft 服务器（例如 SharePoint Server）进行身份验证。例如，Lync Server 2013 本身可以颁发和签署安全令牌，然后使用该令牌与 Exchange 2013 进行通信。在此类情况下，不需要第三方令牌服务器。
 
 为了配置 Exchange Server 2013 的本地实现到 Office 365 的服务器到服务器身份验证，您必须要完成两个步骤：
 
-  -  
-    **步骤 1 – 向本地 Exchange 服务器的内置令牌颁发者分配证书。**首先，本地 Exchange 管理员必须使用以下 Exchange 命令行管理程序脚本创建证书（如果以前没有创建），并将其分配给本地 Exchange 服务器的内置令牌颁发者。此为一次性流程；创建证书后，该证书将重复用于其他身份验证方案，且不会被替代。请务必将 *$tenantDomain* 的值更新为您的域名。为此，请复制并粘贴以下代码。
+  - **步骤 1 – 向本地 Exchange 服务器的内置令牌颁发者分配证书。** 首先，本地 Exchange 管理员必须使用以下 Exchange 命令行管理程序脚本创建证书（如果以前没有创建），并将其分配给本地 Exchange 服务器的内置令牌颁发者。此为一次性流程；创建证书后，该证书将重复用于其他身份验证方案，且不会被替代。请务必将 *$tenantDomain* 的值更新为您的域名。为此，请复制并粘贴以下代码。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>通过将代码复制并粘贴到文本编辑器（如 Notepad）中，并使用 .ps1 扩展名将其保存，运行命令行管理程序脚本将变得更加容易。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!warning]
+    > 通过将代码复制并粘贴到文本编辑器（如 Notepad）中，并使用 .ps1 扩展名将其保存，运行命令行管理程序脚本将变得更加容易。
     
         # Make sure to update the following $tenantDomain with your Office 365 tenant domain.
         
@@ -153,22 +132,11 @@ OAuth 身份验证通常涉及到三个组件：一台授权服务器和两个�
         Exporting certificate...
         Complete.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ898581.warning(EXCHG.150).gif" title="警告" alt="警告" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在继续之前，必须执行 用于 Windows PowerShell 的 Azure Active Directory 模块 cmdlet。如果尚未安装 用于 Windows PowerShell 的 Azure Active Directory 模块 cmdlet（以前称为用于 Windows PowerShell 的 Microsoft Online Services 模块），您可以从<a href="http://aka.ms/aadposh">使用 Windows PowerShell 管理 Azure AD</a> 进行安装。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!warning]
+    > 在继续之前，必须执行 用于 Windows PowerShell 的 Azure Active Directory 模块 cmdlet。如果尚未安装 用于 Windows PowerShell 的 Azure Active Directory 模块 cmdlet（以前称为用于 Windows PowerShell 的 Microsoft Online Services 模块），您可以从<a href="http://aka.ms/aadposh">使用 Windows PowerShell 管理 Azure AD</a> 进行安装。
 
 
-  -  
-    **步骤 2 – 将 Office 365 配置为与 Exchange 2013 本地服务器进行通信。** 将 Exchange Server 2013 要与之通信的 Office 365 服务器配置为合作伙伴应用程序。例如，如果 Exchange Server 2013 本地服务器需要与 Office 365 进行通信，则需要将 Exchange 本地服务器配置为合作伙伴应用程序。合作伙伴应用程序是可以与 Exchange 2013 直接交换安全令牌的任何应用程序，而无需通过第三方安全令牌服务器。本地 Exchange 2013 管理员必须使用以下 Exchange 命令行管理程序脚本将 Exchange 2013 要与之通信的 Office 365 租户配置为合作伙伴应用程序。在执行期间，系统将提示输入 Office 365 租户域的管理员用户名和密码（例如，administrator@fabrikam.com）。请务必将 *$CertFile* 的值更新到证书的位置（如果未从以前的脚本创建）。为此，请复制并粘贴以下代码。
+  - **步骤 2 – 将 Office 365 配置为与 Exchange 2013 本地服务器进行通信。** 将 Exchange Server 2013 要与之通信的 Office 365 服务器配置为合作伙伴应用程序。例如，如果 Exchange Server 2013 本地服务器需要与 Office 365 进行通信，则需要将 Exchange 本地服务器配置为合作伙伴应用程序。合作伙伴应用程序是可以与 Exchange 2013 直接交换安全令牌的任何应用程序，而无需通过第三方安全令牌服务器。本地 Exchange 2013 管理员必须使用以下 Exchange 命令行管理程序脚本将 Exchange 2013 要与之通信的 Office 365 租户配置为合作伙伴应用程序。在执行期间，系统将提示输入 Office 365 租户域的管理员用户名和密码（例如，administrator@fabrikam.com）。请务必将 *$CertFile* 的值更新到证书的位置（如果未从以前的脚本创建）。为此，请复制并粘贴以下代码。
     
         # Make sure to update the following $CertFile with the path to the cert if not using the previous script.
         
@@ -242,7 +210,7 @@ OAuth 身份验证通常涉及到三个组件：一台授权服务器和两个�
 
 完成上述步骤后，可以通过以下方式之一测试推送通知：
 
-  - **向用户的邮箱发送测试电子邮件：**
+  - **向用户的邮箱发送测试电子邮件：** 
     
     1.  在移动设备上的 OWA for Devices 中设置帐户，以订阅通知。
     
@@ -252,7 +220,7 @@ OAuth 身份验证通常涉及到三个组件：一台授权服务器和两个�
     
     4.  这应该会在几分钟内生成未查看邮件的计数（将在应用图标上指明）。
 
-  - **启用监控。**测试推送通知或调查通知失败原因的另一种方法是，在您的组织中对邮箱服务器启用监控。本地 Exchange 2013 服务器管理员必须通过以下脚本调用推送通知代理监控。为此，请复制并粘贴以下代码。
+  - **启用监控。** 测试推送通知或调查通知失败原因的另一种方法是，在您的组织中对邮箱服务器启用监控。本地 Exchange 2013 服务器管理员必须通过以下脚本调用推送通知代理监控。为此，请复制并粘贴以下代码。
     
         # Send a push notification to verify connectivity.
         

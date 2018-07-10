@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2010, Exchange Server 2013_
+_**适用于：** Exchange Server 2010, Exchange Server 2013_
 
-_**上一次修改主题：**2014-11-16_
+_**上一次修改主题：** 2014-11-16_
 
 脱机通讯簿 (OAB) 是已下载的地址列表集的副本，因此 Microsoft Outlook 用户可以在与服务器断开连接的情况下访问通讯簿。Microsoft Exchange 生成新的 OAB 文件，然后压缩文件并将其置于本地共享。可以决定脱机工作的用户可以使用哪些地址列表，也可以配置分发通讯簿的方式。
 
 有关地址列表的详细信息，请参阅[地址列表](address-lists-exchange-2013-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>OAB 数据由 Microsoft Exchange OABGen 服务生成，该服务是邮箱助理。如果使用安全描述符来防止用户查看 Active Directory 中的某些收件人，则下载 OAB 的用户将能够看到这些隐藏的收件人。因此，若要隐藏地址列表的收件人，请设置 <a href="https://technet.microsoft.com/zh-cn/library/aa998596(v=exchg.150)">Set-PublicFolder</a>、<a href="https://technet.microsoft.com/zh-cn/library/aa995950(v=exchg.150)">Set-MailContact</a>、<a href="https://technet.microsoft.com/zh-cn/library/aa995971(v=exchg.150)">Set-MailUser</a>、<a href="https://technet.microsoft.com/zh-cn/library/bb123796(v=exchg.150)">Set-DynamicDistributionGroup</a>、<a href="https://technet.microsoft.com/zh-cn/library/bb123981(v=exchg.150)">Set-Mailbox</a> 和 <a href="https://technet.microsoft.com/zh-cn/library/bb124955(v=exchg.150)">Set-DistributionGroup</a> cmdlet 的 <em>HiddenFromAddressListsEnabled</em> 参数。另外，可以新建不包含隐藏的收件人的默认 OAB。有关如何在 OAB 中添加或删除地址列表的详细信息，请参阅<a href="add-an-address-list-to-or-remove-an-address-list-from-an-offline-address-book-exchange-2013-help.md">将地址列表添加至脱机通讯簿或从脱机通讯簿删除地址列表</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> OAB 数据由 Microsoft Exchange OABGen 服务生成，该服务是邮箱助理。如果使用安全描述符来防止用户查看 Active Directory 中的某些收件人，则下载 OAB 的用户将能够看到这些隐藏的收件人。因此，若要隐藏地址列表的收件人，请设置 <a href="https://technet.microsoft.com/zh-cn/library/aa998596(v=exchg.150)">Set-PublicFolder</a>、<a href="https://technet.microsoft.com/zh-cn/library/aa995950(v=exchg.150)">Set-MailContact</a>、<a href="https://technet.microsoft.com/zh-cn/library/aa995971(v=exchg.150)">Set-MailUser</a>、<a href="https://technet.microsoft.com/zh-cn/library/bb123796(v=exchg.150)">Set-DynamicDistributionGroup</a>、<a href="https://technet.microsoft.com/zh-cn/library/bb123981(v=exchg.150)">Set-Mailbox</a> 和 <a href="https://technet.microsoft.com/zh-cn/library/bb124955(v=exchg.150)">Set-DistributionGroup</a> cmdlet 的 <em>HiddenFromAddressListsEnabled</em> 参数。另外，可以新建不包含隐藏的收件人的默认 OAB。有关如何在 OAB 中添加或删除地址列表的详细信息，请参阅<a href="add-an-address-list-to-or-remove-an-address-list-from-an-offline-address-book-exchange-2013-help.md">将地址列表添加至脱机通讯簿或从脱机通讯簿删除地址列表</a>。
 
 
 正在寻找与 OAB 相关的管理任务？请参阅[脱机通讯簿程序](offline-address-book-procedures-exchange-2013-help.md)。

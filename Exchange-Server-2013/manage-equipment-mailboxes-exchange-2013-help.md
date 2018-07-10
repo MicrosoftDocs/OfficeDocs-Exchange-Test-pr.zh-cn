@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2014-10-09_
+_**上一次修改主题：** 2014-10-09_
 
 “设备邮箱”是分配给非特定于位置的资源（例如便携式计算机、投影仪、麦克风或公司汽车）的资源邮箱。在管理员创建设备邮箱之后，用户可通过在会议请求中加入相应的设备邮箱方便地保留设备。您可使用 EAC 和命令行管理程序来创建设备邮箱或更改设备邮箱属性。有关详细信息，请参阅[收件人](recipients-exchange-2013-help.md)。
 
@@ -29,18 +29,8 @@ _**上一次修改主题：**2014-10-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 您想执行什么操作？
@@ -57,18 +47,8 @@ _**上一次修改主题：**2014-10-09_
     
       - “\* 设备名称”   使用此框可以键入设备邮箱的名称。这是在 EAC 的资源邮箱列表和贵组织的通讯簿中列出的名称。此名称必填，同时不能超过 64 个字符。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>尽管存在描述会议室详细信息的其他字段（例如“容量”），但可以考虑使用一致的命名约定来总结设备名称中最重要的详细信息。为什么？通过这样做，当用户在会议请求中从通讯簿选择设备时，可以轻易地查看详细信息。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!tip]
+        > 尽管存在描述会议室详细信息的其他字段（例如“容量”），但可以考虑使用一致的命名约定来总结设备名称中最重要的详细信息。为什么？通过这样做，当用户在会议请求中从通讯簿选择设备时，可以轻易地查看详细信息。
     
       - “\* 电子邮件地址”   设备邮箱具有一个电子邮件地址，从而可接收预定请求。电子邮件地址由 @ 符号左侧的别名（必须在林中是唯一的）和右侧的域名组成。电子邮件地址必填。
 
@@ -198,18 +178,8 @@ _**上一次修改主题：**2014-10-09_
 
 使用“联系信息”部分来查看或更改资源的联系信息。该页上的信息显示在通讯簿中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以使用“州/省”框为动态通讯组、电子邮件地址策略或地址列表创建收件人条件。</td>
-</tr>
-</tbody>
-</table>
+> [!tip]
+> 可以使用“州/省”框为动态通讯组、电子邮件地址策略或地址列表创建收件人条件。
 
 
 ## 电子邮件地址
@@ -224,31 +194,11 @@ _**上一次修改主题：**2014-10-09_
     
       - “自定义地址类型”   单击此按钮，然后在“\* 电子邮件地址”框中键入一个支持的非 SMTP 电子邮件地址。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>除 X.400 地址以外，Exchange 不验证自定义地址的格式是否正确。您必须确保所指定的自定义地址符合该地址类型的格式要求。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+    > 除 X.400 地址以外，Exchange 不验证自定义地址的格式是否正确。您必须确保所指定的自定义地址符合该地址类型的格式要求。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>当添加新电子邮件地址时，您将拥有使其成为主 SMTP 地址的选项。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 当添加新电子邮件地址时，您将拥有使其成为主 SMTP 地址的选项。
 
 
   - “基于应用到此收件人的电子邮件地址策略自动更新电子邮件地址”   选中此复选框可基于对组织中电子邮件地址策略所做的更改自动更新收件人的电子邮件地址。
@@ -257,23 +207,13 @@ _**上一次修改主题：**2014-10-09_
 
 使用“邮件提示”部分可添加邮件提示，以便在用户向设备邮箱发送预定请求之前提醒用户存在潜在的问题。邮件提示是在将此收件人添加到新电子邮件的“收件人”、“抄送”或“密件抄送”行中时，信息栏中显示的文本。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>邮件提示可包含 HTML 标记，但不允许包含脚本。自定义邮件提示的长度不能超过 175 个显示的字符。此字符限制不计入 HTML 标记。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 邮件提示可包含 HTML 标记，但不允许包含脚本。自定义邮件提示的长度不能超过 175 个显示的字符。此字符限制不计入 HTML 标记。
 
 
 ## 使用命令行管理程序更改设备邮箱属性
 
-使用以下 cmdlet 集来查看和更改设备邮箱属性：**Get-Mailbox** 和 **Set-Mailbox** cmdlets 来查看和更改设备邮箱的一般属性和电子邮件地址。使用 **Get-CalendarProcessing** 和 **Set-CalendarProcessing** cmdlet 查看和更改委派和预定选项。
+使用以下 cmdlet 集来查看和更改设备邮箱属性：** Get-Mailbox** 和 **Set-Mailbox** cmdlets 来查看和更改设备邮箱的一般属性和电子邮件地址。使用 **Get-CalendarProcessing** 和 **Set-CalendarProcessing** cmdlet 查看和更改委派和预定选项。
 
   - **Get-User** 和 **Set-User**   使用这些 cmdlet 来查看和设置诸如部门和公司名称等一般属性。
 

@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2017-11-22_
+_**上一次修改主题：** 2017-11-22_
 
-**摘要：** 了解如何准备在Exchange 2013的跨目录林移动邮箱。
+**摘要：**  了解如何准备在Exchange 2013的跨目录林移动邮箱。
 
 Microsoft Exchange 2013支持邮箱移动和迁移使用 Exchange 管理外壳，特别是**New-MoveRequest**和**New-MigrationBatch**的 cmdlet。您还可以通过 Exchange 管理中心 (EAC) 移动邮箱。请注意，可以将 Exchange 2010 和 Exchange 2013 的邮箱移动到 Exchange 2013 林。
 
@@ -122,18 +122,9 @@ Microsoft Exchange 2013支持邮箱移动和迁移使用 Exchange 管理外壳�
 <tr class="odd">
 <td><p><strong>proxyAddresses</strong></p></td>
 <td><p>复制源邮箱的 <strong>proxyAddresses</strong> 属性。此外，复制源邮箱的 <strong>LegacyExchangeDN</strong> 作为目标邮件用户的 <strong>proxyAddresses</strong> 属性中的 X500 地址。</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>源邮箱用户的 <strong>proxyAddresses</strong> 必须含有与目标林的权威域相匹配的 SMTP 地址。这将允许 <strong>New-MoveRequest</strong> cmdlet 正确选择已启用源邮件的用户（此用户为完成邮箱移动请求后从源邮箱用户转换而来的用户）的 <strong>targetAddress</strong>，从而确保邮件路由继续进行下去。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> 源邮箱用户的 <strong>proxyAddresses</strong> 必须含有与目标林的权威域相匹配的 SMTP 地址。这将允许 <strong>New-MoveRequest</strong> cmdlet 正确选择已启用源邮件的用户（此用户为完成邮箱移动请求后从源邮箱用户转换而来的用户）的 <strong>targetAddress</strong>，从而确保邮件路由继续进行下去。
 
 </td>
 </tr>
@@ -357,18 +348,8 @@ Microsoft Exchange 2013支持邮箱移动和迁移使用 Exchange 管理外壳�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只有在源林和目标林之间存在林信任时，才能创建链接的邮箱。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 只有在源林和目标林之间存在林信任时，才能创建链接的邮箱。
 
 
 如果禁用了源对象，且 **msExchMasterAccountSid** 属性已设置为自身（资源邮箱，共享邮箱），请勿对目标用户标记任何内容。

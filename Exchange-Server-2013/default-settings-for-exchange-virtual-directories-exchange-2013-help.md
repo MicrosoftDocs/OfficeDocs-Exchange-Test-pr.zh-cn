@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-04-07_
+_**上一次修改主题：** 2015-04-07_
 
 Exchange Server 2013 会在安装过程中，自动配置多个 Internet 信息服务 (IIS) 虚拟目录。本主题包含有关客户端访问和邮箱服务器的默认 IIS 身份验证设置和默认安全套接字层 (SSL) 设置的信息。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2017-05-10_
+_**上一次修改主题：** 2017-05-10_
 
 MAPI（邮件处理应用程序编程接口）over HTTP 是在 MicrosoftExchange Server 2013 Service Pack 1 (SP1) 中实现的新传输协议。MAPI over HTTP 可将传输层移动到行业标准的 HTTP 模型，从而提高 Outlook 和 Exchange 连接的可靠性和稳定性。这样可以提高传输错误的可见性级别，并增强可恢复性。其他功能包括支持显式暂停和继续功能。这使受支持的客户端可以更改网络或从休眠状态中恢复，同时保持相同的服务器上下文。
 
@@ -151,19 +151,9 @@ MAPI over HTTP 为支持它的客户端提供以下益处：
 
 2.  将客户端访问服务器和邮箱服务器升级到 Exchange 2013 SP1。有关如何升级的信息，请参阅[将 Exchange 2013 升级到最新累积更新或 Service Pack](upgrade-exchange-2013-to-the-latest-cumulative-update-or-service-pack-exchange-2013-help.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>必须将所有客户端访问服务器升级到 Exchange 2013 SP1，然后再启用 MAPI over HTTP。否则，Outlook 将无法连接到邮箱。<br />
-    数据库可用性组 (DAG) 中所有邮箱服务器升级失败将导致电子邮件延迟，并需要客户端在发生数据库故障转移时重新启动 Outlook。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 必须将所有客户端访问服务器升级到 Exchange 2013 SP1，然后再启用 MAPI over HTTP。否则，Outlook 将无法连接到邮箱。<br />
+    > 数据库可用性组 (DAG) 中所有邮箱服务器升级失败将导致电子邮件延迟，并需要客户端在发生数据库故障转移时重新启动 Outlook。
 
 
 3.  您需要在所有 Exchange 2013 服务器上安装 Microsoft.NET Framework 4.5.2。有关详细信息，请参阅[安装 .NET Framework](https://go.microsoft.com/fwlink/p/?linkid=518380)。

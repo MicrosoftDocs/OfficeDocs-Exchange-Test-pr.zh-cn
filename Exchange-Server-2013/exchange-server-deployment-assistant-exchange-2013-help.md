@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 Exchange Server 部署助理是一种基于 Web 的工具，可帮助进行 Microsoft Exchange Server 2016 和 Exchange Server 2013 部署。部署助理会询问一些有关当前环境的问题，然后生成有助于简化部署的自定义清单和步骤。若要访问部署助理，请参阅 [Exchange Server 部署助理](https://go.microsoft.com/fwlink/p/?linkid=277105)。
 
@@ -59,18 +59,8 @@ Exchange Server 部署助理是一种基于 Web 的工具，可帮助进行 Micr
     
     有关此方案的详细信息，请参阅[Exchange Server 混合部署](https://technet.microsoft.com/zh-cn/library/jj200581\(v=exchg.150\))。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果拥有 Exchange 2003 内部部署组织并且希望对 Office 365 配置新的混合部署，必须将运行 Exchange 2010 Server Service Pack 3（而非 Exchange 2013 服务器）的一台或多台服务器添加到内部部署组织中。为此，强烈建议使用 <a href="https://technet.microsoft.com/zh-cn/exdeploy2010">Exchange Server 部署助理</a>中的 Exchange 2010 混合部署选项。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!important]
+    > 如果拥有 Exchange 2003 内部部署组织并且希望对 Office 365 配置新的混合部署，必须将运行 Exchange 2010 Server Service Pack 3（而非 Exchange 2013 服务器）的一台或多台服务器添加到内部部署组织中。为此，强烈建议使用 <a href="https://technet.microsoft.com/zh-cn/exdeploy2010">Exchange Server 部署助理</a>中的 Exchange 2010 混合部署选项。
 
 
   - **仅限云**

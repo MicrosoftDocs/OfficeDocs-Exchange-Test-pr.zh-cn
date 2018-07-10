@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**上一次修改主题：**2016-12-09_
+_**上一次修改主题：** 2016-12-09_
 
 请遵循下面推荐的这些 Exchange 传输规则最佳做法，以避免出现常见的配置错误。每条建议都有主题链接。单击链接后，可查看示例和分步操作说明。
 

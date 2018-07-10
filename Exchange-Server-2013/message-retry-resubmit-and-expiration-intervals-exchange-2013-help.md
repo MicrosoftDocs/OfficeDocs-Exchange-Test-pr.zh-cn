@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 在 Microsoft Exchange Server 2013 中，传递失败的邮件可能会根据邮件来源和目的地要求重试、重新提交和设置过期期限等。“重试”是重新尝试与目的地建立连接。“重新提交”是将邮件发送回提交队列的操作，以便分类程序重新处理。如果在指定时段内所有传递操作均失败，则邮件“过期”。邮件过期后，发件人会收到传递失败的通知。然后系统会从队列中删除该邮件。
 
@@ -168,18 +168,8 @@ _**上一次修改主题：**2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Exchange 2007 集线器传输服务器上，所有 <em>ExternalDSN*</em> 和 <em>InternalDSN*</em> 参数能在 <strong>Set-TransportServer</strong> cmdlet 中使用，而不能在 <strong>Set-TransportConfig</strong> cmdlet 中使用。如果组织中有任何 Exchange 2007 集线器传输服务器，则需要在每个 Exchange 2007 集线器传输服务器上使用 <strong>Set-TransportServer</strong> cmdlet 来更改这些值。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 在 Exchange 2007 集线器传输服务器上，所有 <em>ExternalDSN*</em> 和 <em>InternalDSN*</em> 参数能在 <strong>Set-TransportServer</strong> cmdlet 中使用，而不能在 <strong>Set-TransportConfig</strong> cmdlet 中使用。如果组织中有任何 Exchange 2007 集线器传输服务器，则需要在每个 Exchange 2007 集线器传输服务器上使用 <strong>Set-TransportServer</strong> cmdlet 来更改这些值。
 
 
 返回顶部
@@ -212,18 +202,8 @@ _**上一次修改主题：**2015-03-09_
 
 手动重新提交邮件可以使用的另一种方式是挂起邮件，将邮件导出到文件扩展名为 .eml 的文本文件，然后将 .eml 文件复制到任何邮箱服务器或边缘传输服务器上的重播目录。这种重新提交方法适用于传递队列或无法到达队列中的邮件。病毒邮件队列中的邮件已处于“挂起”状态。提交队列中的邮件不得挂起或导出。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>从队列中导出邮件时，不会将邮件从队列中删除。导出邮件并使用重播目录成功地重新提交这些邮件后，应删除挂起的邮件，以防重复提交邮件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 从队列中导出邮件时，不会将邮件从队列中删除。导出邮件并使用重播目录成功地重新提交这些邮件后，应删除挂起的邮件，以防重复提交邮件。
 
 
 有关详细信息，请参阅[从队列导出邮件](export-messages-from-queues-exchange-2013-help.md)。

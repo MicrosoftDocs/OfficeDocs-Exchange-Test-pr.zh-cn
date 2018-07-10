@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Project Server 2013_
+_**适用于：** Exchange Server 2013, Project Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 Exchange 控制面板 (ECP) 运行状况设置监视 Exchange 管理中心 (EAC) 和 Outlook Web App (OWA) 用户设置服务的整体运行状况。ECP 运行状况设置与以下运行状况设置密切相关：
 

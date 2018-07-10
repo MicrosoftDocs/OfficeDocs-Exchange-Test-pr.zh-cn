@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2016-12-15_
+_**上一次修改主题：** 2016-12-15_
 
 此主题中的内容尚未针对 Microsoft Exchange Server 2013 进行更新。虽然尚未更新，但仍可能适用于 Exchange 2013。如果您仍需要帮助，请查看下面的社区资源。
 
@@ -41,5 +41,5 @@ Microsoft® Exchange Server 分析器工具查询**Win32\_OperatingSystem** Micr
 
 5.  保存并关闭文件，然后重新启动 Exchange Server 计算机，以使更改生效。
 
-有关可以在 Boot.ini 文件中使用的参数的详细信息，请参阅 Microsoft 知识库文章 833721，"Windows XP 和 Windows Server 2003 Boot.ini 文件的可用开关选项"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=833721](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=833721))。
+有关可以在 Boot.ini 文件中使用的参数的详细信息，请参阅 Microsoft 知识库文章 833721，"Windows XP 和 Windows Server 2003 Boot.ini 文件的可用开关选项"([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=833721](https://go.microsoft.com/fwlink/?linkid=3052&kbid=833721))。
 

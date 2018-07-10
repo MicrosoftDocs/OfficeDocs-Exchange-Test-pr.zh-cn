@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013_
+_**适用于：** Exchange Online, Exchange Server 2013_
 
-_**上一次修改主题：**2012-10-12_
+_**上一次修改主题：** 2012-10-12_
 
 Microsoft Exchange Server 2013 中的权限通过使用基于角色的访问控制 (RBAC) 权限模型进行管理。以下主题标识了管理与 Exchange 2013 中各功能区域关联的功能所需要的管理角色组。
 

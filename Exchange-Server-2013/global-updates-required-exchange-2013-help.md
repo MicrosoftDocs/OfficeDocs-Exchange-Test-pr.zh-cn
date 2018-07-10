@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server_
+_**适用于：** Exchange Server_
 
-_**上一次修改主题：**2014-12-02_
+_**上一次修改主题：** 2014-12-02_
 
 Microsoft Exchange Server 2013 安装程序无法继续，因为登录的用户没有所需的帐户权限，无法对 Active Directory 目录服务进行全局更新。
 
@@ -23,18 +23,8 @@ Microsoft Exchange Server 2013 安装程序无法继续，因为登录的用户�
 
 若要解决此问题，请向登录的用户授予相应的权限，或者使用拥有这些权限的帐户登录并重新运行 Exchange 2013 安装程序。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不支持跨林安装 Exchange 2013。使用属于要在其中安装 Exchange 2013 的 Active Directory 林的成员的帐户。</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> 不支持跨林安装 Exchange 2013。使用属于要在其中安装 Exchange 2013 的 Active Directory 林的成员的帐户。
 
 
 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：[Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612)、 [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542) 或 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351)。

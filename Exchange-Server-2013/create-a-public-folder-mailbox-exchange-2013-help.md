@@ -13,31 +13,18 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**上一次修改主题：**2014-10-23_
+_**上一次修改主题：** 2014-10-23_
 
 必须先创建公用文件夹邮箱，然后才能创建公用文件夹。公用文件夹邮箱包含公用文件夹的层次结构信息和内容。您创建的首个公用文件夹邮箱是主层次结构邮箱，包含层次结构的只写拷贝。您创建的其他所有公用文件夹邮箱都是辅邮箱，包含层次结构的只读拷贝。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关存储配额和公用文件夹的限制的详细信息，请参阅以下主题：
-<ul>
-<li><p>若要了解 Office 365 中的公用文件夹，请参阅 <a href="https://go.microsoft.com/fwlink/?linkid=391188">Exchange Online 限制</a>。</p></li>
-<li><p>有关本地 Exchange Server 2013 中的公用文件夹的信息，请参阅<a href="limits-for-public-folders-exchange-2013-help.md">公用文件夹的限制</a>。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 有关存储配额和公用文件夹的限制的详细信息，请参阅以下主题：
+> <ul>
+> <li><p>若要了解 Office 365 中的公用文件夹，请参阅 <a href="https://go.microsoft.com/fwlink/?linkid=391188">Exchange Online 限制</a>。</p></li>
+> <li><p>有关本地 Exchange Server 2013 中的公用文件夹的信息，请参阅<a href="limits-for-public-folders-exchange-2013-help.md">公用文件夹的限制</a>。</p></li>
+> </ul>
 
 
 有关 Exchange 2013 中与公用文件夹相关的其他管理任务，请参阅[公用文件夹程序](public-folder-procedures-exchange-2013-help.md)。

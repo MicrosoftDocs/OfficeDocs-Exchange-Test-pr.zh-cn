@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013, Project Server 2013_
+_**适用于：** Exchange Server 2013, Project Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 **MailboxTransport** 运行状况设置监视邮箱服务器上的邮箱传输提交和邮箱传输传递服务的整体运行状况。这些服务负责向邮箱数据库发送电子邮件以及接收来自它们的邮件。有关详细信息，请参阅[邮件流](https://technet.microsoft.com/zh-cn/library/aa996349\(v=exchg.150\))。
 

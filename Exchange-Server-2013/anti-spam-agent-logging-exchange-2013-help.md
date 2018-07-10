@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 代理日志通过 Microsoft Exchange Server 2013 中特定的反垃圾邮件代理记录在邮件上执行的操作。只有下列代理可以将信息写入代理日志：
 
@@ -31,18 +31,8 @@ _**上一次修改主题：**2015-03-09_
 
   - 发件人 ID 代理
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>“连接筛选”代理和“边缘规则”代理在邮箱服务器上不可用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> “连接筛选”代理和“边缘规则”代理在邮箱服务器上不可用。
 
 
 写入代理日志中的信息取决于代理、SMTP 事件和对邮件执行的操作。
@@ -120,18 +110,8 @@ Exchange 使用循环日志记录，并基于文件大小和文件期限对代�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb124558.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>“连接筛选”代理和“边缘规则”代理在邮箱服务器上不可用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> “连接筛选”代理和“边缘规则”代理在邮箱服务器上不可用。
 
 
 有关代理、SMTP 事件和代理优先级的详细信息，请参阅[传输代理](transport-agents-exchange-2013-help.md)。
@@ -152,15 +132,15 @@ Exchange 使用循环日志记录，并基于文件大小和文件期限对代�
 
 代理日志文件是文本文件，其中包含逗号分隔值文件 (CSV) 格式的数据。每个代理日志文件的文件头都包含下列信息：
 
-  - **\#Software：**创建代理日志文件的软件的名称。通常情况下，此值是 Microsoft Exchange Server。
+  - **\#Software：** 创建代理日志文件的软件的名称。通常情况下，此值是 Microsoft Exchange Server。
 
-  - **\#Version：**创建代理日志文件的软件的版本号。当前值为 15.0.0.0。
+  - **\#Version：** 创建代理日志文件的软件的版本号。当前值为 15.0.0.0。
 
   - **\#Log-Type**   日志类型的值，即代理日志。
 
-  - **\#Date：**创建日志文件的 UTC 日期-时间。UTC 日期-时间以 ISO 8601 日期-时间格式表示：*yyyy-mm-dd*T*hh:mm:ss.fff*Z，其中 *yyyy* = 年，*mm* = 月，*dd* = 天，T 表示时间部分的开头，*hh* = 小时，*mm* = 分钟，*ss* = 秒，*fff* = 几分之几秒，而 Z 表示祖鲁语（另一种 UTC 表示方法）。
+  - **\#Date：** 创建日志文件的 UTC 日期-时间。UTC 日期-时间以 ISO 8601 日期-时间格式表示：*yyyy-mm-dd*T*hh:mm:ss.fff*Z，其中 *yyyy* = 年，*mm* = 月，*dd* = 天，T 表示时间部分的开头，*hh* = 小时，*mm* = 分钟，*ss* = 秒，*fff* = 几分之几秒，而 Z 表示祖鲁语（另一种 UTC 表示方法）。
 
-  - **\#Fields：**代理日志文件中使用的字段名（以逗号分隔）。
+  - **\#Fields：** 代理日志文件中使用的字段名（以逗号分隔）。
 
 返回顶部
 

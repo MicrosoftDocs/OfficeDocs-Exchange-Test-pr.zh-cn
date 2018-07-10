@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**适用于：**Exchange Server 2013_
+_**适用于：** Exchange Server 2013_
 
-_**上一次修改主题：**2015-03-09_
+_**上一次修改主题：** 2015-03-09_
 
 EWS.Proxy 运行状况设置监视客户端访问服务器 (CAS) 上 Exchange Web 服务 (EWS) 代理基础结构的可用性。EWS.Proxy 运行状况设置与以下运行状况设置密切相关：
 
