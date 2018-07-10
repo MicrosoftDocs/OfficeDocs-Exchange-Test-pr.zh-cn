@@ -126,18 +126,8 @@ MRS 代理是与 Office 365 端运行的邮箱复制服务结合使用的本地�
 
     Set-WebServicesVirtualDirectory -Identity "EWS (Default Web Site)" -MRSMaxConnections <number between 0 and unlimited; default is 100>
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于大多数客户迁移，无需更改默认 MRSMaxConnections 值。如果需要保护源服务器以免迁移负载过大，客户可以减少连接数。此设置按每个 MRSProxy 服务器进行设置。如果客户有两个 MRSProxy 服务器，每个服务器都设置为 10 个连接，它们的总 MRSProxy 连接数将为 20 (2 x 10)。有关在本地 Exchange 2010 组织中配置 MRSProxy 服务的详细信息，请参阅<a href="http://technet.microsoft.com/zh-cn/library/ee732395.aspx">在远程客户端访问服务器上启动 MRSProxy 服务</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 对于大多数客户迁移，无需更改默认 MRSMaxConnections 值。如果需要保护源服务器以免迁移负载过大，客户可以减少连接数。此设置按每个 MRSProxy 服务器进行设置。如果客户有两个 MRSProxy 服务器，每个服务器都设置为 10 个连接，它们的总 MRSProxy 连接数将为 20 (2 x 10)。有关在本地 Exchange 2010 组织中配置 MRSProxy 服务的详细信息，请参阅<a href="http://technet.microsoft.com/zh-cn/library/ee732395.aspx">在远程客户端访问服务器上启动 MRSProxy 服务</a>。
 
 
 ## 因素 4：网络

@@ -21,32 +21,12 @@ _<strong>上一次修改主题：</strong>2016-07-29_
 
 本主题讨论来自 Internet 的入站邮件和发送到 Internet 的出站邮件的路由选项。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不要在处理或修改 SMTP 通信的内部部署 Exchange 服务器和 Office 365 之间放置任何服务器、服务或设备。内部部署 Exchange 组织和 Office 365 之间的安全邮件流取决于组织之间发送的邮件中包含的信息。支持允许 TCP 端口 25 上的 SMTP 通信通过而无需修改的防火墙。如果服务器、服务或设备处理内部部署 Exchange 组织和 Office 365 之间发送的邮件，此信息将被删除。如果发生这种情况，该邮件将不再被视为组织内部邮件，并且将会对其应用反垃圾邮件筛选、 传输和日记规则以及可能不适用于它的其他策略。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 不要在处理或修改 SMTP 通信的内部部署 Exchange 服务器和 Office 365 之间放置任何服务器、服务或设备。内部部署 Exchange 组织和 Office 365 之间的安全邮件流取决于组织之间发送的邮件中包含的信息。支持允许 TCP 端口 25 上的 SMTP 通信通过而无需修改的防火墙。如果服务器、服务或设备处理内部部署 Exchange 组织和 Office 365 之间发送的邮件，此信息将被删除。如果发生这种情况，该邮件将不再被视为组织内部邮件，并且将会对其应用反垃圾邮件筛选、 传输和日记规则以及可能不适用于它的其他策略。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主题中的示例不包括将边缘传输服务器添加到混合部署中。邮件在内部部署组织、Exchange Online 组织与 Internet 之间采用的路由不会随着添加边缘传输服务器而更改。只有内部部署组织中的路由会更改。有关向混合部署添加边缘传输服务器的详细信息，请参阅 <a href="edge-transport-servers-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md">Exchange 2013/Exchange 2010 混合部署中的边缘传输服务器</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 本主题中的示例不包括将边缘传输服务器添加到混合部署中。邮件在内部部署组织、Exchange Online 组织与 Internet 之间采用的路由不会随着添加边缘传输服务器而更改。只有内部部署组织中的路由会更改。有关向混合部署添加边缘传输服务器的详细信息，请参阅 <a href="edge-transport-servers-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md">Exchange 2013/Exchange 2010 混合部署中的边缘传输服务器</a>。
 
 
 ## 来自 Internet 的入站邮件
@@ -67,18 +47,8 @@ _<strong>上一次修改主题：</strong>2016-07-29_
 
 以下步骤和图表举例说明了在指向 MX 记录到 Office 365 组织中的 EOP 服务的情况下，混合部署中出现的入站邮件路径。邮件路径因是否选择启用集中邮件传输而异。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于接收首先传递到 EOP 然后通过 Exchange Online 组织进行路由的邮件的每个内部部署邮箱，可能需要购买 EOP 许可证。有关详细信息，请与您的 Microsoft 经销商联系。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 对于接收首先传递到 EOP 然后通过 Exchange Online 组织进行路由的邮件的每个内部部署邮箱，可能需要购买 EOP 许可证。有关详细信息，请与您的 Microsoft 经销商联系。
 
 
 当集中邮件传输被*禁用*（默认配置）时，混合部署中的入站 Internet 邮件按以下路由：
@@ -157,18 +127,8 @@ _<strong>上一次修改主题：</strong>2016-07-29_
 
   - **启用集中邮件控制**   选择此选项将通过内部部署组织路由从 Exchange Online 组织发送的出站邮件。除了向同一个 Exchange Online 组织中的其他收件人发送的邮件之外，从 Exchange Online 组织中的收件人发送的所有出站邮件都会通过内部部署组织发送。这使您可以将合规性规则应用于这些邮件以及必须应用于所有收件人（无论这些收件人是处于 Exchange Online 组织中还是处于内部部署组织中）的任何其他过程或要求。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>仅对具有与符合性相关的特定传输需求的组织推荐使用集中式邮件传输。我们建议典型的 Exchange 组织不要启用集中式邮件传输。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 仅对具有与符合性相关的特定传输需求的组织推荐使用集中式邮件传输。我们建议典型的 Exchange 组织不要启用集中式邮件传输。
 
 
 从内部部署收件人发送的邮件会始终使用 DNS 直接发送到 Internet 收件人（无论在“混合配置”向导中选择了以上哪个选项）。

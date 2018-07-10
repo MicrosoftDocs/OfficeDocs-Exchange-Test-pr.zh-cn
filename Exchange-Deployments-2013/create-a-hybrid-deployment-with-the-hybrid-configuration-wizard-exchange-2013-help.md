@@ -27,19 +27,9 @@ _<strong>上一次修改主题：</strong>2016-12-09_
 
   - 内部部署组织并不部署边缘传输服务器。作为混合部署的一部分，混合配置向导支持配置边缘传输服务器。但是本主题并不包括在向导中配置边缘传输服务器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用混合配置向导配置混合部署要求某些重要的先决条件，这些先决条件有助于向导成功完成任务，以及有助于混合部署功能的正常工作。必须完成在 <a href="hybrid-deployment-prerequisites-exchange-2013-help.md">混合部署先决条件</a> 中概括的先决条件后，才可使用混合配置向导创建与配置混合部署。<br />
-此外，<a href="http://technet.microsoft.com/exdeploy2013">Exchange Server 部署助理</a>是一款免费的 Web 工具，可帮助您在内部部署组织和 Office 365 之间配置混合部署，或完全迁移到 Office 365。该工具会询问您一些简单的问题，然后根据您的回答，创建一个自定义检查表，其中包含配置混合部署的说明。我们强烈建议您使用部署助理生成针对特定组织需求的自定义混合部署检查表。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 使用混合配置向导配置混合部署要求某些重要的先决条件，这些先决条件有助于向导成功完成任务，以及有助于混合部署功能的正常工作。必须完成在 <a href="hybrid-deployment-prerequisites-exchange-2013-help.md">混合部署先决条件</a> 中概括的先决条件后，才可使用混合配置向导创建与配置混合部署。
+> 此外，<a href="http://technet.microsoft.com/exdeploy2013">Exchange Server 部署助理</a>是一款免费的 Web 工具，可帮助您在内部部署组织和 Office 365 之间配置混合部署，或完全迁移到 Office 365。该工具会询问您一些简单的问题，然后根据您的回答，创建一个自定义检查表，其中包含配置混合部署的说明。我们强烈建议您使用部署助理生成针对特定组织需求的自定义混合部署检查表。
 
 
 关于混合部署的更多管理任务，参阅 [Hybrid Deployment procedures](hybrid-deployment-procedures-exchange-2013-help.md)。
@@ -50,18 +40,8 @@ _<strong>上一次修改主题：</strong>2016-12-09_
 
   - 估计完成时间：30 分钟
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>该主题概述了完成混合配置向导步骤的估计完成时间。配置混合部署要求将会花费比估计完成时间长得多的时间。例如，注册企业 Office 365、配置 Active Directory 同步、分配 Exchange Online 许可证要求巨大的时间投资，并且可能也包括网络拓扑更改。考虑到完成端到端混合部署配置需要的整体时间，您应该计划出比所列的完成该步骤需要的时间更长的时间。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 该主题概述了完成混合配置向导步骤的估计完成时间。配置混合部署要求将会花费比估计完成时间长得多的时间。例如，注册企业 Office 365、配置 Active Directory 同步、分配 Exchange Online 许可证要求巨大的时间投资，并且可能也包括网络拓扑更改。考虑到完成端到端混合部署配置需要的整体时间，您应该计划出比所列的完成该步骤需要的时间更长的时间。
 
 
   - 您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅[Exchange 和命令行管理程序基础结构权限](https://technet.microsoft.com/zh-cn/library/dd638114\(v=exchg.150\))主题中的“混合部署”条目。
@@ -78,18 +58,8 @@ _<strong>上一次修改主题：</strong>2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](https://technet.microsoft.com/zh-cn/library/jj150484\(v=exchg.150\))。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ659053.tip(EXCHG.150).gif" title="提示" alt="提示" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
 ## 使用 Exchange 管理中心与混合配置向导创建混合部署
@@ -100,18 +70,8 @@ _<strong>上一次修改主题：</strong>2016-12-09_
 
 2.  在“混合”节点中，单击“配置”以输入您的 Office 365 凭据。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的内部部署组织位于中国并且您的 Office 365 租户由世纪互联托管，则必须选中“我的 Office 365 组织由世纪互联托管”复选框。如果您的 Office 365 租户由世纪互联托管但未选中此复选框，混合配置向导将无法连接到世纪互联服务，您的 Office 365 帐户凭据不会被识别，因此无法正确完成向导。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 如果您的内部部署组织位于中国并且您的 Office 365 租户由世纪互联托管，则必须选中“我的 Office 365 组织由世纪互联托管”复选框。如果您的 Office 365 租户由世纪互联托管但未选中此复选框，混合配置向导将无法连接到世纪互联服务，您的 Office 365 帐户凭据不会被识别，因此无法正确完成向导。
 
 
 3.  提示您登录到 Office 365 时，选择“登录到 Office 365”并输入帐户凭据。您登录到的帐户需要是 Office 365 中的全局管理员。
@@ -132,29 +92,14 @@ _<strong>上一次修改主题：</strong>2016-12-09_
 
 11. 在“混合域”中，选择您想要在混合部署中包含的域。在大多数部署中，对于每个域，您可以将“自动发现”列设置为 **False**。如果您需要强制向导使用特定域中的自动发现信息，只能选择域旁边的 **True** 。单击“下一步”。
     
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>当您运行向导时，混合配置向导的这一域选择步骤可能不会显示。<br />
+    > [!IMPORTANT]
+	> 当您运行向导时，混合配置向导的这一域选择步骤可能不会显示。<br />
     在以下情况下，此步骤将不会显示：
-    <ul>
-    <li><p>您仅添加一个内部部署接受的域到 Office 365 租户。由于这是混合部署配置可用的唯一域，该域将自动选定，同时向导中的步骤将跳过。</p></li>
-    <li><p>没有添加任何内部部署接受的域到您的 Office 365 租户。在这种情况下，您将收到错误，同时需要在继续之前添加至少一个域到 Office 365 租户。可以通过使用 Office 365 管理门户完成此操作，也可以通过在内部部署组织中有选择地配置 Active Directory 联合身份验证服务 (AD FS) 完成此操作。</p></li>
-    </ul>
-    如果您添加了不止一个内部部署接受的域到 Office 365 租户，该步骤将显示。</td>
-    </tr>
-    </tbody>
-    </table>
-
-
+    > <ul>
+    > <li><p>您仅添加一个内部部署接受的域到 Office 365 租户。由于这是混合部署配置可用的唯一域，该域将自动选定，同时向导中的步骤将跳过。</p></li>
+    > <li><p>没有添加任何内部部署接受的域到您的 Office 365 租户。在这种情况下，您将收到错误，同时需要在继续之前添加至少一个域到 Office 365 租户。可以通过使用 Office 365 管理门户完成此操作，也可以通过在内部部署组织中有选择地配置 Active Directory 联合身份验证服务 (AD FS) 完成此操作。</p></li></ul>
+    > 如果您添加了不止一个内部部署接受的域到 Office 365 租户，该步骤将显示。
+    
 12. 在“联合身份验证信任”页面上，单击“启用” ，然后单击“下一步”。
 
 13. 在“域所有权”页面上，单击“单击以复制到剪贴板”以为您选择的域复制域验证令牌信息，以包含在混合部署中。打开文本编辑器，如“记事本”，并粘贴这些域的令牌信息。在混合配置向导继续运行之前，必须使用该信息为公共 DNS 中的每个域创建一个 TXT 记录。请参考 DNS 主机的帮助，了解有关如何将 TXT 记录添加到 DNS 区域的信息。在创建 TXT 记录以及复制 DNS 记录后，单击“下一步”。

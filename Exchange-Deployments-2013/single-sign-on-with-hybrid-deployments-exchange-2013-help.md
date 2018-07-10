@@ -27,18 +27,8 @@ _<strong>上一次修改主题：</strong>2016-01-29_
 
 部署单一登录时有多个选项：密码同步和 Active Directory 联合身份验证服务 (AD FS)。这两个选项均由 Azure Active Directory Connect 提供。我们强烈建议使用密码同步方法，除非您有使用 AD FS 的特殊需求。密码同步提供了很多与 AD FS 相同的好处，而省去了部署后者的复杂性。下表提供了每种选项的共同优缺点。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，如果您部署 AD FS 而您的内部部署 AD FS 服务器出于某种原因无法通过 Internet 进行访问，Office 365 将回退到密码同步来对用户进行身份验证。这允许使用 Office 365 邮箱的用户可以继续不间断地工作，即使您的内部部署服务器不可用也没有关系。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 默认情况下，如果您部署 AD FS 而您的内部部署 AD FS 服务器出于某种原因无法通过 Internet 进行访问，Office 365 将回退到密码同步来对用户进行身份验证。这允许使用 Office 365 邮箱的用户可以继续不间断地工作，即使您的内部部署服务器不可用也没有关系。
 
 
 若要了解有关每个选项的详细信息，请参阅 [Azure AD Connect 用户登录选项](http://go.microsoft.com/fwlink/p/?linkid=723514)

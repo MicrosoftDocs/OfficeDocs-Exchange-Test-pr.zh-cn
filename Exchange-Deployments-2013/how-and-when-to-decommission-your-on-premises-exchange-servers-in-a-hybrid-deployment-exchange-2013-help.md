@@ -130,36 +130,16 @@ Since the hybrid customer base is very diverse, trying to fit all of them into �
 
 2.  Assuming that you have already moved all of the mailboxes to Exchange Online, you can point the MX and Autodiscover DNS records to Exchange Online, instead of to on-premises. For more information, see [Reference: External Domain Name System records for Office 365](http://technet.microsoft.com/en-us/library/hh852557.aspx).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Make sure to update both the internal and external DNS, or you may have inconsistent client connectivity behavior.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > Make sure to update both the internal and external DNS, or you may have inconsistent client connectivity behavior.
 
 
 3.  Next, you should remove the Service Connection Point (SCP) values on your Exchange servers. This ensures that no SCP’s are returned, and the client will instead use the DNS method for Autodiscover. An example is shown below:
     
         Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri $Null
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>If you have Exchange 2007 servers in the environment, you will have to run a similar command on your Exchange 2007 servers to null out the settings.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > If you have Exchange 2007 servers in the environment, you will have to run a similar command on your Exchange 2007 servers to null out the settings.
 
 
 4.  There are inbound and outbound connectors created by the Hybrid Configuration Wizard that you will want to delete. Use the following steps to do this:
@@ -226,52 +206,22 @@ The graphic below describes the actual end state:
 
 1.  Run `Get-OrganizationConfig |fl PublicFoldersEnabled` and ensure that it is not set to remote. If it is set to remote and you want to continue to access the public folders, you would need to migrate them to Exchange Online. For information on how to do this, see [使用批处理迁移将旧版公用文件夹迁移到 Office 365 和 Exchange Online](https://technet.microsoft.com/zh-cn/library/dn874017\(v=exchg.150\)).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>If migrating public folders to Exchange Online is not an option, and you still need them for your users, you should not move forward.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > If migrating public folders to Exchange Online is not an option, and you still need them for your users, you should not move forward.
 
 
 2.  After you have moved all of the mailboxes to Exchange Online, the first thing you would want to do to decommission most of the Exchange servers is point the MX and Autodiscover DNS records to Exchange Online instead of to on-premises. For more information, see [Reference: External Domain Name System records for Office 365](http://technet.microsoft.com/en-us/library/hh852557.aspx).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Make sure to update both the internal and external DNS, or you may have inconsistent client connectivity and mail flow behaviors.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > Make sure to update both the internal and external DNS, or you may have inconsistent client connectivity and mail flow behaviors.
 
 
 3.  Next, you should remove the Service Connection Point (SCP) values on your Exchange servers. This ensures that no SCP’s are returned, and the client will instead use the DNS method for Autodiscover. An example is shown below:
     
         Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri $Null
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>If you have Exchange 2007 servers in the environment, you will have to run a similar command on your Exchange 2007 servers to null out the settings</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > If you have Exchange 2007 servers in the environment, you will have to run a similar command on your Exchange 2007 servers to null out the settings
 
 
 4.  To prevent the hybrid configuration objects from being recreated in the future, you should remove the hybrid configuration object from Active Directory. To do this, open the Exchange Management Shell and run the following:

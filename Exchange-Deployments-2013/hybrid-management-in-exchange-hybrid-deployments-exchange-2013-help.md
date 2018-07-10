@@ -35,18 +35,8 @@ EAC 允许您同时在本地 Exchange 服务器和 Exchange Online 组织上执�
 
 Exchange 命令行管理程序可以执行 EAC 执行的任何任务，以及只能在Exchange 命令行管理程序中执行的某些其他任务。Exchange 命令行管理程序是安装 Exchange 管理工具时安装在计算机上的 Windows PowerShell 脚本和 cmdlet 的集合。只有在使用Exchange 命令行管理程序图标打开Exchange 命令行管理程序时，才会加载这些脚本和 cmdlet。如果你直接打开 Windows PowerShell，则不会加载 Exchange 脚本和 cmdlet，并且你将无法管理内部部署组织。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>你可以创建到本地内部部署组织的手动 Windows PowerShell 连接，方式与手动连接到以下 Exchange Online 组织类似。但是，强烈建议你使用Exchange 命令行管理程序图标来打开Exchange 命令行管理程序，以管理内部部署Exchange服务器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 你可以创建到本地内部部署组织的手动 Windows PowerShell 连接，方式与手动连接到以下 Exchange Online 组织类似。但是，强烈建议你使用Exchange 命令行管理程序图标来打开Exchange 命令行管理程序，以管理内部部署Exchange服务器。
 
 
 当你在安装了管理工具的计算机上使用Exchange 命令行管理程序图标打开Exchange 命令行管理程序时，可以管理内部部署组织。但是，在使用此图标打开Exchange 命令行管理程序时不能管理 Exchange Online 组织。这是因为使用Exchange 命令行管理程序图标打开Exchange 命令行管理程序会自动连接到本地 Exchange 服务器。

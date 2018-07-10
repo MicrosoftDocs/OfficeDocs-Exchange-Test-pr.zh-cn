@@ -21,18 +21,8 @@ _<strong>上一次修改主题：</strong>2016-12-09_
 
 若要使混合传输配置能与混合配置向导一起使用，接受来自 Microsoft Exchange Online 保护 (EOP)（该功能为 Exchange Online 组织处理传输）的连接的本地 SMTP 终结点必须为 Exchange 2013 客户端访问服务器、Exchange 2013 边缘传输服务器或者 Exchange Server 2010 Service Pack 3 (SP3) 边缘传输服务器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151302.important(EXCHG.150).gif" title="重要说明" alt="重要说明" />重要说明：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本地 Exchange 2013 客户端访问服务器或 Exchange 2013/Exchange 2010 SP3 边缘传输服务器与 EOP 之间可以没有任何其他 SMTP 主机或服务。当邮件经过非 Exchange 2013 服务器、预 Exchange 2010 SP3 服务器或 SMTP 主机时，会删除添加到邮件中用于启用混合传输功能的信息。如果在组织中部署了 Exchange 2010 SP2 边缘传输服务器，并且要将这些服务器用于混合传输，则它们必须升级到 Exchange 2010 SP3。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 本地 Exchange 2013 客户端访问服务器或 Exchange 2013/Exchange 2010 SP3 边缘传输服务器与 EOP 之间可以没有任何其他 SMTP 主机或服务。当邮件经过非 Exchange 2013 服务器、预 Exchange 2010 SP3 服务器或 SMTP 主机时，会删除添加到邮件中用于启用混合传输功能的信息。如果在组织中部署了 Exchange 2010 SP2 边缘传输服务器，并且要将这些服务器用于混合传输，则它们必须升级到 Exchange 2010 SP3。
 
 
 从外部 Internet 发件人发送到两个组织中的收件人的入站邮件会采用通用入站路由。从组织发送到外部 Internet 收件人的出站邮件可以采用通用出站路由，也可以通过独立的路由发送。
@@ -47,18 +37,8 @@ _<strong>上一次修改主题：</strong>2016-12-09_
     
     作为集中邮件传输，可以先通过内部部署组织路由来自 Exchange Online 组织中邮箱的所有邮件，然后再将这些邮件传递到 Internet。此方法用于合规性方案，在这类方案中，发送到和发送自 Internet 的所有邮件都必须由内部部署服务器进行处理。或者，可以配置 Exchange Online 以将外部收件人的邮件直接传递到 Internet。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>仅对具有与符合性相关的特定传输需求的组织推荐使用集中式邮件传输。我们建议典型的 Exchange 组织不要启用集中式邮件传输。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 仅对具有与符合性相关的特定传输需求的组织推荐使用集中式邮件传输。我们建议典型的 Exchange 组织不要启用集中式邮件传输。
 
 
   - 是否要在内部部署组织中部署边缘传输服务器？
@@ -83,18 +63,8 @@ EOP 公司包含一些邮件传输设置，可以为 Exchange Online 组织配�
 
 当使用强制 TLS 传输时，发送和接收服务器会检查在其他服务器上配置的证书。对证书配置的使用者名称或使用者替代名称 (SAN) 之一，必须与管理员在其他服务器上显式指定的 FQDN 匹配。例如，如果 EOP 配置为接受并保护从 mail.contoso.com FQDN 发送的邮件，则发送内部部署客户端访问或边缘传输服务器必须具有在主题名称或 SAN 中包含 mail.contoso.com 的 SSL 证书。如果不满足此要求，则 EOP 会拒绝连接。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="注意" alt="注意" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用的 FQDN 无需与收件人的电子邮件域名匹配。唯一要求在于证书主题名称或 SAN 中的 FQDN 必须与接收或发送服务器配置为接受的 FQDN 匹配。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 使用的 FQDN 无需与收件人的电子邮件域名匹配。唯一要求在于证书主题名称或 SAN 中的 FQDN 必须与接收或发送服务器配置为接受的 FQDN 匹配。
 
 
 除了使用 TLS 以外，还可将组织之间的邮件作为“内部”邮件处理。此方法使邮件可以绕过反垃圾邮件设置和其他服务。
