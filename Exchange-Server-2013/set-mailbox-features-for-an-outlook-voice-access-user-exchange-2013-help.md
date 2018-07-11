@@ -45,7 +45,7 @@ _**上一次修改主题：** 2013-02-22_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -55,6 +55,6 @@ _**上一次修改主题：** 2013-02-22_
 
     Set-UMMailbox -Identity tony@contoso.com TUIAccessToCal True -TUIAccessToEmail True -OperatorNumber 111111 -DisableMissedCallNotification False -AnonCallBlock True
 
-> [!NOTE]
+> [!NOTE]  
 > TUI 的用户设置，还提供在 UM 邮箱策略上。修改 UM 邮箱策略上的 TUI 设置会影响所有用户与该 UM 邮箱策略相关联。有关如何修改 UM 邮箱策略上的 TUI 设置的详细信息，请参阅<a href="set-mailbox-features-for-outlook-voice-access-users-exchange-2013-help.md">设置 Outlook Voice Access 用户的邮箱功能</a>。
 

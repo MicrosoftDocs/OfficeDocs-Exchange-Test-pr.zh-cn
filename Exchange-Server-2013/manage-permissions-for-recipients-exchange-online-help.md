@@ -27,7 +27,7 @@ _**上一次修改主题：** 2018-04-20_
 
   - **代表发送**   该权限也允许代理使用该邮箱发送邮件。该权限分配给代理后，代理发送的任何邮件中的\&quot;发件人\&quot;地址指示该邮件已由代理代表邮箱所有者发送。
 
-> [!NOTE]
+> [!NOTE]  
 > 如果您分配完全访问权限、代理发送权限或代表发送权限以访问地址列表中隐藏的邮箱，则代理无法打开该邮箱或发送邮件。
 
 
@@ -39,7 +39,7 @@ _**上一次修改主题：** 2018-04-20_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -97,7 +97,7 @@ _**上一次修改主题：** 2018-04-20_
     
     \&quot;代表发送\&quot;权限允许代理代表此邮箱发送电子邮件。代理发送的任何邮件中的\&quot;发件人\&quot;行都将指明该邮件是由代理代表邮箱所有者发送的。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 如果用户还需要能够打开并查看该邮箱的内容，您必须为此用户分配&amp;quot;完全访问&amp;quot;权限。
 
 
@@ -135,7 +135,7 @@ _**上一次修改主题：** 2018-04-20_
     
     \&quot;完全访问\&quot;权限允许代理打开用户邮箱并访问邮箱内容。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 分配&amp;quot;完全访问&amp;quot;权限不允许代理从邮箱发送邮件。您必须为代理分配&amp;quot;代理发送&amp;quot;或&amp;quot;代表发送&amp;quot;权限才能发送邮件。
 
 
@@ -175,7 +175,7 @@ _**上一次修改主题：** 2018-04-20_
 
 下面的示例演示如何在 Exchange Server 2013 和 Exchange Online 中管理\&quot;代理发送\&quot;权限。在 Exchange 2013 中，必须使用 **Add-ADPermission** 和 **Remove-ADPermission** cmdlet；在 Exchange Online 中，必须使用 **Add-RecipientPermission** 和 **Remove-RecipientPermission** cmdlet。在这两种情况下，需要使用 *Identity* 参数指定应添加或删除\&quot;代理发送\&quot;权限的邮箱的名称，使用 *User* 或 *Trustee* 参数指定将被分配或取消分配\&quot;代理发送\&quot;权限的代理（例如用户或组）。
 
-> [!tip]
+> [!TIP]  
 > 使用 <strong>Get-Recipient</strong> cmdlet 可检索邮箱和代理的 <em>Name</em> 属性。使用这些值可分配&amp;quot;代理发送&amp;quot;权限。
 
 
@@ -291,7 +291,7 @@ _**上一次修改主题：** 2018-04-20_
 
 下面的示例演示如何在 Exchange Server 2013 和 Exchange Online 中管理组的\&quot;代理发送\&quot;权限。在 Exchange 2013 中，必须使用 **Add-ADPermission** 和 **Remove-ADPermission** cmdlet。在 Exchange Online 中，必须使用 **Add-RecipientPermission** 和 **Remove-RecipientPermission** cmdlet。在这两种情况下，需要使用 *Identity* 参数指定应添加或删除\&quot;代理发送\&quot;权限的组的名称，使用 *User* 或 *Trustee* 参数指定将被分配或取消分配\&quot;代理发送\&quot;权限的代理（例如用户或组）。
 
-> [!tip]
+> [!TIP]  
 > 使用 <strong>Get-Recipient</strong> cmdlet 可检索组和代理的 <em>Name</em> 属性。使用这些值可分配&amp;quot;代理发送&amp;quot;权限。
 
 

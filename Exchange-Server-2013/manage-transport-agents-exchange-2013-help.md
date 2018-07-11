@@ -31,7 +31,7 @@ _**上一次修改主题：** 2015-04-08_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -41,7 +41,7 @@ _**上一次修改主题：** 2015-04-08_
 
 您不可以使用 Exchange 命令行管理程序对在客户端访问服务器上的前端传输服务的传输代理进行管理。而是要打开客户端访问服务器上的 Windows PowerShell，然后导入 Exchange cmdlets 至 Windows PowerShell 会话。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 支持运行 Windows PowerShell 中的 Exchange cmdlets 以执行任务，而不支持对前端传输服务中的传输代理进行管理。如果您运行 Windows PowerShell 中的 Exchange cmdlets 并绕过 Exchange 命令行管理程序和基于角色的访问控制 (RBAC)，会造成严重的结果。在 Exchange 命令行管理程序中，应始终运行 Exchange cmdlet。有关详细信息，请参阅 <a href="release-notes-for-exchange-2013-exchange-2013-help.md">Exchange 2013 发行说明</a>。
 
 

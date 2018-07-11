@@ -23,7 +23,7 @@ _**上一次修改主题：** 2017-03-27_
 
 其邮箱位于 Exchange Server 2013年或 Exchange Server 2016年的用户将不能访问旧式公用文件夹从 Outlook Web App、 Outlook web 上的或 Outlook 的 mac。这篇文章中的步骤适用于 Exchange 2013 和交换 2016年。
 
-> [!NOTE]
+> [!NOTE]  
 > 请按照本文中的步骤后，Mac 用户的 outlook 2016 可以访问旧式的公用文件夹。如果您的组织中的客户端的 Mac 使用 Outlook 2016，请确保他们安装 4 月 2016年更新。否则，这些用户将不能访问共存或混合拓扑中的公用文件夹。有关详细信息，请参阅<a href="accessing-public-folders-with-outlook-2016-for-mac-exchange-2013-help.md">通过 Outlook 2016 for Mac 访问公用文件夹</a>。
 
 
@@ -31,7 +31,7 @@ _**上一次修改主题：** 2017-03-27_
 
 1.  如果 Exchange 2010 或更高版本的服务器上有自己的公用文件夹，则需要有一个公用文件夹数据库的所有邮箱服务器上安装客户端访问服务器角色。这允许 Microsoft Exchange RpcClientAccess 服务处于运行状态，从而允许所有客户端访问公用文件夹。客户端访问角色并不是必需的 Exchange 2007 公用文件夹服务器，和此步骤不是必需。有关详细信息，请参阅[安装 Exchange Server 2010年](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md)。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 客户端负载平衡不需要包含此服务器。有关详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/ff625247(v=exchg.141).aspx">了解 Exchange 2010 中的负载平衡</a>。
 
 
@@ -45,16 +45,18 @@ _**上一次修改主题：** 2017-03-27_
     
         New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
     
-    > [!NOTE]
+    > [!NOTE]  
     > 我们建议您只将在步骤 3 中创建的代理邮箱添加至此数据库。不应在此邮箱数据库中创建任何其他邮箱。
 
 
 3.  在新建邮箱数据库内创建一个代理邮箱，并在通讯簿中将其隐藏。该邮箱的 SMTP 会由自动发现返回为 *DefaultPublicFolderMailbox* SMTP，因此通过解析此 SMTP，客户端可以进入旧版 Exchange 服务器以访问公用文件夹。
-    
+    ```
         New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs> 
-    
+    ```
+    ```
         Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
-
+    ```
+    
 4.  对于 Exchange 2010，启用自动发现以返回代理公用文件夹邮箱。此步骤对于 Exchange 2007 并非必需步骤。
     
         Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
@@ -69,7 +71,7 @@ _**上一次修改主题：** 2017-03-27_
 
     Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes ProxyMailbox1,ProxyMailbox2,ProxyMailbox3
 
-> [!NOTE]
+> [!NOTE]  
 > 您必须等待 ActiveDirectory 同步完成才能查看更改。此进程可能需要几个小时。
 
 

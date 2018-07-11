@@ -33,7 +33,7 @@ _**上一次修改主题：** 2012-10-03_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -49,7 +49,7 @@ _**上一次修改主题：** 2012-10-03_
 
 5.  如果远程网络设置页面列出 0.0.0.0-255.255.255.255（这表示接收连接器从所有 IP 地址接收连接），则单击“删除”![删除图标](images/JJ657492.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "删除图标") 以删除它。单击“添加”![添加图标](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "添加图标")，添加合作伙伴服务器的 IP 地址，然后单击“保存”。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 还可以使用 CIDR 表示法指定 IP 地址范围，如 64.4.6.100/24。
 
 

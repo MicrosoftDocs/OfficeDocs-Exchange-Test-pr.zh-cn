@@ -120,7 +120,7 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>此标记包含由运行的 cmdlet 修改的所有属性。<code>Property</code> 标记是此标记的子级。</p>
 <p>每个 <code>Event</code> 标记有一个 <code>ModifiedProperties</code> 标记。</p>
 
-> [!important]
+> [!IMPORTANT]  
 > 仅当 <strong>Set-AdminAuditLogConfig</strong> cmdlet 上的 <em>LogLevel</em> 参数设置 <code>Verbose</code> 时，才会填充此标记。
 
 </td>
@@ -164,7 +164,7 @@ _**上一次修改主题：** 2015-03-09_
 
   - 修改了对象 `david` 中的以下两个属性：
     
-    > [!NOTE]
+    > [!NOTE]  
     > 在此示例中，因为 <code>Set-AdminAuditLogConfig</code> cmdlet 上的 <em>LogLevel</em> 参数设置为 <code>Verbose</code>，因此将修改后的属性保存到了审核日志中。
     
       - *ProhibitSendReceiveQuota*，其新值为 `10GB`，替换了旧值 `35GB`

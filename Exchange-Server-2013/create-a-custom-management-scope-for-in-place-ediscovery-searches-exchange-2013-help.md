@@ -111,7 +111,7 @@ _**上一次修改主题：** 2015-01-21_
 
     Add-DistributionGroupMember -Identity "Ottawa Users" -Member "Ottawa Discovery Mailbox"
 
-> [!NOTE]
+> [!NOTE]  
 > 要打开发现邮箱并查看搜索结果，发现管理员必须分配有发现邮箱的完全访问权限。有关详细信息，请参阅<a href="create-a-discovery-mailbox-exchange-2013-help.md">创建发现邮箱</a>。
 
 
@@ -136,31 +136,40 @@ _**上一次修改主题：** 2015-01-21_
       - 将通讯组从组织的共享通讯簿中隐藏。创建组后使用 EAC 或 **Set-DistributionGroup** cmdlet。如果您使用命令行管理程序，请使用语法 `HiddenFromAddressListsEnabled $true`。
     
     在下面的示例中，第一个命令创建启用封闭成员身份和仲裁的通讯组。第二个命令将组从共享地址簿中隐藏。
-    
+    ```
         New-DistributionGroup -Name "Vancouver Users eDiscovery Scope" -Alias VancouverUserseDiscovery -MemberJoinRestriction closed -MemberDepartRestriction closed -ModerationEnabled $true
-    
+    ```
+    ```
         Set-DistributionGroup "Vancouver Users eDiscovery Scope" -HiddenFromAddressListsEnabled $true
-    
+    ```
+
     有关创建和管理通讯组的详细信息，请参阅[创建和管理通讯组](create-and-manage-distribution-groups-exchange-2013-help.md)。
 
   - 尽管您只能使用通讯组成员身份作为用于电子数据展示的自定义管理作用域的收件人筛选器，但您可以使用其他收件人属性将用户添加到该通讯组。下面是根据常规用户或邮箱属性，使用 **Get-Mailbox** 和 **Get-Recipient** cmdlet 返回特定用户组的一些示例。
-    
+    ```
         Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
-    
+    ```
+    ```
         Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "VancouverSubsidiary"'
-    
+    ```
+    ```
         Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
-    
+    ```
+    ```
         Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
-    
+    ```
+    ```
         Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -OrganizationalUnit "namsr01a002.sdf.exchangelabs.com/Microsoft Exchange Hosted Organizations/contoso.onmicrosoft.com"
+    ```
 
   - 然后您可以使用前一个要点中的示例创建一个变量，此变量可用于 **Add-DistributionGroupMember** cmdlet，以将用户组添加到通讯组。在下面的示例中，第一个命令创建一个变量，此变量包含对于用户帐户中的 *Department* 属性其值为 **Vancouver** 的所有用户邮箱。第二个命令将这些用户添加到温哥华用户通讯组。
-    
+    ```
         $members = Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "Vancouver"'
-    
+    ```
+    ```
         $members | ForEach {Add-DistributionGroupMember "Ottawa Users" -Member $_.Name}
-
+    ```
+    
   - 您可以使用 **Add-RoleGroupMember** cmdlet 将成员添加到用于确定电子数据展示搜索范围的现有角色组。例如，以下命令将用户 admin@ottawa.contoso.com 添加到渥太华发现管理角色组。
     
         Add-RoleGroupMember "Vancouver Discovery Management" -Member paralegal@vancouver.contoso.com

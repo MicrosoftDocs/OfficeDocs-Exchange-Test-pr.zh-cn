@@ -47,7 +47,7 @@ _**上一次修改主题：** 2016-07-28_
 
 可以使用完全匹配或基于文字匹配的算法来执行匹配。完全匹配使用区分大小写的算法，该算法在特定语言中搜索文本。文字匹配基于文字边界应用匹配算法。要匹配的项可以使用 Term 子元素内嵌在 Keyword 定义中。
 
-> [!tip]
+> [!TIP]  
 > 使用 regex 的基于常量的匹配风格以获得更出色的效率和性能。仅在基于常量的匹配不充分并且需要正则表达式的灵活性时使用 regex 匹配。
 
 
@@ -75,7 +75,7 @@ _**上一次修改主题：** 2016-07-28_
 
 另一种常用匹配方法基于正则表达式。正则表达式匹配的灵活性使之成为实现如驾驶证号码、地址这类数据匹配的常见选择。常用正则表达式语法用于定义正则表达式模式。此处的表提供一些可以使用的最常用正则表达式令牌的示例。
 
-> [!tip]
+> [!TIP]  
 > 使用 regex 的基于常量的匹配风格以获得更出色的效率和性能。仅在基于常量的匹配不充分并且需要正则表达式的灵活性时使用 regex 匹配。
 
 
@@ -219,24 +219,27 @@ Regex 元素具有一个“id”属性，该属性在对应的实体或关联规
     匹配任何子 Match 元素的精确子集
 
 <!-- end list -->
-
+```
     <Any minMatches="3" maxMatches="3">
         <Match idRef="USDate" />
         <Match idRef="USAddress" />
         <Match idRef="Name" />
     </Any>
-
+```
+```
     <Any maxMatches="0">
         <Match idRef="USDate" />
         <Match idRef="USAddress" />
         <Match idRef="Name" />
     </Any>
-
+```
+```
     <Any minMatches="1" maxMatches="1">
         <Match idRef="USDate" />
         <Match idRef="USAddress" />
         <Match idRef="Name" />
     </Any>
+```
 
 ## 使用更多证据提高置信度级别
 

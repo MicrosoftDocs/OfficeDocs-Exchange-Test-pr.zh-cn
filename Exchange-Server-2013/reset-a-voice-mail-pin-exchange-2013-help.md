@@ -21,7 +21,7 @@ _**上一次修改主题：** 2013-02-22_
 
 启用统一邮件 UM 的语音邮件用户无法访问其邮箱如何使用 Outlook Voice Access，因为他们尝试登录中使用多次的 PIN 不正确，或者他们忘记了他们的 PIN，可以使用以下过程之一来重置用户的 PIN。重置用户的Outlook语音访问针时，您可以配置 UM 自动生成 PIN 或者您可以手动指定的 PIN。新 PIN 被发送到用户在电子邮件中。您可以指定其他针选项如要求用户在首次登录时重置其 PIN。用户还可以将使用Outlook或Outlook Web App的 UM PIN 重置。
 
-> [!NOTE]
+> [!NOTE]  
 > 若要访问已启用 UM 的邮箱，Outlook Voice Access 用户需要使用按键，也称为双音多频 (DTMF) 输入。语音识别不可用针输入。
 
 
@@ -35,7 +35,7 @@ _**上一次修改主题：** 2013-02-22_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

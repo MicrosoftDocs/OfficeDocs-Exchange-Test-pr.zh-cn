@@ -27,7 +27,7 @@ _**上一次修改主题：** 2014-06-16_
 
   - 无法使用 EAC 以利用数据库可移植性将用户邮箱移动到已恢复数据库或拨号音数据库。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -35,14 +35,14 @@ _**上一次修改主题：** 2014-06-16_
 
 1.  验证要移动的数据库是否处于干净关闭状态。如果数据库不处于干净关闭状态，则执行软恢复。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 执行软恢复时，任何未提交的日志文件都会提交到数据库。如果没有所有需要的日志文件，则无法完成软恢复过程。继续执行步骤 2。
     
     要将所有未提交的日志文件提交到数据库，请在命令提示符下运行以下命令。
     
         ESEUTIL /R <Enn>
     
-    > [!NOTE]
+    > [!NOTE]  
     > &lt;E<em>nn</em>&gt; 为要将日志文件重播到的数据库指定日志文件前缀。由 &lt;E<em>nn</em>&gt; 指定的日志文件前缀是 Eseutil /r 的必需参数。
 
 

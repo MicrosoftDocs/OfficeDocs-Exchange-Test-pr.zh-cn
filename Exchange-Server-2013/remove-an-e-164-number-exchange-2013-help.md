@@ -45,7 +45,7 @@ _**上一次修改主题：** 2012-11-14_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -65,7 +65,7 @@ _**上一次修改主题：** 2012-11-14_
 
 此示例将从 Tony Smith （启用了 UM 的用户）的邮箱中删除 E.164 号码 +14255551010。
 
-> [!NOTE]
+> [!NOTE]  
 > 删除使用 Shell E.164 号码前，您需要确定您想要修改 EUM 代理地址的位置。要确定位置，请使用<strong>$mbx.EmailAddresses</strong>命令。在列表中的第一个 EUM 代理地址将为 0。
 
 

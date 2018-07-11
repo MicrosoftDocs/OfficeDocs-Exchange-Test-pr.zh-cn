@@ -19,7 +19,7 @@ _**上一次修改主题：** 2015-09-30_
 
 使用邮箱审核日志记录，可以跟踪邮箱登录以及用户登录时所执行的操作。 当启用邮箱的邮箱审核日志记录时，将默认记录管理员和代理人执行的某些操作。 将不记录邮箱所有者执行的任何操作。有关邮箱审核日志记录的详细信息，请参阅[邮箱审核日志记录](mailbox-audit-logging-exchange-2013-help.md)。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 邮箱所有者操作的审核可以生成大量邮箱审核日志条目，因此默认情况下是禁用的。 建议您仅启用符合业务和安全要求所需的特定所有者操作的审核。
 
 
@@ -35,7 +35,7 @@ _**上一次修改主题：** 2015-09-30_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 

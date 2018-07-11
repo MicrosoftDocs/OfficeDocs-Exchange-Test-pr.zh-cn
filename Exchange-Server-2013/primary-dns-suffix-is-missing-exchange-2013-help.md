@@ -21,7 +21,7 @@ Microsoft Exchange Server 2013 安装程序无法继续运行，因为您正在�
 
 要解决此问题，请通过下面的步骤在计算机上添加主要的 DNS 后缀，然后再次运行安装程序。
 
-> [!important]
+> [!IMPORTANT]  
 > 安装 Exchange 2013 后，不支持更改计算机名称或主要的 DNS 后缀。
 
 

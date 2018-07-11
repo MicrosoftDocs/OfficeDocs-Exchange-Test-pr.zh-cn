@@ -21,7 +21,7 @@ _**上一次修改主题：** 2012-11-05_
 
 有关与 UM 智能寻线相关的其他任务，请参阅 [UM 查寻组过程](um-hunt-group-procedures-exchange-2013-help.md)。
 
-> [!warning]
+> [!WARNING]  
 > 如果要更改 UM 智能寻线设置，则必须删除该智能寻线，然后创建另一个具有适当设置的智能寻线。
 
 
@@ -39,7 +39,7 @@ _**上一次修改主题：** 2012-11-05_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

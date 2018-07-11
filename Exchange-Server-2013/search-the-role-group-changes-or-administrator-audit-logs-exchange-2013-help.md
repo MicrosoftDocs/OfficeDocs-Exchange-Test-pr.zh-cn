@@ -21,7 +21,7 @@ _**上一次修改主题：** 2013-12-02_
 
 如果要搜索邮箱审核日志，请参阅[邮箱审核日志记录](mailbox-audit-logging-exchange-2013-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 在 Exchange Online 中，您可以使用 EAC 来查看管理员审核日志中的条目。有关详细信息，请参阅<a href="view-the-administrator-audit-log-exchange-2013-help.md">查看管理员审核日志</a>。
 
 
@@ -39,14 +39,14 @@ _**上一次修改主题：** 2013-12-02_
     
         Set-AdminAuditLogConfig -AdminAuditLogEnabled $true
     
-    > [!NOTE]
+    > [!NOTE]  
     > <strong>Set-AdminAuditLogConfig</strong> cmdlet 在 Exchange Online 中不可用。
     
     有关详细信息，请参阅[管理管理员审核日志记录](manage-administrator-audit-logging-exchange-2013-help.md)。
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -70,7 +70,7 @@ _**上一次修改主题：** 2013-12-02_
 
 如果要创建包含对组织所做更改的 XML 文件，可以在 EAC 中使用“导出管理审核日志”报告。使用“导出管理审核日志”报告，可以指定搜索包含指定用户所做的更改的审核日志条目时所用的日期范围。随后会将 XML 文件以电子邮件附件的形式发送给收件人。该 XML 文件的最大大小为 10 兆字节 (MB)。
 
-> [!NOTE]
+> [!NOTE]  
 > 默认情况下，Outlook Web App 不允许您打开 XML 附件。您可以将 Exchange 配置为允许使用 Outlook Web App 查看 XML 附件，也可以使用其他电子邮件客户端（例如，Microsoft Outlook）查看该附件。有关如何将 Outlook Web App 配置为允许查看 XML 附件的信息，请参阅<a href="view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md">查看或配置 Outlook Web App 虚拟目录</a>。
 
 
@@ -94,7 +94,7 @@ _**上一次修改主题：** 2013-12-02_
 
     Search-AdminAuditLog - Cmdlets <cmdlet 1, cmdlet 2, ...> -Parameters <parameter 1, parameter 2, ...> -StartDate <start date> -EndDate <end date> -UserIds <user IDs> -ObjectIds <object IDs> -IsSuccess <$True | $False >
 
-> [!NOTE]
+> [!NOTE]  
 > 默认情况下，<strong>Search-AdminAuditLog</strong> cmdlet 最多可返回 1,000 个日志条目。使用 <em>ResultSize</em> 参数最多可指定 250,000 个日志条目。或使用 <code>Unlimited</code> 值可返回所有条目。
 
 
@@ -163,7 +163,7 @@ _**上一次修改主题：** 2013-12-02_
 
 可以使用命令行管理程序搜索满足指定条件的审核日志条目，然后将这些结果以 XML 文件附件的形式发送给指定的收件人。这些结果将在 15 分钟内发送给收件人。有关搜索条件列表，请参阅[管理员审核日志记录](administrator-audit-logging-exchange-2013-help.md)。
 
-> [!NOTE]
+> [!NOTE]  
 > 默认情况下，Outlook Web App 不允许您打开 XML 附件。您可以将 Exchange 配置为允许使用 Outlook Web App 查看 XML 附件，也可以使用其他电子邮件客户端（例如，Microsoft Outlook）查看该附件。有关如何将 Outlook Web App 配置为允许查看 XML 附件的信息，请参阅<a href="view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md">查看或配置 Outlook Web App 虚拟目录</a>。
 
 
@@ -187,7 +187,7 @@ _**上一次修改主题：** 2013-12-02_
 
     New-AdminAuditLogSearch -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota, ProhibitSendReceiveQuota, IssueWarningQuota, MaxSendSize, MaxReceiveSize -StartDate 08/04/2012 -EndDate 10/03/2012 -UserIds davids, chrisd, kima -StatusMailRecipients davids@contoso.com -Name "Mailbox limit changes"
 
-> [!NOTE]
+> [!NOTE]  
 > <strong>New-AdminAuditLogSearch</strong> cmdlet 生成的报告最大大小为 10 MB。如果执行的搜索返回了大于 10 MB 的报告，则应更改指定的搜索条件。例如，缩小日期范围大小并运行多个报告，其中每个报告的日期范围都为原始日期范围的一部分。
 
 

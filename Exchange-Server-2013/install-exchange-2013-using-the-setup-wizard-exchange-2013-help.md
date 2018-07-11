@@ -23,11 +23,11 @@ _**上一次修改主题：** 2014-06-19_
 
 如果您想将 Exchange 2013 边缘传输角色安装在计算机上，请参阅[使用安装向导安装 Exchange 2013 边缘传输角色](install-the-exchange-2013-edge-transport-role-using-the-setup-wizard-exchange-2013-help.md)。边缘传输角色不能安装在与邮箱或客户端访问服务器角色相同的计算机上。
 
-> [!tip]
+> [!TIP]  
 > 你是否曾听说过 Exchange Server 部署助理？它是一款免费的联机工具，它将询问您一些问题并专门为您创建自定义部署检查表，以帮助您在组织中快速部署 Exchange 2013。若您想要了解关于它的详细信息，请转到 <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。
 
 
-> [!NOTE]
+> [!NOTE]  
 > 在运行 Exchange 2013 的计算机上安装了任意服务器角色之后，不能再使用 Exchange 2013 安装向导为该计算机添加其他服务器角色。如果希望为计算机添加其他服务器角色，则必须使用“控制面板”中的“添加或删除程序”或在命令提示符窗口中使用 Setup.exe。
 
 
@@ -51,7 +51,7 @@ _**上一次修改主题：** 2014-06-19_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 在服务器上安装 Exchange 之后，不得更改服务器名称。不支持在安装了 Exchange 服务器角色之后重命名服务器。
 
 
@@ -59,7 +59,7 @@ _**上一次修改主题：** 2014-06-19_
 
 如果要在组织中安装第一台 Exchange 2013 服务器，并且尚未执行 Active Directory 准备步骤，则您使用的帐户必须拥有企业管理员组成员身份。如果您之前没有准备 Active Directory 架构，则帐户也必须拥有 Schema Admins 组成员身份。有关为 Exchange 2013 准备 Active Directory 的信息，请参阅[准备 Active Directory 和域](prepare-active-directory-and-domains-exchange-2013-help.md)。如果您已经执行了架构和 Active Directory 准备步骤，则您使用的帐户必须是“委派安装”管理角色组或“组织管理”角色组的成员。
 
-> [!NOTE]
+> [!NOTE]  
 > 若要下载 Exchange 2013 的最新版本，请参阅 <a href="updates-for-exchange-2013-exchange-2013-help.md">Exchange 2013 更新</a>。
 
 
@@ -69,7 +69,7 @@ _**上一次修改主题：** 2014-06-19_
 
 3.  通过双击 `Setup.exe` 启动 Exchange 2013 安装程序
     
-    > [!important]
+    > [!IMPORTANT]  
     > 如果启用了用户访问控制 (UAC)，则必须右键单击 <code>Setup.exe</code> 并选择“以管理员身份运行”。
 
 
@@ -93,7 +93,7 @@ _**上一次修改主题：** 2014-06-19_
     
     选择“自动安装要安装 Exchange Server 所需的 Windows Server 角色和功能”让安装向导安装必需的 Windows 组件。您可能需要重新启动计算机以完成一些 Windows 功能的安装。如果不选择该选项，您必须手动安装 Windows 功能。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 此选项仅安装 Exchange 所需的 Windows 功能。您必须手动安装其他必备组件。有关详细信息，请参阅<a href="exchange-2013-prerequisites-exchange-2013-help.md">Exchange 2013 先决条件</a>。
     
     单击“下一步”继续。
@@ -114,12 +114,12 @@ _**上一次修改主题：** 2014-06-19_
     
       - 连字符或短横线
         
-        > [!NOTE]
+        > [!NOTE]  
         > 组织名称包含的字符不能超过 64 个。组织名称不能为空。
     
     如果您希望使用 Active Directory 拆分权限模型，选择“将 Active Directory 拆分权限安全模型应用到 Exchange 组织”。
     
-    > [!CAUTION]
+    > [!CAUTION]  
     > 大多数组织不需要应用 Active Directory 拆分权限模型。如果您需要分别管理 Active Directory 安全主体和 Exchange 配置，基于角色的访问控制 (RBAC) 拆分权限可能适合您。有关详细信息，请单击“?”。
     
     单击“下一步”继续。

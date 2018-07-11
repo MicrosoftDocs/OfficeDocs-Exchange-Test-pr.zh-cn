@@ -119,7 +119,7 @@ Microsoft Exchange EdgeSync 服务
 
     New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -CreateInternetSendConnector $true -CreateInboundSendConnector $true -Site "Default-First-Site-Name" 
 
-> [!NOTE]
+> [!NOTE]  
 > <em>CreateInternetSendConnector</em> 和 <em>CreateInboundSendConnector</em> 参数的默认值均为 <code>$true</code>（仅供演示）。
 
 
@@ -127,7 +127,7 @@ Microsoft Exchange EdgeSync 服务
 
     New-EdgeSubscription -FileName "C:\EdgeSubscriptionInfo.xml"
 
-> [!NOTE]
+> [!NOTE]  
 > 在边缘传输服务器上运行 <strong>New-EdgeSubscription</strong> cmdlet 时，系统会提示您确认将禁用的命令以及边缘传输服务器上将覆盖的配置。若要绕过此确认，则必须使用 <em>Force</em> 参数。如果使用 <strong>New-EdgeSubscription</strong> cmdlet，则会发现此参数很有用。<em>Force</em> 参数还用于覆盖与您在重新订阅边缘传输服务器时要创建的文件同名的现有文件。
 
 
@@ -225,7 +225,7 @@ Microsoft Exchange EdgeSync 服务
 <td><p><em>SourceTransportServers</em></p></td>
 <td><p>&lt;<em>边缘订阅名称</em>&gt;</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 边缘订阅的名称与订阅的边缘传输服务器的名称相同。
 
 </td>
@@ -308,11 +308,11 @@ EdgeSync 使用相互进行身份验证和授权的安全 LDAP 通道将数据�
 
 这种锁定和租用方法可以避免多个 EdgeSync 实例同时将数据推送到同一个边缘传输服务器。
 
-> [!NOTE]
+> [!NOTE]  
 > 如果已订阅的 Active Directory 站点中还有 Exchange 2010 或 Exchange 2007 邮箱服务器，那么 Exchange 2013 邮箱服务器将始终获得优先权并执行复制。
 
 
-> [!NOTE]
+> [!NOTE]  
 > 当您将边缘传输服务器订阅到 Active Directory 站点时，Active Directory 站点中安装的所有邮箱服务器均可以参与 EdgeSync 同步过程。如果删除其中一个服务器，则剩余邮箱服务器上运行的 EdgeSync 服务将继续执行数据同步过程。不过，如果您在 Active Directory 站点中安装新的邮箱服务器，则它们不会自动参与 EdgeSync 同步。如果要启用这些新邮箱服务器，使其能够参与 EdgeSync 同步，您需要重新订阅边缘传输服务器。
 
 

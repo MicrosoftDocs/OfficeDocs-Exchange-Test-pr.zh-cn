@@ -59,7 +59,7 @@ Exchange Server 部署助理是一种基于 Web 的工具，可帮助进行 Micr
     
     有关此方案的详细信息，请参阅[Exchange Server 混合部署](https://technet.microsoft.com/zh-cn/library/jj200581\(v=exchg.150\))。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 如果拥有 Exchange 2003 内部部署组织并且希望对 Office 365 配置新的混合部署，必须将运行 Exchange 2010 Server Service Pack 3（而非 Exchange 2013 服务器）的一台或多台服务器添加到内部部署组织中。为此，强烈建议使用 <a href="https://technet.microsoft.com/zh-cn/exdeploy2010">Exchange Server 部署助理</a>中的 Exchange 2010 混合部署选项。
 
 

@@ -19,7 +19,7 @@ _**上一次修改主题：** 2013-02-22_
 
 您可以配置自动语音识别 (ASR) 的用户启用统一邮件 (UM) 和语音邮件功能。在Outlook的语音访问用户的邮箱上启用 ASR 时，用户可以移动邮箱菜单使用声音命令。默认情况下启用 ASR。如果 ASR 处于禁用状态，用户必须使用双音多频 (DTMF)，也称为按键，输入菜单中移动。
 
-> [!NOTE]
+> [!NOTE]  
 > EAC 不能用于配置此功能。您必须使用外壳程序启用或禁用 ASR 语音邮件用户。
 
 
@@ -39,7 +39,7 @@ _**上一次修改主题：** 2013-02-22_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

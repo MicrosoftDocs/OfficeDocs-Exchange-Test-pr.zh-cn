@@ -37,7 +37,7 @@ _**上一次修改主题：** 2013-06-25_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -55,10 +55,10 @@ _**上一次修改主题：** 2013-06-25_
 
     Test-UMConnectivity -ListenPort 5061
 
-> [!NOTE]
+> [!NOTE]  
 > 未指定 <code>-UMIPGateway</code> 参数时，请使用模式 1。
 
 
-> [!NOTE]
+> [!NOTE]  
 > 可以将 <code>-Timeout</code> 参数设置为小于 5 秒的值。但是，建议始终将此参数的值配置为大于或等于 5 秒。
 

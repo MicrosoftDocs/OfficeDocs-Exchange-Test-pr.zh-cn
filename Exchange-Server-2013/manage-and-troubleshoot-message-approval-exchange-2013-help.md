@@ -56,7 +56,7 @@ _**上一次修改主题：** 2015-03-09_
     $AMDN = $AM.DistinguishedName
     Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq $AMDN}
 
-> [!NOTE]
+> [!NOTE]  
 > 仲裁邮箱是使用可分辨名称 (DN) 指定的。如果您知道仲裁邮箱的 DN，可以运行单一命令：<code>Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq &lt;DN&gt;}</code>。<code>Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq &lt;DN&gt;}</code>.
 
 

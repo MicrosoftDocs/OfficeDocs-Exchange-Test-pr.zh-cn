@@ -27,7 +27,7 @@ Microsoft Exchange 2010 UM 疑难解答工具是名为 **Test-ExchangeUMCallFlow
 
 默认情况下，当您在运行该 UM 故障排除工具，它使用登录到该计算机时使用的凭据。所使用的凭据是指那些为调用方指定了。您必须设置或指定您在`SIPClient`模式下运行 UM 故障诊断工具时要使用的凭据。但是，您不需要在`Gateway`模式下运行 UM 故障诊断工具时设置凭据。如果您将在`SIPClient`模式下使用 UM 故障诊断工具，必须满足几个其他办公室通信服务器 2007 R2 或 Lync Server 要求和先决条件。有关详细信息，请参阅[清单︰ 部署 Office 通信服务器 2007 R2 和 Exchange 2010 统一消息](https://go.microsoft.com/fwlink/p/?linkid=311961)或[检查表：将 Exchange 2013 UM 与 Lync Server 集成](checklist-integrate-exchange-2013-um-with-lync-server-exchange-2013-help.md)。
 
-> [!important]
+> [!IMPORTANT]  
 > <strong>Test-ExchangeUMCallFlow</strong> cmdlet 必须仅用于测试已安装 Exchange 2010 Service Pack 1 (SP1) 的 Microsoft Exchange Server 2010 统一消息服务器或 Microsoft Exchange 2013 的语音邮件功能。
 
 

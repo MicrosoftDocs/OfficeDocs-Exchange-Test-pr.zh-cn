@@ -27,7 +27,7 @@ _**上一次修改主题：** 2013-02-21_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -60,11 +60,13 @@ _**上一次修改主题：** 2013-02-21_
 ## 使用命令行管理程序创建新的证书请求
 
 运行下列命令。
-
+  ```
     $reqfile = New-ExchangeCertificate -GenerateRequest -SubjectName "C=US,o=Contoso,cn=contosotocert" -DomainName "contoso.com" -PrivateKeyExportable $true
-
+  ```
+  ```
     $reqfile | out-file c:\certreq.txt
-
+  ```
+  
 ## 您如何知道操作成功？
 
 如果创建自签名证书，新创建的证书将会出现在证书管理 UI 中。如果从证书颁发机构创建一个证书请求，则证书请求文件将会在您指定的位置中。将该文件发送至证书颁发机构。

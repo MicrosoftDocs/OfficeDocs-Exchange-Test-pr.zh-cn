@@ -49,7 +49,7 @@ Exchange 基于主机的故障转移群集和迁移
     
       - 在 [Windows 服务器虚拟化验证计划](https://go.microsoft.com/fwlink/p/?linkid=125375)下经验证的任何第三方管理程序。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 如果满足所有可支持性要求，则支持在服务架构 (IaaS) 提供程序上部署 Exchange 2013。如果提供程序要设置虚拟机，则这些要求包括确保要用于 Exchange 虚拟机的虚拟机监控程序完全受支持，并且 Exchange 使用的基础结构满足大小调整过程中我们确定的性能要求。如果用于 Exchange 数据库和数据库事务日志（包括传输数据库）的所有存储卷都针对 Azure 高级存储进行了配置，则支持在 Microsoft Azure 虚拟机上进行部署。
 
 

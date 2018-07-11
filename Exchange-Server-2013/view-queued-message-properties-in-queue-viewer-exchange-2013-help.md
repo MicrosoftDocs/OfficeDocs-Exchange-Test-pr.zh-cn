@@ -31,7 +31,7 @@ _**上一次修改主题：** 2013-01-17_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -47,9 +47,7 @@ _**上一次修改主题：** 2013-01-17_
 
 4.  右键单击要查看其属性的邮件，然后选择\&quot;属性\&quot;。
 
-5.  
-    
-    \&quot;常规\&quot;选项卡显示有关邮件的以下详细信息：
+5.  \&quot;常规\&quot;选项卡显示有关邮件的以下详细信息：
     
       - **标识**   此字段显示表示特定邮件的整数。邮件被接收以待处理时，队列数据库将分配邮件标识。你可包括一个可选服务器和队列标识来标识该邮件的唯一实例。
     
@@ -93,9 +91,7 @@ _**上一次修改主题：** 2013-01-17_
     
       - **重试次数**：此字段显示尝试将邮件传递到目标的次数。
 
-6.  
-    
-    \&quot;收件人信息\&quot;选项卡显示有关邮件收件人的以下信息：
+6.  \&quot;收件人信息\&quot;选项卡显示有关邮件收件人的以下信息：
     
       - **地址**   此字段显示邮件收件人的 SMTP 地址。此值是从邮件信封中的 `RCPT TO:` 获取的。
     

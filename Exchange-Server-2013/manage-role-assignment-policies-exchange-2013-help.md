@@ -29,7 +29,7 @@ _**上一次修改主题：** 2012-10-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -41,7 +41,7 @@ _**上一次修改主题：** 2012-10-09_
 
 ## 使用 EAC 创建新分配策略
 
-> [!NOTE]
+> [!NOTE]  
 > 使用 Exchange 管理中心 (EAC) 只能创建显式分配策略。如果要创建新的默认分配策略，则必须使用 Exchange 命令行管理程序。有关详细信息，请参阅本主题后面的“使用命令行管理程序创建默认分配策略”部分。
 
 
@@ -203,7 +203,7 @@ _**上一次修改主题：** 2012-10-09_
 
 您可以更改为新创建的邮箱分配的管理角色分配策略。 更改默认角色分配策略将不会更改分配给现有邮箱的分配策略。要更改分配给现有邮箱的分配策略，请参阅[更改邮箱的分配策略](change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md)。
 
-> [!NOTE]
+> [!NOTE]  
 > 不能使用 EAC 更改默认分配策略。 需要使用命令行管理程序。
 
 
@@ -217,7 +217,7 @@ _**上一次修改主题：** 2012-10-09_
 
     Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
 
-> [!important]
+> [!IMPORTANT]  
 > 将为新邮箱分配默认分配策略，即使此策略尚未分配管理角色也是如此。 邮箱分配的未分配管理角色的分配策略无法访问 Microsoft Outlook Web App 中的任何邮箱配置功能。
 
 

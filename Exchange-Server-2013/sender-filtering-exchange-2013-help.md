@@ -27,7 +27,7 @@ _**上一次修改主题：** 2012-10-12_
 
 您可以指定被阻止的发件人并定义发件人筛选器代理对来自被阻止发件人的邮件处理方式。有关如何配置发件人筛选器代理的详细信息，请参阅[管理发件人筛选](manage-sender-filtering-exchange-2013-help.md)。
 
-> [!important]
+> [!IMPORTANT]  
 > MAIL FROM:SMTP 邮件头可能带欺骗性质。因此，不应只依靠发件人筛选器代理。应配合使用发件人筛选器代理和发件人 ID 代理。发件人 ID 代理使用发送服务器的来源 IP 地址来验证 MAIL FROM: SMTP 邮件头中的域与已注册的域是否匹配。有关发件人 ID 代理的详细信息，请参阅<a href="sender-id-exchange-2013-help.md">发件人 ID</a>。
 
 

@@ -249,7 +249,7 @@ Exchange 2013 在 `Get-Queue` cmdlet 中有可用参数 *Include* 和 *Exclude*�
 
 Exchange 2013 添加一个名为 **Get-QueueDigest** 的新队列 cmdlet。此 cmdlet 让您能够使用单个命令查看有关 Exchange 组织中部分或全部队列的信息。具体来说，**Get-QueueDigest** cmdlet 让您能够根据队列在服务器、DAG、Active Directory 站点或整个 Active Directory 林中的位置来查看队列信息。请注意，外围网络中已订阅的边缘传输服务器上的队列不包括在结果中。此外，**Get-QueueDigest** 在边缘传输服务器中可用，但结果仅限于边缘传输服务器上的队列。
 
-> [!NOTE]
+> [!NOTE]  
 > 默认情况下，<strong>Get-QueueDigest</strong> cmdlet 显示包含 10 封或更多邮件的传递队列，而且结果每一到两分钟更新一次。有关如何更改这些默认值的说明，请参阅 <a href="configure-get-queuedigest-exchange-2013-help.md">配置 Get-QueueDigest</a>。
 
 

@@ -23,7 +23,7 @@ EAC 有多个默认日程安排选项。例如，大多数公司都是从上午 
 
 默认情况下，不论呼叫者每天何时呼叫 UM 自动助理，自动助理将会播放营业时间提示和问候语。
 
-> [!NOTE]
+> [!NOTE]  
 > 设置 UM 自动助理的营业时间和非营业时间的日程安排时，请确保时区配置正确。
 
 
@@ -41,7 +41,7 @@ EAC 有多个默认日程安排选项。例如，大多数公司都是从上午 
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

@@ -152,7 +152,7 @@ DTMF 要求呼叫方在电话软键盘上按下与统一消息菜单选项对应
 
 有时，为用户启用 UM 后，用户的名、姓或电子邮件别名会发生变化。用户的 DTMF 映射值不会自动更新。如果呼叫方输入新的用户名或电子邮件别名，但用户的 DTMF 映射还没有更新以反映用户名或电子邮件别名的变化，那么呼叫方将无法在目录中定位用户，无法向用户发送邮件，也无法将呼叫转移给用户。如果在为用户启用 UM 后必须更新用户的 DTMF 映射，可以使用带有 *-CreateDtmfMap* 参数的 **Set-User** cmdlet。如果希望为多个已启用 UM 的用户更新 DTMF 映射，也可以使用此 cmdlet 创建 Exchange 命令行管理程序脚本。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 我们建议您不要使用 ADSI 编辑器等工具手动更改用户的 DTMF 值，因为这可能会导致配置不一致或其他错误。建议您仅使用 <strong>Set-UMService</strong> 或 <strong>Set-User</strong> cmdlet 创建或更新用户的 DTMF 映射。
 
 

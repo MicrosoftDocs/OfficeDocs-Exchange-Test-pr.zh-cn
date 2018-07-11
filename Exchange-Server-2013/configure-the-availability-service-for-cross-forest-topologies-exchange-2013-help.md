@@ -19,7 +19,7 @@ _**上一次修改主题：** 2014-10-22_
 
 可用性服务可以改善信息工作人员的忙/闲数据，方法是为运行 MicrosoftOutlook 的客户端提供安全、一致并且最新的忙/闲信息。默认情况下，随 Exchange Server 2013 一起安装此服务。在所有连接客户端均运行 Outlook 的跨林拓扑中，可用性服务是检索忙/闲信息的唯一方法。可以使用命令行管理程序配置跨林拓扑的可用性服务。
 
-> [!NOTE]
+> [!NOTE]  
 > 不能使用 EAC 配置跨林拓扑的可用性服务。
 
 
@@ -45,7 +45,7 @@ _**上一次修改主题：** 2014-10-22_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -62,7 +62,7 @@ _**上一次修改主题：** 2014-10-22_
 
     Add-AvailabilityAddressSpace -Forestname ContosoForest.com -AccessMethod PerUserFB -UseServiceAccount:$true
 
-> [!NOTE]
+> [!NOTE]  
 > 若要配置双向跨林可用性，请在目标林中重复这些步骤。
 
 

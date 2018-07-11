@@ -37,7 +37,7 @@ Exchange 2007 安装程序要求用作域架构主机的域控制器与运行 E
 
 1.  在命令提示符处键入 **regsvr32 schmmgmt.dll**
     
-    > [!NOTE]
+    > [!NOTE]  
     > 如果显示以下对话框，则表示已成功注册 <strong>RegSvr32</strong>：<br />
     > schmmgmt.dll 中的 DllRegisterServer 已成功注册。
 

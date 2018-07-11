@@ -21,7 +21,7 @@ _**上一次修改主题：** 2015-07-31_
 
 使用 Outlook Web App Web 部件可以直接通过 URL 访问 Outlook Web App 内容。URL 可以在 Web 浏览器中输入，也可以嵌入应用程序。通常不以手动方式创建 Web 部件。而是根据在用户界面 (UI) 中作出的选择以编程方式创建 Web 部件，或直接将其嵌入应用程序（如 SharePoint Server 页）中。然后，UI 后面的代码创建 URL。Outlook Web App Web 部件的一项用途是在 Sharepoint 页上显示用户的收件箱或日历。
 
-> [!NOTE]
+> [!NOTE]  
 > 若要使用 Outlook Web App Web 部件，用户的邮箱和通过 Web 部件打开的邮箱必须位于同一 Active Directory 林中。
 
 
@@ -114,7 +114,7 @@ Exchange 2013 中的 Outlook Web App 对 /owa 虚拟目录请求使用 URL 格�
 <li><p>Messages   邮件</p></li>
 </ul>
 
-> [!NOTE]
+> [!NOTE]  
 > 默认视图的字符串将自动采用 URL 编码。
 
 <p>视图的默认排序是在 Outlook Web App 客户端打开文件夹时文件夹的排序方式。</p>

@@ -19,7 +19,7 @@ _**上一次修改主题：** 2013-02-22_
 
 当您创建拨号计划时，您可以配置主要和次要*拨由名称的方法*或方法的调用方可以搜索名称。调用方通过名称方法使用这些拨号查找查找并联系时它们调用Outlook语音访问号码或当他们连接到 UM 自动助理与拨号计划相关联的用户的名称。调用方可以使用按键输入查找已启用 UM 的用户。
 
-> [!NOTE]
+> [!NOTE]  
 > 如果<strong>没有</strong>被选为要搜索的名称调用方的辅助方式，只有名称搜索的主要方式将可用于呼叫者想要查找的用户。如果配置这两种的主要和辅助方式调用方可以搜索名称时，调用方将提示您为这两种方式。
 
 
@@ -35,7 +35,7 @@ _**上一次修改主题：** 2013-02-22_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

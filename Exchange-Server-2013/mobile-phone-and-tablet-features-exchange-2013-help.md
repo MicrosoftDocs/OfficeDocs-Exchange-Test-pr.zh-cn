@@ -19,7 +19,7 @@ _**上一次修改主题：** 2015-03-09_
 
 用户可以通过 Microsoft Exchange ActiveSync，在移动电话、平板电脑及其他便携设备上访问其电子邮件、日历、联系人和任务信息。他们还可以使用 Microsoft Exchange ActiveSync 设置自己的签名和自动回复。多种移动电话和设备可与 Exchange ActiveSync 配合使用。
 
-> [!NOTE]
+> [!NOTE]  
 > 尽管我们一贯地将访问 Exchange Server 2013 的设备视为移动电话，但是有许多可以访问 Exchange 2013 的设备没有移动电话功能。本文档中的术语“移动电话”也指这些设备。
 
 
@@ -69,7 +69,7 @@ _**上一次修改主题：** 2015-03-09_
 <li><p>要求设备加密</p></li>
 <li><p>远程擦除</p></li>
 </ul>
-> [!warning]
+> [!WARNING]  
 > 如果组织使用其他移动设备邮箱策略设置，则需要将“允许不可设置的设备”策略设置为 true。这对组织有安全上的意义，因为将允许不符合所有移动设备策略设置要求的其他移动电话和设备进行同步。有关详细信息，请参阅<a href="mobile-device-mailbox-policies-exchange-2013-help.md">移动设备邮箱策略</a>。
 
 </td>

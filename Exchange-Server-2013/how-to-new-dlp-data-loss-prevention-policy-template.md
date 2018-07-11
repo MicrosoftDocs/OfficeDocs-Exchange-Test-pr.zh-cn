@@ -31,7 +31,7 @@ Exchange 2013: [查看 DLP 策略检测报告](view-dlp-policy-detection-reports
 
 Exchange Online: [查看 DLP 策略检测报告](https://technet.microsoft.com/zh-cn/library/dn904484\(v=exchg.150\))
 
-> [!CAUTION]
+> [!CAUTION]  
 > 在生产环境中运行 DLP 策略时，应在测试模式下启用这些策略。在此类测试中，建议配置示例用户邮箱并发送调用测试策略的测试邮件以便确认结果。
 
 
@@ -49,7 +49,7 @@ Exchange Online: [查看 DLP 策略检测报告](https://technet.microsoft.com/z
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -57,7 +57,7 @@ Exchange Online: [查看 DLP 策略检测报告](https://technet.microsoft.com/z
 
 1.  在 EAC 中，导航到“合规管理”\>“数据丢失防护”，然后单击“添加”![添加图标](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "添加图标")。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 您也可以通过其他方法选择此操作：单击“添加”<img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="添加图标" alt="添加图标" /> 图标旁边的箭头，然后从下拉菜单中选择“根据模板新建 DLP 策略”。
 
 
@@ -73,7 +73,7 @@ Exchange Online: [查看 DLP 策略检测报告](https://technet.microsoft.com/z
     
     5.  单击“保存”可完成策略创建。
 
-> [!NOTE]
+> [!NOTE]  
 > 除了特定模板中的规则之外，组织可能还具有应用于邮件环境中监管数据的其他期望或公司策略。Exchange 2013 使您可以方便地更改基本模板，以便添加操作，从而使 Exchange 邮件环境符合自己的要求。
 
 

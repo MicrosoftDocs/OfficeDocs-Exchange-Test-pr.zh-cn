@@ -43,7 +43,7 @@ _**上一次修改主题：** 2012-11-14_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -65,7 +65,7 @@ _**上一次修改主题：** 2012-11-14_
 
 此示例将启用了 UM 的用户 Tony Smith 的分机号码更改为 22222。
 
-> [!NOTE]
+> [!NOTE]  
 > 在使用命令行管理程序更改分机号码之前，需要确定要更改的 EUM 代理地址的位置。若要确定该位置，请使用 <strong>$mbx.EmailAddresses</strong> 命令。第一个 EUM 代理地址是默认的（主）分机号码，在列表中的编号将为 0。
 
 

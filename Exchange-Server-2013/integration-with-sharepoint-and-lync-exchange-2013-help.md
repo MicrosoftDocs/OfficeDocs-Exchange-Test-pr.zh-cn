@@ -114,7 +114,7 @@ OAuth 是许多网站和 Web 服务使用的标准授权协议。它允许客户
 
 Exchange 2013 安装程序会使用友好名称 Microsoft Exchange Server 身份验证证书来创建自签名证书。该证书会复制到 Exchange 2013 组织中的所有前端服务器。证书的指纹在 Exchange 2013 的授权配置中与其服务名称（表示内部部署 Exchange 2013 的已知 GUID）一起指定。Exchange 使用授权配置发布其身份验证元数据文档。
 
-> [!important]
+> [!IMPORTANT]  
 > Exchange 2013 创建的默认服务器身份验证证书有效期为五年。必须确保授权配置包含当前证书。
 
 

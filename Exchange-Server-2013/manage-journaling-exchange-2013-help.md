@@ -43,13 +43,13 @@ _**上一次修改主题：** 2016-12-09_
 
   - 已经创建了日记邮箱，或现有邮箱可用作日记邮箱。不能将 Exchange Online 邮箱指定为日记邮箱。不能将日记报告传递给本地存档系统或第三方存档服务。如果运行将邮箱在本地服务器与 Exchange Online 之间进行拆分的混合部署，则可以将本地邮箱指定为 Exchange Online 和本地邮箱的日记邮箱。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 如果你已在 Exchange Online 中将日记规则配置为向不存在或目标无效的日记邮箱发送日记报告，日记报告会保留在 Microsoft 数据中心服务器上的传输队列中。如果发生这种情况，Microsoft 数据中心工作人员会尝试联系你的组织，要求你解决此问题，以便日记报告能够成功传递到日记邮箱。如果你在联系两天后还没有解决此问题，Microsoft 会禁用有问题的日记规则。
 
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。如果无法使用 <strong>JournalingReportDNRTo</strong> 邮箱，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=331674">Transport and Mailbox Rules in Exchange Online don’t work as expected</a>（Exchange Online 中的传输和邮箱规则不按预期运行）。
 
 
@@ -67,7 +67,7 @@ _**上一次修改主题：** 2016-12-09_
     
       - “将日志报告发送到”   键入将接收所有日志报告的日记邮箱的地址。
         
-        > [!NOTE]
+        > [!NOTE]  
         > 还可以键入邮件用户或邮件联系人的显示名称或别名作为日记邮箱。在这种情况下，日记报告将发送到邮件用户或邮件联系人的外部电子邮件地址。但正如前面所述，邮件用户或邮件联系人的外部电子邮件地址不能作为 Exchange Online 邮箱的地址。
 
 
@@ -139,7 +139,7 @@ _**上一次修改主题：** 2016-12-09_
 
 ## 启用或禁用日记规则
 
-> [!important]
+> [!IMPORTANT]  
 > 如果禁用日记规则，日记代理将停止记录作为规则目标的邮件。如果禁用了日记规则，则不会记录通常会记录的所有邮件。确保禁用日记规则不会违反您组织的规章或合规要求。
 
 
@@ -199,7 +199,7 @@ _**上一次修改主题：** 2016-12-09_
 
 ## 启用或禁用每个邮箱数据库日记功能
 
-> [!CAUTION]
+> [!CAUTION]  
 > 在邮箱数据库上禁用邮件日记可能导致您的组织违反相应的邮件保留政策。如果在邮箱数据库上禁用邮件日记，则对通过该邮箱数据库上的邮箱收发的邮件将不再发送日记回执。
 
 

@@ -39,7 +39,7 @@ _**上一次修改主题：** 2017-07-25_
     
         Get-OutlookAnywhere | Set-OutlookAnywhere -InternalHostname "internalServer.contoso.com" -InternalClientAuthenticationMethod Ntlm -InternalClientsRequireSsl $true -ExternalHostname "externalServer.company.com" -ExternalClientAuthenticationMethod Basic -ExternalClientsRequireSsl $true -IISAuthenticationMethods Negotiate,NTLM,Basic
     
-    > [!tip]
+    > [!TIP]  
     > 虽然 Exchange 2013 支持 Outlook Anywhere HTTP“协商”身份验证，但仅当环境中的所有服务器运行 Exchange 2013 时才能使用。
 
 

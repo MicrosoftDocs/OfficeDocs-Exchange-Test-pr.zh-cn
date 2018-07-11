@@ -21,7 +21,7 @@ _**上一次修改主题：** 2016-05-10_
 
 有关与 UM 自动助理相关的更多管理任务，请参阅 [UM 自动助理过程](um-auto-attendant-procedures-exchange-2013-help.md)。
 
-> [!NOTE]
+> [!NOTE]  
 > 用户不能使用自动语音识别 (ASR) 或语音输入的目录中查找用户的 Outlook Voice Access，他们只能使用 DTMF 或按键输入。
 
 
@@ -37,7 +37,7 @@ _**上一次修改主题：** 2016-05-10_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

@@ -33,7 +33,7 @@ _**上一次修改主题：** 2012-10-03_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -55,7 +55,7 @@ _**上一次修改主题：** 2012-10-03_
 
 如果要删除的角色有子角色，则还必须删除所有的子角色。尝试删除有子角色的角色时，必须使用 *Recurse* 开关，否则会收到错误消息。如果在删除角色时使用 *Recurse* 开关，则将删除指定的角色和其所有子角色。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 如果使用 <em>Recurse</em> 开关，则还将删除要删除的指定角色的所有子角色。在运行此命令之前，确保您了解将要删除的角色。
 
 

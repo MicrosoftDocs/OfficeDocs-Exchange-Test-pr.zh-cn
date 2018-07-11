@@ -21,7 +21,7 @@ _**上一次修改主题：** 2016-12-09_
 
 您可以防止已启用 UM 的用户通过配置 UM 拨号计划、 UM 邮箱策略或启用 UM 的用户的邮箱接收传真。如果您禁用传入传真邮件传递在 UM 拨号计划，与拨号计划相关联的所有用户将都无法接收传真。启用或禁用 UM 拨号计划传真功能优先于单个启用 UM 的用户的设置。
 
-> [!NOTE]
+> [!NOTE]  
 > EAC 用于 UM 邮箱策略上配置传真设置。但是，必须使用外壳程序打开拨号计划或为单个用户配置传真设置。
 
 
@@ -39,7 +39,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

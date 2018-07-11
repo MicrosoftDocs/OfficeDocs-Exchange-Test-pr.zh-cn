@@ -33,7 +33,7 @@ _**上一次修改主题：** 2014-08-14_
 
   - 完成以下步骤后，请等待 Active Directory 复制发生。对象复制后，就可向 DAG 添加第一个成员。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

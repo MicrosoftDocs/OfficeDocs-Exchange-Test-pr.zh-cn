@@ -103,7 +103,7 @@ IRM 要求
 
 AD RMS 使用基于可扩展权限标记语言 (XrML) 的证书和许可证，验证计算机和用户并保护内容。使用 AD RMS 保护文档或邮件等内容时，将会附加包含授权用户对内容所拥有的权限的 XrML 许可证。若要访问受 IRM 保护的内容，启用了 AD RMS 的应用程序必须为来自 AD RMS 群集的授权用户购买使用许可证。
 
-> [!NOTE]
+> [!NOTE]  
 > 在 Exchange 2013 中，预许可代理会将使用许可证附加到组织中使用 AD RMS 群集保护的邮件上。有关详细信息，请参阅本主题后面的预许可。
 
 
@@ -155,7 +155,7 @@ AD RMS 使用基于 XrML 的权限策略模板，允许启用了 IRM 的兼容�
 
   - **在邮箱服务器上自动进行：** 可创建传输保护规则，以在 Exchange 2013 邮箱服务器上自动对邮件进行 IRM 保护。有关传输保护规则的详细信息，请参阅[传输保护规则](transport-protection-rules-exchange-2013-help.md)。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 对已经受 IRM 保护的邮件将不再应用 IRM 保护。例如，如果用户在 Outlook 或 Outlook Web App 中对邮件进行了 IRM 保护，则不会使用传输保护规则对邮件应用 IRM 保护。
 
 
@@ -221,7 +221,7 @@ AD RMS 使用基于 XrML 的权限策略模板，允许启用了 IRM 的兼容�
 
   - **Exchange 搜索的 IRM 解密：** 通过 Exchange 搜索的 IRM 解密，Exchange 搜索可以在受 IRM 保护的邮件中建立内容索引。当发现管理员执行就地电子数据展示搜索时，搜索结果中会返回已编制索引的受 IRM 保护的邮件。有关详细信息，请参阅[就地电子数据展示](in-place-ediscovery-exchange-2013-help.md)。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 在 Exchange 2010 SP1 及更高版本中，发现管理角色组的成员可访问由发现搜索返回并位于发现邮箱中的受 IRM 保护的邮件。要启用此功能，请将 <em>EDiscoverySuperUserEnabled</em> 参数与 <a href="https://technet.microsoft.com/zh-cn/library/dd979792(v=exchg.150)">Set-IRMConfiguration</a> cmdlet 配合使用。有关详细信息，请参阅<a href="configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help.md">为 Exchange 搜索和就地 eDiscovery 配置 IRM</a>。
 
 
@@ -239,7 +239,7 @@ AD RMS 使用基于 XrML 的权限策略模板，允许启用了 IRM 的兼容�
 
 在 Exchange 2013 中，使用邮箱服务器上的传输服务中的传输代理启用 IRM 功能。IRM 代理由 Exchange 安装程序安装在邮箱服务器上。无法使用传输代理的管理任务控制 IRM 代理。
 
-> [!NOTE]
+> [!NOTE]  
 > 在 Exchange 2013 中，IRM 代理为内置代理。内置代理不包含在 <strong>Get-TransportAgent</strong> cmdlet 所返回的代理列表中。有关详细信息，请参阅<a href="transport-agents-exchange-2013-help.md">传输代理</a>。
 
 
@@ -350,11 +350,11 @@ AD RMS 使用基于 XrML 的权限策略模板，允许启用了 IRM 的兼容�
 </table>
 
 
-> [!NOTE]
+> [!NOTE]  
 > “AD RMS 群集”是用于在组织中进行 AD RMS 部署（包括单个服务器部署）的术语。AD RMS 是一项 Web 服务。它不要求您安装 Windows Server 故障转移群集。为实现高可用性和负载平衡，可在群集中部署多个 AD RMS 服务器，并使用网络负载平衡。
 
 
-> [!important]
+> [!IMPORTANT]  
 > 在生产环境中，不支持在同一台服务器上安装 AD RMS 和 Exchange。
 
 

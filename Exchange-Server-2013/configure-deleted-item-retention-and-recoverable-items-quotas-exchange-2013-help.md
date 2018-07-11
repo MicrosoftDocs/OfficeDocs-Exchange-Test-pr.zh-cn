@@ -19,7 +19,7 @@ _**上一次修改主题：** 2016-12-09_
 
 当用户使用 Delete、Shift+Delete 或\&quot;清空已删除邮件文件夹\&quot;操作从\&quot;已删除邮件\&quot;默认文件夹中删除邮件时，这些邮件将移动到\&quot;可恢复邮件\\删除\&quot;文件夹。已删除邮件保留在此文件夹中的持续时间取决于为邮箱数据库或邮箱配置的已删除邮件保留时间设置。默认情况下，将邮箱数据库配置为保留已删除邮件 14 天，将可恢复邮件警告配额和可恢复邮件配额分别设置为 20 GB 和 30 GB。
 
-> [!NOTE]
+> [!NOTE]  
 > 已删除的项目经历、 Microsoft Outlook和 Microsoft OfficeOutlook Web App在保留时间之前用户可以通过使用恢复已删除邮件功能恢复已删除的项目。有关这些功能的详细信息，请参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=198206">Outlook</a>或<a href="https://go.microsoft.com/fwlink/p/?linkid=198207">Outlook Web App</a>&quot;恢复已删除邮件&quot;主题。
 
 
@@ -35,7 +35,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -69,7 +69,7 @@ _**上一次修改主题：** 2016-12-09_
 
 ## 使用命令行管理程序配置邮箱的可恢复邮件配额
 
-> [!NOTE]
+> [!NOTE]  
 > 不能使用 EAC 配置邮箱的可恢复邮件配额。
 
 
@@ -77,7 +77,7 @@ _**上一次修改主题：** 2016-12-09_
 
     Set-Mailbox -Identity "April Stewart" -RecoverableItemsWarningQuota 12GB -RecoverableItemsQuota 15GB -UseDatabaseQuotaDefaults $false
 
-> [!NOTE]
+> [!NOTE]  
 > 若要将邮箱配置为使用不同于其所在邮箱数据库的可恢复邮件配额，必须将 <em>UseDatabaseQuotaDefaults</em> 参数设置为 <code>$false</code>。
 
 
@@ -85,7 +85,7 @@ _**上一次修改主题：** 2016-12-09_
 
 ## 使用命令行管理程序配置邮箱数据库的已删除邮件保留时间
 
-> [!NOTE]
+> [!NOTE]  
 > 不能使用 EAC 配置邮箱数据库的已删除邮件保留。
 
 
@@ -97,7 +97,7 @@ _**上一次修改主题：** 2016-12-09_
 
 ## 使用命令行管理程序配置邮箱数据库的可恢复邮件配额
 
-> [!NOTE]
+> [!NOTE]  
 > 不能使用 EAC 配置邮箱数据库的可恢复邮件配额
 
 

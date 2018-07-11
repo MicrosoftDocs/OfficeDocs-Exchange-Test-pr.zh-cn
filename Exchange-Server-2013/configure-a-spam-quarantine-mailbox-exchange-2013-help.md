@@ -29,7 +29,7 @@ _**上一次修改主题：** 2013-02-19_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -59,7 +59,7 @@ _**上一次修改主题：** 2013-02-19_
     
     根据组织的合规性策略和需要，你可以应用各种收件人策略，如邮件记录管理、邮箱配额以及委派权限。有关详细信息，请参阅[邮件记录管理](messaging-records-management-exchange-2013-help.md)。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 如果某封隔离的邮件因为存储配额而遭到拒收，该邮件将会丢失。Exchange 不会为隔离的邮件生成 NDR，因为隔离的邮件将打包为 NDR。
 
 
@@ -107,7 +107,7 @@ SCL 隔离阈值是一个值，标识为潜在垃圾邮件的特定邮件的 SCL
 
   - 使用相同的 Outlook 配置文件从垃圾邮件隔离邮箱中恢复隔离的邮件。不支持通过将权限应用于不同 Outlook 配置文件来恢复邮件。你不能使用不同的 Outlook 配置文件从垃圾邮件隔离邮箱中恢复或释放邮件。
 
-> [!important]
+> [!IMPORTANT]  
 > 被标识为垃圾邮件的未送达报告被删除，即使其 SCL 分级指示应隔离它们。不将未送达报告传递到垃圾邮件隔离邮箱。若要跟踪此类邮件，请使用代理日志或邮件跟踪日志。有关详细信息，请参阅<a href="anti-spam-agent-logging-exchange-2013-help.md">反垃圾邮件代理日志记录</a>。
 
 

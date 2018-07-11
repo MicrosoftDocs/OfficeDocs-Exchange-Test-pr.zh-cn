@@ -23,7 +23,7 @@ _**上一次修改主题：** 2016-12-09_
 
 如果您不输入产品密钥，您的服务器就会自动许可为试用版。试用版功能与 Exchange 标准版相同，如果您想在购买之前试用 Exchange，或在实验室中运行检测，它会很有帮助。唯一的区别就是，您对许可为试用版的 Exchange 服务器的试用期只有 180 天。如果您想使服务器的使用天数超过 180 天，就需要输入产品密钥，否则 Exchange 管理中心 (EAC) 将提醒您需要输入产品密钥才能使服务器获得许可证。
 
-> [!tip]
+> [!TIP]  
 > 我们已经注意到此页面的访问用户在查找关于如何安装或激活 Office 的信息。如果您是其中之一，请查看这些页面：
 > <ul>
 > <li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=403360">安装 Office</a></p></li>
@@ -47,7 +47,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -77,7 +77,7 @@ _**上一次修改主题：** 2016-12-09_
 
 本示例将使用 **set-ExchangeServer** cmdlet 输入产品密钥。
 
-> [!NOTE]
+> [!NOTE]  
 > 可以在同一服务器上再次执行该命令，将其从标准版许可证升级到企业版许可证。
 
 

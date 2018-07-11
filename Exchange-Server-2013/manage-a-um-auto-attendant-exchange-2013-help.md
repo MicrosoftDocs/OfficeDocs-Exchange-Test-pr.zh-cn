@@ -35,7 +35,7 @@ _**上一次修改主题：** 2013-04-30_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -213,7 +213,7 @@ _**上一次修改主题：** 2013-04-30_
             
             4.  呼叫者在键盘上按下相应的键，就可将呼叫转移到用户。
                 
-                > [!NOTE]
+                > [!NOTE]  
                 > 在非启用语音的自动助理，系统将提示调用方使用小键盘输入用户的名称 （姓氏第一次），然后搜索该用户。如果具有相同名称的目录中有多人，将指示调用方按相应的键以传递给用户。还可以选择创建仅键盘用于输入名称或别名 DTMF 回退自动助理。
             
             要使用这些设置，您必须向用户添加正确的信息。例如，如果您希望用于标题具有相同名称的两个用户的自动助理，必须将此信息添加到用户的帐户选择提供更多的信息以帮助调用方选择正确的用户组织中的以下方法之一 ︰

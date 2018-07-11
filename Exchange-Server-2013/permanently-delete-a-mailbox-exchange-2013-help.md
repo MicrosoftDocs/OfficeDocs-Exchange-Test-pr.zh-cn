@@ -31,7 +31,7 @@ _**上一次修改主题：** 2012-11-16_
 
   - [连接或还原已删除的邮箱](connect-or-restore-a-deleted-mailbox-exchange-2013-help.md)
 
-> [!NOTE]
+> [!NOTE]  
 > 不能使用 EAC 永久删除活动邮箱或断开连接的邮箱。
 
 
@@ -43,7 +43,7 @@ _**上一次修改主题：** 2012-11-16_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -57,7 +57,7 @@ _**上一次修改主题：** 2012-11-16_
 
     Remove-Mailbox -Identity <identity> -Permanent $true
 
-> [!NOTE]
+> [!NOTE]  
 > 如果不加入 <em>Permanent</em> 参数，则在默认情况下，删除的邮箱在被永久删除之前，将在邮箱数据库中保留 30 天。
 
 
@@ -93,7 +93,7 @@ _**上一次修改主题：** 2012-11-16_
 
     Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -ne $null } | fl DisplayName,MailboxGuid,Database,DisconnectReason
 
-> [!warning]
+> [!WARNING]  
 > 使用 <strong>Remove-StoreMailbox</strong> cmdlet 永久删除断开连接的邮箱时，将从邮箱数据库中清除其所有内容，并会永久丢失数据。
 
 

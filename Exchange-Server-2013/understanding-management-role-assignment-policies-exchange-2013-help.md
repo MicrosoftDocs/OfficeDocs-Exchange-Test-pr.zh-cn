@@ -19,7 +19,7 @@ _**上一次修改主题：** 2015-03-09_
 
 *“管理角色分配策略”*是一个或多个最终用户管理角色的集合，使最终用户能够管理其自己的 Microsoft Exchange Server 2013 邮箱和通讯组配置。角色分配策略是 Exchange 2013 中基于角色的访问控制 (RBAC) 权限模型的一部分，使您能够控制最终用户可以修改的特定邮箱和通讯组配置设置。不同的用户组可以拥有对其专用的角色分配策略。
 
-> [!NOTE]
+> [!NOTE]  
 > 本主题重点讲述高级 RBAC 功能。如果要管理基本的 Exchange 2013 权限（例如，使用 Exchange 管理中心 (EAC) 向角色组中添加成员或从角色组中删除成员，创建和修改角色组，或创建和修改角色分配策略），请参阅<a href="permissions-exchange-2013-help.md">权限</a>。
 
 
@@ -124,7 +124,7 @@ Exchange 2013 包括向最终用户提供最常用权限的默认角色分配策
 <p><a href="change-a-role-entry-exchange-2013-help.md">更改角色条目</a></p>
 <p><a href="remove-a-role-entry-from-a-role-exchange-2013-help.md">从角色中删除一个角色条目</a></p>
 
-> [!NOTE]
+> [!NOTE]  
 > 更改角色分配策略中管理角色的管理角色条目是一项高级任务，大多数情况下通常不需要执行此操作。您可以使用符合要求的预先存在的管理角色。有关详细信息，请参阅<a href="built-in-role-groups-exchange-2013-help.md">内置的角色组</a>。
 
 </td>

@@ -31,7 +31,7 @@ _**上一次修改主题：** 2014-02-15_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -69,7 +69,7 @@ _**上一次修改主题：** 2014-02-15_
 
 ## 使用 EAC 删除共享策略
 
-> [!important]
+> [!IMPORTANT]  
 > 在删除某个共享策略之前，该共享策略必须从所有用户邮箱中删除。
 
 
@@ -98,10 +98,12 @@ _**上一次修改主题：** 2014-02-15_
         Set-SharingPolicy -Identity "Contoso" -Enabled $False
 
   - 第一个示例删除共享策略 Contoso。第二个示例删除共享策略 Contoso，并且禁止显示对要删除策略的确认。
-    
+      ```
         Remove-SharingPolicy -Identity Contoso
-    
+      ```
+      ```
         Remove-SharingPolicy -Identity Contoso -Confirm
-
+      ```
+      
 有关语法和参数的详细信息，请参阅 [Set-SharingPolicy](https://technet.microsoft.com/zh-cn/library/dd297931\(v=exchg.150\)) 和 [Remove-SharingPolicy](https://technet.microsoft.com/zh-cn/library/dd351071\(v=exchg.150\))。
 

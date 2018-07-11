@@ -23,7 +23,7 @@ _**上一次修改主题：** 2014-02-24_
 
 默认情况下，公用文件夹继承其父文件夹的设置，包括权限设置。
 
-> [!NOTE]
+> [!NOTE]  
 > 有关存储配额和公用文件夹的限制的详细信息，请参阅以下主题：
 > <ul>
 > <li><p>若要了解 Office 365 中的公用文件夹，请参阅 <a href="https://go.microsoft.com/fwlink/?linkid=391188">Exchange Online 限制</a>。</p></li>
@@ -59,7 +59,7 @@ _**上一次修改主题：** 2014-02-24_
 
 4.  在\&quot;公用文件夹\&quot;中，键入公用文件夹的名称。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 在创建公用文件夹时，不要在名称内使用反斜线 (\)。
 
 
@@ -73,7 +73,7 @@ _**上一次修改主题：** 2014-02-24_
 
     New-PublicFolder -Name Reports -Path \Marketing\2013
 
-> [!important]
+> [!IMPORTANT]  
 > 在创建公用文件夹时，不要在名称内使用反斜线 (\)。
 
 
@@ -86,13 +86,16 @@ _**上一次修改主题：** 2014-02-24_
   - 在 EAC 中，单击\&quot;刷新\&quot;以刷新公用文件夹的列表。新的公用文件夹应该会显示在该列表中。
 
   - 在命令行管理程序中，运行以下任何命令：
-    
+    ```
         Get-PublicFolder -Identity \Marketing\2013\Reports | Format-List
-    
+    ```
+    ```
         Get-PublicFolder -Identity \Marketing\2013 -GetChildren
-    
+    ```
+    ```
         Get-PublicFolder -Recurse
-
-> [!tip]
+    ```
+    
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 

@@ -41,10 +41,10 @@ Exchange 2007 安装程序要求先成功地重新安装之前安装失败的服
     
     EdgeTransport（或 ET，或 E）
     
-    > [!NOTE]
+    > [!NOTE]  
     > 边缘传输服务器角色无法在同一台计算机上与任何其他服务器角色共存。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 必须在外围网络中和 Active Directory 林外部部署边缘传输服务器角色。
     
     HubTransport（或 HT，或 H）
@@ -55,12 +55,12 @@ Exchange 2007 安装程序要求先成功地重新安装之前安装失败的服
     
     ManagementTools（或 MT，或 T）
     
-    > [!NOTE]
+    > [!NOTE]  
     > 如果指定 ManagementTools，则将安装 Exchange 管理控制台、Exchange 命令行管理程序的 Exchange cmdlet、Exchange 帮助文件、Exchange 最佳实践分析工具和 Exchange 疑难解答助理。如果安装任何其他服务器角色，将自动安装管理工具。
     
     例如，要将集线器传输服务器角色添加到现有的邮箱服务器上，请键入以下内容：** %LocalExchangeInstallationDir%\\bin\\Setup.com /role:HubTransport /Mode:Install**
 
-> [!NOTE]
+> [!NOTE]  
 > 如果之前曾成功安装了任何 Exchange Server 2007 服务器角色，则安装向导将以维护模式运行。如果之前未成功安装任何 Exchange 2007 服务器角色，则安装向导将从它所停止的位置开始。
 
 
@@ -76,13 +76,13 @@ Exchange 2007 安装程序要求先成功地重新安装之前安装失败的服
 
 5.  在“服务器角色选择”页上，选中要安装的服务器角色的复选框，再单击“下一步”。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 边缘传输服务器角色无法在同一台计算机上与任何其他服务器角色共存。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 必须在外围网络中和 Active Directory 林外部部署边缘传输服务器角色。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 如果选择管理工具，将安装 Exchange 管理控制台、用于 Exchange 命令行管理程序的 Exchange cmdlet、以及 Exchange 帮助文件。如果安装任何其他服务器角色，将自动安装管理工具。
 
 

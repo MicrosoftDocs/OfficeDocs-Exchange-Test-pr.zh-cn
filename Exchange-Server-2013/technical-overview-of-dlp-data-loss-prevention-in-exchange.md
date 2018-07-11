@@ -21,13 +21,13 @@ _**上一次修改主题：** 2016-12-09_
 
 由于将电子邮件大量用于包含敏感数据的业务关键通信，因此数据丢失预防 (DLP) 是企业邮件系统的一个重要问题。为了强制执行针对这类数据的遵从性要求并管理这类数据在电子邮件中的使用（而不影响工作人员的工作效率），DLP 功能使敏感数据的管理比以往更加简单。有关 DLP 的概念概述，请观看以下视频。
 
-> [!VIDEO https://www.microsoft.com/zh-cn/videoplayer/embed/31f2b48e-93ed-4be3-b46d-e7230c0fed8f]
+> [!VIDEO https://www.microsoft.com/zh-cn/videoplayer/embed/31f2b48e-93ed-4be3-b46d-e7230c0fed8f]  
 
 DLP 策略是包含条件集的简单数据包，这些数据包由您在 Exchange 管理中心 (EAC) 中创建然后激活以筛选电子邮件及附件的传输规则、操作和例外组成。可以创建 DLP 策略，但选择不激活它。这使您可以测试策略而不影响邮件流。DLP 策略可以使用现有传输规则的完整功能。事实上，已在 Microsoft Exchange Server 2013 和 Exchange Online 中创建了一些新传输规则类型，以便实现新 DLP 功能。传输规则的一个重要新功能是一种用于对可以并入到邮件流处理中的敏感信息进行分类的新方法。此新 DLP 功能通过关键字匹配、字典匹配、正则表达式计算和其他内容检查来执行深度内容分析，以检测违反组织 DLP 策略的内容。Exchange Online 和 Exchange 2013 SP1 的最新版本添加了[文档指纹](overview-of-document-fingerprinting-in-exchange.md)，它可以帮助您检测标准表单中的敏感信息。有关传输规则的详细信息，请参阅[邮件流或传输规则](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md) (Exchange 2013) 或[Exchange Online 中的邮件流规则（传输规则）](https://technet.microsoft.com/zh-cn/library/jj919238\(v=exchg.150\)) (Exchange Online) 和[将敏感信息规则与传输规则集成](integrating-sensitive-information-rules-with-transport-rules-exchange-2013-help.md)。您还可以通过使用 Exchange 命令行管理程序 cmdlet 来管理 DLP 策略。有关策略和遵从性 cmdlet 的详细信息，请参阅[策略和合规性 cmdlet](https://technet.microsoft.com/zh-cn/library/dd298082\(v=exchg.150\))。
 
 除了可自定义的 DLP 策略本身之外，还可以通知电子邮件发件人他们可能将违反一个策略 — 甚至在发送有问题的邮件之前进行此操作。您可以通过配置策略提示来实现这点。策略提示类似于邮件提示，可配置为在 Microsoft Outlook 2013 客户端中提供简短说明，提供有关邮件创建者可能违反策略的信息。在 Exchange Online 的最新版本和 Exchange 2013 SP1 中，策略提示也会显示在 Outlook Web App 和 适用于设备的 OWA 中。有关详细信息，请参阅[策略提示](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)。
 
-> [!NOTE]
+> [!NOTE]  
 > Exchange Online：DLP 是一项高级功能，要求使用 Exchange Online 计划 2 订阅。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=286154">Exchange Online Licensing</a>（Exchange Online 授权）。<br />
 > Exchange 2013：DLP 是一项高级功能，要求使用 Exchange 企业客户端访问许可证 (CAL)。有关 CAL 和服务器授权的详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server Licensing</a>（Exchange Server 授权）。<br />
 > <strong>Exchange Enterprise CAL with Services：</strong>如果您是拥有混合部署的 Exchange Enterprise CAL with Services 客户（即您的某些邮箱是本地的，某些邮箱位于 Exchange Online 中），则有一个需要注意的行为区分。DLP 策略在 Exchange Online 中应用。因此，从一个内部部署用户发送到另一个内部部署用户的邮件不应用 DLP 策略，因为该邮件没有离开内部部署基础结构。

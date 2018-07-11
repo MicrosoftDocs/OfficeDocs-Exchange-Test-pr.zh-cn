@@ -33,7 +33,7 @@ _**上一次修改主题：** 2013-12-02_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -46,18 +46,23 @@ _**上一次修改主题：** 2013-12-02_
 ## 使用命令行管理程序查看服务器运行状况
 
 运行下列命令之一，查看运行 Exchange 2013 的服务器的运行状况设置和运行状况信息。
-
+```
     Get-HealthReport -Identity <ServerName>
-
+```
+```
     Get-ServerHealth -Identity <ServerName> | Format-Table Server,CurrentHealthSetState,Name,HealthSetName,AlertValue,HealthGroupName -Auto
+```
 
 运行下列任一命令，查看运行 Exchange 2013 的服务器或数据库可用性组的运行状况设置。
-
+```
     Get-ExchangeServer | Get-HealthReport -RollupGroup
-
+```
+```
     Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
-
+```
+```
     (Get-DatabaseAvailabiltyGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
+```
 
 ## 查看运行状况设置列表
 

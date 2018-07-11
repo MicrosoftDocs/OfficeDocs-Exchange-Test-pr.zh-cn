@@ -33,6 +33,6 @@ For more information see [Outlook for iOS and Android](using-basic-authenticatio
 
 For customers running Exchange Server 2013 or Exchange Server 2016 in a hybrid relationship with Office 365, Outlook for iOS and Android can be configured to leverage hybrid Modern Authentication. For more information, see [ITPro\_R4\_Stub\_80](using-hybrid-modern-authentication-with-outlook-for-ios-and-android-exchange-2013-help.md).
 
-> [!NOTE]
+> [!NOTE]  
 > The <a href="https://support.office.com/en-us/article/outlook-for-ios-and-android-help-center-cd84214e-a5ac-4e95-9ea3-e07f78d0cde6">Outlook for iOS and Android Help Center</a> is available for users, including help for using the app on specific devices and troubleshooting information.
 

@@ -19,7 +19,7 @@ _**上一次修改主题：** 2013-04-09_
 
 在安装运行 Microsoft Exchange 统一消息呼叫路由器服务的客户端访问服务器之后，可以配置几个选项，包括并发呼叫数、TCP 和传输层安全性 (TLS) 侦听端口、状态和启动模式。
 
-> [!NOTE]
+> [!NOTE]  
 > 在客户端访问服务器可以处理统一消息 (UM) 呼叫之前，不需要将客户端访问服务器添加到 UM 拨号计划中，但在集成 UM 和 Microsoft Office Communications Server 2007 R2 或 Microsoft Lync Server 时除外。默认情况下，组织中的所有客户端访问服务器都可用于应答传入呼叫。
 
 
@@ -35,7 +35,7 @@ _**上一次修改主题：** 2013-04-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

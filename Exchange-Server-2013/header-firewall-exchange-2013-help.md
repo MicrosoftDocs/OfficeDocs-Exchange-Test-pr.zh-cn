@@ -155,7 +155,7 @@ Exchange 使用两种不同的方法将邮件头防火墙应用于邮件中存�
 <li><p>边缘传输服务器</p></li>
 <li><p>Exchange Servers</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 仅在集线器传输服务器上
 
 </li>
@@ -182,7 +182,7 @@ Exchange 使用两种不同的方法将邮件头防火墙应用于邮件中存�
 <li><p>边缘传输服务器</p></li>
 <li><p>Exchange Servers</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 仅集线器传输服务器
 
 </li>
@@ -259,7 +259,7 @@ Exchange 使用两种不同的方法将邮件头防火墙应用于邮件中存�
 <li><p>边缘传输服务器</p></li>
 <li><p>Exchange Servers</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 仅在集线器传输服务器上
 
 </li>
@@ -275,7 +275,7 @@ Exchange 使用两种不同的方法将邮件头防火墙应用于邮件中存�
 <li><p>边缘传输服务器</p></li>
 <li><p>Exchange Servers</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 仅在集线器传输服务器上
 
 </li>

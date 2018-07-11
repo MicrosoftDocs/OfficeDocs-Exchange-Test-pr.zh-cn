@@ -83,7 +83,7 @@ Exchange 2013 中的服务器角色合并和其他体系结构更改要求对 Ex
 
 反复探测器的基础知识如下所示：启动每个 *RecurrenceIntervalSeconds*，并检查（或探测）某些方面的运行状况。如果组件运行状况良好，则探测器将判定为合格，并将信息性事件传入或写入 *ResultType* 为 3 的 Microsoft.Exchange.ActiveMonitoring\\ProbeResult 通道。如果检查失败或者超时，探测器将判定为故障，并将错误事件写入同一通道。*ResultType* 为 4 表示检查未通过，*ResultType* 为 1 表示超时。如果超时，达到 *MaxRetryAttempts* 属性的值，则许多探测器将重新运行。
 
-> [!NOTE]
+> [!NOTE]  
 > <strong>注意</strong> ProbeResult crimson 通道会因为处理数百个每隔几分钟运行一次的探测器以及记录事件而变得非常繁忙，因此如果您对生产环境中的事件日志尝试高成本的查询时，会对您的 Exchange 服务器性能产生真正的影响。
 
 

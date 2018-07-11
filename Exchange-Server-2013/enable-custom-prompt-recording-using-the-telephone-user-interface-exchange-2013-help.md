@@ -35,7 +35,7 @@ _**上一次修改主题：** 2014-09-17_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -53,13 +53,13 @@ _**上一次修改主题：** 2014-09-17_
 
 4.  为该域用户邮箱启用统一消息。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 仅允许将管理提示和问候语的管理员访问该用户帐户的分机号码和 PIN。该用户帐户仅用于通过电话管理提示。
 
 
 5.  创建并保存一个将用作 UM 拨号计划或自动助理的自定义问候语的 .wav 或 .wma 文件。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 自定义提示不能使用 MP3 文件。
 
 
@@ -69,7 +69,7 @@ _**上一次修改主题：** 2014-09-17_
     
         Set-UMDialPlan -identity MyUMDialPlan -TUIPromptEditingEnabled $true
 
-> [!NOTE]
+> [!NOTE]  
 > 必须先登录设置了录制提示的邮箱，才能录制自定义提示或问候语。录制了新的提示或问候语后，必须注销并重新登录，才能在使用 TUI 时听到新的提示或问候语。
 
 

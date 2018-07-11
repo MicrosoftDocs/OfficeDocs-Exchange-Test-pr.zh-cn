@@ -35,7 +35,7 @@ Microsoft Exchange Server 2013 安装程序无法继续，因为它在 Active Di
 
 7.  在 Active Directory 对话框中单击“是”来确认删除。
 
-> [!NOTE]
+> [!NOTE]  
 > 如果要立即复制更改，必须手动启动域控制器之间的复制。
 
 

@@ -37,7 +37,7 @@ _**上一次修改主题：** 2014-06-24_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -49,9 +49,7 @@ _**上一次修改主题：** 2014-06-24_
 
 2.  选择要配置的 DAG 并单击 ![编辑图标](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "编辑图标")。
 
-3.  
-    
-    使用\&quot;常规\&quot;页面可以查看 DAG 成员资格和操作状态，并配置 DAG 的见证服务器、见证目录和自动网络配置：
+3.  使用\&quot;常规\&quot;页面可以查看 DAG 成员资格和操作状态，并配置 DAG 的见证服务器、见证目录和自动网络配置：
     
       - **见证服务器**   DAG 的见证服务器的主机名或完全限定域名 (FQDN)。虽然这是所有 DAG 的必需属性，但是存在偶数数量的 DAG 成员时会使用见证服务器，群集使用的仲裁模型为\&quot;节点和文件共享多数\&quot;。
     
@@ -61,9 +59,7 @@ _**上一次修改主题：** 2014-06-24_
     
       - **手动配置数据库组网络**   如果要手动配置所有 DAG 网络，请选中此框。如果将此复选框保留为清除状态，则系统将根据网络接口配置来自动配置 DAG 网络。如果复选框已清除，则应针对 DAG 的管理使用禁用 **Set-DatabaseAvailabilityGroupNetwork** 和 **New-DatabaseAvailabilityGroupNetwork** Cmdlet。
 
-4.  
-    
-    使用\&quot;IP 地址\&quot;页面可查看并修改分配给 DAG 的 IP 地址：
+4.  使用\&quot;IP 地址\&quot;页面可查看并修改分配给 DAG 的 IP 地址：
     
       - 选择现有 IP 地址并单击 ![编辑图标](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "编辑图标") 可修改它。
     
@@ -71,9 +67,7 @@ _**上一次修改主题：** 2014-06-24_
     
       - 输入 IP 地址并单击 ![添加图标](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "添加图标") 可将其添加到 DAG。
 
-5.  
-    
-    单击\&quot;保存\&quot;可保存所做的任何更改。
+5.  单击\&quot;保存\&quot;可保存所做的任何更改。
 
 ## 使用命令行管理程序配置数据库可用性组属性
 
@@ -105,7 +99,7 @@ _**上一次修改主题：** 2014-06-24_
 
     Set-DatabaseAvailabilityGroup -Identity DAG1 -ReplicationPort 63132
 
-> [!NOTE]
+> [!NOTE]  
 > 更改 DAG 默认的复制端口后，必须手动修改 DAG 每个成员上的 Windows 防火墙例外，以允许通过指定的端口进行通信。
 
 

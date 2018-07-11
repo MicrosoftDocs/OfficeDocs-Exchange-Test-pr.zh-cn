@@ -29,7 +29,7 @@ _**上一次修改主题：** 2016-12-09_
 
 您可以配置为已启用邮件的通讯组，AD RMS.成员的通讯组中的超级用户组授予所有者从 AD RMS 群集请求许可证时使用许可证。这允许他们解密发布该群集的所有 RMS 保护内容。是否使用现有的通讯组或创建通讯组并将其配置为 AD RMS 中的超级用户组，则建议您将通讯组专门为此目的并配置适当的设置审批、 审核，并监视成员身份的更改。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 在 AD RMS 配置超级用户组允许该组的成员能够解密受 IRM 保护的内容。我们建议您采取有力措施，对控制和监视的组成员身份并启用审核跟踪成员身份的更改。此外可以通过将组配置为受限制的组使用组策略来限制不必要对组成员身份的更改。有关详细信息，请参阅<a href="https://technet.microsoft.com/en-us/library/cc756802(v=ws.10).aspx">受限制的组策略设置</a>。
 
 
@@ -47,7 +47,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -93,7 +93,7 @@ AD RMS 群集上执行下列步骤。若要执行此过程时使用的帐户必�
 
   - 在 AD RMS 服务器上运行以下 PowerShell 命令检索该超级用户组。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 在 Windows Server 2008 R2 和更高版本上提供了 ADRMSAdmin PowerShell 模块。
     
         Import-Module ADRMSAdmin

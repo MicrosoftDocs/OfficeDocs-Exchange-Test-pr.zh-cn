@@ -35,7 +35,7 @@ _**上一次修改主题：** 2012-10-11_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -55,7 +55,7 @@ _**上一次修改主题：** 2012-10-11_
     
       - **搜索这些邮箱或保留为空，以查找所有非所有者访问的邮箱**
         
-        > [!CAUTION]
+        > [!CAUTION]  
         > 搜索所有邮箱可能需要较长时间，具体取决于您组织中的邮箱数量和每个邮箱中的邮箱审核日志数据量。
     
       - **搜索以下人员的访问**

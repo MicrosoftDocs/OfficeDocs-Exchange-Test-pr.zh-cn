@@ -79,7 +79,7 @@ UM 在一个存储中提供语音邮件、传真和电子邮件传送服务，�
 
 有关 Microsoft Lync Server 的详细信息，请参阅 [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752)。
 
-> [!NOTE]
+> [!NOTE]  
 > 规划和部署统一消息可能会带来一定的挑战。根据在 Exchange 和语音邮件系统方面的技术经验，可能需要从统一消息专家那里获取帮助。Exchange 统一消息专家将帮助确保从旧有或第三方语音邮件系统顺利过渡到 Exchange 统一消息。执行新部署或升级旧有语音邮件系统需要大量 VoIP 网关、PBX 和统一消息方面的知识。有关如何联系统一消息专家的详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/p/?linkid=262708">Microsoft Exchange Server 2013 Unified Messaging (UM) Specialists（Microsoft Exchange Server 2013 统一消息 (UM) 专家）</a>。
 
 

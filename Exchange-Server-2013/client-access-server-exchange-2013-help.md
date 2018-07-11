@@ -19,7 +19,7 @@ _**上一次修改主题：** 2014-07-02_
 
 对于 Microsoft Exchange 2013，对 Exchange 服务器角色进行了主要的体系结构更改。过去 Exchange 2010 和 Exchange 2007 中存在五个服务器角色，而在 Exchange 2013 中，服务器角色的数目减少为三个：客户端访问服务器和邮箱服务器以及 Service Pack 1 的边缘传输服务器角色。
 
-> [!NOTE]
+> [!NOTE]  
 > Exchange 2013 也能使用 Exchange 2010 边缘传输服务器角色。
 
 
@@ -27,7 +27,7 @@ Exchange 2013 邮箱服务器包括 Exchange 2010 中所有的服务器组件：
 
 客户端访问服务器提供身份验证、代理和有限重定向服务，并提供所有常见的客户端访问协议：HTTP、POP、IMAP 和 SMTP。客户端访问服务器是无状态的瘦服务器，不执行任何数据渲染。客户端访问服务器上从不会排队或存储任何内容。有关新 Exchange 2013 体系结构的详细信息，请参阅 [Exchange 2013 中的新增功能](what-s-new-in-exchange-2013-exchange-2013-help.md)。
 
-> [!warning]
+> [!WARNING]  
 > 客户端访问服务器在外围网络中不受支持，并且必须部署在您的内部 Active Directory 环境中。每个包含邮箱服务器的 Active Directory 站点还必须包含客户端访问服务器。
 
 

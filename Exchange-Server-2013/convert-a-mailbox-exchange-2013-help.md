@@ -33,7 +33,7 @@ _**上一次修改主题：** 2017-04-26_
 
 注意：如果组织使用混合 Exchange 环境，你需要通过使用本地 Exchange 管理工具来管理邮箱。要在混合环境中转换邮箱，你可能需要将邮箱移回本地 Exchange，转换邮箱类型，然后将邮箱移回 Office 365。
 
-> [!important]
+> [!IMPORTANT]  
 > 如果将用户邮箱转换为共享邮箱，应在转换前从邮箱删除任何移动设备，或应在转换后阻止移动访问邮箱。这是因为将邮箱转换为共享邮箱后，移动功能将无法正常使用。有关阻止访问的详细信息，请参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=847873">从 Office 365 中删除以前的员工</a>。
 
 
@@ -69,6 +69,6 @@ _**上一次修改主题：** 2017-04-26_
 
 有关语法和参数的详细信息，请参阅 [Get-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123685\(v=exchg.150\))。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 

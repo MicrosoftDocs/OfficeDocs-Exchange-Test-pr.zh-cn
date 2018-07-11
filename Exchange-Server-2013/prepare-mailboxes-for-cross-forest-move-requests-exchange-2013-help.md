@@ -123,7 +123,7 @@ Microsoft Exchange 2013支持邮箱移动和迁移使用 Exchange 管理外壳�
 <td><p><strong>proxyAddresses</strong></p></td>
 <td><p>复制源邮箱的 <strong>proxyAddresses</strong> 属性。此外，复制源邮箱的 <strong>LegacyExchangeDN</strong> 作为目标邮件用户的 <strong>proxyAddresses</strong> 属性中的 X500 地址。</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 源邮箱用户的 <strong>proxyAddresses</strong> 必须含有与目标林的权威域相匹配的 SMTP 地址。这将允许 <strong>New-MoveRequest</strong> cmdlet 正确选择已启用源邮件的用户（此用户为完成邮箱移动请求后从源邮箱用户转换而来的用户）的 <strong>targetAddress</strong>，从而确保邮件路由继续进行下去。
 
 </td>
@@ -348,7 +348,7 @@ Microsoft Exchange 2013支持邮箱移动和迁移使用 Exchange 管理外壳�
 </table>
 
 
-> [!NOTE]
+> [!NOTE]  
 > 只有在源林和目标林之间存在林信任时，才能创建链接的邮箱。
 
 

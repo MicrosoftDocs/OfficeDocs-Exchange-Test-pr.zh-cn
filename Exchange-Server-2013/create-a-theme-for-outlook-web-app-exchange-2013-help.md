@@ -31,11 +31,11 @@ _**上一次修改主题：** 2016-12-09_
 
 在创建主题之后，您可能还需要[自定义 Outlook Web App 的登录页、语言选择页和错误页](customize-the-outlook-web-app-sign-in-language-selection-and-error-pages-exchange-2013-help.md)。
 
-> [!NOTE]
+> [!NOTE]  
 > Outlook Web App 基本客户端不支持主题。
 
 
-> [!CAUTION]
+> [!CAUTION]  
 > 如果您有多个支持 Outlook Web App 的服务器，则必须将自定义主题复制到每个服务器。还应该创建自定义文件的备份副本。如果重新安装或升级 Exchange，将覆盖主题文件夹中的所有文件。重新安装或升级完成后，必须将主题复制回相应的文件夹。
 > 在开始创建自定义主题之前，为将要更改的所有文件制作备份副本。
 
@@ -58,7 +58,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -110,7 +110,7 @@ _**上一次修改主题：** 2016-12-09_
 
 主题图像存储在 \\themes*\\\<theme name\>*\\images\\ 中的两个文件夹中。\\images\\0 文件夹包含将在从左到右语言（如英语）中使用的图像，从右到左阅读的语言将使用 \\images\\rtl 文件夹中的图像。
 
-> [!NOTE]
+> [!NOTE]  
 > \images\rtl 文件夹中的某些图像与 \images\0 文件夹中相同，只不过它们相互是镜像图像。
 
 

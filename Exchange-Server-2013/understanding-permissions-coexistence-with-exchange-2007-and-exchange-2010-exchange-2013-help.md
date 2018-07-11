@@ -251,7 +251,7 @@ Exchange 2007 提供以下预定义的管理员角色：
 
 如果您希望 Exchange 2007 管理员管理 Exchange 2013 服务器，则必须将 Exchange 2007 管理员添加为一个或多个 Exchange 2013 角色组的成员。可以将用户或 USG 添加到角色组中。然后，为角色组授予的权限会应用于作为成员添加的用户或 USG。
 
-> [!important]
+> [!IMPORTANT]  
 > 如果使用域本地或全局 Active Directory 安全组，则在需要将其添加为 Exchange 2013 角色组的成员时，必须将其更改为 USG。Exchange 2013 只支持 USG。
 
 
@@ -316,7 +316,7 @@ Exchange 2007 提供以下预定义的管理员角色：
 
 完成这些步骤之后，Exchange 2007 管理员将成为映射到相应 Exchange 2013 对象的特定角色组的成员。Exchange 2007 管理员可以使用 Exchange 2013 管理工具来管理 Exchange 2013 服务器和收件人。
 
-> [!important]
+> [!IMPORTANT]  
 > 通常，Exchange 2007 服务器和收件人必须使用 Exchange 2007 管理工具进行管理，Exchange 2013 服务器和收件人必须使用 Exchange 2013 管理工具进行管理。
 
 

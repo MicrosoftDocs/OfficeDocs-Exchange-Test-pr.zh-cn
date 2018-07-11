@@ -72,7 +72,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -80,7 +80,7 @@ _**上一次修改主题：** 2016-12-09_
 
 ## 使用命令行管理程序启用 HAB
 
-> [!NOTE]
+> [!NOTE]  
 > 尽管不能使用 EAC 启用 HAB，但启用 HAB 后可以使用 EAC 管理组织层次结构中的组成员身份。
 
 
@@ -90,18 +90,18 @@ _**上一次修改主题：** 2016-12-09_
 
 1.  在 Contoso 组织中创建名为 HAB 的 OU。您可以使用 Active Directory 用户和计算机，或在命令提示符中键入下列内容。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 或者，您可以使用 Exchange 林中的某个现有的 OU。
     
         dsadd ou "OU=HAB,DC=Contoso-dom,DC=Contoso,DC=com"
     
-    > [!NOTE]
+    > [!NOTE]  
     > 有关详细信息，请参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=198986">新建组织单位</a>。
 
 
 2.  为 HAB 创建根通讯组 Contoso，Ltd。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 为本主题提供了命令行管理程序示例。但是，您也可以使用 EAC 创建通讯组。有关详细信息，请参阅<a href="create-and-manage-distribution-groups-exchange-2013-help.md">创建和管理通讯组</a>。
     
         New-DistributionGroup -Name "Contoso,Ltd" -DisplayName "Contoso,Ltd" -Alias "ContosoRoot" -OrganizationalUnit "Contoso-dom.Contoso.com/HAB" -SamAccountName "ContosoRoot" -Type "Distribution"
@@ -112,7 +112,7 @@ _**上一次修改主题：** 2016-12-09_
 
 4.  在 HAB 中创建其他层的通讯组。例如，您要创建下列组：Corporate Office、Product Support Organization、Sales & Marketing Organization、Human Resources、Accounting Group 和 Administration Group。本示例创建通讯组 Corporate Office。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 为本主题提供了命令行管理程序示例。但是，您也可以使用 EAC 创建通讯组。有关详细信息，请参阅<a href="create-and-manage-distribution-groups-exchange-2013-help.md">创建和管理通讯组</a>。
     
         New-DistributionGroup -Name "Corporate Office" -DisplayName "Corporate Office" -Alias "CorporateOffice" -OrganizationalUnit "Contoso-dom.Contoso.com/HAB" -SamAccountName "CorporateOffice" -Type "Distribution"
@@ -123,14 +123,14 @@ _**上一次修改主题：** 2016-12-09_
 
 6.  将每个下属组添加为根组织的成员。例如，在 HAB 中将通讯组 Corporate Office、Product Support Organization 和 Sales & Marketing Organization 添加为根组织 Contoso,Ltd 的成员。该示例将 Corporate Office 通讯组添加为 Contoso,Ltd 根通讯组的成员。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 该示例使用了通讯组的别名。
     
         Add-DistributionGroupMember -Identity "ContosoRoot" -Member "CorporateOffice"
 
 7.  将附属于通讯组 Corporate Office 的每个组添加为该组的成员。例如，将通讯组 Human Resources、Accounting Group 和 Administration Group 添加为通讯组 Corporate Office 的成员。该示例将 Human Resources 通讯组添加为 Corporate Office 通讯组的成员。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 该示例使用通讯组的别名，并假定 Human Resources 通讯组的别名为 HumanResources。
     
         Add-DistributionGroupMember -Identity "CorporateOffice" -Member "HumanResources"
@@ -143,7 +143,7 @@ _**上一次修改主题：** 2016-12-09_
     
         Set-Group -Identity "Human Resources" -SeniorityIndex 100
     
-    > [!NOTE]
+    > [!NOTE]  
     > <em>SeniorityIndex</em> 参数是数字值，用于在 HAB 中将组或用户按数字降序进行排列。如果没有设置 <em>SeniorityIndex</em> 参数，或两个或更多用户的此参数值相同，那么 HAB 排序顺序使用 <em>PhoneticDisplayName</em> 参数值，以字母升序顺序列出用户。如果没有设置 <em>PhoneticDisplayName</em> 值，HAB 排序顺序默认为 <em>DisplayName</em> 参数值，并以字母升序顺序列出用户。
 
 
@@ -177,7 +177,7 @@ _**上一次修改主题：** 2016-12-09_
 
     Set-OrganizationConfig -HierarchicalAddressBookRoot $null
 
-> [!NOTE]
+> [!NOTE]  
 > 该命令不会删除用于 HAB 结构的根组织或子组，也不会重置组或用户的 <em>SeniorityIndex</em> 值。仅阻止 HAB 显示于 Outlook 中。要再次启用具有相同配置设置的 HAB，您只需再次启用根组织。
 
 

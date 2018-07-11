@@ -19,7 +19,7 @@ _**上一次修改主题：** 2013-02-21_
 
 删除统一消息 (UM) IP 网关时，Exchange 服务器将不再接受来自与 UM IP 网关相关联的 Voice over IP (VoIP) 网关、已启用会话初始协议 (SIP) 的专用交换机 (PBX)、IP PBX 或会话边界控制器 (SBC) 的传入呼叫。
 
-> [!important]
+> [!IMPORTANT]  
 > 仅当完全了解禁用与 VoIP 网关、IP PBX 或 SBC 的通信的含义时，才应删除 UM IP 网关。
 
 
@@ -37,7 +37,7 @@ _**上一次修改主题：** 2013-02-21_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

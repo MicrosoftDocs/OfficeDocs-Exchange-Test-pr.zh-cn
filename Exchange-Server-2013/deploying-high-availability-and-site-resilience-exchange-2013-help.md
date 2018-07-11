@@ -176,7 +176,7 @@ Microsoft Exchange Server 2013 使用称为“增量部署”的概念来实现�
 
 上述命令将 DAG1 配置为使用 CAS4 的备用见证服务器，以及 CAS4（使用在 CAS1 上配置的相同路径）上的备用见证目录。
 
-> [!NOTE]
+> [!NOTE]  
 > 使用相同路径不是必需的；Contoso 选择这样做是为了标准化其配置。
 
 
@@ -247,7 +247,7 @@ Microsoft Exchange Server 2013 使用称为“增量部署”的概念来实现�
 
 尽管在另一位置中跨 WAN 的每个活动数据库有两个副本，但是通过 WAN 只执行一次种子设定。这是因为 Contoso 在利用 Exchange 2013 功能，将数据库的被动副本用作设定种子的源。结合使用 [Add-MailboxDatabaseCopy](https://technet.microsoft.com/zh-cn/library/dd298105\(v=exchg.150\)) cmdlet 和 *SeedingPostponed* 参数可以阻止该任务为正在创建的新数据库副本自动设定种子。然后，管理员可以挂起取消设定种子的副本，通过结合使用 [Update-MailboxDatabaseCopy](https://technet.microsoft.com/zh-cn/library/dd335201\(v=exchg.150\)) cmdlet 和 *SourceServer* 参数，管理员可以指定数据库的本地副本作为设定种子操作的源。结果，对添加到每个位置的第二个数据库副本设定种子可本地发生，不需要通过 WAN。
 
-> [!NOTE]
+> [!NOTE]  
 > 在上述示例中，非延迟数据库副本通过 WAN 设定种子，然后使用该副本为与非延迟副本位于同一数据中心中的数据库的延迟副本设定种子。
 
 

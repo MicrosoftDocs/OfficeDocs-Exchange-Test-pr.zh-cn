@@ -41,7 +41,7 @@ Admin Audit Log agent
 
 Cmdlet，无论他们在哪里运行，审核如果 cmdlet 是在审核列表和一个 cmdlet 或者该 cmdlet 的详细参数在参数审核列表。审核日志将显示已采取何种措施修改Exchange组织中的对象而不是已查看过哪些对象。
 
-> [!important]
+> [!IMPORTANT]  
 > 如果某个 cmdlet 调用管理审核日志 cmdlet 扩展代理之前发生错误，则可能不会记录该 cmdlet。如果在调用管理审核日志代理之后发生错误，则会记录该 cmdlet 以及关联的错误。有关详细信息，请参阅本主题后面的Admin Audit Log Agent一节。
 > 使用 Microsoft Exchange Server 2010 管理工具所做的更改将会记录；但是，使用 Microsoft Exchange Server 2007 管理工具所做的更改不会记录。
 > 在打开了命令行管理程序的计算机上，在对审核日志配置进行更改之后，所做的更改会每隔 60 分钟刷新一次。如果想要立即应用所做的更改，请在每台计算机上关闭并重新打开命令行管理程序。
@@ -52,7 +52,7 @@ Cmdlet，无论他们在哪里运行，审核如果 cmdlet 是在审核列表和
 
 默认情况下，如果启用审核日志记录，则日志条目创建每次运行时任何 cmdlet。如果您不想审核每个运行的 cmdlet，您可以配置审核日志审核的 cmdlet 和感兴趣的参数。您可以使用**Set-AdminAuditLogConfig** cmdlet 配置审核日志。与此 cmdlet 使用在以下各节中引用的参数。
 
-> [!important]
+> [!IMPORTANT]  
 > 无论 <strong>Set-AdministratorAuditLog</strong> cmdlet 是否包括在要审核的 cmdlet 列表中，也无论是启用还是禁用了审核日志记录，始终都会记录对管理员审核日志配置进行的更改。
 
 
@@ -84,7 +84,7 @@ Cmdlet，无论他们在哪里运行，审核如果 cmdlet 是在审核列表和
 
 您必须使用 `dd` 字段指定多年时间。例如，365 天等于一年；730 天等于两年；913 天等于两年零六个月。例如，若要将审核日志期限设置为两年零六个月，请使用语法 `913.00:00:00`。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 可以将审核日志期限设置为小于当前期限的值。如果执行此操作，则会删除寿命超过新期限的所有审核日志条目。
 > 如果将期限设置为 0，则 Exchange 会删除审核日志中的所有条目。
 > 建议您仅向高度信任的用户授予配置审核日志期限的权限。
@@ -146,7 +146,7 @@ Cmdlet，无论他们在哪里运行，审核如果 cmdlet 是在审核列表和
 <td><p><code>ModifiedProperties</code></p></td>
 <td><p>此字段包含在 <code>ObjectModified</code> 字段中的对象上修改的属性。属性的旧值和存储的新值也存储在此字段中，但是在默认输出中不可见。有关如何访问此字段中的其他信息的详细信息，请参阅<a href="search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md">搜索角色组更改或管理员审核日志</a>。</p>
 
-> [!important]
+> [!IMPORTANT]  
 > 仅当 <strong>Set-AdminAuditLogConfig</strong> cmdlet 中的 <em>LogLevel</em> 参数设置为 <code>Verbose</code> 时，此字段才会填充。
 
 </td>
@@ -231,7 +231,7 @@ EAC 中的\&quot;审核\&quot;页面包括若干个报告，提供有关各种�
 
 在运行 **New-AdminAuditLogSearch** cmdlet 之后，Exchange 可能最多需要 15 分钟将报告传递给指定收件人。附加了 XML 文件的报告最大可以为 10 MB。XML 文件包含Audit Log Contents中的表所述的相同信息。有关 XML 文件结构的详细信息，请参阅[管理员审核日志结构](administrator-audit-log-structure-exchange-2013-help.md)。
 
-> [!NOTE]
+> [!NOTE]  
 > 默认情况下，Outlook Web App 不允许您打开 XML 附件。您可以将 Exchange 配置为允许使用 Outlook Web App 查看 XML 附件，也可以使用其他电子邮件客户端（例如，Microsoft Outlook）查看该附件。有关如何将 Outlook Web App 配置为允许查看 XML 附件的信息，请参阅<a href="view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md">查看或配置 Outlook Web App 虚拟目录</a>。
 
 

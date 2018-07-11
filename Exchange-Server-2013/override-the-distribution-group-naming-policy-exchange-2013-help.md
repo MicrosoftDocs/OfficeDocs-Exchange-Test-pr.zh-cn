@@ -29,7 +29,7 @@ _**上一次修改主题：** 2012-10-13_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -57,17 +57,19 @@ _**上一次修改主题：** 2012-10-13_
 
     Set-DistributionGroup -Identity "Goverment_Contracts_NWRegion" -Name "Government_ContractEstimates_NWRegion" -DisplayName "Government_ContractEstimates_NWRegion" -IgnoreNamingPolicy
 
-> [!important]
+> [!IMPORTANT]  
 > 请务必包括<em>DisplayName</em>参数，当您重命名组。如果不这样做，旧的名称仍将显示在收件人上的共享的地址簿:，抄送:，并从 ︰ 在电子邮件中的行。
 
 
 ## 您如何知道这有效？
 
 若要验证是否已成功创建或重命名忽略组命名策略的通讯组，请运行以下命令。
-
+```
     Get-DistributionGroup <Name> | FL DisplayName
-
+```
+```
     Get-OrganizationConfig | FL DistributionGroupNamingPolicy
+```
 
 如果该组的显示名称的格式不同于组织的组命名策略强制实施的组，则命令有效。
 

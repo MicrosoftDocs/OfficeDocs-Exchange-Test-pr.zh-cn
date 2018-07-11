@@ -35,7 +35,7 @@ _**上一次修改主题：** 2012-10-14_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -67,7 +67,7 @@ _**上一次修改主题：** 2012-10-14_
 
 此命令检索 Exchange 组织中的所有邮箱，对放在保留挂起中的邮箱进行筛选，并将这些邮箱与应用于它们的保留策略一起列出。
 
-> [!important]
+> [!IMPORTANT]  
 > 因为<em>RetentionHoldEnabled</em>不是Exchange 2013中的筛选属性，不能用来放置保留挂起，请在服务器端的筛选器邮箱<strong>Get-Mailbox</strong> cmdlet 使用<em>Filter</em>参数。此命令会检索所有邮箱和运行 Shell 会话的客户端上的筛选器的列表。在数千个邮箱的大环境中，此命令可能需要很长时间才能完成。
 
 

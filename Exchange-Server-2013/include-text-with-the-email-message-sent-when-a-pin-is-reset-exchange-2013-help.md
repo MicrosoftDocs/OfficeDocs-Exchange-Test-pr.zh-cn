@@ -21,7 +21,7 @@ _**上一次修改主题：** 2013-02-22_
 
 默认情况下，如果登录尝试失败次数超过 5 次，统一消息或语音邮件系统会重置用于 Outlook Voice Access 的 PIN。用户也可以使用 Outlook Web App 或 Outlook 2010 或更高版本随附的 UM 功能，或者使用 Outlook 电话的 Voice Access，重置其 PIN。
 
-> [!NOTE]
+> [!NOTE]  
 > 此框中输入的文本限制为 512 个字符，可以包含简单的 HTML 文本。
 
 
@@ -39,7 +39,7 @@ _**上一次修改主题：** 2013-02-22_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

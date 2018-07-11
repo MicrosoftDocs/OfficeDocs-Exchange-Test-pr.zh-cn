@@ -41,7 +41,7 @@ _**上一次修改主题：** 2015-05-04_
     
     对于内部部署 Exchange 组织，也可以在“Active Directory 用户和计算机”中验证此信息。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 在连接删除的链接邮箱、资源邮箱或共享邮箱时，要将邮箱连接到的 Active Directory 用户帐户必须处于禁用状态。
 
 
@@ -71,7 +71,7 @@ _**上一次修改主题：** 2015-05-04_
     
     将显示在 Exchange 组织中选定的 Exchange 服务器上断开连接的邮箱列表。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 这个断开连接邮箱列表包括了禁用的、删除的和软删除的邮箱。
 
 
@@ -89,7 +89,7 @@ _**上一次修改主题：** 2015-05-04_
 
 在命令行管理程序中使用 **Connect-Mailbox** cmdlet 可将删除的邮箱连接到未启用邮件的用户帐户。必须指定要连接的邮箱的类型。以下示例展示了用于重新连接用户邮箱、链接邮箱、会议室邮箱、设备邮箱和共享邮箱的语法。在所有示例中，可选的 *Alias* 参数用于指定电子邮件别名，即电子邮件地址中 @ 符号的左侧部分。如果不包括 *Alias* 参数，则使用 *User* 或 *LinkedMasterAccount* 参数中指定的值为重新连接的邮箱的电子邮件地址创建别名。
 
-> [!NOTE]
+> [!NOTE]  
 > 如前所述，在连接链接邮箱、资源邮箱或共享邮箱时，要将邮箱链接到的 Active Directory 用户帐户必须处于禁用状态。
 
 
@@ -97,7 +97,7 @@ _**上一次修改主题：** 2015-05-04_
 
     Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
 
-> [!NOTE]
+> [!NOTE]  
 > 还可以使用 <code>LegacyDN</code> 或 <code>MailboxGuid</code> 属性的值来标识删除的邮箱。
 
 
@@ -117,7 +117,7 @@ _**上一次修改主题：** 2015-05-04_
 
     Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printer Support" -Alias corpprint -Shared
 
-> [!NOTE]
+> [!NOTE]  
 > 还可以使用 <code>LegacyDN</code> 或 <code>MailboxGuid</code> 值来标识删除的邮箱。
 
 
@@ -143,7 +143,7 @@ _**上一次修改主题：** 2015-05-04_
 
 默认情况下，在成功完成邮箱还原请求之后，会将邮箱保留 30 天后再删除。可以使用 **Remove-StoreMailbox** cmdlet 将其提前删除。
 
-> [!NOTE]
+> [!NOTE]  
 > 不能使用 EAC 还原删除的邮箱。
 
 
@@ -175,7 +175,7 @@ _**上一次修改主题：** 2015-05-04_
 
 2.  利用步骤 1 返回的信息，搜索 Active Directory 中的“已删除对象”容器以获取公用文件夹邮箱的 GUID 和包含已删除公用文件夹邮箱的邮箱数据库的 GUID 或名称。
     
-    > [!tip]
+    > [!TIP]  
     > 您可以使用自定义脚本或 Ldp 实用程序搜索已删除对象，该实用程序可以通过在 Powershell 提示符处键入 <strong>ldp.exe</strong> 打开。
 
 
@@ -193,7 +193,7 @@ _**上一次修改主题：** 2015-05-04_
     
         Connect-Mailbox -Identity <public folder mailbox GUID> -Database <database name or GUID> -User <mailUserName>
     
-    > [!NOTE]
+    > [!NOTE]  
     > <code>Identity</code> 参数指定 Exchange 数据库中要连接到 Active Directory 用户对象的邮箱对象。上面的示例指定了公用文件夹邮箱的 GUID，但您也可以使用“显示名称”值或 LegacyExchangeDN 值。
 
 

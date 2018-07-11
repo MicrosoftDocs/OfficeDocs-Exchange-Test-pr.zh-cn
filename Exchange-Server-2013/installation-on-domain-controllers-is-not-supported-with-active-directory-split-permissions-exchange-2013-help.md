@@ -27,7 +27,7 @@ Microsoft Exchange Server 2013 安装程序检测到您试图在 Active Director
 
 如果要在域控制器上安装 Exchange 2013，必须为 Exchange 组织配置基于角色的访问控制 (RBAC) 拆分权限或共享权限。
 
-> [!important]
+> [!IMPORTANT]  
 > 我们建议不要在 Active Directory 域控制器上安装 Exchange 2013。 有关详细信息，请参阅<a href="installing-exchange-on-a-domain-controller-is-not-recommended-exchange-2013-help.md">建议不要在域控制器上安装 Exchange</a>。
 
 

@@ -49,7 +49,7 @@ _**上一次修改主题：** 2015-03-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -461,7 +461,7 @@ _**上一次修改主题：** 2015-03-09_
 
 可以使用 **Remove-MailboxRestoreRequest** cmdlet 删除邮箱还原请求。如果在开始将邮箱数据复制到目标邮箱之后删除还原请求，则被复制的邮箱数据会保留在目标邮箱中。
 
-> [!NOTE]
+> [!NOTE]  
 > 如前所述，默认情况下，完成的还原请求会保留 30 天，然后被自动删除。
 
 

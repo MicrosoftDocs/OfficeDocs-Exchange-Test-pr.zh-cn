@@ -33,7 +33,7 @@ _**上一次修改主题：** 2012-11-02_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -45,9 +45,7 @@ _**上一次修改主题：** 2012-11-02_
 
 2.  选择要配置的 DAG，然后单击 ![添加 DAG 网络](images/Dd298051.befcdc4e-7f7a-451d-a0a8-608c79f5d186(EXCHG.150).gif "添加 DAG 网络")。
 
-3.  
-    
-    在\&quot;新建数据库可用性组网络\&quot;页上，提供以下信息：
+3.  在\&quot;新建数据库可用性组网络\&quot;页上，提供以下信息：
     
       - **数据库可用性组网络名称**   使用此字段可为网络键入在 DAG 中唯一的名称。
     

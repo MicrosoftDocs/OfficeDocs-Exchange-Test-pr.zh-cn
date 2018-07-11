@@ -77,6 +77,6 @@ UM 依赖 VoIP 网关的翻译或转换时分多路复用技术 (TDM) 或电路�
 
 有关 Microsoft Lync 服务器的详细信息，请参阅[Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752)。
 
-> [!warning]
+> [!WARNING]  
 > 当您正在集成统一消息和 Lync 服务器在内部部署中，或位于 Exchange 2007 或 Exchange 2010 邮箱服务器混合部署，未接来电通知没有可供拥有邮箱的用户。在用户断开呼叫发送到邮箱服务器之前，会生成未接的来电通知。
 

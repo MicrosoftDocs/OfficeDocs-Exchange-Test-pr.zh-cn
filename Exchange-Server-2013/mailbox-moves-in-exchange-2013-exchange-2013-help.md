@@ -57,11 +57,11 @@ Microsoft Exchange Server 2013 引入了*批处理移动*和*迁移端点*的概
 
 在 Exchange 2013 中，必须使用 Exchange 2013 管理中心 (EAC) 和 Exchange 命令行管理程序在 Exchange 2007、Exchange 2010 和 Exchange 2013 之间移动邮箱。
 
-> [!NOTE]
+> [!NOTE]  
 > 通过使用 EAC 或者移动请求或迁移批处理 cmdlet，您还可以在 Exchange 2013 中执行单个邮箱移动，类似于 Exchange Server 2010。
 
 
-> [!NOTE]
+> [!NOTE]  
 > 不能将内部部署邮箱从 Exchange Server 2003 移动到 Exchange 2013。
 
 

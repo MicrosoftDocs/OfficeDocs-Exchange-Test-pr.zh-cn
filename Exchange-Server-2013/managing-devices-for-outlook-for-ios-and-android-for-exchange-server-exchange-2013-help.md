@@ -43,7 +43,7 @@ Exchange ActiveSync 使管理员能够远程擦除设备（如设备受到侵害
 
 由于 Outlook for iOS 和 Outlook for Android 在 Exchange 中的用户移动设备下显示为单个移动设备关联，因此远程擦除命令将从运行与该用户关联的Outlook（iPhone、iPad、Android）的所有设备中删除数据并删除同步关系。
 
-> [!NOTE]
+> [!NOTE]  
 > 由于 Outlook for iOS 和 Outlook for Android 依托的云架构，远程设备擦除的结果不会报告给 Exchange。即使擦除成功，状态仍将显示为&amp;quot;<strong>正在挂起</strong>&amp;quot;。这是一个已知的问题，解决方案正在开发中。
 
 
@@ -57,7 +57,7 @@ Exchange ActiveSync 使管理员能够远程擦除设备（如设备受到侵害
 
 移动设备邮箱策略就位时，将适用于所有关联的设备。因此，如果为特定邮箱强制执行 PIN 锁定，则连接到该邮箱的所有设备都需要 PIN。
 
-> [!NOTE]
+> [!NOTE]  
 > 由于设备 ID 不受任何<em>物理设备</em> ID 约束，设备 ID 可自行更改。出现这种情况时，如果将设备 ID 用于管理用户设备，则会造成意想不到的后果，因为 Exchange 可能会意外地阻止或隔离现有的&amp;quot;允许&amp;quot;设备。因此，我们建议管理员仅基于设备类型或设备模型来设置允许/阻止设备的移动设备策略。
 
 

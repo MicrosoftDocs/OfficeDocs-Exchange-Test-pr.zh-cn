@@ -33,7 +33,7 @@ _**上一次修改主题：** 2012-10-13_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -47,7 +47,7 @@ _**上一次修改主题：** 2012-10-13_
 
 3.  若要查看针对特定邮箱的更改，请在搜索结果窗格中选择相应的邮箱。在详细信息窗格中查看搜索结果。
 
-> [!tip]
+> [!TIP]  
 > 要缩小搜索结果的范围吗？选择开始日期、结束日期或同时选择这两个日期，并选择要搜索的特定邮箱。单击“搜索”再次运行此报告。
 
 
@@ -55,6 +55,6 @@ _**上一次修改主题：** 2012-10-13_
 
 若要验证是否已经成功运行诉讼保留报告，在指定日期范围内进行诉讼保留更改的邮箱会显示在“搜索结果”窗格中。如果未显示任何结果，则指定日期范围内未发生诉讼保留更改或最近的变更并未生效。
 
-> [!NOTE]
+> [!NOTE]  
 > 当邮箱置于诉讼保留时，60 分钟后保留才会生效。
 

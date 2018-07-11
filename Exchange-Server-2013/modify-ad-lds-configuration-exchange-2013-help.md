@@ -19,7 +19,7 @@ _**上一次修改主题：** 2015-04-08_
 
 在将边缘传输服务器订阅到 Exchange 组织之前，您可以使用 **ConfigureAdam.ps1** 脚本（位于 $env:ExchangeInstallPath\\Scripts 中）修改边缘传输服务器上的默认 Active Directory 轻型目录服务 (AD LDS) 配置。
 
-> [!important]
+> [!IMPORTANT]  
 > <strong>ConfigureAdam.ps1</strong> 脚本通过调用 <strong>dsdbutil</strong> 命令来更改 AD LDS 的注册表设置。<strong>dsdbutil</strong> 命令是一种 AD LDS 管理工具，仅面向经验丰富的管理员使用；推荐使用 <strong>ConfigureAdam.ps1</strong> 更改 AD LDS 配置。
 
 
@@ -73,7 +73,7 @@ _**上一次修改主题：** 2015-04-08_
 
   - 只能使用命令行管理程序执行此过程。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 

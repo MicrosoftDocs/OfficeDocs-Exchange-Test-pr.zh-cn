@@ -27,13 +27,13 @@ _**上一次修改主题：** 2015-03-09_
 
 3.  现在运行 **Get-ManagementRoleAssignment** cmdlet 以查看分配给您的角色组或管理角色，以便确定您是否具有管理该功能所需的权限。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 必须分配了 Role Management 管理角色才能运行 <strong>Get-ManagementRoleAssignment</strong> cmdlet。如果没有运行 <strong>Get-ManagementRoleAssignment</strong> cmdlet 的权限，则请求 Exchange 管理员检索分配给您的角色组或管理角色。
 
 
 如果要将管理一项功能的权限委派给另一个用户，请参阅[委派角色分配](delegate-role-assignments-exchange-2013-help.md)。
 
-> [!NOTE]
+> [!NOTE]  
 > 某些功能可能要求在要管理的服务器上拥有本地管理员权限。若要管理这些功能，必须是该服务器上 Local Administrators 组的成员。
 
 
@@ -100,7 +100,7 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><a href="organization-management-exchange-2013-help.md">组织管理</a></p>
 <p><a href="records-management-exchange-2013-help.md">记录管理</a></p>
 
-> [!NOTE]
+> [!NOTE]  
 > 还可以手动将“仅查看审核日志”管理角色分配给管理角色组。有关详细信息，请参阅<a href="view-only-audit-logs-role-exchange-2013-help.md">仅查看审核日志角色</a>。
 
 </td>

@@ -173,7 +173,7 @@ Exchange 2013 支持已升级到 Office 365 最新版本的 Office 365 租户进
 
 使用 64 位 Active Directory 域控制器可以提高 Exchange 2013 的目录服务性能。
 
-> [!NOTE]
+> [!NOTE]  
 > 在多域环境的将 Active Directory 语言区域设置为日语的 Windows Server 2008 域控制器上，服务器可能不接收在入站复制期间存储在对象上的某些属性。有关详细信息，请参阅 Microsoft 知识库文章 949189 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=949189">使用日语语言区域设置配置的 Windows Server 2008 域控制器配置可能不会在入站复制期间将更新应用于对象的属性</a>。
 
 
@@ -274,7 +274,7 @@ Exchange 2013 支持已升级到 Office 365 最新版本的 Office 365 租户进
 
 下表列出了用于 Exchange 2013 的受支持的操作系统。
 
-> [!important]
+> [!IMPORTANT]  
 > 不支持在 Windows Server Core 模式中运行的计算机上安装 Exchange 2013。计算机必须运行 Windows Server 的完全安装。如果要在 Windows Server Core 模式中运行的计算机上安装 Exchange 2013，您必须通过执行以下某项操作，将服务器转换为 Windows Server 的完全安装：
 > <ul>
 > <li><p><strong>Windows Server 2008 R2</strong>   重新安装 Windows Server 并选择“完全安装”选项。</p></li>
@@ -402,7 +402,7 @@ Exchange 2013 支持 Outlook 和 Entourage for Mac 的下列版本：
 
 有关 Exchange 支持的 Outlook 版本列表，请参阅 [Outlook 更新](https://go.microsoft.com/fwlink/p/?linkid=513459)。
 
-> [!important]
+> [!IMPORTANT]  
 > 强烈建议您安装最新可用的 Service Pack 和可用更新，以便您的用户在连接到 Exchange 时获得可能的最佳体验。
 
 

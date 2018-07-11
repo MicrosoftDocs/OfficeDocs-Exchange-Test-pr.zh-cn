@@ -19,11 +19,11 @@ _**上一次修改主题：** 2015-03-09_
 
 您可以使用 Exchange Server 2013 中的 RollAlternateServiceAccountPassword.ps1 脚本更新备用服务帐户凭据（ASA 凭据），并将该更新分发给指定的客户端访问服务器。
 
-> [!NOTE]
+> [!NOTE]  
 > Exchange 命令行管理程序不会自动加载脚本。必须在所有脚本之前加上“.\” 。例如，要运行 RollAlternateServiceAccountPassword.ps1 脚本，则键入 <code>.\RollAlternateServiceAccountPassword.ps1</code>。
 
 
-> [!NOTE]
+> [!NOTE]  
 > 此脚本仅提供英文版本。
 
 
@@ -67,7 +67,7 @@ _**上一次修改主题：** 2015-03-09_
 
 如果希望脚本创建计划任务，从而不间断地对密码进行维护，请使用 *CreateScheduledTask* 参数。此参数需要您要创建的任务的名称字符串。
 
-> [!NOTE]
+> [!NOTE]  
 > 运行脚本并验证其在有人值守模式下运行正常，然后创建无人值守计划任务。
 
 
@@ -155,7 +155,7 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>可选</p></td>
 <td><p><em>ToArrayMembers</em> 参数使脚本以特定客户端访问服务器阵列的所有成员作为目标。</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 如果要使用 <em>ToArrayMembers</em> 参数或 <em>ToSpecificServers</em> 参数，则需要使用 <em>Identity</em> 参数指定服务器名称或服务器阵列名称。
 
 </td>
@@ -165,7 +165,7 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>可选</p></td>
 <td><p><em>ToSpecificServers</em> 参数使脚本以特定服务器作为目标。</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 如果要使用 <em>ToArrayMembers</em> 参数或 <em>ToSpecificServers</em> 参数，则需要使用 <em>Identity</em> 参数指定服务器名称或服务器阵列名称。
 
 </td>
@@ -195,7 +195,7 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>可选</p></td>
 <td><p><em>CreateScheduledTask</em> 参数通知脚本创建计划任务，以执行 ASA 凭据更新。字符串值是将要创建的计划任务的名称。</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 此脚本将在其所在的文件夹内创建 .cmd 文件。计划任务将每三周运行一次 .cmd 文件。可以直接在 Windows 任务计划程序中编辑任务，以更改任务的运行频率。
 
 </td>

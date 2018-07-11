@@ -39,7 +39,7 @@ Exchange 2007 安装程序将创建通用安全组，这些组只能在使用 W
     
       - 若要将域功能级别提升到 Windows Server® 2003，请单击\&quot;Windows Server 2003\&quot;，然后单击\&quot;提升\&quot;。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 如果您有或将有运行 Windows NT® 4.0 的域控制器并更早版本，不会引发对 Windows 2000 Server 本机域功能级别。域功能级别设置为 Windows 2000 Server 本机后，就无法更改回混合的 Windows 2000 服务器中。
 > 如果已拥有或将会拥有任何运行 Windows NT 4.0 和更早版本或运行 Windows 2000 Server 的域控制器，请不要将域功能级别提升到 Windows Server 2003。将域功能级别设置为 Windows Server 2003 后，无法将其更改回到 Windows 2000 Server 混合模式或 Windows 2000 Server 纯模式。
 

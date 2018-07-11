@@ -21,7 +21,7 @@ _**上一次修改主题：** 2016-12-16_
 
 有关创建事件报告和单个策略检测事件的信息，请参阅[创建 DLP 策略检测的事件报告](create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md)。有关邮件日志的详细信息，请参阅[使用送达报告跟踪邮件](track-messages-with-delivery-reports-exchange-2013-help.md)。
 
-> [!NOTE]
+> [!NOTE]  
 > Exchange 2013：DLP 是一项高级功能，要求使用 Exchange 企业客户端访问许可证 (CAL)。有关 CAL 和服务器授权的详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server Licensing</a>（Exchange Server 授权）。
 
 

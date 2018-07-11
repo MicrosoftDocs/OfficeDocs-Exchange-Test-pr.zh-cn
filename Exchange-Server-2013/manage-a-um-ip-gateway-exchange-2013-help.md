@@ -35,7 +35,7 @@ _**上一次修改主题：** 2013-02-21_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -45,9 +45,7 @@ _**上一次修改主题：** 2013-02-21_
 
 1.  在 EAC，导航到**统一消息**\> **UM IP 网关**。在列表视图中，选择您想要管理的 UM IP 网关，然后单击**编辑**![编辑图标](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "编辑图标")。
 
-2.  
-    
-    使用**UM IP 网关**网页可查看和配置 UM IP 网关设置。您可以查看或配置以下设置 ︰
+2.  使用**UM IP 网关**网页可查看和配置 UM IP 网关设置。您可以查看或配置以下设置 ︰
     
       - **状态**：此仅显示字段用于显示 UM IP 网关的状态。
     
@@ -81,7 +79,7 @@ _**上一次修改主题：** 2013-02-21_
 
     Set-UMIPGateway -Identity MyUMIPGateway -Simulator $true
 
-> [!important]
+> [!IMPORTANT]  
 > 在将对 UM IP 网关配置进行的所有更改复制到与 UM IP 网关同一 UM 拨号计划中的 Exchange 服务器之前，存在一个延迟期。
 
 

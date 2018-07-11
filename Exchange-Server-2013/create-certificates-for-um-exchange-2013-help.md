@@ -21,7 +21,7 @@ _**上一次修改主题：** 2013-04-29_
 
 在默认情况下，安装 Exchange Server 2013 时，会创建两个自签名证书：** Microsoft Exchange Server 身份验证证书**和 **Microsoft Exchange**。**Microsoft Exchange** 自签名证书可由 UM 用于加密数据，但您必须为 UM 和 UM 呼叫路由器服务分配该证书。在将证书分配给统一消息服务之后，您可以复制该证书并将其导入 VoIP 网关、IP PBX 和启用 SIP 的 PBX。但是，您需要为统一消息专门创建另一个证书，而不是使用默认的自签名证书。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 将 UM 与 Microsoft Lync Server 集成时，自签名证书不可使用。
 
 
@@ -35,7 +35,7 @@ _**上一次修改主题：** 2013-04-29_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -93,7 +93,7 @@ _**上一次修改主题：** 2013-04-29_
 
 6.  验证所包含的域是否正确，然后选择“完成”。
 
-> [!important]
+> [!IMPORTANT]  
 > 使用 EAC 创建自签名证书时，系统不会提示您为证书启用相应服务。在证书创建完成之后，您可以使用 EAC 或命令行管理程序中的 <strong>Enable-ExchangeCertificate</strong> cmdlet 启用 Exchange 服务。有关如何为 UM 服务分配证书的详细信息，请参阅<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">将证书分配给该 UM 和 UM 呼叫路由器服务</a>。
 
 
@@ -103,6 +103,6 @@ _**上一次修改主题：** 2013-04-29_
 
     New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
 
-> [!tip]
+> [!TIP]  
 > 使用 <em>Services</em> 参数指定要启用的服务时，系统会提醒您分配这些服务。在此示例中，系统会提示您为 UM 和统一消息呼叫路由器服务启用证书。有关如何为服务启用证书的详细信息，请参阅<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">将证书分配给该 UM 和 UM 呼叫路由器服务</a>。
 

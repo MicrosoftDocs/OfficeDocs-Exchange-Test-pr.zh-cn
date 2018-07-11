@@ -23,7 +23,7 @@ _**上一次修改主题：** 2016-12-09_
 
 客户端访问服务器角色为 Outlook Web App 提供代理和重定向服务。
 
-> [!NOTE]
+> [!NOTE]  
 > 在 Exchange 2010 之前的 Microsoft Exchange 版本中，Outlook Web App 称为 Outlook Web Access。
 
 

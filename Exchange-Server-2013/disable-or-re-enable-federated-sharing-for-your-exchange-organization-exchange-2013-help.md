@@ -19,7 +19,7 @@ _**上一次修改主题：** 2014-02-17_
 
 有时您可能需要临时禁用组织的联合共享。您不用删除现有联合信任或者删除将来可能需要的组织关系和共享策略，只需禁用联合信任的组织标识符 (OrgID)。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 对于使用 Office 365 的混合部署，为您的本地服务器禁用联合信任也将禁用混合功能，例如共享日历闲/忙信息、邮件提示和邮件跟踪。但是，如果禁用了内部部署组织的联合身份验证信任，将不会在混合部署中禁用安全邮件传输。
 
 
@@ -27,7 +27,7 @@ _**上一次修改主题：** 2014-02-17_
 
 关于混合共享的更多管理任务，请参阅[联合程序](federation-procedures-exchange-2013-help.md)。
 
-> [!important]
+> [!IMPORTANT]  
 > Exchange Server 2013 的此项功能与由世纪互联在中国运营的 Office 365 不完全兼容，可能需要遵循一些功能限制。有关详细信息，请参阅<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解由世纪互联运营的 Office 365</a>。
 
 
@@ -61,6 +61,6 @@ _**上一次修改主题：** 2014-02-17_
 
     Get-FederatedOrganizationIdentifier
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 

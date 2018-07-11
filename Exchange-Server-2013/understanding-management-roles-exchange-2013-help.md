@@ -19,7 +19,7 @@ _**上一次修改主题：** 2015-04-07_
 
 管理角色是 Microsoft Exchange Server 2013 中所使用的基于角色的访问控制 (RBAC) 权限模型的组成部分。角色充当 cmdlet 的逻辑分组，这些 cmdlet 组合在一起提供查看或修改 Exchange 2013 组件配置（如邮箱、传输规则和收件人）的访问权限。管理角色可以进一步组合到称为管理角色组和管理角色分配策略的更大分组，从而实现管理功能区域和收件人配置。角色组和角色分配策略分别为管理员和最终用户分配权限。有关管理角色组和管理角色分配策略的详细信息，请参阅[了解基于角色的访问控制](understanding-role-based-access-control-exchange-2013-help.md)。
 
-> [!NOTE]
+> [!NOTE]  
 > 本主题重点讲述高级 RBAC 功能。如果要管理基本的 Exchange 2013 权限（例如，使用 Exchange 管理中心 (EAC) 向角色组中添加成员或从角色组中删除成员，创建和修改角色组，或创建和修改角色分配策略），请参阅<a href="permissions-exchange-2013-help.md">权限</a>。
 
 
@@ -65,7 +65,7 @@ Exchange 2013 提供了多种内置管理角色，您可以使用这些角色来
 
 可以使用 Exchange 2013 中附带的内置角色，并以任意方式对其进行组合，以创建适合您业务的权限模型。例如，如果要让某个角色组的成员管理收件人和公用文件夹，则将 Mail Recipients 和 Public Folders 角色都分配给该角色组。通常，角色将分配给角色组或角色分配策略。如果要更细致地控制权限，还可以将管理角色直接分配给用户。建议使用角色组和角色分配策略而不是直接使用用户角色分配，以简化权限模型。
 
-> [!NOTE]
+> [!NOTE]  
 > 您只能将最终用户管理角色分配到角色分配策略。
 
 
@@ -260,7 +260,7 @@ Seattle Recipient Administrators 自定义角色是 Mail Recipients 内置角色
 <td><p><a href="active-directory-permissions-role-exchange-2013-help.md">Active Directory 权限角色</a></p></td>
 <td><p>与此角色类型相关联的角色使管理员能够配置组织中的 Active Directory 权限。使用 Active Directory 权限或访问控制列表 (ACL) 的部分功能包括传输“接收”和“发送”连接器以及邮箱的“代理发送”和“代表发送”权限。</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 直接在 Active Directory 对象上设置的权限不能通过 RBAC 强制应用。
 
 </td>
@@ -586,7 +586,7 @@ Seattle Recipient Administrators 自定义角色是 Mail Recipients 内置角色
 <td><p><a href="support-diagnostics-role-exchange-2013-help.md">支持诊断角色</a></p></td>
 <td><p>与此角色类型相关联的角色使管理员能够在 Microsoft 支持服务人员的指导下在组织中执行高级诊断。</p>
 
-> [!CAUTION]
+> [!CAUTION]  
 > 与此角色类型相关联的角色授予对 cmdlet 和脚本的权限，而且这些 cmdlet 和脚本只应当在 Microsoft 客户服务和支持人员的指导下使用。
 
 </td>

@@ -33,7 +33,7 @@ Exchange Server 2013 使您可以将 Exchange 服务器安装委派给不属于 
     
       - 拒绝对 Exchange 公用文件夹存储对象的 CreateChild 和 DeleteChild 权限。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 公用文件夹在组织级别中进行管理；因此，只有 Exchange 管理员可以创建和删除公用文件夹存储。
 
 

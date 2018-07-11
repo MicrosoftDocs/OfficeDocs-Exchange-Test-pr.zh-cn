@@ -19,7 +19,7 @@ _**上一次修改主题：** 2017-02-03_
 
 可以使用 EAC 或 Shell 为组织安装或删除适用于 Outlook 的外接程序。
 
-> [!NOTE]
+> [!NOTE]  
 > 默认情况下，为组织安装的外接程序对组织中的所有用户均可用。安装完成后，可使用 EAC 或 Shell 使外接程序成为用户可选或必需选择，并指定是否希望启用或禁用该外接程序。有关如何为外接程序更改默认设置的信息，请参阅 <a href="manage-user-access-to-add-ins-for-outlook-exchange-online-help.md">管理用户对 Outlook 的应用程序的访问</a>。若要在组织中限制外接程序对特定用户的可用性，必须使用 Shell。有关详细信息，请参阅 <a href="manage-user-access-to-add-ins-for-outlook-exchange-online-help.md">管理用户对 Outlook 的应用程序的访问</a>。
 
 
@@ -37,7 +37,7 @@ _**上一次修改主题：** 2017-02-03_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -53,7 +53,7 @@ _**上一次修改主题：** 2017-02-03_
     
       - “**从 Office 应用商店添加**”。从 Office 应用商店选择你希望安装的应用程序，然后单击“**添加**”。与 Outlook Web App 共同使用的应用程序均在“**Office 和 SharePoint 的外接程序**”\>“**Outlook**”下列出。
         
-        > [!NOTE]
+        > [!NOTE]  
         > 不支持特定区域内的邮箱或组织访问 Office 应用商店。如果在“<strong>组织</strong>”&gt;“<strong>外接程序</strong>”&gt; <img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="添加图标" alt="添加图标" /> 下的“<strong>Exchange 管理中心</strong>”中未看到“<strong>从 Office 应用商店添加</strong>”选项，则可以从 URL 或文件位置安装适用于 Outlook 的外接程序。有关详细信息，请与服务提供商联系。
     
       - “**从 URL 添加**”。在“**URL**”中，输入你希望安装的外接程序清单文件完整的 URL。
@@ -72,7 +72,7 @@ _**上一次修改主题：** 2017-02-03_
 
     New-App -OrganizationApp -FileData <File location for add-in manifest file>
 
-> [!tip]
+> [!TIP]  
 > 使用命令行管理程序为组织安装外接程序时，可以在安装外接程序的同时为其配置设置。
 
 
@@ -90,7 +90,7 @@ _**上一次修改主题：** 2017-02-03_
 
 可以使用 Shell 从组织中删除外接程序。
 
-> [!NOTE]
+> [!NOTE]  
 > 运行以下命令，查找组织内安装的所有适用于 Outlook 的外接程序的显示名称和应用程序 ID。
 
 

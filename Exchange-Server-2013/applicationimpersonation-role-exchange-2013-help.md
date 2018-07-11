@@ -25,7 +25,7 @@ _**上一次修改主题：** 2016-11-30_
 
   - RIM-MailboxAdmins\<xxxxxxxxxx\>
 
-> [!important]
+> [!IMPORTANT]  
 > 属于 <code>ApplicationImpersonation</code> 角色的进程或应用程序可以访问用户邮箱的内容，并代表该用户执行操作，即使用户的帐户已禁用时也是如此。如果您具有使用 <code>ApplicationImpersonation</code> 角色的应用程序（如 Blackberry Enterprise Server），即可让用户访问他们的邮箱。不使用 <code>ApplicationImpersonation</code> 角色而改为使用 Exchange ActiveSync 的第三方产品在其用户帐户禁用后将无法访问邮箱。
 > 为防止使用 <code>ApplicationImpersonation</code> 角色的应用程序访问邮箱，或在其用户帐户禁用后代表用户执行任务，请执行以下一个或多个操作：
 > <ul>
@@ -66,7 +66,7 @@ _**上一次修改主题：** 2016-11-30_
 
 另外，还可以从内置角色组、创建的角色组、用户和 USG 中删除此角色。但是，在该角色与角色组或 USG 之间必须始终至少有一个委派角色分配。不能删除最后一个委派角色分配。此限制有助于避免您将自己锁定在系统之外。
 
-> [!important]
+> [!IMPORTANT]  
 > 在该角色与角色组或 USG 之间必须至少有一个委派角色分配。如果最后一个分配面向用户，则不能删除与此角色相关联的最后一个委派角色分配。
 
 
@@ -166,7 +166,7 @@ _**上一次修改主题：** 2016-11-30_
 
 如果决定需要创建此角色的自定义版本，则必须创建此角色的子角色并自定义新角色。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 通过以下信息可以执行高级权限管理。自定义管理角色可能大大增加权限模型的复杂性。如果用未正确配置的自定义角色替换内置管理角色，则可能导致某些功能无法正常运行。
 
 
@@ -192,6 +192,6 @@ _**上一次修改主题：** 2016-11-30_
     
       - [向用户或 USG 添加角色](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
         
-        > [!important]
+        > [!IMPORTANT]  
         > 如果希望除角色创建用户以外的其他用户也能够分配新的自定义角色，请确保向至少一个角色受理人添加委派角色分配。有关详细信息，请参阅<a href="delegate-role-assignments-exchange-2013-help.md">委派角色分配</a>。
 

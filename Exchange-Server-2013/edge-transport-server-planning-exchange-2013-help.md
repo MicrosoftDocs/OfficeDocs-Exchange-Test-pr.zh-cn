@@ -21,7 +21,7 @@ Exchange Service Pack 1 中重新引入了边缘传输服务器角色。边缘�
 
 您可以向现有 Exchange 2013 组织添加边缘传输服务器。在安装边缘传输服务器时，不必执行任何其他 Active Directory 准备步骤。
 
-> [!NOTE]
+> [!NOTE]  
 > 如果您要向现有 Exchange 2010 或 Exchange 2007 组织添加边缘传输，将需要在旧版服务器上安装特定汇总更新，然后再安装 Exchange 2013 边缘传输。有关详细信息，请参阅 <a href="exchange-2013-system-requirements-exchange-2013-help.md">Exchange 2013 系统要求</a>。
 
 
@@ -86,7 +86,7 @@ Exchange Service Pack 1 中重新引入了边缘传输服务器角色。边缘�
     </tbody>
     </table>
     
-    > [!NOTE]
+    > [!NOTE]  
     > 边缘传输服务器角色使用非标准 LDAP 端口。本主题中指定的端口是在安装边缘传输服务器角色时配置的 LDAP 通信端口。
 
 

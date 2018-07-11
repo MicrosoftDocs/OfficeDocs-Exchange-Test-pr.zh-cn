@@ -19,7 +19,7 @@ _**上一次修改主题：** 2016-10-18_
 
 将邮箱置于“诉讼保留”以保留所有的邮箱内容，包括已删除项和已修改项的原始版本。当您将用户邮箱置于诉讼保留状态时，用户的存档邮箱（如果已启用）中的内容也会置于保留状态。已删除和修改的项会在指定时段内保留，或直到您将邮箱从“诉讼保留”中删除。所有此类邮箱项目均会返回到[就地电子数据展示](in-place-ediscovery-exchange-2013-help.md)搜索中。
 
-> [!important]
+> [!IMPORTANT]  
 > “诉讼保留”会保留用户邮箱中“可恢复项目”文件夹中的项。根据已删除或修改的项目的编号和大小，邮箱的“可恢复项目”文件夹的大小可能迅速增加。默认情况下，为“可恢复项目”文件夹配置了较高的配额。在 Exchange Online 中，当您将邮箱置于诉讼保留状态时，此配额会自动增加。在 Exchange Server 2013 中，我们建议您每周监视置于诉讼保留状态的邮箱，以确保它们没有达到“可恢复项目”配额的限制。
 
 
@@ -71,7 +71,7 @@ _**上一次修改主题：** 2016-10-18_
 
     Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true
 
-> [!NOTE]
+> [!NOTE]  
 > 当您将邮箱无限期置于诉讼保留状态时（不指定持续时间），将 <em>LitigationHoldDuration</em> 属性邮箱的值设置为 <code>Unlimited</code>。
 
 
@@ -144,16 +144,21 @@ _**上一次修改主题：** 2016-10-18_
   - 前面将所有邮箱置于保留状态的命令使用返回所有用户邮箱的收件人筛选器。您可以使用其他收件人属性来返回特定邮箱的列表，即您传输到 **Set-Mailbox** cmdlet 以将其置于诉讼保留状态的邮箱。
     
     下面是根据常规用户或邮箱属性，使用 **Get-Mailbox** 和 **Get-Recipient** cmdlet 返回部分邮箱的一些示例。这些示例假设已填充相关的邮箱属性（例如 *CustomAttributeN* 或 *Department*）。
-    
+    ```
         Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
-    
+    ```
+    ```
         Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
-    
+    ```
+    ```
         Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
-    
+    ```
+    ```
         Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
-    
+    ```
+    ```
         Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
+    ```
     
     您可以在筛选器中使用其他用户邮箱属性来添加或排除邮箱。有关详细信息，请参阅[-Filter 参数的可筛选属性](https://technet.microsoft.com/zh-cn/library/bb738155\(v=exchg.150\))。
 

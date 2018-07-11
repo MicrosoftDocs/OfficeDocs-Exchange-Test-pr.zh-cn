@@ -19,7 +19,7 @@ _**上一次修改主题：** 2012-11-08_
 
 Microsoft Exchange Server 2013 安装程序显示了此警告，因为组织中不存在任何 Exchange Server 2010 或 Exchange Server 2007 服务器角色。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 如果您继续执行 Exchange Server 2013 安装，以后会无法将 Exchange 2010 或 Exchange 2007 服务器添加到组织中。
 
 

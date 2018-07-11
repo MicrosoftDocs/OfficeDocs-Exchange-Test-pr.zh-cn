@@ -19,7 +19,7 @@ _**上一次修改主题：** 2017-12-20_
 
 对于 Microsoft Exchange Server 2013，我们已将几种新功能添加到 Microsoft Outlook Web App 并更新了其设计。
 
-> [!NOTE]
+> [!NOTE]  
 > 有关在 Exchange Server 2013 组织中使用 Outlook Web App 的详细信息，请参阅 <a href="outlook-web-app-exchange-2013-help.md">Outlook Web App</a>。
 > 您组织中的 Outlook Web App 用户现在可以在收藏夹中添加或删除公用文件夹。以前，这只能在 Outlook 中完成。
 
@@ -146,11 +146,11 @@ Outlook Web App 强调同时支持触摸使用的简化用户界面，从而增�
 </table>
 
 
-> [!NOTE]
+> [!NOTE]  
 > 在之前的版本中，Outlook Web App 有一个内置拼写检查器。在 Exchange Server 2013 中，Outlook Web App 依赖于 Web 浏览器进行拼写检查，Internet Explorer 10 之前的版本不提供该功能。
 
 
-> [!NOTE]
+> [!NOTE]  
 > 在使用 Internet Explorer 8 时，Office 365 的用户将被限制为使用 Outlook Web App 简易版。在使用 Internet Explorer 8 时，其邮箱位于本地托管的 Exchange Server 上的用户将继续查看 Outlook Web App 标准版，但速度可能较慢，或者性能可能令人不满意。
 
 
@@ -187,7 +187,7 @@ Outlook Web App 强调同时支持触摸使用的简化用户界面，从而增�
 </table>
 
 
-> [!NOTE]
+> [!NOTE]  
 > 未列出的操作系统和浏览器组合显示 Outlook Web App 的基本版本。
 
 
@@ -288,7 +288,7 @@ Outlook Web App 强调同时支持触摸使用的简化用户界面，从而增�
 
 在本周的 Garage 系列中了解有关 OWA for Android 的更多背景信息。请参阅[后台运行的 Garage 系列：处于发展中的 Exchange ActiveSync 和 OWA for Devices](https://blogs.office.com/2014/6/11/the-garage-series-under-the-hood-evolving-exchange-activesync-and-owa-for-devices)
 
-> [!NOTE]
+> [!NOTE]  
 > 此应用程序将不会使用 Outlook.com（以前称为 Hotmail）邮箱。
 
 

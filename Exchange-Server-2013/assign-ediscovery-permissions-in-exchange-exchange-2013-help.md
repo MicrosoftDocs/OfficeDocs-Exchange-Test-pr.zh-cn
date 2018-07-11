@@ -19,7 +19,7 @@ _**上一次修改主题：** 2014-10-02_
 
 如果希望用户能够使用 Microsoft Exchange Server 2013 就地电子数据展示，则必须首先通过将他们添加到发现管理角色组来对他们进行授权。发现管理 角色组的成员拥有 Exchange 安装程序创建的发现邮箱的完全访问邮箱权限。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 发现管理角色组的成员可以访问敏感邮件内容。具体而言，这些成员可以使用 <a href="in-place-ediscovery-exchange-2013-help.md">就地电子数据展示</a> 搜索 Exchange 组织中的所有邮箱，预览邮件（以及其他邮箱项目），将邮件复制到发现邮箱并将复制的邮件导出到 .pst 文件。在大多数组织中，会向法律、遵从性或人力资源部人员授予此权限。
 
 
@@ -77,6 +77,6 @@ _**上一次修改主题：** 2014-10-02_
 
     Get-RoleGroupMember -Identity "Discovery Management"
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 

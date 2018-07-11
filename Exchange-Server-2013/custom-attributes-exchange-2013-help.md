@@ -65,7 +65,7 @@ Microsoft Exchange Server 2013 包含 15 个扩展属性。您可以使用这些
 
 在许多 Exchange 部署中，为 OU 中的所有收件人创建一个电子邮件地址策略是一种常见方案。OU 不是可用于电子邮件地址策略或地址列表的 *RecipientFilter* 参数中的可筛选属性。
 
-> [!NOTE]
+> [!NOTE]  
 > 动态通讯组具有一个附加参数，可用于将其限制到特定 OU 或容器中的收件人。
 
 
@@ -85,7 +85,7 @@ Microsoft Exchange Server 2013 包含 15 个扩展属性。您可以使用这些
 
     New-DynamicDistributionGroup -Name "Sales Users and Contacts" -IncludedRecipients "MailboxUsers,MailContacts" -ConditionalCustomAttribute1 "SalesOU"
 
-> [!NOTE]
+> [!NOTE]  
 > 如果使用 <em>Conditional</em> 参数，则必须使用 <em>IncludedRecipients</em> 参数。此外，如果使用 <em>RecipientFilter</em> 参数，则不能使用 <em>Conditional</em> 参数。如果希望包括其他筛选器以创建动态通讯组、电子邮件地址策略或地址列表，则应使用 <em>RecipientFilter</em> 参数。
 
 

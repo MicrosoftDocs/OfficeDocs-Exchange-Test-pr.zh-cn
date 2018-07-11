@@ -37,7 +37,7 @@ _**上一次修改主题：** 2015-01-14_
 
 您可从 Microsoft 合作伙伴或从您自行开发的文件合并敏感内容定义和策略模板，作为 DLP 策略模板、信息类型和已在 Exchange 2013 中提供的规则的补充。在此提供了数种方式，通过这些方式您可添加自己的唯一 DLP 内容并扩展 DLP 功能。已经由 Microsoft 提供的模板是开始使用 DLP 解决方案的便利方法。要使用自己的唯一 DLP 策略模板文件扩展 DLP 功能，必须理解独立于 Exchange 创建的策略模板的 XML 架构要求。要了解有关与 DLP 策略模板关联的 Exchange Management Shell cmdlets 的详细信息，请参阅 [策略和合规性 cmdlet](https://technet.microsoft.com/zh-cn/library/dd298082\(v=exchg.150\)) 中与 `Get-DlpPolicyTemplate` 相关的 cmdlets。此外，可在了解合并它们的格式和步骤之后，定义自己的敏感内容类型。要了解有关与 DLP 策略模板关联的 Exchange Management Shell cmdlets 的详细信息，请参阅 [策略和合规性 cmdlet](https://technet.microsoft.com/zh-cn/library/dd298082\(v=exchg.150\)) 中与 `Get-ClassificationRuleCollection` 相关的 cmdlets。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 在生产环境中强制执行这些 DLP 策略之前，应在测试模式下启用这些策略。在此类测试中，我们建议配置示例用户邮箱并发送调用测试策略的测试邮件以便确认结果。
 
 
@@ -59,7 +59,7 @@ _**上一次修改主题：** 2015-01-14_
 
   -  [管理邮件流规则](manage-mail-flow-rules-exchange-2013-help.md)
     
-    [策略和合规性 cmdlet](https://technet.microsoft.com/zh-cn/library/dd298082\(v=exchg.150\))
+  -  [策略和合规性 cmdlet](https://technet.microsoft.com/zh-cn/library/dd298082\(v=exchg.150\))
 
 ## 使用 Microsoft 创建的 DLP 策略
 

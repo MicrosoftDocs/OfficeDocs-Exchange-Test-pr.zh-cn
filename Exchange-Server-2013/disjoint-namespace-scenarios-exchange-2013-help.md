@@ -41,7 +41,7 @@ Exchange 2013 和脱节命名空间
 
   - **NetBIOS 域名**   通常情况下，NetBIOS 域名是 DNS 域名的子域。例如，如果 DNS 域名是 contoso.com，则 NetBIOS 域名是 contoso。如果 DNS 域名是 corp.contoso.com，则 NetBIOS 域名是 corp。
 
-> [!NOTE]
+> [!NOTE]  
 > 要查找运行 Windows Server 2008 的计算机的 DNS 和 NetBIOS 信息，请参阅查看运行 Windows Server 2008 的计算机的 DNS 和 NetBIOS 名称信息。
 
 
@@ -69,7 +69,7 @@ Exchange 2013 支持下列三种在拥有脱节命名空间的域中部署 Excha
 
 下列各部分详细介绍了这些方案。
 
-> [!NOTE]
+> [!NOTE]  
 > 在本主题中所述的脱节命名空间方案中，支持运行 Exchange 2013。但是，如果脱节命名空间方案不是本主题所述方案之一，则必须使用 Microsoft 服务来部署 Exchange 2013。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=94845">Microsoft 服务</a>。
 
 

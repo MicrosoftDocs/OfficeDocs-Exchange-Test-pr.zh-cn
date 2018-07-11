@@ -39,7 +39,7 @@ Microsoft Exchange 2013 支持使用 **New-MoveRequest** 和 **New-MigrationBatc
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -67,13 +67,13 @@ Microsoft Exchange 2013 支持使用 **New-MoveRequest** 和 **New-MigrationBatc
 
 3.  编辑在步骤 1 中复制到 ILM Extensions 文件夹的文件 OneWaySync.xml，以便在要创建邮件用户的目标 Exchange 林中指定 TargetOU 容器的 distinguishedName (DN)。如果您不知道 TargetOU 容器的名称，则可以使用 LDP.exe 或 ADSIEdit.exe 以浏览找到 TargetOU 容器。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 如果正在与 ILM GalSync 2007 一同使用此示例，则请将此容器排除在 GalSync2007 托管的容器列表之外。
 
 
 4.  在 ILM 标识管理器控制台上，转至“文件”\>“导入服务器配置”，以从文件夹“ILMServerConfig”导入 ILM 服务器配置。此操作导入 Metaverse 架构和设置规则的同时还将导入两个 Active Directory 管理代理。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 在导入期间，必须提供林名称和凭据，并将导入的 Active Directory 管理代理 (ADMA) 的分区与配置中的源 ADMA 和目标 ADMA 的分区名称相匹配。
 
 
@@ -85,7 +85,7 @@ Microsoft Exchange 2013 支持使用 **New-MoveRequest** 和 **New-MigrationBatc
 
 6.  在 ILM 标识管理器控制台上的“创建管理代理”窗格上，打开源林管理代理的“属性”。选择“配置目录分区”向导，然后单击“容器”以选择将包含要移动到目标林的邮箱的容器。清除对所有其他容器的选择，即将管理代理限制为仅管理这一个容器。同样，对于目标林 MA，请选择已启用邮件的用户将设置到的容器，即在第 2 步中指定的 TargetOU。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 如果将此示例与 ILM GalSync 2007 一同使用，则请将这些容器都排除在 GalSync 2007 托管的容器的列表之外。
 
 

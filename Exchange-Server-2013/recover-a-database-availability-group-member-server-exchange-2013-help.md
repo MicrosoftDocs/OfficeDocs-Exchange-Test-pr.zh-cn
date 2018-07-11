@@ -41,7 +41,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -59,7 +59,7 @@ _**上一次修改主题：** 2016-12-09_
     
         Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
     
-    > [!NOTE]
+    > [!NOTE]  
     > 如果要删除的 DAG 成员处于脱机状态，并且无法将其联机，则必须向上述命令中添加 <em>ConfigurationOnly</em> 参数。如果使用 <em>ConfigurationOnly</em> 开关，则必须从群集手动退出节点。
 
 
@@ -84,10 +84,12 @@ _**上一次修改主题：** 2016-12-09_
 若要验证是否成功恢复了 DAG 成员，请执行以下操作：
 
   - 在命令行管理程序中，运行以下命令验证恢复后的 DAG 成员的运行状况和状态。
-    
+       ```
         Test-ReplicationHealth <ServerName>
-    
+       ```
+       ```
         Get-MailboxDatabaseCopyStatus -Server <ServerName>
-    
+       ```
+
     所有复制运行状态测试都应成功通过，并且数据库及其内容索引的状态都应当正常。
 

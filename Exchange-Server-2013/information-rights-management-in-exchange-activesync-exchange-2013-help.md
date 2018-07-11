@@ -95,7 +95,7 @@ Exchange ActiveSync 中的 IRM 不会将客户端访问服务器上受 IRM 保�
 <td><p>选中“要求提供密码”复选框，然后选中“要求对设备加密”复选框。</p></td>
 <td><p>将 <em>RequireDeviceEncryption</em> 参数设置为 <code>$true</code>。</p>
 
-> [!important]
+> [!IMPORTANT]  
 > 将 <em>RequireDeviceEncryption</em> 参数设置为 <code>$true</code> 时，将无法连接不支持设备加密的移动设备。
 
 </td>

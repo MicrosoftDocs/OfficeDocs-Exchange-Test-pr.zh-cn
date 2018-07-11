@@ -33,7 +33,7 @@ _**上一次修改主题：** 2014-08-05_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -49,9 +49,13 @@ _**上一次修改主题：** 2014-08-05_
 
 不需要使用 **Set-ThrottlingPolicyAssociation** cmdlet 将规则与策略关联。以下命令展示了将 tonysmith 与限制策略 ITStaffPolicy 关联的另一种方式。
 
-    $b = Get-ThrottlingPolicy ITStaffPolicy
+```
+$b = Get-ThrottlingPolicy ITStaffPolicy
+```
 
-    Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
+```
+Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
+```
 
 有关语法和参数的详细信息，请参阅 [New-ThrottlingPolicy](https://technet.microsoft.com/zh-cn/library/dd351045\(v=exchg.150\)) 和 [Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/zh-cn/library/ff459231\(v=exchg.150\))。
 

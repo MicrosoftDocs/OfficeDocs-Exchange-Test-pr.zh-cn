@@ -37,7 +37,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -53,7 +53,7 @@ _**上一次修改主题：** 2016-12-09_
 
 4.  在 **Outlook Voice Access** 中的\&quot;信息通知\&quot;下，单击\&quot;更改\&quot;，然后单击\&quot;浏览\&quot;查找通知文件。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 用于信息通知的文件必须是 .wav 文件或 .wma 文件。
 
 

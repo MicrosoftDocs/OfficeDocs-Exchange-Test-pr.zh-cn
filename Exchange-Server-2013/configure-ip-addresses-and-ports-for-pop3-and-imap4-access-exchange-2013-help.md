@@ -19,7 +19,7 @@ _**上一次修改主题：** 2012-11-28_
 
 可以使用 EAC 和命令行管理程序配置 Microsoft Exchange POP3 和 IMAP4 服务以使用不同于默认设置的 IP 地址和端口。
 
-> [!NOTE]
+> [!NOTE]  
 > 使用 Internet 协议版本 4 (IPv4) 格式、 Internet 协议版本 6 (IPv6) 格式或同时使用这两种格式输入 IP 地址和 IP 地址范围。 Windows Server 2008 的默认安装支持 IPv4 和 IPv6。
 
 
@@ -33,7 +33,7 @@ _**上一次修改主题：** 2012-11-28_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

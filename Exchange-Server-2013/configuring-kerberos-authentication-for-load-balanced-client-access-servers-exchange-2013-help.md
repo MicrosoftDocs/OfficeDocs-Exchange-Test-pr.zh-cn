@@ -25,11 +25,11 @@ _**上一次修改主题：** 2016-12-09_
 
 所有共享同一命名空间和 URL 的客户端访问服务器都需要使用相同的备用服务帐户凭据。一般情况下，Exchange 每个版本的林中有一个帐户就足够了。*备用服务帐户凭据*或 *ASA 凭据*。
 
-> [!important]
+> [!IMPORTANT]  
 > Exchange 2010 和 Exchange 2013 无法共享相同的 ASA 凭据。您需要为 Exchange 2013 创建新的 ASA 凭据。
 
 
-> [!important]
+> [!IMPORTANT]  
 > 由于共享命名空间支持 CNAME 记录，Microsoft 建议使用 A 记录。这样可确保客户端根据共享名称（而不是服务器 FQDN）正确发出 Kerberos 票证请求。
 
 
@@ -278,7 +278,7 @@ SPN 值必须与网络负载平衡器（而不是单个服务器）的服务名�
 
 ## 将服务主体名称 (SPN) 与 ASA 凭据相关联
 
-> [!important]
+> [!IMPORTANT]  
 > 请勿将 SPN 与 ASA 凭据关联，除非已将该凭据部署到至少一个 Exchange Server，如之前在将 ASA 凭据部署到第一个 Exchange 2013 客户端访问服务器中所述。否则，您将遇到 Kerberos 身份验证错误。
 
 

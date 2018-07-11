@@ -19,11 +19,11 @@ _**上一次修改主题：** 2016-06-16_
 
 在 MicrosoftExchange Server 2013 中，您可以创建移动设备邮箱策略，将常用的策略集或安全设置应用于一组用户。在 Exchange 2013 组织中部署 Exchange ActiveSync 之后，可以新建移动设备邮箱策略，也可以修改现有策略。安装 Exchange 2013 时，会创建一条默认的移动设备邮箱策略。这条默认的移动设备邮箱策略将自动分配给所有用户。
 
-> [!important]
+> [!IMPORTANT]  
 > Windows Phone 7 移动手机仅支持所有 Exchange ActiveSync 邮箱策略设置的子集。有关完整列表，请参阅 Windows Phone 7 同步。
 
 
-> [!warning]
+> [!WARNING]  
 > iOS7 指纹读取器不支持作为设备密码。如果启用指纹读取器来保护您的 iOS7 设备，当您的移动设备邮箱策略需要密码时，将仍需要创建和输入密码。
 
 

@@ -19,7 +19,7 @@ _**上一次修改主题：** 2012-08-21_
 
 默认情况下，Microsoft Exchange Server 2013 包括多个管理角色组。 下列内置角色组提供一组预配置的角色，您可以将这些角色分配给组织中的各个管理员和专家用户。
 
-> [!NOTE]
+> [!NOTE]  
 > 角色组不控制对最终用户邮箱功能的访问。 若要控制对最终用户邮箱功能的访问，请参阅<a href="understanding-management-role-assignment-policies-exchange-2013-help.md">了解管理角色分配策略</a>。
 
 

@@ -31,14 +31,14 @@ _**上一次修改主题：** 2017-11-16_
     
       - **分离远程移动迁移：**  您也可以执行\&quot;分离\&quot;远程移动迁移，即将 Exchange Online 邮箱迁移到本地 Exchange 组织中。
         
-        > [!NOTE]
+        > [!NOTE]  
         > 加入和分离远程移动迁移均从 Exchange Online 组织启动。
     
       - **暂存 Exchange 迁移：** 您还可以将邮箱的一个子集从本地 Exchange 组织迁移到 Exchange Online 中。这是另一种类型的加入迁移。只能对 Exchange 2003 和 Exchange 2007 邮箱进行暂存 Exchange 迁移。不支持对 Exchange 2010 和 Exchange 2013 邮箱进行暂存迁移。在运行暂存迁移之前，您必须使用目录同步或其他一些设置来设置 Exchange Online 组织中的邮件用户。
     
       - **IMAP 迁移：** 这种类型的加入迁移将邮箱数据从 IMAP 服务器（包括 Exchange）迁移到 Exchange Online 中。对于 IMAP 迁移，您必须先在 Exchange Online 中设置邮箱，然后才能迁移邮箱数据。
 
-> [!NOTE]
+> [!NOTE]  
 > 不支持移交Exchange迁移，因为所有内部用户的邮箱都迁移到Exchange Online在单个批处理中使用 CSV 文件。
 
 
@@ -48,13 +48,13 @@ _**上一次修改主题：** 2017-11-16_
 
 如果您在通过 EAC 或 Exchange 命令行管理程序 创建迁移批处理时使用了对应参数，那么 CSV 文件中的属性值将替代对应参数的值。有关详细信息和示例，请参阅\&quot;CSV 文件中的属性值替代迁移批处理的值\&quot;一节。
 
-> [!tip]
+> [!TIP]  
 > 您可以使用任意文本编辑器创建 CSV 文件，但使用诸如 Microsoft Excel 之类的应用程序可以更轻松地导入数据以及配置和组织 CSV 文件。请务必将 CSV 文件保存为 .csv 或 .txt 文件。
 
 
 以下各节描述了每个迁移类型的 CSV 文件的标题行的受支持的属性。每一节包括一个表，其中列出了每个受支持的特性，是否它是必需的值用于该属性，并说明的示例。
 
-> [!NOTE]
+> [!NOTE]  
 > 在以下部分中，<em>源环境</em>表示用户邮箱或数据库的当前位置。<em>目标环境</em>表示您要将邮箱迁移至的位置，或者您要将邮箱移动到的数据库。
 
 
@@ -97,7 +97,7 @@ _**上一次修改主题：** 2017-11-16_
 <td><p>数据库名称</p></td>
 <td><p>指定用户的存档邮箱 （如果存在） 将被移动到的邮箱数据库。不同的行中的 CSV 文件，这样就可以将同一个迁移批处理中的存档邮箱移动到不同的数据库，您可以指定一个不同的数据库。</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 如果不指定存档数据库，存档邮箱移到主邮箱所在的数据库。
 
 </td>
@@ -108,7 +108,7 @@ _**上一次修改主题：** 2017-11-16_
 <td><p><code>Unlimited</code> 或介于 <code>0</code>（默认值）到 <code>2147483647</code>（最大值）之间的一个非负整数</p></td>
 <td><p>指定当迁移服务在邮箱中遇到损坏的项目时要跳过的错误项目数。如果 CSV 文件中包含该属性，那么若您在使用 EAC 或 Exchange 命令行管理程序 创建迁移批处理时添加 <em>BadItemLimit</em> 参数，该属性值将替代默认值或您指定的值。</p>
 
-> [!tip]
+> [!TIP]  
 > 我们建议您使用默认值 0，并且仅在无法对特定用户进行移动或迁移操作时才增加相应用户的错误项目数限制值。
 
 <p></p></td>
@@ -163,7 +163,7 @@ _**上一次修改主题：** 2017-11-16_
 <td><p><code>Unlimited</code> 或介于 <code>0</code>（默认值）到 <code>2147483647</code>（最大值）之间的一个非负整数</p></td>
 <td><p>指定当迁移服务在邮箱中遇到损坏的项目时要跳过的错误项目数。如果 CSV 文件中包含该属性，那么若您在使用 EAC 或 Exchange 命令行管理程序 创建迁移批处理时添加 <em>BadItemLimit</em> 参数，该属性值将替代默认值或您指定的值。</p>
 
-> [!tip]
+> [!TIP]  
 > 我们建议您使用默认值 0，并且仅在无法对特定用户进行移动或迁移操作时才增加相应用户的错误项目数限制值。
 
 </td>
@@ -244,7 +244,7 @@ _**上一次修改主题：** 2017-11-16_
 <td><p><code>Unlimited</code> 或介于 <code>0</code>（默认值）到 <code>2147483647</code>（最大值）之间的一个非负整数</p></td>
 <td><p>指定当迁移服务在邮箱中遇到损坏的项目时要跳过的错误项目数。如果 CSV 文件中包含该属性，那么若您在使用 EAC 或 Exchange 命令行管理程序 创建迁移批处理时添加 <em>BadItemLimit</em> 参数，该属性值将替代默认值或您指定的值。</p>
 
-> [!tip]
+> [!TIP]  
 > 我们建议您使用默认值 0，并且仅在无法对特定用户进行移动或迁移操作时才增加相应用户的错误项目数限制值。
 
 </td>
@@ -313,7 +313,7 @@ _**上一次修改主题：** 2017-11-16_
 <td><p><code>True</code> 或 <code>False</code></p></td>
 <td><p>指定用户在首次登录自己的 Exchange Online 邮箱时是否必须更改密码。</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 如果您已经通过内部组织中部署活动目录联合身份验证服务 2.0 (AD FS 2.0) 实现单个登录解决方案，必须将<code>False</code>用于此属性的值。
 
 </td>
@@ -379,7 +379,7 @@ IMAP 迁移批处理的 CSV 文件最多可包含 50,000 行。但最好是将�
 
     New-MigrationBatch -Name CrossForestBatch1 -SourceEndpoint ForestEndpoint1 -TargetDeliveryDomain forest2.contoso.com -TargetDatabases @(EXCH-MBX-02,EXCH-MBX-03) -TargetArchiveDatabases @(EXCH-MBX-A02,EXCH-MBX-A03) -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\CrossForestBatch1.csv")) -AutoStart
 
-> [!NOTE]
+> [!NOTE]  
 > 默认设置是主要通过移动和存档邮箱，因为您不必在Exchange 命令行管理程序命令中显式指定。
 
 

@@ -29,7 +29,7 @@ _**上一次修改主题：** 2014-06-18_
 
   - 在备份操作期间，运行 Exchange 数据文件的一致性检查，以确保文件的状态良好并可用于恢复。如果一致性检查成功，则 Exchange 数据可用于从该备份中恢复。如果一致性检查失败，则 Exchange 数据不可用于恢复。Windows Server Backup 会对为备份拍摄的快照运行一致性检查。因此，将文件从快照复制到备份媒体之前，显示备份的一致性并通知用户一致检查结果。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -47,13 +47,13 @@ _**上一次修改主题：** 2014-06-18_
 
 6.  在\&quot;选择备份项目\&quot;页上，单击\&quot;添加项目\&quot;以选择要备份的卷，然后单击\&quot;确定\&quot;。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 选择卷，而非单独的文件夹。执行应用程序级别备份或恢复的唯一方法是选择整个卷。
 
 
 7.  单击\&quot;高级设置\&quot;。在\&quot;排除\&quot;选项卡上，单击\&quot;添加排除\&quot;以添加任何你想在备份中排除的文件或文件类型。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 默认情况下，含有操作系统组件或应用程序的卷将包含在备份中，并且不能排除。
 
 

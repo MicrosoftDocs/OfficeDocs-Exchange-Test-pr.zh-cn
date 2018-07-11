@@ -45,7 +45,7 @@ UCMA 4.0 支持统一消息中的新功能，如将相同版本的语音引擎�
 
   - UCMA 4.0 安装程序包括 Exchange 2013 的所有先决条件。
 
-> [!NOTE]
+> [!NOTE]  
 > UCMA 4.0 会在安装 Exchange 2013 时安装。有关 UCMA 4.0 和安装要求的详细信息，请参阅 <a href="exchange-2013-prerequisites-exchange-2013-help.md">Exchange 2013 先决条件</a>。若要升级到 UCMA 的最新版本，必须先使用“添加/删除程序”卸载任何已安装的以前版本的 UCMA。
 
 

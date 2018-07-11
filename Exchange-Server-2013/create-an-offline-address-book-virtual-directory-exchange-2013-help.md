@@ -23,7 +23,7 @@ OAB 虚拟目录是 OAB 的分发。默认情况下，安装 Microsoft Exchange 
 
 有关与 OAB 相关的更多管理任务，请参阅[脱机通讯簿程序](offline-address-book-procedures-exchange-2013-help.md)。
 
-> [!important]
+> [!IMPORTANT]  
 > 创建 OAB 虚拟目录之前，请确保用户了解所做的更改。此步骤会中断用户的 OAB 下载进程。
 
 
@@ -45,7 +45,7 @@ OAB 虚拟目录是 OAB 的分发。默认情况下，安装 Microsoft Exchange 
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -53,7 +53,7 @@ OAB 虚拟目录是 OAB 的分发。默认情况下，安装 Microsoft Exchange 
 
 若要创建带有所有默认值的 OAB 虚拟目录，可以运行不带任何参数的 **New-OABVirtualDirectory** cmdlet。使用以下步骤创建具有自定义设置的 OAB 虚拟目录。
 
-> [!NOTE]
+> [!NOTE]  
 > 创建 OAB 虚拟目录时，推荐启用 SSL。
 
 

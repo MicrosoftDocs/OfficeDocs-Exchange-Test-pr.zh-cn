@@ -39,7 +39,7 @@ Microsoft Exchange 安装程序要求 Exchange 组织中服务器的 FQDN 不能
 
 4.  单击**确定**以关闭**系统属性**对话框。系统将提示您重新启动计算机以应用所做的更改。
 
-> [!important]
+> [!IMPORTANT]  
 > 如果要重命名的计算机是域控制器，请参阅&quot;重命名域控制器&quot;(<a href="https://go.microsoft.com/fwlink/?linkid=66828">https://go.microsoft.com/fwlink/?LinkId=66828</a>)。
 
 

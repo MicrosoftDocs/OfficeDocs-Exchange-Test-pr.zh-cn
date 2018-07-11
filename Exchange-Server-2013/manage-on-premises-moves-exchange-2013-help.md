@@ -39,7 +39,7 @@ _**上一次修改主题：** 2013-02-25_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -95,17 +95,19 @@ _**上一次修改主题：** 2013-02-25_
 
 3.  在“移动配置”页面上，为新的批次指定名称。选择您需要存档邮箱的哪些选项以及邮箱数据位置，然后单击“新建”。
 
-> [!warning]
+> [!WARNING]  
 > 确保不要将“错误项限制”设置为超过 50 个项目。如果超过 50 项，移动可能会失败。如果要将“错误项限制”设置为超过 50 个项目，必须使用 Exchange 命令行管理程序并将 <em>AcceptLargeDataLoss</em> 参数设置为 True。
 
 
 ## 使用命令行管理程序创建批处理移动请求
 
 此示例创建了一个本地移动迁移批处理，其中指定 .csv 文件中的邮箱将迁移到一个不同的邮箱数据库。此 .csv 文件包含单个列，列中包含要移动的每个邮箱的电子邮件地址。此列的标题必须命名为 **EmailAddress**。此示例中的迁移批处理必须使用 **Start-MigrationBatch** cmdlet 或 Exchange 管理中心 (EAC) 手动启动。或者，也可以使用 *AutoStart* 参数自动启动该迁移批次。
-
+```
     New-MigrationBatch -Local -Name LocalMove1 -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\LocalMove1.csv")) -TargetDatabases MBXDB2 -TimeZone "Pacific Standard Time"
-
+```
+```
     Start-MigrationBatch -Identity LocalMove1
+```
 
 有关语法和参数的详细信息，请参阅 [New-MigrationBatch](https://technet.microsoft.com/zh-cn/library/jj219166\(v=exchg.150\)) 和 [Start-MigrationBatch](https://technet.microsoft.com/zh-cn/library/jj219165\(v=exchg.150\))。
 

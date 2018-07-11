@@ -29,7 +29,7 @@ Exchange 统一消息 (UM) 使您能够为贵组织中的用户提供语音邮�
 
   - Microsoft Office Communications Server 2007 R2 或 Microsoft Lync Server 2010 或 2013
 
-> [!warning]
+> [!WARNING]  
 > 在托管或混合环境中部署 Exchange UM 时，必须部署会话边界控制器 (SBC)。SBC 不支持将 UM 连接到电话服务网络，亦不支持为组织提供拨号音。但是，它们却可以使用通过公用或专用 WAN 的 IP 协议将您的内部 UM 部署连接到数据中心。
 
 
@@ -57,7 +57,7 @@ Exchange 统一消息 (UM) 使您能够为贵组织中的用户提供语音邮�
 
 2.  验证是否已经正确安装了统一消息所需的客户端访问和邮箱服务器。
     
-    > [!warning]
+    > [!WARNING]  
     > 在配置 VoIP 网关或 IP PBX 以将 UM SIP 和 RTP 通信发送到 Exchange 2013 客户端访问服务器之前，您应在您的组织内部署至少一个 Exchange 2013 邮箱服务器。
 
 

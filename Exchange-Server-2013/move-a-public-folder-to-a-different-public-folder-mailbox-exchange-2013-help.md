@@ -41,7 +41,7 @@ _**上一次修改主题：** 2016-11-16_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -53,7 +53,7 @@ _**上一次修改主题：** 2016-11-16_
 
     New-PublicFolderMoveRequest -Folders \DeveloperReports\CustomerEngagements -TargetMailbox DeveloperReports01
 
-> [!NOTE]
+> [!NOTE]  
 > 移动请求处于活动状态时，将锁定目标公用文件夹的邮箱。
 
 
@@ -65,7 +65,7 @@ _**上一次修改主题：** 2016-11-16_
 
     New-PublicFolderMoveRequest -Folders \Dev\CustomerEngagements,\Dev\RequestsforChange,\Dev\Usability -TargetMailbox DeveloperReports01
 
-> [!NOTE]
+> [!NOTE]  
 > 移动请求处于活动状态时，将锁定目标公用文件夹的邮箱。
 
 

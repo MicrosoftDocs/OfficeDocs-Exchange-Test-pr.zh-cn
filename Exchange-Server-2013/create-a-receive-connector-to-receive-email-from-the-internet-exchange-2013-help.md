@@ -19,7 +19,7 @@ _**上一次修改主题：** 2012-10-15_
 
 此过程向您演示如何配置接收连接器以便从 Internet 接收电子邮件。
 
-> [!NOTE]
+> [!NOTE]  
 > 在大多数情况下，无需显式设置接收连接器以便从 Internet 接收邮件，因此会在 Exchange 安装时隐式创建用于从 Internet 接受邮件的接收连接器。有关详细信息，请参阅<a href="receive-connectors-exchange-2013-help.md">接收连接器</a>。
 
 
@@ -37,7 +37,7 @@ _**上一次修改主题：** 2012-10-15_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -51,7 +51,7 @@ _**上一次修改主题：** 2012-10-15_
 
 4.  对于“网络适配器绑定”，可观察到“所有可用 IPv4”会列在“IP 地址”列表中并且“端口”为 25。（简单邮件传输协议 (SMTP) 使用端口 25。）这表示此连接器可在本地服务器上分配给网络适配器的所有 IP 地址上侦听连接。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 如果具有多个网络适配器，则在此页面上可以添加分配给本地服务器上特定网络适配器的 IP 地址，但这不是必需的。
 
 

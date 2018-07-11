@@ -21,7 +21,7 @@ _**上一次修改主题：** 2013-04-29_
 
 不同的服务有不同的证书要求。例如，有些服务可能只需要服务器名称的证书**主题名称**或者**主题备用名称**框中，其他服务可能需要完全合格的域名称 (FQDN)。请确保该证书名称可以支持所需的启用对服务的使用。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 将统一消息 (UM) 与 Microsoft Lync Server 集成时，不能使用自签名证书。
 
 
@@ -35,7 +35,7 @@ _**上一次修改主题：** 2013-04-29_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
