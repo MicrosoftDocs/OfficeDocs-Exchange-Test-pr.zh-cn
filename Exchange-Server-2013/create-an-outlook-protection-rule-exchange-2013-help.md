@@ -35,7 +35,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -45,7 +45,7 @@ _**上一次修改主题：** 2016-12-09_
 
     New-OutlookProtectionRule -Name "Project Contoso" -SentTo "DL-ContosoPMs@contoso.com" -ApplyRightsProtectionTemplate "Business Critical"
 
-> [!NOTE]
+> [!NOTE]  
 > 当您使用<code>SentTo</code>谓词的Outlook保护规则和指定通讯组，仅将邮件发送到通讯组在收件人、 抄送或密件抄送字段是受 IRM 保护。IRM 保护不被应用于邮件发送到通讯组中的单个成员。
 
 
@@ -61,6 +61,6 @@ _**上一次修改主题：** 2016-12-09_
 
   - 使用Outlook 2010来创建测试邮件，以满足该规则的条件，并确保该规则触发客户端上。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 它可能需要一些时间才能在 Outlook 中可用的 Outlook 保护规则。
 

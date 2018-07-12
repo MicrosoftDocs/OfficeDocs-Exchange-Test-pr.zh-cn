@@ -21,7 +21,7 @@ _**上一次修改主题：** 2016-12-09_
 
 默认情况下，用户的邮箱，并且链接到包含用户的拨号计划允许传入传真。但是，若要接收传真的用户必须先启用 UM 邮箱策略与已启用 UM 的用户相关联并输入传真伙伴的 URI 上的入站传真。
 
-> [!NOTE]
+> [!NOTE]  
 > EAC 用于 UM 邮箱策略上配置传真设置。但是，必须使用外壳程序打开拨号计划或为单个用户配置传真设置。
 
 
@@ -45,7 +45,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

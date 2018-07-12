@@ -19,7 +19,7 @@ _**上一次修改主题：** 2013-04-16_
 
 当统一邮件 (UM) 用户通过电话连接到语音邮件系统时，它们使用Outlook访问语音导航菜单系统。用户可以访问语音邮件系统之前，系统会提示他们输入他们的 PIN。作为管理员，您可以配置 PIN 设置和要求并执行管理任务，针。用户已启用了语音邮件并已生成 PIN 后，加密用户的邮箱中存储用户的 PIN。
 
-> [!NOTE]
+> [!NOTE]  
 > Outlook Voice Access 用户必须使用按键 （也称为双音多频 (DTMF)） 输入可以输入他们的 PIN 来访问其启用 UM 的邮箱。语音识别不可用输入 PIN。
 
 
@@ -47,13 +47,13 @@ Managing Outlook Voice Access PINs
 
 **小针长度**设置指定邮箱 PIN 必须包含的数字的最小数目。范围是 4 至 24，缺省值为 6。如果输入 0，则用户无需输入 PIN。
 
-> [!important]
+> [!IMPORTANT]  
 > 将此设置配置零并不是建议的做法。如果您配置的设置为零，大大减少安全的级别为您的网络。
 
 
 如果将 PIN 最小长度值更改为一个较大的值，则现有的 Outlook Voice Access 用户在继续使用之前，系统将提示他们输入包含新的最小位数的新 PIN。
 
-> [!NOTE]
+> [!NOTE]  
 > 增加此数字创建更安全的 UM 环境。但是，设置过高会导致用户忘记他们的 PIN。
 
 
@@ -61,7 +61,7 @@ Managing Outlook Voice Access PINs
 
 **强制使用 PIN 生存期**设置控制的时间间隔，以天为单位中日期的 Outlook Voice Access 用户上次更改其 PIN 到它们将不得不再次改变他们的 PIN 的日期。范围是 0 到 999 之间，默认值为 60 天。如果输入 0，则不会过期 PIN。
 
-> [!NOTE]
+> [!NOTE]  
 > 当用户的 PIN 将要过期时，统一消息不会向用户发出通知。
 
 
@@ -69,7 +69,7 @@ Managing Outlook Voice Access PINs
 
 **重置 PIN 之前登录失败的次数**设置指定邮箱将自动重置 PIN 之前的连续失败登录尝试的数。若要禁用此功能，请将此设置设置为无限上。否则，它必须设置为数字低于**前锁定的登录失败次数的**设置。范围是 1 到 998，并且默认值为 5。
 
-> [!NOTE]
+> [!NOTE]  
 > 若要提高启用 UM 的用户的安全性，请输入小于 5 的数字。
 
 
@@ -77,7 +77,7 @@ Managing Outlook Voice Access PINs
 
 **在锁定之前登录失败的次数**设置 Outlook Voice Access 用户可以使他们在锁定之前到其邮箱的后续调用中指定多少 PIN 输入错误。默认情况下，进行了 5 次尝试后，针将自动重置。范围是 1 到 999 之间，并且默认值为 15。
 
-> [!NOTE]
+> [!NOTE]  
 > 若要提高安全性，减少允许的失败尝试的次数。但是，请记住它减少到数字要远低于默认值可能会导致不必要地被锁定的用户。统一的消息将生成警告事件，可如果启用 UM 的用户的 PIN 身份验证失败或用户都不能成功尝试登录到系统，请使用事件查看器查看。
 
 
@@ -99,13 +99,13 @@ Managing Outlook Voice Access PINs
 
 为 Outlook Voice Access 针脚规划时，必须为您的组织选择了适当的安全级别。您必须仔细考虑的 Outlook Voice Access PIN 要求和 PIN 安全设置如何满足或超过您的组织的安全策略。
 
-> [!important]
+> [!IMPORTANT]  
 > 它是实现强 Outlook Voice Access 用户的 PIN 要求安全最佳做法。这可以通过实现创建 UM 邮箱策略 PIN 策略所需六个或更多位数的针，这可以提高网络的安全性级别。
 
 
 设置 Outlook Voice Access 针要求后，您必须创建和配置 UM 邮箱策略强制执行组织的 PIN 要求。有关如何创建 UM 邮箱策略的详细信息，请参阅[创建 UM 邮箱策略](create-a-um-mailbox-policy-exchange-2013-help.md)。有关如何管理 UM 邮箱策略的详细信息，请参阅[管理 UM 邮箱策略](manage-a-um-mailbox-policy-exchange-2013-help.md)。
 
-> [!NOTE]
+> [!NOTE]  
 > 创建 UM 邮箱策略后，必须将已启用 UM 的用户或用户提供相应的 UM 邮箱策略的链接。通过使用Exchange命令行管理程序中的<strong>Enable-UMMailbox</strong> cmdlet 或使用 Exchange 管理中心 (EAC)，您可以执行此操作。Exchange命令行管理程序 cmdlet 的详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/aa998033(v=exchg.150)">Enable-UMMailbox</a>。
 
 

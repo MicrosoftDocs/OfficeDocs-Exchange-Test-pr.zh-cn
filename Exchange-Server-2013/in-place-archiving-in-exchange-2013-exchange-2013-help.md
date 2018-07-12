@@ -80,7 +80,7 @@ Outlook 使用 .pst 文件将数据存储在用户计算机本地或网络共享
 <td><p>Outlook 2013、Outlook 2010、Outlook 2007 和 Outlook Web App</p></td>
 <td><p>是。Outlook 2013、Outlook 2010、Outlook 2007 和 Outlook Web App 用户可以将其主邮箱中的项目复制或移动到其存档邮箱，还可以使用保留策略将项目移动到存档。</p>
 
-> [!NOTE]
+> [!NOTE]  
 > Outlook 2010 及更高版本和 Outlook 2007 用户还可以将 .pst 文件中的项目复制或移动到其存档邮箱。Outlook 2007 用户需要 2011 年 2 月的 Office 2007 累计更新。Outlook 2010 及更高版本和 Outlook 2007 对存档支持存在一些差异。有关详细信息，请参阅 Exchange 工作组日志文章，<a href="https://blogs.technet.com/b/exchange/archive/2010/12/20/3411710.aspx">是的，在弗吉尼亚，Outlook 2007 中存在 Exchange 2010 存档支持</a>。
 
 </td>
@@ -93,7 +93,7 @@ Outlook 使用 .pst 文件将数据存储在用户计算机本地或网络共享
 </table>
 
 
-> [!NOTE]
+> [!NOTE]  
 > 就地存档是一项高级功能，要求使用 Exchange 企业客户端访问许可证 (CAL)。有关如何对 Exchange 进行许可的详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/?linkid=237292">Exchange Server 许可</a>。有关访问存档邮箱所需的 Outlook 版本的详细信息，请参阅<a href="https://go.microsoft.com/fwlink/?linkid=237276">个人存档和保留策略的许可要求</a>。
 
 
@@ -121,7 +121,7 @@ Outlook 不会在用户的计算机上创建存档邮箱的本地副本，即使
 
   - **使用保留策略移动邮件**   可以使用保留策略自动将邮件移动到存档。用户还可以应用个人标记来将邮件移动到存档。有关存档和保留策略的详细信息，请参阅本主题后面的存档和保留策略。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 个人标记仅可用于 Outlook Web App 以及 Outlook 2010 和更高版本。
 
 
@@ -139,7 +139,7 @@ Outlook 不会在用户的计算机上创建存档邮箱的本地副本，即使
 
 Exchange 2013 安装程序会创建默认存档和保留策略，即“默认 MRM 策略”。该策略包含具有“移动到存档”操作的保留标记，如下表所示。
 
-> [!NOTE]
+> [!NOTE]  
 > 在 Exchange 2010 中，Exchange 安装程序所创建的默认存档和保留策略名为“默认存档和保留策略”。
 
 
@@ -199,7 +199,7 @@ Exchange 2013 安装程序会创建默认存档和保留策略，即“默认 MR
 
   - 如何应用个人标记（显示在 Outlook 和 Outlook Web App 的“存档策略”菜单中）。
 
-> [!NOTE]
+> [!NOTE]  
 > 如果将保留策略应用于具有存档邮箱的用户，该保留策略将替换默认 MRM 策略。可以通过“移动到存档”操作创建一个或多个保留标记，然后将这些标记链接到保留策略。还可以将默认“移动到存档”标记（由安装程序创建并链接到“默认 MRM 策略”）添加到您创建的任何保留策略。
 
 
@@ -264,7 +264,7 @@ Exchange 2013 安装程序会创建默认存档和保留策略，即“默认 MR
 
   - **就地电子数据展示**   当发现管理员执行就地电子数据展示搜索时，同时也会搜索用户的存档邮箱。当从 Exchange 管理中心 (EAC) 创建发现搜索时，没有排除存档邮箱的选项。使用 Exchange 命令行管理程序创建发现搜索时，可以通过使用 *DoNotIncludeArchive* 开关排除存档。有关详细信息，请参阅[New-MailboxSearch](https://technet.microsoft.com/zh-cn/library/dd298064\(v=exchg.150\))。若要了解详细信息，请参阅[就地电子数据展示](in-place-ediscovery-exchange-2013-help.md)。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 您不能使用就地电子数据展示搜索断开连接的邮箱。
 
 
@@ -282,7 +282,7 @@ Exchange 2013 安装程序会创建默认存档和保留策略，即“默认 MR
 
   - **移动存档邮箱**   可将用户的存档邮箱移动到相同邮箱服务器的其他邮箱数据库，也可以移动到其他服务器，而与主邮箱无关。要移动用户的存档邮箱，必须创建邮箱移动请求。有关详细信息，请参阅[管理内部部署移动](manage-on-premises-moves-exchange-2013-help.md)。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 不支持在 Exchange Server 的不同版本上查找用户的邮箱和存档。
 
 

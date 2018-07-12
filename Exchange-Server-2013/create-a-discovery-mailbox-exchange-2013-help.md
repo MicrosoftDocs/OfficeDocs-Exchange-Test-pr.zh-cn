@@ -19,7 +19,7 @@ _**上一次修改主题：** 2016-12-09_
 
 默认情况下，Microsoft Exchange Server 2013 安装程序会创建发现邮箱。在 Exchange Online 中也会默认创建发现邮箱。在 Exchange 管理中心 (EAC) 中，可将发现邮箱用作 [就地电子数据展示](in-place-ediscovery-exchange-2013-help.md) 搜索的目标邮箱。可以根据需要创建其他发现邮箱。创建新的发现邮箱后，您必须为适合的用户分配“完全访问”权限，以便他们能够访问复制到发现邮箱的电子数据展示搜索结果。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 发现管理员将电子数据展示搜索结果复制到发现邮箱后，该邮箱可能包含敏感信息。您需要控制对发现邮箱的访问，确保只有授权用户才可以访问。
 
 
@@ -37,7 +37,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 

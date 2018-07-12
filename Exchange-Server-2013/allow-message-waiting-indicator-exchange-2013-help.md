@@ -91,7 +91,7 @@ MWI 通知可以包括任何指示存在新的或未听取的语音邮件的机�
 
 邮箱服务器使用传入呼叫标头中的转换信息确定启用 UM 的用户的分机号码或电话号码。分机号码或电话号码确定后，邮箱服务器会向 SIP 对等方发送请求。然后，SIP 对等方会更改 MWI 状态并在用户的电话上打开通知。
 
-> [!NOTE]
+> [!NOTE]  
 > 尽管 PBX 中断应该十分少见，但是 UM 会至少每 12 个小时自动刷新一次每个邮箱的 MWI 状态。无法强制进行刷新，但是如果 PBX 或 IP PBX 断开电源且所有 MWI 指示灯熄灭，则所有指示灯会在 6 小时内还原为正确状态。
 
 
@@ -274,7 +274,7 @@ MWI 基于 RFC 3842。RFC 3842 声明必须将 SIP 事件通知用于邮件等�
 
 当呼叫者留下新语音邮件时，会向用户的移动电话发送短信。当用户有未接来电且没有语音邮件时，他们也会收到短信通知。未接来电通知短信可能会和新语音邮件通知一起发送给用户。
 
-> [!NOTE]
+> [!NOTE]  
 > 发送给用户的短信包括语音邮件预览。
 
 
@@ -351,7 +351,7 @@ MWI 基于 RFC 3842。RFC 3842 声明必须将 SIP 事件通知用于邮件等�
 
 4.  由于默认设置为 `None`，因此您必须从命令行管理程序运行以下命令，并将短信通知选项设置为 `VoiceMailAndMissedCalls` 或 `VoiceMail`。例如：`Set-UMMailbox- -id MyUMMailbox -UMSMSNotificationOption VoiceMailAndMissedCalls`.
     
-    > [!important]
+    > [!IMPORTANT]  
     > UM 邮箱策略中的 <em>AllowSMSNotification</em> 参数和用户邮箱中的 <em>UMSMSNotificationOption</em> 参数必须都设置为 <code>$true</code>，以便 SMS 通知能够正常工作。
 
 
@@ -363,7 +363,7 @@ MWI 基于 RFC 3842。RFC 3842 声明必须将 SIP 事件通知用于邮件等�
 
 3.  在\&quot;短信\&quot;页上单击\&quot;打开通知\&quot;按钮。
     
-    > [!warning]
+    > [!WARNING]  
     > 不要单击&amp;quot;语音邮件通知&amp;quot;，否则将会返回&amp;quot;语音邮件&amp;quot;页面。
 
 

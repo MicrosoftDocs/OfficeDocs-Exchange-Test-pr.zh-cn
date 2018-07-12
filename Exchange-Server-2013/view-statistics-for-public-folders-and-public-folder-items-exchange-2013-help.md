@@ -19,7 +19,7 @@ _**上一次修改主题：** 2013-02-14_
 
 本主题介绍如何检索公用文件夹的统计信息，例如显示名称、创建时间、上次用户修改时间、上次用户访问时间和项目大小。可以使用此信息对删除或保留公用文件夹作出决策。
 
-> [!NOTE]
+> [!NOTE]  
 > 在 Exchange 管理中心 (EAC) 中，可以通过导航到“公用文件夹”&gt;“编辑”<img src="images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="编辑图标" alt="编辑图标" /> &gt;“邮箱使用情况”查看公用文件夹的部分配额和使用情况信息。但是，此信息不完整，我们建议您使用命令行管理程序查看公用文件夹统计信息。
 
 
@@ -37,7 +37,7 @@ _**上一次修改主题：** 2013-02-14_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -49,7 +49,7 @@ _**上一次修改主题：** 2013-02-14_
 
     Get-PublicFolderStatistics -Identity \Marketing | Format-List
 
-> [!NOTE]
+> [!NOTE]  
 > <em>Identity</em> 参数的值必须包含公用文件夹的路径。例如，如果公用文件夹 Marketing 位于父文件夹 Business 下，则要提供以下值：<code>\Business\Marketing</code>
 
 

@@ -23,7 +23,7 @@ _**上一次修改主题：** 2016-12-09_
 
 本主题显示了如何恢复并非数据库可用性组 (DAG) 成员的丢失 Exchange 2013 服务器。有关恢复 DAG 成员服务器的详细步骤，请参阅[恢复数据库可用性组成员服务器](recover-a-database-availability-group-member-server-exchange-2013-help.md)。
 
-> [!NOTE]
+> [!NOTE]  
 > 如果 Exchange 不是安装在默认位置，则必须使用 <em>/TargetDir</em> 开关指定 Exchange 二进制文件的位置。如果不使用 <em>/TargetDir</em> 开关，则 Exchange 文件将安装在默认位置 (%programfiles%\Microsoft\Exchange Server\V15) 中。<br />
 > 若要确定安装位置，请执行下列步骤：
 > <ol>
@@ -50,7 +50,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

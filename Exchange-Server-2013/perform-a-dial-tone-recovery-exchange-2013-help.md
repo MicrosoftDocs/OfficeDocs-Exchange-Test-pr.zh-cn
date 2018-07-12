@@ -29,13 +29,13 @@ _**上一次修改主题：** 2014-06-27_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 使用命令行管理程序在单个服务器上执行拨号音恢复
 
-> [!NOTE]
+> [!NOTE]  
 > 无法使用 EAC 在单个服务器上执行拨号音恢复。
 
 
@@ -81,11 +81,13 @@ _**上一次修改主题：** 2014-06-27_
         Mount-Database -Identity RDB1
 
 13. 使用 [Get-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123685\(v=exchg.150\)) 和 [New-MailboxRestoreRequest](https://technet.microsoft.com/zh-cn/library/ff829875\(v=exchg.150\)) cmdlet 可以从 RDB 导出数据，并将其导入恢复的数据库，如本例中所示。这会将使用拨号音数据库发送和接收的所有邮件导入生产数据库中。
-    
+    ```
         $mailboxes = Get-Mailbox -Database DTDB1
-    
+    ```
+    ```
         $mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
-
+    ```
+    
 14. 在还原操作完成之后，可以卸除并删除 RDB，如本例中所示。
     
         Dismount-Database -Identity RDB1

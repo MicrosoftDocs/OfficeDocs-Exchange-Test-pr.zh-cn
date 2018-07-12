@@ -19,7 +19,7 @@ _**上一次修改主题：** 2016-12-09_
 
 使用此检查表安装和部署统一消息 (UM) 和 Microsoft Lync Server 2013。在此主题中，“Lync Server”也指 Lync Server 2010。但是，Microsoft Office Communications Server 2007 R2 也能与统一消息一起部署。
 
-> [!NOTE]
+> [!NOTE]  
 > <p></p>
 
 
@@ -63,7 +63,7 @@ _**上一次修改主题：** 2016-12-09_
 <td><p>查看将 Microsoft Lync Server 2013 和 Microsoft Exchange Server 2013 集成的先决条件。</p></td>
 <td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=282082">集成 Microsoft Lync Server 2013 和 Microsoft Exchange Server 2013 的先决条件</a></p>
 
-> [!tip]
+> [!TIP]  
 > Exchange 2013、Lync Server 2010 和 2013 需要 Unified Communications Managed API (UCMA) 4.0 Runtime，在安装期间也会安装它。若要下载和查看关于 UCMA 4.0 的信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=258269">Unified Communications Managed API 4.0 Runtime</a>
 
 </td>

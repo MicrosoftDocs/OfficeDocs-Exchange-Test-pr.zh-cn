@@ -35,7 +35,7 @@ _**上一次修改主题：** 2013-02-21_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -57,7 +57,7 @@ _**上一次修改主题：** 2013-02-21_
     
     对于“智能主机身份验证”，选择“基本身份验证”，并提供用户名和密码。在此处，可以选择“仅在启动 TLS 后提供基本身份验证”以确保 TLS 上通信的安全。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 如果在 TLS 上使用基本身份验证，则目标服务器必须配置为使用 X.509 证书。
 
 

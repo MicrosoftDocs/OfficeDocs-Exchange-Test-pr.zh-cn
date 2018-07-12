@@ -33,7 +33,7 @@ _**上一次修改主题：** 2015-03-09_
 
 有关管理作用域筛选器的详细信息，请参阅[了解管理角色作用域筛选器](understanding-management-role-scope-filters-exchange-2013-help.md)。
 
-> [!important]
+> [!IMPORTANT]  
 > 在更改任何管理角色组件（包括独占作用域）时，都应该考虑 Active Directory 复制时间。
 
 

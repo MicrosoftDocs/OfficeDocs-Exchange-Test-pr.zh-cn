@@ -55,7 +55,7 @@ Exchange 2013 架构更新为累积更新。每个版本均包括以前版本中
 </table>
 
 
-> [!NOTE]
+> [!NOTE]  
 > 本主题中所述的 Active Directory 架构更改可能并不适用于 Exchange Server 的所有版本。<br />
 > 要验证 Active Directory 已经准备成功，请参阅<a href="prepare-active-directory-and-domains-exchange-2013-help.md">准备 Active Directory 和域</a>中的“您如何知道这样可行？”一节。
 

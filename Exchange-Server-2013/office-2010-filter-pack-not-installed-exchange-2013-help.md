@@ -23,13 +23,13 @@ Exchange 2013 安装程序要求在计算机上安装 Microsoft Office 2010 Filt
 
 从以下 URL 下载并安装 64 位更新，然后在“准备情况检查”页上单击“重试”。
 
-> [!NOTE]
+> [!NOTE]  
 > 如果此项更新要求重新启动以完成安装，则需要退出 Exchange 2013 安装程序，重新启动，然后再启动安装程序。
 
 
 [Microsoft Office 2010 Filter Pack](https://go.microsoft.com/fwlink/p/?linkid=191548)
 
-> [!NOTE]
+> [!NOTE]  
 > 还必须安装 Microsoft Office 2010 Filter Pack Service Pack 1 64 位更新。有关详细信息，请参阅<a href="office-2010-filter-pack-sp1-not-installed-exchange-2013-help.md">未安装 Office 2010 Filter Pack SP1</a>。
 
 

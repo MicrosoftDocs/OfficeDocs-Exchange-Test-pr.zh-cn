@@ -31,7 +31,7 @@ _**上一次修改主题：** 2013-02-22_
 
 如果您要在 UM IP 网关和在\&quot;SIP 安全\&quot;模式或\&quot;安全\&quot;模式下运行的拨号计划之间使用相互 TLS，则在您创建 UM IP 网关时，必须使用完全限定域名 (FQDN) 对其进行配置，然后使用命令行管理程序配置 UM IP 网关，以侦听 TCP 端口 5061。您必须验证任何 VoIP 网关、针对 SIP 启用的 PBX、IP PBX 和 SBC 是否也配置为可侦听端口 5061 上的相互 TLS 请求。
 
-> [!important]
+> [!IMPORTANT]  
 > 创建 UM IP 网关使用 FQDN 时，必须在您的 DNS 正向查找区域中创建相应的主机 (A) 记录。如果您创建 UM IP 网关使用 FQDN，并更改 DNS 配置 UM IP 网关，您必须禁用然后再启用 UM IP 网关，以确保正确更新后的 UM IP 网关的配置信息。
 
 
@@ -49,7 +49,7 @@ _**上一次修改主题：** 2013-02-22_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

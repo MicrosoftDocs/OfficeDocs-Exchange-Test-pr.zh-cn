@@ -33,7 +33,7 @@ _**上一次修改主题：** 2017-04-14_
 
 身份验证是确认用户标识的过程。身份验证验证用户是其声明的那个人。基于声明的标识是进行身份验证的另一种方法。基于声明的身份验证将身份验证的管理从应用程序（在本案例中为 Outlook Web App 和 EAC）中删除，从而通过集中化身份验证来简化帐户管理。Outlook Web App 和 EAC 不负责对用户进行身份验证、存储用户帐户和密码、查找用户标识详细信息，或者与其他标识系统集成。集中化身份验证有助于使将来的身份验证方法升级变得更加简单。
 
-> [!NOTE]
+> [!NOTE]  
 > 适用于设备的 OWA 不支持 AD FS 基于声明的身份验证。
 
 
@@ -121,7 +121,7 @@ Additional information you might want to know
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -133,7 +133,7 @@ Additional information you might want to know
 
 尽管 AD FS 不需要 CA 颁发的证书，但 SSL 证书（默认情况下，SSL 证书还被用作服务通信证书）必须受 AD FS 客户端信任。我们建议不要使用自签名证书。联合服务器使用 SSL 证书保护 Web 服务通信，以便实现与 Web 客户端以及与联合服务器代理的 SSL 通信。由于 SSL 证书必须受客户端计算机信任，我们建议您使用由受信任的 CA 签名的证书。您选择的所有证书都必须拥有相应的私钥。从 CA（企业或公共）收到证书后，确保所有证书都被导入到所有服务器中的信任根证书颁发机构存储中。您可以使用\&quot;证书\&quot;MMC 管理单元将证书导入到存储中，或者使用 Active Directory 证书服务分发证书。有一点很重要，如果您导入的证书已过期，您需要手动导入另一个有效证书。
 
-> [!important]
+> [!IMPORTANT]  
 > 如果您使用来自 AD FS 的自签名令牌签名证书，必须将此证书导入到所有 Exchange 2013 服务器中的信任根证书颁发机构存储中。如果未使用自签名令牌签名证书，并且已部署 Web 应用程序代理，则必须更新 Web 应用程序代理配置和所有 AD FS 信赖方信任中的公钥。
 
 
@@ -157,7 +157,7 @@ Additional information you might want to know
         
           - 主题备用名称 (SAN)：无
         
-        > [!NOTE]
+        > [!NOTE]  
         > 替换 AD FS 中的令牌签名证书时，必须更新所有现有信赖方信任，以使用新的令牌签名证书。
 
 
@@ -169,7 +169,7 @@ Additional information you might want to know
         
           - 主题备用名称 (SAN)：无
         
-        > [!NOTE]
+        > [!NOTE]  
         > 如果您的 Web 应用程序代理外部 URL 与内部 URL 相同，您可以在此重新使用 Exchange 的 SSL 证书。
     
       - AD FS 代理 SSL 证书
@@ -182,7 +182,7 @@ Additional information you might want to know
 
 请参阅[查看部署 AD FS 的要求](https://go.microsoft.com/fwlink/?linkid=392699)中的证书要求部分，以获取有关证书的详细信息。
 
-> [!NOTE]
+> [!NOTE]  
 > Outlook Web App 和 EAC 仍然需要 SSL 加密证书，即使您已经拥有用于 AD FS 的 SSL 证书。SSL 证书在 OWA 和 ECP 虚拟目录中使用。
 
 
@@ -208,7 +208,7 @@ Windows Server 2012 R2 中的 AD FS 提供了简化的安全联合身份验证�
 
 7.  在\&quot;确认安装选择\&quot;页上，选中\&quot;如果需要，自动重新启动目标服务器\&quot;，然后单击\&quot;安装\&quot;。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 在安装过程中请勿关闭向导。
 
 
@@ -232,7 +232,7 @@ Windows Server 2012 R2 中的 AD FS 提供了简化的安全联合身份验证�
 
 5.  在\&quot;指定服务帐户\&quot;页上，选择\&quot;使用现有的域用户帐户或组托管服务帐户\&quot;，然后指定创建域控制器时创建的 GMSA 帐户 (FsGmsa)。包括帐户密码，然后单击\&quot;下一步\&quot;。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 全局托管服务帐户 (GMSA) 是配置域控制器时必须创建的帐户。安装和配置 AD FS 时需要 GMSA 帐户。如果尚未创建此帐户，请运行以下 Windows PowerShell 命令。该命令为 contoso.com 域和 AD FS 服务器创建帐户：
 
 
@@ -255,10 +255,12 @@ Windows Server 2012 R2 中的 AD FS 提供了简化的安全联合身份验证�
 12. 在\&quot;结果\&quot;页上，查看结果，检查配置是否成功完成，然后单击\&quot;完成联合身份验证服务部署所需的后续步骤\&quot;。
 
 下面的Windows PowerShell 命令执行相同的操作，为前面的步骤。
-
+```
     Import-Module ADFS
-
+```
+```
     Install-AdfsFarm -CertificateThumbprint 0E0C205D252002D535F6D32026B6AB074FB840E7 -FederationServiceDisplayName "Contoso Corporation" -FederationServiceName adfs.contoso.com -GroupServiceAccountIdentifier "contoso\FSgmsa`$"
+```
 
 有关详细信息和语法，请参阅 [Install-AdfsFarm](https://go.microsoft.com/fwlink/?linkid=392704)。
 
@@ -270,7 +272,7 @@ Windows Server 2012 R2 中的 AD FS 提供了简化的安全联合身份验证�
 
 EAC 使用 ECP 虚拟目录。您可以使用 [Get-EcpVirtualDirectory](https://technet.microsoft.com/zh-cn/library/dd351058\(v=exchg.150\)) 和 [Set-EcpVirtualDirectory](https://technet.microsoft.com/zh-cn/library/dd297991\(v=exchg.150\)) cmdlet 查看或配置 EAC 的设置。若要访问 EAC，必须使用 Web 浏览器并转到 **http://server1.contoso.com/ecp**。
 
-> [!NOTE]
+> [!NOTE]  
 > 在如下示例中，我们特意在 URL 中添加尾部反斜杠 <strong>/</strong>。务必确保 AD FS 信赖方信任与 Exchange 用户 URI 的信赖方信任<strong>是相同的</strong>。这意味着 AD FS 信赖方信任和 Exchange 用户 URI 的信赖方信任在其 URL 中<strong>都有</strong>或<strong>都使用</strong>尾部斜杠。本节中的示例对任何以&amp;quot;owa&amp;quot;或&amp;quot;ecp&amp;quot;结尾的 url，在其尾部后面追加一个 <strong>/</strong>，即变为&amp;quot;/owa/&amp;quot;或&amp;quot;/ecp/&amp;quot;。
 
 
@@ -376,13 +378,13 @@ EAC 使用 ECP 虚拟目录。您可以使用 [Get-EcpVirtualDirectory](https://
 
 ## 第 4 步 - 安装 Web 应用程序代理角色服务（可选）
 
-> [!NOTE]
+> [!NOTE]  
 > 第 4 步、第 5 步和第 6 步均适用于想使用 Web 应用程序代理发布 Exchange OWA 和 ECP，并想让 Web 应用程序代理执行 AD FS 身份验证的用户。不过，使用 Web 应用程序代理发布 Exchange 是可选步骤。因此，如果您没有使用 Web 应用程序代理，但确实想让 Exchange 自行执行 AD FS 身份验证，则可以跳到第 7 步。
 
 
 Web 应用程序代理是 Windows Server 2012 R2 中的新远程访问角色服务。Web 应用程序代理为公司网络中的 Web 应用程序提供反向代理功能，以允许多种设备上的用户从公司网络外部访问这些应用程序。Web 应用程序代理使用 Active Directory 联合身份验证服务 (AD FS) 对 Web 应用程序的访问进行预先身份验证，并充当 AD FS 代理。尽管 Web 应用程序代理不是必须的，但是当外部客户端可以访问 AD FS 时，我们建议使用此代理。但是，通过 Web 应用程序代理使用 AD FS 身份验证时，不支持 Outlook Web App 中的脱机访问。若要获取有关与 Web 应用程序代理集成的详细信息，请参阅[为发布内部应用程序安装和配置 Web 应用程序代理](https://go.microsoft.com/fwlink/?linkid=392705)
 
-> [!warning]
+> [!WARNING]  
 > 不能在安装了 AD FS 的同一服务器上安装 Web 应用程序代理。
 
 
@@ -464,7 +466,7 @@ Web 应用程序代理是 Windows Server 2012 R2 中的新远程访问角色服�
     
     4.  在\&quot;后端服务器 URL\&quot;框中，输入后端服务器的 URL。请注意，此值会在输入外部 URL 时自动输入，并且只有在后端服务器 URL 不同时才需要更改此值 - 例如，对于 Outlook Web App 为 **https://mail.contoso.com/owa**，对于 EAC 为 **https://mail.contoso.com/ecp**。
     
-    > [!NOTE]
+    > [!NOTE]  
     > Web 应用程序代理可以翻译 URL 中的主机名，但是不能翻译路径。因此，您可以输入不同的主机名，但是必须输入相同的路径。例如，您可以输入外部 URL <em>https://external.contoso.com/app1/</em> 和后端服务器 URL <em>https://mail.contoso.com/app1/</em>。但是，不能输入外部 URL <em>https://external.contoso.com/app1/</em> 和后服务器 URL <em>https://mail.contoso.com/internal-app1/</em>。
 
 
@@ -497,7 +499,7 @@ Web 应用程序代理是 Windows Server 2012 R2 中的新远程访问角色服�
     $uris = @(" https://mail.contoso.com/owa/","https://mail.contoso.com/ecp/")
     Set-OrganizationConfig -AdfsIssuer "https://adfs.contoso.com/adfs/ls/" -AdfsAudienceUris $uris -AdfsSignCertificateThumbprint "88970C64278A15D642934DC2961D9CCA5E28DA6B"
 
-> [!NOTE]
+> [!NOTE]  
 > <em>-AdfsEncryptCertificateThumbprint</em>参数不支持这些方案。
 
 
@@ -507,7 +509,7 @@ Web 应用程序代理是 Windows Server 2012 R2 中的新远程访问角色服�
 
 对于 OWA 和 ECP 虚拟目录，将 AD FS 身份验证启用作为唯一的身份验证方法并禁用所有其他形式的身份验证。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 配置 OWA 虚拟目录之前必须配置 ECP 虚拟目录。
 
 
@@ -519,7 +521,7 @@ Web 应用程序代理是 Windows Server 2012 R2 中的新远程访问角色服�
 
     Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -WindowsAuthentication $false -OAuthAuthentication $false
 
-> [!NOTE]
+> [!NOTE]  
 > 前面的 Exchange 管理外壳程序命令组织中每个客户端访问服务器上配置的 OWA 和 ECP 的虚拟目录。如果您不想将这些设置应用于所有客户端访问服务器，使用<em>-Identity</em>参数并指定客户端访问服务器。很可能想要将这些设置应用仅将 Internet 客户端访问服务器在您的组织面临着。
 
 

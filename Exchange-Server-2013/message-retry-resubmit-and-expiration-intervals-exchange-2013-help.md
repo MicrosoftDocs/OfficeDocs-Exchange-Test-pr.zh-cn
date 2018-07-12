@@ -168,7 +168,7 @@ _**上一次修改主题：** 2015-03-09_
 </table>
 
 
-> [!NOTE]
+> [!NOTE]  
 > 在 Exchange 2007 集线器传输服务器上，所有 <em>ExternalDSN*</em> 和 <em>InternalDSN*</em> 参数能在 <strong>Set-TransportServer</strong> cmdlet 中使用，而不能在 <strong>Set-TransportConfig</strong> cmdlet 中使用。如果组织中有任何 Exchange 2007 集线器传输服务器，则需要在每个 Exchange 2007 集线器传输服务器上使用 <strong>Set-TransportServer</strong> cmdlet 来更改这些值。
 
 
@@ -202,7 +202,7 @@ _**上一次修改主题：** 2015-03-09_
 
 手动重新提交邮件可以使用的另一种方式是挂起邮件，将邮件导出到文件扩展名为 .eml 的文本文件，然后将 .eml 文件复制到任何邮箱服务器或边缘传输服务器上的重播目录。这种重新提交方法适用于传递队列或无法到达队列中的邮件。病毒邮件队列中的邮件已处于“挂起”状态。提交队列中的邮件不得挂起或导出。
 
-> [!NOTE]
+> [!NOTE]  
 > 从队列中导出邮件时，不会将邮件从队列中删除。导出邮件并使用重播目录成功地重新提交这些邮件后，应删除挂起的邮件，以防重复提交邮件。
 
 

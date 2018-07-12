@@ -49,7 +49,7 @@ _**上一次修改主题：** 2016-12-09_
 
     New-TransportRule -Name <name_of_the_rule> -SubjectContainsWords "Meeting" -SetHeaderName "X-MS-Exchange-Organization-BypassClutter" -SetHeaderValue "true"
 
-> [!important]
+> [!IMPORTANT]  
 > 在此示例中，“X-MS-Exchange-Organization-BypassClutter”和“true”区分大小写。
 
 
@@ -59,6 +59,6 @@ _**上一次修改主题：** 2016-12-09_
 
 你可以检查电子邮件头以查看是否由于待筛选邮件传输规则绕过导致电子邮件登录收件箱。在已应用待筛选邮件绕过传输规则的组织中，从邮箱中挑选电子邮件。查看邮件上标记的邮件头，你应该会看到 **X-MS-Exchange-Organization-BypassClutter: true** 邮件头。这意味着正在绕过。有关如何查找邮件头的信息，请参阅[查看电子邮件的 Internet 邮件头](https://go.microsoft.com/fwlink/p/?linkid=822530)。
 
-> [!NOTE]
+> [!NOTE]  
 > 日历项目（如接受、发送或拒绝的会议）不会有这些邮件头。我们很快会将待筛选邮件功能扩展到这些日历项目。
 

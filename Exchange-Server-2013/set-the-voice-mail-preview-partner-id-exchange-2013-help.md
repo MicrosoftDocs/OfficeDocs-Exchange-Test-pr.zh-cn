@@ -19,7 +19,7 @@ _**上一次修改主题：** 2013-02-13_
 
 统一消息 (UM) 邮箱策略上，可以设置语音邮件预览合作伙伴 ID。UM 邮箱策略上设置语音邮件预览合作伙伴 ID 之后，设置将应用于与该邮箱策略链接所有已启用 UM 的用户。
 
-> [!NOTE]
+> [!NOTE]  
 > 必须使用命令行管理程序设置语音邮件预览伙伴 ID。
 
 
@@ -39,7 +39,7 @@ _**上一次修改主题：** 2013-02-13_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

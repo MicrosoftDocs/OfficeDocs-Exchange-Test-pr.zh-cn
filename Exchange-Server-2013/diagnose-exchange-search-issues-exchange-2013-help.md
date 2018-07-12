@@ -33,7 +33,7 @@ Exchange Search 可对 Exchange 邮箱中的邮箱和受支持附件编制索引
 
 您可以使用 [Get-FailedContentIndexDocuments](https://technet.microsoft.com/zh-cn/library/dd351154\(v=exchg.150\)) cmdlet 检索 Exchange 搜索无法成功编制索引的不可搜索邮箱项目的列表。可以对邮箱服务器、邮箱数据库或特定邮箱运行 cmdlet。Cmdlet 会返回每个不可搜索项目的详细信息。无法搜索邮箱项目的原因有若干个。例如，可能是因为电子邮件中可能包含无法编制索引以供搜索的附件文件类型，也可能是因为搜索筛选器未安装或已禁用。如果相应文件类型的搜索筛选器可用，则您可以将它安装在 exExchangeNoVersionExchange 服务器上。
 
-> [!important]
+> [!IMPORTANT]  
 > 由 Microsoft 提供的搜索筛选器已经过测试并由 Microsoft 提供支持。我们建议您先在测试环境中测试所有的第三方搜索筛选器，然后再将此类搜索筛选器安装在生产环境中的 exExchangeNoVersionExchange 服务器上。
 
 

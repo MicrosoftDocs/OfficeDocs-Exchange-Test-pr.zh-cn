@@ -19,7 +19,7 @@ _**上一次修改主题：** 2012-10-03_
 
 如果要使新的脚本或非Exchange cmdlet 供现有未区分范围角色，可以给未区分范围顶级管理角色添加脚本和非Exchange cmdlet。这些脚本和非Exchange cmdlet 未区分范围顶级管理角色添加为管理角色的项。然后可以通过那些未区分范围顶级角色条目使用它们或顶级角色中派生的任何未区分范围的角色。有关未区分范围的角色条目的详细信息，请参阅[了解管理角色](understanding-management-roles-exchange-2013-help.md)。
 
-> [!NOTE]
+> [!NOTE]  
 > 如果要更改包含 Exchange cmdlet 的管理角色的角色条目，请参阅<a href="change-a-role-entry-exchange-2013-help.md">更改角色条目</a>。
 
 
@@ -41,7 +41,7 @@ _**上一次修改主题：** 2012-10-03_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -63,7 +63,7 @@ _**上一次修改主题：** 2012-10-03_
 
     Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
 
-> [!NOTE]
+> [!NOTE]  
 > <strong>Add-ManagementRoleEntry</strong> cmdlet 执行基本验证，以确保仅添加该脚本中存在的参数。但是，添加角色条目之后就不再进行其他验证。如果以后要添加或删除参数，则必须手动更新包含该脚本的角色条目。
 
 
@@ -83,7 +83,7 @@ _**上一次修改主题：** 2012-10-03_
 
     Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
 
-> [!NOTE]
+> [!NOTE]  
 > <strong>Add-ManagementRoleEntry</strong> cmdlet 执行基本验证，以确保仅添加该 cmdlet 中存在的参数。但是，添加角色条目之后就不再进行其他验证。如果以后要更改 cmdlet 或者添加或删除参数，则必须手动更新包含该 cmdlet 的角色条目。
 
 

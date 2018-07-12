@@ -63,7 +63,7 @@ Exchange 2013 体系结构
 
 Exchange 工作负载管理
 
-> [!NOTE]
+> [!NOTE]  
 > 有关早期版本的 Exchange 中已删除、停用或被 Exchange Server 2013 取代的功能的信息，请参阅 <a href="what-s-discontinued-in-exchange-2013-exchange-2013-help.md">Exchange 2013 中的削减内容</a>。此外，您可能还会对<a href="release-notes-for-exchange-2013-exchange-2013-help.md">Exchange 2013 发行说明</a>感兴趣。
 
 
@@ -205,7 +205,7 @@ Exchange 2013 包括针对就地存档、保留和电子数据展示的以下改
     
       - **就地电子数据展示和保留向导**   发现管理员可以使用新的就地电子数据展示和保留向导来执行电子数据展示和保留操作。
         
-        > [!NOTE]
+        > [!NOTE]  
         > 如果 SharePoint 2013 不可用，则 Exchange 管理中心中提供电子数据展示功能的子集。
 
 

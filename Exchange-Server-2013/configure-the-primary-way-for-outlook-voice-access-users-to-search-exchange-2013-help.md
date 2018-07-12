@@ -19,7 +19,7 @@ _**上一次修改主题：** 2013-02-21_
 
 创建统一邮件 (UM) 拨号计划时，您可以配置名称来查找用户拨打电话Outlook语音访问号码或有关联的拨号计划与 UM 自动助理时调用方可以搜索的主要和辅助的方法。调用方可以使用按键输入查找已启用 UM 的用户。
 
-> [!NOTE]
+> [!NOTE]  
 > <strong>任何</strong>不是主要的方法的调用方可以搜索名称的可用选项。当未选择<strong>任何</strong>他们可以搜索名称的辅助方式时，只的主要方式将提供给调用方。配置两个的主要和辅助方法调用方可以搜索名称，请为这两种方式都将会提示他们。
 
 
@@ -35,7 +35,7 @@ _**上一次修改主题：** 2013-02-21_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

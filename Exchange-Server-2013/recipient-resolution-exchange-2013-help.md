@@ -53,7 +53,7 @@ IMCEA 封装方法使用以下语法：`IMCEA<Type>-<address>@<domain>`
 
 占位符 \<*Type*\> 标识非 SMTP 地址的类型，例如 `EX`、`X400` 或 `FAX`。
 
-> [!NOTE]
+> [!NOTE]  
 > 尽管 <code>SMTP</code> 和 <code>X500</code> 在理论上是 &lt;<em>Type</em>&gt; 的有效值，但是，Exchange 收件人解析拒绝任何使用其中任一类型的 IMCEA 编码地址。
 
 
@@ -166,7 +166,7 @@ Active Directory 查询将缺少关键属性或关键属性格式不正确的对
 
   - **通讯组和动态通讯组**   通讯组基于 **memberOf** Active Directory 属性展开。动态通讯组使用 Active Directory 查询定义展开。如果对组设置了 *ExpansionServer* 参数，则不是由当前服务器展开该组。通讯组将被路由到指定的服务器进行展开。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 如果选择组织中的特定传输服务器作为展开服务器，通讯组的使用将取决于展开服务器的可用性。如果展开服务器不可用，任何发送给该通讯组的邮件均将无法送达。如果计划对通讯组使用特定的展开服务器，为了降低服务中断的风险，应考虑对这些服务器实现高可用性解决方案。
 
 
@@ -204,7 +204,7 @@ Active Directory 查询将缺少关键属性或关键属性格式不正确的对
 
   - **ReportToOriginatorEnabled**   此参数使送达报告发送给向此通讯组发送的电子邮件的发件人。有效值为 `$true` 或 `$false`。默认值为 `$true`。
     
-    > [!NOTE]
+    > [!NOTE]  
     > <em>ReportToManagerEnabled</em> 参数和 <em>ReportToOriginatorEnabled</em> 参数的值不能同时为 <code>$true</code>。如果一个参数设置为 <code>$true</code>，另一个参数必须设置为 <code>$false</code>。两个参数的值可以同时为 <code>$false</code>。这样将抑制所有送达报告邮件的所有重定向。
 
 
@@ -348,7 +348,7 @@ Active Directory 查询将缺少关键属性或关键属性格式不正确的对
 
 如果展开的收件人数过多，分类程序会将邮件拆分为多个副本。通过进行拆分，可以减少展开邮件期间使用的系统资源。邮件中的最大信封收件人数由 `%ExchangeInstallPath%Bin\EdgeTransport.exe.config` 应用程序配置文件中的 *ExpansionSizeLimit* 项控制。默认值为 1000。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 建议您不要在生产环境中的 Exchange 传输服务器上修改 <em>ExpansionSizeLimit</em> 项的值。
 
 

@@ -19,13 +19,13 @@ _**上一次修改主题：** 2015-01-01_
 
 联合身份验证信任将建立 Microsoft Exchange 2013 组织和 Azure Active Directory 身份验证系统之间的信任关系，并支持与其他联合 Exchange 组织的联合共享。创建联合身份验证信任之后，通常不必对其进行管理或修改。但是，在某些情况下可能需要添加或删除联盟域，或是重置用于为联合身份验证信任配置组织标识符 (OrgID) 的域。
 
-> [!NOTE]
+> [!NOTE]  
 > 修改现有联合身份验证信任（尤其是用于定义 OrgID 的主共享域）可能会中断联盟 Exchange 组织之间的联合共享或针对具有 Office 365 组织的混合部署的联合共享。
 
 
 有关与联合身份验证相关的更多管理任务，请参阅[联合程序](federation-procedures-exchange-2013-help.md)。
 
-> [!important]
+> [!IMPORTANT]  
 > Exchange Server 2013 的此项功能与由世纪互联在中国运营的 Office 365 不完全兼容，可能需要遵循一些功能限制。有关详细信息，请参阅<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解由世纪互联运营的 Office 365</a>。
 
 
@@ -65,7 +65,7 @@ _**上一次修改主题：** 2015-01-01_
 
 6.  在“选择接受域”中，从接受域列表中选择“marketing.contoso.com”，然后单击“确定”以将该域添加到联合身份验证信任中。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 系统将为“marketing.contoso.com”域创建一个联盟域证明字符串。必须为此域在公用 DNS 上创建单独的 TXT 记录。
 
 
@@ -117,7 +117,7 @@ _**上一次修改主题：** 2015-01-01_
     
         Set-FederationTrust "Azure AD authentication" -PublishFederationCertificate
     
-    > [!CAUTION]
+    > [!CAUTION]  
     > 在将联合身份验证信任配置为将下一个证书用作当前联合身份验证证书之前，请确保已在组织中的所有 Exchange 服务器上部署了该证书。使用 <a href="https://technet.microsoft.com/zh-cn/library/dd335228(v=exchg.150)">Test-FederationTrustCertificate</a> cmdlet 可检查此证书的部署状态。
 
 
@@ -151,6 +151,6 @@ _**上一次修改主题：** 2015-01-01_
     
         Get-FederationInformation -DomainName <your primary sharing domain>
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 

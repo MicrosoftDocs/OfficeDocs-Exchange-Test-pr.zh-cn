@@ -19,7 +19,7 @@ _**上一次修改主题：** 2013-04-15_
 
 借助自动重新设定种子功能，可在发生磁盘故障后快速还原数据库冗余。如果某个磁盘出现故障，那么该磁盘上存储的数据库副本会自动重新设定种子到邮箱服务器上预配置的备用磁盘。可按本主题中介绍的步骤操作，为数据库可用性组 (DAG) 配置自动重新设定种子。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 自动重新设定种子功能不会为你执行任何先决条件配置任务。手动正确安装磁盘、向系统添加备用磁盘、更换故障磁盘以及格式化新磁盘必须都由管理员完成。
 
 
@@ -37,7 +37,7 @@ _**上一次修改主题：** 2013-04-15_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -118,13 +118,21 @@ _**上一次修改主题：** 2013-04-15_
 
 下一步，在根路径 C:\\ExchangeDatabases 下创建数据库目录。此示例展示了如何针对每个卷上有 4 个数据库的存储配置创建目录。
 
-    md c:\ExchangeDatabases\db001
+```
+md c:\ExchangeDatabases\db001
+```
 
-    md c:\ExchangeDatabases\db002
+```
+md c:\ExchangeDatabases\db002
+```
 
-    md c:\ExchangeDatabases\db003
+```
+md c:\ExchangeDatabases\db003
+```
 
-    md c:\ExchangeDatabases\db004
+```
+md c:\ExchangeDatabases\db004
+```
 
 ## 您如何知道此步骤有效？
 
@@ -158,21 +166,37 @@ C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.log
 
 本示例说明了如何为即将存储在卷 1 中的 4 个数据库创建目录：
 
-    md c:\ExchangeDatabases\db001\db001.db
+```
+md c:\ExchangeDatabases\db001\db001.db
+```
 
-    md c:\ExchangeDatabases\db001\db001.log
+```
+md c:\ExchangeDatabases\db001\db001.log
+```
 
-    md c:\ExchangeDatabases\db002\db002.db
+```
+md c:\ExchangeDatabases\db002\db002.db
+```
 
-    md c:\ExchangeDatabases\db002\db002.log
+```
+md c:\ExchangeDatabases\db002\db002.log
+```
 
-    md c:\ExchangeDatabases\db003\db003.db
+```
+md c:\ExchangeDatabases\db003\db003.db
+```
 
-    md c:\ExchangeDatabases\db003\db003.log
+```
+md c:\ExchangeDatabases\db003\db003.log
+```
 
-    md c:\ExchangeDatabases\db004\db004.db
+```
+md c:\ExchangeDatabases\db004\db004.db
+```
 
-    md c:\ExchangeDatabases\db004\db004.log
+```
+md c:\ExchangeDatabases\db004\db004.log
+```
 
 对每个卷中的数据库重复上述命令。
 
@@ -207,8 +231,9 @@ C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.log
         Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
 
 2.  运行以下命令来验证目录结构配置是否正确（下面是默认路径，如果有必要，将这些路径替换为您正在使用的路径）。
-    
+    ```
         Dir c:\ExchangeDatabases /s
-    
+    ```
+    ```
         Dir c:\ExchangeVolumes /s
-
+    ```

@@ -112,7 +112,7 @@ Exchange 将策略应用于符合收件人筛选条件的所有收件人：
     
       - Exchange 统一消息代理地址（EUM 代理地址）
     
-    > [!important]
+    > [!IMPORTANT]  
     > 在 Exchange 中，所有非 SMTP 电子邮件地址都被视为自定义地址。Exchange 不会为 X.400、GroupWise 或 Lotus Notes 电子邮件地址类型提供唯一的对话框或属性页。如果添加非 SMTP 自定义电子邮件地址，则必须具有相应的动态链接库 (DLL) 文件。如果没有提供相应的 DLL 文件，则无法创建自定义电子邮件地址策略。以下错误将记录到事件查看器中：&amp;quot;在‘i386’计算机上，丢失了 Microsoft Exchange 目录中的‘SADF’地址类型的电子邮件地址描述对象&amp;quot;。
 
 

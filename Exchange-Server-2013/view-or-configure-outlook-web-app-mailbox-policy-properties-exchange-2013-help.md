@@ -27,7 +27,7 @@ _**上一次修改主题：** 2016-04-13_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -49,7 +49,7 @@ _**上一次修改主题：** 2016-04-13_
     
     在“功能”选项卡上，使用复选框可启用或禁用功能。默认情况下，显示最常用的功能。要查看可以启用或禁用的所有功能，可单击“更多选项”。
     
-    > [!NOTE]
+    > [!NOTE]  
     > Outlook Web App 邮箱策略的功能设置将覆盖 Outlook Web App 虚拟目录设置。您可以在命令行管理程序中使用 <strong>Set-CASMailbox</strong> cmdlet 更改单个用户的分段设置。
 
 

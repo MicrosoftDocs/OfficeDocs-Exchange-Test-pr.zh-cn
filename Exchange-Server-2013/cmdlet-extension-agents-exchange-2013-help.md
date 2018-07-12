@@ -39,7 +39,7 @@ Cmdlet 运行时，代理的优先级会确定在其中调用代理的顺序。�
 
   - 保持代理的优先级相同，并确保在 `Scripting agent` 下运行的脚本符合由其他代理提供的值。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 更改内置代理的优先级或替换内置代理的功能是一项高级操作。请确保您完全了解要进行的更改。
 
 
@@ -53,7 +53,7 @@ Exchange 2013 包括多个可在 cmdlet 运行时调用的代理。下表列出�
 
 代理的配置存储在组织级别上。启用或禁用代理，或设置其优先级时，您将在组织中的每台服务器上设置该代理配置。但是，将脚本添加到 `Scripting agent` 时除外。您必须分别对每个服务器上的脚本进行更新。有关配置与 `Scripting agent` 配合使用的脚本的详细信息，请参阅本主题后面的\&quot;脚本编写代理\&quot;部分。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 如果不完全了解每个代理所做的内容以及其与 Exchange cmdlet 交互的方式，则更改代理的优先级，或者启用（或禁用）代理，将会导致意外的结果。在更改任何代理的配置之前，请确保完全了解所要的更改和结果，并验证自定义脚本是否将按预期工作。
 
 
@@ -131,7 +131,7 @@ Exchange 2013 包括多个可在 cmdlet 运行时调用的代理。下表列出�
 
 可以使用 Exchange 2013 中的 `Scripting agent` cmdlet 扩展代理，将自己的脚本逻辑插入到 Exchange cmdlet 的执行中。通过使用 `Scripting agent`，可以添加条件、覆盖值并设置报告。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 启用了 <code>Scripting agent</code> cmdlet 扩展代理时，每次在运行 Exchange 2013 的服务器上运行 cmdlet 时，都会调用该代理。这不仅包括您在 Exchange 命令行管理程序中直接运行的 cmdlet，还包括 Exchange 服务和 Exchange 管理中心 (EAC) 运行的 cmdlet。强烈建议您在将更新的配置文件复制到 Exchange 2013 服务器并启用 <code>Scripting agent</code> cmdlet 扩展代理之前，测试您的脚本以及对配置文件进行的任何更改。
 
 
@@ -145,7 +145,7 @@ Exchange 2013 包括多个可在 cmdlet 运行时调用的代理。下表列出�
 
 4.  **OnComplete**   此 API 在所有 cmdlet 处理都完成之后使用。它可以用于执行处理后任务，如将数据写入外部数据库。
 
-> [!NOTE]
+> [!NOTE]  
 > 当运行带有 <code>Get</code> 动词的 cmdlet 时，不会调用 <code>Scripting agent</code> cmdlet 扩展代理。
 
 
@@ -236,7 +236,7 @@ Exchange 2013 包括多个可在 cmdlet 运行时调用的代理。下表列出�
 
 1.  在组织中每个 Exchange 2013 服务器上，将 **\<安装路径\>V15\\Bin\\CmdletExtensionAgents** 中的 ScriptingAgentConfig.xml.sample 文件重命名为 ScriptingAgentConfig.xml。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 可以将配置文件从一个 Exchange 2013 服务器复制到其他 Exchange 2013 服务器。请务必先更新要复制的配置文件，然后再进行复制。
 
 

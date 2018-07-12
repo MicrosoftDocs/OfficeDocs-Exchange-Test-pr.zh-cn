@@ -92,7 +92,7 @@ Exchange Server 2010 中的许多统一消息 (UM) cmdlet 适用于 Exchange Ser
 <td><p>Disable-UMService</p></td>
 <td><p><code>-Identity &lt;UMServerIdParameter&gt; [-Confirm [&lt;SwitchParameter&gt;]] [-DomainController &lt;Fqdn&gt;] [-Immediate &lt;$true | $false&gt;] [-WhatIf [&lt;SwitchParameter&gt;]]</code></p>
 
-> [!NOTE]
+> [!NOTE]  
 > 此 cmdlet 仅适用于 Exchange 2007 和 2010 UM 服务器。
 
 </td>
@@ -101,7 +101,7 @@ Exchange Server 2010 中的许多统一消息 (UM) cmdlet 适用于 Exchange Ser
 <td><p>Enable-UMService</p></td>
 <td><p><code>-Identity &lt;UMServerIdParameter&gt; [-Confirm [&lt;SwitchParameter&gt;]] [-DomainController &lt;Fqdn&gt;] [-WhatIf [&lt;SwitchParameter&gt;]]</code></p>
 
-> [!NOTE]
+> [!NOTE]  
 > 此 cmdlet 仅适用于 Exchange 2007 和 2010 UM 服务器。
 
 </td>

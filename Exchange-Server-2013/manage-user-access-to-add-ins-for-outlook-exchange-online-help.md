@@ -35,7 +35,7 @@ _**上一次修改主题：** 2018-04-17_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -65,7 +65,7 @@ _**上一次修改主题：** 2018-04-17_
 
 可以使用 Exchange Online PowerShell 指定外接程序可用、已启用或已禁用。
 
-> [!NOTE]
+> [!NOTE]  
 > 运行以下命令，查找组织内安装的所有适用于 Outlook 的外接程序的显示名称和外接程序 ID。
 
 
@@ -106,10 +106,12 @@ _**上一次修改主题：** 2018-04-17_
 ## 使用 Exchange Online PowerShell 限制某些用户能否使用应用程序
 
 如果只想让营销团队通讯组的成员能够使用 LinkedIn 外接程序，请运行下列命令。
-
+```
     $a = Get-DistributionGroupMember Marketing
-
+```
+```
     Set-app <add-in ID for the LinkedIn add-in> -Organizationadd-in -ProvidedTo SpecificUsers -UserList $a.Identity -DefaultStateForUser Enabled}
+```
 
 有关语法和参数的详细信息，请参阅 [Set-App](https://technet.microsoft.com/zh-cn/library/jj218630\(v=exchg.150\))。
 

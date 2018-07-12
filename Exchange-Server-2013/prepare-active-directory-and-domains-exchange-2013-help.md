@@ -19,7 +19,7 @@ _**上一次修改主题：** 2016-12-09_
 
 安装 Microsoft Exchange Server 2013 之前，你需要准备 Active Directory 林及其子域。Exchange 需要准备 Active Directory，使其可以存储关于用户邮箱以及组织中 Exchange 服务器的配置的信息。如果您对 Active Directory 林或域不熟悉，请参阅 [Active Directory 域服务概述](https://go.microsoft.com/fwlink/p/?linkid=399226)。
 
-> [!NOTE]
+> [!NOTE]  
 > 无论是首次在你的环境中安装 Exchange 还是已在运行早期版本的 Exchange Server，都需要为 Exchange 2013 准备 Active Directory。有关 Exchange 2013 添加到 Active Directory 的新架构类和属性（包括由 Service Pack (SP) 和累积更新 (CU) 创建的）的详细信息，可以参阅 <a href="exchange-2013-active-directory-schema-changes-exchange-2013-help.md">Exchange 2013 Active Directory 架构更改</a>。
 
 
@@ -51,7 +51,7 @@ _**上一次修改主题：** 2016-12-09_
     
       - 在具有每个域中可写的全局编录服务器的 Active Directory 站点中安装第一台 Exchange 服务器。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -69,7 +69,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - 为 Exchange 扩展架构的唯一方式是使用本主题中的步骤或使用 Exchange 2013 安装程序。不支持扩展架构的其他方法。
 
-> [!tip]
+> [!TIP]  
 > 如果您没有单独的团队来管理 Active Directory 架构，您可以跳过此步骤，直接转到准备 Active Directory。如果未在步骤 1 中扩展架构，步骤 2 中的命令将为您扩展架构。如果您决定跳过步骤 1，您仍需记住上述信息。
 
 
@@ -177,7 +177,7 @@ _**上一次修改主题：** 2016-12-09_
 
 完成上述所有步骤之后，你可以进行检查，确保一切进行顺利。为此，你可使用一种称为 Active Directory 服务接口编辑器（ADSI 编辑）的工具。ADSI 编辑也是 Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 中的 Active Directory 域服务工具功能的一部分。如果你想要了解更多相关信息，请查看 [ADSI 编辑 (adsiedit.msc)](https://go.microsoft.com/fwlink/p/?linkid=294644)。
 
-> [!warning]
+> [!WARNING]  
 > 永远不要更改 ADSI 编辑中的值，除非 Microsoft 支持人员要求您这样做。更改 ADSI 编辑中的值可能会对 Exchange 组织和 Active Directory 造成无法修复的损坏。
 
 

@@ -53,7 +53,7 @@ _**上一次修改主题：** 2017-09-07_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -73,7 +73,7 @@ _**上一次修改主题：** 2017-09-07_
     
       - 单击\&quot;包括不可搜索的项目\&quot;复选框以包括无法搜索的邮箱项目（例如，带无法被 Exchange 搜索编入索引的文件类型附件的邮件）。不可搜索的项目会被导出到一个单独的 PST 文件中。
         
-        > [!important]
+        > [!IMPORTANT]  
         > 如果邮箱包含大量不可搜索的项目，在导出电子数据展示搜索结果时包括不可搜索的项目将需要更长时间。为了减少导出搜索结果所需的时间，并防止出现大型 PST 导出文件，请考虑以下建议：
         > <ul>
         > <li><p>创建多个电子数据展示搜索，每个搜索负责搜索较少数量的源邮箱。</p></li>

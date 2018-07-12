@@ -33,7 +33,7 @@ UM features that operate differently for secondary dial plans
 
 如果您正在使用电话分机拨号计划，并且需要为用户提供相同的分机号码，您将需要创建一个辅助拨号计划，启用为用户启用 UM 并为用户提供相同分机号码。这是因为每个分机号码在拨号计划中必须是唯一的。
 
-> [!NOTE]
+> [!NOTE]  
 > 对可以为启用 UM 的用户添加的辅助分机号码的数量没有限制。
 
 

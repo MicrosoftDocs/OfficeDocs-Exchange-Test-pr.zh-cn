@@ -41,7 +41,7 @@ _**上一次修改主题：** 2015-01-14_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -59,7 +59,7 @@ _**上一次修改主题：** 2015-01-14_
 
 3.  在“编辑 DLP 策略”页上，单击“规则”。
 
-> [!tip]
+> [!TIP]  
 > 可以创建 DLP 策略并将其保留为非激活或禁用模式。在此模式下，不强制执行策略，并且可以在测试或开始强制执行它之前更改与其规则关联的任何谓词、操作或值。
 
 

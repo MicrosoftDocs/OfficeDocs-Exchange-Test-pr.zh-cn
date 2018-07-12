@@ -33,7 +33,7 @@ _**上一次修改主题：** 2013-02-21_
 
   - 您不能使用 Exchange 管理中心 (EAC) 执行此过程，必须使用命令行管理程序。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -83,13 +83,13 @@ _**上一次修改主题：** 2013-02-21_
 
 这个示例更改了默认设置策略并将 *AliasPrefix* 设置为 FOREST01。
 
-> [!NOTE]
+> [!NOTE]  
 > 对于多个林的部署，在两个或多个林中采用相同的名称创建站点邮箱的情况下，建议在跨林同步对象时在每个林中使用不同的前缀以避免冲突。
 
 
     Set-SiteMailboxProvisioningPolicy -Identity Default -AliasPrefix FOREST01 -DefaultAliasPrefixEnabled $false
 
-> [!NOTE]
+> [!NOTE]  
 > 如果是 Exchange 内部部署和 Office 365 中的混合部署，所有基于云的站点邮箱均采用前缀 <strong>SMO-</strong> 创建。Office 365 和 Exchange 内部部署中的前缀不同，因此，如果站点邮箱在这两个位置中创建，然后同步跨内部部署，混合客户也不会发生冲突。AliasPrefix 参数优先于 DefaultAliasPrefixEnabled 参数，因此，如果 <em>AliasPrefix</em> 参数设置为有效的非 Null 字符串，每个新站点邮箱都会将该字符串添加到别名前。
 
 
@@ -99,7 +99,7 @@ _**上一次修改主题：** 2013-02-21_
 
     Remove-SiteMailboxProvisioningPolicy -Identity Default
 
-> [!important]
+> [!IMPORTANT]  
 > 在删除名为“Default”的策略之前，必须先创建并指定另一个默认策略。
 
 

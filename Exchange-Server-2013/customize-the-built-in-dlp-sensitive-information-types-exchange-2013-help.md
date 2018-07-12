@@ -47,7 +47,7 @@ _**上一次修改主题：** 2016-05-26_
 
 3.  键入 **Set-Content -path "C:\\custompath\\exportedRules.xml" -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection**，创建包含所有这些数据的格式化 XML 文件。(**Set-content** 是将 XML 写入文件的 cmdlet 部分。）
     
-    > [!important]
+    > [!IMPORTANT]  
     > 确保使用规则包实际存储的文件位置。<strong>C:\custompath\</strong> 是占位符。
 
 
@@ -194,7 +194,7 @@ _**上一次修改主题：** 2016-05-26_
 
 3.  在 Exchange 命令行管理程序 或 Exchange Online PowerShell 中，键入 **New-ClassificationRuleCollection -FileData (Get-Content -Path "C:\\custompath\\MyNewRulePack.xml " -Encoding Byte)**。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 确保使用规则包实际存储的文件位置。<strong>C:\custompath\</strong> 是占位符。
 
 

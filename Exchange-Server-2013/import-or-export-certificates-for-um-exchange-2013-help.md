@@ -47,7 +47,7 @@ _**上一次修改主题：** 2013-12-18_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -76,11 +76,13 @@ _**上一次修改主题：** 2013-12-18_
 3.  输入用户名和密码后将证书输出至一个文件中。
 
 <!-- end list -->
-
+  ```
     $file = Get-ExchangeCertificate -DomainName umcorp.northwindtraders.com | Export-ExchangeCertificate -BinaryEncoded:$true -Password (Get-Credential).password
-
+  ```
+  ```
     Set-Content -Path "d:\umcerts\selfsigned.pfx" -Value $file.FileData =Encoding Byte
-
+  ```
+  
 ## 使用 EAC 导入证书
 
 1.  在 EAC 中，单击\&quot;服务器\&quot;\>\&quot;证书\&quot;\>\&quot;更多选项\&quot;![更多选项图标](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "更多选项图标")，再单击\&quot;导入 Exchange 证书\&quot;。

@@ -51,13 +51,13 @@ Microsoft Exchange 2010 UM 疑难解答工具是名为 **Test-ExchangeUMCallFlow
     
       - 安装此工具。有关详细信息，请参阅[安装 Exchange UM 故障排除工具](install-the-exchange-um-troubleshooting-tool-exchange-2013-help.md)。
         
-        > [!important]
+        > [!IMPORTANT]  
         > 如果要在<code>SIPClient</code>模式下使用 UM 故障排除工具，有几个办公室通信服务器 2007 R2 或Microsoft Lync Server 要求和必须满足的先决条件。有关详细信息，请参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=311961">清单︰ 部署 Office 通信服务器 2007 R2 和 Exchange 2010 统一消息</a>。
 
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

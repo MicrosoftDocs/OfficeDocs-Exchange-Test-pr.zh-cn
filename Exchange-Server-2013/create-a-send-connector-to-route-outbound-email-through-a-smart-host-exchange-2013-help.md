@@ -19,7 +19,7 @@ _**上一次修改主题：** 2013-02-07_
 
 在某些情况下，可能需要通过第三方智能主机路由电子邮件，例如，当您有一个网络设备，并希望对出站邮件执行策略检查。
 
-> [!NOTE]
+> [!NOTE]  
 > 第三方智能主机必须使用 SMTP 进行传输。如果不是这样，则应使用外部连接器或传递代理连接器。
 
 
@@ -37,7 +37,7 @@ _**上一次修改主题：** 2013-02-07_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -51,7 +51,7 @@ _**上一次修改主题：** 2013-02-07_
     
     对于“智能主机身份验证”，选择智能主机所需的身份验证类型。如果选择“基本身份验证”，则必须提供用户名和密码。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 如果选择基本身份验证，我们建议您使用加密连接，因为基本身份验证将以明文方式发送用户名和密码。
 
 

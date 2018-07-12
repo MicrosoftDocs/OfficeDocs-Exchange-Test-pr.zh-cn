@@ -21,7 +21,7 @@ _**上一次修改主题：** 2013-05-21_
 
 您可以配置绕过邮箱审核日志，因此通过该用户帐户或任何邮箱的帐户执行的操作不记录的用户或计算机帐户。通过跳过受信任的用户帐户或计算机帐户需要频繁访问邮箱，您可以减少邮箱审核日志中的干扰。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 如果您使用邮箱审核日志审核邮箱访问权限和操作，必须定期监视邮箱审核旁路关联。如果邮箱审核避开关联添加一个帐户，该帐户可以访问到它已分配权限，而无需为此类访问或 （如消息删除） 所执行的任何操作生成任何邮箱审核日志条目的组织中的任何邮箱。
 
 
@@ -39,7 +39,7 @@ _**上一次修改主题：** 2013-05-21_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 

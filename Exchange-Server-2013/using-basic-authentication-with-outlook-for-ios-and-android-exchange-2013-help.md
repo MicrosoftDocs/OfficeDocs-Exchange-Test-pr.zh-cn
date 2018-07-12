@@ -21,7 +21,7 @@ _**上一次修改主题：** 2018-04-02_
 
 IOS 和 Android 的 Outlook 应用程序旨在将组合在一起的电子邮件、 日历、 联系人和其他文件，使您的组织中做更多的用户从他们的移动设备。 本文提供了该应用程序的存储设计和体系结构的概述，以便 Exchange 管理员可以部署和维护 Exchange 组织中的 Outlook iOS 和 Android。
 
-> [!NOTE]
+> [!NOTE]  
 > <a href="https://support.office.com/zh-cn/article/outlook-for-ios-and-android-help-center-cd84214e-a5ac-4e95-9ea3-e07f78d0cd">Outlook for iOS 和 Android 帮助中心</a>向用户开放，其中包括在特定设备上使用应用的帮助和疑难解答信息。
 
 

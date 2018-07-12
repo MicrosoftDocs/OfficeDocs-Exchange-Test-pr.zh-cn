@@ -37,7 +37,7 @@ DAG 中的任何服务器可以承载来自 DAG 中任何其他服务器的邮�
 
 DAG 利用了“增量部署”这一概念，这是指能够在安装 Exchange 之后为所有邮箱服务器和数据库部署服务和数据可用性。在部署 Exchange 2013 邮箱服务器后，您可以创建 DAG，将邮箱服务器添加到 DAG，然后在 DAG 成员之间复制邮箱数据库。
 
-> [!NOTE]
+> [!NOTE]  
 > 支持创建包含物理邮箱服务器与虚拟邮箱服务器组合的 DAG，前提是这些服务器和解决方案符合 <a href="exchange-2013-system-requirements-exchange-2013-help.md">Exchange 2013 系统要求</a>和 <a href="exchange-2013-virtualization-exchange-2013-help.md">Exchange 2013 虚拟化</a>中提出的要求。对于所有 Exchange 高可用性配置，必须确保 DAG 中所有邮箱服务器大小均已经过适当调整，可以处理计划中断和非计划中断过程中的必要工作负载。
 
 

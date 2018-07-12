@@ -27,7 +27,7 @@ _**上一次修改主题：** 2015-07-22_
 
 如果策略提示通知让组织中正在撰写邮件的发件人实时了解到组织的相关要求和标准，将可以降低他们违反组织强制执行的各种标准的可能。
 
-> [!NOTE]
+> [!NOTE]  
 > <ul>
 > <li><p>Exchange Online：DLP 是一项高级功能，要求使用 Exchange Online 计划 2 订阅。有关详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=286154">Exchange Online Licensing</a>（Exchange Online 授权）。</p></li>
 > <li><p>Exchange 2013：DLP 是一项高级功能，要求使用 Exchange 企业客户端访问许可证 (CAL)。有关 CAL 和服务器授权的详细信息，请参阅 <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server Licensing</a>（Exchange Server 授权）。</p></li>

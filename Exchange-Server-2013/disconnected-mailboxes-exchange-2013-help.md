@@ -29,7 +29,7 @@ _**上一次修改主题：** 2015-03-09_
     
     禁用和删除的邮箱保留在邮箱数据库中，直到已删除的邮箱保留期过期（默认为 30 天）。在保留期过期后，此邮箱将被永久删除（也称为*清除*）。如果使用 **Remove-Mailbox** cmdlet 删除邮箱，它也会在保留期加以保留。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 如果使用 <strong>Remove-Mailbox</strong> cmdlet 和 <em>Permanent</em> 或 <em>StoreMailboxIdentity</em> 参数删除邮箱，则该邮箱将立即从邮箱数据库中删除。
     
     要确定您组织中已禁用的邮箱，请在命令行管理程序中运行以下命令。
@@ -100,7 +100,7 @@ _**上一次修改主题：** 2015-03-09_
 
   - **将其连接到现有主邮箱**   与已断开连接的主邮箱类似，已断开连接的存档邮箱将保留在邮箱数据库中，直到已删除的邮箱保留期过期（默认为 30 天）。在此期间，您可以通过将存档邮箱重新连接到它在被禁用前所连接的同一用户帐户，恢复存档邮箱。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 如果对用户邮箱禁用存档邮箱，然后再对该相同用户启用存档邮箱，则用户邮箱将获取一个新的存档邮箱。尽管可以使用 <strong>Connect-Mailbox</strong> cmdlet 将主邮箱连接到用户，但您必须使用 <strong>Enable-Mailbox</strong> cmdlet 将禁用的存档邮箱连接到现有邮箱。
     
     有关详细信息，请参阅[在 Exchange 2013 中管理就地存档](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md)。

@@ -41,7 +41,7 @@ _**上一次修改主题：** 2018-04-16_
 
   - 您需要将边缘服务器订阅到面向 Internet 的 Active Directory 站点。有关详细信息，请参阅[配置通过所订阅的边缘传输服务器的 Internet 邮件流](configure-internet-mail-flow-through-a-subscribed-edge-transport-server-exchange-2013-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -121,7 +121,7 @@ _**上一次修改主题：** 2018-04-16_
 
   - ESRA 凭据泄漏。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 若要重新订阅边缘传输服务器，请在边缘传输服务器上导出新边缘订阅文件，然后在邮箱服务器上导入 XML 文件。您需要将边缘传输服务器重新订阅到原来所订阅的同一个 Active Directory 站点。不必先删除原来的边缘订阅；重新订阅过程会覆盖现有的边缘订阅。
 
 

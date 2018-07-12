@@ -271,7 +271,7 @@ Exchange 2013 中有两种常见的混合环境方案：
     
     在混合环境中，本地 Exchange 组织和 UNRESOLVED\_TOKEN\_VAL(Office365) 之间不存在规则复制。因此，你在 Exchange 中创建规则时，需要在 UNRESOLVED\_TOKEN\_VAL(Office365) 中创建匹配规则。你在 UNRESOLVED\_TOKEN\_VAL(Office365) 中创建的规则存储在云中，但你在本地组织中创建的规则存储在本地 Active Directory 中。在混合环境中管理规则时，通过设置为可同时在两个环境进行更改，或者在一个环境中进行更改，然后导出规则并将其导入到另一个环境中，可使这两个规则集保持同步。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 即使 UNRESOLVED_TOKEN_VAL(Office365) 和 Exchange Server 中可用的条件和操作之间有巨大的重叠，两者仍然有差异。如果你计划在两处位置创建相同的规则，请确保要使用的所有条件和操作都可用。要查看 UNRESOLVED_TOKEN_VAL(Office365) 中的可用条件和操作列表，请参阅下列主题：<br />
     > <a href="https://technet.microsoft.com/zh-cn/library/jj919235(v=exchg.150)">在联机 Exchange 邮件流规则条件和例外 （谓语）</a><br />
     > <a href="https://technet.microsoft.com/zh-cn/library/jj919237(v=exchg.150)">联机在 Exchange 邮件流规则操作</a>

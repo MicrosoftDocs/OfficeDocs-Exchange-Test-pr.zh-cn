@@ -33,6 +33,6 @@ Microsoft Exchange Server 2013 不能继续安装，因为检测到本地计算�
 
 如果您在重新启动计算机并重新安装任何最近的程序或 Windows 更新之后，您*仍*收到此错误，我们建议您与 Microsoft 支持部门联系。他们将帮助您查找 Windows 和其他程序认为您的计算机需要重新启动的原因。要与 Microsoft 支持部门联系，请转到 [Microsoft Exchange Server 的支持](https://go.microsoft.com/fwlink/p/?linkid=525940)。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 我们强烈建议您不要尝试通过手动删除或更改 Windows 注册表中的键或值来解决此问题，尽管此操作很容易执行。虽然这样做可能会立即解决此问题，但以后可能导致问题。如果安装失败的是 Windows 更新，这一点尤其重要。
 

@@ -77,7 +77,7 @@ _**上一次修改主题：** 2015-03-09_
 </table>
 
 
-> [!NOTE]
+> [!NOTE]  
 > 默认情况下，Exchange 发送 HTML DSN 邮件，但您可以配置 Exchange HTML DSN 将消息发送给内部发件人、 外部发件人，或这两者。若要配置此行为，请修改<em>InternalDsnSendHtml</em>参数，使用<strong>Set-TransportService</strong>命令使用<em>ExternalDsnSendHtml</em>参数。
 > 如果将<em>InternalDsnSendHtml</em>参数设置为<code>$false</code>，Exchange 将禁止 DSN 邮件发送给内部发件人中的 HTML 标记。如果将<em>ExternalDsnSendHtml</em>参数设置为<code>$false</code>，Exchange 将禁止 DSN 邮件发送到外部发件人中的 HTML 标记。
 
@@ -130,6 +130,6 @@ Exchange 在 DSN 邮件文本中使用的下列字符有特殊含义：
 </table>
 
 
-> [!important]
+> [!IMPORTANT]  
 > 如果 DSN 邮件文本包含引号 （&quot;），如<code>&lt;A HREF=&quot;url&quot;&gt;</code>中包含 HTML 标记，必须围绕整个 DSN 邮件文本中使用单引号 （'） 引起来。如果使用双引号引起周围整个 DSN 邮件文本和 HTML 标记前后，将收到一条错误消息。
 

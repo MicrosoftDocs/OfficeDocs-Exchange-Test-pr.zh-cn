@@ -31,7 +31,7 @@ _**上一次修改主题：** 2016-12-15_
 
 有关如何在**ExecutionPolicy** GPO 中删除**MachinePolicy**或**UserPolicy**的任何定义的信息，请参阅[知识库文章 KB981474](https://go.microsoft.com/fwlink/?linkid=3052&kbid=981474)。
 
-> [!NOTE]
+> [!NOTE]  
 > 虽然此知识库文章是针对 Exchange 2010 撰写的，但也适用于 Exchange 2013 累积更新和 Service Pack。
 
 

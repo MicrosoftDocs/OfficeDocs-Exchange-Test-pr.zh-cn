@@ -23,7 +23,7 @@ _**上一次修改主题：** 2016-12-15_
 
 本文介绍了如何允许 Exchange 2013 本地环境中的用户访问 Exchange Online/Office 365 公用文件夹。若要允许 Exchange Online/Office 365 用户访问本地 Exchange 2013 公用文件夹，请参阅[针对混合部署配置 Exchange 2013 公用文件夹](configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)。
 
-> [!NOTE]
+> [!NOTE]  
 > 如果您有 Exchange 2010 或 Exchange 2007 公用文件夹，请参阅<a href="configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md">针对混合部署配置旧版本地公用文件夹</a>。
 
 
@@ -43,7 +43,7 @@ _**上一次修改主题：** 2016-12-15_
 
 5.  Outlook 2011 for Mac 和 Outlook for Mac for Office 365 不受跨界公用文件夹的支持。用户必须与公用文件夹位于相同位置，才能通过 Outlook 2011 for Mac 或 Outlook for Mac for Office 365 访问这些公用文件夹。此外，使用 Exchange Online 邮箱的用户将无法使用 Outlook Web App 访问内部部署公用文件夹。
     
-    > [!NOTE]
+    > [!NOTE]  
     > Outlook 2016 for Mac 支持跨界部署公用文件夹。如果组织中的客户使用 Outlook 2016 for Mac，请确保他们安装了 2016 年 4 月发布的更新程序。否则，这些用户将无法访问共存或混合拓扑中的公用文件夹。有关详细信息，请参阅<a href="accessing-public-folders-with-outlook-2016-for-mac-exchange-2013-help.md">通过 Outlook 2016 for Mac 访问公用文件夹</a>。
 
 
@@ -65,7 +65,7 @@ _**上一次修改主题：** 2016-12-15_
 
 运行脚本 `Sync-MailPublicFoldersCloudToOnprem.ps1` 会在 Exchange Online 和 Exchange 2013 本地环境之间同步启用邮件的公用文件夹。必须在云中重新创建分配给启用邮件的公用文件夹的特殊权限，因为混合部署方案不支持跨界部署权限。有关详细信息，请参阅 [Exchange Server 2013 混合部署](https://technet.microsoft.com/zh-cn/59e32000-4fcf-417f-a491-f1d8f9aeef9b\(exchg.150\)#doc)。
 
-> [!NOTE]
+> [!NOTE]  
 > 已同步的启用邮件的公用文件夹将显示为邮件联系人对象，用于处理邮件流，并且不会在 Exchange 管理员中心中显示。请参阅 Get-MailPublicFolder 命令。要重新创建云中的 SendAs 权限，请使用 Add-RecipientPermission 命令。
 
 
@@ -75,7 +75,7 @@ _**上一次修改主题：** 2016-12-15_
     
     其中，`Credential` 是你的 Office 365 用户名和密码。
 
-> [!NOTE]
+> [!NOTE]  
 > 我们建议每天运行一次这段脚本，以同步启用邮件的公用文件夹。
 
 
@@ -91,7 +91,7 @@ _**上一次修改主题：** 2016-12-15_
     
     其中，`Credential` 是你的 Office 365 用户名和密码。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 我们建议每天运行一次这段脚本，以导入公用文件夹邮箱对象，因为只要公用文件夹邮箱达到阈值容量，就会自动拆分为多个新邮箱。因此，你总是要确保从云中导入的是最新公用文件夹邮箱。
 
 
@@ -99,7 +99,7 @@ _**上一次修改主题：** 2016-12-15_
     
         Set-OrganizationConfig -PublicFoldersEnabled Remote
 
-> [!NOTE]
+> [!NOTE]  
 > 您必须等待 ActiveDirectory 同步完成才能查看更改。此过程可能需要 3 个小时才能完成。如果您不想等待每隔三小时进行一次定期同步，可以随时强制执行目录同步。有关强制执行目录同步的详细步骤，请参阅<a href="http://technet.microsoft.com/zh-cn/library/jj151771.aspx">强制执行目录同步</a>。
 
 

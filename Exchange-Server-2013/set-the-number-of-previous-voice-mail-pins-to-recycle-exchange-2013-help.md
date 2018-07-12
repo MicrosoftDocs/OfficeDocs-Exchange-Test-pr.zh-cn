@@ -21,7 +21,7 @@ Outlook语音访问用户拨入到 Outlook Voice Access 编号，这些系统会
 
 可以统一邮件 (UM) 邮箱策略上配置多个针相关设置。**PIN 回收计数**设置指定他们可以重复使用旧的 PIN 之前，必须使用唯一的针脚用户数。您可以设置此设置 1 到 20 之间的值。对于大多数组织，此值应设置到 5 针，这是默认值。设置此值过高可以受挫的用户，因为它可为用户创建和记忆许多针困难。设置得过低可能会引入到您的网络安全威胁。
 
-> [!important]
+> [!IMPORTANT]  
 > 不能禁用 PIN 再循环计数。
 
 
@@ -39,7 +39,7 @@ Outlook语音访问用户拨入到 Outlook Voice Access 编号，这些系统会
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

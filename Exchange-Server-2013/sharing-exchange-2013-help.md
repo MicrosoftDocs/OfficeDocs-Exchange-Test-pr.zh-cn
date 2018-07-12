@@ -19,7 +19,7 @@ _**上一次修改主题：** 2015-02-27_
 
 与人一起共事或计划社交活动时，您可能需要与不同组织中的用户或朋友和家人协调计划。通过 Exchange 2013，管理员可以设置不同的日历访问级别，以允许企业与其他企业协调并让用户与其他人共享计划。可以通过创建*组织关系*来设置企业与企业的日历共享。用户与用户的日历共享则可通过应用*共享策略*来设置。
 
-> [!important]
+> [!IMPORTANT]  
 > Exchange Server 2013 的此项功能与由世纪互联在中国运营的 Office 365 不完全兼容，可能需要遵循一些功能限制。有关详细信息，请参阅<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解由世纪互联运营的 Office 365</a>。
 
 
@@ -173,14 +173,14 @@ Exchange 2013 中支持以下共享方案：
     
     1.  在所有 Exchange 2007 CAS 服务器上，使用记事本等文本编辑器打开以下文件：\<Exchange 安装路径\>\\V14\\ClientAccess\\ExchWeb\\EWS\\web.config
         
-        > [!CAUTION]
+        > [!CAUTION]  
         > 在对 web.config 文件进行任何更改前，请为该文件创建一个副本，并且将其存储在安全位置。
     
     2.  在 web.config 文件中找到 **appSettings** 部分。
     
     3.  添加新键值 \<add key="maximumQueryIntervalDays" value="62" /\>，并保存 web.config 文件。
         
-        > [!NOTE]
+        > [!NOTE]  
         > 默认情况下不提供 maximumQueryIntervalDays 值。如果此值不存在，Exchange 2007 将使用默认间隔 42 天。
     
     4.  在所有 Exchange 2007 CAS 服务器上停止并重新启动 Microsoft Internet 信息服务 (IIS)。

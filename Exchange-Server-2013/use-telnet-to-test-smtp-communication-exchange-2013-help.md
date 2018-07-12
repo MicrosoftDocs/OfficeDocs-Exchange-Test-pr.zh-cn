@@ -39,7 +39,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -61,7 +61,7 @@ _**上一次修改主题：** 2016-12-09_
 
 4.  键入要查找其 MX 记录的域名。例如，若要查找 fabrikam.com 域的 MX 记录，请键入 **fabrikam.com.**，然后按 Enter。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 尾随句点 (<strong>.</strong>) 表示 FQDN。使用尾随句点可防止无意中将为网络配置的默认 DNS 后缀添加到域名中。
     
     输出的命令将与以下内容类似：
@@ -75,7 +75,7 @@ _**上一次修改主题：** 2016-12-09_
 
 5.  准备结束 Nslookup 会话时，请键入 **exit** 并按 Enter 键。
 
-> [!NOTE]
+> [!NOTE]  
 > 组织的内部网络规定的防火墙或 Internet 代理限制可能会阻止您使用 Nslookup 工具查询 Internet 上的公用 DNS 服务器。
 
 
@@ -95,7 +95,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - **邮件正文**   这是一封测试邮件
 
-> [!NOTE]
+> [!NOTE]  
 > <ul>
 > <li><p>Telnet 客户端中的命令不区分大小写。为清楚起见，SMTP 命令动词均使用大写。</p></li>
 > <li><p>在 Telnet 会话中连接目标 SMTP 服务器后，无法使用 Backspace 键。如果在键入 SMTP 命令时出错，必须按 ENTER，然后重新键入命令。无法识别的 SMTP 命令或语法错误会导致生成如下错误消息：</p>
@@ -149,7 +149,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - RCPT TO:kate@fabrikam.com NOTIFY=success,failure
     
-    > [!NOTE]
+    > [!NOTE]  
     > RFC 2821 中定义的 3 位数 SMTP 响应代码对所有 SMTP 邮件服务器都一样。对于某些 SMTP 邮件服务器，文本说明可能略有不同。
 
 
@@ -179,7 +179,7 @@ _**上一次修改主题：** 2016-12-09_
 
 **失败的可能原因**   域名中存在无效字符。或者，目标 SMTP 服务器上有连接限制。
 
-> [!NOTE]
+> [!NOTE]  
 > EHLO 是 RFC 2821 中定义的已扩展简单邮件传输协议 (ESMTP) 命令动词。ESMTP 服务器可在初始连接时公布其功能。这些功能包括其可接受的邮件大小上限，以及支持的身份验证方法。HELO 是 RFC 821 中定义的旧版 SMTP 命令动词。大多数 SMTP 邮件服务器都支持 ESMTP 和 EHLO。
 
 

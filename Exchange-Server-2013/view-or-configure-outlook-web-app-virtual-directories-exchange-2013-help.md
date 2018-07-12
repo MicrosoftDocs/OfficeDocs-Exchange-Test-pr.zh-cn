@@ -19,7 +19,7 @@ _**上一次修改主题：** 2013-08-12_
 
 您可以使用 EAC 或命令行管理程序查看或配置 Outlook Web App 虚拟目录的属性。
 
-> [!warning]
+> [!WARNING]  
 > 在 Exchange Online 中，管理员无法查看或配置 Outlook Web App 虚拟目录。
 
 
@@ -43,7 +43,7 @@ _**上一次修改主题：** 2013-08-12_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -85,7 +85,7 @@ _**上一次修改主题：** 2013-08-12_
     
       - **使用基于表单的身份验证**：基于表单的身份验证可为 Outlook Web App 虚拟目录提供增强的安全性。基于表单的身份验证将为 Outlook Web App 创建登录页。可以配置基于表单的身份验证所使用的登录提示类型。例如，可以将基于表单的身份验证配置为要求用户以域名\\用户名的格式在 Outlook Web App 登录页上提供域和用户名的信息。
         
-        > [!important]
+        > [!IMPORTANT]  
         > 除非启用 SSL，否则基于表单的身份验证不会提供安全通道。
         
         选择下列选项之一：
@@ -96,22 +96,18 @@ _**上一次修改主题：** 2013-08-12_
         
         **仅用户名** 用户仅输入用户名，无需输入域名，例如 Kweku。如果对基于表单的身份验证使用\&quot;仅用户名\&quot;登录提示，还必须要指定\&quot;登录域\&quot;属性。\&quot;登录域\&quot;属性决定了用户尝试登录 Outlook Web App 时要使用的默认域。例如，如果默认域为 Contoso，并且名为 Kweku 的域用户登录到 Outlook Web App，则只需输入 Kweku 作为用户名即可。服务器将使用默认的域 Contoso。如果用户不是 Contoso 域的成员，则必须输入域名和用户名。
 
-5.  
+5.  在\&quot;功能\&quot;选项卡上，指定要在虚拟目录上为 Outlook Web App 用户启用或禁用的功能。
     
-    在\&quot;功能\&quot;选项卡上，指定要在虚拟目录上为 Outlook Web App 用户启用或禁用的功能。
-    
-    > [!NOTE]
+    > [!NOTE]  
     > 各个用户的功能设置将覆盖虚拟目录设置。通过使用 <strong>Set-CASMailbox</strong> cmdlet，或通过使用 Outlook Web App 邮箱策略，可以更改单个用户的分段设置。有关详细信息，请参阅 <a href="outlook-web-app-mailbox-policies-exchange-2013-help.md">Outlook Web App 邮箱策略</a>。
     
     使用复选框来启用或禁用功能。默认情况下，显示最常用的功能。要查看可以启用或禁用的所有功能，可单击\&quot;更多选项\&quot;。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 通过使用&amp;quot;高级客户端&amp;quot;复选框启用或禁用 Outlook Web App 标准版本的选项已被废除，将从设置中删除。始终启用 Outlook Web App 标准版本。
 
 
-6.  
-    
-    在\&quot;文件访问\&quot;选项卡上，使用复选框配置用户的文件访问和查看选项。文件访问使用户可以打开或查看附加到电子邮件的文件的内容。
+6.  在\&quot;文件访问\&quot;选项卡上，使用复选框配置用户的文件访问和查看选项。文件访问使用户可以打开或查看附加到电子邮件的文件的内容。
     
     可根据用户是否已经登录公共或私有计算机来控制文件访问。用户用于选择专用计算机访问或公用计算机访问的选项只有在使用基于表单的身份验证时才可用。所有其他形式的身份验证默认设置为私人计算机访问。
     

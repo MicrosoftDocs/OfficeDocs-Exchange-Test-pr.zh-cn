@@ -23,7 +23,7 @@ _**上一次修改主题：** 2016-12-09_
 
 下表列出了本地 Exchange Server 2013 中公用文件夹的限制。除非特别指出限制是推荐值，否则此表列出的值就是公用文件夹的支持限制。
 
-> [!important]
+> [!IMPORTANT]  
 > 若要了解针对 Office 365 的 Exchange Online 限制，请参阅 <a href="https://go.microsoft.com/fwlink/?linkid=391188">Exchange Online 限制</a>。
 
 

@@ -25,7 +25,7 @@ _**上一次修改主题：** 2016-12-09_
 
 该检查表提供了针对典型升级情况的指导，因此是一个通用的检查表。
 
-> [!NOTE]
+> [!NOTE]  
 > Exchange Server 部署助理将为您提供有关如何部署 Exchange Server 的自定义分步指导。部署助理可帮助您部署 Exchange Server 2013 的全新安装，将早期版本升级到 Exchange 2013，或配置 Exchange 2013 和 Exchange Online 的混合部署。若要了解详细信息，请参阅 <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。
 
 
@@ -64,7 +64,7 @@ _**上一次修改主题：** 2016-12-09_
 <td> </td>
 <td><p>4. 配置脱节命名空间</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 此步骤是可选的。仅当组织运行脱节命名空间时，才需执行此步骤。
 
 </td>
@@ -96,7 +96,7 @@ _**上一次修改主题：** 2016-12-09_
 <td><p></p></td>
 <td><p>9. 配置 Exchange 相关虚拟目录</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 如果要使用 Exchange Web 服务、Outlook 无处不在 或脱机通讯簿，此步骤是必需的。当您需要更改 Exchange 控制面板、Microsoft Office Outlook Web App 或 Exchange ActiveSync 的任何默认设置时，也可能需要此步骤。
 
 
@@ -119,7 +119,7 @@ _**上一次修改主题：** 2016-12-09_
 <td><p></p></td>
 <td><p>12. 配置边缘传输服务器</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 此步骤是可选的。只有当组织使用的是边缘传输服务器时，才有必要。
 
 </td>
@@ -129,7 +129,7 @@ _**上一次修改主题：** 2016-12-09_
 <td> </td>
 <td><p>13. 配置统一消息</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 此步骤是可选的。仅当要在组织中使用统一消息时，才需执行此步骤。
 
 </td>
@@ -165,7 +165,7 @@ _**上一次修改主题：** 2016-12-09_
 <td> </td>
 <td><p>19. 将公用文件夹数据从 Exchange 2013 移动到 Exchange 2013</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 此步骤是可选的。只有当组织使用的是公用文件夹时，才有必要。
 
 </td>

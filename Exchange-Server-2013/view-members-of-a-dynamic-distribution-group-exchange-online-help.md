@@ -27,7 +27,7 @@ _**上一次修改主题：** 2018-03-02_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -36,14 +36,17 @@ _**上一次修改主题：** 2018-03-02_
 ## 使用命令行管理程序预览动态通讯组的成员列表
 
 本示例返回名为全职员工的动态通讯组的成员的列表。第一个命令将动态通讯组对象存储在变量`$FTE`中。第二个命令使用**Get-Recipient** cmdlet 列出为动态通讯组定义的条件相匹配的收件人。
-
+  
+  ```
     $FTE = Get-DynamicDistributionGroup "Full Time Employees"
-
+  ```
+  ```
     Get-Recipient -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
+  ```
 
 有关语法和参数的详细信息，请参阅 [Get-DynamicDistributionGroup](https://technet.microsoft.com/zh-cn/library/bb124762\(v=exchg.150\)) 和 [Get-Recipient](https://technet.microsoft.com/zh-cn/library/aa996921\(v=exchg.150\))。
 
-> [!NOTE]
+> [!NOTE]  
 > 您不能通过 EAC 查看动态通讯组的成员。
 
 

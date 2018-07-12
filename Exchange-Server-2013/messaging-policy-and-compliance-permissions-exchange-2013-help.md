@@ -27,13 +27,13 @@ _**上一次修改主题：** 2016-12-09_
 
 3.  现在运行 **Get-ManagementRoleAssignment** cmdlet 以查看分配给您的角色组或管理角色，以便确定您是否具有管理该功能所需的权限。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 必须分配了 Role Management 管理角色才能运行 <strong>Get-ManagementRoleAssignment</strong> cmdlet。如果没有运行 <strong>Get-ManagementRoleAssignment</strong> cmdlet 的权限，则请求 Exchange 管理员检索分配给您的角色组或管理角色。
 
 
 如果要将管理一项功能的权限委派给另一个用户，请参阅[委派角色分配](delegate-role-assignments-exchange-2013-help.md)。
 
-> [!NOTE]
+> [!NOTE]  
 > 要管理的某些功能可能存在于边缘传输服务器上。若要管理边缘传输服务器上的功能，需要成为要管理的边缘传输服务器上 Local Administrators 组的成员。边缘传输服务器不使用基于角色的访问控制 (RBAC)。在下表中，可在边缘传输服务器上管理的功能所对应的“所需权限”列中标识有“边缘传输本地管理员”。
 
 
@@ -74,7 +74,7 @@ _**上一次修改主题：** 2016-12-09_
 <td><p><a href="discovery-management-exchange-2013-help.md">发现管理</a> <strong>和</strong></p>
 <p><a href="mailbox-import-export-role-exchange-2013-help.md">邮箱导入导出角色</a></p>
 
-> [!NOTE]
+> [!NOTE]  
 > 默认情况下，不会将 Mailbox Import Export 角色分配给任何角色组。您可以将管理角色分配给内置或自定义角色组、用户或通用安全组。建议将角色分配给角色组。有关详细信息，请参阅<a href="add-a-role-to-a-user-or-usg-exchange-2013-help.md">向用户或 USG 添加角色</a>。
 
 </td>
@@ -108,7 +108,7 @@ _**上一次修改主题：** 2016-12-09_
 <td><p>In-Place eDiscovery</p></td>
 <td><p><a href="discovery-management-exchange-2013-help.md">发现管理</a></p>
 
-> [!NOTE]
+> [!NOTE]  
 > 默认情况下，Discovery Management 角色组中没有任何成员。用户（包括管理员）都不具有搜索邮箱所需的权限。有关详细信息，请参阅<a href="assign-ediscovery-permissions-in-exchange-exchange-2013-help.md">在 Exchange 中分配电子数据展示权限</a>。
 
 </td>
@@ -118,7 +118,7 @@ _**上一次修改主题：** 2016-12-09_
 <td><p><a href="discovery-management-exchange-2013-help.md">发现管理</a></p>
 <p><a href="organization-management-exchange-2013-help.md">组织管理</a></p>
 
-> [!important]
+> [!IMPORTANT]  
 > 创建基于查询的就地保留，用户需要直接或通过分配了两个角色的角色组中的成员分配邮箱搜索或诉讼保留角色。要不使用查询创建就地保留（将所有邮箱邮件置于暂停状态），则必须分配诉讼保留角色。会向发现管理角色组分配这两个角色。<br />
 > 会向组织管理角色组分配诉讼保留角色。组织管理角色组的成员可对邮箱中的所有邮件实施就地保留，但不能创建基于查询的就地保留。
 

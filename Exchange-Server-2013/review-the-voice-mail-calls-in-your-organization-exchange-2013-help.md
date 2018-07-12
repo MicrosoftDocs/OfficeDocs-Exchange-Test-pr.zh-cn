@@ -57,7 +57,7 @@ _**上一次修改主题：** 2013-02-22_
     
     导出的文件将被命名为 um\_cdr\_*YYYY-MM-DD*.csv，其中*YYYY-MM-DD*是年、 月和日运行报告。有关详细信息，请参阅[解释语音邮件呼叫记录](interpret-voice-mail-call-records-exchange-2013-help.md)。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 在报告页面上，可以下载 Microsoft Excel 模板用来导入特定日期的 .csv 文件。
 
 

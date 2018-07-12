@@ -17,7 +17,7 @@ _**适用于：** Exchange Online, Exchange Server 2013_
 
 _**上一次修改主题：** 2017-01-17_
 
-> [!NOTE]
+> [!NOTE]  
 > 在 Exchange Online（Office 365 和 Exchange Online 独立计划）中新建就地电子数据展示搜索的截止时间为 2017 年 7 月 1 日，我们已推迟了这一最后期限。不过，今年晚些时候或明年初，将无法在 Exchange Online 中新建就地电子数据展示搜索。若要创建电子数据展示搜索，请开始在 Office 365 安全与合规中心使用<a href="https://go.microsoft.com/fwlink/?linkid=847843">内容搜索</a>。在我们取消新建就地电子数据展示搜索后，仍可以修改现有就地电子数据展示搜索，并且在 Exchange Server 2013 和 Exchange 混合部署中新建就地电子数据展示搜索也仍将受支持。
 
 
@@ -41,7 +41,7 @@ _**上一次修改主题：** 2017-01-17_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -57,7 +57,7 @@ _**上一次修改主题：** 2017-01-17_
 
 4.  在“邮箱”页上，选择要搜索的邮箱。您可以跨所有邮箱搜索或选择要搜索的特定邮箱。在 Exchange Online 中，您还可以选择 Office 365 组作为搜索的内容源。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 您无法使用“搜索所有邮箱”选项将所有邮箱置于保留状态。要创建“就地保留”，您必须选择“指定要搜索的邮箱”。有关更多详细信息，请参阅<a href="create-or-remove-an-in-place-hold-exchange-2013-help.md">创建或删除就地保留</a>。
 
 
@@ -69,7 +69,7 @@ _**上一次修改主题：** 2017-01-17_
         
         ![配置电子数据展示搜索查询](images/Dd298021.a3626569-8700-421e-8b4e-7ec520b28272(EXCHG.150).png "配置电子数据展示搜索查询")  
     
-    > [!NOTE]
+    > [!NOTE]  
     > 由运行搜索时创建的搜索查询中的“<strong>OR</strong>”运算符连接“<strong>发件人:</strong>”和“<strong>收件人/抄送/密件抄送:</strong>”字段。这意味着，由任何指定用户发送或接收的邮件（并且匹配其他搜索条件）都包含在此搜索结果中。
     > 日期由 <strong>AND</strong> 运算符连接。
 
@@ -80,7 +80,7 @@ _**上一次修改主题：** 2017-01-17_
     
       - “指定保留项目的天数（相对于收到日期）” 使用此选项以在指定周期内保留项目。例如，如果您的组织需要将所有邮件至少保留七年，可使用此选项。可使用“基于时间”的就地保留以及保持政策，确保在七年后删除项目。
         
-        > [!important]
+        > [!IMPORTANT]  
         > 当出于法律目的“就地保留”邮箱或项目时，通常建议无限期保持项目，并在完成案件或调查后删除保留。
 
 
@@ -106,13 +106,13 @@ _**上一次修改主题：** 2017-01-17_
 
   - 日志级别：完整
 
-> [!important]
+> [!IMPORTANT]  
 > 如果您在运行就地电子数据展示搜索时未指定额外搜索参数，结果将返回指定源邮箱中的所有项目。如果您未指定要搜索的邮箱，则会搜索 Exchange 或 Exchange Online 组织中的所有邮箱。
 
 
     New-MailboxSearch "Discovery-CaseId012" -StartDate "01/01/2009" -EndDate "12/31/2011" -SourceMailboxes "DG-Finance" -TargetMailbox "Discovery Search Mailbox" -SearchQuery '"Contoso" AND "Project A"' -MessageTypes Email -IncludeUnsearchableItems -LogLevel Full
 
-> [!NOTE]
+> [!NOTE]  
 > 使用 <em>StartDate</em> 和 <em>EndDate</em> 参数时，您必须使用日期格式“mm/dd/yyyy”，即使您的本地计算机设置配置为使用其他日期格式（如“dd/mm/yyyy”），也是如此。例如，若要搜索从 2013 年 4 月 1 日到 2013 年 7 月 1 日发送的邮件，则分别使用 <strong>04/01/2013</strong> 和 <strong>07/01/2013</strong> 作为开始日期和结束日期。
 
 
@@ -140,7 +140,7 @@ _**上一次修改主题：** 2017-01-17_
     
       - 单击详细信息窗格中的“预览搜索结果”可以预览完成搜索估计后的结果。选择此选项以打开“电子数据展示搜索预览”窗口。从搜索的邮箱返回的所有邮件都会显示。
         
-        > [!NOTE]
+        > [!NOTE]  
         > 搜索的邮箱列于“电子数据展示搜索预览”窗口的右窗格中。对于每个邮箱，系统还会显示所返回的项目数量以及这些项目的总大小。搜索返回的所有项目列于右窗格中，可以按最近或最远日期进行排序。无法通过单击左窗格中的邮箱在右窗格中显示每个邮箱中的项目。若要查看从特定邮箱返回的项目，您可以复制搜索结果并在发现邮箱中查看项目。
     
     ![估计或预览搜索结果](images/Dd353189.57e0fc2d-71bf-42aa-aa4b-4a77148f2b43(EXCHG.150).gif "估计或预览搜索结果")  
@@ -152,12 +152,15 @@ _**上一次修改主题：** 2017-01-17_
 您可以使用 *EstimateOnly* 开关只返回估计的搜索结果，而不将结果复制到发现邮箱。必须使用 **Start-MailboxSearch** cmdlet 启动仅估计搜索。然后，您可以使用 **Get-MailboxSearch** cmdlet 检索估计的搜索结果。
 
 例如，运行以下命令创建新的电子数据展示搜索，然后显示估计的搜索结果：
-
+```
     New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeKeywordStatistics
-
+```
+```
     Start-MailboxSearch "FY13 Q2 Financial Results"
-
+```
+```
     Get-MailboxSearch "FY13 Q2 Financial Results"
+```
 
 若要显示上一示例中估计的搜索结果的特定信息，您可以运行以下命令：
 

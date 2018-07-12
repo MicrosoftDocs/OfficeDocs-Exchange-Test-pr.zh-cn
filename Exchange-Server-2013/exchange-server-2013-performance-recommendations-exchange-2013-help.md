@@ -25,7 +25,7 @@ Exchange Server 2013当您的环境已适当调整了大小并进行过规划时
 
 Exchange 2013 中的体系结构更改已经在 TechNet 和 [Exchange 团队博客](https://go.microsoft.com/fwlink/p/?linkid=35786)中作出了说明。我们将首先介绍几个应该考虑的高级别更改，以便更好地了解性能成本和大小调整。接下来，我们介绍了一个建议引用的列表，以进一步提供这些重要领域的上下文和背景。
 
-> [!NOTE]
+> [!NOTE]  
 > 请参阅 <a href="exchange-2013-virtualization-exchange-2013-help.md">Exchange 2013 虚拟化</a>，了解有关在虚拟化环境中部署 Exchange Server 2013 的性能优化指导。
 
 

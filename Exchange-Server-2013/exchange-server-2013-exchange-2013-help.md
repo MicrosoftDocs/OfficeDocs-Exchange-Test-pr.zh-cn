@@ -39,10 +39,10 @@ _**上一次修改主题：** 2016-12-09_
     
       - [Exchange 2013 安装后任务](exchange-2013-post-installation-tasks-exchange-2013-help.md)
     
-    > [!tip]
+    > [!TIP]  
     > 你是否曾听说过 Exchange Server 部署助理？它是一款免费的联机工具，它将询问您一些问题并专门为您创建自定义部署检查表，以帮助您在组织中快速部署 Exchange 2013。若您想要了解关于它的详细信息，请转到 <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 在您开始部署之前，请务必阅读<a href="release-notes-for-exchange-2013-exchange-2013-help.md">Exchange 2013 发行说明</a>。发行说明中可能包含有关您在部署期间和部署之后可能遇到的问题的重要信息。
 
 
@@ -90,7 +90,7 @@ Exchange 2013 的帮助内容包括以下顶级类别：
 
   - [关于 Exchange 文档](about-exchange-documentation-exchange-2013-help.md)
 
-> [!NOTE]
+> [!NOTE]  
 > 查看我们其他的 Exchange 内容：
 > <a href="https://technet.microsoft.com/zh-cn/library/jj200580(v=exchg.150)">Exchange Online</a><br />
 > <a href="https://technet.microsoft.com/zh-cn/library/jj200581(v=exchg.150)">Exchange Server 混合部署</a><br />

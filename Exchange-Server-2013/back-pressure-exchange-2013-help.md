@@ -75,7 +75,7 @@ EdgeTransport.exe.config 文件中的反压力配置选项
 
 默认情况下，邮件队列数据库事务日志存储在 %ExchangeInstallPath%TransportRoles\\data\\Queue。Exchange 监视该位置的硬盘空间使用率。%ExchangeInstallPath%Bin\\EdgeTransport.exe.config 应用程序配置文件包含一个 *DatabaseCheckPointDepthMax* 项，其默认值为 384 MB。此项控制硬盘上允许存在的所有未提交的事务日志的总大小。在计算硬盘使用率的公式中，将使用此项。
 
-> [!NOTE]
+> [!NOTE]  
 > <em>DatabaseCheckPointDepthMax</em> 项的值将应用于邮箱服务器或边缘传输服务器上所有与传输相关的可扩展存储引擎 (ESE) 数据库。这包括邮件队列数据库和 IP 筛选数据库。
 
 
@@ -300,7 +300,7 @@ Exchange 保留提交队列使用率的历史记录。如果提交队列使用�
 
 反压力功能的所有配置选项都位于 %ExchangeInstallPath%Bin\\EdgeTransport.exe.config XML 应用程序配置文件中。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 列出的这些设置仅供参考。我们非常不鼓励对 EdgeTransport.exe.config 文件中的反压力功能设置进行修改。对反压功能设置进行修改可能导致性能不佳或数据丢失。我们建议您调查并纠正可能遇到的任何反压力事件的根本原因。
 
 

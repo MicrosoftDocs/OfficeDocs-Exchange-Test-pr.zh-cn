@@ -21,7 +21,7 @@ _**上一次修改主题：** 2016-12-09_
 
 在混合部署中，您的用户可以位于 Exchange Online 中，或内部部署内，或同时位于两者中，并且您的公用文件夹位于 Exchange Online 中或内部部署内。有时，您的联机用户可能需要访问 Exchange Server 2013 内部部署环境中的公用文件夹。同样，Exchange 2013 用户可能需要访问 Office 365 或 Exchange Online 中的公用文件夹。
 
-> [!NOTE]
+> [!NOTE]  
 > 如果您有 Exchange 2010 或 Exchange 2007 公用文件夹，请参阅<a href="configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md">针对混合部署配置旧版本地公用文件夹</a>。
 
 
@@ -45,7 +45,7 @@ _**上一次修改主题：** 2016-12-09_
 
 5.  Outlook 2011 for Mac 和 Outlook for Mac for Office 365 不受跨界公用文件夹的支持。用户必须与公用文件夹位于相同位置，才能通过 Outlook 2011 for Mac 或 Outlook for Mac for Office 365 访问这些公用文件夹。此外，使用 Exchange Online 邮箱的用户将无法使用 Outlook Web App 访问本地公用文件夹。
     
-    > [!NOTE]
+    > [!NOTE]  
     > Outlook 2016 for Mac 支持跨界部署公用文件夹。如果组织中的客户使用 Outlook 2016 for Mac，请确保他们安装了 2016 年 4 月发布的更新程序。否则，这些用户将无法访问混合拓扑中的公用文件夹。有关详细信息，请参阅<a href="accessing-public-folders-with-outlook-2016-for-mac-exchange-2013-help.md">通过 Outlook 2016 for Mac 访问公用文件夹</a>。
 
 
@@ -63,7 +63,7 @@ _**上一次修改主题：** 2016-12-09_
 
 目录同步服务不对启用邮件的公用文件夹进行同步。运行以下两个脚本可以对已启用邮件的跨界和 Office 365 公用文件夹进行同步。分配给已启用邮件的公用文件夹的特殊权限将需要在云中重新创建，因为跨界权限在混合部署方案中不受支持。有关详细信息，请参阅 [Exchange Server 2013 混合部署](https://technet.microsoft.com/zh-cn/59e32000-4fcf-417f-a491-f1d8f9aeef9b\(exchg.150\)#doc)。
 
-> [!NOTE]
+> [!NOTE]  
 > 已同步的启用邮件的公用文件夹将显示为邮件联系人对象，用于处理邮件流，并且不会在 EExchange 管理中心 中显示。请参阅 Get-MailPublicFolder 命令。要重新创建云中的 SendAs 权限，请使用 Add-RecipientPermission 命令。
 
 
@@ -73,7 +73,7 @@ _**上一次修改主题：** 2016-12-09_
     
     其中 `Credential` 是您的 Office 365 用户名和密码，`CsvSummaryFile` 是您要以 .csv 格式记录同步操作和错误的文件路径。
 
-> [!NOTE]
+> [!NOTE]  
 > 在运行此脚本之前，我们建议您先模拟此脚本将在环境中执行的操作，方法是使用 <code>-WhatIf</code> 参数按照如上所述运行此脚本。
 > 我们还建议您每天都运行此脚本以同步启用邮件的公用文件夹。
 
@@ -86,7 +86,7 @@ _**上一次修改主题：** 2016-12-09_
 
     Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes PFMailbox1,PFMailbox2,PFMailbox3
 
-> [!NOTE]
+> [!NOTE]  
 > 您必须等待 ActiveDirectory 同步完成才能查看更改。此过程可能需要 3 个小时才能完成。如果您不想等待每隔三小时进行一次定期同步，可以随时强制执行目录同步。有关强制执行目录同步的详细步骤，请参阅<a href="http://technet.microsoft.com/zh-cn/library/jj151771.aspx">强制执行目录同步</a>。
 
 

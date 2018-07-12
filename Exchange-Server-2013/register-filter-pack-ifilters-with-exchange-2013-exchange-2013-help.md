@@ -21,7 +21,7 @@ _**上一次修改主题：** 2016-12-09_
 
 在为特定的文件类型注册 IFilter 后，具有附件处理条件的传输规则将能够扫描到这些附件。结果是，这些文件类型不再会触发 *AttachmentIsUnsupported* 条件。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 本主题中列出的过程包括修改 Exchange 服务器上的注册表。未正确编辑注册表可能造成严重问题，也许需要您重新安装操作系统。未正确编辑注册表造成的问题可能无法解决。在编辑注册表之前，请备份所有有价值的数据。<br />
 > 这些过程还会要求您在邮箱服务器上停止，然后再重新启动 Microsoft Exchange 传输服务。
 
@@ -38,7 +38,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -62,7 +62,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - 修改注册表，以便也可在 Exchange 2013 中注册 IFilter。 这将允许 Exchange 支持附件文件格式扫描。
 
-> [!important]
+> [!IMPORTANT]  
 > 必须在组织中的所有邮箱服务器上执行此步骤。
 
 
@@ -152,7 +152,7 @@ _**上一次修改主题：** 2016-12-09_
 
 您可以通过注册其他第三方 IFilter 来扩展其他文件类型的附加扫描功能。可以通过在每个邮箱服务器上安装和注册文件类型的 IFilter，添加其他文件支持功能。
 
-> [!important]
+> [!IMPORTANT]  
 > Microsoft 没有通过传输规则测试第三方 IFilter，因此，我们建议您在测试环境中部署和测试任何第三方 IFilter，然后再部署到您的生产环境中。
 
 
@@ -160,7 +160,7 @@ _**上一次修改主题：** 2016-12-09_
 
 此过程介绍了如何部署 [Adobe PDF IFilter](https://www.adobe.com/support/downloads/detail.jsp?ftpid=4025) 以支持在传输规则中处理 PDF 附件。
 
-> [!NOTE]
+> [!NOTE]  
 > 默认情况下，Exchange 2013 支持在传输规则中扫描 PDF 文件。此处所用的 PDF 示例的目的是说明如何使用第三方 IFilter 扩展其他文件类型的支持。
 
 
@@ -176,7 +176,7 @@ _**上一次修改主题：** 2016-12-09_
     
     2.  将新项的名称更改为 `{E8978DA6-047F-4E3D-9C78-CDBE46041603}`。
         
-        > [!NOTE]
+        > [!NOTE]  
         > 每个 IFilter 都具有一个唯一的类 ID (CLSID)。您可以在您要注册的 IFilter 的安装文档中或通过在注册表的 <code>HKEY_CLASSES_ROOT\CLSID</code> 项下搜索文件扩展名找到此 CLSID。
     
     3.  单击刚创建的项，然后将“(默认)”值设置为安装 PDF IFilter 所在的位置。默认情况下，PDF IFilter 安装在 `C:\Program Files\Adobe\Adobe PDF IFilter 9 for 64-bit platforms\bin\PDFFilter.dll` 中。

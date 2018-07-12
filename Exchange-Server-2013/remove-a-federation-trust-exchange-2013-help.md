@@ -21,7 +21,7 @@ _**上一次修改主题：** 2015-01-04_
 
 有关联合身份验证的更多管理任务，请参阅[联合程序](federation-procedures-exchange-2013-help.md)。
 
-> [!important]
+> [!IMPORTANT]  
 > Exchange Server 2013 的此项功能与由世纪互联在中国运营的 Office 365 不完全兼容，可能需要遵循一些功能限制。有关详细信息，请参阅<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解由世纪互联运营的 Office 365</a>。
 
 

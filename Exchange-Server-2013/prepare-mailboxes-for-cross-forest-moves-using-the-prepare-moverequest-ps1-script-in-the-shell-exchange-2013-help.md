@@ -39,7 +39,7 @@ Microsoft Exchange 2013支持邮箱移动和迁移使用的**New-MoveRequest**�
     
       - 安装了 Exchange 2013 的目标林，这是邮箱将要移动到的位置。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -49,7 +49,7 @@ Microsoft Exchange 2013支持邮箱移动和迁移使用的**New-MoveRequest**�
 
 若要为远程林域控制器分配特定身份验证凭据，必须首先运行 Windows PowerShell **Get-Credential** cmdlet，并在临时变量中存储用户输入。运行 **Get-Credential** cmdlet 时，该 cmdlet 会要求输入在对远程林域控制器进行身份验证期间使用的帐户用户名和密码。随后您便可以在 Prepare-MoveRequest.ps1 脚本中使用临时变量。有关 **Get-Credential** cmdlet 的详细信息，请参阅 [Get-Credential](https://go.microsoft.com/fwlink/p/?linkid=142122)。
 
-> [!NOTE]
+> [!NOTE]  
 > 请确保在调用此脚本时，对本地林和远程林使用两个不同的凭据。
 
 
@@ -110,7 +110,7 @@ Microsoft Exchange 2013支持邮箱移动和迁移使用的**New-MoveRequest**�
 <td><p><em>DisableEmailAddressPolicy</em> 参数指定在目标林中创建 <strong>MailUser</strong> 对象时是否应禁用电子邮件地址策略 (EAP)。</p>
 <p>当指定此参数时，不会应用目标林中的 EAP。</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 当指定此参数时，<strong>MailUser</strong> 对象的本地林域中的电子邮件地址映射不会具有标记。这通常由 EAP 进行标记。
 
 </td>

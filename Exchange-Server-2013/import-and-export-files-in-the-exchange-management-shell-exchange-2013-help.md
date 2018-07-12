@@ -31,7 +31,7 @@ Exchange 2013 中的远程命令行管理程序包含两个会话，本地会话
 
 在连接到远程 Exchange 服务器时，会在计算机上的本地会话与 Exchange 服务器上的远程会话之间建立连接。此连接使您可以在本地会话中的远程 Exchange 服务器上运行 Exchange cmdlet，即使本地计算机没有安装任何 Exchange cmdlet 也是如此。即使 Exchange cmdlet 表现为在本地计算机上运行，实际上是在 Exchange 服务器上运行。
 
-> [!important]
+> [!IMPORTANT]  
 > 即使在 Exchange 2013 服务器上打开命令行管理程序，也会发生相同的连接过程并创建两个会话。这意味着必须使用相同的新语法来导入和导出文件，无论是在 Exchange 2013 服务器上还是从远程客户端工作站打开了命令行管理程序。
 
 
@@ -144,7 +144,7 @@ Exchange 2013 中的远程命令行管理程序包含两个会话，本地会话
 
 例如，以下命令导出存储在由 **Export-SomeData** 虚构 cmdlet 创建的对象上的 **FileData** 属性中的数据。导出的数据存储在您在本地计算机上指定的文件中，在此示例中为 MyData.dat。
 
-> [!NOTE]
+> [!NOTE]  
 > 此步骤使用 <strong>ForEach</strong> cmdlet、对象以及管道传输。有关 each 的详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/aa998260(v=exchg.150)">管道传输</a>和<a href="https://technet.microsoft.com/zh-cn/library/aa996386(v=exchg.150)">结构化数据</a>。
 
 

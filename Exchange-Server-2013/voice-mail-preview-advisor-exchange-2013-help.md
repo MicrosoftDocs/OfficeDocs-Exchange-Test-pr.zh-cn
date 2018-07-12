@@ -59,7 +59,7 @@ VoIP or media gateways and IP PBX support
 
 注册语音邮件预览伙伴后，组织中的 Exchange 服务器将附带音频文件的语音邮件重定向到语音邮件预览伙伴，而不为语音邮件生成语音邮件预览文本，也不将语音邮件提交到用户邮箱。然后将带有语音邮件预览伙伴生成的语音邮件预览文本的电子邮件提交到组织中的 Exchange 服务器，以传递到收件人邮箱。
 
-> [!important]
+> [!IMPORTANT]  
 > 我们建议计划部署统一消息的所有客户都获取 UM 专家的协助。UM 专家可帮助您确保有平稳过渡到 UM 从传统语音邮件系统。执行新部署或升级旧的语音邮件系统需要有关 VoIP 网关，IP Pbx、 Pbx，会话边框控制器 (SBCs) 的重要知识和统一消息传递。有关如何联系 UM 专家的详细信息，请参阅<a href="http://go.microsoft.com/fwlink/p/?linkid=262708">Microsoft Exchange Server 2013年统一消息 (UM) 专家</a>或<a href="https://go.microsoft.com/fwlink/p/?linkid=261951">Microsoft 查明其统一消息</a>。
 
 

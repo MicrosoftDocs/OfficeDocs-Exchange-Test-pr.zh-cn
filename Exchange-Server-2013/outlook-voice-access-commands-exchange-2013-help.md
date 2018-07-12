@@ -187,7 +187,7 @@ Outlook语音访问允许启用统一邮件 UM 的用户可以访问其邮箱使
 </table>
 
 
-> [!important]
+> [!IMPORTANT]  
 > 如果您需要访问电子邮件，在您删除它使用Outlook语音访问后，您可以使用Outlook Web App或Outlook电子邮件回相应的文件夹将从移动到已删除邮件文件夹。不能使用Outlook语音访问来访问已删除邮件文件夹。
 
 

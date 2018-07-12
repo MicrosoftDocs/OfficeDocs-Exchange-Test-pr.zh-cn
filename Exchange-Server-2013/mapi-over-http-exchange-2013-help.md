@@ -151,7 +151,7 @@ MAPI over HTTP 为支持它的客户端提供以下益处：
 
 2.  将客户端访问服务器和邮箱服务器升级到 Exchange 2013 SP1。有关如何升级的信息，请参阅[将 Exchange 2013 升级到最新累积更新或 Service Pack](upgrade-exchange-2013-to-the-latest-cumulative-update-or-service-pack-exchange-2013-help.md)。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 必须将所有客户端访问服务器升级到 Exchange 2013 SP1，然后再启用 MAPI over HTTP。否则，Outlook 将无法连接到邮箱。<br />
     > 数据库可用性组 (DAG) 中所有邮箱服务器升级失败将导致电子邮件延迟，并需要客户端在发生数据库故障转移时重新启动 Outlook。
 

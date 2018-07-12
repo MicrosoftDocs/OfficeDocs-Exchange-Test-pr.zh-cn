@@ -41,7 +41,7 @@ DAC 模式包含了数据中心激活协调协议 (DACP)，以此防止出现网
 
   - 如果设置 DACP 位的时间晚于见证服务器的启动时间，则系统会假设 DAG 成员由于某种其他原因（可能是用于执行维护的计划中断，或可能是与 DAG 成员无关的系统崩溃或断电）而重新启动，允许 DAG 成员装入数据库。
 
-> [!important]
+> [!IMPORTANT]  
 > 因为见证服务器的启动时间用于确定 DAG 成员是否可以在启动时装入活动数据库，所以绝不能同时重新启动见证服务器和唯一的 DAG 成员。这样做可能会使 DAG 成员处于无法在启动时装入数据库的状态。如果发生这种情况，则必须在 DAG 上运行 <a href="https://technet.microsoft.com/zh-cn/library/dd351169(v=exchg.150)">Restore-DatabaseAvailabilityGroup</a> cmdlet。这可重置 DACP 位并允许 DAG 成员装入数据库。
 
 

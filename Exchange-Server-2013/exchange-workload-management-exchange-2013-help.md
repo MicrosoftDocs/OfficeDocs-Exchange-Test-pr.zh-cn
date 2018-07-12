@@ -21,7 +21,7 @@ Exchange 工作负载是一个 Exchange Server 功能、协议或服务，为管
 
 您通过控制单个用户消耗资源的方式来管理 Exchange 工作负载（有时称为 Exchange 2010 中的用户限制）。在 Exchange Server 2010 中控制单个用户消耗 Exchange 系统资源的方式是可能的，且这一功能已经为 Exchange Server 2013 进行了扩展。
 
-> [!NOTE]
+> [!NOTE]  
 > 只能在 Microsoft 客户服务和支持的指导下，通过监视组织中系统资源在 Exchange 服务器上的运行状况来管理工作负载。
 
 
@@ -83,6 +83,6 @@ Exchange 2013 中增强了限制功能。该增强功能可帮助确保各个用
 
   - [Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/zh-cn/library/ff459231\(v=exchg.150\))
 
-> [!NOTE]
+> [!NOTE]  
 > 已弃用 <strong>*-ResourcePolicy</strong>、<strong>*-WorkloadManagementPolicy</strong> 和 <strong>*-WorkloadPolicy</strong> 系统工作负载管理 cmdlet。应仅在 Microsoft 客户服务和支持的指导下，对系统工作负载管理设置进行自定义。
 

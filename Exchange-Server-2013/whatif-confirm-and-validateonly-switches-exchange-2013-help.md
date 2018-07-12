@@ -21,11 +21,11 @@ _**上一次修改主题：** 2012-10-04_
 
 与用于对通过使用筛选器或通过在管道中使用 **Get** 命令而返回的对象进行修改的命令一起使用时，*WhatIf*、*Confirm* 和 *ValidateOnly* 开关尤其有用。本主题将逐一介绍这些开关，并提供每个开关的一个示例命令。
 
-> [!important]
+> [!IMPORTANT]  
 > 如果要在脚本命令中使用 <em>WhatIf</em>、<em>Confirm</em> 和 <em>ValidateOnly</em> 开关，必须将相应的开关添加到脚本内的每个命令中，而不是添加到调用脚本的命令行上。
 
 
-> [!NOTE]
+> [!NOTE]  
 > <em>WhatIf</em>、<em>Confirm</em> 和 <em>ValidateOnly</em> 称为开关参数。有关开关参数的详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/bb124388(v=exchg.150)">参数</a>。
 
 
@@ -97,7 +97,7 @@ _**上一次修改主题：** 2012-10-04_
 
 这种情况下，不显示确认提示。
 
-> [!CAUTION]
+> [!CAUTION]  
 > <em>Confirm</em> 开关的默认值为 <code>$True</code>。命令行管理程序的默认行为是自动显示确认提示。如果禁止此默认行为，请指示命令在执行期间禁止显示所有确认提示。这样一来，该命令将处理满足该命令的条件的所有对象，而不进行确认。
 
 

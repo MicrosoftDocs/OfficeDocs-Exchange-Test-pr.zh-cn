@@ -39,7 +39,7 @@ _**上一次修改主题：** 2012-11-30_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -53,7 +53,7 @@ _**上一次修改主题：** 2012-11-30_
 
 3.  在**UM 自动助理**页面上，\>**问候**下**非营业时间问候语**，单击**更改**，然后单击**浏览**以查找自定义非工作时间问候语开始此过程之前创建的文件。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 用于问候语的文件必须是 .wav 或 .wma 文件。
 
 

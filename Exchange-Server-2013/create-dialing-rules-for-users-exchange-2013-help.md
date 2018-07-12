@@ -25,7 +25,7 @@ _**上一次修改主题：** 2015-03-09_
 
 若要指定您想要允许为 UM 拨号计划拨出呼叫类型，请使用拨号规则创建拨号规则组，并使用它们来授权为 Outlook Voice Access 用户和拨入 UM 自动助理的调用方打出的电话。创建单独的拨号规则组的国家/地区和国际电话。
 
-> [!NOTE]
+> [!NOTE]  
 > 如果您正在集成 UM 和 Microsoft Lync Server，我们建议您创建至少一个拨号规则组并对 SIP URI 拨号计划、UM 邮箱策略和 UM 自动助理上的拨号规则组进行授权以允许所有传出呼叫转移至 Lync Server。
 
 
@@ -84,7 +84,7 @@ _**上一次修改主题：** 2015-03-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

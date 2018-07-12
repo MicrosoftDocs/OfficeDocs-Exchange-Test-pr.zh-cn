@@ -19,7 +19,7 @@ _**上一次修改主题：** 2015-07-16_
 
 通过移动设备邮箱策略可以将一组通用的安全和移动设备设置应用于一组用户。可以创建多个移动设备邮箱策略。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 安装 Microsoft Exchange Server 2013 时，将创建默认的移动设备邮箱策略，并且该策略会自动分配给所有用户。
 
 
@@ -35,7 +35,7 @@ _**上一次修改主题：** 2015-07-16_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -102,7 +102,7 @@ _**上一次修改主题：** 2015-07-16_
         Get-Mailbox | where { $_.CustomAttribute1 -match "Manager"
          } | Set-CASMailbox -activesyncmailboxpolicy(Get-ActiveSyncMailboxPolicy "Contoso").Identity
     
-    > [!NOTE]
+    > [!NOTE]  
     > 可以用 <code>CustomAttribute1</code> 替换 <strong>Get-Mailbox</strong> 对象的任何属性。若要查看完整列表，请键入：<code>Get-Mailbox username |fl</code>.
 
 

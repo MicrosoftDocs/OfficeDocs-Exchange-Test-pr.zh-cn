@@ -33,7 +33,7 @@ _**上一次修改主题：** 2013-04-16_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -51,7 +51,7 @@ _**上一次修改主题：** 2013-04-16_
         
         虽然可以在 UM 拨号计划名称中包含空格，但是，如果将统一消息与 Office Communications Server 2007 R2 或 Microsoft Lync Server 集成，则拨号计划名称不能包含空格。因此，如果创建的拨号计划的显示名称中包含空格，但要与 Office Communications Server 2007 R2 或 Lync Server 集成，则必须先删除该拨号计划，然后另外创建一个显示名称中不包含空格的拨号计划。
         
-        > [!important]
+        > [!IMPORTANT]  
         > 尽管拨号计划名称的框可以接受 64 个字符，但是拨号计划的名称不得超过 49 个字符。如果尝试创建的拨号计划名称包含的字符数超过 49 个，将出现错误消息。此消息将告知因为 UM 拨号计划名称太长，所以 UM 邮箱策略无法生成。发生这种情况的原因是：如上所述，在创建拨号计划时，还创建了一个名为 <em>&lt;DialPlanName&gt;</em> 默认策略的默认 UM 邮箱策略。如果默认策略中的 15 个字符添加到拨号计划的名称，则总字符数超出限制。UM 拨号计划和 UM 邮箱策略的 <em>name</em> 参数都可以是 64 个字符。但是，如果拨号计划的名称超过 49 字符，默认 UM 邮箱策略的名称将超过 64 字符，则这是系统所不允许的。
     
       - **分机号码长度(位)**   输入拨号计划的位数。分机号码位数基于在专用交换机 (PBX) 或 IP PBX 上创建的电话拨号计划。例如，如果与电话拨号计划关联的用户拨打 4 位的分机号码来呼叫同一电话拨号计划中的另一个用户，则应选择 4 作为分机号码中的位数。
@@ -68,7 +68,7 @@ _**上一次修改主题：** 2013-04-16_
         
           - **E.164** E.164 是用于公共电话系统的国际编号计划，其中每个指定的号码都包含国家/地区代码、国内目的地代码和订阅者号码。将采用以下格式列出通过 VoIP 网关或 IP PBX 发送的呼叫方和被叫方信息：电话：+14255550123。
         
-        > [!warning]
+        > [!WARNING]  
         > 创建 UM 拨号计划后，必须先删除拨号计划，然后重新创建包括正确 URI 类型的拨号计划，这样才能更改 URI 类型。
     
       - **VoIP 安全模式**   使用此下拉列表为 UM 拨号计划选择 VoIP 安全设置。可以为拨号计划选择以下安全设置之一：

@@ -23,7 +23,7 @@ Exchange Server 2013 邮件流和客户端访问的安装后任务，包括如�
 
 本主题中的步骤假设执行基本 Exchange 部署，该部署具有一个 Active Directory 站点和一个简单邮件传输协议 (SMTP) 命名空间。
 
-> [!important]
+> [!IMPORTANT]  
 > 本主题使用 Ex2013CAS、contoso.com、mail.contoso.com、172.16.10.11 等示例值。请将示例值替换为您组织的服务器名称、FQDN 和 IP 地址。
 
 
@@ -39,11 +39,11 @@ Exchange Server 2013 邮件流和客户端访问的安装后任务，包括如�
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!important]
+> [!IMPORTANT]  
 > 每个组织在 Active Directory 林中都需要至少一台客户端访问服务器和一台邮箱服务器。另外，每个包含邮箱服务器的 Active Directory 站点还必须包含至少一台客户端访问服务器。如果您要分隔服务器角色，我们建议您先安装邮箱服务器角色。
 
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -73,7 +73,7 @@ Exchange Server 2013 邮件流和客户端访问的安装后任务，包括如�
 
 9.  单击“完成”。
 
-> [!NOTE]
+> [!NOTE]  
 > 安装 Exchange 2013 之后将创建默认的入站接收连接器。此接收连接器接受来自外部服务器的匿名 SMTP 连接。如果这是您想要的功能，那么您无需完成任何其他配置。如果您要限制与外部服务器的入站连接，请修改客户端访问服务器上的“默认前端 &lt;客户端访问服务器&gt;”接收连接器。
 
 
@@ -91,7 +91,7 @@ Exchange Server 2013 邮件流和客户端访问的安装后任务，包括如�
 
 默认情况下，当您在 Active Directory 林部署了新的 Exchange 2013 组织，Exchange 将使用运行 Setup /PrepareAD 的 Active Directory 域的域名。如果您希望收件人可以接收来自其他域的邮件，以及将邮件发送到其他域，那么您必须将该域添加为接受域。在下一步骤中，还必须将该域添加为默认电子邮件地址策略中的主 SMTP 地址。
 
-> [!important]
+> [!IMPORTANT]  
 > 对于您通过它接受 Internet 电子邮件的每个 SMTP 域来说，要求有公用域名系统 (DNS) MX 资源记录。每条 MX 记录应解析为接收组织电子邮件的面向 Internet 的服务器。
 
 
@@ -135,7 +135,7 @@ Exchange Server 2013 邮件流和客户端访问的安装后任务，包括如�
 
 8.  在“默认策略”详细信息窗格中，单击“应用”。
 
-> [!NOTE]
+> [!NOTE]  
 > 我们建议您配置与每个用户的主电子邮件地址匹配的用户主体名称 (UPN)。如果您未提供与用户的电子邮件地址匹配的 UPN，那么用户除了提供他们的电子邮件地址之外，还需要手动提供他们的域\用户名或 UPN。如果他们的 UPN 与电子邮件地址相匹配，那么 Outlook Web App、ActiveSync 和 Outlook 会自动将他们的电子邮件地址与 UPN 相匹配。
 
 
@@ -183,7 +183,7 @@ Exchange Server 2013 邮件流和客户端访问的安装后任务，包括如�
 
 11. 在“输入将与外部客户端访问服务器一起使用的域名”中键入要应用的外部域。例如，mail.contoso.com。单击“保存”。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 有些组织的 Outlook Web App FQDN 是唯一的，可保护用户免受基础服务器 FQDN 变更的影响。许多组织为 Outlook Web App FQDN 使用 owa.contoso.com 而非 mail.contoso.com。如果要配置唯一的 Outlook Web App FQDN，请在完成上一步后执行以下操作。此检查表假定您已配置唯一的 Outlook Web App FQDN。
     > <ol>
     > <li><p>选择“owa (默认网站)”，然后单击“编辑”<img src="images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="编辑图标" alt="编辑图标" />。</p></li>
@@ -449,7 +449,7 @@ Exchange Server 2013 邮件流和客户端访问的安装后任务，包括如�
 
 7.  为要更改的每个虚拟目录重复步骤 5 和 6。
     
-    > [!NOTE]
+    > [!NOTE]  
     > ECP 和 OWA 虚拟目录的内部 URL 必须相同。
     > 您不能在自动发现虚拟目录上设置内部 URL。
 

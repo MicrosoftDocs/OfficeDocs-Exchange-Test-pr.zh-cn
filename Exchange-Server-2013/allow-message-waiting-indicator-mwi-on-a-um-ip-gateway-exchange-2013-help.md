@@ -21,7 +21,7 @@ _**上一次修改主题：** 2013-02-23_
 
 消息等待指示符通知用户有关新的或从未体验过的语音邮件。它将出现在收件箱中如 Outlook 和 Outlook Web App 的客户端。它也可以是文本 (SMS) 消息发送到已注册的移动电话，对从 Exchange 服务器被配置为在用户的桌面电话上播放新的邮件或亮起的灯号传出调用。
 
-> [!tip]
+> [!TIP]  
 > 也可以在 UM 邮箱策略上为一组用户启用和禁用 MWI 通知。
 
 
@@ -39,7 +39,7 @@ _**上一次修改主题：** 2013-02-23_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

@@ -21,7 +21,7 @@ _**上一次修改主题：** 2013-02-22_
 
 收听语音邮件，启用统一邮件 UM 的用户可以使用播放电话功能或使用的计算机或移动设备上的多媒体软件。多媒体播放允许启用 UM 的用户可以通过计算机的扬声器使用媒体播放器或移动设备上使用媒体播放器收听语音邮件。
 
-> [!NOTE]
+> [!NOTE]  
 > 受保护的语音邮件是 _z0z_ 的仅适用于使用支持权限管理Outlook版本的客户端。如果客户端软件不支持权限管理，用户必须使用Outlook访问语音监听其电话。
 
 
@@ -57,7 +57,7 @@ _**上一次修改主题：** 2013-02-22_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

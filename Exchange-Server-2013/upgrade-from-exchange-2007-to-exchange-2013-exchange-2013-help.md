@@ -27,7 +27,7 @@ Microsoft Exchange Server 2010 和 Exchange Server 2007 有多个服务器角色
 
 您无法将现有的 Exchange 2003 组织直接升级到 Exchange 2013。必须先将 Exchange 2003 组织升级到 Exchange 2007 或 Exchange 2010 组织，然后再将 Exchange 2007 或 Exchange 2010 组织升级到 Exchange 2013。建议您将组织从 Exchange 2003 升级到 Exchange 2010，然后从 Exchange 2010 升级到 Exchange 2013。
 
-> [!warning]
+> [!WARNING]  
 > 在升级到 Exchange 2013 之前，需要从组织中删除 Exchange 2003 的所有实例。
 
 

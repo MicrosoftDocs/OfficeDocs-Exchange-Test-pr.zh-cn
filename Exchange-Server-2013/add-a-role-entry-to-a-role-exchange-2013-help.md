@@ -21,7 +21,7 @@ _**上一次修改主题：** 2012-10-04_
 
 您不能将角色项添加到内置角色。如果您希望自定义角色，您必须创建新的角色。有关如何创建新的角色的详细信息，请参阅[创建角色](create-a-role-exchange-2013-help.md)。
 
-> [!NOTE]
+> [!NOTE]  
 > 本主题不讨论如何将未区分范围的管理角色条目添加到未区分范围的管理角色。有关如何添加未区分范围的角色条目的详细信息，请参阅<a href="add-a-role-entry-to-an-unscoped-top-level-role-exchange-2013-help.md">向未区分范围的顶级角色添加角色</a>。
 
 
@@ -41,7 +41,7 @@ _**上一次修改主题：** 2012-10-04_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 

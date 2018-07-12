@@ -21,11 +21,11 @@ _**上一次修改主题：** 2014-06-19_
 
 我们建议在您组织的内部 Active Directory 林以外的外围网络中安装边缘传输角色。虽然您可以在联合域的计算机上安装边缘传输服务角色，但是这样做仅可启用 Windows 功能和设置的域管理。边缘传输角色本身不使用 Active Directory。相反，它使用 Active Directory 轻型目录服务 (AD LDS) Windows 功能存储配置和收件人信息。有关边缘传输角色的详细信息，请参阅[边缘传输服务器](edge-transport-servers-exchange-2013-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 你是否曾听说过 Exchange Server 部署助理？它是一款免费的联机工具，它将询问您一些问题并专门为您创建自定义部署检查表，以帮助您在组织中快速部署 Exchange 2013。若您想要了解关于它的详细信息，请转到 <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server 部署助理</a>。
 
 
-> [!NOTE]
+> [!NOTE]  
 > 在运行 Exchange 2013 的计算机上安装了任意服务器角色之后，不能再使用 Exchange 2013 安装向导为该计算机添加其他服务器角色。如果希望为计算机添加其他服务器角色，则必须使用“控制面板”中的“添加或删除程序”或在命令提示符窗口中使用 Setup.exe。<br />
 > 边缘传输角色不能安装在与邮箱或客户端访问服务器角色相同的计算机上。
 
@@ -44,7 +44,7 @@ _**上一次修改主题：** 2014-06-19_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 在服务器上安装 Exchange 之后，不得更改服务器名称。不支持在安装了 Exchange 服务器角色之后重命名服务器。
 
 
@@ -74,7 +74,7 @@ _**上一次修改主题：** 2014-06-19_
 
 ## 在无人参与模式下使用 Setup.exe 安装 Exchange 2013
 
-> [!NOTE]
+> [!NOTE]  
 > 若要下载 Exchange 2013 的最新版本，请参阅 <a href="updates-for-exchange-2013-exchange-2013-help.md">Exchange 2013 更新</a>。
 
 
@@ -84,7 +84,7 @@ _**上一次修改主题：** 2014-06-19_
 
 3.  在命令提示符下，运行组织适用的命令。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 如果您启用了用户访问控制 (UAC) 功能，必须从提升的命令提示符运行 <code>Setup.exe</code>。
     
         Setup.exe [/Mode:<setup mode>] [/IAcceptExchangeServerLicenseTerms]

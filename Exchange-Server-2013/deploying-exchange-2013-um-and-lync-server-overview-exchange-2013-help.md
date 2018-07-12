@@ -19,7 +19,7 @@ _**上一次修改主题：** 2016-12-09_
 
 可以将统一消息 (UM) 和 Microsoft Lync Server 一起部署，为组织中的用户提供语音邮件、即时消息、增强的用户在线状态、音频/视频会议以及集成的电子邮件和消息体验。统一消息用于提供语音邮件呼叫应答、Outlook 语音访问和自动助理服务。Microsoft Lync Server 在 Enterprise Voice 中提供更多高级功能，例如即时消息 (IM)、会议和入站或出站呼叫。本主题介绍如何配置统一消息和 Microsoft Lync Server 以支持上述功能。
 
-> [!tip]
+> [!TIP]  
 > Microsoft Office Communications Server 2007 R2 也可以与统一消息一起部署。在本主题中，“Microsoft Lync Server”指 Microsoft Lync Server 2010 或 Microsoft Lync Server 2013。
 
 
@@ -55,7 +55,7 @@ _**上一次修改主题：** 2016-12-09_
 
 7.  从邮箱服务器上的 \<Exchange 安装文件夹\>\\Exchange Server\\Script 文件夹运行 ExchUcUtil.ps1 脚本。
     
-    > [!important]
+    > [!IMPORTANT]  
     > ExchUcUtil.ps1 脚本会为 Lync 集成创建一个或多个 UM IP 网关。除该脚本创建的一个网关外，必须禁用所有 UM IP 网关上的传出呼叫。这包括禁用在运行该脚本之前创建的 UM IP 网关上的传出呼叫。若要禁用 UM IP 网关上的传出呼叫，请参阅<a href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">禁用 UM IP 网关的传出呼叫</a>。
 
 
@@ -132,7 +132,7 @@ _**上一次修改主题：** 2016-12-09_
 
 1.  创建一个或多个统一消息 SIP URI 拨号计划，并且每个拨号计划都映射到相应的 Lync Server 位置配置文件。必须为每个 Exchange UM 拨号计划创建 Enterprise Voice 位置配置文件。可以使用 **Get-UMDialPlan** cmdlet 获取 SIP URI 拨号计划的 FQDN。有关如何创建 SIP URI 拨号计划的详细信息，请参阅[创建 UM 拨号计划](create-a-um-dial-plan-exchange-2013-help.md)。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 当您将 Exchange UM 和 Lync Server 集成后，可能会发现在 Exchange UM 中将无需配置拨号规则或拨号规则组。Lync Server 用于执行组织中用户的呼叫路由和号码转换，此外，在统一消息代表用户进行呼叫时也会执行此操作。
 
 
@@ -140,7 +140,7 @@ _**上一次修改主题：** 2016-12-09_
 
 3.  通过将 SIP URI 拨号计划配置为 SIP 安全或安全，加密 IP 语音 (VoIP) 通信。
     
-    > [!CAUTION]
+    > [!CAUTION]  
     > 如果将安装设置设置为 SIP 安全以仅对 SIP 通信进行加密，则当配置要求加密的前端池（这意味着池需要同时对 SIP 和 RTP 通信进行加密）时，为拨号计划进行此设置是无法满足其要求的。当拨号计划和池安全设置不兼容时，前端池向 Exchange UM 发出的所有呼叫将失败，并出现一个错误，指明您进行了“不兼容的安全设置”。
     
     尽管可以将 UM 拨号计划配置为 SIP 安全或安全，但建议您将拨号计划配置为安全，以使 Lync Phone Edition 设备能够正常工作。因为这是 Lync Server 中配置的默认加密级别设置，建议您使用此设置。仅当加密设置配置如下表所示时，Lync Phone Edition 设备才会正常工作。此表给出了 Lync Server 和 UM 拨号计划的加密设置之间的关系。
@@ -184,7 +184,7 @@ _**上一次修改主题：** 2016-12-09_
 
 7.  为用户启用语音邮件功能时，为使用 Enterprise Voice 的用户创建一个 SIP 地址。在大多数情况下，此 SIP 地址将与为用户启用 Enterprise Voice 时使用的 SIP 地址相同。有关详细信息，请参阅[为用户启用语音邮件](enable-a-user-for-voice-mail-exchange-2013-help.md)。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 与 SIP URI 拨号计划关联的用户无法收到传入的传真。这是因为传入的语音和传真呼叫通过中介服务器进行路由，但使用中介服务器时不支持传真。
 
 
@@ -212,13 +212,13 @@ _**上一次修改主题：** 2016-12-09_
 
   - 运行 **ocsumutil.exe** 命令，为 Outlook Voice Access 和自动助理创建联系人对象。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 在安装 Lync Server 时，<strong>msRTC-SIPLine</strong> 属性将添加到 Active Directory 中。如果尚未在环境中安装 Lync Server，则该属性不会添加到 Active Directory 中，除非为未启用 UM 的用户配置统一消息代理地址，否则，单个林或跨林方案中拨号计划间的呼叫者 ID 名称解析将无法正常进行。
 
 
 配置 Lync Server 和统一消息服务器之后，必须让用户能够使用 Lync Server，并在用户的客户端计算机上安装 Lync Server。
 
-> [!important]
+> [!IMPORTANT]  
 > 在集成统一消息和 Lync Server 时，邮箱位于 Exchange 2007 或 Exchange 2010 邮箱服务器上的用户不可使用未接呼叫通知。如果用户在呼叫发送至邮箱服务器之前断开连接，则会生成未接呼叫通知。
 
 

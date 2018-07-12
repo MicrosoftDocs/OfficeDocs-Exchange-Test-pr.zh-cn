@@ -21,7 +21,7 @@ Microsoft Exchange 2010 统一消息故障排除工具是一个名为 **Test-Exc
 
 UM 故障排除工具可用于测试语音邮件在内部部署和跨界部署的环境中是否都能正常运行。您可以在包括 Microsoft Office Communications Server 2007 R2 或 Microsoft Lync Server 2010 或更高版本的 UM 部署中，或在包括 VoIP 网关、IP 专用交换机 (IP PBX) 或会话边界控制器 (SBC) 的 UM 部署中使用此工具。
 
-> [!NOTE]
+> [!NOTE]  
 > UM 故障排除工具用于测试和故障排除。而 <strong>Test-UMConnectivity</strong> cmdlet 应当用于监视。<strong>Test-UMConnectivity</strong> cmdlet 与 System Center Operations Manager (SCOM) 管理包配合使用，这些管理包用于监视 Exchange 2010 UM 服务器或 Exchange 2013 客户端访问和邮箱服务器和电话组件。<strong>Test-UMConnectivity</strong> cmdlet 可对邮箱执行本地 SIP 测试和本地登录测试，并可作为 SCOM 任务运行。
 
 
@@ -213,7 +213,7 @@ UM 故障排除工具可帮助您在跨界部署中排查、诊断及修复配�
 
   - Microsoft .NET Framework 3.5 Service Pack 1 (SP1)   请参阅 [Microsoft .NET Framework 3.5 Service Pack 1](https://go.microsoft.com/fwlink/p/?linkid=152380)。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 如果将在 Windows Vista 或 Windows Server 2008 计算机上运行该工具，请参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=178998">适用于 Windows Vista x64 和 Windows Server 2008 x64 的 Microsoft .NET Framework 3.5 产品系列更新</a>。
 
 

@@ -115,7 +115,7 @@ _**上一次修改主题：** 2016-05-04_
 
 默认情况下，每个 Exchange 组织使用一个仲裁邮箱。如果您具有自己的 Exchange 服务器且需要更多的仲裁邮箱实现负载平衡，请按照[管理邮件审批并进行故障排除](manage-and-troubleshoot-message-approval-exchange-2013-help.md)中有关添加仲裁邮箱的说明操作。仲裁邮箱是系统邮箱，不需要 Exchange 许可证。
 
-> [!NOTE]
+> [!NOTE]  
 > <strong>如果您使用 Exchange 2007：</strong>Microsoft Exchange Server 2007 不支持仲裁收件人。如果将某封发送给仲裁通讯组的邮件在 Exchange 2007 集线器传输服务器上展开，该邮件将绕过仲裁过程，传递给通讯组的所有成员。如果您的 Exchange 组织中有 Exchange 2007 集线器传输服务器，您需要指定一台 Exchange Server 2013 邮箱服务器作为仲裁通讯组的展开服务器。这样可确保所有发送给通讯组的邮件都能得到仲裁。
 
 

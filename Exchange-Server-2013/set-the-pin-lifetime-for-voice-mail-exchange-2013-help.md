@@ -21,7 +21,7 @@ _**上一次修改主题：** 2013-02-22_
 
 可以在 UM 邮箱策略上配置几个针相关设置。PIN 生存期设置控制的时间间隔，以天为单位，从日期Outlook语音访问用户上次更改其 PIN 到它们将不得不再次改变他们的 PIN 的日期。范围是 0 到 999 之间，默认值为 60 天。如果输入 0，则用户的 PIN 不会过期。建议您不配置此设置为 0，因为通过这样可以显著降低网络的安全性。
 
-> [!important]
+> [!IMPORTANT]  
 > 当用户的 PIN 将要过期时，统一消息不会向用户发出通知。
 
 
@@ -39,7 +39,7 @@ _**上一次修改主题：** 2013-02-22_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

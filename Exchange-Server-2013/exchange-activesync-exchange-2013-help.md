@@ -19,7 +19,7 @@ _**上一次修改主题：** 2016-12-09_
 
 了解 Exchange Server 2013 的 Exchange ActiveSync 客户端协议。您将了解 Exchange ActiveSync 功能，包括安全功能、您可以管理的项目、如何确保其安全，以及如何避免同步到 Windows Phone 7 出现问题。
 
-> [!tip]
+> [!TIP]  
 > 本主题适用于管理员。想要设置您的 Windows Phone、iOS 或 Android 设备以访问您的 Office 365 或 Exchange Server 邮箱？请查看下列主题。
 > <ul>
 > <li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=615415">Set up email on Windows Phone</a>（在 Windows Phone 上设置电子邮件）</p></li>
@@ -44,11 +44,11 @@ Windows Phone 7 同步
 
 Exchange ActiveSync 是一种 Microsoft Exchange 同步协议，该协议经过优化，以适用于高延迟和低带宽网络。基于 HTTP 和 XML 的协议使移动电话可以访问运行 Microsoft Exchange 的服务器上的组织信息。Exchange ActiveSync 使移动电话用户可以访问其电子邮件、日历、联系人和任务，并且在脱机工作时仍可以继续访问这些信息。
 
-> [!NOTE]
+> [!NOTE]  
 > Exchange ActiveSync 不支持共享邮箱或代理访问。
 
 
-> [!important]
+> [!IMPORTANT]  
 > Windows Phone 7 移动电话仅支持所有 Exchange ActiveSync 邮箱策略设置的子集。有关完整列表，请参阅 Windows Phone 7 同步。
 
 
@@ -120,7 +120,7 @@ Exchange ActiveSync 具有以下功能：
 
   - **设备密码策略**   Exchange ActiveSync 允许为设备密码配置几个选项。
     
-    > [!warning]
+    > [!WARNING]  
     > iOS7 指纹读取器技术不能用作设备密码。如果您选择使用 iOS7 指纹读取器，而组织的移动设备邮箱策略要求设备密码，则您仍需要创建和输入设备密码。
     
     设备密码选项包括：

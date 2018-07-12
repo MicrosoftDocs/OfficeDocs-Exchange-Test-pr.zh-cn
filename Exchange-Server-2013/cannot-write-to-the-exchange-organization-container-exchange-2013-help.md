@@ -23,7 +23,7 @@ Microsoft Exchange Server 2013 安装程序无法继续，因为登录的用户�
 
 若要解决此问题，请向登录的用户授予相应的权限，或者使用拥有这些权限的帐户登录并重新运行 Exchange 2013 安装程序。
 
-> [!important]
+> [!IMPORTANT]  
 > 不支持跨林安装 Exchange 2013。使用属于要在其中安装 Exchange 2013 的 Active Directory 林的成员的帐户。
 
 

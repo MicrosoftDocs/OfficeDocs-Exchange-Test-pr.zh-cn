@@ -19,7 +19,7 @@ _**上一次修改主题：** 2014-05-07_
 
 默认情况下，对所有新邮箱数据库启用 Exchange 搜索，不要求附加配置。但是，如果要使 Exchange 搜索停止为邮箱内容编制索引，可以对单个邮箱数据库或整个邮箱服务器禁用 Exchange 搜索。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 禁用 Exchange 搜索会影响用户以联机模式使用 Outlook 或在 Windows Mobile 设备上所执行全文搜索的功能和性能。
 > <a href="in-place-ediscovery-exchange-2013-help.md">就地电子数据展示</a> 也依赖于 Exchange 搜索。如果对某个邮箱数据库或邮箱服务器禁用 Exchange 搜索，则就地电子数据展示搜索将不会从该数据库或服务器返回任何邮件。
 
@@ -44,7 +44,7 @@ _**上一次修改主题：** 2014-05-07_
 
 您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅[收件人权限](recipients-permissions-exchange-2013-help.md)主题中的“Exchange 搜索”条目。
 
-> [!NOTE]
+> [!NOTE]  
 > 不能使用 EAC 为邮箱数据库禁用或启用 Exchange 搜索。
 
 
@@ -72,7 +72,7 @@ _**上一次修改主题：** 2014-05-07_
 
 3.  在“**常规”**选项卡上的**“启动类型”**列表中，选择**“已禁用”**以禁用该服务，或选择**“自动”**以自动启动它。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 启动类型会在下次重新启动服务器后尝试启动服务时或手动启动服务时影响服务。在下一步中，服务将手动停止或启动。
 
 
@@ -84,13 +84,18 @@ _**上一次修改主题：** 2014-05-07_
 
 运行下列命令停止并禁用 Microsoft Exchange 搜索服务。
 
+```
     Stop-Service MSExchangeFastSearch
-
+```
+```
     Set-Service MSExchangeFastSearch -StartupType Disabled
+```
 
 运行下列命令将 Exchange 搜索服务配置为自动启动，然后启动该服务。
 
+```
     Set-Service MSExchangeFastSearch -StartupType Automatic
-
+```
+```
     Start-Service MSExchangeFastSearch
-
+```

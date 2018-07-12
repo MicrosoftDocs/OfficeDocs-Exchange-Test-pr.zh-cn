@@ -19,7 +19,7 @@ _**上一次修改主题：** 2013-02-21_
 
 如果用户报告其统一消息 (UM) 呼叫的音频质量有问题，可使用\&quot;用户呼叫日志\&quot;报告来帮助您分析引起这些问题的原因。
 
-> [!NOTE]
+> [!NOTE]  
 > 这些报告中未涵盖的因素也可能会影响呼叫的音频质量。例如，如果 Exchange 服务器遇到较大的内存或 CPU 负载，则即使这些报告表明音频质量较好，用户也可能会报告较差的呼叫质量。
 
 
@@ -33,7 +33,7 @@ _**上一次修改主题：** 2013-02-21_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -57,7 +57,7 @@ _**上一次修改主题：** 2013-02-21_
     
       - **NMOS**   呼叫的网络平均意见得分 (NMOS)。NMOS 用 1 到 5 的数字指示呼叫的音频质量好坏，5 表示最好。
         
-        > [!NOTE]
+        > [!NOTE]  
         > 呼叫可能的最大 NMOS 取决于使用的音频编解码器。对于通话时间少于 10 秒的非常短的呼叫，NMOS 可能不可用。
     
       - **NMOS 降级**   相对于使用的音频编解码器可能的最高值下降的音频 NMOS 值。例如，如果呼叫的 NMOS 下降值为 1.2，而报告的呼叫的 NMOS 为 3.3，则该特定呼叫的最高 NMOS 将为 4.5 (1.2 + 3.3)。

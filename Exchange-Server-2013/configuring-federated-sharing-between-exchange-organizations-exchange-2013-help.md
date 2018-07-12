@@ -31,7 +31,7 @@ _**上一次修改主题：** 2016-12-09_
 
 关于混合共享的更多管理任务，请参阅[联合程序](federation-procedures-exchange-2013-help.md)。
 
-> [!important]
+> [!IMPORTANT]  
 > Exchange Server 2013 的此项功能与由世纪互联在中国运营的 Office 365 不完全兼容，可能需要遵循一些功能限制。有关详细信息，请参阅<a href="https://go.microsoft.com/fwlink/?linkid=313640">了解由世纪互联运营的 Office 365</a>。
 
 
@@ -107,7 +107,7 @@ _**上一次修改主题：** 2016-12-09_
         
         具有客户端访问服务器角色的 Exchange 2010 SP2 服务器必须安装在 Exchange 2003 组织中。如果当前存在 Exchange 2010 服务器，这些服务器还应更新到 Exchange 2010 SP2。有关在 Exchange 2003 组织中安装 Exchange 2010 的信息，请参阅 [Exchange 2003 - 规划升级和共存路线图](https://go.microsoft.com/fwlink/?linkid=268414)。
         
-        > [!warning]
+        > [!WARNING]  
         > 为确保 Exchange 2013 和 Exchange 2003 组织之间的忙/闲共享正常工作，<strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 公用文件夹必须位于公用文件夹层次结构中。仅当在 Exchange 2010 安装期间选择创建公用文件夹作为配置 Outlook 2003 支持的客户端设置选项时，才会在 Exchange 2003 组织的 Exchange 2010 邮箱服务器上自动创建此文件夹。此外，仅当 Exchange 2010 邮箱服务器是组织中安装的第一个邮箱服务器时，才会在安装过程中提供此选项。如果未在安装过程中创建 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 公用文件夹，则必须手动创建该文件夹。有关如何创建此公用文件夹的详细信息，请参阅<a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2555008">在 Microsoft Office 365 企业版环境中使用 Exchange 联合身份验证时如何解决忙/闲问题</a>。
     
     2.  **配置联合委派**。
@@ -148,14 +148,14 @@ _**上一次修改主题：** 2016-12-09_
         
           - 在“选择公用文件夹存储”中，选择 Exchange 2010 客户端访问/邮箱服务器的“公用文件夹数据库”，然后单击“确定”。
             
-            > [!NOTE]
+            > [!NOTE]  
             > 默认情况下，Exchange 使用在公用文件夹数据库中设置的复制日程安排。
         
           - 单击“确定”关闭“OU=EXTERNAL (FYDIBOHF25SPDLT) 属性”并保存所做的更改。
         
           - 对 **OU=Exchange Administrative Group (FYDIBOHF23SPDLT)** 文件夹完成上述相同步骤。
             
-            > [!warning]
+            > [!WARNING]  
             > 根据公用文件夹的大小，可能需要数小时才能完成该复制过程。
         
           - 将 **OU=EXTERNAL (FYDIBOHF25SPDLT)** 和 **OU=Exchange Administrative Group (FYDIBOHF23SPDLT)** 公用文件夹复制到 Exchange 2010 客户端访问/邮箱服务器后，必须在 Exchange 2003 服务器上删除这些公用文件夹的副本。

@@ -19,7 +19,7 @@ _**上一次修改主题：** 2015-07-21_
 
 MicrosoftExchange Server 2013 和 Exchange Online、Exchange Search 包含用于索引最常见的邮件附件文件格式的筛选器。您也可以安装用于索引其他文件类型的筛选器。
 
-> [!NOTE]
+> [!NOTE]  
 > 在 Exchange 2013 中，安装并注册 Microsoft Office Filter Pack 并不是一项强制性要求。
 
 
@@ -31,7 +31,7 @@ MicrosoftExchange Server 2013 和 Exchange Online、Exchange Search 包含用于
 
   - **已禁用的文件格式** 在本地组织中，管理员可以禁用指定文件格式的索引。包含此类已禁用格式的附件的邮件也会作为不可搜索的项目返回。
 
-> [!important]
+> [!IMPORTANT]  
 > 尽管邮件附件可能不可搜索或者使用不能编制索引的文件格式，但仍可对邮件正文和其他元数据编制索引，以便能在搜索结果中返回邮件。
 
 

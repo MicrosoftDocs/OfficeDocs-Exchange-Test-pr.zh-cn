@@ -73,7 +73,7 @@ MicrosoftExchange 2013 包括一项名为自动发现服务的服务。本主题
 
 SCP 对象包含林的自动发现服务 URL 的权威列表。可使用 **Set-ClientAccessServer** cmdlet 更新 SCP 对象。有关详细信息，请参阅[Set-ClientAccessServer](https://technet.microsoft.com/zh-cn/library/bb125157\(v=exchg.150\))。
 
-> [!important]
+> [!IMPORTANT]  
 > 在运行 <strong>Set-ClientAccessServer</strong> cmdlet 之前，请确保客户端访问服务器上通过身份验证的用户帐户对 SCP 对象具有读取权限。如果用户没有正确的权限，他们将无法搜索和读取项目。
 
 
@@ -81,7 +81,7 @@ SCP 对象包含林的自动发现服务 URL 的权威列表。可使用 **Set-C
 
 对于外部访问，或在使用 DNS 时，客户端通过使用用户电子邮件地址中的主 SMTP 域地址找到 Internet 上的自动发现服务。
 
-> [!NOTE]
+> [!NOTE]  
 > 必须在 Outlook 客户端的 DNS 中提供托管服务 (SRV) 资源记录，才能使用 DNS 发现自动发现服务。有关详细信息，请参阅有关配置 DNS 的 Windows 文档，还可以参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=85214">白皮书：Exchange 2007 自动发现服务</a>。
 
 

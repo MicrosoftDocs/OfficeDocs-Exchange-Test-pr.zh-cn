@@ -241,7 +241,7 @@ Exchange 命令行管理程序提供了可用来设置命令输出格式的多�
 
 若要使用此脚本，请将其保存到要运行脚本的计算机上的 `C:\Program Files\Microsoft\Exchange Server\V15\Scripts` 目录中。将文件命名为 `Out-Ie.ps1`。保存文件后，即可将脚本作为普通 cmdlet 使用。
 
-> [!NOTE]
+> [!NOTE]  
 > 若要在 Exchange 2013 中运行脚本，必须将脚本添加到无作用域的管理角色，而且您必须已直接获得或通过管理角色组获得管理角色。有关详细信息，请参阅<a href="understanding-management-roles-exchange-2013-help.md">了解管理角色</a>。
 
 

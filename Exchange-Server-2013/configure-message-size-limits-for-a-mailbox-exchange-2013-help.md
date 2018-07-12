@@ -23,7 +23,7 @@ _**上一次修改主题：** 2012-11-12_
 
 有关与用户邮箱相关的其他管理任务，请参阅[管理用户邮箱](manage-user-mailboxes-exchange-2013-help.md)。
 
-> [!NOTE]
+> [!NOTE]  
 > 还可以控制邮件用户发送和接收的邮件的大小，以及来自共享邮箱的邮件的大小。
 
 
@@ -35,7 +35,7 @@ _**上一次修改主题：** 2012-11-12_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

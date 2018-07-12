@@ -35,7 +35,7 @@ _**上一次修改主题：** 2015-04-07_
 
 在 Exchange 2013 中，IRM 功能解决了这些问题。如果邮件受 IRM 保护，传输解密机制允许您在传输过程中对其进行解密。受 IRM 保护的邮件由解密代理（一个注重合规性的传输代理）进行解密。
 
-> [!NOTE]
+> [!NOTE]  
 > 在 Exchange 2013 中，解密代理是内置代理。内置代理不包含在 <strong>Get-TransportAgent</strong> cmdlet 所返回的代理列表中。有关详细信息，请参阅<a href="transport-agents-exchange-2013-help.md">传输代理</a>。
 
 
@@ -47,11 +47,11 @@ _**上一次修改主题：** 2015-04-07_
 
   - 在 Exchange 2013 和 Outlook 2010 中，由 Outlook 保护规则自动通过 IRM 保护的邮件。
 
-> [!important]
+> [!IMPORTANT]  
 > 解密代理仅解密由组织中的 AD RMS 服务器通过 IRM 保护的邮件。
 
 
-> [!NOTE]
+> [!NOTE]  
 > 使用传输保护规则在传输过程中保护的邮件无须由解密代理进行解密。解密代理会触发 <strong>OnEndOfData</strong> 和 <strong>OnSubmit</strong> 传输事件。传输保护规则通过传输规则代理应用，此传输规则代理将会触发 <strong>OnRoutedMessage</strong> 事件，而 IRM 保护则通过 <strong>OnRoutedMessage</strong> 事件上的加密代理应用。有关传输代理以及可在其上注册传输代理的 SMTP 事件列表的详细信息，请参阅<a href="transport-agents-exchange-2013-help.md">传输代理</a>。
 
 
@@ -63,7 +63,7 @@ _**上一次修改主题：** 2015-04-07_
 
   - 如果在重新加密过程中发生永久性错误，则发送 NDR 时始终不发送解密邮件。
 
-> [!important]
+> [!IMPORTANT]  
 > 安装在传输服务上的任何自定义或第三方代理都有权访问解密的邮件。必须考虑此类传输代理的行为。建议您在将自定义和第三方传输代理部署到生产环境中之前对所有这些代理进行全面测试。<br />
 解密代理对邮件进行解密后，如果传输代理新建邮件并将原始邮件嵌入（附加到）新邮件，将只有新邮件会受到保护。作为新邮件附件的原始邮件将不再重新加密。收到此类邮件的收件人可以打开附加的邮件并执行转发或答复等操作，绕过强制执行的权限。
 
@@ -72,7 +72,7 @@ _**上一次修改主题：** 2015-04-07_
 
 传输解密是通过使用 Exchange 命令行管理程序中的 [Set-IRMConfiguration](https://technet.microsoft.com/zh-cn/library/dd979792\(v=exchg.150\)) cmdlet 配置的。但是，在配置传输解密之前，必须为 Exchange 2013 服务器提供可对 AD RMS 服务器保护的内容进行解密的权限。通过将联合邮箱添加到组织中的 AD RMS 群集上配置的超级用户组，可以授予需要的权限。
 
-> [!important]
+> [!IMPORTANT]  
 > 在跨林 AD RMS 部署中，每个林中都部署了一个 AD RMS 群集，您必须将联合邮箱添加到每个林中 AD RMS 群集上的超级用户组，这样 Exchange 2013 邮箱服务器或 Exchange 2010 集线器传输服务器上的传输服务才能解密针对每个 AD RMS 群集受到保护的邮件。
 
 

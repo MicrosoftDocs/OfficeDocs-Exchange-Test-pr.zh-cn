@@ -17,7 +17,7 @@ _**适用于：** Exchange Server 2013_
 
 _**上一次修改主题：** 2016-12-09_
 
-> [!NOTE]
+> [!NOTE]  
 > 如果您需要 Office 365 或 Exchange Online 中有关 NDR 的帮助，请参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=524931">在 Office 365 中以电子邮件的方式发送未送达报告</a>。
 
 

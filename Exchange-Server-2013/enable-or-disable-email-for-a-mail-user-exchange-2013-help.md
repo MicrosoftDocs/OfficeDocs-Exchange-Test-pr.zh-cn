@@ -21,7 +21,7 @@ _**上一次修改主题：** 2012-11-14_
 
 禁用邮件用户的电子邮件后，您可以启用邮件用户再次通过在 Shell 中使用**Enable-MailUser** cmdlet。此外可以使用此 cmdlet 以启用任何活动目录的用户的邮件。
 
-> [!NOTE]
+> [!NOTE]  
 > 邮件用户 （也称为<em>已启用邮件的用户</em>） 是不同于组织中拥有邮箱的用户。两者的主要区别是邮件用户代表您的 Exchange 组织以外的用户具有外部电子邮件地址。他们没有在您的组织中的邮箱。用户已在您的组织中的邮箱和邮件用户之间的差异的详细信息，请参阅<a href="recipients-exchange-2013-help.md">收件人</a>。
 
 
@@ -35,7 +35,7 @@ _**上一次修改主题：** 2012-11-14_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -149,7 +149,7 @@ _**上一次修改主题：** 2012-11-14_
 
   - 在 EAC，导航到**收件人**\>**联系人**。在联系人列表中显示新邮件用户。在**联系人类型**，该类型是**邮件用户**。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 可能必须单击&amp;quot;刷新&amp;quot;<img src="images/Dd353189.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif" title="刷新图标" alt="刷新图标" />，才能显示新邮件用户。
 
 

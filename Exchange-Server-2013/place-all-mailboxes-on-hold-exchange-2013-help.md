@@ -17,7 +17,7 @@ _**适用于：** Exchange Online, Exchange Server 2013_
 
 _**上一次修改主题：** 2017-01-18_
 
-> [!NOTE]
+> [!NOTE]  
 > 在 Exchange Online（Office 365 和 Exchange Online 独立计划）中新建就地保留的截止时间为 2017 年 7 月 1 日，我们已推迟了这一最后期限。不过，今年晚些时候或明年初，将无法在 Exchange Online 中新建就地保留。作为就地保留的备选方法，可以在 Office 365 安全与合规中心使用<a href="https://go.microsoft.com/fwlink/?linkid=780738">电子数据展示服务案例</a>或<a href="https://go.microsoft.com/fwlink/?linkid=827811">保留策略</a>。在我们取消新建就地保留后，仍可以修改现有就地保留，并且在 Exchange Server 2013 和 Exchange 混合部署中新建就地保留也仍将受支持。此外，也仍可以将邮箱置于诉讼保留。
 
 
@@ -111,7 +111,7 @@ _**上一次修改主题：** 2017-01-18_
 
 您可以使用 EAC 选择多达 500 个邮箱并将其置于保留状态。有关详细信息，请参阅[创建或删除就地保留](create-or-remove-an-in-place-hold-exchange-2013-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 要将多于 500 个用户置于就地保留状态，请使用 Shell。请参阅 <a href="https://technet.microsoft.com/zh-cn/library/dd298064(v=exchg.150)">New-MailboxSearch</a>。
 
 
@@ -124,16 +124,21 @@ _**上一次修改主题：** 2017-01-18_
   - 在本主题中用于将所有邮箱置于诉讼保留状态的 PowerShell 命令使用返回所有用户邮箱的收件人筛选器。您可以使用其他收件人属性来返回特定邮箱的列表，即您传输到 **Set-Mailbox** cmdlet 以将其置于诉讼保留状态的邮箱。
     
     下面是根据常规用户或邮箱属性，使用 **Get-Mailbox** 和 **Get-Recipient** cmdlet 返回部分邮箱的一些示例。这些示例假设已填充相关的邮箱属性（例如 *CustomAttributeN* 或 *Department*）。
-    
+    ```
         Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
-    
+    ```
+    ```
         Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
-    
+    ```
+    ```
         Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
-    
+    ```
+    ```
         Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
-    
+    ```
+    ```
         Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
+    ```
     
     您可以在筛选器中使用其他用户邮箱属性来添加或排除邮箱。有关详细信息，请参阅[-Filter 参数的可筛选属性](https://technet.microsoft.com/zh-cn/library/bb738155\(v=exchg.150\))。
 

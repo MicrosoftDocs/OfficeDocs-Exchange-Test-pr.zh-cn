@@ -31,7 +31,7 @@ Exchange 2007 安装程序要求目标安装路径中不能存在 Microsoft Exc
 
 1.  在\&quot;我的电脑\&quot;或 Windows 资源管理器中，找到目标安装路径。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 默认情况下，数据库文件位于：<br />
     > &lt;systemDrive&gt;:\Program Files\Microsoft\Exchange Server\Mailbox\First Storage Group。
 

@@ -23,7 +23,7 @@ _**上一次修改主题：** 2013-02-22_
 
 每个用户与电话分机、SIP 统一资源标识符 (URI) 或 E.164 拨号计划相关联时，都需要分机号码。分机号码的位数必须与在 UM 邮箱策略的 UM 拨号计划中指定的位数一致。
 
-> [!NOTE]
+> [!NOTE]  
 > 您必须使用 EAC 或命令行管理程序为所有启用 UM 的用户添加、删除或修改分机号码，即使他们已链接到 SIP URI 或 E.164 拨号计划。您需要使用命令行管理程序为用户添加、删除或修改 SIP 地址或 E.164 号码，因为 EAC 中不提供这些选项。
 
 
@@ -41,7 +41,7 @@ _**上一次修改主题：** 2013-02-22_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

@@ -19,7 +19,7 @@ _**上一次修改主题：** 2016-05-03_
 
 在 Microsoft Exchange Online Protection (EOP)、Microsoft Exchange Online 和 Microsoft Exchange 2013 中，您可以使用 Exchange 管理中心 (EAC) 搜索和查看\&quot;管理员审核日志\&quot;中的条目。管理员审核日志根据管理员和具有指定管理权限的用户所执行的 Exchange 命令行管理程序 cmdlet 来记录特定的操作。管理员审核日志中的条目向您提供有关所运行的 cmdlet、所使用的参数、运行 cmdlet 的用户以及受影响的对象的相关信息。
 
-> [!NOTE]
+> [!NOTE]  
 > <ul>
 > <li><p>默认情况下，将启用管理员审核日志记录。</p></li>
 > <li><p>管理员审核日志不会记录基于以谓词 <strong>Get</strong>、<strong>Search</strong> 或 <strong>Test</strong> 开头的 Exchange 命令行管理程序 cmdlet 的任何操作。</p></li>
@@ -45,7 +45,7 @@ _**上一次修改主题：** 2016-05-03_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -73,6 +73,6 @@ _**上一次修改主题：** 2016-05-03_
 
 如果您已成功运行管理员审核日志报告，在您指定的日期范围内所做的配置更改将显示在搜索结果窗格中。如果没有结果，请更改日期范围，然后再次运行报告。
 
-> [!NOTE]
+> [!NOTE]  
 > 在组织中进行更改后，将需要 15 分钟才能显示在审核日志搜索结果中。如果更改未出现在管理员审核日志中，请等待几分钟，然后再次运行搜索。
 

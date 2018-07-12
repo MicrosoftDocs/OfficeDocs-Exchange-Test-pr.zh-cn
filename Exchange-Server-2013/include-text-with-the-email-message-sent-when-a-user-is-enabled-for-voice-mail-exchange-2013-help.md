@@ -21,7 +21,7 @@ _**上一次修改主题：** 2012-12-16_
 
 您可以自定义发送欢迎电子邮件中的 UM 邮箱策略上的**用户启用统一邮件时**框中添加文本的文本。您可以包括诸如 UM 技术支持电话号码或其他 Outlook Voice Access 号码等信息。添加的文字后，它将包括与 UM 邮箱策略相关联的用户启用统一邮件时发送的电子邮件消息中。
 
-> [!NOTE]
+> [!NOTE]  
 > 添加到欢迎邮件中的自定义文本限制为 512 个字符，并且它可以包含简单的 HTML 文本。
 
 
@@ -39,7 +39,7 @@ _**上一次修改主题：** 2012-12-16_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 

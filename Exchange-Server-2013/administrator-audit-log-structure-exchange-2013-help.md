@@ -53,42 +53,42 @@ _**上一次修改主题：** 2015-03-09_
 </tr>
 <tr class="odd">
 <td><p><code>Event</code></p></td>
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p>此标记包含单个 cmdlet 的审核日志条目。此标记包含 <code>Caller</code>、<code>Cmdlet</code>、<code>ObjectModified</code>、<code>RunDate</code>、<code>Succeeded</code>、<code>Error</code> 和 <code>OriginatingServer</code> 特性。<code>CmdletParameters</code> 和 <code>ModifiedProperties</code> 标记是此标记的子级。</p>
 <p>每个审核日志条目有一个 <code>Event</code> 标记。</p></td>
 </tr>
 <tr class="even">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Caller</code></p></td>
 <td><p>此特性包含在 <code>Cmdlet</code> 属性中运行 cmdlet 的用户的用户帐户。</p></td>
 </tr>
 <tr class="odd">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Cmdlet</code></p></td>
 <td><p>此特性包含用户在 <code>Caller</code> 属性中运行的 cmdlet 的名称。</p></td>
 </tr>
 <tr class="even">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>ObjectModified</code></p></td>
 <td><p>此特性包含由在 <code>Cmdlet</code> 属性中指定的 cmdlet 修改的对象。<code>ModifiedProperties</code> 标记显示修改了此对象的哪些属性。</p></td>
 </tr>
 <tr class="odd">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>RunDate</code></p></td>
 <td><p>此特性包含运行 <code>Cmdlet</code> 属性中的 cmdlet 时的日期和时间。</p></td>
 </tr>
 <tr class="even">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Succeeded</code></p></td>
 <td><p>此特性说明 <code>Cmdlet</code> 属性中的 cmdlet 是否成功运行。值为 <code>True</code> 或 <code>False</code>。</p></td>
 </tr>
 <tr class="odd">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Error</code></p></td>
 <td><p>此特性包含 <code>Cmdlet</code> 属性中的 cmdlet 没有成功完成时生成的错误信息。如果没有出现错误，值将被设置为 <code>None</code>。</p></td>
 </tr>
 <tr class="even">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>OriginatingServer</code></p></td>
 <td><p>此特性包含运行 <code>Cmdlet</code> 属性中指定的 cmdlet 的服务器。</p></td>
 </tr>
@@ -100,17 +100,17 @@ _**上一次修改主题：** 2015-03-09_
 </tr>
 <tr class="even">
 <td><p><code>Parameter</code></p></td>
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p>此标记包含运行 cmdlet 时指定的单个参数。此标记包含 <code>Name</code> 和 <code>Value</code> 特性。</p>
 <p>每个 <code>CmdletParameters</code> 标记可以有多个 <code>Parameter</code> 标记。</p></td>
 </tr>
 <tr class="odd">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Name</code></p></td>
 <td><p>此特性包含运行 cmdlet 时指定的参数的名称。</p></td>
 </tr>
 <tr class="even">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Value</code></p></td>
 <td><p>此特性包含为 <code>Name</code> 属性中指定的参数提供的值。</p></td>
 </tr>
@@ -120,29 +120,29 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>此标记包含由运行的 cmdlet 修改的所有属性。<code>Property</code> 标记是此标记的子级。</p>
 <p>每个 <code>Event</code> 标记有一个 <code>ModifiedProperties</code> 标记。</p>
 
-> [!important]
+> [!IMPORTANT]  
 > 仅当 <strong>Set-AdminAuditLogConfig</strong> cmdlet 上的 <em>LogLevel</em> 参数设置 <code>Verbose</code> 时，才会填充此标记。
 
 </td>
 </tr>
 <tr class="even">
 <td><p><code>Property</code></p></td>
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p>此标记包含运行 cmdlet 时指定的单个属性。此标记包含 <code>Name</code>、<code>OldValue</code> 和 <code>NewValue</code> 特性。</p>
 <p>每个 <code>ModifiedProperties</code> 标记可以有多个 <code>Property</code> 标记。</p></td>
 </tr>
 <tr class="odd">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Name</code></p></td>
 <td><p>此特性包含运行 cmdlet 时修改的属性的名称。</p></td>
 </tr>
 <tr class="even">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>OldValue</code></p></td>
 <td><p>此特性包含 <code>Name</code> 特性在更改之前指定的属性所包含的值。</p></td>
 </tr>
 <tr class="odd">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>NewValue</code></p></td>
 <td><p>此特性包含 <code>Name</code> 特性中的属性更改后的值。</p></td>
 </tr>
@@ -164,7 +164,7 @@ _**上一次修改主题：** 2015-03-09_
 
   - 修改了对象 `david` 中的以下两个属性：
     
-    > [!NOTE]
+    > [!NOTE]  
     > 在此示例中，因为 <code>Set-AdminAuditLogConfig</code> cmdlet 上的 <em>LogLevel</em> 参数设置为 <code>Verbose</code>，因此将修改后的属性保存到了审核日志中。
     
       - *ProhibitSendReceiveQuota*，其新值为 `10GB`，替换了旧值 `35GB`

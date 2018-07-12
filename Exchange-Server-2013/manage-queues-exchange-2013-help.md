@@ -27,7 +27,7 @@ _**上一次修改主题：** 2014-01-31_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -63,7 +63,7 @@ _**上一次修改主题：** 2014-01-31_
 
 **Get-QueueDigest** cmdlet 提供特定作用域（例如，DAG、Active Directory 站点、服务器列表或整个 Active Directory 林）内所有服务器上队列状态的简略聚合视图。请注意，外围网络中已订阅的边缘传输服务器上的队列不包括在结果中。此外，**Get-QueueDigest** 在边缘传输服务器中可用，但结果仅限于边缘传输服务器上的队列。
 
-> [!NOTE]
+> [!NOTE]  
 > 默认情况下，<strong>Get-QueueDigest</strong> cmdlet 显示包含 10 封或更多邮件的传递队列，而且结果每一到两分钟更新一次。有关如何更改这些默认值的说明，请参阅 <a href="configure-get-queuedigest-exchange-2013-help.md">配置 Get-QueueDigest</a>。
 
 
@@ -199,7 +199,7 @@ _**上一次修改主题：** 2014-01-31_
 
 通过回复邮件提交病毒邮件队列中的邮件。您可以使用队列查看器或命令行管理程序重新提交病毒邮件队列中的邮件。请注意，当病毒邮件队列中有邮件时，病毒邮件队列仅在队列查看器中可见。
 
-> [!NOTE]
+> [!NOTE]  
 > 病毒邮件队列包含确定在服务器出现故障后对 Exchange 系统有害的邮件。可能这些邮件的内容或格式确实存在问题。或者，由于代理的编写不严谨，导致 Exchange 服务器在处理可能有害的邮件时出现故障。如果您不能确定病毒邮件队列中邮件的安全，则将邮件导出到文件以便对其进行检查。有关详细信息，请参阅<a href="export-messages-from-queues-exchange-2013-help.md">从队列导出邮件</a>。
 
 

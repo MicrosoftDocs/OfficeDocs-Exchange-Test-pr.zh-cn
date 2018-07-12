@@ -19,7 +19,7 @@ _**上一次修改主题：** 2016-12-09_
 
 策略提示为信息性通知，将在电子邮件发件人编写邮件时对其显示。策略提示的用途是告知用户他们可能违反了您按照您已确立的数据丢失防护 (DLP) 策略强制实施的业务实践或策略。下面的过程将帮助您开始使用策略提示。请观看此视频了解更多内容。
 
-> [!VIDEO https://www.microsoft.com/zh-cn/videoplayer/embed/dd629bb7-063d-49f3-b7e1-8f2e0aa4de13]
+> [!VIDEO https://www.microsoft.com/zh-cn/videoplayer/embed/dd629bb7-063d-49f3-b7e1-8f2e0aa4de13]  
 
 ## 在开始之前，您需要知道什么？
 
@@ -39,7 +39,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -69,7 +69,7 @@ _**上一次修改主题：** 2016-12-09_
 
 8.  如果要添加其他条件或操作，则选择窗口底部的“更多选项”。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 仅可以使用以下条件：
     > <ul>
     > <li><p><strong>SentTo（收件人为）</strong></p></li>

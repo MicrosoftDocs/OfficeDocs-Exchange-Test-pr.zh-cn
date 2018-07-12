@@ -65,7 +65,7 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><strong> </strong></p></td>
 <td><p>安装所需的客户端访问服务器和邮箱服务器。</p>
 
-> [!warning]
+> [!WARNING]  
 > 在配置 VoIP 网关或 IP PBX 以将 UM SIP 和 RTP 通信发送到 Exchange 2013 客户端访问服务器之前，您应在您的组织内部署至少一个 Exchange 2013 邮箱服务器。
 
 </td>

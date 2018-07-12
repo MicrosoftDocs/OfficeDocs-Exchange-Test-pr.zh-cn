@@ -31,7 +31,7 @@ _**上一次修改主题：** 2015-04-08_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -55,7 +55,7 @@ _**上一次修改主题：** 2015-04-08_
 
     Set-TransportService Mailbox01 -AgentLogPath "D:\Anti-Spam Agent Log" -AgentLogMaxFileSize 20MB -AgentLogMaxDirectorySize 400MB -AgentLogMaxAge 14.00:00:00
 
-> [!NOTE]
+> [!NOTE]  
 > <ul>
 > <li><p>如果将 <em>AgentLogPath</em> 参数的值设置为 <code>$null</code>，将有效地禁用代理日志记录。但是当 <em>AgentLogEnabled</em> 参数的值为 <code>$true</code> 时，如果将 <em>AgentLogPath</em> 设置为 <code>$null</code>，就会生成事件日志错误。禁用代理日志记录的首选方法是将 <em>AgentLogEnabled</em> 设置为 <code>$false</code>。</p></li>
 > <li><p>将 <em>AgentLogMaxAge</em> 参数设置为值 <code>00:00:00</code>，可以防止由于期限问题而自动删除代理日志文件。</p></li>

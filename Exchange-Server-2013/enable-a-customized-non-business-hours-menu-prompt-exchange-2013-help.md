@@ -21,7 +21,7 @@ _**上一次修改主题：** 2013-03-22_
 
 如果只希望将组织或公司的名称包括在默认系统提示中，则可在 UM 自动助理上的\&quot;公司名称\&quot;框中输入该名称。有关详细信息，请参阅[输入公司名称](enter-a-business-name-exchange-2013-help.md)。
 
-> [!important]
+> [!IMPORTANT]  
 > 必须在自动助理中配置营业时间。配置营业时间之后，系统将自动设置非营业时间。有关详细信息，请参阅<a href="configure-business-hours-exchange-2013-help.md">配置工作时间</a>。
 
 
@@ -41,7 +41,7 @@ _**上一次修改主题：** 2013-03-22_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -55,7 +55,7 @@ _**上一次修改主题：** 2013-03-22_
 
 3.  在\&quot;UM 自动助理\&quot;页面 \>\&quot;菜单导航\&quot;的\&quot;非营业时间菜单导航\&quot;下，单击\&quot;更改\&quot;，然后单击\&quot;浏览\&quot;，以找到自定义的非营业时间菜单提示文件。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 用于菜单提示的文件必须是 .wav 或 .wma 文件。
 
 

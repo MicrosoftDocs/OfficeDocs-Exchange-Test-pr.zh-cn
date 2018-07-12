@@ -63,7 +63,7 @@ _**上一次修改主题：** 2017-12-20_
 
 本示例在 April Stewart 的邮箱中搜索 Subject 字段中包含\&quot;Your bank statement\&quot;短语的邮件，然后从源邮箱中删除这些邮件，而不将搜索结果复制到另一个文件夹。如前所述，您需要分配\&quot;邮箱导入导出\&quot;管理角色才能从用户邮箱删除邮件。
 
-> [!important]
+> [!IMPORTANT]  
 > 在使用带有 <em>DeleteContent</em> 开关的 <strong>Search-Mailbox</strong> cmdlet 时，会从源邮箱中永久删除邮件。在永久删除邮件之前，建议您在删除搜索中找到的邮件之前使用 <em>LogOnly</em> 开关生成这些邮件的日志，或是在从源邮箱中删除这些邮件之前将其复制到另一个邮箱。
 
 

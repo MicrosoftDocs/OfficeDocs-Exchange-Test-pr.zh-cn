@@ -27,7 +27,7 @@ _**上一次修改主题：** 2017-11-15_
 
 在这些方案中，托管文件夹助理可以在项目或邮箱移动到其他组织之后，正确处理应用了保留标记的项目。
 
-> [!CAUTION]
+> [!CAUTION]  
 > 若要使保留标记和保留策略在两个组织之间保持同步，每次在源组织中更改保留标记或策略时，必须执行此过程以从源组织导出保留标记和策略并将其导入目标组织。
 > 您不能选择特定的保留标记或要导出的策略。导出 RetentionTags.ps1 脚本从组织导出所有保留标记和策略。
 
@@ -52,7 +52,7 @@ _**上一次修改主题：** 2017-11-15_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 
@@ -64,7 +64,7 @@ _**上一次修改主题：** 2017-11-15_
 
 2.  运行 Export-RetentionTags.ps1 脚本可将保留标记导出到 XML 文件。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 如果要导入或导出到Exchange Online的保留标记和保留策略，您必须连接到Exchange Online的 Windows PowerShell 会话。有关详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/jj984289(v=exchg.150)">使用远程 PowerShell 连接到 Exchange Online</a>。
     
         .\Export-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
@@ -85,10 +85,10 @@ _**上一次修改主题：** 2017-11-15_
 
 2.  运行 Import-RetentionTags.ps1 脚本可从以前导出的 XML 文件导入保留标记。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 如果要导入或导出到Exchange Online的保留标记和保留策略，您必须连接到Exchange Online的 Windows PowerShell 会话。有关详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/jj984289(v=exchg.150)">使用远程 PowerShell 连接到 Exchange Online</a>。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 针对Exchange Online运行此脚本时, 可能提示您确认您想要运行来自不受信任的发行者的软件。验证发布者的名称显示为<code>CN=Microsoft Corporation, OU=MOPR, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</code>，然后单击<strong>R</strong>键允许脚本运行一次或<strong>一个</strong>始终运行。
     
         .\Import-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"

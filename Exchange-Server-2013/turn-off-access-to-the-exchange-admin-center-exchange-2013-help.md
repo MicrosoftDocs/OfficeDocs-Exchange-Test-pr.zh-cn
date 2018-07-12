@@ -19,12 +19,12 @@ _**上一次修改主题：** 2013-05-20_
 
 为了安全起见，一些组织可能需要限制用户通过 Internet 访问 Exchange 管理中心 (EAC)。此过程展示了如何禁用对 EAC 的访问权限。此过程不会阻止用户访问 Outlook Web App 中的选项。
 
-> [!NOTE]
+> [!NOTE]  
 > 此过程在适用以下步骤的情况下，在 CAS 服务器上完全禁用 EAC 管理员访问权限。如果要为内部用户启用 EAC 管理员，应该单独安装 CAS 服务器，然后使用以下命令将其配置为仅处理内部请求：<br />
 > <code>Set-ECPVirtualDirectory -Identity &quot;InternalCAS\ecp (default web site)&quot; -AdminEnabled $True</code>
 
 
-> [!CAUTION]
+> [!CAUTION]  
 > 此过程仅适用于 Exchange Server 2013 的内部部署。
 
 
@@ -38,7 +38,7 @@ _**上一次修改主题：** 2013-05-20_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。
 
 

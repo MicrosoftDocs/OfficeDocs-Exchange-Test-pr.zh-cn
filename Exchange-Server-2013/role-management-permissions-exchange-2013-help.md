@@ -27,7 +27,7 @@ _**上一次修改主题：** 2015-03-09_
 
 3.  现在运行 **Get-ManagementRoleAssignment** cmdlet 以查看分配给您的角色组或管理角色，以便确定您是否具有管理该功能所需的权限。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 必须分配了 Role Management 管理角色才能运行 <strong>Get-ManagementRoleAssignment</strong> cmdlet。如果没有运行 <strong>Get-ManagementRoleAssignment</strong> cmdlet 的权限，则请求 Exchange 管理员检索分配给您的角色组或管理角色。
 
 
@@ -86,7 +86,7 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>Active Directory 拆分权限</p></td>
 <td><p><a href="organization-management-exchange-2013-help.md">组织管理</a></p>
 
-> [!important]
+> [!IMPORTANT]  
 > 要运行带有 <em>PrepareAD</em> 和 <em>ActiveDirectorySplitPermissions</em> 参数的 <code>setup.exe</code> 命令，所用帐户必须是 Schema Admins 和 Enterprise Administrators 组的成员。
 
 </td>

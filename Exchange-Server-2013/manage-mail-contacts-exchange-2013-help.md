@@ -29,7 +29,7 @@ _**上一次修改主题：** 2017-10-04_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -63,7 +63,7 @@ _**上一次修改主题：** 2017-10-04_
         
         若要选择一个不同的 OU，请单击\&quot;浏览\&quot;。该对话框显示林中的指定作用域内的所有 OU。选择所需的 OU，然后单击\&quot;确定\&quot;。
         
-        > [!NOTE]
+        > [!NOTE]  
         > &amp;quot;组织单元&amp;quot;框仅在 Exchange Server 2013 中可用。在 Exchange Online 中不可用。
 
 
@@ -151,7 +151,7 @@ _**上一次修改主题：** 2017-10-04_
 
 使用\&quot;电子邮件选项\&quot;部分可以添加或删除邮件联系人的代理地址或编辑现有的代理地址。邮件联系人的主 SMTP 地址也显示在此部分中，但无法更改它。要更改它，必须在\&quot;常规\&quot;部分更改联系人的外部电子邮件地址。
 
-> [!NOTE]
+> [!NOTE]  
 > <strong>电子邮件选项</strong>部分只是在Exchange Server 2013中可用。不在Exchange Online中可用。
 
 
@@ -159,7 +159,7 @@ _**上一次修改主题：** 2017-10-04_
 
 使用\&quot;邮件提示\&quot;部分可添加邮件提示，以便在用户向此收件人发送邮件之前提醒用户存在潜在的问题。邮件提示是在将此收件人添加到新电子邮件的\&quot;收件人\&quot;、\&quot;抄送\&quot;或\&quot;密件抄送\&quot;行中时，信息栏中显示的文本。
 
-> [!NOTE]
+> [!NOTE]  
 > 邮件提示可包含 HTML 标记，但不允许包含脚本。自定义邮件提示的长度不能超过 175 个显示的字符。此字符限制不计入 HTML 标记。
 
 
@@ -221,7 +221,7 @@ _**上一次修改主题：** 2017-10-04_
 
 2.  在联系人列表中，选择两个或更多邮件联系人。无法批量编辑邮件联系人和邮件用户的组合。
     
-    > [!tip]
+    > [!TIP]  
     > 按住 Shift 键并单击第一个邮件联系人，然后单击最后一个要编辑的邮件联系人，可以选择多个相邻的邮件联系人。按住 Ctrl 键并单击每个要编辑的邮件联系人，也可以选择多个邮件联系人。
 
 

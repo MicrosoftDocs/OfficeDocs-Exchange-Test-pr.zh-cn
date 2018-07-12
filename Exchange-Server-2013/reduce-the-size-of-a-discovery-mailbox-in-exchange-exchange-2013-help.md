@@ -87,7 +87,7 @@ _**上一次修改主题：** 2015-04-07_
     
       - *StartDate* 和 *EndDate*   这些参数指定默认发现邮箱中搜索结果的日期范围以包括在搜索结果中。
         
-        > [!NOTE]
+        > [!NOTE]  
         > 对于日期，使用短日期格式 mm/dd/yyyy，即使本地计算机的“区域选项”设置以不同格式配置（如 dd/mm/yyyy）也是如此。例如，使用 <strong>03/01/2014</strong> 可指定 2014 年 3 月 1 日。
     
       - *TargetMailbox*   此参数指定应该将搜索结果复制到名为“Discovery Mailbox Backup 01”的发现邮箱中。
@@ -109,11 +109,13 @@ _**上一次修改主题：** 2015-04-07_
 4.  当您测试完搜索之后，使用命令行管理程序或 EAC 将搜索结果复制到目标发现邮箱。
     
       - **使用命令行管理程序：** 运行以下命令以复制搜索结果。您必须删除 *EstimateOnly* 开关，然后才能复制搜索结果。
-        
+        ```
             Set-MailboxSearch "Search results from 2010" -EstimateOnly $false
-        
+        ```
+        ```
             Start-MailboxSearch "Search results from 2010"
-    
+        ```
+        
       - **使用 EAC：** 转到“合规性管理”\>“就地电子数据展示与保留”。选择搜索，单击“搜索”![搜索图标](images/Dn750895.773574d0-9b92-4cab-9f6b-81532c7418b9(EXCHG.150).gif "搜索图标")，然后单击“复制搜索结果”。
     
     有关详细信息，请参阅[将电子数据展示搜索结果复制到发现邮箱](copy-ediscovery-search-results-to-a-discovery-mailbox-exchange-2013-help.md)。

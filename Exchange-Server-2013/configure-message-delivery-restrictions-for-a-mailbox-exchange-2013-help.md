@@ -41,7 +41,7 @@ _**上一次修改主题：** 2012-11-29_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -81,7 +81,7 @@ _**上一次修改主题：** 2012-11-29_
 
     Set-Mailbox -Identity "Robin Wood" -AcceptMessagesOnlyFrom "Lori Penor","Jeff Phillips" -AcceptMessagesOnlyFromDLMembers "Legal Team 1"
 
-> [!NOTE]
+> [!NOTE]  
 > 如果要将邮箱配置为仅接受来自个别发件人的邮件，则必须使用 <em>AcceptMessagesOnlyFrom</em> 参数。 如果要将邮箱配置为仅接受来自作为特定通讯组成员的发件人的邮件，则必须使用 <em>AcceptMessagesOnlyFromDLMembers</em> 参数。
 
 
@@ -101,7 +101,7 @@ _**上一次修改主题：** 2012-11-29_
 
     Set-Mailbox -Identity "Robin Wood" -RejectMessagesFromDLMembers @{add="Legal Team 3"}
 
-> [!NOTE]
+> [!NOTE]  
 > 如果要将邮箱配置为拒绝来自个别发件人的邮件，则必须使用 <em>RejectMessagesFrom</em> 参数。 如果要将邮箱配置为拒绝来自作为特定通讯组成员的发件人的邮件，则必须使用 <em>RejectMessagesFromDLMembers</em> 参数。
 
 

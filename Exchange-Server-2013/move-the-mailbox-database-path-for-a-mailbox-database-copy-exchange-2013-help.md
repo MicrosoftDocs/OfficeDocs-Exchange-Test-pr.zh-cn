@@ -35,13 +35,13 @@ _**上一次修改主题：** 2014-05-07_
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
 ## 使用命令行管理程序将复制邮箱数据库移动到新路径
 
-> [!NOTE]
+> [!NOTE]  
 > 不能使用 EAC 将复制邮箱数据库移动到新路径。
 
 
@@ -57,7 +57,7 @@ _**上一次修改主题：** 2014-05-07_
 
 4.  将邮箱数据库路径移动到新位置。有关详细步骤，请参阅[Move a mailbox database path](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md)。
     
-    > [!important]
+    > [!IMPORTANT]  
     > 在移动操作期间，必须卸除要移动的数据库。在完成移动之前，此过程将导致服务中断，并将使正在移动的数据库上的所有用户都会遭遇邮箱中断的问题。移动操作完成后，会自动装入数据库。
 
 

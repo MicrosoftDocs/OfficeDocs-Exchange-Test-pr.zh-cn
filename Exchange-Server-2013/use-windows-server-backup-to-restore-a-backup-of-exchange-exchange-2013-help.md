@@ -29,7 +29,7 @@ _**上一次修改主题：** 2014-06-18_
 
   - 在将数据库还原到其原始位置时，数据库可能保留异常关闭状态并且可由系统装入。当还原至备用位置时（例如，准备使用一个恢复数据库），必须通过使用 Exchange 数据库实用程序 (Eseutil.exe) 手动使数据库进入干净关闭状态。
 
-> [!tip]
+> [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。.
 
 
@@ -51,7 +51,7 @@ _**上一次修改主题：** 2014-06-18_
 
 6.  在\&quot;选择恢复类型\&quot;页面上，选择\&quot;应用程序\&quot;，然后单击\&quot;下一步\&quot;。
     
-    > [!NOTE]
+    > [!NOTE]  
     > 如果&amp;quot;应用程序&amp;quot;在选项中不可用，则表示选择还原的备份是一个文件夹级的备份，而不是卷级备份。当通过 Windows 服务器备份对 Exchange 数据进行备份时，您必须执行卷级备份。
 
 
