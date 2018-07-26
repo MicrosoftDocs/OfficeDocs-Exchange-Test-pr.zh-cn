@@ -94,7 +94,7 @@ _**上一次修改主题：** 2016-07-27_
 <ol>
 <li><p>非定期任务的过期时间由 <code>message-received date</code>（如果存在）确定。</p></li>
 <li><p>如果非定期任务没有 <code>message-received date</code>，其过期时间由 <code>message-creation date</code> 确定。</p></li>
-<li><p>如果非定期任务既没有 <code>message-received date</code>，又没有 <code></code><code>message-creation date</code>，它将不会过期。</p></li>
+<li><p>如果非定期任务既没有 <code>message-received date</code>，又没有 <code>message-creation date</code>，它将不会过期。</p></li>
 </ol></li>
 <li><p>定期任务的过期时间由其最后一次发生的 <code>end date</code> 确定。如果定期任务没有 <code>end date</code>，它将不会过期。</p></li>
 <li><p>重新生成的任务指任务的上一实例完成后重新生成指定时间的定期任务，它不会过期。</p></li>
