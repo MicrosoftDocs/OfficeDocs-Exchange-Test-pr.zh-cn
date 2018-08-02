@@ -211,16 +211,19 @@ If you have already enabled hybrid Modern Authentication to support other versio
 
 1.  Create an Exchange device access allow rule to allow Exchange Online to connect to your on-premises environment using the ActiveSync protocol:
     
+    ```
         If ((Get-ActiveSyncOrganizationSettings).DefaultAccessLevel -ne "Allow") {New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "OutlookService" -AccessLevel Allow}
+    ```
     
     Note that device management through the on-premises Exchange Admin Center is not possible. Intune is required to manage mobile devices.
 
 2.  Create an Exchange device access rule that prevents users from connecting to the on-premises environment with Outlook for iOS and Android with basic authentication over the Exchange ActiveSync protocol:
-    
+    ```
         New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Block
+    ```
     
     > [!NOTE]  
-        > Once this rule is created, users who are using Outlook for iOS and Android with Basic authentication will be blocked.
+    > Once this rule is created, users who are using Outlook for iOS and Android with Basic authentication will be blocked.
 
 
 3.  Ensure your EAS maxRequestLength is configured to match your transport configuration’s MaxSendSize/MaxReceiveSize:
