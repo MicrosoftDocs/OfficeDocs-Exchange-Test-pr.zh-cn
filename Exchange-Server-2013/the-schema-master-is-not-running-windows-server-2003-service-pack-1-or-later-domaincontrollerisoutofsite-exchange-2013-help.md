@@ -1,5 +1,5 @@
 ﻿---
-title: '架构主机未运行 Windows Server 2003 服务包 1 或更高版本_DomainControllerIsOutOfSite: Exchange 2013 Help'
+title: '架构主机未运行 Windows Server 2003 Service Pack 1 或更高版本'
 TOCTitle: 架构主机未运行 Windows Server 2003 服务包 1 或更高版本_DomainControllerIsOutOfSite
 ms:assetid: 5edbe0b8-7610-4a52-aaaa-38c6a99e7e53
 ms:mtpsurl: https://technet.microsoft.com/zh-cn/library/ms.exch.setupreadiness.domaincontrollerisoutofsite(v=EXCHG.150)
