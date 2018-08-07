@@ -1,5 +1,5 @@
 ﻿---
-title: '管理适用于 Exchange Server 的 Outlook for iOS 和 Outlook for Android 设备: Exchange 2013 Help'
+title: '管理适用于 Exchange Server 的 Outlook for iOS 和 Outlook for Android 设备'
 TOCTitle: 管理适用于 Exchange Server 的 Outlook for iOS 和 Outlook for Android 设备
 ms:assetid: 16ce7d24-be74-4466-b126-828a67f69b6e
 ms:mtpsurl: https://technet.microsoft.com/zh-cn/library/Mt465748(v=EXCHG.150)
