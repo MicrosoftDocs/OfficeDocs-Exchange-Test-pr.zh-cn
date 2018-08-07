@@ -1,5 +1,5 @@
 ﻿---
-title: '适用于 Exchange Server 的 Outlook for iOS 和 Outlook for Android 的密码和安全性'
+title: 'Passwords and Security in Outlook for iOS and Android for Exchange Server: Exchange 2013 Help'
 TOCTitle: Passwords and Security in Outlook for iOS and Android for Exchange Server
 ms:assetid: e5565beb-7ef3-47c4-8daf-6d8f1d22dceb
 ms:mtpsurl: https://technet.microsoft.com/zh-cn/library/Mt465750(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Active Directory 中存在重复的 Exchange 系统对象容器'
+title: 'Active Directory 中存在重复的 Microsoft Exchange System Objects 容器: Exchange 2013 Help'
 TOCTitle: Active Directory 中存在重复的 Microsoft Exchange System Objects 容器
 ms:assetid: cd0f45ab-89de-4653-b50d-c1157c2329d5
 ms:mtpsurl: https://technet.microsoft.com/zh-cn/library/ms.exch.setupreadiness.adiniterrorrule(v=EXCHG.150)

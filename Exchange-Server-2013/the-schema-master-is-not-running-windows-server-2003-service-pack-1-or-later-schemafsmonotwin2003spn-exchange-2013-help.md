@@ -1,5 +1,5 @@
 ﻿---
-title: '架构主机未运行 Windows Server 2003 Service Pack 1 或更高版本'
+title: '架构主机未运行 Windows Server 2003 服务包 1 或更高版本_SchemaFSMONotWin2003SPn: Exchange 2013 Help'
 TOCTitle: 架构主机未运行 Windows Server 2003 服务包 1 或更高版本_SchemaFSMONotWin2003SPn
 ms:assetid: 644a85ca-7b36-4ed0-bd21-c64f2742df70
 ms:mtpsurl: https://technet.microsoft.com/zh-cn/library/ms.exch.setupreadiness.schemafsmonotwin2003spn(v=EXCHG.150)

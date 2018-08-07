@@ -1,5 +1,5 @@
 ﻿---
-title: '为 Exchange 2010 准备 Active Directory 后，无法安装 Exchange 2007 角色'
+title: '为 Exchange 2010 准备 Active Directory 后，无法安装 Exchange 2007 角色 (_NoE12ServerWarning): Exchange 2013 Help'
 TOCTitle: 为 Exchange 2010 准备 Active Directory 后，无法安装 Exchange 2007 角色 (_NoE12ServerWarning)
 ms:assetid: 4e579f69-0de9-421c-ba31-4e63a25e6a45
 ms:mtpsurl: https://technet.microsoft.com/zh-cn/library/ms.exch.setupreadiness.noe12serverwarning(v=EXCHG.150)
