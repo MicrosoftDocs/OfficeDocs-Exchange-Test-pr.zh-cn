@@ -1,5 +1,5 @@
 ﻿---
-title: '无法在包含 Exchange 2000 或 Exchange 2003 服务器的林中安装 Exchange 2013。: Exchange 2013 Help'
+title: '无法在包含 Exchange 2000 或 Exchange 2003 服务器的林中安装 Exchange 2013'
 TOCTitle: 无法在包含 Exchange 2000 或 Exchange 2003 服务器的林中安装 Exchange 2013。
 ms:assetid: a115b182-cbd2-4d31-aa0e-375240939301
 ms:mtpsurl: https://technet.microsoft.com/zh-cn/library/ms.exch.setupreadiness.exchange2000or2003presentinorg(v=EXCHG.150)
