@@ -19,8 +19,6 @@ _**上一次修改主题：** 2016-12-09_
 
 使用此检查表安装和部署统一消息 (UM) 和 Microsoft Lync Server 2013。在此主题中，“Lync Server”也指 Lync Server 2010。但是，Microsoft Office Communications Server 2007 R2 也能与统一消息一起部署。
 
-> [!NOTE]  
-> <p></p>
 
 
 开始使用此检查表之前，请务必熟悉以下章节中的概念：
