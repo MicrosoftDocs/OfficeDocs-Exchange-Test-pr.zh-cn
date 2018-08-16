@@ -29,7 +29,7 @@ Exchange 2007 安装程序要求用作域架构主机的域控制器与运行 E
 
 若要解决此问题，请使用 **/prepareschema** 和 **/prepareAD** 开关从与域架构主机所在的同一站点或域运行 Exchange Server 2007 安装程序。
 
-有关**/prepareschema**和**/prepareAD**安装程序命令行开关的详细信息，请参阅 Exchange 2007 产品文档主题"如何到准备活动目录和域"(<https://go.microsoft.com/fwlink/?linkid=78453>)
+有关 **/prepareschema** 和 **/prepareAD** 安装程序命令行开关的详细信息，请参阅 Exchange 2007 产品文档主题"如何到准备活动目录和域"(<https://go.microsoft.com/fwlink/?linkid=78453>)
 
 可以使用架构主机工具标识角色。不过，必须注册 Schmmgmt.dll DLL 才能使架构主机工具作为 MMC 管理单元使用。
 
@@ -74,11 +74,11 @@ Exchange 2007 安装程序要求用作域架构主机的域控制器与运行 E
 
 3.  创建以下新\&quot;**字符串**\&quot;值：
     
-    值名称：** SiteName**
+    值名称：**SiteName**
     
-    值类型：** REG\_SZ**
+    值类型：**REG\_SZ**
     
-    值数据：** \<site\_that\_contains\_the\_schema\_master\>**
+    值数据：**\<site\_that\_contains\_the\_schema\_master\>**
 
 4.  退出注册表编辑器，然后重新启动 Netlogon 服务。该操作将强制 Exchange 服务器加入您指定的站点。
 
