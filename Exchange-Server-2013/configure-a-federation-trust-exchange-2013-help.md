@@ -175,7 +175,7 @@ _**上一次修改主题：** 2017-07-26_
     
         Get-FederationTrust | Format-List
 
-2.  将*\<PrimarySharedDomain\>*替换为主要共享域，并运行以下的 Shell 命令，以验证联盟信息可从您的组织。
+2.  将<em>\<PrimarySharedDomain\></em>替换为主要共享域，并运行以下的 Shell 命令，以验证联盟信息可从您的组织。
     
         Get-FederationInformation -DomainName <PrimarySharedDomain>
 
