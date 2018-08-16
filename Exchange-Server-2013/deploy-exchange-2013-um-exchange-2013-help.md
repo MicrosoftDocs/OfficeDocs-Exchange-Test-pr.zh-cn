@@ -71,13 +71,13 @@ _**上一次修改主题：** 2016-12-09_
 
 在部署统一消息期间集成组织的电话网络和数据网络时，需要正确地配置电话和数据网络组件。还需要配置以下组件或接口，才能成功部署统一消息：
 
-  - **配置组织中与 VoIP 网关进行通信的 PBX 的连接。**有关详细信息，请参阅[连接 VoIP 网关以便与 PBX 通信](connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md)。
+  - **配置组织中与 VoIP 网关进行通信的 PBX 的连接。** 有关详细信息，请参阅[连接 VoIP 网关以便与 PBX 通信](connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md)。
 
-  - **配置从 VoIP 网关接口到 PBX 的连接。**有关如何将 PBX 接口配置为与支持的 VoIP 网关进行通信的详细信息，请参阅 PBX 特定的产品文档或参阅[连接 VoIP 网关以便与 PBX 通信](connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md)。
+  - **配置从 VoIP 网关接口到 PBX 的连接。** 有关如何将 PBX 接口配置为与支持的 VoIP 网关进行通信的详细信息，请参阅 PBX 特定的产品文档或参阅[连接 VoIP 网关以便与 PBX 通信](connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md)。
 
-  - **配置从 VoIP 网关接口到客户端访问和邮箱服务器的连接。**有关详细信息，请参阅[将 VoIP 网关、IP PBX 或会话边界控制器与 UM 连接](connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md)。
+  - **配置从 VoIP 网关接口到客户端访问和邮箱服务器的连接。** 有关详细信息，请参阅[将 VoIP 网关、IP PBX 或会话边界控制器与 UM 连接](connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md)。
 
-  - **配置从客户端访问和邮箱服务器到 VoIP 网关接口的连接。**有关详细信息，请参阅[将 UM 连接到支持 VoIP 网关](connect-um-to-a-supported-voip-gateway-exchange-2013-help.md)。
+  - **配置从客户端访问和邮箱服务器到 VoIP 网关接口的连接。** 有关详细信息，请参阅[将 UM 连接到支持 VoIP 网关](connect-um-to-a-supported-voip-gateway-exchange-2013-help.md)。
 
 部署之前
 
