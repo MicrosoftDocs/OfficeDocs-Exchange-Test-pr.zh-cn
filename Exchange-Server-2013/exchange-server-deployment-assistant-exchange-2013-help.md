@@ -27,9 +27,9 @@ Exchange Server 部署助理是一种基于 Web 的工具，可帮助进行 Micr
     
       - 从 Exchange Server 2010 升级到 Exchange 2016
     
-      - 从 Exchange Server 2013 升级到 Exchange 2016*（即将推出）*
+      - 从 Exchange Server 2013 升级到 Exchange 2016 *即将推出）*
     
-      - 从混合 Exchange Server 2010 和 Exchange Server 2013 组织升级到 Exchange 2016*（即将推出）*
+      - 从混合 Exchange Server 2010 和 Exchange Server 2013 组织升级到 Exchange 2016 *即将推出）*
     
     有关此方案的详细信息，请参阅[规划和部署](planning-and-deployment-for-exchange-2013-installation-instructions.md)。
 
