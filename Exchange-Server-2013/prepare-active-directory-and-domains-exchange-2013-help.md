@@ -191,7 +191,7 @@ _**上一次修改主题：** 2016-12-09_
     
      
 
-  - 在“默认”命名上下文中，验证 DC=\<**下的“Microsoft Exchange 系统对象”***root domain*容器中的 **objectVersion** 属性是否设置为 Exchange 2013 Active Directory 版本表中 Exchange 2013 版本所显示的值。
+  - 在“默认”命名上下文中，验证 DC=\<<strong>下的“Microsoft Exchange 系统对象”</strong>*root domain*容器中的 **objectVersion** 属性是否设置为 Exchange 2013 Active Directory 版本表中 Exchange 2013 版本所显示的值。
     
      
 
