@@ -33,7 +33,7 @@ _**上一次修改主题：** 2016-12-09_
     
     1.  打开 ADSIEDIT.MSC 或 LDP.EXE。
     
-    2.  导航到以下位置：** CN=ExServerName,CN=Servers,CN=First Administrative Group,CN=Administrative Groups,CN=ExOrg Name,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=DomainName,CN=Com**
+    2.  导航到以下位置： **CN=ExServerName,CN=Servers,CN=First Administrative Group,CN=Administrative Groups,CN=ExOrg Name,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=DomainName,CN=Com**
     
     3.  右键单击 Exchange 服务器对象，然后单击“属性”。
     
