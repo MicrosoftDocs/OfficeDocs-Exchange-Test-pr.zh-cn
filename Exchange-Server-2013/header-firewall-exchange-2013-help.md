@@ -58,7 +58,7 @@ Exchange 中的组织 X-header 和林 X-header
 
   - **Received:路由邮件头**   接受并将邮件转发到收件人的每个邮件传递服务器向邮件头字段添加此邮件头字段的不同实例。**Received:** 邮件头通常包含邮件传递服务器的名称和日期时间戳。
 
-  - **Resent-\*:路由头**   Resent 头字段是信息性头字段，可用于确定邮件是否已由用户转发。以下是可用的 Resent 邮件头字段：** Resent-Date:** 、**Resent-From:** 、**Resent-Sender:** 、**Resent-To:** 、**Resent-Cc:** 、**Resent-Bcc:**  和 **Resent-Message-ID:** 。使用 **Resent-** 字段可使邮件在收件人处看似是由原始发件人直接发来的邮件。收件人可以查看该邮件头来了解邮件是谁转发的。
+  - **Resent-\*:路由头**   Resent 头字段是信息性头字段，可用于确定邮件是否已由用户转发。以下是可用的 Resent 邮件头字段： **Resent-Date:** 、**Resent-From:** 、**Resent-Sender:** 、**Resent-To:** 、**Resent-Cc:** 、**Resent-Bcc:**  和 **Resent-Message-ID:** 。使用 **Resent-** 字段可使邮件在收件人处看似是由原始发件人直接发来的邮件。收件人可以查看该邮件头来了解邮件是谁转发的。
 
 Exchange 使用两种不同的方法将邮件头防火墙应用于邮件中存在的组织 X-header、林 X-header 和路由邮件头：
 
