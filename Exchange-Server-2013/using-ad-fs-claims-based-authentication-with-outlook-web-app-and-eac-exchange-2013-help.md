@@ -147,13 +147,13 @@ Additional information you might want to know
     
       - 用于服务通信的 SSL 证书
         
-          - 主题名称：** adfs.contoso.com**（AD FS 部署名称）
+          - 主题名称：**adfs.contoso.com**（AD FS 部署名称）
         
           - 主题备用名称 (SAN)：无
     
       - 令牌签名证书
         
-          - 主题名称：** tokensigning.contoso.com**
+          - 主题名称：**tokensigning.contoso.com**
         
           - 主题备用名称 (SAN)：无
         
@@ -165,7 +165,7 @@ Additional information you might want to know
     
       - 用于服务通信的 SSL 证书
         
-          - 主题名称：** owa.contoso.com**
+          - 主题名称：**owa.contoso.com**
         
           - 主题备用名称 (SAN)：无
         
@@ -174,7 +174,7 @@ Additional information you might want to know
     
       - AD FS 代理 SSL 证书
         
-          - 主题名称：** adfs.contoso.com**（AD FS 部署名称）
+          - 主题名称：**adfs.contoso.com**（AD FS 部署名称）
         
           - 主题备用名称 (SAN)：无
     
@@ -264,13 +264,13 @@ Windows Server 2012 R2 中的 AD FS 提供了简化的安全联合身份验证�
 
 有关详细信息和语法，请参阅 [Install-AdfsFarm](https://go.microsoft.com/fwlink/?linkid=392704)。
 
-验证安装的步骤：在 AD FS 服务器上，打开 Web 浏览器，然后浏览到联合身份验证元数据的 URL - 例如 **https://adfs.contoso.com/federationmetadata/2007-06/federationmetadata.xml**。
+验证安装的步骤：在 AD FS 服务器上，打开 Web 浏览器，然后浏览到联合身份验证元数据的 URL - 例如 <strong>https://adfs.contoso.com/federationmetadata/2007-06/federationmetadata.xml</strong>。
 
 ## 第 3 步 - 为 Outlook Web App 和 EAC 创建信赖方信任和自定义声明规则
 
 对于所有要通过 Web 应用程序代理发布的应用程序和服务，您必须在 AD FS 服务器上配置信赖方信任。对于包含多个使用单独命名空间的 Active Directory 站点的部署，您必须为每个命名空间添加 Outlook Web App 和 EAC 的信赖方信任。
 
-EAC 使用 ECP 虚拟目录。您可以使用 [Get-EcpVirtualDirectory](https://technet.microsoft.com/zh-cn/library/dd351058\(v=exchg.150\)) 和 [Set-EcpVirtualDirectory](https://technet.microsoft.com/zh-cn/library/dd297991\(v=exchg.150\)) cmdlet 查看或配置 EAC 的设置。若要访问 EAC，必须使用 Web 浏览器并转到 **http://server1.contoso.com/ecp**。
+EAC 使用 ECP 虚拟目录。您可以使用 [Get-EcpVirtualDirectory](https://technet.microsoft.com/zh-cn/library/dd351058\(v=exchg.150\)) 和 [Set-EcpVirtualDirectory](https://technet.microsoft.com/zh-cn/library/dd297991\(v=exchg.150\)) cmdlet 查看或配置 EAC 的设置。若要访问 EAC，必须使用 Web 浏览器并转到 <strong>http://server1.contoso.com/ecp</strong>。
 
 > [!NOTE]  
 > 在如下示例中，我们特意在 URL 中添加尾部反斜杠 <strong>/</strong>。务必确保 AD FS 信赖方信任与 Exchange 用户 URI 的信赖方信任<strong>是相同的</strong>。这意味着 AD FS 信赖方信任和 Exchange 用户 URI 的信赖方信任在其 URL 中<strong>都有</strong>或<strong>都使用</strong>尾部斜杠。本节中的示例对任何以&amp;quot;owa&amp;quot;或&amp;quot;ecp&amp;quot;结尾的 url，在其尾部后面追加一个 <strong>/</strong>，即变为&amp;quot;/owa/&amp;quot;或&amp;quot;/ecp/&amp;quot;。
@@ -286,13 +286,13 @@ EAC 使用 ECP 虚拟目录。您可以使用 [Get-EcpVirtualDirectory](https://
 
 4.  在\&quot;选择数据源\&quot;页上，单击\&quot;手动输入有关信赖方的数据\&quot;，然后单击\&quot;下一步\&quot;。
 
-5.  在\&quot;指定显示名称\&quot;页上，在\&quot;显示名称\&quot;框中，键入 **Outlook Web App**，然后在\&quot;备注\&quot;下，为此信赖方信任键入描述（例如，**This is a trust for https://mail.contoso.com/owa**），然后单击\&quot;下一步\&quot;。
+5.  在\&quot;指定显示名称\&quot;页上，在\&quot;显示名称\&quot;框中，键入 <strong>Outlook Web App</strong>，然后在\&quot;备注\&quot;下，为此信赖方信任键入描述（例如，<strong>This is a trust for https://mail.contoso.com/owa</strong>），然后单击\&quot;下一步\&quot;。
 
 6.  在\&quot;选择配置文件\&quot;页上，单击\&quot;AD FS 配置文件\&quot;，然后单击\&quot;下一步\&quot;。
 
 7.  在\&quot;配置证书\&quot;页上，单击\&quot;下一步\&quot;。
 
-8.  在\&quot;配置 URL\&quot;页上，单击\&quot;启用对 WS-Federation 被动协议的支持\&quot;，然后在\&quot;信赖方 WS-Federation 被动协议 URL\&quot;下，**type https://mail.contoso.com/owa**，然后单击\&quot;下一步\&quot;。
+8.  在\&quot;配置 URL\&quot;页上，单击\&quot;启用对 WS-Federation 被动协议的支持\&quot;，然后在\&quot;信赖方 WS-Federation 被动协议 URL\&quot;下，<strong>type https://mail.contoso.com/owa</strong>，然后单击\&quot;下一步\&quot;。
 
 9.  在\&quot;配置标识符\&quot;页上，为此信赖方指定一个或多个标识符，单击\&quot;添加\&quot;将它们添加到列表，然后单击\&quot;下一步\&quot;。
 
@@ -306,7 +306,7 @@ EAC 使用 ECP 虚拟目录。您可以使用 [Get-EcpVirtualDirectory](https://
 
 14. 在\&quot;完成\&quot;页上，验证未选择\&quot;关闭向导时打开此信赖方信任的编辑声明规则对话框\&quot;，然后单击\&quot;关闭\&quot;。
 
-若要为 EAC 创建信赖方信任，必须再次执行这些步骤并创建第二个信赖方信任，但是不要在显示名称中加入 **Outlook Web App**，而是输入 **EAC**。对于描述，请输入 **This is a trust for the Exchange Admin Center**，\&quot;信赖方 WS-Federation 被动协议 URL\&quot;为 **https://mail.contoso.com/ecp**。
+若要为 EAC 创建信赖方信任，必须再次执行这些步骤并创建第二个信赖方信任，但是不要在显示名称中加入 <strong>Outlook Web App</strong>，而是输入 <strong>EAC</strong>。对于描述，请输入 <strong>This is a trust for the Exchange Admin Center</strong>，\&quot;信赖方 WS-Federation 被动协议 URL\&quot;为 <strong>https://mail.contoso.com/ecp</strong>。
 
 在基于声明的标识模型中，作为联合身份验证服务的 Active Directory 联合身份验证服务 (AD FS) 的功能是颁发包含一组声明的令牌。声明规则控制有关 AD FS 颁发的声明的决策。声明规则和所有服务器配置数据都存储在 AD FS 配置数据库中。
 
@@ -328,7 +328,7 @@ EAC 使用 ECP 虚拟目录。您可以使用 [Get-EcpVirtualDirectory](https://
 
 5.  在\&quot;选择规则模板\&quot;页面中的\&quot;声明规则模板\&quot;下，选择列表中的\&quot;使用自定义规则发送声明\&quot;，然后单击\&quot;下一步\&quot;。
 
-6.  在\&quot;配置规则\&quot;页中，在\&quot;选择规则类型\&quot;步骤中的\&quot;声明规则名称\&quot;下，为声明规则输入名称。使用声明规则的描述性名称 - 例如，**ActiveDirectoryUserSID**。在\&quot;自定义规则\&quot;下，为此规则输入以下声明规则语言语法：
+6.  在\&quot;配置规则\&quot;页中，在\&quot;选择规则类型\&quot;步骤中的\&quot;声明规则名称\&quot;下，为声明规则输入名称。使用声明规则的描述性名称 - 例如，<strong>ActiveDirectoryUserSID</strong>。在\&quot;自定义规则\&quot;下，为此规则输入以下声明规则语言语法：
     
         c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value);
 
@@ -426,11 +426,11 @@ Web 应用程序代理是 Windows Server 2012 R2 中的新远程访问角色服�
 
 5.  在\&quot;联合服务器\&quot;页上，执行以下操作，然后单击\&quot;下一步\&quot;：
     
-      - 在\&quot;联合身份验证服务名称\&quot;框中，输入 AD FS 服务器的完全限定的域名 (FQDN) - 例如，**adfs.contoso.com**。
+      - 在\&quot;联合身份验证服务名称\&quot;框中，输入 AD FS 服务器的完全限定的域名 (FQDN) - 例如，<strong>adfs.contoso.com</strong>。
     
       - 在\&quot;用户名\&quot;和\&quot;密码\&quot;框中，键入 AD FS 服务器上本地管理员帐户的凭据。
 
-6.  在\&quot;AD FS 代理证书\&quot;对话框中，在当前已安装在 Web 应用程序代理服务器中的证书列表中，选择 Web 应用程序代理要用来执行 AD FS 代理功能的证书，然后单击\&quot;下一步\&quot;。您在此步骤中选择的证书的主题应该是联合身份验证服务名称 - 例如，**adfs.contoso.com**。
+6.  在\&quot;AD FS 代理证书\&quot;对话框中，在当前已安装在 Web 应用程序代理服务器中的证书列表中，选择 Web 应用程序代理要用来执行 AD FS 代理功能的证书，然后单击\&quot;下一步\&quot;。您在此步骤中选择的证书的主题应该是联合身份验证服务名称 - 例如，<strong>adfs.contoso.com</strong>。
 
 7.  在\&quot;确认\&quot;对话框中查看设置。可以根据需要复制 Windows PowerShell cmdlet，以自动进行其他安装。单击\&quot;配置\&quot;。
 
@@ -442,7 +442,7 @@ Web 应用程序代理是 Windows Server 2012 R2 中的新远程访问角色服�
 
 ## 第 6 步 - 使用 Web 应用程序代理发布 Outlook Web App 和 EAC（可选）
 
-在第 3 步中，您为 Outlook Web App 和 EAC 创建了信赖方信任。您现在需要发布这两个应用程序。不过，在发布之前，请先确认您是否已为这两个应用程序创建了信赖方信任，并且是否在 Web 应用程序代理服务器上拥有适用于 Outlook Web App 和 EAC 的证书。对于需要由 Web 应用程序代理发布的所有 AD FS 终结点，您必须在 AD FS 管理控制台中，将终结点设置为**代理已启用**。
+在第 3 步中，您为 Outlook Web App 和 EAC 创建了信赖方信任。您现在需要发布这两个应用程序。不过，在发布之前，请先确认您是否已为这两个应用程序创建了信赖方信任，并且是否在 Web 应用程序代理服务器上拥有适用于 Outlook Web App 和 EAC 的证书。对于需要由 Web 应用程序代理发布的所有 AD FS 终结点，您必须在 AD FS 管理控制台中，将终结点设置为<strong>代理已启用</strong>。
 
 使用 Web 应用程序代理，按照步骤发布 Outlook Web App。对于 EAC，重复这些步骤即可。发布 EAC 时，需要更改名称、外部 URL、外部证书和后端 URL。
 
@@ -458,13 +458,13 @@ Web 应用程序代理是 Windows Server 2012 R2 中的新远程访问角色服�
 
 5.  在\&quot;发布设置\&quot;页上，执行以下操作，然后单击\&quot;下一步\&quot;：
     
-    1.  在\&quot;名称\&quot;框中，为此应用程序输入友好名称。此名称只在\&quot;远程访问管理控制台\&quot;中的已发布应用程序列表中使用。您可以使用 **OWA** 和 **EAC** 作为名称。
+    1.  在\&quot;名称\&quot;框中，为此应用程序输入友好名称。此名称只在\&quot;远程访问管理控制台\&quot;中的已发布应用程序列表中使用。您可以使用 <strong>OWA</strong> 和 <strong>EAC</strong> 作为名称。
     
-    2.  在\&quot;外部 URL\&quot;框中，为此应用程序输入外部 URL - 例如，为 Outlook Web App 输入 **https://external.contoso.com/owa**，为 EAC 输入 **https://external.contoso.com/ecp**。
+    2.  在\&quot;外部 URL\&quot;框中，为此应用程序输入外部 URL - 例如，为 Outlook Web App 输入 <strong>https://external.contoso.com/owa</strong>，为 EAC 输入 <strong>https://external.contoso.com/ecp</strong>。
     
     3.  在\&quot;外部证书\&quot;列表中，选择主题名称与外部 URL 的主机名称匹配的证书。
     
-    4.  在\&quot;后端服务器 URL\&quot;框中，输入后端服务器的 URL。请注意，此值会在输入外部 URL 时自动输入，并且只有在后端服务器 URL 不同时才需要更改此值 - 例如，对于 Outlook Web App 为 **https://mail.contoso.com/owa**，对于 EAC 为 **https://mail.contoso.com/ecp**。
+    4.  在\&quot;后端服务器 URL\&quot;框中，输入后端服务器的 URL。请注意，此值会在输入外部 URL 时自动输入，并且只有在后端服务器 URL 不同时才需要更改此值 - 例如，对于 Outlook Web App 为 <strong>https://mail.contoso.com/owa</strong>，对于 EAC 为 <strong>https://mail.contoso.com/ecp</strong>。
     
     > [!NOTE]  
     > Web 应用程序代理可以翻译 URL 中的主机名，但是不能翻译路径。因此，您可以输入不同的主机名，但是必须输入相同的路径。例如，您可以输入外部 URL <em>https://external.contoso.com/app1/</em> 和后端服务器 URL <em>https://mail.contoso.com/app1/</em>。但是，不能输入外部 URL <em>https://external.contoso.com/app1/</em> 和后服务器 URL <em>https://mail.contoso.com/internal-app1/</em>。
@@ -488,9 +488,9 @@ Web 应用程序代理是 Windows Server 2012 R2 中的新远程访问角色服�
 
 对 AD FS 进行配置以用于对 Exchange 2013 中的 Outlook Web App 和 EAC 进行基于声明的身份验证时，必须为 Exchange 组织启用 AD FS。必须使用 [Set-OrganizationConfig](https://technet.microsoft.com/zh-cn/library/aa997443\(v=exchg.150\)) cmdlet 为您的组织配置 AD FS 设置：
 
-  - 将 AD FS 颁发者设置为 **https://adfs.contoso.com/adfs/ls/**。
+  - 将 AD FS 颁发者设置为 <strong>https://adfs.contoso.com/adfs/ls/</strong>。
 
-  - 将 AD FS URI 设置为 **https://mail.contoso.com/owa/** 和 **https://mail.contoso.com/ecp/**。
+  - 将 AD FS URI 设置为 <strong>https://mail.contoso.com/owa/</strong> 和 <strong>https://mail.contoso.com/ecp/</strong>。
 
   - 通过使用 AD FS 服务器上的Windows PowerShell 并输入`Get-ADFSCertificate -CertificateType "Token-signing"`签名证书指纹的 AD FS 标记中找到。然后，指定您找到的令牌签名证书指纹。如果 AD FS 令牌签名证书已过期，必须通过使用[Set-OrganizationConfig](https://technet.microsoft.com/zh-cn/library/aa997443\(v=exchg.150\)) cmdlet 更新从新 AD FS 令牌签名证书的指纹。
 
@@ -543,7 +543,7 @@ Web 应用程序代理是 Windows Server 2012 R2 中的新远程访问角色服�
 
 若要为 Outlook Web App 测试 AD FS 声明，请执行以下操作：
 
-  - 在您的 Web 浏览器中，登录 Outlook Web App（例如，**https://mail.contoso.com/owa**）。
+  - 在您的 Web 浏览器中，登录 Outlook Web App（例如，<strong>https://mail.contoso.com/owa</strong>）。
 
   - 在浏览器窗口中，如果您看到证书错误，只需继续转到 Outlook Web App 网站即可。您应该会重定向到 ADFS 登录页面或 ADFS 凭据提示页面。
 
@@ -553,7 +553,7 @@ Web 应用程序代理是 Windows Server 2012 R2 中的新远程访问角色服�
 
 为 EAC 测试 AD FS 声明的步骤：
 
-1.  在 Web 浏览器中，转到 **https://mail.contoso.com/ecp**。
+1.  在 Web 浏览器中，转到 <strong>https://mail.contoso.com/ecp</strong>。
 
 2.  在浏览器窗口中，如果您看到证书错误，只需继续转到 ECP 网站即可。您应该会重定向到 ADFS 登录页面或 ADFS 凭据提示页面。
 
@@ -579,7 +579,7 @@ Web 应用程序代理是 Windows Server 2012 R2 中的新远程访问角色服�
 
 **与其他版本的 Exchange 共存**
 
-如果您的组织中部署有多个版本的 Exchange，也可以对 Outlook Web App 和 EAC 使用 AD FS 身份验证。此方案只支持 Exchange 2010 和 Exchange 2013 部署。只有当所有客户端均要通过 Exchange 2013 服务器进行连接，**且**这些 Exchange 2013 服务器已配置 AD FS 身份验证时，才支持此方案。
+如果您的组织中部署有多个版本的 Exchange，也可以对 Outlook Web App 和 EAC 使用 AD FS 身份验证。此方案只支持 Exchange 2010 和 Exchange 2013 部署。只有当所有客户端均要通过 Exchange 2013 服务器进行连接，<strong>且</strong>这些 Exchange 2013 服务器已配置 AD FS 身份验证时，才支持此方案。
 
 在 Exchange 2010 服务器上有邮箱的用户可以通过已配置 AD FS 身份验证的 Exchange 2013 服务器来访问自己的邮箱。对 Exchange 2013 服务器的初始客户端连接使用的是 AD FS 身份验证。不过，对 Exchange 2010 服务器的代理连接使用的是 Kerberos。不支持通过其他任何方式来为 Exchange Server 2010 直接配置 AD FS 身份验证。
 
