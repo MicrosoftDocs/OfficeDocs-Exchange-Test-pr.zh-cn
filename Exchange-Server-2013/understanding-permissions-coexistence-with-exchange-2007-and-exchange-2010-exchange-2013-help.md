@@ -164,7 +164,7 @@ Exchange 2007 提供以下预定义的管理员角色：
 
   - **Exchange Server 管理员角色**   此角色授予管理特定服务器的权限。但是，此角色不授予执行对 Exchange 2007 组织具有全局影响的操作的权限。
 
-  - **Exchange 公用文件夹管理员角色**   此角色是在 Exchange 2007 Service Pack 1 中添加的**。**此角色授予管理 Exchange 2007 组织中的公用文件夹的权限。
+  - **Exchange 公用文件夹管理员角色**   此角色是在 Exchange 2007 Service Pack 1 中添加的。此角色授予管理 Exchange 2007 组织中的公用文件夹的权限。
 
 此权限模型将 USG 用于所有角色，除了 Exchange Server 管理员角色以外。在运行 Exchange 2007**Setup /PrepareAD** 命令时，安装程序会在根域中创建 USG，并向 USG 指定林范围内的作用域。会向 USG 分配 ACL，以管理整个 Active Directory 中的 Exchange 对象。
 
