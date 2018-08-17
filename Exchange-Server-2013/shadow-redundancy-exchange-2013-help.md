@@ -271,7 +271,6 @@ Exchange 2013 中已对邮件路由进行优化，因此当最终目标是位于
 <ul>
 <li><p>如果 <em>ShadowMessagePreferenceSetting</em> 被设置为 <code>PreferRemote</code>，邮箱服务器将首先尝试在远程 Active directory 站点上的另一个邮箱服务器中创建邮件的卷影副本 <em>MaxRetriesForRemoteSiteShadow</em> 指定的次数。如果操作失败，邮箱服务器将尝试在 Active Directory 站点上的不同邮箱服务器创建邮件副本 <em>MaxRetriesForLocalSiteShadow</em> 指定的次数。</p></li>
 <li><p>如果 <em>ShadowMessagePreferenceSetting</em> 被设置为 <code>RemoteOnly</code>，邮箱服务器将仅尝试在远程 Active Directory 站点的邮箱服务器中创建邮件的卷影副本 <em>MaxRetriesForRemoteSiteShadow</em> 指定的次数。</p></li>
-<li><p></p></li>
 </ul>
 <p>当无法成功创建邮件的卷影副本时：</p>
 <ul>
