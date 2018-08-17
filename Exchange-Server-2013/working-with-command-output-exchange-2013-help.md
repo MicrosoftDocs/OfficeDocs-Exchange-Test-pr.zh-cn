@@ -236,7 +236,7 @@ Exchange 命令行管理程序提供了可用来设置命令输出格式的多�
     $Ie.Visible = $True
     $Ie.Document.Write("$Input")
     # If the previous line doesn't work on your system, uncomment the line below.
-    # $Ie.Document.IHtmlDocument2_Write(\"$Input\")
+    # $Ie.Document.IHtmlDocument2_Write("$Input")
     $Ie
 
 若要使用此脚本，请将其保存到要运行脚本的计算机上的 `C:\Program Files\Microsoft\Exchange Server\V15\Scripts` 目录中。将文件命名为 `Out-Ie.ps1`。保存文件后，即可将脚本作为普通 cmdlet 使用。

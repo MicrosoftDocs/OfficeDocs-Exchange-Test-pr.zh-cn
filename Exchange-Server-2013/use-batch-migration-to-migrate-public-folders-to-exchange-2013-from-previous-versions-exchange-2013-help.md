@@ -440,8 +440,7 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
     
     ```
         Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
-    ```
-    ``` 
+ 
         Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
     ```
 

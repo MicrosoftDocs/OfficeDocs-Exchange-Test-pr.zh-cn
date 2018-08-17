@@ -35,9 +35,9 @@ Active Directory 数据库将信息存储在下面几节描述的三种类型的
 
 架构分区存储以下两种类型的信息：
 
-  - **架构类**定义可在 Active Directory 中创建和存储的对象的所有类型。
+  - **架构类** 定义可在 Active Directory 中创建和存储的对象的所有类型。
 
-  - **架构属性**定义可用于描述存储在 Active Directory 中的对象的所有属性。
+  - **架构属性** 定义可用于描述存储在 Active Directory 中的对象的所有属性。
 
 在林中安装第一个 Exchange 2013 服务器角色或运行 Active Directory 准备过程时，Active Directory 准备过程会将多个类和属性添加到 Active Directory 架构中。添加到架构中的类用于创建特定于 Exchange 的对象，比如代理和连接器。添加到架构中的属性用于配置特定于 Exchange 的对象和已启用邮件的用户和组。这些属性包括诸如 MicrosoftOffice Outlook Web Access 设置和 MicrosoftExchange 统一消息 (UM) 设置这样的属性。林中的每个域控制器和全局编录服务器都包含架构分区的完整副本。
 

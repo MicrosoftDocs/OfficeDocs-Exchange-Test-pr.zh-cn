@@ -113,9 +113,9 @@ _**上一次修改主题：** 2016-12-09_
 
 5.  键入 **EHLO contoso.com** 并按 Enter 键。
 
-6.  键入 **MAIL FROM:chris@contoso.com** 并按 Enter 键。
+6.  键入 **MAIL FROM:chris&#64;contoso.com** 并按 Enter 键。
 
-7.  键入 **RCPT TO:kate@fabrikam.com NOTIFY=success,failure**，然后按 Enter。可选的 NOTIFY 命令可定义目标 SMTP 服务器必须向发件人提供的特定传递状态通知 (DSN) 邮件。RFC 1891 中定义了 DSN 邮件。此示例是要请求获取有关邮件传递成功与否的 DSN 邮件。
+7.  键入 **RCPT TO:kate&#64;fabrikam.com NOTIFY=success,failure**，然后按 Enter。可选的 NOTIFY 命令可定义目标 SMTP 服务器必须向发件人提供的特定传递状态通知 (DSN) 邮件。RFC 1891 中定义了 DSN 邮件。此示例是要请求获取有关邮件传递成功与否的 DSN 邮件。
 
 8.  键入 **DATA**，然后按 Enter。响应如下：
     
