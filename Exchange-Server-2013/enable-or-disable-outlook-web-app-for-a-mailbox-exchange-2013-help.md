@@ -55,11 +55,11 @@ _**上一次修改主题：** 2012-11-14_
 
 4.  在“电子邮件连接”下，执行下列操作之一：
     
-      - 若要禁用 Outlook Web App，请在“Outlook Web App:** 已启用**，请单击“禁用”。
+      - 若要禁用 Outlook Web App，请在“Outlook Web App: **已启用**，请单击“禁用”。
         
         此时将显示一条警告，询问是否确实要禁用 Outlook Web App。单击“是”。
     
-      - 若要启用 Outlook Web App，请在“Outlook Web App:** 已禁用**，请单击“启用”。
+      - 若要启用 Outlook Web App，请在“Outlook Web App: **已禁用**，请单击“启用”。
 
 5.  单击“保存”以保存您所做的更改。
 

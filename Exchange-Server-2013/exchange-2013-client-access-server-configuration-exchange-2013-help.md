@@ -71,9 +71,12 @@ _**上一次修改主题：** 2017-07-25_
     
     设置 Outlook Web App 虚拟目录后，在命令提示符中运行以下命令。
     
+      ```
         Net stop IISAdmin /y
-    
+      ```
+      ```    
         Net start W3SVC
+      ```
 
 2.  若要配置外部 EAC 访问，请在 Exchange 命令行管理程序中运行以下命令。
     
