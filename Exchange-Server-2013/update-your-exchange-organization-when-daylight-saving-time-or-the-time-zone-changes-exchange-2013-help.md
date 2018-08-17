@@ -39,7 +39,7 @@ _**上一次修改主题：** 2016-12-09_
 
 2.  如果运行 Office 365，则更新与 Office 365 身份验证系统交互的所有服务器（如目录同步或 AD FS 服务器）。这些服务器必须进行更新以确保正常运行时间。
 
-**注意**   如果更新服务器群集，请确保按照更新群集的常规过程来执行。首先更新被动服务器，故障转移到被动服务器（会成为活动状态），然后更新以前的活动（现在成为被动状态）服务器。有关如何更新服务器群集和高可用性服务器群集的详细信息，请参阅[Update Exchange Server Clusters and High Availability Servers](https://technet.microsoft.com/zh-cn/library/hh530052\(v=exchg.150\))和 [How to update Windows Server failover clusters](https://support.microsoft.com/en-us/kb/174799)（如何更新 Windows Server 故障转移群集）。
+**注意**   如果更新服务器群集，请确保按照更新群集的常规过程来执行。首先更新被动服务器，故障转移到被动服务器（会成为活动状态），然后更新以前的活动（现在成为被动状态）服务器。有关如何更新服务器群集和高可用性服务器群集的详细信息，请参阅Update Exchange Server Clusters and High Availability Servers和 [How to update Windows Server failover clusters](https://support.microsoft.com/en-us/kb/174799)（如何更新 Windows Server 故障转移群集）。
 
 ## 步骤 3：根据需要在客户端和台式计算机上更新 Exchange 和 Outlook
 
