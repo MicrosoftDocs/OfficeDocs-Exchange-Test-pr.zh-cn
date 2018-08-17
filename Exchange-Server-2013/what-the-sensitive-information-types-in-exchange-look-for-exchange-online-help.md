@@ -1059,13 +1059,11 @@ Exchange 中的数据丢失防护 (DLP) 包括 80 种可供你在 DLP 策略中�
 <td><p>格式</p></td>
 <td><p>Registro Geral（旧格式）</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>九个数字</p>
 </dd>
 </dl>
 <p>Registro de Identidade (RIC)（新格式）</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>11 个数字</p>
 </dd>
 </dl></td>
@@ -3654,13 +3652,11 @@ Exchange 中的数据丢失防护 (DLP) 包括 80 种可供你在 DLP 策略中�
 <td><p>格式</p></td>
 <td><p>自 2010 年 11 月 1 日起</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>九个字母和数字</p>
 </dd>
 </dl>
 <p>从 1987 年 4 月 1 日至 2010 年 10 月 31 日</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>10 个数字</p>
 </dd>
 </dl></td>
@@ -4252,7 +4248,6 @@ Exchange 中的数据丢失防护 (DLP) 包括 80 种可供你在 DLP 策略中�
 </ul>
 <p>每个国家/地区的格式稍有不同。IBAN 敏感信息类型涵盖这 60 个国家/地区：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mk, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, se, si, sk, sm, tn, tr, vg</p>
 </dd>
 </dl></td>
@@ -4392,13 +4387,11 @@ Exchange 中的数据丢失防护 (DLP) 包括 80 种可供你在 DLP 策略中�
 <td><p>格式</p></td>
 <td><p>旧格式（直到 2012 年 12 月 31 日）</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>七位数字后跟 1-2 个字母</p>
 </dd>
 </dl>
 <p>新格式（2013 年 1 月 1 日及以后）</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>七位数字后跟两个字母</p>
 </dd>
 </dl></td>
@@ -6494,13 +6487,11 @@ Exchange 中的数据丢失防护 (DLP) 包括 80 种可供你在 DLP 策略中�
 <td><p>格式</p></td>
 <td><p>生物护照号码</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>九个数字</p>
 </dd>
 </dl>
 <p>非生物护照号码</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>九个数字</p>
 </dd>
 </dl></td>
