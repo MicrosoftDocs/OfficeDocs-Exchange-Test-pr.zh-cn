@@ -1,4 +1,4 @@
-﻿    ---
+---
 title: '为负载平衡的客户端访问服务器配置 Kerberos 身份验证: Exchange 2013 Help'
 TOCTitle: 为负载平衡的客户端访问服务器配置 Kerberos 身份验证
 ms:assetid: 8f4faeea-a825-438d-97dc-1c398ce7aba5
