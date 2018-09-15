@@ -37,9 +37,9 @@ _**上一次修改主题：** 2016-12-09_
 
   - [UM 服务](um-services-exchange-2013-help.md)
 
-  - [UM 智能寻线](um-hunt-groups-exchange-2013-help.md)
+  - [UM 智能寻线](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-groups)
 
-  - [自动回答和路由传入呼叫](automatically-answer-and-route-incoming-calls-exchange-2013-help.md)
+  - [自动回答和路由传入呼叫](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/automatically-answer-and-route-calls)
 
   - [UM 邮箱策略](um-mailbox-policies-exchange-2013-help.md)
 
@@ -188,7 +188,7 @@ UM IP 网关表示 VoIP 网关硬件设备或 IP PBX。结合使用 UM IP 网关
 
 如果已经创建 UM IP 网关，并将 UM IP 网关与 UM 拨号计划相关联，则会创建默认的 UM 智能寻线。可以与相同或不同 UM IP 网关关联另一个 UM 智能寻线，取决于已经创建的 UM IP 网关的数字。
 
-创建统一消息智能寻线之后，需要使 UM 拨号计划中指定的所有邮箱服务器均可以与 VoIP 网关进行通信。有关详细信息，请参阅 [UM 智能寻线](um-hunt-groups-exchange-2013-help.md)。
+创建统一消息智能寻线之后，需要使 UM 拨号计划中指定的所有邮箱服务器均可以与 VoIP 网关进行通信。有关详细信息，请参阅 [UM 智能寻线](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-groups)。
 
 ## 创建 UM 智能寻线
 

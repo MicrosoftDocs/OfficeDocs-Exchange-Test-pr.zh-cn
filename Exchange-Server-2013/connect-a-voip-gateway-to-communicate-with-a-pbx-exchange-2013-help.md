@@ -27,7 +27,7 @@ Exchange TechCenter 中的以下建议资源提供的信息可帮助您正确地
 
   - **支持的 VoIP 网关、IP PBX 和 PBX 文档**   [Exchange 2013 电话顾问](telephony-advisor-for-exchange-2013-exchange-2013-help.md)中包含在配置 VoIP 网关和 PBX 时可以使用的配置文件和设置信息。
 
-  - **配置和技术说明**   [支持的 VoIP 网关、IP PBX 和 PBX 的配置说明](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)中包含在配置 VoIP 网关和 PBX 时可以使用的配置文件和设置信息。
+  - **配置和技术说明**   [支持的 VoIP 网关、IP PBX 和 PBX 的配置说明](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)中包含在配置 VoIP 网关和 PBX 时可以使用的配置文件和设置信息。
 
   - **配置基于 AudioCodes 的 VoIP 网关** [Microsoft Exchange Server 资源页](https://www.audiocodes.com/solutions/microsoft/exchange-server)提供最新的支持和配置信息，以帮助您配置为使用基于 AudioCodes 的 VoIP 网关与统一消息。
 
@@ -37,7 +37,7 @@ Exchange TechCenter 中的以下建议资源提供的信息可帮助您正确地
 
 ## 详细信息
 
-[支持的 VoIP 网关、IP PBX 和 PBX 的配置说明](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+[支持的 VoIP 网关、IP PBX 和 PBX 的配置说明](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
 [将 UM 连接到支持 VoIP 网关](connect-um-to-a-supported-voip-gateway-exchange-2013-help.md)
 

@@ -219,10 +219,10 @@ AD RMS 使用基于 XrML 的权限策略模板，允许启用了 IRM 的兼容�
 
   - **日记报告解密：** 若要满足遵从性或业务要求，组织可使用日记功能保留邮件内容。日记代理为要记录的邮件创建日记报告，并且在报告中包括了有关邮件的元数据。原始邮件将会附加到日记报告中。如果日记报告中的邮件受 IRM 保护，则日记报告解密会将邮件的明文副本附加到日记报告中。有关详细信息，请参阅[日记报告解密](journal-report-decryption-exchange-2013-help.md)。
 
-  - **Exchange 搜索的 IRM 解密：** 通过 Exchange 搜索的 IRM 解密，Exchange 搜索可以在受 IRM 保护的邮件中建立内容索引。当发现管理员执行就地电子数据展示搜索时，搜索结果中会返回已编制索引的受 IRM 保护的邮件。有关详细信息，请参阅[就地电子数据展示](in-place-ediscovery-exchange-2013-help.md)。
+  - **Exchange 搜索的 IRM 解密：** 通过 Exchange 搜索的 IRM 解密，Exchange 搜索可以在受 IRM 保护的邮件中建立内容索引。当发现管理员执行就地电子数据展示搜索时，搜索结果中会返回已编制索引的受 IRM 保护的邮件。有关详细信息，请参阅[就地电子数据展示](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)。
     
     > [!NOTE]  
-    > 在 Exchange 2010 SP1 及更高版本中，发现管理角色组的成员可访问由发现搜索返回并位于发现邮箱中的受 IRM 保护的邮件。要启用此功能，请将 <em>EDiscoverySuperUserEnabled</em> 参数与 <a href="https://technet.microsoft.com/zh-cn/library/dd979792(v=exchg.150)">Set-IRMConfiguration</a> cmdlet 配合使用。有关详细信息，请参阅<a href="configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help.md">为 Exchange 搜索和就地 eDiscovery 配置 IRM</a>。
+    > 在 Exchange 2010 SP1 及更高版本中，发现管理角色组的成员可访问由发现搜索返回并位于发现邮箱中的受 IRM 保护的邮件。要启用此功能，请将 <em>EDiscoverySuperUserEnabled</em> 参数与 <a href="https://technet.microsoft.com/zh-cn/library/dd979792(v=exchg.150)">Set-IRMConfiguration</a> cmdlet 配合使用。有关详细信息，请参阅<a href="configure-irm-for-exchange-search-and-https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">为 Exchange 搜索和就地 eDiscovery 配置 IRM</a>。
 
 
 若要启用这些解密功能，Exchange 服务器必须拥有对邮件的访问权限。将联合邮箱（由 Exchange 安装程序创建的系统邮箱）添加到 AD RMS 服务器上的超级用户组可完成此操作。有关详细信息，请参阅[将联合身份验证邮箱添加到 AD RMS 超级用户组](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md)。

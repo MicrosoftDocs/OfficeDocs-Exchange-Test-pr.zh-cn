@@ -199,7 +199,7 @@ EAC 中的\&quot;审核\&quot;页面包括若干个报告，提供有关各种�
 
 有关如何使用这些报告的信息，请参阅[搜索角色组更改或管理员审核日志](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)。
 
-有关\&quot;审核\&quot;页面中包括的其他报告的信息，请参阅[Exchange 审核报告](exchange-auditing-reports-exchange-2013-help.md)。
+有关\&quot;审核\&quot;页面中包括的其他报告的信息，请参阅[Exchange 审核报告](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)。
 
 ## Search-AdminAuditLog cmdlet
 

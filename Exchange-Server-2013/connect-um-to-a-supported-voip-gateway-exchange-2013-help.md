@@ -65,11 +65,11 @@ Exchange 统一消息支持各种 VoIP 网关供应商和其他供应商提供�
 
   - [创建 UM IP 网关](create-a-um-ip-gateway-exchange-2013-help.md)
 
-  - [支持的 VoIP 网关、IP PBX 和 PBX 的配置说明](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+  - [支持的 VoIP 网关、IP PBX 和 PBX 的配置说明](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
   - [将 VoIP 网关、IP PBX 或会话边界控制器与 UM 连接](connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md)
 
-有关详细信息，请参阅[连接到电话网络的语音邮件系统](connect-your-voice-mail-system-to-your-telephone-network-exchange-2013-help.md)。
+有关详细信息，请参阅[连接到电话网络的语音邮件系统](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system)。
 
 ## 步骤 4 ︰ 创建新的 UM 查寻组 （如果需要）
 

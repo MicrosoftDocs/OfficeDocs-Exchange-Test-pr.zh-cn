@@ -22,7 +22,7 @@ _**上一次修改主题：** 2013-06-11_
   - 为每个 Lync Server 池创建一个 UM IP 网关。
     
     > [!IMPORTANT]  
-    > ExchUcUtil.ps1 脚本会创建一个或多个 UM IP 网关。除该脚本创建的一个网关外，必须禁用所有 UM IP 网关上的传出呼叫。这包括禁用在运行该脚本之前创建的 UM IP 网关上的传出呼叫。若要禁用 UM IP 网关上的传出呼叫，请参阅<a href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">禁用 UM IP 网关的传出呼叫</a>。
+    > ExchUcUtil.ps1 脚本会创建一个或多个 UM IP 网关。除该脚本创建的一个网关外，必须禁用所有 UM IP 网关上的传出呼叫。这包括禁用在运行该脚本之前创建的 UM IP 网关上的传出呼叫。若要禁用 UM IP 网关上的传出呼叫，请参阅<a href="https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-outgoing-calls-on-um-ip-gateways">禁用 UM IP 网关的传出呼叫</a>。
 
 
   - 为每个 UM IP 网关创建一个 UM 智能寻线。每个智能寻线的引导标识符指定与 UM IP 网关关联的 Lync Server 前端池或 Standard Edition 服务器所使用的 UM SIP URL 拨号计划。
@@ -52,7 +52,7 @@ _**上一次修改主题：** 2013-06-11_
 在与 Microsoft Lync Server 位于同一拓扑的组织中的任意 Exchange 服务器上运行 ExchUcUtil.ps1 脚本。您可以使用命令行管理程序从邮箱服务器运行此脚本，也可以使用客户端访问服务器上的远程 Windows PowerShell 运行此脚本。如果在组织中的客户端访问服务器上运行此脚本，则客户端访问服务器会将远程 Windows PowerShell 会话代理到组织中的邮箱服务器。
 
 > [!IMPORTANT]  
-> ExchUcUtil.ps1 脚本会创建一个或多个 UM IP 网关。除该脚本创建的一个网关外，必须禁用所有 UM IP 网关上的传出呼叫。这包括禁用在运行该脚本之前创建的 UM IP 网关上的传出呼叫。若要禁用 UM IP 网关上的传出呼叫，请参阅<a href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">禁用 UM IP 网关的传出呼叫</a>。
+> ExchUcUtil.ps1 脚本会创建一个或多个 UM IP 网关。除该脚本创建的一个网关外，必须禁用所有 UM IP 网关上的传出呼叫。这包括禁用在运行该脚本之前创建的 UM IP 网关上的传出呼叫。若要禁用 UM IP 网关上的传出呼叫，请参阅<a href="https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-outgoing-calls-on-um-ip-gateways">禁用 UM IP 网关的传出呼叫</a>。
 
 
 > [!IMPORTANT]  

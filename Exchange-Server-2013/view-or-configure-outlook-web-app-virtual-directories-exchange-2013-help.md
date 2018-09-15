@@ -99,7 +99,7 @@ _**上一次修改主题：** 2013-08-12_
 5.  在\&quot;功能\&quot;选项卡上，指定要在虚拟目录上为 Outlook Web App 用户启用或禁用的功能。
     
     > [!NOTE]  
-    > 各个用户的功能设置将覆盖虚拟目录设置。通过使用 <strong>Set-CASMailbox</strong> cmdlet，或通过使用 Outlook Web App 邮箱策略，可以更改单个用户的分段设置。有关详细信息，请参阅 <a href="outlook-web-app-mailbox-policies-exchange-2013-help.md">Outlook Web App 邮箱策略</a>。
+    > 各个用户的功能设置将覆盖虚拟目录设置。通过使用 <strong>Set-CASMailbox</strong> cmdlet，或通过使用 Outlook Web App 邮箱策略，可以更改单个用户的分段设置。有关详细信息，请参阅 <a href="https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies">Outlook Web App 邮箱策略</a>。
     
     使用复选框来启用或禁用功能。默认情况下，显示最常用的功能。要查看可以启用或禁用的所有功能，可单击\&quot;更多选项\&quot;。
     

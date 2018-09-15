@@ -220,9 +220,9 @@ _**上一次修改主题：** 2016-12-09_
 
 有关就地电子数据展示、就地保留和诉讼保留的详细信息，请参阅下列主题：
 
-  - [就地电子数据展示](in-place-ediscovery-exchange-2013-help.md)
+  - [就地电子数据展示](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
-  - [就地保留和诉讼保留](in-place-hold-and-litigation-hold-exchange-2013-help.md)
+  - [就地保留和诉讼保留](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-and-litigation-holds)
 
 返回顶部
 

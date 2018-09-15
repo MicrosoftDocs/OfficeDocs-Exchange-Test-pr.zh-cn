@@ -39,7 +39,7 @@ _**上一次修改主题：** 2015-04-08_
 
   - 只能使用命令行管理程序执行此过程。 若要了解如何在本地 Exchange 组织中打开 Exchange 命令行管理程序，请参阅[打开命令行管理程序](https://technet.microsoft.com/zh-cn/library/dd638134\(v=exchg.150\))。 若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
 
-有关与 UM 邮箱策略相关的其他任务，请参阅 [UM 邮箱策略过程](um-mailbox-policy-procedures-exchange-2013-help.md)。
+有关与 UM 邮箱策略相关的其他任务，请参阅 [UM 邮箱策略过程](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policy-procedures)。
 
 有关 UM 邮箱相关的其他任务，请参阅[声音已启用邮件的用户的过程](voice-mail-enabled-user-procedures-exchange-2013-help.md)。
 

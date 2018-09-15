@@ -29,7 +29,7 @@ _**上一次修改主题：** 2015-03-27_
 
   - 创建通知，在用户发送与传输规则匹配的邮件时警告用户。
 
-  - 阻止包含附件的所有邮件。有关示例，请参阅[常见的附件阻止方案](common-attachment-blocking-scenarios-for-mail-flow-rules-exchange-2013-help.md)。
+  - 阻止包含附件的所有邮件。有关示例，请参阅[常见的附件阻止方案](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios)。
 
 Exchange 管理员可以通过转到“Exchange 管理中心”\>“邮件流”\>“规则”，来创建传输规则。您必须先获得权限，然后才能执行此过程。开始创建新规则后，单击“在以下情况应用此规则”下方的“更多选项”\>“任何附件”，便可查看与附件相关的条件的完整列表。与附件相关的选项如下图所示。
 

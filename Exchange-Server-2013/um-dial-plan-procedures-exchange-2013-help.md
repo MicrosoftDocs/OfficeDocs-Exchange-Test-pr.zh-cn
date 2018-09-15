@@ -37,5 +37,5 @@ _**上一次修改主题：** 2013-04-16_
 
 [为拥有相似姓名的用户配置拨号计划](configure-a-dial-plan-for-users-who-have-similar-names-exchange-2013-help.md)
 
-[删除 UM 拨号计划](delete-a-um-dial-plan-exchange-2013-help.md)
+[删除 UM 拨号计划](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/delete-um-dial-plan)
 

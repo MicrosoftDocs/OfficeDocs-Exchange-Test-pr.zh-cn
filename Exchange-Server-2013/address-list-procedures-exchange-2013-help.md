@@ -21,13 +21,13 @@ _**上一次修改主题：** 2012-10-12_
 
 [更新地址列表](update-an-address-list-exchange-2013-help.md)
 
-[使用收件人筛选器创建地址列表](create-an-address-list-by-using-recipient-filters-exchange-2013-help.md)
+[使用收件人筛选器创建地址列表](https://docs.microsoft.com/zh-cn/exchange/address-books/address-lists/use-recipient-filters-to-create-an-address-list)
 
 [移动地址列表](move-an-address-list-exchange-2013-help.md)
 
 [删除地址列表](remove-an-address-list-exchange-2013-help.md)
 
-[创建全局地址列表](create-a-global-address-list-exchange-2013-help.md)
+[创建全局地址列表](https://docs.microsoft.com/zh-cn/exchange/address-books/address-lists/create-global-address-list)
 
 [配置全局地址列表属性](configure-global-address-list-properties-exchange-2013-help.md)
 

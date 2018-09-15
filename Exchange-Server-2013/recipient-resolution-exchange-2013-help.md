@@ -110,11 +110,11 @@ Exchange 中的 SMTP 电子邮件地址的最大长度为 571 个字符。此限
 </tr>
 <tr class="even">
 <td><p>MailUser</p></td>
-<td><p>具有电子邮件地址以及已定义的 <em>Database</em> 参数的用户对象有关详细信息，请参阅<a href="manage-mail-users-exchange-2013-help.md">管理邮件用户</a>。</p></td>
+<td><p>具有电子邮件地址以及已定义的 <em>Database</em> 参数的用户对象有关详细信息，请参阅<a href="https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-mail-users">管理邮件用户</a>。</p></td>
 </tr>
 <tr class="odd">
 <td><p>MailContact</p></td>
-<td><p>具有电子邮件地址的联系人对象。通常，邮件联系人用于 Exchange 组织外部的收件人。在跨林的 Exchange 环境中也会使用邮件联系人。有关详细信息，请参阅<a href="manage-mail-contacts-exchange-2013-help.md">管理邮件联系人</a>。</p></td>
+<td><p>具有电子邮件地址的联系人对象。通常，邮件联系人用于 Exchange 组织外部的收件人。在跨林的 Exchange 环境中也会使用邮件联系人。有关详细信息，请参阅<a href="https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-mail-contacts">管理邮件联系人</a>。</p></td>
 </tr>
 <tr class="even">
 <td><p>MailPublicFolder</p></td>

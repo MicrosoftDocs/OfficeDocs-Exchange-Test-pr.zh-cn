@@ -19,7 +19,7 @@ _**上一次修改主题：** 2012-11-16_
 
 在 Microsoft Exchange Server 2013，您可以配置信息权限管理 (IRM)，以便Exchange搜索可以索引受 IRM 保护的邮件。
 
-当发现管理角色组的成员执行一个[就地电子数据展示](in-place-ediscovery-exchange-2013-help.md)搜索时，搜索结果中返回并复制到指定的搜索发现邮箱受 IRM 保护的消息。此外，发现管理角色组的成员可以使用Outlook Web App来访问已复制到发现邮箱发现搜索的结果受 IRM 保护的邮件。
+当发现管理角色组的成员执行一个[就地电子数据展示](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)搜索时，搜索结果中返回并复制到指定的搜索发现邮箱受 IRM 保护的消息。此外，发现管理角色组的成员可以使用Outlook Web App来访问已复制到发现邮箱发现搜索的结果受 IRM 保护的邮件。
 
 > [!NOTE]  
 > 搜索管理角色组的成员无法访问到另一个邮箱或.pst 文件从发现邮箱导出受 IRM 保护的邮件。只能通过使用Outlook Web App，可以访问受 IRM 保护发现邮箱中的邮件。

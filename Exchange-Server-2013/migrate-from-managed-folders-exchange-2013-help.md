@@ -26,7 +26,7 @@ _**上一次修改主题：** 2015-04-07_
 
 
 > [!TIP]  
-> 您可以将邮箱置于保留挂起，暂停对保留策略或托管文件夹邮箱策略的处理。在迁移场景中，将邮箱置于保留挂起非常有用，可避免在测试邮箱或少数生产邮箱上测试新策略设置之前删除邮件或移动邮件至存档。有关详细信息，请参阅<a href="place-a-mailbox-on-retention-hold-exchange-2013-help.md">放置的邮箱上保留挂起</a>。
+> 您可以将邮箱置于保留挂起，暂停对保留策略或托管文件夹邮箱策略的处理。在迁移场景中，将邮箱置于保留挂起非常有用，可避免在测试邮箱或少数生产邮箱上测试新策略设置之前删除邮件或移动邮件至存档。有关详细信息，请参阅<a href="https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold">放置的邮箱上保留挂起</a>。
 
 
 有关与 MRM 相关的其他管理任务，请参阅[邮件记录管理程序](messaging-records-management-procedures-exchange-2013-help.md)。
@@ -264,7 +264,7 @@ _**上一次修改主题：** 2015-04-07_
 **手动创建保留标记**
 
 > [!NOTE]  
-> 您也可以使用 EAC 手动创建保留标记（不根据托管文件夹内的设置）。有关详细信息，请参阅<a href="create-a-retention-policy-exchange-2013-help.md">创建保留策略</a>。
+> 您也可以使用 EAC 手动创建保留标记（不根据托管文件夹内的设置）。有关详细信息，请参阅<a href="https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">创建保留策略</a>。
 
 
 本示例根据托管文件夹及 Contoso 托管文件夹邮箱策略中显示的相应托管内容设置创建保留标记。手动指定保留设置，无需使用 *ManagedFolderToUpgrade* 参数。
@@ -284,7 +284,7 @@ _**上一次修改主题：** 2015-04-07_
 您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅 [邮件策略和遵从性权限](messaging-policy-and-compliance-permissions-exchange-2013-help.md)主题中的\&quot;邮件记录管理\&quot;条目。
 
 > [!NOTE]  
-> 您也可以使用 EAC 创建保留策略并将保留标记添加至策略。有关详细信息，请参阅<a href="create-a-retention-policy-exchange-2013-help.md">创建保留策略</a>。
+> 您也可以使用 EAC 创建保留策略并将保留标记添加至策略。有关详细信息，请参阅<a href="https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">创建保留策略</a>。
 
 
 本示例创建了保留策略 RP-Corp，并将新建的保留标记链接至策略。
@@ -306,7 +306,7 @@ _**上一次修改主题：** 2015-04-07_
 您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅 [邮件策略和遵从性权限](messaging-policy-and-compliance-permissions-exchange-2013-help.md)主题中的\&quot;应用保留策略\&quot;条目。
 
 > [!NOTE]  
-> 您也可以使用 EAC 将保留策略应用于用户。有关详细信息，请参阅<a href="apply-a-retention-policy-to-mailboxes-exchange-2013-help.md">将保留策略应用于邮箱</a>。
+> 您也可以使用 EAC 将保留策略应用于用户。有关详细信息，请参阅<a href="https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/apply-retention-policy">将保留策略应用于邮箱</a>。
 
 
 本示例将新建的保留策略 RP-Corp 应用于邮箱用户 Ken Kwok。

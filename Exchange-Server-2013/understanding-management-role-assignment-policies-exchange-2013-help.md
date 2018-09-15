@@ -105,7 +105,7 @@ Exchange 2013 包括向最终用户提供最常用权限的默认角色分配策
 <tbody>
 <tr class="odd">
 <td><p>邮箱</p></td>
-<td><p><a href="manage-user-mailboxes-exchange-2013-help.md">管理用户邮箱</a></p>
+<td><p><a href="https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes">管理用户邮箱</a></p>
 <p><a href="change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md">更改邮箱的分配策略</a></p></td>
 </tr>
 <tr class="even">

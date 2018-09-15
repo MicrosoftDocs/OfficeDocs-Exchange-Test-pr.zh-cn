@@ -80,7 +80,7 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>了解更多有关代理电子邮件地址（通过此地址可以更轻松地找到收件人）的信息。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="hierarchical-address-books-exchange-2013-help.md">分层通讯簿</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-cn/exchange/address-books/hierarchical-address-books/hierarchical-address-books">分层通讯簿</a></p></td>
 <td><p>了解更多有关如何自定义 GAL 和地址列表以满足您组织独有的业务结构要求的信息。</p></td>
 </tr>
 <tr class="even">

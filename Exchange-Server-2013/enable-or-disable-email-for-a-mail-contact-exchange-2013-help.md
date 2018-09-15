@@ -21,7 +21,7 @@ _**上一次修改主题：** 2012-12-05_
 
 禁用邮件联系人的电子邮件后，您可以启用邮件联系人再次通过在 Shell 中使用**Enable-MailContact** cmdlet。您还可以使用此 cmdlet 以启用任何 Active Directory 联系人的邮件。
 
-有关与邮件联系人相关的其他管理任务，请参阅[管理邮件联系人](manage-mail-contacts-exchange-2013-help.md)。
+有关与邮件联系人相关的其他管理任务，请参阅[管理邮件联系人](https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-mail-contacts)。
 
 ## 在开始之前，您需要知道什么？
 

@@ -33,7 +33,7 @@ _**上一次修改主题：** 2015-09-30_
 
   - 如果邮箱处于就地保留或诉讼保留，或者启用了单个项目恢复，则在删除保留或禁用单个项目恢复之前，一直保留邮箱数据将十分重要。在这种情况下，需要执行更多详细步骤来清理“可恢复的项目”文件夹。
 
-若要了解有关就地保留和诉讼保留的更多信息，请参阅[就地保留和诉讼保留](in-place-hold-and-litigation-hold-exchange-2013-help.md)。若要了解有关单个项目恢复的详细信息，请参阅[“可恢复的项目”文件夹](recoverable-items-folder-exchange-2013-help.md)中的“单个项目恢复”。
+若要了解有关就地保留和诉讼保留的更多信息，请参阅[就地保留和诉讼保留](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-and-litigation-holds)。若要了解有关单个项目恢复的详细信息，请参阅[“可恢复的项目”文件夹](recoverable-items-folder-exchange-2013-help.md)中的“单个项目恢复”。
 
 有关“可恢复的项目”文件夹的详细信息，请参阅[“可恢复的项目”文件夹](recoverable-items-folder-exchange-2013-help.md)。
 
@@ -139,7 +139,7 @@ _**上一次修改主题：** 2015-09-30_
         Search-Mailbox -Identity "Gurinder Singh" -SearchQuery "Subject:'Your bank statement'" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
     
     > [!NOTE]  
-    > 不是一定要将项目复制到发现搜索邮箱。可以将邮件复制到任何邮箱。但是，为了防止访问可能敏感的邮箱数据，建议将邮件复制到仅限经过授权的记录管理员访问的邮箱。默认情况下，仅限发现管理角色组的成员访问默认发现搜索邮箱。有关详细信息，请参阅<a href="in-place-ediscovery-exchange-2013-help.md">就地电子数据展示</a>。
+    > 不是一定要将项目复制到发现搜索邮箱。可以将邮件复制到任何邮箱。但是，为了防止访问可能敏感的邮箱数据，建议将邮件复制到仅限经过授权的记录管理员访问的邮箱。默认情况下，仅限发现管理角色组的成员访问默认发现搜索邮箱。有关详细信息，请参阅<a href="https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">就地电子数据展示</a>。
 
 
 10. 如果邮箱以前处于诉讼保留或启用了单个项目恢复，请再次启用这些功能。

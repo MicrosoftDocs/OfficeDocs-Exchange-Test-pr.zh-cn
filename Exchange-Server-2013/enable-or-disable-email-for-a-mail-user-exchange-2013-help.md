@@ -25,7 +25,7 @@ _**上一次修改主题：** 2012-11-14_
 > 邮件用户 （也称为<em>已启用邮件的用户</em>） 是不同于组织中拥有邮箱的用户。两者的主要区别是邮件用户代表您的 Exchange 组织以外的用户具有外部电子邮件地址。他们没有在您的组织中的邮箱。用户已在您的组织中的邮箱和邮件用户之间的差异的详细信息，请参阅<a href="recipients-exchange-2013-help.md">收件人</a>。
 
 
-有关邮件用户相关的其他管理任务，请参阅[管理邮件用户](manage-mail-users-exchange-2013-help.md)。
+有关邮件用户相关的其他管理任务，请参阅[管理邮件用户](https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-mail-users)。
 
 ## 在开始之前，您需要知道什么？
 
