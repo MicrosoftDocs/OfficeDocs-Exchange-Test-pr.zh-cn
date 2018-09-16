@@ -45,9 +45,9 @@ _**上一次修改主题：** 2013-02-14_
 
 您可以将邮箱保留挂起状态，要关闭 MRM 暂时 （例如当用户在渡假时）。这挂起的保留策略的邮箱的处理，直到保留挂起，请禁用。这是不同于将邮箱放在原位保存或诉讼封存。
 
-有关如何将邮箱放在保留挂起中的详细信息，请参阅[放置的邮箱上保留挂起](place-a-mailbox-on-retention-hold-exchange-2013-help.md)。
+有关如何将邮箱放在保留挂起中的详细信息，请参阅[放置的邮箱上保留挂起](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)。
 
-若要了解有关就地保留和诉讼保留的更多信息，请参阅[就地保留和诉讼保留](in-place-hold-and-litigation-hold-exchange-2013-help.md)。
+若要了解有关就地保留和诉讼保留的更多信息，请参阅[就地保留和诉讼保留](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-and-litigation-holds)。
 
 ## 删除邮箱的保留标记
 

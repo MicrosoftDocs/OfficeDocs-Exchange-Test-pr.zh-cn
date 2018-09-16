@@ -53,12 +53,12 @@ _**上一次修改主题：** 2016-12-09_
 <tr class="odd">
 <td><p> </p></td>
 <td><p>创建保留标记。</p></td>
-<td><p><a href="create-a-retention-policy-exchange-2013-help.md">创建保留策略</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">创建保留策略</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong> </strong></p></td>
 <td><p>创建保留策略。</p></td>
-<td><p><a href="create-a-retention-policy-exchange-2013-help.md">创建保留策略</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">创建保留策略</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
@@ -68,12 +68,12 @@ _**上一次修改主题：** 2016-12-09_
 <tr class="even">
 <td><p><strong> </strong></p></td>
 <td><p>将邮箱置于保留挂起状态。</p></td>
-<td><p><a href="place-a-mailbox-on-retention-hold-exchange-2013-help.md">放置的邮箱上保留挂起</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold">放置的邮箱上保留挂起</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
 <td><p>将保留策略应用于单个邮箱以进行测试。</p></td>
-<td><p><a href="apply-a-retention-policy-to-mailboxes-exchange-2013-help.md">将保留策略应用于邮箱</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/apply-retention-policy">将保留策略应用于邮箱</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong> </strong></p></td>
@@ -88,7 +88,7 @@ _**上一次修改主题：** 2016-12-09_
 <tr class="even">
 <td><p><strong> </strong></p></td>
 <td><p>将保留策略应用于其他邮箱。</p></td>
-<td><p><a href="apply-a-retention-policy-to-mailboxes-exchange-2013-help.md">将保留策略应用于邮箱</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/apply-retention-policy">将保留策略应用于邮箱</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
@@ -98,7 +98,7 @@ _**上一次修改主题：** 2016-12-09_
 <tr class="even">
 <td><p><strong> </strong></p></td>
 <td><p>在截止日期，从邮箱删除保留挂起。</p></td>
-<td><p><a href="place-a-mailbox-on-retention-hold-exchange-2013-help.md">放置的邮箱上保留挂起</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold">放置的邮箱上保留挂起</a></p></td>
 </tr>
 </tbody>
 </table>

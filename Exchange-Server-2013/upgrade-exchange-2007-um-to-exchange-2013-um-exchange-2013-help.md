@@ -292,7 +292,7 @@ UM IP 网关代表物理 Voice over IP (VoIP) 网关、IP PBX 或启用 SIP 的 
 
 根据现有 Exchange 2007 部署，您可能需要创建新的 UM 查寻组。电话查寻组使您能够分发到多个扩展名从一个单一的数字电话呼叫或电话号码。在统一消息，UM 查寻组的逻辑表示形式电话查寻组，并且它链接到 UM 拨号计划的 UM IP 网关。
 
-对每个 IP PBX 或 PBX 智能寻线，您需要拥有至少一个 UM 智能寻线。完成以下步骤后，将默认创建一个 UM 智能寻线。如果您拥有一个以上的 IP PBX 或 PBX 智能寻线，则需要创建更多 UM 智能寻线。若要了解有关 UM 智能寻线的详细信息，请参阅 [UM 智能寻线](um-hunt-groups-exchange-2013-help.md)。
+对每个 IP PBX 或 PBX 智能寻线，您需要拥有至少一个 UM 智能寻线。完成以下步骤后，将默认创建一个 UM 智能寻线。如果您拥有一个以上的 IP PBX 或 PBX 智能寻线，则需要创建更多 UM 智能寻线。若要了解有关 UM 智能寻线的详细信息，请参阅 [UM 智能寻线](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-groups)。
 
 如果需要，可以使用 EAC 创建 UM 智能寻线：
 
@@ -320,7 +320,7 @@ UM IP 网关代表物理 Voice over IP (VoIP) 网关、IP PBX 或启用 SIP 的 
 
 ## 第 9 步︰ 创建或配置 UM 自动助理
 
-这取决于您现有的 Exchange 2007 部署，您可能需要创建新的 UM 自动助理。您可以使用 UM 自动助理创建语音菜单系统，让外部和内部调用方使用 UM 自动助理的菜单系统以查找人员并放置或转移求助电话公司用户或组织中的部门。有关详细信息，请参阅[自动回答和路由传入呼叫](automatically-answer-and-route-incoming-calls-exchange-2013-help.md)。
+这取决于您现有的 Exchange 2007 部署，您可能需要创建新的 UM 自动助理。您可以使用 UM 自动助理创建语音菜单系统，让外部和内部调用方使用 UM 自动助理的菜单系统以查找人员并放置或转移求助电话公司用户或组织中的部门。有关详细信息，请参阅[自动回答和路由传入呼叫](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/automatically-answer-and-route-calls)。
 
 在较小的部署中，您可能只想部署 UM，以使调用方可以将用户的语音邮件。在这些部署中，不需要创建自动助理。但是，在大多数情况下，使用自动助理是非常有用的外部调用方为您的组织拨打电话时。
 
@@ -504,7 +504,7 @@ Exchange 2013 客户端访问服务器是针对统一消息的任何入站呼叫
 
   -  [UM 服务](um-services-exchange-2013-help.md)
 
-  -  [支持的 VoIP 网关、IP PBX 和 PBX 的配置说明](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+  -  [支持的 VoIP 网关、IP PBX 和 PBX 的配置说明](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
   -  [Exchange 2013 电话顾问](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
 

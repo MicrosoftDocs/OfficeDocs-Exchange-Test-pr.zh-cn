@@ -123,7 +123,7 @@ Microsoft Exchange Server 2010 和 Exchange Server 2007 有多个服务器角色
 </tr>
 <tr class="odd">
 <td><p>在客户端访问服务器上添加数字证书</p></td>
-<td><p><a href="exchange-2013-client-access-server-configuration-exchange-2013-help.md">Exchange 2013 客户端访问服务器配置</a></p>
+<td><p><a href="https://technet.microsoft.com/it-it/library/Aa997281(v=EXCHG.150)">Exchange 2013 客户端访问服务器配置</a></p>
 <p><a href="digital-certificates-and-ssl-exchange-2013-help.md">数字证书和 SSL</a></p>
 <p><a href="create-a-digital-certificate-request-exchange-2013-help.md">创建数字证书请求</a></p></td>
 </tr>

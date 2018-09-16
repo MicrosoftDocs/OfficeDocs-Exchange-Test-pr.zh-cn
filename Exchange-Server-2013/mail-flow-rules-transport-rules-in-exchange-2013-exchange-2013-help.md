@@ -31,7 +31,7 @@ _**上一次修改主题：** 2017-04-28_
 
   - [使用传输规则检查邮件附件](use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md)
 
-  - [常见的附件阻止方案](common-attachment-blocking-scenarios-for-mail-flow-rules-exchange-2013-help.md)
+  - [常见的附件阻止方案](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios)
 
   - [组织范围内的免责声明、签名、脚注或标头](organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md)
 

@@ -110,7 +110,7 @@ UM 邮箱策略的一个属性指 UM 拨号计划。这代表了一组电话分�
 
   - [更改分机号码](change-an-extension-number-exchange-2013-help.md)
 
-  - [添加分机号码](add-an-extension-number-exchange-2013-help.md)
+  - [添加分机号码](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-extension-number)
 
   - [删除分机号码](remove-an-extension-number-exchange-2013-help.md)
 
@@ -118,7 +118,7 @@ UM 邮箱策略的一个属性指 UM 拨号计划。这代表了一组电话分�
 
   - [添加 SIP 地址](add-a-sip-address-exchange-2013-help.md)
 
-  - [更改 SIP 地址](change-a-sip-address-exchange-2013-help.md)
+  - [更改 SIP 地址](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-sip-address)
 
   - [删除 SIP 地址](remove-a-sip-address-exchange-2013-help.md)
 

@@ -19,7 +19,7 @@ _**上一次修改主题：** 2013-04-17_
 
 [安装 UM 语言包](install-a-um-language-pack-exchange-2013-help.md)
 
-[拨号计划中设置的默认语言](set-the-default-language-on-a-dial-plan-exchange-2013-help.md)
+[拨号计划中设置的默认语言](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/set-dial-plan-default-language)
 
 [选择的语言的自动助理](select-the-language-for-an-auto-attendant-exchange-2013-help.md)
 

@@ -101,7 +101,7 @@ _**上一次修改主题：** 2016-12-09_
 
 
 <p></p></td>
-<td><p><a href="exchange-2013-client-access-server-configuration-exchange-2013-help.md">Exchange 2013 客户端访问服务器配置</a></p>
+<td><p><a href="https://technet.microsoft.com/it-it/library/Aa997281(v=EXCHG.150)">Exchange 2013 客户端访问服务器配置</a></p>
 <p></p></td>
 </tr>
 <tr class="odd">
@@ -144,7 +144,7 @@ _**上一次修改主题：** 2016-12-09_
 <tr class="even">
 <td><p></p></td>
 <td><p>15. 配置服务连接点</p></td>
-<td><p><a href="exchange-2013-client-access-server-configuration-exchange-2013-help.md">Exchange 2013 客户端访问服务器配置</a></p></td>
+<td><p><a href="https://technet.microsoft.com/it-it/library/Aa997281(v=EXCHG.150)">Exchange 2013 客户端访问服务器配置</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>

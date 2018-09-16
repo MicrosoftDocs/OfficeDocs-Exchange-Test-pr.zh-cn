@@ -21,7 +21,7 @@ _**上一次修改主题：** 2012-10-11_
 
 [将通讯簿策略分配给邮件用户](assign-an-address-book-policy-to-mail-users-exchange-2013-help.md)
 
-[更改通讯簿策略的设置](change-the-settings-of-an-address-book-policy-exchange-2013-help.md)
+[更改通讯簿策略的设置](https://docs.microsoft.com/zh-cn/exchange/address-books/address-book-policies/change-the-settings-of-an-address-book-policy)
 
 [删除通讯簿策略](remove-an-address-book-policy-exchange-2013-help.md)
 

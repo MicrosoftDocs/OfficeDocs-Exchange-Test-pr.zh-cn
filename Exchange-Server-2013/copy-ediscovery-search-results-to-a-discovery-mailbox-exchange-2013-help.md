@@ -25,7 +25,7 @@ _**上一次修改主题：** 2014-02-24_
 
   - 您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅[邮件策略和遵从性权限](messaging-policy-and-compliance-permissions-exchange-2013-help.md)主题中的“就地电子数据展示”条目。
 
-  - 必须先使用 EAC 或 Shell 创建电子数据展示搜索，然后才能复制搜索结果。有关详细信息，请参阅[创建就地电子数据展示搜索](create-an-in-place-ediscovery-search-exchange-2013-help.md)。
+  - 必须先使用 EAC 或 Shell 创建电子数据展示搜索，然后才能复制搜索结果。有关详细信息，请参阅[创建就地电子数据展示搜索](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)。
 
   - Exchange 2013 安装程序将创建名为“发现搜索邮箱”的发现邮箱以复制搜索结果。默认情况下，发现搜索邮箱也在 Exchange Online 中创建。可以创建其他发现邮箱。有关详细信息，请参阅[创建发现邮箱](create-a-discovery-mailbox-exchange-2013-help.md)。
 
@@ -69,7 +69,7 @@ _**上一次修改主题：** 2014-02-24_
 
 使用 **New-MailboxSearch** cmdlet 创建就地电子数据展示搜索之后，您必须启动该搜索将邮件复制到您在 *TargetMailbox* 参数中指定的发现邮箱。有关使用 Shell 创建电子数据展示搜索的信息，请参阅：
 
-  - [Use the Shell to create an In-Place eDiscovery search](create-an-in-place-ediscovery-search-exchange-2013-help.md)
+  - [Use the Shell to create an In-Place eDiscovery search](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)
 
   - [New-MailboxSearch](https://technet.microsoft.com/zh-cn/library/dd298064\(v=exchg.150\))
 
@@ -103,5 +103,5 @@ _**上一次修改主题：** 2014-02-24_
     
       - **预览搜索结果**   此选项可让您预览由搜索返回的搜索结果，而无需将其复制到发现邮箱进行查看。这使您可以快速确定搜索结果是否相关。在预览结果之后，您可以修改搜索查询以缩小搜索结果范围并重新运行搜索。预览页面中的项目是只读版本的实际搜索结果，因此您不能在预览页面上进行移动、编辑、删除或转发。
     
-    有关详细信息，请参阅[Estimate or preview search results](create-an-in-place-ediscovery-search-exchange-2013-help.md)。
+    有关详细信息，请参阅[Estimate or preview search results](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)。
 

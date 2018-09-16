@@ -25,7 +25,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - **意外删除项目的恢复**   一直以来，在用户删除了项目但需将其恢复的情况下，都会涉及到查找存储需要恢复的数据的备份媒体，然后以某种方式获取所需项目并将其提供给用户。使用 Exchange 2013 中新的“可恢复项目”文件夹以及适用于此文件夹的保留策略，可在指定的时间段内保留所有删除和修改的数据，因此，恢复这些项目既方便又快捷。这通过帮助最终用户恢复他们自己意外删除的项目来减轻 Exchange 管理员和 IT 技术支持的负担，从而降低了与单个项目恢复相关的复杂程度和管理成本。有关详细信息，请参阅[邮件策略和遵从性](messaging-policy-and-compliance-exchange-2013-help.md)和[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)。
 
-  - **长期数据存储**   备份也会被用作存档，并且由于受到遵从性要求的约束，通常将磁带用于在更长的一段时间内保留数据的时间点快照。Exchange 2013 中的新存档、多邮箱搜索和邮件保留功能提供了一种机制，可在更长的一段时间内有效地保留数据并使最终用户可以访问。这消除了从磁带恢复的高昂成本，提高了生产率。有关详细信息，请参阅[Exchange 2013 中的就地存档](in-place-archiving-in-exchange-2013-exchange-2013-help.md)、[就地电子数据展示](in-place-ediscovery-exchange-2013-help.md)和[就地保留和诉讼保留](in-place-hold-and-litigation-hold-exchange-2013-help.md)。
+  - **长期数据存储**   备份也会被用作存档，并且由于受到遵从性要求的约束，通常将磁带用于在更长的一段时间内保留数据的时间点快照。Exchange 2013 中的新存档、多邮箱搜索和邮件保留功能提供了一种机制，可在更长的一段时间内有效地保留数据并使最终用户可以访问。这消除了从磁带恢复的高昂成本，提高了生产率。有关详细信息，请参阅[Exchange 2013 中的就地存档](in-place-archiving-in-exchange-2013-exchange-2013-help.md)、[就地电子数据展示](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)和[就地保留和诉讼保留](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-and-litigation-holds)。
 
   - **时间点数据库快照**   如果组织需要邮箱数据某个过去时间点的副本，则 Exchange 可在 DAG 环境中创建滞后数据库副本。此功能对于某种少见事件会有所用处，即逻辑损坏在 DAG 中复制到多个数据库副本中，从而导致需要返回到前一时间点。如果管理员意外删除了邮箱或用户数据，此功能也非常有用。从滞后副本恢复可能比从备份还原更快，因为滞后副本不需要从备份服务器到 Exchange 服务器的耗时复制过程。此功能可通过缩短停机时间显著降低总拥有成本。
 

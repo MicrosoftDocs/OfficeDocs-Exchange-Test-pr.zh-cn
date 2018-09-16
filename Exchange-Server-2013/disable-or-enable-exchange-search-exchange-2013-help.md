@@ -21,7 +21,7 @@ _**上一次修改主题：** 2014-05-07_
 
 > [!CAUTION]  
 > 禁用 Exchange 搜索会影响用户以联机模式使用 Outlook 或在 Windows Mobile 设备上所执行全文搜索的功能和性能。
-> <a href="in-place-ediscovery-exchange-2013-help.md">就地电子数据展示</a> 也依赖于 Exchange 搜索。如果对某个邮箱数据库或邮箱服务器禁用 Exchange 搜索，则就地电子数据展示搜索将不会从该数据库或服务器返回任何邮件。
+> <a href="https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">就地电子数据展示</a> 也依赖于 Exchange 搜索。如果对某个邮箱数据库或邮箱服务器禁用 Exchange 搜索，则就地电子数据展示搜索将不会从该数据库或服务器返回任何邮件。
 
 
 有关与 Exchange 搜索相关的其他管理任务，请参阅 [Exchange 搜索过程](exchange-search-procedures-exchange-2013-help.md)。

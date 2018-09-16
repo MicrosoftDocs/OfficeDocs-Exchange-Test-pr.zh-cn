@@ -183,7 +183,7 @@ MWI 基于 RFC 3842。RFC 3842 声明必须将 SIP 事件通知用于邮件等�
 
 ## UM 邮箱策略和 MWI
 
-可以创建 UM 邮箱策略，以将一组通用的 UM 策略设置应用于启用 UM 的邮箱集合。例如，可以使用 UM 邮箱策略应用 PIN 策略设置、拨号限制和 MWI 通知设置。如果您对某个 UM 邮箱策略启用或禁用 MWI，则会为与该 UM 邮箱策略链接的所有启用 UM 的用户都启用或禁用 MWI。MWI 设置也可以应用于与 UM 拨号计划链接的一部分用户。若要了解有关 UM 邮箱策略的详细信息（包括如何为一组启用 UM 的用户启用或禁用 MWI），请参阅 [UM 邮箱策略过程](um-mailbox-policy-procedures-exchange-2013-help.md)。
+可以创建 UM 邮箱策略，以将一组通用的 UM 策略设置应用于启用 UM 的邮箱集合。例如，可以使用 UM 邮箱策略应用 PIN 策略设置、拨号限制和 MWI 通知设置。如果您对某个 UM 邮箱策略启用或禁用 MWI，则会为与该 UM 邮箱策略链接的所有启用 UM 的用户都启用或禁用 MWI。MWI 设置也可以应用于与 UM 拨号计划链接的一部分用户。若要了解有关 UM 邮箱策略的详细信息（包括如何为一组启用 UM 的用户启用或禁用 MWI），请参阅 [UM 邮箱策略过程](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policy-procedures)。
 
 可以使用 EAC 或命令行管理程序中的 **Set-UMMailboxPolicy** cmdlet 配置 MWI 设置，如下表所示。
 
@@ -220,7 +220,7 @@ MWI 基于 RFC 3842。RFC 3842 声明必须将 SIP 事件通知用于邮件等�
 
   - [为用户启用消息等待指示符 (MWI)](enable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md)
 
-  - [为用户禁用消息等待指示符 (MWI)](disable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md)
+  - [为用户禁用消息等待指示符 (MWI)](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-mwi-for-users)
 
   - [Set-UMMailboxPolicy](https://technet.microsoft.com/zh-cn/library/bb124903\(v=exchg.150\))
 
@@ -258,7 +258,7 @@ MWI 基于 RFC 3842。RFC 3842 声明必须将 SIP 事件通知用于邮件等�
 
 有关如何管理 MWI 设置的详细信息，请参阅下列主题：
 
-  - [管理 UM IP 网关](manage-a-um-ip-gateway-exchange-2013-help.md)
+  - [管理 UM IP 网关](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-ip-gateway)
 
   - [在 UM IP 网关允许消息等待指示符 (MWI)](allow-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md)
 

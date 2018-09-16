@@ -23,9 +23,9 @@ _**上一次修改主题：** 2016-12-09_
 
   - [统一消息规划](planning-for-unified-messaging-exchange-2013-help.md)
 
-  - [与 UM 电话系统集成](telephone-system-integration-with-um-exchange-2013-help.md)
+  - [与 UM 电话系统集成](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um)
 
-  - [连接到电话网络的语音邮件系统](connect-your-voice-mail-system-to-your-telephone-network-exchange-2013-help.md)
+  - [连接到电话网络的语音邮件系统](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system)
 
 有关如何从 Exchange 2010 UM 升级到 Exchange 2013 UM 的分步指南，请参阅[检查表：将 Exchange 2010 UM 升级到 Exchange 2013 UM](checklist-upgrade-exchange-2010-um-to-exchange-2013-um-exchange-2013-help.md)。
 
@@ -106,7 +106,7 @@ _**上一次修改主题：** 2016-12-09_
 <td><p></p></td>
 <td><p>创建或配置现有 UM IP 网关</p></td>
 <td><p><a href="create-a-um-ip-gateway-exchange-2013-help.md">创建 UM IP 网关</a></p>
-<p><a href="manage-a-um-ip-gateway-exchange-2013-help.md">管理 UM IP 网关</a></p></td>
+<p><a href="https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-ip-gateway">管理 UM IP 网关</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -117,7 +117,7 @@ _**上一次修改主题：** 2016-12-09_
 <td><p></p></td>
 <td><p>创建或配置 UM 自动助理</p></td>
 <td><p><a href="create-a-um-auto-attendant-exchange-2013-help.md">创建 UM 自动助理</a></p>
-<p><a href="manage-a-um-auto-attendant-exchange-2013-help.md">管理 UM 自动助理</a></p></td>
+<p><a href="https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/manage-um-auto-attendant">管理 UM 自动助理</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -139,7 +139,7 @@ _**上一次修改主题：** 2016-12-09_
 <tr class="even">
 <td><p></p></td>
 <td><p>配置 VoIP 网关、IP PBX 和启用 SIP 的 PBX 以便将所有传入呼叫发送到 Exchange 2013 客户端访问服务器</p></td>
-<td><p><a href="configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md">支持的 VoIP 网关、IP PBX 和 PBX 的配置说明</a></p>
+<td><p><a href="https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways">支持的 VoIP 网关、IP PBX 和 PBX 的配置说明</a></p>
 <p><a href="connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md">将 VoIP 网关、IP PBX 或会话边界控制器与 UM 连接</a></p></td>
 </tr>
 <tr class="odd">

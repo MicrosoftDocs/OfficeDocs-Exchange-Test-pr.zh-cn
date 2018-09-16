@@ -37,9 +37,9 @@ Exchange 2013 允许 SharePoint 2013 使用联合搜索 API 搜索 Exchange 邮�
 
 有关详细信息，请参阅下列主题：
 
-  - [就地电子数据展示](in-place-ediscovery-exchange-2013-help.md)
+  - [就地电子数据展示](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
-  - [就地保留和诉讼保留](in-place-hold-and-litigation-hold-exchange-2013-help.md)
+  - [就地保留和诉讼保留](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-and-litigation-holds)
 
   - [在 SharePoint Server 2013 中配置电子数据展示](https://go.microsoft.com/fwlink/p/?linkid=257727)
 

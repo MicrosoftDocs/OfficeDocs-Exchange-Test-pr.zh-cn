@@ -97,7 +97,7 @@ _**上一次修改主题：** 2016-12-09_
 
 ## 合规性
 
-使用 SharePoint 中的电子数据展示控制台时，网站邮箱会包括在就地电子数据展示范围内，因为您可以针对用户邮箱或网站邮箱执行关键字搜索。此外，您还可以将网站邮箱置于合法保留状态。有关详细信息，请参阅[就地电子数据展示](in-place-ediscovery-exchange-2013-help.md)。
+使用 SharePoint 中的电子数据展示控制台时，网站邮箱会包括在就地电子数据展示范围内，因为您可以针对用户邮箱或网站邮箱执行关键字搜索。此外，您还可以将网站邮箱置于合法保留状态。有关详细信息，请参阅[就地电子数据展示](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)。
 
 > [!NOTE]  
 > 要在 Office 365 中将网站邮箱置于法定保留状态，必须向其分配 Exchange Online（计划 2）许可证。如果向网站邮箱分配的是 Exchange Online（计划 1）许可证，必须向其分配单独的 Exchange Online 存档许可证才能将其置于保留状态。

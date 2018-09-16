@@ -19,7 +19,7 @@ _**上一次修改主题：** 2014-02-15_
 
 Internet 日历发布的禁用方式取决于其启用方式。如果创建了专用于 Internet 日历发布的共享策略，则可将策略一起禁用或删除。如果已将 Internet 日历发布配置为默认共享策略中的一个共享规则，则只能删除\&quot;匿名\&quot;域的共享规则。
 
-如果禁用 Internet 日历发布，则被配置为使用共享策略的用户将无法与策略中指定的\&quot;匿名\&quot;Internet 域共享日历信息。但是，在配置为使用专用于 Internet 日历发布的共享策略的所有用户将策略设置从其邮箱中删除之前，无法删除或禁用该共享策略。有关更改用户的共享策略设置的详细信息，请参阅[管理用户邮箱](manage-user-mailboxes-exchange-2013-help.md)。
+如果禁用 Internet 日历发布，则被配置为使用共享策略的用户将无法与策略中指定的\&quot;匿名\&quot;Internet 域共享日历信息。但是，在配置为使用专用于 Internet 日历发布的共享策略的所有用户将策略设置从其邮箱中删除之前，无法删除或禁用该共享策略。有关更改用户的共享策略设置的详细信息，请参阅[管理用户邮箱](https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)。
 
 > [!NOTE]  
 > 如果禁用或删除共享策略，则被指定使用该策略的用户将继续共享信息，直到共享策略助理开始运行。要指定共享策略助理的运行频率，请使用带有 <em>SharingPolicySchedule</em> 参数的 <a href="https://technet.microsoft.com/zh-cn/library/aa998651(v=exchg.150)">Set-MailboxServer</a> cmdlet。

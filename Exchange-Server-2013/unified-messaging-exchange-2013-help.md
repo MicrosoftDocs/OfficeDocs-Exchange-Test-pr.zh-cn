@@ -255,15 +255,15 @@ Exchange 命令行管理程序以 Windows PowerShell 技术为基础构建，是
 <td><p>了解 UM 语言包和语言设置。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="telephone-system-integration-with-um-exchange-2013-help.md">与 UM 电话系统集成</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um">与 UM 电话系统集成</a></p></td>
 <td><p>了解电话网络与 UM 的集成。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="connect-your-voice-mail-system-to-your-telephone-network-exchange-2013-help.md">连接到电话网络的语音邮件系统</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system">连接到电话网络的语音邮件系统</a></p></td>
 <td><p>了解如何使用和配置 UM 组件以将电话服务网络连接到 Exchange UM。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="automatically-answer-and-route-incoming-calls-exchange-2013-help.md">自动回答和路由传入呼叫</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/automatically-answer-and-route-calls">自动回答和路由传入呼叫</a></p></td>
 <td><p>了解如何创建 UM 自动助理和管理用于导航菜单、问候语以及营业和非营业时间的设置。</p></td>
 </tr>
 <tr class="even">

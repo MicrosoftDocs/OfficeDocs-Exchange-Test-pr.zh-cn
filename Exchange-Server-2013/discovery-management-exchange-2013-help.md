@@ -19,7 +19,7 @@ _**上一次修改主题：** 2015-03-09_
 
 发现管理 管理角色组是组成 Microsoft Exchange Server 2013 中基于角色的访问控制 (RBAC) 权限模型的多个内置角色组之一。角色组会分配给一个或多个管理角色，这些管理角色拥有执行一组给定任务所需的权限。角色组的成员会获得访问角色组所分配的管理角色的权限。有关角色组的详细信息，请参阅[了解管理角色组](understanding-management-role-groups-exchange-2013-help.md)。
 
-属于 发现管理 角色组成员的管理员或用户可以在 Exchange 组织中的邮箱中搜索满足特定条件的数据，还可以在邮箱上配置诉讼保留。有关详细信息，请参阅[就地电子数据展示](in-place-ediscovery-exchange-2013-help.md)。
+属于 发现管理 角色组成员的管理员或用户可以在 Exchange 组织中的邮箱中搜索满足特定条件的数据，还可以在邮箱上配置诉讼保留。有关详细信息，请参阅[就地电子数据展示](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)。
 
 > [!IMPORTANT]  
 > 默认情况下，组织管理 角色组不会对作为该角色组成员的用户或通用安全组 (USG) 启用发现搜索功能。组织管理 角色组的成员必须是此角色组的成员，或必须手动将本主题中稍后列出的“邮箱搜索”角色分配给 组织管理 角色组。有关如何将角色分配给角色组的信息，请参阅<a href="manage-role-groups-exchange-2013-help.md">管理角色组</a>。

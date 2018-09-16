@@ -205,7 +205,7 @@ Contoso 和 Humungous Insurance ABP 是使用以下地址列表、全局地址�
 
   - 不要在全局目录服务器上运行 Exchange 2010 客户端访问服务器角色。这样做将导致 Active Directory 被用于名称服务提供程序接口 (NSPI)，而不是用于 Microsoft Exchange 通讯簿服务。您可在全局目录服务器上运行 Exchange 2013 服务器角色，并让 ABP 正常工作，但是我们不建议在域控制器上安装 Exchange。
 
-  - 不能同时使用分层通讯簿 (HAB) 和 ABP。若要了解详细信息，请参阅[分层通讯簿](hierarchical-address-books-exchange-2013-help.md)。
+  - 不能同时使用分层通讯簿 (HAB) 和 ABP。若要了解详细信息，请参阅[分层通讯簿](https://docs.microsoft.com/zh-cn/exchange/address-books/hierarchical-address-books/hierarchical-address-books)。
 
   - 任何分配有 ABP 的用户都应存在于自己的 GAL 中。
 
@@ -289,7 +289,7 @@ Contoso 和 Humungous Insurance ABP 是使用以下地址列表、全局地址�
 
     New-AddressList -Name "AL_TAIL_Users_DGs" -RecipientFilter {((RecipientType -eq 'UserMailbox') -or (RecipientType -eq "MailUniversalDistributionGroup") -or (RecipientType -eq "DynamicDistributionGroup")) -and (CustomAttribute15 -eq "TAIL")}
 
-有关使用收件人筛选器创建地址列表的详细信息，请参阅[使用收件人筛选器创建地址列表](create-an-address-list-by-using-recipient-filters-exchange-2013-help.md)。
+有关使用收件人筛选器创建地址列表的详细信息，请参阅[使用收件人筛选器创建地址列表](https://docs.microsoft.com/zh-cn/exchange/address-books/address-lists/use-recipient-filters-to-create-an-address-list)。
 
 若要创建 ABP，必须提供会议室地址列表。如果您的组织没有资源邮箱（如会议室邮箱或设备邮箱），我们建议您创建一个空白会议室地址列表。以下示例创建一个空白会议室地址列表，因为组织中没有会议室邮箱。
 
@@ -303,7 +303,7 @@ ABP 中使用的全局地址列表必须是地址列表的一个超集。不要�
 
     New-GlobalAddressList -Name "GAL_TAIL" -RecipientFilter {(CustomAttribute15 -eq "TAIL")}
 
-有关详细信息，请参阅[创建全局地址列表](create-a-global-address-list-exchange-2013-help.md)。
+有关详细信息，请参阅[创建全局地址列表](https://docs.microsoft.com/zh-cn/exchange/address-books/address-lists/create-global-address-list)。
 
 在创建 OAB 时，应在提供 New-OfflineAddressBook 或 Set-OfflineAddressBook 的 *AddressLists* 参数时包含合适的 GAL 以确保不会意外缺少任何条目。基本上，可以通过在 New/Set-OfflineAddressBook 的 AddressLists 中指定 AddressLists 的列表，来自定义用户会看到的条目集或减小 OAB 的下载大小。但是，如果您希望用户看到 OAB 中完整的 GAL 条目集，请确保将 GAL 包括在 AddressLists 中。
 

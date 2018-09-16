@@ -29,7 +29,7 @@ _**上一次修改主题：** 2016-12-09_
 
 默认情况下，邮箱审核日志条目在邮箱中保留 90 天，然后被删除。可以使用 *AuditLogAgeLimit* 参数和 [Set-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123981\(v=exchg.150\)) cmdlet 来修改此保留期限。如果邮箱为就地保留或诉讼保留，审核日志条目仅保留到邮箱的审核日志保留期限为止。要将审核日志条目保留更长时间，您必须通过更改 *AuditLogAgeLimit* 参数的值来增加保留期。您也可以在保留期到期之前导出审核日志条目。有关详细信息，请参阅：
 
-  - [导出邮箱审核日志](export-mailbox-audit-logs-exchange-2013-help.md)
+  - [导出邮箱审核日志](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
 
   - [创建邮箱审核日志搜索](create-a-mailbox-audit-log-search-exchange-2013-help.md)
 
@@ -161,7 +161,7 @@ _**上一次修改主题：** 2016-12-09_
     
       - [运行非所有者邮箱访问报告](run-a-non-owner-mailbox-access-report-exchange-online-help.md)
     
-      - [导出邮箱审核日志](export-mailbox-audit-logs-exchange-2013-help.md)
+      - [导出邮箱审核日志](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
 
 ## 邮箱审核日志条目
 
@@ -336,7 +336,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - **邮箱的管理员访问权限**   只有在以下情况下，才视为由管理员访问邮箱：
     
-      - [就地电子数据展示](in-place-ediscovery-exchange-2013-help.md) 用于搜索邮箱。
+      - [就地电子数据展示](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) 用于搜索邮箱。
     
       - 使用 [New-MailboxExportRequest](https://technet.microsoft.com/zh-cn/library/ff607299\(v=exchg.150\)) cmdlet 导出邮箱。
     
