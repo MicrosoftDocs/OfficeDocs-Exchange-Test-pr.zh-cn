@@ -61,7 +61,9 @@ _**上一次修改主题：** 2012-11-14_
 
 此示例将为邮件用户 Yan Li 禁用电子邮件。
 
-    Disable-MailUser -Identity "Yan Li"
+```powershell
+Disable-MailUser -Identity "Yan Li"
+```
 
 有关详细的语法和参数信息，请参阅 [Disable-MailUser](https://technet.microsoft.com/zh-cn/library/aa998578\(v=exchg.150\))。
 
@@ -75,13 +77,17 @@ _**上一次修改主题：** 2012-11-14_
 
 3.  在此命令行管理程序中，运行以下命令。
     
-        Get-MailUser
+    ```powershell
+Get-MailUser
+```
     
     由于此 cmdlet 仅返回已启用邮件的用户，因此结果中不会返回那些已禁用电子邮件的邮件用户。
 
 4.  在此命令行管理程序中，运行以下命令。
     
-        Get-User
+    ```powershell
+Get-User
+```
     
     由于此 cmdlet 将返回所有 Active Directory 用户对象，因此结果中将返回那些已禁用电子邮件的邮件用户。
 
@@ -93,7 +99,9 @@ _**上一次修改主题：** 2012-11-14_
 
 本示例邮件启用用户 Sanjay Shah。您必须提供一个外部电子邮件地址。
 
-    Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys.com
+```powershell
+Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys.com
+```
 
 ## 使用命令行管理程序和 CSV 文件为多个用户启用邮件
 
@@ -155,5 +163,7 @@ _**上一次修改主题：** 2012-11-14_
 
   - 在命令行管理程序中，运行以下命令可显示有关此新邮件用户的信息。
     
-        Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```powershell
+Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+```
 

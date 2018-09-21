@@ -116,7 +116,9 @@ _**上一次修改主题：** 2016-02-01_
 
 本示例为 Tony Smith 的邮箱启用存档。
 
-    Enable-Mailbox "Tony Smith" -Archive
+```powershell
+Enable-Mailbox "Tony Smith" -Archive
+```
 
 本示例在未启用内部部署或基于云的存档以及没有以 DiscoverySearchMailbox 开头的名称的数据库 DB01 中检索邮箱。它通过管道将结果传递给 **Enable-Mailbox** cmdlet，以对邮箱数据库 DB01 中的所有邮箱启用存档。
 
@@ -162,7 +164,9 @@ _**上一次修改主题：** 2016-02-01_
 
 本示例禁用的是 Chris Ashton 的邮箱的存档。它不禁用邮箱。
 
-    Disable-Mailbox -Identity "Chris Ashton" -Archive
+```powershell
+Disable-Mailbox -Identity "Chris Ashton" -Archive
+```
 
 有关语法和参数的详细信息，请参阅 [Disable-Mailbox](https://technet.microsoft.com/zh-cn/library/aa997210\(v=exchg.150\))。
 

@@ -39,7 +39,9 @@ _**上一次修改主题：** 2013-02-14_
 
 在命令提示符下，运行以下命令。
 
-    Setup.exe /RemoveUmLanguagePack:<UmLanguagePackName>
+```powershell
+Setup.exe /RemoveUmLanguagePack:<UmLanguagePackName>
+```
 
 在上一个命令中，*\<UmLanguagePackName\>* 是 UM 语言包的名称，例如 fr-FR。
 

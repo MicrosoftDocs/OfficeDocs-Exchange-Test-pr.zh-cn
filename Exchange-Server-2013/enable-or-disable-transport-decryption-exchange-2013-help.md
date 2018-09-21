@@ -57,7 +57,9 @@ _**上一次修改主题：** 2016-12-09_
 
 此示例将为 Exchange 2013 组织启用传输解密。无法解密的邮件被拒绝，NDR 被返回到发件人。
 
-    Set-IRMConfiguration -TransportDecryptionSetting Mandatory
+```powershell
+Set-IRMConfiguration -TransportDecryptionSetting Mandatory
+```
 
 有关语法和参数的详细信息，请参阅 [Set-IRMConfiguration](https://technet.microsoft.com/zh-cn/library/dd979792\(v=exchg.150\))。
 
@@ -65,7 +67,9 @@ _**上一次修改主题：** 2016-12-09_
 
 此示例将对 Exchange 2013 组织禁用传输解密。
 
-    Set-IRMConfiguration -TransportDecryptionSetting Disabled
+```powershell
+Set-IRMConfiguration -TransportDecryptionSetting Disabled
+```
 
 有关语法和参数的详细信息，请参阅 [Set-IRMConfiguration](https://technet.microsoft.com/zh-cn/library/dd979792\(v=exchg.150\))。
 

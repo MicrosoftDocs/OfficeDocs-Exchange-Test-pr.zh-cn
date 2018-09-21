@@ -71,7 +71,9 @@ _**上一次修改主题：** 2012-11-01_
 
 本示例将一个邮箱数据库副本的激活首选项编号配置为 3。
 
-    Set-MailboxDatabaseCopy -Identity DB3\EX3 -ActivationPreference 3
+```powershell
+Set-MailboxDatabaseCopy -Identity DB3\EX3 -ActivationPreference 3
+```
 
 此示例将在 Server1 上驻留的数据库 DB1 的副本的重播延迟时间和截断延隔时间配置为 1 天，将激活首选项编号配置为 2。
 
@@ -85,7 +87,9 @@ _**上一次修改主题：** 2012-11-01_
 
   - 在命令行管理程序中运行以下命令来显示数据库备份的配置信息。
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```powershell
+Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+```
 
 ## 详细信息
 

@@ -81,7 +81,9 @@ _**上一次修改主题：** 2016-12-09_
 
 3.  运行以下命令以扩展架构。
     
-        Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
+    ```powershell
+Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
+```
 
 安装程序扩展完架构之后，你需要等待 Active Directory 将更改复制到所有域控制器。如果你想查看复制进展，可以使用 `repadmin` 工具。`Repadmin` 是 Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 中 Active Directory 域服务工具功能的一部分。有关如何使用此工具的详细信息，请参阅 [Repadmin](https://go.microsoft.com/fwlink/p/?linkid=257879)。
 
@@ -143,7 +145,9 @@ _**上一次修改主题：** 2016-12-09_
 
 2.  运行以下命令：
     
-        Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
+    ```powershell
+Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
+```
 
 ## 让我选择想要准备的 Active Directory 域
 

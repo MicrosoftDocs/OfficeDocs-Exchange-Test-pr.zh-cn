@@ -65,5 +65,7 @@ _**上一次修改主题：** 2013-02-17_
 
 此示例将客户端访问服务器上名为 `MyClientAccessServer` 的 TLS 侦听端口设置为 5561。
 
-    Set-UMCallRouterSettings -Server MyClientAccessServer -SipTlsListeningPort 5561
+```powershell
+Set-UMCallRouterSettings -Server MyClientAccessServer -SipTlsListeningPort 5561
+```
 

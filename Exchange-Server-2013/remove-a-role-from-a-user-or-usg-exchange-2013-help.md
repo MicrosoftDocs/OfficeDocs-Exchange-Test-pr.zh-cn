@@ -39,11 +39,15 @@ _**上一次修改主题：** 2012-10-02_
 
 如果您知道要删除的角色分配的名称，请使用以下语法。
 
-    Remove-ManagementRoleAssignment <assignment name>
+```powershell
+Remove-ManagementRoleAssignment <assignment name>
+```
 
 例如，若要删除\&quot;Tier 2 Help Desk Assignment\&quot;角色分配，请使用以下命令。
 
-    Remove-ManagementRoleAssignment "Tier 2 Help Desk Assignment"
+```powershell
+Remove-ManagementRoleAssignment "Tier 2 Help Desk Assignment"
+```
 
 如果您不知道角色分配的名称，可以使用以下语法。
 

@@ -138,11 +138,15 @@ Microsoft Exchange Server 2013 使用称为“增量部署”的概念来实现�
 
 为了在 MBX1 和 MBX2 上为复制网络适配器配置路由，在每个服务器上运行以下命令。
 
-    netsh interface ipv4 add route 10.0.2.0/24 <NetworkName> 10.0.1.254
+```powershell
+netsh interface ipv4 add route 10.0.2.0/24 <NetworkName> 10.0.1.254
+```
 
 为了在 MBX3 和 MBX4 上为复制网络适配器配置路由，在每个服务器上运行以下命令。
 
-    netsh interface ipv4 add route 10.0.1.0/24 <NetworkName> 10.0.2.254
+```powershell
+netsh interface ipv4 add route 10.0.1.0/24 <NetworkName> 10.0.2.254
+```
 
 还配置了下列其他网络设置：
 
@@ -187,7 +191,9 @@ Microsoft Exchange Server 2013 使用称为“增量部署”的概念来实现�
 
 上述命令将每个邮箱服务器添加到 DAG（一次添加一个）。这些命令还在每个邮箱服务器上安装 Windows 故障转移群集组件（如果尚未安装）、创建故障转移群集，并将每个邮箱服务器加入到最近创建的群集。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```
 
 上述命令为 DAG 启用 DAC 模式。
 

@@ -61,11 +61,15 @@ _**上一次修改主题：** 2014-06-09_
 
 无作用域的顶级角色没有父角色。需要指定 *UnscopedTopLevel* 开关以创建没有父级的角色。使用以下语法创建新角色。
 
-    New-ManagementRole <name of new role> -UnscopedTopLevel
+```powershell
+New-ManagementRole <name of new role> -UnscopedTopLevel
+```
 
 本示例创建 IT Scripts 无作用域顶级角色。
 
-    New-ManagementRole "IT Scripts" -UnscopedTopLevel
+```powershell
+New-ManagementRole "IT Scripts" -UnscopedTopLevel
+```
 
 创建后，在您向角色中添加脚本或非 Exchange cmdlet 之前，该角色为空。
 
@@ -145,7 +149,9 @@ _**上一次修改主题：** 2014-06-09_
 
 此示例将 IT Global Scripts 角色及其管理角色条目复制到 Diagnostic IT Scripts 角色。
 
-    New-ManagementRole -Parent "IT Global Scripts" -Name "Diagnostic IT Scripts"
+```powershell
+New-ManagementRole -Parent "IT Global Scripts" -Name "Diagnostic IT Scripts"
+```
 
 有关语法和参数的详细信息，请参阅 [New-ManagementRole](https://technet.microsoft.com/zh-cn/library/dd298073\(v=exchg.150\))。
 

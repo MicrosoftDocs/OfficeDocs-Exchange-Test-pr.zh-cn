@@ -119,7 +119,9 @@ _**上一次修改主题：** 2016-12-09_
 
 8.  键入 **DATA**，然后按 Enter。响应如下：
     
-        354 Start mail input; end with <CLRF>.<CLRF>
+    ```powershell
+354 Start mail input; end with <CLRF>.<CLRF>
+```
 
 9.  键入 **主题：来自 Contoso 的测试**，然后按 Enter。
 
@@ -129,11 +131,15 @@ _**上一次修改主题：** 2016-12-09_
 
 12. 按 Enter，键入句点 (**.**)，然后按 Enter。响应如下：
     
-        250 2.6.0 <GUID> Queued mail for delivery
+    ```powershell
+250 2.6.0 <GUID> Queued mail for delivery
+```
 
 13. 若要与目标 SMTP 服务器断开连接，请键入 **QUIT**，然后按 Enter。响应如下：
     
-        221 2.0.0 Service closing transmission channel
+    ```powershell
+221 2.0.0 Service closing transmission channel
+```
 
 14. 若要关闭 Telnet 会话，请键入 **quit** 并按 Enter 键。
 

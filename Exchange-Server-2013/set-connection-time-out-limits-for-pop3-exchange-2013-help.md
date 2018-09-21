@@ -59,11 +59,15 @@ _**上一次修改主题：** 2012-11-28_
 
 此示例为经过身份验证的空闲连接设置连接超时限制。
 
-    Set -PopSettings -Identity CAS01 -AuthenticatedConnectionTimeout TimeValue
+```powershell
+Set -PopSettings -Identity CAS01 -AuthenticatedConnectionTimeout TimeValue
+```
 
 此示例为未经身份验证的空闲连接设置连接超时限制。
 
-    Set -PopSettings -Identity CAS01 -PreAuthenticatedConnectionTimeout TimeValue
+```powershell
+Set -PopSettings -Identity CAS01 -PreAuthenticatedConnectionTimeout TimeValue
+```
 
 为 POP3 设置连接超时限制后，您必须重新启动 POP3 服务，设置才能生效。 有关如何重新启动 POP3 服务的信息，请参阅[启动和停止 POP3 服务](start-and-stop-the-pop3-services-exchange-2013-help.md)。
 
@@ -87,7 +91,9 @@ _**上一次修改主题：** 2012-11-28_
 
 1.  在命令行管理程序中运行以下命令。
     
-        Get-PopSettings | format-list
+    ```powershell
+Get-PopSettings | format-list
+```
 
 2.  验证连接设置是否正确。
 

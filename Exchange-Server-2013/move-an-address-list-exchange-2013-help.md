@@ -39,7 +39,9 @@ _**上一次修改主题：** 2012-10-14_
 
 本示例使用地址列表的 GUID 将地址列表移动到位于 All Users\\Sales 容器下的 Building4 容器中。
 
-    Move-AddressList -Identity c3fffd8e-026b-41b9-88c4-8c21697ac8ac -Target "\All Users\Sales\Building4"
+```powershell
+Move-AddressList -Identity c3fffd8e-026b-41b9-88c4-8c21697ac8ac -Target "\All Users\Sales\Building4"
+```
 
 键入 **Y** 确认要移动该地址列表，然后按 ENTER 键。
 

@@ -31,7 +31,9 @@ Exchange 2013 安装程序要求首先在计算机上安装“故障转移群集
 
 2.  运行以下命令，安装必需的 Windows 功能。
     
-        Install-WindowsFeature RSAT-Clustering-CmdInterface
+    ```powershell
+Install-WindowsFeature RSAT-Clustering-CmdInterface
+```
 
 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：[Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612)、 [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542) 或 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351)。
 

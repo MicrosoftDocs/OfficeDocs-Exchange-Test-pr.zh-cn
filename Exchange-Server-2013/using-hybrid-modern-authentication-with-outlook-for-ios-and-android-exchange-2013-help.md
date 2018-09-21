@@ -171,7 +171,9 @@ In order to block other mobile device clients (such as the native mail client in
 
 1.  You can leverage the built-in Exchange mobile device access rules and block all mobile devices from connecting by setting the following in the Exchange Management Shell:
     
-        Set-ActiveSyncOrganizationSettings -DefaultAccessLevel Block
+    ```powershell
+Set-ActiveSyncOrganizationSettings -DefaultAccessLevel Block
+```
 
 2.  You can leverage an on-premises conditional access policy within Intune after installing the on-premises Exchange connector. For more information, see [Create a conditional access policy for Exchange on-premises and legacy Exchange Online Dedicated](https://docs.microsoft.com/intune/conditional-access-exchange-create#configure-exchange-on-premises-access).
 
@@ -401,7 +403,9 @@ If the AutoDiscover or ActiveSync responses are not similar to the above example
 
 4.  If the ActiveSync endpoint does not contain an authorization\_uri value, verify that the EvoSTS authentication server is configured as the default endpoint using Exchange Management Shell:
     
-        Get-AuthServer EvoSts | fl IsDefaultAuthorizationEndpoint
+    ```powershell
+Get-AuthServer EvoSts | fl IsDefaultAuthorizationEndpoint
+```
 
 5.  If the ActiveSync endpoint does not contain a WWW-Authenticate header, then a device in front of Exchange may be responding to the query.
 
@@ -434,7 +438,9 @@ Exchange Administrators can find this mailbox by executing the following cmdlet 
 
 On the server hosting the database for the OrganizationCapabilityManagement arbitration mailbox, review the application event logs for events with a source of **MSExchange AuthAdmin**. The events should tell you if Exchange was able to refresh the metadata. If the metadata is out of date, you can manually refresh it with this ccmdlet:
 
-    Set-AuthServer EvoSts -RefreshAuthMetadata
+```powershell
+Set-AuthServer EvoSts -RefreshAuthMetadata
+```
 
 You can also create a scheduled task that executes the above command every 24 hours.
 

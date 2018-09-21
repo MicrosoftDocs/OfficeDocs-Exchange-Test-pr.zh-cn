@@ -47,11 +47,15 @@ _**上一次修改主题：** 2012-10-08_
 
 若要更改已分配到邮箱的分配策略，请使用以下语法。
 
-    Set-Mailbox <mailbox alias or name> -RoleAssignmentPolicy <assignment policy>
+```powershell
+Set-Mailbox <mailbox alias or name> -RoleAssignmentPolicy <assignment policy>
+```
 
 此示例将邮箱 Brian 上的分配策略设置为“统一消息用户”。
 
-    Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
+```powershell
+Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
+```
 
 ## 使用命令行管理程序可在分配了特定分配策略的一组邮箱上更改分配策略
 

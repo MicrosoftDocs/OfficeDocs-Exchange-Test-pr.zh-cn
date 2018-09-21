@@ -61,7 +61,9 @@ _**上一次修改主题：** 2012-10-09_
 
 1.  将外部 Active Directory 林的凭据存储在一个变量中。
     
-        $ForeignCredential = Get-Credential
+    ```powershell
+$ForeignCredential = Get-Credential
+```
 
 2.  使用下面的语法创建链接的角色组。
     
@@ -81,7 +83,9 @@ _**上一次修改主题：** 2012-10-09_
 
 <!-- end list -->
 
-    $ForeignCredential = Get-Credential
+```powershell
+$ForeignCredential = Get-Credential
+```
     New-RoleGroup "Compliance Role Group" -LinkedForeignGroup "Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles "Transport Rules", "Journaling"
 
 ## 使用命令行管理程序创建具有自定义管理作用域的链接角色组
@@ -90,7 +94,9 @@ _**上一次修改主题：** 2012-10-09_
 
 1.  将外部 Active Directory 林的凭据存储在一个变量中。
     
-        $ForeignCredential = Get-Credential
+    ```powershell
+$ForeignCredential = Get-Credential
+```
 
 2.  使用下面的语法创建链接的角色组。
     
@@ -110,7 +116,9 @@ _**上一次修改主题：** 2012-10-09_
 
 <!-- end list -->
 
-    $ForeignCredential = Get-Credential
+```powershell
+$ForeignCredential = Get-Credential
+```
     New-RoleGroup "Seattle Compliance Role Group" -LinkedForeignGroup "Seattle Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -CustomRecipientWriteScope "Seattle Recipients" -Roles "Transport Rules", "Journaling"
 
 有关管理作用域的详细信息，请参阅[了解管理角色作用域](understanding-management-role-scopes-exchange-2013-help.md)。
@@ -121,7 +129,9 @@ _**上一次修改主题：** 2012-10-09_
 
 1.  将外部 Active Directory 林的凭据存储在一个变量中。
     
-        $ForeignCredential = Get-Credential
+    ```powershell
+$ForeignCredential = Get-Credential
+```
 
 2.  使用下面的语法创建链接的角色组。
     
@@ -141,7 +151,9 @@ _**上一次修改主题：** 2012-10-09_
 
 <!-- end list -->
 
-    $ForeignCredential = Get-Credential
+```powershell
+$ForeignCredential = Get-Credential
+```
     New-RoleGroup "Executives Compliance Role Group" -LinkedForeignGroup "Executives Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -RecipientOrganizationalUnitScope "Executives OU" -Roles "Transport Rules", "Journaling"
 
 有关管理作用域的详细信息，请参阅[了解管理角色作用域](understanding-management-role-scopes-exchange-2013-help.md)。
@@ -154,7 +166,9 @@ _**上一次修改主题：** 2012-10-09_
 
 1.  将外部 Active Directory 林的凭据存储在一个变量中。
     
-        $ForeignCredential = Get-Credential
+    ```powershell
+$ForeignCredential = Get-Credential
+```
 
 2.  使用以下语法更改现有的链接的角色组上的外部 USG。
     
@@ -168,6 +182,8 @@ _**上一次修改主题：** 2012-10-09_
 
 <!-- end list -->
 
-    $ForeignCredential = Get-Credential
+```powershell
+$ForeignCredential = Get-Credential
+```
     Set-RoleGroup "Compliance Role Group" -LinkedForeignGroup "Regulatory Compliance Officers" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential
 

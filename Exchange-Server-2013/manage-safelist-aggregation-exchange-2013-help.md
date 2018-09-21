@@ -49,7 +49,9 @@ _**上一次修改主题：** 2015-04-08_
 
 本示例将邮箱 john@contoso.com 配置为最多具有 2000 个安全发件人和 200 个阻止发件人。
 
-    Set-Mailbox john@contoso.com -MaxSafeSenders 2000 -MaxBlockedSenders 200
+```powershell
+Set-Mailbox john@contoso.com -MaxSafeSenders 2000 -MaxBlockedSenders 200
+```
 
 ## 您如何知道这有效？
 
@@ -67,7 +69,9 @@ _**上一次修改主题：** 2015-04-08_
 
 此示例将邮箱 john@contoso.com 的安全发件人列表写入 Active Directory。
 
-    Update-Safelist john@contoso.com -Type SafeSenders
+```powershell
+Update-Safelist john@contoso.com -Type SafeSenders
+```
 
 有关语法和参数的详细信息，请参阅 [Update-SafeList](https://technet.microsoft.com/zh-cn/library/bb125034\(v=exchg.150\))。
 
@@ -79,11 +83,15 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-ContentFilterConfig | Format-List Enabled
+    ```powershell
+Get-ContentFilterConfig | Format-List Enabled
+```
 
 2.  如果输出显示 *Enabled* 参数为 `True`，则已启用内容筛选。如果未启用，请运行以下命令以在 Exchange 服务器上启用内容筛选和内容筛选器代理：
     
-        Set-ContentFilterConfig -Enabled $true
+    ```powershell
+Set-ContentFilterConfig -Enabled $true
+```
 
 ## 步骤 2：（可选）使用 ADSI 编辑器验证安全列表聚合数据到边缘传输服务器的复制
 

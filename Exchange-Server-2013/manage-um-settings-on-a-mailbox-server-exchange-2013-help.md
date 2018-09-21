@@ -47,7 +47,9 @@ _**上一次修改主题：** 2013-02-11_
 
 本示例从所有会话初始协议 (SIP) 拨号计划中删除名为 `MyMailboxServer` 的邮箱服务器。
 
-    Set-UMService -Identity MyMailboxServer -DialPlans $null
+```powershell
+Set-UMService -Identity MyMailboxServer -DialPlans $null
+```
 
 本示例在名为 `MySIPDialPlanName` 的 UM SIP 拨号计划中添加名为 `MyMailboxServer` 的邮箱服务器，还设置了传入语音呼叫的最大次数。
 
@@ -61,9 +63,13 @@ _**上一次修改主题：** 2013-02-11_
 
 本示例显示所有邮箱服务器的列表。
 
-    Get-UMService
+```powershell
+Get-UMService
+```
 
 本示例显示名为 `MyMailboxServer` 的邮箱服务器属性的格式化列表。
 
-    Get-UMService -Identity MyMailboxServer | Format-List
+```powershell
+Get-UMService -Identity MyMailboxServer | Format-List
+```
 

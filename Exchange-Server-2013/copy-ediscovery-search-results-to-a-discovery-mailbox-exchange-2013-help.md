@@ -75,7 +75,9 @@ _**上一次修改主题：** 2014-02-24_
 
 例如，您可以运行以下命令来启动一个名为 *Fabrikam Investigation* 的电子数据展示搜索将搜索结果复制到指定的发现邮箱中。
 
-    Start-MailboxSearch "Fabrikam Investigation"
+```powershell
+Start-MailboxSearch "Fabrikam Investigation"
+```
 
 如果您使用 *EstimateOnly* 开关获得估计的搜索结果，就必须先删除此开关，然后才可以复制搜索结果。您还必须指定向其复制搜索结果的发现邮箱。例如，如果您通过使用以下命令创建仅执行估计的搜索：
 

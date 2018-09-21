@@ -408,7 +408,9 @@ DAG 网络包含一个或多个用于复制流量或 MAPI 流量的子网。每�
 
 在 Exchange 2010 中，在许多情况下需要手动配置 DAG 网络。默认情况下，在 Exchange 2013 中，由系统自动配置 DAG 网络。因为您可以创建或修改 DAG 网络，所以必须首先通过运行以下命令启用手动 DAG 网络控制：
 
-    Set-DatabaseAvailabilityGroup <DAGName> -ManualDagNetworkConfiguration $true
+```powershell
+Set-DatabaseAvailabilityGroup <DAGName> -ManualDagNetworkConfiguration $true
+```
 
 启用手动 DAG 网络配置之后，您即可在命令行管理程序中使用 **New-DatabaseAvailabilityGroupNetwork** cmdlet 创建 DAG 网络。有关如何创建 DAG 网络的详细步骤，请参阅[创建数据库可用性组网络](create-a-database-availability-group-network-exchange-2013-help.md)。
 
@@ -514,7 +516,9 @@ DAG 网络包含一个或多个用于复制流量或 MAPI 流量的子网。每�
 
 若要完成作为专用复制网络的 ReplicationDagNetwork01 的配置，请通过运行下面的命令为 MapiDagNetwork 禁用复制。
 
-    Set-DatabaseAvailabilityGroupNetwork -Identity DAG1\MapiDagNetwork -ReplicationEnabled:$false
+```powershell
+Set-DatabaseAvailabilityGroupNetwork -Identity DAG1\MapiDagNetwork -ReplicationEnabled:$false
+```
 
 在为 MapiDagNetwork 禁用了复制之后，Microsoft Exchange 复制服务将 ReplicationDagNetwork01 用于连续复制。如果 ReplicationDagNetwork01 遇到故障，则 Microsoft Exchange 复制服务会恢复为使用 MapiDagNetwork 进行连续复制。这由系统主动进行，以维持高可用性。
 
@@ -644,7 +648,9 @@ DAG 网络包含一个或多个用于复制流量或 MAPI 流量的子网。每�
 
 下面的示例使用值为 `GoodAvailability` 的 *AutoDatabaseMountDial* 设置来配置邮箱服务器。
 
-    Set-MailboxServer -Identity EX1 -AutoDatabaseMountDial GoodAvailability
+```powershell
+Set-MailboxServer -Identity EX1 -AutoDatabaseMountDial GoodAvailability
+```
 
 ## 数据库副本自动激活策略
 
@@ -660,7 +666,9 @@ DAG 网络包含一个或多个用于复制流量或 MAPI 流量的子网。每�
 
 下面的示例使用值为 `Blocked` 的 *DatabaseCopyAutoActivationPolicy* 设置来配置邮箱服务器。
 
-    Set-MailboxServer -Identity EX1 -DatabaseCopyAutoActivationPolicy Blocked
+```powershell
+Set-MailboxServer -Identity EX1 -DatabaseCopyAutoActivationPolicy Blocked
+```
 
 ## 最大的活动数据库数
 
@@ -672,7 +680,9 @@ DAG 网络包含一个或多个用于复制流量或 MAPI 流量的子网。每�
 
 下面的示例将邮箱服务器配置为支持最多 20 个活动数据库。
 
-    Set-MailboxServer -Identity EX1 -MaximumActiveDatabases 20
+```powershell
+Set-MailboxServer -Identity EX1 -MaximumActiveDatabases 20
+```
 
 创建 DAG
 

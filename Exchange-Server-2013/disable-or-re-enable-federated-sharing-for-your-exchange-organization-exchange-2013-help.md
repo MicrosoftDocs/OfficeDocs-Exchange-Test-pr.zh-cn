@@ -45,11 +45,15 @@ _**上一次修改主题：** 2014-02-17_
 
 该示例禁用了 OrgID 并禁用了 Exchange 组织的联合及联合共享。
 
-    Set-FederatedOrganizationIdentifier -Enabled $false
+```powershell
+Set-FederatedOrganizationIdentifier -Enabled $false
+```
 
 该示例启用了 OrgID 并重新启用了 Exchange 组织的联合及联合共享。
 
-    Set-FederatedOrganizationIdentifier -Enabled $true
+```powershell
+Set-FederatedOrganizationIdentifier -Enabled $true
+```
 
 有关语法和参数的详细信息，请参阅 [Set-FederatedOrganizationIdentifier](https://technet.microsoft.com/zh-cn/library/dd351037\(v=exchg.150\))。
 
@@ -59,7 +63,9 @@ _**上一次修改主题：** 2014-02-17_
 
 为了进一步验证是否成功，运行以下命令行管理程序命令并检查为 *Enabled* 参数返回的值。
 
-    Get-FederatedOrganizationIdentifier
+```powershell
+Get-FederatedOrganizationIdentifier
+```
 
 > [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。

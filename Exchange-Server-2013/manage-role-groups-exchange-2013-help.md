@@ -93,7 +93,9 @@ _**上一次修改主题：** 2012-10-08_
 
 1.  请使用以下语法将想要复制的角色组存储在变量中。
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+$RoleGroup = Get-RoleGroup <name of role group to copy>
+```
 
 2.  请使用以下语法创建新角色组，并将成员添加到该角色组，然后指定可以将该角色组委派给其他用户的用户。
     
@@ -112,7 +114,9 @@ _**上一次修改主题：** 2012-10-08_
 
 1.  请使用以下语法将想要复制的角色组存储在变量中。
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+$RoleGroup = Get-RoleGroup <name of role group to copy>
+```
 
 2.  请使用以下语法创建有自定义作用域的新角色组。
     
@@ -133,7 +137,9 @@ _**上一次修改主题：** 2012-10-08_
 
 1.  请使用以下语法将想要复制的角色组存储在变量中。
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+$RoleGroup = Get-RoleGroup <name of role group to copy>
+```
 
 2.  请使用以下语法创建有自定义作用域的新角色组。
     
@@ -214,11 +220,15 @@ _**上一次修改主题：** 2012-10-08_
 
 使用以下语法可将没有任何作用域的角色分配给角色组。如果不指定角色分配名称，则会自动创建一个角色分配名称。
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name>
+```
 
 此示例将 Transport Rules 管理角色分配给 Seattle Compliance 角色组。
 
-    New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transport Rules"
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transport Rules"
+```
 
 有关语法和参数的详细信息，请参阅 [New-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd335193\(v=exchg.150\))。
 
@@ -437,7 +447,9 @@ Exchange 2013 包括在未创建自定义作用域时，默认应用于角色分
 
 1.  若要查找角色组上所有角色分配的名称，请使用以下命令。通过将管理角色分配通过管道传递到 **Format-List** cmdlet，可以查看该分配的完整名称。
     
-        Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-List Name
+    ```powershell
+Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-List Name
+```
 
 2.  查找要更改的角色分配的名称。请在下一步中使用该角色分配的名称。
 
@@ -490,7 +502,9 @@ Exchange 2013 包括在未创建自定义作用域时，默认应用于角色分
 
 1.  使用以下命令将角色组存储在一个变量中。
     
-        $RoleGroup = Get-RoleGroup <role group name>
+    ```powershell
+$RoleGroup = Get-RoleGroup <role group name>
+```
 
 2.  使用以下命令将委派添加到存储在变量中的角色组。
     
@@ -504,7 +518,9 @@ Exchange 2013 包括在未创建自定义作用域时，默认应用于角色分
 
 4.  使用以下命令将新的委派列表应用于实际的角色组。
     
-        Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```powershell
+Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+```
 
 本示例将用户 David Strome 添加为 组织管理 角色组上的一个委派。
 
@@ -520,7 +536,9 @@ Exchange 2013 包括在未创建自定义作用域时，默认应用于角色分
 
 1.  使用以下命令将角色组存储在一个变量中。
     
-        $RoleGroup = Get-RoleGroup <role group name>
+    ```powershell
+$RoleGroup = Get-RoleGroup <role group name>
+```
 
 2.  使用以下命令将委派从存储在变量中的角色组中删除。
     
@@ -534,7 +552,9 @@ Exchange 2013 包括在未创建自定义作用域时，默认应用于角色分
 
 4.  使用以下命令将新的委派列表应用于实际的角色组。
     
-        Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```powershell
+Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+```
 
 本示例将作为 组织管理 角色组上委派的用户 David Strome 删除。
 
@@ -550,7 +570,9 @@ Exchange 2013 包括在未创建自定义作用域时，默认应用于角色分
 
 1.  在此命令行管理程序中，运行以下命令。
     
-        Get-RoleGroup <role group name> | Format-List ManagedBy
+    ```powershell
+Get-RoleGroup <role group name> | Format-List ManagedBy
+```
 
 2.  验证 *ManagedBy* 属性上列出的委派是否只包括能够管理角色组的委派。
 

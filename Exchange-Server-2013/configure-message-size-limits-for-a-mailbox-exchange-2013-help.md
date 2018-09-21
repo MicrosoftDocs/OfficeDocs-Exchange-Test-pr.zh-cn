@@ -61,7 +61,9 @@ _**上一次修改主题：** 2012-11-12_
 
 此示例将 Debra Garcia 邮箱能发送的最大邮件大小设置为 25 MB，并将能接收的最大邮件大小设置 35 MB。
 
-    Set-Mailbox "Debra Garcia" -MaxSendSize 25mb -MaxReceiveSize 35mb
+```powershell
+Set-Mailbox "Debra Garcia" -MaxSendSize 25mb -MaxReceiveSize 35mb
+```
 
 有关详细的语法和参数信息，请参阅 [Set-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123981\(v=exchg.150\))。
 
@@ -81,5 +83,7 @@ _**上一次修改主题：** 2012-11-12_
 
 在命令行管理程序中运行以下命令。
 
-    Get-Mailbox <identity> | fl MaxSendSize,MaxReceiveSize
+```powershell
+Get-Mailbox <identity> | fl MaxSendSize,MaxReceiveSize
+```
 

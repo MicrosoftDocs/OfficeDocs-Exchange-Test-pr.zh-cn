@@ -47,7 +47,9 @@ _**上一次修改主题：** 2015-01-22_
 
 本示例获取 Soumya Singhi 的\&quot;可恢复的邮件\&quot;文件夹统计信息，并以列表格式显示输出结果。
 
-    Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-List
+```powershell
+Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-List
+```
 
 本示例获取 Soumya Singhi 的\&quot;可恢复的邮件\&quot;文件夹统计信息，并以表格格式显示文件夹名称、文件夹路径、文件夹中的邮件数以及文件夹大小。
 

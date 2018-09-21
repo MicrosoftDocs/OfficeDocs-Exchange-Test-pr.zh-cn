@@ -67,7 +67,9 @@ _**上一次修改主题：** 2017-12-20_
 > 在使用带有 <em>DeleteContent</em> 开关的 <strong>Search-Mailbox</strong> cmdlet 时，会从源邮箱中永久删除邮件。在永久删除邮件之前，建议您在删除搜索中找到的邮件之前使用 <em>LogOnly</em> 开关生成这些邮件的日志，或是在从源邮箱中删除这些邮件之前将其复制到另一个邮箱。
 
 
-    Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -DeleteContent
+```powershell
+Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -DeleteContent
+```
 
 本示例在 April Stewart 的邮箱中搜索 Subject 字段中包含\&quot;Your bank statement\&quot;短语的邮件，将搜索结果复制到 BackupMailbox 邮箱中的 AprilStewart-DeletedMessages 文件夹，然后从 April 的邮箱中删除这些邮件。
 

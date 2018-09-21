@@ -41,11 +41,15 @@ _**上一次修改主题：** 2015-04-08_
 
 若要禁用内容筛选，请运行以下命令：
 
-    Set-ContentFilterConfig -Enabled $false
+```powershell
+Set-ContentFilterConfig -Enabled $false
+```
 
 要启用内容筛选，请运行以下命令：
 
-    Set-ContentFilterConfig -Enabled $true
+```powershell
+Set-ContentFilterConfig -Enabled $true
+```
 
 > [!NOTE]  
 > 当禁用内容筛选时，仍会启用基础内容筛选器代理。若要禁用内容筛选器代理，请运行命令：<code>Disable-TransportAgent &quot;Content Filter Agent&quot;</code>.
@@ -57,7 +61,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-ContentFilterConfig | Format-List Enabled
+    ```powershell
+Get-ContentFilterConfig | Format-List Enabled
+```
 
 2.  验证显示的 *Enabled* 属性的值。
 
@@ -67,11 +73,15 @@ _**上一次修改主题：** 2015-04-08_
 
 若要对外部邮件禁用内容筛选，请运行以下命令：
 
-    Set-ContentFilterConfig -ExternalMailEnabled $false
+```powershell
+Set-ContentFilterConfig -ExternalMailEnabled $false
+```
 
 若要对外部邮件启用内容筛选，请运行以下命令：
 
-    Set-ContentFilterConfig -ExternalMailEnabled $true
+```powershell
+Set-ContentFilterConfig -ExternalMailEnabled $true
+```
 
 ## 您如何知道这有效？
 
@@ -79,7 +89,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-ContentFilterConfig | Format-List ExternalMailEnabled
+    ```powershell
+Get-ContentFilterConfig | Format-List ExternalMailEnabled
+```
 
 2.  验证显示的 *ExternalMailEnabled* 属性的值。
 
@@ -89,11 +101,15 @@ _**上一次修改主题：** 2015-04-08_
 
 若要对内部邮件启用内容筛选，请运行以下命令：
 
-    Set-ContentFilterConfig -InternalMailEnabled $true
+```powershell
+Set-ContentFilterConfig -InternalMailEnabled $true
+```
 
 若要对内部邮件禁用内容筛选，请运行以下命令：
 
-    Set-ContentFilterConfig -InternalMailEnabled $false
+```powershell
+Set-ContentFilterConfig -InternalMailEnabled $false
+```
 
 ## 您如何知道这有效？
 
@@ -101,7 +117,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-ContentFilterConfig | Format-List InternalMailEnabled
+    ```powershell
+Get-ContentFilterConfig | Format-List InternalMailEnabled
+```
 
 2.  验证显示的 *InternalMailEnabled* 属性的值。
 
@@ -159,19 +177,27 @@ _**上一次修改主题：** 2015-04-08_
 
 本示例允许所有包含短语\&quot;customer feedback\&quot;的邮件。
 
-    Add-ContentFilterPhrase -Influence GoodWord -Phrase "customer feedback"
+```powershell
+Add-ContentFilterPhrase -Influence GoodWord -Phrase "customer feedback"
+```
 
 本示例阻止所有包含短语\&quot;stock tip\&quot;的邮件。
 
-    Add-ContentFilterPhrase -Influence BadWord -Phrase "stock tip"
+```powershell
+Add-ContentFilterPhrase -Influence BadWord -Phrase "stock tip"
+```
 
 若要删除允许或阻止的短语，请运行以下命令：
 
-    Remove-ContentFilterPhrase -Phrase <Phrase>
+```powershell
+Remove-ContentFilterPhrase -Phrase <Phrase>
+```
 
 本示例删除短语\&quot;stock tip\&quot;：
 
-    Remove-ContentFilterPhrase -Phrase "stock tip"
+```powershell
+Remove-ContentFilterPhrase -Phrase "stock tip"
+```
 
 ## 您如何知道这有效？
 
@@ -179,7 +205,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-ContentFilterPhrase | Format-List Influence,Phrase
+    ```powershell
+Get-ContentFilterPhrase | Format-List Influence,Phrase
+```
 
 2.  验证显示的值是否与指定的设置匹配。
 
@@ -221,7 +249,9 @@ _**上一次修改主题：** 2015-04-08_
 
 若要配置自定义拒绝响应，请运行以下命令：
 
-    Set-ContentFilterConfig -RejectionResponse "<Custom Text>"
+```powershell
+Set-ContentFilterConfig -RejectionResponse "<Custom Text>"
+```
 
 本示例配置内容筛选器代理以发送自定义拒绝响应。
 
@@ -243,11 +273,15 @@ _**上一次修改主题：** 2015-04-08_
 
 若要禁用 Outlook 电子邮件邮戳，请运行以下命令：
 
-    Set-ContentFilterConfig -OutlookEmailPostmarkValidationEnabled $false
+```powershell
+Set-ContentFilterConfig -OutlookEmailPostmarkValidationEnabled $false
+```
 
 若要启用 Outlook 电子邮件邮戳，请运行以下命令：
 
-    Set-ContentFilterConfig -OutlookEmailPostmarkValidationEnabled $true
+```powershell
+Set-ContentFilterConfig -OutlookEmailPostmarkValidationEnabled $true
+```
 
 ## 您如何知道这有效？
 
@@ -255,7 +289,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-ContentFilterConfig | Format-List OutlookEmailPostmarkValidationEnabled
+    ```powershell
+Get-ContentFilterConfig | Format-List OutlookEmailPostmarkValidationEnabled
+```
 
 2.  验证显示的值是否与指定的设置匹配。
 

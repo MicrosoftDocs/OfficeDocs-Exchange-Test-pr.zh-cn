@@ -43,15 +43,21 @@ _**上一次修改主题：** 2014-06-27_
 
 2.  使用 [New-MailboxDatabase](https://technet.microsoft.com/zh-cn/library/aa997976\(v=exchg.150\)) cmdlet 可以创建拨号音数据库，如本例中所示。
     
-        New-MailboxDatabase -Name DTDB1 -EdbFilePath D:\DialTone\DTDB1.EDB
+    ```powershell
+New-MailboxDatabase -Name DTDB1 -EdbFilePath D:\DialTone\DTDB1.EDB
+```
 
 3.  使用 [Set-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123981\(v=exchg.150\)) cmdlet 可以重新放置正在恢复的数据库上所驻留的用户邮箱，如本例中所示。
     
-        Get-Mailbox -Database DB1 | Set-Mailbox -Database DTDB1
+    ```powershell
+Get-Mailbox -Database DB1 | Set-Mailbox -Database DTDB1
+```
 
 4.  使用 [Mount-Database](https://technet.microsoft.com/zh-cn/library/aa998871\(v=exchg.150\)) cmdlet 可以装入数据库，使客户端计算机可以访问数据库，并发送和接收邮件，如本例中所示。
     
-        Mount-Database -Identity DTDB1
+    ```powershell
+Mount-Database -Identity DTDB1
+```
 
 5.  创建恢复数据库 (RDB)，并还原或复制包含要恢复到 RDB 中的数据的数据库和日志文件。有关详细步骤，请参阅[创建恢复数据库](create-a-recovery-database-exchange-2013-help.md)。
 
@@ -59,30 +65,40 @@ _**上一次修改主题：** 2014-06-27_
 
 7.  装入 RDB，然后使用 [Dismount-Database](https://technet.microsoft.com/zh-cn/library/bb124936\(v=exchg.150\)) cmdlet 将其卸除，如本例中所示。
     
-        Mount-Database -Identity RDB1
+    ```powershell
+Mount-Database -Identity RDB1
+```
         Dismount-Database -Identity RDB1
 
 8.  在卸除 RDB 之后，将 RDB 文件夹中的当前数据库和日志文件移动到安全位置。该操作将在准备交换恢复的数据库和拨号音数据库的过程中完成。
 
 9.  卸除拨号音数据库，如本例中所示。注意，在卸除此数据库时，最终用户将遇到服务中断。
     
-        Dismount-Database -Identity DTDB1
+    ```powershell
+Dismount-Database -Identity DTDB1
+```
 
 10. 将数据库和日志文件从拨号音数据库文件夹移入 RDB 文件夹。
 
 11. 将数据库和日志文件从包含已恢复数据库的安全位置移入拨号音数据库文件夹，然后装入该数据库，如本例中所示。
     
-        Mount-Database -Identity DTDB1
+    ```powershell
+Mount-Database -Identity DTDB1
+```
     
     这将结束最终用户的服务中断。用户可以访问其原始生产数据库，并发送和接收邮件。
 
 12. 装入 RDB，如本例中所示。
     
-        Mount-Database -Identity RDB1
+    ```powershell
+Mount-Database -Identity RDB1
+```
 
 13. 使用 [Get-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123685\(v=exchg.150\)) 和 [New-MailboxRestoreRequest](https://technet.microsoft.com/zh-cn/library/ff829875\(v=exchg.150\)) cmdlet 可以从 RDB 导出数据，并将其导入恢复的数据库，如本例中所示。这会将使用拨号音数据库发送和接收的所有邮件导入生产数据库中。
     ```
-        $mailboxes = Get-Mailbox -Database DTDB1
+    ```powershell
+$mailboxes = Get-Mailbox -Database DTDB1
+```
     ```
     ```
         $mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }

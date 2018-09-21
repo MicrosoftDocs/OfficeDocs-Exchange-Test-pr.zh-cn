@@ -93,7 +93,9 @@ Exchange 管理员将只能管理现有 Active Directory 安全主体上的 Exch
     
     1.  从 Exchange 2013 安装介质运行下列命令禁用 Active Directory 拆分权限。
         
-            setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+        ```powershell
+setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+```
     
     2.  在组织中重新启动 Exchange 2013 服务器或等待 Active Directory 访问令牌复制到所有 Exchange 2013 服务器。
         
@@ -117,11 +119,15 @@ Exchange 管理员将只能管理现有 Active Directory 安全主体上的 Exch
     
     3.  使用以下命令将成员添加到新角色组。
         
-            Add-RoleGroupMember "Active Directory Administrators" -Member <user to add>
+        ```powershell
+Add-RoleGroupMember "Active Directory Administrators" -Member <user to add>
+```
     
     4.  替换新角色组上的委派列表，以使只有该角色组的成员可以添加或删除成员。
         
-            Set-RoleGroup "Active Directory Administrators" -ManagedBy "Active Directory Administrators"
+        ```powershell
+Set-RoleGroup "Active Directory Administrators" -ManagedBy "Active Directory Administrators"
+```
         
         > [!IMPORTANT]  
         > 组织管理 角色组的成员，或者直接或通过另一角色组或 USG 获得 Role Management 角色的成员可以绕过这一委派安全检查。如果想要阻止所有 Exchange 管理员将其自身添加到该新角色组，则必须删除“角色管理”角色和所有 Exchange 管理员之间的角色分配，并将其分配给另一个角色组。
@@ -132,7 +138,9 @@ Exchange 管理员将只能管理现有 Active Directory 安全主体上的 Exch
     
     6.  使用以下命令删除所有分配给 Mail Recipient Creation 角色，且与该新角色组或您想要保留的任何其他角色组、USG 或直接分配不相关联的常规和委派角色分配。
         
-            Remove-ManagementRoleAssignment <Mail Recipient Creation role assignment to remove>
+        ```powershell
+Remove-ManagementRoleAssignment <Mail Recipient Creation role assignment to remove>
+```
         
         > [!NOTE]  
         > 如果想要删除所有分配给任何角色接受者（“Active Directory Administrators”角色组除外）的“邮件收件人创建”角色的常规和委派角色分配，请使用以下命令。<em>WhatIf</em> 开关使您能够看到将删除哪些角色分配。删除 <em>WhatIf</em> 开关，然后重新运行该命令以删除角色分配。
@@ -207,7 +215,9 @@ Exchange 管理员和服务器将只能管理现有 Active Directory 安全主�
 
 1.  在 Windows 命令行管理程序中，从 Exchange 2013 安装介质运行下列命令启用 Active Directory 拆分权限。
     
-        setup.exe /PrepareAD /ActiveDirectorySplitPermissions:true
+    ```powershell
+setup.exe /PrepareAD /ActiveDirectorySplitPermissions:true
+```
 
 2.  如果组织中有多个 Active Directory 域，必须在每个包含 Exchange 服务器或对象的子域中运行 `setup.exe /PrepareDomain`，或者从每个域中均有一台 Active Directory 服务器的站点运行 `setup.exe /PrepareAllDomains`。
 

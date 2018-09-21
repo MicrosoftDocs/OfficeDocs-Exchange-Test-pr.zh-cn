@@ -111,7 +111,9 @@ _**上一次修改主题：** 2015-11-30_
 
 要确认您已成功创建全局覆盖，请使用 **Get-GlobalMonitoringOverride** cmdlet 查看全局覆盖列表：
 
-    Get-GlobalMonitoringOverride
+```powershell
+Get-GlobalMonitoringOverride
+```
 
 覆盖应出现在列表中。
 
@@ -129,7 +131,9 @@ _**上一次修改主题：** 2015-11-30_
 
 要确认您已成功删除全局覆盖，请使用 **Get-GlobalMonitoringOverride** cmdlet 查看全局覆盖列表：
 
-    Get-GlobalMonitoringOverride
+```powershell
+Get-GlobalMonitoringOverride
+```
 
 已删除的覆盖不应出现在列表中。
 

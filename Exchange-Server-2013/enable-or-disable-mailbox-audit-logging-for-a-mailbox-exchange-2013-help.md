@@ -47,11 +47,15 @@ _**上一次修改主题：** 2015-09-30_
 
 本示例启用 Ben Smith 的邮箱的邮箱审核日志记录。
 
-    Set-Mailbox -Identity "Ben Smith" -AuditEnabled $true
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditEnabled $true
+```
 
 本示例禁用 Ben Smith 的邮箱的邮箱审核日志记录。
 
-    Set-Mailbox -Identity "Ben Smith" -AuditEnabled $false
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditEnabled $false
+```
 
 有关详细的语法和参数信息，请参阅 [Set-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123981\(v=exchg.150\))。
 
@@ -61,15 +65,21 @@ _**上一次修改主题：** 2015-09-30_
 
 本示例指定将为 Ben Smith 的邮箱记录委派用户对其所执行的 `SendAs` 或 `SendOnBehalf` 操作。
 
-    Set-Mailbox -Identity "Ben Smith" -AuditDelegate SendAs,SendOnBehalf -AuditEnabled $true
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditDelegate SendAs,SendOnBehalf -AuditEnabled $true
+```
 
 本示例指定将为 Ben Smith 的邮箱记录管理员对其所执行的 `MessageBind` 和 `FolderBind` 操作。
 
-    Set-Mailbox -Identity "Ben Smith" -AuditAdmin MessageBind,FolderBind -AuditEnabled $true
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditAdmin MessageBind,FolderBind -AuditEnabled $true
+```
 
 本示例指定将为 Ben Smith 的邮箱记录邮箱所有者对其所执行的 `HardDelete` 操作。
 
-    Set-Mailbox -Identity "Ben Smith" -AuditOwner HardDelete -AuditEnabled $true
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditOwner HardDelete -AuditEnabled $true
+```
 
 有关语法和参数的详细信息，请参阅 [Set-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123981\(v=exchg.150\))。
 

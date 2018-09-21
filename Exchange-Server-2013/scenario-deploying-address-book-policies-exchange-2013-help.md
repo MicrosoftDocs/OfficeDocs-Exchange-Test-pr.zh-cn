@@ -309,7 +309,9 @@ ABP 中使用的全局地址列表必须是地址列表的一个超集。不要�
 
 此示例为 Fabrikam 创建名为 OAB\_FAB 的 OAB。
 
-    New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
+```powershell
+New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
+```
 
 有关详细信息，请参阅[创建脱机通讯簿](create-an-offline-address-book-exchange-2013-help.md)。
 

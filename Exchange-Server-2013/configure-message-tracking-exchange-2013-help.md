@@ -81,11 +81,15 @@ _**上一次修改主题：** 2013-02-18_
 
 此示例在名为 Mailbox01 的邮箱服务器上禁用邮件跟踪日志中的邮件主题日志记录：
 
-    Set-TransportService Mailbox01 -MessageTrackingLogSubjectLoggingEnabled $false
+```powershell
+Set-TransportService Mailbox01 -MessageTrackingLogSubjectLoggingEnabled $false
+```
 
 此示例在名为 Mailbox01 的邮箱服务器上禁用邮件跟踪：
 
-    Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
+```powershell
+Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
+```
 
 ## 您如何知道操作成功？
 

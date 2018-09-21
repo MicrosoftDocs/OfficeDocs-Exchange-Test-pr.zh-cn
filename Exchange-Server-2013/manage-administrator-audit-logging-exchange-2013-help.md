@@ -111,7 +111,9 @@ _**上一次修改主题：** 2013-05-17_
 
 此示例指定两年零六个月的期限。
 
-    Set-AdminAuditLogConfig -AdminAuditLogAgeLimit 913.00:00:00
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogAgeLimit 913.00:00:00
+```
 
 有关语法和参数的详细信息，请参阅 [Set-AdminAuditLogConfig](https://technet.microsoft.com/zh-cn/library/dd298169\(v=exchg.150\))。
 
@@ -121,11 +123,15 @@ _**上一次修改主题：** 2013-05-17_
 
 此命令启用 **Test** cmdlet 的日志记录。
 
-    Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $True
+```powershell
+Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $True
+```
 
 此命令禁用 **Test** cmdlet 的日志记录。
 
-    Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $False
+```powershell
+Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $False
+```
 
 有关语法和参数的详细信息，请参阅 [Set-AdminAuditLogConfig](https://technet.microsoft.com/zh-cn/library/dd298169\(v=exchg.150\))。
 
@@ -133,17 +139,23 @@ _**上一次修改主题：** 2013-05-17_
 
 若要禁用管理员审核日志记录，请使用以下命令。
 
-    Set-AdminAuditLogConfig -AdminAuditLogEnabled $False
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogEnabled $False
+```
 
 ## 启用管理员审核日志记录
 
 若要启用管理员审核日志记录，请使用以下命令。
 
-    Set-AdminAuditLogConfig -AdminAuditLogEnabled $True
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogEnabled $True
+```
 
 ## 查看管理员审核日志记录设置
 
 若要查看已为组织配置的管理员审核日志记录设置，请使用以下命令。
 
-    Get-AdminAuditLogConfig
+```powershell
+Get-AdminAuditLogConfig
+```
 

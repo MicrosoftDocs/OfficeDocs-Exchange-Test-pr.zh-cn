@@ -59,7 +59,9 @@ _**上一次修改主题：** 2015-04-07_
 
 如果要定义应包含在此作用域中的邮箱数据库的静态列表，请使用数据库列表。使用以下语法创建数据库列表作用域。
 
-    New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```
 
 本示例将创建仅适用于数据库 Database 1、Database 2 和 Database 3 的作用域。
 
@@ -75,7 +77,9 @@ _**上一次修改主题：** 2015-04-07_
 
 使用以下语法创建数据库筛选器作用域。
 
-    New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```
 
 本示例将创建一个作用域，该作用域包含数据库的 **Name** 属性中含有字符串“ACCT”的所有数据库。
 

@@ -61,15 +61,21 @@ _**上一次修改主题：** 2014-08-13_
 
 此示例向名为 DAG1 的 DAG 中添加邮箱服务器 MBX1。
 
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```powershell
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```
 
 此示例从名为 DAG1 的 DAG 中删除邮箱服务器 MBX1。运行此命令之前，请确保邮箱服务器上不存在任何复制数据库。
 
-    Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```powershell
+Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```
 
 此示例从名为 DAG2 的 DAG 中删除邮箱服务器 MBX4 的配置设置。MBX4 应当在较长时间内保持脱机状态，这样才能在它处于脱机时从 DAG 中删除其配置，以便用剩余的联机 DAG 成员建立仲裁。
 
-    Remove-DatabaseAvailabilityGroupServer -Identity DAG2 -MailboxServer MBX4 -ConfigurationOnly
+```powershell
+Remove-DatabaseAvailabilityGroupServer -Identity DAG2 -MailboxServer MBX4 -ConfigurationOnly
+```
 
 ## 您如何知道这有效？
 
@@ -79,7 +85,9 @@ _**上一次修改主题：** 2014-08-13_
 
   - 在 Shell 中，运行以下命令以显示 DAG 成员身份信息。
     
-        Get-DatabaseAvailabilityGroup <DAGName> | Format-List Servers
+    ```powershell
+Get-DatabaseAvailabilityGroup <DAGName> | Format-List Servers
+```
 
 ## 详细信息
 

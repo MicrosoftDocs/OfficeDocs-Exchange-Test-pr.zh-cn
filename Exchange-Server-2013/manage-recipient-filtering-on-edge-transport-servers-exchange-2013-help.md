@@ -35,7 +35,9 @@ _**上一次修改主题：** 2015-04-08_
 
   - **Set-AcceptedDomain** cmdlet 上的参数 *AddressBookEnabled* 将启动或禁用收件人在接受域中的收件人筛选。默认情况下，启用权威域的收件人筛选，并禁用内部中继域和外部中继域的收件人筛选。要查看您组织中接受域的 *AddressBookEnabled* 参数状态，请运行下面的命令：
     
-        Get-AcceptedDomain | Format-List Name,AddressBookEnabled
+    ```powershell
+Get-AcceptedDomain | Format-List Name,AddressBookEnabled
+```
 
   - 如果您使用本主题中的步骤禁用收件人筛选，则收件人筛选功能将被禁用，但基本\&quot;收件人筛选\&quot;代理仍将为启动状态。
 
@@ -51,11 +53,15 @@ _**上一次修改主题：** 2015-04-08_
 
 若要禁用收件人筛选，请运行以下命令：
 
-    Set-RecipientFilterConfig -Enabled $false
+```powershell
+Set-RecipientFilterConfig -Enabled $false
+```
 
 若要启用收件人筛选，请运行以下命令：
 
-    Set-RecipientFilterConfig -Enabled $true
+```powershell
+Set-RecipientFilterConfig -Enabled $true
+```
 
 > [!NOTE]  
 > 禁用收件人筛选时，基本&amp;quot;收件人筛选&amp;quot;代理仍启用。若要禁用收件人筛选器代理，请运行以下命令：<code>Disable-TransportAgent &quot;Recipient Filter Agent&quot;</code>.
@@ -67,7 +73,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-RecipientFilterConfig | Format-List Enabled
+    ```powershell
+Get-RecipientFilterConfig | Format-List Enabled
+```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -75,11 +83,15 @@ _**上一次修改主题：** 2015-04-08_
 
 运行以下命令：
 
-    Set-RecipientFilterConfig -BlockListEnabled <$true | $false>
+```powershell
+Set-RecipientFilterConfig -BlockListEnabled <$true | $false>
+```
 
 本示例启用收件人阻止列表：
 
-    Set-RecipientFilterConfig -BlockListEnabled $true
+```powershell
+Set-RecipientFilterConfig -BlockListEnabled $true
+```
 
 ## 您如何知道这有效？
 
@@ -87,7 +99,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-RecipientFilterConfig | Format-List BlockListEnabled
+    ```powershell
+Get-RecipientFilterConfig | Format-List BlockListEnabled
+```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -95,11 +109,15 @@ _**上一次修改主题：** 2015-04-08_
 
 要替换现有值，请运行以下命令：
 
-    Set-RecipientFilterConfig -BlockedRecipients <recipient1,recipient2...>
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients <recipient1,recipient2...>
+```
 
 本示例使用 valuesmark@contoso.com 和 kim@contoso.com 配置收件人阻止列表：
 
-    Set-RecipientFilterConfig -BlockedRecipients mark@contoso.com,kim@contoso.com
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients mark@contoso.com,kim@contoso.com
+```
 
 要在不修改任何现有值的情况下添加或删除条目，请运行以下命令：
 
@@ -115,7 +133,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-RecipientFilterConfig | Format-List BlockedRecipients
+    ```powershell
+Get-RecipientFilterConfig | Format-List BlockedRecipients
+```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -123,11 +143,15 @@ _**上一次修改主题：** 2015-04-08_
 
 运行以下命令：
 
-    Set-RecipientFilterConfig -RecipientValidationEnabled <$true | $false>
+```powershell
+Set-RecipientFilterConfig -RecipientValidationEnabled <$true | $false>
+```
 
 若要阻止发送到组织中不存在的收件人的邮件，请运行以下命令：
 
-    Set-RecipientFilterConfig -RecipientValidationEnabled $true
+```powershell
+Set-RecipientFilterConfig -RecipientValidationEnabled $true
+```
 
 ## 您如何知道这有效？
 
@@ -135,7 +159,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-RecipientFilterConfig | Format-List RecipientValidationEnabled
+    ```powershell
+Get-RecipientFilterConfig | Format-List RecipientValidationEnabled
+```
 
 2.  验证显示的值是否为您配置的值。
 

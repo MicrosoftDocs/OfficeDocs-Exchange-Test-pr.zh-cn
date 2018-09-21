@@ -45,11 +45,15 @@ _**上一次修改主题：** 2013-04-09_
 
 此示例将从所有会话初始协议 (SIP) 拨号计划中删除名为 `MyClientAccessServer` 的客户端访问服务器。
 
-    Set-UMCallRouterSettings -DialPlans $null - Server MyClientAccessServer
+```powershell
+Set-UMCallRouterSettings -DialPlans $null - Server MyClientAccessServer
+```
 
 本示例在名为 `MySIPDialPlan` 的 SIP 拨号计划中添加名为 `MyClientAccessServer` 的客户端访问服务器，还设置了传入语音呼叫的最大次数。
 
-    Set-UMCallRouterSettings -DialPlans MySIPDialPlan -MaxCalls 150 -Server MyClientAccessServer
+```powershell
+Set-UMCallRouterSettings -DialPlans MySIPDialPlan -MaxCalls 150 -Server MyClientAccessServer
+```
 
 此示例在名为 `MyClientAccessServer` 的客户端访问服务器上将 SIP TCP 侦听端口设置为 5077，将启动模式设置为\&quot;双重\&quot;模式。
 
@@ -59,9 +63,13 @@ _**上一次修改主题：** 2013-04-09_
 
 此示例显示所有客户端访问服务器的列表。
 
-    Get-UMCallRouterSettings
+```powershell
+Get-UMCallRouterSettings
+```
 
 此示例显示客户端访问服务器属性的格式化列表。
 
-    Get-UMCallRouterSettings | Format-List
+```powershell
+Get-UMCallRouterSettings | Format-List
+```
 

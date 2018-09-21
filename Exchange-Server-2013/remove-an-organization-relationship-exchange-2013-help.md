@@ -43,7 +43,9 @@ _**上一次修改主题：** 2015-01-04_
 
 本示例将删除 Exchange 组织的组织关系 Contoso
 
-    Remove-OrganizationRelationship -Identity "Contoso"
+```powershell
+Remove-OrganizationRelationship -Identity "Contoso"
+```
 
 有关语法和参数的详细信息，请参阅 [Remove-OrganizationRelationship](https://technet.microsoft.com/zh-cn/library/ee332362\(v=exchg.150\))。
 
@@ -55,7 +57,9 @@ _**上一次修改主题：** 2015-01-04_
 
   - 运行以下命令行管理程序命令以验证已删除组织关系信息。
     
-        Get-OrganizationRelationship | Format-List
+    ```powershell
+Get-OrganizationRelationship | Format-List
+```
 
 > [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。

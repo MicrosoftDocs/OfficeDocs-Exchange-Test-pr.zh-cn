@@ -57,7 +57,9 @@ _**上一次修改主题：** 2012-12-05_
 
 此示例禁用邮件联系人 Neil Black 的电子邮件。
 
-    Disable-MailContact -Identity "Neil Black"
+```powershell
+Disable-MailContact -Identity "Neil Black"
+```
 
 有关详细的语法和参数信息，请参阅[Disable-MailContact](https://technet.microsoft.com/zh-cn/library/aa997465\(v=exchg.150\))。
 
@@ -71,13 +73,17 @@ _**上一次修改主题：** 2012-12-05_
 
 3.  在此命令行管理程序中，运行以下命令。
     
-        Get-MailContact
+    ```powershell
+Get-MailContact
+```
     
     结果中不会返回禁用了电子邮件的联系人，因为此 cmdlet 仅返回启用了邮件联系人。
 
 4.  在此命令行管理程序中，运行以下命令。
     
-        Get-Contact
+    ```powershell
+Get-Contact
+```
     
     结果中会返回禁用了电子邮件的联系人，因为此 cmdlet 返回所有 Active Directory 联系人对象。
 
@@ -89,7 +95,9 @@ _**上一次修改主题：** 2012-12-05_
 
 本示例邮件启用联系人廖廖。您必须提供一个外部电子邮件地址。
 
-    Enable-MailContact -Identity "Rene Valdes" -ExternalEmailAddress renev@tailspintoys.com
+```powershell
+Enable-MailContact -Identity "Rene Valdes" -ExternalEmailAddress renev@tailspintoys.com
+```
 
 ## 使用命令行管理程序和 CSV 文件为多个联系人启用邮件
 
@@ -137,5 +145,7 @@ _**上一次修改主题：** 2012-12-05_
 
   - 在命令行管理程序中，运行以下命令可显示有关新邮件联系人的信息。
     
-        Get-MailContact | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```powershell
+Get-MailContact | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+```
 

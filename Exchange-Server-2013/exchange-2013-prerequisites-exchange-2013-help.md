@@ -83,11 +83,15 @@ _**上一次修改主题：** 2017-03-20_
     
       - 在 Windows Server 2012 R2 或 Windows Server 2012 计算机上，运行下列命令：
         
-            Install-WindowsFeature RSAT-ADDS
+        ```powershell
+Install-WindowsFeature RSAT-ADDS
+```
     
       - 在 Windows Server 2008 R2 SP1 计算机上，运行下列命令：
         
-            Add-WindowsFeature RSAT-ADDS
+        ```powershell
+Add-WindowsFeature RSAT-ADDS
+```
 
 ## Windows Server 2012 R2 和 Windows Server 2012 先决条件
 
@@ -133,7 +137,9 @@ _**上一次修改主题：** 2017-03-20_
 
 2.  运行以下命令，安装必需的 Windows 组件。
     
-        Install-WindowsFeature ADLDS
+    ```powershell
+Install-WindowsFeature ADLDS
+```
 
 安装与您安装的 Exchange 2013 版本对应的 Microsoft .NET Framework 版本：
 
@@ -165,7 +171,9 @@ _**上一次修改主题：** 2017-03-20_
 
 2.  运行以下命令，加载服务器管理器模块。
     
-        Import-Module ServerManager
+    ```powershell
+Import-Module ServerManager
+```
 
 3.  运行以下命令，安装必需的 Windows 组件。
     
@@ -203,11 +211,15 @@ _**上一次修改主题：** 2017-03-20_
 
 2.  运行以下命令，加载服务器管理器模块。
     
-        Import-Module ServerManager
+    ```powershell
+Import-Module ServerManager
+```
 
 3.  运行以下命令，安装必需的 Windows 组件。
     
-        Add-WindowsFeature NET-Framework, ADLDS
+    ```powershell
+Add-WindowsFeature NET-Framework, ADLDS
+```
 
 在您安装操作系统角色和功能后，请按以下显示的顺序安装下列软件：
 

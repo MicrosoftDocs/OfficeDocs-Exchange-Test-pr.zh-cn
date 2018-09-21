@@ -88,7 +88,9 @@ _**上一次修改主题：** 2014-10-22_
 
 本示例将在可用性配置对象上设置组织范围的帐户，以配置对目标林中的忙/闲信息的访问级别。
 
-    Set-AvailabilityConfig -OrgWideAccount "Contoso.com\User"
+```powershell
+Set-AvailabilityConfig -OrgWideAccount "Contoso.com\User"
+```
 
 本示例将为源林添加可用性地址空间配置对象。
 

@@ -91,7 +91,9 @@ _**上一次修改主题：** 2013-03-15_
 
 此示例将为名为“Connection from Contoso.com”的接收连接器启用协议日志记录。
 
-    Set-ReceiveConnector "Connection from Contoso.com" -ProtocolLoggingLevel Verbose
+```powershell
+Set-ReceiveConnector "Connection from Contoso.com" -ProtocolLoggingLevel Verbose
+```
 
 ## 您如何知道这有效？
 
@@ -99,7 +101,9 @@ _**上一次修改主题：** 2013-03-15_
 
 1.  在此命令行管理程序中，运行以下命令：
     
-        <Get-SendConnector |Get-ReceiveConnector> | Format-List Name,ProtocolLoggingLevel
+    ```command line
+<Get-SendConnector |Get-ReceiveConnector> | Format-List Name,ProtocolLoggingLevel
+```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -111,7 +115,9 @@ _**上一次修改主题：** 2013-03-15_
 
 本示例将在名为 Mailbox01 的邮箱服务器上的传输服务中的组织内发送连接器上启用协议日志记录。
 
-    Set-TransportService Mailbox01 -IntraOrgConnectorProtocolLoggingLevel Verbose
+```powershell
+Set-TransportService Mailbox01 -IntraOrgConnectorProtocolLoggingLevel Verbose
+```
 
 ## 您如何知道这有效？
 
@@ -127,11 +133,15 @@ _**上一次修改主题：** 2013-03-15_
 
 要在邮箱服务器上的邮箱传输服务中存在的隐含和不可见邮箱交付发送连接器上启用或禁用协议日志记录，请运行以下命令：
 
-    Set-MailboxTransportService -MailboxDeliveryConnectorProtocolLoggingLevel <Verbose | None>
+```powershell
+Set-MailboxTransportService -MailboxDeliveryConnectorProtocolLoggingLevel <Verbose | None>
+```
 
 本示例将在名为 Mailbox01 的邮箱服务器上的邮箱传输服务中的邮箱交付接收连接器上启用协议日志记录。
 
-    Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLevel Verbose
+```powershell
+Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLevel Verbose
+```
 
 ## 您如何知道这有效？
 

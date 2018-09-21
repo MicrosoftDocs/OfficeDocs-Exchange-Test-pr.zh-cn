@@ -51,7 +51,9 @@ IRM 日志使用以下通用参数集：
 
 本示例启用邮箱服务器上的 IRM 日志。
 
-    Set-TransportService -Identity EXCH01 -IRMLogEnabled $true
+```powershell
+Set-TransportService -Identity EXCH01 -IRMLogEnabled $true
+```
 
 有关语法和参数的详细信息，请参阅 [Set-TransportService](https://technet.microsoft.com/zh-cn/library/jj215682\(v=exchg.150\))。
 
@@ -59,7 +61,9 @@ IRM 日志使用以下通用参数集：
 
 本示例禁用邮箱服务器上的 IRM 日志记录。
 
-    Set-TransportService -Identity EXCH01 -IRMLogEnabled $false
+```powershell
+Set-TransportService -Identity EXCH01 -IRMLogEnabled $false
+```
 
 有关语法和参数的详细信息，请参阅 [Set-TransportService](https://technet.microsoft.com/zh-cn/library/jj215682\(v=exchg.150\))。
 

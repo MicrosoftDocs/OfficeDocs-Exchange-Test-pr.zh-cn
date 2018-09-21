@@ -256,7 +256,9 @@ Windows Server 2012 R2 中的 AD FS 提供了简化的安全联合身份验证�
 
 下面的Windows PowerShell 命令执行相同的操作，为前面的步骤。
 ```
-    Import-Module ADFS
+```powershell
+Import-Module ADFS
+```
 ```
 ```
     Install-AdfsFarm -CertificateThumbprint 0E0C205D252002D535F6D32026B6AB074FB840E7 -FederationServiceDisplayName "Contoso Corporation" -FederationServiceName adfs.contoso.com -GroupServiceAccountIdentifier "contoso\FSgmsa`$"
@@ -408,7 +410,9 @@ Web 应用程序代理是 Windows Server 2012 R2 中的新远程访问角色服�
 
 以下 Windows PowerShell cmdlet 执行的任务与以上步骤相同。
 
-    Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
+```powershell
+Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
+```
 
 ## 第 5 步 - 配置 Web 应用程序代理角色服务（可选）
 
@@ -533,7 +537,9 @@ Web 应用程序代理是 Windows Server 2012 R2 中的新远程访问角色服�
 
   - 使用 Windows PowerShell：
     
-        Restart-Service W3SVC,WAS -noforce
+    ```powershell
+Restart-Service W3SVC,WAS -noforce
+```
 
   - 使用命令行：单击\&quot;开始\&quot;，再单击\&quot;运行\&quot;，键入 `IISReset /noforce`，然后单击\&quot;确定\&quot;。
 

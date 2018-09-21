@@ -313,7 +313,9 @@ Microsoft Azure 为支持的 VPN 设备提供 VPN 设备配置脚本。单击虚
 
 2.  运行以下命令以配置您的 DAG 的见证服务器。
     
-        Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
+    ```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
+```
 
 有关详细信息，请参阅以下主题：
 
@@ -333,11 +335,15 @@ Microsoft Azure 为支持的 VPN 设备提供 VPN 设备配置脚本。单击虚
 
 2.  如果 DAG 包含偶数个节点，则将配置文件共享见证。运行以下命令，对群集属性中的文件共享见证设置进行验证。*SharePath* 参数的值应该指向文件服务器并显示正确的路径。
     
-        Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
+    ```powershell
+Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
+```
 
 3.  接下来，运行以下命令对“文件共享见证”群集资源的状态进行验证。群集资源的 *State* 应显示 **Online**。
     
-        Get-ClusterResource -Cluster MBX1
+    ```powershell
+Get-ClusterResource -Cluster MBX1
+```
 
 4.  最后，通过检查“文件资源管理器”中的文件夹和服务器管理器中的共享，验证是否已成功地在文件服务器上创建共享。
 

@@ -65,7 +65,9 @@ _**上一次修改主题：** 2015-01-23_
 
 此示例在发送连接器上将 *FrontendProxyEnabled* 参数设置为 `$true`。
 
-    Set-SendConnector "Contoso.com Send Connector" -FrontendProxyEnabled $true
+```powershell
+Set-SendConnector "Contoso.com Send Connector" -FrontendProxyEnabled $true
+```
 
 ## 您如何知道这有效？
 

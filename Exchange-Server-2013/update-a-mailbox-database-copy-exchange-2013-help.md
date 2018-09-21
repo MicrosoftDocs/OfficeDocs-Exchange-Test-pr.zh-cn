@@ -93,45 +93,63 @@ _**上一次修改主题：** 2012-11-02_
 
 本示例显示如何对 MBX1 上的数据库 DB1 的副本设定种子。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1
+```
 
 本示例显示如何使用 MBX2 作为种子的源邮箱服务器对 MBX1 上的数据库 DB1 的副本设定种子。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2
+```
 
 本示例显示如何对 MBX1 上的数据库 DB1 的副本设定种子，而不对内容索引编录设定种子。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -DatabaseOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -DatabaseOnly
+```
 
 本示例显示如何对 MBX1 上的数据库 DB1 的副本的内容索引编录设定种子，而不对数据库文件设定种子。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```
 
 ## 手动复制脱机数据库
 
 1.  如果为数据库启用循环日志记录，则在继续之前必须先禁用它。通过使用 [Set-MailboxDatabase](https://technet.microsoft.com/zh-cn/library/bb123971\(v=exchg.150\)) cmdlet 可以禁用邮箱数据库的循环日志记录，如本例中所示。
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+    ```powershell
+Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+```
 
 2.  卸除数据库。可以使用 [Dismount-Database](https://technet.microsoft.com/zh-cn/library/bb124936\(v=exchg.150\)) cmdlet，如此示例中所示。
     
-        Dismount-Database DB1 -Confirm $false
+    ```powershell
+Dismount-Database DB1 -Confirm $false
+```
 
 3.  手动将数据库文件（数据库文件和所有日志文件）复制到第二个位置，例如外部磁盘驱动器或网络共享。
 
 4.  装载数据库。可以使用 [Mount-Database](https://technet.microsoft.com/zh-cn/library/aa998871\(v=exchg.150\)) cmdlet，如此示例中所示。
     
-        Mount-Database DB1
+    ```powershell
+Mount-Database DB1
+```
 
 5.  在托管副本的服务器上，将数据库文件从外部驱动器或网络共享复制到与主动数据库副本相同的路径。例如，如果主动数据库副本路径为 D:\\DB1\\DB1.edb，日志文件路径为 D:\\DB1，则可以将数据库文件复制到将托管副本的服务器上的 D:\\DB1。
 
 6.  通过使用 [Add-MailboxDatabaseCopy](https://technet.microsoft.com/zh-cn/library/dd298105\(v=exchg.150\)) cmdlet 和 *SeedingPostponed* 参数，添加邮箱数据库副本，如此示例中所示。
     
-        Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -SeedingPostponed
+    ```powershell
+Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -SeedingPostponed
+```
 
 7.  如果为数据库启用循环日志记录，则使用 [Set-MailboxDatabase](https://technet.microsoft.com/zh-cn/library/bb123971\(v=exchg.150\)) cmdlet 再次启用它，如此示例中所示。
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+    ```powershell
+Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+```
 
 ## 您如何知道这有效？
 
@@ -141,7 +159,9 @@ _**上一次修改主题：** 2012-11-02_
 
   - 在命令行管理程序中，运行以下命令验证是否已成功为邮箱数据库副本设定种子并且种子处于健康状态。
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```powershell
+Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+```
     
     状态和内容索引状态应该为健康。
 

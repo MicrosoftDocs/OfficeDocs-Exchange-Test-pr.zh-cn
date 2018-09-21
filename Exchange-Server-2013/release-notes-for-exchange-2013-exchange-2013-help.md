@@ -128,7 +128,9 @@ _**上一次修改主题：** 2018-04-16_
     
     2.  运行以下命令。
         
-            Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+        ```powershell
+Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+```
     
     3.  执行正常传输代理管理任务。
     

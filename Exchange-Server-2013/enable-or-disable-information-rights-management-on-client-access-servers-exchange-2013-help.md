@@ -61,7 +61,9 @@ _**上一次修改主题：** 2016-12-09_
 
 本示例在Exchange公司的客户端访问服务器上启用 IRM。
 
-    Set-IRMConfiguration -ClientAccessServerEnabled $true
+```powershell
+Set-IRMConfiguration -ClientAccessServerEnabled $true
+```
 
 有关语法和参数的详细信息，请参阅 [Set-IRMConfiguration](https://technet.microsoft.com/zh-cn/library/dd979792\(v=exchg.150\))。
 
@@ -69,7 +71,9 @@ _**上一次修改主题：** 2016-12-09_
 
 本示例在Exchange公司的客户端访问服务器上禁用 IRM。
 
-    Set-IRMConfiguration -ClientAccessServerEnabled $false
+```powershell
+Set-IRMConfiguration -ClientAccessServerEnabled $false
+```
 
 有关语法和参数的详细信息，请参阅 [Set-IRMConfiguration](https://technet.microsoft.com/zh-cn/library/dd979792\(v=exchg.150\))。
 

@@ -29,7 +29,9 @@ _**上一次修改主题：** 2015-01-14_
 
 使用 **Get-ClientAccessArray** cmdlet 验证将作为脚本目标的服务器是否全部为必需的服务器，如下面的示例所示。
 
-    Get-ClientAccessArray | fl members
+```powershell
+Get-ClientAccessArray | fl members
+```
 
 如果无法更新的服务器是客户端访问阵列的成员，而且仍无法正确更新，请重新运行 Exchange 安装程序并再次将客户端访问服务器角色添加到服务器。还可以使用参数 *ToSpecificServers* 将各个服务器指定为目标。
 
@@ -55,7 +57,9 @@ _**上一次修改主题：** 2015-01-14_
 
 如果服务器只是短时间停机，您不希望永久删除 Exchange，则可以使用参数 *ToSpecificServers* 调整脚本以针对特定服务器运行，从而只将活动服务器作为目标。或者，可以使用 **Remove-ClientAccessArray** cmdlet 从不响应的服务器的 Active Directory 对象中删除 RPC 客户端访问服务，如下面的示例所示。
 
-    Remove-RPCClientAccess -Server Server.Contoso.com
+```powershell
+Remove-RPCClientAccess -Server Server.Contoso.com
+```
 
 在删除了 RPC 客户端访问服务之后，[Get-ClientAccessArray](https://technet.microsoft.com/zh-cn/library/dd297976\(v=exchg.150\)) 不会将该服务器作为阵列成员返回，并且脚本不会将其作为目标。在该服务器再次正常运行之后，可以使用 **New-RpcClientAccess** cmdlet 重新添加 RPC 客户端访问服务。在重新添加 RPC 客户端访问服务时，请务必在受影响的服务器上重新启动 Microsoft Exchange 通讯簿服务。
 

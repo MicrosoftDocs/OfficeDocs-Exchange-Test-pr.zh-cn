@@ -49,7 +49,9 @@ _**上一次修改主题：** 2013-02-25_
 
 此示例使用 *WhatIf* 开关测试是否可以将 Tony Smith 的邮箱移动到新的数据库 DB01，以及在此命令中是否存在任何错误。使用 *WhatIf* 开关时，系统将对邮箱执行检查。如果邮箱不可以移动，将出现错误。
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase DB01 -WhatIf
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase DB01 -WhatIf
+```
 
 有关语法和参数的详细信息，请参阅 [New-MigrationBatch](https://technet.microsoft.com/zh-cn/library/jj219166\(v=exchg.150\)) 和 [New-MoveRequest](https://technet.microsoft.com/zh-cn/library/dd351123\(v=exchg.150\))。
 
@@ -79,7 +81,9 @@ _**上一次修改主题：** 2013-02-25_
 
   - 从命令行管理程序执行以下命令，检索邮箱移动信息。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 有关详细信息，请参阅 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-cn/library/jj218695\(v=exchg.150\))。
 
@@ -106,7 +110,9 @@ _**上一次修改主题：** 2013-02-25_
     New-MigrationBatch -Local -Name LocalMove1 -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\LocalMove1.csv")) -TargetDatabases MBXDB2 -TimeZone "Pacific Standard Time"
 ```
 ```
-    Start-MigrationBatch -Identity LocalMove1
+```powershell
+Start-MigrationBatch -Identity LocalMove1
+```
 ```
 
 有关语法和参数的详细信息，请参阅 [New-MigrationBatch](https://technet.microsoft.com/zh-cn/library/jj219166\(v=exchg.150\)) 和 [Start-MigrationBatch](https://technet.microsoft.com/zh-cn/library/jj219165\(v=exchg.150\))。
@@ -119,7 +125,9 @@ _**上一次修改主题：** 2013-02-25_
 
   - 从命令行管理程序执行以下命令，检索邮箱移动信息。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 有关详细信息，请参阅 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-cn/library/jj218695\(v=exchg.150\))。
 
@@ -141,7 +149,9 @@ _**上一次修改主题：** 2013-02-25_
 
 本示例仅将 Tony Smith 的主邮箱移动到 DB01。不移动存档。
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -PrimaryOnly -TargetDatabase "DB01"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -PrimaryOnly -TargetDatabase "DB01"
+```
 
 有关语法和参数的详细信息，请参阅 [New-MoveRequest](https://technet.microsoft.com/zh-cn/library/dd351123\(v=exchg.150\))。
 
@@ -153,7 +163,9 @@ _**上一次修改主题：** 2013-02-25_
 
   - 从命令行管理程序执行以下命令，检索邮箱移动信息。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 有关详细信息，请参阅 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-cn/library/jj218695\(v=exchg.150\))。
 
@@ -182,7 +194,9 @@ _**上一次修改主题：** 2013-02-25_
 
   - 从命令行管理程序执行以下命令，检索邮箱移动信息。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 有关详细信息，请参阅 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-cn/library/jj218695\(v=exchg.150\))。
 
@@ -200,7 +214,9 @@ _**上一次修改主题：** 2013-02-25_
 
 本示例仅将 Tony Smith 的存档邮箱移动到 DB03。不移动主邮箱。
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -ArchiveOnly -ArchiveTargetDatabase "DB03"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -ArchiveOnly -ArchiveTargetDatabase "DB03"
+```
 
 有关语法和参数的详细信息，请参阅 [New-MigrationBatch](https://technet.microsoft.com/zh-cn/library/jj219166\(v=exchg.150\)) 和 [New-MoveRequest](https://technet.microsoft.com/zh-cn/library/dd351123\(v=exchg.150\))。
 
@@ -210,7 +226,9 @@ _**上一次修改主题：** 2013-02-25_
 
   - 从命令行管理程序执行以下命令，检索邮箱移动信息。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 有关详细信息，请参阅 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-cn/library/jj218695\(v=exchg.150\))。
 
@@ -228,7 +246,9 @@ _**上一次修改主题：** 2013-02-25_
 
   - 从命令行管理程序执行以下命令，检索邮箱移动信息。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 有关详细信息，请参阅 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-cn/library/jj218695\(v=exchg.150\))。
 
@@ -258,7 +278,9 @@ _**上一次修改主题：** 2013-02-25_
 
   - 从命令行管理程序执行以下命令，检索邮箱移动信息。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 有关详细信息，请参阅 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-cn/library/jj218695\(v=exchg.150\))。
 

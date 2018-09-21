@@ -51,7 +51,9 @@ _**上一次修改主题：** 2014-05-07_
 
 2.  如果为数据库启用循环日志记录，则在继续之前必须先禁用它。通过使用 [Set-MailboxDatabase](https://technet.microsoft.com/zh-cn/library/bb123971\(v=exchg.150\)) cmdlet 可以禁用邮箱数据库的循环日志记录，如本例中所示。
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+    ```powershell
+Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+```
 
 3.  删除要移动的数据库的所有邮箱数据库副本。有关详细步骤，请参阅[删除邮箱数据库副本](remove-a-mailbox-database-copy-exchange-2013-help.md)。在删除所有副本之后，通过将要从中删除数据库副本的每个服务器中的数据库和事务日志文件移动到另一个位置，保留这些日志文件。由于保留了这些文件，因此，在重新添加数据库副本后，就不需要重新将它们设定为种子。
 
@@ -74,11 +76,15 @@ _**上一次修改主题：** 2014-05-07_
 
 9.  （可选）通过使用 [Set-MailboxDatabase](https://technet.microsoft.com/zh-cn/library/bb123971\(v=exchg.150\)) cmdlet 启用循环日志记录，如本例所示。
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+    ```powershell
+Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+```
 
 10. 通过使用 [Set-MailboxDatabaseCopy](https://technet.microsoft.com/zh-cn/library/dd298104\(v=exchg.150\)) cmdlet 为重播延迟时间和截断延迟时间配置任何以前的设置值，如本例所示。
     
-        Set-MailboxDatabaseCopy DB1\MBX2 -ReplayLagTime 00:15:00
+    ```powershell
+Set-MailboxDatabaseCopy DB1\MBX2 -ReplayLagTime 00:15:00
+```
 
 11. 当添加每个副本时，我们建议在添加下一个副本之前验证该副本的运行状况和状态。可以通过以下方式验证运行状况和状态：
     
@@ -108,7 +114,9 @@ _**上一次修改主题：** 2014-05-07_
 
   - 在命令行管理程序中，运行以下命令验证是否已创建邮箱数据库副本以及它是否处于正常运行状态。
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```powershell
+Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+```
     
     状态和内容索引状态应该为健康。
 

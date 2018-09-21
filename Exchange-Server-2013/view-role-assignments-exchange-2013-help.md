@@ -55,11 +55,15 @@ _**上一次修改主题：** 2012-10-03_
 
 可以查看某个角色分配的详细信息，方法是通过管道将 **Get-ManagementRoleAssignment** cmdlet 的结果传递给 **Format-List** cmdlet。请使用以下语法：
 
-    Get-ManagementRoleAssignment <assignment name> | Format-List
+```powershell
+Get-ManagementRoleAssignment <assignment name> | Format-List
+```
 
 此示例将检索 Help Desk Assignment 角色分配的详细信息。
 
-    Get-ManagementRoleAssignment "Help Desk Assignment" | Format-List
+```powershell
+Get-ManagementRoleAssignment "Help Desk Assignment" | Format-List
+```
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd351024\(v=exchg.150\))。
 
@@ -67,11 +71,15 @@ _**上一次修改主题：** 2012-10-03_
 
 若要查看与管理角色组、角色或角色分配策略相关联的角色分配列表，或与用户或通用安全组 (USG) 相关联的角色分配列表，请使用以下语法。
 
-    Get-ManagementRoleAssignment -RoleAssignee <role assignee name>
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <role assignee name>
+```
 
 此示例将检索与\&quot;服务器管理\&quot;角色组相关联的所有角色分配。
 
-    Get-ManagementRoleAssignment -RoleAssignee "Server Management"
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee "Server Management"
+```
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd351024\(v=exchg.150\))。
 
@@ -81,11 +89,15 @@ _**上一次修改主题：** 2012-10-03_
 
 若要查看与指定的角色相关联的角色分配列表，请使用以下语法。
 
-    Get-ManagementRoleAssignment -Role <role name>
+```powershell
+Get-ManagementRoleAssignment -Role <role name>
+```
 
 此示例将检索与\&quot;邮件收件人\&quot;角色相关联的所有角色分配。
 
-    Get-ManagementRoleAssignment -Role "Mail Recipients"
+```powershell
+Get-ManagementRoleAssignment -Role "Mail Recipients"
+```
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd351024\(v=exchg.150\))。
 
@@ -97,7 +109,9 @@ _**上一次修改主题：** 2012-10-03_
 
 此示例将检索使用\&quot;组织\&quot;预定义作用域的所有角色分配。
 
-    Get-ManagementRoleAssignment -RecipientWriteScope Organization
+```powershell
+Get-ManagementRoleAssignment -RecipientWriteScope Organization
+```
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd351024\(v=exchg.150\))。
 
@@ -105,7 +119,9 @@ _**上一次修改主题：** 2012-10-03_
 
 若要查看已将作用域限制为特定组织单位 (OU) 的角色分配列表，请使用以下语法。
 
-    Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope <OU>
+```powershell
+Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope <OU>
+```
 
 此示例将检索已在 contoso.com 域中将作用域限制为 North America\\Engineering\\Users OU 的所有角色分配。
 
@@ -129,11 +145,15 @@ _**上一次修改主题：** 2012-10-03_
 
 此示例将检索使用 Vancouver Recipients 收件人作用域的所有角色分配。
 
-    Get-ManagementRoleAssignment -CustomRecipientWriteScope "Vancouver Recipients"
+```powershell
+Get-ManagementRoleAssignment -CustomRecipientWriteScope "Vancouver Recipients"
+```
 
 此示例将检索使用 Seattle AD Site 独占配置作用域的所有角色分配。
 
-    Get-ManagementRoleAssignment -ExclusiveConfigWriteScope "Seattle AD Site"
+```powershell
+Get-ManagementRoleAssignment -ExclusiveConfigWriteScope "Seattle AD Site"
+```
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd351024\(v=exchg.150\))。
 
@@ -141,15 +161,21 @@ _**上一次修改主题：** 2012-10-03_
 
 若要查看独占角色分配或常规角色分配的列表，请使用以下语法。
 
-    Get-ManagementRoleAssignment -Exclusive < $True | $False >
+```powershell
+Get-ManagementRoleAssignment -Exclusive < $True | $False >
+```
 
 例如，要查看独占作用域的列表，请运行以下命令：
 
-    Get-ManagementRoleAssignment -Exclusive $True
+```powershell
+Get-ManagementRoleAssignment -Exclusive $True
+```
 
 此示例将检索不具有任何独占作用域的常规作用域列表。
 
-    Get-ManagementRoleAssignment -Exclusive $False
+```powershell
+Get-ManagementRoleAssignment -Exclusive $False
+```
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd351024\(v=exchg.150\))。
 
@@ -159,7 +185,9 @@ _**上一次修改主题：** 2012-10-03_
 
 此示例将检索可以修改收件人 Brian 的角色分配列表。
 
-    Get-ManagementRoleAssignment -WritableRecipient "Brian"
+```powershell
+Get-ManagementRoleAssignment -WritableRecipient "Brian"
+```
 
 可以将 *WritableRecipient* 和 *WritableServer* 参数与其他参数（如 *RoleAssignee* 参数和 *GetEffectiveUsers* 开关）组合，以优化查询，并展开任何角色组或 USG。此示例将检索可以修改服务器 EX02 的所有用户，以及分配了\&quot;服务器管理\&quot;角色组的所有用户。
 
@@ -171,11 +199,15 @@ _**上一次修改主题：** 2012-10-03_
 
 若要查看从角色分配接收权限的用户列表，请使用以下语法。
 
-    Get-ManagementRoleAssignment <assignment name> -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment <assignment name> -GetEffectiveUsers
+```
 
 此示例将检索 Help Desk Assignment 角色分配中的用户列表。
 
-    Get-ManagementRoleAssignment "Help Desk Assignment" -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment "Help Desk Assignment" -GetEffectiveUsers
+```
 
 还可以将 *GetEffectiveUsers* 开关与 **Get-ManagementRoleAssignment** cmdlet 上的某些其他参数组合，以展开角色分配所分配到的角色组和 USG。有关如何将 *GetEffectiveUsers* 开关与其他参数配合使用的示例，请参阅本主题前面的\&quot;查看可以修改特定收件人或服务器的角色分配\&quot;。
 
@@ -185,11 +217,15 @@ _**上一次修改主题：** 2012-10-03_
 
 若要查看已启用或已禁用角色分配的列表，请使用以下语法。
 
-    Get-ManagementRoleAssignment -Enabled < $True | $False >
+```powershell
+Get-ManagementRoleAssignment -Enabled < $True | $False >
+```
 
 此示例将检索已禁用的角色分配列表。
 
-    Get-ManagementRoleAssignment -Enabled $False
+```powershell
+Get-ManagementRoleAssignment -Enabled $False
+```
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd351024\(v=exchg.150\))。
 

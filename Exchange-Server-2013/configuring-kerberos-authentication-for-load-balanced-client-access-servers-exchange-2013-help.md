@@ -1,4 +1,4 @@
----
+﻿---
 title: '为负载平衡的客户端访问服务器配置 Kerberos 身份验证: Exchange 2013 Help'
 TOCTitle: 为负载平衡的客户端访问服务器配置 Kerberos 身份验证
 ms:assetid: 8f4faeea-a825-438d-97dc-1c398ce7aba5
@@ -49,7 +49,9 @@ _**上一次修改主题：** 2016-12-09_
     
     使用 **Import-Module** cmdlet 导入 Active Directory 模块。
     
-        Import-Module ActiveDirectory
+    ```powershell
+Import-Module ActiveDirectory
+```
 
 2.  使用 **New-ADComputer** cmdlet 新建一个使用此 cmdlet 语法的 Active Directory 计算机帐户：
     
@@ -67,7 +69,9 @@ _**上一次修改主题：** 2016-12-09_
     
     **示例：** 
     
-        Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
+    ```powershell
+Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
+```
     
     其中 *EXCH2013ASA* 是帐户名称，要修改的属性是十进制值为 28 的 *msDS-SupportedEncryptionTypes*，允许以下密码：RC4-HMAC、AES128-CTS-HMAC-SHA1-96、AES256-CTS-HMAC-SHA1-96。
 
@@ -290,11 +294,15 @@ SPN 值必须与网络负载平衡器（而不是单个服务器）的服务名�
 
 2.  在命令提示符处，键入以下命令：
     
-        setspn -F -Q <SPN>
+    ```powershell
+setspn -F -Q <SPN>
+```
     
     其中 \<SPN\> 是您希望与 ASA 凭据相关联的 SPN。例如：
     
-        setspn -F -Q http/mail.corp.tailspintoys.com
+    ```powershell
+setspn -F -Q http/mail.corp.tailspintoys.com
+```
     
     该命令不应返回任何内容。如果该命令返回内容，则表明另一个帐户已与 SPN 关联。对于您希望与 ASA 凭据关联的每个 SPN，重复此步骤。
 
@@ -304,11 +312,15 @@ SPN 值必须与网络负载平衡器（而不是单个服务器）的服务名�
 
 2.  在命令提示符处，键入以下命令：
     
-        setspn -S <SPN> <Account>$
+    ```powershell
+setspn -S <SPN> <Account>$
+```
     
     其中 \<SPN\> 是您希望与 ASA 凭据相关联的 SPN，\<Account\> 是与 ASA 凭据相关联的帐户。例如：
     
-        setspn -S http/mail.corp.tailspintoys.com tailspin\EXCH2013ASA$
+    ```powershell
+setspn -S http/mail.corp.tailspintoys.com tailspin\EXCH2013ASA$
+```
     
     对于您希望与 ASA 凭据关联的每个 SPN，运行此命令。
 
@@ -318,11 +330,15 @@ SPN 值必须与网络负载平衡器（而不是单个服务器）的服务名�
 
 2.  在命令提示符处，键入以下命令：
     
-        setspn -L <Account>$
+    ```powershell
+setspn -L <Account>$
+```
     
     其中 \<Account\> 是与 ASA 凭据关联的帐户。例如：
     
-        setspn -L tailspin\EXCH2013ASA$
+    ```powershell
+setspn -L tailspin\EXCH2013ASA$
+```
     
     此命令只需运行一次。
 
@@ -384,7 +400,9 @@ SPN 值必须与网络负载平衡器（而不是单个服务器）的服务名�
 
 1.  在 Exchange 2013 服务器上打开 Exchange 命令行管理程序，并运行以下命令：
     
-        Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials
+    ```powershell
+Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials
+```
 
 2.  虽然您不必立即执行此操作，但您最后应重新启动所有客户端计算机，从计算机中清除 Kerberos 票证缓存。
 

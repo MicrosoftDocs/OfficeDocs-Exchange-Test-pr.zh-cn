@@ -53,7 +53,9 @@ _**上一次修改主题：** 2012-10-13_
 
 本示例将删除电子邮件地址策略 South East Offices。
 
-    Remove-EmailAddressPolicy -Identity "South East Offices"
+```powershell
+Remove-EmailAddressPolicy -Identity "South East Offices"
+```
 
 键入 **Y** 确认要删除该策略，然后按 Enter 键。
 

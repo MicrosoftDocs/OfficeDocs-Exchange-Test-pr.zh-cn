@@ -45,11 +45,15 @@ _**上一次修改主题：** 2015-04-08_
 
 若要使用命令行管理程序在 Exchange 服务器上查看传输管道中的传输代理列表，可以运行以下命令：
 
-    Get-TransportPipeline | Format-List
+```powershell
+Get-TransportPipeline | Format-List
+```
 
 若要将结果导出至名为 C:\\My Documents\\Transport Agents.txt 的文本文件，可以运行以下命令：
 
-    Get-TransportPipeline | Format-List > "C:\My Documents\Transport Agents.txt"
+```powershell
+Get-TransportPipeline | Format-List > "C:\My Documents\Transport Agents.txt"
+```
 
 ## 您如何知道操作成功？
 

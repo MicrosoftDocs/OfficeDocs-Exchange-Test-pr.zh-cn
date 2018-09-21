@@ -140,7 +140,9 @@ Exchange 2013 中的远程命令行管理程序包含两个会话，本地会话
 
 命令行管理程序必须知道您要将存储在 **FileData** 属性中的数据保存到本地计算机。为此，请使用以下语法。
 
-    <cmdlet> | ForEach { $_.FileData | Add-Content <local path to file> -Encoding Byte }
+```command line
+<cmdlet> | ForEach {     <cmdlet> | ForEach { $_.FileData | Add-Content <local path to file> -Encoding Byte }.FileData | Add-Content <local path to file> -Encoding Byte }
+```
 
 例如，以下命令导出存储在由 **Export-SomeData** 虚构 cmdlet 创建的对象上的 **FileData** 属性中的数据。导出的数据存储在您在本地计算机上指定的文件中，在此示例中为 MyData.dat。
 
@@ -148,7 +150,9 @@ Exchange 2013 中的远程命令行管理程序包含两个会话，本地会话
 > 此步骤使用 <strong>ForEach</strong> cmdlet、对象以及管道传输。有关 each 的详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/aa998260(v=exchg.150)">管道传输</a>和<a href="https://technet.microsoft.com/zh-cn/library/aa996386(v=exchg.150)">结构化数据</a>。
 
 
-    Export-SomeData | ForEach { $_.FileData | Add-Content C:\MyData.dat -Encoding Byte }
+```powershell
+Export-SomeData | ForEach {     Export-SomeData | ForEach { $_.FileData | Add-Content C:\MyData.dat -Encoding Byte }.FileData | Add-Content C:\MyData.dat -Encoding Byte }
+```
 
 运行该命令时将执行下列操作：
 

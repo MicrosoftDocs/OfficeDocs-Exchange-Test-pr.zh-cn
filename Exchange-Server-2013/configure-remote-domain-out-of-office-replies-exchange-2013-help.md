@@ -39,9 +39,13 @@ _**上一次修改主题：** 2015-04-08_
 
 本示例对名为 Contoso 的远程域禁用外出邮件。
 
-    Set-RemoteDomain Contoso -AllowedOOFType None
+```powershell
+Set-RemoteDomain Contoso -AllowedOOFType None
+```
 
 本示例只允许外部外出邮件。
 
-    Set-RemoteDomain Contoso -AllowedOOFType External
+```powershell
+Set-RemoteDomain Contoso -AllowedOOFType External
+```
 

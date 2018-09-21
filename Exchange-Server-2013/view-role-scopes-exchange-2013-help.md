@@ -51,11 +51,15 @@ _**上一次修改主题：** 2012-10-03_
 
 若要查看特定作用域的详细信息，请使用以下语法。
 
-    Get-ManagementScope <scope name> | Format-List
+```powershell
+Get-ManagementScope <scope name> | Format-List
+```
 
 此示例将检索 Seattle Servers 作用域的详细信息。
 
-    Get-ManagementScope "Seattle Servers" | Format-List
+```powershell
+Get-ManagementScope "Seattle Servers" | Format-List
+```
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementScope](https://technet.microsoft.com/zh-cn/library/dd298180\(v=exchg.150\))。
 
@@ -63,7 +67,9 @@ _**上一次修改主题：** 2012-10-03_
 
 此示例将检索组织中的作用域列表。
 
-    Get-ManagementScope
+```powershell
+Get-ManagementScope
+```
 
 此 cmdlet 将检索独占作用域和常规作用域。如果要仅返回独占作用域或常规作用域，请参阅本主题后面的\&quot;仅列出所有独占作用域或常规作用域\&quot;。
 
@@ -75,7 +81,9 @@ _**上一次修改主题：** 2012-10-03_
 
 此示例将检索孤立作用域列表。
 
-    Get-ManagementScope -Orphan
+```powershell
+Get-ManagementScope -Orphan
+```
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementScope](https://technet.microsoft.com/zh-cn/library/dd298180\(v=exchg.150\))。
 
@@ -83,15 +91,21 @@ _**上一次修改主题：** 2012-10-03_
 
 默认情况下，**Get-ManagementScope** cmdlet 会返回一个包含独占作用域和常规作用域的作用域列表。如果要仅返回独占作用域或仅返回常规作用域，请使用以下语法。
 
-    Get-ManagementScope -Exclusive < $true | $false >
+```powershell
+Get-ManagementScope -Exclusive < $true | $false >
+```
 
 此示例将仅返回独占作用域。
 
-    Get-ManagementScope -Exclusive $true
+```powershell
+Get-ManagementScope -Exclusive $true
+```
 
 此示例将仅返回常规作用域列表。
 
-    Get-ManagementScope -Exclusive $false
+```powershell
+Get-ManagementScope -Exclusive $false
+```
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementScope](https://technet.microsoft.com/zh-cn/library/dd298180\(v=exchg.150\))。
 

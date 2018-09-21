@@ -85,17 +85,25 @@ _**上一次修改主题：** 2014-05-07_
 运行下列命令停止并禁用 Microsoft Exchange 搜索服务。
 
 ```
-    Stop-Service MSExchangeFastSearch
+```powershell
+Stop-Service MSExchangeFastSearch
 ```
 ```
-    Set-Service MSExchangeFastSearch -StartupType Disabled
+```
+```powershell
+Set-Service MSExchangeFastSearch -StartupType Disabled
+```
 ```
 
 运行下列命令将 Exchange 搜索服务配置为自动启动，然后启动该服务。
 
 ```
-    Set-Service MSExchangeFastSearch -StartupType Automatic
+```powershell
+Set-Service MSExchangeFastSearch -StartupType Automatic
 ```
 ```
-    Start-Service MSExchangeFastSearch
+```
+```powershell
+Start-Service MSExchangeFastSearch
+```
 ```

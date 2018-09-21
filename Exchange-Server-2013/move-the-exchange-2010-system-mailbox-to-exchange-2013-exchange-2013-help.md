@@ -41,7 +41,9 @@ _**上一次修改主题：** 2015-04-07_
 
   - 在 Exchange 2013 中运行以下命令，以获取 Exchange 服务器的标识和版本以及包含组织系统邮箱的邮箱数据库。
     
-        Get-Mailbox -Arbitration | FL Name,DisplayName,ServerName,Database,AdminDisplayVersion
+    ```powershell
+Get-Mailbox -Arbitration | FL Name,DisplayName,ServerName,Database,AdminDisplayVersion
+```
     
     **AdminDisplayVersion** 属性指示服务器正在运行的 Exchange 的版本。值 `Version 14.x` 指示 Exchange 2010；值 `Version 15.x` 指示 Exchange 2013。
 
@@ -81,7 +83,9 @@ _**上一次修改主题：** 2015-04-07_
 
 首先，在 Exchange 2013 中运行以下命令，以获取组织中所有邮箱数据库的名称和版本。
 
-    Get-MailboxDatabase -IncludePreExchange2013 | FL Name,Server,AdminDisplayVersion
+```powershell
+Get-MailboxDatabase -IncludePreExchange2013 | FL Name,Server,AdminDisplayVersion
+```
 
 在确定组织中的邮箱数据库的名称之后，在 Exchange 2013 中运行以下命令，以将 Microsoft Exchange 系统邮箱移动到位于 Exchange 2013 服务器上的邮箱数据库。
 

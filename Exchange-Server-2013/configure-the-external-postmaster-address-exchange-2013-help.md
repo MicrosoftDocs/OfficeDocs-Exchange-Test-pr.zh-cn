@@ -51,15 +51,21 @@ _**上一次修改主题：** 2016-12-09_
 
 若要配置外部邮局主管地址，可使用下列语法。
 
-    Set-TransportConfig -ExternalPostmasterAddress <postmaster address>
+```powershell
+Set-TransportConfig -ExternalPostmasterAddress <postmaster address>
+```
 
 例如，若要将外部邮局主管地址设置为 `postmaster@contoso.com` 值，请运行以下命令
 
-    Set-TransportConfig -ExternalPostmasterAddress postmaster@contoso.com
+```powershell
+Set-TransportConfig -ExternalPostmasterAddress postmaster@contoso.com
+```
 
 若要将外部邮局主管地址返回至默认值，可运行下列命令：
 
-    Set-TransportConfig -ExternalPostmasterAddress $null
+```powershell
+Set-TransportConfig -ExternalPostmasterAddress $null
+```
 
 ## 您如何知道操作成功？
 
@@ -67,7 +73,9 @@ _**上一次修改主题：** 2016-12-09_
 
 1.  在邮箱服务器上运行下列命令，以验证该外部邮局主管地址值：
     
-        Get-TransportConfig | Format-List ExternalPostmasterAddress
+    ```powershell
+Get-TransportConfig | Format-List ExternalPostmasterAddress
+```
 
 2.  从外部电子邮件帐户向你的 Exchange 组织发送将生成传递状态通知 (DSN) 的邮件。例如，你可以将传输规则配置为从包含特定关键字的发件人发送邮件的未送达报告 (NDR)。验证 DSN 中该发件人的电子邮件地址是否与你指定的值匹配。
 

@@ -81,7 +81,9 @@ _**上一次修改主题：** 2016-12-09_
 > 可以在同一服务器上再次执行该命令，将其从标准版许可证升级到企业版许可证。
 
 
-    Set-ExchangeServer ExServer01 -ProductKey aaaaa-aaaaa-aaaaa-aaaaa-aaaaa
+```powershell
+Set-ExchangeServer ExServer01 -ProductKey aaaaa-aaaaa-aaaaa-aaaaa-aaaaa
+```
 
 有关语法和参数的详细信息，请参阅 [Set-ExchangeServer](https://technet.microsoft.com/zh-cn/library/bb123716\(v=exchg.150\))。
 

@@ -141,7 +141,9 @@ _**上一次修改主题：** 2013-04-12_
 
   - 在命令行管理程序中，运行下面的命令以显示有关新用户邮箱的信息。
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```powershell
+Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+```
 
 ## 为现有用户创建邮箱
 
@@ -189,13 +191,17 @@ _**上一次修改主题：** 2013-04-12_
 
 本示例在名为 UsersMailboxDatabase 的 Exchange 数据库上为现有用户创建一个 estherv@contoso.com 邮箱。
 
-    Enable-Mailbox estherv@contoso.com -Database UsersMailboxDatabase
+```powershell
+Enable-Mailbox estherv@contoso.com -Database UsersMailboxDatabase
+```
 
 还可以使用 **Enable-Mailbox** cmdlet 为多个用户启用邮件。这可以通过将 **Get-User** cmdlet 的结果经管道传递给 **Enable-Mailbox** cmdlet 来实现。运行 **Get-User** cmdlet 时，必须仅返回尚未为其启用邮件的用户。为此，需要指定具有 *RecipientTypeDetails* 参数的值用户。还可以限制返回的结果，方法是通过使用 *Filter* 参数仅请求符合指定条件的用户。然后将结果通过管道传递给 **Enable-Mailbox** cmdlet。
 
 例如，下面的命令将为尚未启用邮件功能的用户启用具有 **UserPrincipalName** 属性值的邮箱功能，以确保您不会无意中将系统帐户转换为邮箱。
 
-    Get-User -RecipientTypeDetails User -Filter { UserPrincipalName -ne $Null } | Enable-Mailbox
+```powershell
+Get-User -RecipientTypeDetails User -Filter { UserPrincipalName -ne $Null } | Enable-Mailbox
+```
 
 有关语法和参数的信息，请参阅 [Enable-Mailbox](https://technet.microsoft.com/zh-cn/library/aa998251\(v=exchg.150\)) 和 [Get-User](https://technet.microsoft.com/zh-cn/library/aa996896\(v=exchg.150\))。
 
@@ -209,7 +215,9 @@ _**上一次修改主题：** 2013-04-12_
 
   - 在命令行管理程序中，运行下面的命令以显示有关新启用邮箱功能的用户的信息。
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```powershell
+Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+```
     
     请注意，*RecipientTypeDetails* 属性的值是 `UserMailbox`。
 

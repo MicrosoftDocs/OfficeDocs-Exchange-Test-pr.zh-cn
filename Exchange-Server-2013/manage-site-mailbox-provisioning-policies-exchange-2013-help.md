@@ -57,17 +57,23 @@ _**上一次修改主题：** 2013-02-21_
 
 此示例返回有关组织中所有站点邮箱设置策略的详细信息。
 
-    Get-SiteMailboxProvisioningPolicy | Format-List
+```powershell
+Get-SiteMailboxProvisioningPolicy | Format-List
+```
 
 此示例返回组织中的所有策略，但仅显示 `IsDefault` 信息以确定默认策略。
 
-    Get-SiteMailboxProvisioningPolicy | Format-List IsDefault
+```powershell
+Get-SiteMailboxProvisioningPolicy | Format-List IsDefault
+```
 
 ## 更改现有的站点邮箱设置策略
 
 此示例更改了站点邮箱设置策略 Default，使站点邮箱可以接收的最大电子邮件大小达到 25 MB。（在安装 Exchange 时，会创建一个名为“Default”的设置策略。）
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
+```
 
 此示例将警告配额更改为 9.5 GB，将禁止发送和接收的配额更改为 10 GB。
 
@@ -97,7 +103,9 @@ _**上一次修改主题：** 2013-02-21_
 
 此示例删除在 Exchange 安装期间创建的默认站点邮箱策略。
 
-    Remove-SiteMailboxProvisioningPolicy -Identity Default
+```powershell
+Remove-SiteMailboxProvisioningPolicy -Identity Default
+```
 
 > [!IMPORTANT]  
 > 在删除名为“Default”的策略之前，必须先创建并指定另一个默认策略。

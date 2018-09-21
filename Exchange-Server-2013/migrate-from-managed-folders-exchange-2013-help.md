@@ -299,7 +299,9 @@ _**上一次修改主题：** 2015-04-07_
 
 此示例从 Ken Kwok 的邮箱中删除了托管文件夹邮箱策略和所有托管文件夹。含有任意邮件的托管文件夹并未删除。
 
-    Set-Mailbox -Identity Kwok -RemoveManagedFolderAndPolicy RP-Corp
+```powershell
+Set-Mailbox -Identity Kwok -RemoveManagedFolderAndPolicy RP-Corp
+```
 
 ## 步骤 4：将保留策略应用于用户邮箱
 
@@ -311,7 +313,9 @@ _**上一次修改主题：** 2015-04-07_
 
 本示例将新建的保留策略 RP-Corp 应用于邮箱用户 Ken Kwok。
 
-    Set-Mailbox -Identity Kwok -RetentionPolicy RP-Corp
+```powershell
+Set-Mailbox -Identity Kwok -RetentionPolicy RP-Corp
+```
 
 有关语法和参数的详细信息，请参阅 [Set-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123981\(v=exchg.150\))。
 
@@ -329,5 +333,7 @@ _**上一次修改主题：** 2015-04-07_
     
     此命令可检索实际应用于 April Stewart 邮箱的保留标记。
     
-        Get-RetentionPolicyTag -Mailbox astewart
+    ```powershell
+Get-RetentionPolicyTag -Mailbox astewart
+```
 

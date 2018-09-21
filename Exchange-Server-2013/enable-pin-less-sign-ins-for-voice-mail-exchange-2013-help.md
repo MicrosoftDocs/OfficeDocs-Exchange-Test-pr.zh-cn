@@ -63,11 +63,15 @@ _**上一次修改主题：** 2015-04-08_
 
 此示例在名为 `MyUMMailboxPolicy` 的 UM 邮箱策略上，为与该邮箱策略关联并拨号连接到 Outlook Voice Access 的用户启用无 PIN 语音邮件访问。
 
-    Set-UMMailboxPolicy -id MyUMMailboxPolicy -AllowPinlessVoiceMailAccess $true
+```powershell
+Set-UMMailboxPolicy -id MyUMMailboxPolicy -AllowPinlessVoiceMailAccess $true
+```
 
 ## 使用命令行管理程序在启用 UM 的用户的邮箱上，启用针对语音邮件的无 PIN 访问
 
 此示例为拨号连接到 Outlook Voice Access 以进入名为 `tonys@contoso.com` 的邮箱的用户，启用无 PIN 语音邮件访问。
 
-    Set-UMMailbox -id tonys@contoso.com -PinlessAccessToVoiceMailEnabled $true
+```powershell
+Set-UMMailbox -id tonys@contoso.com -PinlessAccessToVoiceMailEnabled $true
+```
 

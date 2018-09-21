@@ -41,11 +41,15 @@ _**上一次修改主题：** 2015-04-08_
 
 若要禁用发件人 ID，请运行以下命令：
 
-    Set-SenderIDConfig -Enabled $false
+```powershell
+Set-SenderIDConfig -Enabled $false
+```
 
 若要启用发件人 ID，请运行以下命令：
 
-    Set-SenderIDConfig -Enabled $true
+```powershell
+Set-SenderIDConfig -Enabled $true
+```
 
 > [!NOTE]  
 > 禁用发件人 ID 时，基础发件人 ID 代理仍启用。要禁用发件人 ID 代理，请运行以下命令：<code>Disable-TransportAgent &quot;Sender ID Agent&quot;</code>.
@@ -57,7 +61,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-SenderIDConfig | Format-List Enabled
+    ```powershell
+Get-SenderIDConfig | Format-List Enabled
+```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -65,11 +71,15 @@ _**上一次修改主题：** 2015-04-08_
 
 要对欺骗性邮件配置发件人 ID 操作，请运行以下命令：
 
-    Set-SenderIDConfig -SpoofedDomainAction <StampStatus | Reject | Delete>
+```powershell
+Set-SenderIDConfig -SpoofedDomainAction <StampStatus | Reject | Delete>
+```
 
 此示例将发件人 ID 代理配置为拒绝以下类型的任何邮件：其发送服务器的 IP 地址未作为权威的 SMTP 发送服务器列在发送域的 DNS 发件人策略框架 (SPF) 记录中。
 
-    Set-SenderIDConfig -SpoofedDomainAction Reject
+```powershell
+Set-SenderIDConfig -SpoofedDomainAction Reject
+```
 
 ## 您如何知道这有效？
 
@@ -77,7 +87,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-SenderIDConfig | Format-List SpoofedDomainAction
+    ```powershell
+Get-SenderIDConfig | Format-List SpoofedDomainAction
+```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -85,11 +97,15 @@ _**上一次修改主题：** 2015-04-08_
 
 要对暂时性错误配置发件人 ID 操作，请运行以下命令：
 
-    Set-SenderIDConfig -TempErrorAction <StampStatus | Reject | Delete>
+```powershell
+Set-SenderIDConfig -TempErrorAction <StampStatus | Reject | Delete>
+```
 
 此示例将发件人 ID 代理配置为标记由于临时 DNS 服务器错误而无法确定发件人 ID 状态时的邮件。该邮件将由其他反垃圾邮件代理进行处理，并且内容筛选器代理会在确定邮件的 SCL 值时使用此标记。
 
-    Set-SenderIDConfig -TempErrorAction StampStatus
+```powershell
+Set-SenderIDConfig -TempErrorAction StampStatus
+```
 
 请注意，`StampStatus` 是 *TempErrorAction* 参数的默认值。
 
@@ -99,7 +115,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-SenderIDConfig | Format-List TempErrorAction
+    ```powershell
+Get-SenderIDConfig | Format-List TempErrorAction
+```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -133,7 +151,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-SenderIDConfig | Format-List BypassedRecipients,BypassedSenderDomains
+    ```powershell
+Get-SenderIDConfig | Format-List BypassedRecipients,BypassedSenderDomains
+```
 
 2.  验证显示的值是否为您配置的值。
 

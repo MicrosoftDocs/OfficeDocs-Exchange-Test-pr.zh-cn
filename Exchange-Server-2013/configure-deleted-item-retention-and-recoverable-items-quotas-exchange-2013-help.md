@@ -63,7 +63,9 @@ _**上一次修改主题：** 2016-12-09_
 
 本示例将 April Stewart 的邮箱配置为保留已删除邮件 30 天。
 
-    Set-Mailbox -Identity - "April Stewart" -RetainDeletedItemsFor 30
+```powershell
+Set-Mailbox -Identity - "April Stewart" -RetainDeletedItemsFor 30
+```
 
 有关详细的语法和参数信息，请参阅 [Set-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123981\(v=exchg.150\))。
 
@@ -91,7 +93,9 @@ _**上一次修改主题：** 2016-12-09_
 
 本示例将邮箱数据库 MDB2 的已删除邮件保留期配置为 10 天。
 
-    Set-MailboxDatabase -Identity MDB2 -DeletedItemRetention 10
+```powershell
+Set-MailboxDatabase -Identity MDB2 -DeletedItemRetention 10
+```
 
 有关详细的语法和参数信息，请参阅 [Set-MailboxDatabase](https://technet.microsoft.com/zh-cn/library/bb123971\(v=exchg.150\))。
 
@@ -103,7 +107,9 @@ _**上一次修改主题：** 2016-12-09_
 
 本示例将邮箱数据库 MDB2 上的可恢复邮件警告配额配置为 15 GB，将可恢复邮件配额配置为 20 GB。
 
-    Set-MailboxDatabase -Identity MDB2 -RecoverableItemsWarningQuota 15GB -RecoverableItemsQuota 20GB
+```powershell
+Set-MailboxDatabase -Identity MDB2 -RecoverableItemsWarningQuota 15GB -RecoverableItemsQuota 20GB
+```
 
 有关语法和参数的详细信息，请参阅 [Set-MailboxDatabase](https://technet.microsoft.com/zh-cn/library/bb123971\(v=exchg.150\))。
 

@@ -72,7 +72,9 @@ _**上一次修改主题：** 2016-12-09_
 
 3.  启动“注册表编辑器”，找到以下注册表子项：
     
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
+    ```powershell
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
+```
 
 4.  在“CLSID” 下，为 OneNote 文件添加一个子项，操作如下：
     
@@ -100,7 +102,9 @@ _**上一次修改主题：** 2016-12-09_
 
 6.  找到以下注册表项：
     
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
+    ```powershell
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
+```
 
 7.  在“筛选器”下，为 .one 扩展名添加一个子项，操作如下：
     
@@ -168,7 +172,9 @@ _**上一次修改主题：** 2016-12-09_
 
 2.  启动“注册表编辑器”，找到以下子项：
     
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
+    ```powershell
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
+```
 
 3.  在“CLSID”下，为 PDF 文件添加一个子项，操作如下：
     
@@ -183,7 +189,9 @@ _**上一次修改主题：** 2016-12-09_
 
 4.  找到以下注册表项：
     
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
+    ```powershell
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
+```
 
 5.  在“筛选器”下，为 .pdf 扩展名添加一个子项，操作如下：
     

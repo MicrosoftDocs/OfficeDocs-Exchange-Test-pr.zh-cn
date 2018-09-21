@@ -123,5 +123,7 @@ _**上一次修改主题：** 2012-10-16_
 
 2.  在此命令行管理程序中，运行以下命令。
     
-        Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
+    ```powershell
+Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
+```
 

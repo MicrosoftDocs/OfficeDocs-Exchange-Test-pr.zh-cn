@@ -125,7 +125,9 @@ _**上一次修改主题：** 2013-01-28_
     > [!IMPORTANT]  
     > 如果您启用了用户访问控制 (UAC) 功能，必须从提升的命令提示符运行 <code>Setup.exe</code>。
     
-        Setup.exe /Role:ManagementTools /IAcceptExchangeServerLicenseTerms
+    ```powershell
+Setup.exe /Role:ManagementTools /IAcceptExchangeServerLicenseTerms
+```
 
 有关详细信息，请参阅[使用无人参与的模式安装 Exchange 2013](install-exchange-2013-using-unattended-mode-exchange-2013-help.md)。
 

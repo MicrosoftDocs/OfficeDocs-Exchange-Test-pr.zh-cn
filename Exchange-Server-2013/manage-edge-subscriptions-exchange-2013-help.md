@@ -71,19 +71,27 @@ _**上一次修改主题：** 2018-04-16_
 
 1.  若要从边缘传输服务器删除边缘订阅，请使用以下语法。
     
-        Remove-EdgeSubscription <EdgeTransportServerIdentity>
+    ```powershell
+Remove-EdgeSubscription <EdgeTransportServerIdentity>
+```
     
     例如，若要从名为 Edge01 的边缘传输服务器删除边缘订阅，请运行以下命令。
     
-        Remove-EdgeSubscription Edge01
+    ```powershell
+Remove-EdgeSubscription Edge01
+```
 
 2.  若要从邮箱服务器删除边缘订阅，请使用以下语法。
     
-        Remove-EdgeSubscription <MailboxServerIdentity>
+    ```powershell
+Remove-EdgeSubscription <MailboxServerIdentity>
+```
     
     例如，若要从名为 Mailbox01 的邮箱服务器删除边缘订阅，请运行以下命令。
     
-        Remove-EdgeSubscription Mailbox01
+    ```powershell
+Remove-EdgeSubscription Mailbox01
+```
 
 在以下情况下，您需要删除边缘订阅：
 
@@ -151,7 +159,9 @@ _**上一次修改主题：** 2018-04-16_
 
 <!-- end list -->
 
-    Start-EdgeSynchronization -Server Mailbox01
+```powershell
+Start-EdgeSynchronization -Server Mailbox01
+```
 
 本示例介绍了在启动 EdgeSync 时可以选择的选项：
 
@@ -163,7 +173,9 @@ _**上一次修改主题：** 2018-04-16_
 
 <!-- end list -->
 
-    Start-EdgeSynchronization -TargetServer Edge03 -ForceFullSync
+```powershell
+Start-EdgeSynchronization -TargetServer Edge03 -ForceFullSync
+```
 
 ## 验证 EdgeSync 结果
 
@@ -177,11 +189,15 @@ _**上一次修改主题：** 2018-04-16_
 
 若要验证单个收件人的 EdgeSync 结果，请在已订阅的 Active Directory 站点中的邮箱服务器上使用以下语法。
 
-    Test-EdgeSynchronization -VerifyRecipient <emailaddress>
+```powershell
+Test-EdgeSynchronization -VerifyRecipient <emailaddress>
+```
 
 本示例验证用户 kate@contoso.com 的 EdgeSync 结果。
 
-    Test-EdgeSynchronization -VerifyRecipient kate@contoso.com
+```powershell
+Test-EdgeSynchronization -VerifyRecipient kate@contoso.com
+```
 
 返回顶部
 

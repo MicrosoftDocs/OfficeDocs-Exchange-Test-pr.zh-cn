@@ -81,7 +81,9 @@ _**上一次修改主题：** 2015-04-07_
 
 使用以下语法创建服务器筛选器作用域。
 
-    New-ManagementScope -Name <scope name> -ServerRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -ServerRestrictionFilter <filter query>
+```
 
 此示例创建了一个包括 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' AD (Active Directory) 站点中所有服务器的作用域。
 
@@ -95,11 +97,15 @@ _**上一次修改主题：** 2015-04-07_
 
 使用以下语法创建服务器列表作用域。
 
-    New-ManagementScope -Name <scope name> -ServerList <server 1>, <server 2...>
+```powershell
+New-ManagementScope -Name <scope name> -ServerList <server 1>, <server 2...>
+```
 
 此示例创建一个仅适用于 MBX1、MBX3 和 MBX5 的作用域。
 
-    New-ManagementScope -Name "Mailbox servers" -ServerList MBX1,MBX3,MBX5
+```powershell
+New-ManagementScope -Name "Mailbox servers" -ServerList MBX1,MBX3,MBX5
+```
 
 有关语法和参数的详细信息，请参阅 [New-ManagementScope](https://technet.microsoft.com/zh-cn/library/dd335137\(v=exchg.150\))。
 
@@ -115,7 +121,9 @@ _**上一次修改主题：** 2015-04-07_
 
 使用以下语法创建数据库限制筛选器。
 
-    New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```
 
 本示例将创建一个作用域，该作用域包括数据库的 **Name** 属性中含有字符串“Executive”的所有数据库。
 
@@ -133,11 +141,15 @@ _**上一次修改主题：** 2015-04-07_
 
 使用以下语法创建数据库列表作用域。
 
-    New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```
 
 本示例将创建仅适用于数据库 Database 1、Database 2 和 Database 3 的作用域。
 
-    New-ManagementScope -Name "Primary databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```powershell
+New-ManagementScope -Name "Primary databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```
 
 有关语法和参数的详细信息，请参阅 [New-ManagementScope](https://technet.microsoft.com/zh-cn/library/dd335137\(v=exchg.150\))。
 

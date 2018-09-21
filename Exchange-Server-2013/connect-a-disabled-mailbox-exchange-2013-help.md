@@ -81,7 +81,9 @@ _**上一次修改主题：** 2012-11-13_
 
 此示例将连接用户邮箱。*Identity* 参数指定 Exchange 数据库中断开连接的邮箱。 *User* 参数指定要将邮箱重新连接到的 Active Directory 用户帐户。
 
-    Connect-Mailbox -Identity "Jeffrey Zeng" -Database MBXDB01 -User "Jeffrey Zeng"
+```powershell
+Connect-Mailbox -Identity "Jeffrey Zeng" -Database MBXDB01 -User "Jeffrey Zeng"
+```
 
 本示例将连接链接的邮箱。*Identity* 参数指定 Exchange 数据库中断开连接的邮箱。 *LinkedMasterAccount* 参数指定帐户林中要将邮箱重新连接到的 Active Directory 用户帐户。 *Alias* 参数指定重新连接的邮箱的别名；别名是电子邮件地址中 @ 符号左侧的部分。
 
@@ -107,7 +109,9 @@ _**上一次修改主题：** 2012-11-13_
 
   - 在此命令行管理程序中，运行以下命令。
     
-        Get-User <identity>
+    ```powershell
+Get-User <identity>
+```
     
     *RecipientType* 属性的 **UserMailbox** 值表示用户帐户和邮箱已经连接。 也可以运行 **Get-Mailbox** cmdlet 验证邮箱是否存在。
 

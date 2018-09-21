@@ -61,11 +61,15 @@ _**上一次修改主题：** 2014-01-06_
 
 本示例对用户 John Smith 启用 POP3。
 
-    Set-CASMailbox -Identity "John Smith" -POPEnabled $true
+```powershell
+Set-CASMailbox -Identity "John Smith" -POPEnabled $true
+```
 
 本示例对用户 John Smith 禁用 POP3。
 
-    Set-CASMailbox -Identity "John Smith" -POPEnabled $false
+```powershell
+Set-CASMailbox -Identity "John Smith" -POPEnabled $false
+```
 
 ## 您如何知道这有效？
 

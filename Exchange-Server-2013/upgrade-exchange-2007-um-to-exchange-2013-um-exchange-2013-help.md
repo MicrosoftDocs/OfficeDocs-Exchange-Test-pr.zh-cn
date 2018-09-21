@@ -51,7 +51,9 @@ UM 语言包允许呼叫者和 Outlook Voice Access 用户能够用多种语言�
 
 此示例使用 setup.exe 来安装日语 (ja-JP) UM 语言包。
 
-    setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```powershell
+setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```
 
 ## 步骤 2︰ 将 Exchange 2007 自定义问候语、 公告、 菜单和提示移动到 Exchange 2013 系统邮箱
 
@@ -61,11 +63,15 @@ UM 语言包允许呼叫者和 Outlook Voice Access 用户能够用多种语言�
 
 此命令返回所有系统邮箱的列表。
 
-    Get-Mailbox -Arbitration
+```powershell
+Get-Mailbox -Arbitration
+```
 
 此命令返回系统邮箱及其各自属性或设置的列表。
 
-    Get-Mailbox -Arbitration |fl
+```powershell
+Get-Mailbox -Arbitration |fl
+```
 
 当您正在导入自定义的问候、 公告、 菜单和提示从 Exchange 2007 到 Exchange 2013 时，您必须使用 MigrateUMCustomPrompts.ps1 脚本。不能使用 EAC 导入自定义的问候、 公告、 菜单和提示。MigrateUMCustomPrompts.ps1 脚本迁移到 Exchange 2013 UM 一份所有 UM 上 Exchange Server 2007年自定义问候语、 公告、 菜单和提示。默认情况下，MigrateUMCustomPrompts.ps1 脚本位于 2013年的 Exchange 邮箱服务器上的*\<Program Files\>*\\Microsoft\\Exchange Server\\V15\\Scripts 文件夹中，并且必须从 2013年的 Exchange 邮箱服务器运行。若要运行该脚本︰
 
@@ -172,7 +178,9 @@ UM 语言包允许呼叫者和 Outlook Voice Access 用户能够用多种语言�
 
 在命令行管理程序中运行以下命令，以在 Exchange 2013 客户端访问服务器上配置 UM 启动模式。
 
-    Set-UMCallRouterSettings -Server MyUMCallRouter.northwindtraders.com -UMStartupMode Dual
+```powershell
+Set-UMCallRouterSettings -Server MyUMCallRouter.northwindtraders.com -UMStartupMode Dual
+```
 
 ## 步骤 5: 2013年的 Exchange 邮箱中的所有服务器上配置的 UM 启动模式
 
@@ -232,7 +240,9 @@ UM 语言包允许呼叫者和 Outlook Voice Access 用户能够用多种语言�
 
 如果需要，可以在命令行管理程序中运行以下命令，以创建 UM 拨号计划。
 
-    New-UMDialplan -Name MyUMDialPlan -URIType E164 -NumberOfDigitsInExtension 5 -VoIPSecurity Secured
+```powershell
+New-UMDialplan -Name MyUMDialPlan -URIType E164 -NumberOfDigitsInExtension 5 -VoIPSecurity Secured
+```
 
 如果需要，可以使用 EAC 配置现有的 UM 拨号计划：
 
@@ -276,7 +286,9 @@ UM IP 网关代表物理 Voice over IP (VoIP) 网关、IP PBX 或启用 SIP 的 
 
 如果需要，可以在命令行管理程序中运行以下命令，以创建 UM IP 网关。
 
-    New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
+```powershell
+New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
+```
 
 如果需要，可以使用 EAC 配置现有的 UM IP 网关：
 
@@ -384,7 +396,9 @@ UM IP 网关代表物理 Voice over IP (VoIP) 网关、IP PBX 或启用 SIP 的 
 
 如果需要，可以运行以下命令，在命令行管理程序中创建 UM 邮箱策略。
 
-    New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
+```powershell
+New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
+```
 
 如果需要，可以使用 EAC 配置现有的 UM 邮箱策略：
 
@@ -422,7 +436,9 @@ UM IP 网关代表物理 Voice over IP (VoIP) 网关、IP PBX 或启用 SIP 的 
 
 若要使用命令行管理程序将 Exchange 2007 邮箱移至 Exchange 2013 邮箱服务器，请运行以下命令。
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
+```
 
 ## 第 12 步︰ 启用了 UM 的新用户，或为现有的已启用 UM 的用户配置设置
 
@@ -528,7 +544,9 @@ Exchange 2013 客户端访问服务器是针对统一消息的任何入站呼叫
 
 若要使用命令行管理程序禁用 Exchange 2007 UM 服务器上的统一消息，请运行以下命令：
 
-    Disable-UMServer -Identity MyUMServer -Immediate $true
+```powershell
+Disable-UMServer -Identity MyUMServer -Immediate $true
+```
 
 > [!TIP]  
 > 您可以使用 Exchange 2007 UM 服务器的 <strong>Disable-UMServer</strong> cmdlet 或 Exchange 2013 邮箱服务器的 <strong>Disable-UMService</strong> cmdlet 禁用呼叫应答功能。
@@ -561,11 +579,15 @@ Exchange 2013 客户端访问服务器是针对统一消息的任何入站呼叫
 
 在此示例中，有三个 SIP URI 拨号计划：SipDP1、SipDP2 和 SipDP3。此示例从 SipDP3 拨号计划中删除名为 `MyUMServer` 的 UM 服务器。
 
-    Set-UMServer -id MyUMServer -DialPlans SipDP1,SipDP2
+```powershell
+Set-UMServer -id MyUMServer -DialPlans SipDP1,SipDP2
+```
 
 在此示例中，有两个 SIP URI 拨号计划：SipDP1 和 SipDP2。此示例从 SipDP2 拨号计划中删除名为 `MyUMServer` 的 UM 服务器。
 
-    Set-UMServer -id MyUMServer -DialPlans SipDP1
+```powershell
+Set-UMServer -id MyUMServer -DialPlans SipDP1
+```
 
 > [!TIP]  
 > 可以在 Exchange 2007 统一消息服务器上的 Shell 或<strong>Set-UMService</strong> cmdlet 2013 的 Exchange 邮箱服务器上使用<strong>Set-UMServer</strong> cmdlet Exchange 2007 UM 服务器删除单个或多个拨号计划。例如，若要从所有拨号计划删除 UM 服务器，运行下面的命令︰ <code>Set-UMServer -identity MyUMServer -DialPlan $null</code>

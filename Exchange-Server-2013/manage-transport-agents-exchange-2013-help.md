@@ -49,13 +49,17 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  在客户端访问服务器上，打开 Windows PowerShell 并运行以下命令：
     
-        Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+    ```powershell
+Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+```
 
 2.  运行所述命令，并向命令中添加下列值：`-TransportService FrontEnd`.
     
     例如，要查看客户端访问服务器上的前端传输服务中的传输代理，应运行以下命令：
     
-        Get-TransportAgent -TransportService FrontEnd
+    ```powershell
+Get-TransportAgent -TransportService FrontEnd
+```
 
 ## 使用命令行管理程序安装传输代理
 
@@ -81,11 +85,15 @@ _**上一次修改主题：** 2015-04-08_
 
 使用以下语法启动传输代理。
 
-    Enable-TransportAgent <TransportAgentIdentity>
+```powershell
+Enable-TransportAgent <TransportAgentIdentity>
+```
 
 本示例将在邮箱服务器上的传输服务中启动一个名为 Contoso Transport Agent 的传输代理。
 
-    Enable-TransportAgent "Contoso Transport Agent"
+```powershell
+Enable-TransportAgent "Contoso Transport Agent"
+```
 
 ## 您如何知道这有效？
 
@@ -95,11 +103,15 @@ _**上一次修改主题：** 2015-04-08_
 
 使用以下语法禁用传输代理：
 
-    Disable-TransportAgent <TransportAgentIdentity>
+```powershell
+Disable-TransportAgent <TransportAgentIdentity>
+```
 
 本示例将在邮箱服务器上的传输服务中禁用一个名为 Fabirkam Transport Agent 的传输代理。
 
-    Disable-TransportAgent "Fabrikam Transport Agent"
+```powershell
+Disable-TransportAgent "Fabrikam Transport Agent"
+```
 
 ## 您如何知道这有效？
 
@@ -109,15 +121,21 @@ _**上一次修改主题：** 2015-04-08_
 
 若要查看所有传输代理的摘要列表，请运行以下命令：
 
-    Get-TransportAgent
+```powershell
+Get-TransportAgent
+```
 
 若要查看特定传输代理的详细配置，请运行以下命令：
 
-    Get-TransportAgent <TransportAgentIdentity> | Format-List
+```powershell
+Get-TransportAgent <TransportAgentIdentity> | Format-List
+```
 
 本示例将提供名为传输规则代理的传输代理的详细配置。
 
-    Get-TransportAgent "Transport Rule Agent" | Format-List
+```powershell
+Get-TransportAgent "Transport Rule Agent" | Format-List
+```
 
 ## 使用命令行管理程序配置传输代理的优先级
 
@@ -125,11 +143,15 @@ _**上一次修改主题：** 2015-04-08_
 
 若要修改现有传输代理的优先级，请运行以下命令：
 
-    Set-TransportAgent <TransportAgentIdentity> -Priority <Integer>
+```powershell
+Set-TransportAgent <TransportAgentIdentity> -Priority <Integer>
+```
 
 本示例将为邮箱服务器上的传输服务中名为 Contoso Transport Agent 的现有传输代理将优先级代理值设置为 3。
 
-    Set-TransportAgent "Contoso Transport Agent" -Priority 3
+```powershell
+Set-TransportAgent "Contoso Transport Agent" -Priority 3
+```
 
 ## 您如何知道这有效？
 
@@ -141,11 +163,15 @@ _**上一次修改主题：** 2015-04-08_
 
 要卸载传输代理，请运行以下命令：
 
-    Uninstall-TransportAgent <TransportAgentIdentity>
+```powershell
+Uninstall-TransportAgent <TransportAgentIdentity>
+```
 
 本示例将在邮箱服务器上的传输服务中卸载一个名为 Fabirkam Transport Agent 的传输代理。
 
-    Uninstall-TransportAgent "Fabrikam Transport Agent"
+```powershell
+Uninstall-TransportAgent "Fabrikam Transport Agent"
+```
 
 ## 您如何知道这有效？
 

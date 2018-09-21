@@ -91,7 +91,9 @@ _**上一次修改主题：** 2015-01-01_
 
   - 此示例将禁用组织关系 Contoso。
     
-        Set-OrganizationRelationship -Identity Contoso -Enabled $false
+    ```powershell
+Set-OrganizationRelationship -Identity Contoso -Enabled $false
+```
 
   - 此示例将启用组织关系 WoodgroveBank 的日历可用性信息访问，并将访问级别设置为 `AvailabilityOnly`（仅包含时间的日历忙/闲信息）。
     
@@ -103,7 +105,9 @@ _**上一次修改主题：** 2015-01-01_
 
 要验证您是否已成功更新了组织关系，请运行下列命令行管理程序命令来验证组织关系的信息。
 
-    Get-OrganizationRelationship | format-list
+```powershell
+Get-OrganizationRelationship | format-list
+```
 
 > [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。

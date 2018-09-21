@@ -131,7 +131,9 @@ _**上一次修改主题：** 2013-08-12_
 
 本示例允许您在 Exchange 组织中所有安装了客户端访问服务器角色的计算机上，查看所有 Internet 信息访问 (IIS) 网站中的所有 Outlook Web App 虚拟目录的属性。
 
-    Get-OWAVirtualDirectory
+```powershell
+Get-OWAVirtualDirectory
+```
 
 本示例让您查看本地 Exchange 服务器上的默认 IIS 网站中的 Outlook Web App 虚拟目录的属性。
 
@@ -139,11 +141,15 @@ _**上一次修改主题：** 2013-08-12_
 
 本示例让您查看特定 Exchange 服务器上的某个 IIS 网站中所有 Outlook Web App 虚拟目录的属性。
 
-    Get-OWAVirtualDirectory -server <Exchange Server Name>
+```powershell
+Get-OWAVirtualDirectory -server <Exchange Server Name>
+```
 
 本示例让您查看 Exchange 组织中所有客户端访问服务器上的所有 IIS 网站中的每个 Outlook Web App 虚拟目录的属性值。
 
-    Get-OWAVirtualDirectory | format-list
+```powershell
+Get-OWAVirtualDirectory | format-list
+```
 
 有关语法和参数的详细信息，请参阅 [Get-OwaVirtualDirectory](https://technet.microsoft.com/zh-cn/library/aa998588\(v=exchg.150\))。
 

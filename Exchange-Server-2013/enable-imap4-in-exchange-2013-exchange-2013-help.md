@@ -59,19 +59,27 @@ _**上一次修改主题：** 2016-06-02_
 
 1.  将 Microsoft Exchange IMAP4 服务设置为自动启动。
     
-        Set-service msExchangeIMAP4 -startuptype automatic
+    ```powershell
+Set-service msExchangeIMAP4 -startuptype automatic
+```
 
 2.  启动 Microsoft Exchange IMAP4 服务。
     
-        Start-service msExchangeIMAP4
+    ```powershell
+Start-service msExchangeIMAP4
+```
 
 3.  将 Microsoft Exchange IMAP4 Backend 服务设置为自动启动。
     
-        Set-service msExchangeIMAP4BE -startuptype automatic
+    ```powershell
+Set-service msExchangeIMAP4BE -startuptype automatic
+```
 
 4.  启动 Microsoft Exchange IMAP4 Backend 服务。
     
-        Start-service msExchangeIMAP4BE
+    ```powershell
+Start-service msExchangeIMAP4BE
+```
 
 ## 您如何知道这有效？
 

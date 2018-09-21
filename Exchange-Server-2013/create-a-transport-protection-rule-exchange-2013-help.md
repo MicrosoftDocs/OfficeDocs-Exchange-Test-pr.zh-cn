@@ -70,7 +70,9 @@ _**上一次修改主题：** 2016-12-09_
 
   - 若要创建传输保护规则，必须在 AD RMS 部署现有 RMS 模板。本示例检索来自 AD RMS 群集可用的模板。
     
-        Get-RMSTemplate | format-list
+    ```powershell
+Get-RMSTemplate | format-list
+```
     
     有关语法和参数的详细信息，请参阅 [Get-RMSTemplate](https://technet.microsoft.com/zh-cn/library/dd297960\(v=exchg.150\))。
 

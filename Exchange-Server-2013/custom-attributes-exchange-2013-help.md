@@ -71,7 +71,9 @@ Microsoft Exchange Server 2013 包含 15 个扩展属性。您可以使用这些
 
 如果该 OU 中的收件人未共享任何可作为筛选条件的通用属性（例如部门或位置），则可以使用某个公用值填充其中一个自定义属性，如此例所示。
 
-    Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
+```powershell
+Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
+```
 
 现在可以为具有 *CustomAttribute1* 属性（等于 SalesOU）的所有收件人创建电子邮件地址策略，如此例所示。
 
@@ -93,7 +95,9 @@ Microsoft Exchange Server 2013 包含 15 个扩展属性。您可以使用这些
 
 在此示例中，Kweku 的邮箱将更新 *ExtensionCustomAttribute1* 以反映他登记了以下教育课程：MATH307、ECON202 和 ENGL300。
 
-    Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 MATH307,ECON202,ENGL300
+```powershell
+Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 MATH307,ECON202,ENGL300
+```
 
 接下来，通过使用 *RecipientFilter* 参数创建登记了 MATH307 的所有学生的动态通讯组，其中 *ExtensionCustomAttribute1* 等于 MATH307。使用 *ExtentionCustomAttributes* 参数时，可以使用 `-eq` 运算符代替 `-like` 运算符。
 
@@ -101,5 +105,7 @@ Microsoft Exchange Server 2013 包含 15 个扩展属性。您可以使用这些
 
 在此示例中，Kweku 的 *ExtensionCustomAttribute1* 值进行更新以反映他添加了课程 ENGL210 并删除了课程 ECON202。
 
-    Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 @{Add="ENGL210"; Remove="ECON202"}
+```powershell
+Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 @{Add="ENGL210"; Remove="ECON202"}
+```
 

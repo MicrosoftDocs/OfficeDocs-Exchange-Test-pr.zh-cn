@@ -39,9 +39,13 @@ _**上一次修改主题：** 2012-10-02_
 
 若要删除作用域，请使用以下语法。
 
-    Remove-ManagementScope <scope name>
+```powershell
+Remove-ManagementScope <scope name>
+```
 
 例如，要删除\&quot;Dublin Servers\&quot;作用域，请使用以下命令。
 
-    Remove-ManagementScope "Dublin Servers"
+```powershell
+Remove-ManagementScope "Dublin Servers"
+```
 

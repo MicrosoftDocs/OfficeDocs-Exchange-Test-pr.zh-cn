@@ -45,7 +45,9 @@ _**上一次修改主题：** 2012-10-16_
 
 要通过收件人筛选器创建电子邮件地址策略，可使用以下语法。
 
-    New-EmailAddressPolicy -Name <String> -RecipientFilter <String>
+```powershell
+New-EmailAddressPolicy -Name <String> -RecipientFilter <String>
+```
 
 该示例创建应用于所有高级管理人员的电子邮件地址策略，并且其电子邮件地址的本地部分由他们名字的前两个字母和整个姓氏组成。
 

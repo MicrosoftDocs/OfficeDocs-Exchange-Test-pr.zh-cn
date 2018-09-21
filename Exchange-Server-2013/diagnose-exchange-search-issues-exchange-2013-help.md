@@ -55,7 +55,9 @@ Exchange Search 可对 Exchange 邮箱中的邮箱和受支持附件编制索引
 
 2.  **检查邮箱数据库配置：** 用户邮箱数据库的 *IndexEnabled* 参数是否设置为 true？如果是，请转至步骤 3。如果不是，请在命令行管理程序中运行以下命令以验证 *IndexEnabled* 标志是否设置为 true。
     
-        Get-MailboxDatabase | Format-Table Name,IndexEnabled
+    ```powershell
+Get-MailboxDatabase | Format-Table Name,IndexEnabled
+```
     
     有关语法和参数的详细信息，请参阅 [Get-MailboxDatabase](https://technet.microsoft.com/zh-cn/library/bb124924\(v=exchg.150\))。
 
@@ -89,7 +91,9 @@ Exchange Search 可对 Exchange 邮箱中的邮箱和受支持附件编制索引
 
 5.  **运行 Test-ExchangeSearch cmdlet：** 如果邮箱数据库已爬网，则可以对邮箱数据库或特定邮箱运行 **Test-ExchangeSearch** cmdlet。
     
-        Test-ExchangeSearch -Identity AlanBrewer@contoso.com
+    ```powershell
+Test-ExchangeSearch -Identity AlanBrewer@contoso.com
+```
     
     有关语法和参数的详细信息，请参阅 [Test-ExchangeSearch](https://technet.microsoft.com/zh-cn/library/bb124733\(v=exchg.150\))。
 

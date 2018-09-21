@@ -65,16 +65,22 @@ _**上一次修改主题：** 2016-03-17_
 
 1.  主数据中心中的 DAG 成员必须通过对每个成员运行下列命令来强制从 DAG 基础群集退出：
     
-        net stop clussvc
+    ```powershell
+net stop clussvc
+```
         cluster <DAGName> node <DAGMemberName> /forcecleanup
 
 2.  第二个数据中心中的 DAG 成员必须立即重新启动，然后用于完成从第二个数据中心的退出过程。通过对每个成员运行以下命令停止第二个数据中心中每个 DAG 成员上的群集服务：
     
-        net stop clussvc
+    ```powershell
+net stop clussvc
+```
 
 3.  对于第二个数据中心中的 DAG 成员，通过运行以下命令强制仲裁启动群集服务：
     
-        net start clussvc /forcequorum
+    ```powershell
+net start clussvc /forcequorum
+```
 
 4.  打开故障转移群集管理工具，并连接到 DAG 基础群集。展开群集，然后展开“节点”。右键单击主数据中心中的每个节点，选择“更多操作”，然后选择“退出”。在退出主数据中心中的 DAG 成员后，请关闭故障转移群集管理工具。
 
@@ -104,15 +110,21 @@ _**上一次修改主题：** 2016-03-17_
     
     1.  如果 DAG 成员为奇数，请通过运行以下命令将 DAG 仲裁模型由“多数节点和文件共享仲裁”更改为“多数节点仲裁”：
         
-            cluster <DAGName> /quorum /nodemajority
+        ```powershell
+cluster <DAGName> /quorum /nodemajority
+```
     
     2.  如果 DAG 成员为偶数，通过在 Exchange 命令行管理程序中运行以下命令来重新配置见证服务器和目录：
         
-            Set-DatabaseAvailabilityGroup <DAGName> -WitnessServer <ServerName>
+        ```powershell
+Set-DatabaseAvailabilityGroup <DAGName> -WitnessServer <ServerName>
+```
 
 2.  通过运行以下命令对第二个数据中心中任何剩余的 DAG 成员启用群集服务：
     
-        net start clussvc
+    ```powershell
+net start clussvc
+```
 
 3.  通过对每个 DAG 成员运行以下命令来执行服务器切换以激活 DAG 中的邮箱数据库：
     
@@ -120,7 +132,9 @@ _**上一次修改主题：** 2016-03-17_
 
 4.  通过运行以下命令在第二个站点中的每个 DAG 成员上装入邮箱数据库：
     
-        Get-MailboxDatabase <DAGMemberinSecondSite> | Mount-Database
+    ```powershell
+Get-MailboxDatabase <DAGMemberinSecondSite> | Mount-Database
+```
 
 返回顶部
 

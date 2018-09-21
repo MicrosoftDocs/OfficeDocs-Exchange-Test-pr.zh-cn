@@ -212,11 +212,15 @@ Exchange 命令行管理程序提供了可用来设置命令输出格式的多�
 
 **Out-Host** cmdlet 是管道末端一个不可见的默认 cmdlet。应用了所有格式之后，**Out-Host** cmdlet 将最终输出发送到控制台窗口进行显示。**Out-Host** cmdlet 是默认输出，因此无需显式调用。通过将调用 **Out-File** cmdlet 作为命令中最后一个 cmdlet，可以取代将输出发送到控制台窗口的操作。**Out-File** cmdlet 则将输出写入到命令中指定的文件，如下例所示：
 
-    Get-ChildItem | Format-Wide -Column 4 | Out-File c:\OutputFile.txt
+```powershell
+Get-ChildItem | Format-Wide -Column 4 | Out-File c:\OutputFile.txt
+```
 
 在本示例中，**Out-File** cmdlet 将 **Get-ChildItem | Format-Wide -Column 4** 命令显示的信息写入名为 `OutputFile.txt` 的文件中。还可以使用重定向运算符（右尖括号 `>` ），将管道输出重定向到文件。若要将某个命令的管道输出附加到现有文件末尾而不替换原始文件，请使用两个右尖括号 (`>>`)，如下例所示：
 
-    Get-ChildItem | Format-Wide -Column 4 >> C:\OutputFile.txt
+```powershell
+Get-ChildItem | Format-Wide -Column 4 >> C:\OutputFile.txt
+```
 
 在本示例中，**Get-Childitem** cmdlet 的输出通过管道传递给 **Format-Wide** cmdlet 进行格式设置，然后写入 `OutputFile.txt` 文件的末尾。请注意，如果 `OutputFile.txt` 文件不存在，则使用两个右尖括号 (`>>`) 会创建该文件。
 
@@ -247,7 +251,9 @@ Exchange 命令行管理程序提供了可用来设置命令输出格式的多�
 
 `Out-Ie` 脚本假定其收到的数据是有效的 HTML 格式。若要将要查看的数据转换为 HTML 格式，必须将命令的结果通过管道传递给 **ConvertTo-Html** cmdlet。然后，可以将该命令的结果通过管道传递给 `Out-Ie` 脚本。以下示例说明了如何在 Internet Explorer 窗口中查看目录列表：
 
-    Get-ChildItem | Select Name,Length | ConvertTo-Html | Out-Ie
+```powershell
+Get-ChildItem | Select Name,Length | ConvertTo-Html | Out-Ie
+```
 
 ## 如何筛选数据
 

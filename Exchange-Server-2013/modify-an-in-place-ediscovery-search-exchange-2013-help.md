@@ -72,7 +72,9 @@ _**上一次修改主题：** 2014-08-27_
 
 本示例修改了就地电子数据展示搜索 Search-Project Contoso，以搜索属于 DG-ProjectManagers 通讯组成员的邮箱。
 
-    Set-MailboxSearch -Identity "Search-Project Contoso" -SourceMailboxes "DG-ProjectManagers"
+```powershell
+Set-MailboxSearch -Identity "Search-Project Contoso" -SourceMailboxes "DG-ProjectManagers"
+```
 
 ## 您如何知道这有效？
 

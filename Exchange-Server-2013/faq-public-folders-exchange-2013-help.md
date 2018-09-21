@@ -53,7 +53,9 @@ _**上一次修改主题：** 2017-03-27_
 
 您可以通过运行以下命令行管理程序命令，在最终完成之前（锁定源之前）强制执行增量同步：
 
-    Resume-PublicFolderMigrationRequest \PublicFolderMigration
+```powershell
+Resume-PublicFolderMigrationRequest \PublicFolderMigration
+```
 
 有关语法和参数的详细信息，请参阅 [Resume-PublicFolderMigrationRequest](https://technet.microsoft.com/zh-cn/library/jj218689\(v=exchg.150\))。
 
@@ -101,7 +103,9 @@ Outlook 2007、Outlook 2010、 Outlook 2013 和 Outlook 2011 针对 Mac 用户�
 
 运行以下命令：
 
-    Get-OrganizationConfig | Format-List RootPublicFolderMailbox
+```powershell
+Get-OrganizationConfig | Format-List RootPublicFolderMailbox
+```
 
 有关详细的语法和参数信息，请参阅 [Get-OrganizationConfig](https://technet.microsoft.com/zh-cn/library/aa997571\(v=exchg.150\))。
 
@@ -109,7 +113,9 @@ Outlook 2007、Outlook 2010、 Outlook 2013 和 Outlook 2011 针对 Mac 用户�
 
 运行以下命令可创建第一个主层次结构公用文件夹邮箱和辅助层次结构邮箱。
 
-    New-Mailbox -PublicFolder -Name <name of public folder>
+```powershell
+New-Mailbox -PublicFolder -Name <name of public folder>
+```
 
 有关详细信息，请参阅[创建公用文件夹](create-a-public-folder-exchange-2013-help.md)。
 
@@ -145,7 +151,9 @@ Exchange 2013 中没有数据库级别的设置。Exchange 2013 的邮箱级别�
 
 在 Exchange 2007 和 Exchange 2010 中，您可以指定哪些用户有权访问特定的公用文件夹。在 Exchange 2013 中，可以为每个用户设置默认公用文件夹邮箱。为此，需要运行带 *DefaultPublicFolderMailbox* 参数的 [Set-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123981\(v=exchg.150\)) cmdlet。
 
-    Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administration"
+```powershell
+Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administration"
+```
 
 ## 如果主层次结构不可用，对用户有什么影响？
 

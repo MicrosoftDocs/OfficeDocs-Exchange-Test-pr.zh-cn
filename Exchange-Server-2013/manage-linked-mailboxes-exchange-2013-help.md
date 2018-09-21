@@ -118,7 +118,9 @@ _**上一次修改主题：** 2012-11-27_
 
   - 在命令行管理程序中，运行以下命令可显示有关新链接邮箱的信息。
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
+    ```powershell
+Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
+```
 
 ## 更改链接邮箱属性
 
@@ -374,5 +376,7 @@ _**上一次修改主题：** 2012-11-27_
     
     对于上面的示例，链接主帐户有所更改，运行以下命令来验证新值。
     
-        Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
+    ```powershell
+Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
+```
 

@@ -73,7 +73,9 @@ _**上一次修改主题：** 2014-06-24_
 
 本示例将名为 DAG1 的 DAG 的见证目录设置为 C:\\DAG1DIR。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessDirectory C:\DAG1DIR
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessDirectory C:\DAG1DIR
+```
 
 本示例预配置 CAS3 的备用见证服务器，以及为 DAG DAG1 的 C:\\DAGFileShareWitnesses\\DAG1.contoso.com 预配置备用见证目录。
 
@@ -81,23 +83,33 @@ _**上一次修改主题：** 2014-06-24_
 
 本示例配置名为 DAG1 的 DAG 以使用动态主机配置协议 (DHCP) 获得 IP 地址。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 0.0.0.0
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 0.0.0.0
+```
 
 本示例配置名为 DAG1 的 DAG 以使用静态 IP 地址 10.0.0.8。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8
+```
 
 本示例使用多个静态 IP 地址配置名为 DAG1 的多子网 DAG。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8,10.0.1.8
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8,10.0.1.8
+```
 
 此示例为 DAC 模式配置名为 DAG1 的 DAG。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```
 
 本示例将名为 DAG1 的 DAG 的复制端口配置为 63132。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -ReplicationPort 63132
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -ReplicationPort 63132
+```
 
 > [!NOTE]  
 > 更改 DAG 默认的复制端口后，必须手动修改 DAG 每个成员上的 Windows 防火墙例外，以允许通过指定的端口进行通信。
@@ -109,7 +121,9 @@ _**上一次修改主题：** 2014-06-24_
 
   - 在命令行管理程序中，运行以下命令来显示 DAG 配置设置并验证是否成功配置了 DAG。
     
-        Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+    ```powershell
+Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+```
 
 ## 详细信息
 

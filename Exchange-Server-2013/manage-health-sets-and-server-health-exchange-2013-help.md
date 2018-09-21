@@ -47,7 +47,9 @@ _**上一次修改主题：** 2013-12-02_
 
 运行下列命令之一，查看运行 Exchange 2013 的服务器的运行状况设置和运行状况信息。
 ```
-    Get-HealthReport -Identity <ServerName>
+```powershell
+Get-HealthReport -Identity <ServerName>
+```
 ```
 ```
     Get-ServerHealth -Identity <ServerName> | Format-Table Server,CurrentHealthSetState,Name,HealthSetName,AlertValue,HealthGroupName -Auto
@@ -55,10 +57,14 @@ _**上一次修改主题：** 2013-12-02_
 
 运行下列任一命令，查看运行 Exchange 2013 的服务器或数据库可用性组的运行状况设置。
 ```
-    Get-ExchangeServer | Get-HealthReport -RollupGroup
+```powershell
+Get-ExchangeServer | Get-HealthReport -RollupGroup
 ```
 ```
-    Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
+```
+```powershell
+Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
+```
 ```
 ```
     (Get-DatabaseAvailabiltyGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
@@ -72,7 +78,9 @@ _**上一次修改主题：** 2013-12-02_
 
 运行以下命令，查看运行 Exchange 2013 的服务器的运行状况设置。
 
-    Get-HealthReport -Server <ServerName>
+```powershell
+Get-HealthReport -Server <ServerName>
+```
 
 ## 查看运行状况设置的探测器、监视器和响应器
 

@@ -250,7 +250,9 @@ _**上一次修改主题：** 2017-01-26_
 
 4.  运行以下命令重新启动 IIS：
     
-        IISReset /noforce
+    ```powershell
+IISReset /noforce
+```
 
 ## 配置命令行中客户端特定的邮件大小限制
 

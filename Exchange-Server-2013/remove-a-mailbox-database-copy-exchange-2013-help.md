@@ -59,7 +59,9 @@ _**上一次修改主题：** 2012-11-06_
 
 本示例从邮箱服务器 MBX1 删除邮箱数据库 DB1 的副本。
 
-    Remove-MailboxDatabaseCopy -Identity DB1\MBX1 -Confirm:$False
+```powershell
+Remove-MailboxDatabaseCopy -Identity DB1\MBX1 -Confirm:$False
+```
 
 ## 您如何知道这有效？
 
@@ -69,7 +71,9 @@ _**上一次修改主题：** 2012-11-06_
 
   - 在命令行管理程序中运行下列命令以验证副本删除操作。
     
-        Get-MailboxDatabase <DatabaseName> | Format-List DatabaseCopies
+    ```powershell
+Get-MailboxDatabase <DatabaseName> | Format-List DatabaseCopies
+```
     
     已删除的被动副本不再列出。
 

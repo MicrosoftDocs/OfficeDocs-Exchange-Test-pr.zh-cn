@@ -49,11 +49,15 @@ _**上一次修改主题：** 2013-04-15_
 
 下列示例说明了如何配置数据库的根路径。
 
-    Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabasesRootFolderPath "C:\ExchDbs"
+```powershell
+Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabasesRootFolderPath "C:\ExchDbs"
+```
 
 下列示例说明了如何配置存储卷的根路径。
 
-    Set-DatabaseAvailabilityGroup DAG1 -AutoDagVolumesRootFolderPath "C:\ExchVols"
+```powershell
+Set-DatabaseAvailabilityGroup DAG1 -AutoDagVolumesRootFolderPath "C:\ExchVols"
+```
 
 ## 您如何知道此步骤有效？
 
@@ -69,7 +73,9 @@ _**上一次修改主题：** 2013-04-15_
 
 本示例说明了如何为每个卷配置了 4 个数据库的 DAG 配置此自动种子重新设定设置。
 
-    Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
+```powershell
+Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
+```
 
 ## 您如何知道此步骤有效？
 
@@ -90,7 +96,9 @@ _**上一次修改主题：** 2013-04-15_
 
 若要验证是否已成功配置数据库和卷的根目录，请运行以下命令。
 
-    Dir C:\
+```powershell
+Dir C:\
+```
 
 创建的目录应出现在输出列表中。
 
@@ -110,7 +118,9 @@ _**上一次修改主题：** 2013-04-15_
 
 要验证是否已成功装入卷文件夹，请运行以下命令。
 
-    Dir C:\
+```powershell
+Dir C:\
+```
 
 装入的卷应出现在输出列表中。
 
@@ -138,7 +148,9 @@ md c:\ExchangeDatabases\db004
 
 要验证是否已成功装入数据库文件夹，请运行以下命令。
 
-    Dir C:\ExchangeDatabases
+```powershell
+Dir C:\ExchangeDatabases
+```
 
 创建的目录应出现在输出列表中。
 
@@ -152,7 +164,9 @@ md c:\ExchangeDatabases\db004
 
 要验证是否已成功创建数据库装入点，请运行以下命令。
 
-    Mountvol.exe C:\ExchangeDatabases\db001 /L
+```powershell
+Mountvol.exe C:\ExchangeDatabases\db001 /L
+```
 
 已装入的卷应出现在装载点列表中。
 
@@ -204,7 +218,9 @@ md c:\ExchangeDatabases\db004\db004.log
 
 要验证是否已成功创建数据库目录结构，请运行以下命令。
 
-    Dir C:\ExchangeDatabases /s
+```powershell
+Dir C:\ExchangeDatabases /s
+```
 
 创建的目录应出现在输出列表中。
 
@@ -232,8 +248,12 @@ md c:\ExchangeDatabases\db004\db004.log
 
 2.  运行以下命令来验证目录结构配置是否正确（下面是默认路径，如果有必要，将这些路径替换为您正在使用的路径）。
     ```
-        Dir c:\ExchangeDatabases /s
+    ```powershell
+Dir C:\ExchangeDatabases /s
+```
     ```
     ```
-        Dir c:\ExchangeVolumes /s
+    ```powershell
+Dir c:\ExchangeVolumes /s
+```
     ```

@@ -37,7 +37,9 @@ _**上一次修改主题：** 2012-11-27_
 
 此示例使 POP3 用户能够使用 iCalendar 标准（一种日历信息交换标准）。
 
-    Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
+```powershell
+Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
+```
 
 此示例使 POP3 用户能够从内部服务器访问日历信息。
 
@@ -45,11 +47,15 @@ _**上一次修改主题：** 2012-11-27_
 
 此示例使 POP3 用户能够从 Internet 访问外部服务器上的日历信息。
 
-    Set-PopSettings -CalendarItemRetrievalOption InternetUrl
+```powershell
+Set-PopSettings -CalendarItemRetrievalOption InternetUrl
+```
 
 此示例使 POP3 用户能够使用直接的 Outlook Web App URL 访问日历信息。 如果要使用 `Custom`，必须使用 *OWAServerUrl* 参数指定一个 Outlook Web App URL。
 
-    Set-PopSettings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaServer01"
+```powershell
+Set-PopSettings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaServer01"
+```
 
 为 POP3 指定了日历选项之后，必须重新启动 POP3 服务。 有关如何重新启动 POP3 服务的信息，请参阅[启动和停止 POP3 服务](start-and-stop-the-pop3-services-exchange-2013-help.md)。
 
@@ -61,7 +67,9 @@ _**上一次修改主题：** 2012-11-27_
 
 在命令行管理程序中运行以下命令。
 
-    Get-PopSettings | format-list
+```powershell
+Get-PopSettings | format-list
+```
 
 验证日历设置是否正确。
 

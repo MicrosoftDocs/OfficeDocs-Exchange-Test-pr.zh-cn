@@ -43,7 +43,9 @@ _**上一次修改主题：** 2017-03-27_
     
     对于 Exchange 2007，运行以下命令：
     
-        New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
+    ```powershell
+New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
+```
     
     > [!NOTE]  
     > 我们建议您只将在步骤 3 中创建的代理邮箱添加至此数据库。不应在此邮箱数据库中创建任何其他邮箱。
@@ -54,12 +56,16 @@ _**上一次修改主题：** 2017-03-27_
         New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs> 
     ```
     ```
-        Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+    ```powershell
+Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+```
     ```
     
 4.  对于 Exchange 2010，启用自动发现以返回代理公用文件夹邮箱。此步骤对于 Exchange 2007 并非必需步骤。
     
-        Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
+    ```powershell
+Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
+```
 
 5.  对组织中的每个公用文件夹服务器重复执行前面的步骤。
 

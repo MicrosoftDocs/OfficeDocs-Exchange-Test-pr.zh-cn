@@ -55,11 +55,15 @@ _**上一次修改主题：** 2015-04-13_
 
 2.  要将源服务器配置数据导出到源服务器上的一个文件中，请使用以下语法。
     
-        ./ExportEdgeConfig.ps1 -CloneConfigData:"<configuration file>"
+    ```powershell
+./ExportEdgeConfig.ps1 -CloneConfigData:"<configuration file>"
+```
     
     例如，要将源服务器配置数据导出到文件 C:\\CloneConfigData.xml 中，请运行以下命令。
     
-        ./ExportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml"
+    ```powershell
+./ExportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml"
+```
 
 ## 您如何知道此步骤有效？
 

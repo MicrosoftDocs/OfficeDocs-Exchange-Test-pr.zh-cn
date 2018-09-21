@@ -63,7 +63,9 @@ _**上一次修改主题：** 2016-12-09_
 
 以下示例将安装日语 (ja-JP) 的 UM 语言包，该语言包已下载到邮箱服务器上的 D:\\Exchange\\UMLanguagePacks 文件夹。
 
-    setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```powershell
+setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```
 
 以下示例将安装墨西哥西班牙语 (es-MX) 和德语 (de-DE) 的 UM 语言包，这些语言包已下载到邮箱服务器上的 D:\\Exchange\\UMLanguagePacks 文件夹。
 

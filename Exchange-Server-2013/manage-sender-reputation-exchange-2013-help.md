@@ -43,11 +43,15 @@ _**上一次修改主题：** 2015-04-08_
 
 此示例禁用发件人信誉。
 
-    Set-SenderReputationConfig -Enabled $false
+```powershell
+Set-SenderReputationConfig -Enabled $false
+```
 
 此示例启用发件人信誉。
 
-    Set-SenderReputationConfig -Enabled $true
+```powershell
+Set-SenderReputationConfig -Enabled $true
+```
 
 ## 您如何知道这有效？
 
@@ -55,7 +59,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行下面的命令，验证\&quot;协议分析\&quot;代理已安装和启用：
     
-        Get-TransportAgent
+    ```powershell
+Get-TransportAgent
+```
 
 2.  运行下面的命令，验证您配置的发件人信誉值：
     
@@ -67,19 +73,27 @@ _**上一次修改主题：** 2015-04-08_
 
 若要为外部邮件禁用发件人信誉，请运行以下命令：
 
-    Set-SenderReputationConfig -ExternalMailEnabled $false
+```powershell
+Set-SenderReputationConfig -ExternalMailEnabled $false
+```
 
 若要为外部邮件启用发件人信誉，请运行以下命令：
 
-    Set-SenderReputationConfig -ExternalMailEnabled $true
+```powershell
+Set-SenderReputationConfig -ExternalMailEnabled $true
+```
 
 若要为内部邮件禁用发件人信誉，请运行以下命令：
 
-    Set-SenderReputationConfig -InternalMailEnabled $false
+```powershell
+Set-SenderReputationConfig -InternalMailEnabled $false
+```
 
 若要为内部邮件启用发件人信誉，请运行以下命令：
 
-    Set-SenderReputationConfig -InternalMailEnabled $true
+```powershell
+Set-SenderReputationConfig -InternalMailEnabled $true
+```
 
 ## 您如何知道这有效？
 
@@ -95,11 +109,15 @@ _**上一次修改主题：** 2015-04-08_
 
 若要配置发件人信誉，请运行以下命令：
 
-    Set-SenderReputationConfig -SrlBlockThreshold <Value> -SenderBlockingPeriod <Hours>
+```powershell
+Set-SenderReputationConfig -SrlBlockThreshold <Value> -SenderBlockingPeriod <Hours>
+```
 
 本示例将发件人信誉级别 (SRL) 阻止阈值设置为 6，并对发件人信誉进行配置以将违反此阀值的发件人添加到 IP 阻止列表中 36 小时：
 
-    Set-SenderReputationConfig -SrlBlockThreshold 6 -SenderBlockingPeriod 36
+```powershell
+Set-SenderReputationConfig -SrlBlockThreshold 6 -SenderBlockingPeriod 36
+```
 
 ## 您如何知道这有效？
 
@@ -107,7 +125,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-SenderReputationConfig
+    ```powershell
+Get-SenderReputationConfig
+```
 
 2.  验证显示的值是否与配置的值匹配。
 

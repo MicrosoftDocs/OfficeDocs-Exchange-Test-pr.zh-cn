@@ -43,11 +43,15 @@ _**上一次修改主题：** 2012-10-03_
 
 使用以下语法从角色中删除整个管理角色条目。
 
-    Remove-ManagementRoleEntry <management role>\<management role entry>
+```powershell
+Remove-ManagementRoleEntry <management role>\<management role entry>
+```
 
 此示例从 Seattle Server Administrators 角色中删除 **Enable-MailUser** cmdlet。
 
-    Remove-ManagementRoleEntry "Seattle Server Administrators\Enable-MailUser"
+```powershell
+Remove-ManagementRoleEntry "Seattle Server Administrators\Enable-MailUser"
+```
 
 有关语法和参数的详细信息，请参阅[Remove-ManagementRoleEntry](https://technet.microsoft.com/zh-cn/library/dd351187\(v=exchg.150\))。
 

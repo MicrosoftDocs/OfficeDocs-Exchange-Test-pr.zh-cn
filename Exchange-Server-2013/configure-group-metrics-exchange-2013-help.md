@@ -45,11 +45,15 @@ _**上一次修改主题：** 2015-04-08_
 
 要在邮箱服务器上启用或禁用组指标生成，请运行以下命令：
 
-    Set-MailboxServer <ServerIdentity> -ForceGroupMetricsGeneration <$true | $false>
+```powershell
+Set-MailboxServer <ServerIdentity> -ForceGroupMetricsGeneration <$true | $false>
+```
 
 此示例在名为 MBX1 的邮箱服务器上启用组指标生成。
 
-    Set-MailboxServer MBX1 -ForceGroupMetricsGeneration $true
+```powershell
+Set-MailboxServer MBX1 -ForceGroupMetricsGeneration $true
+```
 
 ## 您如何知道这有效？
 
@@ -57,7 +61,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
+    ```powershell
+Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
+```
 
 2.  验证显示的设置是否为您配置的设置。
 

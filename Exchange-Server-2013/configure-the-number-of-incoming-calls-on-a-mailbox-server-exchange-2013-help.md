@@ -51,5 +51,7 @@ _**上一次修改主题：** 2013-02-23_
 
 此示例将名为 `MyMailboxServer1` 的邮箱服务器可接受的传入语音、Outlook Voice Access 和传真呼叫数设置为 50。
 
-    Set-UMService -Identity MyMailboxServer1 -MaxCallsAllowed 50
+```powershell
+Set-UMService -Identity MyMailboxServer1 -MaxCallsAllowed 50
+```
 

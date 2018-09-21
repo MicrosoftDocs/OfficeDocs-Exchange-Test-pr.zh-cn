@@ -65,7 +65,9 @@ _**上一次修改主题：** 2014-01-28_
 
 5.  此示例使用 Eseutil 执行恢复操作。
     
-        Eseutil.exe /r eXX /a
+    ```powershell
+Eseutil.exe /r eXX /a
+```
     
     > [!NOTE]  
     > 在前面的示例中，<em>XX</em> 是数据库的日志生成前缀（例如，E00、E01、E02 等等）。
@@ -78,7 +80,9 @@ _**上一次修改主题：** 2014-01-28_
 
 7.  恢复过程完成后，此示例将继续进行用作恢复过程一部分的数据库复制操作。
     
-        Resume-MailboxDatabaseCopy DB1\EX3
+    ```powershell
+Resume-MailboxDatabaseCopy DB1\EX3
+```
 
 有关语法和参数的详细信息，请参阅 [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/zh-cn/library/dd351074\(v=exchg.150\)) 和 [Resume-MailboxDatabaseCopy](https://technet.microsoft.com/zh-cn/library/dd335220\(v=exchg.150\))。
 
@@ -98,7 +102,9 @@ _**上一次修改主题：** 2014-01-28_
 
 2.  此示例将通过使用 [Move-ActiveMailboxDatabase](https://technet.microsoft.com/zh-cn/library/dd298068\(v=exchg.150\)) cmdlet 以及 *SkipLagChecks* 参数激活滞后的邮箱数据库副本。
     
-        Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
+    ```powershell
+Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
+```
 
 ## 使用命令行管理程序并通过 SafetyNet 恢复激活滞后的邮箱数据库副本
 
@@ -116,7 +122,9 @@ _**上一次修改主题：** 2014-01-28_
 
 2.  通过查找 ESEUTIL 数据库头输出中的\&quot;所需的日志:\&quot;值来确定滞后数据库副本所需的日志
     
-        Eseutil /mh <DBPath> | findstr /c:"Log Required"
+    ```powershell
+Eseutil /mh <DBPath> | findstr /c:"Log Required"
+```
     
     记下圆括号中的十六进制数字。第一个数字是所需的最低生成（也称为 LowGeneration），第二个数字是所需的最高生成（也称为 HighGeneration）。将所有生成序列大于 HighGeneration 的日志生成文件移到到其他位置，以便它们不会重播到数据库中。
 
@@ -136,5 +144,7 @@ _**上一次修改主题：** 2014-01-28_
 
   - 在命令行管理程序中，运行以下命令来显示数据库备份的状态信息。
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```powershell
+Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+```
 

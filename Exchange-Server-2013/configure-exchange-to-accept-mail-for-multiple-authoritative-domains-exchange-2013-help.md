@@ -129,11 +129,15 @@ _**上一次修改主题：** 2016-06-15_
 
 若要将更新的电子邮件地址策略应用于收件人，请使用以下语法。
 
-    Update-EmailAddressPolicy <EamilAddressPolicyIdentity>
+```powershell
+Update-EmailAddressPolicy <EamilAddressPolicyIdentity>
+```
 
 例如，若要应用名为\&quot;Default Policy\&quot;的更新电子邮件地址策略，请运行以下命令：
 
-    Update-EmailAddressPolicy "Default Policy"
+```powershell
+Update-EmailAddressPolicy "Default Policy"
+```
 
 ## 替换已筛选收件人组的现有主电子邮件地址
 
@@ -191,7 +195,9 @@ _**上一次修改主题：** 2016-06-15_
 
 若要将新的电子邮件地址策略应用于受到影响的收件人，请运行以下命令：
 
-    Update-EmailAddressPolicy "Fourth Coffee Recipients"
+```powershell
+Update-EmailAddressPolicy "Fourth Coffee Recipients"
+```
 
 ## 您如何知道此步骤有效？
 

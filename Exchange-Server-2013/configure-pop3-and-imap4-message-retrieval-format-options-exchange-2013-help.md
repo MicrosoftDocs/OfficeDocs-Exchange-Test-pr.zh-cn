@@ -69,7 +69,9 @@ _**上一次修改主题：** 2015-03-09_
 
 此示例针对服务器 CAS01 上的所有 POP3 用户将邮件检索格式选项设置为“仅文本”。
 
-    Set-PopSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
+```powershell
+Set-PopSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
+```
 
 可从以下设置中进行选择。 您可以通过使用数字值或文本字符串为 *MessageRetrievalMimeFormat* 参数指定值。
 
@@ -126,7 +128,9 @@ _**上一次修改主题：** 2015-03-09_
 
 1.  在命令行管理程序中运行以下命令。
     
-        Get-PopSettings | format-list
+    ```powershell
+Get-PopSettings | format-list
+```
 
 2.  验证 *MessageRetrievalMimeFormat* 设置是否正确。
 
@@ -164,7 +168,9 @@ _**上一次修改主题：** 2015-03-09_
 
 此示例针对服务器 CAS01 上的所有 IMAP4 用户将邮件检索格式选项设置为“仅文本”。
 
-    Set-ImapSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
+```powershell
+Set-ImapSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
+```
 
 可从以下设置中进行选择。 您可以通过使用数字值或文本字符串为 *MessageRetrievalMimeFormat* 参数指定值。
 
@@ -221,7 +227,9 @@ _**上一次修改主题：** 2015-03-09_
 
 1.  在命令行管理程序中运行以下命令。
     
-        Get-ImapSettings | format-list
+    ```powershell
+Get-ImapSettings | format-list
+```
 
 2.  验证 *MessageRetrievalMimeFormat* 设置是否正确。
 
@@ -231,7 +239,9 @@ _**上一次修改主题：** 2015-03-09_
 
 此示例针对 `USER01` 的 POP3 访问权限将邮件检索格式设置为“仅文本”。
 
-    Set-CASMailbox -Identity USER01 -PopMessagesRetrievalMimeFormat TextOnly
+```powershell
+Set-CASMailbox -Identity USER01 -PopMessagesRetrievalMimeFormat TextOnly
+```
 
 可从以下设置中进行选择。 您可以通过使用数字值或文本字符串为 *PopMessagesRetrievalMimeFormat* 参数指定值。
 
@@ -288,7 +298,9 @@ _**上一次修改主题：** 2015-03-09_
 
 1.  在命令行管理程序中运行以下命令。
     
-        Get-CAS Mailbox <identity> | format-list
+    ```powershell
+Get-CAS Mailbox <identity> | format-list
+```
 
 2.  验证 *PopMessagesRetrievalMimeFormat* 的值是否正确。
 
@@ -298,7 +310,9 @@ _**上一次修改主题：** 2015-03-09_
 
 此示例针对 `USER01` 的 IMAP4 访问权限将邮件检索格式设置为“仅文本”。
 
-    Set-CASMailbox -Identity USER01 -ImapMessagesRetrievalMimeFormat TextOnly
+```powershell
+Set-CASMailbox -Identity USER01 -ImapMessagesRetrievalMimeFormat TextOnly
+```
 
 您可以通过使用数字值或文本字符串为 *ImapMessagesRetrievalMimeFormat* 参数指定值。
 
@@ -355,7 +369,9 @@ _**上一次修改主题：** 2015-03-09_
 
 1.  在命令行管理程序中运行以下命令。
     
-        Get-CAS Mailbox <identity> | format-list
+    ```powershell
+Get-CAS Mailbox <identity> | format-list
+```
 
 2.  验证 *ImapMessagesRetrievalMimeFormat* 的值是否正确。
 

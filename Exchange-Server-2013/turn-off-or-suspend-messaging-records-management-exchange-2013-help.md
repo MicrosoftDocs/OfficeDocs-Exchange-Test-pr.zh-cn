@@ -71,7 +71,9 @@ _**上一次修改主题：** 2013-02-14_
 
 此命令行管理程序示例将删除邮箱 jpeoples 的保留策略。
 
-    Set-Mailbox jpeoples -RetentionPolicy $null.
+```powershell
+Set-Mailbox jpeoples -RetentionPolicy $null.
+```
 
 此命令行管理程序示例将删除 Exchange 组织中所有邮箱的保留策略。
 
@@ -109,7 +111,9 @@ _**上一次修改主题：** 2013-02-14_
 
 此命令从 Exchange 组织中移除了 Corp-Users 保留策略。
 
-    Remove-RetentionPolicy Corp-Users
+```powershell
+Remove-RetentionPolicy Corp-Users
+```
 
 有关语法和参数的详细信息，请参阅下列主题：
 

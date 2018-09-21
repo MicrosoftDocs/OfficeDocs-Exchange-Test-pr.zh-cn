@@ -51,11 +51,15 @@ _**上一次修改主题：** 2012-10-03_
 
 要查看特定角色的详细信息，请使用以下语法。
 
-    Get-ManagementRole <role name> | Format-List
+```powershell
+Get-ManagementRole <role name> | Format-List
+```
 
 本示例检索有关\&quot;邮件收件人\&quot;管理角色的详细信息。
 
-    Get-ManagementRole "Mail Recipients" | Format-List
+```powershell
+Get-ManagementRole "Mail Recipients" | Format-List
+```
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementRole](https://technet.microsoft.com/zh-cn/library/dd351125\(v=exchg.150\))。
 
@@ -65,11 +69,15 @@ _**上一次修改主题：** 2012-10-03_
 
 本示例返回贵组织中所有角色的列表。
 
-    Get-ManagementRole
+```powershell
+Get-ManagementRole
+```
 
 若要返回您的组织中的特定属性的所有角色的列表，可以**Format-Table** cmdlet 将结果和在结果列表中指定所需的属性。使用以下语法。
 
-    Get-ManagementRole | Format-Table <property 1>, <property 2...>
+```powershell
+Get-ManagementRole | Format-Table <property 1>, <property 2...>
+```
 
 此示例返回组织中所有角色的列表，并包括 **Name** 属性和属性名以单词 **Implicit** 开头的任何属性。
 
@@ -83,11 +91,15 @@ _**上一次修改主题：** 2012-10-03_
 
 要返回包含指定的 cmdlet 的角色列表，请使用以下语法。
 
-    Get-ManagementRole -Cmdlet <cmdlet>
+```powershell
+Get-ManagementRole -Cmdlet <cmdlet>
+```
 
 本示例返回包含 **New-Mailbox** cmdlet 的角色列表。
 
-    Get-ManagementRole -Cmdlet New-Mailbox
+```powershell
+Get-ManagementRole -Cmdlet New-Mailbox
+```
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementRole](https://technet.microsoft.com/zh-cn/library/dd351125\(v=exchg.150\))。
 
@@ -103,11 +115,15 @@ _**上一次修改主题：** 2012-10-03_
 
 此示例返回包含 *Database* 和 *Server* 参数的角色列表，与这些参数所在的 cmdlet 无关。
 
-    Get-ManagementRole -CmdletParameters Database, Server
+```powershell
+Get-ManagementRole -CmdletParameters Database, Server
+```
 
 此示例返回其中 *EmailAddresses* 参数仅存在于 **Set-Mailbox** cmdlet 上的角色的列表。
 
-    Get-ManagementRole -Cmdlet Set-Mailbox -CmdletParameters EmailAddresses
+```powershell
+Get-ManagementRole -Cmdlet Set-Mailbox -CmdletParameters EmailAddresses
+```
 
 还可以配合 *Cmdlet* 或 *CmdletParameters* 参数使用通配符 (\*) 以匹配部分 cmdlet 或参数名称。
 
@@ -119,11 +135,15 @@ _**上一次修改主题：** 2012-10-03_
 
 要返回匹配指定角色类型的角色列表，请使用以下语法。
 
-    Get-ManagementRole -RoleType <roletype>
+```powershell
+Get-ManagementRole -RoleType <roletype>
+```
 
 本示例返回基于 `UmMailboxes` 角色类型的角色列表。
 
-    Get-ManagementRole -RoleType UmMailboxes
+```powershell
+Get-ManagementRole -RoleType UmMailboxes
+```
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementRole](https://technet.microsoft.com/zh-cn/library/dd351125\(v=exchg.150\))。
 
@@ -133,11 +153,15 @@ _**上一次修改主题：** 2012-10-03_
 
 要返回父角色的直接子角色的列表，请使用以下语法。
 
-    Get-ManagementRole <parent role name> -GetChildren
+```powershell
+Get-ManagementRole <parent role name> -GetChildren
+```
 
 此示例返回灾难恢复角色的直接子角色的列表。
 
-    Get-ManagementRole "Disaster Recovery" -GetChildren
+```powershell
+Get-ManagementRole "Disaster Recovery" -GetChildren
+```
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementRole](https://technet.microsoft.com/zh-cn/library/dd351125\(v=exchg.150\))。
 
@@ -147,11 +171,15 @@ _**上一次修改主题：** 2012-10-03_
 
 此示例返回父角色的所有子角色的列表。
 
-    Get-ManagementRole <parent role name> -Recurse
+```powershell
+Get-ManagementRole <parent role name> -Recurse
+```
 
 本示例返回\&quot;邮件收件人\&quot;角色的所有子角色。
 
-    Get-ManagementRole "Mail Recipients" -Recurse
+```powershell
+Get-ManagementRole "Mail Recipients" -Recurse
+```
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementRole](https://technet.microsoft.com/zh-cn/library/dd351125\(v=exchg.150\))。
 

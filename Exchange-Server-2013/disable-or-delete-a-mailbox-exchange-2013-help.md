@@ -129,19 +129,25 @@ _**上一次修改主题：** 2015-03-09_
 
 使用以下命令禁用用户邮箱、链接的邮箱、资源邮箱和共享邮箱。
 
-    Disable-Mailbox <identity>
+```powershell
+Disable-Mailbox <identity>
+```
 
 运行此命令时，系统将显示一条消息，要求您确认是否要禁用邮箱。
 
 以下是一些禁用邮箱的命令示例。
 ```
-    Disable-Mailbox danj
+```powershell
+Disable-Mailbox danj
+```
 ```
 ```
     Disable-Mailbox "Conf Room 31/1234 (12)"
 ```
 ```
-    Disable-Mailbox sharedmbx@contoso.com
+```powershell
+Disable-Mailbox sharedmbx@contoso.com
+```
 ```
 
 ## 您如何知道这有效？
@@ -164,7 +170,9 @@ _**上一次修改主题：** 2015-03-09_
 
   - 在此命令行管理程序中，运行以下命令。
     
-        Get-User <identity>
+    ```powershell
+Get-User <identity>
+```
     
     请注意，*RecipientType* 属性的值为 `User`，而不是已禁用邮箱的用户值 `UserMailbox`。这也表明该邮箱已禁用，但用户帐户仍然存在。
 
@@ -188,20 +196,26 @@ _**上一次修改主题：** 2015-03-09_
 
 使用以下命令删除用户邮箱、链接的邮箱、资源邮箱和共享邮箱。
 
-    Remove-Mailbox <identity>
+```powershell
+Remove-Mailbox <identity>
+```
 
 运行此命令时，系统将显示一条消息，要求您确认是否要删除邮箱和对应的 Active Directory 用户帐户。
 
 以下是一些删除邮箱的命令示例。
 
 ```
-    Remove-Mailbox pilarp@contoso.com
+```powershell
+Remove-Mailbox pilarp@contoso.com
+```
 ```
 ```
     Remove-Mailbox "Fleet Van (16)"
 ```
 ```
-    Remove-Mailbox corpprint
+```powershell
+Remove-Mailbox corpprint
+```
 ```
 
 ## 您如何知道这有效？
@@ -226,7 +240,9 @@ _**上一次修改主题：** 2015-03-09_
 
 2.  运行以下命令，验证 Active Directory 用户帐户是否已删除。
     
-        Get-User <identity>
+    ```powershell
+Get-User <identity>
+```
     
     该命令将返回错误，指出找不到用户，从而验证帐户已删除。
 

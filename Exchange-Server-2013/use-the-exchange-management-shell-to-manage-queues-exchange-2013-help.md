@@ -312,7 +312,9 @@ Exchange 2013 添加一个名为 **Get-QueueDigest** 的新队列 cmdlet。此 c
 
 此示例返回名为 Mailbox01、Mailbox02 和 Mailbox03 的 Exchange 2013 邮箱服务器上的所有非空外部队列。
 
-    Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude Empty
+```powershell
+Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude Empty
+```
 
 返回顶部
 

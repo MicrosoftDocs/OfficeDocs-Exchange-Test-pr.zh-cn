@@ -47,11 +47,15 @@ Microsoft Exchange Server 2013 支持禁用邮箱服务器之间的 SMTP 通信�
 
 要配置邮箱服务器上的传输服务以使用降级的 Exchange Server 身份验证，请运行以下命令：
 
-    Set-TransportService <ServerIdentity> -UseDowngradedExchangeServerAuth $true
+```powershell
+Set-TransportService <ServerIdentity> -UseDowngradedExchangeServerAuth $true
+```
 
 本示例在名为 Mailbox01 的服务器上进行了此项配置更改。
 
-    Set-TransportService Mailbox01 -UseDowngradedExchangeServerAuth $true
+```powershell
+Set-TransportService Mailbox01 -UseDowngradedExchangeServerAuth $true
+```
 
 ## 步骤 2：在邮箱服务器上为目标 Active Directory 站点创建专用的接收连接器
 
@@ -83,39 +87,53 @@ Microsoft Exchange Server 2013 支持禁用邮箱服务器之间的 SMTP 通信�
 
 <!-- end list -->
 
-    New-ReceiveConnector -Name WAN -Server Hub01 -RemoteIPRanges 10.0.2.0/24 -Internal
+```powershell
+New-ReceiveConnector -Name WAN -Server Hub01 -RemoteIPRanges 10.0.2.0/24 -Internal
+```
 
 ## 步骤 3：使用命令行管理程序禁用专用接收连接器上的 TLS
 
 要在接收连接器上禁用 TLS，请运行以下命令：
 
-    Set-ReceiveConnector <ReceiveConnectorIdentity> -SuppressXAnonymousTLS $true
+```powershell
+Set-ReceiveConnector <ReceiveConnectorIdentity> -SuppressXAnonymousTLS $true
+```
 
 本示例禁用了名为 Mailbox01 的邮箱服务器上名为 WAN 的接收连接器的 TLS。
 
-    Set-ReceiveConnector Mailbox01\WAN -SuppressXAnonymousTLS $true
+```powershell
+Set-ReceiveConnector Mailbox01\WAN -SuppressXAnonymousTLS $true
+```
 
 ## 步骤 4：使用命令行管理程序指定 Active Directory 站点作为中心站点
 
 要将 Active Directory 站点指定为中心站点，请运行以下命令：
 
-    Set-AdSite <ADSiteIdentity> -HubSiteEnabled $true
+```powershell
+Set-AdSite <ADSiteIdentity> -HubSiteEnabled $true
+```
 
 需要在每个拥有参与非加密通信的邮箱服务器的 Active Directory 站点中执行一次该步骤。
 
 本示例将名为“中心办公室站点 1”的 Active Directory 站点配置为中心站点。
 
-    Set-AdSite "Central Office Site 1" -HubSiteEnabled $true
+```powershell
+Set-AdSite "Central Office Site 1" -HubSiteEnabled $true
+```
 
 ## 步骤 5：使用命令行管理程序配置通过 WAN 连接的开销最低的路由路径
 
 根据在 Active Directory 中配置 IP 站点链接开销的方式，该步骤可能不是必需的。您需要验证部署了 WOC 设备的网络链接是否存在于开销最低的路由路径中。要查看 Active Directory 站点链接开销，以及 Exchange 特定的站点链接开销，请运行以下命令：
 
-    Get-AdSiteLink
+```powershell
+Get-AdSiteLink
+```
 
 如果部署了 WOC 设备的网络链接不存在于开销最低的路由路径上，则需要将特定于 Exchange 的开销分配给特定的 IP 站点链接，以确保正确地路由邮件。有关此特定问题的详细信息，请参阅[方案：将 Exchange 配置为支持 WAN 优化控制器](scenario-configure-exchange-to-support-wan-optimization-controllers-exchange-2013-help.md)中的“配置特定于 Exchange 的 Active Directory 站点链接开销”部分。
 
 本示例在名为“分支机构 2-分支机构 1”的 IP 站点链接上将特定于 Exchange 的开销配置为 15。
 
-    Set-AdSiteLink "Branch Office 2-Branch Office 1" -ExchangeCost 15
+```powershell
+Set-AdSiteLink "Branch Office 2-Branch Office 1" -ExchangeCost 15
+```
 

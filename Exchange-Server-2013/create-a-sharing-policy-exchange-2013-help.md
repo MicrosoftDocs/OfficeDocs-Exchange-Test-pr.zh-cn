@@ -107,7 +107,9 @@ _**上一次修改主题：** 2015-04-07_
 
   - 本示例为外部联盟域 contoso.com 创建共享策略 Contoso。该策略允许 contoso.com 域中的用户查看用户的详细日历可用性（忙/闲）信息。默认情况下，启用此策略。
     
-        New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
+    ```powershell
+New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
+```
 
   - 本示例将使用为每个域配置的不同的共享操作为两个不同的联盟域（contoso.com 和 woodgrovebank.com）创建共享策略 ContosoWoodgrove。已启用此策略。
     
@@ -117,7 +119,9 @@ _**上一次修改主题：** 2015-04-07_
     
     1.  设置 MAIL01 的 Web 代理 URL。
         
-            Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
+        ```powershell
+Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
+```
     
     2.  启用 CAS01 上的发布虚拟目录。
         
@@ -139,7 +143,9 @@ _**上一次修改主题：** 2015-04-07_
 
 若要验证是否已经成功创建了共享策略，可运行以下命令行管理程序命令验证共享策略信息。
 
-    Get-SharingPolicy <policy name> | format-list
+```powershell
+Get-SharingPolicy <policy name> | format-list
+```
 
 > [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。

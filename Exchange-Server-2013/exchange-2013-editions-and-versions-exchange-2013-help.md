@@ -37,7 +37,9 @@ Microsoft Exchange Server 2013 有两种服务器版本：标准版和企业版�
 
 若要查看您正在运行的 Exchange 2013 版本的内部版本号，请在 Exchange 命令行管理程序中运行以下命令。
 
-    Get-ExchangeServer | fl name,edition,admindisplayversion
+```powershell
+Get-ExchangeServer | fl name,edition,admindisplayversion
+```
 
 ## Exchange 2013 许可证类型
 

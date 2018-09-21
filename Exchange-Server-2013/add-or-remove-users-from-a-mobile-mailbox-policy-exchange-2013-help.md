@@ -114,5 +114,7 @@ _**上一次修改主题：** 2015-07-16_
 
 2.  在此命令行管理程序中，运行以下命令。
     
-        Get-CASMailbox -Identity tony@contoso.com
+    ```powershell
+Get-CASMailbox -Identity tony@contoso.com
+```
 

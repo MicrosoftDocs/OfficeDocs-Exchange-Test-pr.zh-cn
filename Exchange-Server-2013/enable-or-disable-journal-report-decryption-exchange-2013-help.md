@@ -47,7 +47,9 @@ _**上一次修改主题：** 2016-12-09_
 
 本示例启用 Exchange 组织的日记报告解密。
 
-    Set-IRMConfiguration -JournalReportDecryptionEnabled $true
+```powershell
+Set-IRMConfiguration -JournalReportDecryptionEnabled $true
+```
 
 有关语法和参数的详细信息，请参阅 [Set-IRMConfiguration](https://technet.microsoft.com/zh-cn/library/dd979792\(v=exchg.150\))。
 
@@ -55,7 +57,9 @@ _**上一次修改主题：** 2016-12-09_
 
 本示例禁用 Exchange 组织的日记报告解密。
 
-    Set-IRMConfiguration -JournalReportDecryptionEnabled $false
+```powershell
+Set-IRMConfiguration -JournalReportDecryptionEnabled $false
+```
 
 有关语法和参数的详细信息，请参阅 [Set-IRMConfiguration](https://technet.microsoft.com/zh-cn/library/dd979792\(v=exchg.150\))。
 

@@ -29,7 +29,9 @@ _**上一次修改主题：** 2014-02-10_
     
     若要查看附件筛选可以检测的文件扩展名和内容类型的完整列表，请在边缘传输服务器上运行以下命令：
     
-        Get-AttachmentFilterEntry | Format-List
+    ```powershell
+Get-AttachmentFilterEntry | Format-List
+```
 
 定义要查找的文件后，您可以配置要对包含这些附件的邮件采取的操作。无法为不同类型的附件指定不同的操作。为匹配任意附件筛选器的所有邮件配置下列操作之一：
 

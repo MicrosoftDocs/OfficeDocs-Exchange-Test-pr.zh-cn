@@ -73,7 +73,9 @@ _**上一次修改主题：** 2013-02-21_
 
 此示例在命令行管理程序中使用 Enable-CrossForestConnector.ps1 脚本来设置要在跨林拓扑中使用的发送连接器上的权限。
 
-    .\Enable-CrossForestConnector.ps1 -Connector "Cross-Forest" -user "ANONYMOUS LOGON"
+```powershell
+.\Enable-CrossForestConnector.ps1 -Connector "Cross-Forest" -user "ANONYMOUS LOGON"
+```
 
 ## 您如何知道操作成功？
 

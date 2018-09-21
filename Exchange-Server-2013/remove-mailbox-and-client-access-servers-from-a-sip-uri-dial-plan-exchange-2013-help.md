@@ -58,15 +58,21 @@ _**上一次修改主题：** 2013-04-16_
 
 在此示例中，有三个 SIP URI 拨号计划 ︰ SipDP1、 SipDP2 和 SipDP3。本示例删除名为`MyMailboxServer` SipDP3 拨号计划中的邮箱服务器。
 
-    Set-UMService -id MyMailboxServer -DialPlans SipDP1,SipDP2
+```powershell
+Set-UMService -id MyMailboxServer -DialPlans SipDP1,SipDP2
+```
 
 在此示例中，有两个 SIP URI 拨号计划 ︰ SipDP1 和 SipDP2。本示例删除名为`MyMailboxServer` SipDP2 拨号计划中的邮箱服务器。
 
-    Set-UMService -id MyMailboxServer -DialPlans SipDP1
+```powershell
+Set-UMService -id MyMailboxServer -DialPlans SipDP1
+```
 
 此示例从所有 SIP 拨号计划中删除名为 `MyMailboxServer` 的邮箱服务器。
 
-    Set-UMService -id MyUMServer -DialPlans $null
+```powershell
+Set-UMService -id MyUMServer -DialPlans $null
+```
 
 ## 使用 EAC 从 SIP URI 拨号计划中删除客户端访问服务器
 
@@ -89,13 +95,19 @@ _**上一次修改主题：** 2013-04-16_
 
 在此示例中，有三个 SIP URI 拨号计划 ︰ SipDP1、 SipDP2 和 SipDP3。本示例删除名为`MyClientAccessServer` SipDP3 拨号计划中的客户端访问服务器。
 
-    Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans SipDP1,SipDP2
+```powershell
+Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans SipDP1,SipDP2
+```
 
 在此示例中，有两个 SIP URI 拨号计划 ︰ SipDP1 和 SipDP2。本示例删除名为`MyClientAccessServer` SipDP2 拨号计划中的客户端访问服务器。
 
-    Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans SipDP1
+```powershell
+Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans SipDP1
+```
 
 此示例从所有 SIP 拨号计划中删除名为 `MyClientAccessServer` 的客户端访问服务器。
 
-    Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans $null
+```powershell
+Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans $null
+```
 

@@ -256,5 +256,7 @@ _**上一次修改主题：** 2015-03-09_
 
 必须在客户端访问服务器接收通信之前更新 ASA 凭据。请从任何已正确配置的客户端访问服务器复制共享 ASA 凭据。例如，如果服务器 A 当前拥有一个有效的 ASA 凭据，而您刚向阵列中添加了服务器 B，则可以使用脚本将凭据（包括密码）从服务器 A 复制到服务器 B。如果上次滚动密码时，服务器 B 关机或者尚未成为阵列成员，则可以使用这种方法。
 
-    .\RollAlternateServiceAccountPassword.ps1 -CopyFrom ServerA -ToSpecificServers ServerB -Verbose
+```powershell
+.\RollAlternateServiceAccountPassword.ps1 -CopyFrom ServerA -ToSpecificServers ServerB -Verbose
+```
 

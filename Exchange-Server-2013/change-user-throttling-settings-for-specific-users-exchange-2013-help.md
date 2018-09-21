@@ -41,11 +41,15 @@ _**上一次修改主题：** 2014-08-05_
 
 此示例创建了一个可与特定用户关联的非默认用户限制策略 ITStaffPolicy。省略的任何参数都将继承默认限制策略 GlobalThrottlingPolicy 的值。创建此策略后，必须将其与特定用户关联。
 
-    New-ThrottlingPolicy -Name ITStaffPolicy -EwsMaxConcurrency 4 -ThrottlingPolicyScope Regular
+```powershell
+New-ThrottlingPolicy -Name ITStaffPolicy -EwsMaxConcurrency 4 -ThrottlingPolicyScope Regular
+```
 
 此示例将用户名为 tonysmith 的用户与具有更高限制的限制策略 ITStaffPolicy 关联。
 
-    Set-ThrottlingPolicyAssociation -Identity tonysmith -ThrottlingPolicy ITStaffPolicy
+```powershell
+Set-ThrottlingPolicyAssociation -Identity tonysmith -ThrottlingPolicy ITStaffPolicy
+```
 
 不需要使用 **Set-ThrottlingPolicyAssociation** cmdlet 将规则与策略关联。以下命令展示了将 tonysmith 与限制策略 ITStaffPolicy 关联的另一种方式。
 
@@ -65,19 +69,25 @@ Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
 
 1.  运行以下命令。
     
-        Get-ThrottlingPolicy | Format-List
+    ```powershell
+Get-ThrottlingPolicy | Format-List
+```
 
 2.  验证在显示 GlobalThrottlingPolicy 对象的列中是否列出了刚创建的常规限制策略。
 
 3.  运行以下命令。
     
-        Get-ThrottlingPolicy | Format-List
+    ```powershell
+Get-ThrottlingPolicy | Format-List
+```
 
 4.  验证新常规策略的属性是否与配置的值匹配。
 
 5.  运行以下命令。
     
-        Get-ThrottlingPolicyAssociation
+    ```powershell
+Get-ThrottlingPolicyAssociation
+```
 
 6.  验证新的常规策略是否接受该规则分配的用户关联。
 

@@ -43,7 +43,9 @@ _**上一次修改主题：** 2015-03-09_
 
   - 若要显示所有邮箱还原请求的 *Identity* 属性的值，请运行以下命令。
     
-        Get-MailboxRestoreRequest | Format-Table Identity
+    ```powershell
+Get-MailboxRestoreRequest | Format-Table Identity
+```
     
     在执行本主题中的过程时，可以使用此标识值指定特定的邮箱还原请求。
 
@@ -61,31 +63,43 @@ _**上一次修改主题：** 2015-03-09_
 
 若要显示所有邮箱还原请求的 *Identity* 属性的列表和值，请运行以下命令。
 
-    Get-MailboxRestoreRequest | Format-Table Identity
+```powershell
+Get-MailboxRestoreRequest | Format-Table Identity
+```
 
 可以使用该标识获取有关特定邮箱还原请求的信息。
 
 此示例使用 *Identity* 参数返回还原请求 Pilar Pinilla \\MailboxRestore 的状态。
 
-    Get-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore"
+```powershell
+Get-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore"
+```
 
 此示例返回 Pilar Pinilla 目标邮箱的第二个还原请求的所有信息。
 
-    Get-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1" | Format-List
+```powershell
+Get-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1" | Format-List
+```
 
 此示例返回从源数据库 MBD01 还原的还原请求的状态。
 
-    Get-MailboxRestoreRequest -SourceDatabase MBD01
+```powershell
+Get-MailboxRestoreRequest -SourceDatabase MBD01
+```
 
 此示例返回当前正在进行的所有还原请求。
 
-    Get-MailboxRestoreRequest -Status InProgress
+```powershell
+Get-MailboxRestoreRequest -Status InProgress
+```
 
 其他有用的状态包括 `Queued`、`Completed`、`Suspended` 和 `Failed`。
 
 此示例返回已挂起的所有还原请求。
 
-    Get-MailboxRestoreRequest -Suspend $true
+```powershell
+Get-MailboxRestoreRequest -Suspend $true
+```
 
 有关语法和参数的详细信息，请参阅 [Get-MailboxRestoreRequest](https://technet.microsoft.com/zh-cn/library/ff829907\(v=exchg.150\))。
 
@@ -148,7 +162,9 @@ _**上一次修改主题：** 2015-03-09_
 
 此示例返回还原请求 danp\\MailboxRestore1 的默认统计信息。默认情况下，返回的信息包括名称、邮箱、状态和完成百分比。
 
-    Get-MailboxRestoreRequestStatistics -Identity danp\MailboxRestore1
+```powershell
+Get-MailboxRestoreRequestStatistics -Identity danp\MailboxRestore1
+```
 
 本示例返回 Dan Park 的邮箱统计信息，并将报告导出到 .csv 文件中。
 
@@ -399,7 +415,9 @@ _**上一次修改主题：** 2015-03-09_
 
 此示例指定对 Debra Garcia 邮箱的还原请求 MailboxRestore1 跳过 10 个损坏的邮箱项目。
 
-    Set-MailboxRestoreRequest -Identity "Debra Garcia\MailboxRestore1" -BadItemLimit 10
+```powershell
+Set-MailboxRestoreRequest -Identity "Debra Garcia\MailboxRestore1" -BadItemLimit 10
+```
 
 此示例指定对 Florence Flipo 邮箱的还原请求 MailboxRestore1 跳过 100 个损坏的项目。由于 *BadItemLimit* 值大于 50，因此必须指定 *AcceptLargeDataLoss* 参数。
 
@@ -419,7 +437,9 @@ _**上一次修改主题：** 2015-03-09_
 
 此示例挂起对 Pilar Pinilla 邮箱的还原请求 MailboxRestore1。
 
-    Suspend-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```powershell
+Suspend-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```
 
 此示例挂起所有正在处理的还原请求，具体方法是：先检索状态为 `InProgress` 的所有请求，继而通过管道将输出传递给 **Suspend-MailboxRestoreRequest** cmdlet，并给出挂起注释“Resume after FY13Q2 Maintenance”。
 
@@ -431,7 +451,9 @@ _**上一次修改主题：** 2015-03-09_
 
 若要验证是否成功挂起了邮箱还原请求，请运行以下命令。
 
-    Get-MailboxRestoreRequest <identity> | Format-List Suspend,Status
+```powershell
+Get-MailboxRestoreRequest <identity> | Format-List Suspend,Status
+```
 
 如果 *Suspend* 属性的值等于 `True`，则表示已成功挂起还原请求。此外，*Status* 属性的值 `Suspended` 表示还原请求已挂起。
 
@@ -441,11 +463,15 @@ _**上一次修改主题：** 2015-03-09_
 
 此示例恢复还原请求 Pilar Pinilla\\MailboxRestore1。
 
-    Resume-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```powershell
+Resume-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```
 
 此示例恢复状态为“失败”的所有还原请求。
 
-    Get-MailboxRestoreRequest -Status Failed | Resume-MailboxRestoreRequest
+```powershell
+Get-MailboxRestoreRequest -Status Failed | Resume-MailboxRestoreRequest
+```
 
 有关语法和参数的详细信息，请参阅 [Resume-MailboxRestoreRequest](https://technet.microsoft.com/zh-cn/library/ff829908\(v=exchg.150\))。
 
@@ -453,7 +479,9 @@ _**上一次修改主题：** 2015-03-09_
 
 若要验证是否已恢复还原请求，请运行以下命令。
 
-    Get-MailboxRestoreRequest <identity> | Format-List Suspend,Status
+```powershell
+Get-MailboxRestoreRequest <identity> | Format-List Suspend,Status
+```
 
 如果 *Suspend* 属性的值等于 `False`，则表示已成功恢复还原请求。此外，*Status* 属性的值 `InProgress` 表示还原请求已恢复。
 
@@ -467,15 +495,21 @@ _**上一次修改主题：** 2015-03-09_
 
 此示例删除还原请求 Pilar Pinilla\\MailboxRestore1。
 
-    Remove-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```powershell
+Remove-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```
 
 本示例将删除状态为“已完成”的所有还原请求。
 
-    Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest
+```powershell
+Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest
+```
 
 本示例通过使用 *RequestGuid* 参数取消存储在 MBXDB01 上的某请求的还原请求。需要 *RequestGuid* 和 *RequestQueue* 参数的参数集仅用于 Microsoft 复制服务调试目的。只应在 Microsoft 客户服务和支持的指导下使用此参数集。
 
-    Remove-MailboxRestoreRequest -RequestQueue MBXDB01 -RequestGuid 25e0eaf2-6cc2-4353-b83e-5cb7b72d441f
+```powershell
+Remove-MailboxRestoreRequest -RequestQueue MBXDB01 -RequestGuid 25e0eaf2-6cc2-4353-b83e-5cb7b72d441f
+```
 
 有关语法和参数的详细信息，请参阅 [Remove-MailboxRestoreRequest](https://technet.microsoft.com/zh-cn/library/ff829910\(v=exchg.150\))。
 
@@ -483,7 +517,9 @@ _**上一次修改主题：** 2015-03-09_
 
 若要验证是否成功删除了邮箱还原请求，请运行以下命令。
 
-    Get-MailboxRestoreRequest -Identity <identity of removed restore request>
+```powershell
+Get-MailboxRestoreRequest -Identity <identity of removed restore request>
+```
 
 该命令将返回一个错误，指出还原请求不存在。
 

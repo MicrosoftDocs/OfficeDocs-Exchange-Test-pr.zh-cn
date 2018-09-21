@@ -37,7 +37,9 @@ _**上一次修改主题：** 2012-11-27_
 
 此示例可让 IMAP4 用户使用 iCalendar 标准，这是用于交换日历信息的标准。
 
-    Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
+```powershell
+Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
+```
 
 此示例将使 IMAP4 用户能够从内部服务器访问日历信息。
 
@@ -45,11 +47,15 @@ _**上一次修改主题：** 2012-11-27_
 
 此示例将使 IMAP4 用户能够通过 Internet 访问外部服务器上的日历信息。
 
-    Set-ImapSettings -CalendarItemRetrievalOption InternetUrl
+```powershell
+Set-ImapSettings -CalendarItemRetrievalOption InternetUrl
+```
 
 本示例启用 IMAP4 访问日历信息的用户通过直接Outlook Web App URL。如果您正在使用`Custom`，则必须指定 Outlook Web App URL 使用*OWAServerUrl*参数。
 
-    Set-Imap4Settings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaServer01"
+```powershell
+Set-Imap4Settings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaServer01"
+```
 
 您所指定的 IMAP4 日历选项后，您必须重新启动 IMAP4 服务。有关如何重新启动 IMAP4 服务的信息，请参阅[启动和停止 IMAP4 服务](start-and-stop-the-imap4-services-exchange-2013-help.md)。
 
@@ -61,7 +67,9 @@ _**上一次修改主题：** 2012-11-27_
 
 在命令行管理程序中运行以下命令。
 
-    Get-ImapSettings | format-list
+```powershell
+Get-ImapSettings | format-list
+```
 
 验证日历设置是否正确。
 

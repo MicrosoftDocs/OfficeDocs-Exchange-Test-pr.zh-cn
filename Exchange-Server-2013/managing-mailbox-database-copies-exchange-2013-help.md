@@ -163,7 +163,9 @@ _**上一次修改主题：** 2016-08-26_
 
 滞后副本减少行为在默认情况下会被禁用，可以通过运行以下命令来启用。
 
-    Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```powershell
+Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```
 
 启用后，在少于三个副本时，会出现减少行为。可以通过修改以下 DWORD 注册表值来更改默认值 3。
 
@@ -612,11 +614,15 @@ Exchange 2013 Service Pack 1 (SP1) 引入了一种称为“松散截断”的功
 
 此示例演示某个 DAG 的当前数据库分布，包括首选项计数列表。
 
-    RedistributeActiveDatabases.ps1 -DagName DAG1 -ShowDatabaseDistributionByServer | Format-Table
+```powershell
+RedistributeActiveDatabases.ps1 -DagName DAG1 -ShowDatabaseDistributionByServer | Format-Table
+```
 
 此示例使用不提示进行输入的激活首选项在 DAG 中重新分布和平衡主动邮箱数据库副本。
 
-    RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -Confirm:$False
+```powershell
+RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -Confirm:$False
+```
 
 此示例使用激活首选项在 DAG 中重新分布和平衡活动邮箱数据库副本，并生成分布摘要。
 

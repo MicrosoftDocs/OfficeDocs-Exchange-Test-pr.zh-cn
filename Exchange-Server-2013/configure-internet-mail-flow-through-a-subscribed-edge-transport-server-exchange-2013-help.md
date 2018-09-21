@@ -49,7 +49,9 @@ _**上一次修改主题：** 2015-04-08_
     
     以下示例在文件夹 C:\\My Documents 中创建了名为“EdgeSubscriptionInfo.xml”的边缘订阅文件。*Force* 参数禁止确认边缘传输服务器上将禁用的命令以及配置数据将被覆盖的警告的提示。
     
-        New-EdgeSubscription -FileName "C:\My Documents\EdgeSubscriptionInfo.xml" -Force
+    ```powershell
+New-EdgeSubscription -FileName "C:\My Documents\EdgeSubscriptionInfo.xml" -Force
+```
 
 2.  将生成的边缘订阅文件复制到您将边缘传输服务器订阅到的 Active Directory 站点中的邮箱服务器。
 
@@ -67,7 +69,9 @@ _**上一次修改主题：** 2015-04-08_
 
 4.  在邮箱服务器上，运行以下命令，以开始第一次 EdgeSync 同步。
     
-        Start-EdgeSynchronization
+    ```powershell
+Start-EdgeSynchronization
+```
 
 5.  完成后，我们强烈建议将边缘订阅文件从边缘传输服务器和邮箱服务器中删除。边缘订阅文件包含在 LDAP 通信过程中使用的凭据的相关信息。
 

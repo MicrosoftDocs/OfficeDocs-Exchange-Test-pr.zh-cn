@@ -51,11 +51,15 @@ _**上一次修改主题：** 2014-06-23_
 
 本示例将对服务器 MBX1 执行服务器切换。系统将自动为 MBX1 上的每个活动数据库选择最佳邮箱服务器。
 
-    Move-ActiveMailboxDatabase -Server MBX1
+```powershell
+Move-ActiveMailboxDatabase -Server MBX1
+```
 
 本示例将对邮箱服务器 MBX4 执行服务器切换。当命令完成时，MBX5 将托管先前在 MBX4 上处于活动状态的数据库的活动副本。
 
-    Move-ActiveMailboxDatabase -Server MBX4 -ActivateOnServer MBX5
+```powershell
+Move-ActiveMailboxDatabase -Server MBX4 -ActivateOnServer MBX5
+```
 
 有关详细的语法和参数信息，请参阅[Move-ActiveMailboxDatabase](https://technet.microsoft.com/zh-cn/library/dd298068\(v=exchg.150\))。
 

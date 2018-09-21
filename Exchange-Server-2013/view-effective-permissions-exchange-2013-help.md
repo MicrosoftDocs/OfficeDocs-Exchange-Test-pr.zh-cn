@@ -49,11 +49,15 @@ _**上一次修改主题：** 2012-10-09_
 
 若要列出授予管理角色提供的权限的所有用户，请使用以下语法。
 
-    Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers
+```
 
 此示例列出了授予由“邮件收件人”角色提供的权限的所有用户。
 
-    Get-ManagementRoleAssignment -Role "Mail Recipients" -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment -Role "Mail Recipients" -GetEffectiveUsers
+```
 
 如果要更改列表中返回的属性或将列表导出到逗号分隔值 (.csv) 文件，请参阅本主题后面的使用命令行管理程序自定义输出并显示该输出。
 
@@ -81,7 +85,9 @@ _**上一次修改主题：** 2012-10-09_
 
 此示例查找向用户 Kim Akers 授予权限的所有角色分配。
 
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "Kim Akers" }
+```powershell
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where {     Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "Kim Akers" }.EffectiveUserName -Eq "Kim Akers" }
+```
 
 如果要更改列表中返回的属性或将列表导出为 CSV 文件，请参阅本主题后面的使用命令行管理程序自定义输出并显示该输出。
 

@@ -41,7 +41,9 @@ _**上一次修改主题：** 2014-12-16_
 
 1.  在邮箱服务器或边缘传输服务器上的命令提示符窗口中，通过运行以下命令在记事本中打开 EdgeTransport.exe.config 文件：
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 2.  在 `<appSettings>` 部分中找到以下项。
     
@@ -139,11 +141,15 @@ _**上一次修改主题：** 2014-12-16_
 
 使用以下语法设置邮件重试间隔。
 
-    Set-TransportService <ServerIdentity> -MessageRetryInterval <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -MessageRetryInterval <dd.hh:mm:ss>
+```
 
 此示例在名为 Mailbox01 的邮箱服务器上将邮件重试间隔更改为 20 分钟。
 
-    Set-TransportService Mailbox01 -MessageRetryInterval 00:20:00
+```powershell
+Set-TransportService Mailbox01 -MessageRetryInterval 00:20:00
+```
 
 ## 配置延迟 DSN 超时设置
 
@@ -165,11 +171,15 @@ _**上一次修改主题：** 2014-12-16_
 
 使用以下语法设置邮件重试间隔。
 
-    Set-TransportService <ServerIdentity> -DelayNotificationTimeout <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -DelayNotificationTimeout <dd.hh:mm:ss>
+```
 
 此示例在名为 Mailbox01 的邮箱服务器上将延迟 DSN 邮件通知超时间隔更改为 6 小时。
 
-    Set-TransportService Mailbox01 -DelayNotificationTimeout 06:00:00
+```powershell
+Set-TransportService Mailbox01 -DelayNotificationTimeout 06:00:00
+```
 
 ## 使用命令行管理程序启用或禁用向外部或内部邮件发件人发送延迟 DSN 通知
 
@@ -179,11 +189,15 @@ _**上一次修改主题：** 2014-12-16_
 
 此示例阻止将延迟 DSN 通知邮件发送给外部发件人。
 
-    Set-TransportConfig -ExternalDelayDSNEnabled $false
+```powershell
+Set-TransportConfig -ExternalDelayDSNEnabled $false
+```
 
 此示例阻止将延迟 DSN 通知邮件发送给内部发件人。
 
-    Set-TransportConfig -InternalDelayDSNEnabled $false
+```powershell
+Set-TransportConfig -InternalDelayDSNEnabled $false
+```
 
 ## 配置邮件过期超时间隔
 
@@ -199,9 +213,13 @@ _**上一次修改主题：** 2014-12-16_
 
 若要配置邮件过期超时间隔，请使用以下语法。
 
-    Set-TransportService <ServerIdentity> -MessageExpirationTimeout <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -MessageExpirationTimeout <dd.hh:mm:ss>
+```
 
 此示例在名为 Mailbox01 的 Exchange 服务器上将邮件过期超时间隔更改为 4 天。
 
-    Set-TransportService Mailbox01 -MessageExpirationTimeout 4.00:00:00
+```powershell
+Set-TransportService Mailbox01 -MessageExpirationTimeout 4.00:00:00
+```
 

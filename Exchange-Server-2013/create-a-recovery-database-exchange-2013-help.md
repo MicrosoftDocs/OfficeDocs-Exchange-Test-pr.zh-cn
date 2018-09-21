@@ -37,7 +37,9 @@ _**上一次修改主题：** 2013-01-21_
 
 本示例在邮箱服务器 MBX2 上创建恢复数据库 RDB1。
 
-    New-MailboxDatabase -Recovery -Name RDB1 -Server MBX2
+```powershell
+New-MailboxDatabase -Recovery -Name RDB1 -Server MBX2
+```
 
 本示例使用数据库文件和日志文件夹的自定义路径在邮箱服务器 MBX1 上创建恢复数据库 RDB2。
 
@@ -51,7 +53,9 @@ _**上一次修改主题：** 2013-01-21_
 
   - 在命令行管理程序中，运行下列命令来显示恢复数据库的配置信息。
     
-        Get-MailboxDatabase <RecoveryDatabaseName> | Format-List
+    ```powershell
+Get-MailboxDatabase <RecoveryDatabaseName> | Format-List
+```
 
 ## 其他任务
 

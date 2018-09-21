@@ -85,7 +85,9 @@ _**上一次修改主题：** 2013-04-16_
 
 本示例将名为`MyClientAccessServer`到名为`MySIPDialPlan`的 SIP URI 拨号计划的客户端访问服务器。它也为双模式，允许客户端访问服务器接受 TCP 和 TLS 请求设置的启动模式。
 
-    Set-UMCallRouterSettings -DialPlans MySIPDialPlan -Server MyClientAccessServer -UMStartupMode Dual
+```powershell
+Set-UMCallRouterSettings -DialPlans MySIPDialPlan -Server MyClientAccessServer -UMStartupMode Dual
+```
 
 此示例将名为 `MyClientAccessServer` 的客户端访问服务器添加到名为 `MySIPDialPlan` 和 `MySIPDialPlan2` 的两个 SIP 拨号计划，并允许服务器使用 IPv4 和 IPv6 地址。
 

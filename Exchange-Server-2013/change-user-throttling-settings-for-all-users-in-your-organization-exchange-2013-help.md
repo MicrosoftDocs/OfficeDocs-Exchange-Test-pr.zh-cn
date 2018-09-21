@@ -41,7 +41,9 @@ _**上一次修改主题：** 2014-08-05_
 
 此示例创建了一个应用于组织中所有用户的限制策略。省略的任何参数都将继承默认限制策略 GlobalThrottlingPolicy 的值。
 
-    New-ThrottlingPolicy -Name AllUsersEWSPolicy EwsMaxConcurrency 4 -ThrottlingPolicyScope Organization
+```powershell
+New-ThrottlingPolicy -Name AllUsersEWSPolicy EwsMaxConcurrency 4 -ThrottlingPolicyScope Organization
+```
 
 有关语法和参数的详细信息，请参阅 [New-ThrottlingPolicy](https://technet.microsoft.com/zh-cn/library/dd351045\(v=exchg.150\))。
 
@@ -51,13 +53,17 @@ _**上一次修改主题：** 2014-08-05_
 
 1.  运行以下命令。
     
-        Get-ThrottlingPolicy | Format-List
+    ```powershell
+Get-ThrottlingPolicy | Format-List
+```
 
 2.  验证在显示 GlobalThrottlingPolicy 对象的列中是否列出了刚创建的组织限制策略。
 
 3.  运行以下命令。
     
-        Get-ThrottlingPolicy | Format-List
+    ```powershell
+Get-ThrottlingPolicy | Format-List
+```
 
 4.  验证新组织策略的属性是否与配置的值匹配。
 

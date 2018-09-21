@@ -95,7 +95,9 @@ _**上一次修改主题：** 2015-05-04_
 
 此示例将连接用户邮箱。*Identity* 参数指定邮箱数据库 MBXDB01 中保留的已删除邮箱的显示名。*User* 参数指定要将邮箱连接到的 Active Directory 用户帐户。
 
-    Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
+```powershell
+Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
+```
 
 > [!NOTE]  
 > 还可以使用 <code>LegacyDN</code> 或 <code>MailboxGuid</code> 属性的值来标识删除的邮箱。
@@ -133,7 +135,9 @@ _**上一次修改主题：** 2015-05-04_
 
   - 在此命令行管理程序中，运行以下命令。
     
-        Get-User <identity>
+    ```powershell
+Get-User <identity>
+```
     
     *RecipientType* 属性的 **UserMailbox** 值表示用户帐户和邮箱已经连接。也可以运行 **Get-Mailbox \<identity\>** 命令来验证邮箱是否已连接。
 
@@ -171,7 +175,9 @@ _**上一次修改主题：** 2015-05-04_
 
 1.  通过运行以下 cmdlet 获取 Active Directory 林和域控制器完全限定的域名 (FQDN)：
     
-        Get-OrganizationConfig | fl OriginatingServer
+    ```powershell
+Get-OrganizationConfig | fl OriginatingServer
+```
 
 2.  利用步骤 1 返回的信息，搜索 Active Directory 中的“已删除对象”容器以获取公用文件夹邮箱的 GUID 和包含已删除公用文件夹邮箱的邮箱数据库的 GUID 或名称。
     

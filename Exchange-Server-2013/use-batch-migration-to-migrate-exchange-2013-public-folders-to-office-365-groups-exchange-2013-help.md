@@ -91,7 +91,9 @@ _**上一次修改主题：** 2018-03-26_
 
 4.  您需要具有**小爪印**为 Office 365 租户启用迁移功能。若要验证这一点，请在 Exchange 联机 PowerShell 运行下面的命令：
     
-        Get-MigrationConfig
+    ```powershell
+Get-MigrationConfig
+```
     
     如果输出**功能**下，列出**小爪印**，则启用该功能，您可以继续到*第 3 步： 博客.csv 文件*。
     
@@ -107,7 +109,9 @@ _**上一次修改主题：** 2018-03-26_
 
   - **TargetGroupMailbox**。Office 365 中的目标组的 SMTP 地址。您可以运行下面的命令以查看主 SMTP 地址。
     
-        Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
+    ```powershell
+Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
+```
 
 示例.csv:
 
@@ -134,7 +138,9 @@ _**上一次修改主题：** 2018-03-26_
     
     2.  使用上面的步骤 1 中记下您 Exchange 2013 环境女士代理服务器信息，然后将该值传递给变量`$Source_RemoteServer`。
         
-            $Source_RemoteServer = "<MRS proxy endpoint>"
+        ```powershell
+$Source_RemoteServer = "<MRS proxy endpoint>"
+```
 
 3.  在Exchange Online PowerShell，运行以下命令来创建迁移终结点：
     
@@ -156,7 +162,9 @@ _**上一次修改主题：** 2018-03-26_
 
 5.  通过在Exchange Online PowerShell中运行下面的命令启动迁移。请注意此步骤是必需的只有当在步骤 4 中创建上面批时不使用`-AutoStart`参数。
     
-        Start-MigrationBatch PublicFolderToGroupMigration
+    ```powershell
+Start-MigrationBatch PublicFolderToGroupMigration
+```
 
 批次迁移需要在Exchange Online PowerShell中使用`New-MigrationBatch` cmdlet 来创建，而都可以查看和管理在Exchange 管理中心中显示迁移的进度。通过运行[Get-MigrationBatch](https://technet.microsoft.com/zh-cn/library/jj219164\(v=exchg.150\))和[Get-MigrationUser](https://technet.microsoft.com/zh-cn/library/jj218702\(v=exchg.150\))的 cmdlet，您还可以查看显示迁移的进度。`New-MigrationBatch` cmdlet 启动每个 Office 365 组邮箱，迁移用户，您可以查看使用邮箱迁移页这些请求的状态。
 
@@ -216,7 +224,9 @@ _**上一次修改主题：** 2018-03-26_
 
 只读的做出自己的公用文件夹后，您需要执行再次迁移。这是所需的数据最终增量复制。您可以运行再次迁移之前，您需要删除现有批处理，可以通过运行下面的命令来执行此操作：
 
-    Remove-MigrationBatch <name of migration batch>
+```powershell
+Remove-MigrationBatch <name of migration batch>
+```
 
 接下来，一批新使用同一个.csv 文件创建通过运行下面的命令。在此命令：
 
@@ -232,7 +242,9 @@ _**上一次修改主题：** 2018-03-26_
 
 创建新的批处理后，通过在Exchange Online PowerShell中运行下面的命令启动迁移。请注意，此步骤才是必需的`-AutoStart`参数未使用在前面的命令。
 
-    Start-MigrationBatch PublicFolderToGroupMigration
+```powershell
+Start-MigrationBatch PublicFolderToGroupMigration
+```
 
 完成这一步 （批次状态为**已完成**） 后，验证所有的数据，已复制到 Office 365 组。此时，只要您满意组体验，您可以开始迁移公用文件夹删除 Exchange 2013 环境。
 

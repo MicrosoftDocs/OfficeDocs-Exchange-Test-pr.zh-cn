@@ -61,7 +61,9 @@ DAC 模式包含了数据中心激活协调协议 (DACP)，以此防止出现网
 
 只能通过使用 Exchange 命令行管理程序启用 DAC 模式。具体来说，您可以使用 [Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/zh-cn/library/dd297934\(v=exchg.150\)) cmdlet 启用 DAC 模式，如以下示例所示。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG2 -DatacenterActivationMode DagOnly
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG2 -DatacenterActivationMode DagOnly
+```
 
 在前面的示例中，为 DAG2 启用了 DAC 模式。
 

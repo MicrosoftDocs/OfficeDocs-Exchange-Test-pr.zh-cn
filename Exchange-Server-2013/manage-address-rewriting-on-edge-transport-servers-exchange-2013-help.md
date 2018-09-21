@@ -71,7 +71,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-TransportAgent
+    ```powershell
+Get-TransportAgent
+```
 
 2.  验证地址重写入站和出站代理的 **Enabled** 属性值是否为您所配置的值。
 
@@ -79,15 +81,21 @@ _**上一次修改主题：** 2015-04-08_
 
 若要查看所有地址重写条目的摘要列表，请运行以下命令。
 
-    Get-AddressRewriteEntry
+```powershell
+Get-AddressRewriteEntry
+```
 
 若要查看地址重写条目的详细信息，请使用以下语法。
 
-    Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List
+```powershell
+Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List
+```
 
 以下示例显示“Contoso.com 重写为 Northwindtraders.com”地址重写条目的详细信息：
 
-    Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-List
+```powershell
+Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-List
+```
 
 ## 使用命令行管理程序创建地址重写条目
 
@@ -169,7 +177,9 @@ _**上一次修改主题：** 2015-04-08_
 
 以下示例更改单个域地址重写条目“Northwind Traders 重写为 Contoso”的内部地址值。
 
-    Set-AddressRewriteEntry "Northwindtraders to Contoso" -InternalAddress northwindtraders.net
+```powershell
+Set-AddressRewriteEntry "Northwindtraders to Contoso" -InternalAddress northwindtraders.net
+```
 
 ## 修改多个子域中的收件人的地址重写条目
 
@@ -207,11 +217,15 @@ _**上一次修改主题：** 2015-04-08_
 
 若要删除单个地址重写条目，请使用以下语法：
 
-    Remove-AddressRewriteEntry <AddressRewriteEntryIdentity>
+```powershell
+Remove-AddressRewriteEntry <AddressRewriteEntryIdentity>
+```
 
 以下示例删除名为“Contoso.com 重写为 Northwindtraders.com”的地址重写条目：
 
-    Remove-AddressRewriteEntry "Contoso.com to Northwindtraders.com"
+```powershell
+Remove-AddressRewriteEntry "Contoso.com to Northwindtraders.com"
+```
 
 若要删除多个地址重写条目，请使用以下语法：
 
@@ -219,7 +233,9 @@ _**上一次修改主题：** 2015-04-08_
 
 以下示例删除所有地址重写条目：
 
-    Get-AddressRewriteEntry | Remove-AddressRewriteEntry
+```powershell
+Get-AddressRewriteEntry | Remove-AddressRewriteEntry
+```
 
 以下示例模拟删除名称中包含“重写为 contoso.com”文本的地址重写条目。通过 *WhatIf* 开关，您可以在不做出任何更改的情况下预览结果。
 

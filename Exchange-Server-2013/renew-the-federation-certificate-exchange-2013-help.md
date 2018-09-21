@@ -81,11 +81,15 @@ _**上一次修改主题：** 2017-02-28_
 
 1.  通过在 Exchange 命令行管理程序中运行以下命令来查找所需的 TXT 记录需要的值：
     
-        Get-FederatedDomainProof -DomainName <Domain> | Format-List Thumbprint,Proof
+    ```powershell
+Get-FederatedDomainProof -DomainName <Domain> | Format-List Thumbprint,Proof
+```
     
     例如，如果联盟域为 contoso.com，则运行以下命令：
     
-        Get-FederatedDomainProof -DomainName contoso.com | Format-List Thumbprint,Proof
+    ```powershell
+Get-FederatedDomainProof -DomainName contoso.com | Format-List Thumbprint,Proof
+```
     
     命令输出如下所示：
     
@@ -115,7 +119,9 @@ Exchange 将新的联合身份验证证书自动分发到所有服务器，但�
 
 若要使用 Exchange 命令行管理程序 来激活新的联合身份验证证书，请运行以下命令：
 
-    Set-FederationTrust -Identity "Microsoft Federation Gateway" -PublishFederationCertificate
+```powershell
+Set-FederationTrust -Identity "Microsoft Federation Gateway" -PublishFederationCertificate
+```
 
 有关语法和参数的详细信息，请参阅 [Set-FederationTrust](https://technet.microsoft.com/zh-cn/library/dd298034\(v=exchg.150\))。
 
@@ -135,7 +141,9 @@ Exchange 将新的联合身份验证证书自动分发到所有服务器，但�
 
   - 在 Exchange 命令行管理程序中，将 *\<user's email address\>* 替换为组织中用户的电子邮件地址，并运行以下命令来验证联合身份验证信任是否有效：
     
-        Test-FederationTrust -UserIdentity <user's email address>
+    ```powershell
+Test-FederationTrust -UserIdentity <user's email address>
+```
 
 ## 替换已过期的联合身份验证证书
 
@@ -143,21 +151,29 @@ Exchange 将新的联合身份验证证书自动分发到所有服务器，但�
 
 1.  如果有多个联盟域，则需要标识主共享域，以便可以最终删除它。若要使用 Exchange 命令行管理程序来标识主共享域和所有联盟域，请运行以下命令：
     
-        Get-FederatedOrganizationIdentifier | Format-List AccountNamespace,Domains
+    ```powershell
+Get-FederatedOrganizationIdentifier | Format-List AccountNamespace,Domains
+```
     
     **AccountNamespace** 属性的值包含 `FYDIBOHF25SPDLT<primary shared domain>` 格式的主共享域。例如，在值 `FYDIBOHF25SPDLT.contoso.com` 中，contoso.com 是主共享域。
 
 2.  通过在 Exchange 命令行管理程序中运行以下命令删除不是主共享域的每个联盟域：
     
-        Remove-FederatedDomain -DomainName <domain> -Force
+    ```powershell
+Remove-FederatedDomain -DomainName <domain> -Force
+```
 
 3.  删除所有其他联盟域后，在 Exchange 命令行管理程序中运行以下命令，删除主共享域：
     
-        Remove-FederatedDomain -DomainName <domain> -Force
+    ```powershell
+Remove-FederatedDomain -DomainName <domain> -Force
+```
 
 4.  在 Exchange 命令行管理程序中运行以下命令，删除联合身份验证信任：
     
-        Remove-FederationTrust "Microsoft Federation Gateway"
+    ```powershell
+Remove-FederationTrust "Microsoft Federation Gateway"
+```
 
 5.  重新创建联合身份验证信任。有关说明，请参阅[创建联合身份验证信任](https://technet.microsoft.com/zh-cn/library/dd335198\(v=exchg.150\))。
 

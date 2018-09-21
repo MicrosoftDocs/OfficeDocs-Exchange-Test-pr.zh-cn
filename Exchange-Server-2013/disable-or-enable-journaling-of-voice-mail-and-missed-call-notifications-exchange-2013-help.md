@@ -39,11 +39,15 @@ _**上一次修改主题：** 2015-04-08_
 
 此示例通过将 *VoicemailJournalingEnabled* 参数设置为 `$false`，禁用语音邮件和未接来电通知的日记功能。
 
-    Set-TransportConfig -VoicemailJournalingEnabled $false
+```powershell
+Set-TransportConfig -VoicemailJournalingEnabled $false
+```
 
 此示例通过将相同参数设置为 `$true`，启用语音邮件和未接来电通知的日记功能。
 
-    Set-TransportConfig -VoicemailJournalingEnabled $true
+```powershell
+Set-TransportConfig -VoicemailJournalingEnabled $true
+```
 
 有关语法和参数的详细信息，请参阅 [Set-TransportConfig](https://technet.microsoft.com/zh-cn/library/bb124151\(v=exchg.150\))。
 

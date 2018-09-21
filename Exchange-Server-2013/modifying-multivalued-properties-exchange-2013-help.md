@@ -33,19 +33,27 @@ _**上一次修改主题：** 2015-03-09_
 
 修改多值属性的方式与修改仅可以接受一个值的属性的方式稍有不同。当修改仅接受一个值的属性时，可以为其直接分配一个值，如以下命令所示。
 
-    Set-TransportConfig -MaxSendSize 12MB
+```powershell
+Set-TransportConfig -MaxSendSize 12MB
+```
 
 当使用该命令向 **MaxSendSize** 属性提供一个新值时，会覆盖存储的值。对于仅接受一个值的属性，则没有这个问题。但是，多值属性存在这个问题。例如，假定 **RecipientFilterConfig** 对象上的 **BlockedRecipients** 属性配置为具有在上一部分中列出的三个值。当运行命令 `Get-RecipientFilterConfig | Format-List BlockedRecipients` 时，将显示以下内容。
 
-    BlockedRecipients : {david@adatum.com, kim@northwindtraders.com, john@contoso.com}
+```powershell
+BlockedRecipients : {david@adatum.com, kim@northwindtraders.com, john@contoso.com}
+```
 
 现在，假定您已经接收到一个向阻止的收件人列表中添加新的 SMTP 地址的请求。运行以下命令即可添加新的 SMTP 地址。
 
-    Set-RecipientFilterConfig -BlockedRecipients chris@contoso.com
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients chris@contoso.com
+```
 
 再次运行 `Get-RecipientFilterConfig | Format-List BlockedRecipients` 命令时，将看到以下内容。
 
-    BlockedRecipients : {chris@contoso.com}
+```powershell
+BlockedRecipients : {chris@contoso.com}
+```
 
 这并不是您所期望的。您希望向现有的阻止的收件人列表中添加新的 SMTP 地址，但新的 SMTP 地址覆盖了现有的阻止的收件人列表。这种意外结果展示了修改多值属性与修改仅接受一个值的属性不同之处。当修改多值属性时，必须确保附加或删除值，而不会覆盖整个值的列表。以下部分介绍如何正确执行该操作。
 
@@ -81,15 +89,21 @@ _**上一次修改主题：** 2015-03-09_
 
 从多值属性语法表中选择的语法被指定为 cmdlet 上的一个参数值。例如，以下命令可向一个多值属性添加多个值：
 
-    Set-ExampleCmdlet -Parameter @{Add="Red", "Blue", "Green"}
+```powershell
+Set-ExampleCmdlet -Parameter @{Add="Red", "Blue", "Green"}
+```
 
 使用此语法时，会在属性上已有的值列表中添加或删除指定的值。参照本主题中之前的 **BlockedRecipients** 示例，现在通过使用以下命令，可以添加 chris@contoso.com 而无需覆盖此属性上的其余值：
 
-    Set-RecipientFilterConfig -BlockedRecipients @{Add="chris@contoso.com"}
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients @{Add="chris@contoso.com"}
+```
 
 如果要从值列表中删除 david@adatum.com，则要使用此命令：
 
-    Set-RecipientFilterConfig -BlockedRecipients @{Remove="david@adatum.com"}
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients @{Remove="david@adatum.com"}
+```
 
 可以使用更复杂的组织，例如同时在属性中添加或删除多个值。为此，需要在 `Add` 和 `Remove` 操作之间插入一个分号 (`;`)。例如：
 

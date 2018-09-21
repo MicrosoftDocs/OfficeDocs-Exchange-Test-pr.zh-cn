@@ -43,11 +43,15 @@ _**上一次修改主题：** 2012-10-03_
 
 要删除没有子角色的角色，请使用以下语法。
 
-    Remove-ManagementRole <role name>
+```powershell
+Remove-ManagementRole <role name>
+```
 
 本示例删除 Seattle Server Administrators 角色。
 
-    Remove-ManagementRole "Seattle Server Administrators"
+```powershell
+Remove-ManagementRole "Seattle Server Administrators"
+```
 
 有关语法和参数的详细信息，请参阅 [Remove-ManagementRole](https://technet.microsoft.com/zh-cn/library/dd351170\(v=exchg.150\))。
 
@@ -61,13 +65,17 @@ _**上一次修改主题：** 2012-10-03_
 
 要确保仅删除希望删除的角色，请将 *WhatIf* 开关与您的命令配合使用以验证命令是否正确。请使用以下语法：
 
-    Remove-ManagementRole <role name> -Recurse -WhatIf
+```powershell
+Remove-ManagementRole <role name> -Recurse -WhatIf
+```
 
 *WhatIf* 开关将在不提交任何更改的情况下执行该命令并报告哪些角色已经删除。有关 *WhatIf* 开关的详细信息，请参阅[WhatIf、Confirm 和 ValidateOnly 开关](whatif-confirm-and-validateonly-switches-exchange-2013-help.md)。
 
 在确认将仅删除希望删除的角色之后，在不使用 *WhatIf* 开关的情况下运行相同的命令。本示例删除 London Administrators 角色和其所有子角色。
 
-    Remove-ManagementRole "London Administrators" -Recurse
+```powershell
+Remove-ManagementRole "London Administrators" -Recurse
+```
 
 有关语法和参数的详细信息，请参阅 [Remove-ManagementRole](https://technet.microsoft.com/zh-cn/library/dd351170\(v=exchg.150\))。
 
@@ -75,7 +83,9 @@ _**上一次修改主题：** 2012-10-03_
 
 要删除无作用域的角色，可以使用本主题中前面提供的 删除没有子角色的管理角色 和 删除具有子角色的管理角色 中的相同步骤。唯一的区别在于，如果要删除无作用域的角色，则必须在运行此命令时指定 *UnScopedTopLevel* 开关。本示例删除无作用域的角色和其所有子角色。
 
-    Remove-ManagementRole "Custom IT Scripts" -Recurse -UnScopedTopLevel
+```powershell
+Remove-ManagementRole "Custom IT Scripts" -Recurse -UnScopedTopLevel
+```
 
 与删除其他角色一样，应该使用 *WhatIf* 开关验证是否正在删除正确的角色。
 

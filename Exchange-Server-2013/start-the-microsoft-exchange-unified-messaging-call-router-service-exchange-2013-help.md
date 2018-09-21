@@ -55,5 +55,7 @@ _**上一次修改主题：** 2012-11-16_
 
 2.  在\&quot;打开\&quot;框中，键入以下命令，然后按 Enter。
     
-        net start MSExchangeUMCR
+    ```powershell
+net start MSExchangeUMCR
+```
 

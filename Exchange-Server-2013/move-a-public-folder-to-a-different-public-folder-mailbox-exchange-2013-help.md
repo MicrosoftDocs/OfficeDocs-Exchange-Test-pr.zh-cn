@@ -83,7 +83,9 @@ _**上一次修改主题：** 2016-11-16_
 
 若要验证是否成功创建了公用文件夹移动请求，可以运行以下命令：
 
-    Get-PublicFolderMoveRequest | Format-List Status
+```powershell
+Get-PublicFolderMoveRequest | Format-List Status
+```
 
 `Completed` 状态表示该移动请求已成功完成。
 

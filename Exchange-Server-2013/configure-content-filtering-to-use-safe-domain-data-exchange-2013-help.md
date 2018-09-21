@@ -43,11 +43,15 @@ _**上一次修改主题：** 2014-12-16_
 
 1.  在命令提示符窗口，通过运行以下命令，打开记事本中的 MSExchangeMailboxAssistants.exe.config 文件：
     
-        Notepad %ExchangeInstallPath%Bin\MSExchangeMailboxAssistants.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\MSExchangeMailboxAssistants.exe.config
+```
 
 2.  在文件末尾处找到 *\</appsettings\>* 项，然后将以下项粘贴到 *\</appsettings\>* 项之前：
     
-        <add key="IncludeSafeDomains" value="true" />
+    ```command line
+<add key="IncludeSafeDomains" value="true" />
+```
 
 3.  在完成后，保存并给关闭 MSExchangeMailboxAssistants.exe.config 文件。
 

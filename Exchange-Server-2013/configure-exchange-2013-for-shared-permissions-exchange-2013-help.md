@@ -133,7 +133,9 @@ _**上一次修改主题：** 2015-04-07_
 
 1.  从 Windows 命令的命令行管理程序，从 Exchange 2013 安装媒体运行以下命令来禁用 Active Directory 拆分权限。
     
-        setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+    ```powershell
+setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+```
 
 2.  从 Exchange 命令行管理程序，运行以下命令来添加\&quot;邮件收件人创建\&quot;角色和\&quot;安全组创建和成员身份\&quot;角色与 组织管理 及 收件人管理 角色组之间的常规角色分配。
     

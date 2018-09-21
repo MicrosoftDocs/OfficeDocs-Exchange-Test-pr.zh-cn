@@ -39,9 +39,13 @@ _**上一次修改主题：** 2015-04-08_
 
 此示例禁止向名为 Contoso 的远程域传递送达报告。默认启用此设置。
 
-    Set-RemoteDomain Contoso -DeliveryReportEnabled $false
+```powershell
+Set-RemoteDomain Contoso -DeliveryReportEnabled $false
+```
 
 此示例禁止向远程域传递未送达报告。默认启用此设置。
 
-    Set-RemoteDomain Contoso -NDREnabled $false
+```powershell
+Set-RemoteDomain Contoso -NDREnabled $false
+```
 

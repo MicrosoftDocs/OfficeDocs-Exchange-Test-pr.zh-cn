@@ -53,11 +53,15 @@ _**上一次修改主题：** 2014-01-31_
 
 此示例显示了位于 Mailbox01 Exchange 2013 邮箱服务器上的所有非空队列的基本信息。
 
-    Get-Queue -Server Mailbox01 -Exclude Empty
+```powershell
+Get-Queue -Server Mailbox01 -Exclude Empty
+```
 
 此示例显示了运行该命令的邮箱服务器上所含邮件超过 100 封的所有队列的详细信息。
 
-    Get-Queue -Filter {MessageCount -gt 100} | Format-List
+```powershell
+Get-Queue -Filter {MessageCount -gt 100} | Format-List
+```
 
 ## 使用命令行管理程序查看多个 Exchange 服务器上的队列摘要信息
 
@@ -73,11 +77,15 @@ _**上一次修改主题：** 2014-01-31_
 
 这个示例显示了名为 FirstSite（邮件数量大于 100）的 Active Directory 站点上所有 Exchange 2013 邮箱服务器上的队列的摘要信息。
 
-    Get-QueueDigest -Site FirstSite -Filter {MessageCount -gt 100}
+```powershell
+Get-QueueDigest -Site FirstSite -Filter {MessageCount -gt 100}
+```
 
 这个示例显示了名为 DAG01 的数据库可用性组 (DAG)（队列状态有 **Retry** 值）上所有 Exchange 2013 邮箱服务器上的队列的摘要信息。
 
-    Get-QueueDigest -Dag DAG01 -Filter {Status -eq "Retry"}
+```powershell
+Get-QueueDigest -Dag DAG01 -Filter {Status -eq "Retry"}
+```
 
 ## 恢复队列
 
@@ -111,11 +119,15 @@ _**上一次修改主题：** 2014-01-31_
 
 本示例恢复本地服务器上状态为\&quot;已挂起\&quot;的所有队列。
 
-    Resume-Queue -Filter {Status -eq "Suspended"}
+```powershell
+Resume-Queue -Filter {Status -eq "Suspended"}
+```
 
 本示例恢复位于 Mailbox01 服务器上的名为 contoso.com 的\&quot;已挂起\&quot;传递队列。
 
-    Resume-Queue -Identity Mailbox01\contoso.com
+```powershell
+Resume-Queue -Identity Mailbox01\contoso.com
+```
 
 ## 您如何知道操作成功？
 
@@ -157,11 +169,15 @@ _**上一次修改主题：** 2014-01-31_
 
 此示例重试本地服务器上状态为\&quot;重试\&quot;的所有队列。
 
-    Retry-Queue -Filter {status -eq "retry"}
+```powershell
+Retry-Queue -Filter {status -eq "retry"}
+```
 
 本示例重试了位于 Mailbox01 服务器上 `Retry` 状态下的名为 contoso.com 的队列。
 
-    Retry-Queue -Identity Mailbox01\contoso.com
+```powershell
+Retry-Queue -Identity Mailbox01\contoso.com
+```
 
 ## 您如何知道操作成功？
 
@@ -189,11 +205,15 @@ _**上一次修改主题：** 2014-01-31_
 
 此示例将重新提交位于 Mailbox01 服务器上任何传递队列中状态为\&quot;重试\&quot;的所有邮件。
 
-    Retry-Queue -Filter {Status -eq "Retry"} -Server Mailbox01 -Resubmit $true
+```powershell
+Retry-Queue -Filter {Status -eq "Retry"} -Server Mailbox01 -Resubmit $true
+```
 
 此示例将重新提交位于 Mailbox01 服务器上无法到达队列中的所有邮件。
 
-    Retry-Queue -Identity Mailbox01\Unreachable -Resubmit $true
+```powershell
+Retry-Queue -Identity Mailbox01\Unreachable -Resubmit $true
+```
 
 ## 重新提交位于病毒邮件队列中的邮件
 
@@ -221,15 +241,21 @@ _**上一次修改主题：** 2014-01-31_
 
 1.  通过运行以下命令查找邮件的标识。
     
-        Get-Message -Queue Poison | Format-Table Identity
+    ```powershell
+Get-Message -Queue Poison | Format-Table Identity
+```
 
 2.  在以下命令中使用在上一步中获得的邮件标识。
     
-        Resume-Message <PoisonMessageIdentity>
+    ```powershell
+Resume-Message <PoisonMessageIdentity>
+```
     
     此示例将恢复病毒邮件队列中邮件标识值为 222 的邮件。
     
-        Resume-Message 222
+    ```powershell
+Resume-Message 222
+```
 
 ## 您如何知道操作成功？
 
@@ -265,11 +291,15 @@ _**上一次修改主题：** 2014-01-31_
 
 此示例将挂起本地服务器上邮件计数等于或大于 1,000 且状态为\&quot;重试\&quot;的所有队列。
 
-    Suspend-Queue -Filter {MessageCount -ge 1000 -and Status -eq "Retry"}
+```powershell
+Suspend-Queue -Filter {MessageCount -ge 1000 -and Status -eq "Retry"}
+```
 
 本示例挂起位于 Mailbox01 服务器上的名为 contoso.com 的队列。
 
-    Suspend-Queue -Identity Mailbox01\contoso.com
+```powershell
+Suspend-Queue -Identity Mailbox01\contoso.com
+```
 
 ## 您如何知道操作成功？
 

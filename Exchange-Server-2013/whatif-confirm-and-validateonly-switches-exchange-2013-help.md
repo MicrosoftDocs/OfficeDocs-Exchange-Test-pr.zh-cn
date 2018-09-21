@@ -39,7 +39,9 @@ _**上一次修改主题：** 2012-10-04_
 
 运行此示例命令时，命令行管理程序将返回以下文本：
 
-    What if: Creating Accepted Domain "Contoso Domain" with domain name "contoso.com".
+```powershell
+What if: Creating Accepted Domain "Contoso Domain" with domain name "contoso.com".
+```
 
 ## Confirm 开关
 
@@ -67,7 +69,9 @@ _**上一次修改主题：** 2012-10-04_
 
 如果要将 *Confirm* 开关手动应用于命令，请在命令的末尾包含 *Confirm* 开关，如下例所示：
 
-    Get-JournalRule | Enable-JournalRule -Confirm
+```powershell
+Get-JournalRule | Enable-JournalRule -Confirm
+```
 
 运行此示例命令时，命令行管理程序将返回以下确认提示：
 
@@ -93,7 +97,9 @@ _**上一次修改主题：** 2012-10-04_
 
 如果要覆盖命令行管理程序的默认行为，并使自动应用确认提示的 cmdlet 禁止显示确认提示，可以包含带有值 `$False` 的 *Confirm* 开关，如下例所示：
 
-    Get-JournalRule | Disable-JournalRule -Confirm:$False
+```powershell
+Get-JournalRule | Disable-JournalRule -Confirm:$False
+```
 
 这种情况下，不显示确认提示。
 

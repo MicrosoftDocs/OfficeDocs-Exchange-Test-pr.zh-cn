@@ -43,11 +43,15 @@ _**上一次修改主题：** 2015-04-08_
 
 若要禁用发件人筛选，请运行以下命令：
 
-    Set-SenderFilterConfig -Enabled $false
+```powershell
+Set-SenderFilterConfig -Enabled $false
+```
 
 若要启用发件人筛选，请运行以下命令：
 
-    Set-SenderFilterConfig -Enabled $true
+```powershell
+Set-SenderFilterConfig -Enabled $true
+```
 
 > [!NOTE]  
 > 当禁用发件人筛选时，仍会启用基础发件人筛选器代理。若要禁用发件人筛选器代理，请运行以下命令：<code>Disable-TransportAgent &quot;Sender Filter Agent&quot;</code>.
@@ -59,7 +63,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-SenderFilterConfig | Format-List Enabled
+    ```powershell
+Get-SenderFilterConfig | Format-List Enabled
+```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -95,7 +101,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-SenderFilterConfig | Format-List BlockedSenders,BlockedDomains,BlockedDomainsAndSubdomains
+    ```powershell
+Get-SenderFilterConfig | Format-List BlockedSenders,BlockedDomains,BlockedDomainsAndSubdomains
+```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -103,11 +111,15 @@ _**上一次修改主题：** 2015-04-08_
 
 若要启用或禁用阻止发件人为空的邮件，请运行以下命令：
 
-    Set-SenderFilterConfig -BlankSenderBlockingenabled <$true | $false>
+```powershell
+Set-SenderFilterConfig -BlankSenderBlockingenabled <$true | $false>
+```
 
 此示例将配置发件人筛选器代理，以阻止未在 MAIL FROM:SMTP 命令中指定发件人的邮件：
 
-    Set-SenderFilterConfig -BlankSenderBlockingEnabled $true
+```powershell
+Set-SenderFilterConfig -BlankSenderBlockingEnabled $true
+```
 
 ## 您如何知道这有效？
 
@@ -115,7 +127,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-SenderFilterConfig | Format-List BlankSenderBlockingEnabled
+    ```powershell
+Get-SenderFilterConfig | Format-List BlankSenderBlockingEnabled
+```
 
 2.  验证显示的值是否为您配置的值。
 

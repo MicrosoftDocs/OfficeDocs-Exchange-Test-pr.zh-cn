@@ -55,7 +55,9 @@ _**上一次修改主题：** 2012-11-16_
 
 运行以下命令可永久删除活动邮箱和关联的 Active Directory 用户帐户。
 
-    Remove-Mailbox -Identity <identity> -Permanent $true
+```powershell
+Remove-Mailbox -Identity <identity> -Permanent $true
+```
 
 > [!NOTE]  
 > 如果不加入 <em>Permanent</em> 参数，则在默认情况下，删除的邮箱在被永久删除之前，将在邮箱数据库中保留 30 天。
@@ -73,7 +75,9 @@ _**上一次修改主题：** 2012-11-16_
 
 3.  运行以下命令验证是否从 Exchange 邮箱数据库中成功清除了邮箱。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }
+    ```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where {         Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }.DisplayName -eq "<display name>" }
+```
     
     如果已成功清除邮箱，则该命令将不返回任何结果。 如果未清除邮箱，则该命令将返回有关邮箱的信息。
 
@@ -103,7 +107,9 @@ _**上一次修改主题：** 2012-11-16_
 
 此示例从邮箱数据库 MBD01 中永久删除 Dan Jump 的软删除邮箱。
 
-    Remove-StoreMailbox -Database MBD01 -Identity "Dan Jump" -MailboxState SoftDeleted
+```powershell
+Remove-StoreMailbox -Database MBD01 -Identity "Dan Jump" -MailboxState SoftDeleted
+```
 
 此示例从邮箱数据库 MBD01 中永久删除所有软删除邮箱。
 
@@ -115,7 +121,9 @@ _**上一次修改主题：** 2012-11-16_
 
 若要验证是否永久删除了断开连接的邮箱，以及是否已成功将其从 Exchange 邮箱数据库中清除，请运行以下命令。
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where {     Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }.DisplayName -eq "<display name>" }
+```
 
 如果已成功清除邮箱，则该命令将不返回任何结果。 如果未清除邮箱，则该命令将返回有关邮箱的信息。
 

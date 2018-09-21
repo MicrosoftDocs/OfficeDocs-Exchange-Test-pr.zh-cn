@@ -39,9 +39,13 @@ _**上一次修改主题：** 2015-04-08_
 
 本示例将允许自动答复名为 Contoso 的远程域。默认情况下，禁用此设置。
 
-    Set-RemoteDomain Contoso -AutoReplyEnabled $true
+```powershell
+Set-RemoteDomain Contoso -AutoReplyEnabled $true
+```
 
 此示例允许自动转发到远程域。默认情况下，禁用此设置。
 
-    Set-RemoteDomain Contoso -AutoForwardEnabled $true
+```powershell
+Set-RemoteDomain Contoso -AutoForwardEnabled $true
+```
 

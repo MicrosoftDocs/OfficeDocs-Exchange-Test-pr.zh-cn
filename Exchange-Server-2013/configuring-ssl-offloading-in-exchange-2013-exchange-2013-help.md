@@ -83,21 +83,29 @@ Configuring SSL offloading for Outlook 无处不在
     
       - 使用命令行键入以下命令，然后按 Enter 键。
         
-            appcmd set config "Default Web Site/owa" /section:access /sslFlags:None /commit:APPHOST
+        ```powershell
+appcmd set config "Default Web Site/owa" /section:access /sslFlags:None /commit:APPHOST
+```
 
   - **步骤 2**   您需要使用以下方法之一回收相应的应用程序池或重新启动 Internet 信息服务：
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
-            appcmd Recycle AppPool MSExchangeOWAAppPool
+        ```powershell
+appcmd Recycle AppPool MSExchangeOWAAppPool
+```
     
       - 使用 Windows PowerShell cmdlet 键入以下命令，然后按 Enter 键。
         
-            IIS:\>Restart-WebAppPool MSExchangeOWAAppPool
+        ```powershell
+IIS:\>Restart-WebAppPool MSExchangeOWAAppPool
+```
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
-            iisreset /noforce
+        ```powershell
+iisreset /noforce
+```
     
       - 使用 Internet 信息服务 (IIS) 管理器：在 Internet 信息服务 (IIS) 管理器的“操作”窗格中，单击“重新启动”。
 
@@ -113,22 +121,30 @@ Configuring SSL offloading for Outlook 无处不在
     
       - 使用命令行键入以下命令，然后按 Enter 键。
         
-            appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:APPHOST
+        ```powershell
+appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:APPHOST
+```
         
 
   - **步骤 2**   您需要使用以下方法之一回收相应的应用程序池或重新启动 Internet 信息服务：
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
-            appcmd Recycle AppPool MSExchangeECPAppPool
+        ```powershell
+appcmd Recycle AppPool MSExchangeECPAppPool
+```
     
       - 使用 Windows PowerShell cmdlet 键入以下命令，然后按 Enter 键。
         
-            IIS:\>Restart-WebAppPool MSExchangeECPAppPool
+        ```powershell
+IIS:\>Restart-WebAppPool MSExchangeECPAppPool
+```
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
-            iisreset /noforce
+        ```powershell
+iisreset /noforce
+```
     
       - 使用 Internet 信息服务 (IIS) 管理器：在 Internet 信息服务 (IIS) 管理器的“操作”窗格中，单击“重新启动”。
 
@@ -162,15 +178,21 @@ Configuring SSL offloading for Outlook 无处不在
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
-            appcmd Recycle AppPool MSExchangeRpcProxyFrontEndAppPool
+        ```powershell
+appcmd Recycle AppPool MSExchangeRpcProxyFrontEndAppPool
+```
     
       - 使用 Windows PowerShell cmdlet 键入以下命令，然后按 Enter 键。
         
-            IIS:\>Restart-WebAppPool MSExchangeRpcProxyFrontEndAppPool
+        ```powershell
+IIS:\>Restart-WebAppPool MSExchangeRpcProxyFrontEndAppPool
+```
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
-            iisreset /noforce
+        ```powershell
+iisreset /noforce
+```
     
       - 使用 Internet 信息服务 (IIS) 管理器：在 Internet 信息服务 (IIS) 管理器的“操作”窗格中，单击“重新启动”。
 
@@ -190,21 +212,29 @@ Configuring SSL offloading for Outlook 无处不在
     
       - 使用命令行键入以下命令，然后按 Enter 键。
         
-            appcmd set config "Default Web Site/OAB" /section:access /sslFlags:None /commit:APPHOST
+        ```powershell
+appcmd set config "Default Web Site/OAB" /section:access /sslFlags:None /commit:APPHOST
+```
 
   - **步骤 2**   您需要使用以下方法之一回收相应的应用程序池或重新启动 Internet 信息服务：
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
-            appcmd Recycle AppPool MSExchangeOABAppPool
+        ```powershell
+appcmd Recycle AppPool MSExchangeOABAppPool
+```
     
       - 使用 Windows PowerShell cmdlet 键入以下命令，然后按 Enter 键。
         
-            IIS:\>Restart-WebAppPool MSExchangeOABAppPool
+        ```powershell
+IIS:\>Restart-WebAppPool MSExchangeOABAppPool
+```
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
-            iisreset /noforce
+        ```powershell
+iisreset /noforce
+```
     
       - 使用 Internet 信息服务 (IIS) 管理器：在 Internet 信息服务 (IIS) 管理器的“操作”窗格中，单击“重新启动”。
 
@@ -226,15 +256,21 @@ Configuring SSL offloading for Outlook 无处不在
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
-            appcmd Recycle AppPool MSExchangeSyncAppPool
+        ```powershell
+appcmd Recycle AppPool MSExchangeSyncAppPool
+```
     
       - 使用 Windows PowerShell cmdlet 键入以下命令，然后按 Enter 键。
         
-            IIS:\>Restart-WebAppPool MSExchangeSyncAppPool
+        ```powershell
+IIS:\>Restart-WebAppPool MSExchangeSyncAppPool
+```
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
-            iisreset /noforce
+        ```powershell
+iisreset /noforce
+```
     
       - 使用 Internet 信息服务 (IIS) 管理器：在 Internet 信息服务 (IIS) 管理器的“操作”窗格中，单击“重新启动”。
 
@@ -250,21 +286,29 @@ Configuring SSL offloading for Outlook 无处不在
     
       - 使用命令行键入以下命令，然后按 Enter 键。
         
-            appcmd set config "Default Web Site/EWS" /section:access /sslFlags:None /commit:APPHOST
+        ```powershell
+appcmd set config "Default Web Site/EWS" /section:access /sslFlags:None /commit:APPHOST
+```
 
   - **步骤 2**   您需要使用以下方法之一回收相应的应用程序池或重新启动 Internet 信息服务：
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
-            appcmd Recycle AppPool MSExchangeServicesAppPool
+        ```powershell
+appcmd Recycle AppPool MSExchangeServicesAppPool
+```
     
       - 使用 Windows PowerShell cmdlet 键入以下命令，然后按 Enter 键。
         
-            IIS:\>Restart-WebAppPool MSExchangeServicesAppPool
+        ```powershell
+IIS:\>Restart-WebAppPool MSExchangeServicesAppPool
+```
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
-            iisreset /noforce
+        ```powershell
+iisreset /noforce
+```
     
       - 使用 Internet 信息服务 (IIS) 管理器：在 Internet 信息服务 (IIS) 管理器的“操作”窗格中，单击“重新启动”。
 
@@ -280,21 +324,29 @@ Configuring SSL offloading for Outlook 无处不在
     
       - 使用命令行键入以下命令，然后按 Enter 键。
         
-            appcmd set config "Default Web Site/autodiscover" /section:access /sslFlags:None /commit:APPHOST
+        ```powershell
+appcmd set config "Default Web Site/autodiscover" /section:access /sslFlags:None /commit:APPHOST
+```
 
   - **步骤 2**   您需要使用以下方法之一回收相应的应用程序池或重新启动 Internet 信息服务：
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
-            appcmd Recycle AppPool MSExchangeAutodiscoverAppPool
+        ```powershell
+appcmd Recycle AppPool MSExchangeAutodiscoverAppPool
+```
     
       - 使用 Windows PowerShell cmdlet 键入以下命令，然后按 Enter 键。
         
-            IIS:\>Restart-WebAppPool MSExchangeAutodiscoverAppPool
+        ```powershell
+IIS:\>Restart-WebAppPool MSExchangeAutodiscoverAppPool
+```
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
-            iisreset /noforce
+        ```powershell
+iisreset /noforce
+```
     
       - 使用 Internet 信息服务 (IIS) 管理器：在 Internet 信息服务 (IIS) 管理器的“操作”窗格中，单击“重新启动”。
 
@@ -320,21 +372,29 @@ Configuring SSL offloading for Outlook 无处不在
     
       - 使用命令行键入以下命令，然后按 Enter 键。
         
-            appcmd set config "Default Web Site/MAPI" /section:access /sslFlags:None /commit:APPHOST
+        ```powershell
+appcmd set config "Default Web Site/MAPI" /section:access /sslFlags:None /commit:APPHOST
+```
 
   - **步骤 2**   您需要使用以下方法之一回收相应的应用程序池或重新启动 Internet 信息服务：
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
-            appcmd Recycle AppPool MSExchangeMapiFrontEndAppPool
+        ```powershell
+appcmd Recycle AppPool MSExchangeMapiFrontEndAppPool
+```
     
       - 使用 Windows PowerShell cmdlet 键入以下命令，然后按 Enter 键。
         
-            IIS:\>Restart-WebAppPool MSExchangeMapiFrontEndAppPool
+        ```powershell
+IIS:\>Restart-WebAppPool MSExchangeMapiFrontEndAppPool
+```
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
-            iisreset /noforce
+        ```powershell
+iisreset /noforce
+```
     
       - 使用 Internet 信息服务 (IIS) 管理器：在 Internet 信息服务 (IIS) 管理器的“操作”窗格中，单击“重新启动”。
 
@@ -359,7 +419,9 @@ Configuring SSL offloading for Outlook 无处不在
     Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/Microsoft-Server-ActiveSync"
     Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/OAB"
     Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/MAPI"
-    iisreset /noforce
+```powershell
+iisreset /noforce
+```
 
 **使用 appcmd**
 
@@ -376,7 +438,9 @@ Configuring SSL offloading for Outlook 无处不在
     &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/Microsoft-Server-ActiveSync" /section:access /sslFlags:None /commit:APPHOST
     &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/OAB" /section:access /sslFlags:None /commit:APPHOST
     &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/MAPI" /section:access /sslFlags:None /commit:APPHOST
-    iisreset /noforce
+```powershell
+iisreset /noforce
+```
 
 返回顶部
 

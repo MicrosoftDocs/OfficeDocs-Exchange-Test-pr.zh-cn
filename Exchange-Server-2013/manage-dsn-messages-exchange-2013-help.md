@@ -44,15 +44,21 @@ Microsoft Exchange Server 2013 使用传递状态通知 (DSN) 向邮件发件人
 
 要查看随 Exchange 2013 附带的所有内置 DSN 邮件的摘要列表，请运行以下命令：
 
-    Get-SystemMessage -Original
+```powershell
+Get-SystemMessage -Original
+```
 
 要查看组织中的所有自定义 DSN 邮件的摘要列表，请运行以下命令：
 
-    Get-SystemMessage
+```powershell
+Get-SystemMessage
+```
 
 要查看以英语形式发送给内部发件人的 DSN 代码 5.1.2 自定义 DSN 邮件的详细信息，请运行以下命令：
 
-    Get-SystemMessage En\Internal\5.1.2 | Format-List
+```powershell
+Get-SystemMessage En\Internal\5.1.2 | Format-List
+```
 
 ## 使用命令行管理程序创建自定义 DSN 邮件
 
@@ -78,7 +84,9 @@ Microsoft Exchange Server 2013 使用传递状态通知 (DSN) 向邮件发件人
 
 1.  运行以下命令：
     
-        Get-SystemMessge -DSNCode <x.y.z> | Format-List Name,Internal,Text,Language
+    ```powershell
+Get-SystemMessge -DSNCode <x.y.z> | Format-List Name,Internal,Text,Language
+```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -100,7 +108,9 @@ Microsoft Exchange Server 2013 使用传递状态通知 (DSN) 向邮件发件人
 
 1.  运行以下命令：`Get-SystemMessage`.
     
-        Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> | Format-List -Text
+    ```powershell
+Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> | Format-List -Text
+```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -108,11 +118,15 @@ Microsoft Exchange Server 2013 使用传递状态通知 (DSN) 向邮件发件人
 
 运行以下命令：
 
-    Remove-SystemMessage <Local>\<Internal | External>\<DSNcode>
+```powershell
+Remove-SystemMessage <Local>\<Internal | External>\<DSNcode>
+```
 
 此示例删除以英语形式发送给内部发件人的 DSN 代码 5.1.2 自定义 DSN 邮件。
 
-    Remove-SystemMessage En\Internal\5.1.2
+```powershell
+Remove-SystemMessage En\Internal\5.1.2
+```
 
 ## 您如何知道这有效？
 
@@ -134,11 +148,15 @@ Microsoft Exchange Server 2013 使用传递状态通知 (DSN) 向邮件发件人
 
 2.  运行以下命令：
     
-        Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient <MailboxIdentity>
+    ```powershell
+Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient <MailboxIdentity>
+```
     
     例如，要将名为“Contoso System Mailbox”的现有邮箱分配给 Exchange 收件人，请运行以下命令：
     
-        Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient "Contoso System Mailbox"
+    ```powershell
+Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient "Contoso System Mailbox"
+```
 
 ## 步骤 2：指定要监视的 DSN 代码
 
@@ -152,11 +170,15 @@ Microsoft Exchange Server 2013 使用传递状态通知 (DSN) 向邮件发件人
 
 要替换现有值，请运行以下命令：
 
-    Set-TransportConfig -GenerateCopyOfDSNFor <x.y.z>,<x.y.z>...
+```powershell
+Set-TransportConfig -GenerateCopyOfDSNFor <x.y.z>,<x.y.z>...
+```
 
 此示例将 Exchange 组织配置为将包含 DSN 代码 5.7.1、5.7.2 和 5.7.3 的所有 DSN 邮件转发到 Exchange 收件人。
 
-    Set-TransportConfig -GenerateCopyOfDSNFor 5.7.1,5.7.2,5.7.3
+```powershell
+Set-TransportConfig -GenerateCopyOfDSNFor 5.7.1,5.7.2,5.7.3
+```
 
 要在不修改任何现有值的情况下添加或删除条目，请运行以下命令：
 
@@ -164,7 +186,9 @@ Microsoft Exchange Server 2013 使用传递状态通知 (DSN) 向邮件发件人
 
 此示例在转发到 Exchange 收件人的现有 DSN 邮件列表中添加 DSN 代码 5.7.5 并删除 DSN 代码 5.7.1。
 
-    Set-TransportConfig -GenerateCopyOfDSNFor @{Add="5.7.5"; Remove="5.7.1"}
+```powershell
+Set-TransportConfig -GenerateCopyOfDSNFor @{Add="5.7.5"; Remove="5.7.1"}
+```
 
 ## 您如何知道这有效？
 

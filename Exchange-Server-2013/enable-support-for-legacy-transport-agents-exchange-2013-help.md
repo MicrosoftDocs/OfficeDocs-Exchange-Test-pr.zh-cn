@@ -110,11 +110,15 @@ _**上一次修改主题：** 2015-03-09_
 
 1.  在命令提示符窗口中，在要配置旧版传输代理支持的 Exchange 2013 服务器上，通过运行以下命令在记事本中打开相应的应用程序配置文件：
     
-        Notepad %ExchangeInstallPath%Bin\<AppConfigFile>
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\<AppConfigFile>
+```
     
     例如，若要在邮箱服务器上打开 EdgeTransport.exe.config 文件，请运行以下命令：
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 2.  在文件末尾处找到 *\</configuration\>* 项，然后将以下项粘贴到 *\</configuration\>* 项之前：
     

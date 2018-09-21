@@ -182,7 +182,9 @@ Microsoft Exchange 2013支持邮箱移动和迁移使用的**New-MoveRequest**�
 
 1.  运行以下命令。
     
-        $UserCredentials = Get-Credential
+    ```powershell
+$UserCredentials = Get-Credential
+```
 
 2.  运行以下命令将凭据信息传递给 Prepare-MoveRequest.ps1 脚本中的 *RemoteForestCredential* 参数。
     
@@ -206,7 +208,9 @@ Cindy@contoso.com
 
 1.  运行以下命令以获取远程林凭据。
     
-        $UserCredentials = Get-Credential
+    ```powershell
+$UserCredentials = Get-Credential
+```
 
 2.  运行以下命令将凭据信息传递给 Prepare-MoveRequest.ps1 脚本中的 *RemoteForestCredential* 参数。
     

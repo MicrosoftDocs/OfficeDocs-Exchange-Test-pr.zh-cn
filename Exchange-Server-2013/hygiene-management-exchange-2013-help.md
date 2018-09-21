@@ -31,7 +31,9 @@ _**上一次修改主题：** 2015-03-09_
 
 可以使用以下命令查看作为此角色组成员的用户或通用安全组 (USG) 的列表。
 
-    Get-RoleGroupMember "Hygiene Management"
+```powershell
+Get-RoleGroupMember "Hygiene Management"
+```
 
 有关角色组成员的详细信息，请参阅 [管理角色组成员](manage-role-group-members-exchange-2013-help.md) 中的“查看角色组用户”部分。
 

@@ -105,21 +105,29 @@ _**上一次修改主题：** 2015-03-09_
 
 要配置组织的内容传输编码方法，可运行以下命令：
 
-    Set-OrganizationConfig -ByteEncoderTypeFor7BitCharsets <Integer>
+```powershell
+Set-OrganizationConfig -ByteEncoderTypeFor7BitCharsets <Integer>
+```
 
 例如，要设置内容传输编码方法为 Base64，请运行以下命令：
 
-    Set-OrganizationConfig -ByteEncoderTypeFor7BitCharsets 2
+```powershell
+Set-OrganizationConfig -ByteEncoderTypeFor7BitCharsets 2
+```
 
 ## 使用命令行管理程序来配置远程域的内容传输编码方法
 
 要配置远程域中所有收件人的内容传输编码方法，可运行以下命令：
 
-    Set-RemoteDomain -ByteEncoderTypeFor7BitCharsets <Value>
+```powershell
+Set-RemoteDomain -ByteEncoderTypeFor7BitCharsets <Value>
+```
 
 例如，要设置内容传输编码方法为 Base64，请运行以下命令：
 
-    Set- RemoteDomain -ByteEncoderTypeFor7BitCharsets UseBase64
+```powershell
+Set- RemoteDomain -ByteEncoderTypeFor7BitCharsets UseBase64
+```
 
 ## 您如何知道这有效？
 

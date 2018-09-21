@@ -113,15 +113,21 @@ _**上一次修改主题：** 2015-03-09_
 
 本示例将返回 DB2 数据库的所有副本的状态信息。
 
-    Get-MailboxDatabaseCopyStatus -Identity DB2 | Format-List
+```powershell
+Get-MailboxDatabaseCopyStatus -Identity DB2 | Format-List
+```
 
 本示例将返回邮箱服务器 MBX2 上的所有数据库副本的状态。
 
-    Get-MailboxDatabaseCopyStatus -Server MBX2 | Format-List
+```powershell
+Get-MailboxDatabaseCopyStatus -Server MBX2 | Format-List
+```
 
 本示例将返回本地邮箱服务器上的所有数据库副本的状态。
 
-    Get-MailboxDatabaseCopyStatus -Local | Format-List
+```powershell
+Get-MailboxDatabaseCopyStatus -Local | Format-List
+```
 
 有关使用 **Get-MailboxDatabaseCopyStatus** cmdlet 的详细信息，请参阅 [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/zh-cn/library/dd298044\(v=exchg.150\))。
 
@@ -225,7 +231,9 @@ _**上一次修改主题：** 2015-03-09_
 
 本示例使用 **Test-ReplicationHealth** cmdlet 测试邮箱服务器 MBX1 的复制的运行状况。
 
-    Test-ReplicationHealth -Identity MBX1
+```powershell
+Test-ReplicationHealth -Identity MBX1
+```
 
 ## Crimson 通道事件日志记录
 
@@ -448,7 +456,9 @@ ollectReplicationMetrics.ps1 脚本支持允许您自定义脚本行为和输出
 
 以下示例从名为 DAG1 的 DAG 中的所有服务器收集一个小时的数据（取样时间间隔为 1 分钟），然后生成摘要报告。此外，由于使用了 *ReportPath* 参数，脚本会将所有文件置于当前目录中。
 
-    CollectReplicationMetrics.ps1 -DagName DAG1 -Duration "01:00:00" -Frequency "00:01:00" -ReportPath
+```powershell
+CollectReplicationMetrics.ps1 -DagName DAG1 -Duration "01:00:00" -Frequency "00:01:00" -ReportPath
+```
 
 以下示例从与 CounterData\* 相匹配的所有文件读取数据，然后生成摘要报告。
 

@@ -69,7 +69,9 @@ _**上一次修改主题：** 2012-11-02_
 
   - 在命令行管理程序中，运行以下命令以验证 DAG 网络是否已创建并显示 DAG 网络配置信息。
     
-        Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+    ```powershell
+Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+```
 
 ## 详细信息
 

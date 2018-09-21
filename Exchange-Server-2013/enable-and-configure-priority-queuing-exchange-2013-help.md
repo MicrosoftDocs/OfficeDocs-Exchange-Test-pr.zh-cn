@@ -41,7 +41,9 @@ _**上一次修改主题：** 2014-12-16_
 
 1.  在命令提示符窗口中，通过运行以下命令在记事本中打开 EdgeTransport.exe.config 应用程序配置文件：
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 2.  找到 `<appSettings>` 部分中的以下键。
     
@@ -59,7 +61,9 @@ _**上一次修改主题：** 2014-12-16_
     
     要在邮箱服务器上的传输服务中启用排队优先级，请使用以下值：
     
-        <add key="PriorityQueuingEnabled" value="true" />
+    ```command line
+<add key="PriorityQueuingEnabled" value="true" />
+```
     
     配置其余排队优先级值，或保留默认值。
 

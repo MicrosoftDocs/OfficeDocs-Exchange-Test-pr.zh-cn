@@ -45,7 +45,9 @@ _**上一次修改主题：** 2015-07-21_
 
 此示例开始执行移动请求，将公用文件夹邮箱 PF\_SanFrancisco 移动至邮箱数据库 MBX\_DB01。
 
-    New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01
+```powershell
+New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01
+```
 
 有关语法和参数的详细信息，请参阅 [New-MoveRequest](https://technet.microsoft.com/zh-cn/library/dd351123\(v=exchg.150\))。
 
@@ -55,19 +57,25 @@ _**上一次修改主题：** 2015-07-21_
 
 此示例开始执行移动请求，将公用文件夹邮箱 PF\_SanFrancisco 移动至邮箱数据库 MBX\_DB01，然后在即将完成时暂停该移动请求。
 
-    New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01 -SuspendWhenReadyToComplete
+```powershell
+New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01 -SuspendWhenReadyToComplete
+```
 
 有关语法和参数的详细信息，请参阅 [New-MoveRequest](https://technet.microsoft.com/zh-cn/library/dd351123\(v=exchg.150\))。
 
 此示例检索公用文件夹邮箱 PF\_SanFrancisco 正在进行的邮箱移动的状态。
 
-    Get-MoveRequest -Identity "PF_SanFrancisco"
+```powershell
+Get-MoveRequest -Identity "PF_SanFrancisco"
+```
 
 有关语法和参数的详细信息，请参阅 [Get-MoveRequest](https://technet.microsoft.com/zh-cn/library/dd335227\(v=exchg.150\))。
 
 当该移动请求达到暂停状态时，您可以恢复该请求。此示例恢复了公用文件夹邮箱 PF\_SanFrancisco 的移动请求。
 
-    Resume-MoveRequest -Identity "PF_SanFrancisco"
+```powershell
+Resume-MoveRequest -Identity "PF_SanFrancisco"
+```
 
 有关语法和参数的详细信息，请参阅 [Resume-MoveRequest](https://technet.microsoft.com/zh-cn/library/ee332320\(v=exchg.150\))。
 
@@ -75,7 +83,9 @@ _**上一次修改主题：** 2015-07-21_
 
 若要验证是否成功创建了移动请求，请运行以下命令：
 
-    Get-MoveRequestStatistics -Identity PF_SanFrancisco | Format-List Status
+```powershell
+Get-MoveRequestStatistics -Identity PF_SanFrancisco | Format-List Status
+```
 
 `Completed` 状态表示该移动请求已成功完成。
 

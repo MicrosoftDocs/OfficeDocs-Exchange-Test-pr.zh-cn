@@ -86,7 +86,9 @@ _**上一次修改主题：** 2016-12-09_
 
 2.  在本地 Exchange 组织的 Exchange PowerShell 中，运行您在上一步骤中创建的 PowerShell 脚本。例如：
     
-        .\ExportAuthCert.ps1
+    ```powershell
+.\ExportAuthCert.ps1
+```
 
 ## 步骤 4：将本地授权证书上载到 Azure Active Directory ACS
 
@@ -116,7 +118,9 @@ _**上一次修改主题：** 2016-12-09_
 
 3.  运行您在上一步骤中创建的 PowerShell 脚本。例如：
     
-        .\UploadAuthCert.ps1
+    ```powershell
+.\UploadAuthCert.ps1
+```
 
 4.  启动脚本后，您会看到凭据对话框。输入 Microsoft Online Azure AD 组织中的租户管理员帐户的凭据。运行脚本后，让 Azure AD 会话的 Windows PowerShell 处于打开状态。您将在下一步骤中使用此程序运行 PowerShell 脚本。
 
@@ -126,7 +130,9 @@ _**上一次修改主题：** 2016-12-09_
 
 如果您不确定本地 Exchange 组织中的外部 Exchange 端点，则可以通过在本地 Exchange 组织的 Exchange PowerShell 中运行以下命令来获取外部配置的 Web 服务端点的列表。
 
-    Get-WebServicesVirtualDirectory | FL ExternalUrl
+```powershell
+Get-WebServicesVirtualDirectory | FL ExternalUrl
+```
 
 > [!NOTE]  
 > 若要成功运行以下脚本，必须将 Azure Active Directory 的 Windows PowerShell 连接到 Microsoft Online Azure AD 租户，如上述部分中的步骤 4 所述。
@@ -147,7 +153,9 @@ _**上一次修改主题：** 2016-12-09_
 
 2.  在 Azure Active Directory 的 Windows PowerShell 中，运行您在上一步骤中创建的 Windows PowerShell 脚本。例如：
     
-        .\RegisterEndpoints.ps1
+    ```powershell
+.\RegisterEndpoints.ps1
+```
 
 ## 步骤 6：创建从您的本地组织到 Office 365 的 IntraOrganizationConnector
 
@@ -203,7 +211,9 @@ _**上一次修改主题：** 2016-12-09_
 
 在指向内部部署 Exchange 2013 SP1 客户端访问服务器的 Exchange Web 服务终结点的 Exchange 2013 之前的客户端访问服务器上，必须配置 *AvailabilityAddressSpace*。此终结点是步骤 5 之前介绍的同一个终结点，您也可以通过在本地 Exchange 2013 SP1 客户端访问服务器上运行以下 cmdlet 来确定此终结点：
 
-    Get-WebServicesVirtualDirectory | FL AdminDisplayVersion,ExternalUrl
+```powershell
+Get-WebServicesVirtualDirectory | FL AdminDisplayVersion,ExternalUrl
+```
 
 > [!NOTE]  
 > 如果从多个服务器返回虚拟目录信息，请确保使用为 Exchange 2013 SP1 客户端访问服务器返回的终结点。它将显示 <em>AdminDisplayVersion</em> 参数的 15.0（内部版本 847.32）或更高版本。

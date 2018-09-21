@@ -189,7 +189,9 @@ UM 故障排除工具可帮助您在跨界部署中排查、诊断及修复配�
 
 在以下示例中，网关模式被用来测试不包括 Office Communications Server 2007 R2 或 Lync Server 的环境中的呼叫流。该示例测试电话设备，包括 VoIP 网关、PBX 和 IP PBX 以及统一消息组件。此示例将 IP 语音 (VoIP) 安全模式设置为“不安全” ，使用 IP 地址 10.1.1.1 作为下一个跃点，并在转换信息中包括分机号码。
 
-    Test-ExchangeUMCallFlow -Mode Gateway -VoIPSecurity Unsecured -NextHop 10.1.1.1 -Diversion 12345
+```powershell
+Test-ExchangeUMCallFlow -Mode Gateway -VoIPSecurity Unsecured -NextHop 10.1.1.1 -Diversion 12345
+```
 
 概述
 

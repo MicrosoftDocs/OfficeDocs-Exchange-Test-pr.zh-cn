@@ -104,7 +104,9 @@ _**上一次修改主题：** 2015-09-30_
 
 4.  检索当前托管文件夹助理工作周期配置。请务必记下这些设置以供将来使用。
     
-        Get-MailboxServer "My Mailbox Server" | Format-List Name,ManagedFolderWorkCycle
+    ```powershell
+Get-MailboxServer "My Mailbox Server" | Format-List Name,ManagedFolderWorkCycle
+```
 
 5.  禁用对邮箱的客户端访问，以确保在此过程期间无法对邮箱数据进行更改。
     
@@ -116,7 +118,9 @@ _**上一次修改主题：** 2015-09-30_
 
 7.  在邮箱服务器上禁用托管文件夹助理。
     
-        Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
+    ```powershell
+Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
+```
     
     > [!IMPORTANT]  
     > 如果邮箱位于数据库可用性组 (DAG) 中的某个邮箱数据库上，则必须在托管数据库副本的每个 DAG 成员上禁用托管文件夹助理。如果该数据库故障转移到另一个服务器，则这可防止该服务器上的托管文件夹助理删除邮箱数据。
@@ -124,7 +128,9 @@ _**上一次修改主题：** 2015-09-30_
 
 8.  禁用单个项目恢复并从诉讼保留中删除邮箱。
     
-        Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
+    ```powershell
+Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
+```
     
     > [!IMPORTANT]  
     > 在运行此命令后，可能需要一小时来禁用单个项目恢复或诉讼保留。建议您仅当此期间过后才执行下一个步骤。
@@ -144,7 +150,9 @@ _**上一次修改主题：** 2015-09-30_
 
 10. 如果邮箱以前处于诉讼保留或启用了单个项目恢复，请再次启用这些功能。
     
-        Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
+    ```powershell
+Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
+```
     
     > [!IMPORTANT]  
     > 在运行此命令后，可能需要一小时来启用单个项目恢复或诉讼保留。建议仅当此期间过后，才启用托管文件夹助理并允许客户端访问（步骤 11 和 12）。
@@ -172,7 +180,9 @@ _**上一次修改主题：** 2015-09-30_
 
 12. 通过将工作周期设置回在步骤 4 中记下的值，来启用托管文件夹助理。此示例将工作周期设置为一天。
     
-        Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+    ```powershell
+Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+```
 
 13. 启用客户端访问。
     
