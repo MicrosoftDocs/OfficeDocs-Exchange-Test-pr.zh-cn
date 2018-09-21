@@ -23,7 +23,7 @@ MicrosoftExchange Server 2013 和 Exchange Online、Exchange Search 包含用于
 > 在 Exchange 2013 中，安装并注册 Microsoft Office Filter Pack 并不是一项强制性要求。
 
 
-管理或使用 Exchange Search 以及独立功能（如 [就地电子数据展示](in-place-ediscovery-exchange-2013-help.md)）时，请注意不可搜索的项目和已禁用索引功能或不包含可以索引的内容的文件格式的区别：
+管理或使用 Exchange Search 以及独立功能（如 [就地电子数据展示](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)）时，请注意不可搜索的项目和已禁用索引功能或不包含可以索引的内容的文件格式的区别：
 
   - **不可搜索的项目**   当 Exchange Search 因任何原因（例如，未安装筛选器）而无法索引特定文件类型时，您将无法搜索此文件类型。包含此类附件的邮件被标记为“部分编制索引”。可以使用 [Get-FailedContentIndexDocuments](https://technet.microsoft.com/zh-cn/library/dd351154\(v=exchg.150\)) cmdlet 检索不可搜索的项目。将就地电子数据展示搜索结果复制到发现邮箱或将搜索结果导出到 PST 文件时，您可以将不可搜索项目包括在内。有关详细信息，请参阅[Exchange 电子数据展示中不可搜索的项目](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md)。
 

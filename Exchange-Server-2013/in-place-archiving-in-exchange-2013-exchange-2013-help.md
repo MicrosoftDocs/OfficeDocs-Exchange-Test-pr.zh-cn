@@ -262,13 +262,13 @@ Exchange 2013 安装程序会创建默认存档和保留策略，即“默认 MR
 
   - **Exchange 搜索**   快速搜索邮件的能力对于存档邮箱变得更加重要。对于 Exchange 搜索，主邮箱与存档邮箱之间没有差异。两个邮箱的内容均编制了索引。因为存档邮箱未在用户的计算机上缓存（即使使用处于缓存 Exchange 模式的 Outlook 也是如此），所以存档的搜索结果始终由 Exchange 搜索提供。在 Outlook 2010 及更高版本和 Outlook Web App 中搜索整个邮箱时，搜索结果包括用户的主邮箱和存档邮箱。
 
-  - **就地电子数据展示**   当发现管理员执行就地电子数据展示搜索时，同时也会搜索用户的存档邮箱。当从 Exchange 管理中心 (EAC) 创建发现搜索时，没有排除存档邮箱的选项。使用 Exchange 命令行管理程序创建发现搜索时，可以通过使用 *DoNotIncludeArchive* 开关排除存档。有关详细信息，请参阅[New-MailboxSearch](https://technet.microsoft.com/zh-cn/library/dd298064\(v=exchg.150\))。若要了解详细信息，请参阅[就地电子数据展示](in-place-ediscovery-exchange-2013-help.md)。
+  - **就地电子数据展示**   当发现管理员执行就地电子数据展示搜索时，同时也会搜索用户的存档邮箱。当从 Exchange 管理中心 (EAC) 创建发现搜索时，没有排除存档邮箱的选项。使用 Exchange 命令行管理程序创建发现搜索时，可以通过使用 *DoNotIncludeArchive* 开关排除存档。有关详细信息，请参阅[New-MailboxSearch](https://technet.microsoft.com/zh-cn/library/dd298064\(v=exchg.150\))。若要了解详细信息，请参阅[就地电子数据展示](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)。
     
     > [!IMPORTANT]  
     > 您不能使用就地电子数据展示搜索断开连接的邮箱。
 
 
-  - **就地保留和诉讼保留**   如果将邮箱置于就地保留或诉讼保留，保留将同时置于主邮箱和存档邮箱。若要了解有关就地保留和诉讼保留的更多信息，请参阅[就地保留和诉讼保留](in-place-hold-and-litigation-hold-exchange-2013-help.md)。
+  - **就地保留和诉讼保留**   如果将邮箱置于就地保留或诉讼保留，保留将同时置于主邮箱和存档邮箱。若要了解有关就地保留和诉讼保留的更多信息，请参阅[就地保留和诉讼保留](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-and-litigation-holds)。
 
   - **可恢复的项目文件夹**   存档邮箱包含自己的“可恢复的项目”文件夹，而且其“可恢复的项目”文件夹配额需与主邮箱的“可恢复的项目”文件夹配额相同。有关可恢复邮件的详细信息，请参阅[“可恢复的项目”文件夹](recoverable-items-folder-exchange-2013-help.md)。
 

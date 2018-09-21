@@ -124,7 +124,7 @@ _**上一次修改主题：** 2012-11-27_
 
 创建链接邮箱后，您可以使用 Exchange 管理中心 (EAC) 或 Exchange 命令行管理程序对其进行更改并设置其他属性。
 
-您也可同时为多个链接邮箱更改属性。 有关详细信息，请参阅[管理用户邮箱](manage-user-mailboxes-exchange-2013-help.md)主题中的“批量编辑用户邮箱”部分。
+您也可同时为多个链接邮箱更改属性。 有关详细信息，请参阅[管理用户邮箱](https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)主题中的“批量编辑用户邮箱”部分。
 
 > [!IMPORTANT]  
 > 完成此任务的估计时间将会根据您要查看或更改的属性数量而异。

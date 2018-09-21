@@ -261,7 +261,7 @@ _**上一次修改主题：** 2016-05-26_
 
   - [如何通过应用 DLP 规则来评估邮件](how-dlp-rules-are-applied-to-evaluate-messages-exchange-2013-help.md)
 
-  - [创建自定义 DLP 策略](create-a-custom-dlp-policy-exchange-2013-help.md)
+  - [创建自定义 DLP 策略](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/data-loss-prevention/create-custom-dlp-policy)
 
   - [使用 Exchange 中的敏感信息类型查找什么](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md)
 

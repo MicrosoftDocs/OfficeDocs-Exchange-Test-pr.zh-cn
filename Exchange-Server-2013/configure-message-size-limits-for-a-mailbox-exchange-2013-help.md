@@ -21,7 +21,7 @@ _**上一次修改主题：** 2012-11-12_
 
 请记住，Exchange 组织中还有其他设置能确定邮箱发送和接收的最大邮件大小（例如，在邮箱服务器上配置的最大邮件大小）。若要了解有关 Exchange 中邮件大小的限制（包括邮件大小限制类型、作用域和优先顺序）的详细信息，请参阅[邮件大小限制](message-size-limits-exchange-2013-help.md)。
 
-有关与用户邮箱相关的其他管理任务，请参阅[管理用户邮箱](manage-user-mailboxes-exchange-2013-help.md)。
+有关与用户邮箱相关的其他管理任务，请参阅[管理用户邮箱](https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)。
 
 > [!NOTE]  
 > 还可以控制邮件用户发送和接收的邮件的大小，以及来自共享邮箱的邮件的大小。

@@ -17,13 +17,13 @@ _**适用于：** Exchange Server 2013_
 
 _**上一次修改主题：** 2012-10-14_
 
-[创建保留策略](create-a-retention-policy-exchange-2013-help.md)
+[创建保留策略](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy)
 
 [向保留策略添加保留标记或从中删除保留标记](add-retention-tags-to-or-remove-retention-tags-from-a-retention-policy-exchange-2013-help.md)
 
-[将保留策略应用于邮箱](apply-a-retention-policy-to-mailboxes-exchange-2013-help.md)
+[将保留策略应用于邮箱](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/apply-retention-policy)
 
 [配置托管文件夹助理](configure-the-managed-folder-assistant-exchange-2013-help.md)
 
-[放置的邮箱上保留挂起](place-a-mailbox-on-retention-hold-exchange-2013-help.md)
+[放置的邮箱上保留挂起](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)
 

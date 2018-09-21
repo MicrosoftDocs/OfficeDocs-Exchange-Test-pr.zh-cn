@@ -399,9 +399,9 @@ Exchange 使用以下列表介绍的优先级顺序来确定发送到 Exchange �
 
 [Exchange Online 中的远程域](https://technet.microsoft.com/zh-cn/library/jj966211\(v=exchg.150\))
 
-[管理邮件用户](manage-mail-users-exchange-2013-help.md)
+[管理邮件用户](https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-mail-users)
 
-[管理邮件联系人](manage-mail-contacts-exchange-2013-help.md)
+[管理邮件联系人](https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-mail-contacts)
 
 [在 Outlook 中更改邮件格式](https://go.microsoft.com/fwlink/p/?linkid=397890)
 

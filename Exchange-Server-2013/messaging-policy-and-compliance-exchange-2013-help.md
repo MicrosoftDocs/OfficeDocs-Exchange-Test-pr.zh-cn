@@ -61,12 +61,12 @@ _**上一次修改主题：** 2015-03-09_
 <tr class="odd">
 <td><p>就地保留</p></td>
 <td><p>当存在诉讼的合理预期时，需要组织保留与事实相关的以电子方式存储的信息 (ESI)，包括电子邮件。就地保留使您可以搜索并保留与查询参数匹配的邮件。可保护邮件不被删除、修改和篡改，并且可以无限期地保留邮件或保留一段指定时间。</p></td>
-<td><p><a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">就地保留和诉讼保留</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-and-litigation-holds">就地保留和诉讼保留</a></p></td>
 </tr>
 <tr class="even">
 <td><p>就地电子数据展示</p></td>
 <td><p>就地电子数据展示使您可以跨 Exchange 组织搜索邮箱数据、预览搜索结果并将结果复制到发现邮箱。</p></td>
-<td><p><a href="in-place-ediscovery-exchange-2013-help.md">就地电子数据展示</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">就地电子数据展示</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>日记</p></td>
@@ -97,7 +97,7 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>邮箱审核日志记录</p></td>
 <td><p>由于邮箱可能包含敏感、对业务影响很大 (HBI) 的信息和 PII，因此，跟踪登录到组织内邮箱的人员及其所执行的操作非常重要。跟踪邮箱所有者之外的其他用户（称为委派用户）对邮箱的访问情况尤其重要。使用邮箱审核日志记录可以记录邮箱所有者、委派用户（包含具有完全邮箱访问权限的管理员）和管理员对邮箱的访问。</p></td>
 <td><p><a href="mailbox-audit-logging-exchange-2013-help.md">邮箱审核日志记录</a></p>
-<p><a href="exchange-auditing-reports-exchange-2013-help.md">Exchange 审核报告</a></p></td>
+<p><a href="https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports">Exchange 审核报告</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>管理员审核日志记录</p></td>

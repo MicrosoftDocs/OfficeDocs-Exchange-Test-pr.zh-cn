@@ -289,7 +289,7 @@ AD RMS 系统具有服务器和客户端组件，包括以下内容：
 </table>
 
 
-有关如何管理受保护的语音邮件设置的详细信息，请参阅[受保护的语音邮件过程](protected-voice-mail-procedures-exchange-2013-help.md)或 [Set-UMMailboxPolicy](https://technet.microsoft.com/zh-cn/library/bb124903\(v=exchg.150\))。
+有关如何管理受保护的语音邮件设置的详细信息，请参阅[受保护的语音邮件过程](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/protected-voice-mail-procedures)或 [Set-UMMailboxPolicy](https://technet.microsoft.com/zh-cn/library/bb124903\(v=exchg.150\))。
 
 返回顶部
 

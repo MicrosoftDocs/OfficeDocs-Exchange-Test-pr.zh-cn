@@ -235,7 +235,7 @@ Exchange Server 2013 中的传输规则是 Exchange Server 2010 中可用功能�
 
 Exchange 2013 包括对审核的以下改进功能：
 
-  - **审核报告**   EAC 包括审核功能，以便您可以运行报表或导出邮箱审核日志和管理员审核日志中的条目。邮箱审核日志会在邮箱所有者之外的其他人每次访问邮箱时进行记录。这可帮助您确定谁访问了邮箱以及访问者完成了哪些操作。管理员审核日志会记录管理员利用 Exchange 命令行管理程序 cmdlet 执行的所有操作。这可帮助您解决配置问题，或确定出现与安全或合规性相关的问题的原因。有关详细信息，请参阅[Exchange 审核报告](exchange-auditing-reports-exchange-2013-help.md)。
+  - **审核报告**   EAC 包括审核功能，以便您可以运行报表或导出邮箱审核日志和管理员审核日志中的条目。邮箱审核日志会在邮箱所有者之外的其他人每次访问邮箱时进行记录。这可帮助您确定谁访问了邮箱以及访问者完成了哪些操作。管理员审核日志会记录管理员利用 Exchange 命令行管理程序 cmdlet 执行的所有操作。这可帮助您解决配置问题，或确定出现与安全或合规性相关的问题的原因。有关详细信息，请参阅[Exchange 审核报告](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)。
 
   - **查看管理员审核日志**   您可以在 EAC 中查看管理员审核日志条目，而无需将其导出，导出可能需要 24 小时才能通过电子邮件收到。为此，请转到“合规性管理”\>“审核”，然后单击“查看管理员审核日志”。将分多页显示多达 1000 个条目。若要缩小搜索范围，您可以指定日期范围。有关详细信息，请参阅[查看管理员审核日志](view-the-administrator-audit-log-exchange-2013-help.md)。
 

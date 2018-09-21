@@ -56,7 +56,7 @@ _**上一次修改主题：** 2016-12-09_
 7.  从邮箱服务器上的 \<Exchange 安装文件夹\>\\Exchange Server\\Script 文件夹运行 ExchUcUtil.ps1 脚本。
     
     > [!IMPORTANT]  
-    > ExchUcUtil.ps1 脚本会为 Lync 集成创建一个或多个 UM IP 网关。除该脚本创建的一个网关外，必须禁用所有 UM IP 网关上的传出呼叫。这包括禁用在运行该脚本之前创建的 UM IP 网关上的传出呼叫。若要禁用 UM IP 网关上的传出呼叫，请参阅<a href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">禁用 UM IP 网关的传出呼叫</a>。
+    > ExchUcUtil.ps1 脚本会为 Lync 集成创建一个或多个 UM IP 网关。除该脚本创建的一个网关外，必须禁用所有 UM IP 网关上的传出呼叫。这包括禁用在运行该脚本之前创建的 UM IP 网关上的传出呼叫。若要禁用 UM IP 网关上的传出呼叫，请参阅<a href="https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-outgoing-calls-on-um-ip-gateways">禁用 UM IP 网关的传出呼叫</a>。
 
 
 8.  从 Lync Server 上的 %CommonProgramFiles%\\Microsoft Lync Server 2013\\Support 文件夹运行 **OcsUmUtil.exe**。

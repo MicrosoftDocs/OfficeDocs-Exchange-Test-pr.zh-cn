@@ -21,7 +21,7 @@ _**上一次修改主题：** 2017-01-18_
 > 在 Exchange Online（Office 365 和 Exchange Online 独立计划）中新建就地保留的截止时间为 2017 年 7 月 1 日，我们已推迟了这一最后期限。不过，今年晚些时候或明年初，将无法在 Exchange Online 中新建就地保留。作为就地保留的备选方法，可以在 Office 365 安全与合规中心使用<a href="https://go.microsoft.com/fwlink/?linkid=780738">电子数据展示服务案例</a>或<a href="https://go.microsoft.com/fwlink/?linkid=827811">保留策略</a>。在我们取消新建就地保留后，仍可以修改现有就地保留，并且在 Exchange Server 2013 和 Exchange 混合部署中新建就地保留也仍将受支持。此外，也仍可以将邮箱置于诉讼保留。
 
 
-您的组织可能需要将所有邮箱数据保存一段指定的时间。您可以使用诉讼保留或就地保留满足这一要求。当您将一个邮箱置于诉讼保留或就地保留状态后，修改或永久删除的邮箱邮件将保存在“可恢复邮件”文件夹中。有关详细信息，请参阅[就地保留和诉讼保留](in-place-hold-and-litigation-hold-exchange-2013-help.md)。
+您的组织可能需要将所有邮箱数据保存一段指定的时间。您可以使用诉讼保留或就地保留满足这一要求。当您将一个邮箱置于诉讼保留或就地保留状态后，修改或永久删除的邮箱邮件将保存在“可恢复邮件”文件夹中。有关详细信息，请参阅[就地保留和诉讼保留](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-and-litigation-holds)。
 
 在您将组织中的所有邮箱置于诉讼保留或就地保留状态之前，请考虑下列问题：
 

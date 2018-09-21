@@ -277,7 +277,7 @@ PBX 收到呼叫后，它会将呼叫转发到相应的分机号码。如果用�
 
 ## 多个 DID 电话号码
 
-为用户启用统一消息时，必须为该用户输入至少一个分机号。您可以使用 Exchange 管理中心 (EAC) 为启用 UM 的用户添加多个分机号码。有关详细信息，请参阅[添加分机号码](add-an-extension-number-exchange-2013-help.md)。
+为用户启用统一消息时，必须为该用户输入至少一个分机号。您可以使用 Exchange 管理中心 (EAC) 为启用 UM 的用户添加多个分机号码。有关详细信息，请参阅[添加分机号码](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-extension-number)。
 
 如果已启用 UM 的用户出现下列情况，添加多个分机号则非常有用：
 

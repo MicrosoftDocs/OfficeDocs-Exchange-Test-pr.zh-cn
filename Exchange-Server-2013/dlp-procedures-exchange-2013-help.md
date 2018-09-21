@@ -21,7 +21,7 @@ _**上一次修改主题：** 2015-01-07_
 
 [从模板创建 DLP 策略](how-to-new-dlp-data-loss-prevention-policy-template.md)   可帮助您配置 Microsoft 提供的预建策略规则集的信息。通过策略模板，您可以轻松开始管理与多个一般法律和规定要求相关联的邮件数据。
 
-[创建自定义 DLP 策略](create-a-custom-dlp-policy-exchange-2013-help.md)   可帮助您配置策略规则以满足预先存在的 DLP 模板之一可能未涵盖的组织特定需求的信息。您可以使用的单个策略中的规则条件包括所有传统传输规则以及新的敏感信息类型。
+[创建自定义 DLP 策略](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/data-loss-prevention/create-custom-dlp-policy)   可帮助您配置策略规则以满足预先存在的 DLP 模板之一可能未涵盖的组织特定需求的信息。您可以使用的单个策略中的规则条件包括所有传统传输规则以及新的敏感信息类型。
 
 [从文件导入自定义 DLP 策略模板](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)   可帮助您导入包含策略信息设置的文件的信息。独立于 Exchange 作为 XML 文件创建的策略必须满足特定的格式要求方可正常发挥作用。
 

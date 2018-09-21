@@ -326,7 +326,7 @@ Microsoft Exchange 收件人不是典型的收件人对象（例如邮箱、邮
 <td><p>了解如何使用 Exchange 管理中心或 Exchange 命令行管理程序来创建用户邮箱。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-user-mailboxes-exchange-2013-help.md">管理用户邮箱</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes">管理用户邮箱</a></p></td>
 <td><p>了解如何创建用户邮箱、更改邮箱属性和批量编辑多个邮箱的选定属性。</p></td>
 </tr>
 <tr class="odd">
@@ -346,15 +346,15 @@ Microsoft Exchange 收件人不是典型的收件人对象（例如邮箱、邮
 <td><p>了解如何创建动态通讯组和管理动态通讯组属性，如使用自定义属性和其他属性确定组成员。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="manage-mail-contacts-exchange-2013-help.md">管理邮件联系人</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-mail-contacts">管理邮件联系人</a></p></td>
 <td><p>了解如何创建和管理邮件联系人。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-mail-users-exchange-2013-help.md">管理邮件用户</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-mail-users">管理邮件用户</a></p></td>
 <td><p>了解如何创建和管理邮件用户。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="create-and-manage-room-mailboxes-exchange-2013-help.md">创建和管理会议室邮箱</a></p></td>
+<td><p><a href="https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-room-mailboxes">创建和管理会议室邮箱</a></p></td>
 <td><p>了解如何创建会议室邮箱和管理会议室邮箱属性，如启用定期会议和配置预订与调度选项。</p></td>
 </tr>
 <tr class="even">

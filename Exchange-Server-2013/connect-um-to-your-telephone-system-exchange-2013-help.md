@@ -29,5 +29,5 @@ _**上一次修改主题：** 2012-11-30_
 
   - [Exchange 2013 电话顾问](telephony-advisor-for-exchange-2013-exchange-2013-help.md)  了解有关支持 VoIP 网关，IP Pbx 和 Pbx。
 
-  - [支持的 VoIP 网关、IP PBX 和 PBX 的配置说明](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md) 了解如何设置您的 VoIP 网关，IP Pbx 和 Pbx。
+  - [支持的 VoIP 网关、IP PBX 和 PBX 的配置说明](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways) 了解如何设置您的 VoIP 网关，IP Pbx 和 Pbx。
 

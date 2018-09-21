@@ -23,7 +23,7 @@ _**上一次修改主题：** 2013-01-18_
 > 对用户启用或禁用 IMAP4 后，必须重新启动 Microsoft Exchange IMAP4 服务和 Microsoft Exchange IMAP4 后端服务。有关如何重新启动 IMAP4 服务的详细信息，请参阅<a href="start-and-stop-the-imap4-services-exchange-2013-help.md">启动和停止 IMAP4 服务</a>。
 
 
-有关管理用户邮箱的其他信息，请参阅[管理用户邮箱](manage-user-mailboxes-exchange-2013-help.md)。
+有关管理用户邮箱的其他信息，请参阅[管理用户邮箱](https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)。
 
 有关与 POP3 和 IMAP4 相关的详细信息，请参阅[Exchange Server 2013 中的 POP3 和 IMAP4](pop3-and-imap4-in-exchange-server-2013-exchange-2013-help.md)。
 

@@ -27,7 +27,7 @@ _**上一次修改主题：** 2015-07-07_
 
 通常是按数据库配置存储配额。也就是说，为邮箱数据库配置的存储配额应用于该数据库中的所有邮箱。若要详细了解如何管理每个数据库邮箱的设置，请参阅[管理 Exchange 2013 中的邮箱数据库](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md)。
 
-本主题介绍了如何自定义特定邮箱的存储设置，而不是使用邮箱数据库中的存储设置。有关与用户邮箱相关的其他管理任务，请参阅[管理用户邮箱](manage-user-mailboxes-exchange-2013-help.md)。
+本主题介绍了如何自定义特定邮箱的存储设置，而不是使用邮箱数据库中的存储设置。有关与用户邮箱相关的其他管理任务，请参阅[管理用户邮箱](https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)。
 
 ## 开始前，需要知道什么？
 

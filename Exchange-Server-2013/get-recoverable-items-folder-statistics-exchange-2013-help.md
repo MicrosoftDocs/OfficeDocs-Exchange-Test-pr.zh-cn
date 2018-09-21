@@ -27,7 +27,7 @@ _**上一次修改主题：** 2015-01-22_
 
   - [\&quot;可恢复的项目\&quot;文件夹](recoverable-items-folder-exchange-2013-help.md)
 
-  - [就地保留和诉讼保留](in-place-hold-and-litigation-hold-exchange-2013-help.md)
+  - [就地保留和诉讼保留](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-and-litigation-holds)
 
 ## 在开始之前，您需要知道什么？
 

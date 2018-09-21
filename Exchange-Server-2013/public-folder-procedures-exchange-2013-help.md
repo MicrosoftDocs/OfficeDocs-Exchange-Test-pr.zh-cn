@@ -55,5 +55,5 @@ _**上一次修改主题：** 2017-08-02_
 
 [恢复失败的移动公用文件夹和公用文件夹的邮箱](restore-public-folders-and-public-folder-mailboxes-from-failed-moves-exchange-2013-help.md)
 
-[查看公用文件夹和公用文件夹项目的统计信息](view-statistics-for-public-folders-and-public-folder-items-exchange-2013-help.md)
+[查看公用文件夹和公用文件夹项目的统计信息](https://docs.microsoft.com/zh-cn/exchange/collaboration-exo/public-folders/view-public-folder-statistics)
 
