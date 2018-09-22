@@ -665,7 +665,7 @@
       - name: 在 Exchange 2013 中管理就地存档
         href: manage-in-place-archives-in-exchange-2013-exchange-2013-help.md
       - name: 修改存档策略
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/modify-archive-policies
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/modify-archive-policies
       - name: 配置就地存档（内部部署）的存档配额
         href: configure-archive-quotas-for-an-in-place-archive-in-exchange-2013-exchange-2013-help.md
       - name: 将 Lync 对话和会议内容存档到 Exchange 中
@@ -673,10 +673,10 @@
       - name: 使用 OAuth 身份验证支持 Exchange 混合部署中的存档
         href: using-oauth-authentication-to-support-archiving-in-an-exchange-hybrid-deployment-exchange-2013-help.md
     - name: 就地保留和诉讼保留
-      href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-and-litigation-holds
+      href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-and-litigation-holds
       items:
       - name: 创建或删除就地保留
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/create-or-remove-in-place-holds
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/create-or-remove-in-place-holds
       - name: 将邮箱放到诉讼保留中
         href: https://docs.microsoft.com/en-us/office365/SecurityCompliance/place-a-mailbox-on-litigation-hold
       - name: 保留所有邮箱
@@ -684,18 +684,18 @@
       - name: 为电子数据展示保存密件抄送和展开的通讯组收件人
         href: https://docs.microsoft.com/en-us/office365/SecurityCompliance/preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery
     - name: 就地电子数据展示
-      href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery
+      href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery
       items:
       - name: 在 Exchange 中分配电子数据展示权限
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions
       - name: 创建就地电子数据展示搜索
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search
       - name: 将电子数据展示搜索结果复制到发现邮箱
         href: copy-ediscovery-search-results-to-a-discovery-mailbox-exchange-2013-help.md
       - name: 将电子数据展示搜索结果导出到 PST 文件
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/export-search-results
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/export-search-results
       - name: 就地电子数据展示的邮件属性和搜索运算符
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/message-properties-and-search-operators
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/message-properties-and-search-operators
       - name: 创建发现邮箱
         href: https://docs.microsoft.com/en-us/Office365/SecurityCompliance/eop/exchange-online-protection-overview
       - name: 启动或停止就地电子数据展示搜索
@@ -703,15 +703,15 @@
       - name: 修改就地电子数据展示搜索
         href: https://docs.microsoft.com/en-us/office365/securitycompliance/search-for-ediscovery-activities-in-the-audit-log
       - name: 为就地电子数据展示搜索创建自定义管理范围
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/create-custom-management-scope
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/create-custom-management-scope
       - name: 删除就地电子数据展示搜索
         href: https://docs.microsoft.com/en-us/SharePoint/governance/create-and-run-queries-in-the-ediscovery-center
       - name: 搜索和删除邮件 - 管理员帮助
         href: https://docs.microsoft.com/en-us/office365/SecurityCompliance/search-for-and-delete-messagesadmin-help
       - name: 减小 Exchange 中发现邮箱的大小
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/reduce-discovery-mailbox-size
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/reduce-discovery-mailbox-size
       - name: 在 Exchange 中删除和重新创建默认发现邮箱
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/delete-and-re-create-default-discovery-mailbox
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/delete-and-re-create-default-discovery-mailbox
       - name: Re-create the Discovery system mailbox
         href: re-create-the-discovery-system-mailbox-exchange-2013-help.md
       - name: 使用 OAuth 身份验证支持 Exchange 混合部署中的电子数据展示
@@ -721,34 +721,34 @@
       - name: Exchange 电子数据展示中不可搜索的项目
         href: unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md
     - name: 邮件记录管理
-      href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/messaging-records-management
+      href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/messaging-records-management
       items:
       - name: 邮件记录管理术语在 Exchange 2013
         href: messaging-records-management-terminology-in-exchange-2013-exchange-2013-help.md
       - name: 保留标记和保留策略
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies
         items:
         - name: 默认保留策略
-          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/default-retention-policy
+          href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/default-retention-policy
         - name: 支持保留策略标记的默认文件夹
-          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/default-folders
+          href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/default-folders
         - name: 如何计算保留时间
-          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/retention-age
+          href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/retention-age
         - name: 检查表：部署保留策略
           href: checklist-deploying-retention-policies-exchange-2013-help.md
         - name: 邮件记录管理程序
           href: https://docs.microsoft.com/en-us/office365/securitycompliance/inactive-mailboxes-in-office-365
           items:
           - name: 创建保留策略
-            href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy
+            href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy
           - name: 向保留策略添加保留标记或从中删除保留标记
-            href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/add-or-remove-retention-tags
+            href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/add-or-remove-retention-tags
           - name: 将保留策略应用于邮箱
-            href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/apply-retention-policy
+            href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/apply-retention-policy
           - name: 配置托管文件夹助理
             href: configure-the-managed-folder-assistant-exchange-2013-help.md
           - name: 放置的邮箱上保留挂起
-            href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold
+            href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold
           - name: 导出和导入保留标记
             href: export-and-import-retention-tags-exchange-2013-help.md
           - name: 配置 Outlook 客户端阻止
@@ -770,7 +770,7 @@
       href: journaling-exchange-2013-help.md
       items:
       - name: 管理日记
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/journaling/manage-journaling
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/journaling/manage-journaling
       - name: 禁用或启用语音邮件和未接来电通知的日记功能
         href: disable-or-enable-journaling-of-voice-mail-and-missed-call-notifications-exchange-2013-help.md
     - name: 邮件流规则（传输规则）
@@ -781,40 +781,40 @@
       - name: 邮件流规则操作
         href: mail-flow-rule-actions-in-exchange-2013-exchange-2013-help.md
       - name: 配置邮件流规则的最佳做法
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices
       - name: 使用传输规则检查邮件附件
         href: use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md
       - name: 常见的附件阻止方案
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios
       - name: 组织范围内的免责声明、签名、脚注或标头
         href: organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md
       - name: 邮件流或传输规则过程
         href: mail-flow-or-transport-rule-procedures-exchange-2013-help.md
         items:
         - name: 管理邮件流规则
-          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules
+          href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules
         - name: 测试邮件流规则
-          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules
+          href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules
         - name: 使用邮件流规则以便邮件可以规避待筛选邮件功能
-          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/use-rules-to-bypass-clutter
+          href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/mail-flow-rules/use-rules-to-bypass-clutter
         - name: 使用邮件流规则根据字词、短语或模式的列表路由电子邮件
-          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email
+          href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email
         - name: 向 Exchange 2013 注册 Filter Pack IFilter
           href: register-filter-pack-ifilters-with-exchange-2013-exchange-2013-help.md
       - name: 管理邮件审批
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-message-approval
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/mail-flow-rules/manage-message-approval
         items:
         - name: 常见邮件审批方案
-          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios
+          href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios
         - name: 管理邮件审批并进行故障排除
-          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/ttroubleshoot-message-approval
+          href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/mail-flow-rules/ttroubleshoot-message-approval
     - name: 数据丢失预防
-      href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention
+      href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention
       items:
       - name: 如何通过应用 DLP 规则来评估邮件
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/dlp-rule-application
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/data-loss-prevention/dlp-rule-application
       - name: 将敏感信息规则与传输规则集成
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules
       - name: 使用敏感信息类型查找什么
         href: what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md
       - name: DLP 策略模板
@@ -830,9 +830,9 @@
         - name: 管理 DLP 策略
           href: https://docs.microsoft.com/en-us/office365/securitycompliance/data-loss-prevention-policies
         - name: 从模板创建 DLP 策略
-          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template
+          href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template
         - name: 创建自定义 DLP 策略
-          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/create-custom-dlp-policy
+          href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/data-loss-prevention/create-custom-dlp-policy
         - name: 从文件导入自定义 DLP 策略模板
           href: https://docs.microsoft.com/en-us/office365/securitycompliance/create-a-dlp-policy-from-a-template
         - name: 查看 DLP 策略检测报告
@@ -853,15 +853,15 @@
           - name: 从 Exchange 导出 DLP 敏感信息类型
             href: https://docs.microsoft.com/en-us/office365/securitycompliance/eop/exchange-online-protection-overview
       - name: 策略提示
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/policy-tips
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/data-loss-prevention/policy-tips
         items:
         - name: 管理策略提示
-          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/manage-policy-tips
+          href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/data-loss-prevention/manage-policy-tips
       - name: 文档指纹
         href: overview-of-document-fingerprinting-in-exchange.md
         items:
         - name: 使用文档指纹保护表单数据
-          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/protect-data-with-fingerprinting
+          href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/data-loss-prevention/protect-data-with-fingerprinting
     - name: 信息权限管理
       href: information-rights-management-exchange-2013-help.md
       items:
@@ -933,18 +933,18 @@
       - name: 管理管理员审核日志记录
         href: manage-administrator-audit-logging-exchange-2013-help.md
     - name: Exchange 审核报告
-      href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports
+      href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports
       items:
       - name: 导出邮箱审核日志
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs
       - name: 运行非所有者邮箱访问报告
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report
       - name: 运行每个邮箱的诉讼保留报告
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/exchange-auditing-reports/per-mailbox-litigation-hold-report
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/exchange-auditing-reports/per-mailbox-litigation-hold-report
       - name: 搜索角色组更改或管理员审核日志
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
       - name: 查看管理员审核日志
-        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
+        href: https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
   - name: 反垃圾邮件和反恶意软件保护
     href: anti-spam-and-anti-malware-protection-exchange-2013-help.md
     items:
@@ -1119,7 +1119,7 @@
         - name: 配置远程域邮件报告
           href: configure-remote-domain-message-reporting-exchange-2013-help.md
         - name: 远程域支持的字符集
-          href: https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/remote-domains/supported-character-sets
+          href: https://docs.microsoft.com/zh-cn/exchange/mail-flow-best-practices/remote-domains/supported-character-sets
     - name: 传输代理
       href: transport-agents-exchange-2013-help.md
       items:
@@ -1261,58 +1261,58 @@
     - name: 创建用户邮箱
       href: create-user-mailboxes-exchange-2013-help.md
     - name: 管理用户邮箱
-      href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes
+      href: https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes
       items:
       - name: 添加或删除邮箱的电子邮件地址
-        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses
+        href: https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses
       - name: 为邮箱配置电子邮件转发
-        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding
+        href: https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding
       - name: 配置邮箱的邮件传递限制
-        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-message-delivery-restrictions
+        href: https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-message-delivery-restrictions
       - name: 配置邮箱的邮件大小限制
         href: configure-message-size-limits-for-a-mailbox-exchange-2013-help.md
       - name: 配置邮箱的存储配额
         href: configure-storage-quotas-for-a-mailbox-exchange-2013-help.md
       - name: 转换邮箱
-        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/convert-a-mailbox
+        href: https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-user-mailboxes/convert-a-mailbox
       - name: 启用或禁用邮箱的 Exchange ActiveSync
-        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-exchange-activesync
+        href: https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-exchange-activesync
       - name: 启用或禁用邮箱的 MAPI
-        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi
+        href: https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi
       - name: 启用或禁用邮箱的 Outlook Web App
-        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app
+        href: https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app
       - name: 启用或禁用邮箱的单个项目恢复
-        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery
+        href: https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery
     - name: 管理链接的邮箱
       href: manage-linked-mailboxes-exchange-2013-help.md
     - name: 创建和管理通讯组
-      href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups
+      href: https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups
       items:
       - name: 创建通讯组命名策略
-        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy
+        href: https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy
       - name: 重命名策略的通讯组
-        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-distribution-groups/override-group-naming-policy
+        href: https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-distribution-groups/override-group-naming-policy
     - name: 管理启用邮件的安全组
-      href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups
+      href: https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups
     - name: 管理动态通讯组
-      href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups
+      href: https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups
       items:
       - name: 查看动态通讯组的成员
-        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/view-group-members
+        href: https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/view-group-members
     - name: 管理邮件联系人
-      href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-mail-contacts
+      href: https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-mail-contacts
       items:
       - name: 启用或禁用电子邮件发送的邮件联系人
         href: enable-or-disable-email-for-a-mail-contact-exchange-2013-help.md
     - name: 管理邮件用户
-      href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-mail-users
+      href: https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-mail-users
       items:
       - name: 启用或禁用邮件用户的电子邮件
         href: enable-or-disable-email-for-a-mail-user-exchange-2013-help.md
     - name: 创建和管理会议室邮箱
-      href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-room-mailboxes
+      href: https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-room-mailboxes
     - name: 管理设备邮箱
-      href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-equipment-mailboxes
+      href: https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-equipment-mailboxes
     - name: 断开连接的邮箱
       href: disconnected-mailboxes-exchange-2013-help.md
       items:
@@ -1331,7 +1331,7 @@
     - name: 自定义属性
       href: custom-attributes-exchange-2013-help.md
     - name: 管理收件人的权限
-      href: manage-permissions-for-recipients-exchange-online-help.md
+      href: https://docs.microsoft.com/zh-cn/exchange/recipients-in-exchange-online/manage-permissions-for-recipients
     - name: Exchange 2013 对象名称的不受支持字符
       href: unsupported-characters-for-exchange-2013-object-names-exchange-2013-help.md
     - name: 自动邮箱分发
@@ -1354,47 +1354,47 @@
       - name: 部署公用文件夹时的注意事项
         href: considerations-when-deploying-public-folders-exchange-2013-help.md
       - name: 通过 Outlook 2016 for Mac 访问公用文件夹
-        href: accessing-public-folders-with-outlook-2016-for-mac-exchange-2013-help.md
+        href: https://docs.microsoft.com/zh-cn/exchange/collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac
       - name: 将公用文件夹迁移到 Office 365 组
-        href: migrate-your-public-folders-to-office-365-groups-exchange-2013-help.md
+        href: https://docs.microsoft.com/zh-cn/exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-office-365-groups
       - name: 公用文件夹程序
         href: public-folder-procedures-exchange-2013-help.md
         items:
         - name: 设置新组织中的公用文件夹
-          href: set-up-public-folders-in-a-new-organization-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/collaboration-exo/public-folders/set-up-public-folders
         - name: 针对混合部署配置旧版本地公用文件夹
-          href: configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders
         - name: 针对混合部署配置 Exchange 2013 公用文件夹
-          href: configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/collaboration-exo/public-folders/set-up-modern-hybrid-public-folders
         - name: 配置 Exchange Online 公用文件夹以实现混合部署
-          href: configure-exchange-online-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/collaboration-exo/public-folders/set-up-exo-hybrid-public-folders
         - name: 配置用户邮箱位于 Exchange 2013 服务器上的旧版公用文件夹
           href: configure-legacy-public-folders-where-user-mailboxes-are-on-exchange-2013-servers-exchange-2013-help.md
         - name: 使用批处理迁移将公用文件夹从以前版本迁移到 Exchange 2013
           href: use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md
         - name: 使用批处理迁移将旧版公用文件夹迁移到 Office 365 和 Exchange Online
-          href: use-batch-migration-to-migrate-legacy-public-folders-to-office-365-and-exchange-online-exchange-online-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders
         - name: 使用批处理迁移将 Exchange 2013 公用文件夹迁移到 Exchange Online
-          href: use-batch-migration-to-migrate-exchange-2013-public-folders-to-exchange-online-exchange-online-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/collaboration-exo/public-folders/batch-migration-of-exchange-2013-public-folders
           items:
           - name: 回滚从 Exchange 2013 到 Exchange Online 的公用文件夹迁移
-            href: roll-back-a-public-folder-migration-from-exchange-2013-to-exchange-online-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/collaboration-exo/public-folders/roll-back-exchange-2013-public-folder-migration
         - name: 使用批处理迁移到 Office 365 组迁移 Exchange 2010 公用文件夹
           href: use-batch-migration-to-migrate-exchange-2010-public-folders-to-office-365-groups-exchange-2013-help.md
         - name: 使用批处理的迁移，将 Exchange 2013 公用文件夹迁移到 Office 365 组
           href: use-batch-migration-to-migrate-exchange-2013-public-folders-to-office-365-groups-exchange-2013-help.md
         - name: 创建公用文件夹邮箱
-          href: create-a-public-folder-mailbox-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/collaboration-exo/public-folders/create-public-folder-mailbox
         - name: 创建公用文件夹
-          href: create-a-public-folder-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/collaboration-exo/public-folders/create-public-folder
         - name: 对公用文件夹启用或禁用邮件
-          href: mail-enable-or-mail-disable-a-public-folder-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/collaboration-exo/public-folders/enable-or-disable-mail-for-public-folder
         - name: 更新公用文件夹层次结构
-          href: update-the-public-folder-hierarchy-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/collaboration-exo/public-folders/update-public-folder-hierarchy
         - name: 删除公用文件夹
-          href: remove-a-public-folder-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/collaboration-exo/public-folders/remove-public-folder
         - name: 在 Web 上使用 Outlook 中收藏的公用文件夹
-          href: use-favorite-public-folders-in-outlook-on-the-web-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/collaboration-exo/public-folders/use-favorite-public-folders
         - name: 将公用文件夹邮箱移动至不同的邮箱数据库中
           href: move-a-public-folder-mailbox-to-a-different-mailbox-database-exchange-2013-help.md
         - name: 将公用文件夹移动到不同的公用文件夹的邮箱
@@ -1402,7 +1402,7 @@
         - name: 恢复失败的移动公用文件夹和公用文件夹的邮箱
           href: restore-public-folders-and-public-folder-mailboxes-from-failed-moves-exchange-2013-help.md
         - name: 查看公用文件夹和公用文件夹项目的统计信息
-          href: view-statistics-for-public-folders-and-public-folder-items-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/collaboration-exo/public-folders/view-public-folder-statistics
     - name: 共享邮箱
       href: shared-mailboxes-exchange-2013-help.md
       items:
@@ -1412,7 +1412,7 @@
     href: email-addresses-and-address-books-exchange-2013-help.md
     items:
     - name: 通讯簿策略
-      href: address-book-policies-exchange-2013-help.md
+      href: https://docs.microsoft.com/zh-cn/exchange/address-books/address-book-policies/address-book-policies
       items:
       - name: 方案：部署通讯簿策略
         href: scenario-deploying-address-book-policies-exchange-2013-help.md
@@ -1422,13 +1422,13 @@
         - name: 安装并配置通讯簿策略路由代理
           href: install-and-configure-the-address-book-policy-routing-agent-exchange-2013-help.md
         - name: 创建通讯簿策略
-          href: create-an-address-book-policy-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/address-books/address-book-policies/create-an-address-book-policy
         - name: 将通讯簿策略分配给邮件用户
-          href: assign-an-address-book-policy-to-mail-users-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/address-books/address-book-policies/assign-an-address-book-policy-to-mail-users
         - name: 更改通讯簿策略的设置
-          href: change-the-settings-of-an-address-book-policy-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/address-books/address-book-policies/change-the-settings-of-an-address-book-policy
         - name: 删除通讯簿策略
-          href: remove-an-address-book-policy-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/address-books/address-book-policies/remove-an-address-book-policy
     - name: 详细信息模板
       href: details-templates-exchange-2013-help.md
       items:
@@ -1454,28 +1454,28 @@
       href: offline-address-books-exchange-2013-help.md
       items:
       - name: 脱机通讯簿程序
-        href: offline-address-book-procedures-exchange-2013-help.md
+        href: https://docs.microsoft.com/zh-cn/exchange/address-books/offline-address-books/offline-address-book-procedures
         items:
         - name: 创建脱机通讯簿
-          href: create-an-offline-address-book-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/address-books/offline-address-books/create-offline-address-book
         - name: 将地址列表添加至脱机通讯簿或从脱机通讯簿删除地址列表
-          href: add-an-address-list-to-or-remove-an-address-list-from-an-offline-address-book-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/address-books/offline-address-books/add-or-remove-an-address-list
         - name: 更改默认脱机通讯簿
-          href: change-the-default-offline-address-book-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/address-books/offline-address-books/change-default-offline-address-book
         - name: 设置进行脱机通讯簿下载的收件人
-          href: provision-recipients-for-offline-address-book-downloads-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/address-books/offline-address-books/provision-recipients
         - name: 删除脱机通讯簿
-          href: remove-an-offline-address-book-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/address-books/offline-address-books/remove-offline-address-book
         - name: 更新脱机通讯簿
-          href: update-an-offline-address-book-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/address-books/offline-address-books/update-offline-address-book
         - name: 创建脱机通讯簿虚拟目录
-          href: create-an-offline-address-book-virtual-directory-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/address-books/offline-address-books/create-virtual-directory
         - name: 更改脱机通讯簿生成日程安排
-          href: change-the-offline-address-book-generation-schedule-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/address-books/offline-address-books/change-address-book-generation-schedule
         - name: 配置脱机通讯簿分发属性
-          href: configure-offline-address-book-distribution-properties-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/address-books/offline-address-books/configure-distribution-properties
     - name: 地址列表
-      href: address-lists-exchange-2013-help.md
+      href: https://docs.microsoft.com/zh-cn/exchange/address-books/address-lists/address-lists
       items:
       - name: 地址列表程序
         href: address-list-procedures-exchange-2013-help.md
@@ -1485,24 +1485,24 @@
         - name: 更新地址列表
           href: update-an-address-list-exchange-2013-help.md
         - name: 使用收件人筛选器创建地址列表
-          href: create-an-address-list-by-using-recipient-filters-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/address-books/address-lists/use-recipient-filters-to-create-an-address-list
         - name: 移动地址列表
           href: move-an-address-list-exchange-2013-help.md
         - name: 删除地址列表
           href: remove-an-address-list-exchange-2013-help.md
         - name: 创建全局地址列表
-          href: create-a-global-address-list-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/address-books/address-lists/create-global-address-list
         - name: 配置全局地址列表属性
-          href: configure-global-address-list-properties-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/address-books/address-lists/configure-global-address-list-properties
         - name: 删除全局地址列表
-          href: remove-a-global-address-list-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/address-books/address-lists/remove-a-global-address-list
         - name: 更新全局地址列表
           href: update-a-global-address-list-exchange-2013-help.md
     - name: 分层通讯簿
-      href: hierarchical-address-books-exchange-2013-help.md
+      href: https://docs.microsoft.com/zh-cn/exchange/address-books/hierarchical-address-books/hierarchical-address-books
       items:
       - name: 启用或禁用层次通讯簿
-        href: enable-or-disable-hierarchical-address-books-exchange-2013-help.md
+        href: https://docs.microsoft.com/zh-cn/exchange/address-books/hierarchical-address-books/enable-or-disable-hierarchical-address-books
   - name: 共享
     href: sharing-exchange-2013-help.md
     items:
@@ -1586,9 +1586,9 @@
         - name: 移动电话和平板电脑功能
           href: mobile-phone-and-tablet-features-exchange-2013-help.md
         - name: 对移动电话执行远程擦除
-          href: perform-a-remote-wipe-on-a-mobile-phone-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/mobile-access/remote-wipe-on-mobile-phone
         - name: 将移动电话配置为访问电子邮件
-          href: configure-mobile-phones-to-access-email-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/mobile-access/configure-email-on-mobile-phone
     - name: POP3 和 IMAP4
       href: pop3-and-imap4-in-exchange-server-2013-exchange-2013-help.md
       items:
@@ -1655,19 +1655,19 @@
       href: outlook-web-app-exchange-2013-help.md
       items:
       - name: Outlook Web App 邮箱策略
-        href: outlook-web-app-mailbox-policies-exchange-2013-help.md
+        href: https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies
         items:
         - name: Outlook Web App 邮箱策略程序
-          href: outlook-web-app-mailbox-policy-procedures-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policy-procedures
           items:
           - name: 创建 Outlook Web App 邮箱策略
-            href: create-an-outlook-web-app-mailbox-policy-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy
           - name: 向邮箱应用或删除 Outlook Web App 邮箱策略
-            href: apply-or-remove-an-outlook-web-app-mailbox-policy-on-a-mailbox-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/apply-or-remove-outlook-web-app-mailbox-policy
           - name: 从 Exchange 中删除 Outlook Web App 邮箱策略
-            href: remove-an-outlook-web-app-mailbox-policy-from-exchange-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/remove-outlook-web-app-mailbox-policy
           - name: 查看或配置 Outlook Web 应用程序邮箱策略属性
-            href: view-or-configure-outlook-web-app-mailbox-policy-properties-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/configure-outlook-web-app-mailbox-policy-properties
       - name: 将 Outlook Web App 与 Lync Server 集成
         href: integrate-outlook-web-app-with-lync-server-exchange-2013-help.md
       - name: 查看或配置 Outlook Web App 虚拟目录
@@ -1685,33 +1685,33 @@
       - name: 使用 Outlook Web App Web 部件
         href: using-outlook-web-app-web-parts-exchange-2013-help.md
     - name: MailTips
-      href: mailtips-exchange-2013-help.md
+      href: https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips
       items:
       - name: 启用或禁用邮件提示
         href: enable-or-disable-mailtips-exchange-2013-help.md
       - name: 为您的组织配置大型受众规模
-        href: configure-the-large-audience-size-for-your-organization-exchange-2013-help.md
+        href: https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/mailtips/configure-large-audience-size
       - name: 为收件人配置自定义邮件提示
-        href: configure-custom-mailtips-for-recipients-exchange-2013-help.md
+        href: https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/mailtips/configure-custom-mailtips
       - name: 有关组织关系的邮件提示
-        href: mailtips-over-organization-relationships-exchange-2013-help.md
+        href: https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips-over-organization-relationships
         items:
         - name: 针对组织关系管理邮件提示
-          href: manage-mailtips-for-organization-relationships-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/mailtips/manage-mailtips-for-organization-relationships
       - name: 组的指标和邮件提醒
         href: group-metrics-and-mailtips-exchange-2013-help.md
         items:
         - name: 配置组指标
           href: configure-group-metrics-exchange-2013-help.md
     - name: 适用于 Outlook 的应用程序
-      href: add-ins-for-outlook-exchange-2013-help.md
+      href: https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook
       items:
       - name: 为组织安装或删除适用于 Outlook 的应用
-        href: install-or-remove-add-ins-for-outlook-for-your-organization-exchange-2013-help.md
+        href: https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/install-or-remove-outlook-add-ins
       - name: 管理用户对 Outlook 的应用程序的访问
-        href: manage-user-access-to-add-ins-for-outlook-exchange-online-help.md
+        href: https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/manage-user-access-to-add-ins
       - name: 指定的管理员和用户可以安装和管理用于 Outlook 的外接程序
-        href: specify-the-administrators-and-users-who-can-install-and-manage-add-ins-for-outlook-exchange-2013-help.md
+        href: https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins
     - name: 在 Exchange 2013 中配置 SSL 卸载
       href: configuring-ssl-offloading-in-exchange-2013-exchange-2013-help.md
   - name: 统一消息
@@ -1777,9 +1777,9 @@
         - name: 安装 UM 语言包
           href: install-a-um-language-pack-exchange-2013-help.md
         - name: 拨号计划中设置的默认语言
-          href: set-the-default-language-on-a-dial-plan-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/set-dial-plan-default-language
         - name: 选择的语言的自动助理
-          href: select-the-language-for-an-auto-attendant-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/select-auto-attendant-language
         - name: 删除 UM 语言包
           href: remove-a-um-language-pack-exchange-2013-help.md
         - name: 导入和导出自定义问候语、通知、菜单和提示
@@ -1787,9 +1787,9 @@
         - name: 将自定义提示从 Exchange 2007 导入 Exchange 2013
           href: import-custom-prompts-from-exchange-2007-to-exchange-2013-exchange-2013-help.md
         - name: 允许使用电话用户界面录制自定义提示语
-          href: enable-custom-prompt-recording-using-the-telephone-user-interface-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/enable-custom-prompt-recording
     - name: 与 UM 电话系统集成
-      href: telephone-system-integration-with-um-exchange-2013-help.md
+      href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um
       items:
       - name: 电话概念和组件
         href: telephony-concepts-and-components-exchange-2013-help.md
@@ -1799,9 +1799,9 @@
         href: connect-um-to-your-telephone-system-exchange-2013-help.md
         items:
         - name: Exchange 2013 电话顾问
-          href: telephony-advisor-for-exchange-2013-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013
         - name: 支持的 VoIP 网关、IP PBX 和 PBX 的配置说明
-          href: configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways
         - name: 将 VoIP 网关、IP PBX 或会话边界控制器与 UM 连接
           href: connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md
         - name: 将 UM 连接到支持 VoIP 网关
@@ -1809,12 +1809,12 @@
         - name: 连接 VoIP 网关以便与 PBX 通信
           href: connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md
         - name: 受支持的会话边界控制器的配置说明
-          href: configuration-notes-for-supported-session-border-controllers-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers
     - name: 连接到电话网络的语音邮件系统
-      href: connect-your-voice-mail-system-to-your-telephone-network-exchange-2013-help.md
+      href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system
       items:
       - name: UM 拨号计划
-        href: um-dial-plans-exchange-2013-help.md
+        href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-dial-plans
         items:
         - name: 音频编码解码器
           href: audio-codecs-exchange-2013-help.md
@@ -1824,61 +1824,61 @@
           href: um-dial-plan-procedures-exchange-2013-help.md
           items:
           - name: 创建 UM 拨号计划
-            href: create-a-um-dial-plan-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan
           - name: 管理 UM 拨号计划
-            href: manage-a-um-dial-plan-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-dial-plan
           - name: 将邮箱服务器和客户端访问服务器添加到 SIP URI 的拨号计划
             href: add-mailbox-and-client-access-servers-to-a-sip-uri-dial-plan-exchange-2013-help.md
           - name: 邮箱服务器和客户端访问服务器删除 SIP URI 的拨号计划
             href: remove-mailbox-and-client-access-servers-from-a-sip-uri-dial-plan-exchange-2013-help.md
           - name: 更改音频编解码器
-            href: change-the-audio-codec-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/change-audio-codec
           - name: 配置最大呼叫持续时间
-            href: configure-the-maximum-call-duration-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-maximum-call-duration
           - name: 配置最大录制持续时间
-            href: configure-the-maximum-recording-duration-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-maximum-recording-duration
           - name: 记录空闲超时值配置
-            href: configure-the-recording-idle-time-out-value-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-recording-idle-time-out
           - name: 配置 VoIP 安全设置
-            href: configure-the-voip-security-setting-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-voip-security-setting
           - name: 为拥有相似姓名的用户配置拨号计划
-            href: configure-a-dial-plan-for-users-who-have-similar-names-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-dial-plan-for-users-with-similar-names
           - name: 删除 UM 拨号计划
-            href: delete-a-um-dial-plan-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/delete-um-dial-plan
       - name: UM IP 网关
-        href: um-ip-gateways-exchange-2013-help.md
+        href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways
         items:
         - name: UM IP 网关过程
-          href: um-ip-gateway-procedures-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateway-procedures
           items:
           - name: 创建 UM IP 网关
-            href: create-a-um-ip-gateway-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway
           - name: 管理 UM IP 网关
-            href: manage-a-um-ip-gateway-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-ip-gateway
           - name: 启用 UM IP 网关
-            href: enable-a-um-ip-gateway-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/enable-um-ip-gateway
           - name: 禁用 UM IP 网关。
-            href: disable-a-um-ip-gateway-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/disable-um-ip-gateway
           - name: 配置一个完全限定的域名称
-            href: configure-a-fully-qualified-domain-name-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-fully-qualified-domain-name
           - name: 配置 IP 地址
-            href: configure-the-ip-address-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-ip-address
           - name: 配置侦听端口
-            href: configure-the-listening-port-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-listening-port
           - name: 删除 UM IP 网关
-            href: delete-a-um-ip-gateway-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/delete-um-ip-gateway
       - name: UM 智能寻线
-        href: um-hunt-groups-exchange-2013-help.md
+        href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-groups
         items:
         - name: UM 查寻组过程
-          href: um-hunt-group-procedures-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-group-procedures
           items:
           - name: 创建 UM 智能寻线
-            href: create-a-um-hunt-group-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-hunt-group
           - name: 查看 UM 查寻组
-            href: view-a-um-hunt-group-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/view-um-hunt-group
           - name: 删除 UM 智能寻线
-            href: delete-a-um-hunt-group-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/delete-um-hunt-group
       - name: UM 服务
         href: um-services-exchange-2013-help.md
         items:
@@ -1914,206 +1914,206 @@
           - name: 设置客户端访问服务器的 TLS 的侦听端口
             href: set-the-tls-listening-port-on-a-client-access-server-exchange-2013-help.md
     - name: 自动回答和路由传入呼叫
-      href: automatically-answer-and-route-incoming-calls-exchange-2013-help.md
+      href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/automatically-answer-and-route-calls
       items:
       - name: DTMF 接口
-        href: dtmf-interface-exchange-2013-help.md
+        href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/dtmf-interface
       - name: UM 自动助理过程
-        href: um-auto-attendant-procedures-exchange-2013-help.md
+        href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/um-auto-attendant-procedures
         items:
         - name: 设置 UM 自动助理
-          href: set-up-a-um-auto-attendant-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-up-um-auto-attendant
           items:
           - name: 创建 UM 自动助理
-            href: create-a-um-auto-attendant-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant
           - name: 添加自动助理的分机号码
-            href: add-an-auto-attendant-extension-number-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/add-an-auto-attendant-extension-number
           - name: 配置工作时间
-            href: configure-business-hours-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/configure-business-hours
           - name: 创建假日日程安排
-            href: create-a-holiday-schedule-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-holiday-schedule
           - name: 输入公司名称
-            href: enter-a-business-name-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enter-a-business-name
           - name: 设置营业地点
-            href: set-a-business-location-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-a-business-location
           - name: 配置时区
-            href: configure-the-time-zone-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/configure-the-time-zone
           - name: 启用自定义的营业时间问候语
-            href: enable-a-customized-business-hours-greeting-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-a-customized-business-hours-greeting
           - name: 启用自定义的工作时间内菜单提示
-            href: enable-a-customized-business-hours-menu-prompt-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-a-customized-business-hours-menu-prompt
           - name: 启用自定义非-营业时间问候语
-            href: enable-a-customized-non-business-hours-greeting-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-a-customized-non-business-hours-greeting
           - name: 启用自定义非营业时间菜单提示
-            href: enable-a-customized-non-business-hours-menu-prompt-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-a-customized-non-business-hours-menu-prompt
           - name: 启用信息通知
-            href: enable-an-informational-announcement-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-an-informational-announcement
           - name: 创建菜单导航
-            href: create-menu-navigation-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-menu-navigation
           - name: 创建导航菜单的营业时间
-            href: create-business-hours-navigation-menus-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-business-hours-navigation-menus
           - name: 创建导航菜单的非工作时间
-            href: create-non-business-hours-navigation-menus-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-non-business-hours-navigation-menus
         - name: 管理 UM 自动助理
-          href: manage-a-um-auto-attendant-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/manage-um-auto-attendant
         - name: 配置 DTMF 回退自动助理
-          href: configure-a-dtmf-fallback-auto-attendant-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/configure-dtmf-fallback-auto-attendant
         - name: 启用 UM 自动助理
-          href: enable-a-um-auto-attendant-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-um-auto-attendant
         - name: 禁用 UM 自动助理
-          href: disable-a-um-auto-attendant-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/disable-um-auto-attendant
         - name: 删除 UM 自动助理
-          href: delete-a-um-auto-attendant-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/delete-um-auto-attendant
         - name: 启用或禁用自动语音识别
-          href: enable-or-disable-automatic-speech-recognition-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-or-disable-speech-recognition
         - name: 启用或禁止将呼叫转接从自动助理
-          href: enable-or-prevent-transferring-calls-from-an-auto-attendant-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-or-prevent-transferring-calls
         - name: 启用或禁用“向用户发送语音邮件”
-          href: enable-or-disable-sending-voice-messages-to-users-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-or-disable-sending-voice-messages
         - name: 启用或禁用目录查找
-          href: enable-or-disable-directory-lookups-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-or-disable-directory-lookups
         - name: 配置组可以联系到的用户
-          href: configure-the-group-of-users-that-can-be-contacted-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/configure-users-that-can-be-contacted
         - name: 配置为具有类似名称的用户自动助理
-          href: configure-an-auto-attendant-for-users-who-have-similar-names-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/configure-auto-attendant-for-users-with-similar-names
     - name: 设置用户的语音邮件
-      href: set-up-voice-mail-for-users-exchange-2013-help.md
+      href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/set-up-voice-mail
       items:
       - name: UM 邮箱策略
-        href: um-mailbox-policies-exchange-2013-help.md
+        href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policies
         items:
         - name: UM 邮箱策略过程
-          href: um-mailbox-policy-procedures-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policy-procedures
           items:
           - name: 创建 UM 邮箱策略
-            href: create-a-um-mailbox-policy-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy
           - name: 管理 UM 邮箱策略
-            href: manage-a-um-mailbox-policy-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy
           - name: 删除 UM 邮箱策略
-            href: delete-a-um-mailbox-policy-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/delete-um-mailbox-policy
       - name: 用户的语音邮件
-        href: voice-mail-for-users-exchange-2013-help.md
+        href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users
         items:
         - name: 声音已启用邮件的用户的过程
-          href: voice-mail-enabled-user-procedures-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-enabled-user-procedures
           items:
           - name: 为用户启用语音邮件
-            href: enable-a-user-for-voice-mail-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail
           - name: 为用户启用语音邮件时发送的电子邮件消息中包括文本
-            href: include-text-with-the-email-message-sent-when-a-user-is-enabled-for-voice-mail-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/include-text-with-email-sent-when-voicemail-is-enabled
           - name: 管理用户的语音邮件设置
-            href: manage-voice-mail-settings-for-a-user-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings
           - name: 将 UM 邮箱策略分配
-            href: assign-a-um-mailbox-policy-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/assign-um-mailbox-policy
           - name: 更改 UM 拨号计划
-            href: change-the-um-dial-plan-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-um-dial-plan
           - name: 允许从没有启用 UM 的用户的电话
-            href: enable-calls-from-users-who-aren-t-um-enabled-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-calls-from-users-who-aren-t-um-enabled
           - name: 禁止的不是已启用 UM 的用户的电话
-            href: disable-calls-from-users-who-aren-t-um-enabled-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/disable-calls-from-users-who-aren-t-um-enabled
           - name: 允许调用方没有来电要留下语音信息
-            href: allow-callers-without-a-caller-id-to-leave-a-voice-message-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/allow-callers-without-caller-id-to-leave-voice-message
           - name: 与收到语音邮件时，发送该电子邮件包含文本
-            href: include-text-with-the-email-message-sent-when-a-voice-message-is-received-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/include-text-with-email-sent-when-voice-message-is-received
           - name: 防止调用方没有呼叫方 ID 将语音消息
-            href: prevent-callers-without-a-caller-id-from-leaving-a-voice-message-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/prevent-callers-without-caller-id-from-leaving-voice-message
           - name: 禁用用户的语音邮件
-            href: disable-voice-mail-for-a-user-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/disable-voice-mail
           - name: 更改 SIP 地址
-            href: change-a-sip-address-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-sip-address
           - name: 更改分机号码
-            href: change-an-extension-number-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-extension-number
           - name: 添加 SIP 地址
-            href: add-a-sip-address-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-sip-address
           - name: 删除 SIP 地址
-            href: remove-a-sip-address-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-sip-address
           - name: 添加分机号码
-            href: add-an-extension-number-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-extension-number
           - name: 删除分机号码
-            href: remove-an-extension-number-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-extension-number
           - name: 更改 E.164 号码
-            href: change-an-e-164-number-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-e-164-number
           - name: 添加 E.164 号码
-            href: add-an-e-164-number-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-e-164-number
           - name: 删除 E.164 号码
-            href: remove-an-e-164-number-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-e-164-number
     - name: 设置客户端语音邮件功能
       href: set-up-client-voice-mail-features-exchange-2013-help.md
       items:
       - name: 设置 Outlook Voice Access
-        href: setting-up-outlook-voice-access-exchange-2013-help.md
+        href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-outlook-voice-access
         items:
         - name: Outlook Voice Access 命令
-          href: outlook-voice-access-commands-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/outlook-voice-access-commands
         - name: 与 Outlook Voice Access 导航菜单
-          href: navigating-menus-with-outlook-voice-access-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/navigating-menus-with-outlook-voice-access
         - name: 在电话上播放
-          href: play-on-phone-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/play-on-phone
         - name: Outlook Voice Access 过程
-          href: outlook-voice-access-procedures-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/outlook-voice-access-procedures
           items:
           - name: 启用或禁用 Outlook Voice Access 的用户
-            href: enable-or-disable-outlook-voice-access-for-users-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-disable-outlook-voice-access
           - name: 配置 Outlook Voice Access 数量
-            href: configure-an-outlook-voice-access-number-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-outlook-voice-access-number
           - name: 禁用选定的 Outlook Voice Access 用户功能
-            href: disable-selected-features-for-outlook-voice-access-users-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-selected-features
           - name: 设置 Outlook Voice Access 用户的邮箱功能
-            href: set-mailbox-features-for-outlook-voice-access-users-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-mailbox-features-for-users
           - name: 设置 Outlook Voice Access 用户邮箱功能
-            href: set-mailbox-features-for-an-outlook-voice-access-user-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-mailbox-features-for-a-user
           - name: 启用或禁用 Outlook Voice Access 用户的自动语音识别
-            href: enable-or-disable-automatic-speech-recognition-for-an-outlook-voice-access-user-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-disable-automatic-speech-recognition
           - name: 启用 Outlook Voice Access 用户信息通知
-            href: enable-an-informational-announcement-for-outlook-voice-access-users-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-an-informational-announcement
           - name: 启用 Outlook Voice Access 用户自定义的问候语
-            href: enable-a-customized-greeting-for-outlook-voice-access-users-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-a-customized-greeting
           - name: 启用或禁用 Outlook Voice Access 用户在电话上播放
-            href: enable-or-disable-play-on-phone-for-outlook-voice-access-users-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-disable-play-on-phone
           - name: 启用或禁用 Outlook Voice Access 从发送语音邮件
-            href: enable-or-disable-sending-voice-messages-from-outlook-voice-access-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-disable-sending-voice-messages
           - name: 启用或禁止将呼叫转接从 Outlook Voice Access
-            href: enable-or-prevent-transferring-calls-from-outlook-voice-access-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-prevent-transferring-calls
           - name: 配置 Outlook Voice Access 用户可以联系的用户组
-            href: configure-the-group-of-users-that-outlook-voice-access-users-can-contact-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-the-group-of-users-that-outlook-voice-access-users-can-contact
           - name: 配置 Outlook Voice Access 用户搜索的主要方式
-            href: configure-the-primary-way-for-outlook-voice-access-users-to-search-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-primary-search-method
           - name: 配置 Outlook Voice Access 用户搜索的辅助方式
-            href: configure-the-secondary-way-for-outlook-voice-access-users-to-search-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-secondary-search-method
           - name: 配置在 Outlook Voice Access 用户断开连接之前登录失败的次数
-            href: configure-the-number-of-sign-in-failures-before-outlook-voice-access-users-are-disconnected-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-number-of-sign-in-failures
           - name: 在 Outlook Voice Access 用户断开连接之前配置输入失败的次数
-            href: configure-the-number-of-input-failures-before-outlook-voice-access-users-are-disconnected-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-number-of-input-failures
           - name: 在个人问候语 Outlook Voice Access 用户配置限制
-            href: configure-the-limit-on-personal-greetings-for-outlook-voice-access-users-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-personal-greetings-limit
       - name: 允许语音邮件用户转接来电
-        href: allow-voice-mail-users-to-forward-calls-exchange-2013-help.md
+        href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-voice-mail-users-to-forward-calls
         items:
         - name: 转发调用过程
-          href: forwarding-calls-procedures-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/forwarding-calls-procedures
           items:
           - name: 允许或禁止用户创建呼叫应答规则
-            href: allow-or-prevent-a-user-from-creating-call-answering-rules-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/call-answering-rules
           - name: 允许或禁止用户在相同的 UM 邮箱策略创建呼叫应答规则
-            href: allow-or-prevent-users-in-the-same-um-mailbox-policy-from-creating-call-answering-rules-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/call-answering-rules-in-the-same-mailbox-policy
           - name: 创建呼叫应答规则
-            href: create-a-call-answering-rule-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/create-a-call-answering-rule
           - name: 查看和管理电话应答规则
-            href: view-and-manage-a-call-answering-rule-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/view-and-manage-a-call-answering-rule
           - name: 为用户启用或禁用呼叫应答规则
-            href: enable-or-disable-a-call-answering-rule-for-a-user-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-disable-a-call-answering-rule-for-a-user
           - name: 删除用户的呼叫应答规则
-            href: remove-a-call-answering-rule-for-a-user-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/remove-a-call-answering-rule-for-a-user
       - name: 允许用户通话
-        href: allow-users-to-make-calls-exchange-2013-help.md
+        href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-make-calls
         items:
         - name: 拨号代码、号码前缀和号码格式
-          href: dial-codes-number-prefixes-and-number-formats-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/dial-codes-number-prefixes-number-formats
         - name: 允许用户进行调用过程
-          href: allowing-users-to-make-calls-procedures-exchange-2013-help.md
+          href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-make-calls-procedures
           items:
           - name: 启用 UM IP 网关的传出呼叫
-            href: enable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md
+            href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-outgoing-calls-on-um-ip-gateways
           - name: 禁用 UM IP 网关的传出呼叫
             href: disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md
           - name: 配置拨号代码
