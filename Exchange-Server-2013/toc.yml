@@ -665,53 +665,53 @@
       - name: 在 Exchange 2013 中管理就地存档
         href: manage-in-place-archives-in-exchange-2013-exchange-2013-help.md
       - name: 修改存档策略
-        href: modify-archive-policies-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/modify-archive-policies
       - name: 配置就地存档（内部部署）的存档配额
         href: configure-archive-quotas-for-an-in-place-archive-in-exchange-2013-exchange-2013-help.md
       - name: 将 Lync 对话和会议内容存档到 Exchange 中
-        href: archive-lync-conversations-and-meeting-content-to-exchange-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/Office365/SecurityCompliance/eop/exchange-online-protection-overview
       - name: 使用 OAuth 身份验证支持 Exchange 混合部署中的存档
         href: using-oauth-authentication-to-support-archiving-in-an-exchange-hybrid-deployment-exchange-2013-help.md
     - name: 就地保留和诉讼保留
-      href: in-place-hold-and-litigation-hold-exchange-2013-help.md
+      href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-and-litigation-holds
       items:
       - name: 创建或删除就地保留
-        href: create-or-remove-an-in-place-hold-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/create-or-remove-in-place-holds
       - name: 将邮箱放到诉讼保留中
-        href: place-a-mailbox-on-litigation-hold-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/office365/SecurityCompliance/place-a-mailbox-on-litigation-hold
       - name: 保留所有邮箱
-        href: place-all-mailboxes-on-hold-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/office365/securitycompliance/change-the-hold-duration-for-an-inactive-mailbox
       - name: 为电子数据展示保存密件抄送和展开的通讯组收件人
-        href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/office365/SecurityCompliance/preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery
     - name: 就地电子数据展示
-      href: in-place-ediscovery-exchange-2013-help.md
+      href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery
       items:
       - name: 在 Exchange 中分配电子数据展示权限
-        href: assign-ediscovery-permissions-in-exchange-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions
       - name: 创建就地电子数据展示搜索
-        href: create-an-in-place-ediscovery-search-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search
       - name: 将电子数据展示搜索结果复制到发现邮箱
         href: copy-ediscovery-search-results-to-a-discovery-mailbox-exchange-2013-help.md
       - name: 将电子数据展示搜索结果导出到 PST 文件
-        href: export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/export-search-results
       - name: 就地电子数据展示的邮件属性和搜索运算符
-        href: message-properties-and-search-operators-for-in-place-ediscovery-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/message-properties-and-search-operators
       - name: 创建发现邮箱
-        href: create-a-discovery-mailbox-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/Office365/SecurityCompliance/eop/exchange-online-protection-overview
       - name: 启动或停止就地电子数据展示搜索
-        href: start-or-stop-an-in-place-ediscovery-search-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/office365/securitycompliance/use-content-search-in-ediscovery
       - name: 修改就地电子数据展示搜索
-        href: modify-an-in-place-ediscovery-search-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/office365/securitycompliance/search-for-ediscovery-activities-in-the-audit-log
       - name: 为就地电子数据展示搜索创建自定义管理范围
-        href: create-a-custom-management-scope-for-in-place-ediscovery-searches-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/create-custom-management-scope
       - name: 删除就地电子数据展示搜索
-        href: remove-an-in-place-ediscovery-search-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/SharePoint/governance/create-and-run-queries-in-the-ediscovery-center
       - name: 搜索和删除邮件 - 管理员帮助
-        href: search-for-and-delete-messages-admin-help-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/office365/SecurityCompliance/search-for-and-delete-messagesadmin-help
       - name: 减小 Exchange 中发现邮箱的大小
-        href: reduce-the-size-of-a-discovery-mailbox-in-exchange-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/reduce-discovery-mailbox-size
       - name: 在 Exchange 中删除和重新创建默认发现邮箱
-        href: delete-and-re-create-the-default-discovery-mailbox-in-exchange-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/delete-and-re-create-default-discovery-mailbox
       - name: Re-create the Discovery system mailbox
         href: re-create-the-discovery-system-mailbox-exchange-2013-help.md
       - name: 使用 OAuth 身份验证支持 Exchange 混合部署中的电子数据展示
@@ -721,34 +721,34 @@
       - name: Exchange 电子数据展示中不可搜索的项目
         href: unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md
     - name: 邮件记录管理
-      href: messaging-records-management-exchange-2013-help.md
+      href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/messaging-records-management
       items:
       - name: 邮件记录管理术语在 Exchange 2013
         href: messaging-records-management-terminology-in-exchange-2013-exchange-2013-help.md
       - name: 保留标记和保留策略
-        href: retention-tags-and-retention-policies-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies
         items:
         - name: 默认保留策略
-          href: default-retention-policy-in-exchange-online-and-exchange-server-exchange-2013-help.md
+          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/default-retention-policy
         - name: 支持保留策略标记的默认文件夹
-          href: default-folders-that-support-retention-policy-tags-exchange-2013-help.md
+          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/default-folders
         - name: 如何计算保留时间
-          href: how-retention-age-is-calculated-exchange-2013-help.md
+          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/retention-age
         - name: 检查表：部署保留策略
           href: checklist-deploying-retention-policies-exchange-2013-help.md
         - name: 邮件记录管理程序
-          href: messaging-records-management-procedures-exchange-2013-help.md
+          href: https://docs.microsoft.com/en-us/office365/securitycompliance/inactive-mailboxes-in-office-365
           items:
           - name: 创建保留策略
-            href: create-a-retention-policy-exchange-2013-help.md
+            href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy
           - name: 向保留策略添加保留标记或从中删除保留标记
-            href: add-retention-tags-to-or-remove-retention-tags-from-a-retention-policy-exchange-2013-help.md
+            href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/add-or-remove-retention-tags
           - name: 将保留策略应用于邮箱
-            href: apply-a-retention-policy-to-mailboxes-exchange-2013-help.md
+            href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/apply-retention-policy
           - name: 配置托管文件夹助理
             href: configure-the-managed-folder-assistant-exchange-2013-help.md
           - name: 放置的邮箱上保留挂起
-            href: place-a-mailbox-on-retention-hold-exchange-2013-help.md
+            href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold
           - name: 导出和导入保留标记
             href: export-and-import-retention-tags-exchange-2013-help.md
           - name: 配置 Outlook 客户端阻止
@@ -770,7 +770,7 @@
       href: journaling-exchange-2013-help.md
       items:
       - name: 管理日记
-        href: manage-journaling-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/journaling/manage-journaling
       - name: 禁用或启用语音邮件和未接来电通知的日记功能
         href: disable-or-enable-journaling-of-voice-mail-and-missed-call-notifications-exchange-2013-help.md
     - name: 邮件流规则（传输规则）
@@ -781,87 +781,87 @@
       - name: 邮件流规则操作
         href: mail-flow-rule-actions-in-exchange-2013-exchange-2013-help.md
       - name: 配置邮件流规则的最佳做法
-        href: best-practices-for-configuring-mail-flow-rules-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices
       - name: 使用传输规则检查邮件附件
         href: use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md
       - name: 常见的附件阻止方案
-        href: common-attachment-blocking-scenarios-for-mail-flow-rules-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios
       - name: 组织范围内的免责声明、签名、脚注或标头
         href: organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md
       - name: 邮件流或传输规则过程
         href: mail-flow-or-transport-rule-procedures-exchange-2013-help.md
         items:
         - name: 管理邮件流规则
-          href: manage-mail-flow-rules-exchange-2013-help.md
+          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules
         - name: 测试邮件流规则
-          href: test-a-mail-flow-rule-exchange-2013-help.md
+          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules
         - name: 使用邮件流规则以便邮件可以规避待筛选邮件功能
-          href: use-mail-flow-rules-so-messages-can-bypass-clutter-exchange-2013-help.md
+          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/use-rules-to-bypass-clutter
         - name: 使用邮件流规则根据字词、短语或模式的列表路由电子邮件
-          href: use-mail-flow-rules-to-route-email-based-on-a-list-of-words-phrases-or-patterns-exchange-2013-help.md
+          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email
         - name: 向 Exchange 2013 注册 Filter Pack IFilter
           href: register-filter-pack-ifilters-with-exchange-2013-exchange-2013-help.md
       - name: 管理邮件审批
-        href: manage-message-approval-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-message-approval
         items:
         - name: 常见邮件审批方案
-          href: common-message-approval-scenarios-exchange-2013-help.md
+          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios
         - name: 管理邮件审批并进行故障排除
-          href: manage-and-troubleshoot-message-approval-exchange-2013-help.md
+          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/ttroubleshoot-message-approval
     - name: 数据丢失预防
-      href: technical-overview-of-dlp-data-loss-prevention-in-exchange.md
+      href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention
       items:
       - name: 如何通过应用 DLP 规则来评估邮件
-        href: how-dlp-rules-are-applied-to-evaluate-messages-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/dlp-rule-application
       - name: 将敏感信息规则与传输规则集成
-        href: integrating-sensitive-information-rules-with-transport-rules-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules
       - name: 使用敏感信息类型查找什么
         href: what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md
       - name: DLP 策略模板
-        href: dlp-policy-templates-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/office365/securitycompliance/what-the-dlp-policy-templates-include
         items:
         - name: 在 Exchange 中提供的 DLP 策略模板
-          href: dlp-policy-templates-supplied-in-exchange-exchange-2013-help.md
+          href: https://docs.microsoft.com/en-us/office365/securitycompliance/create-a-dlp-policy-from-a-template
         - name: Microsoft 合作伙伴的策略模板
-          href: policy-templates-from-microsoft-partners-exchange-2013-help.md
+          href: https://docs.microsoft.com/en-us/office365/securitycompliance/eop/exchange-online-protection-overview
       - name: DLP 过程
         href: dlp-procedures-exchange-2013-help.md
         items:
         - name: 管理 DLP 策略
-          href: manage-dlp-policies-exchange-2013-help.md
+          href: https://docs.microsoft.com/en-us/office365/securitycompliance/data-loss-prevention-policies
         - name: 从模板创建 DLP 策略
-          href: how-to-new-dlp-data-loss-prevention-policy-template.md
+          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template
         - name: 创建自定义 DLP 策略
-          href: create-a-custom-dlp-policy-exchange-2013-help.md
+          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/create-custom-dlp-policy
         - name: 从文件导入自定义 DLP 策略模板
-          href: import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md
+          href: https://docs.microsoft.com/en-us/office365/securitycompliance/create-a-dlp-policy-from-a-template
         - name: 查看 DLP 策略检测报告
           href: view-dlp-policy-detection-reports-exchange-2013-help.md
         - name: 创建 DLP 策略检测的事件报告
           href: create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md
         - name: 定义您自己的 DLP 模板和信息类型
-          href: define-your-own-dlp-templates-and-information-types-exchange-2013-help.md
+          href: https://docs.microsoft.com/en-us/office365/securitycompliance/create-a-dlp-policy-from-a-template
           items:
           - name: 开发 DLP 策略模板文件
-            href: xml-rule-schema-and-rule-structure-guide-for-dlp-policy-files.md
+            href: https://docs.microsoft.com/en-us/office365/securitycompliance/create-a-dlp-policy-from-a-template
           - name: 开发敏感信息规则包
-            href: technical-description-of-xml-schema-for-dlp-rule-packages.md
+            href: https://docs.microsoft.com/en-us/Office365/SecurityCompliance/eop/exchange-online-protection-overview
           - name: 规则包的匹配方法和技术
-            href: technical-description-of-xsd-rule-matching-for-dlp-rule-packages.md
+            href: https://docs.microsoft.com/en-us/office365/securitycompliance/eop/exchange-online-protection-overview
           - name: 自定义内置 DLP 敏感信息类型
-            href: customize-the-built-in-dlp-sensitive-information-types-exchange-2013-help.md
+            href: https://docs.microsoft.com/en-us/office365/securitycompliance/customize-a-built-in-sensitive-information-type
           - name: 从 Exchange 导出 DLP 敏感信息类型
-            href: export-dlp-sensitive-information-types-from-exchange-2013-exchange-2013-help.md
+            href: https://docs.microsoft.com/en-us/office365/securitycompliance/eop/exchange-online-protection-overview
       - name: 策略提示
-        href: technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/policy-tips
         items:
         - name: 管理策略提示
-          href: how-to-configure-and-manage-policy-tips-a-dlp-feature-exchange.md
+          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/manage-policy-tips
       - name: 文档指纹
         href: overview-of-document-fingerprinting-in-exchange.md
         items:
         - name: 使用文档指纹保护表单数据
-          href: protect-form-data-with-document-fingerprinting-exchange-2013-help.md
+          href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/protect-data-with-fingerprinting
     - name: 信息权限管理
       href: information-rights-management-exchange-2013-help.md
       items:
@@ -903,14 +903,14 @@
         - name: 启用或禁用信息权限管理日志记录
           href: enable-or-disable-information-rights-management-logging-exchange-2013-help.md
     - name: 邮件签名和加密的 S/MIME
-      href: s-mime-for-message-signing-and-encryption-exchange-2013-help.md
+      href: https://docs.microsoft.com/en-us/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption
       items:
       - name: 配置 Outlook Web App 的 S/MIME 设置
-        href: configure-s-mime-settings-for-outlook-web-app-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/office365/SecurityCompliance/configure-s-mime-settings-for-outlook-web-app
       - name: 设置虚拟证书集合以验证 S/MIME
-        href: set-up-virtual-certificate-collection-to-validate-s-mime-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/office365/SecurityCompliance/set-up-virtual-certificate-collection-to-validate-s-mime
       - name: 发送和接收 S/MIME 签名和加密的电子邮件
-        href: send-and-receive-s-mime-signed-and-encrypted-email-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/office365/SecurityCompliance/send-and-receive-s-mime-signed-and-encrypted-email
     - name: 邮箱审核日志记录
       href: mailbox-audit-logging-exchange-2013-help.md
       items:
@@ -933,18 +933,18 @@
       - name: 管理管理员审核日志记录
         href: manage-administrator-audit-logging-exchange-2013-help.md
     - name: Exchange 审核报告
-      href: exchange-auditing-reports-exchange-2013-help.md
+      href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports
       items:
       - name: 导出邮箱审核日志
-        href: export-mailbox-audit-logs-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs
       - name: 运行非所有者邮箱访问报告
-        href: run-a-non-owner-mailbox-access-report-exchange-online-help.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report
       - name: 运行每个邮箱的诉讼保留报告
-        href: run-a-per-mailbox-litigation-hold-report-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/exchange-auditing-reports/per-mailbox-litigation-hold-report
       - name: 搜索角色组更改或管理员审核日志
-        href: search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
       - name: 查看管理员审核日志
-        href: view-the-administrator-audit-log-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
   - name: 反垃圾邮件和反恶意软件保护
     href: anti-spam-and-anti-malware-protection-exchange-2013-help.md
     items:
@@ -1119,7 +1119,7 @@
         - name: 配置远程域邮件报告
           href: configure-remote-domain-message-reporting-exchange-2013-help.md
         - name: 远程域支持的字符集
-          href: supported-character-sets-for-remote-domains-exchange-2013-help.md
+          href: https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/remote-domains/supported-character-sets
     - name: 传输代理
       href: transport-agents-exchange-2013-help.md
       items:
@@ -1261,58 +1261,58 @@
     - name: 创建用户邮箱
       href: create-user-mailboxes-exchange-2013-help.md
     - name: 管理用户邮箱
-      href: manage-user-mailboxes-exchange-2013-help.md
+      href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes
       items:
       - name: 添加或删除邮箱的电子邮件地址
-        href: add-or-remove-email-addresses-for-a-mailbox-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses
       - name: 为邮箱配置电子邮件转发
-        href: configure-email-forwarding-for-a-mailbox-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding
       - name: 配置邮箱的邮件传递限制
-        href: configure-message-delivery-restrictions-for-a-mailbox-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-message-delivery-restrictions
       - name: 配置邮箱的邮件大小限制
         href: configure-message-size-limits-for-a-mailbox-exchange-2013-help.md
       - name: 配置邮箱的存储配额
         href: configure-storage-quotas-for-a-mailbox-exchange-2013-help.md
       - name: 转换邮箱
-        href: convert-a-mailbox-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/convert-a-mailbox
       - name: 启用或禁用邮箱的 Exchange ActiveSync
-        href: enable-or-disable-exchange-activesync-for-a-mailbox-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-exchange-activesync
       - name: 启用或禁用邮箱的 MAPI
-        href: enable-or-disable-mapi-for-a-mailbox-exchange-online-help.md
+        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi
       - name: 启用或禁用邮箱的 Outlook Web App
-        href: enable-or-disable-outlook-web-app-for-a-mailbox-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app
       - name: 启用或禁用邮箱的单个项目恢复
-        href: enable-or-disable-single-item-recovery-for-a-mailbox-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery
     - name: 管理链接的邮箱
       href: manage-linked-mailboxes-exchange-2013-help.md
     - name: 创建和管理通讯组
-      href: create-and-manage-distribution-groups-exchange-2013-help.md
+      href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups
       items:
       - name: 创建通讯组命名策略
-        href: create-a-distribution-group-naming-policy-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy
       - name: 重命名策略的通讯组
-        href: override-the-distribution-group-naming-policy-exchange-2013-help.md
+        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-distribution-groups/override-group-naming-policy
     - name: 管理启用邮件的安全组
-      href: manage-mail-enabled-security-groups-exchange-2013-help.md
+      href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups
     - name: 管理动态通讯组
-      href: manage-dynamic-distribution-groups-exchange-2013-help.md
+      href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups
       items:
       - name: 查看动态通讯组的成员
-        href: view-members-of-a-dynamic-distribution-group-exchange-online-help.md
+        href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/view-group-members
     - name: 管理邮件联系人
-      href: manage-mail-contacts-exchange-2013-help.md
+      href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-mail-contacts
       items:
       - name: 启用或禁用电子邮件发送的邮件联系人
         href: enable-or-disable-email-for-a-mail-contact-exchange-2013-help.md
     - name: 管理邮件用户
-      href: manage-mail-users-exchange-2013-help.md
+      href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-mail-users
       items:
       - name: 启用或禁用邮件用户的电子邮件
         href: enable-or-disable-email-for-a-mail-user-exchange-2013-help.md
     - name: 创建和管理会议室邮箱
-      href: create-and-manage-room-mailboxes-exchange-2013-help.md
+      href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-room-mailboxes
     - name: 管理设备邮箱
-      href: manage-equipment-mailboxes-exchange-2013-help.md
+      href: https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-equipment-mailboxes
     - name: 断开连接的邮箱
       href: disconnected-mailboxes-exchange-2013-help.md
       items:
