@@ -1,4 +1,4 @@
-﻿---
+---
 title: '-ContentFilter 参数的可筛选属性: Exchange 2013 Help'
 TOCTitle: -ContentFilter 参数的可筛选属性
 ms:assetid: cf504a59-1938-489c-bb48-b27b2ac3234e
@@ -62,7 +62,7 @@ _**上一次修改主题：** 2015-09-10_
 <td>
 
 ```PowerShell
--ContentFilter {Attachment -like &#39;*.jpg&#39;}
+-ContentFilter {Attachment -like '*.jpg'}
 ```
 </td>
 </tr>
@@ -77,7 +77,7 @@ _**上一次修改主题：** 2015-09-10_
 <td>
 
 ```PowerShell
--ContentFilter {(BCC -eq &#39;ayla@contoso.com&#39;) -or (BCC -eq &#39;tony@contoso.com&#39;)}
+-ContentFilter {(BCC -eq 'ayla@contoso.com') -or (BCC -eq 'tony@contoso.com')}
 ```
 </td>
 </tr>
@@ -89,7 +89,7 @@ _**上一次修改主题：** 2015-09-10_
 <td>
 
 ```PowerShell
--ContentFilter {Body -like &#39;*prospectus*&#39;}
+-ContentFilter {Body -like '*prospectus*'}
 ```
 </td>
 </tr>
@@ -101,7 +101,7 @@ _**上一次修改主题：** 2015-09-10_
 <td>
 
 ```PowerShell
--ContentFilter {Category -like &#39;*Blue*&#39;}
+-ContentFilter {Category -like '*Blue*'}
 ```
 </td>
 </tr>
@@ -116,7 +116,7 @@ _**上一次修改主题：** 2015-09-10_
 <td>
 
 ```PowerShell
--ContentFilter {(CC -eq &#39;ayla@contoso.com&#39;) -or (CC -eq &#39;tony@contoso.com&#39;)}
+-ContentFilter {(CC -eq 'ayla@contoso.com') -or (CC -eq 'tony@contoso.com')}
 ```
 </td>
 </tr>
@@ -127,7 +127,7 @@ _**上一次修改主题：** 2015-09-10_
 <td>
 
 ```PowerShell
--ContentFilter {Expires -lt &#39;01/01/2013&#39;}
+-ContentFilter {Expires -lt '01/01/2013'}
 ```
 </td>
 </tr>
@@ -152,7 +152,7 @@ _**上一次修改主题：** 2015-09-10_
 <td>
 
 ```PowerShell
--ContentFilter {Importance -eq &#39;high&#39;}
+-ContentFilter {Importance -eq 'high'}
 -ContentFilter {Importance -eq 2}
 ```
 
@@ -216,11 +216,11 @@ _**上一次修改主题：** 2015-09-10_
 <td>
 
 ```PowerShell
--ContentFilter {MessageLocale -ne &#39;en-US&#39;}
+-ContentFilter {MessageLocale -ne 'en-US'}
 ```
 
 ```PowerShell
--ContentFilter {MessageLocale -eq &#39;tr-TR&#39;}
+-ContentFilter {MessageLocale -eq 'tr-TR'}
 ```
 
 </td>
@@ -236,7 +236,7 @@ _**上一次修改主题：** 2015-09-10_
 <td>
 
 ```PowerShell
--ContentFilter {(Participants -eq &#39;ayla@contoso.com&#39;) -or (Participants -eq &#39;tony@contoso.com&#39;)}
+-ContentFilter {(Participants -eq 'ayla@contoso.com') -or (Participants -eq 'tony@contoso.com')}
 ```
 </td>
 </tr>
@@ -249,7 +249,7 @@ _**上一次修改主题：** 2015-09-10_
 <td>
 
 ```PowerShell
--ContentFilter {PolicyTag -ne &#39;00000000-0000-0000-0000-000000000000&#39;}
+-ContentFilter {PolicyTag -ne '00000000-0000-0000-0000-000000000000'}
 ```
 </td>
 </tr>
@@ -281,7 +281,7 @@ _**上一次修改主题：** 2015-09-10_
 <td>
 
 ```PowerShell
-ContentFilter {Sender -eq &#39;tony&#39;}
+ContentFilter {Sender -eq 'tony'}
 ```
 </td>
 </tr>
@@ -310,7 +310,7 @@ ContentFilter {Sender -eq &#39;tony&#39;}
 <td>
 
 ```PowerShell
--ContentFilter {Size -gt &#39;10KB&#39;}
+-ContentFilter {Size -gt '10KB'}
 ```
 </td>
 </tr>
@@ -322,7 +322,7 @@ ContentFilter {Sender -eq &#39;tony&#39;}
 <td>
 
 ```PowerShell
--ContentFilter {Subject -like &#39;*meeting*&#39;}
+-ContentFilter {Subject -like '*meeting*'}
 ```
 </td>
 </tr>
@@ -337,7 +337,7 @@ ContentFilter {Sender -eq &#39;tony&#39;}
 <td>
 
 ```PowerShell
--ContentFilter {To -eq &#39;aylakol&#39;}
+-ContentFilter {To -eq 'aylakol'}
 ```
 </td>
 </tr>
