@@ -29,7 +29,9 @@ _**上一次修改主题：** 2016-12-09_
 
 反垃圾邮件报告是已应用于电子邮件的反垃圾邮件筛选器结果的摘要报告。内容筛选器代理将此标记以 X-header 的形式应用于邮件信封，如下所示。
 
-    X-MS-Exchange-Organization-Antispam-Report: DV:<DATVersion>;CW:CustomList;PCL:PhishingVerdict <verdict>;P100:PhishingBlock;PP:Presolve;SID:SenderIDStatus <status>;TIME:<SendReceiveDelta>;MIME:MimeCompliance 
+```PowerShell
+X-MS-Exchange-Organization-Antispam-Report: DV:<DATVersion>;CW:CustomList;PCL:PhishingVerdict <verdict>;P100:PhishingBlock;PP:Presolve;SID:SenderIDStatus <status>;TIME:<SendReceiveDelta>;MIME:MimeCompliance 
+```
 
 下表描述了可在反垃圾邮件报告中出现的筛选器信息。
 
@@ -64,7 +66,11 @@ _**上一次修改主题：** 2016-12-09_
 <li><p><strong>PermError</strong>   DNS 记录无效，例如，记录格式错误。</p></li>
 </ul>
 <p>发件人 ID 标记在邮件信封中显示为一个 X-Header，如下所示：</p>
-<pre><code>X-MS-Exchange-Organization-SenderIdResult:&lt;status&gt;</code></pre>
+
+```PowerShell
+X-MS-Exchange-Organization-SenderIdResult:<status>
+```
+
 <p>有关发件人 ID 的详细信息，请参阅<a href="sender-id-exchange-2013-help.md">发件人 ID</a>。</p></td>
 </tr>
 <tr class="even">
@@ -89,13 +95,22 @@ _**上一次修改主题：** 2016-12-09_
 <p>PCL 值的范围从 1 到 8。一个评级为 1 到 3 的 PCL 返回 <code>Neutral</code> 的状态。这意味着邮件的内容可能不是网络钓鱼。一个评级为 4 到 8 的 PCL 返回 <code>Suspicious</code> 的状态。这意味着邮件可能是网络钓鱼。</p>
 <p>这些值用于确定 Outlook 对邮件执行的操作。Outlook 使用 PCL 标记来阻止可疑邮件的内容。</p>
 <p>PCL 标记在邮件信封中显示为一个 X-header，如下所示：</p>
-<pre><code>X-MS-Exchange-Organization-PCL:&lt;status&gt;</code></pre></td>
+
+```PowerShell
+X-MS-Exchange-Organization-PCL:<status>
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>SCL</p></td>
 <td><p>邮件的垃圾邮件可信度 (SCL) 标记根据邮件内容显示邮件的分级。内容筛选器代理使用 Microsoft SmartScreen 技术评估邮件内容，并为每个邮件分配 SCL 分级。SCL 值介于 0 到 9 之间，其中 0 表示是垃圾邮件的可能性最低，9 表示是垃圾邮件的可能性最高。Exchange 和 Outlook 执行的操作取决于你的 SCL 阈值设置。</p>
 <p>SCL 标记在邮件信封中显示为一个 X-header，如下所示：</p>
-<pre><code>X-MS-Exchange-Organization-SCL:&lt;status&gt;</code></pre>
+
+```PowerShell
+X-MS-Exchange-Organization-SCL:<status>
+```
+
 <p>有关 SCL 阈值和操作的详细信息，请参阅<a href="spam-confidence-level-threshold-exchange-2013-help.md">垃圾邮件可信度阈值</a>。</p></td>
 </tr>
 <tr class="odd">

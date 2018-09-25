@@ -86,8 +86,8 @@ Remove-DatabaseAvailabilityGroupServer -Identity DAG2 -MailboxServer MBX4 -Confi
   - 在 Shell 中，运行以下命令以显示 DAG 成员身份信息。
     
     ```powershell
-Get-DatabaseAvailabilityGroup <DAGName> | Format-List Servers
-```
+    Get-DatabaseAvailabilityGroup <DAGName> | Format-List Servers
+    ```
 
 ## 详细信息
 

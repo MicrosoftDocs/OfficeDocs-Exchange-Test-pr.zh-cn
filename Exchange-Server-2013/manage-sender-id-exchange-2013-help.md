@@ -165,3 +165,4 @@ Set-SenderIDConfig -SpoofedDomainAction Reject
 
 2.  验证显示的值是否为您配置的值。
 
+
