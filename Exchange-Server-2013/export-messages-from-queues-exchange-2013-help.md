@@ -51,35 +51,47 @@ _**上一次修改主题：** 2014-05-05_
 
 若要从特定队列中导出特定邮件，请运行下列命令：
 
+```powershell
     Export-Message -Identity <MessageIdentity> | AssembleMessage -Path <FilePath>\<FileName>.eml
+```
 
 本示例将位于服务器 Mailbox01 上 contoso.com 传递队列中的 **InternalMessageID** 值为 1234 的邮件副本导出至路径 D:\\Contoso Export 中的 export.eml 文件中。
 
+```powershell
     Export-Message -Identity Exchange01\Contoso.com\1234 | AssembleMessage -Path "D:\Contoso Export\export.eml"
+```
 
 ## 使用命令行管理程序从特定队列中导出所有邮件
 
 若要从特定队列导出所有邮件，并将各邮件的 **InternetMessageID** 值用作文件名，可以使用下列语法。
 
+```powershell
     Get-Message -Queue <QueueIdentity> | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```
 
 注意，**InternetMessageID** 值包含尖括号（\> 和 \<），由于文件名中不允许出现这些尖括号，所以需要删除它们。
 
 此示例将所有邮件的副本从服务器 Mailbox01 上的 contoso.com 传递队列导出至 D:\\Contoso Export 的本地目录中。
 
+```powershell
     Get-Message -Queue Mailbox01\Contoso.com | ForEach-Object {$Temp="D:\Contoso Export\"+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```
 
 ## 使用命令行管理程序从服务器上的所有队列中导出某些特定邮件
 
 若要从一个服务器上的所有队列中导出特定邮件，并将各邮件的 **InternetMessageID** 值用作文件名，可以使用下列语法。
 
+```powershell
     Get-Message -Filter {<MessageFilter>} [-Server <ServerIdentity>] | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```
 
 注意，**InternetMessageID** 值包含尖括号（\> 和 \<），由于文件名中不允许出现这些尖括号，所以需要删除它们。
 
 此示例将所有来自 contoso.com 域中发件人的邮件副本从服务器 Mailbox01 上所有队列导出至 D:\\Contoso Export 的本地目录中。
 
+```powershell
     Get-Message -Filter {FromAddress -like "*@contoso.com"} -Server Mailbox01 | ForEach-Object {$Temp="D:\Contoso Export\"+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```
 
 > [!NOTE]  
 > 如果省略 <em>Server</em> 参数，此命令会在本地服务器上运行。

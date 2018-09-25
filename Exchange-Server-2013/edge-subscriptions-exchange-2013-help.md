@@ -117,7 +117,9 @@ Microsoft Exchange EdgeSync 服务
 
 本示例将边缘传输服务器订阅到指定站点，并自动创建 Internet 发送连接器以及从该边缘传输服务器连接到邮箱服务器的发送连接器。
 
-    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -CreateInternetSendConnector $true -CreateInboundSendConnector $true -Site "Default-First-Site-Name" 
+```powershell
+New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -CreateInternetSendConnector $true -CreateInboundSendConnector $true -Site "Default-First-Site-Name" 
+```
 
 > [!NOTE]  
 > <em>CreateInternetSendConnector</em> 和 <em>CreateInboundSendConnector</em> 参数的默认值均为 <code>$true</code>（仅供演示）。

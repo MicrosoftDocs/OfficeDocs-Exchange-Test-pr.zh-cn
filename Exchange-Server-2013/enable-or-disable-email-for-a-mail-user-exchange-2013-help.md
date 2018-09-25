@@ -78,16 +78,16 @@ Disable-MailUser -Identity "Yan Li"
 3.  在此命令行管理程序中，运行以下命令。
     
     ```powershell
-Get-MailUser
-```
+    Get-MailUser
+    ```
     
     由于此 cmdlet 仅返回已启用邮件的用户，因此结果中不会返回那些已禁用电子邮件的邮件用户。
 
 4.  在此命令行管理程序中，运行以下命令。
     
     ```powershell
-Get-User
-```
+    Get-User
+    ```
     
     由于此 cmdlet 将返回所有 Active Directory 用户对象，因此结果中将返回那些已禁用电子邮件的邮件用户。
 
@@ -108,11 +108,14 @@ Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys
 当您在启用邮件的用户批量，首先导出的不是已启用邮件的 CSV （逗号分隔值） 文件，然后通过使用文本编辑器 （如记事本） 或电子表格应用程序，如 Microsoft Excel，然后添加到 CSV 文件的外部电子邮件地址的用户的列表。然后使用 Shell 命令中更新的 CSV 文件以启用该 CSV 文件中列出的用户的邮件。
 
 1.  运行以下命令，将组织中未启用邮件的、或者没有邮箱的现有用户列表导出到管理员桌面上名为 UsersToMailEnable.csv 的文件中。
-    
+
+    ```powershell
         Get-User | Where { $_.RecipientType -eq "User" } | Out-File "C:\Users\Administrator\Desktop\UsersToMailEnable.csv"
-    
+    ```
+
     最终生成的文件将类似于下列文件。
     
+    ```powershell
         Name            RecipientType
         ----            -------------
         Guest           User
@@ -125,6 +128,7 @@ Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys
         Spencer Low     User
         Toni Poe        User
         ...
+    ```
 
 2.  对 CSV 文件进行以下更改：
     
@@ -135,7 +139,7 @@ Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys
       - 添加一个名为**电子邮件地址**的列标题，然后在文件中添加的每个用户的电子邮件地址。名称和每个用户的外部电子邮件地址必须用逗号分隔。
     
     更新后的 CSV 文件应类似于下列文件。
-    
+    ```powershell
         Name,EmailAddress
         David Pelton,davidp@contoso.com
         Kim Akers,kakers@tailspintoys.com
@@ -144,11 +148,13 @@ Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys
         Spencer Low,spencerl@fouthcoffee.com
         Toni Poe,tonip@contoso.com
         ...
+    ```
 
 3.  运行下列命令，以便使用 CSV 文件中的数据为文件中列出的用户启用邮件。
-    
+    ```powershell
         Import-CSV "C:\Users\Administrator\Desktop\UsersToMailEnable.csv" | ForEach-Object {Enable-MailUser -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
-    
+    ```
+
     命令结果将显示有关已启用邮件的新用户的信息。
 
 ## 您如何知道这有效？
@@ -164,6 +170,6 @@ Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys
   - 在命令行管理程序中，运行以下命令可显示有关此新邮件用户的信息。
     
     ```powershell
-Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
-```
+    Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```
 

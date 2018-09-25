@@ -70,13 +70,13 @@ _**上一次修改主题：** 2012-11-28_
 此示例使用 POP3 和安全套接字层 (SSL) 设置与 Exchange 进行通信的 IP 地址和端口。
 
 ```powershell
-Set-PopSettings -SSLBindings: IPaddress:Port
+    Set-PopSettings -SSLBindings: IPaddress:Port
 ```
 
 此示例使用没有加密的 POP3 或传输层安全性 (TLS) 加密设置与 Exchange 进行通信的 IP 地址和端口。
 
 ```powershell
-Set-PopSettings -UnencryptedOrTLSBindings IPaddress:Port
+    Set-PopSettings -UnencryptedOrTLSBindings IPaddress:Port
 ```
 
 设置了 POP3 的 IP 地址和端口设置后，必须重新启动 POP3 服务使设置生效。有关如何重新启动 POP3 服务的信息，请参阅[启动和停止 POP3 服务](start-and-stop-the-pop3-services-exchange-2013-help.md)。
@@ -90,8 +90,8 @@ Set-PopSettings -UnencryptedOrTLSBindings IPaddress:Port
 1.  在命令行管理程序中运行以下命令。
     
     ```powershell
-Get-PopSettings | format-list
-```
+    Get-PopSettings | format-list
+    ```
 
 2.  验证 *UnencryptedOrTLSBindings* 和 *SSLBindings* 设置是否正确。
 
@@ -126,12 +126,14 @@ Get-PopSettings | format-list
 此示例使用 IMAP4 设置与 Exchange 进行通信的 IP 地址和端口。
 
 ```powershell
-Set-ImapSettings -SSLBindings: IPaddress:Port
+    Set-ImapSettings -SSLBindings: IPaddress:Port
 ```
 
 此示例使用没有加密的 IMAP4 或 TLS 加密设置与 Exchange 进行通信的 IP 地址和端口。
 
+```powershell
     Set-ImapSettings -UnencryptedOrTLSBindings IPaddress:Port 
+```
 
 设置了 IMAP4 的 IP 地址和端口设置后，必须重新启动 IMAP4 服务使设置生效。有关如何重新启动 IMAP4 服务的信息，请参阅[启动和停止 IMAP4 服务](start-and-stop-the-imap4-services-exchange-2013-help.md)。
 
@@ -144,8 +146,8 @@ Set-ImapSettings -SSLBindings: IPaddress:Port
 1.  在命令行管理程序中运行以下命令。
     
     ```powershell
-Get-ImapSettings | format-list
-```
+    Get-ImapSettings | format-list
+    ```
 
 2.  验证 *UnencryptedOrTLSBindings* 和 *SSLBindings* 设置是否正确。
 

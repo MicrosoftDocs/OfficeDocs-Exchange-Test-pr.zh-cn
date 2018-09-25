@@ -39,8 +39,10 @@ _**上一次修改主题：** 2012-11-27_
 
 此示例在客户端访问服务器 CAS01 上启用 IMAP4 或 POP3 的协议日志记录。
 
+```powershell
     Set-ImapSettings -Server "CAS01" -ProtocolLogEnabled $true
     Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true
+```
 
 > [!NOTE]  
 > 为 POP3 或 IMAP4 更改了协议日志记录设置之后，必须重新启动所使用的任何服务：POP3 或 IMAP4。有关如何重新启动 POP3 服务和 IMAP4 服务的信息，请参阅<a href="start-and-stop-the-pop3-services-exchange-2013-help.md">启动和停止 POP3 服务</a>和<a href="start-and-stop-the-imap4-services-exchange-2013-help.md">启动和停止 IMAP4 服务</a>。
@@ -52,8 +54,10 @@ _**上一次修改主题：** 2012-11-27_
 
 此示例在客户端访问服务器 CAS01 上禁用 IMAP4 或 POP3 的协议日志记录。
 
+```powershell
     Set-ImapSettings -Server "CAS01" -protocolLogEnabled $false
     Set-PopSettings -Server "CAS01" -protocolLogEnabled $false
+```
 
 > [!NOTE]  
 > 为 POP3 或 IMAP4 更改了协议日志记录设置之后，必须重新启动所使用的任何服务：POP3 或 IMAP4。有关如何重新启动 POP3 服务和 IMAP4 服务的信息，请参阅<a href="start-and-stop-the-pop3-services-exchange-2013-help.md">启动和停止 POP3 服务</a>和<a href="start-and-stop-the-imap4-services-exchange-2013-help.md">启动和停止 IMAP4 服务</a>。
@@ -68,8 +72,8 @@ _**上一次修改主题：** 2012-11-27_
   - *LogFileLocation*   此参数指定 POP3 或 IMAP4 协议日志文件的位置。默认情况下，POP3 协议日志文件位于 C:\\Program Files\\Microsoft\\Exchange Server\\V15\\Logging\\Pop3 目录下。 此示例在客户端访问服务器 CAS01 上打开 POP3 协议日志记录。 此外，还将 POP3 协议日志记录目录更改为 C:\\Pop3Logging。
     
     ```powershell
-Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true -LogFileLocation "C:\Pop3Logging"
-```
+    Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true -LogFileLocation "C:\Pop3Logging"
+    ```
 
   - *LogFileRollOverSettings*   此参数定义 POP3 或 IMAP4 协议日志记录创建新日志文件的频率。 默认情况下，每天创建一个新的日志文件。 可能的值是：
     
@@ -84,22 +88,22 @@ Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true -LogFileLocation "C:\P
     此设置仅适用于将参数 *LogPerFileSizeQuota* 的值设置为零时。 此示例在客户端访问服务器 CAS01 上将 POP3 协议日志记录更改为每小时创建一个新的日志文件。
     
     ```powershell
-Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota 0 -LogFileRollOverSettings Hourly
-```
+    Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota 0 -LogFileRollOverSettings Hourly
+    ```
 
   - *LogPerFileSizeQuota*   此参数定义 POP3 或 IMAP4 协议日志文件的最大大小（字节）。 默认情况下，此值设置为零。 将此值设置为零时，将按 *LogFileRollOverSettings* 参数指定的频率创建新的协议日志文件。
     
     此示例在客户端访问服务器 CAS01 上将 POP3 协议日志记录更改为在日志文件达到 2 MB 时创建一个新的日志文件。
     
     ```powershell
-Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota 2000000
-```
+    Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota 2000000
+    ```
     
     此示例在客户端访问服务器 CAS01 上将 POP3 协议日志记录更改为使用相同日志文件，而不考虑其创建日期和大小。
     
     ```powershell
-Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota unlimited
-```
+    Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota unlimited
+    ```
 
 > [!NOTE]  
 > 为 POP3 或 IMAP4 更改了协议日志记录设置之后，必须重新启动所使用的任何服务：POP3 或 IMAP4。有关如何重新启动 POP3 服务和 IMAP4 服务的信息，请参阅<a href="start-and-stop-the-pop3-services-exchange-2013-help.md">启动和停止 POP3 服务</a>和<a href="start-and-stop-the-imap4-services-exchange-2013-help.md">启动和停止 IMAP4 服务</a>。

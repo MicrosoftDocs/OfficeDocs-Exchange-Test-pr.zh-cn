@@ -51,7 +51,9 @@ _**上一次修改主题：** 2013-02-21_
 
 <!-- end list -->
 
+```powershell
     New-SiteMailboxProvisioningPolicy -Name SM_ProvisioningPolicy -IsDefault -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB -MaxReceiveSize 50MB
+```
 
 ## 查看站点邮箱设置策略的设置
 
@@ -77,7 +79,9 @@ Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
 
 此示例将警告配额更改为 9.5 GB，将禁止发送和接收的配额更改为 10 GB。
 
+```powershell
     Set-SiteMailboxProvisioningPolicy -Identity Default -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB
+```
 
 ## 配置一个站点邮箱名前缀
 
@@ -85,15 +89,18 @@ Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
 
 这个示例通过设置 *DefaultAliasPrefixEnabled* 参数为 $false 禁用前缀命名。
 
+```powershell
     Set-SiteMailboxProvisioningPolicy -Identity Default -DefaultAliasPrefixEnabled $false -AliasPrefix $null
+```
 
 这个示例更改了默认设置策略并将 *AliasPrefix* 设置为 FOREST01。
 
 > [!NOTE]  
 > 对于多个林的部署，在两个或多个林中采用相同的名称创建站点邮箱的情况下，建议在跨林同步对象时在每个林中使用不同的前缀以避免冲突。
 
-
+```powershell
     Set-SiteMailboxProvisioningPolicy -Identity Default -AliasPrefix FOREST01 -DefaultAliasPrefixEnabled $false
+```
 
 > [!NOTE]  
 > 如果是 Exchange 内部部署和 Office 365 中的混合部署，所有基于云的站点邮箱均采用前缀 <strong>SMO-</strong> 创建。Office 365 和 Exchange 内部部署中的前缀不同，因此，如果站点邮箱在这两个位置中创建，然后同步跨内部部署，混合客户也不会发生冲突。AliasPrefix 参数优先于 DefaultAliasPrefixEnabled 参数，因此，如果 <em>AliasPrefix</em> 参数设置为有效的非 Null 字符串，每个新站点邮箱都会将该字符串添加到别名前。

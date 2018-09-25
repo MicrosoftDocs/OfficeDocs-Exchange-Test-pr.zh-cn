@@ -231,7 +231,9 @@ Contoso 和 Humungous Insurance ABP 是使用以下地址列表、全局地址�
 
   - 部署 ABP 不会阻止一个虚拟组织中的用户向另一个虚拟组织中的用户发送电子邮件。如果要阻止用户跨组织发送电子邮件，我们建议创建一条传输规则。例如，若要创建一条传输规则以阻止 Contoso 用户接收来自 Fabrikam 用户的邮件，但仍允许 Fabrikam 的高级领导团队向 Contoso 用户发送邮件，请运行以下命令行管理程序命令：
     
+    ```powershell
         New-TransportRule -Name "StopFabrikamtoContosoMail" -FromMemberOf "AllFabrikamEmployees" -SentToMemberOf "AllContosoEmployees" -DeleteMessage -ExceptIfFrom seniorleadership@fabrikam.com
+    ```
 
   - 如果要在 Lync 客户端中强制执行与 ABP 相似的功能，则可对特定的用户对象设置 `msRTCSIP-GroupingID` 属性。有关详细信息，请参阅 [PartitionByOU 被替换为 msRTCSIP-GroupingID](https://go.microsoft.com/fwlink/p/?linkid=232306) 主题。
 
@@ -287,21 +289,29 @@ Contoso 和 Humungous Insurance ABP 是使用以下地址列表、全局地址�
 
 此示例将创建地址列表 AL\_TAIL\_Users\_DGs。该地址列表包含 CustomAttribute15 等于 TAIL 的所有用户和通讯组。
 
+```powershell
     New-AddressList -Name "AL_TAIL_Users_DGs" -RecipientFilter {((RecipientType -eq 'UserMailbox') -or (RecipientType -eq "MailUniversalDistributionGroup") -or (RecipientType -eq "DynamicDistributionGroup")) -and (CustomAttribute15 -eq "TAIL")}
+```
 
 有关使用收件人筛选器创建地址列表的详细信息，请参阅[使用收件人筛选器创建地址列表](https://docs.microsoft.com/zh-cn/exchange/address-books/address-lists/use-recipient-filters-to-create-an-address-list)。
 
 若要创建 ABP，必须提供会议室地址列表。如果您的组织没有资源邮箱（如会议室邮箱或设备邮箱），我们建议您创建一个空白会议室地址列表。以下示例创建一个空白会议室地址列表，因为组织中没有会议室邮箱。
 
+```powershell
     New-AddressList -Name AL_BlankRoom -RecipientFilter {(Alias -ne $null) -and ((RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox'))}
+```
 
 但是，在此方案中，Fabrikam 和 Contoso 都有会议室邮箱。此示例使用 CustomAttribute15 等于 FAB 的收件人筛选器为 Fabrikam 创建会议室列表。
 
+```powershell
     New-AddressList -Name AL_FAB_Room -RecipientFilter {(Alias -ne $null) -and (CustomAttribute15 -eq "FAB")-and (RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox')}
+```
 
 ABP 中使用的全局地址列表必须是地址列表的一个超集。不要创建包含的对象数少于 ABP 中任何或所有地址列表中存在的对象数的 GAL。此示例为 Tailspin Toys 创建包含地址列表和会议室地址列表中存在的所有收件人的全局地址列表。
 
+```powershell
     New-GlobalAddressList -Name "GAL_TAIL" -RecipientFilter {(CustomAttribute15 -eq "TAIL")}
+```
 
 有关详细信息，请参阅[创建全局地址列表](https://docs.microsoft.com/zh-cn/exchange/address-books/address-lists/create-global-address-list)。
 
@@ -319,7 +329,9 @@ New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
 
 在创建了所有所需对象之后，可以创建 ABP。此示例创建名为 ABP\_TAIL 的 ABP。
 
+```powershell
     New-AddressBookPolicy -Name "ABP_TAIL" -AddressLists "AL_TAIL_Users_DGs"," AL_TAIL_Contacts" -OfflineAddressBook "\OAB_TAIL" -GlobalAddressList "\GAL_TAIL" -RoomList "\AL_TAIL_Rooms"
+```
 
 有关详细信息，请参阅[创建通讯簿策略](create-an-address-book-policy-exchange-2013-help.md)。
 
@@ -329,7 +341,9 @@ New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
 
 此示例将 ABP\_FAB 分配给 CustomAttribute15 等于“FAB”的所有邮箱。
 
+```powershell
     Get-Mailbox -resultsize unlimited | where {$_.CustomAttribute15 -eq "TAIL"} | Set-Mailbox -AddressBookPolicy "ABP_TAIL"
+```
 
 有关详细信息，请参阅[将通讯簿策略分配给邮件用户](assign-an-address-book-policy-to-mail-users-exchange-2013-help.md)。
 

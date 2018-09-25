@@ -72,26 +72,26 @@ _**上一次修改主题：** 2018-04-16_
 1.  若要从边缘传输服务器删除边缘订阅，请使用以下语法。
     
     ```powershell
-Remove-EdgeSubscription <EdgeTransportServerIdentity>
-```
+      Remove-EdgeSubscription <EdgeTransportServerIdentity>
+    ```
     
     例如，若要从名为 Edge01 的边缘传输服务器删除边缘订阅，请运行以下命令。
     
     ```powershell
-Remove-EdgeSubscription Edge01
-```
+      Remove-EdgeSubscription Edge01
+    ```
 
 2.  若要从邮箱服务器删除边缘订阅，请使用以下语法。
     
     ```powershell
-Remove-EdgeSubscription <MailboxServerIdentity>
-```
+      Remove-EdgeSubscription <MailboxServerIdentity>
+    ```
     
     例如，若要从名为 Mailbox01 的邮箱服务器删除边缘订阅，请运行以下命令。
     
     ```powershell
-Remove-EdgeSubscription Mailbox01
-```
+    Remove-EdgeSubscription Mailbox01
+    ```
 
 在以下情况下，您需要删除边缘订阅：
 
@@ -147,8 +147,10 @@ Remove-EdgeSubscription Mailbox01
 
 若要手动运行 EdgeSync，请使用以下语法。
 
+  ```powershell
     Start-EdgeSynchronization [-Server <MailboxServerIdentity>] [-TargetServer <EdgeTransportServerIdentity> [-ForceFullSync]
-
+  ```
+  
 下面的示例介绍了在启动 EdgeSync 时可以选择的选项：
 
   - 从名为 Mailbox01 的 Exchange 2013 邮箱服务器启动同步。

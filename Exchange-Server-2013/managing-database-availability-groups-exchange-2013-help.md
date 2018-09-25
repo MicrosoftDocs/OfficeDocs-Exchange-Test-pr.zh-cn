@@ -616,7 +616,9 @@ Set-DatabaseAvailabilityGroupNetwork -Identity DAG1\MapiDagNetwork -ReplicationE
 
 默认情况下，DAG 将执行所有已检测到并配置为供基础群集使用的网络的发现。这包括作为对一个或多个 DAG 成员使用 iSCSI 存储的结果的所有 Internet SCSI (iSCSI) 网络。最佳做法是，iSCSI 存储应使用专用的网络和网络适配器。这些网络不应由 DAG 或其群集管理，也不应用作 DAG 网络（MAPI 或复制）。相反，应手动禁止 DAG 使用这些网络，使之专用于 iSCSI 存储通信。若要禁止检测 iSCSI 网络并将其用作 DAG 网络，请使用 [Set-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/zh-cn/library/dd298008\(v=exchg.150\)) cmdlet 配置 DAG 以忽略当前检测到的任何 iSCSI 网络，如此示例所示：
 
-    Set-DatabaseAvailabilityGroupNetwork -Identity DAG2\DAGNetwork02 -ReplicationEnabled:$false -IgnoreNetwork:$true
+```powershell
+Set-DatabaseAvailabilityGroupNetwork -Identity DAG2\DAGNetwork02 -ReplicationEnabled:$false -IgnoreNetwork:$true
+```
 
 此命令还会禁止群集使用该网络。虽然 iSCSI 网络会继续显示为 DAG 网络，但是在运行上面的命令之后不会将它们用于 MAPI 或复制通信。
 

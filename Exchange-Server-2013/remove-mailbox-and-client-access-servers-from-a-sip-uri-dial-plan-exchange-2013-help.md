@@ -51,10 +51,12 @@ _**上一次修改主题：** 2013-04-16_
 
 此示例从名为 `MySIPDialPlan` 的拨号计划中删除名为 `MyMailboxServer` 的邮箱服务器。
 
-    $dp= Get-UMDialPlan "MySIPDialPlan"
-    $s=Get-UMService MyMailboxServer
-    $s.dialplans-=$dp.identity
-    Set-UMService -id MyMailboxServer -dialplans:$s.dialplans
+```powershell
+$dp= Get-UMDialPlan "MySIPDialPlan"
+$s=Get-UMService MyMailboxServer
+$s.dialplans-=$dp.identity
+Set-UMService -id MyMailboxServer -dialplans:$s.dialplans
+```
 
 在此示例中，有三个 SIP URI 拨号计划 ︰ SipDP1、 SipDP2 和 SipDP3。本示例删除名为`MyMailboxServer` SipDP3 拨号计划中的邮箱服务器。
 
@@ -88,10 +90,12 @@ Set-UMService -id MyUMServer -DialPlans $null
 
 此示例从名为 `MySIPDialPlan` 的 SIP URI 拨号计划中删除名为 `MyClientAccessServer` 的客户端访问服务器。
 
-    $dp= Get-UMDialPlan "MySIPDialPlan"
-    $s=Get-UMCallRouterSettings MyClientAccessServer
-    $s.dialplans-=$dp.identity
-    Set-UMCallRouterSettings -id MyClientAccessServer -dialplans:$s.dialplans
+```powershell
+$dp= Get-UMDialPlan "MySIPDialPlan"
+$s=Get-UMCallRouterSettings MyClientAccessServer
+$s.dialplans-=$dp.identity
+Set-UMCallRouterSettings -id MyClientAccessServer -dialplans:$s.dialplans
+```
 
 在此示例中，有三个 SIP URI 拨号计划 ︰ SipDP1、 SipDP2 和 SipDP3。本示例删除名为`MyClientAccessServer` SipDP3 拨号计划中的客户端访问服务器。
 

@@ -47,7 +47,9 @@ _**上一次修改主题：** 2012-10-03_
 
 通过运行 **Get-ManagementRoleAssignment** cmdlet，可以在组织中查看配置的所有角色分配的列表。如果要检索与指定的部分字符串匹配的角色分配列表，请使用通配符 (\*)。此示例将检索以字符串 "Tier 1" 开头的所有角色分配的列表。
 
-    Get-ManagementRoleAssignment "Tier 1*"
+```powershell
+Get-ManagementRoleAssignment "Tier 1*"
+```
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd351024\(v=exchg.150\))。
 
@@ -105,7 +107,9 @@ Get-ManagementRoleAssignment -Role "Mail Recipients"
 
 若要查看使用特定预定义作用域的角色分配列表，请使用以下语法。
 
-    Get-ManagementRoleAssignment -RecipientWriteScope < MyGAL | MyDistributionGroups | Organization | Self | CustomRecipientScope | ExecutiveRecipientScope >
+```powershell
+Get-ManagementRoleAssignment -RecipientWriteScope < MyGAL | MyDistributionGroups | Organization | Self | CustomRecipientScope | ExecutiveRecipientScope >
+```
 
 此示例将检索使用\&quot;组织\&quot;预定义作用域的所有角色分配。
 
@@ -125,7 +129,9 @@ Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope <OU>
 
 此示例将检索已在 contoso.com 域中将作用域限制为 North America\\Engineering\\Users OU 的所有角色分配。
 
-    Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope "contoso.com/North America/Engineering/Users"
+```powershell
+Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope "contoso.com/North America/Engineering/Users"
+```
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd351024\(v=exchg.150\))。
 
@@ -191,7 +197,9 @@ Get-ManagementRoleAssignment -WritableRecipient "Brian"
 
 可以将 *WritableRecipient* 和 *WritableServer* 参数与其他参数（如 *RoleAssignee* 参数和 *GetEffectiveUsers* 开关）组合，以优化查询，并展开任何角色组或 USG。此示例将检索可以修改服务器 EX02 的所有用户，以及分配了\&quot;服务器管理\&quot;角色组的所有用户。
 
-    Get-ManagementRoleAssignment -WritableServer EX02 -RoleAssignee "Server Management" -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment -WritableServer EX02 -RoleAssignee "Server Management" -GetEffectiveUsers
+```
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd351024\(v=exchg.150\))。
 

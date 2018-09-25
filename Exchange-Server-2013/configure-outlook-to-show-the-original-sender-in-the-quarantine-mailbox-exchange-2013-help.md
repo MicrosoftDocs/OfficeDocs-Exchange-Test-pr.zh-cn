@@ -45,6 +45,7 @@ _**上一次修改主题：** 2016-12-09_
 
 1.  打开记事本，将下列代码复制到文档中。
     
+    ```powershell
         [Description]
         MessageClass=IPM.Note
         CLSID={00020D31-0000-0000-C000-000000000046}
@@ -115,6 +116,7 @@ _**上一次修改主题：** 2016-12-09_
         NmidPropset={00020D0C-0000-0000-C000-000000000046}
         NmidInteger=1
         Value=1000000000000000
+    ```
 
 2.  使用下列各值将文件保存在 Office Forms 文件夹中：
     
@@ -130,7 +132,9 @@ _**上一次修改主题：** 2016-12-09_
     
     例如，对于安装在 64 位版本 Windows 上的 32 位美国英语版本 Outlook 2013， 将文件另存为：
     
+    ```powershell
         "C:\Program Files (x86)\Microsoft Office\Office15\Forms\1033\QTNE.cfg"
+    ```
     
     > [!NOTE]  
     > 如果 Windows 用户访问控制 (UAC) 阻止您将文件保存在正确的位置，则先将其保存到一个临时位置，然后再进行复制。

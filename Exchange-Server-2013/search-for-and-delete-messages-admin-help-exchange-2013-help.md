@@ -49,11 +49,15 @@ _**上一次修改主题：** 2017-12-20_
 
 本示例在 April Stewart 的邮箱中搜索 Subject 字段中包含\&quot;Your bank statement\&quot;短语的邮件，并将搜索结果记录在管理员邮箱的 SearchAndDeleteLog 文件夹中。不会将邮件复制到目标邮箱或从目标邮箱删除。
 
+```powershell
     Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -TargetMailbox administrator -TargetFolder "SearchAndDeleteLog" -LogOnly -LogLevel Full
+```
 
 此示例将搜索组织的所有邮箱，查找文件名中包含\&quot;特洛伊木马\&quot;一词的任何类型的附加文件的邮件，并向管理员的邮箱发送一封日志邮件。
 
+```powershell
     Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery attachment:trojan* -TargetMailbox administrator -TargetFolder "SearchAndDeleteLog" -LogOnly -LogLevel Full
+```
 
 有关详细的语法和参数信息，请参阅 [Search-Mailbox](https://technet.microsoft.com/zh-cn/library/dd298173\(v=exchg.150\))。
 
@@ -73,11 +77,15 @@ Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statem
 
 本示例在 April Stewart 的邮箱中搜索 Subject 字段中包含\&quot;Your bank statement\&quot;短语的邮件，将搜索结果复制到 BackupMailbox 邮箱中的 AprilStewart-DeletedMessages 文件夹，然后从 April 的邮箱中删除这些邮件。
 
+```powershell
     Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -TargetMailbox "BackupMailbox" -TargetFolder "AprilStewart-DeletedMessages" -LogLevel Full -DeleteContent
+```
 
 此示例将搜索组织的所有邮箱，查找主题行为\&quot;下载此文件\&quot;邮件，然后将其永久删除。
 
+```powershell
     Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery 'Subject:"Download this file"' -DeleteContent
+```
 
 有关详细的语法和参数信息，请参阅 [Search-Mailbox](https://technet.microsoft.com/zh-cn/library/dd298173\(v=exchg.150\))。
 

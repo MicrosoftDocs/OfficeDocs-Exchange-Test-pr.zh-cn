@@ -62,8 +62,8 @@ Set-MailboxServer MBX1 -ForceGroupMetricsGeneration $true
 1.  运行以下命令：
     
     ```powershell
-Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
-```
+    Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
+    ```
 
 2.  验证显示的设置是否为您配置的设置。
 

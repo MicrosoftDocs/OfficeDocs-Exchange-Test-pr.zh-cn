@@ -77,7 +77,9 @@ _**上一次修改主题：** 2013-04-29_
 
 此示例针对名为 `MyMailboxServer` 的邮箱服务器新建了一个 Exchange 证书请求，其友好名称为 `CertUM`。
 
+```powershell
     New-ExchangeCertificate -FriendlyName 'CertUM' -GenerateRequest -PrivateKeyExportable $true -KeySize '2048' -DomainName '*.northwindtraders.com' -SubjectName 'C=US,S=wa,L=redmond,O=northwindtraders,OU=servers,CN= northwindtraders.com' -Server 'MyMailboxServer'
+```
 
 ## 使用 EAC 创建 UM 自签名证书
 
@@ -101,7 +103,9 @@ _**上一次修改主题：** 2013-04-29_
 
 此示例针对名为 `MyMailboxServer` 的邮箱服务器新建了一个 Exchange 自签名证书，其友好名称为 `UMCert`。
 
+```powershell
     New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
+```
 
 > [!TIP]  
 > 使用 <em>Services</em> 参数指定要启用的服务时，系统会提醒您分配这些服务。在此示例中，系统会提示您为 UM 和统一消息呼叫路由器服务启用证书。有关如何为服务启用证书的详细信息，请参阅<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">将证书分配给该 UM 和 UM 呼叫路由器服务</a>。

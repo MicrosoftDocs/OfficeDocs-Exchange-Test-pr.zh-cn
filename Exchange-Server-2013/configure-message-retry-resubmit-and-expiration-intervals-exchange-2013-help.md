@@ -42,28 +42,34 @@ _**上一次修改主题：** 2014-12-16_
 1.  在邮箱服务器或边缘传输服务器上的命令提示符窗口中，通过运行以下命令在记事本中打开 EdgeTransport.exe.config 文件：
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
-```
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 2.  在 `<appSettings>` 部分中找到以下项。
     
+    ```powershell
         <add key="QueueGlitchRetryCount" value="<Integer>" />
         <add key="QueueGlitchRetryInterval" value="<hh:mm:ss>" />
         <add key="MailboxDeliveryQueueRetryInterval" value="<hh:mm:ss>" />
         <add key="MaxIdleTimeBeforeResubmit" value="<hh:mm:ss>" />
-    
+    ```
+
     此示例将队列小故障重试计数更改为 6，将队列小故障重试间隔更改为 30 秒，将邮箱传递队列重试间隔更改为 3 分钟，并将重新提交间隔前的最长空闲时间更改为 6 小时。
     
+    ```powershell
         <add key="QueueGlitchRetryCount" value="6" />
         <add key="QueueGlitchRetryInterval" value="00:00:30" />
         <add key="MailboxDeliveryQueueRetryInterval" value="00:03:00" />
         <add key="MaxIdleTimeBeforeResubmit" value="6:00:00" />
+    ```
 
 3.  完成后，保存并关闭 EdgeTransport.exe.config 文件。
 
 4.  通过运行以下命令重新启动 Microsoft Exchange 传输服务：
     
-        net stop MSExchangeTransport && net start MSExchangeTransport
+    ```powershell
+    net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 
 ## 配置瞬间失败重试次数、瞬间失败重试间隔和出站连接失败重试间隔
 
@@ -85,7 +91,9 @@ Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
 
 使用以下语法在邮箱服务器或边缘传输服务器上的传输服务中配置瞬间失败重试次数、瞬间失败重试间隔和出站连接失败重试间隔。
 
-    Set-TransportService <ServerIdentity> -TransientFailureRetryCount <Integer> -TransientFailureRetryInterval <hh:mm:ss> -OutboundConnectionFailureRetryInterval <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -TransientFailureRetryCount <Integer> -TransientFailureRetryInterval <hh:mm:ss> -OutboundConnectionFailureRetryInterval <dd.hh:mm:ss>
+```
 
 此示例在名为 Mailbox01 的邮箱服务器上更改以下值：在边缘传输服务器 Exchange01 上。
 
@@ -97,7 +105,9 @@ Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
+```powershell
+Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
+```
 
 > [!NOTE]  
 > 客户端访问服务器上的前端传输服务的 <strong>Set-FrontEndTransportService</strong> cmdlet 也提供 <em>TransientFailureRetryCount</em> 和 <em>TransientFailureRetryInterval</em> 参数。
@@ -117,7 +127,9 @@ Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
 
 使用以下语法在邮箱服务器或边缘传输服务器上的传输服务中配置瞬间失败重试次数、瞬间失败重试间隔和出站连接失败重试间隔。
 
-    Set-TransportService <ServerIdentity> -TransientFailureRetryCount <Integer> -TransientFailureRetryInterval <hh:mm:ss> -OutboundConnectionFailureRetryInterval <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -TransientFailureRetryCount <Integer> -TransientFailureRetryInterval <hh:mm:ss> -OutboundConnectionFailureRetryInterval <dd.hh:mm:ss>
+```
 
 此示例在名为 Mailbox01 的邮箱服务器上更改以下值：在边缘传输服务器 Exchange01 上。
 
@@ -129,7 +141,9 @@ Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
+```powershell
+Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
+```
 
 > [!NOTE]  
 > 客户端访问服务器上的前端传输服务的 <strong>Set-FrontEndTransportService</strong> cmdlet 也提供 <em>TransientFailureRetryCount</em> 和 <em>TransientFailureRetryInterval</em> 参数。
@@ -185,7 +199,9 @@ Set-TransportService Mailbox01 -DelayNotificationTimeout 06:00:00
 
 使用以下语法配置延迟 DSN 通知设置。
 
-    Set-TransportConfig -ExternalDelayDSNEnabled <$true | $false> -InternalDelayDSNEnabled <$true |$false>
+```powershell
+Set-TransportConfig -ExternalDelayDSNEnabled <$true | $false> -InternalDelayDSNEnabled <$true |$false>
+```
 
 此示例阻止将延迟 DSN 通知邮件发送给外部发件人。
 

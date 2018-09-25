@@ -39,33 +39,36 @@ _**上一次修改主题：** 2017-03-27_
     
     对于 Exchange 2010，运行以下命令。此命令会将邮箱数据库从邮箱配置负载平衡器中排除。这样可以阻止新建邮箱被自动添加至该数据库。
     
-        New-MailboxDatabase -Server <PFServerName_with_CASRole> -Name <NewMDBforPFs> -IsExcludedFromProvisioning $true 
-    
+    ```powershell
+    New-MailboxDatabase -Server <PFServerName_with_CASRole> -Name <NewMDBforPFs> -IsExcludedFromProvisioning $true 
+    ```
+
     对于 Exchange 2007，运行以下命令：
     
     ```powershell
-New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
-```
+    New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
+    ```
     
     > [!NOTE]  
     > 我们建议您只将在步骤 3 中创建的代理邮箱添加至此数据库。不应在此邮箱数据库中创建任何其他邮箱。
 
 
 3.  在新建邮箱数据库内创建一个代理邮箱，并在通讯簿中将其隐藏。该邮箱的 SMTP 会由自动发现返回为 *DefaultPublicFolderMailbox* SMTP，因此通过解析此 SMTP，客户端可以进入旧版 Exchange 服务器以访问公用文件夹。
-    ```
-        New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs> 
-    ```
-    ```
+    
     ```powershell
-Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
-```
+    New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs> 
     ```
+    
+    ```powershell
+    Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+    ```
+    
     
 4.  对于 Exchange 2010，启用自动发现以返回代理公用文件夹邮箱。此步骤对于 Exchange 2007 并非必需步骤。
     
     ```powershell
-Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
-```
+    Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
+    ```
 
 5.  对组织中的每个公用文件夹服务器重复执行前面的步骤。
 
@@ -75,7 +78,9 @@ Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CAS
 
 使 Exchange Server 2013 内部部署用户可以访问旧版公用文件夹。您可以指向在[Step 2: Make remote public folders discoverable](configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)中创建的所有代理公用文件夹邮箱。从具有 CU5 或更高版本更新的 Exchange 2013 服务器运行以下命令。
 
-    Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes ProxyMailbox1,ProxyMailbox2,ProxyMailbox3
+```powershell
+Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes ProxyMailbox1,ProxyMailbox2,ProxyMailbox3
+```
 
 > [!NOTE]  
 > 您必须等待 ActiveDirectory 同步完成才能查看更改。此进程可能需要几个小时。

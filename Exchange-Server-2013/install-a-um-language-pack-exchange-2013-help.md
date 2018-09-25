@@ -49,12 +49,10 @@ _**上一次修改主题：** 2016-12-09_
 
 2.  双击 UMLanguagePack.*\<CultureCode\>.exe* 文件。例如，对于德语的 UM 语言包，请下载名为 UMLanguagePack.de-DE.exe 的文件。
 
-3.  
-    
+3.      
     在Exchange 2013安装向导的“**许可协议**”页中，阅读协议条款，选择“**我接受许可协议中的条款**”，然后单击“**下一步**”。
 
-4.  
-    
+4.      
     在“统一消息语言包”页上，验证“将安装以下统一消息语言包”窗口中是否列出了正确的语言，然后单击“安装”。
 
 5.  单击“完成”结束 UM 语言包的安装。
@@ -69,7 +67,9 @@ setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchan
 
 以下示例将安装墨西哥西班牙语 (es-MX) 和德语 (de-DE) 的 UM 语言包，这些语言包已下载到邮箱服务器上的 D:\\Exchange\\UMLanguagePacks 文件夹。
 
+```powershell
     setup.exe /AddUmLanguagePack:es-MX,de-DE /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```
 
 > [!WARNING]  
 > 如果不使用 /IAcceptExchangeServerLicenseTerms 参数，则将看到以下错误：欢迎使用 Microsoft Exchange Server 2013 无人参与安装程序。您需要接受许可条款才能安装 Microsoft Exchange Server 2013。若要阅读许可协议，请访问 http://go.microsoft.com/fwlink/p/?LinkId=150127。若要接受许可协议，请将 /IAcceptExchangeServerLicenseTerms 参数添加到运行的命令中。有关详细信息，请运行 setup /?。

@@ -177,6 +177,7 @@ Azure 管理门户当前不允许您配置多站点 VPN。对于此配置，您�
 
 在任意 XML 编辑器中打开您导出的文件。到您的内部部署站点的网关连接列在“ConnectionsToLocalNetwork”部分中。在 XML 文件中查找该词语，以找到相应部分。配置文件中的此部分看上去如下所示（假设您为本地站点创建的站点名称是“站点 A”）。
 
+```xml
     <ConnectionsToLocalNetwork>
     
         <LocalNetworkSiteRef name="Site A">
@@ -184,9 +185,11 @@ Azure 管理门户当前不允许您配置多站点 VPN。对于此配置，您�
             <Connection type="IPsec" />
     
     </LocalNetworkSiteRef>
+```
 
 要配置您的第二个站点，在“ConnectionsToLocalNetwork”部分下添加另一个“LocalNetworkSiteRef”部分。更新的配置文件中的此部分看上去如下所示（假设您的第二个本地站点的站点名称是“站点 B”）。
 
+```xml
     <ConnectionsToLocalNetwork>
     
         <LocalNetworkSiteRef name="Site A">
@@ -198,6 +201,7 @@ Azure 管理门户当前不允许您配置多站点 VPN。对于此配置，您�
             <Connection type="IPsec" />
     
     </LocalNetworkSiteRef>
+```
 
 保存更新的配置设置文件。
 
@@ -215,9 +219,11 @@ Azure 管理门户当前不允许您配置多站点 VPN。对于此配置，您�
 
 使用 [Get-AzureVNetGatewayKey](http://msdn.microsoft.com/zh-cn/library/azure/dn495198.aspx) cmdlet 提取预共享密钥。为每个隧道运行一次此 cmdlet。以下示例展示了提取虚拟网络“Azure 站点”和站点“站点 A”和“站点 B”之间的隧道的密钥所需运行的命令。在本例中，输出结果将被保存到单独的文件中。另外，您可以将这些密钥传输到其他 PowerShell cmdlet 或在脚本中使用它们。
 
+```powershell
     Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site A" > C:\Keys\KeysForTunnelToSiteA.txt 
     
     Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site B" > C:\Keys\KeysForTunnelToSiteB.txt
+```
 
 ## 配置内部部署 VPN 设备
 
@@ -253,10 +259,13 @@ Microsoft Azure 为支持的 VPN 设备提供 VPN 设备配置脚本。单击虚
 
 此时，您的两个站点都已通过 VPN 网关连接到 Azure 虚拟网络。通过在 PowerShell 中运行以下命令，您可以验证多站点 VPN 的状态。
 
+```powershell
     Get-AzureVnetConnection -VNetName "Azure Site" | Format-Table LocalNetworkSiteName, ConnectivityState
+```
 
 如果两个隧道都在正常运行，则此命令的输出结果看上去将如下所示：
 
+```powershell
     LocalNetworkSiteName    ConnectivityState
     
     --------------------    -----------------
@@ -264,6 +273,7 @@ Microsoft Azure 为支持的 VPN 设备提供 VPN 设备配置脚本。单击虚
     Site A                  Connected
     
     Site B                  Connected
+```
 
 通过在 Azure 管理门户中查看虚拟网络仪表板，您还可以对连接进行验证。两个站点的“状态”列将显示为“已连接”。
 
@@ -279,10 +289,12 @@ Microsoft Azure 为支持的 VPN 设备提供 VPN 设备配置脚本。单击虚
 
 2.  使用 Azure PowerShell 为域控制器和文件服务器指定首选 IP 地址。当您为 VM 指定首选 IP 地址时，该地址需要更新，这将需要重启 VM。以下示例将 Azure-DC 和 Azure-FSW 的 IP 地址分别设置为 10.0.0.10 和 10.0.0.11。
     
+    ```powershell
         Get-AzureVM Azure-DC | Set-AzureStaticVNetIP -IPAddress 10.0.0.10 | Update-AzureVM
         
         Get-AzureVM Azure-FSW | Set-AzureStaticVNetIP -IPAddress 10.0.0.11 | Update-AzureVM
-    
+    ```
+
     > [!NOTE]  
     > 带有首选 IP 地址的 VM 将尝试使用该地址。但是，如果该地址已被分配给不同的 VM，则带有首选 IP 地址配置的 VM 将不会启动。为了避免这种情况，确保您使用的 IP 地址没有分配给其他 VM。有关详细信息，请参阅<a href="http://msdn.microsoft.com/zh-cn/library/azure/dn630228.aspx">为 VM 配置静态内部 IP 地址</a>。
 
@@ -314,8 +326,8 @@ Microsoft Azure 为支持的 VPN 设备提供 VPN 设备配置脚本。单击虚
 2.  运行以下命令以配置您的 DAG 的见证服务器。
     
     ```powershell
-Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
-```
+    Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
+    ```
 
 有关详细信息，请参阅以下主题：
 
@@ -329,21 +341,23 @@ Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
 
 1.  运行以下命令对 DAG 配置进行验证。
     
+    ```powershell
         Get-DatabaseAvailabilityGroup -Identity DAG1 -Status | Format-List Name, WitnessServer, WitnessDirectory, WitnessShareInUse
-    
+    ```
+
     验证 *WitnessServer* 参数是否设置为 Azure 上的文件服务器，*WitnessDirectory* 参数是否设置为正确的路径以及 *WitnessShareInUse* 参数是否显示 **Primary**。
 
 2.  如果 DAG 包含偶数个节点，则将配置文件共享见证。运行以下命令，对群集属性中的文件共享见证设置进行验证。*SharePath* 参数的值应该指向文件服务器并显示正确的路径。
     
     ```powershell
-Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
-```
+    Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
+    ```
 
 3.  接下来，运行以下命令对“文件共享见证”群集资源的状态进行验证。群集资源的 *State* 应显示 **Online**。
     
     ```powershell
-Get-ClusterResource -Cluster MBX1
-```
+    Get-ClusterResource -Cluster MBX1
+    ```
 
 4.  最后，通过检查“文件资源管理器”中的文件夹和服务器管理器中的共享，验证是否已成功地在文件服务器上创建共享。
 

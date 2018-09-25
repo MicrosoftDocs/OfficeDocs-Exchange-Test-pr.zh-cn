@@ -79,11 +79,15 @@ _**上一次修改主题：** 2015-04-07_
 
 <!-- end list -->
 
-    New-OrganizationRelationship -Name "Contoso" -DomainNames "contoso.com","northamerica.contoso.com","europe.contoso.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel LimitedDetails
+```powershell
+New-OrganizationRelationship -Name "Contoso" -DomainNames "contoso.com","northamerica.contoso.com","europe.contoso.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel LimitedDetails
+```
 
 本示例将尝试使用 **Get-FederationInformation** cmdlet 中提供的域名自动发现外部 Exchange 组织 Contoso.com 的配置信息。如果使用此方法创建组织关系，则必须首先确保已使用 **Set-FederatedOrganizationIdentifier** cmdlet 创建了组织标识符。
 
-    Get-FederationInformation -DomainName Contoso.com | New-OrganizationRelationship -Name "Contoso" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -LimitedDetails
+```powershell
+Get-FederationInformation -DomainName Contoso.com | New-OrganizationRelationship -Name "Contoso" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -LimitedDetails
+```
 
 有关语法和参数的详细信息，请参阅 [Get-FederationInformation](https://technet.microsoft.com/zh-cn/library/dd351221\(v=exchg.150\)) 和 [New-OrganizationRelationship](https://technet.microsoft.com/zh-cn/library/ee332357\(v=exchg.150\))。
 
@@ -101,7 +105,9 @@ _**上一次修改主题：** 2015-04-07_
 
 <!-- end list -->
 
-    New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
+```powershell
+New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
+```
 
 有关语法和参数的详细信息，请参阅 [New-OrganizationRelationship](https://technet.microsoft.com/zh-cn/library/ee332357\(v=exchg.150\))。
 

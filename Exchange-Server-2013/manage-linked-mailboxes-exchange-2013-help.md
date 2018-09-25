@@ -106,7 +106,9 @@ _**上一次修改主题：** 2012-11-27_
 
 此示例为 CONTOSO Exchange 资源林中的 Ayla Kol 创建链接邮箱。 FABRIKAM 域位于帐户林中。 管理员帐户 FABRIKAM \\administrator 用于访问链接域控制器。
 
+```powershell
     New-Mailbox -Name "Ayla Kol" -LinkedDomainController "DC1_FABRIKAM" -LinkedMasterAccount " FABRIKAM\aylak" -OrganizationalUnit Users -UserPrincipalName aylak@contoso.com -LinkedCredential:(Get-Credential FABRIKAM\administrator)
+```
 
 有关语法和参数的信息，请参阅 [New-Mailbox](https://technet.microsoft.com/zh-cn/library/aa997663\(v=exchg.150\))。
 
@@ -119,8 +121,8 @@ _**上一次修改主题：** 2012-11-27_
   - 在命令行管理程序中，运行以下命令可显示有关新链接邮箱的信息。
     
     ```powershell
-Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
-```
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
+    ```
 
 ## 更改链接邮箱属性
 
@@ -354,15 +356,21 @@ Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
 
 此示例使用 **Get-Mailbox** 命令查找组织中的所有链接邮箱。
 
+```powershell
     Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')}
+```
 
 此示例使用 **Set-Mailbox** 命令将电子邮件的“收件人:”、“抄送:”和“密件抄送:”行上允许的收件人数 限制为 500。此限制应用于组织中的所有链接邮箱。
 
+```powershell
     Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | Set-Mailbox -RecipientLimits 500
+```
 
 此示例更改 fabrikam.com 帐户林中与 Exchange 林中的链接邮箱相关联的链接主帐户。
 
+```powershell
     Set-Mailbox -Identity "Ayla Kol" -LinkedDomainController DC1.fabrikam.com -LinkedMasterAccount "fabrikam\robinw" -LinkedCredential:(Get-Credential fabrikam\administrator)
+```
 
 ## 您如何知道这有效？
 
@@ -372,11 +380,13 @@ Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
 
   - 在命令行管理程序中，使用 **Get-Mailbox** cmdlet 验证更改。 使用命令行管理程序的一个好处是，您可查看多个链接邮箱的多个属性。 在上面的示例中，收件人限制有所更改，运行以下命令将验证新值。
     
+    ```powershell
         Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | fl Name,RecipientLimits
-    
+    ```
+
     对于上面的示例，链接主帐户有所更改，运行以下命令来验证新值。
     
     ```powershell
-Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
-```
+    Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
+    ```
 

@@ -69,25 +69,28 @@ Microsoft Exchange 2010 UM 疑难解答工具是名为 **Test-ExchangeUMCallFlow
 
 3.  在 Windows PowerShell 命令提示符下，转到安装了 UM 故障排除工具的文件夹，并运行以下命令。
     
+    ```powershell
         C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -psconsolefile .\Microsoft.Exchange.UM.TroubleshootingToolsnapin.psc1 -noexit -command ". '.\Microsoft.Exchange.UM.TroubleshootingTool.ps1' "
+    ```
 
 4.  如果要在 Windows Vista、Windows 7 或 Windows 8 上运行 UM 故障排除工具，请在 Windows PowerShell 命令提示符下运行以下命令。
     
     ```powershell
-Set-ExecutionPolicy RemoteSigned
-```
+    Set-ExecutionPolicy RemoteSigned
+    ```
 
 5.  从\&quot;开始\&quot;菜单中打开\&quot;Microsoft Exchange 2010 UM 故障排除工具\&quot;。
 
 6.  在\&quot;Microsoft Exchange 2010 UM 故障排除工具\&quot;窗口中，在提示符下输入以下命令，然后按 Enter。
     
     ```powershell
-$cred=Get-Credential
-```
+    $cred=Get-Credential
+    ```
 
 7.  在\&quot;Windows PowerShell 凭据请求\&quot;窗口中，键入域名\\用户名和密码，然后单击\&quot;确定\&quot;。
 
 8.  在\&quot;Microsoft Exchange 2010 UM 故障排除工具\&quot;窗口中，指定必要的 cmdlet 参数对呼叫流进行测试。例如：
     
+    ```powershell
         Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
-
+    ```

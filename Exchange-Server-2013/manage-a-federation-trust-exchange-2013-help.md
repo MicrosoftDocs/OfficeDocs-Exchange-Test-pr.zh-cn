@@ -78,14 +78,14 @@ _**上一次修改主题：** 2015-01-01_
 1.  本示例从联合身份验证信任中删除 service.contoso.com 域。
     
     ```powershell
-Remove-FederatedDomain -DomainName service.contoso.com
-```
+    Remove-FederatedDomain -DomainName service.contoso.com
+    ```
 
 2.  本示例将 marketing.contoso.com 域添加到联合身份验证信任。
     
     ```powershell
-Add-FederatedDomain -DomainName marketing.contoso.com
-```
+    Add-FederatedDomain -DomainName marketing.contoso.com
+    ```
 
 有关语法和参数的详细信息，请参阅 [Remove-FederatedDomain](https://technet.microsoft.com/zh-cn/library/dd298128\(v=exchg.150\)) 和 [Add-FederatedDomain](https://technet.microsoft.com/zh-cn/library/dd351208\(v=exchg.150\))。
 
@@ -96,38 +96,40 @@ Add-FederatedDomain -DomainName marketing.contoso.com
     本示例将显示 Exchange 组织的联盟 OrgID 和相关信息，包括联盟域和状态。
     
     ```powershell
-Get-FederatedOrganizationIdentifier
-```
+    Get-FederatedOrganizationIdentifier
+    ```
 
 2.  **查看联合身份验证信任证书**
     
     本示例将显示联合身份验证信任 Azure AD 身份验证所使用的上一个、当前和下一个证书。
     
+    ```powershell
         Get-FederationTrust "Azure AD authentication" | Select Org*certificate
+    ```
 
 3.  **检查联合身份验证证书状态**
     
     本示例将显示组织中所有邮箱和客户端访问服务器上的联合身份验证证书的状态。
     
     ```powershell
-Test-FederationTrustCertificate
-```
+    Test-FederationTrustCertificate
+    ```
 
 4.  **配置联合身份验证信任以使用某证书作为下一个证书**
     
     本示例将配置联合身份验证信任 Azure AD 身份验证，以将具有所提供指纹的证书用作下一个证书。将证书部署到组织中所有 Exchange 服务器上之后，可以使用 *PublishCertificate* 开关配置联合身份验证信任，以将此证书用作当前证书。
     
     ```powershell
-Set-FederationTrust "Azure AD authentication" -Thumbprint AC00F35CBA8359953F4126E0984B5CCAFA2F4F17
-```
+    Set-FederationTrust "Azure AD authentication" -Thumbprint AC00F35CBA8359953F4126E0984B5CCAFA2F4F17
+    ```
 
 5.  **配置联合身份验证信任，以将下一个证书用作当前证书**
     
     此示例将联合身份验证信任 Azure AD 身份验证配置为将下一个证书用作当前证书，并将其发布到 Azure AD 身份验证系统。
     
     ```powershell
-Set-FederationTrust "Azure AD authentication" -PublishFederationCertificate
-```
+    Set-FederationTrust "Azure AD authentication" -PublishFederationCertificate
+    ```
     
     > [!CAUTION]  
     > 在将联合身份验证信任配置为将下一个证书用作当前联合身份验证证书之前，请确保已在组织中的所有 Exchange 服务器上部署了该证书。使用 <a href="https://technet.microsoft.com/zh-cn/library/dd335228(v=exchg.150)">Test-FederationTrustCertificate</a> cmdlet 可检查此证书的部署状态。
@@ -138,8 +140,8 @@ Set-FederationTrust "Azure AD authentication" -PublishFederationCertificate
     此示例将刷新 Azure AD 身份验证系统的联合元数据和证书，以进行联合身份验证信任 Azure AD 身份验证。
     
     ```powershell
-Set-FederationTrust "Azure AD authentication" -RefreshMetadata
-```
+    Set-FederationTrust "Azure AD authentication" -RefreshMetadata
+    ```
 
 有关语法和参数的详细信息，请参阅下列主题：
 
@@ -160,14 +162,14 @@ Set-FederationTrust "Azure AD authentication" -RefreshMetadata
 1.  运行以下命令行管理程序命令以验证联合身份验证信任信息。
     
     ```powershell
-Get-FederationTrust | format-list
-```
+    Get-FederationTrust | format-list
+    ```
 
 2.  运行以下命令行管理程序命令以验证是否可以从组织检索联合身份验证信息。例如，验证是否在 *DomainNames* 参数中返回了 sales.contoso.com 和 marketing.contoso.com 域。
     
     ```powershell
-Get-FederationInformation -DomainName <your primary sharing domain>
-```
+    Get-FederationInformation -DomainName <your primary sharing domain>
+    ```
 
 > [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。

@@ -55,12 +55,16 @@ _**上一次修改主题：** 2014-10-22_
 
 本示例将可用性服务配置为检索目标林中的邮箱服务器上每个用户的忙/闲信息。
 
-    Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedrights "ms-Exch-
-    EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+```powershell
+Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedrights "ms-Exch-
+EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+```
 
 本示例定义可用性服务在源林中的本地邮箱服务器上使用的忙/闲访问方法。将本地邮箱服务器配置为基于每个用户从林 ContosoForest.com 访问忙/闲信息。本示例使用服务帐户检索忙/闲信息。
 
-    Add-AvailabilityAddressSpace -Forestname ContosoForest.com -AccessMethod PerUserFB -UseServiceAccount:$true
+```powershell
+Add-AvailabilityAddressSpace -Forestname ContosoForest.com -AccessMethod PerUserFB -UseServiceAccount:$true
+```
 
 > [!NOTE]  
 > 若要配置双向跨林可用性，请在目标林中重复这些步骤。
@@ -72,7 +76,9 @@ _**上一次修改主题：** 2014-10-22_
 
 本示例将配置服务帐户的受信任的跨林可用性。
 
-    Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedright "ms-Exch-EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+```powershell
+Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedright "ms-Exch-EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+```
 
 有关语法和参数的详细信息，请参阅以下主题：
 
@@ -94,6 +100,8 @@ Set-AvailabilityConfig -OrgWideAccount "Contoso.com\User"
 
 本示例将为源林添加可用性地址空间配置对象。
 
-    $a = Get-Credential (Enter the credentials for organization-wide user in Contoso.com domain)
-    Add-AvailabilityAddressspace -Forestname Contoso.com -Accessmethod OrgWideFB -Credential:$a
+```powershell
+$a = Get-Credential (Enter the credentials for organization-wide user in Contoso.com domain)
+Add-AvailabilityAddressspace -Forestname Contoso.com -Accessmethod OrgWideFB -Credential:$a
+```
 

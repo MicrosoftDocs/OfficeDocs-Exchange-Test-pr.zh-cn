@@ -84,28 +84,28 @@ Configuring SSL offloading for Outlook 无处不在
       - 使用命令行键入以下命令，然后按 Enter 键。
         
         ```powershell
-appcmd set config "Default Web Site/owa" /section:access /sslFlags:None /commit:APPHOST
-```
+        appcmd set config "Default Web Site/owa" /section:access /sslFlags:None /commit:APPHOST
+        ```
 
   - **步骤 2**   您需要使用以下方法之一回收相应的应用程序池或重新启动 Internet 信息服务：
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
         ```powershell
-appcmd Recycle AppPool MSExchangeOWAAppPool
-```
+        appcmd Recycle AppPool MSExchangeOWAAppPool
+        ```
     
       - 使用 Windows PowerShell cmdlet 键入以下命令，然后按 Enter 键。
         
         ```powershell
-IIS:\>Restart-WebAppPool MSExchangeOWAAppPool
-```
+        IIS:\>Restart-WebAppPool MSExchangeOWAAppPool
+        ```
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
         ```powershell
-iisreset /noforce
-```
+        iisreset /noforce
+        ```
     
       - 使用 Internet 信息服务 (IIS) 管理器：在 Internet 信息服务 (IIS) 管理器的“操作”窗格中，单击“重新启动”。
 
@@ -122,8 +122,8 @@ iisreset /noforce
       - 使用命令行键入以下命令，然后按 Enter 键。
         
         ```powershell
-appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:APPHOST
-```
+        appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:APPHOST
+        ```
         
 
   - **步骤 2**   您需要使用以下方法之一回收相应的应用程序池或重新启动 Internet 信息服务：
@@ -131,20 +131,20 @@ appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
         ```powershell
-appcmd Recycle AppPool MSExchangeECPAppPool
-```
+        appcmd Recycle AppPool MSExchangeECPAppPool
+        ```
     
       - 使用 Windows PowerShell cmdlet 键入以下命令，然后按 Enter 键。
         
         ```powershell
-IIS:\>Restart-WebAppPool MSExchangeECPAppPool
-```
+        IIS:\>Restart-WebAppPool MSExchangeECPAppPool
+        ```
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
         ```powershell
-iisreset /noforce
-```
+        iisreset /noforce
+        ```
     
       - 使用 Internet 信息服务 (IIS) 管理器：在 Internet 信息服务 (IIS) 管理器的“操作”窗格中，单击“重新启动”。
 
@@ -160,7 +160,9 @@ iisreset /noforce
     
       - 使用 Exchange 命令行管理程序，单击“开始”，然后在“开始”菜单上单击“Exchange 命令行管理程序”。在窗口中键入以下命令，然后按 Enter 键：
         
-            Set-OutlookAnywhere -Identity ClientAccessServer1\Rpc* -Externalhostname ClientAccessServer1.contoso.com -ExternalClientsRequireSsl:$True -ExternalClientAuthenticationMethod Basic
+        ```powershell
+        Set-OutlookAnywhere -Identity ClientAccessServer1\Rpc* -Externalhostname ClientAccessServer1.contoso.com -ExternalClientsRequireSsl:$True -ExternalClientAuthenticationMethod Basic
+        ```
 
   - **步骤 2**   默认情况下，SSL 卸载已启用。但是，如果 SSL 卸载已禁用，现在您希望将其启用，您可以使用 EAC 或 Exchange 命令行管理程序。
     
@@ -168,7 +170,9 @@ iisreset /noforce
     
       - 使用命令行管理程序键入以下命令，然后按 Enter 键。
         
-            Set-OutlookAnywhere -Identity ClientAccessServer1\Rpc* -SSLOffloading $true
+        ```powershell
+        Set-OutlookAnywhere -Identity ClientAccessServer1\Rpc* -SSLOffloading $true
+        ```
 
   - **步骤 3**   默认情况下，“需要 SSL”在“Rpc”虚拟目录上未选中，但是如果您想要确认 SSL 已禁用，您可以使用 Internet 信息服务 (IIS) 管理器。
     
@@ -179,20 +183,20 @@ iisreset /noforce
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
         ```powershell
-appcmd Recycle AppPool MSExchangeRpcProxyFrontEndAppPool
-```
+        appcmd Recycle AppPool MSExchangeRpcProxyFrontEndAppPool
+        ```
     
       - 使用 Windows PowerShell cmdlet 键入以下命令，然后按 Enter 键。
         
         ```powershell
-IIS:\>Restart-WebAppPool MSExchangeRpcProxyFrontEndAppPool
-```
+        IIS:\>Restart-WebAppPool MSExchangeRpcProxyFrontEndAppPool
+        ```
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
         ```powershell
-iisreset /noforce
-```
+        iisreset /noforce
+        ```
     
       - 使用 Internet 信息服务 (IIS) 管理器：在 Internet 信息服务 (IIS) 管理器的“操作”窗格中，单击“重新启动”。
 
@@ -213,28 +217,28 @@ iisreset /noforce
       - 使用命令行键入以下命令，然后按 Enter 键。
         
         ```powershell
-appcmd set config "Default Web Site/OAB" /section:access /sslFlags:None /commit:APPHOST
-```
+        appcmd set config "Default Web Site/OAB" /section:access /sslFlags:None /commit:APPHOST
+        ```
 
   - **步骤 2**   您需要使用以下方法之一回收相应的应用程序池或重新启动 Internet 信息服务：
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
         ```powershell
-appcmd Recycle AppPool MSExchangeOABAppPool
-```
+        appcmd Recycle AppPool MSExchangeOABAppPool
+        ```
     
       - 使用 Windows PowerShell cmdlet 键入以下命令，然后按 Enter 键。
         
         ```powershell
-IIS:\>Restart-WebAppPool MSExchangeOABAppPool
-```
+        IIS:\>Restart-WebAppPool MSExchangeOABAppPool
+        ```
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
         ```powershell
-iisreset /noforce
-```
+        iisreset /noforce
+        ```
     
       - 使用 Internet 信息服务 (IIS) 管理器：在 Internet 信息服务 (IIS) 管理器的“操作”窗格中，单击“重新启动”。
 
@@ -250,27 +254,29 @@ iisreset /noforce
     
       - 使用命令行键入以下命令，然后按 Enter 键。
         
-            appcmd set config "Default Web Site/MSExchangeSyncAppPool" /section:access /sslFlags:None /commit:APPHOST
+        ```powershell
+        appcmd set config "Default Web Site/MSExchangeSyncAppPool" /section:access /sslFlags:None /commit:APPHOST
+        ```
 
   - **步骤 2**   您需要使用以下方法之一回收相应的应用程序池或重新启动 Internet 信息服务：
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
         ```powershell
-appcmd Recycle AppPool MSExchangeSyncAppPool
-```
+        appcmd Recycle AppPool MSExchangeSyncAppPool
+        ```
     
       - 使用 Windows PowerShell cmdlet 键入以下命令，然后按 Enter 键。
         
         ```powershell
-IIS:\>Restart-WebAppPool MSExchangeSyncAppPool
-```
+        IIS:\>Restart-WebAppPool MSExchangeSyncAppPool
+        ```
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
         ```powershell
-iisreset /noforce
-```
+        iisreset /noforce
+        ```
     
       - 使用 Internet 信息服务 (IIS) 管理器：在 Internet 信息服务 (IIS) 管理器的“操作”窗格中，单击“重新启动”。
 
@@ -287,28 +293,28 @@ iisreset /noforce
       - 使用命令行键入以下命令，然后按 Enter 键。
         
         ```powershell
-appcmd set config "Default Web Site/EWS" /section:access /sslFlags:None /commit:APPHOST
-```
+        appcmd set config "Default Web Site/EWS" /section:access /sslFlags:None /commit:APPHOST
+        ```
 
   - **步骤 2**   您需要使用以下方法之一回收相应的应用程序池或重新启动 Internet 信息服务：
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
         ```powershell
-appcmd Recycle AppPool MSExchangeServicesAppPool
-```
+        appcmd Recycle AppPool MSExchangeServicesAppPool
+        ```
     
       - 使用 Windows PowerShell cmdlet 键入以下命令，然后按 Enter 键。
         
         ```powershell
-IIS:\>Restart-WebAppPool MSExchangeServicesAppPool
-```
+        IIS:\>Restart-WebAppPool MSExchangeServicesAppPool
+        ```
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
         ```powershell
-iisreset /noforce
-```
+        iisreset /noforce
+        ```
     
       - 使用 Internet 信息服务 (IIS) 管理器：在 Internet 信息服务 (IIS) 管理器的“操作”窗格中，单击“重新启动”。
 
@@ -325,28 +331,28 @@ iisreset /noforce
       - 使用命令行键入以下命令，然后按 Enter 键。
         
         ```powershell
-appcmd set config "Default Web Site/autodiscover" /section:access /sslFlags:None /commit:APPHOST
-```
+        appcmd set config "Default Web Site/autodiscover" /section:access /sslFlags:None /commit:APPHOST
+        ```
 
   - **步骤 2**   您需要使用以下方法之一回收相应的应用程序池或重新启动 Internet 信息服务：
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
         ```powershell
-appcmd Recycle AppPool MSExchangeAutodiscoverAppPool
-```
+        appcmd Recycle AppPool MSExchangeAutodiscoverAppPool
+        ```
     
       - 使用 Windows PowerShell cmdlet 键入以下命令，然后按 Enter 键。
         
         ```powershell
-IIS:\>Restart-WebAppPool MSExchangeAutodiscoverAppPool
-```
+        IIS:\>Restart-WebAppPool MSExchangeAutodiscoverAppPool
+        ```
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
         ```powershell
-iisreset /noforce
-```
+        iisreset /noforce
+        ```
     
       - 使用 Internet 信息服务 (IIS) 管理器：在 Internet 信息服务 (IIS) 管理器的“操作”窗格中，单击“重新启动”。
 
@@ -373,28 +379,28 @@ iisreset /noforce
       - 使用命令行键入以下命令，然后按 Enter 键。
         
         ```powershell
-appcmd set config "Default Web Site/MAPI" /section:access /sslFlags:None /commit:APPHOST
-```
+        appcmd set config "Default Web Site/MAPI" /section:access /sslFlags:None /commit:APPHOST
+        ```
 
   - **步骤 2**   您需要使用以下方法之一回收相应的应用程序池或重新启动 Internet 信息服务：
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
         ```powershell
-appcmd Recycle AppPool MSExchangeMapiFrontEndAppPool
-```
+        appcmd Recycle AppPool MSExchangeMapiFrontEndAppPool
+        ```
     
       - 使用 Windows PowerShell cmdlet 键入以下命令，然后按 Enter 键。
         
         ```powershell
-IIS:\>Restart-WebAppPool MSExchangeMapiFrontEndAppPool
-```
+        IIS:\>Restart-WebAppPool MSExchangeMapiFrontEndAppPool
+        ```
     
       - 使用命令行：转到“开始”\>“运行”，键入“cmd”，然后按 Enter 键。在命令提示符窗口中，键入以下命令，然后按 Enter 键。
         
         ```powershell
-iisreset /noforce
-```
+        iisreset /noforce
+        ```
     
       - 使用 Internet 信息服务 (IIS) 管理器：在 Internet 信息服务 (IIS) 管理器的“操作”窗格中，单击“重新启动”。
 
@@ -410,6 +416,7 @@ iisreset /noforce
 
 **使用 Set-WebConfigurationProperty**
 
+```powershell
     Set-OutlookAnywhere -Identity MyServer\Rpc* -Externalhostname MyServer.mail.contoso.com -ExternalClientsRequireSsl $True -ExternalClientAuthenticationMethod Basic
     Set-OutlookAnywhere -Identity MyServer\Rpc* -SSLOffloading $true
     Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS:  -Location "Default Web Site/OWA"
@@ -419,8 +426,7 @@ iisreset /noforce
     Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/Microsoft-Server-ActiveSync"
     Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/OAB"
     Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/MAPI"
-```powershell
-iisreset /noforce
+    iisreset /noforce
 ```
 
 **使用 appcmd**
@@ -428,7 +434,7 @@ iisreset /noforce
 > [!NOTE]  
 > 对于 <strong>Set-OutlookAnywhere</strong> cmdlet 条目，将“MyServer”替换为客户端访问服务器的名称。
 
-
+```powershell
     Set-OutlookAnywhere -Identity MyServer\Rpc* -Externalhostname MyServer.mail.contoso.com -ExternalClientsRequireSsl $True -ExternalClientAuthenticationMethod Basic
     Set-OutlookAnywhere -Identity MyServer\Rpc* -SSLOffloading $true
     &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/owa" /section:access /sslFlags:None /commit:APPHOST
@@ -438,8 +444,7 @@ iisreset /noforce
     &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/Microsoft-Server-ActiveSync" /section:access /sslFlags:None /commit:APPHOST
     &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/OAB" /section:access /sslFlags:None /commit:APPHOST
     &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/MAPI" /section:access /sslFlags:None /commit:APPHOST
-```powershell
-iisreset /noforce
+    iisreset /noforce
 ```
 
 返回顶部
