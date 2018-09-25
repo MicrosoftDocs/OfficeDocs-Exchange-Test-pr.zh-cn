@@ -114,20 +114,26 @@ CSV 文件的第一行（或*标题行*）列出了参数的名称。每个参�
 
 以下示例说明如何填充包含可选的 *ExceptionList* 和 *OutboundOnly* 参数的 CSV 文件：
 
+```powershell
     Name,InternalAddress,ExternalAddress,ExceptionList,OutboundOnly
     "Wingtip UK",*.wingtiptoys.co.uk,tailspintoys.com,"legal.wingtiptoys.co.uk,finance.wingtiptoys.co.uk,support.wingtiptoys.co.uk",True
     "Wingtip USA",*.wingtiptoys.com,tailspintoys.com,"legal.wingtiptoys.com,finance.wingtiptoys.com,support.wingtiptoys.com,corp.wingtiptoys.com",True
     "Wingtip Canada",*.wingtiptoys.ca,tailspintoys.com,"legal.wingtiptoys.ca,finance.wingtiptoys.ca,support.wingtiptoys.ca",True
+```
 
 ## 步骤 2：导入 CSV 文件
 
 若要导入 CSV 文件，请使用以下语法：
 
+```powershell
     Import-Csv <FileNameAndPath> | ForEach {New-AddressRewriteEntry -Name $_.Name -InternalAddress $_.InternalAddress -ExternalAddress $_.ExternalAddress -OutboundOnly ([Bool]::Parse($_.OutboundOnly)) -ExceptionList $_.ExceptionList}
+```
 
 此示例导入 C:\\My Documents\\ImportAddressRewriteEntries.csv 中的地址重写条目。
 
+```powershell
     Import-Csv "C:\My Documents\ImportAddressRewriteEntries.csv" | ForEach {New-AddressRewriteEntry -Name $_.Name -InternalAddress $_.InternalAddress -ExternalAddress $_.ExternalAddress -OutboundOnly ([Bool]::Parse($_.OutboundOnly)) -ExceptionList $_.ExceptionList}
+```
 
 ## 您如何知道此步骤有效？
 

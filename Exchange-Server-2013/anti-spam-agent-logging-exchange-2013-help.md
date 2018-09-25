@@ -270,7 +270,9 @@ Cd $env:ExchangeInstallPath\Scripts
 
 若要运行脚本文件夹中的脚本，请使用以下语法：
 
-    .\Get-AntiSpamFilteringReport.ps1 -report <ReportValue> [<OptionalParameters>]
+```powershell
+.\Get-AntiSpamFilteringReport.ps1 -report <ReportValue> [<OptionalParameters>]
+```
 
 有关使用脚本的详细信息，请运行以下命令：
 

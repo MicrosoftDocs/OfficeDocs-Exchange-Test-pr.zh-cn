@@ -53,11 +53,11 @@ Set-ThrottlingPolicyAssociation -Identity tonysmith -ThrottlingPolicy ITStaffPol
 
 不需要使用 **Set-ThrottlingPolicyAssociation** cmdlet 将规则与策略关联。以下命令展示了将 tonysmith 与限制策略 ITStaffPolicy 关联的另一种方式。
 
-```
+```powershell
 $b = Get-ThrottlingPolicy ITStaffPolicy
 ```
 
-```
+```powershell
 Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
 ```
 
@@ -70,24 +70,24 @@ Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
 1.  运行以下命令。
     
     ```powershell
-Get-ThrottlingPolicy | Format-List
-```
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 2.  验证在显示 GlobalThrottlingPolicy 对象的列中是否列出了刚创建的常规限制策略。
 
 3.  运行以下命令。
     
     ```powershell
-Get-ThrottlingPolicy | Format-List
-```
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 4.  验证新常规策略的属性是否与配置的值匹配。
 
 5.  运行以下命令。
     
     ```powershell
-Get-ThrottlingPolicyAssociation
-```
+    Get-ThrottlingPolicyAssociation
+    ```
 
 6.  验证新的常规策略是否接受该规则分配的用户关联。
 

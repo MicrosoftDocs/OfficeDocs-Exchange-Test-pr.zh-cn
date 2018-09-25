@@ -62,8 +62,8 @@ Set-ContentFilterConfig -Enabled $true
 1.  运行以下命令：
     
     ```powershell
-Get-ContentFilterConfig | Format-List Enabled
-```
+    Get-ContentFilterConfig | Format-List Enabled
+    ```
 
 2.  验证显示的 *Enabled* 属性的值。
 
@@ -90,8 +90,8 @@ Set-ContentFilterConfig -ExternalMailEnabled $true
 1.  运行以下命令：
     
     ```powershell
-Get-ContentFilterConfig | Format-List ExternalMailEnabled
-```
+    Get-ContentFilterConfig | Format-List ExternalMailEnabled
+    ```
 
 2.  验证显示的 *ExternalMailEnabled* 属性的值。
 
@@ -118,8 +118,8 @@ Set-ContentFilterConfig -InternalMailEnabled $false
 1.  运行以下命令：
     
     ```powershell
-Get-ContentFilterConfig | Format-List InternalMailEnabled
-```
+    Get-ContentFilterConfig | Format-List InternalMailEnabled
+    ```
 
 2.  验证显示的 *InternalMailEnabled* 属性的值。
 
@@ -127,7 +127,9 @@ Get-ContentFilterConfig | Format-List InternalMailEnabled
 
 要替换现有值，请运行以下命令：
 
-    Set-ContentFilterConfig -BypassedRecipients <recipient1,recipient2...> -BypassedSenders <sender1,sender2...> -BypassedSenderDomains <domain1,domain2...>
+```powershell
+Set-ContentFilterConfig -BypassedRecipients <recipient1,recipient2...> -BypassedSenders <sender1,sender2...> -BypassedSenderDomains <domain1,domain2...>
+```
 
 本示例在内容筛选中配置以下例外：
 
@@ -139,11 +141,15 @@ Get-ContentFilterConfig | Format-List InternalMailEnabled
 
 <!-- end list -->
 
-    Set-ContentFilterConfig -BypassedRecipients laura@contoso.com,julia@contoso.com -BypassedSenders steve@fabrikam.com,cindy@fabrikam.com -BypassedSenderDomains *.nwtraders.com
+```powershell
+Set-ContentFilterConfig -BypassedRecipients laura@contoso.com,julia@contoso.com -BypassedSenders steve@fabrikam.com,cindy@fabrikam.com -BypassedSenderDomains *.nwtraders.com
+```
 
 要在不修改任何现有值的情况下添加或删除条目，请运行以下命令：
 
-    Set-ContentFilterConfig -BypassedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -BypassedSenders @{Add="<sender1>","<sender2>"...; Remove="<sender1>","<sender2>"...} -BypassedSenderDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```powershell
+Set-ContentFilterConfig -BypassedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -BypassedSenders @{Add="<sender1>","<sender2>"...; Remove="<sender1>","<sender2>"...} -BypassedSenderDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```
 
 本示例在内容筛选中配置以下例外：
 
@@ -157,7 +163,9 @@ Get-ContentFilterConfig | Format-List InternalMailEnabled
 
 <!-- end list -->
 
-    Set-ContentFilterConfig -BypassedRecipients @{Add="tiffany@contoso.com","chris@contoso.com"} -BypassedSenders @{Add="joe@fabrikam.com","michelle@fabrikam.com"} -BypassedSenderDomains @{Add="blueyonderairlines.com"; Remove="*.woodgrovebank.com"}
+```powershell
+Set-ContentFilterConfig -BypassedRecipients @{Add="tiffany@contoso.com","chris@contoso.com"} -BypassedSenders @{Add="joe@fabrikam.com","michelle@fabrikam.com"} -BypassedSenderDomains @{Add="blueyonderairlines.com"; Remove="*.woodgrovebank.com"}
+```
 
 ## 您如何知道这有效？
 
@@ -165,7 +173,9 @@ Get-ContentFilterConfig | Format-List InternalMailEnabled
 
 1.  运行以下命令：
     
+    ```powershell
         Get-ContentFilterConfig | Format-List Bypassed*
+    ```
 
 2.  验证显示的值是否与指定的设置匹配。
 
@@ -173,7 +183,9 @@ Get-ContentFilterConfig | Format-List InternalMailEnabled
 
 若要添加允许和阻止的词语和短语，请运行以下命令：
 
-    Add-ContentFilterPhrase -Influence GoodWord -Phrase <Phrase> -Influence BadWord -Phrase <Phrase>
+```powershell
+Add-ContentFilterPhrase -Influence GoodWord -Phrase <Phrase> -Influence BadWord -Phrase <Phrase>
+```
 
 本示例允许所有包含短语\&quot;customer feedback\&quot;的邮件。
 
@@ -206,8 +218,8 @@ Remove-ContentFilterPhrase -Phrase "stock tip"
 1.  运行以下命令：
     
     ```powershell
-Get-ContentFilterPhrase | Format-List Influence,Phrase
-```
+    Get-ContentFilterPhrase | Format-List Influence,Phrase
+    ```
 
 2.  验证显示的值是否与指定的设置匹配。
 
@@ -215,7 +227,9 @@ Get-ContentFilterPhrase | Format-List Influence,Phrase
 
 若要配置垃圾邮件可信度 (SCL) 阈值和操作，请运行以下命令：
 
-    Set-ContentFilterConfig -SCLDeleteEnabled <$true | $false> -SCLDeleteThreshold <Value> -SCLRejectEnabled <$true | $false> -SCLRejectThreshold <Value> -SCLQuarantineEnabled <$true | $false> -SCLQuarantineThreshold <Value>
+```powershell
+Set-ContentFilterConfig -SCLDeleteEnabled <$true | $false> -SCLDeleteThreshold <Value> -SCLRejectEnabled <$true | $false> -SCLRejectThreshold <Value> -SCLQuarantineEnabled <$true | $false> -SCLQuarantineThreshold <Value>
+```
 
 > [!NOTE]  
 > 删除操作优先于拒绝操作，拒绝操作优先于隔离操作。因此，删除操作的 SCL 阈值应大于拒绝操作的 SCL 阈值，拒绝操作的 SCL 阈值又应大于隔离操作的 SCL 阈值。默认情况下仅启用拒绝操作，其 SCL 阈值为 7。
@@ -231,7 +245,9 @@ Get-ContentFilterPhrase | Format-List Influence,Phrase
 
 <!-- end list -->
 
-    Set-ContentFilterConfig -SCLDeleteEnabled $true -SCLDeleteThreshold 9 -SCLRejectEnabled $true -SCLRejectThreshold 8 -SCLQuarantineEnabled $true -SCLQuarantineThreshold 7
+```powershell
+Set-ContentFilterConfig -SCLDeleteEnabled $true -SCLDeleteThreshold 9 -SCLRejectEnabled $true -SCLRejectThreshold 8 -SCLQuarantineEnabled $true -SCLQuarantineThreshold 7
+```
 
 ## 您如何知道这有效？
 
@@ -239,7 +255,9 @@ Get-ContentFilterPhrase | Format-List Influence,Phrase
 
 1.  运行以下命令：
     
+    ```powershell
         Get-ContentFilterConfig | Format-List SCL*
+    ```
 
 2.  验证显示的值是否与指定的设置匹配。
 
@@ -255,7 +273,9 @@ Set-ContentFilterConfig -RejectionResponse "<Custom Text>"
 
 本示例配置内容筛选器代理以发送自定义拒绝响应。
 
-    Set-ContentFilterConfig -RejectionResponse "Your message was rejected because it appears to be SPAM."
+```powershell
+Set-ContentFilterConfig -RejectionResponse "Your message was rejected because it appears to be SPAM."
+```
 
 ## 您如何知道这有效？
 
@@ -263,7 +283,9 @@ Set-ContentFilterConfig -RejectionResponse "<Custom Text>"
 
 1.  运行以下命令：
     
+    ```powershell
         Get-ContentFilterConfig | Format-List *Reject*
+    ```
 
 2.  验证显示的值是否与指定的设置匹配。
 
@@ -290,8 +312,8 @@ Set-ContentFilterConfig -OutlookEmailPostmarkValidationEnabled $true
 1.  运行以下命令：
     
     ```powershell
-Get-ContentFilterConfig | Format-List OutlookEmailPostmarkValidationEnabled
-```
+    Get-ContentFilterConfig | Format-List OutlookEmailPostmarkValidationEnabled
+    ```
 
 2.  验证显示的值是否与指定的设置匹配。
 

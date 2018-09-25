@@ -60,13 +60,13 @@ _**上一次修改主题：** 2012-11-28_
 本示例为经过身份验证的空闲连接设置连接超时限制。
 
 ```powershell
-Set -ImapSettings -Identity CAS01 -AuthenticatedConnectionTimeout TimeValue
+  Set -ImapSettings -Identity CAS01 -AuthenticatedConnectionTimeout TimeValue
 ```
 
 本示例为未经身份验证的空闲连接设置连接超时限制。
 
 ```powershell
-Set -ImapSettings -Identity CAS01 -PreAuthenticatedConnectionTimeout TimeValue
+  Set -ImapSettings -Identity CAS01 -PreAuthenticatedConnectionTimeout TimeValue
 ```
 
 您已设置连接超时限制对 IMAP4 后，必须重新启动 IMAP4 服务的设置才会生效。有关如何重新启动 IMAP4 服务的信息，请参阅[启动和停止 IMAP4 服务](start-and-stop-the-imap4-services-exchange-2013-help.md)。
@@ -92,8 +92,8 @@ Set -ImapSettings -Identity CAS01 -PreAuthenticatedConnectionTimeout TimeValue
 1.  在命令行管理程序中运行以下命令。
     
     ```powershell
-Get-ImapSettings | format-list
-```
+    Get-ImapSettings | format-list
+    ```
 
 2.  验证连接设置是否正确。
 

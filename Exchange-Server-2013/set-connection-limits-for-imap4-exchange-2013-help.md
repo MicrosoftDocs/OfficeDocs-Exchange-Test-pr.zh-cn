@@ -110,8 +110,8 @@ Set-ImapSettings -MaxCommandSize Value
 1.  在命令行管理程序中运行以下命令。
     
     ```powershell
-Get-ImapSettings | format-list
-```
+    Get-ImapSettings | format-list
+    ```
 
 2.  验证连接设置正确无误。
 

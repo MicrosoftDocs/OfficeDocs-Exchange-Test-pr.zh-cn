@@ -81,7 +81,9 @@ Get-ManagementRole | Format-Table <property 1>, <property 2...>
 
 此示例返回组织中所有角色的列表，并包括 **Name** 属性和属性名以单词 **Implicit** 开头的任何属性。
 
-    Get-ManagementRole | Format-Table Name, Implicit*
+```powershell
+Get-ManagementRole | Format-Table Name, Implicit*
+```
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementRole](https://technet.microsoft.com/zh-cn/library/dd351125\(v=exchg.150\))。
 
@@ -111,7 +113,9 @@ Get-ManagementRole -Cmdlet New-Mailbox
 
 要返回包含指定参数的角色列表，请使用以下语法。
 
-    Get-ManagementRole [-Cmdlet <cmdlet>] -CmdletParameters <parameter 1>, <parameter 2...>
+```powershell
+Get-ManagementRole [-Cmdlet <cmdlet>] -CmdletParameters <parameter 1>, <parameter 2...>
+```
 
 此示例返回包含 *Database* 和 *Server* 参数的角色列表，与这些参数所在的 cmdlet 无关。
 

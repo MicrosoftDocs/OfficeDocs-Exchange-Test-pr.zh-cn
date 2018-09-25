@@ -46,7 +46,9 @@ _**上一次修改主题：** 2013-05-20_
 
 此示例关闭了对服务器 CAS01 上的 EAC 的访问。
 
-    Set-ECPVirtualDirectory -Identity "CAS01\ecp (default web site)" -AdminEnabled $false
+```PowerShell
+Set-ECPVirtualDirectory -Identity "CAS01\ecp (default web site)" -AdminEnabled $false
+```
 
 有关语法和参数的详细信息，请参阅 [Set-EcpVirtualDirectory](https://technet.microsoft.com/zh-cn/library/dd297991\(v=exchg.150\))。
 

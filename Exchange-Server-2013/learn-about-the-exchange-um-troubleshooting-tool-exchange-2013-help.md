@@ -199,7 +199,9 @@ Test-ExchangeUMCallFlow -Mode Gateway -VoIPSecurity Unsecured -NextHop 10.1.1.1 
 
 设置 SIPClient 模式时，可在包括 Office Communications Server 2007 R2 或 Microsoft Lync Server 的内部部署或跨界部署中使用 UM 故障排除工具。以下示例使用 SIPClient 模式并在包含 Office Communications Server 2007 R2 或 Lync Server 服务器的环境中采用安全 UM 拨号计划测试呼叫流。默认情况下，在运行 UM 故障排除工具时，该工具使用当前登录到计算机的用户的凭据。运行以下示例时，系统将提示您要在运行 UM 故障排除工具时使用的凭据。有关详细信息，请参阅[设置要用于 Exchange UM 疑难解答工具的凭据](set-the-credentials-to-use-with-the-exchange-um-troubleshooting-tool-exchange-2013-help.md)。
 
-    Test-ExchangeUMCallFlow -Mode SIPClient -VoIPSecurity Secured -CallingParty tony@contoso.com -CalledParty david@contoso.com -Credential $get
+```powershell
+Test-ExchangeUMCallFlow -Mode SIPClient -VoIPSecurity Secured -CallingParty tony@contoso.com -CalledParty david@contoso.com -Credential $get
+```
 
 ## 安装 UM 故障排除工具
 

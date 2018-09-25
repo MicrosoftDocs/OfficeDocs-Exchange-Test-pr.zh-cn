@@ -62,8 +62,8 @@ Set-SenderIDConfig -Enabled $true
 1.  运行以下命令：
     
     ```powershell
-Get-SenderIDConfig | Format-List Enabled
-```
+    Get-SenderIDConfig | Format-List Enabled
+    ```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -88,8 +88,8 @@ Set-SenderIDConfig -SpoofedDomainAction Reject
 1.  运行以下命令：
     
     ```powershell
-Get-SenderIDConfig | Format-List SpoofedDomainAction
-```
+    Get-SenderIDConfig | Format-List SpoofedDomainAction
+    ```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -98,13 +98,13 @@ Get-SenderIDConfig | Format-List SpoofedDomainAction
 要对暂时性错误配置发件人 ID 操作，请运行以下命令：
 
 ```powershell
-Set-SenderIDConfig -TempErrorAction <StampStatus | Reject | Delete>
+    Set-SenderIDConfig -TempErrorAction <StampStatus | Reject | Delete>
 ```
 
 此示例将发件人 ID 代理配置为标记由于临时 DNS 服务器错误而无法确定发件人 ID 状态时的邮件。该邮件将由其他反垃圾邮件代理进行处理，并且内容筛选器代理会在确定邮件的 SCL 值时使用此标记。
 
 ```powershell
-Set-SenderIDConfig -TempErrorAction StampStatus
+    Set-SenderIDConfig -TempErrorAction StampStatus
 ```
 
 请注意，`StampStatus` 是 *TempErrorAction* 参数的默认值。
@@ -116,8 +116,8 @@ Set-SenderIDConfig -TempErrorAction StampStatus
 1.  运行以下命令：
     
     ```powershell
-Get-SenderIDConfig | Format-List TempErrorAction
-```
+    Get-SenderIDConfig | Format-List TempErrorAction
+    ```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -125,15 +125,21 @@ Get-SenderIDConfig | Format-List TempErrorAction
 
 要替换现有值，请运行以下命令：
 
+```powershell    
     Set-SenderIDConfig -BypassedRecipients <recipient1,recipient2...> -BypassedSenderDomains <domain1,domain2...>
+```
 
 此示例将发件人 ID 代理配置为绕过对发送到 kim@contoso.com 和 john@contoso.com 的邮件的发件人 ID 检查并绕过对从 fabrikam.com 域发送的邮件的发件人 ID 检查。
 
+```powershell
     Set-SenderIDConfig -BypassedRecipients kim@contoso.com,john@contoso.com -BypassedSenderDomains fabrikam.com
+```
 
 要在不修改任何现有值的情况下添加或删除条目，请运行以下命令：
 
+```powershell
     Set-SenderIDConfig -BypassedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -BypassedSenderDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```
 
 此示例使用以下信息配置发件人 ID 代理：
 
@@ -143,7 +149,9 @@ Get-SenderIDConfig | Format-List TempErrorAction
 
 <!-- end list -->
 
+```powershell
     Set-SenderIDConfig -BypassedRecipients @{Add="chris@contoso.com","michelle@contoso.com"} -BypassedSenderDomains @{Remove="tailspintoys.com"}
+```
 
 ## 您如何知道这有效？
 
@@ -152,8 +160,9 @@ Get-SenderIDConfig | Format-List TempErrorAction
 1.  运行以下命令：
     
     ```powershell
-Get-SenderIDConfig | Format-List BypassedRecipients,BypassedSenderDomains
-```
+    Get-SenderIDConfig | Format-List BypassedRecipients,BypassedSenderDomains
+    ```
 
 2.  验证显示的值是否为您配置的值。
+
 

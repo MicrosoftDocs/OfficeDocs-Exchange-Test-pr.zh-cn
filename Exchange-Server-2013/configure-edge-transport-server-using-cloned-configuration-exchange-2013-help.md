@@ -56,14 +56,14 @@ _**上一次修改主题：** 2015-04-13_
 2.  要将源服务器配置数据导出到源服务器上的一个文件中，请使用以下语法。
     
     ```powershell
-./ExportEdgeConfig.ps1 -CloneConfigData:"<configuration file>"
-```
+    ./ExportEdgeConfig.ps1 -CloneConfigData:"<configuration file>"
+    ```
     
     例如，要将源服务器配置数据导出到文件 C:\\CloneConfigData.xml 中，请运行以下命令。
     
     ```powershell
-./ExportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml"
-```
+    ./ExportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml"
+    ```
 
 ## 您如何知道此步骤有效？
 
@@ -77,11 +77,15 @@ _**上一次修改主题：** 2015-04-13_
 
 3.  要验证配置文件并使用结果在目标服务器上创建应答文件，请使用以下语法。
     
+    ```powershell
         ./ImportEdgeConfig.ps1 -CloneConfigData:"<configuration file>" -IsImport $false -CloneConfigAnswer:"<answer file>"
-    
+    ```
+
     例如，要验证配置文件 C:\\CloneConfigData.xml 并创建应答文件 C:\\CloneConfigAnswer.xml，请运行以下命令。
     
+    ```powershell
         ./ImportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml" -IsImport $false -CloneConfigAnswer:"C:\CloneConfigAnswer.xml"
+    ```
 
 4.  打开应答文件并修改对目标服务器无效的所有设置。如果不需要修改，则应答文件将不会包含任何条目。保存所做的更改。
 
@@ -93,11 +97,15 @@ _**上一次修改主题：** 2015-04-13_
 
 要在目标服务器上导入配置文件，请使用以下语法。
 
+```powershell
     ./ImportEdgeConfig.ps1 -CloneConfigData:"<Configuration file>" -IsImport $true -CloneConfigAnswer:"<answer file>"
+```
 
 例如，要使用应答文件 C:\\CloneConfigAnswer.xml 导入配置文件 C:\\CloneConfigData.xml，请运行以下命令。
 
+```powershell
     ./ImportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml" -IsImport $true -CloneConfigAnswer:"C:\CloneConfigAnswer.xml"
+```
 
 ## 您如何知道此步骤有效？
 

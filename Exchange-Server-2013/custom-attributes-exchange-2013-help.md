@@ -77,7 +77,9 @@ Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
 
 现在可以为具有 *CustomAttribute1* 属性（等于 SalesOU）的所有收件人创建电子邮件地址策略，如此例所示。
 
+```powershell
     New-EmailAddressPolicy -Name "Sales" -RecipientFilter { CustomAttribute1 -eq "SalesOU"} -EnabledEmailAddressTemplates "SMTP:%s%2g@sales.contoso.com"
+```
 
 ## 使用 ConditionalCustomAttributes 参数的自定义属性示例
 
@@ -85,7 +87,9 @@ Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
 
 此示例根据其 *CustomAttribute1* 设置为 SalesOU 的收件人创建动态通讯组。
 
+```powershell
     New-DynamicDistributionGroup -Name "Sales Users and Contacts" -IncludedRecipients "MailboxUsers,MailContacts" -ConditionalCustomAttribute1 "SalesOU"
+```
 
 > [!NOTE]  
 > 如果使用 <em>Conditional</em> 参数，则必须使用 <em>IncludedRecipients</em> 参数。此外，如果使用 <em>RecipientFilter</em> 参数，则不能使用 <em>Conditional</em> 参数。如果希望包括其他筛选器以创建动态通讯组、电子邮件地址策略或地址列表，则应使用 <em>RecipientFilter</em> 参数。
@@ -101,7 +105,9 @@ Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 MATH307,ECON202,ENGL300
 
 接下来，通过使用 *RecipientFilter* 参数创建登记了 MATH307 的所有学生的动态通讯组，其中 *ExtensionCustomAttribute1* 等于 MATH307。使用 *ExtentionCustomAttributes* 参数时，可以使用 `-eq` 运算符代替 `-like` 运算符。
 
+```powershell
     New-DynamicDistributionGroup -Name Students_MATH307 -RecipientFilter {ExtensionCustomAttribute1 -eq "MATH307"}
+```
 
 在此示例中，Kweku 的 *ExtensionCustomAttribute1* 值进行更新以反映他添加了课程 ENGL210 并删除了课程 ECON202。
 

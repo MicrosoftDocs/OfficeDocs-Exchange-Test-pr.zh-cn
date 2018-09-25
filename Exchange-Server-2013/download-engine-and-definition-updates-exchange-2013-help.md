@@ -39,15 +39,21 @@ Microsoft Exchange Server 2013 管理员可以手动下载反恶意软件引擎�
 
 要下载引擎和定义更新，请运行下列命令：
 
-    & $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity <FQDN of server>
+```powershell
+& $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity <FQDN of server>
+```
 
 本示例将引擎和定义更新手动下载到名为 mailbox01.contoso.com 的服务器上：
 
-    & $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity mailbox01.contoso.com
+```powershell
+& $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity mailbox01.contoso.com
+```
 
 您还可以指定 –EngineUpdatePath 参数，该参数允许您从除默认路径 http://forefrontdl.microsoft.com/server/scanengineupdate 以外的其他位置下载更新。这可以是一个 HTTP 地址或一个 UNC 路径。如果是后者，则网络服务必须具有访问该路径的权限。该示例将引擎和定义更新从本地目录手动下载到名为 mailbox01.contoso.com 的服务器上：
 
-    & $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity mailbox01.contoso.com -EngineUpdatePath \\Server\sharename
+```powershell
+& $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity mailbox01.contoso.com -EngineUpdatePath \\Server\sharename
+```
 
 ## 您如何知道这有效？
 

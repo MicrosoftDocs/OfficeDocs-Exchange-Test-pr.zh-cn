@@ -66,11 +66,12 @@ _**上一次修改主题：** 2016-12-09_
     
     输出的命令将与以下内容类似：
     
+    ```powershell
         fabrikam.com mx preference=10, mail exchanger = mail1.fabrikam.com
         fabrikam.com mx preference=20, mail exchanger = mail2.fabrikam.com
         mail1.fabrikam.com internet address = 192.168.1.10
         mail2 fabrikam.com internet address = 192.168.1.20
-    
+    ```
     可以将与 MX 记录关联的任何主机名或 IP 地址用作目标 SMTP 服务器。较低的首选项值表示首选 SMTP 服务器。可以使用多个 MX 记录和不同的首选项值，以实现负载平衡和容错。
 
 5.  准备结束 Nslookup 会话时，请键入 **exit** 并按 Enter 键。
@@ -120,8 +121,8 @@ _**上一次修改主题：** 2016-12-09_
 8.  键入 **DATA**，然后按 Enter。响应如下：
     
     ```powershell
-354 Start mail input; end with <CLRF>.<CLRF>
-```
+    354 Start mail input; end with <CLRF>.<CLRF>
+    ```
 
 9.  键入 **主题：来自 Contoso 的测试**，然后按 Enter。
 
@@ -132,14 +133,14 @@ _**上一次修改主题：** 2016-12-09_
 12. 按 Enter，键入句点 (**.**)，然后按 Enter。响应如下：
     
     ```powershell
-250 2.6.0 <GUID> Queued mail for delivery
-```
+    250 2.6.0 <GUID> Queued mail for delivery
+    ```
 
 13. 若要与目标 SMTP 服务器断开连接，请键入 **QUIT**，然后按 Enter。响应如下：
     
     ```powershell
-221 2.0.0 Service closing transmission channel
-```
+    221 2.0.0 Service closing transmission channel
+    ```
 
 14. 若要关闭 Telnet 会话，请键入 **quit** 并按 Enter 键。
 

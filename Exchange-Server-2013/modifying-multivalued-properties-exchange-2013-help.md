@@ -77,11 +77,23 @@ BlockedRecipients : {chris@contoso.com}
 <tbody>
 <tr class="odd">
 <td><p>向多值属性添加一个或多个值</p></td>
-<td><pre><code>@{Add=&quot;&lt;value1&gt;&quot;, &quot;&lt;value2&gt;&quot;, &quot;&lt;value3&gt;&quot;}</code></pre></td>
+<td>
+
+```powershell
+    @{Add=&quot;&lt;value1&gt;&quot;, &quot;&lt;value2&gt;&quot;, &quot;&lt;value3&gt;&quot;}
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>从多值属性中删除一个或多个值</p></td>
-<td><pre><code>@{Remove=&quot;&lt;value1&gt;&quot;, &quot;&lt;value2&gt;&quot;, &quot;&lt;value3&gt;&quot;}</code></pre></td>
+<td>
+
+```powershell
+    @{Remove=&quot;&lt;value1&gt;&quot;, &quot;&lt;value2&gt;&quot;, &quot;&lt;value3&gt;&quot;}
+```
+
+</td>
 </tr>
 </tbody>
 </table>
@@ -107,9 +119,12 @@ Set-RecipientFilterConfig -BlockedRecipients @{Remove="david@adatum.com"}
 
 可以使用更复杂的组织，例如同时在属性中添加或删除多个值。为此，需要在 `Add` 和 `Remove` 操作之间插入一个分号 (`;`)。例如：
 
+```powershell
     Set-RecipientFilterConfig -BlockedRecipients @{Add="carter@contoso.com", "sam@northwindtraders.com", "brian@adatum.com"; Remove="john@contoso.com"}
+```
 
 如果再次使用 `Get-RecipientFilterConfig | Format-List BlockedRecipients` 命令，则可看到添加了 Carter、Sam 和 Brian 的电子邮件地址，同时删除了 John 的地址。
 
+```powershell
     BlockedRecipients : {brian@adatum.com, sam@northwindtraders.com, carter@contoso.com, chris@contoso.com, kim@northwindtraders.com}
-
+```

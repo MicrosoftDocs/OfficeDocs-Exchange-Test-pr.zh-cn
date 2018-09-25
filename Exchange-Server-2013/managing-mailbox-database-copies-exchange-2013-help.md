@@ -615,18 +615,20 @@ Exchange 2013 Service Pack 1 (SP1) 引入了一种称为“松散截断”的功
 此示例演示某个 DAG 的当前数据库分布，包括首选项计数列表。
 
 ```powershell
-RedistributeActiveDatabases.ps1 -DagName DAG1 -ShowDatabaseDistributionByServer | Format-Table
+  RedistributeActiveDatabases.ps1 -DagName DAG1 -ShowDatabaseDistributionByServer | Format-Table
 ```
 
 此示例使用不提示进行输入的激活首选项在 DAG 中重新分布和平衡主动邮箱数据库副本。
 
 ```powershell
-RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -Confirm:$False
+  RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -Confirm:$False
 ```
 
 此示例使用激活首选项在 DAG 中重新分布和平衡活动邮箱数据库副本，并生成分布摘要。
 
+  ```powershell
     RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -ShowFinalDatabaseDistribution
+  ```
 
 ## 监视数据库副本
 

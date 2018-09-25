@@ -55,12 +55,16 @@ Microsoft Exchange 2013支持邮箱移动和迁移使用的**New-MoveRequest**�
 
 1.  运行以下命令以获取本地林和远程林凭据。
     
+    ```powershell
         $LocalCredentials = Get-Credential
         $RemoteCredentials = Get-Credential
+    ```
 
 2.  运行以下命令将凭据信息传递给 Prepare-MoveRequest.ps1 脚本中的 *LocalForestCredential* 和 *RemoteForestCredential* 参数。
     
+    ```powershell
         Prepare-MoveRequest.ps1 -Identity JohnSmith@Fabrikan.com -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $RemoteCredentials -LocalForestDomainController DC001.Contoso.com -LocalForestCredential $LocalCredentials
+    ```
 
 ## 脚本的参数集
 
@@ -169,12 +173,16 @@ Microsoft Exchange 2013支持邮箱移动和迁移使用的**New-MoveRequest**�
 
 1.  运行以下命令以获取本地林和远程林凭据。
     
+    ```powershell
         $LocalCredentials = Get-Credential
         $RemoteCredentials = Get-Credential
+    ```
 
 2.  运行以下命令将凭据信息传递给 Prepare-MoveRequest.ps1 脚本中的 *LocalForestCredential* 和 *RemoteForestCredential* 参数。
     
+    ```powershell
         Prepare-MoveRequest.ps1 -Identity JamesAlvord@Contoso.com -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $RemoteCredentials -LocalForestDomainController DC001.Contoso.com -LocalForestCredential $LocalCredentials -LinkedMailUser 
+    ```   
 
 ## 示例：管道传输
 
@@ -183,12 +191,14 @@ Microsoft Exchange 2013支持邮箱移动和迁移使用的**New-MoveRequest**�
 1.  运行以下命令。
     
     ```powershell
-$UserCredentials = Get-Credential
-```
+        $UserCredentials = Get-Credential
+    ```
 
 2.  运行以下命令将凭据信息传递给 Prepare-MoveRequest.ps1 脚本中的 *RemoteForestCredential* 参数。
     
+    ```powershell
         "IanP@Contoso.com", "JoeAn@Contoso.com" | Prepare-MoveRequest.ps1 -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $UserCredentials
+    ```
 
 ## 示例：使用 .csv 文件批量创建启用邮件的用户
 
@@ -209,12 +219,14 @@ Cindy@contoso.com
 1.  运行以下命令以获取远程林凭据。
     
     ```powershell
-$UserCredentials = Get-Credential
-```
+        $UserCredentials = Get-Credential
+    ```
 
 2.  运行以下命令将凭据信息传递给 Prepare-MoveRequest.ps1 脚本中的 *RemoteForestCredential* 参数。
     
+    ```powershell
         Import-Csv Test.csv | Prepare-MoveRequest.ps1 -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $UserCredentials
+    ```
 
 ## 每个目标对象的脚本行为
 

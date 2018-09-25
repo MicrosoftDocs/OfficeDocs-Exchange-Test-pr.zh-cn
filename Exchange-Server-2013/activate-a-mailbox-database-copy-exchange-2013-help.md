@@ -98,8 +98,8 @@ Move-ActiveMailboxDatabase DB5 MBX6 -SkipClientExperienceChecks
   - 在命令行管理程序中，运行以下命令来显示数据库备份的状态信息。
     
     ```powershell
-Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
-```
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```
 
 ## 详细信息
 

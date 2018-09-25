@@ -48,13 +48,13 @@ _**上一次修改主题：** 2012-10-08_
 若要更改已分配到邮箱的分配策略，请使用以下语法。
 
 ```powershell
-Set-Mailbox <mailbox alias or name> -RoleAssignmentPolicy <assignment policy>
+    Set-Mailbox <mailbox alias or name> -RoleAssignmentPolicy <assignment policy>
 ```
 
 此示例将邮箱 Brian 上的分配策略设置为“统一消息用户”。
 
 ```powershell
-Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
+    Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
 ```
 
 ## 使用命令行管理程序可在分配了特定分配策略的一组邮箱上更改分配策略
@@ -73,15 +73,21 @@ Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
 
 如果要为分配了特定策略的一组邮箱更改分配策略，则使用以下语法。
 
+```powershell
     Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<assignment policy to find>" } | Set-Mailbox -RoleAssignmentPolicy <assignment policy to set>
+```
 
 此示例将查找所有已分配了“Redmond 用户 - 无语音邮件”分配策略的邮箱，并更改对“Redmond 用户 - 已启用语音邮件”的分配策略。
 
+```powershell
     Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail" } | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled"
+```
 
 此示例包括 *WhatIf* 参数，以便可以查看所有在不提交任何更改的情况下进行更改的邮箱。
 
+```powershell
     Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail" } | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled" -WhatIf
+```
 
 有关语法和参数的详细信息，请参阅 [Get-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123685\(v=exchg.150\)) 和 [Set-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123981\(v=exchg.150\))。
 

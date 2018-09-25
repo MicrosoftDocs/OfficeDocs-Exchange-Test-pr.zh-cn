@@ -75,7 +75,9 @@ Get-Mailbox -Filter {Department -eq "Marketing"} | Set-Mailbox -SharingPolicy "C
 
 本示例返回所有应用了 Contoso 共享策略的邮箱，并将用户分类放置到仅显示其别名和电子邮件地址的表中。
 
-    Get-Mailbox -ResultSize unlimited | Where {$_.SharingPolicy -eq "Contoso" } | format-table Alias, EmailAddresses
+```powershell
+Get-Mailbox -ResultSize unlimited | Where {$_.SharingPolicy -eq "Contoso" } | format-table Alias, EmailAddresses
+```
 
 有关语法和参数的详细信息，请参阅 [Set-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123981\(v=exchg.150\)) 和 [Get-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123685\(v=exchg.150\))。
 
@@ -88,8 +90,8 @@ Get-Mailbox -Filter {Department -eq "Marketing"} | Set-Mailbox -SharingPolicy "C
   - 运行以下命令行管理程序命令，验证是否将共享策略指定至用户邮箱。验证列在 *SharingPolicy* 参数中的共享策略是否正确。
     
     ```powershell
-Get-Mailbox <user name> | format-list
-```
+    Get-Mailbox <user name> | format-list
+    ```
 
 > [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。

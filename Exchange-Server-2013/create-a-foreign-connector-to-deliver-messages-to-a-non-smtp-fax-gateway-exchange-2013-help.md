@@ -45,8 +45,10 @@ _**上一次修改主题：** 2012-10-17_
 
 1.  运行以下命令以创建外部连接器：
     
+    ```powershell
         New-ForeignConnector -Name "Contoso Foreign Connector" -AddressSpaces "X400:c=US;a=Fabrikam;P=Contoso;5" -SourceTransportServers Hub01,Hub02
-    
+    ```
+
     在此示例中，Hub01 和 Hub02 是组织中的源服务器，指定这些服务器向外部系统传递邮件。使用多个源服务器可提供容错能力。
 
 在创建了外部连接器之后，可以根据组织的要求配置投递、分拣和重播目录。
@@ -70,8 +72,8 @@ Get-ForeignConnector | Format-List Name
 1.  运行以下脚本以为外部连接器指定投递目录（将 *DropDirectory* 参数的值更改为适用于环境的路径）：
     
     ```powershell
-Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
-```
+    Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
+    ```
 
 ## 您如何知道此步骤有效？
 

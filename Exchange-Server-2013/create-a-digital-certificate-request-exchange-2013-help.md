@@ -60,14 +60,14 @@ _**上一次修改主题：** 2013-02-21_
 ## 使用命令行管理程序创建新的证书请求
 
 运行下列命令。
-  ```
-    $reqfile = New-ExchangeCertificate -GenerateRequest -SubjectName "C=US,o=Contoso,cn=contosotocert" -DomainName "contoso.com" -PrivateKeyExportable $true
-  ```
-  ```
+
+```powershell
+  $reqfile = New-ExchangeCertificate -GenerateRequest -SubjectName "C=US,o=Contoso,cn=contosotocert" -DomainName "contoso.com" -PrivateKeyExportable $true
+```
+
 ```powershell
 $reqfile | out-file c:\certreq.txt
 ```
-  ```
   
 ## 您如何知道操作成功？
 

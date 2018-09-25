@@ -74,8 +74,8 @@ Set-TransportConfig -ExternalPostmasterAddress $null
 1.  在邮箱服务器上运行下列命令，以验证该外部邮局主管地址值：
     
     ```powershell
-Get-TransportConfig | Format-List ExternalPostmasterAddress
-```
+    Get-TransportConfig | Format-List ExternalPostmasterAddress
+    ```
 
 2.  从外部电子邮件帐户向你的 Exchange 组织发送将生成传递状态通知 (DSN) 的邮件。例如，你可以将传输规则配置为从包含特定关键字的发件人发送邮件的未送达报告 (NDR)。验证 DSN 中该发件人的电子邮件地址是否与你指定的值匹配。
 

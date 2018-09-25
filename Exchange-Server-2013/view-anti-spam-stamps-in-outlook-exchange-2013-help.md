@@ -41,10 +41,11 @@ _**上一次修改主题：** 2012-10-03_
 
 3.  在\&quot;属性\&quot;对话框的\&quot;Internet 邮件头\&quot;部分中，使用滚动条查看如下面示例中所示的反垃圾邮件标记。
     
+    ```powershell
         X-MS-Exchange-Organization-PCL:7
         X-MS-Exchange-Organization-SCL:6
         X-MS-Exchange-Organization-Antispam-Report: DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures
-
+    ```    
 ## 使用 Outlook 2007 查看反垃圾邮件标记
 
 1.  在客户端计算机上的 Outlook 2007 中，在\&quot;邮件\&quot;视图中双击某个邮件将其打开。
@@ -53,7 +54,8 @@ _**上一次修改主题：** 2012-10-03_
 
 3.  在\&quot;邮件选项\&quot;对话框的\&quot;Internet 邮件头\&quot;部分中，使用滚动条可查看如下面示例中所示的反垃圾邮件标记。
     
+    ```powershell
         X-MS-Exchange-Organization-PCL:7
         X-MS-Exchange-Organization-SCL:6
         X-MS-Exchange-Organization-Antispam-Report: DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures
-
+    ```    

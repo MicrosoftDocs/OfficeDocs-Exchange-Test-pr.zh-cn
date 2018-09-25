@@ -81,7 +81,9 @@ _**上一次修改主题：** 2014-06-18_
 
   - 运行 Exchange Management Shell 中的以下命令以验证选定卷上的每一个数据库已成功备份：
     
+    ```powershell
         Get-MailboxDatabase -Server <ServerName> -Status | fl Name,*FullBackup
+    ```
     
     数据库的 *SnapshotLastFullBackup* 和 *LastFullBackup* 属性表示上一次成功备份的时间以及该备份是否是 VSS 完全备份。
 

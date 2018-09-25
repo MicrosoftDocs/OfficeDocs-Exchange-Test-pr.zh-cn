@@ -93,23 +93,31 @@ Get-Mailbox -Arbitration |fl
 
 本示例导出 UM 拨号计划 `MyUMDialPlan` 的欢迎问候语，并将它另存为 `welcomegreeting.wav` 文件。
 
-    $prompt = Export-UMPrompt -PromptFileName "customgreeting.wav" -UMDialPlan MyUMDialPlan
-    set-content -Path "d:\DialPlanPrompts\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```powershell
+$prompt = Export-UMPrompt -PromptFileName "customgreeting.wav" -UMDialPlan MyUMDialPlan
+set-content -Path "d:\DialPlanPrompts\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```
 
 本示例将欢迎问候语 `welcomegreeting.wav` 从 d:\\UMPrompts 导入到 UM 拨号计划 `MyUMDialPlan` 中。
 
-    [byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
-    Import-UMPrompt -UMDialPlan MyUMDialPlan -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```powershell
+[byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
+Import-UMPrompt -UMDialPlan MyUMDialPlan -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```
 
 本示例导出 UM 自动助理 `MyUMAutoAttendant` 的自定义问候语，并将它另存为 `welcomegreetingbackup.wav` 文件。
 
-    Export-UMPrompt -PromptFileName "welcomegreeting.wav" -UMAutoAttendant MyUMAutoAttendant
-    set-content -Path "e:\UMPromptsBackup\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```powershell
+Export-UMPrompt -PromptFileName "welcomegreeting.wav" -UMAutoAttendant MyUMAutoAttendant
+set-content -Path "e:\UMPromptsBackup\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```
 
 本示例将欢迎问候语 `welcomegreeting.wav` 从 d:\\UMPrompts 导入到 UM 自动助理 `MyUMAutoAttendant` 中。
 
-    [byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
-    Import-UMPrompt -UMAutoAttendant MyUMAutoAttendant -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```powershell
+[byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
+Import-UMPrompt -UMAutoAttendant MyUMAutoAttendant -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```
 
 若要了解自定义提示的详细信息，请参阅：
 
@@ -156,8 +164,10 @@ Get-Mailbox -Arbitration |fl
     
     在命令行管理程序中运行以下命令来创建 Exchange 自签名证书。
     
+    ```powershell
         New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
-    
+    ```
+
     > [!NOTE]  
     > 如果通过使用 <em>Services</em> 参数指定想启用的服务，系统会提示您为创建的证书启用服务。在此示例中，系统会提示您为统一消息和统一消息呼叫路由器服务启用证书。有关如何为服务启用证书的详细信息，请参阅<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">将证书分配给该 UM 和 UM 呼叫路由器服务</a>。
 
@@ -174,7 +184,9 @@ Get-Mailbox -Arbitration |fl
     
     在命令行管理程序中运行以下命令来启用 Exchange 自签名证书。
     
-        Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+    ```powershell
+    Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+    ```
 
   - 将任何新的或现有 UM 拨号计划配置为 SIP 安全或安全。
 
@@ -238,7 +250,9 @@ Set-UMCallRouterSettings -Server MyUMCallRouter.northwindtraders.com -UMStartupM
 
 在命令行管理程序中运行以下命令，以在 Exchange 2013 邮箱服务器上配置 UM 启动模式。
 
-    Set-UMService -Identity MyUMServer -ExternalHostFqdn host.external.contoso.com -IPAddressFamily Any -UMStartupMode Dual
+```powershell
+Set-UMService -Identity MyUMServer -ExternalHostFqdn host.external.contoso.com -IPAddressFamily Any -UMStartupMode Dual
+```
 
 ## 步骤 7：创建或配置现有的 UM 拨号计划
 
@@ -286,7 +300,9 @@ New-UMDialplan -Name MyUMDialPlan -URIType E164 -NumberOfDigitsInExtension 5 -Vo
 
 如果需要，可以使用命令行管理程序配置现有的 UM 拨号计划：
 
-    Set-UMDialplan -Identity MyDialPlan -AccessTelephoneNumbers 4255551234 -AudioCodec Wma -CallAnsweringRulesEnabled $false -OutsideLineAccessCode 9 -VoIPSecurity SIPSecured
+```powershell
+Set-UMDialplan -Identity MyDialPlan -AccessTelephoneNumbers 4255551234 -AudioCodec Wma -CallAnsweringRulesEnabled $false -OutsideLineAccessCode 9 -VoIPSecurity SIPSecured
+```
 
 当部署 Exchange 2010 统一消息时，需要将统一消息服务器添加到 UM 拨号计划中以应答传入呼叫。这不再是必需条件。在 Exchange 2013 中，客户端访问服务器及邮箱服务器不可以关联电话分机或 E.164 拨号计划，但必须关联 SIP URI 拨号计划。客户端访问服务器和邮箱服务器将应答所有类型拨号计划的所有传入呼叫。
 
@@ -330,7 +346,9 @@ New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
 
 若要在命令行管理程序中配置现有的 UM IP 网关，请在命令行管理程序中运行以下命令。
 
-    Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
+```powershell
+Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
+```
 
 ## 步骤 9：创建 UM 智能寻线
 
@@ -356,7 +374,9 @@ New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
 
 如果需要，可以在命令行管理程序中运行以下命令，以创建 UM 智能寻线。
 
-    New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
+```powershell
+New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
+```
 
 > [!TIP]  
 > 您不可以配置或更改 UM 智能寻线的设置。如果要更改 UM 智能寻线的配置设置，则必须将其删除并使用正确设置添加新的 UM 智能寻线。
@@ -392,7 +412,9 @@ New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
 
 如果需要，可以在命令行管理程序中运行以下命令，以创建 UM 自动助理。
 
-    New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 56000,56100 -SpeechEnabled $true -Status Enabled
+```powershell
+New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 56000,56100 -SpeechEnabled $true -Status Enabled
+```
 
 如果需要，可以使用 EAC 配置现有的自动助理，如下所示：
 
@@ -402,7 +424,9 @@ New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
 
 如果需要，可以在命令行管理程序中运行以下命令，以配置现有的自动助理。
 
-    Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA -OperatorExtension 50100 -AfterHoursTransferToOperatorEnabled $true -StaroutToDialPlanEnabled $true
+```powershell
+Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA -OperatorExtension 50100 -AfterHoursTransferToOperatorEnabled $true -StaroutToDialPlanEnabled $true
+```
 
 ## 步骤 11：创建或配置 UM 邮箱策略
 
@@ -440,7 +464,9 @@ New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
 
 如果需要，可以在命令行管理程序中运行以下命令，以配置现有的 UM 邮箱策略。
 
-    Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN used to allow you access to your mailbox using Outlook Voice Access has been reset."
+```powershell
+Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN used to allow you access to your mailbox using Outlook Voice Access has been reset."
+```
 
 ## 步骤 12：将现有的启用 UM 的邮箱移至 Exchange 2013
 
@@ -508,7 +534,9 @@ New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
 
 若要使用命令行管理程序来为用户启用统一消息，请运行以下命令。
 
-    Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -NotifyEmail administrator@contoso.com -PINExpired $true
+```powershell
+Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -NotifyEmail administrator@contoso.com -PINExpired $true
+```
 
 如果需要，可以使用 EAC 为已启用 UM 的用户进行配置：
 
@@ -538,7 +566,9 @@ New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
 
 如果需要，可以在命令行管理程序中运行以下命令，为已启用 UM 的用户进行配置。
 
-    Set-UMMailbox -Identity tony@contoso.com -CallAnsweringAudioCodec Wma -CallAnsweringRulesEnabled $false -FaxEnabled $false -UMSMSNotificationOption VoiceMail
+```powershell
+Set-UMMailbox -Identity tony@contoso.com -CallAnsweringAudioCodec Wma -CallAnsweringRulesEnabled $false -FaxEnabled $false -UMSMSNotificationOption VoiceMail
+```
 
 ## 步骤 14：将 VoIP 网关、IP PBX 和启用 SIP 的 PBX 配置为向 Exchange 2013 客户端访问服务器发送所有传入呼叫
 
@@ -604,10 +634,12 @@ Disable-UMServer -Identity MyUMServer -Immediate $true
 
 若要使用命令行管理程序将 Exchange 2010 UM 服务器从拨号计划中删除，请运行以下命令。
 
-    $dp= Get-UMDialPlan "MySIPDialPlan"
-    $s=Get-UMServer -id MyUMServer
-    $s.dialplans-=$dp.identity
-    Set-UMServer -id MyUMServer -dialplans:$s.dialplans
+```powershell
+$dp= Get-UMDialPlan "MySIPDialPlan"
+$s=Get-UMServer -id MyUMServer
+$s.dialplans-=$dp.identity
+Set-UMServer -id MyUMServer -dialplans:$s.dialplans
+```
 
 在此示例中，有三个 SIP URI 拨号计划：SipDP1、SipDP2 和 SipDP3。此示例从 SipDP3 拨号计划中删除名为 `MyUMServer` 的 UM 服务器。
 

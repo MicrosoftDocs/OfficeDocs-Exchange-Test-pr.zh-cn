@@ -43,7 +43,9 @@ Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
 
 此示例使 POP3 用户能够从内部服务器访问日历信息。
 
-    Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
+```powershell
+Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
+```
 
 此示例使 POP3 用户能够从 Internet 访问外部服务器上的日历信息。
 

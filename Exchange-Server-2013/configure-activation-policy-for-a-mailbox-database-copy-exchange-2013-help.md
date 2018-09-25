@@ -37,15 +37,11 @@ _**上一次修改主题：** 2012-11-02_
 
 ## 使用 EAC 为邮箱数据库副本配置激活策略
 
-1.  
-    
-    在 EAC 中，转到“服务器”\>“数据库”。
+1.  在 EAC 中，转到“服务器”\>“数据库”。
 
 2.  选择要配置的数据库。
 
-3.  
-    
-    在“详细信息”窗格中的“数据库副本”下，找到要配置的数据库副本并单击“挂起”。
+3.  在“详细信息”窗格中的“数据库副本”下，找到要配置的数据库副本并单击“挂起”。
 
 4.  可以选择添加注释并选中“此副本只能通过手动干预激活”复选框。
 
@@ -96,12 +92,12 @@ Set-MailboxServer -Identity MBX4 -DatabaseCopyAutoActivationPolicy Unrestricted
   - 在命令行管理程序中，运行以下命令来验证数据库副本的激活设置。
     
     ```powershell
-Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List ActivationSuspended
-```
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List ActivationSuspended
+    ```
 
   - 在命令行管理程序中，运行以下命令来验证 DAG 成员的激活设置。
     
     ```powershell
-Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
-```
+    Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
+    ```
 

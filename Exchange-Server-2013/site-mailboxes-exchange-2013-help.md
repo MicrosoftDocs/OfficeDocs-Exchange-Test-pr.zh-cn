@@ -91,7 +91,9 @@ _**上一次修改主题：** 2016-12-09_
 
 可以使用以下命令来搜索并删除具有删除标记的网站邮箱。
 
+```powershell
     Get-Mailbox MDEL:* | ?{$_.RecipientTypeDetails -eq "TeamMailbox"} | Remove-Mailbox -Confirm:$false
+```
 
 网站邮箱不支持项级别保留，但您可以在项目一级保留网站邮箱。因此当您删除整个网站邮箱时，保留的项也会删除。
 

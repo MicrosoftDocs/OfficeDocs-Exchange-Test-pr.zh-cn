@@ -57,7 +57,9 @@ Set-UMCallRouterSettings -DialPlans MySIPDialPlan -MaxCalls 150 -Server MyClient
 
 此示例在名为 `MyClientAccessServer` 的客户端访问服务器上将 SIP TCP 侦听端口设置为 5077，将启动模式设置为\&quot;双重\&quot;模式。
 
-    Set-UMCallRouterSettings  -Server MyClientAccessServer-SipTCPListeningPort 5077 -UMStartUpMode -Dual 
+```powershell
+Set-UMCallRouterSettings  -Server MyClientAccessServer-SipTCPListeningPort 5077 -UMStartUpMode -Dual 
+```
 
 ## 使用命令行管理程序查看客户端访问服务器属性
 

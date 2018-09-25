@@ -21,12 +21,14 @@ _**上一次修改主题：** 2015-04-08_
 
 这是远程 SMTP 消息服务器连接到接收服务器上之后，远程 SMTP 消息服务器收到的默认响应：
 
+```powershell
     220 <Servername> Microsoft ESMTP MAIL service ready at <RegionalDay-Date-24HourTimeFormat> <RegionalTimeZoneOffset>
+```
 
 当您在接收连接器上指定 SMTP 标题的自定义值时，连接到该 SMTP 接收连接器的远程 SMTP 消息服务器将收到以下响应。
 
 ```powershell
-220 <Banner Text>
+    220 <Banner Text>
 ```
 
 您可能想为面向 Internet 的 SMTP 接收器修改 SMTP 标题，以便服务器名称和消息服务器软件不会被 SMTP 标题泄露。
@@ -74,8 +76,8 @@ Set-ReceiveConnector "From the Internet" -Banner $null
 1.  在可以访问接收连接器的计算机上打开 Telnet 客户端，并运行以下命令：
     
     ```powershell
-open <Connector FQDN or IP address> <Port>
-```
+    open <Connector FQDN or IP address> <Port>
+    ```
 
 2.  验证来自接收连接器的响应是否包含您配置的 SMTP 标题。
 

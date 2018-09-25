@@ -76,8 +76,8 @@ Remove-Mailbox -Identity <identity> -Permanent $true
 3.  运行以下命令验证是否从 Exchange 邮箱数据库中成功清除了邮箱。
     
     ```powershell
-Get-MailboxDatabase | Get-MailboxStatistics | Where {         Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }.DisplayName -eq "<display name>" }
-```
+    Get-MailboxDatabase | Get-MailboxStatistics | Where {         Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }.DisplayName -eq "<display name>" }
+    ```
     
     如果已成功清除邮箱，则该命令将不返回任何结果。 如果未清除邮箱，则该命令将返回有关邮箱的信息。
 
@@ -89,13 +89,17 @@ Get-MailboxDatabase | Get-MailboxStatistics | Where {         Get-MailboxDatabas
 
 运行以下命令可确定断开连接的邮箱是被禁用还是被软删除。
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,MailboxGuid,Database,DisconnectReason
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,MailboxGuid,Database,DisconnectReason
+```
 
 断开连接的邮箱的 *DisconnectReason* 属性的值将为 `Disabled` 或 `SoftDeleted`。
 
 可以运行以下命令显示组织中所有断开连接的邮箱的类型。
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -ne $null } | fl DisplayName,MailboxGuid,Database,DisconnectReason
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -ne $null } | fl DisplayName,MailboxGuid,Database,DisconnectReason
+```
 
 > [!WARNING]  
 > 使用 <strong>Remove-StoreMailbox</strong> cmdlet 永久删除断开连接的邮箱时，将从邮箱数据库中清除其所有内容，并会永久丢失数据。
@@ -103,7 +107,9 @@ Get-MailboxDatabase | Get-MailboxStatistics | Where {         Get-MailboxDatabas
 
 此示例从邮箱数据库 MBD01 中永久删除 GUID 为 2ab32ce3-fae1-4402-9489-c67e3ae173d3 的禁用邮箱。
 
-    Remove-StoreMailbox -Database MBD01 -Identity "2ab32ce3-fae1-4402-9489-c67e3ae173d3" -MailboxState Disabled
+```powershell
+Remove-StoreMailbox -Database MBD01 -Identity "2ab32ce3-fae1-4402-9489-c67e3ae173d3" -MailboxState Disabled
+```
 
 此示例从邮箱数据库 MBD01 中永久删除 Dan Jump 的软删除邮箱。
 
@@ -113,7 +119,9 @@ Remove-StoreMailbox -Database MBD01 -Identity "Dan Jump" -MailboxState SoftDelet
 
 此示例从邮箱数据库 MBD01 中永久删除所有软删除邮箱。
 
-    Get-MailboxStatistics -Database MBD01 | where {$_.DisconnectReason -eq "SoftDeleted"} | ForEach {Remove-StoreMailbox -Database $_.Database -Identity $_.MailboxGuid -MailboxState SoftDeleted}
+```powershell
+Get-MailboxStatistics -Database MBD01 | where {$_.DisconnectReason -eq "SoftDeleted"} | ForEach {Remove-StoreMailbox -Database $_.Database -Identity $_.MailboxGuid -MailboxState SoftDeleted}
+```
 
 有关语法和参数的详细信息，请参阅 [Remove-StoreMailbox](https://technet.microsoft.com/zh-cn/library/ff829913\(v=exchg.150\)) 和 [Get-MailboxStatistics](https://technet.microsoft.com/zh-cn/library/bb124612\(v=exchg.150\))。
 

@@ -79,8 +79,9 @@ _**上一次修改主题：** 2016-12-09_
 > [!NOTE]  
 > 该示例假定您已经创建了安全组 MarketingSG，并且该安全组已启用邮件。请参阅<a href="manage-mail-enabled-security-groups-exchange-2013-help.md">管理启用邮件的安全组</a>。
 
-
+```powershell
     New-Mailbox -Shared -Name "Sales Department" -DisplayName "Sales Department" -Alias Sales | Set-Mailbox -GrantSendOnBehalfTo MarketingSG | Add-MailboxPermission -User MarketingSG -AccessRights FullAccess -InheritanceType All
+```
 
 有关语法和参数的详细信息，请参阅 [New-Mailbox](https://technet.microsoft.com/zh-cn/library/aa997663\(v=exchg.150\))。
 

@@ -57,7 +57,9 @@ New-RemoteDomain -Name Contoso -DomainName contoso.com
 
 本示例为发送至 fabrikam.com 域和所有子域的邮件创建远程域条目。
 
+  ```powershell
     New-RemoteDomain -Name Fabrikam -DomainName *.fabrikam.com
+  ```
 
 ## 您如何知道操作成功？
 

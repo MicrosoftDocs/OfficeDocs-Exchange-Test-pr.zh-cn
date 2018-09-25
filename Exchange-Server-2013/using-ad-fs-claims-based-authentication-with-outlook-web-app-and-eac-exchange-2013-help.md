@@ -238,11 +238,15 @@ Windows Server 2012 R2 中的 AD FS 提供了简化的安全联合身份验证�
 
 6.  运行以下命令。
     
+    ```powershell
         Add-KdsRootKey -EffectiveTime (Get-Date).AddHours(-10)
+    ```
 
 7.  本示例创建名为 adfs.contoso.com 的联合身份验证服务名为 FsGmsa 的新 GMSA 帐户。联合身份验证服务名称是客户端可见的值。
     
+    ```powershell
         New-ADServiceAccount FsGmsa -DNSHostName adfs.contoso.com -ServicePrincipalNames http/adfs.contoso.com
+    ```
 
 8.  在\&quot;指定配置数据库\&quot;页上，选择\&quot;在此服务器上使用 Windows 内部数据库创建数据库\&quot;，然后单击\&quot;下一步\&quot;。
 
@@ -255,12 +259,12 @@ Windows Server 2012 R2 中的 AD FS 提供了简化的安全联合身份验证�
 12. 在\&quot;结果\&quot;页上，查看结果，检查配置是否成功完成，然后单击\&quot;完成联合身份验证服务部署所需的后续步骤\&quot;。
 
 下面的Windows PowerShell 命令执行相同的操作，为前面的步骤。
-```
+
 ```powershell
 Import-Module ADFS
 ```
-```
-```
+
+```powershell
     Install-AdfsFarm -CertificateThumbprint 0E0C205D252002D535F6D32026B6AB074FB840E7 -FederationServiceDisplayName "Contoso Corporation" -FederationServiceName adfs.contoso.com -GroupServiceAccountIdentifier "contoso\FSgmsa`$"
 ```
 
@@ -332,7 +336,9 @@ EAC 使用 ECP 虚拟目录。您可以使用 [Get-EcpVirtualDirectory](https://
 
 6.  在\&quot;配置规则\&quot;页中，在\&quot;选择规则类型\&quot;步骤中的\&quot;声明规则名称\&quot;下，为声明规则输入名称。使用声明规则的描述性名称 - 例如，<strong>ActiveDirectoryUserSID</strong>。在\&quot;自定义规则\&quot;下，为此规则输入以下声明规则语言语法：
     
+    ```powershell
         c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value);
+    ```
 
 7.  在\&quot;配置规则\&quot;页上，单击\&quot;完成\&quot;。
 
@@ -342,7 +348,9 @@ EAC 使用 ECP 虚拟目录。您可以使用 [Get-EcpVirtualDirectory](https://
 
 10. 在\&quot;配置规则\&quot;页中，在\&quot;选择规则类型\&quot;步骤中的\&quot;声明规则名称\&quot;下，为声明规则输入名称。使用声明规则的描述性名称 - 例如，**ActiveDirectoryUPN**。在\&quot;自定义规则\&quot;下，为此规则输入以下声明规则语言语法：
     
+    ```powershell
         c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);
+    ```
 
 11. 单击\&quot;完成\&quot;。
 
@@ -360,16 +368,21 @@ EAC 使用 ECP 虚拟目录。您可以使用 [Get-EcpVirtualDirectory](https://
 
 **IssuanceAuthorizationRules.txt 包含：** 
 
+```powershell
     @RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");
+```
 
 **IssuanceTransformRules.txt 包含：** 
 
+```powershell
     @RuleName = "ActiveDirectoryUserSID" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value); 
     
     @RuleName = "ActiveDirectoryUPN" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);
+```
 
 **运行以下命令：** 
 
+```powershell
     [string]$IssuanceAuthorizationRules=Get-Content -Path C:\IssuanceAuthorizationRules.txt
     
     [string]$IssuanceTransformRules=Get-Content -Path c:\IssuanceTransformRules.txt
@@ -377,6 +390,7 @@ EAC 使用 ECP 虚拟目录。您可以使用 [Get-EcpVirtualDirectory](https://
     Add-ADFSRelyingPartyTrust -Name "Outlook Web App" -Enabled $true -Notes "This is a trust for https://mail.contoso.com/owa/" -WSFedEndpoint https://mail.contoso.com/owa/ -Identifier https://mail.contoso.com/owa/ -IssuanceTransformRules $IssuanceTransformRules -IssuanceAuthorizationRules $IssuanceAuthorizationRules
     
     Add-ADFSRelyingPartyTrust -Name "Exchange Admin Center (EAC)" -Enabled $true -Notes "This is a trust for https://mail.contoso.com/ecp/" -WSFedEndpoint https://mail.contoso.com/ecp/ -Identifier https://mail.contoso.com/ecp/ -IssuanceTransformRules $IssuanceTransformRules -IssuanceAuthorizationRules $IssuanceAuthorizationRules
+```
 
 ## 第 4 步 - 安装 Web 应用程序代理角色服务（可选）
 
@@ -442,7 +456,9 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
 
 以下 Windows PowerShell cmdlet 执行的任务与以上步骤相同。
 
+```powershell
     Install-WebApplicationProxy -CertificateThumprint 1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b -FederationServiceName adfs.contoso.com
+```
 
 ## 第 6 步 - 使用 Web 应用程序代理发布 Outlook Web App 和 EAC（可选）
 
@@ -480,11 +496,15 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
 
 以下 Windows PowerShell cmdlet 执行的任务与 Outlook Web App 的上述步骤相同。
 
+```powershell
     Add-WebApplicationProxyApplication -BackendServerUrl 'https://mail.contoso.com/owa/' -ExternalCertificateThumbprint 'E9D5F6CDEA243E6E62090B96EC6DE873AF821983' -ExternalUrl 'https://external.contoso.com/owa/' -Name 'OWA' -ExternalPreAuthentication ADFS -ADFSRelyingPartyName 'Outlook Web App'
+```
 
 以下 Windows PowerShell cmdlet 执行的任务与 EAC 的上述步骤相同。
 
+```powershell
     Add-WebApplicationProxyApplication -BackendServerUrl 'https://mail.contoso.com/ecp/' -ExternalCertificateThumbprint 'E9D5F6CDEA243E6E62090B96EC6DE873AF821983' -ExternalUrl 'https://external.contoso.com/ecp/' -Name 'EAC' -ExternalPreAuthentication ADFS -ADFSRelyingPartyName 'Exchange Admin Center'
+```
 
 完成这些步骤后，Web 应用程序代理会对 Outlook Web App 和 EAC 客户端执行 AD FS 身份验证，还会代表这两个应用程序代理对 Exchange 的连接。您不需要为 Exchange 本身配置 AD FS 身份验证，因此，请继续执行第 10 步，测试您的配置。
 
@@ -500,8 +520,10 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
 
 在 Exchange 管理外壳程序中运行下面的命令。
 
+```powershell
     $uris = @(" https://mail.contoso.com/owa/","https://mail.contoso.com/ecp/")
     Set-OrganizationConfig -AdfsIssuer "https://adfs.contoso.com/adfs/ls/" -AdfsAudienceUris $uris -AdfsSignCertificateThumbprint "88970C64278A15D642934DC2961D9CCA5E28DA6B"
+```
 
 > [!NOTE]  
 > <em>-AdfsEncryptCertificateThumbprint</em>参数不支持这些方案。
@@ -519,11 +541,15 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
 
 通过使用 Exchange 管理外壳配置 ECP 虚拟目录。在 Shell 窗口中，运行下面的命令。
 
+```powershell
     Get-EcpVirtualDirectory | Set-EcpVirtualDirectory -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -WindowsAuthentication $false
+```
 
 通过使用 Exchange 管理外壳配置 OWA 虚拟目录。在 Shell 窗口中，运行下面的命令。
 
+```powershell
     Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -WindowsAuthentication $false -OAuthAuthentication $false
+```
 
 > [!NOTE]  
 > 前面的 Exchange 管理外壳程序命令组织中每个客户端访问服务器上配置的 OWA 和 ECP 的虚拟目录。如果您不想将这些设置应用于所有客户端访问服务器，使用<em>-Identity</em>参数并指定客户端访问服务器。很可能想要将这些设置应用仅将 Internet 客户端访问服务器在您的组织面临着。
@@ -538,8 +564,8 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
   - 使用 Windows PowerShell：
     
     ```powershell
-Restart-Service W3SVC,WAS -noforce
-```
+    Restart-Service W3SVC,WAS -noforce
+    ```
 
   - 使用命令行：单击\&quot;开始\&quot;，再单击\&quot;运行\&quot;，键入 `IISReset /noforce`，然后单击\&quot;确定\&quot;。
 

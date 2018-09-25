@@ -50,11 +50,15 @@ _**上一次修改主题：** 2014-05-07_
 
 此命令对名为 EXCH01 的邮箱数据库禁用 Exchange 搜索。
 
+   ```PowerShell
     Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $false
+   ```
 
 此命令对名为 EXCH01 的邮箱数据库启用 Exchange 搜索。
 
-    Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $true
+   ```PowerShell
+     Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $true
+   ```
 
 有关语法和参数的详细信息，请参阅[Set-MailboxDatabase](https://technet.microsoft.com/zh-cn/library/bb123971\(v=exchg.150\))。
 
@@ -84,26 +88,22 @@ _**上一次修改主题：** 2014-05-07_
 
 运行下列命令停止并禁用 Microsoft Exchange 搜索服务。
 
-```
-```powershell
+
+```PowerShell
 Stop-Service MSExchangeFastSearch
 ```
-```
-```
-```powershell
+
+```PowerShell
 Set-Service MSExchangeFastSearch -StartupType Disabled
-```
 ```
 
 运行下列命令将 Exchange 搜索服务配置为自动启动，然后启动该服务。
 
-```
-```powershell
+```PowerShell
 Set-Service MSExchangeFastSearch -StartupType Automatic
 ```
-```
-```
-```powershell
+
+```PowerShell
 Start-Service MSExchangeFastSearch
 ```
-```
+

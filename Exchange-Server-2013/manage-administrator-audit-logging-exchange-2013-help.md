@@ -45,7 +45,9 @@ _**上一次修改主题：** 2013-05-17_
 
 默认情况下，审核日志记录会为每个运行的 cmdlet 创建日志条目。如果您是第一次启用审核日志记录并且希望执行此行为，则不必更改 cmdlet 审核列表。如果以前指定了要审核的 cmdlet，但现在希望审核所有的 cmdlet，则可以通过在 **Set-AdminAuditLogConfig** cmdlet 上使用 *AdminAuditLogCmdlets* 参数指定星号 (\*) 通配符来审核所有的 cmdlet，如以下命令所示。
 
+  ```powershell
     Set-AdminAuditLogConfig -AdminAuditLogCmdlets *
+  ```
 
 通过使用 *AdminAuditLogCmdlets* 参数提供 cmdlet 列表，可以指定需要审核的 cmdlet。提供要审核的 cmdlet 列表时，可以提供单个 cmdlet、带有星号 (\*) 通配符的 cmdlet，或这两者的混合。列表中的每个条目都以逗号分隔。以下所有值均有效：
 
@@ -59,7 +61,9 @@ _**上一次修改主题：** 2013-05-17_
 
 此示例审核前面列表中指定的 cmdlet。
 
+  ```powershell
     Set-AdminAuditLogConfig -AdminAuditLogCmdlets New-Mailbox, *TransportRule, *Management*, Set-Transport*
+  ```
 
 有关详细的语法和参数信息，请参阅 [Set-AdminAuditLogConfig](https://technet.microsoft.com/zh-cn/library/dd298169\(v=exchg.150\))。
 
@@ -67,7 +71,9 @@ _**上一次修改主题：** 2013-05-17_
 
 默认情况下，审核日志记录会为每个运行的 cmdlet 创建日志条目，无需考虑指定的参数。如果您是第一次启用审核日志记录并且希望执行此行为，则不必更改参数审核列表。如果以前指定了要审核的参数，但现在希望审核所有的参数，则可以通过在 **Set-AdminAuditLogConfig** cmdlet 上使用 *AdminAuditLogParameters* 参数指定星号 (\*) 通配符来审核所有的参数，如以下命令所示。
 
+  ```powershell
     Set-AdminAuditLogConfig -AdminAuditLogParameters *
+  ```
 
 可以使用 *AdminAuditLogParameters* 参数指定要审核的参数。提供参数列表进行审核时，可以提供单个参数、带有星号 (\*) 通配符的参数，或两者的混合。列表中的每个条目都以逗号分隔。以下所有值均有效：
 
@@ -85,7 +91,9 @@ _**上一次修改主题：** 2013-05-17_
 
 此示例审核前面列表中指定的参数。
 
+  ```powershell
     Set-AdminAuditLogConfig -AdminAuditLogParameters Database, *Address*, Custom*, *Region
+  ```
 
 有关语法和参数的详细信息，请参阅 [Set-AdminAuditLogConfig](https://technet.microsoft.com/zh-cn/library/dd298169\(v=exchg.150\))。
 
@@ -112,7 +120,7 @@ _**上一次修改主题：** 2013-05-17_
 此示例指定两年零六个月的期限。
 
 ```powershell
-Set-AdminAuditLogConfig -AdminAuditLogAgeLimit 913.00:00:00
+  Set-AdminAuditLogConfig -AdminAuditLogAgeLimit 913.00:00:00
 ```
 
 有关语法和参数的详细信息，请参阅 [Set-AdminAuditLogConfig](https://technet.microsoft.com/zh-cn/library/dd298169\(v=exchg.150\))。
@@ -124,13 +132,13 @@ Set-AdminAuditLogConfig -AdminAuditLogAgeLimit 913.00:00:00
 此命令启用 **Test** cmdlet 的日志记录。
 
 ```powershell
-Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $True
+  Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $True
 ```
 
 此命令禁用 **Test** cmdlet 的日志记录。
 
 ```powershell
-Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $False
+  Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $False
 ```
 
 有关语法和参数的详细信息，请参阅 [Set-AdminAuditLogConfig](https://technet.microsoft.com/zh-cn/library/dd298169\(v=exchg.150\))。
@@ -140,7 +148,7 @@ Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $False
 若要禁用管理员审核日志记录，请使用以下命令。
 
 ```powershell
-Set-AdminAuditLogConfig -AdminAuditLogEnabled $False
+  Set-AdminAuditLogConfig -AdminAuditLogEnabled $False
 ```
 
 ## 启用管理员审核日志记录
@@ -148,7 +156,7 @@ Set-AdminAuditLogConfig -AdminAuditLogEnabled $False
 若要启用管理员审核日志记录，请使用以下命令。
 
 ```powershell
-Set-AdminAuditLogConfig -AdminAuditLogEnabled $True
+  Set-AdminAuditLogConfig -AdminAuditLogEnabled $True
 ```
 
 ## 查看管理员审核日志记录设置
@@ -156,6 +164,6 @@ Set-AdminAuditLogConfig -AdminAuditLogEnabled $True
 若要查看已为组织配置的管理员审核日志记录设置，请使用以下命令。
 
 ```powershell
-Get-AdminAuditLogConfig
+  Get-AdminAuditLogConfig
 ```
 

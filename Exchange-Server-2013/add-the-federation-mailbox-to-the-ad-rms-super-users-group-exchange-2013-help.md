@@ -63,8 +63,10 @@ _**上一次修改主题：** 2016-12-09_
     
     此示例将联合邮箱添加到 ADRMSSuperUsers 通讯组。
     
+    ```powershell
         Add-DistributionGroupMember ADRMSSuperUsers -Member FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042
-
+    ```
+    
 有关语法和参数的详细信息，请参阅 [Add-DistributionGroupMember](https://technet.microsoft.com/zh-cn/library/bb124340\(v=exchg.150\))。
 
 ## 步骤 2︰ 使用 AD RMS 设置超级用户组
@@ -96,7 +98,8 @@ AD RMS 群集上执行下列步骤。若要执行此过程时使用的帐户必�
     > [!IMPORTANT]  
     > 在 Windows Server 2008 R2 和更高版本上提供了 ADRMSAdmin PowerShell 模块。
     
+    ```powershell
         Import-Module ADRMSAdmin
         New-PSDrive -Name MyRmsAdmin -PsProvider AdRmsAdmin -Root https://localhost 
         Get-ItemProperty -Path MyRmsAdmin:\SecurityPolicy\SuperUser
-
+    ```

@@ -23,6 +23,7 @@ _**上一次修改主题：** 2016-07-28_
 
 `Match` 元素在 `Pattern` 和 `Evidence` 元素中用于表示要匹配的基本关键字、正则表达式或函数。匹配本身的定义存储在 `Rule` 元素外部，通过必需的 `idRef` 属性进行引用。多个 `Match` 元素可以包含在模式定义中，而该定义可以直接包含在 `Pattern` 元素中或是使用 `Any` 元素进行合并以定义匹配语义。
 
+```XML
     <?xml version="1.0" encoding="utf-8"?>
     <Rules packageId="...">
             ...
@@ -40,6 +41,7 @@ _**上一次修改主题：** 2016-07-28_
             ...
     
     </Rules>
+```
 
 ## 定义基于关键字的匹配
 
@@ -50,7 +52,7 @@ _**上一次修改主题：** 2016-07-28_
 > [!TIP]  
 > 使用 regex 的基于常量的匹配风格以获得更出色的效率和性能。仅在基于常量的匹配不充分并且需要正则表达式的灵活性时使用 regex 匹配。
 
-
+```XML
     <Keyword id="Word_Example">
         <Group matchStyle="word">
            <Term>card verification</Term>
@@ -70,6 +72,7 @@ _**上一次修改主题：** 2016-07-28_
            <Term>security</Term>
         </Group>
     </Keyword>
+```
 
 ## 定义基于正则表达式的匹配
 
@@ -194,6 +197,7 @@ _**上一次修改主题：** 2016-07-28_
 
 Regex 元素具有一个“id”属性，该属性在对应的实体或关联规则中用作引用。单个 Regex 元素可以在多个实体和关联规则中引用。正则表达式定义为 Regex 元素的值。
 
+```XML
     <Regex id="CCRegex">
          \bcc\#\s|\bcc\#\:\s
     </Regex>
@@ -205,6 +209,7 @@ Regex 元素具有一个“id”属性，该属性在对应的实体或关联规
     <Regex id="NorthCarolinaDriversLicenseNumber">
         (^|\s|\:)(\d{1,8})($|\s|\.\s)
     </Regex>
+```
 
 ## 合并多个匹配元素
 
@@ -219,21 +224,23 @@ Regex 元素具有一个“id”属性，该属性在对应的实体或关联规
     匹配任何子 Match 元素的精确子集
 
 <!-- end list -->
-```
+```XML
     <Any minMatches="3" maxMatches="3">
         <Match idRef="USDate" />
         <Match idRef="USAddress" />
         <Match idRef="Name" />
     </Any>
 ```
-```
+
+```XML
     <Any maxMatches="0">
         <Match idRef="USDate" />
         <Match idRef="USAddress" />
         <Match idRef="Name" />
     </Any>
 ```
-```
+
+```XML
     <Any minMatches="1" maxMatches="1">
         <Match idRef="USDate" />
         <Match idRef="USAddress" />
@@ -253,6 +260,7 @@ Regex 元素具有一个“id”属性，该属性在对应的实体或关联规
 
 <!-- end list -->
 
+```XML
     <Entity id="..." patternsProximity="300" >
         <Pattern confidenceLevel="65">
             <IdMatch idRef="UnformattedSSN" />
@@ -279,6 +287,7 @@ Regex 元素具有一个“id”属性，该属性在对应的实体或关联规
             </Any>
         </Pattern>
     </Entity>
+```
 
 ## 示例：美国社会保险规则
 
@@ -298,6 +307,7 @@ Regex 元素具有一个“id”属性，该属性在对应的实体或关联规
 
 接下来，将描述转换为规则架构表示形式：
 
+```XML
     <Entity id="a44669fe-0d48-453d-a9b1-2cc83f2cba77"
              patternsProximity="300" RecommendedConfidence="85">
         <Pattern confidenceLevel="85">
@@ -310,6 +320,7 @@ Regex 元素具有一个“id”属性，该属性在对应的实体或关联规
           </Any>
         </Pattern>
     </Entity>
+```
 
 ## 详细信息
 

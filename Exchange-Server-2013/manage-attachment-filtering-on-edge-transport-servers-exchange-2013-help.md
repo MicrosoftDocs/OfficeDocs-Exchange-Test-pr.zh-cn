@@ -46,19 +46,19 @@ _**上一次修改主题：** 2015-04-08_
 若要禁用附件筛选，请运行以下命令：
 
 ```powershell
-Disable-TransportAgent "Attachment Filtering Agent"
+    Disable-TransportAgent "Attachment Filtering Agent"
 ```
 
 若要启用附件筛选，请运行以下命令：
 
 ```powershell
-Enable-TransportAgent "Attachment Filtering Agent"
+    Enable-TransportAgent "Attachment Filtering Agent"
 ```
 
 在您启用或禁用附件筛选之后，请通过运行以下命令来重启 Microsoft Exchange 传输服务：
 
 ```powershell
-Restart-Service MSExchangeTransport
+    Restart-Service MSExchangeTransport
 ```
 
 ## 您如何知道这有效？
@@ -67,8 +67,8 @@ Restart-Service MSExchangeTransport
 
 1.  运行以下命令：
     
-    ```powershell
-Get-TransportAgent "Attachment Filtering Agent"
+```powershell
+    Get-TransportAgent "Attachment Filtering Agent"
 ```
 
 2.  如果 **Enabled** 的值为 `True`，则表示附件筛选已启用。如果值为 `False`，则表示附件筛选已禁用。
@@ -78,54 +78,58 @@ Get-TransportAgent "Attachment Filtering Agent"
 附件筛选条目界定了您想将其隔离在组织之外的邮件附件。若要查看附件筛选代理使用的附件筛选条目，请运行以下命令：
 
 ```powershell
-Get-AttachmentFilterEntry | Format-Table
+    Get-AttachmentFilterEntry | Format-Table
 ```
 
 若要查看特定的 MIME 内容类型条目，请使用以下语法：
 
 ```powershell
-Get-AttachmentFilteringEntry ContentType:<MIMEContentType>
+    Get-AttachmentFilteringEntry ContentType:<MIMEContentType>
 ```
 
 例如，若要查看 JPEG 图像的内容类型条目，请运行以下命令：
 
 ```powershell
-Get-AttachmentFilteringEntry ContentType:image/jpeg
+    Get-AttachmentFilteringEntry ContentType:image/jpeg
 ```
 
 若要查看特定的文件名或文件扩展名条目，请使用以下语法：
 
 ```powershell
-Get-AttachmentFilteringEntry FileName:<FileName or FileNameExtension>
+    Get-AttachmentFilteringEntry FileName:<FileName or FileNameExtension>
 ```
 
 例如，若要查看 JPEG 附件的文件扩展名条目，请运行以下命令：
 
+```powershell
     Get-AttachmentFilteringEntry FileName:*.jpg
+```
 
 ## 使用命令行管理程序添加附件筛选条目
 
 若要添加按 MIME 内容类型筛选附件的附件筛选条目，请使用以下语法：
 
 ```powershell
-Add-AttachmentFilterEntry -Name <MIMEContentType> -Type ContentType
+    Add-AttachmentFilterEntry -Name <MIMEContentType> -Type ContentType
 ```
 
 以下示例添加筛选 JPEG 图像的 MIME 内容类型条目。
 
 ```powershell
-Add-AttachmentFilterEntry -Name image/jpeg -Type ContentType
+    Add-AttachmentFilterEntry -Name image/jpeg -Type ContentType
 ```
 
 若要添加按文件名或文件扩展名筛选附件的附件筛选条目，请使用以下语法：
 
 ```powershell
-Add-AttachmentFilterEntry -Name <FileName or FileNameExtension> -Type FileName
+    Add-AttachmentFilterEntry -Name <FileName or FileNameExtension> -Type FileName
 ```
 
 以下示例筛选具有 .jpg 文件扩展名的附件。
 
+```powershell
     Add-AttachmentFilterEntry -Name *.jpg -Type FileName
+```
 
 ## 您如何知道这有效？
 
@@ -134,8 +138,8 @@ Add-AttachmentFilterEntry -Name <FileName or FileNameExtension> -Type FileName
 1.  运行以下命令来验证筛选条目是否存在。
     
     ```powershell
-Get-AttachmentFilterEntry | Format-Table
-```
+    Get-AttachmentFilterEntry | Format-Table
+    ```
 
 2.  从外部邮箱向内部收件人发送包含禁止的附件的测试邮件，并验证该邮件是否被拒绝、去除或删除。
 
@@ -161,7 +165,9 @@ Remove-AttachmentFilterEntry FileName:<FileName or FileNameExtension>
 
 以下示例删除 .jpg 文件扩展名的文件名条目。
 
+```powershell
     Remove-AttachmentFilterEntry FileName:*.jpg
+```
 
 ## 您如何知道这有效？
 
@@ -170,8 +176,8 @@ Remove-AttachmentFilterEntry FileName:<FileName or FileNameExtension>
 1.  运行以下命令来验证筛选条目是否已删除。
     
     ```powershell
-Get-AttachmentFilterEntry | Format-Table
-```
+    Get-AttachmentFilterEntry | Format-Table
+    ```
 
 2.  从外部邮箱向内部收件人发送包含允许的附件的测试邮件，并验证该邮件（包含附件）是否已成功发送。
 
@@ -187,7 +193,9 @@ Get-AttachmentFilterListConfig
 
 若要配置当邮件中检测到禁止的附件时执行的附件筛选操作，请使用以下语法：
 
+```powershell
     Set-AttachmentFilterListConfig [-Action <Reject | Strip | SilentDelete>] [-RejectResponse "<Message text>"] [-AdminMessage "<Replacement file text>"] [-ExceptionConnectors <ConnectorGUID>]
+```
 
 本示例对附件筛选配置做出以下更改：
 
@@ -197,7 +205,9 @@ Get-AttachmentFilterListConfig
 
 <!-- end list -->
 
+```powershell
     Set-AttachmentFilterListConfig -Action Reject -RejectResponse "This message contains a prohibited attachment. Your message can't be delivered. Please resend the message without the attachment."
+```
 
 有关详细信息，请参阅 [Set-AttachmentFilterListConfig](https://technet.microsoft.com/zh-cn/library/bb123483\(v=exchg.150\))。
 

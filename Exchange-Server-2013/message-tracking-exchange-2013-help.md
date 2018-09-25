@@ -553,6 +553,7 @@ _**上一次修改主题：** 2016-12-09_
 
 在此简化示例中，当用户 chris@contoso.com 将测试邮件成功发送至用户 michelle@contoso.com 时，创建了邮件跟踪日志条目。两个用户的邮箱位于同一服务器上。
 
+```powershell
     EventId    Source      Sender            Recipients             MessageSubject
     -------    ------      ------            ----------             --------------
     NOTIFYMAPI STOREDRIVER                   {}
@@ -563,6 +564,7 @@ _**上一次修改主题：** 2016-12-09_
     AGENTINFO  AGENT       chris@contoso.com {michelle@contoso.com} test
     SEND       SMTP        chris@contoso.com {michelle@contoso.com} test
     DELIVER    STOREDRIVER chris@contoso.com {michelle@contoso.com} test
+```
 
 返回顶部
 

@@ -66,78 +66,84 @@ OAuth 身份验证通常涉及到三个组件：一台授权服务器和两个�
     > [!WARNING]  
     > 通过将代码复制并粘贴到文本编辑器（如 Notepad）中，并使用 .ps1 扩展名将其保存，运行命令行管理程序脚本将变得更加容易。
     
-        # Make sure to update the following $tenantDomain with your Office 365 tenant domain.
-        
-        $tenantDomain = "Fabrikam.com"
-        
-        # Check whether the cert returned from Get-AuthConfig is valid and keysize must be >= 2048
-        
-        $c = Get-ExchangeCertificate | ?{$_.CertificateDomains -eq $env:USERDNSDOMAIN -and $_.Services -ge "SMTP" -and $_.PublicKeySize -ge 2048 -and $_.FriendlyName -match "OAuth"}
-        If ($c.Count -eq 0)
-        {
-            Write-Host "Creating certificate for oAuth..."
-            $ski = [System.Guid]::NewGuid().ToString("N")
-            $friendlyName = "Exchange S2S OAuth"
-            New-ExchangeCertificate -FriendlyName $friendlyName -DomainName $env:USERDNSDOMAIN -Services Federation -KeySize 2048 -PrivateKeyExportable $true -SubjectKeyIdentifier $ski
-            $c = Get-ExchangeCertificate | ?{$_.friendlyname -eq $friendlyName}
-        }
-        ElseIf ($c.Count -gt 1)
-        {
-            $c = $c[0]
-        }
-        
-        $a = $c | ?{$_.Thumbprint -eq (get-authconfig).CurrentCertificateThumbprint}
-        If ($a.Count -eq 0)
-        {
-            Set-AuthConfig -CertificateThumbprint $c.Thumbprint
-        }
-        Write-Host "Configured Certificate Thumbprint is:"(get-authconfig).CurrentCertificateThumbprint
-        
-        # Export the certificate
-        
-        Write-Host "Exporting certificate..."
-        if((test-path $env:SYSTEMDRIVE\OAuthConfig) -eq $false)
-        {
-            md $env:SYSTEMDRIVE\OAuthConfig
-        }
-        cd $env:SYSTEMDRIVE\OAuthConfig
-        
-        $oAuthCert = (dir Cert:\LocalMachine\My) | where {$_.FriendlyName -match "OAuth"}
-        $certType = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert
-        $certBytes = $oAuthCert.Export($certType)
-        $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
-        [System.IO.File]::WriteAllBytes($CertFile, $certBytes)
-        
-        # Set AuthServer
-        $authServer = Get-AuthServer MicrosoftSts;
-        if ($authServer.Length -eq 0)
-        {
-            Write-Host "Creating AuthServer Config..."
-            New-AuthServer MicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/metadata/json/1/?realm=$tenantDomain
-        }
-        elseif ($authServer.AuthMetadataUrl -ne "https://accounts.accesscontrol.windows.net/metadata/json/1/?realm=$tenantDomain")
-        {
-            Write-Warning "AuthServer config already exists but the AuthMetdataUrl doesn't match the appropriate value. Updating..."
-            Set-AuthServer MicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/metadata/json/1/?realm=$tenantDomain
-        }
-        else
-        {
-            Write-Host "AuthServer Config already exists."
-        }
-        Write-Host "Complete."
+
+    ```C Sharp
+    # Make sure to update the following $tenantDomain with your Office 365 tenant domain.
     
+    $tenantDomain = "Fabrikam.com"
+    
+    # Check whether the cert returned from Get-AuthConfig is valid and keysize must be >= 2048
+    
+    $c = Get-ExchangeCertificate | ?{$_.CertificateDomains -eq $env:USERDNSDOMAIN -and $_.Services -ge "SMTP" -and $_.PublicKeySize -ge 2048 -and $_.FriendlyName -match "OAuth"}
+    If ($c.Count -eq 0)
+    {
+        Write-Host "Creating certificate for oAuth..."
+        $ski = [System.Guid]::NewGuid().ToString("N")
+        $friendlyName = "Exchange S2S OAuth"
+        New-ExchangeCertificate -FriendlyName $friendlyName -DomainName $env:USERDNSDOMAIN -Services Federation -KeySize 2048 -PrivateKeyExportable $true -SubjectKeyIdentifier $ski
+        $c = Get-ExchangeCertificate | ?{$_.friendlyname -eq $friendlyName}
+    }
+    ElseIf ($c.Count -gt 1)
+    {
+        $c = $c[0]
+    }
+    
+    $a = $c | ?{$_.Thumbprint -eq (get-authconfig).CurrentCertificateThumbprint}
+    If ($a.Count -eq 0)
+    {
+        Set-AuthConfig -CertificateThumbprint $c.Thumbprint
+    }
+    Write-Host "Configured Certificate Thumbprint is:"(get-authconfig).CurrentCertificateThumbprint
+    
+    # Export the certificate
+    
+    Write-Host "Exporting certificate..."
+    if((test-path $env:SYSTEMDRIVE\OAuthConfig) -eq $false)
+    {
+        md $env:SYSTEMDRIVE\OAuthConfig
+    }
+    cd $env:SYSTEMDRIVE\OAuthConfig
+    
+    $oAuthCert = (dir Cert:\LocalMachine\My) | where {$_.FriendlyName -match "OAuth"}
+    $certType = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert
+    $certBytes = $oAuthCert.Export($certType)
+    $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
+    [System.IO.File]::WriteAllBytes($CertFile, $certBytes)
+    
+    # Set AuthServer
+    $authServer = Get-AuthServer MicrosoftSts;
+    if ($authServer.Length -eq 0)
+    {
+        Write-Host "Creating AuthServer Config..."
+        New-AuthServer MicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/metadata/json/1/?realm=$tenantDomain
+    }
+    elseif ($authServer.AuthMetadataUrl -ne "https://accounts.accesscontrol.windows.net/metadata/json/1/?realm=$tenantDomain")
+    {
+        Write-Warning "AuthServer config already exists but the AuthMetdataUrl doesn't match the appropriate value. Updating..."
+        Set-AuthServer MicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/metadata/json/1/?realm=$tenantDomain
+    }
+    else
+    {
+        Write-Host "AuthServer Config already exists."
+    }
+    Write-Host "Complete."
+    ```    
+
     预期的结果应类似于以下输出结果。
     
+    ```powershell
         Configured Certificate Thumbprint is: 7595DBDEA83DACB5757441D44899BCDB9911253C
         Exporting certificate...
         Complete.
-    
+    ```
+
     > [!WARNING]  
     > 在继续之前，必须执行 用于 Windows PowerShell 的 Azure Active Directory 模块 cmdlet。如果尚未安装 用于 Windows PowerShell 的 Azure Active Directory 模块 cmdlet（以前称为用于 Windows PowerShell 的 Microsoft Online Services 模块），您可以从<a href="http://aka.ms/aadposh">使用 Windows PowerShell 管理 Azure AD</a> 进行安装。
 
 
   - **步骤 2 – 将 Office 365 配置为与 Exchange 2013 本地服务器进行通信。** 将 Exchange Server 2013 要与之通信的 Office 365 服务器配置为合作伙伴应用程序。例如，如果 Exchange Server 2013 本地服务器需要与 Office 365 进行通信，则需要将 Exchange 本地服务器配置为合作伙伴应用程序。合作伙伴应用程序是可以与 Exchange 2013 直接交换安全令牌的任何应用程序，而无需通过第三方安全令牌服务器。本地 Exchange 2013 管理员必须使用以下 Exchange 命令行管理程序脚本将 Exchange 2013 要与之通信的 Office 365 租户配置为合作伙伴应用程序。在执行期间，系统将提示输入 Office 365 租户域的管理员用户名和密码（例如，administrator@fabrikam.com）。请务必将 *$CertFile* 的值更新到证书的位置（如果未从以前的脚本创建）。为此，请复制并粘贴以下代码。
     
+    ```C Sharp
         # Make sure to update the following $CertFile with the path to the cert if not using the previous script.
         
         $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
@@ -168,22 +174,28 @@ OAuth 身份验证通常涉及到三个组件：一台授权服务器和两个�
         {
             Write-Error "Cannot find certificate."
         } 
-    
+    ```
+
     预期的结果应如下所示。
     
+    ```powershell
         Please enter the administrator user name and password of the Office 365 tenant domain...
         Adding a key to Service Principal...
         Complete.
+    ```
 
 ## 启用推送通知代理
 
 根据上述步骤成功设置 OAuth 身份验证后，本地管理员必须通过以下脚本启用推送通知代理。请务必将 *$tenantDomain* 的值更新为您的域名。为此，请复制并粘贴以下代码。
 
+```powershell
     $tenantDomain = "Fabrikam.com"
     Enable-PushNotificationProxy -Organization:$tenantDomain
+```
 
 预期的结果应类似于以下输出结果。
 
+```powershell
     RunspaceId        : 4f2eb5cc-b696-482f-92bb-5b254cd19d60
     DisplayName       : On Premises Proxy app
     Enabled           : True
@@ -205,6 +217,7 @@ OAuth 身份验证通常涉及到三个组件：一台授权服务器和两个�
     OrganizationId    :
     OriginatingServer : server.fabrikam.com
     ObjectState       : Unchanged
+```
 
 ## 验证推送通知是否正常工作
 
@@ -222,6 +235,7 @@ OAuth 身份验证通常涉及到三个组件：一台授权服务器和两个�
 
   - **启用监控。** 测试推送通知或调查通知失败原因的另一种方法是，在您的组织中对邮箱服务器启用监控。本地 Exchange 2013 服务器管理员必须通过以下脚本调用推送通知代理监控。为此，请复制并粘贴以下代码。
     
+    ```powershell
         # Send a push notification to verify connectivity.
         
         $s = Get-ExchangeServer | ?{$_.ServerRole -match "Mailbox"}
@@ -243,10 +257,12 @@ OAuth 身份验证通常涉及到三个组件：一台授权服务器和两个�
         {
             Write-Error "Cannot find a Mailbox server in the current site."
         }
-    
+    ```
+
     预期的结果应类似于以下输出结果。
     
+    ```powershell
         ResultType : Succeeded
         Error      :
         Exception  :
-
+    ```

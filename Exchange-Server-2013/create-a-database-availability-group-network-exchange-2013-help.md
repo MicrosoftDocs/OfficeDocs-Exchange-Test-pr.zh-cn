@@ -59,7 +59,9 @@ _**上一次修改主题：** 2012-11-02_
 
 此示例在 DAG DAG1 中创建子网为 10.0.0.0 以及位掩码为 8 的网络 ReplicationDagNetwork02。此网络已启用复制，还添加了可选的网络描述。
 
-    New-DatabaseAvailabilityGroupNetwork -DatabaseAvailabilityGroup DAG1 -Name ReplicationDagNetwork02 -Description "Replication network 2" -Subnets 10.0.0.0/8 -ReplicationEnabled:$True
+```powershell
+New-DatabaseAvailabilityGroupNetwork -DatabaseAvailabilityGroup DAG1 -Name ReplicationDagNetwork02 -Description "Replication network 2" -Subnets 10.0.0.0/8 -ReplicationEnabled:$True
+```
 
 ## 您如何知道这有效？
 
@@ -70,8 +72,8 @@ _**上一次修改主题：** 2012-11-02_
   - 在命令行管理程序中，运行以下命令以验证 DAG 网络是否已创建并显示 DAG 网络配置信息。
     
     ```powershell
-Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
-```
+    Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+    ```
 
 ## 详细信息
 

@@ -48,7 +48,7 @@ _**上一次修改主题：** 2016-05-26_
 3.  键入 **Set-Content -path "C:\\custompath\\exportedRules.xml" -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection**，创建包含所有这些数据的格式化 XML 文件。(**Set-content** 是将 XML 写入文件的 cmdlet 部分。）
     
     > [!IMPORTANT]  
-    > 确保使用规则包实际存储的文件位置。<strong>C:\custompath\</strong> 是占位符。
+    > 确保使用规则包实际存储的文件位置。<strong>C:\custompath\ </strong> 是占位符。
 
 
 ## 查找您想在 XML 中修改的规则
@@ -61,6 +61,7 @@ _**上一次修改主题：** 2016-05-26_
 
 3.  查找 **Func\_credit\_card**，以查找信用卡号规则定义。（在 XML 中，规则名称不能包含空格，因此空格通常用下划线替代，规则名称有时会进行缩写。例如美国社会保险号码规则，其缩写为“SSN”。信用卡号规则 XML 应该如以下代码示例所示。
     
+    ```xml
         <Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085"
                patternsProximity="300" recommendedConfidence="85">
               <Pattern confidenceLevel="85">
@@ -72,6 +73,7 @@ _**上一次修改主题：** 2016-05-26_
                 </Any>
               </Pattern>
             </Entity>
+    ```
 
 现在您已在 XML 中找到信用卡号规则定义，您可以自定义规则的 XML 以满足您的需求。（要刷新 XML 定义，请参阅本主题结尾的术语表。）
 
@@ -81,6 +83,7 @@ _**上一次修改主题：** 2016-05-26_
 
 所有 XML 规则定义基于以下通用模板构建。您需要在模板中复制和粘贴信用卡号定义，修改某些值（请注意以下示例中的“.. .” 占位符），然后将修改后的 XML 作为可用于策略的新规则进行上载。
 
+```xml
     <?xml version="1.0" encoding="utf-16"?>
     <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
       <RulePack id=". . .">
@@ -107,9 +110,11 @@ _**上一次修改主题：** 2016-05-26_
     
        </Rules>
     </RulePackage>
+```
 
 现在，您的 XML 应该如下所示。因为规则包和规则使用它们的唯一 GUID 表示，您需要生成两个 GUID：一个用于规则包，一个用于替换信用卡号规则的 GUID。（以下代码示例中实体 ID 的 GUID 用于我们的内置规则定义，您需将其替换为新的 GUID。）有多种方法可以生成 GUID，但您可以通过键入 **\[guid\]::NewGuid()**，在 PowerShell 中轻松生成 GUID。
 
+```xml
     <?xml version="1.0" encoding="utf-16"?>
     <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
       <RulePack id="8aac8390-e99f-4487-8d16-7f0cdee8defc">
@@ -147,21 +152,25 @@ _**上一次修改主题：** 2016-05-26_
     
        </Rules>
     </RulePackage>
+```
 
 ## 从敏感信息类型中删除确定证据要求
 
 现在您具有可上载到 Exchange 环境的新敏感信息类型，下一步是将规则设置得更加具体。对规则进行修改，使其仅查找通过校验和但不需要额外的（确定）证据（例如关键字）的 16 位数字。为此，您需要删除查找确定证据的 XML 部分。确定证据对于减少误报非常有用，因为信用卡号附近通常有特定的关键字或过期日期。如果您删除该证据，您还应该通过降低 **confidenceLevel**（本示例中为 85），调整您对某个信用卡号的信心。
 
+```xml
     <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="300"
           <Pattern confidenceLevel="85">
             <IdMatch idRef="Func_credit_card" />
           </Pattern>
         </Entity>
+```
 
 ## 查找特定于您的组织的关键字
 
 您可能需要确定证据，但需要不同或额外的关键字，您可能想要更改在何处查找该证据。您可以调整 **patternsProximity**，以扩展或收缩围绕 16 位数字的确定证据的窗口。要添加您自己的关键字，您需要定义关键字列表并在您的规则中进行引用。以下 XML 添加关键字“company card”和“Contoso card”，以便在信用卡号的 150 个字符内包含这些短语的任何邮件均将识别为信用卡号。
 
+```xml
     <Rules>
     <! -- Modify the patternsProximity to be "150" rather than "300." -->
         <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="150" recommendedConfidence="85">
@@ -183,6 +192,7 @@ _**上一次修改主题：** 2016-05-26_
             <Term caseSensitive="false">Contoso card</Term>
           </Group>
         </Keyword>
+```
 
 ## 上载您的规则
 
@@ -195,7 +205,7 @@ _**上一次修改主题：** 2016-05-26_
 3.  在 Exchange 命令行管理程序 或 Exchange Online PowerShell 中，键入 **New-ClassificationRuleCollection -FileData (Get-Content -Path "C:\\custompath\\MyNewRulePack.xml " -Encoding Byte)**。
     
     > [!IMPORTANT]  
-    > 确保使用规则包实际存储的文件位置。<strong>C:\custompath\</strong> 是占位符。
+    > 确保使用规则包实际存储的文件位置。<strong>C:\custompath\ </strong> 是占位符。
 
 
 4.  要确认，请键入“Y”，然后按“Enter”键。

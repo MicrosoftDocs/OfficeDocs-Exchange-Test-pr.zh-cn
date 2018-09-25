@@ -377,7 +377,9 @@ IMAP 迁移批处理的 CSV 文件最多可包含 50,000 行。但最好是将�
 
 例如，我们假定您创建一批Exchange 命令行管理程序对企业跨目录林移动用户的主和到目标目录林使用以下Exchange 命令行管理程序命令的存档邮箱中。
 
+```PowerShell
     New-MigrationBatch -Name CrossForestBatch1 -SourceEndpoint ForestEndpoint1 -TargetDeliveryDomain forest2.contoso.com -TargetDatabases @(EXCH-MBX-02,EXCH-MBX-03) -TargetArchiveDatabases @(EXCH-MBX-A02,EXCH-MBX-A03) -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\CrossForestBatch1.csv")) -AutoStart
+```    
 
 > [!NOTE]  
 > 默认设置是主要通过移动和存档邮箱，因为您不必在Exchange 命令行管理程序命令中显式指定。
@@ -385,26 +387,33 @@ IMAP 迁移批处理的 CSV 文件最多可包含 50,000 行。但最好是将�
 
 该迁移批处理的 CrossForestBatch1.csv 文件的一部分如下所示：
 
+```PowerShell
     EmailAddress,TargetDatabase,TargetArchiveDatabase
     user1@contoso.com,EXCH-MBX-01,EXCH-MBX-A01
     user2@contoso.com,,
     user3@contoso.com,EXCH-MBX-01,
     ...
+```    
 
 由于 CSV 文件中的值替代迁移批处理的值，因此用户 1 的主邮箱和存档邮箱分别移动到目标林中的 EXCH-MBX-01 和 EXCH-MBX-A01。用户 2 的主邮箱和存档邮箱移动到 EXCH-MBX-02 或 EXCH-MBX-03。用户 3 的主邮箱移动到 EXCH-MBX-01，存档邮箱移动到 EXCH-MBX-A02 或 EXCH-MBX-A03。
 
 在另一示例中，假设在混合部署将存档邮箱移动到Exchange Online ，使用以下命令创建板载远程移动迁移一批。
 
+```PowerShell
     New-MigrationBatch -Name OnBoarding1 -SourceEndpoint RemoteEndpoint1 -TargetDeliveryDomain cloud.contoso.com -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\OnBoarding1.csv")) -MailboxType ArchiveOnly -AutoStart
+```    
 
 但由于您还希望移动选定用户的主邮箱，因此该迁移批处理的 OnBoarding1.csv 文件的一部分如下所示：
 
-    EmailAddress,MailboxType
-    user1@contoso.com,
-    user2@contoso.com,
-    user3@cloud.contoso.com,PrimaryAndArchive
-    user4@cloud.contoso.com,PrimaryAndArchive
-    ...
+```PowerShell  
+   EmailAddress,MailboxType
+   user1@contoso.com,
+   user2@contoso.com,
+   user3@cloud.contoso.com,PrimaryAndArchive
+   user4@cloud.contoso.com,PrimaryAndArchive
+   ...
+```
+
 
 由于 CSV 文件中的邮箱类型值替代用于创建批处理的命令中的 *MailboxType* 参数值，因此只有用户 1 和 2 的存档邮箱会迁移到 Exchange Online 中，而用户 3 和 4 的主邮箱和存档邮箱则移动到 Exchange Online 中。
 

@@ -58,8 +58,8 @@ _**上一次修改主题：** 2013-04-29_
   - 在命令行管理程序中，通过运行以下命令验证是否在服务器 Mailbox01 上创建了数据库。
     
     ```powershell
-Get-MailboxDatabase -Server "Mailbox01"
-```
+    Get-MailboxDatabase -Server "Mailbox01"
+    ```
 
 ## 获得邮箱数据库属性
 
@@ -150,8 +150,8 @@ Get-MailboxDatabase -Server "Mailbox01"
   - 从命令行管理程序执行以下命令，检索邮箱数据库属性。
     
     ```powershell
-Get-MailboxDatabase -Identity MailboxDatabase01 -Status | Format-List
-```
+    Get-MailboxDatabase -Identity MailboxDatabase01 -Status | Format-List
+    ```
 
 ## 转移邮箱数据库路径
 
@@ -184,8 +184,8 @@ Get-MailboxDatabase -Identity MailboxDatabase01 -Status | Format-List
   - 从命令行管理程序执行以下命令，检索所有邮箱数据库的邮箱数据库属性。
     
     ```powershell
-Get-MailboxDatabase -IncludePreExchange2013
-```
+    Get-MailboxDatabase -IncludePreExchange2013
+    ```
 
 ## 卸除邮箱数据库
 
@@ -218,8 +218,8 @@ Get-MailboxDatabase -IncludePreExchange2013
 1.  运行以下命令来删除邮箱数据库 MyDatabase。
     
     ```powershell
-Remove-MailboxDatabase -Identity "MyDatabase"
-```
+    Remove-MailboxDatabase -Identity "MyDatabase"
+    ```
 
 2.  系统提示是否确实要执行该操作时，键入 **Y**。
 

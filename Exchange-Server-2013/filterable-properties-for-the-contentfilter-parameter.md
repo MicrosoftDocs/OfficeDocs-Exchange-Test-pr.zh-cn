@@ -47,14 +47,24 @@ _**上一次修改主题：** 2015-09-10_
 <td><p>此属性返回在任何索引属性中具有特定字符串的所有邮件。例如，如果要导出以&amp;quot;Ayla&amp;quot;为收件人、发件人或在邮件正文中提到该名称的所有邮件，则应使用此属性。</p></td>
 <td><p>字符串</p>
 <p>通配符</p></td>
-<td><pre><code>-ContentFilter {All -like &#39;*Ayla*&#39;}</code></pre></td>
+<td>
+
+```PowerShell
+-ContentFilter {All -like '*Ayla*'}
+```
+</td>
 </tr>
 <tr class="even">
 <td><p>Attachment</p></td>
 <td><p>此属性返回在附件内容或附件文件名中包含指定字符串的邮件。</p></td>
 <td><p>字符串</p>
 <p>通配符</p></td>
-<td><pre><code>-ContentFilter {Attachment -like &#39;*.jpg&#39;}</code></pre></td>
+<td>
+
+```PowerShell
+-ContentFilter {Attachment -like &#39;*.jpg&#39;}
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>BCC</p></td>
@@ -64,21 +74,36 @@ _**上一次修改主题：** 2015-09-10_
 <p>SMTP 地址</p>
 <p>LegacyDN</p>
 <p>通配符</p></td>
-<td><pre><code>-ContentFilter {(BCC -eq &#39;ayla@contoso.com&#39;) -or (BCC -eq &#39;tony@contoso.com&#39;)}</code></pre></td>
+<td>
+
+```PowerShell
+-ContentFilter {(BCC -eq &#39;ayla@contoso.com&#39;) -or (BCC -eq &#39;tony@contoso.com&#39;)}
+```
+</td>
 </tr>
 <tr class="even">
 <td><p>Body</p></td>
 <td><p>此属性返回邮件正文中包含指定字符串的邮件。</p></td>
 <td><p>字符串</p>
 <p>通配符</p></td>
-<td><pre><code>-ContentFilter {Body -like &#39;*prospectus*&#39;}</code></pre></td>
+<td>
+
+```PowerShell
+-ContentFilter {Body -like &#39;*prospectus*&#39;}
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>Category</p></td>
 <td><p>此属性返回具有匹配类别的邮件。类别是由用户或收件箱规则设置的。</p></td>
 <td><p>字符串</p>
 <p>通配符</p></td>
-<td><pre><code>-ContentFilter {Category -like &#39;*Blue*&#39;}</code></pre></td>
+<td>
+
+```PowerShell
+-ContentFilter {Category -like &#39;*Blue*&#39;}
+```
+</td>
 </tr>
 <tr class="even">
 <td><p>CC</p></td>
@@ -88,20 +113,35 @@ _**上一次修改主题：** 2015-09-10_
 <p>SMTP 地址</p>
 <p>LegacyDN</p>
 <p>通配符</p></td>
-<td><pre><code>-ContentFilter {(CC -eq &#39;ayla@contoso.com&#39;) -or (CC -eq &#39;tony@contoso.com&#39;)}</code></pre></td>
+<td>
+
+```PowerShell
+-ContentFilter {(CC -eq &#39;ayla@contoso.com&#39;) -or (CC -eq &#39;tony@contoso.com&#39;)}
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>Expires</p></td>
 <td><p>此属性返回具有指定的过期时间戳的邮件。</p></td>
 <td><p>日期时间戳</p></td>
-<td><pre><code>-ContentFilter {Expires -lt &#39;01/01/2013&#39;}</code></pre></td>
+<td>
+
+```PowerShell
+-ContentFilter {Expires -lt &#39;01/01/2013&#39;}
+```
+</td>
 </tr>
 <tr class="even">
 <td><p>HasAttachment</p></td>
 <td><p>此属性返回带有或不带附件的邮件。</p></td>
 <td><p>布尔值</p>
 <p><code>$true</code> 或者<code>$false</code></p></td>
-<td><pre><code>-ContentFilter {HasAttachment -eq $true}</code></pre></td>
+<td>
+
+```PowerShell
+-ContentFilter {HasAttachment -eq $true}
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>Importance</p></td>
@@ -109,22 +149,38 @@ _**上一次修改主题：** 2015-09-10_
 <td><p>0 或者&amp;quot;低&amp;quot;</p>
 <p>1 或者&amp;quot;普通&amp;quot;</p>
 <p>2 或者&amp;quot;高&amp;quot;</p></td>
-<td><pre><code>-ContentFilter {Importance -eq &#39;high&#39;}</code></pre>
-<pre><code>-ContentFilter {Importance -eq 2}</code></pre></td>
+<td>
+
+```PowerShell
+-ContentFilter {Importance -eq &#39;high&#39;}
+-ContentFilter {Importance -eq 2}
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>IsFlagged</p></td>
 <td><p>此属性返回已由用户或收件箱规则标记的邮件。</p></td>
 <td><p>布尔值</p>
 <p><code>$true</code> 或者<code>$false</code></p></td>
-<td><pre><code>-ContentFilter {IsFlagged -eq $true}</code></pre></td>
+<td>
+
+```PowerShell
+-ContentFilter {IsFlagged -eq $true}
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>IsRead</p></td>
 <td><p>此属性返回用户已阅读或未阅读的邮件。</p></td>
 <td><p>布尔值</p>
 <p><code>$true</code> 或者<code>$false</code></p></td>
-<td><pre><code>-ContentFilter {IsRead -eq $true}</code></pre></td>
+<td>
+
+```PowerShell
+-ContentFilter {IsRead -eq $true}
+```
+</td>
 </tr>
 <tr class="even">
 <td><p>MessageKind</p></td>
@@ -141,15 +197,33 @@ _**上一次修改主题：** 2015-09-10_
 <p>RSSFeed</p>
 <p>任务</p>
 <p>语音邮件</p></td>
-<td><pre><code>-ContentFilter {MessageKind -eq &#39;Calendar&#39;}</code></pre>
-<pre><code>-ContentFilter {MessageKind -ne &#39;Email&#39;}</code></pre></td>
+<td>
+
+```PowerShell
+-ContentFilter {MessageLocale -ne 'en-US'}
+```
+
+```PowerShell
+-ContentFilter {MessageLocale -eq 'tr-TR'}
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>MessageLocalee</p></td>
 <td><p>此属性返回指定区域设置的邮件。</p></td>
 <td><p>CultureInfo</p></td>
-<td><pre><code>-ContentFilter {MessageLocale -ne &#39;en-US&#39;}</code></pre>
-<pre><code>-ContentFilter {MessageLocale -eq &#39;tr-TR&#39;}</code></pre></td>
+<td>
+
+```PowerShell
+-ContentFilter {MessageLocale -ne &#39;en-US&#39;}
+```
+
+```PowerShell
+-ContentFilter {MessageLocale -eq &#39;tr-TR&#39;}
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>Participants</p></td>
@@ -159,7 +233,12 @@ _**上一次修改主题：** 2015-09-10_
 <p>SMTP 地址</p>
 <p>LegacyDN</p>
 <p>通配符</p></td>
-<td><pre><code>-ContentFilter {(Participants -eq &#39;ayla@contoso.com&#39;) -or (Participants -eq &#39;tony@contoso.com&#39;)}</code></pre></td>
+<td>
+
+```PowerShell
+-ContentFilter {(Participants -eq &#39;ayla@contoso.com&#39;) -or (Participants -eq &#39;tony@contoso.com&#39;)}
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>PolicyTag</p></td>
@@ -167,14 +246,29 @@ _**上一次修改主题：** 2015-09-10_
 <p>如果提供的值不是 GUID，则命令会使用 Active Directory 信息将名称解析为 GUID。</p></td>
 <td><p>字符串</p>
 <p>通配符</p></td>
-<td><pre><code>-ContentFilter {PolicyTag -ne &#39;00000000-0000-0000-0000-000000000000&#39;}</code></pre></td>
+<td>
+
+```PowerShell
+-ContentFilter {PolicyTag -ne &#39;00000000-0000-0000-0000-000000000000&#39;}
+```
+</td>
 </tr>
 <tr class="even">
 <td><p>Received</p></td>
 <td><p>此属性返回接收的带有指定接收时间戳的邮件。</p></td>
 <td><p>日期时间戳</p></td>
-<td><pre><code>-ContentFilter {Received -lt &#39;01/01/2013 9:00&#39;}</code></pre>
-<pre><code>-ContentFilter {(Received -lt &#39;01/01/2013&#39;) -and (Received -gt &#39;01/01/2012&#39;)}</code></pre></td>
+<td>
+
+```PowerShell
+-ContentFilter {Received -lt '01/01/2013 9:00'}
+```
+
+```PowerShell
+-ContentFilter {(Received -lt '01/01/2013') -and (Received -gt '01/01/2012')}
+```
+
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>Sender</p></td>
@@ -184,14 +278,28 @@ _**上一次修改主题：** 2015-09-10_
 <p>SMTP 地址</p>
 <p>LegacyDN</p>
 <p>通配符</p></td>
-<td><pre><code>ContentFilter {Sender -eq &#39;tony&#39;}</code></pre></td>
+<td>
+
+```PowerShell
+ContentFilter {Sender -eq &#39;tony&#39;}
+```
+</td>
 </tr>
 <tr class="even">
 <td><p>Sent</p></td>
 <td><p>此属性返回发送的带有指定发送时间戳的邮件。</p></td>
 <td><p>日期时间戳</p></td>
-<td><pre><code>-ContentFilter {Sent -lt &#39;01/01/2013 9:00&#39;}</code></pre>
-<pre><code>-ContentFilter {(Sent -lt &#39;01/01/2013&#39;) -and (Sent -gt &#39;01/01/2012&#39;)}</code></pre></td>
+<td>
+
+```PowerShell
+-ContentFilter {Sent -lt '01/01/2013 9:00'}
+```
+
+```PowerShell
+-ContentFilter {(Sent -lt '01/01/2013') -and (Sent -gt '01/01/2012')}
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>Size</p></td>
@@ -199,14 +307,24 @@ _**上一次修改主题：** 2015-09-10_
 <td><p>B（字节）</p>
 <p>KB（千字节）</p>
 <p>MB（兆字节）</p></td>
-<td><pre><code>-ContentFilter {Size -gt &#39;10KB&#39;}</code></pre></td>
+<td>
+
+```PowerShell
+-ContentFilter {Size -gt &#39;10KB&#39;}
+```
+</td>
 </tr>
 <tr class="even">
 <td><p>Subject</p></td>
 <td><p>此属性返回邮件主题中包含指定字符串的邮件。</p></td>
 <td><p>字符串</p>
 <p>通配符</p></td>
-<td><pre><code>-ContentFilter {Subject -like &#39;*meeting*&#39;}</code></pre></td>
+<td>
+
+```PowerShell
+-ContentFilter {Subject -like &#39;*meeting*&#39;}
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>To</p></td>
@@ -216,7 +334,12 @@ _**上一次修改主题：** 2015-09-10_
 <p>SMTP 地址</p>
 <p>LegacyDN</p>
 <p>通配符</p></td>
-<td><pre><code>-ContentFilter {To -eq &#39;aylakol&#39;}</code></pre></td>
+<td>
+
+```PowerShell
+-ContentFilter {To -eq &#39;aylakol&#39;}
+```
+</td>
 </tr>
 </tbody>
 </table>

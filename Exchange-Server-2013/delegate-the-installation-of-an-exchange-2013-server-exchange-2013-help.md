@@ -66,22 +66,22 @@ Exchange Server 2013 使您可以将 Exchange 服务器安装委派给不属于 
 3.  将目录改到下载并展开 Exchange 2013 安装文件的位置。如果安装文件位于 `C:\Downloads\Exchange 2013` 中，则使用以下命令。
     
     ```powershell
-CD "C:\Downloads\Exchange 2013"
-```
+    CD "C:\Downloads\Exchange 2013"
+    ```
 
 4.  选择与要运行安装程序的位置相匹配的命令：
     
       - **如果您正在配置的计算机上运行安装程序**，则运行以下命令：
         
         ```powershell
-Setup.exe /NewProvisionedServer /IAcceptExchangeServerLicenseTerms
-```
+        Setup.exe /NewProvisionedServer /IAcceptExchangeServerLicenseTerms
+        ```
     
       - **如果您正在另一台计算机上运行安装程序**，则运行以下命令：
         
         ```powershell
-Setup.exe /NewProvisionedServer:<ComputerName> /IAcceptExchangeServerLicenseTerms
-```
+        Setup.exe /NewProvisionedServer:<ComputerName> /IAcceptExchangeServerLicenseTerms
+        ```
 
 5.  配置服务器后，需确保已将可以在配置的服务器上安装 Exchange 的用户添加到“委派安装”角色组。若要了解如何将用户添加到角色组，请参阅[Add members to a role group](manage-role-group-members-exchange-2013-help.md)。
 

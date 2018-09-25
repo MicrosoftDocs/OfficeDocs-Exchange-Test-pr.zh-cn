@@ -96,14 +96,14 @@ Exchange 2013带有五个称为*仲裁邮箱*的系统邮箱。用于存储不�
 1.  如果丢失了任何仲裁的邮箱，请运行以下命令：
     
     ```powershell
-.\Setup /preparead /IAcceptExchangeServerLicenseTerms
-```
+    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```
 
 2.  在Exchange 命令行管理程序，运行以下命令：
     
     ```powershell
-Enable-Mailbox -Arbitration -Identity "FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042"
-```
+    Enable-Mailbox -Arbitration -Identity "FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042"
+    ```
 
 ## 重新创建 Microsoft Exchange 助手审批的邮箱
 
@@ -112,12 +112,14 @@ Enable-Mailbox -Arbitration -Identity "FederatedEmail.4c1f4d8b-8179-4148-93bf-00
 1.  如果丢失了任何仲裁的邮箱，请运行以下命令：
     
     ```powershell
-.\Setup /preparead /IAcceptExchangeServerLicenseTerms
-```
+    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```
 
 2.  在Exchange 命令行管理程序，运行以下命令：
     
-        Get-User | Where-Object {$_.Name -like "SystemMailbox{1f05a927-7709-4e35-9dbe-d0f608fb781a}"} | Enable-Mailbox -Arbitration
+    ```powershell
+    Get-User | Where-Object {$_.Name -like "SystemMailbox{1f05a927-7709-4e35-9dbe-d0f608fb781a}"} | Enable-Mailbox -Arbitration
+    ```
 
 ## 重新创建 Microsoft Exchange 迁移邮箱
 
@@ -126,20 +128,20 @@ Enable-Mailbox -Arbitration -Identity "FederatedEmail.4c1f4d8b-8179-4148-93bf-00
 1.  如果丢失了任何仲裁的邮箱，请运行以下命令：
     
     ```powershell
-.\Setup /preparead /IAcceptExchangeServerLicenseTerms
-```
+    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```
 
 2.  在Exchange 命令行管理程序，运行以下命令：
     
     ```powershell
-Enable-Mailbox -Arbitration -Identity "Migration.8f3e7716-2011-43e4-96b1-aba62d229136"
-```
+    Enable-Mailbox -Arbitration -Identity "Migration.8f3e7716-2011-43e4-96b1-aba62d229136"
+    ```
 
 3.  在Exchange 命令行管理程序，通过运行以下命令来设置保留功能 (msExchCapabilityIdentifiers):
     
     ```powershell
-Set-Mailbox "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration -Management:$True -Force
-```
+    Set-Mailbox "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration -Management:$True -Force
+    ```
 
 ## 重新创建 Microsoft Exchange 发现系统邮箱
 
@@ -148,8 +150,8 @@ Set-Mailbox "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration -Manag
 1.  运行以下命令：
     
     ```powershell
-.\Setup /preparead /IAcceptExchangeServerLicenseTerms
-```
+    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```
 
 ## 重新创建 Microsoft Exchange 组织邮箱 OABs
 
@@ -158,22 +160,26 @@ Set-Mailbox "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration -Manag
 1.  如果丢失了任何仲裁的邮箱，请运行以下命令：
     
     ```powershell
-.\Setup /preparead /IAcceptExchangeServerLicenseTerms
-```
+    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```
 
 2.  在Exchange 命令行管理程序，运行以下命令：
     
     ```powershell
-Enable-Mailbox -Arbitration -Identity "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}"
-```
+    Enable-Mailbox -Arbitration -Identity "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}"
+    ```
 
 3.  在Exchange 命令行管理程序，通过运行以下命令来设置保留功能 (msExchCapabilityIdentifiers):
     
-        Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration | Set-Mailbox -Arbitration -UMGrammar:$True -OABGen:$True -GMGen:$True -ClientExtensions:$True -MessageTracking:$True -PstProvider:$True -MaxSendSize 1GB -Force
+    ```powershell
+    Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration | Set-Mailbox -Arbitration -UMGrammar:$True -OABGen:$True -GMGen:$True -ClientExtensions:$True -MessageTracking:$True -PstProvider:$True -MaxSendSize 1GB -Force
+    ```
 
 当完成后，如果运行命令`$OABMBX = Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration (Get-ADUser $OABMBX.SamAccountName -Properties *).msExchCapabilityIdentifiers` ，您将看到，46、 47 和 51 丢失了。运行下面的命令以添加所有的功能恢复：
 
-    Set-ADUser $OABMBX.SamAccountName -Add @{"msExchCapabilityIdentifiers"="40","42","43","44","47","51","52","46"}
+```powershell
+Set-ADUser $OABMBX.SamAccountName -Add @{"msExchCapabilityIdentifiers"="40","42","43","44","47","51","52","46"}
+```
 
 ## 我如何知道这有效？
 

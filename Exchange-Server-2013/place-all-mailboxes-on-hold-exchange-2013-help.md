@@ -103,7 +103,9 @@ _**上一次修改主题：** 2017-01-18_
 
 您可以通过使用 Shell 将所有邮箱置于无限期或特定时长的保留状态。此命令会将所有邮箱置于保留状态 2555 天（大约 7 年）。
 
-    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 2555
+```powershell
+Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 2555
+```
 
 该示例使用 [Get-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123685\(v=exchg.150\)) cmdlet 和收件人筛选器来检索组织中的所有用户邮箱，然后将邮箱列表输出到 [Set-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123981\(v=exchg.150\)) cmdlet，以启用诉讼保留并指定保留时长。有关详细信息，请参阅[将邮箱放到诉讼保留中](place-a-mailbox-on-litigation-hold-exchange-2013-help.md)。
 
@@ -124,24 +126,25 @@ _**上一次修改主题：** 2017-01-18_
   - 在本主题中用于将所有邮箱置于诉讼保留状态的 PowerShell 命令使用返回所有用户邮箱的收件人筛选器。您可以使用其他收件人属性来返回特定邮箱的列表，即您传输到 **Set-Mailbox** cmdlet 以将其置于诉讼保留状态的邮箱。
     
     下面是根据常规用户或邮箱属性，使用 **Get-Mailbox** 和 **Get-Recipient** cmdlet 返回部分邮箱的一些示例。这些示例假设已填充相关的邮箱属性（例如 *CustomAttributeN* 或 *Department*）。
-    ```
+    
+    ```powershell
         Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
     ```
-    ```
+    
     ```powershell
-Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
-```
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
     ```
-    ```
+    
+    ```powershell
         Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
     ```
-    ```
+    
+    ```powershell
         Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
     ```
-    ```
+    
     ```powershell
-Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
-```
+    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
     ```
     
     您可以在筛选器中使用其他用户邮箱属性来添加或排除邮箱。有关详细信息，请参阅[-Filter 参数的可筛选属性](https://technet.microsoft.com/zh-cn/library/bb738155\(v=exchg.150\))。
