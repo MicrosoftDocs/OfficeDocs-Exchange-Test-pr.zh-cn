@@ -100,8 +100,11 @@ _**上一次修改主题：** 2016-12-09_
 > <ul>
 > <li><p>Telnet 客户端中的命令不区分大小写。为清楚起见，SMTP 命令动词均使用大写。</p></li>
 > <li><p>在 Telnet 会话中连接目标 SMTP 服务器后，无法使用 Backspace 键。如果在键入 SMTP 命令时出错，必须按 ENTER，然后重新键入命令。无法识别的 SMTP 命令或语法错误会导致生成如下错误消息：</p>
-> <pre><code>500 5.3.3 Unrecognized command</code></pre></li>
-> </ul>
+> 
+> ```powershell
+> 500 5.3.3 Unrecognized command
+> ```
+> </LI></UL>
 
 
 1.  在命令提示符处，键入 **telnet**，然后按 Enter。此命令将打开 Telnet 会话。
