@@ -65,7 +65,9 @@ New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2..
 
 本示例将创建仅适用于数据库 Database 1、Database 2 和 Database 3 的作用域。
 
-    New-ManagementScope -Name "Accounting databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```powershell
+New-ManagementScope -Name "Accounting databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```
 
 有关详细的语法和参数信息，请参阅 [New-ManagementScope](https://technet.microsoft.com/zh-cn/library/dd335137\(v=exchg.150\))。
 
@@ -83,7 +85,9 @@ New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
 
 本示例将创建一个作用域，该作用域包含数据库的 **Name** 属性中含有字符串“ACCT”的所有数据库。
 
-    New-ManagementScope -Name "Accounting Databases" -DatabaseRestrictionFilter { Name -Like '*ACCT*' }
+```powershell
+New-ManagementScope -Name "Accounting Databases" -DatabaseRestrictionFilter { Name -Like '*ACCT*' }
+```
 
 有关语法和参数的详细信息，请参阅 [New-ManagementScope](https://technet.microsoft.com/zh-cn/library/dd335137\(v=exchg.150\))。
 
@@ -101,12 +105,16 @@ New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
 
 使用下面的语法可使用新数据库作用域，在要分配的管理角色与新角色组之间创建角色分配。
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomConfigWriteScope <database scope name>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomConfigWriteScope <database scope name>
+```
 
 此示例使用 Accounting Databases 数据库作用域，在 Mail Recipients 和 Mail Recipient Creation 角色与 Accounting Administrators 角色组之间创建角色分配。
 
-    New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipients" -CustomConfigWriteScope "Accounting Databases"
-    New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipient Creation" -CustomConfigWriteScope "Accounting Databases"
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipients" -CustomConfigWriteScope "Accounting Databases"
+New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipient Creation" -CustomConfigWriteScope "Accounting Databases"
+```
 
 有关详细的语法和参数信息，请参阅 [New-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd335193\(v=exchg.150\))。
 
@@ -118,12 +126,16 @@ New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
 
 使用下面的语法可修改您要应用数据库作用域的管理角色与现有角色组之间的角色分配。
 
-    Get-ManagementRoleAssignment -RoleAssignee <role group name> -Role <role name> | Set-ManagementRoleAssignment -CustomConfigWriteScope <database scope name>
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <role group name> -Role <role name> | Set-ManagementRoleAssignment -CustomConfigWriteScope <database scope name>
+```
 
 此示例将 Accounting Databases 数据库作用域添加到已分配给 Accounting Administrators 角色组的 Mail Recipients 和 Mail Recipient Creation 角色。
 
-    Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipients" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
-    Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipient Creation" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipients" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
+Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipient Creation" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
+```
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd351024\(v=exchg.150\)) 和 [Set-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd335173\(v=exchg.150\))。
 

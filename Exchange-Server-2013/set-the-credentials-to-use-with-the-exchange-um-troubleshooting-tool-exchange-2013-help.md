@@ -56,12 +56,13 @@ Microsoft Exchange 2010 UM 疑难解答工具是名为 **Test-ExchangeUMCallFlow
 2.  在\&quot;Microsoft Exchange 2010 UM 故障排除工具\&quot;窗口中，在提示符下输入以下命令，然后按 Enter 键。
     
     ```powershell
-$cred=Get-Credential
-```
+    $cred=Get-Credential
+    ```
 
 3.  在\&quot;Windows PowerShell 凭据请求\&quot;窗口中，键入域名\\用户名和密码，然后单击\&quot;确定\&quot;。
 
 4.  在\&quot;Microsoft Exchange 2010 UM 故障排除工具\&quot;窗口中，指定必要的 cmdlet 参数对呼叫流进行测试。例如：
     
-        Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
-
+    ```powershell
+      Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
+    ```

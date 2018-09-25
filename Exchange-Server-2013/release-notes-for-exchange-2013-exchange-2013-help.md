@@ -129,8 +129,8 @@ _**上一次修改主题：** 2018-04-16_
     2.  运行以下命令。
         
         ```powershell
-Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
-```
+        Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+        ```
     
     3.  执行正常传输代理管理任务。
     
@@ -160,7 +160,9 @@ Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
     
     要解决此问题，您需要在 Exchange 2013 客户端访问服务器上从客户端接收连接器中删除 `Integrated` 身份验证方法。要从客户端接收连接器中删除 `Integrated` 身份验证方法，请在可从运行 **Send-MailMessage** cmdlet 的计算机接收连接的每台 Exchange 2013 客户端访问服务器上运行以下命令：
     
+      ```powershell
         Set-ReceiveConnector "<server name>\Client Frontend <server name>" -AuthMechanism Tls, BasicAuth, BasicAuthRequireTLS
+      ```
 
   - **当您升级到 Exchange 2013 SP1 时，MAPI over HTTP 可能会遇到性能不佳的问题**   如果您从 Exchange 2013 累积更新升级到 Exchange 2013 SP1 并启用 MAPI over HTTP，使用该协议连接到 Exchange 2013 SP1 服务器的客户端可能遇到性能不佳的问题。这是因为在从累积更新升级到 Exchange 2013 SP1 的过程中未配置所需设置。如果您从 Exchange 2013 RTM 升级到 Exchange 2013 SP1，或者安装新的 Exchange 2013 SP1 或更高版本服务器，则不会出现此问题。
     
@@ -171,22 +173,26 @@ Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
     
     1.  在运行客户端访问服务器角色的服务器上，在 Windows 命令提示符中运行以下命令：
         
-            set AppCmdLocation=%windir%\System32\inetsrv
-            set ExchangeLocation=%ProgramFiles%\Microsoft\Exchange Server\V15
-            
-            %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiFrontEndAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiFrontEndAppPool_CLRConfig.config"
-            %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiFrontEndAppPool"
-    
+        ```powershell
+          set AppCmdLocation=%windir%\System32\inetsrv
+          set ExchangeLocation=%ProgramFiles%\Microsoft\Exchange Server\V15
+          
+          %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiFrontEndAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiFrontEndAppPool_CLRConfig.config"
+          %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiFrontEndAppPool"
+        ```
+
     2.  在运行邮箱服务器角色的服务器上，在 Windows 命令提示符中运行以下命令：
         
-            set AppCmdLocation=%windir%\System32\inetsrv
-            set ExchangeLocation=%ProgramFiles%\Microsoft\Exchange Server\V15
-            
-            %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiMailboxAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiMailboxAppPool_CLRConfig.config"
-            %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiMailboxAppPool"
-            
-            %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiAddressBookAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiAddressBookAppPool_CLRConfig.config"
-            %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiAddressBookAppPool"
+        ```powershell
+          set AppCmdLocation=%windir%\System32\inetsrv
+          set ExchangeLocation=%ProgramFiles%\Microsoft\Exchange Server\V15
+          
+          %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiMailboxAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiMailboxAppPool_CLRConfig.config"
+          %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiMailboxAppPool"
+          
+          %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiAddressBookAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiAddressBookAppPool_CLRConfig.config"
+          %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiAddressBookAppPool"
+        ```
 
 ## Exchange 2010 共存
 

@@ -48,6 +48,6 @@ EAC 显示当前与用户邮箱同步的移动设备列表。您可以按产品�
 1.  运行以下命令。
     
     ```powershell
-Get-MobileDevice -Mailbox useralias
-```
+    Get-MobileDevice -Mailbox useralias
+    ```
 

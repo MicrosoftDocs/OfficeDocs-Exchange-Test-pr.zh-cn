@@ -43,7 +43,9 @@ _**上一次修改主题：** 2015-04-08_
 
 运行以下命令：
 
-    Set-TransportService <ServerIdentity> -RoutingTableLogMaxAge <dd.hh:mm:ss> -RoutingTableLogMaxDirectorySize <Size>  -RoutingTableLogPath <LocalFilePath>
+```powershell
+Set-TransportService <ServerIdentity> -RoutingTableLogMaxAge <dd.hh:mm:ss> -RoutingTableLogMaxDirectorySize <Size>  -RoutingTableLogPath <LocalFilePath>
+```
 
 此示例将在名为 Mailbox01 的邮箱服务器上设置以下路由表日志设置：
 
@@ -55,7 +57,9 @@ _**上一次修改主题：** 2015-04-08_
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -RoutingTableLogPath "D:\Routing Table Log" -RoutingTableLogMaxDirectorySize 70MB -RoutingTableLogMaxAge 45.00:00:00
+```powershell
+Set-TransportService Mailbox01 -RoutingTableLogPath "D:\Routing Table Log" -RoutingTableLogMaxDirectorySize 70MB -RoutingTableLogMaxAge 45.00:00:00
+```
 
 > [!NOTE]  
 > 将 <em>RoutingTableLogMaxAge</em> 参数设置为值 <code>00:00:00</code> 可防止由于期限问题而自动删除路由表日志文件。
@@ -67,7 +71,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  在此命令行管理程序中，运行以下命令：
     
-        Get-TransportService <ServerIdentity> | Format-List RoutingTableLog*
+    ```powershell
+    Get-TransportService <ServerIdentity> | Format-List RoutingTableLog*
+    ```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -76,26 +82,28 @@ _**上一次修改主题：** 2015-04-08_
 1.  在命令提示符窗口中，通过运行以下命令在记事本中打开 EdgeTransport.exe.config 应用程序配置文件：
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
-```
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 2.  修改 `<appSettings>` 部分中的以下键。
     
     ```command line
-<add key="RoutingConfigReloadInterval" value="<hh:mm:ss>" />
-```
+    <add key="RoutingConfigReloadInterval" value="<hh:mm:ss>" />
+    ```
     
     例如，要将自动重新计算路由表的时间间隔更改为 10 小时，请使用以下值：
     
     ```command line
-<add key="RoutingConfigReloadInterval" value="10:00:00" />
-```
+    <add key="RoutingConfigReloadInterval" value="10:00:00" />
+    ```
 
 3.  完成后，保存并关闭 EdgeTransport.exe.config 文件。
 
 4.  通过运行以下命令重新启动 Microsoft Exchange 传输服务：
     
-        net stop MSExchangeTransport && net start MSExchangeTransport
+    ```powershell
+    net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 
 ## 您如何知道这有效？
 

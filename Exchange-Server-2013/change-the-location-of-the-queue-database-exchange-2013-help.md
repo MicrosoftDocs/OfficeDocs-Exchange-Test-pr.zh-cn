@@ -94,24 +94,30 @@ Microsoft Exchange Server 2013 与 Exchange 之前的版本类似，使用可扩
 2.  在命令提示符窗口中，通过运行以下命令在记事本中打开 EdgeTransport.exe.config 文件：
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
-```
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 3.  修改 `<appSettings>` 部分中的以下键。
     
+    ```powershell
         <add key="QueueDatabasePath" value="<LocalPath>" />
         <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
-    
+    ```
+
     例如，若要在 D:\\Queue\\QueueDB 中创建新的队列数据库，在 D:\\Queue\\QueueLogs 中创建新的事务日志，请使用以下值：
     
+    ```powershell
         <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
         <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
+    ```
 
 4.  完成后，保存并关闭 EdgeTransport.exe.config 文件。
 
 5.  通过运行以下命令重新启动 Microsoft Exchange 传输服务：
     
+    ```powershell
         net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 
 ## 您如何知道操作成功？
 
@@ -140,26 +146,30 @@ Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
 2.  在命令提示符窗口中，通过运行以下命令在记事本中打开 EdgeTransport.exe.config 文件：
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
-```
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 3.  修改 `<appSettings>` 部分中的以下键：
     
+    ```powershell
         <add key="QueueDatabasePath" value="<LocalPath>" />
         <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
-    
+    ```
+
     例如，若要将队列数据库的位置更改为 D:\\Queue\\QueueDB，将事务日志的位置更改为 D:\\Queue\\QueueLogs，请使用以下值：
     
+    ```powershell
         <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
         <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
+    ```
 
 4.  完成后，保存并关闭 EdgeTransport.exe.config 文件。
 
 5.  通过运行以下命令停止 Microsoft Exchange 传输服务：
     
     ```powershell
-net stop MSExchangeTransport
-```
+    net stop MSExchangeTransport
+    ```
 
 6.  将现有数据库文件 Mail.que 和 Trn.chk 从原始位置移动到新位置。
 
@@ -168,8 +178,8 @@ net stop MSExchangeTransport
 8.  通过运行以下命令启动 Microsoft Exchange 传输服务：
     
     ```powershell
-net start MSExchangeTransport
-```
+    net start MSExchangeTransport
+    ```
 
 ## 您如何知道操作成功？
 

@@ -55,7 +55,9 @@ Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
 
 此命令检索组织中的所有邮箱服务器并以表格格式从每台服务器输出托管文件夹助理的工作周期属性。*Auto* 开关用于自动调整列宽。
 
+  ```powershell
     Get-MailboxServer | Format-Table Name,ManagedFolderWorkCycle* -Auto
+  ```
 
 ## 使用命令行管理程序启动托管文件夹助理
 

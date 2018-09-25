@@ -91,7 +91,9 @@ Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true -LitigationHoldDura
 
 本示例将组织中的所有用户邮箱置于诉讼保留状态，时间为 1 年（365 天）。
 
+```powershell
     Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 365
+```
 
 本示例使用 [Get-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123685\(v=exchg.150\)) cmdlet 检索组织中的所有邮箱，指定收件人筛选器以包含所有用户邮箱，然后将邮箱列表输出到 [Set-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123981\(v=exchg.150\)) cmdlet 以启用诉讼保留和保留持续时间。
 
@@ -104,7 +106,7 @@ Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true -LitigationHoldDura
 此示例将邮箱 bsuneja@contoso.com 从诉讼保留中删除。
 
 ```powershell
-Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $false
+    Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $false
 ```
 
 返回顶部
@@ -127,12 +129,16 @@ Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $false
 
   - 在命令行管理程序中，运行以下命令之一：
     
+    ```powershell
         Get-Mailbox <name of mailbox> | FL LitigationHold*
-    
+    ```
+
     或者
     
+    ```powershell
         Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | FL Name,LitigationHold*
-    
+    ```
+
     如果邮箱无限期置于诉讼保留状态，则将 *LitigationHoldDuration* 邮箱属性的值设置为 `Unlimited`。
 
 ## 详细信息
@@ -150,26 +156,27 @@ Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $false
   - 前面将所有邮箱置于保留状态的命令使用返回所有用户邮箱的收件人筛选器。您可以使用其他收件人属性来返回特定邮箱的列表，即您传输到 **Set-Mailbox** cmdlet 以将其置于诉讼保留状态的邮箱。
     
     下面是根据常规用户或邮箱属性，使用 **Get-Mailbox** 和 **Get-Recipient** cmdlet 返回部分邮箱的一些示例。这些示例假设已填充相关的邮箱属性（例如 *CustomAttributeN* 或 *Department*）。
-    ```
+
+    ```powershell
         Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
     ```
-    ```
+    
     ```powershell
-Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
-```
-    ```
-    ```
-        Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
-    ```
-    ```
-        Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
-    ```
-    ```
-    ```powershell
-Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
-```
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
     ```
     
+    ```powershell
+        Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
+    ```
+
+    ```powershell
+        Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
+    ```
+    
+    ```powershell
+    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
+    ```
+        
     您可以在筛选器中使用其他用户邮箱属性来添加或排除邮箱。有关详细信息，请参阅[-Filter 参数的可筛选属性](https://technet.microsoft.com/zh-cn/library/bb738155\(v=exchg.150\))。
 
 返回顶部

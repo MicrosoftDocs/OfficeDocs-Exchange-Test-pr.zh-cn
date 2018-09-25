@@ -136,19 +136,19 @@ Disable-Mailbox <identity>
 运行此命令时，系统将显示一条消息，要求您确认是否要禁用邮箱。
 
 以下是一些禁用邮箱的命令示例。
-```
+
 ```powershell
 Disable-Mailbox danj
 ```
+
+```powershell
+Disable-Mailbox "Conf Room 31/1234 (12)"
 ```
-```
-    Disable-Mailbox "Conf Room 31/1234 (12)"
-```
-```
+
 ```powershell
 Disable-Mailbox sharedmbx@contoso.com
 ```
-```
+
 
 ## 您如何知道这有效？
 
@@ -160,8 +160,10 @@ Disable-Mailbox sharedmbx@contoso.com
 
   - 在此命令行管理程序中，运行以下命令。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisconnectReason,DisconnectDate
-    
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisconnectReason,DisconnectDate
+    ```
+
     *DisconnectReason* 属性中的 `Disabled` 值表明邮箱已禁用。
     
     > [!NOTE]  
@@ -171,8 +173,8 @@ Disable-Mailbox sharedmbx@contoso.com
   - 在此命令行管理程序中，运行以下命令。
     
     ```powershell
-Get-User <identity>
-```
+    Get-User <identity>
+    ```
     
     请注意，*RecipientType* 属性的值为 `User`，而不是已禁用邮箱的用户值 `UserMailbox`。这也表明该邮箱已禁用，但用户帐户仍然存在。
 
@@ -204,19 +206,19 @@ Remove-Mailbox <identity>
 
 以下是一些删除邮箱的命令示例。
 
-```
+
 ```powershell
 Remove-Mailbox pilarp@contoso.com
 ```
+
+```powershell
+Remove-Mailbox "Fleet Van (16)"
 ```
-```
-    Remove-Mailbox "Fleet Van (16)"
-```
-```
+
 ```powershell
 Remove-Mailbox corpprint
 ```
-```
+
 
 ## 您如何知道这有效？
 
@@ -230,8 +232,10 @@ Remove-Mailbox corpprint
 
 1.  运行以下命令来验证邮箱是否已删除。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisconnectReason,DisconnectDate
-    
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisconnectReason,DisconnectDate
+    ```
+
     *DisconnectReason* 属性中的 `Disabled` 值表明邮箱已删除。
     
     > [!NOTE]  
@@ -241,8 +245,8 @@ Remove-Mailbox corpprint
 2.  运行以下命令，验证 Active Directory 用户帐户是否已删除。
     
     ```powershell
-Get-User <identity>
-```
+    Get-User <identity>
+    ```
     
     该命令将返回错误，指出找不到用户，从而验证帐户已删除。
 

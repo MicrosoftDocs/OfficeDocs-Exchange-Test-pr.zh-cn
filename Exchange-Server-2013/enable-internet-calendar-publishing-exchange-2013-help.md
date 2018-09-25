@@ -86,7 +86,9 @@ Get-ExchangeServer | format-list
 
 本示例在客户端访问服务器 CAS01 上启用发布虚拟目录。
 
-    Set-OwaVirtualDirectory -Identity "CAS01\owa (Default Web Site)" -ExternalUrl "<URL for CAS01>" -CalendarEnabled $true
+```powershell
+Set-OwaVirtualDirectory -Identity "CAS01\owa (Default Web Site)" -ExternalUrl "<URL for CAS01>" -CalendarEnabled $true
+```
 
 其中标识 `CAS01\owa (Default Web Site)` 是服务器名称和 Outlook Web App 虚拟目录。
 
@@ -140,7 +142,9 @@ Get-OwaVirtualDirectory | format-list
 
 此示例创建一个名为 Internet 的 Internet 日历发布共享，并将此策略配置为仅共享可用性信息。已启用此策略。
 
-    New-SharingPolicy -Name "Internet" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```powershell
+New-SharingPolicy -Name "Internet" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```
 
 本示例向用户邮箱添加共享策略 Internet。
 
@@ -194,7 +198,9 @@ Get-SharingPolicy <policy name> | format-list
 
 此示例更新默认共享策略，并将该策略配置为仅共享可用性信息。已启用此策略。
 
-    Set-SharingPolicy -Name "Default Sharing Policy" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```powershell
+Set-SharingPolicy -Name "Default Sharing Policy" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```
 
 有关语法和参数的详细信息，请参阅 [Set-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123981\(v=exchg.150\))。
 

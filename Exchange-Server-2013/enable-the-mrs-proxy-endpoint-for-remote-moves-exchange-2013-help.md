@@ -63,7 +63,9 @@ _**上一次修改主题：** 2013-07-02_
 
 下面的命令在名为 EXCH-SRV-01 的客户端访问服务器上启用 MRS 代理终结点。
 
+```powershell
     Set-WebServicesVirtualDirectory -Identity "EXCH-SRV-01\EWS (Default Web Site)" -MRSProxyEnabled $true
+```
 
 下面的命令在 Exchange 组织中的所有客户端访问服务器上启用 MRS 代理终结点。
 
@@ -99,12 +101,12 @@ Get-WebServicesVirtualDirectory | FL Identity,MRSProxyEnabled
 
 下面的示例测试与 corp.contoso.com 林中服务器的连接。
 
-```
+
 ```powershell
-$Credentials = Get-Credential
+    $Credentials = Get-Credential
 ```
-```
-```
+
+```powershell
     Test-MigrationServerAvailability -ExchangeRemoteMove -Autodiscover -EmailAddress administrator@corp.contoso.com -Credentials $Credentials
 ```
 

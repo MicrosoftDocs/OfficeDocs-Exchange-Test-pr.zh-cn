@@ -45,7 +45,9 @@ Microsoft Exchange Server 2013 包括使用 Microsoft SharePoint Server 2013 和
 
 运行以下命令创建 Exchange 2013 作为 SharePoint 2013 中的可信安全令牌颁发者。
 
+```powershell
     New-SPTrustedSecurityTokenIssuer -Name Exchange -MetadataEndPoint https://<Exchange Server Name or FQDN>/autodiscover/metadata/json/1
+```
 
 ## 步骤 2：在运行 Exchange 2013 的服务器上为 SharePoint 2013 配置服务器到服务器的身份验证
 
@@ -53,8 +55,10 @@ Microsoft Exchange Server 2013 包括使用 Microsoft SharePoint Server 2013 和
 
 运行此命令配置 SharePoint 合作伙伴应用程序。
 
+```powershell
     cd c:\'Program Files'\Microsoft\'Exchange Server'\V15\Scripts
     .\Configure-EnterprisePartnerApplication.ps1 -AuthMetadataUrl <path to SharePoint AuthMetadataUrl> -ApplicationType SharePoint
+```
 
 ## 步骤 3：将授权用户添加到发现管理角色组
 

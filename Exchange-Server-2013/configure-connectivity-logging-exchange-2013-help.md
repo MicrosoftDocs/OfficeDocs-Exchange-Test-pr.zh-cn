@@ -55,7 +55,9 @@ _**上一次修改主题：** 2013-02-18_
 
 要配置连接日志记录，请运行以下命令：
 
+  ```powershell
     <Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> <ServerIdentity> -ConnectivityLogEnabled <$true | $false> -ConnectivityLogMaxAge <dd.hh:mm:ss> -ConnectivityLogMaxDirectorySize <Size> -ConnectivityLogMaxFileSize <Size> -ConnectivityLogPath <LocalFilePath>
+  ```
 
 此示例将在名为 Mailbox01 的邮箱服务器上的传输服务中设置以下连接日志设置：
 
@@ -69,7 +71,9 @@ _**上一次修改主题：** 2013-02-18_
 
 <!-- end list -->
 
+  ```powershell
     Set-TransportService Mailbox01 -ConnectivityLogPath "D:\Hub Connectivity Log" -ConnectivityLogMaxFileSize 20MB -ConnectivityLogMaxDirectorySize 1.5GB -ConnectivityLogMaxAge 45.00:00:00
+  ```
 
 > [!NOTE]  
 > <ul>
@@ -85,7 +89,9 @@ _**上一次修改主题：** 2013-02-18_
 
 1.  在此命令行管理程序中，运行以下命令：
     
-        <Get-TransportService | Get-FrontEndTransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List ConnectivityLog*
+    ```powershell
+      <Get-TransportService | Get-FrontEndTransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List ConnectivityLog*
+    ```
 
 2.  验证显示的值是否为您配置的值。
 

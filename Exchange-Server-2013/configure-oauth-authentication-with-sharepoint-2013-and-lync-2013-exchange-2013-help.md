@@ -49,14 +49,18 @@ Exchange Server 2013 允许其他应用程序使用 OAuth 对 Exchange 进行身
 
 本示例将为 SharePoint 2013 配置 OAuth 身份验证。
 
+  ```powershell
     Cd C:\Program Files\Microsoft\Exchange Server\V15\Scripts
     Configure-EnterprisePartnerApplication.ps1 -AuthMetaDataUrl https://sharepoint.contoso.com/_layouts/15/metadata/json/1 -ApplicationType SharePoint
+  ```
 
 本示例将为 Lync Server 2013 配置 OAuth 身份验证。
 
+  ```powershell
     Cd C:\Program Files\Microsoft\Exchange Server\V15\Scripts
     Configure-EnterprisePartnerApplication.ps1 -AuthMetaDataUrl https://lync.contoso.com/metadata/json/1 -ApplicationType Lync
-
+  ```
+  
 ## 您如何知道这有效？
 
 要验证是否成功配置了企业合作伙伴应用程序对 Exchange 2013 进行身份验证，可在命令行管理程序中运行 [Get-PartnerApplication](https://technet.microsoft.com/zh-cn/library/jj218721\(v=exchg.150\)) cmdlet 来检索配置。也可使用合作伙伴应用程序运行 [Test-OAuthConnectivity](https://technet.microsoft.com/zh-cn/library/jj218623\(v=exchg.150\)) cmdlet 来测试用户的 OAuth 连接性。

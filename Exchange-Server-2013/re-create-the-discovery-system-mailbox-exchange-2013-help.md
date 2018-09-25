@@ -42,8 +42,8 @@ _**上一次修改主题：** 2018-01-17_
     若要重新创建搜索系统邮箱，请运行以下命令：
     
     ```powershell
-.\Setup /preparead /IAcceptExchangeServerLicenseTerms
-```
+    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```
 
 ## 我如何知道这有效？
 

@@ -41,7 +41,9 @@ _**上一次修改主题：** 2016-12-09_
 
 运行以下命令。
 
+  ```powershell
     Test-OutlookConnectivity -ProbeIdentity 'OutlookMailboxDeepTestProbe' -MailboxId tony@contoso.com -Hostname contoso.com
+  ```
 
 > [!NOTE]  
 > <em>OutlookMailboxDeepTestProbe</em> 参数值可测试邮箱服务器的连接。若要测试客户端访问服务器的连接，请将 <em>OutlookMailboxCTPProbe</em> 用于 <em>ProbeIdentity</em> 参数值。
