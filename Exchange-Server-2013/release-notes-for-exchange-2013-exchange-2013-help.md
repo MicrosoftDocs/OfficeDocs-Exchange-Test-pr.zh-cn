@@ -107,7 +107,7 @@ _**上一次修改主题：** 2018-04-16_
     
     从 Exchange 2013 CU6 开始，如果您想要让外部发件人向启用了邮件功能的公用文件夹发送邮件，则至少需要向“匿名”用户授予“创建项目”权限。如果您已经设置启用了邮件功能的公用文件夹而尚未进行此操作，外部发件人将收到一封传递失败通知，邮件将不会传递到启用了邮件功能的公用文件夹。
     
-    可以使用命令行管理程序或 Outlook 设置匿名用户的权限。要了解如何设置匿名用户的权限，请参阅[对公用文件夹启用或禁用邮件](mail-enable-or-mail-disable-a-public-folder-exchange-2013-help.md)。
+    可以使用命令行管理程序或 Outlook 设置匿名用户的权限。要了解如何设置匿名用户的权限，请参阅[对公用文件夹启用或禁用邮件](https://technet.microsoft.com/zh-cn/library/aa997560(v=exchg.150))。
 
   - 可以从旧版 Exchange 服务器迁移到 Exchange 2013 的公用文件夹的最大数目是 500000。有关公用文件夹复制的详细信息，请参阅[使用批处理迁移将公用文件夹从以前版本迁移到 Exchange 2013](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)。
 

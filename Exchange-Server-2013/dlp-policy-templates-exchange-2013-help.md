@@ -57,7 +57,7 @@ _**上一次修改主题：** 2015-01-14_
 
   -  [Exchange Online 中的邮件流规则（传输规则）](https://technet.microsoft.com/zh-cn/library/jj919238\(v=exchg.150\)) (Exchange Online)
 
-  -  [管理邮件流规则](manage-mail-flow-rules-exchange-2013-help.md)
+  -  [管理邮件流规则](https://technet.microsoft.com/zh-cn/library/jj657505(v=exchg.150))
     
   -  [策略和合规性 cmdlet](https://technet.microsoft.com/zh-cn/library/dd298082\(v=exchg.150\))
 
@@ -65,11 +65,11 @@ _**上一次修改主题：** 2015-01-14_
 
 众多 DLP 政策由 Microsoft 提供。这是开始使用实施起来非常灵活和简便的 DLP 解决方案的最便利方式。您可以始终使用提供的策略作为启动，并进一步将其自定义，以满足自己的要求。要开始了解这些信息，请参阅下列信息：
 
-  - [在 Exchange 中提供的 DLP 策略模板](dlp-policy-templates-supplied-in-exchange-exchange-2013-help.md)
+  - [在 Exchange 中提供的 DLP 策略模板](https://technet.microsoft.com/zh-cn/library/jj150530(v=exchg.150))
 
-  - [从模板创建 DLP 策略](how-to-new-dlp-data-loss-prevention-policy-template.md)
+  - [从模板创建 DLP 策略](https://technet.microsoft.com/zh-cn/library/jj150515(v=exchg.150))
 
 ## 详细信息
 
-[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[数据丢失预防](https://technet.microsoft.com/zh-cn/library/jj150527(v=exchg.150))
 

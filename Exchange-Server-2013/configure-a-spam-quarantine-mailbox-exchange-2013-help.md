@@ -61,7 +61,7 @@ _**上一次修改主题：** 2013-02-19_
 
   - **创建专用的邮箱和用户帐户**   建议你创建专门的邮箱和 Active Directory 用户帐户以用于垃圾邮件隔离邮箱。有关详细信息，请参阅[创建用户邮箱](create-user-mailboxes-exchange-2013-help.md)。
     
-    根据组织的合规性策略和需要，你可以应用各种收件人策略，如邮件记录管理、邮箱配额以及委派权限。有关详细信息，请参阅[邮件记录管理](messaging-records-management-exchange-2013-help.md)。
+    根据组织的合规性策略和需要，你可以应用各种收件人策略，如邮件记录管理、邮箱配额以及委派权限。有关详细信息，请参阅[邮件记录管理](https://technet.microsoft.com/zh-cn/library/dd335093(v=exchg.150))。
     
     > [!NOTE]  
     > 如果某封隔离的邮件因为存储配额而遭到拒收，该邮件将会丢失。Exchange 不会为隔离的邮件生成 NDR，因为隔离的邮件将打包为 NDR。

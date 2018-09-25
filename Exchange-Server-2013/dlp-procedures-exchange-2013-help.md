@@ -17,9 +17,9 @@ _**适用于：** Exchange Server 2013_
 
 _**上一次修改主题：** 2015-01-07_
 
-通过以下过程，您可以开始在邮件环境中使用数据丢失防护 (DLP) 解决方案。若要了解 DLP 的概念和目标，请参阅[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)。
+通过以下过程，您可以开始在邮件环境中使用数据丢失防护 (DLP) 解决方案。若要了解 DLP 的概念和目标，请参阅[数据丢失预防](https://technet.microsoft.com/zh-cn/library/jj150527(v=exchg.150))。
 
-[从模板创建 DLP 策略](how-to-new-dlp-data-loss-prevention-policy-template.md)   可帮助您配置 Microsoft 提供的预建策略规则集的信息。通过策略模板，您可以轻松开始管理与多个一般法律和规定要求相关联的邮件数据。
+[从模板创建 DLP 策略](https://technet.microsoft.com/zh-cn/library/jj150515(v=exchg.150))   可帮助您配置 Microsoft 提供的预建策略规则集的信息。通过策略模板，您可以轻松开始管理与多个一般法律和规定要求相关联的邮件数据。
 
 [创建自定义 DLP 策略](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/data-loss-prevention/create-custom-dlp-policy)   可帮助您配置策略规则以满足预先存在的 DLP 模板之一可能未涵盖的组织特定需求的信息。您可以使用的单个策略中的规则条件包括所有传统传输规则以及新的敏感信息类型。
 
@@ -35,7 +35,7 @@ _**上一次修改主题：** 2015-01-07_
 
 ## 详细信息
 
-[管理策略提示](how-to-configure-and-manage-policy-tips-a-dlp-feature-exchange.md)
+[管理策略提示](https://technet.microsoft.com/zh-cn/library/jj619307(v=exchg.150))
 
 [创建 DLP 策略检测的事件报告](create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md)
 

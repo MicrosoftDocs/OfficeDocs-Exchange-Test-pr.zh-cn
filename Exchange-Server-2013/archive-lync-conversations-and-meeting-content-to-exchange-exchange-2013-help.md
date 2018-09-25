@@ -29,7 +29,7 @@ _**上一次修改主题：** 2016-12-09_
 
 有关将用户置于保留状态的分步说明，请参阅以下主题：
 
-  - [创建或删除就地保留](create-or-remove-an-in-place-hold-exchange-2013-help.md)
+  - [创建或删除就地保留](https://technet.microsoft.com/zh-cn/library/dd979797(v=exchg.150))
 
   - [将邮箱放到诉讼保留中](place-a-mailbox-on-litigation-hold-exchange-2013-help.md)
 

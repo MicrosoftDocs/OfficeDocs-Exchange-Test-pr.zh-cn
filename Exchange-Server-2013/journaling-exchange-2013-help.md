@@ -83,7 +83,7 @@ Exchange 2013 提供了下列日记选项：
 
   - **高级日记**   通过高级日记，日记代理能够使用日记规则执行更详细的日记记录。可以通过记录单个收件人或通讯组成员来配置日记规则，以满足组织的需要，而不是记录邮箱数据库上驻留的所有邮箱。您必须拥有 Exchange Enterprise 客户端访问许可证 (CAL) 才能使用高级日记。
 
-在邮箱数据库上启用标准日记时，此信息将保存在 Active Directory 中并由日记代理读取。同样，使用高级日记功能配置的日记规则也保存在 Active Directory 中并由日记代理应用。有关如何配置标准日记和高级日记的详细信息，请参阅[管理日记](manage-journaling-exchange-2013-help.md)。
+在邮箱数据库上启用标准日记时，此信息将保存在 Active Directory 中并由日记代理读取。同样，使用高级日记功能配置的日记规则也保存在 Active Directory 中并由日记代理应用。有关如何配置标准日记和高级日记的详细信息，请参阅[管理日记](https://technet.microsoft.com/zh-cn/library/jj651670(v=exchg.150))。
 
 返回顶部
 

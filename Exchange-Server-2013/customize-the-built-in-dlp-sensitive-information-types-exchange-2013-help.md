@@ -269,7 +269,7 @@ _**上一次修改主题：** 2016-05-26_
 
 ## 详细信息
 
-  - [如何通过应用 DLP 规则来评估邮件](how-dlp-rules-are-applied-to-evaluate-messages-exchange-2013-help.md)
+  - [如何通过应用 DLP 规则来评估邮件](https://technet.microsoft.com/zh-cn/library/dn329050(v=exchg.150))
 
   - [创建自定义 DLP 策略](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/data-loss-prevention/create-custom-dlp-policy)
 

@@ -111,7 +111,7 @@ Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox
 
 ## 将所有邮箱置于就地保留状态
 
-您可以使用 EAC 选择多达 500 个邮箱并将其置于保留状态。有关详细信息，请参阅[创建或删除就地保留](create-or-remove-an-in-place-hold-exchange-2013-help.md)。
+您可以使用 EAC 选择多达 500 个邮箱并将其置于保留状态。有关详细信息，请参阅[创建或删除就地保留](https://technet.microsoft.com/zh-cn/library/dd979797(v=exchg.150))。
 
 > [!TIP]  
 > 要将多于 500 个用户置于就地保留状态，请使用 Shell。请参阅 <a href="https://technet.microsoft.com/zh-cn/library/dd298064(v=exchg.150)">New-MailboxSearch</a>。
@@ -121,7 +121,7 @@ Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox
 
   - 当您将组织中的所有邮箱置于保留状态时，只有当您运行命令时已存在的邮箱将置于保留状态。如果您后续创建了新的邮箱，请再次运行该命令以将其置于保留状态。如果您频繁地创建新邮箱，您可以将该命令作为一个计划任务，按照所需的频率运行。
 
-  - 将邮箱置于保留状态可以保留相关数据。方法是：在指定日期前阻止删除数据以及在修改邮件前保留初始版本的邮件。它不会在指定时间段后自动删除邮件。将诉讼保留或就地保留与保留策略结合起来，这可以自动删除指定时间段后的邮件，从而满足您组织的电子邮件保留要求。有关详细信息，请参阅[保留标记和保留策略](retention-tags-and-retention-policies-exchange-2013-help.md)。
+  - 将邮箱置于保留状态可以保留相关数据。方法是：在指定日期前阻止删除数据以及在修改邮件前保留初始版本的邮件。它不会在指定时间段后自动删除邮件。将诉讼保留或就地保留与保留策略结合起来，这可以自动删除指定时间段后的邮件，从而满足您组织的电子邮件保留要求。有关详细信息，请参阅[保留标记和保留策略](https://technet.microsoft.com/zh-cn/library/dd297955(v=exchg.150))。
 
   - 在本主题中用于将所有邮箱置于诉讼保留状态的 PowerShell 命令使用返回所有用户邮箱的收件人筛选器。您可以使用其他收件人属性来返回特定邮箱的列表，即您传输到 **Set-Mailbox** cmdlet 以将其置于诉讼保留状态的邮箱。
     

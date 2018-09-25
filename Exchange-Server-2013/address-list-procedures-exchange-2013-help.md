@@ -29,9 +29,9 @@ _**上一次修改主题：** 2012-10-12_
 
 [创建全局地址列表](https://docs.microsoft.com/zh-cn/exchange/address-books/address-lists/create-global-address-list)
 
-[配置全局地址列表属性](configure-global-address-list-properties-exchange-2013-help.md)
+[配置全局地址列表属性](https://technet.microsoft.com/zh-cn/library/bb232068(v=exchg.150))
 
-[删除全局地址列表](remove-a-global-address-list-exchange-2013-help.md)
+[删除全局地址列表](https://technet.microsoft.com/zh-cn/library/bb232077(v=exchg.150))
 
 [更新全局地址列表](update-a-global-address-list-exchange-2013-help.md)
 

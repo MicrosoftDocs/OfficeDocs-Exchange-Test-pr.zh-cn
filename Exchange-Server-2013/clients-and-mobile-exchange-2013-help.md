@@ -63,7 +63,7 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>了解 Outlook Web App，它通过 Web 浏览器为用户提供对于其 Exchange 2013 邮箱的访问权限。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="mailtips-exchange-2013-help.md">MailTips</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/jj649091(v=exchg.150)">MailTips</a></p></td>
 <td><p>了解邮件提示，它是用户撰写邮件时向其显示的提示性消息。</p></td>
 </tr>
 </tbody>

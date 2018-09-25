@@ -48,7 +48,7 @@ _**上一次修改主题：** 2014-08-27_
       - 在\&quot;邮箱\&quot;页面上，修改要搜索的邮箱。您可以跨所有邮箱搜索，或选择要搜索的特定邮箱。
         
         > [!IMPORTANT]  
-        > 您无法使用&amp;quot;搜索所有邮箱&amp;quot;选项以将所有邮箱放在保留的 Exchange 2013 邮箱服务器上。要创建&amp;quot;就地保留&amp;quot;，您必须选择&amp;quot;指定要搜索的邮箱&amp;quot;。有关更多详细信息，请参阅<a href="create-or-remove-an-in-place-hold-exchange-2013-help.md">创建或删除就地保留</a>。
+        > 您无法使用&amp;quot;搜索所有邮箱&amp;quot;选项以将所有邮箱放在保留的 Exchange 2013 邮箱服务器上。要创建&amp;quot;就地保留&amp;quot;，您必须选择&amp;quot;指定要搜索的邮箱&amp;quot;。有关更多详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/dd979797(v=exchg.150)">创建或删除就地保留</a>。
     
       - 在\&quot;搜索查询\&quot;页面上，修改下列字段：
         

@@ -17,7 +17,7 @@ _**适用于：** Exchange Server 2013_
 
 _**上一次修改主题：** 2015-04-07_
 
-在 Microsoft Exchange Server 2013 中，邮件传递记录管理 (MRM) 的执行通过使用保留标记和保留策略来进行。保留策略是一组可以应用到邮箱的保留标记。有关更多详细信息，请参阅[保留标记和保留策略](retention-tags-and-retention-policies-exchange-2013-help.md)。作为在 Exchange Server 2007 中引入的 MRM 技术，托管文件夹在此处不受支持。
+在 Microsoft Exchange Server 2013 中，邮件传递记录管理 (MRM) 的执行通过使用保留标记和保留策略来进行。保留策略是一组可以应用到邮箱的保留标记。有关更多详细信息，请参阅[保留标记和保留策略](https://technet.microsoft.com/zh-cn/library/dd297955(v=exchg.150))。作为在 Exchange Server 2007 中引入的 MRM 技术，托管文件夹在此处不受支持。
 
 应用了托管文件夹邮箱策略的邮箱可以进行迁移，从而使用保留策略。为此，必须创建与链接至用户托管文件夹邮箱策略的托管文件夹等效的保留标记。
 

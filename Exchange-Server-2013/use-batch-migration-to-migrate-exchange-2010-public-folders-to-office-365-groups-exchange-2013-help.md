@@ -19,7 +19,7 @@ _**上一次修改主题：** 2018-04-30_
 
 **摘要：**  如何将 Exchange 2010 公用文件夹移动到 Office 365 组。
 
-通过一个称为*批迁移*的过程，可以将 Exchange 2010 公用文件夹的部分或全部移至 Office 365 组。组是具有某些优点在公用文件夹上的 microsoft 提供的新协作。[将公用文件夹迁移到 Office 365 组](migrate-your-public-folders-to-office-365-groups-exchange-2013-help.md)有关公用文件夹和组，以及您的组织可能会或可能不会受益于切换到组原因之间的差异的概述，请参阅。
+通过一个称为*批迁移*的过程，可以将 Exchange 2010 公用文件夹的部分或全部移至 Office 365 组。组是具有某些优点在公用文件夹上的 microsoft 提供的新协作。[将公用文件夹迁移到 Office 365 组](https://technet.microsoft.com/zh-cn/library/mt843872(v=exchg.150))有关公用文件夹和组，以及您的组织可能会或可能不会受益于切换到组原因之间的差异的概述，请参阅。
 
 本文包含执行实际批迁移 Exchange 2010 公用文件夹的分步过程。
 

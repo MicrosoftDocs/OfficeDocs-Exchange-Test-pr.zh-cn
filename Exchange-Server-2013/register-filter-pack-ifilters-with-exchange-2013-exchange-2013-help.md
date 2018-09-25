@@ -26,7 +26,7 @@ _**上一次修改主题：** 2016-12-09_
 > 这些过程还会要求您在邮箱服务器上停止，然后再重新启动 Microsoft Exchange 传输服务。
 
 
-有关与传输规则相关的其他管理任务，请参阅[管理邮件流规则](manage-mail-flow-rules-exchange-2013-help.md)。
+有关与传输规则相关的其他管理任务，请参阅[管理邮件流规则](https://technet.microsoft.com/zh-cn/library/jj657505(v=exchg.150))。
 
 ## 在开始之前，您需要知道什么？
 
@@ -138,7 +138,7 @@ _**上一次修改主题：** 2016-12-09_
 
 要验证您是否成功注册了 Microsoft Office 2010 Filter Pack IFilter，请执行以下操作：
 
-1.  使用以下属性创建传输规则。有关如何创建传输规则的详细说明，请参阅[管理邮件流规则](manage-mail-flow-rules-exchange-2013-help.md)。
+1.  使用以下属性创建传输规则。有关如何创建传输规则的详细说明，请参阅[管理邮件流规则](https://technet.microsoft.com/zh-cn/library/jj657505(v=exchg.150))。
     
       - 发件人是您的邮箱。
     

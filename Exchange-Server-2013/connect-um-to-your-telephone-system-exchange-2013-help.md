@@ -27,7 +27,7 @@ _**上一次修改主题：** 2012-11-30_
 
   - [将 VoIP 网关、IP PBX 或会话边界控制器与 UM 连接](connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md)  了解如何连接 UM VoIP 网关或 IP Pbx。
 
-  - [Exchange 2013 电话顾问](telephony-advisor-for-exchange-2013-exchange-2013-help.md)  了解有关支持 VoIP 网关，IP Pbx 和 Pbx。
+  - [Exchange 2013 电话顾问](https://technet.microsoft.com/zh-cn/library/ee364753(v=exchg.150))  了解有关支持 VoIP 网关，IP Pbx 和 Pbx。
 
   - [支持的 VoIP 网关、IP PBX 和 PBX 的配置说明](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways) 了解如何设置您的 VoIP 网关，IP Pbx 和 Pbx。
 

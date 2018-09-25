@@ -23,7 +23,7 @@ _**上一次修改主题：** 2012-10-16_
 
   - 组织外部的成员数目
 
-度量值组数据用于在 Microsoft Exchange Server 2013支持邮件提醒。邮件提醒是提示性消息时他们正在撰写的邮件给发件人显示。有关邮件提醒，包括邮件提醒中Exchange 2013，可用的完整列表的详细信息，请参阅[MailTips](mailtips-exchange-2013-help.md)。
+度量值组数据用于在 Microsoft Exchange Server 2013支持邮件提醒。邮件提醒是提示性消息时他们正在撰写的邮件给发件人显示。有关邮件提醒，包括邮件提醒中Exchange 2013，可用的完整列表的详细信息，请参阅[MailTips](https://technet.microsoft.com/zh-cn/library/jj649091(v=exchg.150))。
 
 组指标数据由以下邮件提示使用：
 

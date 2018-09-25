@@ -269,7 +269,7 @@ Contoso 和 Humungous Insurance ABP 是使用以下地址列表、全局地址�
 
   - 已显式保留 CustomAttributeX 属性，以用于组织自定义，并且，这些属性完全由组织管理员控制。
 
-对组织进行分段时要考虑实现的另一种最佳做法是在通讯组和动态通讯组的名称中使用公司标识符。Exchange 具有组命名策略功能，该功能会基于创建通讯组的用户的许多属性（包括通讯组创建者的 Company、StateorProvince、Title 以及 CustomAttribute1 到 CustomAttribute15），自动向通讯组的名称添加后缀或前缀。如果允许用户创建自己的通讯组，则组命名策略尤其重要。有关详细信息，请参阅[创建通讯组命名策略](create-a-distribution-group-naming-policy-exchange-2013-help.md)。
+对组织进行分段时要考虑实现的另一种最佳做法是在通讯组和动态通讯组的名称中使用公司标识符。Exchange 具有组命名策略功能，该功能会基于创建通讯组的用户的许多属性（包括通讯组创建者的 Company、StateorProvince、Title 以及 CustomAttribute1 到 CustomAttribute15），自动向通讯组的名称添加后缀或前缀。如果允许用户创建自己的通讯组，则组命名策略尤其重要。有关详细信息，请参阅[创建通讯组命名策略](https://technet.microsoft.com/zh-cn/library/jj218693(v=exchg.150))。
 
 组命名策略不应用于动态通讯组，因此需要手动对其进行分段并手动应用命名策略。
 
@@ -323,7 +323,7 @@ ABP 中使用的全局地址列表必须是地址列表的一个超集。不要�
 New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
 ```
 
-有关详细信息，请参阅[创建脱机通讯簿](create-an-offline-address-book-exchange-2013-help.md)。
+有关详细信息，请参阅[创建脱机通讯簿](https://technet.microsoft.com/zh-cn/library/bb124339(v=exchg.150))。
 
 ## 步骤 4：创建 ABP
 
@@ -333,7 +333,7 @@ New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
     New-AddressBookPolicy -Name "ABP_TAIL" -AddressLists "AL_TAIL_Users_DGs"," AL_TAIL_Contacts" -OfflineAddressBook "\OAB_TAIL" -GlobalAddressList "\GAL_TAIL" -RoomList "\AL_TAIL_Rooms"
 ```
 
-有关详细信息，请参阅[创建通讯簿策略](create-an-address-book-policy-exchange-2013-help.md)。
+有关详细信息，请参阅[创建通讯簿策略](https://technet.microsoft.com/zh-cn/library/hh529931(v=exchg.150))。
 
 ## 步骤 5：将 ABP 分配给邮箱
 
@@ -345,5 +345,5 @@ New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
     Get-Mailbox -resultsize unlimited | where {$_.CustomAttribute15 -eq "TAIL"} | Set-Mailbox -AddressBookPolicy "ABP_TAIL"
 ```
 
-有关详细信息，请参阅[将通讯簿策略分配给邮件用户](assign-an-address-book-policy-to-mail-users-exchange-2013-help.md)。
+有关详细信息，请参阅[将通讯簿策略分配给邮件用户](https://technet.microsoft.com/zh-cn/library/hh529942(v=exchg.150))。
 

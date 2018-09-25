@@ -239,7 +239,7 @@ AD RMS 系统具有服务器和客户端组件，包括以下内容：
 
 ## UM 邮箱策略
 
-可以创建统一消息邮箱策略，以对已启用 UM 的邮箱集合应用一组常用的 UM 策略设置，例如 PIN 策略设置、拨号限制和受保护的语音邮件设置。有关 UM 邮箱策略的详细信息，请参阅[管理 UM 邮箱策略](manage-a-um-mailbox-policy-exchange-2013-help.md)。
+可以创建统一消息邮箱策略，以对已启用 UM 的邮箱集合应用一组常用的 UM 策略设置，例如 PIN 策略设置、拨号限制和受保护的语音邮件设置。有关 UM 邮箱策略的详细信息，请参阅[管理 UM 邮箱策略](https://technet.microsoft.com/zh-cn/library/aa998829(v=exchg.150))。
 
 可以使用 EAC 或命令行管理程序中的 **Set-UMMailboxPolicy** cmdlet 配置受保护的语音邮件选项。下表列出了可以为受保护的语音邮件配置的设置。
 

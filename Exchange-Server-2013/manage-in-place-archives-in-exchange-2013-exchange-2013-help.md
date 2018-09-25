@@ -69,7 +69,7 @@ _**上一次修改主题：** 2016-02-01_
         
         若要了解详细信息，请参阅[Exchange 2013 中的就地存档](in-place-archiving-in-exchange-2013-exchange-2013-help.md)。
     
-      - **通讯簿策略**   使用此列表可为邮箱选择通讯簿策略 (ABP)。ABP 包含一个全局地址列表 (GAL)、一个脱机通讯簿 (OAB)、一个会议室列表以及一组地址列表。在分配给邮箱用户时，ABP 使这些用户可以访问 Outlook 和 Outlook Web App 中的自定义 GAL。若要了解详细信息，请参阅[通讯簿策略](address-book-policies-exchange-2013-help.md)。
+      - **通讯簿策略**   使用此列表可为邮箱选择通讯簿策略 (ABP)。ABP 包含一个全局地址列表 (GAL)、一个脱机通讯簿 (OAB)、一个会议室列表以及一组地址列表。在分配给邮箱用户时，ABP 使这些用户可以访问 Outlook 和 Outlook Web App 中的自定义 GAL。若要了解详细信息，请参阅[通讯簿策略](https://technet.microsoft.com/zh-cn/library/hh529948(v=exchg.150))。
 
 6.  完成后，请单击“保存”创建邮箱。
 

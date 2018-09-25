@@ -109,31 +109,31 @@ _**上一次修改主题：** 2016-12-09_
 <tr class="odd">
 <td><p></p></td>
 <td><p>创建或配置现有 UM 拨号计划。</p></td>
-<td><p><a href="create-a-um-dial-plan-exchange-2013-help.md">创建 UM 拨号计划</a></p>
-<p><a href="manage-a-um-dial-plan-exchange-2013-help.md">管理 UM 拨号计划</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/bb123819(v=exchg.150)">创建 UM 拨号计划</a></p>
+<p><a href="https://technet.microsoft.com/zh-cn/library/bb124090(v=exchg.150)">管理 UM 拨号计划</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>创建或配置现有 UM IP 网关。</p></td>
-<td><p><a href="create-a-um-ip-gateway-exchange-2013-help.md">创建 UM IP 网关</a></p>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/aa998045(v=exchg.150)">创建 UM IP 网关</a></p>
 <p><a href="https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-ip-gateway">管理 UM IP 网关</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
 <td><p>创建 UM 智能寻线。</p></td>
-<td><p><a href="create-a-um-hunt-group-exchange-2013-help.md">创建 UM 智能寻线</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/aa997679(v=exchg.150)">创建 UM 智能寻线</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>创建或配置 UM 自动助理。</p></td>
-<td><p><a href="create-a-um-auto-attendant-exchange-2013-help.md">创建 UM 自动助理</a></p>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/aa998875(v=exchg.150)">创建 UM 自动助理</a></p>
 <p><a href="https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/manage-um-auto-attendant">管理 UM 自动助理</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
 <td><p>创建或配置 UM 邮箱策略。</p></td>
-<td><p><a href="create-a-um-mailbox-policy-exchange-2013-help.md">创建 UM 邮箱策略</a></p>
-<p><a href="manage-a-um-mailbox-policy-exchange-2013-help.md">管理 UM 邮箱策略</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/bb123510(v=exchg.150)">创建 UM 邮箱策略</a></p>
+<p><a href="https://technet.microsoft.com/zh-cn/library/aa998829(v=exchg.150)">管理 UM 邮箱策略</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
@@ -143,8 +143,8 @@ _**上一次修改主题：** 2016-12-09_
 <tr class="odd">
 <td><p></p></td>
 <td><p>为新用户启用 UM 或为启用 UM 的现有用户配置设置。</p></td>
-<td><p><a href="enable-a-user-for-voice-mail-exchange-2013-help.md">为用户启用语音邮件</a></p>
-<p><a href="manage-voice-mail-settings-for-a-user-exchange-2013-help.md">管理用户的语音邮件设置</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/bb124147(v=exchg.150)">为用户启用语音邮件</a></p>
+<p><a href="https://technet.microsoft.com/zh-cn/library/aa998851(v=exchg.150)">管理用户的语音邮件设置</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>

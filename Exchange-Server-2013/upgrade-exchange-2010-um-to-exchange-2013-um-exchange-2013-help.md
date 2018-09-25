@@ -258,7 +258,7 @@ Set-UMService -Identity MyUMServer -ExternalHostFqdn host.external.contoso.com -
 
 根据现有的 Exchange 2010 部署，或许需要创建新的 UM 拨号计划或配置现有的拨号计划。UM 拨号计划代表共享公用用户分机号码的传统或启用 SIP 的专用交换机 (PBX) 或 IP PBX 组。在拨号计划中的传统或启用 SIP 的 PBX 或 IP PBX 上托管的所有用户的分机号都包含相同的位数。用户在拨打其他用户的电话分机时，可以不必为分机加拨特殊号码，也不必拨打完整的电话号码。
 
-在统一消息中使用 UM 拨号计划可以确保用户电话分机是唯一的。在某些电话网络中，可以存在多台 PBX 或 IP PBX。在此类电话网络中，可能会存在两个拥有相同电话分机号的用户。UM 拨号计划可以解决这种情况。将这两个用户放入两个不同的 UM 拨号计划中可以使他们的分机成为唯一分机。有关详细信息，请参阅 [UM 拨号计划](um-dial-plans-exchange-2013-help.md)。
+在统一消息中使用 UM 拨号计划可以确保用户电话分机是唯一的。在某些电话网络中，可以存在多台 PBX 或 IP PBX。在此类电话网络中，可能会存在两个拥有相同电话分机号的用户。UM 拨号计划可以解决这种情况。将这两个用户放入两个不同的 UM 拨号计划中可以使他们的分机成为唯一分机。有关详细信息，请参阅 [UM 拨号计划](https://technet.microsoft.com/zh-cn/library/bb125151(v=exchg.150))。
 
 如果需要，可以使用 EAC 创建 UM 拨号计划：
 
@@ -312,7 +312,7 @@ Set-UMDialplan -Identity MyDialPlan -AccessTelephoneNumbers 4255551234 -AudioCod
 
 UM IP 网关代表物理 Voice over IP (VoIP) 网关、IP PBX 或启用 SIP 的 PBX。必须先在目录服务中创建 UM IP 网关，才能使用 VoIP 网关、IP PBX 或启用 SIP 的 PBX 应答语音邮件用户的传入呼叫和发送他们的传出呼叫。
 
-结合使用 UM IP 网关与 UM 智能寻线功能，可以在 VoIP 网关、IP PBX 或启用 SIP 的 PBX 与 UM 拨号计划之间建立关联。通过创建多个 UM 智能寻线，可以将一个 UM IP 网关与多个 UM 拨号计划关联。有关详细信息，请参阅 [UM IP 网关](um-ip-gateways-exchange-2013-help.md)。
+结合使用 UM IP 网关与 UM 智能寻线功能，可以在 VoIP 网关、IP PBX 或启用 SIP 的 PBX 与 UM 拨号计划之间建立关联。通过创建多个 UM 智能寻线，可以将一个 UM IP 网关与多个 UM 拨号计划关联。有关详细信息，请参阅 [UM IP 网关](https://technet.microsoft.com/zh-cn/library/bb123890(v=exchg.150))。
 
 如果需要，可以使用 EAC 创建 UM IP 网关，如下所示：
 
@@ -430,7 +430,7 @@ Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTM
 
 ## 步骤 11：创建或配置 UM 邮箱策略
 
-根据现有的 Exchange 2010 部署，或许需要创建新的 UM 邮箱策略或配置现有的 UM 邮箱策略。为用户启用统一消息时，需要使用 UM 邮箱策略。每个启用 UM 的用户的邮箱必须链接到一个 UM 邮箱策略。创建 UM 邮箱策略之后，要将一个或多个启用 UM 的邮箱关联到该 UM 邮箱策略。这样可以控制 PIN 安全设置，例如 PIN 中的最小位数或与 UM 邮箱策略关联的启用 UM 用户的最大登录尝试次数。有关详细信息，请参阅 [UM 邮箱策略](um-mailbox-policies-exchange-2013-help.md)。
+根据现有的 Exchange 2010 部署，或许需要创建新的 UM 邮箱策略或配置现有的 UM 邮箱策略。为用户启用统一消息时，需要使用 UM 邮箱策略。每个启用 UM 的用户的邮箱必须链接到一个 UM 邮箱策略。创建 UM 邮箱策略之后，要将一个或多个启用 UM 的邮箱关联到该 UM 邮箱策略。这样可以控制 PIN 安全设置，例如 PIN 中的最小位数或与 UM 邮箱策略关联的启用 UM 用户的最大登录尝试次数。有关详细信息，请参阅 [UM 邮箱策略](https://technet.microsoft.com/zh-cn/library/bb124909(v=exchg.150))。
 
 如果需要，可以使用 EAC 创建 UM 邮箱策略：
 
@@ -470,7 +470,7 @@ Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -
 
 ## 步骤 12：将现有的启用 UM 的邮箱移至 Exchange 2013
 
-在 Exchange 2010 统一消息中，在您将组织中的用户启用为可使用语音邮件后，会将一组默认的 UM 属性应用于用户，以便用户使用 UM 功能。有关详细信息，请参阅[用户的语音邮件](voice-mail-for-users-exchange-2013-help.md)。
+在 Exchange 2010 统一消息中，在您将组织中的用户启用为可使用语音邮件后，会将一组默认的 UM 属性应用于用户，以便用户使用 UM 功能。有关详细信息，请参阅[用户的语音邮件](https://technet.microsoft.com/zh-cn/library/aa997885(v=exchg.150))。
 
 在升级过程中，会有一段时间在 Exchange 2010 邮箱服务器和 Exchange 2013 邮箱服务器上都有启用了 UM 的邮箱。但是，如果您正在将所有启用 UM 的用户移至 Exchange 2013 邮箱服务器时，您必须使用 Exchange 2013 服务器命令行管理程序中的 EAC 或 **New-MoveRequest** cmdlet，以保留所有属性和设置，包括用户的 PIN。
 
@@ -500,9 +500,9 @@ New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
 
 ## 步骤 13：为新用户启用 UM 或为现有启用 UM 的用户配置设置
 
-用户首先必须有邮箱，然后才能为他们启用统一消息。但在默认情况下，不会为已有邮箱的用户启用 UM。为用户启用了 UM 后，可以为该用户管理、修改和配置 UM 属性和语音邮件功能。可以使用 EAC 或命令行管理程序为用户启用 UM。有关详细信息，请参阅[用户的语音邮件](voice-mail-for-users-exchange-2013-help.md)。
+用户首先必须有邮箱，然后才能为他们启用统一消息。但在默认情况下，不会为已有邮箱的用户启用 UM。为用户启用了 UM 后，可以为该用户管理、修改和配置 UM 属性和语音邮件功能。可以使用 EAC 或命令行管理程序为用户启用 UM。有关详细信息，请参阅[用户的语音邮件](https://technet.microsoft.com/zh-cn/library/aa997885(v=exchg.150))。
 
-当您为用户启用 UM 时，必须至少定义一个分机号码，以便在将语音邮件提交到用户的邮箱时供 UM 使用并允许用户使用 Outlook Voice Access。为用户启用了 UM 后，可以通过配置用户邮箱的 Exchange 统一消息 (EUM) 代理地址，或者在 EAC 中添加或删除用户的其他或辅助分机号码，从而给用户邮箱添加辅助分机号码，或者修改或删除分机号码。若要添加、修改或删除分机号码、E.164 号码或 SIP 地址，请参阅[声音已启用邮件的用户的过程](voice-mail-enabled-user-procedures-exchange-2013-help.md)。
+当您为用户启用 UM 时，必须至少定义一个分机号码，以便在将语音邮件提交到用户的邮箱时供 UM 使用并允许用户使用 Outlook Voice Access。为用户启用了 UM 后，可以通过配置用户邮箱的 Exchange 统一消息 (EUM) 代理地址，或者在 EAC 中添加或删除用户的其他或辅助分机号码，从而给用户邮箱添加辅助分机号码，或者修改或删除分机号码。若要添加、修改或删除分机号码、E.164 号码或 SIP 地址，请参阅[声音已启用邮件的用户的过程](https://technet.microsoft.com/zh-cn/library/jj835776(v=exchg.150))。
 
 要使用 EAC 为用户启用统一消息，请执行以下步骤：
 
@@ -584,7 +584,7 @@ Exchange 2013 客户端访问服务器是针对统一消息的任何入站呼叫
 
   -  [支持的 VoIP 网关、IP PBX 和 PBX 的配置说明](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
-  -  [Exchange 2013 电话顾问](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
+  -  [Exchange 2013 电话顾问](https://technet.microsoft.com/zh-cn/library/ee364753(v=exchg.150))
 
 ## 步骤 15：禁用 Exchange 2010 统一消息服务器上的呼叫应答功能
 

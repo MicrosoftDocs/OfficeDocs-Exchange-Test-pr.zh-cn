@@ -17,25 +17,25 @@ _**适用于：** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 _**上一次修改主题：** 2013-04-16_
 
-[创建 UM 拨号计划](create-a-um-dial-plan-exchange-2013-help.md)
+[创建 UM 拨号计划](https://technet.microsoft.com/zh-cn/library/bb123819(v=exchg.150))
 
-[管理 UM 拨号计划](manage-a-um-dial-plan-exchange-2013-help.md)
+[管理 UM 拨号计划](https://technet.microsoft.com/zh-cn/library/bb124090(v=exchg.150))
 
 [将邮箱服务器和客户端访问服务器添加到 SIP URI 的拨号计划](add-mailbox-and-client-access-servers-to-a-sip-uri-dial-plan-exchange-2013-help.md)
 
 [邮箱服务器和客户端访问服务器删除 SIP URI 的拨号计划](remove-mailbox-and-client-access-servers-from-a-sip-uri-dial-plan-exchange-2013-help.md)
 
-[更改音频编解码器](change-the-audio-codec-exchange-2013-help.md)
+[更改音频编解码器](https://technet.microsoft.com/zh-cn/library/aa996342(v=exchg.150))
 
-[配置最大呼叫持续时间](configure-the-maximum-call-duration-exchange-2013-help.md)
+[配置最大呼叫持续时间](https://technet.microsoft.com/zh-cn/library/ee423535(v=exchg.150))
 
-[配置最大录制持续时间](configure-the-maximum-recording-duration-exchange-2013-help.md)
+[配置最大录制持续时间](https://technet.microsoft.com/zh-cn/library/ee423539(v=exchg.150))
 
-[记录空闲超时值配置](configure-the-recording-idle-time-out-value-exchange-2013-help.md)
+[记录空闲超时值配置](https://technet.microsoft.com/zh-cn/library/ee423550(v=exchg.150))
 
-[配置 VoIP 安全设置](configure-the-voip-security-setting-exchange-2013-help.md)
+[配置 VoIP 安全设置](https://technet.microsoft.com/zh-cn/library/bb201721(v=exchg.150))
 
-[为拥有相似姓名的用户配置拨号计划](configure-a-dial-plan-for-users-who-have-similar-names-exchange-2013-help.md)
+[为拥有相似姓名的用户配置拨号计划](https://technet.microsoft.com/zh-cn/library/bb266943(v=exchg.150))
 
 [删除 UM 拨号计划](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/delete-um-dial-plan)
 

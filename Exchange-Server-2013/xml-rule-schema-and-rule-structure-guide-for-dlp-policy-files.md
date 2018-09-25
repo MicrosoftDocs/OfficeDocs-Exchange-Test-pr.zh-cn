@@ -17,7 +17,7 @@ _**适用于：** Exchange Online, Exchange Server 2013_
 
 _**上一次修改主题：** 2015-03-09_
 
-本概述阐明了用于数据丢失防护 (DLP) 策略模板文件的 XML 架构定义组件，还提供了 XML 格式的示例策略文件。这有助于您在开始之前了解整个 DLP 体系结构和规则开发流程。有关详细信息，请参阅[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)和[定义您自己的 DLP 模板和信息类型](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)。
+本概述阐明了用于数据丢失防护 (DLP) 策略模板文件的 XML 架构定义组件，还提供了 XML 格式的示例策略文件。这有助于您在开始之前了解整个 DLP 体系结构和规则开发流程。有关详细信息，请参阅[数据丢失预防](https://technet.microsoft.com/zh-cn/library/jj150527(v=exchg.150))和[定义您自己的 DLP 模板和信息类型](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)。
 
 为了便于采纳和管理数据丢失防护解决方案，Microsoft Exchange Server 2013 中引入了被称为 DLP 策略和策略模板的概念模型。DLP 策略模板为您预期的 DLP 策略提供初步设计。为了使策略更富有意义，DLP 策略模板必须封装为满足特定策略目标（如管理或业务需求）所需的所有指令和数据对象。该模板不针对特定环境。它只是一个策略定义或模型，可作为产品配置的一部分提供，或者由独立的软件供应商及合作伙伴提供。另一方面，DLP 策略是特定于开发环境的模板的运行时实例化。通过使用传输规则，现有消息策略框架可以包括 DLP 策略。传输规则在采纳和表达 DLP 解决方案的丰富性方面给予了很大的灵活性。
 
@@ -321,7 +321,7 @@ cmdlet 格式是所使用的 cmdlet 的标准 Exchange 命令行管理程序 cmd
 
 ## 详细信息
 
-[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[数据丢失预防](https://technet.microsoft.com/zh-cn/library/jj150527(v=exchg.150))
 
 [定义您自己的 DLP 模板和信息类型](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)
 

@@ -35,11 +35,11 @@ Exchange 管理员可以通过转到“Exchange 管理中心”\>“邮件流”
 
 ![用于选择与附件相关的规则的对话框](images/JJ674307.2ae4a179-bfd2-4a0e-abe1-53ed4e9e3368(EXCHG.150).jpg "用于选择与附件相关的规则的对话框")
 
-有关传输规则的详细信息，包括您可以选择的全部条件与操作，请参阅[邮件流或传输规则](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)。Exchange Online Protection (EOP) 和混合客户可以从[配置 EOP 的最佳实践](https://technet.microsoft.com/zh-cn/library/jj723164\(v=exchg.150\))中提供的传输规则最佳实践中获益。如果您已经准备好要开始创建规则，请参阅[管理邮件流规则](manage-mail-flow-rules-exchange-2013-help.md)。
+有关传输规则的详细信息，包括您可以选择的全部条件与操作，请参阅[邮件流或传输规则](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)。Exchange Online Protection (EOP) 和混合客户可以从[配置 EOP 的最佳实践](https://technet.microsoft.com/zh-cn/library/jj723164\(v=exchg.150\))中提供的传输规则最佳实践中获益。如果您已经准备好要开始创建规则，请参阅[管理邮件流规则](https://technet.microsoft.com/zh-cn/library/jj657505(v=exchg.150))。
 
 ## 检查附件中的内容
 
-您可以使用下表中的传输规则条件检查邮件附件的内容。这些条件只检查附件的前 150 KB。要在检查邮件时开始使用这些条件，您需要将它们添加到传输规则。要了解如何创建或更改规则，可参阅[管理邮件流规则](manage-mail-flow-rules-exchange-2013-help.md)。
+您可以使用下表中的传输规则条件检查邮件附件的内容。这些条件只检查附件的前 150 KB。要在检查邮件时开始使用这些条件，您需要将它们添加到传输规则。要了解如何创建或更改规则，可参阅[管理邮件流规则](https://technet.microsoft.com/zh-cn/library/jj657505(v=exchg.150))。
 
 
 <table>
@@ -158,7 +158,7 @@ Exchange 管理员可以通过转到“Exchange 管理中心”\>“邮件流”
 
 ## 检查附件的文件属性
 
-以下传输规则条件将检查附加到邮件中的文件的属性。要在检查邮件时开始使用这些条件，您需要将它们添加到传输规则。拥有可执行代码，可以在传输规则情境中进行检查的受支持文件类型如下所列。有关创建或更改规则的详细信息，请参阅[管理邮件流规则](manage-mail-flow-rules-exchange-2013-help.md)。
+以下传输规则条件将检查附加到邮件中的文件的属性。要在检查邮件时开始使用这些条件，您需要将它们添加到传输规则。拥有可执行代码，可以在传输规则情境中进行检查的受支持文件类型如下所列。有关创建或更改规则的详细信息，请参阅[管理邮件流规则](https://technet.microsoft.com/zh-cn/library/jj657505(v=exchg.150))。
 
 
 <table>
@@ -312,11 +312,11 @@ Exchange 管理员可以通过转到“Exchange 管理中心”\>“邮件流”
 
   - 定义要对包含护照编号，且护照号码不在受保护文件内的邮件执行的操作。
 
-DLP 策略和与附件相关的条件可以通过将您的业务需求定义为传输规则条件、例外和操作，来帮助您满足这些需求。当您将敏感信息检查包含在 DLP 策略中时，会对任何邮件附件仅针对该信息进行扫描。但是，不包含与附件相关的条件，例如大小或文件类型，除非您添加本主题中列出的条件。DLP 并非对所有版本的 Exchange 都可用；要了解更多信息，请访问[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)。
+DLP 策略和与附件相关的条件可以通过将您的业务需求定义为传输规则条件、例外和操作，来帮助您满足这些需求。当您将敏感信息检查包含在 DLP 策略中时，会对任何邮件附件仅针对该信息进行扫描。但是，不包含与附件相关的条件，例如大小或文件类型，除非您添加本主题中列出的条件。DLP 并非对所有版本的 Exchange 都可用；要了解更多信息，请访问[数据丢失预防](https://technet.microsoft.com/zh-cn/library/jj150527(v=exchg.150))。
 
 ## 详细信息
 
-[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[数据丢失预防](https://technet.microsoft.com/zh-cn/library/jj150527(v=exchg.150))
 
 [邮件流或传输规则](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 

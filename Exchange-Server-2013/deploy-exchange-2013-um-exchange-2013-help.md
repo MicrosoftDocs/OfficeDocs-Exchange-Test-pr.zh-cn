@@ -31,9 +31,9 @@ _**上一次修改主题：** 2016-12-09_
 
 在部署统一消息之前，我们建议熟悉以下主题中的概念：
 
-  - [UM 拨号计划](um-dial-plans-exchange-2013-help.md)
+  - [UM 拨号计划](https://technet.microsoft.com/zh-cn/library/bb125151(v=exchg.150))
 
-  - [UM IP 网关](um-ip-gateways-exchange-2013-help.md)
+  - [UM IP 网关](https://technet.microsoft.com/zh-cn/library/bb123890(v=exchg.150))
 
   - [UM 服务](um-services-exchange-2013-help.md)
 
@@ -41,9 +41,9 @@ _**上一次修改主题：** 2016-12-09_
 
   - [自动回答和路由传入呼叫](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/automatically-answer-and-route-calls)
 
-  - [UM 邮箱策略](um-mailbox-policies-exchange-2013-help.md)
+  - [UM 邮箱策略](https://technet.microsoft.com/zh-cn/library/bb124909(v=exchg.150))
 
-  - [用户的语音邮件](voice-mail-for-users-exchange-2013-help.md)
+  - [用户的语音邮件](https://technet.microsoft.com/zh-cn/library/aa997885(v=exchg.150))
 
 ## 部署统一消息
 
@@ -284,7 +284,7 @@ UM IP 网关表示 VoIP 网关硬件设备或 IP PBX。结合使用 UM IP 网关
 
 ## 为用户启用语音邮件
 
-在部署了 VoIP 网关或 IP PBX，安装了客户端访问和邮箱服务器并创建了统一消息所需的组件后，需要为用户启用统一消息。有关详细信息，请参阅[为用户启用语音邮件](enable-a-user-for-voice-mail-exchange-2013-help.md)。
+在部署了 VoIP 网关或 IP PBX，安装了客户端访问和邮箱服务器并创建了统一消息所需的组件后，需要为用户启用统一消息。有关详细信息，请参阅[为用户启用语音邮件](https://technet.microsoft.com/zh-cn/library/bb124147(v=exchg.150))。
 
 ## 保护语音邮件
 
@@ -300,25 +300,25 @@ UM IP 网关表示 VoIP 网关硬件设备或 IP PBX。结合使用 UM IP 网关
 
   - 在组织中的 VoIP 网关和 IP PBX 以及客户端访问和邮箱服务器上导入所需证书。
 
-  - 在 UM 拨号计划中配置 VoIP 安全性。有关详细信息，请参阅[配置 VoIP 安全设置](configure-the-voip-security-setting-exchange-2013-help.md)。
+  - 在 UM 拨号计划中配置 VoIP 安全性。有关详细信息，请参阅[配置 VoIP 安全设置](https://technet.microsoft.com/zh-cn/library/bb201721(v=exchg.150))。
 
   - 配置客户端访问和邮箱服务器上的启动模式。有关详细信息，请参阅[在邮箱服务器上配置的启动模式](configure-the-startup-mode-on-a-mailbox-server-exchange-2013-help.md)和[在客户端访问服务器上配置的启动模式](configure-the-startup-mode-on-a-client-access-server-exchange-2013-help.md)。
 
-  - 配置 UM IP 网关以侦听端口 5061。有关详细信息，请参阅[配置侦听端口](configure-the-listening-port-exchange-2013-help.md)。
+  - 配置 UM IP 网关以侦听端口 5061。有关详细信息，请参阅[配置侦听端口](https://technet.microsoft.com/zh-cn/library/ee633457(v=exchg.150))。
 
 ## 为启用了 UM 的用户设置 PIN 策略
 
-在统一消息中，可以在 UM 邮箱策略中定义和配置 PIN 策略。为用户启用统一消息时，使该用户与现有 UM 邮箱策略相关联。在 UM 邮箱策略上配置的 UM PIN 策略应当基于组织的安全要求。有关如何为启用了 UM 的用户配置 PIN 设置的详细信息，请参阅[设置 Outlook Voice Access 针的安全性](set-outlook-voice-access-pin-security-exchange-2013-help.md)。
+在统一消息中，可以在 UM 邮箱策略中定义和配置 PIN 策略。为用户启用统一消息时，使该用户与现有 UM 邮箱策略相关联。在 UM 邮箱策略上配置的 UM PIN 策略应当基于组织的安全要求。有关如何为启用了 UM 的用户配置 PIN 设置的详细信息，请参阅[设置 Outlook Voice Access 针的安全性](https://technet.microsoft.com/zh-cn/library/bb125162(v=exchg.150))。
 
 ## 设置客户端语音邮件功能
 
 在部署完服务器和所需 UM 组件后，还可以配置几项与语音邮件相关的可选功能。有关详细信息，请参阅下列内容：
 
-  - [设置 Outlook Voice Access](setting-up-outlook-voice-access-exchange-2013-help.md)
+  - [设置 Outlook Voice Access](https://technet.microsoft.com/zh-cn/library/dd298010(v=exchg.150))
 
-  - [允许语音邮件用户转接来电](allow-voice-mail-users-to-forward-calls-exchange-2013-help.md)
+  - [允许语音邮件用户转接来电](https://technet.microsoft.com/zh-cn/library/dd335138(v=exchg.150))
 
-  - [允许用户查看语音邮件成绩单](allow-users-to-see-a-voice-mail-transcript-exchange-2013-help.md)
+  - [允许用户查看语音邮件成绩单](https://technet.microsoft.com/zh-cn/library/ff629381(v=exchg.150))
 
   - [为语音邮件用户启用接收传真功能](enable-voice-mail-users-to-receive-faxes-exchange-2013-help.md)
 

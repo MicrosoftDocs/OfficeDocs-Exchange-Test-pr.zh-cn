@@ -216,9 +216,9 @@ MWI 基于 RFC 3842。RFC 3842 声明必须将 SIP 事件通知用于邮件等�
 
 有关如何管理 UM 邮箱策略中的 MWI 设置的详细信息，请参阅下列主题：
 
-  - [管理 UM 邮箱策略](manage-a-um-mailbox-policy-exchange-2013-help.md)
+  - [管理 UM 邮箱策略](https://technet.microsoft.com/zh-cn/library/aa998829(v=exchg.150))
 
-  - [为用户启用消息等待指示符 (MWI)](enable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md)
+  - [为用户启用消息等待指示符 (MWI)](https://technet.microsoft.com/zh-cn/library/dd335216(v=exchg.150))
 
   - [为用户禁用消息等待指示符 (MWI)](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-mwi-for-users)
 
@@ -226,7 +226,7 @@ MWI 基于 RFC 3842。RFC 3842 声明必须将 SIP 事件通知用于邮件等�
 
 ## UM IP 网关和 MWI
 
-如果对某个 UM IP 网关禁用 MWI，则会为连接到由该 UM IP 网关表示的 VoIP 网关或 IP PBX 的所有用户都禁用 MWI 通知。禁用与 UM 拨号计划链接的单个 UM IP 网关中的 MWI 会为与单个或多个 UM 拨号计划或者单个或多个 UM 邮箱策略相关联的所有启用 UM 的用户都禁用 MWI 通知。若要了解有关 UM 邮箱策略的详细信息（包括如何为一组启用 UM 的用户启用或禁用 MWI），请参阅[管理 UM 邮箱策略](manage-a-um-mailbox-policy-exchange-2013-help.md)。
+如果对某个 UM IP 网关禁用 MWI，则会为连接到由该 UM IP 网关表示的 VoIP 网关或 IP PBX 的所有用户都禁用 MWI 通知。禁用与 UM 拨号计划链接的单个 UM IP 网关中的 MWI 会为与单个或多个 UM 拨号计划或者单个或多个 UM 邮箱策略相关联的所有启用 UM 的用户都禁用 MWI 通知。若要了解有关 UM 邮箱策略的详细信息（包括如何为一组启用 UM 的用户启用或禁用 MWI），请参阅[管理 UM 邮箱策略](https://technet.microsoft.com/zh-cn/library/aa998829(v=exchg.150))。
 
 可以使用 EAC 或命令行管理程序中的 **Set-UMMailboxPolicy** cmdlet 配置 MWI 设置，如下表所示。
 
@@ -260,9 +260,9 @@ MWI 基于 RFC 3842。RFC 3842 声明必须将 SIP 事件通知用于邮件等�
 
   - [管理 UM IP 网关](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-ip-gateway)
 
-  - [在 UM IP 网关允许消息等待指示符 (MWI)](allow-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md)
+  - [在 UM IP 网关允许消息等待指示符 (MWI)](https://technet.microsoft.com/zh-cn/library/dd297995(v=exchg.150))
 
-  - [消息等待指示符 (MWI) 如果不在 UM IP 网关](prevent-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md)
+  - [消息等待指示符 (MWI) 如果不在 UM IP 网关](https://technet.microsoft.com/zh-cn/library/jj673536(v=exchg.150))
 
   - [Set-UMIPGateway](https://technet.microsoft.com/zh-cn/library/aa996577\(v=exchg.150\))
 
@@ -303,7 +303,7 @@ MWI 基于 RFC 3842。RFC 3842 声明必须将 SIP 事件通知用于邮件等�
 
 有关如何管理用户邮箱中的短信通知设置的详细信息，请参阅下列主题：
 
-  - [管理用户的语音邮件设置](manage-voice-mail-settings-for-a-user-exchange-2013-help.md)
+  - [管理用户的语音邮件设置](https://technet.microsoft.com/zh-cn/library/aa998851(v=exchg.150))
 
   - [Set-UMMailbox](https://technet.microsoft.com/zh-cn/library/bb124893\(v=exchg.150\))
 
@@ -337,7 +337,7 @@ MWI 基于 RFC 3842。RFC 3842 声明必须将 SIP 事件通知用于邮件等�
 
 有关如何管理短信通知设置的详细信息，请参阅下列主题：
 
-  - [管理 UM 邮箱策略](manage-a-um-mailbox-policy-exchange-2013-help.md)
+  - [管理 UM 邮箱策略](https://technet.microsoft.com/zh-cn/library/aa998829(v=exchg.150))
 
   - [Set-UMMailboxPolicy](https://technet.microsoft.com/zh-cn/library/bb124903\(v=exchg.150\))
 

@@ -84,12 +84,12 @@ _**上一次修改主题：** 2015-03-09_
 <tr class="odd">
 <td><p><strong> </strong></p></td>
 <td><p>为组织创建所需数量的拨号计划。</p></td>
-<td><p><a href="create-a-um-dial-plan-exchange-2013-help.md">创建 UM 拨号计划</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/bb123819(v=exchg.150)">创建 UM 拨号计划</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>配置拨号计划安全设置。</p></td>
-<td><p><a href="configure-the-voip-security-setting-exchange-2013-help.md">配置 VoIP 安全设置</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/bb201721(v=exchg.150)">配置 VoIP 安全设置</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
@@ -105,24 +105,24 @@ _**上一次修改主题：** 2015-03-09_
 <tr class="odd">
 <td><p></p></td>
 <td><p>配置 Outlook Voice Access 号码和其他设置。</p></td>
-<td><p><a href="manage-a-um-dial-plan-exchange-2013-help.md">管理 UM 拨号计划</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/bb124090(v=exchg.150)">管理 UM 拨号计划</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>为统一消息配置出站拨号。</p></td>
-<td><p><a href="authorize-calls-using-dialing-rules-exchange-2013-help.md">使用拨号规则授权通话</a></p>
-<p><a href="authorize-calls-for-users-in-a-dial-plan-exchange-2013-help.md">拨号计划中授权用户的呼叫</a></p>
-<p><a href="authorize-calls-for-a-group-of-users-exchange-2013-help.md">授权一组用户的呼叫</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/jj898499(v=exchg.150)">使用拨号规则授权通话</a></p>
+<p><a href="https://technet.microsoft.com/zh-cn/library/bb691175(v=exchg.150)">拨号计划中授权用户的呼叫</a></p>
+<p><a href="https://technet.microsoft.com/zh-cn/library/bb232099(v=exchg.150)">授权一组用户的呼叫</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
 <td><p>创建所需数量的自动助理。</p></td>
-<td><p><a href="create-a-um-auto-attendant-exchange-2013-help.md">创建 UM 自动助理</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/aa998875(v=exchg.150)">创建 UM 自动助理</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>设置并配置每个 UM 自动助理。</p></td>
-<td><p><a href="set-up-a-um-auto-attendant-exchange-2013-help.md">设置 UM 自动助理</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/jj673508(v=exchg.150)">设置 UM 自动助理</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong> </strong></p></td>
@@ -140,13 +140,13 @@ _**上一次修改主题：** 2015-03-09_
 <tr class="odd">
 <td><p><strong> </strong></p></td>
 <td><p>创建 UM 邮箱策略或配置默认 UM 邮箱策略。</p></td>
-<td><p><a href="create-a-um-mailbox-policy-exchange-2013-help.md">创建 UM 邮箱策略</a></p>
-<p><a href="manage-a-um-mailbox-policy-exchange-2013-help.md">管理 UM 邮箱策略</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/bb123510(v=exchg.150)">创建 UM 邮箱策略</a></p>
+<p><a href="https://technet.microsoft.com/zh-cn/library/aa998829(v=exchg.150)">管理 UM 邮箱策略</a></p></td>
 </tr>
 <tr class="even">
 <td><p> </p></td>
 <td><p>如果需要，可通过分机号码和 E.164 号码为用户启用统一消息。</p></td>
-<td><p><a href="enable-a-user-for-voice-mail-exchange-2013-help.md">为用户启用语音邮件</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/bb124147(v=exchg.150)">为用户启用语音邮件</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>

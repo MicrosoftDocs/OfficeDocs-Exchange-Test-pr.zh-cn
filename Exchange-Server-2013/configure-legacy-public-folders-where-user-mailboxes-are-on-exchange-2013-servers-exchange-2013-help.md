@@ -24,7 +24,7 @@ _**上一次修改主题：** 2017-03-27_
 其邮箱位于 Exchange Server 2013年或 Exchange Server 2016年的用户将不能访问旧式公用文件夹从 Outlook Web App、 Outlook web 上的或 Outlook 的 mac。这篇文章中的步骤适用于 Exchange 2013 和交换 2016年。
 
 > [!NOTE]  
-> 请按照本文中的步骤后，Mac 用户的 outlook 2016 可以访问旧式的公用文件夹。如果您的组织中的客户端的 Mac 使用 Outlook 2016，请确保他们安装 4 月 2016年更新。否则，这些用户将不能访问共存或混合拓扑中的公用文件夹。有关详细信息，请参阅<a href="accessing-public-folders-with-outlook-2016-for-mac-exchange-2013-help.md">通过 Outlook 2016 for Mac 访问公用文件夹</a>。
+> 请按照本文中的步骤后，Mac 用户的 outlook 2016 可以访问旧式的公用文件夹。如果您的组织中的客户端的 Mac 使用 Outlook 2016，请确保他们安装 4 月 2016年更新。否则，这些用户将不能访问共存或混合拓扑中的公用文件夹。有关详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/mt788631(v=exchg.150)">通过 Outlook 2016 for Mac 访问公用文件夹</a>。
 
 
 ## 步骤 1：使 Exchange 2010 公用文件夹可发现
@@ -76,7 +76,7 @@ _**上一次修改主题：** 2017-03-27_
 
 此过程中的最后一步是配置用户邮箱以允许访问旧版内部部署公用文件夹。
 
-使 Exchange Server 2013 内部部署用户可以访问旧版公用文件夹。您可以指向在[Step 2: Make remote public folders discoverable](configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)中创建的所有代理公用文件夹邮箱。从具有 CU5 或更高版本更新的 Exchange 2013 服务器运行以下命令。
+使 Exchange Server 2013 内部部署用户可以访问旧版公用文件夹。您可以指向在[Step 2: Make remote public folders discoverable](https://technet.microsoft.com/zh-cn/library/dn249373(v=exchg.150))中创建的所有代理公用文件夹邮箱。从具有 CU5 或更高版本更新的 Exchange 2013 服务器运行以下命令。
 
 ```powershell
 Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes ProxyMailbox1,ProxyMailbox2,ProxyMailbox3

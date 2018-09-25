@@ -39,15 +39,15 @@ _**上一次修改主题：** 2016-12-09_
 
 下面列出了 Exchange TechCenter 上的一些资源，提供的信息可以帮助您正确地配置 VoIP 网关、IP PBX 和 SBC：
 
-  - **支持的 IP 网关、IP PBX 和 PBX 文档** [Exchange 2013 电话顾问](telephony-advisor-for-exchange-2013-exchange-2013-help.md)中包含在配置 VoIP 网关、IP PBX、PBX 和 SBC 时可以使用的配置文件和设置信息。
+  - **支持的 IP 网关、IP PBX 和 PBX 文档** [Exchange 2013 电话顾问](https://technet.microsoft.com/zh-cn/library/ee364753(v=exchg.150))中包含在配置 VoIP 网关、IP PBX、PBX 和 SBC 时可以使用的配置文件和设置信息。
 
   - **配置和技术说明** [支持的 VoIP 网关、IP PBX 和 PBX 的配置说明](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)中包含在配置 VoIP 网关、IP PBX 和 PBX 时可以使用的配置文件和设置信息。
 
-  - **Exchange UM 在线配置说明** [受支持的会话边界控制器的配置说明](configuration-notes-for-supported-session-border-controllers-exchange-2013-help.md)中包含在配置 SBC 时可以使用的配置文件和设置信息。
+  - **Exchange UM 在线配置说明** [受支持的会话边界控制器的配置说明](https://technet.microsoft.com/zh-cn/library/jj673565(v=exchg.150))中包含在配置 SBC 时可以使用的配置文件和设置信息。
 
 统一消息专家可以协助配置电话和基于 IP 的网络设备。统一消息专家帮助确保从旧版或第三方语音邮件系统平稳过渡到统一消息，或者帮助使用 Exchange 统一消息规划和部署新的语音邮件系统。部署新的语音邮件系统或者升级旧版语音邮件系统需要大量有关 VoIP 网关、IP PBX、PBX 和统一消息的知识。有关如何联系统一消息专家的详细信息，请参阅 [Microsoft Exchange Server 2013 Unified Messaging (UM) Specialists（Microsoft Exchange Server 2013 统一消息 (UM) 专家）](http://go.microsoft.com/fwlink/p/?linkid=262708)，或者咨询经过认证的 UM 合作伙伴（[Microsoft Pinpoint](https://go.microsoft.com/fwlink/p/?linkid=261951)）。
 
-在配置了 VoIP 网关、IP PBX 或 SBC IP 接口后，必须创建并配置 UM IP 网关以代表部署的每个设备。有关如何创建 UM IP 网关的详细信息，请参阅[创建 UM IP 网关](create-a-um-ip-gateway-exchange-2013-help.md)。
+在配置了 VoIP 网关、IP PBX 或 SBC IP 接口后，必须创建并配置 UM IP 网关以代表部署的每个设备。有关如何创建 UM IP 网关的详细信息，请参阅[创建 UM IP 网关](https://technet.microsoft.com/zh-cn/library/aa998045(v=exchg.150))。
 
 创建 UM IP 网关后，与 UM IP 网关相关的客户端访问和邮箱服务器会向 VoIP 网关、IP PBX 或 SBC 发送 SIP OPTIONS 请求，以确保设备具有响应能力。如果 VoIP 网关、IP PBX 或 SBC 未响应，邮箱服务器将记录一个 ID 为 1088 的事件，表明请求失败。为解决此问题，请确保 VoIP 网关、IP PBX 或 SBC 可用并且联机，且统一消息配置正确。
 

@@ -23,7 +23,7 @@ _**上一次修改主题：** 2013-01-31_
 
 ## 详细信息
 
-[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[数据丢失预防](https://technet.microsoft.com/zh-cn/library/jj150527(v=exchg.150))
 
 [从文件导入自定义 DLP 策略模板](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)
 

@@ -41,15 +41,15 @@ Receiving faxes
 
 ## Outlook Voice Access
 
-在 Exchange 嗯，启用 UM 的用户可以连接到 UM 拨号计划要访问其邮箱和使用Outlook语音访问菜单系统上配置的内部或外部的电话号码。使用此菜单，启用 UM 的用户可以读取电子邮件、 收听语音邮件、 与他们的Outlook日历进行交互、 访问其个人联系人和执行任务，如配置其Outlook语音访问 PIN 或录制他们的语音邮件问候语。有关详细信息，请参阅[设置 Outlook Voice Access](setting-up-outlook-voice-access-exchange-2013-help.md)。
+在 Exchange 嗯，启用 UM 的用户可以连接到 UM 拨号计划要访问其邮箱和使用Outlook语音访问菜单系统上配置的内部或外部的电话号码。使用此菜单，启用 UM 的用户可以读取电子邮件、 收听语音邮件、 与他们的Outlook日历进行交互、 访问其个人联系人和执行任务，如配置其Outlook语音访问 PIN 或录制他们的语音邮件问候语。有关详细信息，请参阅[设置 Outlook Voice Access](https://technet.microsoft.com/zh-cn/library/dd298010(v=exchg.150))。
 
 ## 转移呼叫
 
-已启用 UM 的用户可以创建和配置呼叫应答规则使用Outlook或Outlook Web App。呼叫应答规则允许用户控制应如何处理他们的来电。规则应用于传入的调用类似于收件箱规则应用于传入的电子邮件和其他语音设置在用户的邮箱存储的方式。最多九个呼叫应答规则可以设置为每个已启用 UM 的邮箱。这些规则的收件箱规则无关，并不会占据用户的收件箱规则存储配额的一部分。有关详细信息，请参阅[允许语音邮件用户转接来电](allow-voice-mail-users-to-forward-calls-exchange-2013-help.md)。
+已启用 UM 的用户可以创建和配置呼叫应答规则使用Outlook或Outlook Web App。呼叫应答规则允许用户控制应如何处理他们的来电。规则应用于传入的调用类似于收件箱规则应用于传入的电子邮件和其他语音设置在用户的邮箱存储的方式。最多九个呼叫应答规则可以设置为每个已启用 UM 的邮箱。这些规则的收件箱规则无关，并不会占据用户的收件箱规则存储配额的一部分。有关详细信息，请参阅[允许语音邮件用户转接来电](https://technet.microsoft.com/zh-cn/library/dd335138(v=exchg.150))。
 
 ## 语音邮件预览
 
-语音邮件预览是从 UM 语音邮件系统接收语音邮件的用户都可以使用的功能。语音邮件预览增强语音邮件体验了通过提供录音的文本版本。有关详细信息，请参阅[允许用户查看语音邮件成绩单](allow-users-to-see-a-voice-mail-transcript-exchange-2013-help.md)。
+语音邮件预览是从 UM 语音邮件系统接收语音邮件的用户都可以使用的功能。语音邮件预览增强语音邮件体验了通过提供录音的文本版本。有关详细信息，请参阅[允许用户查看语音邮件成绩单](https://technet.microsoft.com/zh-cn/library/ff629381(v=exchg.150))。
 
 ## 接收传真
 

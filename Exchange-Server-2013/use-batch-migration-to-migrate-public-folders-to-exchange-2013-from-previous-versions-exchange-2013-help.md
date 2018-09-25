@@ -81,7 +81,7 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
 
   - 在多域环境中，已启用邮件的公用文件夹将停止如果在子域中运行 Exchange 迁移到 Exchange 2013 之后工作。这是因为在 Exchange 2013，已启用邮件的公用文件夹对象都需要在根域下进行。若要解决此问题，您需要禁用邮件已启用邮件的公用文件夹，然后启用邮件再次强调，它们将使您可以将它们移动到正确的域的位置。
 
-  - 迁移完成后，如果你想要让外部发件人向迁移的已启用邮件功能的公用文件夹发送邮件，则至少需要向\&quot;**匿名**\&quot;用户授予\&quot;**创建项目**\&quot;权限。如果不执行此操作，外部发件人将收到一封传递失败通知，邮件将不会传递到迁移的已启用邮件功能的公用文件夹。要了解如何设置匿名用户的权限，请参阅[对公用文件夹启用或禁用邮件](mail-enable-or-mail-disable-a-public-folder-exchange-2013-help.md)。
+  - 迁移完成后，如果你想要让外部发件人向迁移的已启用邮件功能的公用文件夹发送邮件，则至少需要向\&quot;**匿名**\&quot;用户授予\&quot;**创建项目**\&quot;权限。如果不执行此操作，外部发件人将收到一封传递失败通知，邮件将不会传递到迁移的已启用邮件功能的公用文件夹。要了解如何设置匿名用户的权限，请参阅[对公用文件夹启用或禁用邮件](https://technet.microsoft.com/zh-cn/library/aa997560(v=exchg.150))。
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
@@ -458,7 +458,7 @@ Complete-MigrationBatch PublicFolderMigration
 
 6.  最后，如果你想要让外部发件人向迁移的已启用邮件功能的公用文件夹发送邮件，则至少需要向\&quot;**匿名**\&quot;用户授予\&quot;**创建项目**\&quot;权限。如果不执行此操作，外部发件人将收到一封传递失败通知，邮件将不会传递到迁移的已启用邮件功能的公用文件夹。
     
-    可以使用命令行管理程序或 Outlook 设置匿名用户的权限。要了解如何设置匿名用户的权限，请参阅[对公用文件夹启用或禁用邮件](mail-enable-or-mail-disable-a-public-folder-exchange-2013-help.md)。
+    可以使用命令行管理程序或 Outlook 设置匿名用户的权限。要了解如何设置匿名用户的权限，请参阅[对公用文件夹启用或禁用邮件](https://technet.microsoft.com/zh-cn/library/aa997560(v=exchg.150))。
 
 ## 我如何知道这有效？
 

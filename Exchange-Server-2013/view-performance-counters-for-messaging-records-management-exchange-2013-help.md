@@ -19,9 +19,9 @@ _**上一次修改主题：** 2009-12-09_
 
 您可以使用 Windows 可靠性和性能监视器 (Perfmon.exe) 来选择和查看邮件记录管理 (MRM) 的性能计数器。通过使用性能计数器，您可以在托管文件夹助理运行非常耗费资源的 MRM 过程的同时对其进行监视。
 
-有关 MRM 性能计数器的列表，请参阅[可用于邮件记录管理的性能计数器](performance-counters-for-messaging-records-management-exchange-2013-help.md)。
+有关 MRM 性能计数器的列表，请参阅[可用于邮件记录管理的性能计数器](performance-counters-for-https://technet.microsoft.com/zh-cn/library/dd335093(v=exchg.150))。
 
-要查找与监视 MRM 相关的其他任务吗？请查看[监视邮件记录管理](monitoring-messaging-records-management-exchange-2013-help.md)。
+要查找与监视 MRM 相关的其他任务吗？请查看[监视邮件记录管理](monitoring-https://technet.microsoft.com/zh-cn/library/dd335093(v=exchg.150))。
 
 ## 使用 Windows 可靠性和性能监视器查看 MRM 性能计数器
 

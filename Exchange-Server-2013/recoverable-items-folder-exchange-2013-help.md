@@ -168,7 +168,7 @@ _**上一次修改主题：** 2016-12-09_
 </table>
 
 
-在 Exchange 2013 中，默认情况下不为新邮箱或从上一版本的 Exchange 迁移过来的邮箱启用单个项目恢复。您必须使用 Exchange 命令行管理程序为邮箱启用单个项目恢复，然后配置或修改已删除邮件的保留期限。有关如何执行单个项目恢复的详细信息，请参阅[恢复用户邮箱中的已删除邮件](recover-deleted-messages-in-a-user-s-mailbox-exchange-2013-help.md)。
+在 Exchange 2013 中，默认情况下不为新邮箱或从上一版本的 Exchange 迁移过来的邮箱启用单个项目恢复。您必须使用 Exchange 命令行管理程序为邮箱启用单个项目恢复，然后配置或修改已删除邮件的保留期限。有关如何执行单个项目恢复的详细信息，请参阅[恢复用户邮箱中的已删除邮件](https://technet.microsoft.com/zh-cn/library/ff660637(v=exchg.150))。
 
 返回顶部
 

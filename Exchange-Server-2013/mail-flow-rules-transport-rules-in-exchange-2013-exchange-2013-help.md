@@ -23,9 +23,9 @@ _**上一次修改主题：** 2017-04-28_
 
 若要了解 Exchange Online 中的邮件流规则，请参阅 [Exchange Online 中的邮件流规则（传输规则）](https://technet.microsoft.com/zh-cn/library/jj919238\(v=exchg.150\))。若要了解 Exchange Online Protection 中的邮件流规则，请参阅 [Exchange Online Protection 中的邮件流规则（传输规则）](https://technet.microsoft.com/zh-cn/library/dn271424\(v=exchg.150\))
 
-可以使用 Exchange 管理中心 (EAC) 或 Exchange 命令行管理程序来管理邮件流规则。有关如何管理传输规则的说明，请参阅 [管理邮件流规则](manage-mail-flow-rules-exchange-2013-help.md)。
+可以使用 Exchange 管理中心 (EAC) 或 Exchange 命令行管理程序来管理邮件流规则。有关如何管理传输规则的说明，请参阅 [管理邮件流规则](https://technet.microsoft.com/zh-cn/library/jj657505(v=exchg.150))。
 
-可以选择强制实施每个规则、只是测试规则，或测试每个规则并通知发件人。要了解测试选项的详细信息，请参阅[测试邮件流规则](test-a-mail-flow-rule-exchange-2013-help.md)和[策略提示](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)。
+可以选择强制实施每个规则、只是测试规则，或测试每个规则并通知发件人。要了解测试选项的详细信息，请参阅[测试邮件流规则](https://technet.microsoft.com/zh-cn/library/dn831862(v=exchg.150))和[策略提示](https://technet.microsoft.com/zh-cn/library/jj150512(v=exchg.150))。
 
 若要通过使用邮件流规则实现特定的邮件策略，请参阅下列主题：
 
@@ -35,11 +35,11 @@ _**上一次修改主题：** 2017-04-28_
 
   - [组织范围内的免责声明、签名、脚注或标头](organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md)
 
-  - [使用邮件流规则以便邮件可以规避待筛选邮件功能](use-mail-flow-rules-so-messages-can-bypass-clutter-exchange-2013-help.md)
+  - [使用邮件流规则以便邮件可以规避待筛选邮件功能](https://technet.microsoft.com/zh-cn/library/dn896639(v=exchg.150))
 
-  - [使用邮件流规则根据字词、短语或模式的列表路由电子邮件](use-mail-flow-rules-to-route-email-based-on-a-list-of-words-phrases-or-patterns-exchange-2013-help.md)
+  - [使用邮件流规则根据字词、短语或模式的列表路由电子邮件](https://technet.microsoft.com/zh-cn/library/dn951131(v=exchg.150))
 
-  - [常见邮件审批方案](common-message-approval-scenarios-exchange-2013-help.md)
+  - [常见邮件审批方案](https://technet.microsoft.com/zh-cn/library/dd298007(v=exchg.150))
 
 ## 邮件流规则组件
 
@@ -131,14 +131,14 @@ _**上一次修改主题：** 2017-04-28_
 <td><p>指示规则应用于邮件的顺序。默认优先级基于规则创建的先后顺序（较早规则的优先级高于较新规则的优先级，先处理具有较高优先级的规则，然后再处理具有较低优先级的规则）。</p>
 <p>通过在规则列表中上移或下移规则可更改 EAC 中规则的优先级。在 PowerShell中，可设置优先级编号（0 表示最高优先级）。</p>
 <p>例如，如果有一个拒绝包含信用卡号码的邮件的规则，还有一个需要批准的规则，你希望拒绝规则先发生，并停止应用其他规则。</p>
-<p>有关详细信息，请参阅<a href="manage-mail-flow-rules-exchange-2013-help.md">设置邮件流规则的优先级</a>。</p></td>
+<p>有关详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/jj657505(v=exchg.150)">设置邮件流规则的优先级</a>。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>模式</strong></p></td>
 <td><p><em>Mode</em></p></td>
 <td><p>可以指定是否让规则立即处理邮件，或是否在不影响邮件传递（启用或不启用数据丢失防护或 DLP 策略提示）的情况下测试规则。</p>
-<p>策略提示在 Outlook 或 Web 上的 Outlook 中显示简短说明，该说明可提供有关邮件创建者可能违反策略的信息。有关详细信息，请参阅<a href="technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md">策略提示</a>。</p>
-<p>有关模式的详细信息，请参阅<a href="test-a-mail-flow-rule-exchange-2013-help.md">测试邮件流规则</a>。</p></td>
+<p>策略提示在 Outlook 或 Web 上的 Outlook 中显示简短说明，该说明可提供有关邮件创建者可能违反策略的信息。有关详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/jj150512(v=exchg.150)">策略提示</a>。</p>
+<p>有关模式的详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/dn831862(v=exchg.150)">测试邮件流规则</a>。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>在以下日期激活此规则</strong></p>
@@ -259,7 +259,7 @@ _**上一次修改主题：** 2017-04-28_
 
   - 每个邮箱服务器缓存已展开通讯组来避免重复的 Active Directory 查询，以确定组成员资格。默认情况下，展开的组缓存中的条目将每四个小时过期一次。因此，在更新展开的组缓存之前，对组成员资格的更改不能通过邮件流规则检测。要强制在邮箱服务器上立即更新缓存，请重启 Microsoft Exchange 传输服务。若要强制更新缓存，需要重启邮箱服务器上的服务。
 
-在边缘传输服务器上创建并配置的邮件流规则存储在服务器上的 AD LDS 本地实例中。邮件流规则不会在边缘传输服务器上进行自动复制。边缘传输服务器上的规则仅应用于通过本地服务器传递的邮件。如果需要在多个边缘传输服务器上应用相同的邮件流规则集，则可以克隆边缘传输服务器配置，或导出和导入邮件流规则。有关详细信息，请参阅[边缘传输服务器克隆配置](edge-transport-server-cloned-configuration-exchange-2013-help.md)和[导入或导出邮件流规则集合](manage-mail-flow-rules-exchange-2013-help.md)。
+在边缘传输服务器上创建并配置的邮件流规则存储在服务器上的 AD LDS 本地实例中。邮件流规则不会在边缘传输服务器上进行自动复制。边缘传输服务器上的规则仅应用于通过本地服务器传递的邮件。如果需要在多个边缘传输服务器上应用相同的邮件流规则集，则可以克隆边缘传输服务器配置，或导出和导入邮件流规则。有关详细信息，请参阅[边缘传输服务器克隆配置](edge-transport-server-cloned-configuration-exchange-2013-help.md)和[导入或导出邮件流规则集合](https://technet.microsoft.com/zh-cn/library/jj657505(v=exchg.150))。
 
 每当邮箱服务器或边缘传输服务器上的传输服务检测到已修改的邮件流规则时，事件将记录在事件查看器中的应用程序日志中（邮箱服务器上的事件 ID 4002 以及边缘传输服务器上的事件 ID 16028）。
 
@@ -285,7 +285,7 @@ Exchange 2013 中有两种常见的混合环境方案：
 
 ## 详细信息
 
-[管理邮件流规则](manage-mail-flow-rules-exchange-2013-help.md)
+[管理邮件流规则](https://technet.microsoft.com/zh-cn/library/jj657505(v=exchg.150))
 
 [传输规则条件（谓词）](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)
 

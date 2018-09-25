@@ -634,7 +634,7 @@ CL相关性= 1 – \[(1 – CL证据 1) X (1 – CL证据 2) X (1 – CL证据 2
 
 ## 详细信息
 
-[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[数据丢失预防](https://technet.microsoft.com/zh-cn/library/jj150527(v=exchg.150))
 
 [定义您自己的 DLP 模板和信息类型](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)
 

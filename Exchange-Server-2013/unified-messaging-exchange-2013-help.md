@@ -267,7 +267,7 @@ Exchange 命令行管理程序以 Windows PowerShell 技术为基础构建，是
 <td><p>了解如何创建 UM 自动助理和管理用于导航菜单、问候语以及营业和非营业时间的设置。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="set-up-voice-mail-for-users-exchange-2013-help.md">设置用户的语音邮件</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/jj673527(v=exchg.150)">设置用户的语音邮件</a></p></td>
 <td><p>了解如何创建和管理 UM 邮箱策略以及如何为用户启用 UM。</p></td>
 </tr>
 <tr class="odd">
@@ -275,7 +275,7 @@ Exchange 命令行管理程序以 Windows PowerShell 技术为基础构建，是
 <td><p>了解如何设置客户端功能使用户能够访问和管理自己的语音邮件消息。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="set-outlook-voice-access-pin-security-exchange-2013-help.md">设置 Outlook Voice Access 针的安全性</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/bb125162(v=exchg.150)">设置 Outlook Voice Access 针的安全性</a></p></td>
 <td><p>了解如何为 Outlook Voice Access 用户设置 PIN 要求。</p></td>
 </tr>
 <tr class="odd">
@@ -283,7 +283,7 @@ Exchange 命令行管理程序以 Windows PowerShell 技术为基础构建，是
 <td><p>了解如何使用 UM 保护语音邮件。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="run-reports-for-voice-mail-calls-exchange-2013-help.md">语音邮件拨打的运行的报告</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/jj659062(v=exchg.150)">语音邮件拨打的运行的报告</a></p></td>
 <td><p>了解 UM 呼叫报告</p></td>
 </tr>
 </tbody>

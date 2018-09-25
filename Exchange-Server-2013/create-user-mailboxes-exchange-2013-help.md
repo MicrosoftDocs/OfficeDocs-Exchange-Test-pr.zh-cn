@@ -105,7 +105,7 @@ _**上一次修改主题：** 2013-04-12_
         
         若要了解更多信息，请参阅[Exchange 2013 中的就地存档](in-place-archiving-in-exchange-2013-exchange-2013-help.md)。
     
-      - **通讯簿策略**   使用此选项可为邮箱指定通讯簿策略 (ABP)。ABP 包含一个全局地址列表 (GAL)、一个脱机通讯簿 (OAB)、一个会议室列表以及一组地址列表。在分配给邮箱用户时，ABP 使这些用户可以访问 Outlook 和 Outlook Web App 中的自定义 GAL。若要了解更多信息，请参阅[通讯簿策略](address-book-policies-exchange-2013-help.md)。
+      - **通讯簿策略**   使用此选项可为邮箱指定通讯簿策略 (ABP)。ABP 包含一个全局地址列表 (GAL)、一个脱机通讯簿 (OAB)、一个会议室列表以及一组地址列表。在分配给邮箱用户时，ABP 使这些用户可以访问 Outlook 和 Outlook Web App 中的自定义 GAL。若要了解更多信息，请参阅[通讯簿策略](https://technet.microsoft.com/zh-cn/library/hh529948(v=exchg.150))。
         
         在下拉列表中，选择要与此邮箱关联的策略。
 
@@ -181,7 +181,7 @@ _**上一次修改主题：** 2013-04-12_
         
         若要了解更多信息，请参阅[Exchange 2013 中的就地存档](in-place-archiving-in-exchange-2013-exchange-2013-help.md)。
     
-      - **通讯簿策略**   使用此选项可为邮箱指定通讯簿策略 (ABP)。ABP 包含一个全局地址列表 (GAL)、一个脱机通讯簿 (OAB)、一个会议室列表以及一组地址列表。在分配给邮箱用户时，ABP 使这些用户可以访问 Outlook 和 Outlook Web App 中的自定义 GAL。若要了解更多信息，请参阅[通讯簿策略](address-book-policies-exchange-2013-help.md)。
+      - **通讯簿策略**   使用此选项可为邮箱指定通讯簿策略 (ABP)。ABP 包含一个全局地址列表 (GAL)、一个脱机通讯簿 (OAB)、一个会议室列表以及一组地址列表。在分配给邮箱用户时，ABP 使这些用户可以访问 Outlook 和 Outlook Web App 中的自定义 GAL。若要了解更多信息，请参阅[通讯簿策略](https://technet.microsoft.com/zh-cn/library/hh529948(v=exchg.150))。
         
         在下拉列表中，选择要与此邮箱关联的策略。
 
