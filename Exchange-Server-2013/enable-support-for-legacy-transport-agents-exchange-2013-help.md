@@ -153,5 +153,6 @@ _**上一次修改主题：** 2015-03-09_
 
 如果旧版传输代理安装成功，则表明此过程有效。如果尝试安装旧版传输代理而不执行本主题中的过程，则会收到类似于下面这样的错误：
 
+```powershell
     Mixed mode assembly is built against version '<version>' of the runtime and cannot be loaded in the 4.0 runtime without additional configuration information.
-
+```

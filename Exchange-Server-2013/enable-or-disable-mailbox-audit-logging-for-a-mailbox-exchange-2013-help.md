@@ -89,5 +89,6 @@ Set-Mailbox -Identity "Ben Smith" -AuditOwner HardDelete -AuditEnabled $true
 
 该示例会检索 Ben Smith 的邮箱设置并传送指定的审核设置（包括审核日志时间限制）到 **Format-List** cmdlet。
 
+```powershell
     Get-Mailbox "Ben Smith" | Format-List *audit*
-
+```

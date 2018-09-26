@@ -53,7 +53,9 @@ _**上一次修改主题：** 2013-02-13_
 
 本示例将公用文件夹 \\Dev\\CustomerEnagagements 还原到目标公用文件夹邮箱 Development01 中。
 
+```powershell
     New-MailboxRestoreRequest -SourceStoreMailbox Development -SourceDatabase MBX_DB01 -TargetMailbox Development01 -AllowLegacyDNMismatch -IncludeFolders \Dev\CustomerEngagements
+```
 
 有关语法和参数的详细信息，请参阅 [New-MailboxRestoreRequest](https://technet.microsoft.com/zh-cn/library/ff829875\(v=exchg.150\))。
 
@@ -61,7 +63,9 @@ _**上一次修改主题：** 2013-02-13_
 
 本示例将公用文件夹邮箱 PF\_Singapore 还原为新的公用文件夹邮箱 PF\_Singapore\_Restore。
 
+```powershell
     New-MailboxRestoreRequest -SourceStoreMailbox PF_Singapore -SourceDatabase MBX_DB01 -TargetMailbox PF_Singapore_Restore -AllowLegacyDNMismatch
+```
 
 有关语法和参数的详细信息，请参阅 [New-MailboxRestoreRequest](https://technet.microsoft.com/zh-cn/library/ff829875\(v=exchg.150\))。
 
