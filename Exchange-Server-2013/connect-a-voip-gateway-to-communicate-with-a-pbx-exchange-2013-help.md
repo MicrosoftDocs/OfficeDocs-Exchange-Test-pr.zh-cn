@@ -25,7 +25,7 @@ _**上一次修改主题：** 2016-12-15_
 
 Exchange TechCenter 中的以下建议资源提供的信息可帮助您正确地配置 VoIP 网关和 PBX：
 
-  - **支持的 VoIP 网关、IP PBX 和 PBX 文档**   [Exchange 2013 电话顾问](telephony-advisor-for-exchange-2013-exchange-2013-help.md)中包含在配置 VoIP 网关和 PBX 时可以使用的配置文件和设置信息。
+  - **支持的 VoIP 网关、IP PBX 和 PBX 文档**   [Exchange 2013 电话顾问](https://technet.microsoft.com/zh-cn/library/ee364753(v=exchg.150))中包含在配置 VoIP 网关和 PBX 时可以使用的配置文件和设置信息。
 
   - **配置和技术说明**   [支持的 VoIP 网关、IP PBX 和 PBX 的配置说明](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)中包含在配置 VoIP 网关和 PBX 时可以使用的配置文件和设置信息。
 

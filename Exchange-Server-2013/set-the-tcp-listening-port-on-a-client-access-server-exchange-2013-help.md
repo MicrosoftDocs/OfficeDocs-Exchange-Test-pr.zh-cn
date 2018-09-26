@@ -55,5 +55,7 @@ _**上一次修改主题：** 2013-04-09_
 
 本示例将名为 `MyClientAccessServer` 的客户端访问服务器中的 TCP 侦听端口设置为 5566。
 
-    Set-UMCallRouterSettings -Server MyClientAccessServer -SipTCPListeningPort 5566
+```powershell
+Set-UMCallRouterSettings -Server MyClientAccessServer -SipTCPListeningPort 5566
+```
 

@@ -47,11 +47,15 @@ _**上一次修改主题：** 2016-11-17_
 
 要在单个邮箱上配置反垃圾邮件设置，请使用以下语法。
 
+```powershell
     Set-Mailbox <MailboxIdentity> -AntispamBypassEnabled <$true | $false> -RequireSenderAuthenticationEnabled <$true | $false> -SCLDeleteEnabled <$true | $false | $null> -SCLDeleteThreshold <0-9 | $null> -SCLJunkEnabled <$true | $false | $null > -SCLJunkThreshold <0-9 | $null> -SCLQuarantineEnabled <$true | $false | $null > -SCLQuarantineThreshold <0-9 | $null> -SCLRejectEnabled <$true | $false | $null > -SCLRejectThreshold <0-9 | $null>
+```
 
 此示例将 Jeff Phillips 用户的邮箱配置为绕过所有反垃圾邮件筛选器，并将符合或超过“垃圾邮件”文件夹 SCL 阈值 5 的邮件传递到其 Microsoft Outlook 中的“垃圾邮件”文件夹。
 
-    Set-Mailbox "Jeff Phillips" -AntispamBypassEnabled $true -SCLJunkEnabled $true -SCLJunkThreshold 4
+```powershell
+Set-Mailbox "Jeff Phillips" -AntispamBypassEnabled $true -SCLJunkEnabled $true -SCLJunkThreshold 4
+```
 
 ## 您如何知道这有效？
 
@@ -59,7 +63,9 @@ _**上一次修改主题：** 2016-11-17_
 
 1.  运行以下命令：
     
+    ```powershell
         Get-Mailbox <MailboxIdentity> | Format-List SCL*,Bypass*,*SenderAuth*
+    ```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -67,11 +73,15 @@ _**上一次修改主题：** 2016-11-17_
 
 要在多个邮箱上配置所有反垃圾邮件设置，请使用以下语法。
 
+```powershell
     Get-Mailbox [<Filter>]| Set-Mailbox <Anti-Spam Settings>
+```
 
 本示例对 Contoso.com 域中“用户”容器内的所有邮箱启用了值为 7 的 SCL 隔离阈值。
 
+```powershell
     Get-Mailbox -OrganizationalUnit Contoso.com/Users | Set-Mailbox -SCLQuarantineEnabled $true -SCLQuarantineThreshold 7
+```
 
 ## 您如何知道这有效？
 
@@ -79,7 +89,9 @@ _**上一次修改主题：** 2016-11-17_
 
 1.  运行以下命令：
     
+    ```powershell
         Get-Mailbox [<Filter>] | Format-List Name,SCL*,*SenderAuth*
+    ```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -87,11 +99,15 @@ _**上一次修改主题：** 2016-11-17_
 
 运行以下命令：
 
-    Set-OrganizationConfig -SCLJunkThreshold <Integer>
+```powershell
+Set-OrganizationConfig -SCLJunkThreshold <Integer>
+```
 
 此示例将组织的垃圾邮件阈值设置为 5。
 
-    Set-OrganizationConfig -SCLJunkThreshold 5
+```powershell
+Set-OrganizationConfig -SCLJunkThreshold 5
+```
 
 ## 您如何知道这有效？
 
@@ -99,7 +115,9 @@ _**上一次修改主题：** 2016-11-17_
 
 1.  运行以下命令：
     
-        Get-OrganizationConfig | Format-List SCLJunkThreshold
+    ```powershell
+    Get-OrganizationConfig | Format-List SCLJunkThreshold
+    ```
 
 2.  验证显示的值是否为您配置的值。
 

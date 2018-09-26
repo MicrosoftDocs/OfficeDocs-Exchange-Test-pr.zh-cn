@@ -63,6 +63,7 @@ _**上一次修改主题：** 2016-07-28_
 
 使用其他三个支持元素定义主要组件中处理和引用的详细信息：关键字、正则表达式和函数。使用引用，可在多个实体或相关性规则中使用支持元素的一个单独定义，如社会保险号。XML 格式的基本规则结构如下所示。
 
+   ```xml
     <?xml version="1.0" encoding="utf-8"?>
     <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
     
@@ -111,6 +112,7 @@ _**上一次修改主题：** 2016-07-28_
         </LocalizedStrings>
       </Rules>
     </RulePackage>
+```    
 
 ## 实体规则
 
@@ -136,6 +138,7 @@ Pattern 元素的另一个可选子元素是 Match 元素，代表通过匹配�
 
 IdMatch 和 Match 元素均不定义需要匹配的内容的详细信息，而是通过 idRef 属性引用它。这提高了定义在多个模式结构中的可重用性。
 
+```xml  
     <Entity id="..." patternsProximity="300" > 
         <Pattern confidenceLevel="85">
             <IdMatch idRef="FormattedSSN" />
@@ -156,6 +159,7 @@ IdMatch 和 Match 元素均不定义需要匹配的内容的详细信息，而�
             </Any>
         </Pattern>
     </Entity> 
+``` 
 
 在之前的 XML 中用“…“代表的实体 id 元素应该是一个 GUID，并且它在本地化字符串部分中引用。
 
@@ -211,6 +215,7 @@ CLEntity= 1 – \[(1 – CLPattern1) X (1 – CLPattern1)\]
 
 Evidence 元素有一个或多个 Match 或 Any 子元素。如所有子 Match 和 Any 元素匹配，则会发现证据并且可信度对规则可信度计算起作用。在实体规则方面，相同的说明适用于实体规则的 Match 或 Any 元素。
 
+```PowerShell
     <Affinity id="..." 
               evidencesProximity="1000"
               thresholdConfidenceLevel="65">
@@ -231,6 +236,7 @@ Evidence 元素有一个或多个 Match 或 Any 子元素。如所有子 Match �
             </Any> 
         </Evidence>
     </Affinity>
+```
 
 ## 相关性接近窗口
 
@@ -327,6 +333,7 @@ CL相关性= 1 – \[(1 – CL证据 1) X (1 – CL证据 2) X (1 – CL证据 2
 
 规则架构支持每个 Entity 元素和 Affinity 元素的本地化名称和说明的存储。每个 Entity 元素和 Affinity 元素必须在 LocalizedStrings 部分中包含一个相应的元素。要本地化每个元素，包括作为 LocalizedStrings 元素的子元素的 Resource 元素，以便为每个元素的多个地区存储名称和说明。Resource 元素包括所需的 idRef 属性，匹配本地化的每个元素的相应 idRef 属性。Resource 元素的 Locale 子元素包含每个指定地区的本地化名称和说明。
 
+```PowerShell
     <LocalizedStrings>
         <Resource idRef="guid">
             <Locale langcode="en-US" default="true"> 
@@ -343,9 +350,11 @@ CL相关性= 1 – \[(1 – CL证据 1) X (1 – CL证据 2) X (1 – CL证据 2
             </Locale> 
         </Resource>
     </LocalizedStrings>
+```    
 
 ## 分类规则包 XML 架构定义
 
+```xml
     <?xml version="1.0" encoding="utf-8"?>
     <xs:schema xmlns:mce="http://schemas.microsoft.com/office/2011/mce"
                targetNamespace="http://schemas.microsoft.com/office/2011/mce" 
@@ -621,10 +630,11 @@ CL相关性= 1 – \[(1 – CL证据 1) X (1 – CL证据 2) X (1 – CL证据 2
         </xs:simpleContent>
       </xs:complexType>
     </xs:schema>
+```    
 
 ## 详细信息
 
-[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[数据丢失预防](https://technet.microsoft.com/zh-cn/library/jj150527(v=exchg.150))
 
 [定义您自己的 DLP 模板和信息类型](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)
 

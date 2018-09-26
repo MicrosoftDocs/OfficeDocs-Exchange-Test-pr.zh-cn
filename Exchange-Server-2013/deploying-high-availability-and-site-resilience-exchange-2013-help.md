@@ -138,11 +138,15 @@ Microsoft Exchange Server 2013 使用称为“增量部署”的概念来实现�
 
 为了在 MBX1 和 MBX2 上为复制网络适配器配置路由，在每个服务器上运行以下命令。
 
-    netsh interface ipv4 add route 10.0.2.0/24 <NetworkName> 10.0.1.254
+```powershell
+netsh interface ipv4 add route 10.0.2.0/24 <NetworkName> 10.0.1.254
+```
 
 为了在 MBX3 和 MBX4 上为复制网络适配器配置路由，在每个服务器上运行以下命令。
 
-    netsh interface ipv4 add route 10.0.1.0/24 <NetworkName> 10.0.2.254
+```powershell
+netsh interface ipv4 add route 10.0.1.0/24 <NetworkName> 10.0.2.254
+```
 
 还配置了下列其他网络设置：
 
@@ -168,11 +172,15 @@ Microsoft Exchange Server 2013 使用称为“增量部署”的概念来实现�
 
 下面是在脚本中使用的命令：
 
-    New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer CAS1 -WitnessDirectory C:\DAGWitness\DAG1.contoso.com -DatabaseAvailabilityGroupIPAddresses 192.168.1.8,192.168.2.8
+```PowerShell
+New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer CAS1 -WitnessDirectory C:\DAGWitness\DAG1.contoso.com -DatabaseAvailabilityGroupIPAddresses 192.168.1.8,192.168.2.8
+```
 
 上述命令将创建 DAG DAG1，将 CAS1 配置为见证服务器，配置一个特定的见证目录 (C:\\DAGWitness\\DAG1.contoso.com)，并为 DAG 配置两个 IP 地址（为 MAPI 网络上的每个子网配置一个）。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGWitness\DAG1.contoso.com -AlternateWitnessServer CAS4
+```PowerShell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGWitness\DAG1.contoso.com -AlternateWitnessServer CAS4
+```
 
 上述命令将 DAG1 配置为使用 CAS4 的备用见证服务器，以及 CAS4（使用在 CAS1 上配置的相同路径）上的备用见证目录。
 
@@ -180,14 +188,18 @@ Microsoft Exchange Server 2013 使用称为“增量部署”的概念来实现�
 > 使用相同路径不是必需的；Contoso 选择这样做是为了标准化其配置。
 
 
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX3
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX2
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX4
+```PowerShell
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX3
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX2
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX4
+```
 
 上述命令将每个邮箱服务器添加到 DAG（一次添加一个）。这些命令还在每个邮箱服务器上安装 Windows 故障转移群集组件（如果尚未安装）、创建故障转移群集，并将每个邮箱服务器加入到最近创建的群集。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```
 
 上述命令为 DAG 启用 DAC 模式。
 
@@ -209,39 +221,47 @@ Microsoft Exchange Server 2013 使用称为“增量部署”的概念来实现�
 
 在 MBX1 上运行以下命令。
 
+```PowerShell    
     Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX2
     Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX4
     Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -ReplayLagTime 3.00:00:00 -SeedingPostponed
     Suspend-MailboxDatabaseCopy -Identity DB1\MBX3 -SuspendComment "Seed from MBX4" -Confirm:$False
     Update-MailboxDatabaseCopy -Identity DB1\MBX3 -SourceServer MBX4
     Suspend-MailboxDatabaseCopy -Identity DB1\MBX3 -ActivationOnly
+```    
 
 在 MBX2 上运行以下命令。
 
+```PowerShell
     Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX1
     Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX3
     Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX4 -ReplayLagTime 3.00:00:00 -SeedingPostponed
     Suspend-MailboxDatabaseCopy -Identity DB2\MBX4 -SuspendComment "Seed from MBX3" -Confirm:$False
     Update-MailboxDatabaseCopy -Identity DB2\MBX4 -SourceServer MBX3
     Suspend-MailboxDatabaseCopy -Identity DB2\MBX4 -ActivationOnly
+```    
 
 在 MBX3 上运行以下命令。
 
+```PowerShell
     Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX4
     Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX2
     Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00 -SeedingPostponed
     Suspend-MailboxDatabaseCopy -Identity DB3\MBX1 -SuspendComment "Seed from MBX2" -Confirm:$False
     Update-MailboxDatabaseCopy -Identity DB3\MBX1 -SourceServer MBX2
     Suspend-MailboxDatabaseCopy -Identity DB3\MBX1 -ActivationOnly
+```    
 
 在 MBX4 上运行以下命令。
 
+```PowerShell    
     Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX3
     Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX1
     Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX2 -ReplayLagTime 3.00:00:00 -SeedingPostponed
     Suspend-MailboxDatabaseCopy -Identity DB4\MBX2 -SuspendComment "Seed from MBX1" -Confirm:$False
     Update-MailboxDatabaseCopy -Identity DB4\MBX2 -SourceServer MBX1
     Suspend-MailboxDatabaseCopy -Identity DB4\MBX2 -ActivationOnly
+```    
 
 在上述 **Add-MailboxDatabaseCopy** cmdlet 示例中，未指定 *ActivationPreference* 参数。任务将自动递增添加的每个副本的激活首选项编号。原始数据库的首选项编号始终为 1。使用 **Add-MailboxDatabaseCopy** cmdlet 添加的第一个副本自动获得首选项编号 2。假定未删除任何副本，则添加的下一个副本自动获得首选项编号 3 等等。因此，在上述示例中，与活动副本位于同一数据中心中的被动副本的激活首选项编号为 2；远程数据中心中的非延迟被动副本的激活首选项编号为 3，远程数据中心中的延迟被动副本的激活首选项编号为 4。
 

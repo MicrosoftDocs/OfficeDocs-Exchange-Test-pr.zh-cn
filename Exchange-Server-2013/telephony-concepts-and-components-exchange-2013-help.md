@@ -165,5 +165,5 @@ Exchange 2013 统一消息依靠 VoIP 网关的以下能力：将 PBX 中基于 
 
 [UM 协议、端口和服务](um-protocols-ports-and-services-exchange-2013-help.md)
 
-[Exchange 2013 电话顾问](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
+[Exchange 2013 电话顾问](https://technet.microsoft.com/zh-cn/library/ee364753(v=exchg.150))
 

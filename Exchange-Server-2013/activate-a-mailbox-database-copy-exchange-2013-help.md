@@ -49,31 +49,45 @@ _**上一次修改主题：** 2012-11-01_
 
 此示例激活 MBX3 上托管的数据库 DB4 的副本，并将其作为新的活动邮箱数据库进行装载。此命令将 DB4 设置为新的活动邮箱数据库，不会替代 MBX3 上的数据库装载拨号设置。
 
-    Move-ActiveMailboxDatabase DB4 -ActivateOnServer MBX3 -MountDialOverride:None
+```powershell
+Move-ActiveMailboxDatabase DB4 -ActivateOnServer MBX3 -MountDialOverride:None
+```
 
 此示例执行数据库 DB2 到邮箱服务器 MBX1 的切换操作。在此命令完成后，MBX1 会驻留 DB2 的主动副本。因为 *MountDialOverride* 参数设置为 `None`，所以 MBX1 会使用其自己定义的数据库自动装入拨号设置装入该数据库。
 
-    Move-ActiveMailboxDatabase DB2 -ActivateOnServer MBX1 -MountDialOverride:None
+```powershell
+Move-ActiveMailboxDatabase DB2 -ActivateOnServer MBX1 -MountDialOverride:None
+```
 
 此示例执行数据库 DB1 到邮箱服务器 MBX3 的切换操作。在此命令完成后，MBX3 会驻留 DB1 的主动副本。因为为 *MountDialOverride* 参数指定了值 `Good Availability`，所以 MBX3 会使用数据库自动装入拨号设置 *GoodAvailability* 装入数据库。
 
-    Move-ActiveMailboxDatabase DB1 -ActivateOnServer MBX3 -MountDialOverride:GoodAvailability
+```powershell
+Move-ActiveMailboxDatabase DB1 -ActivateOnServer MBX3 -MountDialOverride:GoodAvailability
+```
 
 此示例执行数据库 DB3 到邮箱服务器 MBX4 的切换操作。在此命令完成后，MBX4 会驻留 DB3 的主动副本。因为没有指定 *MountDialOverride* 参数，所以 MBX4 会使用数据库自动装入拨号设置 *Lossless* 装入数据库。
 
-    Move-ActiveMailboxDatabase DB3 -ActivateOnServer MBX4
+```powershell
+Move-ActiveMailboxDatabase DB3 -ActivateOnServer MBX4
+```
 
 本示例将对邮箱服务器 MBX1 执行服务器切换。将利用 MBX1 上活动数据库的健全副本，在一台或多台其他邮箱服务器上激活 MBX1 上的所有活动邮箱数据库副本。
 
-    Move-ActiveMailboxDatabase -Server MBX1
+```powershell
+Move-ActiveMailboxDatabase -Server MBX1
+```
 
 此示例将数据库 DB4 切换到邮箱服务器 MBX5 上。在此示例中，MBX5 上数据库副本的重播队列大于 6。因此，必须指定 *SkipLagChecks* 参数，才能激活 MBX5 上的数据库副本。
 
-    Move-ActiveMailboxDatabase DB4 MBX5 -SkipLagChecks
+```powershell
+Move-ActiveMailboxDatabase DB4 MBX5 -SkipLagChecks
+```
 
 此示例将数据库 DB5 切换到邮箱服务器 MBX6 上。在此示例中，MBX6 上数据库副本的 *ContentIndexState* 值为\&quot;Failed\&quot;。因此，必须指定 *SkipClientExperienceChecks* 参数，才能激活 MBX6 上的数据库副本。
 
-    Move-ActiveMailboxDatabase DB5 MBX6 -SkipClientExperienceChecks
+```powershell
+Move-ActiveMailboxDatabase DB5 MBX6 -SkipClientExperienceChecks
+```
 
 ## 您如何知道这有效？
 
@@ -83,7 +97,9 @@ _**上一次修改主题：** 2012-11-01_
 
   - 在命令行管理程序中，运行以下命令来显示数据库备份的状态信息。
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```powershell
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```
 
 ## 详细信息
 

@@ -49,15 +49,21 @@ _**上一次修改主题：** 2012-10-03_
 
 若要启用某个角色分配，请使用以下语法。
 
-    Set-ManagementRoleAssignment <role assignment> -Enabled $true
+```powershell
+Set-ManagementRoleAssignment <role assignment> -Enabled $true
+```
 
 若要禁用某个角色分配，请使用以下语法。
 
-    Set-ManagementRoleAssignment <role assignment> -Enabled $false
+```powershell
+Set-ManagementRoleAssignment <role assignment> -Enabled $false
+```
 
 此示例将禁用 Help Desk Assignment 角色分配。
 
-    Set-ManagementRoleAssignment "Help Desk Assignment" -Enabled $false
+```powershell
+Set-ManagementRoleAssignment "Help Desk Assignment" -Enabled $false
+```
 
 有关语法和参数的详细信息，请参阅 [Set-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd335173\(v=exchg.150\))。
 
@@ -77,11 +83,15 @@ _**上一次修改主题：** 2012-10-03_
 
 若要在角色分配上更改或添加预定义作用域，请使用以下语法。
 
-    Set-ManagementRoleAssignment <assignment name> -RecipientRelativeWriteScope < MyDistributionGroups | Organization | Self >
+```powershell
+Set-ManagementRoleAssignment <assignment name> -RecipientRelativeWriteScope < MyDistributionGroups | Organization | Self >
+```
 
 此示例将 John 的“分配”角色分配上的预定义作用域更改为 MyDistributionGroups。
 
-    Set-ManagementRoleAssignment "John's Assignment" - RecipientRelativeWriteScope MyDistributionGroups
+```powershell
+Set-ManagementRoleAssignment "John's Assignment" - RecipientRelativeWriteScope MyDistributionGroups
+```
 
 有关语法和参数的详细信息，请参阅 [Set-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd335173\(v=exchg.150\))。
 
@@ -91,11 +101,15 @@ _**上一次修改主题：** 2012-10-03_
 
 若要指定新的基于收件人筛选器的作用域或替换现有作用域，请使用以下语法。
 
-    Set-ManagementRoleAssignment <assignment name> -CustomRecipientWriteScope <role scope name>
+```powershell
+Set-ManagementRoleAssignment <assignment name> -CustomRecipientWriteScope <role scope name>
+```
 
 此示例将对 Redmond 收件人添加或更改基于收件人筛选器的作用域。
 
-    Set-ManagementRoleAssignment "Redmond Recipient Administrators Assignment" -CustomRecipientWriteScope "Redmond Recipients"
+```powershell
+Set-ManagementRoleAssignment "Redmond Recipient Administrators Assignment" -CustomRecipientWriteScope "Redmond Recipients"
+```
 
 如果要保持与应用于此角色分配相同的基于收件人筛选器的作用域，但又要更改用于匹配收件人对象的收件人筛选器，则需要更改作用域自身的收件人筛选器。有关如何更改作用域的详细信息，请参阅[更改角色范围](change-a-role-scope-exchange-2013-help.md)。
 
@@ -107,11 +121,15 @@ _**上一次修改主题：** 2012-10-03_
 
 若要指定新配置作用域或替换现有的配置作用域，请使用以下语法。
 
-    Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role scope name>
+```powershell
+Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role scope name>
+```
 
 此示例将对 Redmond Servers 添加或更改配置作用域。
 
-    Set-ManagementRoleAssignment "Redmond Administrators Assignment" -CustomConfigWriteScope "Redmond Servers"
+```powershell
+Set-ManagementRoleAssignment "Redmond Administrators Assignment" -CustomConfigWriteScope "Redmond Servers"
+```
 
 如果要保持与应用于此角色分配相同的配置作用域，但又要更改此作用域上的服务器筛选器或服务器列表，则需要对配置作用域自身进行更改。有关如何更改作用域的详细信息，请参阅[更改角色范围](change-a-role-scope-exchange-2013-help.md)。
 
@@ -123,11 +141,15 @@ _**上一次修改主题：** 2012-10-03_
 
 若要指定新配置作用域或替换现有的配置作用域，请使用以下语法。
 
-    Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role scope name>
+```powershell
+Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role scope name>
+```
 
 此示例将对 Redmond Databases 添加或更改配置作用域。
 
-    Set-ManagementRoleAssignment "Redmond Database Admins" -CustomConfigWriteScope "Redmond Databases"
+```powershell
+Set-ManagementRoleAssignment "Redmond Database Admins" -CustomConfigWriteScope "Redmond Databases"
+```
 
 如果要保持与应用于此角色分配相同的配置作用域，但又要更改此作用域上的数据库筛选器或数据库列表，则需要对配置作用域自身进行更改。有关如何更改作用域的详细信息，请参阅[更改角色范围](change-a-role-scope-exchange-2013-help.md)。
 
@@ -139,11 +161,15 @@ _**上一次修改主题：** 2012-10-03_
 
 若要在角色分配上更改或添加新 OU，请使用以下语法。
 
-    Set-ManagementRoleAssignment <assignment name> -RecipientOrganizationalUnitScope <OU>
+```powershell
+Set-ManagementRoleAssignment <assignment name> -RecipientOrganizationalUnitScope <OU>
+```
 
 此示例将 contoso.com 域中的 Engineering\\Users OU 添加到 Engineering Help Desk 角色分配。
 
-    Set-ManagementRoleAssignment "Engineering Help Desk" -RecipientOrganizationalUnitScope contoso.com/Engineering/Users
+```powershell
+Set-ManagementRoleAssignment "Engineering Help Desk" -RecipientOrganizationalUnitScope contoso.com/Engineering/Users
+```
 
 有关语法和参数的详细信息，请参阅 [Set-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd335173\(v=exchg.150\))。
 
@@ -159,7 +185,9 @@ _**上一次修改主题：** 2012-10-03_
 
 此示例将更改独占收件人写入作用域。
 
-    Set-ManagementRoleAssignment "Exclusive Executive Users" -ExclusiveRecipientWriteScope "Exclusive Executives"
+```powershell
+Set-ManagementRoleAssignment "Exclusive Executive Users" -ExclusiveRecipientWriteScope "Exclusive Executives"
+```
 
 有关语法和参数的详细信息，请参阅 [Set-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd335173\(v=exchg.150\))。
 

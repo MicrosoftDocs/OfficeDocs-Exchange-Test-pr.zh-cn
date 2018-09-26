@@ -45,15 +45,21 @@ _**上一次修改主题：** 2015-04-08_
 
 使用以下语法配置管道跟踪发件人地址。
 
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingSenderAddress <SMTPAddress | "<>">
+```powershell
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingSenderAddress <SMTPAddress | "<>">
+```
 
 本示例配置管道跟踪以捕获 Mailbox01 邮箱服务器上传输服务中发件人 chris@contoso.com 发送的所有邮件快照。
 
-    Set-TransportService Mailbox01 -PipelineTracingSenderAddress chris@contoso.com
+```powershell
+Set-TransportService Mailbox01 -PipelineTracingSenderAddress chris@contoso.com
+```
 
 本示例配置管道跟踪以捕获 Mailbox02 邮箱服务器上传输服务收到的所有系统生成的邮件的快照。
 
-    Set-TransportService Mailbox02 -PipelineTracingSenderAddress "<>"
+```powershell
+Set-TransportService Mailbox02 -PipelineTracingSenderAddress "<>"
+```
 
 > [!CAUTION]  
 > 配置管道跟踪以捕获传输服务中的所有服务器生成的邮件，这可能会使服务器上的负载明显增加，迅速占用可用磁盘空间。启用管道跟踪时，要始终监视可用磁盘空间。
@@ -65,11 +71,15 @@ _**上一次修改主题：** 2015-04-08_
 
 使用以下语法配置管道跟踪文件夹。
 
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingPath <LocalFilePath>
+```powershell
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingPath <LocalFilePath>
+```
 
 本示例将 Mailbox01 邮箱服务器上的传输服务的管道跟踪文件夹设置到 D:\\Hub\\Pipeline Tracing。
 
-    Set-TransportService Mailbox01 -PipelineTracingPath "D:\Hub\Pipeline Tracing"
+```powershell
+Set-TransportService Mailbox01 -PipelineTracingPath "D:\Hub\Pipeline Tracing"
+```
 
 ## 步骤 3：使用命令行管理程序启用管道跟踪
 
@@ -77,11 +87,15 @@ _**上一次修改主题：** 2015-04-08_
 
 使用以下语法启用管道跟踪。
 
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $true
+```powershell
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $true
+```
 
 本示例启用了 Mailbox01 邮箱服务器上传输服务中的管道跟踪。
 
-    Set-TransportService Mailbox01 -PipelineTracingEnabled $true
+```powershell
+Set-TransportService Mailbox01 -PipelineTracingEnabled $true
+```
 
 ## 您如何知道操作成功？
 
@@ -89,7 +103,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracing*
+    ```powershell
+    <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracing*
+    ```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -101,11 +117,15 @@ _**上一次修改主题：** 2015-04-08_
 
 使用以下语法禁用管道跟踪。
 
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $false
+```powershell
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $false
+```
 
 本示例禁用了 Mailbox01 邮箱服务器上传输服务中的管道跟踪。
 
-    Set-TransportService Mailbox01 -PipelineTracingEnabled $false
+```powershell
+Set-TransportService Mailbox01 -PipelineTracingEnabled $false
+```
 
 ## 您如何知道操作成功？
 
@@ -113,7 +133,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracingEnabled
+    ```powershell
+    <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracingEnabled
+    ```
 
 2.  验证 *PipelineTracingEnabled* 参数的值是否为 $false。
 

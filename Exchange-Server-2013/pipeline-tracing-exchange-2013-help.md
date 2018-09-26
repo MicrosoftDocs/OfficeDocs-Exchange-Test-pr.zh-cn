@@ -103,12 +103,14 @@ _**上一次修改主题：** 2015-03-09_
 
 每个邮件快照文件均以头开头，这些头被添加到邮件内容中，并列出与邮件快照文件有关的 SMTP 事件和传输代理。这些头以 `X-CreatedBy: MessageSnapshot-Begin injected headers` 开头，并以 `X-EndOfInjectedXHeaders: MessageSnapshot-End injected headers` 结尾。在每个邮件快照文件中，每个后续传输代理和 SMTP 事件将替换这些头。下面的示例展示了被添加到电子邮件文件中的头：
 
+  ```powershell
     X-CreatedBy: MessageSnapshot-Begin injected headers
     X-MessageSnapshot-UTC-Time: 2013-01-23T23:20:18.138Z
     X-MessageSnapshot-Record-Id: 21474836486
     X-MessageSnapshot-Source: OnSubmittedMessageX-Sender: michelle@nwtraders.com
     X-Receiver: chris@contoso.com
     X-EndOfInjectedXHeaders: MessageSnapshot-End injected headers
-
+  ```
+  
 在邮件快照文件头的后面是邮件的内容，包括所有原始邮件头。如果传输代理修改了邮件的内容，则更改将合并到邮件内容中。传输代理处理邮件时，每个传输代理所作的更改都将应用于邮件内容。如果某个传输代理未对邮件内容进行任何更改，则该代理创建的邮件快照将与上一传输代理创建的邮件快照相同。
 

@@ -57,11 +57,15 @@ _**上一次修改主题：** 2012-10-09_
 
 若要创建可手动分配给邮箱的显式分配策略，请使用以下语法。
 
-    New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign>
+```powershell
+New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign>
+```
 
 本示例将创建显式分配策略 Limited Mailbox Configuration，并将 `MyBaseOptions`、`MyAddressInformation` 和 `MyDisplayName` 角色分配给它。
 
-    New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName
+```powershell
+New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName
+```
 
 有关语法和参数的详细信息，请参阅 [New-RoleAssignmentPolicy](https://technet.microsoft.com/zh-cn/library/dd638101\(v=exchg.150\))。
 
@@ -69,11 +73,15 @@ _**上一次修改主题：** 2012-10-09_
 
 若要创建分配给新邮箱的默认分配策略，请使用以下语法。
 
-    New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign> -IsDefault
+```powershell
+New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign> -IsDefault
+```
 
 本示例将创建默认分配策略 Limited Mailbox Configuration，并将 `MyBaseOptions`、`MyAddressInformation` 和 `MyDisplayName` 角色分配给它。
 
-    New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName -IsDefault
+```powershell
+New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName -IsDefault
+```
 
 有关语法和参数的详细信息，请参阅 [New-RoleAssignmentPolicy](https://technet.microsoft.com/zh-cn/library/dd638101\(v=exchg.150\))。
 
@@ -99,11 +107,15 @@ _**上一次修改主题：** 2012-10-09_
 
 若要删除分配策略，请使用以下语法。
 
-    Remove-RoleAssignmentPolicy <role assignment policy>
+```powershell
+Remove-RoleAssignmentPolicy <role assignment policy>
+```
 
 此示例删除 New York Temporary Users 分配策略。
 
-    Remove-RoleAssignmentPolicy "New York Temporary Users"
+```powershell
+Remove-RoleAssignmentPolicy "New York Temporary Users"
+```
 
 有关语法和参数的详细信息，请参阅 [Remove-RoleAssignmentPolicy](https://technet.microsoft.com/zh-cn/library/dd638190\(v=exchg.150\))。
 
@@ -131,15 +143,21 @@ _**上一次修改主题：** 2012-10-09_
 
 若要返回组织中所有分配策略的列表，请使用以下命令。
 
-    Get-RoleAssignmentPolicy
+```powershell
+Get-RoleAssignmentPolicy
+```
 
 若要返回组织中所有分配策略的特定属性列表，可将结果通过管道传递给 **Format-Table** cmdlet 并在结果列表中指定所需的属性。请使用以下语法：
 
-    Get-RoleAssignmentPolicy | Format-Table <property 1>, <property 2...>
+```powershell
+Get-RoleAssignmentPolicy | Format-Table <property 1>, <property 2...>
+```
 
 本示例将返回组织中所有分配策略的列表，其中包括 **Name** 和 **IsDefault** 属性。
 
-    Get-RoleAssignmentPolicy | Format-Table Name, IsDefault
+```powershell
+Get-RoleAssignmentPolicy | Format-Table Name, IsDefault
+```
 
 有关语法和参数的详细信息，请参阅 [Get-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123685\(v=exchg.150\)) 和 [Get-RoleAssignmentPolicy](https://technet.microsoft.com/zh-cn/library/dd638195\(v=exchg.150\))。
 
@@ -155,11 +173,15 @@ _**上一次修改主题：** 2012-10-09_
 
 若要查看特定分配策略的详细信息，请使用以下语法。
 
-    Get-RoleAssignmentPolicy <assignment policy name> | Format-List
+```powershell
+Get-RoleAssignmentPolicy <assignment policy name> | Format-List
+```
 
 本示例可查看 Redmond Users - no Text Messaging 分配策略的详细信息。
 
-    Get-RoleAssignmentPolicy "Redmond Users - no Text Messaging" | Format-List
+```powershell
+Get-RoleAssignmentPolicy "Redmond Users - no Text Messaging" | Format-List
+```
 
 有关语法和参数的详细信息，请参阅 [Get-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123685\(v=exchg.150\)) 和 [Get-RoleAssignmentPolicy](https://technet.microsoft.com/zh-cn/library/dd638195\(v=exchg.150\))。
 
@@ -175,7 +197,9 @@ _**上一次修改主题：** 2012-10-09_
 
 本示例将返回默认分配策略。
 
-    Get-RoleAssignmentPolicy | Where { $_.IsDefault -eq $True }
+```powershell
+Get-RoleAssignmentPolicy | Where {     Get-RoleAssignmentPolicy | Where { $_.IsDefault -eq $True }.IsDefault -eq $True }
+```
 
 有关语法和参数的详细信息，请参阅 [Get-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123685\(v=exchg.150\)) 和 [Get-RoleAssignmentPolicy](https://technet.microsoft.com/zh-cn/library/dd638195\(v=exchg.150\))。
 
@@ -191,11 +215,15 @@ _**上一次修改主题：** 2012-10-09_
 
 请使用以下语法：
 
-    Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<role assignment policy>" }
+```powershell
+Get-Mailbox | Where {     Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<role assignment policy>" }.RoleAssignmentPolicy -Eq "<role assignment policy>" }
+```
 
 本示例将查找所有分配了策略 Vancouver End Users 的邮箱。
 
-    Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Vancouver End Users" }
+```powershell
+Get-Mailbox | Where {     Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Vancouver End Users" }.RoleAssignmentPolicy -Eq "Vancouver End Users" }
+```
 
 有关语法和参数的详细信息，请参阅 [Get-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123685\(v=exchg.150\)) 和 [Get-RoleAssignmentPolicy](https://technet.microsoft.com/zh-cn/library/dd638195\(v=exchg.150\))。
 
@@ -211,11 +239,15 @@ _**上一次修改主题：** 2012-10-09_
 
 若要更改默认分配策略，请使用以下语法。
 
-    Set-RoleAssignmentPolicy <assignment policy name> -IsDefault
+```powershell
+Set-RoleAssignmentPolicy <assignment policy name> -IsDefault
+```
 
 此示例将 Vancouver 最终用户分配策略设置为默认分配策略。
 
-    Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
+```powershell
+Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
+```
 
 > [!IMPORTANT]  
 > 将为新邮箱分配默认分配策略，即使此策略尚未分配管理角色也是如此。 邮箱分配的未分配管理角色的分配策略无法访问 Microsoft Outlook Web App 中的任何邮箱配置功能。
@@ -239,11 +271,15 @@ _**上一次修改主题：** 2012-10-09_
 
 若要在角色与分配策略之间创建管理角色分配，请使用以下语法。
 
-    New-ManagementRoleAssignment -Name <role assignment name> -Role <role name> -Policy <assignment policy name>
+```powershell
+New-ManagementRoleAssignment -Name <role assignment name> -Role <role name> -Policy <assignment policy name>
+```
 
 本示例在 MyVoicemail 角色与 Seattle Users 分配策略之间创建角色分配 Seattle Users - Voicemail。
 
-    New-ManagementRoleAssignment -Name "Seattle Users - Voicemail" -Role MyVoicemail -Policy "Seattle Users"
+```powershell
+New-ManagementRoleAssignment -Name "Seattle Users - Voicemail" -Role MyVoicemail -Policy "Seattle Users"
+```
 
 有关语法和参数的详细信息，请参阅 [New-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd335193\(v=exchg.150\))。
 
@@ -271,11 +307,15 @@ _**上一次修改主题：** 2012-10-09_
 
 若要从分配策略中删除角色，请使用以下语法。
 
-    Get-ManagementRoleAssignment -RoleAssignee <assignment policy name> -Role <role name> | Remove-ManagementRoleAssignment
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <assignment policy name> -Role <role name> | Remove-ManagementRoleAssignment
+```
 
 本示例将从 Seattle Users 分配策略中删除 MyVoicemail 管理角色，该角色使用户能够管理其语音邮件选项。
 
-    Get-ManagementRoleAssignment -RoleAssignee "Seattle Users" -Role MyVoicemail | Remove-ManagementRoleAssignment
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee "Seattle Users" -Role MyVoicemail | Remove-ManagementRoleAssignment
+```
 
 有关语法和参数的详细信息，请参阅 [Remove-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd351205\(v=exchg.150\))。
 

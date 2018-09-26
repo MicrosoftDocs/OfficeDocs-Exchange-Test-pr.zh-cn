@@ -17,7 +17,7 @@ _**适用于：** Exchange Online, Exchange Server 2013_
 
 _**上一次修改主题：** 2015-03-09_
 
-本概述阐明了用于数据丢失防护 (DLP) 策略模板文件的 XML 架构定义组件，还提供了 XML 格式的示例策略文件。这有助于您在开始之前了解整个 DLP 体系结构和规则开发流程。有关详细信息，请参阅[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)和[定义您自己的 DLP 模板和信息类型](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)。
+本概述阐明了用于数据丢失防护 (DLP) 策略模板文件的 XML 架构定义组件，还提供了 XML 格式的示例策略文件。这有助于您在开始之前了解整个 DLP 体系结构和规则开发流程。有关详细信息，请参阅[数据丢失预防](https://technet.microsoft.com/zh-cn/library/jj150527(v=exchg.150))和[定义您自己的 DLP 模板和信息类型](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)。
 
 为了便于采纳和管理数据丢失防护解决方案，Microsoft Exchange Server 2013 中引入了被称为 DLP 策略和策略模板的概念模型。DLP 策略模板为您预期的 DLP 策略提供初步设计。为了使策略更富有意义，DLP 策略模板必须封装为满足特定策略目标（如管理或业务需求）所需的所有指令和数据对象。该模板不针对特定环境。它只是一个策略定义或模型，可作为产品配置的一部分提供，或者由独立的软件供应商及合作伙伴提供。另一方面，DLP 策略是特定于开发环境的模板的运行时实例化。通过使用传输规则，现有消息策略框架可以包括 DLP 策略。传输规则在采纳和表达 DLP 解决方案的丰富性方面给予了很大的灵活性。
 
@@ -88,6 +88,7 @@ DLP 策略模板表示为 XML 文档。Exchange 内部及外部提供的策略�
 
 DLP 策略模板表示为 XML 文档，该文档遵循以下架构。请注意，XML 区分大小写。例如，`dlpPolicyTemplates` 有效，但 `DlpPolicyTemplates` 无效。
 
+  ```XML
     <?xml version="1.0" encoding="UTF-8"?>
     <dlpPolicyTemplates>
       <dlpPolicyTemplate id="F7C29AEC-A52D-4502-9670-141424A83FAB" mode="Audit" state="Enabled" version="15.0.2.0">
@@ -114,10 +115,13 @@ DLP 策略模板表示为 XML 文档，该文档遵循以下架构。请注意�
         <policyCommandsResources></policyCommandsResources>
       </dlpPolicyTemplate>
     </dlpPolicyTemplates>
+  ```
 
 如果包含在 XML 文件中的任何元素的参数包含空格，该参数必须使用双引号括住，否则它将无法正常工作。在以下示例中，以 `-SentToScope` 开头的参数是可接受的，不需要使用双引号，因为它是一个不包含空格的连续字符串。但是，为 –`Comments` 提供的参数将不会在 Exchange 管理中心中显示，因为它没有使用双引号且包含空格。
 
+  ```XML
     <CommandBlock><![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "PCI-DSS" -Comments Monitors payment card information sent inside the organization -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]> </CommandBlock>
+  ```
 
 ## localizedString 元素
 
@@ -225,66 +229,68 @@ DLP 策略模板表示为 XML 文档，该文档遵循以下架构。请注意�
 
 此部分的策略模板包含用于实例化策略定义的 Exchange 命令行管理程序命令的列表。作为实例化过程的一部分，导入过程将执行每条命令。这里提供了一些策略命令示例。
 
+  ```XML
     <PolicyCommands>
         <!-- The contents below are applied/executed as rules directly in PS - -->
           <CommandBlock> <![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Outside" -DlpPolicy "PCI-DSS" -SentToScope NotInOrganization -SetAuditSeverity High -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } -Comments "Monitors payment card information sent to outside the organization as part of the PCI-DSS DLP policy."]]></CommandBlock>
           <CommandBlock><![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "PCI-DSS" -Comments "Monitors payment card information sent inside the organization as part of the PCI-DSS DLP policy." -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]> </CommandBlock>
       </PolicyCommands> 
+  ```
 
 cmdlet 格式是所使用的 cmdlet 的标准 Exchange 命令行管理程序 cmdlet 语法。这些命令将按顺序执行。每个命令节点可以包含由多个命令组成的一个脚本块。以下示例表明了如何在 dlp 策略模板中嵌入分类规则包，并且作为策略创建过程的一部分来安装规则包。在策略模板中嵌入分类规则包，之后此规则包作为参数传输到模板中的 cmdlet：
 
-``` 
-<CommandBlock>
-  <![CDATA[
-$rulePack = [system.Text.Encoding]::Unicode.GetBytes('<?xml version="1.0" encoding="utf-16"?>
-<rulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
+```XML
+  <CommandBlock>
+    <![CDATA[
+  $rulePack = [system.Text.Encoding]::Unicode.GetBytes('<?xml version="1.0" encoding="utf-16"?>
+  <rulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
 
-  <RulePack id="c3f021a3-c265-4dc2-b3a7-41a1800bf518">
-    <Version major="1" minor="0" build="0" revision="0"/>
-    <Publisher id="e17451d3-9648-4117-a0b1-493a6d5c73ad"/>
-    <Details defaultLangCode="en-us">
-      <LocalizedDetails langcode="en-us">
-        <PublisherName>Contoso</PublisherName>
-        <Name>Contoso Sample Rule Pack</Name>
-        <Description>This is a sample rule package</Description>
-      </LocalizedDetails>
-    </Details>
-  </RulePack>
+    <RulePack id="c3f021a3-c265-4dc2-b3a7-41a1800bf518">
+      <Version major="1" minor="0" build="0" revision="0"/>
+      <Publisher id="e17451d3-9648-4117-a0b1-493a6d5c73ad"/>
+      <Details defaultLangCode="en-us">
+        <LocalizedDetails langcode="en-us">
+          <PublisherName>Contoso</PublisherName>
+          <Name>Contoso Sample Rule Pack</Name>
+          <Description>This is a sample rule package</Description>
+        </LocalizedDetails>
+      </Details>
+    </RulePack>
 
-  <Rules>
-    <Entity id="7cc35258-6b35-4415-baff-a76d1a018980" patternsProximity="300" recommendedConfidence="85" workload="Exchange">     
+    <Rules>
+      <Entity id="7cc35258-6b35-4415-baff-a76d1a018980" patternsProximity="300" recommendedConfidence="85" workload="Exchange">     
 
-      <Pattern confidenceLevel="85">
-        <IdMatch idRef="Regex_Contoso" />
-        <Any minMatches="1">
-          <Match idRef="Regex_conf" />
-        </Any>
-      </Pattern>
-    </Entity>
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_Contoso" />
+          <Any minMatches="1">
+            <Match idRef="Regex_conf" />
+          </Any>
+        </Pattern>
+      </Entity>
 
-    <Regex id="Regex_Contoso">(?i)(\bContoso\b)</Regex>
-    <Regex id="Regex_conf">(?i)(\bConfidential\b)</Regex>
+      <Regex id="Regex_Contoso">(?i)(\bContoso\b)</Regex>
+      <Regex id="Regex_conf">(?i)(\bConfidential\b)</Regex>
 
-    <LocalizedStrings>
-      <Resource idRef="7cc35258-6b35-4415-baff-a76d1a018980">
-        <Name default="true" langcode="en-us">
-          Confidential Information Rule
-        </Name>
-        <Description default="true" langcode="en-us">
-          Sample rule pack - Detects Contoso confidential information
-        </Description>
-      </Resource>
-    </LocalizedStrings>
-  </Rules>
+      <LocalizedStrings>
+        <Resource idRef="7cc35258-6b35-4415-baff-a76d1a018980">
+          <Name default="true" langcode="en-us">
+            Confidential Information Rule
+          </Name>
+          <Description default="true" langcode="en-us">
+            Sample rule pack - Detects Contoso confidential information
+          </Description>
+        </Resource>
+      </LocalizedStrings>
+    </Rules>
 
-</RulePackage>
+  </RulePackage>
 
-')
+  ')
 
 
-New-ClassificationRuleCollection -FileData $rulePack 
-New-TransportRule -name "customEntity" -DlpPolicy "%%DlpPolicyName%%" -SentToScope NotInOrganization -MessageContainsDataClassifications @{Name="Confidential Information Rule"} -SetAuditSeverity High]]>
-</CommandBlock> 
+  New-ClassificationRuleCollection -FileData $rulePack 
+  New-TransportRule -name "customEntity" -DlpPolicy "%%DlpPolicyName%%" -SentToScope NotInOrganization -MessageContainsDataClassifications @{Name="Confidential Information Rule"} -SetAuditSeverity High]]>
+  </CommandBlock> 
 ```
 
 子元素包括以下有序元素序列。
@@ -315,7 +321,7 @@ New-TransportRule -name "customEntity" -DlpPolicy "%%DlpPolicyName%%" -SentToSco
 
 ## 详细信息
 
-[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[数据丢失预防](https://technet.microsoft.com/zh-cn/library/jj150527(v=exchg.150))
 
 [定义您自己的 DLP 模板和信息类型](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)
 

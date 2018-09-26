@@ -57,7 +57,9 @@ _**上一次修改主题：** 2012-12-05_
 
 此示例禁用邮件联系人 Neil Black 的电子邮件。
 
+```powershell
     Disable-MailContact -Identity "Neil Black"
+```
 
 有关详细的语法和参数信息，请参阅[Disable-MailContact](https://technet.microsoft.com/zh-cn/library/aa997465\(v=exchg.150\))。
 
@@ -71,13 +73,17 @@ _**上一次修改主题：** 2012-12-05_
 
 3.  在此命令行管理程序中，运行以下命令。
     
-        Get-MailContact
+    ```powershell
+    Get-MailContact
+    ```
     
     结果中不会返回禁用了电子邮件的联系人，因为此 cmdlet 仅返回启用了邮件联系人。
 
 4.  在此命令行管理程序中，运行以下命令。
     
-        Get-Contact
+    ```powershell
+    Get-Contact
+    ```
     
     结果中会返回禁用了电子邮件的联系人，因为此 cmdlet 返回所有 Active Directory 联系人对象。
 
@@ -89,7 +95,9 @@ _**上一次修改主题：** 2012-12-05_
 
 本示例邮件启用联系人廖廖。您必须提供一个外部电子邮件地址。
 
-    Enable-MailContact -Identity "Rene Valdes" -ExternalEmailAddress renev@tailspintoys.com
+```powershell
+Enable-MailContact -Identity "Rene Valdes" -ExternalEmailAddress renev@tailspintoys.com
+```
 
 ## 使用命令行管理程序和 CSV 文件为多个联系人启用邮件
 
@@ -97,10 +105,13 @@ _**上一次修改主题：** 2012-12-05_
 
 1.  运行以下命令可将未启用邮件的现有联系人列表导出到管理员桌面上的 Contacts.csv 文件。
     
+    ```powershell
         Get-Contact | Where { $_.RecipientType -eq "Contact" } | Out-File "C:\Users\Administrator\Desktop\Contacts.csv"
-    
+    ```
+
     生成的文件将类似于以下文件。
     
+    ```powershell
         Name
         Walter Harp
         James Alvord
@@ -108,9 +119,11 @@ _**上一次修改主题：** 2012-12-05_
         Susan Burk
         Ian Tien
         ...
+    ```
 
 2.  添加一个名为**电子邮件地址**的列标题，然后在文件中添加的每个联系人的电子邮件地址。必须用逗号分隔的名称和外部电子邮件地址为每个联系人。更新的 CSV 文件应类似于下面的文件。
     
+    ```powershell
         Name,EmailAddress
         James Alvord,james@contoso.com
         Susan Burk,sburk@tailspintoys.com
@@ -118,11 +131,14 @@ _**上一次修改主题：** 2012-12-05_
         Ian Tien,iant@tailspintoys.com
         Rainer Witt,rainerw@fourthcoffee.com
         ...
+    ```
 
 3.  运行以下命令可使用 CSV 文件中的数据为其中列出的联系人启用邮件。
     
+    ```powershell
         Import-CSV C:\Users\Administrator\Desktop\Contacts.csv | ForEach-Object {Enable-MailContact -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
-    
+    ```
+
     命令结果将显示有关启用邮件的新联系人的信息。
 
 ## 您如何知道这有效？
@@ -137,5 +153,7 @@ _**上一次修改主题：** 2012-12-05_
 
   - 在命令行管理程序中，运行以下命令可显示有关新邮件联系人的信息。
     
-        Get-MailContact | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```powershell
+    Get-MailContact | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```
 

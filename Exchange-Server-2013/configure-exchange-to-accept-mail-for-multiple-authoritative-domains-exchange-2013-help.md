@@ -71,11 +71,15 @@ _**上一次修改主题：** 2016-06-15_
 
 若要创建新的权威域，请使用以下语法。
 
+```powershell
     New-AcceptedDomain -Name "<Unique Name>" -DomainName <SMTP domain> -DomainType Authoritative
+```
 
 例如，要为域 fourthcoffee.com 创建一个名为\&quot;Fourth Coffee subsidiary\&quot;的新权威域，请运行以下命令：
 
+```powershell
     New-AcceptedDomain -Name "Fourth Coffee subsidiary" -DomainName fourthcoffee.com -DomainType Authoritative
+```
 
 ## 您如何知道此步骤有效？
 
@@ -117,11 +121,15 @@ _**上一次修改主题：** 2016-06-15_
 
 若要更改现有主电子邮件地址，并保留旧的主电子邮件地址作为代理地址，请运行以下命令：
 
+```powershell
     Set-EmailAddressPolicy <EmailAddressPolicyIdentity> -EnabledEmailAddressTemplates SMTP:<NewPrimaryEmailAddress>,smtp:<OldPrimaryEmailAddress>
+```
 
 例如，假设组织中的电子邮件地址策略使用的电子邮件地址格式为 *useralias*`@contoso.com`。此示例将名为\&quot;Default Policy\&quot;的电子邮件地址策略中的主（答复）地址域更改为 `@fourthcoffee.com`，并保留 `@contoso.com` 域中旧的主答复地址作为代理（辅）地址。
 
+```powershell
     Set-EmailAddressPolicy "Default Policy" -EnabledEmailAddressTemplates SMTP:@fourthcoffee.com,smtp:@contoso.com
+```
 
 > [!NOTE]  
 > 大写字母形式的 <code>SMTP</code> 限定符指定主（答复）地址。小写字母形式的 <code>smtp</code> 限定符指定代理（辅）地址。
@@ -129,11 +137,15 @@ _**上一次修改主题：** 2016-06-15_
 
 若要将更新的电子邮件地址策略应用于收件人，请使用以下语法。
 
-    Update-EmailAddressPolicy <EamilAddressPolicyIdentity>
+```powershell
+Update-EmailAddressPolicy <EamilAddressPolicyIdentity>
+```
 
 例如，若要应用名为\&quot;Default Policy\&quot;的更新电子邮件地址策略，请运行以下命令：
 
-    Update-EmailAddressPolicy "Default Policy"
+```powershell
+Update-EmailAddressPolicy "Default Policy"
+```
 
 ## 替换已筛选收件人组的现有主电子邮件地址
 
@@ -173,9 +185,7 @@ _**上一次修改主题：** 2016-06-15_
 
 6.  单击\&quot;预览应用策略的收件人\&quot;来查看将向其应用该策略的收件人。
 
-7.  
-    
-    单击\&quot;保存\&quot;保存更改并创建策略。
+7.  单击\&quot;保存\&quot;保存更改并创建策略。
 
 8.  您将收到警告，在更新电子邮件地址策略之前，将不会应用该策略。在创建策略后，选择它，然后在详细信息窗格中，单击\&quot;应用\&quot;。
 
@@ -183,15 +193,21 @@ _**上一次修改主题：** 2016-06-15_
 
 若要替换已筛选收件人组的主电子邮件地址，请使用以下命令：
 
+```powershell
     New-EmailAddressPolicy -Name <Policy Name> -Priority <Integer> -IncludedRecipients <RecipientTypes> <Conditional Recipient Properties> -EnabledEmailAddressTemplates SMTP:@<NewPrimaryEmailAddress>
+```
 
 本示例创建了名为\&quot;Fourth Coffee Recipients\&quot;的电子邮件地址策略，将该策略分配给 Fourth Coffee 部门的邮箱用户，并为该电子邮件地址策略设置了最高优先级，因此将首先应用该策略。请注意，没有为这些收件人保留旧的主电子邮件地址，因此他们无法在旧的主电子邮件地址中接收电子邮件。
 
+```powershell
     New-EmailAddressPolicy -Name "Fourth Coffee Recipients" -Priority 1 -IncludedRecipients MailboxUsers -ConditionalDepartment "Fourth Coffee" -EnabledEmailAddressTemplates SMTP:@fourthcoffee.com
+```
 
 若要将新的电子邮件地址策略应用于受到影响的收件人，请运行以下命令：
 
-    Update-EmailAddressPolicy "Fourth Coffee Recipients"
+```powershell
+Update-EmailAddressPolicy "Fourth Coffee Recipients"
+```
 
 ## 您如何知道此步骤有效？
 

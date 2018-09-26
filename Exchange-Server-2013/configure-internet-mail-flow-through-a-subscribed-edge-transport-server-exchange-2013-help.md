@@ -45,21 +45,29 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  在边缘传输服务器上，使用以下语法创建边缘订阅文件。
     
+    ```powershell
         New-EdgeSubscription -FileName <FileName>.xml [-Force]
+    ```
     
     以下示例在文件夹 C:\\My Documents 中创建了名为“EdgeSubscriptionInfo.xml”的边缘订阅文件。*Force* 参数禁止确认边缘传输服务器上将禁用的命令以及配置数据将被覆盖的警告的提示。
     
-        New-EdgeSubscription -FileName "C:\My Documents\EdgeSubscriptionInfo.xml" -Force
+    ```powershell
+    New-EdgeSubscription -FileName "C:\My Documents\EdgeSubscriptionInfo.xml" -Force
+    ```
 
 2.  将生成的边缘订阅文件复制到您将边缘传输服务器订阅到的 Active Directory 站点中的邮箱服务器。
 
 3.  在邮箱服务器上，使用以下语法导入边缘订阅文件。
     
+    ```powershell
         New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "<FileName>.xml" -Encoding Byte -ReadCount 0)) -Site <SiteName>
+    ```
     
     此示例导入文件夹 D:\\Data 中名为“EdgeSubscriptionInfo.xml”的边缘订阅文件，并将边缘传输服务器订阅到名为“Default-First-Site-Name”的 Active Directory 站点。
     
+    ```powershell
         New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "D:\Data\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -Site "Default-First-Site-Name"
+    ```
     
     > [!NOTE]  
     > 可以使用 <em>CreateInternetSendConnector</em> 或 <em>CreateInboundSendConnector</em> 参数阻止自动创建所需的一个或两个发送连接器。有关详细信息，请参阅<a href="edge-subscriptions-exchange-2013-help.md">边缘订阅</a>。
@@ -67,7 +75,9 @@ _**上一次修改主题：** 2015-04-08_
 
 4.  在邮箱服务器上，运行以下命令，以开始第一次 EdgeSync 同步。
     
-        Start-EdgeSynchronization
+    ```powershell
+    Start-EdgeSynchronization
+    ```
 
 5.  完成后，我们强烈建议将边缘订阅文件从边缘传输服务器和邮箱服务器中删除。边缘订阅文件包含在 LDAP 通信过程中使用的凭据的相关信息。
 

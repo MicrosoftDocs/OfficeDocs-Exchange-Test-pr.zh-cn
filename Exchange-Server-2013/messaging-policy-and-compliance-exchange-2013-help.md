@@ -51,7 +51,7 @@ _**上一次修改主题：** 2015-03-09_
 <li><p>所有邮件的保留期是否应相同？</p></li>
 </ul>
 <p>Exchange 2013 包含的 MRM 功能使您可以实现组织的电子邮件生命周期策略。可以使用 MRM 将统一保留设置应用于所有邮件、使用自定义保留策略为邮箱应用基线保留设置以及可以选择允许用户对邮件进行分类以便可以在指定持续时间内保留邮件。</p></td>
-<td><p><a href="messaging-records-management-exchange-2013-help.md">邮件记录管理</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/dd335093(v=exchg.150)">邮件记录管理</a></p></td>
 </tr>
 <tr class="even">
 <td><p>就地存档</p></td>
@@ -81,7 +81,7 @@ _**上一次修改主题：** 2015-03-09_
 <tr class="odd">
 <td><p>数据丢失预防 (DLP)</p></td>
 <td><p>DLP 功能可帮助保护您的敏感数据，并向用户通知策略和法规。DLP 还可帮助防止用户错误地将敏感数据发送给未经授权的人。在配置 DLP 策略时，可以通过分析邮件系统的内容（其中包括大量关联文件类型）来标识和保护敏感数据。Exchange 2013 中提供的 DLP 策略模板基于法规标准，如 PII 和支付卡行业数据安全标准 (PCI-DSS)。DLP 可进行扩展，这样便使您可以包含对组织十分重要的其他策略。此外，新的策略提示功能还使您可以在发送敏感数据之前，通知用户有关的策略违反情况。</p></td>
-<td><p><a href="technical-overview-of-dlp-data-loss-prevention-in-exchange.md">数据丢失预防</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/jj150527(v=exchg.150)">数据丢失预防</a></p></td>
 </tr>
 <tr class="even">
 <td><p>信息权限管理 (IRM)</p></td>

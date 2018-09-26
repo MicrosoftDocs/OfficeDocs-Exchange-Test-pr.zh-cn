@@ -55,7 +55,9 @@ _**上一次修改主题：** 2013-02-18_
 
 要配置邮件跟踪，请运行以下命令：
 
+   ```PowerShell
     Set-TransportService <ServerIdentity> -MessageTrackingLogEnabled <$true | $false> -MessageTrackingLogMaxAge <dd.hh:mm:ss> -MessageTrackingLogMaxDirectorySize <Size> -MessageTrackingLogMaxFileSize <Size> -MessageTrackingLogPath <LocalFilePath> -MessageTrackingLogSubjectLoggingEnabled <$true|$false>
+   ```
 
 本示例将在名为 Mailbox01 的邮箱服务器上设置以下邮件跟踪日志设置：
 
@@ -69,7 +71,9 @@ _**上一次修改主题：** 2013-02-18_
 
 <!-- end list -->
 
+   ```PowerShell
     Set-TransportService Mailbox01 -MessageTrackingLogPath "D:\Hub Message Tracking Log" -MessageTrackingLogMaxFileSize 20MB -MessageTrackingLogMaxDirectorySize 1.5GB -MessageTrackingLogMaxAge 45.00:00:00
+   ```
 
 > [!NOTE]  
 > <ul>
@@ -81,11 +85,15 @@ _**上一次修改主题：** 2013-02-18_
 
 此示例在名为 Mailbox01 的邮箱服务器上禁用邮件跟踪日志中的邮件主题日志记录：
 
-    Set-TransportService Mailbox01 -MessageTrackingLogSubjectLoggingEnabled $false
+```powershell
+Set-TransportService Mailbox01 -MessageTrackingLogSubjectLoggingEnabled $false
+```
 
 此示例在名为 Mailbox01 的邮箱服务器上禁用邮件跟踪：
 
-    Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
+```powershell
+Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
+```
 
 ## 您如何知道操作成功？
 
@@ -93,7 +101,9 @@ _**上一次修改主题：** 2013-02-18_
 
 1.  在命令行管理程序中，运行以下命令：
     
-        Get-TransportService <ServerIdentity> | Format-List MessageTrackingLog*
+    ```PowerShell
+    Get-TransportService <ServerIdentity> | Format-List MessageTrackingLog*
+    ```
 
 2.  验证显示的值是否是您配置的值。
 

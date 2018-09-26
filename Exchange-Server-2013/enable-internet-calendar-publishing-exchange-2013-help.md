@@ -64,7 +64,9 @@ Microsoft Exchange Server 2013 组织中的用户可以与非 Exchange 组织中
 
 本示例在邮箱服务器 MAIL01 上配置 Web 代理 URL。
 
-    Set-ExchangeServer -Identity "MAIL01" -InternetWebProxy "<Webproxy URL>"
+```powershell
+Set-ExchangeServer -Identity "MAIL01" -InternetWebProxy "<Webproxy URL>"
+```
 
 有关语法和参数的详细信息，请参阅 [Set-ExchangeServer](https://technet.microsoft.com/zh-cn/library/bb123716\(v=exchg.150\))。
 
@@ -72,7 +74,9 @@ Microsoft Exchange Server 2013 组织中的用户可以与非 Exchange 组织中
 
 若要验证是否成功配置了 Web 代理 URL，可运行以下命令行管理程序命令验证 *InternetWebProxy* 参数信息。
 
-    Get-ExchangeServer | format-list
+```powershell
+Get-ExchangeServer | format-list
+```
 
 ## 步骤 2：使用命令行管理程序启用发布虚拟目录
 
@@ -82,7 +86,9 @@ Microsoft Exchange Server 2013 组织中的用户可以与非 Exchange 组织中
 
 本示例在客户端访问服务器 CAS01 上启用发布虚拟目录。
 
-    Set-OwaVirtualDirectory -Identity "CAS01\owa (Default Web Site)" -ExternalUrl "<URL for CAS01>" -CalendarEnabled $true
+```powershell
+Set-OwaVirtualDirectory -Identity "CAS01\owa (Default Web Site)" -ExternalUrl "<URL for CAS01>" -CalendarEnabled $true
+```
 
 其中标识 `CAS01\owa (Default Web Site)` 是服务器名称和 Outlook Web App 虚拟目录。
 
@@ -92,7 +98,9 @@ Microsoft Exchange Server 2013 组织中的用户可以与非 Exchange 组织中
 
 若要验证是否成功启用了发布虚拟目录，可运行以下命令行管理程序命令验证 *ExternalURL* 参数信息。
 
-    Get-OwaVirtualDirectory | format-list
+```powershell
+Get-OwaVirtualDirectory | format-list
+```
 
 ## 步骤 3：专门为 Internet 日历发布创建或配置一个共享策略。
 
@@ -134,15 +142,21 @@ Microsoft Exchange Server 2013 组织中的用户可以与非 Exchange 组织中
 
 此示例创建一个名为 Internet 的 Internet 日历发布共享，并将此策略配置为仅共享可用性信息。已启用此策略。
 
-    New-SharingPolicy -Name "Internet" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```powershell
+New-SharingPolicy -Name "Internet" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```
 
 本示例向用户邮箱添加共享策略 Internet。
 
-    Set-Mailbox -Identity <user name> -SharingPolicy "Internet"
+```powershell
+Set-Mailbox -Identity <user name> -SharingPolicy "Internet"
+```
 
 本示例向组织单位 (OU) 添加共享策略 Internet。
 
-    Set-Mailbox -OrganizationalUnit <OU name> -SharingPolicy "Internet"
+```powershell
+Set-Mailbox -OrganizationalUnit <OU name> -SharingPolicy "Internet"
+```
 
 有关语法和参数的详细信息，请参阅 [New-SharingPolicy](https://technet.microsoft.com/zh-cn/library/dd298186\(v=exchg.150\)) 和 [Set-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123981\(v=exchg.150\))。
 
@@ -150,7 +164,9 @@ Microsoft Exchange Server 2013 组织中的用户可以与非 Exchange 组织中
 
 若要验证是否已经成功创建了共享策略，可运行以下命令行管理程序命令验证共享策略信息。
 
-    Get-SharingPolicy <policy name> | format-list
+```powershell
+Get-SharingPolicy <policy name> | format-list
+```
 
 ## 选项 2：为 Internet 日历发布配置默认共享策略
 
@@ -182,7 +198,9 @@ Microsoft Exchange Server 2013 组织中的用户可以与非 Exchange 组织中
 
 此示例更新默认共享策略，并将该策略配置为仅共享可用性信息。已启用此策略。
 
-    Set-SharingPolicy -Name "Default Sharing Policy" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```powershell
+Set-SharingPolicy -Name "Default Sharing Policy" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```
 
 有关语法和参数的详细信息，请参阅 [Set-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123981\(v=exchg.150\))。
 
@@ -190,5 +208,7 @@ Microsoft Exchange Server 2013 组织中的用户可以与非 Exchange 组织中
 
 若要验证是否成功更新了默认共享策略，可运行以下命令行管理程序命令验证共享策略信息。
 
-    Get-SharingPolicy <policy name> | format-list
+```powershell
+Get-SharingPolicy <policy name> | format-list
+```
 

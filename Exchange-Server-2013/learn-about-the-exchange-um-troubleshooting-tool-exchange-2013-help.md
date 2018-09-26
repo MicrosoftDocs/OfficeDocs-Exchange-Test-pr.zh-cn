@@ -189,7 +189,9 @@ UM 故障排除工具可帮助您在跨界部署中排查、诊断及修复配�
 
 在以下示例中，网关模式被用来测试不包括 Office Communications Server 2007 R2 或 Lync Server 的环境中的呼叫流。该示例测试电话设备，包括 VoIP 网关、PBX 和 IP PBX 以及统一消息组件。此示例将 IP 语音 (VoIP) 安全模式设置为“不安全” ，使用 IP 地址 10.1.1.1 作为下一个跃点，并在转换信息中包括分机号码。
 
-    Test-ExchangeUMCallFlow -Mode Gateway -VoIPSecurity Unsecured -NextHop 10.1.1.1 -Diversion 12345
+```powershell
+Test-ExchangeUMCallFlow -Mode Gateway -VoIPSecurity Unsecured -NextHop 10.1.1.1 -Diversion 12345
+```
 
 概述
 
@@ -197,7 +199,9 @@ UM 故障排除工具可帮助您在跨界部署中排查、诊断及修复配�
 
 设置 SIPClient 模式时，可在包括 Office Communications Server 2007 R2 或 Microsoft Lync Server 的内部部署或跨界部署中使用 UM 故障排除工具。以下示例使用 SIPClient 模式并在包含 Office Communications Server 2007 R2 或 Lync Server 服务器的环境中采用安全 UM 拨号计划测试呼叫流。默认情况下，在运行 UM 故障排除工具时，该工具使用当前登录到计算机的用户的凭据。运行以下示例时，系统将提示您要在运行 UM 故障排除工具时使用的凭据。有关详细信息，请参阅[设置要用于 Exchange UM 疑难解答工具的凭据](set-the-credentials-to-use-with-the-exchange-um-troubleshooting-tool-exchange-2013-help.md)。
 
-    Test-ExchangeUMCallFlow -Mode SIPClient -VoIPSecurity Secured -CallingParty tony@contoso.com -CalledParty david@contoso.com -Credential $get
+```powershell
+Test-ExchangeUMCallFlow -Mode SIPClient -VoIPSecurity Secured -CallingParty tony@contoso.com -CalledParty david@contoso.com -Credential $get
+```
 
 ## 安装 UM 故障排除工具
 

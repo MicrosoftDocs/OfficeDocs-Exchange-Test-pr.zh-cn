@@ -23,7 +23,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - **灾难恢复**   如果硬件或软件发生故障，则 DAG 中的多个数据库副本可通过快速故障转移实现高可用性，且不会丢失数据。这样可以省去停机时间，并且可以避免由于从过去某个时间点备份恢复到磁盘或磁带需要大量成本而导致的生产率降低。DAG 可扩展到多个站点，并且可以针对磁盘、服务器、网络和数据中心故障提供弹性。
 
-  - **意外删除项目的恢复**   一直以来，在用户删除了项目但需将其恢复的情况下，都会涉及到查找存储需要恢复的数据的备份媒体，然后以某种方式获取所需项目并将其提供给用户。使用 Exchange 2013 中新的“可恢复项目”文件夹以及适用于此文件夹的保留策略，可在指定的时间段内保留所有删除和修改的数据，因此，恢复这些项目既方便又快捷。这通过帮助最终用户恢复他们自己意外删除的项目来减轻 Exchange 管理员和 IT 技术支持的负担，从而降低了与单个项目恢复相关的复杂程度和管理成本。有关详细信息，请参阅[邮件策略和遵从性](messaging-policy-and-compliance-exchange-2013-help.md)和[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)。
+  - **意外删除项目的恢复**   一直以来，在用户删除了项目但需将其恢复的情况下，都会涉及到查找存储需要恢复的数据的备份媒体，然后以某种方式获取所需项目并将其提供给用户。使用 Exchange 2013 中新的“可恢复项目”文件夹以及适用于此文件夹的保留策略，可在指定的时间段内保留所有删除和修改的数据，因此，恢复这些项目既方便又快捷。这通过帮助最终用户恢复他们自己意外删除的项目来减轻 Exchange 管理员和 IT 技术支持的负担，从而降低了与单个项目恢复相关的复杂程度和管理成本。有关详细信息，请参阅[邮件策略和遵从性](messaging-policy-and-compliance-exchange-2013-help.md)和[数据丢失预防](https://technet.microsoft.com/zh-cn/library/jj150527(v=exchg.150))。
 
   - **长期数据存储**   备份也会被用作存档，并且由于受到遵从性要求的约束，通常将磁带用于在更长的一段时间内保留数据的时间点快照。Exchange 2013 中的新存档、多邮箱搜索和邮件保留功能提供了一种机制，可在更长的一段时间内有效地保留数据并使最终用户可以访问。这消除了从磁带恢复的高昂成本，提高了生产率。有关详细信息，请参阅[Exchange 2013 中的就地存档](in-place-archiving-in-exchange-2013-exchange-2013-help.md)、[就地电子数据展示](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)和[就地保留和诉讼保留](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-and-litigation-holds)。
 

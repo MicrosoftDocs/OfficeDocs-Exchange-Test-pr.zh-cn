@@ -40,7 +40,9 @@ _**上一次修改主题：** 2014-06-16_
     
     要将所有未提交的日志文件提交到数据库，请在命令提示符下运行以下命令。
     
-        ESEUTIL /R <Enn>
+    ```powershell
+    ESEUTIL /R <Enn>
+    ```
     
     > [!NOTE]  
     > &lt;E<em>nn</em>&gt; 为要将日志文件重播到的数据库指定日志文件前缀。由 &lt;E<em>nn</em>&gt; 指定的日志文件前缀是 Eseutil /r 的必需参数。
@@ -48,25 +50,35 @@ _**上一次修改主题：** 2014-06-16_
 
 2.  使用下面的语法在服务器上创建数据库：
     
-        New-MailboxDatabase -Name <DatabaseName> -Server <ServerName> -EdbFilePath <DatabaseFileNameandPath> -LogFolderPath <LogFilesPath>
+    ```powershell
+    New-MailboxDatabase -Name <DatabaseName> -Server <ServerName> -EdbFilePath <DatabaseFileNameandPath> -LogFolderPath <LogFilesPath>
+    ```
 
 3.  使用以下语法设置 *This database can be over written by restore* 属性：
     
-        Set-MailboxDatabase <DatabaseName> -AllowFileRestore $true
+    ```powershell
+    Set-MailboxDatabase <DatabaseName> -AllowFileRestore $true
+    ```
 
 4.  当您在上面创建一个新数据库时，移动原始数据库文件（.edb 文件、日志文件和 Exchange Search 目录）至您指定的数据库文件夹。
 
 5.  使用以下语法装入数据库：
     
-        Mount-Database <DatabaseName>
+    ```powershell
+    Mount-Database <DatabaseName>
+    ```
 
 6.  装入数据库之后，使用 [Set-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123981\(v=exchg.150\)) cmdlet 修改用户帐户设置，以便帐户指向新邮箱服务器上的邮箱。要将所有用户从旧数据库移动到新数据库，请使用以下语法。
     
-        Get-Mailbox -Database <SourceDatabase> |where {$_.ObjectClass -NotMatch '(SystemAttendantMailbox|ExOleDbSystemMailbox)'}| Set-Mailbox -Database <TargetDatabase>
+    ```powershell
+    Get-Mailbox -Database <SourceDatabase> |where {$_.ObjectClass -NotMatch '(SystemAttendantMailbox|ExOleDbSystemMailbox)'}| Set-Mailbox -Database <TargetDatabase>
+    ```
 
 7.  使用以下语法触发保留在队列中的任何邮件的传递。
     
-        Get-Queue <QueueName> | Retry-Queue -Resubmit $true
+    ```powershell
+    Get-Queue <QueueName> | Retry-Queue -Resubmit $true
+    ```
 
 Active Directory 复制完成之后，所有用户都可以访问其在新 Exchange 服务器上的邮箱。大部分客户端均通过自动发现进行重定向。Microsoft Office Outlook Web App 也能被自动重新定向。
 

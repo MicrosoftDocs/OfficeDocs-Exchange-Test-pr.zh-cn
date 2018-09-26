@@ -45,8 +45,10 @@ _**上一次修改主题：** 2012-10-17_
 
 1.  运行以下命令以创建外部连接器：
     
+    ```powershell
         New-ForeignConnector -Name "Contoso Foreign Connector" -AddressSpaces "X400:c=US;a=Fabrikam;P=Contoso;5" -SourceTransportServers Hub01,Hub02
-    
+    ```
+
     在此示例中，Hub01 和 Hub02 是组织中的源服务器，指定这些服务器向外部系统传递邮件。使用多个源服务器可提供容错能力。
 
 在创建了外部连接器之后，可以根据组织的要求配置投递、分拣和重播目录。
@@ -55,7 +57,9 @@ _**上一次修改主题：** 2012-10-17_
 
 若要验证是否成功创建了外部连接器，请运行以下命令：
 
-    Get-ForeignConnector | Format-List Name
+```powershell
+Get-ForeignConnector | Format-List Name
+```
 
 验证创建的外部连接器的名称是否出现。
 
@@ -67,13 +71,17 @@ _**上一次修改主题：** 2012-10-17_
 
 1.  运行以下脚本以为外部连接器指定投递目录（将 *DropDirectory* 参数的值更改为适用于环境的路径）：
     
-        Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
+    ```powershell
+    Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
+    ```
 
 ## 您如何知道此步骤有效？
 
 若要验证是否正确设置了投递目录，可以运行以下 cmdlet 脚本并验证 *DropDirectory* 参数的值：
 
-    Get-ForeignConnector "Contoso Foreign Connector" | Format-List
+```powershell
+Get-ForeignConnector "Contoso Foreign Connector" | Format-List
+```
 
 在创建了外部连接器并指定了投递目录之后，可以使用在其中创建外部连接器的邮箱服务器发送邮件并验证文件是否传递到投递目录。
 
@@ -87,7 +95,9 @@ _**上一次修改主题：** 2012-10-17_
 
 若要验证是否正确设置了分拣目录，可以运行以下命令并验证 *PickupDirectoryPath* 参数的值：
 
-    Get-TransportService | Format-List PickupDirectoryPath
+```powershell
+Get-TransportService | Format-List PickupDirectoryPath
+```
 
 ## 步骤 4：使用命令行管理程序为邮箱服务器上的传输服务配置重播目录
 
@@ -99,7 +109,9 @@ _**上一次修改主题：** 2012-10-17_
 
 若要验证是否正确设置了重播目录，可以运行以下命令并验证 *ReplayDirectoryPath* 参数的值：
 
-    Get-TransportService | Format-List ReplayDirectoryPath
+```powershell
+Get-TransportService | Format-List ReplayDirectoryPath
+```
 
 ## 详细信息
 

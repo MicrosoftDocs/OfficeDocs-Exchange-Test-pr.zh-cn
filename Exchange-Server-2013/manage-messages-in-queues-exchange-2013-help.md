@@ -57,15 +57,21 @@ _**上一次修改主题：** 2014-05-07_
 
 若要删除邮件，请使用以下语法。
 
-    Remove-Message <-Identity MessageIdentity | -Filter {MessageFilter}> -WithNDR <$true | $false>
+```powershell
+Remove-Message <-Identity MessageIdentity | -Filter {MessageFilter}> -WithNDR <$true | $false>
+```
 
 此示例删除队列中主题为&#34;Win Big&#34;的邮件且不发送 NDR。
 
-    Remove-Message -Filter {Subject -eq "Win Big"} -WithNDR $false
+```powershell
+Remove-Message -Filter {Subject -eq "Win Big"} -WithNDR $false
+```
 
 此示例从名为 Mailbox01 的服务器上无法访问的队列中删除邮件 ID 为 3 的邮件，并发送 NDR。
 
-    Remove-Message -Identity Mailbox01\Unreachable\3 -WithNDR $true
+```powershell
+Remove-Message -Identity Mailbox01\Unreachable\3 -WithNDR $true
+```
 
 ## 您如何知道操作成功？
 
@@ -103,15 +109,21 @@ _**上一次修改主题：** 2014-05-07_
 
 若要恢复邮件，请使用以下语法：
 
-    Resume-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```powershell
+Resume-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```
 
 本示例将恢复 Contoso.com 域中从任意发件人发送的所有邮件。
 
-    Resume-Message -Filter {FromAddress -eq "*contoso.com"}
+```powershell
+Resume-Message -Filter {FromAddress -eq "*contoso.com"}
+```
 
 本示例将恢复服务器 Hub01 上无法访问的队列中邮件 ID 为 3 的邮件。
 
-    Resume-Message -Identity Hub01\Unreachable\3
+```powershell
+Resume-Message -Identity Hub01\Unreachable\3
+```
 
 要从带毒邮件队列重新提交邮件，请执行下列步骤：
 
@@ -145,15 +157,21 @@ _**上一次修改主题：** 2014-05-07_
 
 若要挂起邮件，请使用以下语法：
 
-    Suspend-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```powershell
+Suspend-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```
 
 此示例挂起队列中所有来自域 contoso.com 中所有发件人的邮件。
 
-    Suspend-Message -Filter {FromAddress -eq "*contoso.com"}
+```powershell
+Suspend-Message -Filter {FromAddress -eq "*contoso.com"}
+```
 
 此示例挂起名为 Mailbox01 的服务器上无法访问的队列中邮件 ID 为 3 的邮件：
 
-    Suspend-Message -Identity Mailbox01\Unreachable\3
+```powershell
+Suspend-Message -Identity Mailbox01\Unreachable\3
+```
 
 ## 您如何知道操作成功？
 

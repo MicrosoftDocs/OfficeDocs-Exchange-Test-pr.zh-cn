@@ -312,7 +312,9 @@ Exchange 2013 添加一个名为 **Get-QueueDigest** 的新队列 cmdlet。此 c
 
 此示例返回名为 Mailbox01、Mailbox02 和 Mailbox03 的 Exchange 2013 邮箱服务器上的所有非空外部队列。
 
-    Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude Empty
+```powershell
+Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude Empty
+```
 
 返回顶部
 
@@ -513,11 +515,15 @@ Exchange 2013 添加一个名为 **Get-QueueDigest** 的新队列 cmdlet。此 c
 
 此示例显示目标为以 Contoso.com 结尾的任何 SMTP 域名并且当前包含的邮件数大于 500 的队列的列表。
 
-    Get-Queue -Filter {Identity -like "*contoso.com*" -and MessageCount -gt 500}
+```powershell
+Get-Queue -Filter {Identity -like "*contoso.com*" -and MessageCount -gt 500}
+```
 
 此示例显示从 SCL 大于 5 的 contoso.com 域中的任何电子邮件地址发送的邮件的列表。
 
-    Get-Message -Filter {FromAddress -like "*Contoso.com*" -and SCL -gt 5}
+```powershell
+Get-Message -Filter {FromAddress -like "*Contoso.com*" -and SCL -gt 5}
+```
 
 返回顶部
 
@@ -592,15 +598,21 @@ Exchange 2013 添加一个名为 **Get-QueueDigest** 的新队列 cmdlet。此 c
 
 1.  打开命令行管理程序，并键入以下命令以检索第一个结果页。
     
+    ```powershell
         $Results=Get-message -Server mailbox01.contoso.com -ResultSize 500 -SortOrder +FromAddress,-Size
+    ```
 
 2.  若要设置书签对象，请键入以下命令以将第一页中的最后一个元素保存到变量中。
     
+    ```powershell
         $temp=$results[$results.length-1]
+    ```
 
 3.  若要在指定的服务器上检索接下来的 500 个对象，并排除书签对象，请键入以下命令。
     
+    ```powershell
         Get-message -Server mailbox01.contoso.com -BookmarkObject:$temp -IncludeBookmark $False -ResultSize 500 -SortOrder +FromAddress,-Size
-
+    ```
+    
 返回顶部
 

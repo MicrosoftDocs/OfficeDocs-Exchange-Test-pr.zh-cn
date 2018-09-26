@@ -41,7 +41,7 @@ _**上一次修改主题：** 2015-04-08_
 
 有关与 UM 邮箱策略相关的其他任务，请参阅 [UM 邮箱策略过程](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policy-procedures)。
 
-有关 UM 邮箱相关的其他任务，请参阅[声音已启用邮件的用户的过程](voice-mail-enabled-user-procedures-exchange-2013-help.md)。
+有关 UM 邮箱相关的其他任务，请参阅[声音已启用邮件的用户的过程](https://technet.microsoft.com/zh-cn/library/jj835776(v=exchg.150))。
 
 ## 在开始之前，您需要知道什么？
 
@@ -51,11 +51,11 @@ _**上一次修改主题：** 2015-04-08_
 
   - 您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅 [统一消息权限](unified-messaging-permissions-exchange-2013-help.md)主题中的\&quot;UM 邮箱\&quot;条目。
 
-  - 在执行这些步骤之前，先确认已创建 UM 拨号计划。有关详细步骤，请参阅[创建 UM 拨号计划](create-a-um-dial-plan-exchange-2013-help.md)。
+  - 在执行这些步骤之前，先确认已创建 UM 拨号计划。有关详细步骤，请参阅[创建 UM 拨号计划](https://technet.microsoft.com/zh-cn/library/bb123819(v=exchg.150))。
 
-  - 在执行这些步骤之前，先确认已创建 UM 邮箱策略。有关详细步骤，请参阅[创建 UM 邮箱策略](create-a-um-mailbox-policy-exchange-2013-help.md)。
+  - 在执行这些步骤之前，先确认已创建 UM 邮箱策略。有关详细步骤，请参阅[创建 UM 邮箱策略](https://technet.microsoft.com/zh-cn/library/bb123510(v=exchg.150))。
 
-  - 在执行这些过程之前，先确认已为用户启用了 UM 和语音邮件。有关详细步骤，请参阅[为用户启用语音邮件](enable-a-user-for-voice-mail-exchange-2013-help.md)。
+  - 在执行这些过程之前，先确认已为用户启用了 UM 和语音邮件。有关详细步骤，请参阅[为用户启用语音邮件](https://technet.microsoft.com/zh-cn/library/bb124147(v=exchg.150))。
 
 ## 您想执行什么操作？
 
@@ -63,11 +63,15 @@ _**上一次修改主题：** 2015-04-08_
 
 此示例在名为 `MyUMMailboxPolicy` 的 UM 邮箱策略上，为与该邮箱策略关联并拨号连接到 Outlook Voice Access 的用户启用无 PIN 语音邮件访问。
 
-    Set-UMMailboxPolicy -id MyUMMailboxPolicy -AllowPinlessVoiceMailAccess $true
+```powershell
+Set-UMMailboxPolicy -id MyUMMailboxPolicy -AllowPinlessVoiceMailAccess $true
+```
 
 ## 使用命令行管理程序在启用 UM 的用户的邮箱上，启用针对语音邮件的无 PIN 访问
 
 此示例为拨号连接到 Outlook Voice Access 以进入名为 `tonys@contoso.com` 的邮箱的用户，启用无 PIN 语音邮件访问。
 
-    Set-UMMailbox -id tonys@contoso.com -PinlessAccessToVoiceMailEnabled $true
+```powershell
+Set-UMMailbox -id tonys@contoso.com -PinlessAccessToVoiceMailEnabled $true
+```
 

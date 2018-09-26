@@ -108,25 +108,25 @@ UM 邮箱策略的一个属性指 UM 拨号计划。这代表了一组电话分�
 
 关于添加、删除或更改分机的更多信息，请参阅以下内容之一：
 
-  - [更改分机号码](change-an-extension-number-exchange-2013-help.md)
+  - [更改分机号码](https://technet.microsoft.com/zh-cn/library/bb232208(v=exchg.150))
 
   - [添加分机号码](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-extension-number)
 
-  - [删除分机号码](remove-an-extension-number-exchange-2013-help.md)
+  - [删除分机号码](https://technet.microsoft.com/zh-cn/library/dd351124(v=exchg.150))
 
 如果需要为启用 UM 的用户更改 SIP 地址或 E.164 号码，请参阅：
 
-  - [添加 SIP 地址](add-a-sip-address-exchange-2013-help.md)
+  - [添加 SIP 地址](https://technet.microsoft.com/zh-cn/library/jj662760(v=exchg.150))
 
   - [更改 SIP 地址](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-sip-address)
 
-  - [删除 SIP 地址](remove-a-sip-address-exchange-2013-help.md)
+  - [删除 SIP 地址](https://technet.microsoft.com/zh-cn/library/jj662761(v=exchg.150))
 
-  - [添加 E.164 号码](add-an-e-164-number-exchange-2013-help.md)
+  - [添加 E.164 号码](https://technet.microsoft.com/zh-cn/library/jj662762(v=exchg.150))
 
-  - [更改 E.164 号码](change-an-e-164-number-exchange-2013-help.md)
+  - [更改 E.164 号码](https://technet.microsoft.com/zh-cn/library/dd335162(v=exchg.150))
 
-  - [删除 E.164 号码](remove-an-e-164-number-exchange-2013-help.md)
+  - [删除 E.164 号码](https://technet.microsoft.com/zh-cn/library/jj662759(v=exchg.150))
 
 ## 呼叫应答
 

@@ -43,15 +43,21 @@ _**上一次修改主题：** 2014-09-17_
 
 此示例将测试 UM IP 网关在 TCP 端口 5060 上侦听传入 SIP 请求的能力。
 
-    Test-UMConnectivity -ListenPort 5060 -UMIPGateway MyIPGateway
+```powershell
+Test-UMConnectivity -ListenPort 5060 -UMIPGateway MyIPGateway
+```
 
 本示例测试本地邮箱服务器是否可以使用不安全的 TCP 连接（而不是安全的相互 TLS 连接），使用电话号码 56780 通过名为 `MyUMIPGateway` 的 UM IP 网关发出呼叫。
 
-    Test-UMConnectivity -UMIPGateway MyUMIPGateway -Phone 56780 -Secured $false
+```powershell
+Test-UMConnectivity -UMIPGateway MyUMIPGateway -Phone 56780 -Secured $false
+```
 
 本示例使用 SIP URI 测试拨号计划上的 Outlook Voice Access 号码。本示例可用于包括 Lync Server 在内的环境中。
 
-    Test-UMConnectivity -UMIPGateway OCSGateway1 -Phone "sip:SIPdialplan.contoso.com@contoso.com"
+```powershell
+Test-UMConnectivity -UMIPGateway OCSGateway1 -Phone "sip:SIPdialplan.contoso.com@contoso.com"
+```
 
 > [!NOTE]  
 > 可以将 <code>-Timeout</code> 参数设置为小于 5 秒的值。但是，建议始终将此参数的值配置为大于或等于 5 秒。如果在命令行语法中指定了 <code>­UMIPGateway</code> 参数，那么请使用模式 2。

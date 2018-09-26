@@ -43,7 +43,9 @@ _**上一次修改主题：** 2014-10-01_
 
 此示例将托管文件夹助理配置为在一天内处理所有邮箱。
 
-    Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+```powershell
+Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+```
 
 有关语法和参数的详细信息，请参阅 [Set-MailboxServer](https://technet.microsoft.com/zh-cn/library/aa998651\(v=exchg.150\))。
 
@@ -53,13 +55,17 @@ _**上一次修改主题：** 2014-10-01_
 
 此命令检索组织中的所有邮箱服务器并以表格格式从每台服务器输出托管文件夹助理的工作周期属性。*Auto* 开关用于自动调整列宽。
 
+  ```powershell
     Get-MailboxServer | Format-Table Name,ManagedFolderWorkCycle* -Auto
+  ```
 
 ## 使用命令行管理程序启动托管文件夹助理
 
 此示例触发托管文件夹助理，以立即处理 Morris Cornejo 的邮箱。
 
-    Start-ManagedFolderAssistant -Identity morris.cornejo@contoso.com
+```powershell
+Start-ManagedFolderAssistant -Identity morris.cornejo@contoso.com
+```
 
 有关语法和参数的详细信息，请参阅 [Start-ManagedFolderAssistant](https://technet.microsoft.com/zh-cn/library/aa998864\(v=exchg.150\))。
 

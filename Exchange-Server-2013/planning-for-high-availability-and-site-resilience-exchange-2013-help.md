@@ -313,7 +313,9 @@ MAPI 网络适配器的 TCP/IP v4 属性配置如下：
 
 对于 Outlook Anywhere 客户端，我们建议对每个数据中心使用单一主题备用名称 (SAN) 证书，并在该证书中包括多个主机名称。为确保在数据库、服务器或数据中心切换之后 Outlook Anywhere 的连接性，必须在每个证书上使用相同的证书主体名称，并使用 Microsoft 标准格式 (msstd) 为 Active Directory 中的 Outlook 提供程序配置对象配置相同的主体名称。例如，如果使用证书主体名称 mail.contoso.com，则可以按如下方式配置属性。
 
-    Set-OutlookProvider EXPR -CertPrincipalName "msstd:mail.contoso.com"
+```powershell
+Set-OutlookProvider EXPR -CertPrincipalName "msstd:mail.contoso.com"
+```
 
 与 Exchange 集成的某些应用程序具有特定的证书要求，这些应用程序可能需要使用其他证书。Exchange 2013 可以与 Office Communications Server (OCS) 共存。OCS 需要 1024 位或更高版本的证书，这些证书使用 OCS 服务器名称作为证书主体名称。因为将 OCS 服务器名称用作证书主体名称会阻止 Outlook Anywhere 正常工作，所以需要在 OCS 环境中使用其他单独证书。
 

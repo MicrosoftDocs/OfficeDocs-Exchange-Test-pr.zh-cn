@@ -45,15 +45,21 @@ _**上一次修改主题：** 2013-06-25_
 
 本示例对本地邮箱服务器执行连接测试和运行测试，然后显示 IP 语音 (VoIP) 连接信息。
 
-    Test-UMConnectivity
+```powershell
+Test-UMConnectivity
+```
 
 此示例将测试本地客户端访问服务器对 TCP 端口 5060 上的传入未加密 SIP 请求进行侦听的能力。
 
-    Test-UMConnectivity -ListenPort 5060
+```powershell
+Test-UMConnectivity -ListenPort 5060
+```
 
 此示例将测试本地客户端访问服务器对 TCP 端口 5061 上的传入加密 SIP 请求进行侦听的能力。
 
-    Test-UMConnectivity -ListenPort 5061
+```powershell
+Test-UMConnectivity -ListenPort 5061
+```
 
 > [!NOTE]  
 > 未指定 <code>-UMIPGateway</code> 参数时，请使用模式 1。

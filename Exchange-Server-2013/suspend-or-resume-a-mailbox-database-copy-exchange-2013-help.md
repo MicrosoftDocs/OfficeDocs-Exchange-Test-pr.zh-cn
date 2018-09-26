@@ -63,21 +63,29 @@ _**上一次修改主题：** 2012-11-02_
 
 此示例对服务器 MBX1 上托管的数据库 DB1 的副本暂停连续复制。此外，还指定了可选注释。
 
-    Suspend-MailboxDatabaseCopy -Identity DB1\MBX1 -SuspendComment "Maintenance on MBX1" -Confirm:$False
+```powershell
+Suspend-MailboxDatabaseCopy -Identity DB1\MBX1 -SuspendComment "Maintenance on MBX1" -Confirm:$False
+```
 
 此示例挂起了服务器 MBX2 上承载的数据库 DB2 的一个副本的激活。
 
-    Suspend-MailboxDatabaseCopy -Identity DB2\MBX2 -ActivationOnly -Confirm:$False
+```powershell
+Suspend-MailboxDatabaseCopy -Identity DB2\MBX2 -ActivationOnly -Confirm:$False
+```
 
 ## 使用命令行管理程序恢复邮箱数据库副本
 
 此示例恢复了邮箱服务器 MBX1 上的数据库 DB1 的一个副本。
 
-    Resume-MailboxDatabaseCopy -Identity DB1\MBX1
+```powershell
+Resume-MailboxDatabaseCopy -Identity DB1\MBX1
+```
 
 本示例恢复了服务器 MBX2 上数据库 DB2 的一个副本，仅用于复制。
 
-    Resume-MailboxDatabaseCopy -Identity DB2\MBX2 -ReplicationOnly
+```powershell
+Resume-MailboxDatabaseCopy -Identity DB2\MBX2 -ReplicationOnly
+```
 
 ## 您如何知道这有效？
 
@@ -87,5 +95,7 @@ _**上一次修改主题：** 2012-11-02_
 
   - 在命令行管理程序中，运行以下命令来显示数据库备份的状态信息。
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```powershell
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```
 

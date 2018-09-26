@@ -56,13 +56,17 @@ _**上一次修改主题：** 2016-12-09_
 
 在本地 Exchange 组织的 Exchange 命令行管理程序 (Exchange PowerShell) 中运行以下命令。
 
+```powershell
     New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<your verified domain>/metadata/json/1
+```
 
 ## 步骤 2：为 Exchange Online 组织启用合作伙伴申请
 
 在本地 Exchange 组织的 Exchange PowerShell 中运行以下命令。
 
+```powershell
     Get-PartnerApplication |  ?{$_.ApplicationIdentifier -eq "00000002-0000-0ff1-ce00-000000000000" -and $_.Realm -eq ""} | Set-PartnerApplication -Enabled $true
+```
 
 ## 步骤 3：导出本地授权证书
 
@@ -70,6 +74,7 @@ _**上一次修改主题：** 2016-12-09_
 
 1.  将以下文本保存到名为 **ExportAuthCert.ps1**（示例名称）的 PowerShell 脚本文件中。
     
+    ```powershell
         $thumbprint = (Get-AuthConfig).CurrentCertificateThumbprint
          
         if((test-path $env:SYSTEMDRIVE\OAuthConfig) -eq $false)
@@ -83,10 +88,13 @@ _**上一次修改主题：** 2016-12-09_
         $certBytes = $oAuthCert.Export($certType)
         $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
         [System.IO.File]::WriteAllBytes($CertFile, $certBytes)
+    ```
 
 2.  在本地 Exchange 组织的 Exchange PowerShell 中，运行您在上一步骤中创建的 PowerShell 脚本。例如：
     
-        .\ExportAuthCert.ps1
+    ```powershell
+    .\ExportAuthCert.ps1
+    ```
 
 ## 步骤 4：将本地授权证书上载到 Azure Active Directory ACS
 
@@ -96,6 +104,7 @@ _**上一次修改主题：** 2016-12-09_
 
 2.  将以下文本保存到名为 **UploadAuthCert.ps1**（示例名称）的 PowerShell 脚本文件中。
     
+    ```powershell
         Connect-MsolService;
         Import-Module msonlineextended;
         
@@ -113,10 +122,13 @@ _**上一次修改主题：** 2016-12-09_
         
         $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName
         New-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -Type asymmetric -Usage Verify -Value $credValue
+    ```
 
 3.  运行您在上一步骤中创建的 PowerShell 脚本。例如：
     
-        .\UploadAuthCert.ps1
+    ```powershell
+    .\UploadAuthCert.ps1
+    ```
 
 4.  启动脚本后，您会看到凭据对话框。输入 Microsoft Online Azure AD 组织中的租户管理员帐户的凭据。运行脚本后，让 Azure AD 会话的 Windows PowerShell 处于打开状态。您将在下一步骤中使用此程序运行 PowerShell 脚本。
 
@@ -126,7 +138,9 @@ _**上一次修改主题：** 2016-12-09_
 
 如果您不确定本地 Exchange 组织中的外部 Exchange 端点，则可以通过在本地 Exchange 组织的 Exchange PowerShell 中运行以下命令来获取外部配置的 Web 服务端点的列表。
 
-    Get-WebServicesVirtualDirectory | FL ExternalUrl
+```powershell
+Get-WebServicesVirtualDirectory | FL ExternalUrl
+```
 
 > [!NOTE]  
 > 若要成功运行以下脚本，必须将 Azure Active Directory 的 Windows PowerShell 连接到 Microsoft Online Azure AD 租户，如上述部分中的步骤 4 所述。
@@ -134,6 +148,7 @@ _**上一次修改主题：** 2016-12-09_
 
 1.  将以下文本保存到名为 **RegisterEndpoints.ps1**（示例名称）的 PowerShell 脚本文件中。本示例使用通配符将所有的端点注册为 contoso.com。用本地 Exchange 组织的主机名颁发机构替换 **contoso.com**。
     
+    ```powershell
         $externalAuthority="*.contoso.com"
          
         $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
@@ -144,10 +159,13 @@ _**上一次修改主题：** 2016-12-09_
         $p.ServicePrincipalNames.Add($spn);
          
         Set-MsolServicePrincipal -ObjectID $p.ObjectId -ServicePrincipalNames $p.ServicePrincipalNames;
-
+    ```
+    
 2.  在 Azure Active Directory 的 Windows PowerShell 中，运行您在上一步骤中创建的 Windows PowerShell 脚本。例如：
     
-        .\RegisterEndpoints.ps1
+    ```powershell
+    .\RegisterEndpoints.ps1
+    ```
 
 ## 步骤 6：创建从您的本地组织到 Office 365 的 IntraOrganizationConnector
 
@@ -155,7 +173,9 @@ _**上一次修改主题：** 2016-12-09_
 
 使用 Exchange PowerShell 在本地组织中运行以下 cmdlet：
 
+```powershell
     New-IntraOrganizationConnector -name ExchangeHybridOnPremisesToOnline -DiscoveryEndpoint https://outlook.office365.com/autodiscover/autodiscover.svc -TargetAddressDomains <your service target address>
+```
 
 ## 步骤 7：创建从 Office 365 租户到您的本地 Exchange 组织的 IntraOrganizationConnector
 
@@ -173,6 +193,7 @@ _**上一次修改主题：** 2016-12-09_
 
 使用 Windows PowerShell 运行以下 cmdlet：
 
+```powershell
     $UserCredential = Get-Credential
     
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
@@ -180,6 +201,7 @@ _**上一次修改主题：** 2016-12-09_
     Import-PSSession $Session
     
     New-IntraOrganizationConnector -name ExchangeHybridOnlineToOnPremises -DiscoveryEndpoint <your on-premises Autodiscover endpoint> -TargetAddressDomains <your on-premises SMTP domain>
+```
 
 ## 步骤 8：为任何 Exchange 2013 SP1 之前的服务器配置 AvailabilityAddressSpace。
 
@@ -203,7 +225,9 @@ _**上一次修改主题：** 2016-12-09_
 
 在指向内部部署 Exchange 2013 SP1 客户端访问服务器的 Exchange Web 服务终结点的 Exchange 2013 之前的客户端访问服务器上，必须配置 *AvailabilityAddressSpace*。此终结点是步骤 5 之前介绍的同一个终结点，您也可以通过在本地 Exchange 2013 SP1 客户端访问服务器上运行以下 cmdlet 来确定此终结点：
 
-    Get-WebServicesVirtualDirectory | FL AdminDisplayVersion,ExternalUrl
+```powershell
+Get-WebServicesVirtualDirectory | FL AdminDisplayVersion,ExternalUrl
+```
 
 > [!NOTE]  
 > 如果从多个服务器返回虚拟目录信息，请确保使用为 Exchange 2013 SP1 客户端访问服务器返回的终结点。它将显示 <em>AdminDisplayVersion</em> 参数的 15.0（内部版本 847.32）或更高版本。
@@ -211,7 +235,9 @@ _**上一次修改主题：** 2016-12-09_
 
 要配置 *AvailabilityAddressSpace*，请使用 Exchange PowerShell 并在内部部署组织中运行以下 cmdlet：
 
+```powershell
     Add-AvailabilityAddressSpace -AccessMethod InternalProxy -ProxyUrl <your on-premises External Web Services URL> -ForestName <your Office 365 service target address> -UseServiceAccount $True
+```
 
 ## 您如何知道这有效？
 
@@ -223,11 +249,15 @@ _**上一次修改主题：** 2016-12-09_
 
 若要验证您的本地 Exchange 组织能否成功连接到 Exchange Online，请在本地组织的 Exchange PowerShell 中运行以下命令：
 
+```powershell
     Test-OAuthConnectivity -Service EWS -TargetUri https://outlook.office365.com/ews/exchange.asmx -Mailbox <On-Premises Mailbox> -Verbose | fl
+```
 
 若要验证您的 Exchange Online 组织能否成功连接到本地 Exchange 组织，请使用[远程 PowerShell](https://technet.microsoft.com/zh-cn/library/jj984289\(v=exchg.150\)) 连接到您的 Exchange Online 组织，并运行以下命令：
 
+```powershell
     Test-OAuthConnectivity -Service EWS -TargetUri <external hostname authority of your Exchange On-Premises deployment>/metadata/json/1 -Mailbox <Exchange Online Mailbox> -Verbose | fl
+```
 
 例如 Test-OAuthConnectivity -Service EWS -TargetUri https://lync.contoso.com/metadata/json/1 -Mailbox ExchangeOnlineBox1 -Verbose | fl
 

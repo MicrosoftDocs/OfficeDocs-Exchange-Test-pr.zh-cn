@@ -63,9 +63,13 @@ _**上一次修改主题：** 2013-02-15_
 
 此示例将名为 `UMCallRouter1` 的客户端访问服务器的启动模式设置为 Dual 模式。
 
-    Set-UMCallRouterSettings -Server UMCallRouter1 -UMStartUpMode Dual
+```powershell
+Set-UMCallRouterSettings -Server UMCallRouter1 -UMStartUpMode Dual
+```
 
 此示例将名为 `UMCallRouter1` 的客户端访问服务器的启动模式设置为 TLS 模式。
 
-    Set-UMCallRouterSettings -Server UMCallRouter1 -UMStartUpMode TLS
+```powershell
+Set-UMCallRouterSettings -Server UMCallRouter1 -UMStartUpMode TLS
+```
 

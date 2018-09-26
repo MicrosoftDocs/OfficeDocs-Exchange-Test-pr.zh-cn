@@ -47,11 +47,15 @@ _**上一次修改主题：** 2015-01-22_
 
 本示例获取 Soumya Singhi 的\&quot;可恢复的邮件\&quot;文件夹统计信息，并以列表格式显示输出结果。
 
-    Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-List
+```powershell
+Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-List
+```
 
 本示例获取 Soumya Singhi 的\&quot;可恢复的邮件\&quot;文件夹统计信息，并以表格格式显示文件夹名称、文件夹路径、文件夹中的邮件数以及文件夹大小。
 
+```powershell
     Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-Table Name,FolderPath,ItemsInFolder,FolderAndSubfolderSize
+```
 
 有关语法和参数的详细信息，请参阅 [Get-MailboxFolderStatistics](https://technet.microsoft.com/zh-cn/library/aa996762\(v=exchg.150\))。
 
@@ -59,7 +63,9 @@ _**上一次修改主题：** 2015-01-22_
 
 本示例获取所有处于诉讼保留状态的邮箱的列表，以及每个邮箱的\&quot;可恢复的邮件\&quot;文件夹及其子文件夹的邮箱文件夹统计信息。**Identity**（邮箱文件夹标识）以及 **FolderAndSubfolderSize** 属性以表格格式显示。
 
+```powershell
     Get-Mailbox -ResultSize Unlimited -Filter {LitigationHoldEnabled -eq $true} | Get-MailboxFolderStatistics | Format-Table Identity,FolderAndSubfolderSize
+```
 
 有关语法和参数的详细信息，请参阅 [Get-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123685\(v=exchg.150\)) 和 [Get-MailboxFolderStatistics](https://technet.microsoft.com/zh-cn/library/aa996762\(v=exchg.150\))。
 
@@ -67,9 +73,12 @@ _**上一次修改主题：** 2015-01-22_
 
 本示例显示用户邮箱的\&quot;可恢复的项目\&quot;文件夹的配额和警告配额。该示例还检索有关将邮箱置于诉讼保留还是就地保留状态的信息。
 
+```powershell
     Get-Mailbox -Identity <identity of mailbox> | Format-List RecoverableItems*,LitigationHoldEnabled,InPlaceHolds
+```
 
 本示例显示组织中所有用户邮箱的\&quot;可恢复的项目\&quot;文件夹的配额和警告配额。本示例还检索保留信息。
 
+```powershell
     Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Format-List Name,RecoverableItems*,LitigationHoldEnabled,InPlaceHolds
-
+```

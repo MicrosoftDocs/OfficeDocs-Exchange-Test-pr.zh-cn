@@ -39,17 +39,24 @@ _**上一次修改主题：** 2012-10-02_
 
 如果您知道要删除的角色分配的名称，请使用以下语法。
 
-    Remove-ManagementRoleAssignment <assignment name>
+```powershell
+Remove-ManagementRoleAssignment <assignment name>
+```
 
 例如，若要删除\&quot;Tier 2 Help Desk Assignment\&quot;角色分配，请使用以下命令。
 
-    Remove-ManagementRoleAssignment "Tier 2 Help Desk Assignment"
+```powershell
+Remove-ManagementRoleAssignment "Tier 2 Help Desk Assignment"
+```
 
 如果您不知道角色分配的名称，可以使用以下语法。
 
+```powershell
     Get-ManagementRoleAssignment -RoleAssignee <user or USG> -Role <role name> -Delegating <$true | $false> | Remove-ManagementRoleAssignment 
+```
 
 例如，如果要从用户 Davids 删除邮件收件人常规角色分配，请使用以下命令。
 
+```powershell
     Get-ManagementRoleAssignment -RoleAssignee davids -Role "Mail Recipients" -Delegating $false | Remove-ManagementRoleAssignment
-
+```

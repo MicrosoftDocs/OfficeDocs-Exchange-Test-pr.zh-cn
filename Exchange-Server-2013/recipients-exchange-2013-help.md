@@ -266,7 +266,7 @@ Exchange 支持下列通讯组类型：
 
   - “收件人”容器
 
-您还可以根据收件人属性，而不根据以前列出的那些属性来指定条件。为此，必须使用命令行管理程序创建动态通讯组的自定义查询。请注意，具有自定义收件人筛选器的动态通讯组的筛选器和条件设置只能使用命令行管理程序进行管理。有关如何使用自定义查询创建动态通讯组的示例，请参阅[管理动态通讯组](manage-dynamic-distribution-groups-exchange-2013-help.md)。
+您还可以根据收件人属性，而不根据以前列出的那些属性来指定条件。为此，必须使用命令行管理程序创建动态通讯组的自定义查询。请注意，具有自定义收件人筛选器的动态通讯组的筛选器和条件设置只能使用命令行管理程序进行管理。有关如何使用自定义查询创建动态通讯组的示例，请参阅[管理动态通讯组](https://technet.microsoft.com/zh-cn/library/bb123722(v=exchg.150))。
 
 ## 邮件联系人
 
@@ -334,15 +334,15 @@ Microsoft Exchange 收件人不是典型的收件人对象（例如邮箱、邮
 <td><p>了解链接邮箱的要求、如何创建链接邮箱并将它们链接到主帐户，以及如何更改链接邮箱的属性。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="create-and-manage-distribution-groups-exchange-2013-help.md">创建和管理通讯组</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/bb124513(v=exchg.150)">创建和管理通讯组</a></p></td>
 <td><p>了解如何创建和管理通讯组，以及如何为组织创建组命名策略。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="manage-mail-enabled-security-groups-exchange-2013-help.md">管理启用邮件的安全组</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/bb123521(v=exchg.150)">管理启用邮件的安全组</a></p></td>
 <td><p>了解如何创建和管理启用邮件的安全组。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-dynamic-distribution-groups-exchange-2013-help.md">管理动态通讯组</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/bb123722(v=exchg.150)">管理动态通讯组</a></p></td>
 <td><p>了解如何创建动态通讯组和管理动态通讯组属性，如使用自定义属性和其他属性确定组成员。</p></td>
 </tr>
 <tr class="odd">
@@ -358,7 +358,7 @@ Microsoft Exchange 收件人不是典型的收件人对象（例如邮箱、邮
 <td><p>了解如何创建会议室邮箱和管理会议室邮箱属性，如启用定期会议和配置预订与调度选项。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-equipment-mailboxes-exchange-2013-help.md">管理设备邮箱</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/jj215770(v=exchg.150)">管理设备邮箱</a></p></td>
 <td><p>了解如何创建设备邮箱、配置预订与调度选项，以及如何管理其他邮箱属性。</p></td>
 </tr>
 <tr class="odd">
@@ -374,7 +374,7 @@ Microsoft Exchange 收件人不是典型的收件人对象（例如邮箱、邮
 <td><p>了解如何将固有筛选器或自定义筛选器与命令结合使用来筛选一组收件人。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-permissions-for-recipients-exchange-online-help.md">管理收件人的权限</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/jj919240(v=exchg.150)">管理收件人的权限</a></p></td>
 <td><p>了解如何使用 EAC 或命令行管理程序来为用户和组分配权限。</p></td>
 </tr>
 <tr class="odd">

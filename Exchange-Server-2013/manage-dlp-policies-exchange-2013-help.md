@@ -67,7 +67,9 @@ _**上一次修改主题：** 2015-01-14_
 
 此示例返回有关名为 Employee Numbers 的虚构 DLP 策略的信息。此命令将通过管道传递给 **Format-List** cmdlet，以显示指定 DLP 策略的详细配置。
 
-    Get-DlpPolicy "Employee Numbers" | Format-List
+```powershell
+Get-DlpPolicy "Employee Numbers" | Format-List
+```
 
 有关语法和参数的信息，请参阅 [Get-DlpPolicy](https://technet.microsoft.com/zh-cn/library/jj215752\(v=exchg.150\))。
 
@@ -97,7 +99,9 @@ _**上一次修改主题：** 2015-01-14_
 
 您可以使用命令行管理程序指定策略的操作和通知级别。此示例为名为 Employee Numbers 的虚构 DLP 策略设置模式，因此不会执行任何操作，也不会显示任何通知消息。
 
-    Set-DlpPolicy "Employee Numbers" -Mode Audit
+```powershell
+Set-DlpPolicy "Employee Numbers" -Mode Audit
+```
 
 有关语法和参数的信息，请参阅 [Set-DlpPolicy](https://technet.microsoft.com/zh-cn/library/jj215778\(v=exchg.150\))。
 
@@ -117,13 +121,15 @@ _**上一次修改主题：** 2015-01-14_
 
 此示例删除名为 Employee Numbers 的虚构 DLP 策略。
 
-    Remove-DlpPolicy "Employee Numbers"
+```powershell
+Remove-DlpPolicy "Employee Numbers"
+```
 
 有关语法和参数的信息，请参阅 [Remove-DlpPolicy](https://technet.microsoft.com/zh-cn/library/jj215677\(v=exchg.150\))。
 
 ## 详细信息
 
-[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[数据丢失预防](https://technet.microsoft.com/zh-cn/library/jj150527(v=exchg.150))
 
-[策略提示](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)
+[策略提示](https://technet.microsoft.com/zh-cn/library/jj150512(v=exchg.150))
 

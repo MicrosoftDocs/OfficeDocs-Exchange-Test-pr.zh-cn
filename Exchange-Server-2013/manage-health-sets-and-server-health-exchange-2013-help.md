@@ -46,22 +46,27 @@ _**上一次修改主题：** 2013-12-02_
 ## 使用命令行管理程序查看服务器运行状况
 
 运行下列命令之一，查看运行 Exchange 2013 的服务器的运行状况设置和运行状况信息。
+
+```PowerShell
+Get-HealthReport -Identity <ServerName>
 ```
-    Get-HealthReport -Identity <ServerName>
-```
-```
-    Get-ServerHealth -Identity <ServerName> | Format-Table Server,CurrentHealthSetState,Name,HealthSetName,AlertValue,HealthGroupName -Auto
+
+```PowerShell
+Get-ServerHealth -Identity <ServerName> | Format-Table Server,CurrentHealthSetState,Name,HealthSetName,AlertValue,HealthGroupName -Auto
 ```
 
 运行下列任一命令，查看运行 Exchange 2013 的服务器或数据库可用性组的运行状况设置。
+
+```PowerShell
+Get-ExchangeServer | Get-HealthReport -RollupGroup
 ```
-    Get-ExchangeServer | Get-HealthReport -RollupGroup
+
+```PowerShell
+Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
 ```
-```
-    Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
-```
-```
-    (Get-DatabaseAvailabiltyGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
+
+```PowerShell
+(Get-DatabaseAvailabiltyGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
 ```
 
 ## 查看运行状况设置列表
@@ -72,7 +77,9 @@ _**上一次修改主题：** 2013-12-02_
 
 运行以下命令，查看运行 Exchange 2013 的服务器的运行状况设置。
 
-    Get-HealthReport -Server <ServerName>
+```powershell
+Get-HealthReport -Server <ServerName>
+```
 
 ## 查看运行状况设置的探测器、监视器和响应器
 
@@ -82,7 +89,9 @@ _**上一次修改主题：** 2013-12-02_
 
 运行以下命令，查看与运行 Exchange 2013 的服务器的运行状况设置相关的探测器、监视器和响应器。
 
-    Get-MonitoringItemIdentity -Server <ServerName> -Identity <HealthSetName> | Format-Table Identity,ItemType,Name -Auto
+```PowerShell
+Get-MonitoringItemIdentity -Server <ServerName> -Identity <HealthSetName> | Format-Table Identity,ItemType,Name -Auto
+```
 
 ## 查看监视器及其当前运行状况的列表
 
@@ -92,5 +101,6 @@ _**上一次修改主题：** 2013-12-02_
 
 运行以下命令查看运行 Exchange 2013 的服务器的监视器及其当前运行状况的列表。
 
-    Get-ServerHealth -HealthSet <HealthSetName> -Server <ServerName> | Format-Table Name, AlertValue -Auto
-
+```PowerShell
+Get-ServerHealth -HealthSet <HealthSetName> -Server <ServerName> | Format-Table Name, AlertValue -Auto
+```

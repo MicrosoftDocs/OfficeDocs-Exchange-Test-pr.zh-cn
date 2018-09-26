@@ -264,15 +264,21 @@ Exchange 使用循环日志记录，并基于文件大小和文件期限对代�
 
 **Get-AntiSpamFilteringReport.ps1** 脚本位于 `%ExchangeInstallPath%Scripts` 中。需要从脚本文件夹运行命令行管理程序的脚本。若要将命令行管理程序中的位置更改到脚本文件夹，请运行以下命令：
 
-    Cd $env:ExchangeInstallPath\Scripts
+```powershell
+Cd $env:ExchangeInstallPath\Scripts
+```
 
 若要运行脚本文件夹中的脚本，请使用以下语法：
 
-    .\Get-AntiSpamFilteringReport.ps1 -report <ReportValue> [<OptionalParameters>]
+```powershell
+.\Get-AntiSpamFilteringReport.ps1 -report <ReportValue> [<OptionalParameters>]
+```
 
 有关使用脚本的详细信息，请运行以下命令：
 
-    Get-Help -Detailed .\Get-AntiSpamFilteringReport.ps1
+```powershell
+Get-Help -Detailed .\Get-AntiSpamFilteringReport.ps1
+```
 
 返回顶部
 

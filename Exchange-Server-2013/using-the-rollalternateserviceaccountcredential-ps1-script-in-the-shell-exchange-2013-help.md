@@ -31,7 +31,9 @@ _**上一次修改主题：** 2015-03-09_
 
 ## 语法
 
+```powershell
     RollAlternateServiceAccountPassword.ps1 -Scope <Object> -Identity <Object> -Source <Object> -
+```
 
 ## 详细描述
 
@@ -85,7 +87,9 @@ _**上一次修改主题：** 2015-03-09_
 
 交互运行脚本输出与 -verbose 标志时，该脚本输出应指示哪些脚本操作是成功的。要确认已更新客户端访问服务器，可以验证 ASA 凭据上的上次修改的时间戳。以下示例生成了客户端访问服务器的列表以及上次更新备用服务帐户的时间。
 
+```powershell
     Get-ClientAccessServer -IncludeAlternateServiceAccountCredentialstatus |Fl Name, AlternateServiceAccountConfiguration
+```
 
 还可以在运行脚本的计算机上检查事件日志。脚本的事件日志条目位于应用程序事件日志中，并且来自来源 *MSExchange Management Application*。下表列出了记录的事件和这些事件的含义。
 
@@ -230,25 +234,33 @@ _**上一次修改主题：** 2015-03-09_
 
 此示例使用脚本将凭据推送到林中的所有客户端访问服务器，以便进行首次安装。
 
+```powershell
     .\RollAlternateserviceAccountPassword.ps1 -ToEntireForest -GenerateNewPasswordFor "Contoso\ComputerAccount$" -Verbose
+```
 
 ## 示例 2
 
 此示例为用户帐户 ASA 凭据生成新密码，并将该密码分发给客户端访问服务器阵列中那些名称与\*邮箱\*相匹配的所有成员。
 
+```powershell
     .\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers *mailbox* -GenerateNewPasswordFor "Contoso\UserAccount" -Verbose
+```
 
 ## 示例 3
 
 此示例将安排一个名为“Exchange RollAsa”的每月执行一次的自动密码滚动计划任务。将使用一个由脚本生成的新密码在整个林中更新所有客户端访问服务器的 ASA 凭据。已创建计划任务，但未运行脚本。运行计划任务后，将在无人值守模式下运行脚本。
 
+```powershell
     .\RollAlternateServiceAccountPassword.ps1 -CreateScheduledTask "Exchange-RollAsa" -ToEntireForest -GenerateNewPasswordFor 'contoso\computerAccount$'
+```
 
 ## 示例 4
 
 此示例更新名为 CAS01 的客户端访问服务器阵列中的所有客户端访问服务器的 ASA 凭据。将从域 Contoso 中的 Active Directory 计算机帐户 ServiceAc1 中获取凭据。
 
+```powershell
     .\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers "CAS01" -GenerateNewPasswordFor "CONTOSO\ServiceAc1$" 
+```
 
 ## 示例 5
 
@@ -256,5 +268,7 @@ _**上一次修改主题：** 2015-03-09_
 
 必须在客户端访问服务器接收通信之前更新 ASA 凭据。请从任何已正确配置的客户端访问服务器复制共享 ASA 凭据。例如，如果服务器 A 当前拥有一个有效的 ASA 凭据，而您刚向阵列中添加了服务器 B，则可以使用脚本将凭据（包括密码）从服务器 A 复制到服务器 B。如果上次滚动密码时，服务器 B 关机或者尚未成为阵列成员，则可以使用这种方法。
 
+```powershell
     .\RollAlternateServiceAccountPassword.ps1 -CopyFrom ServerA -ToSpecificServers ServerB -Verbose
+```
 

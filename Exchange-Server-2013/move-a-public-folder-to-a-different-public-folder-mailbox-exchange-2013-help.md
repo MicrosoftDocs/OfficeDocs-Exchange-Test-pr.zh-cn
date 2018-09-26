@@ -51,7 +51,9 @@ _**上一次修改主题：** 2016-11-16_
 
 此示例开始进行将公用文件夹 \\CustomerEnagagements 从公用文件夹邮箱 DeveloperReports 移动到 DeveloperReports01 的移动请求
 
+```powershell
     New-PublicFolderMoveRequest -Folders \DeveloperReports\CustomerEngagements -TargetMailbox DeveloperReports01
+```
 
 > [!NOTE]  
 > 移动请求处于活动状态时，将锁定目标公用文件夹的邮箱。
@@ -63,7 +65,9 @@ _**上一次修改主题：** 2016-11-16_
 
 本示例开始移动请求到目标公用文件夹邮箱 DeveloperReports01 \\Dev 公用文件夹分支下的公用文件夹。此示例不会移动公用文件夹 \\Dev。
 
+```powershell
     New-PublicFolderMoveRequest -Folders \Dev\CustomerEngagements,\Dev\RequestsforChange,\Dev\Usability -TargetMailbox DeveloperReports01
+```
 
 > [!NOTE]  
 > 移动请求处于活动状态时，将锁定目标公用文件夹的邮箱。
@@ -75,15 +79,17 @@ _**上一次修改主题：** 2016-11-16_
 
 此示例使用`Move-PublicFolderBranch.ps1`脚本移动公用文件夹的一个分支。这将启动移动请求公用文件夹 \\Dev 和其所有子文件夹为公用文件夹邮箱 DeveloperReports01。该脚本位于脚本文件夹中，必须从该位置运行。
 
-    CD $env:ExchangeInstallPath\scripts
-    
-    .\Move-PublicFolderBranch.ps1 -FolderRoot \Dev -TargetPublicFolderMailbox DeveloperReports01
+```powershell
+    CD $env:ExchangeInstallPath\scripts. \Move-PublicFolderBranch.ps1 -FolderRoot \Dev -TargetPublicFolderMailbox DeveloperReports01
+```
 
 ## 您如何知道操作成功？
 
 若要验证是否成功创建了公用文件夹移动请求，可以运行以下命令：
 
-    Get-PublicFolderMoveRequest | Format-List Status
+```powershell
+Get-PublicFolderMoveRequest | Format-List Status
+```
 
 `Completed` 状态表示该移动请求已成功完成。
 

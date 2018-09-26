@@ -81,7 +81,7 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
 
   - 在多域环境中，已启用邮件的公用文件夹将停止如果在子域中运行 Exchange 迁移到 Exchange 2013 之后工作。这是因为在 Exchange 2013，已启用邮件的公用文件夹对象都需要在根域下进行。若要解决此问题，您需要禁用邮件已启用邮件的公用文件夹，然后启用邮件再次强调，它们将使您可以将它们移动到正确的域的位置。
 
-  - 迁移完成后，如果你想要让外部发件人向迁移的已启用邮件功能的公用文件夹发送邮件，则至少需要向\&quot;**匿名**\&quot;用户授予\&quot;**创建项目**\&quot;权限。如果不执行此操作，外部发件人将收到一封传递失败通知，邮件将不会传递到迁移的已启用邮件功能的公用文件夹。要了解如何设置匿名用户的权限，请参阅[对公用文件夹启用或禁用邮件](mail-enable-or-mail-disable-a-public-folder-exchange-2013-help.md)。
+  - 迁移完成后，如果你想要让外部发件人向迁移的已启用邮件功能的公用文件夹发送邮件，则至少需要向\&quot;**匿名**\&quot;用户授予\&quot;**创建项目**\&quot;权限。如果不执行此操作，外部发件人将收到一封传递失败通知，邮件将不会传递到迁移的已启用邮件功能的公用文件夹。要了解如何设置匿名用户的权限，请参阅[对公用文件夹启用或禁用邮件](https://technet.microsoft.com/zh-cn/library/aa997560(v=exchg.150))。
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
@@ -107,43 +107,59 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
     
       - 运行以下命令，获取原始源文件夹结构的快照：
         
-            Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Legacy_PFStructure.xml
+        ```powershell
+        Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Legacy_PFStructure.xml
+        ```
     
       - 运行以下命令，获取公用文件夹统计信息（如项目计数、大小和所有者）的快照：
         
-            Get-PublicFolderStatistics | Export-CliXML C:\PFMigration\Legacy_PFStatistics.xml
+        ```powershell
+        Get-PublicFolderStatistics | Export-CliXML C:\PFMigration\Legacy_PFStatistics.xml
+        ```
     
       - 运行以下命令，获取权限的快照：
         
+        ```powershell
             Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML C:\PFMigration\Legacy_PFPerms.xml
-    
+        ```
+
     保存上述命令所生成的信息，以供在完成迁移后进行比较。
 
 2.  如果公用文件夹的名称中包含反斜杠\&quot;\\\&quot;，则在迁移发生时公用文件夹会在父公用文件夹中进行创建。在迁移之前，我们建议您对名称中包含反斜杠的公用文件夹进行重命名。
     
     1.  在 Exchange 2010 中，若要找到名称中包含反斜杠的公用文件夹，请运行以下命令：
         
+        ```powershell
             Get-PublicFolderStatistics -ResultSize Unlimited | Where {($_.Name -like "*\*") -or ($_.Name -like "*/*") } | Format-List Name, Identity
-    
+        ```
+
     2.  在 Exchange 2007 中，若要找到名称中包含反斜杠的公用文件夹，请运行以下命令：
         
+        ```powershell
             Get-PublicFolderDatabase | ForEach {Get-PublicFolderStatistics -Server $_.Server | Where {$_.Name -like "*\*"}}
-    
+        ```
+
     3.  您可以使用以下命令对返回的任何公用文件夹进行重命名：
         
-            Set-PublicFolder -Identity <public folder identity> -Name <new public folder name>
+        ```powershell
+        Set-PublicFolder -Identity <public folder identity> -Name <new public folder name>
+        ```
 
 3.  请确保之前没有成功迁移的记录。
     
     1.  下面的示例展示了如何检查公用文件夹的迁移状态。
         
-            Get-OrganizationConfig | Format-List PublicFoldersLockedforMigration, PublicFolderMigrationComplete
+        ```powershell
+        Get-OrganizationConfig | Format-List PublicFoldersLockedforMigration, PublicFolderMigrationComplete
+        ```
         
         如果之前有成功迁移的记录，则 *PublicFoldersLockedforMigration* 或 *PublicFolderMigrationComplete* 属性的值为 `$true`。使用第 3b 步中的命令将此值设置为 `$false`。如果此值设置为 `$true`，则您的迁移请求会失败。
     
     2.  如果 *PublicFoldersLockedforMigration* 或 *PublicFolderMigrationComplete* 属性的状态为 `$true`，请使用下面的命令将此值设置为 `$false`。
         
-            Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
+        ```powershell
+        Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
+        ```
     
     > [!WARNING]  
     > 重置这些属性后，您必须等待 Exchange 检测到新设置。此过程最多可能需要两个小时才能完成。
@@ -176,40 +192,55 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
     
     下面的示例会发现任何现有的串行迁移请求。
     
-        Get-PublicFolderMigrationRequest | Get-PublicFolderMigrationRequestStatistics -IncludeReport | Format-List
-    
+    ```powershell
+    Get-PublicFolderMigrationRequest | Get-PublicFolderMigrationRequestStatistics -IncludeReport | Format-List
+    ```
+
     下面的示例展示了如何删除任何现有的公用文件夹串行迁移请求。
     
-        Get-PublicFolderMigrationRequest | Remove-PublicFolderMigrationRequest
+    ```powershell
+    Get-PublicFolderMigrationRequest | Remove-PublicFolderMigrationRequest
+    ```
     
     下面的示例会发现任何现有的批处理迁移请求。
     
-        $batch = Get-MigrationBatch | ?{$_.MigrationType.ToString() -eq "PublicFolder"}
-    
+    ```powershell
+    $batch = Get-MigrationBatch | ?{$_.MigrationType.ToString() -eq "PublicFolder"}
+    ```
+
     下面的示例展示了如何删除任何现有的公用文件夹批处理迁移请求。
     
-        $batch | Remove-MigrationBatch -Confirm:$false
+    ```powershell
+    $batch | Remove-MigrationBatch -Confirm:$false
+    ```
 
 2.  请确保 Exchange 2013 服务器上没有公用文件夹或公用文件夹邮箱。
     
     1.  运行以下命令，检查是否有任何公用文件夹邮箱。
         
+        ```powershell
             Get-Mailbox -PublicFolder 
-    
+        ```
+
     2.  如果此命令没有返回任何公用文件夹邮箱，请继续执行Step 3: Generate the CSV files。如果此命令返回了任何公用文件夹邮箱，请运行以下命令，检查是否有任何公用文件夹：
         
-            Get-PublicFolder
+        ```powershell
+        Get-PublicFolder
+        ```
     
     3.  如果存在任何公用文件夹，请运行以下 PowerShell 命令将其删除。请确保您已保存公用文件夹中的所有信息。
         
         > [!NOTE]  
         > 删除后，公用文件夹中的所有信息都会永久删除。
+        
+        ```powershell
+        Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
         ```
-            Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+        
+        ```powershell
+        Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
         ```
-        ```
-            Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
-        ```
+        
 
 有关语法和参数的详细信息，请参阅下列主题：
 
@@ -235,8 +266,10 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
 
 1.  在旧版 Exchange 服务器上，运行 `Export-PublicFolderStatistics.ps1` 脚本，创建文件夹名称到文件夹大小的映射文件。必须由本地管理员运行此脚本。此文件中包含以下两列：\&quot;文件夹名称\&quot;和\&quot;文件夹大小\&quot;。\&quot;文件夹大小\&quot;列的值以字节为单位显示。例如\&quot;\\PublicFolder01,10000\&quot;。
     
-        .\Export-PublicFolderStatistics.ps1  <Folder to size map path> <FQDN of source server>
-    
+    ```powershell
+    .\Export-PublicFolderStatistics.ps1  <Folder to size map path> <FQDN of source server>
+    ```
+
       - *FQDN of source server* 等于托管公用文件夹层次结构的邮箱服务器的完全限定的域名。
     
       - *Folder to size map path*等于 .csv 文件在用于保存其的网络共享文件夹上的文件名和路径。稍后，在本主题中，您将需要从 Exchange 2013 服务器访问此文件。如果您仅指定文件名，则会在本地计算机上的当前 PowerShell 目录中生成此文件。
@@ -246,8 +279,10 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
     > [!NOTE]  
     > 如果公用文件夹的名称中包含反斜杠&amp;quot;\&amp;quot;，则公用文件夹会在父公用文件夹中进行创建。我们建议您查看 .csv 文件，并编辑所有包含反斜杠的名称。
     
-        .\PublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes> <Folder to size map path> <Folder to mailbox map path>
-    
+    ```powershell
+    .\PublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes> <Folder to size map path> <Folder to mailbox map path>
+    ```
+
       - *Maximum mailbox size in bytes*等于您要为新的公用文件夹邮箱设置的最大大小。在指定此设置时，请务必允许扩展，以便可以扩大公用文件夹邮箱。
     
       - *Folder to size map path*等于您在运行 `Export-PublicFolderStatistics.ps1` 脚本时创建的 .csv 文件的文件路径。
@@ -258,8 +293,10 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
 
 1.  运行以下命令来创建目标公用文件夹邮箱。脚本将通过运行 PublicFoldertoMailboxMapGenerator.ps1 脚本，为您之前在步骤 3 中生成的 .csv 文件中的每个邮箱创建一个目标邮箱。
     
+    ```powershell
         .\Create-PublicFolderMailboxesForMigration.ps1 -FolderMappingCsv Mapping.csv -EstimatedNumberOfConcurrentUsers:<estimate>
-    
+    ```
+
     *Mapping.csv* 是由 PublicFoldertoMailboxMapGenerator.ps1 脚本在步骤 3 中生成的文件。同时浏览某个公用文件夹层次结构的用户连接估计数量通常少于组织中的用户总数。
 
 ## 第 5 步：启动迁移请求
@@ -273,32 +310,41 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
 **迁移 Exchange 2007 公用文件夹**
 
 1.  由于 Exchange 2013 无法识别 Exchange 2007 中的旧版系统公用文件夹（例如 OWAScratchPad 和架构根文件夹子树），因此这些文件夹会被视为无效项目。这会导致迁移失败。作为迁移请求的一部分，您必须指定 `BadItemLimit` 参数的值。此值因您拥有的公用文件夹数据库的数量而异。以下命令可确定您拥有的公用文件夹数据库的数量，并为迁移请求计算 `BadItemLimit`。
-    ```
+    
+    ```powershell
         $PublicFolderDatabasesInOrg = @(Get-PublicFolderDatabase)
     ```
-    ```
+
+    ```powershell
         $BadItemLimitCount = 5 + ($PublicFolderDatabasesInOrg.Count -1)
     ```
 
 2.  在 Exchange 2013 服务器上，运行以下命令：
     
+    ```powershell
         New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications> -BadItemLimit $BadItemLimitCount 
+    ```
 
 3.  使用以下命令开始迁移：
     
-        Start-MigrationBatch PFMigration
+    ```powershell
+    Start-MigrationBatch PFMigration
+    ```
 
 **迁移 Exchange 2010 公用文件夹**
 
 1.  在 Exchange 2013 服务器上，运行以下命令。
     
+    ```powershell
         New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications> 
-    
-    `NotificationEmails` 参数是可选的。
+        `NotificationEmails` 参数是可选的。
+    ```
 
 2.  使用以下命令启动迁移：
     
-        Start-MigrationBatch PFMigration
+    ```powershell
+    Start-MigrationBatch PFMigration
+    ```
     
     或：
     
@@ -338,7 +384,9 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
 
 在旧版 Exchange 服务器中，运行以下命令锁定旧版公用文件夹，以便完成迁移。
 
-    Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
+```powershell
+Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
+```
 
 > [!NOTE]  
 > 如果由于某种原因，迁移批处理文件未完成（<strong>PublicFolderMigrationComplete</strong> 显示 <strong>False</strong>），请在旧版服务器上重启信息存储 (IS)。
@@ -352,11 +400,15 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
 
 首先，运行以下 cmdlet 以将 Exchange 2013 部署类型更改为\&quot;远程\&quot;：
 
-    Set-OrganizationConfig -PublicFoldersEnabled Remote
+```powershell
+Set-OrganizationConfig -PublicFoldersEnabled Remote
+```
 
 完成此操作后，您可以通过运行下面的命令来完成公用文件夹迁移：
 
-    Complete-MigrationBatch PublicFolderMigration
+```powershell
+Complete-MigrationBatch PublicFolderMigration
+```
 
 或者，您可以单击 EAC 中的\&quot;完成此迁移批处理\&quot;，以此来完成迁移。
 
@@ -368,7 +420,9 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
 
 1.  在 PowerShell 中运行以下命令，指定一些测试邮箱将任一新迁移的公用文件夹邮箱用作默认公用文件夹邮箱。
     
+    ```powershell
         Set-Mailbox -Identity <Test User> -DefaultPublicFolderMailbox <Public Folder Mailbox Identity>
+    ```
 
 2.  使用上一步中确定的测试用户登录 Outlook 2007 或更高版本，然后执行以下公用文件夹测试：
     
@@ -382,7 +436,9 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
 
 3.  如果您遇到任何问题，请参阅本主题后面的Roll back the migration。如果公用文件夹的内容和层次结构均可接受并符合预期，请运行以下命令，为其他所有用户解除锁定公用文件夹。
     
-        Get-Mailbox -PublicFolder | Set-Mailbox -PublicFolder -IsExcludedFromServingHierarchy $false
+    ```powershell
+    Get-Mailbox -PublicFolder | Set-Mailbox -PublicFolder -IsExcludedFromServingHierarchy $false
+    ```
     
     > [!IMPORTANT]  
     > 完成初始迁移验证后，请勿使用 <em>IsExcludedFromServingHierarchy</em> 参数，因为 Exchange Online 的自动存储管理服务使用此参数。
@@ -390,15 +446,19 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
 
 4.  在旧版 Exchange 服务器中，运行以下命令，以指示公用文件夹迁移已完成：
     
-        Set-OrganizationConfig -PublicFolderMigrationComplete:$true
+    ```powershell
+    Set-OrganizationConfig -PublicFolderMigrationComplete:$true
+    ```
 
 5.  确认迁移完成后，请运行以下命令：
     
-        Set-OrganizationConfig -PublicFoldersEnabled Local
+    ```powershell
+    Set-OrganizationConfig -PublicFoldersEnabled Local
+    ```
 
 6.  最后，如果你想要让外部发件人向迁移的已启用邮件功能的公用文件夹发送邮件，则至少需要向\&quot;**匿名**\&quot;用户授予\&quot;**创建项目**\&quot;权限。如果不执行此操作，外部发件人将收到一封传递失败通知，邮件将不会传递到迁移的已启用邮件功能的公用文件夹。
     
-    可以使用命令行管理程序或 Outlook 设置匿名用户的权限。要了解如何设置匿名用户的权限，请参阅[对公用文件夹启用或禁用邮件](mail-enable-or-mail-disable-a-public-folder-exchange-2013-help.md)。
+    可以使用命令行管理程序或 Outlook 设置匿名用户的权限。要了解如何设置匿名用户的权限，请参阅[对公用文件夹启用或禁用邮件](https://technet.microsoft.com/zh-cn/library/aa997560(v=exchg.150))。
 
 ## 我如何知道这有效？
 
@@ -406,15 +466,21 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
 
 1.  运行以下命令，获取新文件夹结构的快照。
     
-        Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Cloud_PFStructure.xml
+    ```powershell
+    Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Cloud_PFStructure.xml
+    ```
 
 2.  运行以下命令，获取公用文件夹统计信息（如项目计数、大小和所有者）的快照：
     
+    ```powershell
         Get-PublicFolderStatistics -ResultSize Unlimited | Export-CliXML C:\PFMigration\Cloud_PFStatistics.xml
+    ```
 
 3.  运行以下命令，获取权限的快照。
     
+    ```powershell
         Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML  C:\PFMigration\Cloud_PFPerms.xml
+    ```
 
 ## 从旧版 Exchange 服务器中删除公用文件夹数据库
 
@@ -434,17 +500,20 @@ Exchange 支持从以下旧版 Exchange Server 移动公用文件夹：
 
 1.  在旧版 Exchange 服务器中，运行以下命令，解除锁定旧版 Exchange 公用文件夹。此进程可能需要几个小时才会完成。
     
-        Set-OrganizationConfig -PublicFoldersLockedForMigration:$False
+    ```powershell
+    Set-OrganizationConfig -PublicFoldersLockedForMigration:$False
+    ```
 
 2.  在 Exchange 2013 服务器中，运行以下命令，删除公用文件夹邮箱。
     
-    ```
+    ```powershell
         Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
- 
         Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
     ```
 
 3.  在旧版 Exchange 服务器中，运行以下命令，将 `PublicFolderMigrationComplete` 标志设置为 `$false`。
     
-        Set-OrganizationConfig -PublicFolderMigrationComplete:$False
+    ```powershell
+    Set-OrganizationConfig -PublicFolderMigrationComplete:$False
+    ```
 

@@ -51,11 +51,15 @@ _**上一次修改主题：** 2012-10-04_
 
 通过使用以下语法，可以完全按照角色条目在父角色上的显示原样将其添加到角色。
 
-    Add-ManagementRoleEntry <child role name>\<cmdlet>
+```powershell
+Add-ManagementRoleEntry <child role name>\<cmdlet>
+```
 
 本示例将 **Set-Mailbox** cmdlet 添加到 Recipient Administrators 角色。
 
-    Add-ManagementRoleEntry "Recipient Administrators\Set-Mailbox"
+```powershell
+Add-ManagementRoleEntry "Recipient Administrators\Set-Mailbox"
+```
 
 此命令检查父角色，如果角色的项存在，则将其添加到子角色。如果角色输入已经存在于子角色中，可以包括要改写现有的角色词条的*Overwrite*参数。
 
@@ -65,11 +69,15 @@ _**上一次修改主题：** 2012-10-04_
 
 如果要从父角色添加角色条目，但要在子角色上的角色条目中仅包括特定参数，请使用以下语法。
 
-    Add-ManagementRoleEntry <child role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...>
+```powershell
+Add-ManagementRoleEntry <child role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...>
+```
 
 此示例将 **Set-Mailbox** cmdlet 添加到 Help Desk 角色，但在子角色上的条目中仅包括 *DisplayName* 和 *EmailAddresses* 参数。
 
-    Add-ManagementRoleEntry "Help Desk\Set-Mailbox" -Parameters DisplayName, EmailAddresses
+```powershell
+Add-ManagementRoleEntry "Help Desk\Set-Mailbox" -Parameters DisplayName, EmailAddresses
+```
 
 此命令检查父角色，如果角色的项存在，则将其添加到子角色。如果角色输入已经存在于子角色中，可以包括要改写现有的角色词条的*Overwrite*参数。
 
@@ -81,11 +89,15 @@ _**上一次修改主题：** 2012-10-04_
 
 要将多个条目从父角色添加到子角色，请使用以下语法。
 
-    Get-ManagementRoleEntry <parent role name>\*<partial cmdlet name>* | Add-ManagementRoleEntry -Role <child role name>
+```powershell
+Get-ManagementRoleEntry <parent role name>\*<partial cmdlet name>* | Add-ManagementRoleEntry -Role <child role name>
+```
 
 本示例将包含\&quot;邮件收件人\&quot;父角色上 cmdlet 名称中的字符串 `Mailbox` 的所有角色条目添加到\&quot;Seattle 邮件收件人\&quot;子角色。
 
-    Get-ManagementRoleEntry "Mail Recipients\*Mailbox*" | Add-ManagementRoleEntry -Role "Seattle Mail Recipients"
+```powershell
+Get-ManagementRoleEntry "Mail Recipients\*Mailbox*" | Add-ManagementRoleEntry -Role "Seattle Mail Recipients"
+```
 
 如果子角色上已存在角色条目，则可以包括 *Overwrite* 参数以覆盖现有的角色条目。
 

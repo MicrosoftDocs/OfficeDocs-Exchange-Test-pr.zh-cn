@@ -69,7 +69,9 @@ Multiple namespaces
 
 若要在 SMTP 返回 `550 5.1.1 User unknown` 错误前配置延迟，请在 **Set-ReceiveConnector** cmdlet 上使用 *TarpitInterval* 参数设置缓送间隔。语法是：
 
-    Set-ReceiveConnector <Receive Connector> -TarpitInterval <00:00:00 to 00:10:00>
+```powershell
+Set-ReceiveConnector <Receive Connector> -TarpitInterval <00:00:00 to 00:10:00>
+```
 
 默认值是 `00:00:05` 或 5 秒。边缘传输服务器上默认接收连接器的名称为 `Default internal receive connector <server name>`。
 

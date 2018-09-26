@@ -57,7 +57,9 @@ _**上一次修改主题：** 2015-03-09_
 
 如果要查看分配给此角色的角色组、用户或 USG 的列表，请使用以下命令。
 
-    Get-ManagementRoleAssignment -Role "<role name>"
+```powershell
+Get-ManagementRoleAssignment -Role "<role name>"
+```
 
 ## 常规和委派角色分配
 

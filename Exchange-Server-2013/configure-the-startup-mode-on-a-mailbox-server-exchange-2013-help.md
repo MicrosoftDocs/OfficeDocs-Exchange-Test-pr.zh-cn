@@ -63,9 +63,13 @@ _**上一次修改主题：** 2013-02-15_
 
 此示例将名为 `MyUMServer1` 的邮箱服务器的启动模式设置为双协议模式。
 
-    Set-UMService -Identity MyUMServer1 -UMStartUpMode Dual
+```powershell
+Set-UMService -Identity MyUMServer1 -UMStartUpMode Dual
+```
 
 此示例将名为 `MyUMServer1` 的邮箱服务器的启动模式设置为 TLS 模式。
 
-    Set-UMService -Identity MyUMServer1 -UMStartUpMode TLS
+```powershell
+Set-UMService -Identity MyUMServer1 -UMStartUpMode TLS
+```
 

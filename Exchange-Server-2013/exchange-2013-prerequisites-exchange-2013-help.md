@@ -83,11 +83,15 @@ _**上一次修改主题：** 2017-03-20_
     
       - 在 Windows Server 2012 R2 或 Windows Server 2012 计算机上，运行下列命令：
         
-            Install-WindowsFeature RSAT-ADDS
+        ```powershell
+        Install-WindowsFeature RSAT-ADDS
+        ```
     
       - 在 Windows Server 2008 R2 SP1 计算机上，运行下列命令：
         
-            Add-WindowsFeature RSAT-ADDS
+        ```powershell
+        Add-WindowsFeature RSAT-ADDS
+        ```
 
 ## Windows Server 2012 R2 和 Windows Server 2012 先决条件
 
@@ -109,7 +113,9 @@ _**上一次修改主题：** 2017-03-20_
 
 2.  运行以下命令，安装必需的 Windows 组件。
     
+    ```powershell
         Install-WindowsFeature AS-HTTP-Activation, Desktop-Experience, NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, Web-Mgmt-Console, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS
+    ```
 
 在您安装操作系统角色和功能后，请按以下显示的顺序安装下列软件：
 
@@ -133,7 +139,9 @@ _**上一次修改主题：** 2017-03-20_
 
 2.  运行以下命令，安装必需的 Windows 组件。
     
-        Install-WindowsFeature ADLDS
+    ```powershell
+    Install-WindowsFeature ADLDS
+    ```
 
 安装与您安装的 Exchange 2013 版本对应的 Microsoft .NET Framework 版本：
 
@@ -165,11 +173,15 @@ _**上一次修改主题：** 2017-03-20_
 
 2.  运行以下命令，加载服务器管理器模块。
     
-        Import-Module ServerManager
+    ```powershell
+    Import-Module ServerManager
+    ```
 
 3.  运行以下命令，安装必需的 Windows 组件。
     
+    ```powershell
         Add-WindowsFeature Desktop-Experience, NET-Framework, NET-HTTP-Activation, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Web-Server, WAS-Process-Model, Web-Asp-Net, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, RSAT-ADDS
+    ```
 
 在您安装操作系统角色和功能后，请按以下显示的顺序安装下列软件：
 
@@ -203,11 +215,15 @@ _**上一次修改主题：** 2017-03-20_
 
 2.  运行以下命令，加载服务器管理器模块。
     
-        Import-Module ServerManager
+    ```powershell
+    Import-Module ServerManager
+    ```
 
 3.  运行以下命令，安装必需的 Windows 组件。
     
-        Add-WindowsFeature NET-Framework, ADLDS
+    ```powershell
+    Add-WindowsFeature NET-Framework, ADLDS
+    ```
 
 在您安装操作系统角色和功能后，请按以下显示的顺序安装下列软件：
 

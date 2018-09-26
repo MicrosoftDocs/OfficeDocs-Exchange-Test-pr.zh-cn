@@ -34,13 +34,17 @@ _**上一次修改主题：** 2015-03-09_
     
     要确定您组织中已禁用的邮箱，请在命令行管理程序中运行以下命令。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "Disabled" } | ft DisplayName,Database,DisconnectDate
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "Disabled" } | ft DisplayName,Database,DisconnectDate
+    ```
 
   - **软删除邮箱**   在将邮箱移动到不同的邮箱数据库时，移动完成后，Exchange 无法从源邮箱数据库完全删除邮箱。而是将源邮箱数据库中的邮箱切换为*软删除*状态。与禁用的邮箱类似，软删除邮箱将保留在源数据库中，直到已删除邮箱保留期过期或直到使用 **Remove-StoreMailbox** cmdlet 清除此邮箱。
     
     运行以下命令，以确定您的组织中的软删除邮箱。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | ft DisplayName,Database,DisconnectDate
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | ft DisplayName,Database,DisconnectDate
+    ```
 
 **目录**
 

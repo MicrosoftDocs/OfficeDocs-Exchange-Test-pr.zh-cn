@@ -59,7 +59,9 @@ _**上一次修改主题：** 2012-12-04_
 
 此示例将 Chris Ashton 的邮箱存档配额设置为 10 GB；达到该大小时，用户会收到指示就地存档已满的警告消息，并且无法再将邮件移到该存档。 此示例还将存档警告配额设置为 9.5 GB，达到该大小时，用户会收到就地存档将满的警告消息。
 
-    Set-Mailbox -Identity "Chris Ashton" -ArchiveQuota 10GB -ArchiveWarningQuota 9.5GB
+```powershell
+Set-Mailbox -Identity "Chris Ashton" -ArchiveQuota 10GB -ArchiveWarningQuota 9.5GB
+```
 
 有关语法和参数的详细信息，请参阅 [Set-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123981\(v=exchg.150\))。
 
@@ -71,5 +73,6 @@ _**上一次修改主题：** 2012-12-04_
 
   - 在命令行管理程序中，运行以下命令可显示有关存档的配额信息。
     
+    ```powershell
         Get-Mailbox <Name> | FL Name,Archive*Quota
-
+    ```

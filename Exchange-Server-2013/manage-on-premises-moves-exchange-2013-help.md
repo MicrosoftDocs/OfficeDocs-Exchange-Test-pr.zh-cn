@@ -49,7 +49,9 @@ _**上一次修改主题：** 2013-02-25_
 
 此示例使用 *WhatIf* 开关测试是否可以将 Tony Smith 的邮箱移动到新的数据库 DB01，以及在此命令中是否存在任何错误。使用 *WhatIf* 开关时，系统将对邮箱执行检查。如果邮箱不可以移动，将出现错误。
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase DB01 -WhatIf
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase DB01 -WhatIf
+```
 
 有关语法和参数的详细信息，请参阅 [New-MigrationBatch](https://technet.microsoft.com/zh-cn/library/jj219166\(v=exchg.150\)) 和 [New-MoveRequest](https://technet.microsoft.com/zh-cn/library/dd351123\(v=exchg.150\))。
 
@@ -79,7 +81,9 @@ _**上一次修改主题：** 2013-02-25_
 
   - 从命令行管理程序执行以下命令，检索邮箱移动信息。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 有关详细信息，请参阅 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-cn/library/jj218695\(v=exchg.150\))。
 
@@ -102,12 +106,15 @@ _**上一次修改主题：** 2013-02-25_
 ## 使用命令行管理程序创建批处理移动请求
 
 此示例创建了一个本地移动迁移批处理，其中指定 .csv 文件中的邮箱将迁移到一个不同的邮箱数据库。此 .csv 文件包含单个列，列中包含要移动的每个邮箱的电子邮件地址。此列的标题必须命名为 **EmailAddress**。此示例中的迁移批处理必须使用 **Start-MigrationBatch** cmdlet 或 Exchange 管理中心 (EAC) 手动启动。或者，也可以使用 *AutoStart* 参数自动启动该迁移批次。
+
+```powershell
+New-MigrationBatch -Local -Name LocalMove1 -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\LocalMove1.csv")) -TargetDatabases MBXDB2 -TimeZone "Pacific Standard Time"
 ```
-    New-MigrationBatch -Local -Name LocalMove1 -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\LocalMove1.csv")) -TargetDatabases MBXDB2 -TimeZone "Pacific Standard Time"
+
+```powershell
+Start-MigrationBatch -Identity LocalMove1
 ```
-```
-    Start-MigrationBatch -Identity LocalMove1
-```
+
 
 有关语法和参数的详细信息，请参阅 [New-MigrationBatch](https://technet.microsoft.com/zh-cn/library/jj219166\(v=exchg.150\)) 和 [Start-MigrationBatch](https://technet.microsoft.com/zh-cn/library/jj219165\(v=exchg.150\))。
 
@@ -119,7 +126,9 @@ _**上一次修改主题：** 2013-02-25_
 
   - 从命令行管理程序执行以下命令，检索邮箱移动信息。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 有关详细信息，请参阅 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-cn/library/jj218695\(v=exchg.150\))。
 
@@ -141,7 +150,9 @@ _**上一次修改主题：** 2013-02-25_
 
 本示例仅将 Tony Smith 的主邮箱移动到 DB01。不移动存档。
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -PrimaryOnly -TargetDatabase "DB01"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -PrimaryOnly -TargetDatabase "DB01"
+```
 
 有关语法和参数的详细信息，请参阅 [New-MoveRequest](https://technet.microsoft.com/zh-cn/library/dd351123\(v=exchg.150\))。
 
@@ -153,7 +164,9 @@ _**上一次修改主题：** 2013-02-25_
 
   - 从命令行管理程序执行以下命令，检索邮箱移动信息。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 有关详细信息，请参阅 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-cn/library/jj218695\(v=exchg.150\))。
 
@@ -161,10 +174,12 @@ _**上一次修改主题：** 2013-02-25_
 
 此示例配置迁移终结点，然后使用 .csv 文件创建一个从源林到目标林的跨林批处理移动。
 
-    New-MigrationEndpoint -Name Fabrikam -ExchangeRemote -Autodiscover -EmailAddress tonysmith@fabrikam.com -Credentials (Get-Credential fabrikam\tonysmith) 
-    
-    $csvData=[System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\batch.csv")
-    New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name FabrikamMerger -SourceEndpoint Fabrikam -TargetDeliveryDomain "mail.contoso.com"
+```powershell
+New-MigrationEndpoint -Name Fabrikam -ExchangeRemote -Autodiscover -EmailAddress tonysmith@fabrikam.com -Credentials (Get-Credential fabrikam\tonysmith) 
+
+$csvData=[System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\batch.csv")
+New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name FabrikamMerger -SourceEndpoint Fabrikam -TargetDeliveryDomain "mail.contoso.com"
+```
 
 有关为跨林移动准备好林的详细信息，请参阅下列主题：
 
@@ -182,7 +197,9 @@ _**上一次修改主题：** 2013-02-25_
 
   - 从命令行管理程序执行以下命令，检索邮箱移动信息。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 有关详细信息，请参阅 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-cn/library/jj218695\(v=exchg.150\))。
 
@@ -200,7 +217,9 @@ _**上一次修改主题：** 2013-02-25_
 
 本示例仅将 Tony Smith 的存档邮箱移动到 DB03。不移动主邮箱。
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -ArchiveOnly -ArchiveTargetDatabase "DB03"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -ArchiveOnly -ArchiveTargetDatabase "DB03"
+```
 
 有关语法和参数的详细信息，请参阅 [New-MigrationBatch](https://technet.microsoft.com/zh-cn/library/jj219166\(v=exchg.150\)) 和 [New-MoveRequest](https://technet.microsoft.com/zh-cn/library/dd351123\(v=exchg.150\))。
 
@@ -210,7 +229,9 @@ _**上一次修改主题：** 2013-02-25_
 
   - 从命令行管理程序执行以下命令，检索邮箱移动信息。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 有关详细信息，请参阅 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-cn/library/jj218695\(v=exchg.150\))。
 
@@ -218,7 +239,9 @@ _**上一次修改主题：** 2013-02-25_
 
 本示例将 Ayla 的主邮箱和存档邮箱移动到单独的数据库。主数据库移动到 DB01，存档移动到 DB03。
 
-    New-MoveRequest -Identity 'ayla@humongousinsurance.com' -TargetDatabase DB01 -ArchiveTargetDatabase -DB03
+```powershell
+New-MoveRequest -Identity 'ayla@humongousinsurance.com' -TargetDatabase DB01 -ArchiveTargetDatabase -DB03
+```
 
 有关语法和参数的详细信息，请参阅 [New-MigrationBatch](https://technet.microsoft.com/zh-cn/library/jj219166\(v=exchg.150\)) 和 [New-MoveRequest](https://technet.microsoft.com/zh-cn/library/dd351123\(v=exchg.150\))。
 
@@ -228,7 +251,9 @@ _**上一次修改主题：** 2013-02-25_
 
   - 从命令行管理程序执行以下命令，检索邮箱移动信息。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 有关详细信息，请参阅 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-cn/library/jj218695\(v=exchg.150\))。
 
@@ -248,7 +273,9 @@ _**上一次修改主题：** 2013-02-25_
 
 此示例将 Lisa 的主邮箱移动到邮箱数据库 DB01，并将错误项限制设置为 `100`。若要设置较大的错误项限制，必须使用 *AcceptLargeDataLoss* 参数。
 
-    New-MoveRequest -Identity 'Lisa' -PrimaryOnly -TargetDatabase "DB01" -BadItemLimit 100 -AcceptLargeDataLoss
+```powershell
+New-MoveRequest -Identity 'Lisa' -PrimaryOnly -TargetDatabase "DB01" -BadItemLimit 100 -AcceptLargeDataLoss
+```
 
 有关语法和参数的详细信息，请参阅 [New-MigrationBatch](https://technet.microsoft.com/zh-cn/library/jj219166\(v=exchg.150\)) 和 [New-MoveRequest](https://technet.microsoft.com/zh-cn/library/dd351123\(v=exchg.150\))。
 
@@ -258,7 +285,9 @@ _**上一次修改主题：** 2013-02-25_
 
   - 从命令行管理程序执行以下命令，检索邮箱移动信息。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 有关详细信息，请参阅 [Get-MigrationUserStatistics](https://technet.microsoft.com/zh-cn/library/jj218695\(v=exchg.150\))。
 

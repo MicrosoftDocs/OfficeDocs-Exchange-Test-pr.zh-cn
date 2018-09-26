@@ -57,21 +57,29 @@ Microsoft Exchange IMAP4 服务在运行客户端访问服务器角色的 Exchan
 
 1.  在运行客户端访问服务器角色的计算机上，从命令行管理程序运行下列命令，以启动 Microsoft Exchange IMAP4 服务。
     
-        Start-service msExchangeIMAP4
+    ```powershell
+    Start-service msExchangeIMAP4
+    ```
 
 2.  在运行邮箱服务器角色的计算机上，从命令行管理程序运行下列命令已启动 Microsoft Exchange IMAP4 后端服务。
     
-        Start-service msExchangeIMAP4BE
+    ```powershell
+    Start-service msExchangeIMAP4BE
+    ```
 
 要停止 IMAP4 服务：
 
 1.  在运行客户端访问服务器角色的计算机上，从命令行管理程序运行下列命令，以停止 Microsoft Exchange IMAP4 服务。
     
-        Stop-service msExchangeIMAP4
+    ```powershell
+    Stop-service msExchangeIMAP4
+    ```
 
 2.  在运行邮箱服务器角色的计算机上，从命令行管理程序运行下列命令，以停止 Microsoft Exchange IMAP4 后端服务。
     
-        Stop-service msExchangeIMAP4BE
+    ```powershell
+    Stop-service msExchangeIMAP4BE
+    ```
 
 ## 使用 net start 启动或停止 IMAP4 服务
 
@@ -79,21 +87,29 @@ Microsoft Exchange IMAP4 服务在运行客户端访问服务器角色的 Exchan
 
 1.  在运行客户端访问服务器角色的计算机上，从命令提示符运行下列命令，以启动 Microsoft Exchange IMAP4 服务。
     
-        net start msExchangeIMAP4
+    ```powershell
+    net start msExchangeIMAP4
+    ```
 
 2.  在运行邮箱服务器角色的计算机上，从命令提示符运行下列命令，以启动 Microsoft Exchange IMAP4 后端服务。
     
-        net start msExchangeIMAP4BE
+    ```powershell
+    net start msExchangeIMAP4BE
+    ```
 
 要停止 IMAP4 服务：
 
 1.  在运行客户端访问服务器角色的计算机上，从命令提示符运行下列命令，以停止 Microsoft Exchange IMAP4 服务。
     
-        Net Stop MSExchangeIMAP4
+    ```powershell
+    Net Stop MSExchangeIMAP4
+    ```
 
 2.  在运行邮箱服务器角色的计算机上，从命令提示符运行下列命令，以停止 Microsoft Exchange IMAP4 后端服务。
     
-        Net Stop MSExchangeIMAP4BE
+    ```powershell
+    Net Stop MSExchangeIMAP4BE
+    ```
 
 ## 您如何知道这有效？
 

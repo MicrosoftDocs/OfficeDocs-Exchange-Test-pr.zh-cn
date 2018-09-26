@@ -51,11 +51,15 @@ _**上一次修改主题：** 2012-10-14_
 
 本示例更新地址列表 Washington State。
 
-    Update-AddressList "Washington State"
+```powershell
+Update-AddressList "Washington State"
+```
 
 如果有多个名称相同的地址列表，则必须指定要更新的地址列表的完整路径。例如，如果要更新“北美洲”下的 Sales 地址列表，但在“欧洲”下也有一个 Sales 地址列表，则使用以下命令：
 
-    Update-AddressList "North America\Sales"
+```powershell
+Update-AddressList "North America\Sales"
+```
 
 有关语法和参数的详细信息，请参阅[Update-AddressList](https://technet.microsoft.com/zh-cn/library/aa997982\(v=exchg.150\))。
 

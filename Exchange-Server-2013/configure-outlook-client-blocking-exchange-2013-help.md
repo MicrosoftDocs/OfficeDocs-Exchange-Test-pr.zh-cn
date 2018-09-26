@@ -154,11 +154,15 @@ _**上一次修改主题：** 2015-03-09_
 
 此示例阻止了所有早于 11.8010.8036 的 Outlook 版本。
 
-    Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions "-11.8010.8036"
+```powershell
+Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions "-11.8010.8036"
+```
 
 本示例还原对 Outlook 的一个版本阻止的邮箱的访问。
 
-    Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions $null
+```powershell
+Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions $null
+```
 
 有关语法和参数的详细信息，请参阅 [Set-CASMailbox](https://technet.microsoft.com/zh-cn/library/bb125264\(v=exchg.150\))。
 
@@ -171,8 +175,9 @@ _**上一次修改主题：** 2015-03-09_
 > [!IMPORTANT]  
 > 与 <em>BlockedClientVersions</em> 参数一起使用的值是示例值。您可以通过解析 <code>%ExchangeInstallPath%Logging\RPC Client Access</code> 处的 RPC 客户端访问日志文件，确定正确的客户端软件版本。
 
-
-    Set-RpcClientAccess -Server CAS01 -BlockedClientVersions "0.0.0-5.65535.65535;7.0.0;8.02.4-11.65535.65535"
+```powershell
+Set-RpcClientAccess -Server CAS01 -BlockedClientVersions "0.0.0-5.65535.65535;7.0.0;8.02.4-11.65535.65535"
+```
 
 有关语法和参数的详细定义，请参阅 [Set-RpcClientAccess](https://technet.microsoft.com/zh-cn/library/dd351072\(v=exchg.150\))。
 

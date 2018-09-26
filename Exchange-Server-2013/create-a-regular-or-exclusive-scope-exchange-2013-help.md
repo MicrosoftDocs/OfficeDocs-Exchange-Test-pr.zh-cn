@@ -61,11 +61,15 @@ _**上一次修改主题：** 2015-04-07_
 
 使用以下语法创建具有基础 OU 的域限制筛选器作用域。
 
-    New-ManagementScope -Name <scope name> -RecipientRestrictionFilter <filter query> [-RecipientRoot <OU>]
+```powershell
+New-ManagementScope -Name <scope name> -RecipientRestrictionFilter <filter query> [-RecipientRoot <OU>]
+```
 
 此示例创建一个包含 contoso.com/Sales OU 中所有邮箱的作用域。
 
-    New-ManagementScope -Name "Mailboxes in Sales OU" -RecipientRestrictionFilter { RecipientType -eq 'UserMailbox' } -RecipientRoot "contoso.com/Sales OU"
+```powershell
+New-ManagementScope -Name "Mailboxes in Sales OU" -RecipientRestrictionFilter { RecipientType -eq 'UserMailbox' } -RecipientRoot "contoso.com/Sales OU"
+```
 
 > [!NOTE]  
 > 如果希望将筛选器应用到管理角色的整个隐式读取作用域而不只是特定 OU 内的读取作用域，则可以省略 <em>RecipientRoot</em> 参数。
@@ -81,11 +85,15 @@ _**上一次修改主题：** 2015-04-07_
 
 使用以下语法创建服务器筛选器作用域。
 
-    New-ManagementScope -Name <scope name> -ServerRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -ServerRestrictionFilter <filter query>
+```
 
 此示例创建了一个包括 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' AD (Active Directory) 站点中所有服务器的作用域。
 
-    New-ManagementScope -Name "Servers in Seattle AD site" -ServerRestrictionFilter { ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' }
+```powershell
+New-ManagementScope -Name "Servers in Seattle AD site" -ServerRestrictionFilter { ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' }
+```
 
 有关语法和参数的详细信息，请参阅 [New-ManagementScope](https://technet.microsoft.com/zh-cn/library/dd335137\(v=exchg.150\))。
 
@@ -95,11 +103,15 @@ _**上一次修改主题：** 2015-04-07_
 
 使用以下语法创建服务器列表作用域。
 
-    New-ManagementScope -Name <scope name> -ServerList <server 1>, <server 2...>
+```powershell
+New-ManagementScope -Name <scope name> -ServerList <server 1>, <server 2...>
+```
 
 此示例创建一个仅适用于 MBX1、MBX3 和 MBX5 的作用域。
 
-    New-ManagementScope -Name "Mailbox servers" -ServerList MBX1,MBX3,MBX5
+```powershell
+New-ManagementScope -Name "Mailbox servers" -ServerList MBX1,MBX3,MBX5
+```
 
 有关语法和参数的详细信息，请参阅 [New-ManagementScope](https://technet.microsoft.com/zh-cn/library/dd335137\(v=exchg.150\))。
 
@@ -115,11 +127,15 @@ _**上一次修改主题：** 2015-04-07_
 
 使用以下语法创建数据库限制筛选器。
 
-    New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```
 
 本示例将创建一个作用域，该作用域包括数据库的 **Name** 属性中含有字符串“Executive”的所有数据库。
 
-    New-ManagementScope -Name "Executive Databases" -DatabaseRestrictionFilter { Name -Like '*Executive*' }
+```powershell
+New-ManagementScope -Name "Executive Databases" -DatabaseRestrictionFilter { Name -Like '*Executive*' }
+```
 
 有关语法和参数的详细信息，请参阅 [New-ManagementScope](https://technet.microsoft.com/zh-cn/library/dd335137\(v=exchg.150\))。
 
@@ -133,11 +149,15 @@ _**上一次修改主题：** 2015-04-07_
 
 使用以下语法创建数据库列表作用域。
 
-    New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```
 
 本示例将创建仅适用于数据库 Database 1、Database 2 和 Database 3 的作用域。
 
-    New-ManagementScope -Name "Primary databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```powershell
+New-ManagementScope -Name "Primary databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```
 
 有关语法和参数的详细信息，请参阅 [New-ManagementScope](https://technet.microsoft.com/zh-cn/library/dd335137\(v=exchg.150\))。
 
@@ -151,11 +171,15 @@ _**上一次修改主题：** 2015-04-07_
 
 此示例创建基于收件人筛选器的独占作用域，该作用域与 Executives 部门中的任何用户匹配。
 
-    New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive
+```powershell
+New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive
+```
 
 默认情况下，创建独占作用域时，将要求您确认已创建独占作用域且了解独占作用域对现有非独占角色分配造成的影响。如果您希望取消此警告，则可以使用 *Force* 开关。此示例创建一个与上一示例相同的作用域，但没有警告。
 
-    New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive -Force
+```powershell
+New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive -Force
+```
 
 有关语法和参数的详细信息，请参阅 [New-ManagementScope](https://technet.microsoft.com/zh-cn/library/dd335137\(v=exchg.150\))。
 

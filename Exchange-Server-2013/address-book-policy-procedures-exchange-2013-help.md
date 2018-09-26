@@ -17,11 +17,11 @@ _**适用于：** Exchange Server 2013_
 
 _**上一次修改主题：** 2012-10-11_
 
-[创建通讯簿策略](create-an-address-book-policy-exchange-2013-help.md)
+[创建通讯簿策略](https://technet.microsoft.com/zh-cn/library/hh529931(v=exchg.150))
 
-[将通讯簿策略分配给邮件用户](assign-an-address-book-policy-to-mail-users-exchange-2013-help.md)
+[将通讯簿策略分配给邮件用户](https://technet.microsoft.com/zh-cn/library/hh529942(v=exchg.150))
 
 [更改通讯簿策略的设置](https://docs.microsoft.com/zh-cn/exchange/address-books/address-book-policies/change-the-settings-of-an-address-book-policy)
 
-[删除通讯簿策略](remove-an-address-book-policy-exchange-2013-help.md)
+[删除通讯簿策略](https://technet.microsoft.com/zh-cn/library/hh529946(v=exchg.150))
 

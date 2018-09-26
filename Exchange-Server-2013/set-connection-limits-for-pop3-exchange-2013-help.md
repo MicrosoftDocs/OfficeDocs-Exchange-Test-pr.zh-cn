@@ -65,19 +65,27 @@ _**上一次修改主题：** 2012-11-28_
 
 此示例设置服务器的连接限制。
 
-    Set-PopSettings -Identity CAS01 -MaxConnections Value
+```powershell
+Set-PopSettings -Identity CAS01 -MaxConnections Value
+```
 
 此示例设置 IP 地址的连接限制。
 
-    Set-PopSettings -Identity CAS01 -MaxConnectionsFromSingleIP Value
+```powershell
+Set-PopSettings -Identity CAS01 -MaxConnectionsFromSingleIP Value
+```
 
 此示例设置用户的连接限制。
 
-    Set-PopSettings -MaxConnectionsPerUser Value 
+```powershell
+Set-PopSettings -MaxConnectionsPerUser Value 
+```
 
 此示例设置了最大命令大小。
 
-    Set-PopSettings -MaxCommandSize Value
+```powershell
+Set-PopSettings -MaxCommandSize Value
+```
 
 设置了连接限制之后，必须重新启动 POP3 服务。 有关如何重新启动 POP3 服务的信息，请参阅[启动和停止 POP3 服务](start-and-stop-the-pop3-services-exchange-2013-help.md)。
 
@@ -101,7 +109,9 @@ _**上一次修改主题：** 2012-11-28_
 
 1.  在命令行管理程序中运行以下命令。
     
-        Get-PopSettings | format-list
+    ```powershell
+    Get-PopSettings | format-list
+    ```
 
 2.  验证连接设置是否正确。
 

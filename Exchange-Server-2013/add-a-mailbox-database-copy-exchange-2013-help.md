@@ -47,15 +47,11 @@ _**上一次修改主题：** 2012-10-30_
 
 ## 使用 EAC 添加邮箱数据库副本
 
-1.  
-    
-    在 EAC 中，转到\&quot;服务器\&quot;\>\&quot;数据库\&quot;。
+1.  在 EAC 中，转到\&quot;服务器\&quot;\>\&quot;数据库\&quot;。
 
 2.  选择要复制的数据库，然后单击 ![添加数据库副本](images/Dd298080.435c15ff-abf2-4de8-b280-f053db1afa13(EXCHG.150).gif "添加数据库副本")。
 
-3.  
-    
-    在\&quot;添加邮箱数据库副本\&quot;页上，单击\&quot;浏览...\&quot;，选择托管数据库副本的邮箱服务器，然后单击\&quot;确定\&quot;。
+3.  在\&quot;添加邮箱数据库副本\&quot;页上，单击\&quot;浏览...\&quot;，选择托管数据库副本的邮箱服务器，然后单击\&quot;确定\&quot;。
 
 4.  可以选择为数据库副本配置\&quot;激活首选项编号\&quot;。
 
@@ -69,15 +65,21 @@ _**上一次修改主题：** 2012-10-30_
 
 此示例向邮箱服务器 MBX3 添加邮箱数据库 DB1 的副本。重播延隔时间和截断延隔时间保留默认值 0，激活首选项的值配置为 2。
 
-    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -ActivationPreference 2
+```powershell
+Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -ActivationPreference 2
+```
 
 此示例向邮箱服务器 MBX4 添加邮箱数据库 DB2 的副本。重播延隔时间和截断延隔时间保留默认值 0，激活首选项的值配置为 `5`。另外，还推迟了对此副本进行种子设定，以便可以使用本地源服务器（而不是当前处于活动状态且距离 MBX4 很远的数据库副本）对此副本进行种子设定。
 
-    Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX4 -ActivationPreference 5 -SeedingPostponed
+```powershell
+Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX4 -ActivationPreference 5 -SeedingPostponed
+```
 
 此示例向邮箱服务器 MBX5 添加邮箱数据库 DB3 的副本。重播延隔时间设置为 3 天，截断延隔时间保留默认值 0，激活首选项的值配置为 `4`。
 
+```powershell
     Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX5 -ReplayLagTime 3.00:00:00 -ActivationPreference 4
+```
 
 ## 您如何知道这有效？
 
@@ -87,7 +89,9 @@ _**上一次修改主题：** 2012-10-30_
 
   - 在命令行管理程序中，运行以下命令检查是否已创建邮箱数据库副本以及它是否处于健康状态。
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```powershell
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```
     
     状态和内容索引状态应该为健康。
 

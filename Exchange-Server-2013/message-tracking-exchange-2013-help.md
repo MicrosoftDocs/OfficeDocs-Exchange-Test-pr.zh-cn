@@ -75,7 +75,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - **MSGTRK**   这些日志与传输服务相关。
 
-  - **MSGTRKMA**   这些日志与仲裁传输所使用的批准和拒绝功能相关。有关详细信息，请参阅[管理邮件审批](manage-message-approval-exchange-2013-help.md)。
+  - **MSGTRKMA**   这些日志与仲裁传输所使用的批准和拒绝功能相关。有关详细信息，请参阅[管理邮件审批](https://technet.microsoft.com/zh-cn/library/dd297936(v=exchg.150))。
 
   - **MSGTRKMD**   这些日志与邮箱传递送达服务传递至邮箱的邮件相关。
 
@@ -340,7 +340,7 @@ _**上一次修改主题：** 2016-12-09_
 </tr>
 <tr class="even">
 <td><p><strong>INITMESSAGECREATED</strong></p></td>
-<td><p>邮件已发送至仲裁收件人，因此该邮件已发送至仲裁邮箱进行审批。有关详细信息，请参阅<a href="manage-message-approval-exchange-2013-help.md">管理邮件审批</a>。</p></td>
+<td><p>邮件已发送至仲裁收件人，因此该邮件已发送至仲裁邮箱进行审批。有关详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/dd297936(v=exchg.150)">管理邮件审批</a>。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LOAD</strong></p></td>
@@ -348,7 +348,7 @@ _**上一次修改主题：** 2016-12-09_
 </tr>
 <tr class="even">
 <td><p><strong>MODERATIONEXPIRE</strong></p></td>
-<td><p>仲裁收件人的仲裁人从不批准或拒绝邮件，进而导致该邮件到期。有关仲裁收件人的更多信息，请参阅<a href="manage-message-approval-exchange-2013-help.md">管理邮件审批</a>。</p></td>
+<td><p>仲裁收件人的仲裁人从不批准或拒绝邮件，进而导致该邮件到期。有关仲裁收件人的更多信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/dd297936(v=exchg.150)">管理邮件审批</a>。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>MODERATORAPPROVE</strong></p></td>
@@ -475,7 +475,7 @@ _**上一次修改主题：** 2016-12-09_
 </tr>
 <tr class="odd">
 <td><p><strong>APPROVAL</strong></p></td>
-<td><p>事件源是仲裁收件人使用的审批框架。有关详细信息，请参阅<a href="manage-message-approval-exchange-2013-help.md">管理邮件审批</a>。</p></td>
+<td><p>事件源是仲裁收件人使用的审批框架。有关详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/dd297936(v=exchg.150)">管理邮件审批</a>。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>BOOTLOADER</strong></p></td>
@@ -553,6 +553,7 @@ _**上一次修改主题：** 2016-12-09_
 
 在此简化示例中，当用户 chris@contoso.com 将测试邮件成功发送至用户 michelle@contoso.com 时，创建了邮件跟踪日志条目。两个用户的邮箱位于同一服务器上。
 
+```powershell
     EventId    Source      Sender            Recipients             MessageSubject
     -------    ------      ------            ----------             --------------
     NOTIFYMAPI STOREDRIVER                   {}
@@ -563,6 +564,7 @@ _**上一次修改主题：** 2016-12-09_
     AGENTINFO  AGENT       chris@contoso.com {michelle@contoso.com} test
     SEND       SMTP        chris@contoso.com {michelle@contoso.com} test
     DELIVER    STOREDRIVER chris@contoso.com {michelle@contoso.com} test
+```
 
 返回顶部
 

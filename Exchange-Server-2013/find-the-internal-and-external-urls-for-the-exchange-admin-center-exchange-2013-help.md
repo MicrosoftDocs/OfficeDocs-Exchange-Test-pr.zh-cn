@@ -43,7 +43,9 @@ _**上一次修改主题：** 2013-02-04_
 
 本示例将以格式化列表的形式返回 ECP 虚拟目录的名称、内部 URL 和外部 URL。
 
-    Get-ECPVirtualDirectory | Format-List Name,InternalURL,ExternalURL
+```powershell
+Get-ECPVirtualDirectory | Format-List Name,InternalURL,ExternalURL
+```
 
 命令完成后，在 Web 浏览器中使用 *InternalURL* 或 *ExternalURL* 值启动 EAC。
 

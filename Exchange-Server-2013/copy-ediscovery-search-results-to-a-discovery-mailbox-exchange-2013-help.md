@@ -27,7 +27,7 @@ _**上一次修改主题：** 2014-02-24_
 
   - 必须先使用 EAC 或 Shell 创建电子数据展示搜索，然后才能复制搜索结果。有关详细信息，请参阅[创建就地电子数据展示搜索](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)。
 
-  - Exchange 2013 安装程序将创建名为“发现搜索邮箱”的发现邮箱以复制搜索结果。默认情况下，发现搜索邮箱也在 Exchange Online 中创建。可以创建其他发现邮箱。有关详细信息，请参阅[创建发现邮箱](create-a-discovery-mailbox-exchange-2013-help.md)。
+  - Exchange 2013 安装程序将创建名为“发现搜索邮箱”的发现邮箱以复制搜索结果。默认情况下，发现搜索邮箱也在 Exchange Online 中创建。可以创建其他发现邮箱。有关详细信息，请参阅[创建发现邮箱](https://technet.microsoft.com/zh-cn/library/dd638177(v=exchg.150))。
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
@@ -75,23 +75,28 @@ _**上一次修改主题：** 2014-02-24_
 
 例如，您可以运行以下命令来启动一个名为 *Fabrikam Investigation* 的电子数据展示搜索将搜索结果复制到指定的发现邮箱中。
 
-    Start-MailboxSearch "Fabrikam Investigation"
+```powershell
+Start-MailboxSearch "Fabrikam Investigation"
+```
 
 如果您使用 *EstimateOnly* 开关获得估计的搜索结果，就必须先删除此开关，然后才可以复制搜索结果。您还必须指定向其复制搜索结果的发现邮箱。例如，如果您通过使用以下命令创建仅执行估计的搜索：
 
+```powershell
     New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeUnsearchableItems
+```
 
 若要将此搜索的结果复制到发现邮箱，需要运行以下命令：
-  ```
-  Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
-  ```
-  ```
-  Start-MailboxSearch "FY13 Q2 Financial Results"
-  ```
+
+```powershell
+Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
+```
+```powershell
+Start-MailboxSearch "FY13 Q2 Financial Results"
+```
 
 ## 有关复制搜索结果的详细信息
 
-  - 将搜索结果复制到发现邮箱后，您可以将那些搜索结果导出到 PST 文件。有关详细信息，请参阅[将电子数据展示搜索结果导出到 PST 文件](export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md)。
+  - 将搜索结果复制到发现邮箱后，您可以将那些搜索结果导出到 PST 文件。有关详细信息，请参阅[将电子数据展示搜索结果导出到 PST 文件](https://technet.microsoft.com/zh-cn/library/dn440164(v=exchg.150))。
 
   - 有关不可搜索的项目的详细信息，请参阅 [Exchange 电子数据展示中不可搜索的项目](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md)。
 

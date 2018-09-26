@@ -130,7 +130,7 @@ _**上一次修改主题：** 2016-12-09_
 
 必须完成下列步骤，以将统一消息配置为使用 Lync Server 中的 Enterprise Voice 功能：
 
-1.  创建一个或多个统一消息 SIP URI 拨号计划，并且每个拨号计划都映射到相应的 Lync Server 位置配置文件。必须为每个 Exchange UM 拨号计划创建 Enterprise Voice 位置配置文件。可以使用 **Get-UMDialPlan** cmdlet 获取 SIP URI 拨号计划的 FQDN。有关如何创建 SIP URI 拨号计划的详细信息，请参阅[创建 UM 拨号计划](create-a-um-dial-plan-exchange-2013-help.md)。
+1.  创建一个或多个统一消息 SIP URI 拨号计划，并且每个拨号计划都映射到相应的 Lync Server 位置配置文件。必须为每个 Exchange UM 拨号计划创建 Enterprise Voice 位置配置文件。可以使用 **Get-UMDialPlan** cmdlet 获取 SIP URI 拨号计划的 FQDN。有关如何创建 SIP URI 拨号计划的详细信息，请参阅[创建 UM 拨号计划](https://technet.microsoft.com/zh-cn/library/bb123819(v=exchg.150))。
     
     > [!IMPORTANT]  
     > 当您将 Exchange UM 和 Lync Server 集成后，可能会发现在 Exchange UM 中将无需配置拨号规则或拨号规则组。Lync Server 用于执行组织中用户的呼叫路由和号码转换，此外，在统一消息代表用户进行呼叫时也会执行此操作。
@@ -180,9 +180,9 @@ _**上一次修改主题：** 2016-12-09_
 
 5.  在添加到 SIP URI 拨号计划的客户端访问和邮箱服务器上将启动模式设置为“双模式”并设置 TLS 侦听端口，然后重新启动每台邮箱服务器上的 MicrosoftExchange 统一消息服务以及每台客户端访问服务器上的 MicrosoftExchange 统一消息呼叫路由器服务。
 
-6.  创建和配置 UM 自动助理。有关详细信息，请参阅[设置 UM 自动助理](set-up-a-um-auto-attendant-exchange-2013-help.md)。
+6.  创建和配置 UM 自动助理。有关详细信息，请参阅[设置 UM 自动助理](https://technet.microsoft.com/zh-cn/library/jj673508(v=exchg.150))。
 
-7.  为用户启用语音邮件功能时，为使用 Enterprise Voice 的用户创建一个 SIP 地址。在大多数情况下，此 SIP 地址将与为用户启用 Enterprise Voice 时使用的 SIP 地址相同。有关详细信息，请参阅[为用户启用语音邮件](enable-a-user-for-voice-mail-exchange-2013-help.md)。
+7.  为用户启用语音邮件功能时，为使用 Enterprise Voice 的用户创建一个 SIP 地址。在大多数情况下，此 SIP 地址将与为用户启用 Enterprise Voice 时使用的 SIP 地址相同。有关详细信息，请参阅[为用户启用语音邮件](https://technet.microsoft.com/zh-cn/library/bb124147(v=exchg.150))。
     
     > [!IMPORTANT]  
     > 与 SIP URI 拨号计划关联的用户无法收到传入的传真。这是因为传入的语音和传真呼叫通过中介服务器进行路由，但使用中介服务器时不支持传真。
@@ -192,11 +192,11 @@ _**上一次修改主题：** 2016-12-09_
     
       - 授予 Lync Server 权限，以读取 Exchange UM Active Directory 组件，特别是以前任务中创建的 SIP URI 拨号计划。有关如何配置 Active Directory 中的权限的详细信息，请参阅[如何使用 ADSI 编辑应用权限](https://go.microsoft.com/fwlink/p/?linkid=82751)。
     
-      - 为每个 Lync Server 池或每台运行 Lync Server Standard Edition 并承载将启用 Enterprise Voice 的用户的服务器创建一个 UM IP 网关。有关详细信息，请参阅[创建 UM IP 网关](create-a-um-ip-gateway-exchange-2013-help.md)。
+      - 为每个 Lync Server 池或每台运行 Lync Server Standard Edition 并承载将启用 Enterprise Voice 的用户的服务器创建一个 UM IP 网关。有关详细信息，请参阅[创建 UM IP 网关](https://technet.microsoft.com/zh-cn/library/aa998045(v=exchg.150))。
     
       - 为每个 UM IP 网关创建一个 Exchange UM 智能寻线。智能寻线引导号码将是与相应的 UM IP 网关关联的拨号计划的名称。智能寻线必须指定 UM IP 网关使用的 UM SIP 拨号计划。
 
-9.  为用户启用语音邮件。启用后，必须为用户输入有效的 SIP 地址并将其链接到 SIP 拨号计划。有关详细信息，请参阅[为用户启用语音邮件](enable-a-user-for-voice-mail-exchange-2013-help.md)。
+9.  为用户启用语音邮件。启用后，必须为用户输入有效的 SIP 地址并将其链接到 SIP 拨号计划。有关详细信息，请参阅[为用户启用语音邮件](https://technet.microsoft.com/zh-cn/library/bb124147(v=exchg.150))。
 
 还必须完成以下任务，才能将 Lync Server 配置为与 Exchange UM 一起使用：
 

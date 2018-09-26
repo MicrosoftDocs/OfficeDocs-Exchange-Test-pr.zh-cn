@@ -107,25 +107,35 @@ _**上一次修改主题：** 2015-04-07_
 
   - 本示例为外部联盟域 contoso.com 创建共享策略 Contoso。该策略允许 contoso.com 域中的用户查看用户的详细日历可用性（忙/闲）信息。默认情况下，启用此策略。
     
-        New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
+    ```powershell
+      New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
+    ```
 
   - 本示例将使用为每个域配置的不同的共享操作为两个不同的联盟域（contoso.com 和 woodgrovebank.com）创建共享策略 ContosoWoodgrove。已启用此策略。
     
-        New-SharingPolicy -Name "ContosoWoodgrove" -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'woodgrovebank.com: CalendarSharingFreeBusyDetail -Enabled $false
+    ```powershell
+      New-SharingPolicy -Name "ContosoWoodgrove" -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'woodgrovebank.com: CalendarSharingFreeBusyDetail -Enabled $false
+    ```
 
   - 本示例将使用为有限的日历可用性信息配置的共享操作为具有客户端访问服务器 CAS01 和邮箱服务器 MAIL01 的 Exchange 组织创建共享策略匿名。此策略允许 Exchange 组织中的用户通过向其他用户发送一个链接来邀请这些用户进行 Internet 访问以查看其日历可用性信息。已启用此策略。
     
     1.  设置 MAIL01 的 Web 代理 URL。
         
-            Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
+        ```powershell
+          Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
+        ```
     
     2.  启用 CAS01 上的发布虚拟目录。
         
+        ```powershell
             Set-OwaVirtualDirectory -Identity "CAS01" -ExternalURL "<URL for CAS01>" -CalendarPublishingEnabled $true
-    
+        ```
+
     3.  创建共享策略匿名和配置有限的日历信息共享。
         
+        ```powershell
             New-SharingPolicy -Name "Anonymous" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+        ```
 
 有关语法和参数的详细信息，请参阅下列主题：
 
@@ -139,7 +149,9 @@ _**上一次修改主题：** 2015-04-07_
 
 若要验证是否已经成功创建了共享策略，可运行以下命令行管理程序命令验证共享策略信息。
 
-    Get-SharingPolicy <policy name> | format-list
+```powershell
+  Get-SharingPolicy <policy name> | format-list
+```
 
 > [!TIP]  
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：<a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>、 <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>。

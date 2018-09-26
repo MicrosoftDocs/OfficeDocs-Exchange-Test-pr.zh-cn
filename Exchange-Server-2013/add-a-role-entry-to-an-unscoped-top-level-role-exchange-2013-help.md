@@ -57,11 +57,15 @@ _**上一次修改主题：** 2012-10-03_
 
 将脚本复制到相应的 Exchange 2013 服务器并决定应使用脚本的哪些参数之后，使用以下语法创建角色条目。
 
-    Add-ManagementRoleEntry <unscoped top-level role name>\<script filename> -Parameters <parameter 1, parameter 2, parameter...> -Type Script -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry <unscoped top-level role name>\<script filename> -Parameters <parameter 1, parameter 2, parameter...> -Type Script -UnscopedTopLevel
+```
 
 本示例用 *Name* 和 *Location* 参数将 BulkProvisionUsers.ps1 脚本添加到 IT Scripts 角色。
 
-    Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
+```
 
 > [!NOTE]  
 > <strong>Add-ManagementRoleEntry</strong> cmdlet 执行基本验证，以确保仅添加该脚本中存在的参数。但是，添加角色条目之后就不再进行其他验证。如果以后要添加或删除参数，则必须手动更新包含该脚本的角色条目。
@@ -77,11 +81,15 @@ _**上一次修改主题：** 2012-10-03_
 
 将包含 cmdlet 的 Windows PowerShell 管理单元安装在相应的 Exchange 2013 服务器上并决定应使用哪些 cmdlet 参数之后，请使用以下语法创建角色条目。
 
-    Add-ManagementRoleEntry <unscoped top-level role name>\<cmdlet name> -PSSnapinName <snap-in name> -Parameters <parameter 1, parameter 2, parameter...> -Type Cmdlet -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry <unscoped top-level role name>\<cmdlet name> -PSSnapinName <snap-in name> -Parameters <parameter 1, parameter 2, parameter...> -Type Cmdlet -UnscopedTopLevel
+```
 
 本示例用 *Database* 和 *Size* 参数将 Contoso.Admin.Cmdlets 管理单元中的 **Set-WidgetConfiguration** cmdlet 添加到 Widget Cmdlets 角色。
 
-    Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
+```
 
 > [!NOTE]  
 > <strong>Add-ManagementRoleEntry</strong> cmdlet 执行基本验证，以确保仅添加该 cmdlet 中存在的参数。但是，添加角色条目之后就不再进行其他验证。如果以后要更改 cmdlet 或者添加或删除参数，则必须手动更新包含该 cmdlet 的角色条目。

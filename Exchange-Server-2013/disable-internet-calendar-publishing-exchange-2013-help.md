@@ -65,11 +65,15 @@ Internet 日历发布的禁用方式取决于其启用方式。如果创建了�
 
 此示例禁用专用的 Internet 日历发布共享策略\&quot;Internet\&quot;。
 
-    Set-SharingPolicy -Identity "Internet" -Enabled $false
+```powershell
+Set-SharingPolicy -Identity "Internet" -Enabled $false
+```
 
 此示例删除专用的 Internet 日历发布共享策略\&quot;Internet\&quot;。
 
-    Remove-SharingPolicy -Identity "Internet"
+```powershell
+Remove-SharingPolicy -Identity "Internet"
+```
 
 有关语法和参数的详细信息，请参阅 [Set-SharingPolicy](https://technet.microsoft.com/zh-cn/library/dd297931\(v=exchg.150\))。
 
@@ -77,7 +81,9 @@ Internet 日历发布的禁用方式取决于其启用方式。如果创建了�
 
 若要验证是否已经成功删除或更新了共享策略，可运行以下命令行管理程序命令验证共享策略信息。
 
-    Get-SharingPolicy <policy name> | format-list
+```powershell
+Get-SharingPolicy <policy name> | format-list
+```
 
 如果删除了专用的 Internet 日历发布共享策略，则不会在 cmdlet 结果中看到该策略。
 
@@ -97,7 +103,9 @@ Internet 日历发布的禁用方式取决于其启用方式。如果创建了�
 
 此示例在客户端访问服务器 CAS01 上禁用 Outlook Web App 虚拟目录的\&quot;匿名\&quot;功能。
 
-    Set-OwaVirtualDirectory -Identity "CAS01" - AnonymousFeaturesEnabled -$false
+```powershell
+Set-OwaVirtualDirectory -Identity "CAS01" - AnonymousFeaturesEnabled -$false
+```
 
 有关语法和参数的详细信息，请参阅 [Set-OwaVirtualDirectory](https://technet.microsoft.com/zh-cn/library/bb123515\(v=exchg.150\))。
 
@@ -105,7 +113,9 @@ Internet 日历发布的禁用方式取决于其启用方式。如果创建了�
 
 若要验证是否在客户端访问服务器上成功地禁用了 Outlook Web App 虚拟目录的\&quot;匿名\&quot;功能，请运行以下命令行管理程序命令以验证 *AnonymousFeaturesEnabled* 参数值是否为 `$false`。
 
-    Get-OwaVirtualDirectory | format-list
+```powershell
+Get-OwaVirtualDirectory | format-list
+```
 
 有关语法和参数的详细信息，请参阅 [Get-OwaVirtualDirectory](https://technet.microsoft.com/zh-cn/library/aa998588\(v=exchg.150\))。
 

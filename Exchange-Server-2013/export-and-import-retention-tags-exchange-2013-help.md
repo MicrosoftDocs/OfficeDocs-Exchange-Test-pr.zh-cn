@@ -60,14 +60,18 @@ _**上一次修改主题：** 2017-11-15_
 
 1.  运行此Exchange 命令行管理程序命令，将目录更改到**脚本**Exchange安装路径中的子目录。
     
-        Cd $Env:ExchangeInstallPath\Scripts
+    ```powershell
+    Cd $Env:ExchangeInstallPath\Scripts
+    ```
 
 2.  运行 Export-RetentionTags.ps1 脚本可将保留标记导出到 XML 文件。
     
     > [!IMPORTANT]  
     > 如果要导入或导出到Exchange Online的保留标记和保留策略，您必须连接到Exchange Online的 Windows PowerShell 会话。有关详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/jj984289(v=exchg.150)">使用远程 PowerShell 连接到 Exchange Online</a>。
     
-        .\Export-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+    ```powershell
+    .\Export-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+    ```
 
 ## 您如何知道操作成功？
 
@@ -81,7 +85,9 @@ _**上一次修改主题：** 2017-11-15_
 
 1.  运行此Exchange 命令行管理程序命令，将目录更改到**脚本**Exchange安装路径中的子目录。
     
-        Cd $Env:ExchangeInstallPath\Scripts
+    ```powershell
+    Cd $Env:ExchangeInstallPath\Scripts
+    ```
 
 2.  运行 Import-RetentionTags.ps1 脚本可从以前导出的 XML 文件导入保留标记。
     
@@ -91,7 +97,9 @@ _**上一次修改主题：** 2017-11-15_
     > [!NOTE]  
     > 针对Exchange Online运行此脚本时, 可能提示您确认您想要运行来自不受信任的发行者的软件。验证发布者的名称显示为<code>CN=Microsoft Corporation, OU=MOPR, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</code>，然后单击<strong>R</strong>键允许脚本运行一次或<strong>一个</strong>始终运行。
     
-        .\Import-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+    ```powershell
+    .\Import-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+    ```
 
 ## 您如何知道操作成功？
 

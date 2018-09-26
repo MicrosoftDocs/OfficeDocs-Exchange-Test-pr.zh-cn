@@ -70,7 +70,9 @@ _**上一次修改主题：** 2015-03-09_
 
 本示例可从 DAG 中拥有该数据库副本的任意源服务器中为邮箱服务器 MBX1 上的数据库副本 DB1 的内容索引目录重新设定种子。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```
 
 有关详细的语法和参数信息，请参阅 [Update-MailboxDatabaseCopy](https://technet.microsoft.com/zh-cn/library/dd335201\(v=exchg.150\))。
 
@@ -78,7 +80,9 @@ _**上一次修改主题：** 2015-03-09_
 
 本示例对邮箱服务器 MBX1 上的数据库副本 DB1 的内容索引目录重新设定种子，其中 MBX1 来自具有该数据库副本的邮箱服务器 MBX2。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2 -CatalogOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2 -CatalogOnly
+```
 
 有关详细的语法和参数信息，请参阅 [Update-MailboxDatabaseCopy](https://technet.microsoft.com/zh-cn/library/dd335201\(v=exchg.150\))。
 
@@ -87,12 +91,15 @@ _**上一次修改主题：** 2015-03-09_
 如果该邮箱数据库只有一个副本，您必须通过重新创建内容索引目录手动为搜索目录重新设定种子。
 
 1.  运行以下命令以停止 Microsoft Exchange Search 和 Microsoft Exchange Search Host Controller 服务。
+    
+    ```powershell
+    Stop-Service MSExchangeFastSearch
     ```
-        Stop-Service MSExchangeFastSearch
+    
+    ```powershell
+    Stop-Service HostControllerService
     ```
-    ```
-        Stop-Service HostControllerService
-    ```
+    
 
 2.  删除、移动或重命名包含 Exchange 内容索引目录的文件夹。此文件夹命名为 `%ExchangeInstallPath\Mailbox\<name of mailbox database>_Catalog\<GUID>12.1.Single`。例如，您可能会将该文件夹重命名为 `C:\Program Files\Microsoft\Exchange Server\V15\Mailbox\Mailbox Database 0657134726_Catalog\F0627A72-9F1D-494A-839A-D7C915C279DB12.1.Single_OLD`。
     
@@ -101,12 +108,15 @@ _**上一次修改主题：** 2015-03-09_
 
 
 3.  运行以下命令以重启 Microsoft Exchange Search 和 Microsoft Exchange Search Host Controller 服务。
+    
+    ```powershell
+    Start-Service MSExchangeFastSearch
     ```
-        Start-Service MSExchangeFastSearch
+    
+    ```powershell
+    Start-Service HostControllerService
     ```
-    ```
-        Start-Service HostControllerService
-    ```
+    
     
     在您重启这些服务之后，Exchange Search 会重新生成内容索引目录。
 
@@ -114,7 +124,9 @@ _**上一次修改主题：** 2015-03-09_
 
 Exchange Search 为内容索引目录重新设定种子可能要花费一些时间。运行以下命令以显示重新设定种子进程的状态。
 
-    Get-MailboxDatabaseCopyStatus | FL Name,*Index*
+```powershell
+Get-MailboxDatabaseCopyStatus | FL Name,*Index*
+```
 
 当为搜索目录重新设定种子时，*ContentIndexState* 属性的值是 **Crawling**。当重新设定种子完成时，该值变为 **Healthy**。
 

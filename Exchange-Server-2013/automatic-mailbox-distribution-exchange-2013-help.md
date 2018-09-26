@@ -55,7 +55,9 @@ _**上一次修改主题：** 2013-08-13_
 
 要将邮箱数据库从自动分发中排除，请使用以下命令：
 
-    Set-MailboxDatabase <database name> -IsExcludedFromProvisioning $True
+```powershell
+Set-MailboxDatabase <database name> -IsExcludedFromProvisioning $True
+```
 
 从自动分发中排除邮箱数据库时，在数据库中创建邮箱或者将邮箱移动到数据库的唯一方法是，在 **New-Mailbox** 和 **Enable-Mailbox** cmdlet 上使用 *Database* 参数或者在 **New-MoveRequest** cmdlet 上使用 *TargetDatabase* 参数。
 

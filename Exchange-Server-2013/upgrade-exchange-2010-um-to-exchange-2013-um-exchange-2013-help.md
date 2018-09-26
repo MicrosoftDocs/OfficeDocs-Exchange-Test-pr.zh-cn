@@ -55,7 +55,9 @@ UM 语言包允许呼叫者和 Outlook Voice Access 用户能够用多种语言�
 
 此示例使用 setup.exe 来安装日语 (ja-JP) UM 语言包。
 
-    setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```powershell
+setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```
 
 ## 步骤 2：将用于 UM 自定义问候语、通知、菜单和提示的 Exchange 2010 系统邮箱移至 Exchange 2013
 
@@ -65,11 +67,15 @@ UM 语言包允许呼叫者和 Outlook Voice Access 用户能够用多种语言�
 
 此命令返回所有系统邮箱的列表。
 
-    Get-Mailbox -Arbitration
+```powershell
+Get-Mailbox -Arbitration
+```
 
 此命令返回系统邮箱及其各自属性或设置的列表。
 
-    Get-Mailbox -Arbitration |fl
+```powershell
+Get-Mailbox -Arbitration |fl
+```
 
 通过使用该系统邮箱，自定义问候语、通知、菜单和提示可以与数据库中的其他邮箱一起备份和还原。这可减少所需的资源量。存储系统邮箱中的自定义问候语、通知、菜单以及和提示可删除任何可能发生的不一致状况。若要了解有关邮箱移动的详细信息，请参阅 [Exchange 2013 中的邮箱移动](mailbox-moves-in-exchange-2013-exchange-2013-help.md)。
 
@@ -87,23 +93,31 @@ UM 语言包允许呼叫者和 Outlook Voice Access 用户能够用多种语言�
 
 本示例导出 UM 拨号计划 `MyUMDialPlan` 的欢迎问候语，并将它另存为 `welcomegreeting.wav` 文件。
 
-    $prompt = Export-UMPrompt -PromptFileName "customgreeting.wav" -UMDialPlan MyUMDialPlan
-    set-content -Path "d:\DialPlanPrompts\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```powershell
+$prompt = Export-UMPrompt -PromptFileName "customgreeting.wav" -UMDialPlan MyUMDialPlan
+set-content -Path "d:\DialPlanPrompts\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```
 
 本示例将欢迎问候语 `welcomegreeting.wav` 从 d:\\UMPrompts 导入到 UM 拨号计划 `MyUMDialPlan` 中。
 
-    [byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
-    Import-UMPrompt -UMDialPlan MyUMDialPlan -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```powershell
+[byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
+Import-UMPrompt -UMDialPlan MyUMDialPlan -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```
 
 本示例导出 UM 自动助理 `MyUMAutoAttendant` 的自定义问候语，并将它另存为 `welcomegreetingbackup.wav` 文件。
 
-    Export-UMPrompt -PromptFileName "welcomegreeting.wav" -UMAutoAttendant MyUMAutoAttendant
-    set-content -Path "e:\UMPromptsBackup\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```powershell
+Export-UMPrompt -PromptFileName "welcomegreeting.wav" -UMAutoAttendant MyUMAutoAttendant
+set-content -Path "e:\UMPromptsBackup\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```
 
 本示例将欢迎问候语 `welcomegreeting.wav` 从 d:\\UMPrompts 导入到 UM 自动助理 `MyUMAutoAttendant` 中。
 
-    [byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
-    Import-UMPrompt -UMAutoAttendant MyUMAutoAttendant -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```powershell
+[byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
+Import-UMPrompt -UMAutoAttendant MyUMAutoAttendant -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```
 
 若要了解自定义提示的详细信息，请参阅：
 
@@ -150,8 +164,10 @@ UM 语言包允许呼叫者和 Outlook Voice Access 用户能够用多种语言�
     
     在命令行管理程序中运行以下命令来创建 Exchange 自签名证书。
     
+    ```powershell
         New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
-    
+    ```
+
     > [!NOTE]  
     > 如果通过使用 <em>Services</em> 参数指定想启用的服务，系统会提示您为创建的证书启用服务。在此示例中，系统会提示您为统一消息和统一消息呼叫路由器服务启用证书。有关如何为服务启用证书的详细信息，请参阅<a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">将证书分配给该 UM 和 UM 呼叫路由器服务</a>。
 
@@ -168,7 +184,9 @@ UM 语言包允许呼叫者和 Outlook Voice Access 用户能够用多种语言�
     
     在命令行管理程序中运行以下命令来启用 Exchange 自签名证书。
     
-        Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+    ```powershell
+    Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+    ```
 
   - 将任何新的或现有 UM 拨号计划配置为 SIP 安全或安全。
 
@@ -204,7 +222,9 @@ UM 语言包允许呼叫者和 Outlook Voice Access 用户能够用多种语言�
 
 在命令行管理程序中运行以下命令，以在 Exchange 2013 客户端访问服务器上配置 UM 启动模式。
 
-    Set-UMCallRouterSettings -Server MyUMCallRouter.northwindtraders.com -UMStartupMode Dual
+```powershell
+Set-UMCallRouterSettings -Server MyUMCallRouter.northwindtraders.com -UMStartupMode Dual
+```
 
 ## 步骤 6：在所有 Exchange 2013 邮箱服务器上配置 UM 启动模式
 
@@ -230,13 +250,15 @@ UM 语言包允许呼叫者和 Outlook Voice Access 用户能够用多种语言�
 
 在命令行管理程序中运行以下命令，以在 Exchange 2013 邮箱服务器上配置 UM 启动模式。
 
-    Set-UMService -Identity MyUMServer -ExternalHostFqdn host.external.contoso.com -IPAddressFamily Any -UMStartupMode Dual
+```powershell
+Set-UMService -Identity MyUMServer -ExternalHostFqdn host.external.contoso.com -IPAddressFamily Any -UMStartupMode Dual
+```
 
 ## 步骤 7：创建或配置现有的 UM 拨号计划
 
 根据现有的 Exchange 2010 部署，或许需要创建新的 UM 拨号计划或配置现有的拨号计划。UM 拨号计划代表共享公用用户分机号码的传统或启用 SIP 的专用交换机 (PBX) 或 IP PBX 组。在拨号计划中的传统或启用 SIP 的 PBX 或 IP PBX 上托管的所有用户的分机号都包含相同的位数。用户在拨打其他用户的电话分机时，可以不必为分机加拨特殊号码，也不必拨打完整的电话号码。
 
-在统一消息中使用 UM 拨号计划可以确保用户电话分机是唯一的。在某些电话网络中，可以存在多台 PBX 或 IP PBX。在此类电话网络中，可能会存在两个拥有相同电话分机号的用户。UM 拨号计划可以解决这种情况。将这两个用户放入两个不同的 UM 拨号计划中可以使他们的分机成为唯一分机。有关详细信息，请参阅 [UM 拨号计划](um-dial-plans-exchange-2013-help.md)。
+在统一消息中使用 UM 拨号计划可以确保用户电话分机是唯一的。在某些电话网络中，可以存在多台 PBX 或 IP PBX。在此类电话网络中，可能会存在两个拥有相同电话分机号的用户。UM 拨号计划可以解决这种情况。将这两个用户放入两个不同的 UM 拨号计划中可以使他们的分机成为唯一分机。有关详细信息，请参阅 [UM 拨号计划](https://technet.microsoft.com/zh-cn/library/bb125151(v=exchg.150))。
 
 如果需要，可以使用 EAC 创建 UM 拨号计划：
 
@@ -264,7 +286,9 @@ UM 语言包允许呼叫者和 Outlook Voice Access 用户能够用多种语言�
 
 如果需要，可以在命令行管理程序中运行以下命令，以创建 UM 拨号计划。
 
-    New-UMDialplan -Name MyUMDialPlan -URIType E164 -NumberOfDigitsInExtension 5 -VoIPSecurity Secured
+```powershell
+New-UMDialplan -Name MyUMDialPlan -URIType E164 -NumberOfDigitsInExtension 5 -VoIPSecurity Secured
+```
 
 如果需要，可以使用 EAC 配置现有的 UM 拨号计划，如下所示：
 
@@ -276,7 +300,9 @@ UM 语言包允许呼叫者和 Outlook Voice Access 用户能够用多种语言�
 
 如果需要，可以使用命令行管理程序配置现有的 UM 拨号计划：
 
-    Set-UMDialplan -Identity MyDialPlan -AccessTelephoneNumbers 4255551234 -AudioCodec Wma -CallAnsweringRulesEnabled $false -OutsideLineAccessCode 9 -VoIPSecurity SIPSecured
+```powershell
+Set-UMDialplan -Identity MyDialPlan -AccessTelephoneNumbers 4255551234 -AudioCodec Wma -CallAnsweringRulesEnabled $false -OutsideLineAccessCode 9 -VoIPSecurity SIPSecured
+```
 
 当部署 Exchange 2010 统一消息时，需要将统一消息服务器添加到 UM 拨号计划中以应答传入呼叫。这不再是必需条件。在 Exchange 2013 中，客户端访问服务器及邮箱服务器不可以关联电话分机或 E.164 拨号计划，但必须关联 SIP URI 拨号计划。客户端访问服务器和邮箱服务器将应答所有类型拨号计划的所有传入呼叫。
 
@@ -286,7 +312,7 @@ UM 语言包允许呼叫者和 Outlook Voice Access 用户能够用多种语言�
 
 UM IP 网关代表物理 Voice over IP (VoIP) 网关、IP PBX 或启用 SIP 的 PBX。必须先在目录服务中创建 UM IP 网关，才能使用 VoIP 网关、IP PBX 或启用 SIP 的 PBX 应答语音邮件用户的传入呼叫和发送他们的传出呼叫。
 
-结合使用 UM IP 网关与 UM 智能寻线功能，可以在 VoIP 网关、IP PBX 或启用 SIP 的 PBX 与 UM 拨号计划之间建立关联。通过创建多个 UM 智能寻线，可以将一个 UM IP 网关与多个 UM 拨号计划关联。有关详细信息，请参阅 [UM IP 网关](um-ip-gateways-exchange-2013-help.md)。
+结合使用 UM IP 网关与 UM 智能寻线功能，可以在 VoIP 网关、IP PBX 或启用 SIP 的 PBX 与 UM 拨号计划之间建立关联。通过创建多个 UM 智能寻线，可以将一个 UM IP 网关与多个 UM 拨号计划关联。有关详细信息，请参阅 [UM IP 网关](https://technet.microsoft.com/zh-cn/library/bb123890(v=exchg.150))。
 
 如果需要，可以使用 EAC 创建 UM IP 网关，如下所示：
 
@@ -308,7 +334,9 @@ UM IP 网关代表物理 Voice over IP (VoIP) 网关、IP PBX 或启用 SIP 的 
 
 如果需要，可以运行以下命令来创建 UM IP 网关。
 
-    New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
+```powershell
+New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
+```
 
 可以使用 EAC 来配置现有的 UM IP 网关：
 
@@ -318,7 +346,9 @@ UM IP 网关代表物理 Voice over IP (VoIP) 网关、IP PBX 或启用 SIP 的 
 
 若要在命令行管理程序中配置现有的 UM IP 网关，请在命令行管理程序中运行以下命令。
 
-    Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
+```powershell
+Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
+```
 
 ## 步骤 9：创建 UM 智能寻线
 
@@ -344,7 +374,9 @@ UM IP 网关代表物理 Voice over IP (VoIP) 网关、IP PBX 或启用 SIP 的 
 
 如果需要，可以在命令行管理程序中运行以下命令，以创建 UM 智能寻线。
 
-    New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
+```powershell
+New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
+```
 
 > [!TIP]  
 > 您不可以配置或更改 UM 智能寻线的设置。如果要更改 UM 智能寻线的配置设置，则必须将其删除并使用正确设置添加新的 UM 智能寻线。
@@ -380,7 +412,9 @@ UM IP 网关代表物理 Voice over IP (VoIP) 网关、IP PBX 或启用 SIP 的 
 
 如果需要，可以在命令行管理程序中运行以下命令，以创建 UM 自动助理。
 
-    New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 56000,56100 -SpeechEnabled $true -Status Enabled
+```powershell
+New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 56000,56100 -SpeechEnabled $true -Status Enabled
+```
 
 如果需要，可以使用 EAC 配置现有的自动助理，如下所示：
 
@@ -390,11 +424,13 @@ UM IP 网关代表物理 Voice over IP (VoIP) 网关、IP PBX 或启用 SIP 的 
 
 如果需要，可以在命令行管理程序中运行以下命令，以配置现有的自动助理。
 
-    Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA -OperatorExtension 50100 -AfterHoursTransferToOperatorEnabled $true -StaroutToDialPlanEnabled $true
+```powershell
+Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA -OperatorExtension 50100 -AfterHoursTransferToOperatorEnabled $true -StaroutToDialPlanEnabled $true
+```
 
 ## 步骤 11：创建或配置 UM 邮箱策略
 
-根据现有的 Exchange 2010 部署，或许需要创建新的 UM 邮箱策略或配置现有的 UM 邮箱策略。为用户启用统一消息时，需要使用 UM 邮箱策略。每个启用 UM 的用户的邮箱必须链接到一个 UM 邮箱策略。创建 UM 邮箱策略之后，要将一个或多个启用 UM 的邮箱关联到该 UM 邮箱策略。这样可以控制 PIN 安全设置，例如 PIN 中的最小位数或与 UM 邮箱策略关联的启用 UM 用户的最大登录尝试次数。有关详细信息，请参阅 [UM 邮箱策略](um-mailbox-policies-exchange-2013-help.md)。
+根据现有的 Exchange 2010 部署，或许需要创建新的 UM 邮箱策略或配置现有的 UM 邮箱策略。为用户启用统一消息时，需要使用 UM 邮箱策略。每个启用 UM 的用户的邮箱必须链接到一个 UM 邮箱策略。创建 UM 邮箱策略之后，要将一个或多个启用 UM 的邮箱关联到该 UM 邮箱策略。这样可以控制 PIN 安全设置，例如 PIN 中的最小位数或与 UM 邮箱策略关联的启用 UM 用户的最大登录尝试次数。有关详细信息，请参阅 [UM 邮箱策略](https://technet.microsoft.com/zh-cn/library/bb124909(v=exchg.150))。
 
 如果需要，可以使用 EAC 创建 UM 邮箱策略：
 
@@ -416,7 +452,9 @@ UM IP 网关代表物理 Voice over IP (VoIP) 网关、IP PBX 或启用 SIP 的 
 
 如果需要，可以在命令行管理程序中运行以下命令，以创建 UM 邮箱策略。
 
-    New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
+```powershell
+New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
+```
 
 如果需要，可以使用 EAC 配置现有的 UM 邮箱策略：
 
@@ -426,11 +464,13 @@ UM IP 网关代表物理 Voice over IP (VoIP) 网关、IP PBX 或启用 SIP 的 
 
 如果需要，可以在命令行管理程序中运行以下命令，以配置现有的 UM 邮箱策略。
 
-    Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN used to allow you access to your mailbox using Outlook Voice Access has been reset."
+```powershell
+Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN used to allow you access to your mailbox using Outlook Voice Access has been reset."
+```
 
 ## 步骤 12：将现有的启用 UM 的邮箱移至 Exchange 2013
 
-在 Exchange 2010 统一消息中，在您将组织中的用户启用为可使用语音邮件后，会将一组默认的 UM 属性应用于用户，以便用户使用 UM 功能。有关详细信息，请参阅[用户的语音邮件](voice-mail-for-users-exchange-2013-help.md)。
+在 Exchange 2010 统一消息中，在您将组织中的用户启用为可使用语音邮件后，会将一组默认的 UM 属性应用于用户，以便用户使用 UM 功能。有关详细信息，请参阅[用户的语音邮件](https://technet.microsoft.com/zh-cn/library/aa997885(v=exchg.150))。
 
 在升级过程中，会有一段时间在 Exchange 2010 邮箱服务器和 Exchange 2013 邮箱服务器上都有启用了 UM 的邮箱。但是，如果您正在将所有启用 UM 的用户移至 Exchange 2013 邮箱服务器时，您必须使用 Exchange 2013 服务器命令行管理程序中的 EAC 或 **New-MoveRequest** cmdlet，以保留所有属性和设置，包括用户的 PIN。
 
@@ -454,13 +494,15 @@ UM IP 网关代表物理 Voice over IP (VoIP) 网关、IP PBX 或启用 SIP 的 
 
 若要使用命令行管理程序将 Exchange 2010 邮箱移至 Exchange 2013 邮箱服务器，请运行以下命令。
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
+```
 
 ## 步骤 13：为新用户启用 UM 或为现有启用 UM 的用户配置设置
 
-用户首先必须有邮箱，然后才能为他们启用统一消息。但在默认情况下，不会为已有邮箱的用户启用 UM。为用户启用了 UM 后，可以为该用户管理、修改和配置 UM 属性和语音邮件功能。可以使用 EAC 或命令行管理程序为用户启用 UM。有关详细信息，请参阅[用户的语音邮件](voice-mail-for-users-exchange-2013-help.md)。
+用户首先必须有邮箱，然后才能为他们启用统一消息。但在默认情况下，不会为已有邮箱的用户启用 UM。为用户启用了 UM 后，可以为该用户管理、修改和配置 UM 属性和语音邮件功能。可以使用 EAC 或命令行管理程序为用户启用 UM。有关详细信息，请参阅[用户的语音邮件](https://technet.microsoft.com/zh-cn/library/aa997885(v=exchg.150))。
 
-当您为用户启用 UM 时，必须至少定义一个分机号码，以便在将语音邮件提交到用户的邮箱时供 UM 使用并允许用户使用 Outlook Voice Access。为用户启用了 UM 后，可以通过配置用户邮箱的 Exchange 统一消息 (EUM) 代理地址，或者在 EAC 中添加或删除用户的其他或辅助分机号码，从而给用户邮箱添加辅助分机号码，或者修改或删除分机号码。若要添加、修改或删除分机号码、E.164 号码或 SIP 地址，请参阅[声音已启用邮件的用户的过程](voice-mail-enabled-user-procedures-exchange-2013-help.md)。
+当您为用户启用 UM 时，必须至少定义一个分机号码，以便在将语音邮件提交到用户的邮箱时供 UM 使用并允许用户使用 Outlook Voice Access。为用户启用了 UM 后，可以通过配置用户邮箱的 Exchange 统一消息 (EUM) 代理地址，或者在 EAC 中添加或删除用户的其他或辅助分机号码，从而给用户邮箱添加辅助分机号码，或者修改或删除分机号码。若要添加、修改或删除分机号码、E.164 号码或 SIP 地址，请参阅[声音已启用邮件的用户的过程](https://technet.microsoft.com/zh-cn/library/jj835776(v=exchg.150))。
 
 要使用 EAC 为用户启用统一消息，请执行以下步骤：
 
@@ -492,7 +534,9 @@ UM IP 网关代表物理 Voice over IP (VoIP) 网关、IP PBX 或启用 SIP 的 
 
 若要使用命令行管理程序来为用户启用统一消息，请运行以下命令。
 
-    Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -NotifyEmail administrator@contoso.com -PINExpired $true
+```powershell
+Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -NotifyEmail administrator@contoso.com -PINExpired $true
+```
 
 如果需要，可以使用 EAC 为已启用 UM 的用户进行配置：
 
@@ -522,7 +566,9 @@ UM IP 网关代表物理 Voice over IP (VoIP) 网关、IP PBX 或启用 SIP 的 
 
 如果需要，可以在命令行管理程序中运行以下命令，为已启用 UM 的用户进行配置。
 
-    Set-UMMailbox -Identity tony@contoso.com -CallAnsweringAudioCodec Wma -CallAnsweringRulesEnabled $false -FaxEnabled $false -UMSMSNotificationOption VoiceMail
+```powershell
+Set-UMMailbox -Identity tony@contoso.com -CallAnsweringAudioCodec Wma -CallAnsweringRulesEnabled $false -FaxEnabled $false -UMSMSNotificationOption VoiceMail
+```
 
 ## 步骤 14：将 VoIP 网关、IP PBX 和启用 SIP 的 PBX 配置为向 Exchange 2013 客户端访问服务器发送所有传入呼叫
 
@@ -538,7 +584,7 @@ Exchange 2013 客户端访问服务器是针对统一消息的任何入站呼叫
 
   -  [支持的 VoIP 网关、IP PBX 和 PBX 的配置说明](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
-  -  [Exchange 2013 电话顾问](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
+  -  [Exchange 2013 电话顾问](https://technet.microsoft.com/zh-cn/library/ee364753(v=exchg.150))
 
 ## 步骤 15：禁用 Exchange 2010 统一消息服务器上的呼叫应答功能
 
@@ -560,7 +606,9 @@ Exchange 2013 客户端访问服务器是针对统一消息的任何入站呼叫
 
 若要使用命令行管理程序禁用 Exchange 2010 UM 服务器上的统一消息，请运行以下命令：
 
-    Disable-UMServer -Identity MyUMServer -Immediate $true
+```powershell
+Disable-UMServer -Identity MyUMServer -Immediate $true
+```
 
 > [!TIP]  
 > 您可以使用 Exchange 2010 UM 服务器的 <strong>Disable-UMServer</strong> cmdlet 或 Exchange 2013 邮箱服务器的 <strong>Disable-UMService</strong> cmdlet 禁用呼叫应答功能。
@@ -586,18 +634,24 @@ Exchange 2013 客户端访问服务器是针对统一消息的任何入站呼叫
 
 若要使用命令行管理程序将 Exchange 2010 UM 服务器从拨号计划中删除，请运行以下命令。
 
-    $dp= Get-UMDialPlan "MySIPDialPlan"
-    $s=Get-UMServer -id MyUMServer
-    $s.dialplans-=$dp.identity
-    Set-UMServer -id MyUMServer -dialplans:$s.dialplans
+```powershell
+$dp= Get-UMDialPlan "MySIPDialPlan"
+$s=Get-UMServer -id MyUMServer
+$s.dialplans-=$dp.identity
+Set-UMServer -id MyUMServer -dialplans:$s.dialplans
+```
 
 在此示例中，有三个 SIP URI 拨号计划：SipDP1、SipDP2 和 SipDP3。此示例从 SipDP3 拨号计划中删除名为 `MyUMServer` 的 UM 服务器。
 
-    Set-UMServer -id MyUMServer -DialPlans SipDP1,SipDP2
+```powershell
+Set-UMServer -id MyUMServer -DialPlans SipDP1,SipDP2
+```
 
 在此示例中，有两个 SIP URI 拨号计划：SipDP1 和 SipDP2。此示例从 SipDP2 拨号计划中删除名为 `MyUMServer` 的 UM 服务器。
 
-    Set-UMServer -id MyUMServer -DialPlans SipDP1
+```powershell
+Set-UMServer -id MyUMServer -DialPlans SipDP1
+```
 
 > [!TIP]  
 > 可以在 Exchange 2010 统一消息服务器上的命令行管理程序中使用 <strong>Set-UMServer</strong> cmdlet 或在 Exchange 2013 邮箱服务器上使用 <strong>Set-UMService</strong> cmdlet 将 Exchange 2010 UM 服务器从单个或多个拨号计划中删除。例如，若要将 UM 服务器从所有拨号计划中删除，请运行以下命令：<code>Set-UMServer -identity MyUMServer -DialPlans $null</code>

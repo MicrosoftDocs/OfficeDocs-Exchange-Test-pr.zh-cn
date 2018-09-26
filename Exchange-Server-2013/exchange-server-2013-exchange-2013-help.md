@@ -88,7 +88,7 @@ Exchange 2013 的帮助内容包括以下顶级类别：
 
   - [服务器运行状况和性能](server-health-and-performance-exchange-2013-help.md)
 
-  - [关于 Exchange 文档](about-exchange-documentation-exchange-2013-help.md)
+  - [关于 Exchange 文档](https://technet.microsoft.com/zh-cn/library/dd351146(v=exchg.150))
 
 > [!NOTE]  
 > 查看我们其他的 Exchange 内容：

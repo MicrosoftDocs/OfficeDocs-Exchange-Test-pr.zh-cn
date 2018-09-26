@@ -279,7 +279,9 @@ Exchange 2013 支持已升级到 Office 365 最新版本的 Office 365 租户进
 > <ul>
 > <li><p><strong>Windows Server 2008 R2</strong>   重新安装 Windows Server 并选择“完全安装”选项。</p></li>
 > <li><p><strong>Windows Server 2012 R2</strong> 或 <strong>Windows Server 2012</strong>   通过运行以下命令将 Windows Server Core 模式服务器转换为完全安装。</p>
-> <pre><code>Install-WindowsFeature Server-Gui-Mgmt-Infra, Server-Gui-Shell -Restart</code></pre></li>
+```powershell
+  Install-WindowsFeature Server-Gui-Mgmt-Infra, Server-Gui-Shell -Restart
+```
 > </ul>
 
 

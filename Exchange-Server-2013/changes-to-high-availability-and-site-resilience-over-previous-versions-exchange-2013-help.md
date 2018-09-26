@@ -253,7 +253,9 @@ Exchange 2013 通过包含针对其他严重情况的新行为增强了服务器
 
 滞后副本减少行为在默认情况下会被禁用，可以通过运行以下命令来启用。
 
-    Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```powershell
+Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```
 
 启用后，在少于三个副本时，会出现减少行为。可以通过修改以下 DWORD 注册表值来更改默认值 3。
 

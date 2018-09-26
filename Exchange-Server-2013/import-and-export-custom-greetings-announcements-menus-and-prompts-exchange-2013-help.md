@@ -35,7 +35,7 @@ _**上一次修改主题：** 2015-04-08_
 
 有关与 UM 拨号计划相关的其他管理任务，请参阅 [UM 拨号计划过程](um-dial-plan-procedures-exchange-2013-help.md)。
 
-有关与 UM 自动助理相关的更多管理任务，请参阅 [UM 自动助理过程](um-auto-attendant-procedures-exchange-2013-help.md)。
+有关与 UM 自动助理相关的更多管理任务，请参阅 [UM 自动助理过程](https://technet.microsoft.com/zh-cn/library/jj822155(v=exchg.150))。
 
 ## 在开始之前，您需要知道什么？
 
@@ -43,9 +43,9 @@ _**上一次修改主题：** 2015-04-08_
 
   - 您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅 [统一消息权限](unified-messaging-permissions-exchange-2013-help.md)主题中的\&quot;UM 拨号计划\&quot;和\&quot;UM 自动助理\&quot;条目。
 
-  - 在执行这些步骤之前，先确认已创建 UM 拨号计划。有关详细步骤，请参阅[创建 UM 拨号计划](create-a-um-dial-plan-exchange-2013-help.md)。
+  - 在执行这些步骤之前，先确认已创建 UM 拨号计划。有关详细步骤，请参阅[创建 UM 拨号计划](https://technet.microsoft.com/zh-cn/library/bb123819(v=exchg.150))。
 
-  - 在执行这些步骤之前，先确认已创建 UM 自动助理。有关详细步骤，请参阅[创建 UM 自动助理](create-a-um-auto-attendant-exchange-2013-help.md)。
+  - 在执行这些步骤之前，先确认已创建 UM 自动助理。有关详细步骤，请参阅[创建 UM 自动助理](https://technet.microsoft.com/zh-cn/library/aa998875(v=exchg.150))。
 
   - 只能使用命令行管理程序执行此过程。
 
@@ -61,23 +61,31 @@ _**上一次修改主题：** 2015-04-08_
 
 本示例将欢迎问候语文件 welcomegreeting.wav 从 d:\\UMPrompts 导入到 UM 拨号计划 `MyUMDialPlan` 中。
 
+```powershell
     [byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
     Import-UMPrompt -UMDialPlan MyUMDialPlan -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```
 
 本示例将欢迎问候语文件 welcomegreeting.wav 从 d:\\UMPrompts 导入到 UM 自动助理 `MyUMAutoAttendant` 中。
 
+```powershell
     [byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
     Import-UMPrompt -UMAutoAttendant MyUMAutoAttendant -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```
 
 ## 使用命令行管理程序从 UM 拨号计划和自动助理导出自定义问候语、通知、菜单和提示。
 
 本示例导出 UM 拨号计划 `MyUMDialPlan` 的欢迎问候语，并将它另存为 welcomegreeting.wav 文件。
 
+```powershell
     $prompt = Export-UMPrompt -PromptFileName "customgreeting.wav�? -UMDialPlan MyUMDialPlan
     set-content -Path "d:\DialPlanPrompts\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```
 
 本示例导出用于 UM 自动助理 `MYUMAutoAttendant` 的营业时间欢迎问候语，并将它另存为 BusinessHoursWelcomeGreeting.wav 文件。
 
+```powershell
     $prompt = Export-UMPrompt -BusinessHoursWelcomeGreeting -UMAutoAttendant MyUMAutoAttendant
     set-content -Path "d:\UMPrompts\BusinessHoursWelcomeGreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```
 

@@ -45,15 +45,21 @@ _**上一次修改主题：** 2015-04-13_
 
 若要创建新的远程域条目，请使用以下语法。
 
-    New-RemoteDomain -Name <Descriptive Name> -DomainName <SMTP address space>
+```powershell
+New-RemoteDomain -Name <Descriptive Name> -DomainName <SMTP address space>
+```
 
 本示例为发送至 contoso.com 域的邮件创建远程域条目。
 
-    New-RemoteDomain -Name Contoso -DomainName contoso.com
+```powershell
+New-RemoteDomain -Name Contoso -DomainName contoso.com
+```
 
 本示例为发送至 fabrikam.com 域和所有子域的邮件创建远程域条目。
 
+  ```powershell
     New-RemoteDomain -Name Fabrikam -DomainName *.fabrikam.com
+  ```
 
 ## 您如何知道操作成功？
 
@@ -79,11 +85,15 @@ _**上一次修改主题：** 2015-04-13_
 
 若要删除远程域条目，请使用以下语法。
 
-    Remove-RemoteDomain <RemoteDomainName>
+```powershell
+Remove-RemoteDomain <RemoteDomainName>
+```
 
 此示例将删除远程域条目 Contoso
 
-    Remove-RemoteDomain Contoso
+```powershell
+Remove-RemoteDomain Contoso
+```
 
 ## 您如何知道操作成功？
 

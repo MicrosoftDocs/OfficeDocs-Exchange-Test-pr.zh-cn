@@ -59,7 +59,9 @@ _**上一次修改主题：** 2017-07-26_
     
     我们建议所有 Exchange 组织都对联合身份验证信任使用 Azure AD 身份验证系统的业务实例。在两个 Exchange 组织之间配置联合共享之前，需要验证每个 Exchange 组织用于任何现有联合身份验证信任的 Azure AD 身份验证系统实例。若要确定 Exchange 组织对现有联合身份验证信任使用哪种 Azure AD 身份验证系统实例，请运行以下命令行管理程序命令。
     
+    ```powershell
         Get-FederationInformation -DomainName <hosted Exchange domain namespace>
+    ```
     
     业务实例的 *TokenIssuerURIs* 参数将返回值 `<uri:federation:MicrosoftOnline>`。
     
@@ -107,31 +109,45 @@ _**上一次修改主题：** 2017-07-26_
 
 1.  运行以下命令来创建联合身份验证信任证书的唯一主题密钥标识符：
     
+    ```powershell
         $ski = [System.Guid]::NewGuid().ToString("N")
-
+    ```
+    
 2.  使用此语法来创建联合身份验证信任的自签名的证书：
     
+    ```powershell
         New-ExchangeCertificate -FriendlyName "<Descriptive Name>" -DomainName <domain> -Services Federation -KeySize 2048 -PrivateKeyExportable $true -SubjectKeyIdentifier $ski
+    ```
     
     本示例创建自行签署式证书对联合身份验证信任与Azure AD身份验证系统。证书使用友好名称值联合共享交换，以及域值从**USERDNSDOMAIN**环境变量。
     
+    ```powershell
         New-ExchangeCertificate -FriendlyName "Exchange Federated Sharing" -DomainName $env:USERDNSDOMAIN -Services Federation -KeySize 2048 -PrivateKeyExportable $true -SubjectKeyIdentifier $ski
-
+    ```
+    
 3.  要创建联合身份验证信任和自动部署到Exchange服务器前面步骤中创建您的组织中的自签名的证书，请使用以下语法：
     
+    ```powershell
         Get-ExchangeCertificate | ?{$_.FriendlyName -eq "<FriendlyName>"} | New-FederationTrust -Name "<Descriptive Name>"
+    ```
     
     本示例创建名为 Azure AD 身份验证联合身份验证信任并部署名为联合共享交换自签名的证书。
     
+    ```powershell
         Get-ExchangeCertificate | ?{$_.FriendlyName -eq "Exchange Federated Sharing"} | New-FederationTrust -Name "Azure AD Authentication"
-
+    ```
+    
 4.  使用此语法要返回的域所有权具有所需的任何域，您将配置联合身份验证信任的 TXT 记录证明。
     
+    ```powershell
         Get-FederatedDomainProof -DomainName <domain>
+    ```
     
     本示例返回域所有权具有所需的共享的主域 contoso.com 的 TXT 记录的证明。
     
+    ```powershell
         Get-FederatedDomainProof -DomainName contoso.com
+    ```
     
     **注意：** 
     
@@ -143,23 +159,33 @@ _**上一次修改主题：** 2017-07-26_
 
 6.  运行以下命令来从Azure AD中检索元数据和证书：
     
+    ```powershell
         Set-FederationTrust -RefreshMetadata -Identity "Azure AD authentication"
+    ```
 
 7.  使用此语法来配置主要共享您在步骤 3 中创建的联合身份验证信任域。将使用您指定的域配置联合身份验证信任的组织标识符 (OrgID)。有关 OrgID 的详细信息，请参阅[联合组织标识符](federation-exchange-2013-help.md)。
     
+    ```powershell
         Set-FederatedOrganizationIdentifier -DelegationFederationTrust "<Federation Trust Name>" -AccountNamespace <Accepted Domain> -Enabled $true
+    ```
     
     本示例配置接受的域 contoso.com 共享为主的联合身份验证信任域命名 Azure AD 身份验证。
     
+    ```powershell
         Set-FederatedOrganizationIdentifier -DelegationFederationTrust "Azure AD authentication" -AccountNamespace contoso.com -Enabled $true
-
+    ```
+    
 8.  若要将其他域添加到联合身份验证信任，请使用以下语法：
     
+    ```powershell
         Add-FederatedDomain -DomainName <AdditionalDomain>
+    ```
     
     此示例向子域 sales.contoso.com 联合信任，因为具有 sales.contoso.com 域中的电子邮件地址的用户需要联合共享功能。
     
+    ```powershell
         Add-FederatedDomain -DomainName sales.contoso.com
+    ```
     
     请记住，任何域或子域添加到联合身份验证信任需要域所有权 TXT 记录的证据
 
@@ -173,11 +199,15 @@ _**上一次修改主题：** 2017-07-26_
 
 1.  运行以下命令行管理程序命令以验证联合身份验证信任信息。
     
+    ```powershell
         Get-FederationTrust | Format-List
+    ```
 
 2.  将<em>\<PrimarySharedDomain\></em>替换为主要共享域，并运行以下的 Shell 命令，以验证联盟信息可从您的组织。
     
+    ```powershell
         Get-FederationInformation -DomainName <PrimarySharedDomain>
+    ```
 
 有关语法和参数的详细信息，请参阅 [Get-FederationTrust](https://technet.microsoft.com/zh-cn/library/dd351262\(v=exchg.150\)) 和 [Get-FederationInformation](https://technet.microsoft.com/zh-cn/library/dd351221\(v=exchg.150\))。
 

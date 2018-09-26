@@ -117,7 +117,9 @@ Microsoft Exchange EdgeSync 服务
 
 本示例将边缘传输服务器订阅到指定站点，并自动创建 Internet 发送连接器以及从该边缘传输服务器连接到邮箱服务器的发送连接器。
 
-    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -CreateInternetSendConnector $true -CreateInboundSendConnector $true -Site "Default-First-Site-Name" 
+```powershell
+New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -CreateInternetSendConnector $true -CreateInboundSendConnector $true -Site "Default-First-Site-Name" 
+```
 
 > [!NOTE]  
 > <em>CreateInternetSendConnector</em> 和 <em>CreateInboundSendConnector</em> 参数的默认值均为 <code>$true</code>（仅供演示）。
@@ -125,7 +127,9 @@ Microsoft Exchange EdgeSync 服务
 
 本示例导出边缘订阅文件。
 
-    New-EdgeSubscription -FileName "C:\EdgeSubscriptionInfo.xml"
+```powershell
+New-EdgeSubscription -FileName "C:\EdgeSubscriptionInfo.xml"
+```
 
 > [!NOTE]  
 > 在边缘传输服务器上运行 <strong>New-EdgeSubscription</strong> cmdlet 时，系统会提示您确认将禁用的命令以及边缘传输服务器上将覆盖的配置。若要绕过此确认，则必须使用 <em>Force</em> 参数。如果使用 <strong>New-EdgeSubscription</strong> cmdlet，则会发现此参数很有用。<em>Force</em> 参数还用于覆盖与您在重新订阅边缘传输服务器时要创建的文件同名的现有文件。

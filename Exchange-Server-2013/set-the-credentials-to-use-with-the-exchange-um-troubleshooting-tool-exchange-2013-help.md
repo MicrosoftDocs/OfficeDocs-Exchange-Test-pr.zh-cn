@@ -29,11 +29,11 @@ Microsoft Exchange 2010 UM 疑难解答工具是名为 **Test-ExchangeUMCallFlow
 
   - 请确保您的 Exchange 2010 或 Exchange 2013 组织满足下列要求：
     
-      - 已创建 UM 拨号计划。有关详细步骤，请参阅[创建 UM 拨号计划](create-a-um-dial-plan-exchange-2013-help.md)。
+      - 已创建 UM 拨号计划。有关详细步骤，请参阅[创建 UM 拨号计划](https://technet.microsoft.com/zh-cn/library/bb123819(v=exchg.150))。
     
-      - 已创建 UM 邮箱策略。有关详细步骤，请参阅[创建 UM 邮箱策略](create-a-um-mailbox-policy-exchange-2013-help.md)。
+      - 已创建 UM 邮箱策略。有关详细步骤，请参阅[创建 UM 邮箱策略](https://technet.microsoft.com/zh-cn/library/bb123510(v=exchg.150))。
     
-      - 已创建 UM IP 网关。有关详细步骤，请参阅[创建 UM IP 网关](create-a-um-ip-gateway-exchange-2013-help.md)。
+      - 已创建 UM IP 网关。有关详细步骤，请参阅[创建 UM IP 网关](https://technet.microsoft.com/zh-cn/library/aa998045(v=exchg.150))。
     
       - Exchange 2010 UM 服务器添加到 UM 拨号计划。如果您使用 Lync Server 使用 Exchange 2013，添加所有客户端访问和邮箱服务器 SIP URI 拨号计划。有关详细步骤，请参阅[添加 UM 服务器到拨号计划](https://go.microsoft.com/fwlink/p/?linkid=313051)或[将邮箱服务器和客户端访问服务器添加到 SIP URI 的拨号计划](add-mailbox-and-client-access-servers-to-a-sip-uri-dial-plan-exchange-2013-help.md)。
 
@@ -55,11 +55,14 @@ Microsoft Exchange 2010 UM 疑难解答工具是名为 **Test-ExchangeUMCallFlow
 
 2.  在\&quot;Microsoft Exchange 2010 UM 故障排除工具\&quot;窗口中，在提示符下输入以下命令，然后按 Enter 键。
     
-        $cred=Get-Credential
+    ```powershell
+    $cred=Get-Credential
+    ```
 
 3.  在\&quot;Windows PowerShell 凭据请求\&quot;窗口中，键入域名\\用户名和密码，然后单击\&quot;确定\&quot;。
 
 4.  在\&quot;Microsoft Exchange 2010 UM 故障排除工具\&quot;窗口中，指定必要的 cmdlet 参数对呼叫流进行测试。例如：
     
-        Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
-
+    ```powershell
+      Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
+    ```

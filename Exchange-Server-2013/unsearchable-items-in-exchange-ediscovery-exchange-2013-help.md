@@ -65,7 +65,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - [创建就地电子数据展示搜索](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)
 
-  - [将电子数据展示搜索结果导出到 PST 文件](export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md)
+  - [将电子数据展示搜索结果导出到 PST 文件](https://technet.microsoft.com/zh-cn/library/dn440164(v=exchg.150))
 
   - [SharePoint：导出电子数据展示内容和创建报告](https://go.microsoft.com/fwlink/p/?linkid=324757)
 

@@ -87,28 +87,32 @@ _**上一次修改主题：** 2016-12-09_
 
 本示例显示一封使用可接受的分拣目录格式的纯文本邮件。
 
-    To: mary@contoso.com
-    From: bob@fabrikam.com
-    Subject: Message subject
-    
-    This is the body of the message.
+```powershell
+  To: mary@contoso.com
+  From: bob@fabrikam.com
+  Subject: Message subject
+  
+  This is the body of the message.
+```
 
 分拣目录邮件文件中也支持 MIME 内容。MIME 定义多种邮件内容，包括无法使用 7 位 ASCII 文本表示的语言、HTML 以及其他多媒体格式。对 MIME 及其要求的完整描述不在本主题的讨论范围之内。本示例显示一封使用可接受的分拣目录格式的简单 MIME 邮件。
 
-    To: mary@contoso.com
-    From: bob@fabrikam.com
-    Subject: Message subject
-    MIME-Version: 1.0
-    Content-Type: text/html; charset="iso-8859-1"
-    Content-Transfer-Encoding: 7bit
-    
-    <HTML><BODY>
-    <TABLE>
-    <TR><TD>cell 1</TD><TD>cell 2</TD></TR>
-    <TR><TD>cell 3</TD><TD>cell 4</TD></TR>
-    </TABLE>
+```powershell
+  To: mary@contoso.com
+  From: bob@fabrikam.com
+  Subject: Message subject
+  MIME-Version: 1.0
+  Content-Type: text/html; charset="iso-8859-1"
+  Content-Transfer-Encoding: 7bit
+  
+  <HTML><BODY>
+  <TABLE>
+  <TR><TD>cell 1</TD><TD>cell 2</TD></TR>
+  <TR><TD>cell 3</TD><TD>cell 4</TD></TR>
+  </TABLE>
 
-    </BODY></HTML>
+  </BODY></HTML>
+```
 
 返回顶部
 
@@ -128,7 +132,9 @@ _**上一次修改主题：** 2016-12-09_
 
 作为邮件提交过程的一部分，分拣目录会将其自身的 `Received` 头字段添加到邮件中。应用以下格式的 `Received` 头字段：
 
-    Received: from localhost by Pickup with Microsoft SMTP Server id <ExchangeServerVersion><datetime>
+```powershell
+Received: from localhost by Pickup with Microsoft SMTP Server id <ExchangeServerVersion><datetime>
+```
 
 如果下列邮件头字段丢失或其格式不正确，则分拣目录将对其进行修改：
 
@@ -158,7 +164,9 @@ _**上一次修改主题：** 2016-12-09_
 
   - **X-Sender**   此 X-Header 替换典型 SMTP 邮件中的 `From` 邮件头字段要求。必须有一个包含一个电子邮件地址的 `X-Sender` 字段。尽管收件人的电子邮件客户端会将 `From` 邮件头字段（如果存在该字段）的值显示为邮件的发件人，但是重播目录将忽略 `From` 邮件头字段。其他参数通常在 `X-Sender` 字段中，如下例所示。
     
-        X-Sender: <bob@fabrikam.com> BODY=7bit RET=HDRS ENVID=12345ABCD auth=<someAuth>
+    ```powershell
+    X-Sender: <bob@fabrikam.com> BODY=7bit RET=HDRS ENVID=12345ABCD auth=<someAuth>
+    ```
     
     > [!NOTE]  
     > 这些参数是通常由发送服务器生成的邮件信封值。在导出的邮件文件中可以看到类似的参数。<br />
@@ -167,7 +175,9 @@ _**上一次修改主题：** 2016-12-09_
 
   - **X-Receiver**   此 X-Header 替换典型 SMTP 邮件中的 `To` 邮件头字段要求。必须至少存在一个包含一个电子邮件地址的 `X-Receiver` 字段。允许多个收件人具有多个 `X-Receiver` 字段。尽管收件人的电子邮件客户端会将 `To` 邮件头字段（如果存在该字段）的值显示为邮件的收件人，但是重播目录将忽略 `To` 邮件头字段。其他可选参数可能在 `X-Receiver` 字段中，如下例所示。
     
-        X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+    ```powershell
+    X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+    ```
     
     > [!NOTE]  
     > 这些参数是通常由发送服务器生成的邮件信封值。在导出的邮件文件中可以看到类似的参数。这些参数与发送状态通知 (DSN) 邮件有关（如 RFC 1891 中所述）。<br />
@@ -190,30 +200,34 @@ _**上一次修改主题：** 2016-12-09_
 
 本示例显示一封使用可接受的重播目录格式的纯文本邮件。
 
-    X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
-    X-Sender: <bob@fabrikam.com> BODY=7bit ENVID=12345AB auth=<someAuth>
-    Subject: Optional message subject
-    
-    This is the body of the message.
+```powershell
+X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+X-Sender: <bob@fabrikam.com> BODY=7bit ENVID=12345AB auth=<someAuth>
+Subject: Optional message subject
+
+This is the body of the message.
+```
 
 重播目录邮件文件中还支持 MIME 内容。MIME 定义多种邮件内容，包括无法使用 7 位 ASCII 文本表示的语言、HTML 以及其他多媒体格式。对 MIME 及其要求的完整描述不在本主题的讨论范围之内。本示例显示一封使用可接受的重播目录格式的简单 MIME 邮件。
 
-    X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
-    X-Sender: <bob@fabrikam.com> BODY=7bit ENVID=12345ABCD auth=<someAuth>
-    To: mary@contoso.com
-    From: bob@fabrikam.com
-    Subject: Optional message subject
-    MIME-Version: 1.0
-    Content-Type: text/html; charset="iso-8859-1"
-    Content-Transfer-Encoding: 7bit
-    
-    <HTML><BODY>
-    <TABLE>
-    <TR><TD>cell 1</TD><TD>cell 2</TD></TR>
-    <TR><TD>cell 3</TD><TD>cell 4</TD></TR>
-    </TABLE>
+```powershell
+X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+X-Sender: <bob@fabrikam.com> BODY=7bit ENVID=12345ABCD auth=<someAuth>
+To: mary@contoso.com
+From: bob@fabrikam.com
+Subject: Optional message subject
+MIME-Version: 1.0
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
 
-    </BODY></HTML>
+<HTML><BODY>
+<TABLE>
+<TR><TD>cell 1</TD><TD>cell 2</TD></TR>
+<TR><TD>cell 3</TD><TD>cell 4</TD></TR>
+</TABLE>
+
+</BODY></HTML>
+```
 
 返回顶部
 
@@ -223,7 +237,9 @@ _**上一次修改主题：** 2016-12-09_
 
 在邮件提交过程中，重播目录将自己的 `Received` 邮件头字段添加到邮件中。“接收时间”邮件头字段采用以下格式。
 
-    Received: from <ReceivingServerName> by Replay with <ExchangeServerVersion><DateTime>
+```powershell
+Received: from <ReceivingServerName> by Replay with <ExchangeServerVersion><DateTime>
+```
 
 重播目录修改邮件头中的以下邮件头字段：
 

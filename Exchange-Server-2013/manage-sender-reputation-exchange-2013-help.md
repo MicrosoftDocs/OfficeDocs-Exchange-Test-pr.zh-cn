@@ -43,11 +43,15 @@ _**上一次修改主题：** 2015-04-08_
 
 此示例禁用发件人信誉。
 
-    Set-SenderReputationConfig -Enabled $false
+```powershell
+Set-SenderReputationConfig -Enabled $false
+```
 
 此示例启用发件人信誉。
 
-    Set-SenderReputationConfig -Enabled $true
+```powershell
+Set-SenderReputationConfig -Enabled $true
+```
 
 ## 您如何知道这有效？
 
@@ -55,31 +59,43 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行下面的命令，验证\&quot;协议分析\&quot;代理已安装和启用：
     
-        Get-TransportAgent
+    ```powershell
+    Get-TransportAgent
+    ```
 
 2.  运行下面的命令，验证您配置的发件人信誉值：
     
+    ```powershell
         Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
-
+    ```
+    
 ## 使用命令行管理程序为内部和外部邮件启用或禁用发件人信誉
 
 默认情况下，将为外部邮件启用发件人信誉，并为内部邮件禁用发件人信誉。如果邮件来自 Exchange 组织以外的未经验证的连接，则邮件被视为外部邮件。如果邮件来自未验证的连接，且发件人的域在您的 Exchange 组织中被配置为权威域，则邮件被视为内部邮件。
 
 若要为外部邮件禁用发件人信誉，请运行以下命令：
 
-    Set-SenderReputationConfig -ExternalMailEnabled $false
+```powershell
+Set-SenderReputationConfig -ExternalMailEnabled $false
+```
 
 若要为外部邮件启用发件人信誉，请运行以下命令：
 
-    Set-SenderReputationConfig -ExternalMailEnabled $true
+```powershell
+Set-SenderReputationConfig -ExternalMailEnabled $true
+```
 
 若要为内部邮件禁用发件人信誉，请运行以下命令：
 
-    Set-SenderReputationConfig -InternalMailEnabled $false
+```powershell
+Set-SenderReputationConfig -InternalMailEnabled $false
+```
 
 若要为内部邮件启用发件人信誉，请运行以下命令：
 
-    Set-SenderReputationConfig -InternalMailEnabled $true
+```powershell
+Set-SenderReputationConfig -InternalMailEnabled $true
+```
 
 ## 您如何知道这有效？
 
@@ -87,19 +103,25 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
+    ```powershell
         Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
-
+    ```
+    
 2.  验证显示的值是否与配置的值匹配。
 
 ## 使用命令行管理程序配置发件人信誉属性
 
 若要配置发件人信誉，请运行以下命令：
 
-    Set-SenderReputationConfig -SrlBlockThreshold <Value> -SenderBlockingPeriod <Hours>
+```powershell
+Set-SenderReputationConfig -SrlBlockThreshold <Value> -SenderBlockingPeriod <Hours>
+```
 
 本示例将发件人信誉级别 (SRL) 阻止阈值设置为 6，并对发件人信誉进行配置以将违反此阀值的发件人添加到 IP 阻止列表中 36 小时：
 
-    Set-SenderReputationConfig -SrlBlockThreshold 6 -SenderBlockingPeriod 36
+```powershell
+Set-SenderReputationConfig -SrlBlockThreshold 6 -SenderBlockingPeriod 36
+```
 
 ## 您如何知道这有效？
 
@@ -107,7 +129,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-SenderReputationConfig
+    ```powershell
+    Get-SenderReputationConfig
+    ```
 
 2.  验证显示的值是否与配置的值匹配。
 
@@ -146,11 +170,15 @@ _**上一次修改主题：** 2015-04-08_
 
 若要配置出站访问以实现开放代理服务器的检测功能，请运行以下命令：
 
+```powershell
     Set-SenderReputationConfig -ProxyServerName <String> -ProxyServerPort <Port> -ProxyServerType <String>
+```
 
 本示例配置发件人信誉，以使用名为 SERVER01 并在端口 80 上使用 HTTP CONNECT 协议的开放代理服务器。
 
+```powershell
     Set-SenderReputationConfig - ProxyServerName SERVER01 -ProxyServerPort 80 -ProxyServerType HttpConnect
+```
 
 ## 您如何知道这有效？
 
@@ -158,7 +186,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
+    ```powershell
         Get-SenderReputationConfig | Format-List ProxyServer*
-
+    ```
+    
 2.  验证显示的值是否为您配置的值。
 

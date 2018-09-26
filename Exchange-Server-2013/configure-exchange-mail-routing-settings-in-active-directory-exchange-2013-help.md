@@ -41,17 +41,21 @@ _**上一次修改主题：** 2015-04-08_
 
 要配置 Active Directory 网站链接上特定于 Exchange 的开销，请运行以下命令：
 
-``` 
- Set-AdSiteLink <ADSiteLinkIdentity> -ExchangeCost <Integer | $null>
+```powershell
+    Set-AdSiteLink <ADSiteLinkIdentity> -ExchangeCost <Integer | $null>
 ```
 
 此示例在名为 IPSiteLinkAB 的 IP 站点链接上设置特定于 Exchange 的值为 10 的开销。
 
+```powershell
     Set-AdSiteLink IPSiteLinkAB -ExchangeCost 10
+```
 
 本示例清除名为 IPSiteLinkAB 的 IP 站点链接的 Exchange 开销。
 
+```powershell
     Set-AdSiteLink IPSiteLinkAB -ExchangeCost $null
+```
 
 ## 您如何知道这有效？
 
@@ -59,7 +63,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
+    ```powershell
         Get-AdSiteLink | Format-List Name,ExchangeCost
+    ```
 
 2.  验证是否已在 Active Directory 站点链接上配置 Exchange 开销。
 
@@ -69,15 +75,21 @@ _**上一次修改主题：** 2015-04-08_
 
 要将 Active Directory 站点配置为集线器站点，可运行以下命令：
 
+```powershell
     Set-AdSite <ADSiteIdentity> -HubSiteEnabled $true
+```
 
 本示例将 Active Directory 站点 Site A 配置为集线器站点。
 
+```powershell
     Set-AdSite "Site A" -HubSiteEnabled $true
+```
 
 本示例从 Active Directory 站点 Site B 删除集线器站点属性。
 
-    Set-AdSite "Site B" -HubSiteEnabled $false
+```powershell
+Set-AdSite "Site B" -HubSiteEnabled $false
+```
 
 ## 您如何知道这有效？
 
@@ -85,7 +97,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
+    ```powershell
         Get-AdSite | Format-List Name,HubSiteEnabled
+    ```
 
 2.  验证 *HubSiteEnabled* 的值对于 Active Directory 站点是否为 `True`。
 

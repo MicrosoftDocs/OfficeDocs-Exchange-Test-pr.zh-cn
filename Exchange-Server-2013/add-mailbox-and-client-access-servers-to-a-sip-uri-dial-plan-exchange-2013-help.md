@@ -29,7 +29,7 @@ _**上一次修改主题：** 2013-04-16_
 
   - 您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅 [统一消息权限](unified-messaging-permissions-exchange-2013-help.md)主题中的\&quot;UM 拨号计划\&quot;条目。
 
-  - 在执行这些步骤之前，请确认已创建了 SIP URI 的拨号计划。有关详细步骤，请参阅[创建 UM 拨号计划](create-a-um-dial-plan-exchange-2013-help.md)。
+  - 在执行这些步骤之前，请确认已创建了 SIP URI 的拨号计划。有关详细步骤，请参阅[创建 UM 拨号计划](https://technet.microsoft.com/zh-cn/library/bb123819(v=exchg.150))。
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
@@ -55,7 +55,9 @@ _**上一次修改主题：** 2013-04-16_
 
 本示例添加邮箱服务器名为`MyMailboxServer`到名为`MySIPDialPlan`的 SIP URI 拨号计划，防止其接受新的呼叫。它也为双模式，从而使邮箱服务器接受 TCP 和 TLS 请求设置的启动模式。
 
+```powershell
     Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan -Status Disabled -UMStartupMode Dual
+```
 
 此示例将名为 `MyMailboxServer` 的邮箱服务器添加到名为 `MySIPDialPlan` 和 `MySIPDialPlan2` 的两个 SIP 拨号计划，并进行了以下设置：
 
@@ -67,7 +69,9 @@ _**上一次修改主题：** 2013-04-16_
 
 <!-- end list -->
 
+```powershell
     Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -MaxCallsAllowed 50 -SipAccessService northamerica.lyncpoolna.contoso.com
+```
 
 ## 使用 EAC 将客户端访问服务器添加到 SIP URI 拨号计划
 
@@ -85,9 +89,12 @@ _**上一次修改主题：** 2013-04-16_
 
 本示例将名为`MyClientAccessServer`到名为`MySIPDialPlan`的 SIP URI 拨号计划的客户端访问服务器。它也为双模式，允许客户端访问服务器接受 TCP 和 TLS 请求设置的启动模式。
 
-    Set-UMCallRouterSettings -DialPlans MySIPDialPlan -Server MyClientAccessServer -UMStartupMode Dual
+```powershell
+Set-UMCallRouterSettings -DialPlans MySIPDialPlan -Server MyClientAccessServer -UMStartupMode Dual
+```
 
 此示例将名为 `MyClientAccessServer` 的客户端访问服务器添加到名为 `MySIPDialPlan` 和 `MySIPDialPlan2` 的两个 SIP 拨号计划，并允许服务器使用 IPv4 和 IPv6 地址。
 
+```powershell
     Set-UMCallRouterSettings -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -Server MyClientAccessServer
-
+```

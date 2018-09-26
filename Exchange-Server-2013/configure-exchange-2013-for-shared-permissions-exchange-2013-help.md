@@ -79,21 +79,27 @@ _**上一次修改主题：** 2015-04-07_
 
 1.  使用以下命令向 组织管理 角色组添加\&quot;邮件收件人创建\&quot;角色和\&quot;安全组创建和成员身份\&quot;角色的委派角色分配。
     
+    ```powershell
         New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Organization Management" -Delegating
         New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management" -Delegating
-    
+    ```
+
     > [!NOTE]  
     > 必须为包含&amp;quot;邮件收件人创建&amp;quot;角色和&amp;quot;安全组创建和成员身份&amp;quot;角色的委派角色分配的角色组（此过程中的 Active Directory 管理员角色组）分配&amp;quot;角色管理&amp;quot;角色来运行 <strong>New-ManagementRoleAssignment</strong> cmdlet。可以委派&amp;quot;角色管理&amp;quot;角色的角色受理人必须将该角色分配给 Active Directory 管理员角色组。
 
 
 2.  使用以下命令向 组织管理 和 收件人管理 角色组添加\&quot;邮件收件人创建\&quot;角色的常规角色分配。
     
+    ```powershell
         New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Organization Management"
         New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Recipient Management"
+    ```
 
 3.  使用以下命令向 组织管理 角色组添加\&quot;安全组创建和成员身份\&quot;角色的常规角色分配。
     
+    ```powershell
         New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management"
+    ```
 
 有关语法和参数的详细信息，请参阅 [New-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd335193\(v=exchg.150\))。
 
@@ -109,12 +115,15 @@ _**上一次修改主题：** 2015-04-07_
 
 1.  使用以下命令删除将\&quot;邮件收件人创建\&quot;角色分配给成员之中包含 Active Directory 管理员的角色组或通用安全组 (USG) 的常规角色分配和委派角色分配。此命令使用 Active Directory 管理员角色组作为一个示例。*WhatIf* 开关使您能够看到将删除哪些角色分配。删除 *WhatIf* 开关，然后再次运行命令来删除角色分配。
     
+    ```powershell
         Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where { $_.RoleAssigneeName -EQ "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+    ```
 
 2.  使用以下命令删除将\&quot;安全组创建和成员身份\&quot;角色分配到包含 Active Directory 管理员成员的角色组或 USG 的常规角色分配和委派角色分配。此命令使用 Active Directory 管理员角色组作为一个示例。*WhatIf* 开关使您能够看到将删除哪些角色分配。删除 *WhatIf* 开关，然后再次运行命令来删除角色分配。
     
+    ```powershell
         Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Where { $_.RoleAssigneeName -EQ "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
-
+    ```    
 3.  可选。如果要删除 Active Directory 管理员的所有 Exchange 权限，您可以删除这些管理员作为其中成员的角色组或 USG。有关如何删除角色组的详细信息，请参阅[管理角色组](manage-role-groups-exchange-2013-help.md)。
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd351024\(v=exchg.150\)) 和 [Remove-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd351205\(v=exchg.150\))。
@@ -133,13 +142,17 @@ _**上一次修改主题：** 2015-04-07_
 
 1.  从 Windows 命令的命令行管理程序，从 Exchange 2013 安装媒体运行以下命令来禁用 Active Directory 拆分权限。
     
-        setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+    ```powershell
+    setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+    ```
 
 2.  从 Exchange 命令行管理程序，运行以下命令来添加\&quot;邮件收件人创建\&quot;角色和\&quot;安全组创建和成员身份\&quot;角色与 组织管理 及 收件人管理 角色组之间的常规角色分配。
     
+    ```powershell
         New-ManagementRoleAssignment "Mail Recipient Creation_Organization Management" -Role "Mail Recipient Creation" -SecurityGroup "Organization Management"
         New-ManagementRoleAssignment "Security Group Creation and Membership_Org Management" -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management"
         New-ManagementRoleAssignment "Mail Recipient Creation_Recipient Management" -Role "Mail Recipient Creation" -SecurityGroup "Recipient Management"
+    ```    
 
 3.  重新启动组织中的 Exchange 2013 服务器。
     

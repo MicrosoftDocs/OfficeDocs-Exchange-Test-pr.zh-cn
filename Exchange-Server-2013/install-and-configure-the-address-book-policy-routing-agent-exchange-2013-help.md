@@ -45,7 +45,9 @@ _**上一次修改主题：** 2014-01-09_
 
 通过运行以下命令安装 ABP 路由代理。这是您将需要使用的确切命令和语法。
 
+```powershell
     Install-TransportAgent -Name "ABP Routing Agent" -TransportAgentFactory "Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.AddressBookPolicyRoutingAgentFactory" -AssemblyPath $env:ExchangeInstallPath\TransportRoles\agents\AddressBookPolicyRoutingAgent\Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.dll
+```
 
 您将收到一条警告，指示传输服务需要重新启动以使更改生效，但请首先执行步骤 2，以便传输服务仅需重新启动一次。
 
@@ -57,7 +59,9 @@ _**上一次修改主题：** 2014-01-09_
 
 安装了 ABP 路由代理之后，您需要通过运行以下命令启动它：
 
+```powershell
     Enable-TransportAgent "ABP Routing Agent"
+```
 
 有关语法和参数的详细信息，请参阅 [Enable-TransportAgent](https://technet.microsoft.com/zh-cn/library/bb124921\(v=exchg.150\))。
 
@@ -67,11 +71,15 @@ _**上一次修改主题：** 2014-01-09_
 
 1.  通过运行以下命令重新启动传输服务。
     
+    ```powershell
         Restart-Service MSExchangeTransport
+    ```
 
 2.  重新启动服务之后，通过运行以下 cmdlet 验证 ABP 路由代理是否已安装并启用。
     
+    ```powershell
         Get-TransportAgent
+    ```
     
     如果 ABP 路由代理已经列出，说明代理已经正确安装。
 
@@ -83,7 +91,9 @@ _**上一次修改主题：** 2014-01-09_
 
 此过程的最后一个步骤是为组织启用 ABP 路由。运行以下命令。
 
+```powershell
     Set-TransportConfig -AddressBookPolicyRoutingEnabled $true
+```
 
 有关语法和参数的详细信息，请参阅 [Set-TransportConfig](https://technet.microsoft.com/zh-cn/library/bb124151\(v=exchg.150\))。
 

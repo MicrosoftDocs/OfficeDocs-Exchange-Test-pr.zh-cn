@@ -55,7 +55,9 @@ _**上一次修改主题：** 2012-11-16_
 > 默认情况下，将<em>SearchEnabled</em>参数设置为<code>$true</code>。若要禁用索引的受 IRM 保护的邮件，请将其设置为<code>$false</code>。禁用索引的受 IRM 保护的邮件，会使他们当用户搜索他们的邮箱时，或当发现经理使用就地 eDiscovery 搜索结果中返回。
 
 
-    Set-IRMConfiguration -SearchEnabled $true
+```powershell
+Set-IRMConfiguration -SearchEnabled $true
+```
 
 有关语法和参数的详细信息，请参阅 [Set-IRMConfiguration](https://technet.microsoft.com/zh-cn/library/dd979792\(v=exchg.150\))。
 
@@ -67,7 +69,9 @@ _**上一次修改主题：** 2012-11-16_
 > 默认情况下，将<em>EDiscoverySuperUserEnabled</em>参数设置为<code>$true</code>。若要禁用访问受 IRM 保护的电子邮件，发现管理角色组的成员，请将其设置为<code>$false</code>。
 
 
-    Set-IRMConfiguration -EDiscoverySuperUserEnabled $true
+```powershell
+Set-IRMConfiguration -EDiscoverySuperUserEnabled $true
+```
 
 有关语法和参数的详细信息，请参阅 [Set-IRMConfiguration](https://technet.microsoft.com/zh-cn/library/dd979792\(v=exchg.150\))。
 

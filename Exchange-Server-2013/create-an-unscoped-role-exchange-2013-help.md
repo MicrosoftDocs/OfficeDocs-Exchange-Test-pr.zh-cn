@@ -61,11 +61,15 @@ _**上一次修改主题：** 2014-06-09_
 
 无作用域的顶级角色没有父角色。需要指定 *UnscopedTopLevel* 开关以创建没有父级的角色。使用以下语法创建新角色。
 
-    New-ManagementRole <name of new role> -UnscopedTopLevel
+```powershell
+New-ManagementRole <name of new role> -UnscopedTopLevel
+```
 
 本示例创建 IT Scripts 无作用域顶级角色。
 
-    New-ManagementRole "IT Scripts" -UnscopedTopLevel
+```powershell
+New-ManagementRole "IT Scripts" -UnscopedTopLevel
+```
 
 创建后，在您向角色中添加脚本或非 Exchange cmdlet 之前，该角色为空。
 
@@ -81,11 +85,15 @@ _**上一次修改主题：** 2014-06-09_
 
 将脚本复制到相应的 Exchange 2013 服务器并决定应使用脚本的哪些参数之后，使用以下语法创建角色条目。
 
-    Add-ManagementRoleEntry <unscoped top-level role name>\<script filename> -Parameters <parameter 1, parameter 2, parameter...> -Type Script -UnscopedTopLevel
+```PowerShell
+Add-ManagementRoleEntry <unscoped top-level role name>\<script filename> -Parameters <parameter 1, parameter 2, parameter...> -Type Script -UnscopedTopLevel
+```
 
 本示例用 *Name* 和 *Location* 参数将 BulkProvisionUsers.ps1 脚本添加到 IT Scripts 角色。
 
-    Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
+```PowerShell
+Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
+```
 
 > [!NOTE]  
 > <strong>Add-ManagementRoleEntry</strong> cmdlet 执行基本验证，以确保仅添加该脚本中存在的参数。但是，添加角色条目之后就不再进行其他验证。如果以后要添加或删除参数，则必须手动更新包含该脚本的角色条目。
@@ -101,11 +109,15 @@ _**上一次修改主题：** 2014-06-09_
 
 将包含 cmdlet 的 Windows PowerShell 管理单元安装在相应的 Exchange 2013 服务器上，并确定要使用的 cmdlet 参数之后，请使用以下语法创建角色条目。
 
-    Add-ManagementRoleEntry <unscoped top-level role name>\<cmdlet name> -PSSnapinName <snap-in name> -Parameters <parameter 1, parameter 2, parameter...> -Type Cmdlet -UnscopedTopLevel
+```PowerShell
+Add-ManagementRoleEntry <unscoped top-level role name>\<cmdlet name> -PSSnapinName <snap-in name> -Parameters <parameter 1, parameter 2, parameter...> -Type Cmdlet -UnscopedTopLevel
+```
 
 本示例用 *Database* 和 *Size* 参数将 Contoso.Admin.Cmdlets 管理单元中的 **Set-WidgetConfiguration** cmdlet 添加到 Widget Cmdlets 角色。
 
-    Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
+```PowerShell
+Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
+```
 
 > [!NOTE]  
 > <strong>Add-ManagementRoleEntry</strong> cmdlet 执行基本验证，以确保仅添加该 cmdlet 中存在的参数。但是，添加角色条目之后就不再进行其他验证。如果以后要更改 cmdlet 或者添加或删除参数，则必须手动更新包含该 cmdlet 的角色条目。
@@ -141,11 +153,15 @@ _**上一次修改主题：** 2014-06-09_
 
 使用以下语法创建新角色。
 
-    New-ManagementRole -Parent <existing unscoped role to copy> -Name <name of new unscoped role>
+```powershell
+New-ManagementRole -Parent <existing unscoped role to copy> -Name <name of new unscoped role>
+```
 
 此示例将 IT Global Scripts 角色及其管理角色条目复制到 Diagnostic IT Scripts 角色。
 
-    New-ManagementRole -Parent "IT Global Scripts" -Name "Diagnostic IT Scripts"
+```powershell
+New-ManagementRole -Parent "IT Global Scripts" -Name "Diagnostic IT Scripts"
+```
 
 有关语法和参数的详细信息，请参阅 [New-ManagementRole](https://technet.microsoft.com/zh-cn/library/dd298073\(v=exchg.150\))。
 

@@ -109,7 +109,7 @@ _**上一次修改主题：** 2016-12-09_
 <td><p><a href="discovery-management-exchange-2013-help.md">发现管理</a></p>
 
 > [!NOTE]  
-> 默认情况下，Discovery Management 角色组中没有任何成员。用户（包括管理员）都不具有搜索邮箱所需的权限。有关详细信息，请参阅<a href="assign-ediscovery-permissions-in-exchange-exchange-2013-help.md">在 Exchange 中分配电子数据展示权限</a>。
+> 默认情况下，Discovery Management 角色组中没有任何成员。用户（包括管理员）都不具有搜索邮箱所需的权限。有关详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/dd298059(v=exchg.150)">在 Exchange 中分配电子数据展示权限</a>。
 
 </td>
 </tr>

@@ -19,9 +19,9 @@ _**上一次修改主题：** 2016-12-09_
 
 使用此检查表可在 Microsoft Exchange Server 2013 组织中部署保留策略。在开始使用此检查表之前，请确保您熟悉以下主题中的概念：
 
-  - [邮件记录管理](messaging-records-management-exchange-2013-help.md)
+  - [邮件记录管理](https://technet.microsoft.com/zh-cn/library/dd335093(v=exchg.150))
 
-  - [保留标记和保留策略](retention-tags-and-retention-policies-exchange-2013-help.md)
+  - [保留标记和保留策略](https://technet.microsoft.com/zh-cn/library/dd297955(v=exchg.150))
 
 ## 用于部署保留策略的检查列表
 
@@ -43,7 +43,7 @@ _**上一次修改主题：** 2016-12-09_
 <tr class="odd">
 <td><p> </p></td>
 <td><p>评估不同用户组的邮件记录管理 (MRM) 要求。</p></td>
-<td><p><a href="messaging-records-management-exchange-2013-help.md">邮件记录管理</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/dd335093(v=exchg.150)">邮件记录管理</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong> </strong></p></td>
@@ -63,7 +63,7 @@ _**上一次修改主题：** 2016-12-09_
 <tr class="odd">
 <td><p> </p></td>
 <td><p>将保留标记添加到保留策略。</p></td>
-<td><p><a href="add-retention-tags-to-or-remove-retention-tags-from-a-retention-policy-exchange-2013-help.md">向保留策略添加保留标记或从中删除保留标记</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/dd362328(v=exchg.150)">向保留策略添加保留标记或从中删除保留标记</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong> </strong></p></td>

@@ -35,12 +35,16 @@ Exchange 2013 中对象的主要唯一标识符始终是 GUID。GUID 是一个 1
 
 以下示例通过使用接收连接器的唯一 *Name* 参数值说明 *Identity* 参数的用法。此示例还说明如何省略 *Identity* 参数名（因为 *Identity* 是一个位置参数）。
 
-    Get-ReceiveConnector -Identity "From the Internet"
-    Get-ReceiveConnector "From the Internet"
+```powershell
+Get-ReceiveConnector -Identity "From the Internet"
+Get-ReceiveConnector "From the Internet"
+```
 
 与 Exchange 2013 中的所有对象一样，也可以使用此接收连接器的唯一 GUID 来引用它。例如，如果还向名为 `"From the Internet"` 的接收连接器分配了 GUID `63d64005-42c5-4f8f-b310-14f6cb125bf3`，则也可以使用以下命令来检索该接收连接器：
 
-    Get-ReceiveConnector 63d64005-42c5-4f8f-b310-14f6cb125bf3
+```powershell
+Get-ReceiveConnector 63d64005-42c5-4f8f-b310-14f6cb125bf3
+```
 
 返回顶部
 
@@ -66,11 +70,15 @@ Identity 参数和通配符的特定行为取决于所运行的 cmdlet。有关�
 
 本节中的示例引用可以在 Exchange 2013 组织中配置的发送状态通知 (DSN) 邮件。第一个示例说明如何使用 **Get-SystemMessage** cmdlet 来检索 DSN 5.4.1。在 **Get-SystemMessage** cmdlet 中，*Identity* 参数由在每个 DSN 邮件对象上配置的多个数据片段组成。这些数据片段包括 DSN 的编写语言、DSN 在作用域的内部还是外部，以及以下示例中所示的 DSN 邮件代码：
 
-    Get-SystemMessage en\internal\5.4.1
+```powershell
+Get-SystemMessage en\internal\5.4.1
+```
 
 也可以按以下示例中所示，使用 GUID 来检索此 DSN 邮件，因为 Exchange 2013 中的所有对象都具有一个 GUID：
 
-    Get-SystemMessage 82ca7bde-1c2d-4aa1-97e1-f298a6f10222
+```powershell
+Get-SystemMessage 82ca7bde-1c2d-4aa1-97e1-f298a6f10222
+```
 
 有关与 **SystemMessage** cmdlet 结合使用的 *Identity* 参数构成的详细信息，请参阅 [DSN 邮件标识](dsn-message-identity-exchange-2013-help.md)。
 
@@ -78,19 +86,27 @@ Identity 参数和通配符的特定行为取决于所运行的 cmdlet。有关�
 
 本节中的示例引用构成 Exchange 2013 中的管理角色的管理角色项。管理角色用于控制授予给管理员和最终用户的权限。管理角色项由以下两部分组成：相关联的管理角色和一个 cmdlet。Identity 参数同样由管理角色名称和 cmdlet 名称组成。例如，以下是 `Mail Recipients` 角色的 **Set-Mailbox** cmdlet 的角色条目：
 
-    Mail Recipients\Set-Mailbox
+```powershell
+Mail Recipients\Set-Mailbox
+```
 
 `Mail Recipients\Set-Mailbox` 角色条目是 `Mail Recipients` 角色中的若干个角色条目之一。若要查看 `Mail Recipients` 角色中的所有角色项，可以使用以下命令：
 
-    Get-ManagementRoleEntry "Mail Recipients\*"
+```powershell
+Get-ManagementRoleEntry "Mail Recipients\*"
+```
 
 若要查看 `Mail Recipients` 角色中包含字符串\&quot;`Mailbox`\&quot;的所有角色项，可以使用以下命令：
 
-    Get-ManagementRoleEntry "Mail Recipients\*Mailbox*"
+```powershell
+Get-ManagementRoleEntry "Mail Recipients\*Mailbox*"
+```
 
 若要查看其中一个角色项为 **Set-Mailbox** 的所有管理角色，可以使用以下命令：
 
-    Get-ManagementRoleEntry *\Set-Mailbox
+```powershell
+Get-ManagementRoleEntry *\Set-Mailbox
+```
 
 借助角色项，可以按多种方式使用通配符在 Exchange 2013 查询您感兴趣的信息。
 

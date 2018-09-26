@@ -86,7 +86,9 @@ _**上一次修改主题：** 2014-06-19_
     
     > [!IMPORTANT]  
     > 如果您启用了用户访问控制 (UAC) 功能，必须从提升的命令提示符运行 <code>Setup.exe</code>。
-    
+
+
+    ```PowerShell
         Setup.exe [/Mode:<setup mode>] [/IAcceptExchangeServerLicenseTerms]
         [/Roles:<server roles to install>] [/InstallWindowsComponents] 
         [/OrganizationName:<name for the new Exchange organization>] 
@@ -101,6 +103,7 @@ _**上一次修改主题：** 2014-06-19_
         [/MdbName:<mailbox database name>] [/DbFilePath:<Edb file path>] 
         [/LogFolderPath:<log folder path>] [/ActiveDirectorySplitPermissions:<True | False>]
         [/TenantOrganizationConfig:<path>]
+    ```    
 
 4.  安装程序在本地将安装文件复制到要安装 Exchange 2013 的计算机。
 

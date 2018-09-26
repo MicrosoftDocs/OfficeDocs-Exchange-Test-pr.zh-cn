@@ -57,9 +57,11 @@ _**上一次修改主题：** 2013-02-14_
 
 该命令行管理程序示例将取消保留标记 Delete - 3 Days 与保留策略 Corp-Users 之间的链接。
 
-    $tags = (Get-RetentionPolicy "Corp-Users").RetentionPolicyTagLinks
-    $tags -= "Deleted Items - 3 Days"
-    Set-RetentionPolicy "Corp-Users" -RetentionPolicyTagLinks $tags
+```PowerShell
+$tags = (Get-RetentionPolicy "Corp-Users").RetentionPolicyTagLinks
+$tags -= "Deleted Items - 3 Days"
+Set-RetentionPolicy "Corp-Users" -RetentionPolicyTagLinks $tags
+```
 
 有关语法和参数的详细信息，请参阅 [Get-RetentionPolicy](https://technet.microsoft.com/zh-cn/library/dd298086\(v=exchg.150\)) 和 [Set-RetentionPolicy](https://technet.microsoft.com/zh-cn/library/dd335196\(v=exchg.150\))。
 
@@ -71,15 +73,21 @@ _**上一次修改主题：** 2013-02-14_
 
 此命令行管理程序示例将删除邮箱 jpeoples 的保留策略。
 
-    Set-Mailbox jpeoples -RetentionPolicy $null.
+```powershell
+Set-Mailbox jpeoples -RetentionPolicy $null.
+```
 
 此命令行管理程序示例将删除 Exchange 组织中所有邮箱的保留策略。
 
-    Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -ne $null} | Set-Mailbox -RetentionPolicy $null
+```powershell
+Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -ne $null} | Set-Mailbox -RetentionPolicy $null
+```
 
 此命令行管理程序示例将把保留策略 Corp-Finance 从所有应用了该策略的邮箱用户中删除。
 
-    Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -eq "Corp-Finance"} | Set-Mailbox -RetentionPolicy $null
+```powershell
+Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -eq "Corp-Finance"} | Set-Mailbox -RetentionPolicy $null
+```
 
 有关语法和参数的详细信息，请参阅[Set-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123981\(v=exchg.150\))和[Get-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123685\(v=exchg.150\))。
 
@@ -101,15 +109,21 @@ _**上一次修改主题：** 2013-02-14_
 
 此示例从 Exchange 组织中移除了所有的删除标记，Exchange 安装程序创建的 ArbitrationMailbox 策略中使用的\&quot;永不删除\&quot;标记除外。
 
-    Get-RetentionPolicyTag | ? {$_.RetentionAction -ne "MoveToArchive" -and $_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```powershell
+Get-RetentionPolicyTag | ? {$_.RetentionAction -ne "MoveToArchive" -and $_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```
 
 此示例移除了除\&quot;永不删除\&quot;标记以外的所有保留标记。
 
-    Get-RetentionPolicyTag | ? {$_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```powershell
+Get-RetentionPolicyTag | ? {$_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```
 
 此命令从 Exchange 组织中移除了 Corp-Users 保留策略。
 
-    Remove-RetentionPolicy Corp-Users
+```powershell
+Remove-RetentionPolicy Corp-Users
+```
 
 有关语法和参数的详细信息，请参阅下列主题：
 

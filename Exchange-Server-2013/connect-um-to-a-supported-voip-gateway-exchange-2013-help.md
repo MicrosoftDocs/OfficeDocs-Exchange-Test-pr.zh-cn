@@ -43,7 +43,7 @@ _**上一次修改主题：** 2013-04-19_
 
 ## 步骤 2 ︰ 创建和配置 UM 拨号计划
 
-安装所需的服务器之后，您必须首先创建 UM 拨号计划。UM 拨号计划中包含的配置设置，使您能够通过将链接到一个或多个 UM IP 网关连接到电话网络。UM IP 网关和 UM 查寻组直接链接到 UM 拨号计划，还需要。有关详细信息，请参阅[创建 UM 拨号计划](create-a-um-dial-plan-exchange-2013-help.md)。
+安装所需的服务器之后，您必须首先创建 UM 拨号计划。UM 拨号计划中包含的配置设置，使您能够通过将链接到一个或多个 UM IP 网关连接到电话网络。UM IP 网关和 UM 查寻组直接链接到 UM 拨号计划，还需要。有关详细信息，请参阅[创建 UM 拨号计划](https://technet.microsoft.com/zh-cn/library/bb123819(v=exchg.150))。
 
 UM 拨号计划建立从用户的电话分机号码链接到启用 UM 的邮箱。创建 UM 拨号计划时，可以配置分机号码、 统一资源标识符 (URI) 类型和 VoIP 安全设置为拨号计划中的数字位数。
 
@@ -63,7 +63,7 @@ Exchange 统一消息支持各种 VoIP 网关供应商和其他供应商提供�
 
 有关 VoIP 网关的详细信息，请参阅下列主题：
 
-  - [创建 UM IP 网关](create-a-um-ip-gateway-exchange-2013-help.md)
+  - [创建 UM IP 网关](https://technet.microsoft.com/zh-cn/library/aa998045(v=exchg.150))
 
   - [支持的 VoIP 网关、IP PBX 和 PBX 的配置说明](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
@@ -79,5 +79,5 @@ UM 查寻组镜像 Pbx 和 IP Pbx 使用查寻组。您的 Pbx 或 IP Pbx 配置
 
 这取决于如何创建 UM IP 网关，您可能需要创建一个或多个新的 UM 查寻组。如果没有链接的 UM IP 网关与某个拨号计划创建 UM IP 网关时，默认情况下创建单个 UM 查寻组。如果链接 UM IP 网关与 UM 拨号计划，当您创建 UM IP 网关、 所有传入呼叫将被发送通过 UM IP 网关和服务器客户端访问和邮箱服务器将接受这些调用。如果创建 UM IP 网关时，不链接到 UM 拨号计划的 UM IP 网关，您需要使用拨入的呼叫转发从 UM IP 网关与拨号计划正确引导标识符创建 UM 查寻组。
 
-如果您有多个 Outlook Voice Access 并自动助理号码并已链接到拨号计划的 UM IP 网关，您将需要删除 UM 查寻组，默认情况下创建并创建多个 UM 查寻组。有关如何创建 UM 查寻组，请参阅[创建 UM 智能寻线](create-a-um-hunt-group-exchange-2013-help.md)。
+如果您有多个 Outlook Voice Access 并自动助理号码并已链接到拨号计划的 UM IP 网关，您将需要删除 UM 查寻组，默认情况下创建并创建多个 UM 查寻组。有关如何创建 UM 查寻组，请参阅[创建 UM 智能寻线](https://technet.microsoft.com/zh-cn/library/aa997679(v=exchg.150))。
 

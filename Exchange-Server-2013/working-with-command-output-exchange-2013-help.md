@@ -51,33 +51,40 @@ Exchange 命令行管理程序提供了可用来设置命令输出格式的多�
 
 以下示例显示用不同方式查看 **Get-Mailbox** cmdlet 返回的相同数据。
 
+   ```PowerShell
     Get-Mailbox TestUser1
     
     Name                      Alias                ServerName       ProhibitSendQuo
                                                                     ta
     ----                      -----                ----------       ---------------
     TestUser1                 TestUser1            mbx              unlimited
+   ```
 
 在第一个示例中，调用 **Get-Mailbox** cmdlet 但未指定格式，因此，默认输出为表格格式并包含一组预定义的属性。
 
+   ```PowerShell
     Get-Mailbox TestUser1 | Format-List -Property Name,Alias,EmailAddresses
     
     Name           : TestUser1
     Alias          : TestUser1
     EmailAddresses : {SMTP:TestUser1@contoso.com}
+   ``` 
 
 在第二个示例中，将 **Get-Mailbox** cmdlet 的输出连同其特定属性通过管道传递给 **Format-List** cmdlet。可以看到，输出的格式和内容有明显不同。
 
+   ```PowerShell
     Get-Mailbox TestUser1 | Format-List -Property Name, Alias, Email*
     Name                      : Test User
     Alias                     : TestUser1
     EmailAddresses            : {SMTP:TestUser1@contoso.com}
     EmailAddressPolicyEnabled : True
+   ``` 
 
 在最后一个示例中，与第二个示例相同，将 **Get-Mailbox** cmdlet 的输出通过管道传递给了 **Format-List** cmdlet。但是，在最后一个示例中，使用通配符来匹配以 `Email` 开头的所有属性。
 
 如果有多个对象传递到 **Format-List** cmdlet，则为每个对象指定的所有属性都将显示并按对象进行分组。显示顺序取决于该 cmdlet 的默认参数。默认参数通常是 *Name* 参数或 *Identity* 参数。例如，调用 **Get-Childitem** cmdlet 时，默认显示顺序是文件名按字母顺序排列。若要更改此行为，必须调用 **Format-List** cmdlet 和 *GroupBy* 参数，以及要按其对输出进行分组的属性值名称。例如，以下命令将列出目录中的所有文件，并将这些文件按文件扩展名进行分组。
 
+   ```PowerShell
     Get-Childitem | Format-List Name,Length -GroupBy Extension
     
         Extension: .xml
@@ -105,6 +112,7 @@ Exchange 命令行管理程序提供了可用来设置命令输出格式的多�
     
     Name   : Text_02.txt
     Length : 9835
+   ``` 
 
 在本示例中，**Format-List** cmdlet 已按 *GroupBy* 参数指定的 *Extension* 属性对项目进行了分组。可以将 *GroupBy* 参数与管道流中对象的任一有效属性结合使用。
 
@@ -116,15 +124,18 @@ Exchange 命令行管理程序提供了可用来设置命令输出格式的多�
 
 在第一个示例中，使用 **Get-Command** cmdlet 显示有关 **Get-Process** cmdlet 的命令信息时，*Definition* 属性的信息被截断。
 
+   ```PowerShell
     Get-Command Get-Process | Format-Table Name,Definition
     
     Name                                    Definition
     ----                                    ----------
     get-process                             get-process [[-ProcessName] String[]...
+   ``` 
 
 在第二个示例中，命令中添加了 *Wrap* 参数，以强制显示 *Definition* 属性的完整内容。
 
-    Get-Command Get-Process | Format-Table Name,Definition -Wrap
+   ```PowerShell
+   Get-Command Get-Process | Format-Table Name,Definition -Wrap
     
     Get-Process                             Get-Process [[-Name] <String[]>] [-Comp
                                             uterName <String[]>] [-Module] [-FileVe
@@ -149,6 +160,7 @@ Exchange 命令行管理程序提供了可用来设置命令输出格式的多�
                                             ble <String>] [-WarningVariable <String
                                             >] [-OutVariable <String>] [-OutBuffer
                                             <Int32>]
+  ```                                            
 
 与在 **Format-List** cmdlet 中使用时相同，也可以使用通配符\&quot;`*`\&quot;指定部分属性名。通过包含通配符，可以匹配多个属性，而不必分别键入每个属性名。
 
@@ -158,6 +170,7 @@ Exchange 命令行管理程序提供了可用来设置命令输出格式的多�
 
 最基本的用法是，不使用任何参数调用 **Format-Wide** cmdlet，使输出按适合页面大小的列数进行排列。例如，如果运行 **Get-Childitem** cmdlet 并将其输出通过管道传递给 **Format-Wide** cmdlet，则信息将如下显示：
 
+   ```PowerShell
     Get-ChildItem | Format-Wide
     
         Directory: FileSystem::C:\WorkingFolder
@@ -176,9 +189,11 @@ Exchange 命令行管理程序提供了可用来设置命令输出格式的多�
     Text_08.txt                             Text_09.txt
     Text_10.txt                             Text_11.txt
     Text_12.txt
+   ``` 
 
 通常，不使用任何参数调用 **Get-Childitem** cmdlet 时，将会在一个属性表格中显示目录中所有文件的名称。在本示例中，将 **Get-Childitem** cmdlet 的输出通过管道传递给 **Format-Wide** cmdlet，输出将以两列名称显示。请注意，一次只能显示一种属性类型，该类型由接在 **Format-Wide** cmdlet 后的属性名称指定。如果添加 *Autosize* 参数，则输出会从两列更改为适合屏幕宽度的列数。
 
+   ```PowerShell
     Get-ChildItem | Format-Wide -AutoSize
     
         Directory: FileSystem::C:\WorkingFolder
@@ -189,9 +204,11 @@ Exchange 命令行管理程序提供了可用来设置命令输出格式的多�
     Text_01.txt     Text_02.txt     Text_03.txt     Text_04.txt     Text_05.txt
     Text_06.txt     Text_07.txt     Text_08.txt     Text_09.txt     Text_10.txt
     Text_11.txt     Text_12.txt
+   ``` 
 
 在本示例中，表格按五列排列，而不是两列。*Column* 参数允许按如下方式指定信息显示的最大列数，从而可提供更多控制：
 
+   ```PowerShell
     Get-ChildItem | Format-Wide -Column 4
     
         Directory: FileSystem::C:\WorkingFolder
@@ -203,6 +220,7 @@ Exchange 命令行管理程序提供了可用来设置命令输出格式的多�
     Text_02.txt         Text_03.txt         Text_04.txt         Text_05.txt
     Text_06.txt         Text_07.txt         Text_08.txt         Text_09.txt
     Text_10.txt         Text_11.txt         Text_12.txt
+   ``` 
 
 在本示例中，使用 *Column* 参数将列数强制限制为四列。
 
@@ -212,11 +230,15 @@ Exchange 命令行管理程序提供了可用来设置命令输出格式的多�
 
 **Out-Host** cmdlet 是管道末端一个不可见的默认 cmdlet。应用了所有格式之后，**Out-Host** cmdlet 将最终输出发送到控制台窗口进行显示。**Out-Host** cmdlet 是默认输出，因此无需显式调用。通过将调用 **Out-File** cmdlet 作为命令中最后一个 cmdlet，可以取代将输出发送到控制台窗口的操作。**Out-File** cmdlet 则将输出写入到命令中指定的文件，如下例所示：
 
-    Get-ChildItem | Format-Wide -Column 4 | Out-File c:\OutputFile.txt
+```powershell
+Get-ChildItem | Format-Wide -Column 4 | Out-File c:\OutputFile.txt
+```
 
 在本示例中，**Out-File** cmdlet 将 **Get-ChildItem | Format-Wide -Column 4** 命令显示的信息写入名为 `OutputFile.txt` 的文件中。还可以使用重定向运算符（右尖括号 `>` ），将管道输出重定向到文件。若要将某个命令的管道输出附加到现有文件末尾而不替换原始文件，请使用两个右尖括号 (`>>`)，如下例所示：
 
-    Get-ChildItem | Format-Wide -Column 4 >> C:\OutputFile.txt
+```powershell
+Get-ChildItem | Format-Wide -Column 4 >> C:\OutputFile.txt
+```
 
 在本示例中，**Get-Childitem** cmdlet 的输出通过管道传递给 **Format-Wide** cmdlet 进行格式设置，然后写入 `OutputFile.txt` 文件的末尾。请注意，如果 `OutputFile.txt` 文件不存在，则使用两个右尖括号 (`>>`) 会创建该文件。
 
@@ -230,6 +252,7 @@ Exchange 命令行管理程序提供了可用来设置命令输出格式的多�
 
 以下示例说明如何使用一个简单脚本输出某个命令返回的数据，并在 Internet Explorer 中显示。此脚本接受通过管道传递的对象，打开 Internet Explorer 窗口，然后在 Internet Explorer 中显示数据：
 
+   ```PowerShell
     $Ie = New-Object -Com InternetExplorer.Application
     $Ie.Navigate("about:blank")
     While ($Ie.Busy) { Sleep 1 }
@@ -238,6 +261,7 @@ Exchange 命令行管理程序提供了可用来设置命令输出格式的多�
     # If the previous line doesn't work on your system, uncomment the line below.
     # $Ie.Document.IHtmlDocument2_Write("$Input")
     $Ie
+   ```
 
 若要使用此脚本，请将其保存到要运行脚本的计算机上的 `C:\Program Files\Microsoft\Exchange Server\V15\Scripts` 目录中。将文件命名为 `Out-Ie.ps1`。保存文件后，即可将脚本作为普通 cmdlet 使用。
 
@@ -247,7 +271,9 @@ Exchange 命令行管理程序提供了可用来设置命令输出格式的多�
 
 `Out-Ie` 脚本假定其收到的数据是有效的 HTML 格式。若要将要查看的数据转换为 HTML 格式，必须将命令的结果通过管道传递给 **ConvertTo-Html** cmdlet。然后，可以将该命令的结果通过管道传递给 `Out-Ie` 脚本。以下示例说明了如何在 Internet Explorer 窗口中查看目录列表：
 
-    Get-ChildItem | Select Name,Length | ConvertTo-Html | Out-Ie
+```powershell
+Get-ChildItem | Select Name,Length | ConvertTo-Html | Out-Ie
+```
 
 ## 如何筛选数据
 
@@ -327,12 +353,14 @@ Exchange 命令行管理程序提供了可用来设置命令输出格式的多�
 
 **Clear-Host** cmdlet 用于清除控制台窗口。在本示例中，如果运行以下命令，则可以找到为 **Clear-Host** cmdlet 定义的所有别名：
 
+   ```PowerShell
     Get-Alias | Where {$_.Definition -eq "Clear-Host"}
     
     CommandType     Name                            Definition
     -----------     ----                            ----------
     Alias           clear                           clear-host
     Alias           cls                             clear-host
+   ``` 
 
 **Get-Alias** cmdlet 与 **Where** 命令一起使用，可以返回为 **Clear-Host** cmdlet 定义的别名列表，无需其他 cmdlet。下表列出了本示例中使用的 **Where** 命令的每个元素。
 

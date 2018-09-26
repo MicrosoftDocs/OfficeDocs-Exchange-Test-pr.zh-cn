@@ -51,9 +51,12 @@ _**上一次修改主题：** 2012-11-18_
 
 本示例允许邮箱服务器 `UMMBXr-05x.contoso.com` 应答来自 VoIP 网关、IP PBX、启用了 SIP 的 PBX 和 SBC 的传入语音、传真、自动助理和 Outlook Voice Access 呼叫，允许将所做的更改写入 UMMBX-05x 服务器的注册表中。
 
-    Set-ServerComponentState -Component UnifiedMessaging -Identity UMMBX-05x.contoso.com -Requester Maintenance -State Active -LocalOnly
+```powershell
+Set-ServerComponentState -Component UnifiedMessaging -Identity UMMBX-05x.contoso.com -Requester Maintenance -State Active -LocalOnly
+```
 
 本示例阻止邮箱服务器 `UMMBX-05x.contoso.com` 应答来自 VoIP 网关、IP PBX、启用了 SIP 的 PBX 和 SBC 的传入语音、传真、自动助理和 Outlook Voice Access 呼叫，并且仅将所做的更改写入 Active Directory 中。
 
-    Set-ServerComponentState -Component UnifiedMessaging -Identity UMMBX-05x.contoso.com -Requester Maintenance -State Inactive -RemoteOnly
-
+```powershell
+Set-ServerComponentState -Component UnifiedMessaging -Identity UMMBX-05x.contoso.com -Requester Maintenance -State Inactive -RemoteOnly
+```

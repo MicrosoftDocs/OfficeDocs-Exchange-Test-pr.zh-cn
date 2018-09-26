@@ -71,12 +71,15 @@ _**上一次修改主题：** 2015-07-07_
 > [!NOTE]  
 > 为了确保使用邮箱的自定义设置，而非邮箱数据库默认设置，必须将 <em>UseDatabaseQuotaDefaults</em> 参数设置为 <code>$false</code>。
 
-
-    Set-Mailbox -Identity "Joe Healy" -IssueWarningQuota 24.5gb -ProhibitSendQuota 24.75gb -ProhibitSendReceiveQuota 25gb -UseDatabaseQuotaDefaults $false
+```powershell
+Set-Mailbox -Identity "Joe Healy" -IssueWarningQuota 24.5gb -ProhibitSendQuota 24.75gb -ProhibitSendReceiveQuota 25gb -UseDatabaseQuotaDefaults $false
+```
 
 此示例将 Ayla Kol 的邮箱的“发出警告”、“禁止发送”、“禁止发送和接收”配额分别设置为 900 MB、950 MB 和 1 GB，然后将邮箱配置为使用自定义设置。
 
-    Set-Mailbox -Identity "Ayla Kol" -IssueWarningQuota 900mb -ProhibitSendQuota 950mb -ProhibitSendReceiveQuota 1gb -UseDatabaseQuotaDefaults $false
+```powershell
+Set-Mailbox -Identity "Ayla Kol" -IssueWarningQuota 900mb -ProhibitSendQuota 950mb -ProhibitSendReceiveQuota 1gb -UseDatabaseQuotaDefaults $false
+```
 
 有关语法和参数的详细信息，请参阅 [Set-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123981\(v=exchg.150\))。
 
@@ -98,5 +101,6 @@ _**上一次修改主题：** 2015-07-07_
 
 在命令行管理程序中运行以下命令。
 
-    Get-Mailbox <identity> | fl IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
-
+```powershell
+Get-Mailbox <identity> | fl IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
+```

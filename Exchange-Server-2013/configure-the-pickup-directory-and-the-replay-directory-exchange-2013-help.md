@@ -43,7 +43,9 @@ _**上一次修改主题：** 2015-04-08_
 
 要配置拾取目录，请使用下面的语法。
 
+```powershell
     Set-TransportService <ServerIdentity> -PickupDirectoryPath <LocalFilePath> -PickupDirectoryMaxHeaderSize <Size> -PickupDirectoryMaxRecipientsPerMessage <Integer> -PickupDirectoryMaxMessagesPerMinute <Integer>
+```
 
 该示例对名为 Exchange01 的邮箱服务器上的分拣目录进行以下更改：
 
@@ -57,7 +59,9 @@ _**上一次修改主题：** 2015-04-08_
 
 <!-- end list -->
 
+```powershell
     Set-TransportService Exchange01 -PickupDirectoryPath "D:\Pickup Directory" -PickupDirectoryMaxHeaderSize 96KB -PickupDirectoryMaxRecipientsPerMessage 250 -PickupDirectoryMaxMessagesPerMinute 200
+```
 
 > [!NOTE]  
 > <ul>
@@ -70,7 +74,9 @@ _**上一次修改主题：** 2015-04-08_
 
 若要配置重播目录，请使用下面的语法。
 
+```powershell
     Set-TransportService <ServerIdentity> -ReplayDirectoryPath "C:\Replay Directory" <LocalFilePath> -PickupDirectoryMaxMessagesPerMinute <Integer>
+```
 
 该示例对名为 Exchange01 的邮箱服务器上的重播目录进行以下更改：
 
@@ -80,7 +86,9 @@ _**上一次修改主题：** 2015-04-08_
 
 <!-- end list -->
 
+```powershell
     Set-TransportService Exchange01 -ReplayDirectoryPath "D:\Replay Directory" -PickupDirectoryMaxMessagesPerMinute 200
+```
 
 > [!NOTE]  
 > <ul>
@@ -95,7 +103,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
+    ```powershell
         Get-TransportService <ServerIdentity> | Format-List Pickup*,Replay*
+    ```
 
 2.  验证显示的值是否为您配置的值。
 

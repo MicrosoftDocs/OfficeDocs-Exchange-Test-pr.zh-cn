@@ -166,7 +166,7 @@ MAPI over HTTP 为支持它的客户端提供以下益处：
         
           - **变量名称**   `COMPLUS_DisableRetStructPinning`
         
-          - **变量值**   1
+          - **变量值**   
     
     3.  完成后，单击“确定”。
 
@@ -178,7 +178,9 @@ MAPI over HTTP 为支持它的客户端提供以下益处：
     
     例如，若要通过将内部 URL 值设置为 https://contoso.com/mapi，将身份验证方法设置为 `Negotiate`，从而在本地 Exchange Server 上配置默认 MAPI 虚拟目录，请运行以下命令：
     
+       ```PowerShell
         Set-MapiVirtualDirectory -Identity "Contoso\mapi (Default Web Site)" -InternalUrl https://Contoso.com/mapi -IISAuthenticationMethods Negotiate
+       ```
 
 2.  **证书配置**   Exchange 环境使用的数字证书必须包括在 MAPI 虚拟目录中定义的相同的 *InternalURL* 和 *ExternalURL* 值。有关 Exchange 2013 证书管理的详细信息，请参阅[数字证书和 SSL](digital-certificates-and-ssl-exchange-2013-help.md)。确保 Exchange 证书在 Outlook 客户端工作站上受信任，且没有证书错误，访问在 MAPI 虚拟目录中配置的 URL 时更须如此。
 
@@ -188,7 +190,9 @@ MAPI over HTTP 为支持它的客户端提供以下益处：
     
     运行以下命令：
     
-        Set-OrganizationConfig -MapiHttpEnabled $true
+    ```powershell
+    Set-OrganizationConfig -MapiHttpEnabled $true
+    ```
 
 ## 测试 MAPI over HTTP 连接
 
@@ -196,13 +200,17 @@ MAPI over HTTP 为支持它的客户端提供以下益处：
 
 以下示例测试来自名为 ContosoMail 的 Exchange Server 的 MAPI over HTTP 连接。
 
-    Test-OutlookConnectivity -RunFromServerId ContosoMail -ProbeIdentity OutlookMapiHttpSelfTestProbe
+```powershell
+Test-OutlookConnectivity -RunFromServerId ContosoMail -ProbeIdentity OutlookMapiHttpSelfTestProbe
+```
 
 测试成功将返回类似于以下示例的输出：
 
+   ```PowerShell  
     MonitorIdentity                                          StartTime              EndTime                Result      Error     Exception
     ---------------                                          ---------              -------                ------      -----     ---------
     OutlookMapiHttp.Protocol\OutlookMapiHttpSelfTestProbe    2/14/2014 7:15:00 AM   2/14/2014 7:15:10 AM   Succeeded
+   ```
 
 有关详细信息，请参阅 [Test-OutlookConnectivity](https://technet.microsoft.com/zh-cn/library/dd638082\(v=exchg.150\))。
 

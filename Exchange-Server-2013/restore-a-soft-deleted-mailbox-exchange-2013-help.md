@@ -41,13 +41,17 @@ _**上一次修改主题：** 2012-11-29_
 
   - 运行以下命令，验证要连接用户帐户的软删除邮箱仍位于邮箱数据库中，且不是已禁用邮箱。
     
+    ```powershell
         Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,DisconnectReason,DisconnectDate
-    
+    ```
+
     软删除邮箱必须位于邮箱数据库中，且 *DisconnectReason* 属性值必须为 `SoftDeleted`。 如果邮箱已从数据库中清除，则命令不会返回任何结果。
     
     或者，运行以下命令显示组织中的所有软删除邮箱。
     
+    ```powershell
         Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | fl DisplayName,DisconnectReason,DisconnectDate
+    ```
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
@@ -61,15 +65,21 @@ _**上一次修改主题：** 2012-11-29_
 
 若要创建邮箱还原请求，则必须使用显示名、邮箱 GUID 或软删除邮箱的旧版可分辨名称 (DN)。 使用 **Get-MailboxStatistics** cmdlet，显示要还原的软删除邮箱的 **DisplayName**、**MailboxGuid** 和 **LegacyDN** 属性值。 例如，运行以下命令可为组织中所有已禁用邮箱和软删除邮箱返回此信息。
 
+```powershell
     Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "SoftDeleted"} | fl DisplayName,MailboxGuid,LegacyDN,Database
+```
 
 此示例可将 *SourceStoreMailbox* 参数中由显示名标识、且位于 MBXDB01 邮箱数据库中的软删除邮箱还原至名为 Debra Garcia 的目标邮箱。 我们使用了 *AllowLegacyDNMismatch* 参数，以便源邮箱能够还原至一个与软删除邮箱没有相同旧版 DN 值的邮箱中。
 
+```powershell
     New-MailboxRestoreRequest -SourceStoreMailbox "Debra Garcia" -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+```
 
 本示例将 Pilar Pinilla 的软删除存档邮箱（由邮箱 GUID 标识）还原至其当前的存档邮箱中。 *AllowLegacyDNMismatch* 参数并非必要参数，这是因为主邮箱及其对应的存档邮箱均具有相同的旧版 DN。
 
+```powershell
     New-MailboxRestoreRequest -SourceStoreMailbox dc35895a-a628-4bba-9aa9-650f5cdb9ae7 -SourceDatabase MBXDB02 -TargetMailbox pilarp@contoso.com -TargetIsArchive
+```
 
 有关语法和参数的详细信息，请参阅 [New-MailboxRestoreRequest](https://technet.microsoft.com/zh-cn/library/ff829875\(v=exchg.150\))。
 

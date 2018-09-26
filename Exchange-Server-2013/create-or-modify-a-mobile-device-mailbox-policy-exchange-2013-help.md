@@ -69,7 +69,9 @@ _**上一次修改主题：** 2012-10-16_
 
 1.  在此命令行管理程序中，运行以下命令。
     
+    ```powershell
         New-MobileDeviceMailboxPolicy -Name:"Management" -AllowBluetooth:$true -AllowBrowser:$true -AllowCamera:$true -AllowPOPIMAPEmail:$false -PasswordEnabled:$true -AlphanumericPasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:10 -AllowWiFi:$true -AllowStorageCard:$true -AllowPOPIMAPEmail:$false
+    ```  
 
 ## 您如何知道这有效？
 
@@ -79,7 +81,9 @@ _**上一次修改主题：** 2012-10-16_
 
 2.  在此命令行管理程序中，运行以下命令。
     
+    ```powershell
         Get-MobileDeviceMailboxPolicy -Identity <PolicyName> 
+    ```
 
 ## 编辑现有移动设备邮箱策略
 
@@ -113,7 +117,9 @@ _**上一次修改主题：** 2012-10-16_
 
 1.  在此命令行管理程序中，运行以下命令。
     
+    ```powershell
         Set-MobileDeviceMailboxPolicy -Identity:Default -DevicePasswordEnabled:$true -AlphanumericDevicePasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:ThreeDays -AllowWiFi:$false -AllowStorageCard:$true -AllowPOPIMAPEmail:$false -IsDefault:$true -AllowTextMessaging:$true -Confirm:$true
+    ```
 
 ## 您如何知道这有效？
 
@@ -123,5 +129,7 @@ _**上一次修改主题：** 2012-10-16_
 
 2.  在此命令行管理程序中，运行以下命令。
     
+    ```powershell
         Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
+    ```
 

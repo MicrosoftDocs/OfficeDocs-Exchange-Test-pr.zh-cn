@@ -115,7 +115,9 @@ _**上一次修改主题：** 2013-01-17_
 
 可以使用 **Get-Message** cmdlet 查看当前正在排队等待传递的邮件的属性。以下示例将当前处于重试状态的所有邮件的发件人地址、收件人、主题和接收日期信息制成表格：
 
+```powershell
     Get-Message -IncludeRecipientInfo -Filter {Status -eq "Retry"} | Format-Table FromAddress,Recipients,Subject,DateReceived
+```
 
 有关语法和参数的详细信息，请参阅[Get-Message](https://technet.microsoft.com/zh-cn/library/bb124738\(v=exchg.150\))。
 

@@ -49,15 +49,21 @@ _**上一次修改主题：** 2016-12-09_
 
 1.  使用 [Get-MailboxDatabase](https://technet.microsoft.com/zh-cn/library/bb124924\(v=exchg.150\)) cmdlet 为要恢复的服务器上的任何邮箱数据库副本检索所有重播延迟和截断延迟设置：
     
-        Get-MailboxDatabase DB1 | Format-List *lag*
+    ```powershell
+    Get-MailboxDatabase DB1 | Format-List *lag*
+    ```
 
 2.  使用 [Remove-MailboxDatabaseCopy](https://technet.microsoft.com/zh-cn/library/dd335119\(v=exchg.150\)) cmdlet 删除要恢复的服务器上的所有邮箱数据库副本：
     
-        Remove-MailboxDatabaseCopy DB1\MBX1
+    ```powershell
+    Remove-MailboxDatabaseCopy DB1\MBX1
+    ```
 
 3.  使用 [Remove-DatabaseAvailabilityGroupServer](https://technet.microsoft.com/zh-cn/library/dd297956\(v=exchg.150\)) cmdlet 从 DAG 中删除故障服务器的配置：
     
-        Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+    ```powershell
+    Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+    ```
     
     > [!NOTE]  
     > 如果要删除的 DAG 成员处于脱机状态，并且无法将其联机，则必须向上述命令中添加 <em>ConfigurationOnly</em> 参数。如果使用 <em>ConfigurationOnly</em> 开关，则必须从群集手动退出节点。
@@ -67,29 +73,38 @@ _**上一次修改主题：** 2016-12-09_
 
 5.  打开命令提示符窗口。使用原始安装媒体运行以下命令：
     
-        Setup /m:RecoverServer
+    ```powershell
+    Setup /m:RecoverServer
+    ```
 
 6.  安装恢复过程完成后，使用 [Add-DatabaseAvailabilityGroupServer](https://technet.microsoft.com/zh-cn/library/dd298049\(v=exchg.150\)) cmdlet 将恢复后的服务器添加到 DAG 中：
     
-        Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+    ```powershell
+    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+    ```
 
 7.  将服务器添加回 DAG 后，可以使用 [Add-MailboxDatabaseCopy](https://technet.microsoft.com/zh-cn/library/dd298105\(v=exchg.150\)) cmdlet 重新配置邮箱数据库副本。如果以前添加的任何数据库副本的重播延迟或截断延迟时间大于 0，可以使用 [Add-MailboxDatabaseCopy](https://technet.microsoft.com/zh-cn/library/dd298105\(v=exchg.150\)) cmdlet 的 *ReplayLagTime* 和 *TruncationLagTime* 参数重新配置这些设置：
     
+    ```powershell
         Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX1
         Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00
         Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00 -TruncationLagTime 3.00:00:00
+    ```
 
 ## 您如何知道这有效？
 
 若要验证是否成功恢复了 DAG 成员，请执行以下操作：
 
   - 在命令行管理程序中，运行以下命令验证恢复后的 DAG 成员的运行状况和状态。
-       ```
-        Test-ReplicationHealth <ServerName>
-       ```
-       ```
-        Get-MailboxDatabaseCopyStatus -Server <ServerName>
-       ```
+
+    ```powershell
+    Test-ReplicationHealth <ServerName>
+    ```
+    
+    ```powershell
+    Get-MailboxDatabaseCopyStatus -Server <ServerName>
+    ```
+
 
     所有复制运行状态测试都应成功通过，并且数据库及其内容索引的状态都应当正常。
 

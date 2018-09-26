@@ -45,7 +45,9 @@ _**上一次修改主题：** 2014-12-16_
 > 运行此命令仅启动更新进程。更新 GAL 可能需要数小时的时间。
 
 
-    Update-GlobalAddressList -Identity "Fourth Coffee"
+```powershell
+Update-GlobalAddressList -Identity "Fourth Coffee"
+```
 
 有关语法和参数的详细信息，请参阅 [Update-GlobalAddressList](https://technet.microsoft.com/zh-cn/library/aa998806\(v=exchg.150\))。
 

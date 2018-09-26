@@ -37,7 +37,9 @@ _**上一次修改主题：** 2015-04-08_
 
 使用 **Set-OrganizationConfig** cmdlet 在组织中启用或禁用邮件提示。安装新的 Exchange 组织时，默认情况下，已启用邮件提示。本示例演示如何在组织中启用邮件提示。
 
-    Set-OrganizationConfig -MailTipsAllTipsEnabled $true
+```powershell
+Set-OrganizationConfig -MailTipsAllTipsEnabled $true
+```
 
 有关语法和参数的详细信息，请参阅 [Set-OrganizationConfig](https://technet.microsoft.com/zh-cn/library/aa997443\(v=exchg.150\))。
 

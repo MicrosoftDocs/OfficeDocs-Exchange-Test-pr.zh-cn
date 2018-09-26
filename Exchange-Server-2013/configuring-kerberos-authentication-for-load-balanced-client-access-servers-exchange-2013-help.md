@@ -1,4 +1,4 @@
----
+﻿---
 title: '为负载平衡的客户端访问服务器配置 Kerberos 身份验证: Exchange 2013 Help'
 TOCTitle: 为负载平衡的客户端访问服务器配置 Kerberos 身份验证
 ms:assetid: 8f4faeea-a825-438d-97dc-1c398ce7aba5
@@ -49,25 +49,35 @@ _**上一次修改主题：** 2016-12-09_
     
     使用 **Import-Module** cmdlet 导入 Active Directory 模块。
     
-        Import-Module ActiveDirectory
+    ```powershell
+    Import-Module ActiveDirectory
+    ```
 
 2.  使用 **New-ADComputer** cmdlet 新建一个使用此 cmdlet 语法的 Active Directory 计算机帐户：
     
-        New-ADComputer [-Name] <string> [-AccountPassword <SecureString>] [-AllowReversiblePasswordEncryption <System.Nullable[boolean]>] [-Description <string>] [-Enabled <System.Nullable[bool]>]
+    ```powershell
+    New-ADComputer [-Name] <string> [-AccountPassword <SecureString>] [-AllowReversiblePasswordEncryption <System.Nullable[boolean]>] [-Description <string>] [-Enabled <System.Nullable[bool]>]
+    ```    
     
     **示例：** 
     
-        New-ADComputer -Name EXCH2013ASA -AccountPassword (Read-Host 'Enter password' -AsSecureString) -Description 'Alternate Service Account credentials for Exchange' -Enabled:$True -SamAccountName EXCH2013ASA
+    ```powershell
+    New-ADComputer -Name EXCH2013ASA -AccountPassword (Read-Host 'Enter password' -AsSecureString) -Description 'Alternate Service Account credentials for Exchange' -Enabled:$True -SamAccountName EXCH2013ASA
+    ```
     
     其中 *EXCH2013ASA* 是帐户名称，描述 *Alternate Service Account credentials for Exchange* 可以为您需要的任何内容，*SamAccountName* 参数的值（在本示例中为 *EXCH2013ASA*）在目录中必须唯一。
 
 3.  使用以下 cmdlet 语法，通过 **Set-ADComputer** cmdlet 启用由 Kerberos 使用的 AES 256 加密密码支持：
     
-        Set-ADComputer [-Name] <string> [-add @{<attributename>="<value>"]
+    ```powershell
+    Set-ADComputer [-Name] <string> [-add @{<attributename>="<value>"]
+    ```
     
     **示例：** 
     
-        Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
+    ```powershell
+    Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
+    ```
     
     其中 *EXCH2013ASA* 是帐户名称，要修改的属性是十进制值为 28 的 *msDS-SupportedEncryptionTypes*，允许以下密码：RC4-HMAC、AES128-CTS-HMAC-SHA1-96、AES256-CTS-HMAC-SHA1-96。
 
@@ -141,12 +151,15 @@ SPN 值必须与网络负载平衡器（而不是单个服务器）的服务名�
 
 3.  运行以下命令，将 ASA 凭据部署到第一台 Exchange 2013 客户端访问服务器：
     
-        .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-1.corp.tailspintoys.com -GenerateNewPasswordFor tailspin\EXCH2013ASA$
+    ```PowerShell
+    .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-1.corp.tailspintoys.com -GenerateNewPasswordFor tailspin\EXCH2013ASA$
+    ```
 
 4.  当系统询问您是否要更改备用服务帐户的密码时，回答\&quot;是\&quot;。
 
 下面是当您运行 RollAlternateServiceAccountPassword.ps1 脚本时显示的输出示例。
 
+```PowerShell
     ========== Starting at 01/12/2015 10:17:47 ==========
     Creating a new session for implicit remoting of "Get-ExchangeServer" command...
     Destination servers that will be updated:
@@ -197,6 +210,9 @@ SPN 值必须与网络负载平衡器（而不是单个服务器）的服务名�
     
             THE SCRIPT HAS SUCCEEDED
 
+```
+
+
 ## 将 ASA 凭据部署到其他 Exchange 2013 客户端访问服务器
 
 1.  在 Exchange 2013 服务器上打开 Exchange 命令行管理程序。
@@ -205,12 +221,15 @@ SPN 值必须与网络负载平衡器（而不是单个服务器）的服务名�
 
 3.  运行以下命令，将 ASA 凭据部署到另一台 Exchange 2013 客户端访问服务器：
     
-        .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-2.corp.tailspintoys.com -CopyFrom cas-1.corp.tailspintoys.com
+    ```PowerShell
+    .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-2.corp.tailspintoys.com -CopyFrom cas-1.corp.tailspintoys.com
+    ```
 
 4.  对于要将 ASA 凭据部署到其中的每个客户端访问服务器，重复步骤 3。
 
 下面是当您运行 RollAlternateServiceAccountPassword.ps1 脚本时显示的输出示例。
 
+```PowerShell
     ========== Starting at 01/12/2015 10:34:35 ==========
     Destination servers that will be updated:
     
@@ -251,6 +270,7 @@ SPN 值必须与网络负载平衡器（而不是单个服务器）的服务名�
     ========== Finished at 01/12/2015 10:38:13 ==========
     
             THE SCRIPT HAS SUCCEEDED
+```            
 
 ## 验证 ASA 凭据的部署
 
@@ -258,23 +278,29 @@ SPN 值必须与网络负载平衡器（而不是单个服务器）的服务名�
 
   - 运行以下命令，检查客户端访问服务器上的设置。
     
-        Get-ClientAccessServer CAS-3 -IncludeAlternateServiceAccountCredentialStatus | Format-List Name, AlternateServiceAccountConfiguration
+    ```PowerShell
+    Get-ClientAccessServer CAS-3 -IncludeAlternateServiceAccountCredentialStatus | Format-List Name, AlternateServiceAccountConfiguration
+    ```
 
   - 对于要验证 ASA 凭据部署的每个客户端访问服务器，重复步骤 2。
 
 下面是当未设置之前的 ASA 凭据，运行上述 Get-ClientAccessServer 命令时显示的输出示例。
 
+```PowerShell    
     Name                                 : CAS-1
     AlternateServiceAccountConfiguration : Latest: 1/12/2015 10:19:22 AM, tailspin\EXCH2013ASA$
                                            Previous: <Not set>
                                                ...
+```                                               
 
 下面是当之前设置了 ASA 凭据，运行上述 Get-ClientAccessServer 命令时显示的输出示例。返回之前的 ASA 凭据以及设置凭据的日期和时间。
 
+```PowerShell
     Name                                 : CAS-3
     AlternateServiceAccountConfiguration : Latest: 1/12/2015 10:19:22 AM, tailspin\EXCH2013ASA$
                                            Previous: 7/15/2014 12:58:35 PM, tailspin\oldSharedServiceAccountName$
                                                ...
+```                                               
 
 ## 将服务主体名称 (SPN) 与 ASA 凭据相关联
 
@@ -290,11 +316,15 @@ SPN 值必须与网络负载平衡器（而不是单个服务器）的服务名�
 
 2.  在命令提示符处，键入以下命令：
     
-        setspn -F -Q <SPN>
+    ```powershell
+    setspn -F -Q <SPN>
+    ```
     
     其中 \<SPN\> 是您希望与 ASA 凭据相关联的 SPN。例如：
     
-        setspn -F -Q http/mail.corp.tailspintoys.com
+    ```powershell
+    setspn -F -Q http/mail.corp.tailspintoys.com
+    ```
     
     该命令不应返回任何内容。如果该命令返回内容，则表明另一个帐户已与 SPN 关联。对于您希望与 ASA 凭据关联的每个 SPN，重复此步骤。
 
@@ -304,11 +334,15 @@ SPN 值必须与网络负载平衡器（而不是单个服务器）的服务名�
 
 2.  在命令提示符处，键入以下命令：
     
-        setspn -S <SPN> <Account>$
+    ```powershell
+    setspn -S <SPN> <Account>$
+    ```
     
     其中 \<SPN\> 是您希望与 ASA 凭据相关联的 SPN，\<Account\> 是与 ASA 凭据相关联的帐户。例如：
     
-        setspn -S http/mail.corp.tailspintoys.com tailspin\EXCH2013ASA$
+    ```powershell
+    setspn -S http/mail.corp.tailspintoys.com tailspin\EXCH2013ASA$
+    ```
     
     对于您希望与 ASA 凭据关联的每个 SPN，运行此命令。
 
@@ -318,11 +352,15 @@ SPN 值必须与网络负载平衡器（而不是单个服务器）的服务名�
 
 2.  在命令提示符处，键入以下命令：
     
-        setspn -L <Account>$
+    ```powershell
+    setspn -L <Account>$
+    ```
     
     其中 \<Account\> 是与 ASA 凭据关联的帐户。例如：
     
-        setspn -L tailspin\EXCH2013ASA$
+    ```powershell
+    setspn -L tailspin\EXCH2013ASA$
+    ```
     
     此命令只需运行一次。
 
@@ -332,11 +370,15 @@ SPN 值必须与网络负载平衡器（而不是单个服务器）的服务名�
 
 2.  若要为 Outlook 无处不在 客户端启用 Kerberos 身份验证，请在您的客户端访问服务器上运行以下命令：
     
-        Get-OutlookAnywhere -server CAS-1 | Set-OutlookAnywhere -InternalClientAuthenticationMethod  Negotiate
+    ```PowerShell
+    Get-OutlookAnywhere -server CAS-1 | Set-OutlookAnywhere -InternalClientAuthenticationMethod  Negotiate
+    ```       
 
 3.  若要为 MAPI over HTTP 客户端启用 Kerberos 身份验证，请在 Exchange 2013 客户端访问服务器上运行以下命令：
     
-        Get-MapiVirtualDirectory -Server CAS-1 | Set-MapiVirtualDirectory -IISAuthenticationMethods Ntlm, Negotiate
+    ```PowerShell
+    Get-MapiVirtualDirectory -Server CAS-1 | Set-MapiVirtualDirectory -IISAuthenticationMethods Ntlm, Negotiate
+    ```
 
 4.  对于要启用 Kerberos 身份验证的每个 Exchange 2013 客户端访问服务器，重复步骤 2 和 3。
 
@@ -368,7 +410,9 @@ SPN 值必须与网络负载平衡器（而不是单个服务器）的服务名�
 
 2.  打开最新的日志文件，查找 **Negotiate** 一词，日志文件中的行应如以下示例所示：
     
+    ```PowerShell
         2014-02-19T13:30:49.219Z,e19d08f4-e04c-42da-a6be-b7484b396db0,15,0,775,22,,RpcHttp,mail.corp.tailspintoys.com,/rpc/rpcproxy.dll,,Negotiate,True,tailspin\Wendy,tailspintoys.com,MailboxGuid~ad44b1e0-e44f-4a16-9396-3a437f594f88,MSRPC,192.168.1.77,EXCH1,200,200,,RPC_OUT_DATA,Proxy,exch2.tailspintoys.com,15.00.0775.000,IntraForest,MailboxGuidWithDomain,,,,76,462,1,,1,1,,0,,0,,0,0,16272.3359,0,0,3,0,23,0,25,0,16280,1,16274,16230,16233,16234,16282,?ad44b1e0-e44f-4a16-9396-3a437f594f88@tailspintoys.com:6001,,BeginRequest=2014-02-19T13:30:32.946Z;BeginGetRequestStream=2014-02-19T13:30:32.946Z;OnRequestStreamReady=2014-02-19T13:30:32.946Z;BeginGetResponse=2014-02-19T13:30:32.946Z;OnResponseReady=2014-02-19T13:30:32.977Z;EndGetResponse=2014-02-19T13:30:32.977Z;,PossibleException=IOException;
+    ```
     
     如果您看到 **AuthenticationType** 值为 **Negotiate**，说明服务器已成功创建经过 Kerberos 身份验证的连接。
 
@@ -384,7 +428,9 @@ SPN 值必须与网络负载平衡器（而不是单个服务器）的服务名�
 
 1.  在 Exchange 2013 服务器上打开 Exchange 命令行管理程序，并运行以下命令：
     
-        Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials
+    ```powershell
+    Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials
+    ```
 
 2.  虽然您不必立即执行此操作，但您最后应重新启动所有客户端计算机，从计算机中清除 Kerberos 票证缓存。
 

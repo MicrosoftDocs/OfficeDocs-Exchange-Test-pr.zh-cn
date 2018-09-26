@@ -59,31 +59,43 @@ _**上一次修改主题：** 2014-12-16_
 
 1.  在命令提示符窗口中，通过运行以下命令在记事本中打开 EdgeTransport.exe.config 文件：
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 2.  添加 `<appSettings>` 部分中的一个或两个键。
     
+    ```powershell
         <add key="QueueLoggingThreshold" value="<integer>" />
         <add key="QueueLoggingInterval" value="<hh:mm:ss>" />
-    
+    ```
+
     例如，若要将 **QueueLoggingThreshold** 值设置为 1，将 **QueueLoggingInterval** 值设置为 30 秒，使用下列值：
     
+    ```powershell
         <add key="QueueLoggingThreshold" value="1" />
         <add key="QueueLoggingInterval" value="00:00:30" />
+    ```
 
 3.  完成后，保存并关闭 EdgeTransport.exe.config 文件。
 
 4.  通过运行以下命令重新启动 Microsoft Exchange 传输服务：
     
+    ```powershell
         net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 
 5.  若要在 Exchange 命令行管理程序中更改 *QueueDiagnosticsAggregationInterval* 参数的值，使用以下语法：
     
-        Set-TransportConfig -QueueDiagnosticsAggregationInterval <hh:mm:ss>
+    ```powershell
+    Set-TransportConfig -QueueDiagnosticsAggregationInterval <hh:mm:ss>
+    ```
     
     例如，若要将值更改为 30 秒，请运行以下命令：
     
-        Set-TransportConfig -QueueDiagnosticsAggregationInterval 00:00:30
+    ```powershell
+    Set-TransportConfig -QueueDiagnosticsAggregationInterval 00:00:30
+    ```
 
 ## 您如何知道这有效？
 
@@ -93,5 +105,6 @@ _**上一次修改主题：** 2014-12-16_
 
 2.  通过运行以下命令验证 *QueueDiagnosticsAggregationInterval* 参数的值：
     
+    ```powershell
         Get-TransportConfig | Format-List *queue*
-
+    ```

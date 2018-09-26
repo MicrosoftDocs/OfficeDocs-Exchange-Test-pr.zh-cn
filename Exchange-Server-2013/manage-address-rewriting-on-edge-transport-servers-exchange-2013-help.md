@@ -57,13 +57,17 @@ _**上一次修改主题：** 2015-04-08_
 
 若要禁用地址重写，请运行以下命令：
 
+```powershell
     Disable-TransportAgent "Address Rewriting Inbound Agent"
     Disable-TransportAgent "Address Rewriting Outbound Agent"
+```
 
 若要启用地址重写，请运行以下命令：
 
+```powershell
     Enable-TransportAgent "Address Rewriting Inbound Agent"
     Enable-TransportAgent "Address Rewriting Outbound Agent"
+```
 
 ## 您如何知道这有效？
 
@@ -71,7 +75,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-TransportAgent
+    ```powershell
+    Get-TransportAgent
+    ```
 
 2.  验证地址重写入站和出站代理的 **Enabled** 属性值是否为您所配置的值。
 
@@ -79,15 +85,21 @@ _**上一次修改主题：** 2015-04-08_
 
 若要查看所有地址重写条目的摘要列表，请运行以下命令。
 
-    Get-AddressRewriteEntry
+```powershell
+Get-AddressRewriteEntry
+```
 
 若要查看地址重写条目的详细信息，请使用以下语法。
 
-    Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List
+```powershell
+Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List
+```
 
 以下示例显示“Contoso.com 重写为 Northwindtraders.com”地址重写条目的详细信息：
 
-    Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-List
+```powershell
+Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-List
+```
 
 ## 使用命令行管理程序创建地址重写条目
 
@@ -95,39 +107,55 @@ _**上一次修改主题：** 2015-04-08_
 
 若要重写单个收件人的电子邮件地址，请使用以下语法：
 
+```powershell
     New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress <internal email address> -ExternalAddress <external email address> [-OutboundOnly <$true | $false>]
+```
 
 以下示例重写收件人 joe@contoso.com 的进入和离开 Exchange 组织的所有邮件的电子邮件地址。重写的出站邮件看起来好像来自 support@nortwindtraders.com。发送到 support@northwindtraders.com 的入站邮件重写为发送到 joe@contoso.com，以发送至相应的收件人（默认情况下，*OutboundOnly* 参数的值为 `$false`）。
 
+```powershell
     New-AddressRewriteEntry -Name "joe@contoso.com to support@northwindtraders.com" -InternalAddress joe@contoso.com -ExternalAddress support@northwindtraders.com
+```
 
 ## 重写单个域或子域中的收件人的电子邮件地址
 
 若要重写单个域或子域中的收件人的电子邮件地址，请使用以下语法：
 
+```powershell
     New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress <domain or subdomain> -ExternalAddress <domain> [-OutboundOnly <$true | $false>]
+```
 
 以下示例重写 contoso.com 域中收件人的进入和离开 Exchange 组织的所有邮件的电子邮件地址。重写的出站邮件看起来好像来自 fabrikam.com 域。发送到 fabrikam.com 电子邮件地址的入站邮件重写为发送到 contoso.com，以发送至相应的收件人（默认情况下，*OutboundOnly* 参数的值为 `$false`）。
 
+```powershell
     New-AddressRewriteEntry -Name "Contoso to Fabrikam" -InternalAddress contoso.com -ExternalAddress fabrikam.com
+```
 
 以下示例重写 sales.contoso.com 子域中收件人发送的离开 Exchange 组织的所有邮件的电子邮件地址。重写的出站邮件看起来好像来自 contoso.com 域。发送到 contoso.com 电子邮件地址的入站邮件不会得到重写。
 
+```powershell
     New-AddressRewriteEntry -Name "sales.contoso.com to contoso.com" -InternalAddress sales.contoso.com -ExternalAddress contoso.com -OutboundOnly $true
+```
 
 ## 重写多个子域中的收件人的电子邮件地址
 
 若要重写某个域及其所有子域中的收件人的电子邮件地址，请使用以下语法。
 
+```powershell
     New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress *.<domain> -ExternalAddress <domain> -OutboundOnly $true [-ExceptionList <domain1,domain2...>]
+```
 
 以下示例重写 contoso.com 域及其所有子域中收件人发送的离开 Exchange 组织的所有邮件的电子邮件地址。重写的出站邮件看起来好像来自 contoso.com 域。发送到 contoso.com 收件人的入站邮件无法重写，因为在 *InternalAddress* 参数中使用了通配符。
 
+```powershell
     New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true
+```
 
 以下示例与上一示例类似，不同之处在于现在由 legal.contoso.com 和 corp.contoso.com 子域中的收件人发送的邮件不再会进行重写：
 
+```powershell
     New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains except legal.contoso.com and corp.contoso.com" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true -ExceptionList legal.contoso.com,corp.contoso.com
+```
 
 ## 您如何知道这有效？
 
@@ -147,7 +175,9 @@ _**上一次修改主题：** 2015-04-08_
 
 若要修改可重写单个收件人的电子邮件地址的地址重写条目，请使用以下语法：
 
+```powershell
     Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress <internal email address> -ExternalAddress <external email address> -OutboundOnly <$true | $false>
+```
 
 以下示例修改单个收件人地址重写条目“joe@contoso.com 重写为 support@nortwindtraders.com”的下列属性：
 
@@ -159,39 +189,55 @@ _**上一次修改主题：** 2015-04-08_
 
 <!-- end list -->
 
+```powershell
     Set-AddressRewriteEntry "joe@contoso.com to support@nortwindtraders.com" -Name "joe@contoso.com to support@northwindtraders.net" -ExternalAddress support@northwindtraders.net -OutboundOnly $true
+```
 
 ## 修改单个域或子域中的收件人的地址重写条目
 
 若要修改可重写单个域或子域中的收件人的电子邮件地址的地址重写条目，请使用以下语法。
 
+```powershell
     Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress <domain or subdomain> -ExternalAddress <domain> -OutboundOnly <$true | $false>
+```
 
 以下示例更改单个域地址重写条目“Northwind Traders 重写为 Contoso”的内部地址值。
 
-    Set-AddressRewriteEntry "Northwindtraders to Contoso" -InternalAddress northwindtraders.net
+```powershell
+Set-AddressRewriteEntry "Northwindtraders to Contoso" -InternalAddress northwindtraders.net
+```
 
 ## 修改多个子域中的收件人的地址重写条目
 
 若要修改可重写某个域及其所有子域中的收件人的电子邮件地址的地址重写条目，请使用以下语法。
 
+```powershell
     Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress *.<domain> -ExternalAddress <domain> -ExceptionList <list of domains>
+```
 
 若要替换多个子域地址重写条目的现有例外列表值，请使用以下语法：
 
+```powershell
     Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -ExceptionList <domain1,domain2,...>
+```
 
 以下示例将多个子域地址重写条目“Contoso 重写为 Northwind”的现有例外列表值替换为 marketing.contoso.com 和 legal.contoso.com：
 
+```powershell
     Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList sales.contoso.com,legal.contoso.com
+```
 
 若要有选择性地添加或删除多个子域地址重写条目的例外列表值，而不用修改任何现有的例外列表值，请使用以下语法：
 
+```powershell
     Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -ExceptionList @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```
 
 以下示例在多个子域地址重写条目“Contoso 重写为 Northwind Traders”的例外列表中添加 finanace.contoso.com，并从中删除 marketing.contoso.com。
 
+```powershell
     Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList @{Add="finanace.contoso.com"; Remove="marketing.contoso.com"}
+```
 
 ## 您如何知道这有效？
 
@@ -207,27 +253,39 @@ _**上一次修改主题：** 2015-04-08_
 
 若要删除单个地址重写条目，请使用以下语法：
 
-    Remove-AddressRewriteEntry <AddressRewriteEntryIdentity>
+```powershell
+Remove-AddressRewriteEntry <AddressRewriteEntryIdentity>
+```
 
 以下示例删除名为“Contoso.com 重写为 Northwindtraders.com”的地址重写条目：
 
-    Remove-AddressRewriteEntry "Contoso.com to Northwindtraders.com"
+```powershell
+Remove-AddressRewriteEntry "Contoso.com to Northwindtraders.com"
+```
 
 若要删除多个地址重写条目，请使用以下语法：
 
-    Get-AddressRewriteEntry [<search criteria>] | Remove-AddressRewriteEntry [-WhatIf]
+```powershell
+Get-AddressRewriteEntry [<search criteria>] | Remove-AddressRewriteEntry [-WhatIf]
+```
 
 以下示例删除所有地址重写条目：
 
-    Get-AddressRewriteEntry | Remove-AddressRewriteEntry
+```powershell
+Get-AddressRewriteEntry | Remove-AddressRewriteEntry
+```
 
 以下示例模拟删除名称中包含“重写为 contoso.com”文本的地址重写条目。通过 *WhatIf* 开关，您可以在不做出任何更改的情况下预览结果。
 
-    Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry -WhatIf
+```powershell
+Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry -WhatIf
+```
 
 如果您对结果感到满意，请再次运行不包含 *WhatIf* 开关的命令来删除地址重写条目。
 
-    Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry
+```powershell
+Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry
+```
 
 ## 您如何知道这有效？
 

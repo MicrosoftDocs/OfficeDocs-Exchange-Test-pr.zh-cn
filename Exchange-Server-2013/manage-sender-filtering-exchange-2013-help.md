@@ -43,11 +43,15 @@ _**上一次修改主题：** 2015-04-08_
 
 若要禁用发件人筛选，请运行以下命令：
 
-    Set-SenderFilterConfig -Enabled $false
+```powershell
+Set-SenderFilterConfig -Enabled $false
+```
 
 若要启用发件人筛选，请运行以下命令：
 
-    Set-SenderFilterConfig -Enabled $true
+```powershell
+Set-SenderFilterConfig -Enabled $true
+```
 
 > [!NOTE]  
 > 当禁用发件人筛选时，仍会启用基础发件人筛选器代理。若要禁用发件人筛选器代理，请运行以下命令：<code>Disable-TransportAgent &quot;Sender Filter Agent&quot;</code>.
@@ -59,7 +63,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-SenderFilterConfig | Format-List Enabled
+    ```powershell
+    Get-SenderFilterConfig | Format-List Enabled
+    ```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -67,15 +73,21 @@ _**上一次修改主题：** 2015-04-08_
 
 要替换现有值，请运行以下命令：
 
-    Set-SenderFilterConfig -BlockedSenders <sender1,sender2...> -BlockedDomains <domain1,domain2...> -BlockedDomainsAndSubdomains <domain1,domain2...>
+```powershell
+Set-SenderFilterConfig -BlockedSenders <sender1,sender2...> -BlockedDomains <domain1,domain2...> -BlockedDomainsAndSubdomains <domain1,domain2...>
+```
 
 此示例将配置发件人筛选器代理，以阻止来自 kim@contoso.com 和 john@contoso.com 的邮件、来自 fabrikam.com 域的邮件以及来自 northwindtraders.com 及其所有子域的邮件。
 
-    Set-SenderFilterConfig -BlockedSenders kim@contoso.com,john@contoso.com -BlockedDomains fabrikam.com -BlockedDomainsAndSubdomains northwindtraders.com
+```powershell
+Set-SenderFilterConfig -BlockedSenders kim@contoso.com,john@contoso.com -BlockedDomains fabrikam.com -BlockedDomainsAndSubdomains northwindtraders.com
+```
 
 要在不修改任何现有值的情况下添加或删除条目，请运行以下命令：
 
-    Set-SenderFilterConfig -BlockedSenders @{Add="<sender1>","<sender2>"...; Remove="<sender1>","<sender2>"...} -BlockedDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...} -BlockedDomainsAndSubdomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```powershell
+Set-SenderFilterConfig -BlockedSenders @{Add="<sender1>","<sender2>"...; Remove="<sender1>","<sender2>"...} -BlockedDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...} -BlockedDomainsAndSubdomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```
 
 本示例将使用以下信息配置发件人筛选器代理：
 
@@ -87,7 +99,9 @@ _**上一次修改主题：** 2015-04-08_
 
 <!-- end list -->
 
-    Set-SenderFilterConfig -BlockedSenders @{Add="chris@contoso.com","michelle@contoso.com"} -BlockedDomains @{Remove="tailspintoys.com"} -BlockedDomainsAndSubdomains @{Add="blueyonderairlines.com"}
+```powershell
+Set-SenderFilterConfig -BlockedSenders @{Add="chris@contoso.com","michelle@contoso.com"} -BlockedDomains @{Remove="tailspintoys.com"} -BlockedDomainsAndSubdomains @{Add="blueyonderairlines.com"}
+```
 
 ## 您如何知道这有效？
 
@@ -95,7 +109,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-SenderFilterConfig | Format-List BlockedSenders,BlockedDomains,BlockedDomainsAndSubdomains
+    ```powershell
+    Get-SenderFilterConfig | Format-List BlockedSenders,BlockedDomains,BlockedDomainsAndSubdomains
+    ```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -103,11 +119,15 @@ _**上一次修改主题：** 2015-04-08_
 
 若要启用或禁用阻止发件人为空的邮件，请运行以下命令：
 
-    Set-SenderFilterConfig -BlankSenderBlockingenabled <$true | $false>
+```powershell
+Set-SenderFilterConfig -BlankSenderBlockingenabled <$true | $false>
+```
 
 此示例将配置发件人筛选器代理，以阻止未在 MAIL FROM:SMTP 命令中指定发件人的邮件：
 
-    Set-SenderFilterConfig -BlankSenderBlockingEnabled $true
+```powershell
+Set-SenderFilterConfig -BlankSenderBlockingEnabled $true
+```
 
 ## 您如何知道这有效？
 
@@ -115,7 +135,9 @@ _**上一次修改主题：** 2015-04-08_
 
 1.  运行以下命令：
     
-        Get-SenderFilterConfig | Format-List BlankSenderBlockingEnabled
+    ```powershell
+    Get-SenderFilterConfig | Format-List BlankSenderBlockingEnabled
+    ```
 
 2.  验证显示的值是否为您配置的值。
 

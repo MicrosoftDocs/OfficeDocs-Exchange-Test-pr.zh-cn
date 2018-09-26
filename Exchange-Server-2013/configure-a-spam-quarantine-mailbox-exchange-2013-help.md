@@ -41,11 +41,15 @@ _**上一次修改主题：** 2013-02-19_
 
 1.  运行下列命令验证 Exchange 服务器上是否已安装并启用了内容筛选器代理：
     
-        Get-TransportAgent "Content Filter Agent"
+    ```powershell
+    Get-TransportAgent "Content Filter Agent"
+    ```
 
 2.  运行下列命令验证是否已启用了内容筛选功能：
     
-        Get-ContentFilterConfig | Format-List Enabled
+    ```powershell
+    Get-ContentFilterConfig | Format-List Enabled
+    ```
 
 有关详细信息，请参阅[管理内容筛选](manage-content-filtering-exchange-2013-help.md)。
 
@@ -57,7 +61,7 @@ _**上一次修改主题：** 2013-02-19_
 
   - **创建专用的邮箱和用户帐户**   建议你创建专门的邮箱和 Active Directory 用户帐户以用于垃圾邮件隔离邮箱。有关详细信息，请参阅[创建用户邮箱](create-user-mailboxes-exchange-2013-help.md)。
     
-    根据组织的合规性策略和需要，你可以应用各种收件人策略，如邮件记录管理、邮箱配额以及委派权限。有关详细信息，请参阅[邮件记录管理](messaging-records-management-exchange-2013-help.md)。
+    根据组织的合规性策略和需要，你可以应用各种收件人策略，如邮件记录管理、邮箱配额以及委派权限。有关详细信息，请参阅[邮件记录管理](https://technet.microsoft.com/zh-cn/library/dd335093(v=exchg.150))。
     
     > [!NOTE]  
     > 如果某封隔离的邮件因为存储配额而遭到拒收，该邮件将会丢失。Exchange 不会为隔离的邮件生成 NDR，因为隔离的邮件将打包为 NDR。
@@ -71,11 +75,15 @@ _**上一次修改主题：** 2013-02-19_
 
 运行以下命令：
 
-    Set-ContentFilterConfig -QuarantineMailbox <SmtpAddress>
+```powershell
+Set-ContentFilterConfig -QuarantineMailbox <SmtpAddress>
+```
 
 本示例将所有超出垃圾邮件隔离阈值的邮件发送到 spamQ@contoso.com。
 
-    Set-ContentFilterConfig -QuarantineMailbox spamQ@contoso.com
+```powershell
+Set-ContentFilterConfig -QuarantineMailbox spamQ@contoso.com
+```
 
 ## 您如何知道此步骤有效？
 
@@ -83,7 +91,9 @@ _**上一次修改主题：** 2013-02-19_
 
 1.  运行以下命令：
     
-        Get-ContentFilterConfig | Format-List QuarantineMailbox
+    ```powershell
+    Get-ContentFilterConfig | Format-List QuarantineMailbox
+    ```
 
 2.  验证显示的值是否为您配置的值。
 

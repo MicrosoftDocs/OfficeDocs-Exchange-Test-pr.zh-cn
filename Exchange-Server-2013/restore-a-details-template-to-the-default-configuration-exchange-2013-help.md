@@ -49,7 +49,9 @@ _**上一次修改主题：** 2012-10-12_
 
 此示例将还原美国英语联系人详细信息模板。
 
-    Restore-DetailsTemplate -Identity "en-US\Contact"
+```powershell
+Restore-DetailsTemplate -Identity "en-US\Contact"
+```
 
 有关语法和参数的详细信息，请参阅 [Restore-DetailsTemplate](https://technet.microsoft.com/zh-cn/library/bb125188\(v=exchg.150\))。
 

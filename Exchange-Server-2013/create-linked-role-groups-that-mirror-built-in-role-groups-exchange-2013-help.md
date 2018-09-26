@@ -65,23 +65,33 @@ _**上一次修改主题：** 2012-10-03_
 
 2.  将外部 Active Directory 林的凭据存储在一个变量中。
     
-        $ForeignCredential = Get-Credential
+    ```powershell
+    $ForeignCredential = Get-Credential
+    ```
 
 3.  将分配到 组织管理 角色组的所有角色存储在一个变量中。
     
-        $OrgMgmt  = Get-RoleGroup "Organization Management"
+    ```powershell
+    $OrgMgmt  = Get-RoleGroup "Organization Management"
+    ```
 
 4.  创建 组织管理 链接角色组并添加分配到内置 组织管理 角色组的角色。
     
-        New-RoleGroup "Organization Management - Linked" -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles $OrgMgmt.Roles
+    ```powershell
+    New-RoleGroup "Organization Management - Linked" -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles $OrgMgmt.Roles
+    ```
 
 5.  删除新 组织管理 链接角色组与 My\* 最终用户角色之间的所有常规分配。
     
-        Get-ManagementRoleAssignment -RoleAssignee "Organization Management - Linked" -Role My* | Remove-ManagementRoleAssignment
+    ```powershell
+    Get-ManagementRoleAssignment -RoleAssignee "Organization Management - Linked" -Role My* | Remove-ManagementRoleAssignment
+    ```
 
 6.  在新 组织管理 链接角色组和所有管理角色之间添加委派角色分配。
     
-        Get-ManagementRole | New-ManagementRoleAssignment -SecurityGroup "Organization Management - Linked" -Delegating
+    ```powershell
+    Get-ManagementRole | New-ManagementRoleAssignment -SecurityGroup "Organization Management - Linked" -Delegating
+    ```
 
 本示例假定以下值分别用于每个参数：
 
@@ -91,11 +101,16 @@ _**上一次修改主题：** 2012-10-03_
 
 通过使用前面的值，本示例可将 组织管理 角色组重新创建为链接角色组。
 
-    $ForeignCredential = Get-Credential
+```powershell
+$ForeignCredential = Get-Credential
+```
+
+```powershell
     $OrgMgmt  = Get-RoleGroup "Organization Management"
     New-RoleGroup "Organization Management - Linked" -LinkedForeignGroup "Organization Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $OrgMgmt.Roles
     Get-ManagementRoleAssignment -RoleAssignee "Organization Management - Linked" -Role My* | Remove-ManagementRoleAssignment
     Get-ManagementRole | New-ManagementRoleAssignment -SecurityGroup "Organization Management - Linked" -Delegating
+```
 
 ## 创建其他所有链接角色组
 
@@ -105,16 +120,22 @@ _**上一次修改主题：** 2012-10-03_
 
 2.  外Active Directory林凭据存储在一个变量中。您只需执行一次。
     
-        $ForeignCredential = Get-Credential
+    ```powershell
+    $ForeignCredential = Get-Credential
+    ```
 
 3.  使用以下 cmdlet 检索角色组列表。
     
-        Get-RoleGroup
+    ```powershell
+    Get-RoleGroup
+    ```
 
 4.  对于每个角色组（组织管理 角色组除外），执行以下操作：
     
+    ```powershell
         $RoleGroup = Get-RoleGroup <name of role group to re-create>
         New-RoleGroup "<role group name> - Linked" -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
+    ```
 
 5.  对于每个您要将其重新创建为链接角色组的内置角色组，可重复前面的步骤。
 
@@ -130,12 +151,20 @@ _**上一次修改主题：** 2012-10-03_
 
 通过使用前面的值，本示例可将 收件人管理 和 Server Management 角色组重新创建为链接角色组。
 
-    $ForeignCredential = Get-Credential
-    Get-RoleGroup
+```powershell
+$ForeignCredential = Get-Credential
+```
+
+```powershell
+Get-RoleGroup
+```
+
+```powershell
     $RoleGroup = Get-RoleGroup "Recipient Management"
     New-RoleGroup "Recipient Management - Linked" -LinkedForeignGroup "Recipient Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
     $RoleGroup = Get-RoleGroup "Server Management"
     New-RoleGroup "Server Management - Linked" -LinkedForeignGroup "Server Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
+```
 
 ## 其他任务
 

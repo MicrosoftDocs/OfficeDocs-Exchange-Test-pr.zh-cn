@@ -49,7 +49,9 @@ _**上一次修改主题：** 2012-10-14_
 
 本示例删除地址列表“Sales Department”，它不包含子地址列表。
 
-    Remove-AddressList -Identity "Sales Department"
+```powershell
+Remove-AddressList -Identity "Sales Department"
+```
 
 键入 **Y** 确认要删除该地址列表，然后按 Enter 键。
 
@@ -59,7 +61,9 @@ _**上一次修改主题：** 2012-10-14_
 
 本示例将删除父地址列表 Departments 及其全部子地址列表。
 
-    Remove-AddressList -Identity Departments -Recursive
+```powershell
+Remove-AddressList -Identity Departments -Recursive
+```
 
 键入 **Y** 确认要删除该父地址列表及其子地址列表，然后按 Enter 键。
 

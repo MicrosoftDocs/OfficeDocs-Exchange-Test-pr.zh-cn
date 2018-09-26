@@ -46,7 +46,7 @@ Microsoft Exchange 中的 DLP 帮助您将组织特定的策略应用于敏感�
 
 2.  导入自定义模板。若要了解详细信息，请参阅[从文件导入自定义 DLP 策略模板](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)。
 
-3.  创建基于自定义模板的 DLP 策略。若要了解详细信息，请参阅[从模板创建 DLP 策略](how-to-new-dlp-data-loss-prevention-policy-template.md)。
+3.  创建基于自定义模板的 DLP 策略。若要了解详细信息，请参阅[从模板创建 DLP 策略](https://technet.microsoft.com/zh-cn/library/jj150515(v=exchg.150))。
 
 4.  重复步骤 1 和 2，更新您的自定义模板。
 
@@ -80,7 +80,7 @@ Microsoft Exchange 中的 DLP 帮助您将组织特定的策略应用于敏感�
 
 ## 详细信息
 
-[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[数据丢失预防](https://technet.microsoft.com/zh-cn/library/jj150527(v=exchg.150))
 
 [从文件导入自定义 DLP 策略模板](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)
 

@@ -59,19 +59,27 @@ _**上一次修改主题：** 2017-03-28_
 
 1.  将 Microsoft Exchange POP3 服务设置为自动启动。
     
-        Set-service msExchangePOP3 -startuptype automatic
+    ```powershell
+    Set-service msExchangePOP3 -startuptype automatic
+    ```
 
 2.  启动 Microsoft Exchange POP3 服务。
     
-        Start-service msExchangePOP3
+    ```powershell
+    Start-service msExchangePOP3
+    ```
 
 3.  将 Microsoft Exchange POP3 Backend 服务设置为自动启动。
     
-        Set-service msExchangePOP3BE -startuptype automatic
+    ```powershell
+    Set-service msExchangePOP3BE -startuptype automatic
+    ```
 
 4.  启动 Microsoft Exchange POP3 Backend 服务。
     
-        Start-service msExchangePOP3BE
+    ```powershell
+    Start-service msExchangePOP3BE
+    ```
 
 ## 您如何知道这有效？
 
