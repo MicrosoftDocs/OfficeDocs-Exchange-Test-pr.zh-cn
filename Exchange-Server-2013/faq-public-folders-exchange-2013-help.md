@@ -65,7 +65,9 @@ Resume-PublicFolderMigrationRequest \PublicFolderMigration
 
 可以通过运行位于目录 \<*Exchange 安装目录*\>\\V15\\Scripts 中的脚本 `AggregatePFData.ps1` 来生成输入 .csv 文件。脚本运行如下：
 
+```powershell
     .\AggregatePFData.ps1 | Select-Object -property @{Name="FolderName"; Expression = {$_.Identity}}, @{Name="FolderSize"; Expression = {$_.TotalItemSize.Value.ToBytes()}} | Export-CSV -Path <Path followed by the name of the CSV>
+```
 
 ## 是否会迁移现有的公用文件夹权限？
 
