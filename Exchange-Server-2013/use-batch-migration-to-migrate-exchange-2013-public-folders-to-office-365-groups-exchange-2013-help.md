@@ -201,8 +201,9 @@ _**上一次修改主题：** 2018-03-26_
   - **凭据**是 Exchange 联机用户名称和密码。
 
 <!-- end list -->
-
+```powershell
     .\AddMembersToGroups.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+```
 
 用户添加到 Office 365 中的一个组后，用户就可以开始使用它。
 
@@ -226,7 +227,9 @@ _**上一次修改主题：** 2018-03-26_
 
 <!-- end list -->
 
+```powershell
     .\LockAndSavePublicFolderProperties.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+```
 
 ## 第 7 步： 定版 Office 365 组迁移到公用文件夹
 
@@ -246,9 +249,9 @@ Remove-MigrationBatch <name of migration batch>
 
 <!-- end list -->
 
-    ```PowerShell
+```PowerShell
     New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
-    ```
+```
 
 创建新的批处理后，通过在Exchange Online PowerShell中运行下面的命令启动迁移。请注意，此步骤才是必需的`-AutoStart`参数未使用在前面的命令。
 

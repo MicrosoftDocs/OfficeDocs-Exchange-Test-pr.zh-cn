@@ -55,6 +55,6 @@ _**上一次修改主题：** 2013-04-29_
 
 此示例向统一消息和 UM 呼叫路由器服务分配证书。
 
-    ```powershell
+```powershell
         Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
-    ```
+```

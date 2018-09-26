@@ -84,36 +84,37 @@ _**上一次修改主题：** 2014-02-15_
   - 本示例修改组织的外部域 contoso.com 的共享策略 Contoso。此策略允许 Contoso 域中的用户查看简单的忙/闲信息。
     
     ```powershell
-Set-SharingPolicy -Identity Contoso -Domains 'sales.contoso.com: CalendarSharingFreeBusySimple'
-```
+    Set-SharingPolicy -Identity Contoso -Domains 'sales.contoso.com: CalendarSharingFreeBusySimple'
+    ```
 
   - 此示例将第二个域添加到共享策略 Contoso。将域添加到现有策略时，必须包括任何以前包括的域。
     
+    ```powershell
         Set-SharingPolicy -Identity Contoso -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'atlanta.contoso.com: CalendarSharingFreeBusyReviewer', 'beijing.contoso.com: CalendarSharingFreeBusyReviewer'
-
+    ```
+    
   - 此示例将共享策略 Contoso 设置为默认共享策略。
     
     ```powershell
-Set-SharingPolicy -Identity Contoso -Default $True
-```
+    Set-SharingPolicy -Identity Contoso -Default $True
+    ```
 
   - 此示例禁用共享策略 Contoso。
     
     ```powershell
-Set-SharingPolicy -Identity "Contoso" -Enabled $False
-```
+    Set-SharingPolicy -Identity "Contoso" -Enabled $False
+    ```
 
   - 第一个示例删除共享策略 Contoso。第二个示例删除共享策略 Contoso，并且禁止显示对要删除策略的确认。
-      ```
+      
     ```powershell
-Remove-SharingPolicy -Identity Contoso
-```
-      ```
-      ```
+    Remove-SharingPolicy -Identity Contoso
+    ```
+
     ```powershell
-Remove-SharingPolicy -Identity Contoso -Confirm
-```
-      ```
+    Remove-SharingPolicy -Identity Contoso -Confirm
+    ```
+      
       
 有关语法和参数的详细信息，请参阅 [Set-SharingPolicy](https://technet.microsoft.com/zh-cn/library/dd297931\(v=exchg.150\)) 和 [Remove-SharingPolicy](https://technet.microsoft.com/zh-cn/library/dd351071\(v=exchg.150\))。
 

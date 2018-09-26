@@ -45,7 +45,9 @@ _**上一次修改主题：** 2015-04-08_
 
 若要配置最大安全发件人数和阻止发件人数，请运行以下命令：
 
+```powershell
     Set-Mailbox <MailboxIdentity> -MaxSafeSenders <Integer> -MaxBlockedSenders <Integer>
+```
 
 本示例将邮箱 john@contoso.com 配置为最多具有 2000 个安全发件人和 200 个阻止发件人。
 
@@ -59,8 +61,10 @@ Set-Mailbox john@contoso.com -MaxSafeSenders 2000 -MaxBlockedSenders 200
 
 1.  运行以下命令：
     
+    ```powershell
         Get-Mailbox <Identity> | Format-List Name,Max*Senders
-
+    ```
+    
 2.  验证显示的值是否与配置的值匹配。
 
 ## 使用命令行管理程序运行 Update-Safelist 命令
@@ -84,14 +88,14 @@ Update-Safelist john@contoso.com -Type SafeSenders
 1.  运行以下命令：
     
     ```powershell
-Get-ContentFilterConfig | Format-List Enabled
-```
+    Get-ContentFilterConfig | Format-List Enabled
+    ```
 
 2.  如果输出显示 *Enabled* 参数为 `True`，则已启用内容筛选。如果未启用，请运行以下命令以在 Exchange 服务器上启用内容筛选和内容筛选器代理：
     
     ```powershell
-Set-ContentFilterConfig -Enabled $true
-```
+    Set-ContentFilterConfig -Enabled $true
+    ```
 
 ## 步骤 2：（可选）使用 ADSI 编辑器验证安全列表聚合数据到边缘传输服务器的复制
 

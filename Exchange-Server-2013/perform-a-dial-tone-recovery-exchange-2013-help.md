@@ -101,7 +101,7 @@ _**上一次修改主题：** 2014-06-27_
     $mailboxes = Get-Mailbox -Database DTDB1
     ```        
 
-    ```
+    ```powershell
     $mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
     ```
 

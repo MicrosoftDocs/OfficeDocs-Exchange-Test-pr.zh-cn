@@ -51,9 +51,12 @@ _**上一次修改主题：** 2012-11-18_
 
 此示例使客户端访问服务器 `UMCallRouter-05x.contoso.com` 能够应答从 VoIP 网关、IP PBX、支持 SIP 的 PBX 和 SBC 传入的语音、传真、自动助理和 Outlook Voice Access 呼叫，并将更改写入 UMCallRouter-05x 服务器上的注册表。
 
+```powershell
     Set-ServerComponentState -Component UnifiedMessaging -Identity UMCallRouter-05x.contoso.com -Requester Maintenance -State Active -LocalOnly
+```
 
 此示例阻止客户端访问服务器 `UMCallRouter-05x.contoso.com` 应答从 VoIP 网关、IP PBX、支持 SIP 的 PBX 和 SBC 传入的语音、传真、自动助理和 Outlook Voice Access 呼叫，并仅将更改写入 Active Directory。
 
+```powershell
     Set-ServerComponentState -Component UnifiedMessaging -Identity UMCallRouter-05x.contoso.com -Requester Maintenance -State Inactive -RemoteOnly
-
+```

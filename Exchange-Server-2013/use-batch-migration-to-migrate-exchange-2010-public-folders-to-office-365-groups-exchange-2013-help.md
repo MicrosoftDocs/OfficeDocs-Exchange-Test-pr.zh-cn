@@ -115,11 +115,11 @@ _**上一次修改主题：** 2018-04-30_
 
 示例.csv:
 
-    ```powershell
-    "FolderPath","TargetGroupMailbox"
-    "\Sales","sales@contoso.onmicrosoft.com"
-    "\Sales\EMEA","emeasales@contoso.onmicrosoft.com"
-    ```
+```powershell
+  "FolderPath","TargetGroupMailbox"
+  "\Sales","sales@contoso.onmicrosoft.com"
+  "\Sales\EMEA","emeasales@contoso.onmicrosoft.com"
+```
 
 请注意一个邮件文件夹和一个日历文件夹可以合并到 Office 365 中的单个组。但是，合并到一个组中的多个公用文件夹的任何其他情况下不支持在一个批处理中单一迁移。如果需要将多个公共文件夹映射到相同的 Office 365 组，可以通过运行应执行连续、 一个接一个的不同的迁移批来实现此目的。迁移的每个批处理中可以有多达 500 项。
 
@@ -232,7 +232,9 @@ _**上一次修改主题：** 2018-04-30_
 
 <!-- end list -->
 
+```powershell
     .\AddMembersToGroups.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+```
 
 用户添加到 Office 365 中的一个组后，用户就可以开始使用它。
 

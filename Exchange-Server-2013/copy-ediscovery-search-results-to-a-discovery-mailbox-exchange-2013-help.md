@@ -81,15 +81,18 @@ Start-MailboxSearch "Fabrikam Investigation"
 
 如果您使用 *EstimateOnly* 开关获得估计的搜索结果，就必须先删除此开关，然后才可以复制搜索结果。您还必须指定向其复制搜索结果的发现邮箱。例如，如果您通过使用以下命令创建仅执行估计的搜索：
 
+```powershell
     New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeUnsearchableItems
+```
 
 若要将此搜索的结果复制到发现邮箱，需要运行以下命令：
-  ```
-  Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
-  ```
-  ```
-  Start-MailboxSearch "FY13 Q2 Financial Results"
-  ```
+
+```powershell
+Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
+```
+```powershell
+Start-MailboxSearch "FY13 Q2 Financial Results"
+```
 
 ## 有关复制搜索结果的详细信息
 

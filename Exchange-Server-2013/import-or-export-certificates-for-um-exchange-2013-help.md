@@ -65,7 +65,9 @@ _**上一次修改主题：** 2013-12-18_
 
 该示例在提示您输入用户名和密码后，将 Thumbprint A36DE2B9B62980A717EBD0C3052F5F0B08FBFFCC 的证书导出到一个文件中。
 
+```powershell
     $file = Export-ExchangeCertificate -Thumbprint A36DE2B9B62980A717EBD0C3052F5F0B08FBFFCC -BinaryEncoded:$true -Password (Get-Credential).password
+```
 
 本示例执行以下操作：
 
@@ -76,14 +78,14 @@ _**上一次修改主题：** 2013-12-18_
 3.  输入用户名和密码后将证书输出至一个文件中。
 
 <!-- end list -->
-  ```
-    $file = Get-ExchangeCertificate -DomainName umcorp.northwindtraders.com | Export-ExchangeCertificate -BinaryEncoded:$true -Password (Get-Credential).password
-  ```
-  ```
+```powershell
+$file = Get-ExchangeCertificate -DomainName umcorp.northwindtraders.com | Export-ExchangeCertificate -BinaryEncoded:$true -Password (Get-Credential).password
+```
+
 ```powershell
 Set-Content -Path "d:\umcerts\selfsigned.pfx" -Value $file.FileData =Encoding Byte
 ```
-  ```
+  
   
 ## 使用 EAC 导入证书
 
@@ -97,5 +99,6 @@ Set-Content -Path "d:\umcerts\selfsigned.pfx" -Value $file.FileData =Encoding By
 
 本示例在您输入用户名和密码后将证书从 d:\\certificates\\exchange\\SelfSignedUMCert.pfx 证书文件导入。
 
+```powershell
     Import-ExchangeCertificate -FileData ([Byte[]]$(Get-Content -Path d:\certificates\exchange\SelfSignedUMCert.pfx -Encoding Byte -ReadCount 0)) -Password:(Get-Credential).password
-
+```

@@ -318,11 +318,12 @@ Exchange Server 2013 邮件流和客户端访问的安装后任务，包括如�
 2.  将客户端访问服务器的主机名存储在一个变量中，以便在下一步使用。例如，Ex2013CAS。
     
     ```powershell
-$HostName = "Ex2013CAS"
-```
+    $HostName = "Ex2013CAS"
+    ```
 
 3.  在命令行管理程序中运行以下命令，将每个内部 URL 配置为与虚拟目录的外部 URL 相一致。
-    
+
+    ```powershell
         Set-EcpVirtualDirectory "$HostName\ECP (Default Web Site)" -InternalUrl ((Get-EcpVirtualDirectory "$HostName\ECP (Default Web Site)").ExternalUrl)
         
         Set-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)" -InternalUrl ((get-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)").ExternalUrl)
@@ -334,11 +335,14 @@ $HostName = "Ex2013CAS"
         Set-OwaVirtualDirectory "$HostName\OWA (Default Web Site)" -InternalUrl ((Get-OwaVirtualDirectory "$HostName\OWA (Default Web Site)").ExternalUrl)
         
         Set-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)" -InternalUrl ((Get-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)").ExternalUrl)
+    ```
 
 4.  虽然我们在 Shell 中，但是我们还可以配置脱机通讯簿 (OAB)，使自动发现可以选择正确的虚拟目录进行 OAB 分发。运行以下命令以执行此操作。
     
+    ```powershell
         Get-OfflineAddressBook | Set-OfflineAddressBook -GlobalWebDistributionEnabled $True -VirtualDirectories $Null
-
+    ```
+    
 对客户端访问服务器虚拟目录配置内部 URL 之后，您需要为 Outlook Web App 和其他连接配置专用 DNS 记录。根据您的配置，您需要将专用 DNS 记录配置为指向内部或外部 IP 地址，或者指向客户端访问服务器的完全限定域名 (FQDN)。以下是建议创建以用于启用内部客户端连接的 DNS 记录示例。
 
 
@@ -457,9 +461,10 @@ $HostName = "Ex2013CAS"
 
 
 8.  最后，我们需要打开 Shell，然后配置脱机通讯簿 (OAB)，使自动发现可以选择正确的虚拟目录进行 OAB 分发。运行以下命令以执行此操作。
-    
-        Get-OfflineAddressBook | Set-OfflineAddressBook -GlobalWebDistributionEnabled $True -VirtualDirectories $Null
 
+    ```powershell
+        Get-OfflineAddressBook | Set-OfflineAddressBook -GlobalWebDistributionEnabled $True -VirtualDirectories $Null
+    ```
 对客户端访问服务器虚拟目录配置内部 URL 之后，您需要为 Outlook Web App 和其他连接配置专用 DNS 记录。根据您的配置，您需要将专用 DNS 记录配置为指向内部或外部 IP 地址，或者指向客户端访问服务器的 FQDN。以下是建议创建以用于启用内部客户端连接的 DNS 记录示例，前提是您已将虚拟目录内部 URL 配置为使用 internal.contoso.com。
 
 

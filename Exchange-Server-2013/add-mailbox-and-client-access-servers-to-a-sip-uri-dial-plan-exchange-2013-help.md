@@ -55,7 +55,9 @@ _**上一次修改主题：** 2013-04-16_
 
 本示例添加邮箱服务器名为`MyMailboxServer`到名为`MySIPDialPlan`的 SIP URI 拨号计划，防止其接受新的呼叫。它也为双模式，从而使邮箱服务器接受 TCP 和 TLS 请求设置的启动模式。
 
+```powershell
     Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan -Status Disabled -UMStartupMode Dual
+```
 
 此示例将名为 `MyMailboxServer` 的邮箱服务器添加到名为 `MySIPDialPlan` 和 `MySIPDialPlan2` 的两个 SIP 拨号计划，并进行了以下设置：
 
@@ -67,7 +69,9 @@ _**上一次修改主题：** 2013-04-16_
 
 <!-- end list -->
 
+```powershell
     Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -MaxCallsAllowed 50 -SipAccessService northamerica.lyncpoolna.contoso.com
+```
 
 ## 使用 EAC 将客户端访问服务器添加到 SIP URI 拨号计划
 
@@ -91,5 +95,6 @@ Set-UMCallRouterSettings -DialPlans MySIPDialPlan -Server MyClientAccessServer -
 
 此示例将名为 `MyClientAccessServer` 的客户端访问服务器添加到名为 `MySIPDialPlan` 和 `MySIPDialPlan2` 的两个 SIP 拨号计划，并允许服务器使用 IPv4 和 IPv6 地址。
 
+```powershell
     Set-UMCallRouterSettings -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -Server MyClientAccessServer
-
+```

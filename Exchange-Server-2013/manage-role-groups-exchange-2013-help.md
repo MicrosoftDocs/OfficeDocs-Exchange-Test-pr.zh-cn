@@ -130,10 +130,10 @@ _**上一次修改主题：** 2012-10-08_
 
 例如，使用以下命令复制\&quot;Organization Management\&quot;角色组并创建名为\&quot;Vancouver Organization Management\&quot;的新角色组，该角色组具有\&quot;Vancouver Users\&quot;收件人作用域和\&quot;Vancouver Servers configuration\&quot;配置作用域。
 
-    ```powershell
+```powershell
     $RoleGroup = Get-RoleGroup "Organization Management"
     New-RoleGroup "Vancouver Organization Management" -Roles $RoleGroup.Roles -CustomRecipientWriteScope "Vancouver Users" -CustomConfigWriteScope "Vancouver Servers"
-    ```
+```
 
 使用本主题中前面的使用命令行管理程序复制没有作用域的角色组中所示的 *Members* 参数创建角色组后，也可以向该角色组添加成员。有关管理作用域的详细信息，请参阅[了解管理角色作用域](understanding-management-role-scopes-exchange-2013-help.md)。
 
@@ -157,10 +157,10 @@ _**上一次修改主题：** 2012-10-08_
 
 例如，使用以下命令复制\&quot;Recipient Management\&quot;角色组并创建名为\&quot;Toronto Recipient Management\&quot;的新角色组，该角色组允许在\&quot;Toronto Users\&quot;OU 中仅管理用户。
 
-    ```powershell
+```powershell
     $RoleGroup = Get-RoleGroup "Recipient Management"
     New-RoleGroup "Toronto Recipient Management" -Roles $RoleGroup.Roles -RecipientOrganizationalUnitScope "contoso.com/Toronto Users"
-    ```
+```
 
 使用本主题中前面的使用命令行管理程序复制没有作用域的角色组中所示的 *Members* 参数创建角色组后，也可以向该角色组添加成员。有关管理作用域的详细信息，请参阅[了解管理角色作用域](understanding-management-role-scopes-exchange-2013-help.md)。
 
