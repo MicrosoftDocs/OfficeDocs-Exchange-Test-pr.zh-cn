@@ -232,5 +232,6 @@ Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Di
 
 此示例将检索“可恢复的项目”文件夹及其子文件夹的大小，以及该文件夹及每个子文件夹中的项目数。
 
+```powershell
     Get-MailboxFolderStatistics -Identity "Gurinder Singh" -FolderScope RecoverableItems | Format-Table Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders -Auto
-
+```
