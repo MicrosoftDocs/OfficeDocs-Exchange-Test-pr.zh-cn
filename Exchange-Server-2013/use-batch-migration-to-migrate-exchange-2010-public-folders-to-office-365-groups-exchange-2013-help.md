@@ -19,7 +19,7 @@ _**上一次修改主题：** 2018-04-30_
 
 **摘要：**  如何将 Exchange 2010 公用文件夹移动到 Office 365 组。
 
-通过一个称为*批迁移*的过程，可以将 Exchange 2010 公用文件夹的部分或全部移至 Office 365 组。组是具有某些优点在公用文件夹上的 microsoft 提供的新协作。[将公用文件夹迁移到 Office 365 组](migrate-your-public-folders-to-office-365-groups-exchange-2013-help.md)有关公用文件夹和组，以及您的组织可能会或可能不会受益于切换到组原因之间的差异的概述，请参阅。
+通过一个称为*批迁移*的过程，可以将 Exchange 2010 公用文件夹的部分或全部移至 Office 365 组。组是具有某些优点在公用文件夹上的 microsoft 提供的新协作。[将公用文件夹迁移到 Office 365 组](https://technet.microsoft.com/zh-cn/library/mt843872(v=exchg.150))有关公用文件夹和组，以及您的组织可能会或可能不会受益于切换到组原因之间的差异的概述，请参阅。
 
 本文包含执行实际批迁移 Exchange 2010 公用文件夹的分步过程。
 
@@ -92,8 +92,8 @@ _**上一次修改主题：** 2018-04-30_
 4.  您需要具有**小爪印**为 Office 365 租户启用迁移功能。若要验证这一点，请在 Exchange 联机 PowerShell 运行下面的命令：
     
     ```powershell
-Get-MigrationConfig
-```
+    Get-MigrationConfig
+    ```
     
     如果输出**功能**下，列出**小爪印**，则启用该功能，您可以继续到*步骤 3： 创建.csv 文件*。
     
@@ -110,14 +110,16 @@ Get-MigrationConfig
   - **TargetGroupMailbox**。Office 365 中的目标组的 SMTP 地址。您可以运行下面的命令以查看主 SMTP 地址。
     
     ```powershell
-Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
-```
+    Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
+    ```
 
 示例.csv:
 
+    ```powershell
     "FolderPath","TargetGroupMailbox"
     "\Sales","sales@contoso.onmicrosoft.com"
     "\Sales\EMEA","emeasales@contoso.onmicrosoft.com"
+    ```
 
 请注意一个邮件文件夹和一个日历文件夹可以合并到 Office 365 中的单个组。但是，合并到一个组中的多个公用文件夹的任何其他情况下不支持在一个批处理中单一迁移。如果需要将多个公共文件夹映射到相同的 Office 365 组，可以通过运行应执行连续、 一个接一个的不同的迁移批来实现此目的。迁移的每个批处理中可以有多达 500 项。
 
@@ -132,49 +134,53 @@ Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
     1.  通过键入下面的命令来为公共文件夹管理员角色的成员的用户的帐户查找**LegacyExchangeDN** 。请注意，这是同一个用户需要更高版本，此过程的步骤 3 中的凭据。
         
         ```powershell
-Get-Mailbox <PublicFolder_Administrator_Account> | Select-Object LegacyExchangeDN
-```
+        Get-Mailbox <PublicFolder_Administrator_Account> | Select-Object LegacyExchangeDN
+        ```
     
     2.  通过键入以下命令查找任何邮箱服务器包含公用文件夹数据库 LegacyExchangeDN:
         
         ```powershell
-Get-ExchangeServer <public folder server> | Select-Object -Expand ExchangeLegacyDN
-```
+        Get-ExchangeServer <public folder server> | Select-Object -Expand ExchangeLegacyDN
+        ```
     
     3.  发现 Fully-Qualified 的域名 (FQDN) 的 Outlook 无处主机。这是外部主机名称。如果您有多个 Outlook 无处实例，我们建议您选择最接近到迁移的终结点或公用文件夹副本，在 Exchange Server 2010年组织中最接近的一个实例。以下命令将查找 Outlook 无处的所有实例：
         
         ```powershell
-Get-OutlookAnywhere | Format-Table Identity, ExternalHostName
-```
+        Get-OutlookAnywhere | Format-Table Identity, ExternalHostName
+        ```
 
 2.  在Exchange Online PowerShell，使用上面返回步骤 1，运行以下命令中的信息。这些命令中的变量将步骤 1 中的值。
     
     1.  将 Exchange 2010 环境具有管理员权限的用户的凭据传递到变量`$Source_Credential`。在最终运行时迁移请求在 Exchange 联机，您将使用此凭据以便通过复制内容访问 Exchange 2010 服务器通过 Outlook 无处。
         
-            $Source_Credential = Get-Credential
-            <source_domain>\<PublicFolder_Administrator_Account>
+        ```powershell
+        $Source_Credential = Get-Credential
+        <source_domain>\<PublicFolder_Administrator_Account>
+        ```
     
     2.  使用您在上面步骤 1a 并将该值传递给变量`$Source_RemoteMailboxLegacyDN`的旧 Exchange 服务器上的迁移用户的 ExchangeLegacyDN。
         
         ```powershell
-$Source_RemoteMailboxLegacyDN = "<LegacyExchangeDN from step 1a>"
-```
+        $Source_RemoteMailboxLegacyDN = "<LegacyExchangeDN from step 1a>"
+        ```
     
     3.  使用您在上面步骤 1b 中找到上面，并将该值传递给变量`$Source_RemotePublicFolderServerLegacyDN`的公用文件夹服务器 ExchangeLegacyDN。
         
         ```powershell
-$Source_RemotePublicFolderServerLegacyDN = "<LegacyExchangeDN from step 1b>"
-```
+        $Source_RemotePublicFolderServerLegacyDN = "<LegacyExchangeDN from step 1b>"
+        ```
     
     4.  使用外部主机名称的 Outlook 无处 1 上述步骤 c 中返回，并将该值传递给变量`$Source_OutlookAnywhereExternalHostName`。
         
         ```powershell
-$Source_OutlookAnywhereExternalHostName = "<ExternalHostName from step 1c>"
-```
+        $Source_OutlookAnywhereExternalHostName = "<ExternalHostName from step 1c>"
+        ```
 
 3.  在Exchange Online PowerShell，运行以下命令来创建迁移终结点：
     
+       ```powershell  
         $PfEndpoint = New-MigrationEndpoint -PublicFolderToUnifiedGroup -Name PFToGroupEndpoint -RPCProxyServer $Source_OutlookAnywhereExternalHostName -Credentials $Source_Credential -SourceMailboxLegacyDN $Source_RemoteMailboxLegacyDN -PublicFolderDatabaseServerLegacyDN $Source_RemotePublicFolderServerLegacyDN -Authentication Basic
+       ```
 
 4.  运行以下命令来创建新的公用文件夹到 Office 365 组迁移批。在此命令：
     
@@ -188,13 +194,15 @@ $Source_OutlookAnywhereExternalHostName = "<ExternalHostName from step 1c>"
     
     <!-- end list -->
     
+       ```powershell
         New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
+       ```
 
 5.  通过在Exchange Online PowerShell中运行下面的命令启动迁移。请注意此步骤是必需的只有当在步骤 4 中创建上面批时不使用`-AutoStart`参数。
     
     ```powershell
-Start-MigrationBatch PublicFolderToGroupMigration
-```
+    Start-MigrationBatch PublicFolderToGroupMigration
+    ```
 
 批次迁移需要在Exchange Online PowerShell中使用`New-MigrationBatch` cmdlet 来创建，而都可以查看和管理在Exchange 管理中心中显示迁移的进度。通过运行[Get-MigrationBatch](https://technet.microsoft.com/zh-cn/library/jj219164\(v=exchg.150\))和[Get-MigrationUser](https://technet.microsoft.com/zh-cn/library/jj218702\(v=exchg.150\))的 cmdlet，您还可以查看显示迁移的进度。`New-MigrationBatch` cmdlet 启动每个 Office 365 组邮箱，迁移用户，您可以查看使用邮箱迁移页这些请求的状态。
 
@@ -248,7 +256,9 @@ Start-MigrationBatch PublicFolderToGroupMigration
 
 <!-- end list -->
 
+   ```powershell
     .\LockAndSavePublicFolderProperties.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+   ```
 
 ## 第 7 步： 定版 Office 365 组迁移到公用文件夹
 
@@ -268,7 +278,9 @@ Remove-MigrationBatch <name of migration batch>
 
 <!-- end list -->
 
+   ```powershell
     New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
+   ```
 
 创建新的批处理后，通过在Exchange Online PowerShell中运行下面的命令启动迁移。请注意，此步骤才是必需的`-AutoStart`参数未使用在前面的命令。
 
@@ -452,7 +464,9 @@ Start-MigrationBatch PublicFolderToGroupMigration
 
 <!-- end list -->
 
+   ```powershell
     .\UnlockAndRestorePublicFolderProperties.ps1 -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+   ```
 
 请注意添加到 Office 365 的组中或在组中，执行任何编辑操作的任何项目不会复制到公用文件夹。因此将会有数据丢失，假定为新数据添加了一组公用文件夹时。
 

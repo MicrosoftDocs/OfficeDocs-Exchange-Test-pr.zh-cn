@@ -19,7 +19,7 @@ _**上一次修改主题：** 2012-10-14_
 
 [创建保留策略](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy)
 
-[向保留策略添加保留标记或从中删除保留标记](add-retention-tags-to-or-remove-retention-tags-from-a-retention-policy-exchange-2013-help.md)
+[向保留策略添加保留标记或从中删除保留标记](https://technet.microsoft.com/zh-cn/library/dd362328(v=exchg.150))
 
 [将保留策略应用于邮箱](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/messaging-records-management/apply-retention-policy)
 

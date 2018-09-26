@@ -84,7 +84,6 @@ _**上一次修改主题：** 2012-11-02_
 4.  在\&quot;详细信息\&quot;窗格的\&quot;数据库副本\&quot;下，单击您要设定种子的被动数据库副本下的\&quot;更新\&quot;。
 
 5.  
-    
     默认情况下，数据库的主动副本用作种子设定的源数据库。如果希望使用数据库的被动副本设定种子，请单击\&quot;**浏览…**\&quot;，选择包含要用作源的被动数据库副本的服务器。
 
 6.  单击\&quot;保存\&quot;更新被动数据库副本。
@@ -120,36 +119,36 @@ Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
 1.  如果为数据库启用循环日志记录，则在继续之前必须先禁用它。通过使用 [Set-MailboxDatabase](https://technet.microsoft.com/zh-cn/library/bb123971\(v=exchg.150\)) cmdlet 可以禁用邮箱数据库的循环日志记录，如本例中所示。
     
     ```powershell
-Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
-```
+    Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+    ```
 
 2.  卸除数据库。可以使用 [Dismount-Database](https://technet.microsoft.com/zh-cn/library/bb124936\(v=exchg.150\)) cmdlet，如此示例中所示。
     
     ```powershell
-Dismount-Database DB1 -Confirm $false
-```
+    Dismount-Database DB1 -Confirm $false
+    ```
 
 3.  手动将数据库文件（数据库文件和所有日志文件）复制到第二个位置，例如外部磁盘驱动器或网络共享。
 
 4.  装载数据库。可以使用 [Mount-Database](https://technet.microsoft.com/zh-cn/library/aa998871\(v=exchg.150\)) cmdlet，如此示例中所示。
     
     ```powershell
-Mount-Database DB1
-```
+    Mount-Database DB1
+    ```
 
 5.  在托管副本的服务器上，将数据库文件从外部驱动器或网络共享复制到与主动数据库副本相同的路径。例如，如果主动数据库副本路径为 D:\\DB1\\DB1.edb，日志文件路径为 D:\\DB1，则可以将数据库文件复制到将托管副本的服务器上的 D:\\DB1。
 
 6.  通过使用 [Add-MailboxDatabaseCopy](https://technet.microsoft.com/zh-cn/library/dd298105\(v=exchg.150\)) cmdlet 和 *SeedingPostponed* 参数，添加邮箱数据库副本，如此示例中所示。
     
     ```powershell
-Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -SeedingPostponed
-```
+    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -SeedingPostponed
+    ```
 
 7.  如果为数据库启用循环日志记录，则使用 [Set-MailboxDatabase](https://technet.microsoft.com/zh-cn/library/bb123971\(v=exchg.150\)) cmdlet 再次启用它，如此示例中所示。
     
     ```powershell
-Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
-```
+    Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+    ```
 
 ## 您如何知道这有效？
 
@@ -160,8 +159,8 @@ Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
   - 在命令行管理程序中，运行以下命令验证是否已成功为邮箱数据库副本设定种子并且种子处于健康状态。
     
     ```powershell
-Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
-```
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```
     
     状态和内容索引状态应该为健康。
 

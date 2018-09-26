@@ -82,8 +82,8 @@ _**上一次修改主题：** 2016-12-09_
 3.  运行以下命令以扩展架构。
     
     ```powershell
-Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
-```
+    Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
+    ```
 
 安装程序扩展完架构之后，你需要等待 Active Directory 将更改复制到所有域控制器。如果你想查看复制进展，可以使用 `repadmin` 工具。`Repadmin` 是 Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 中 Active Directory 域服务工具功能的一部分。有关如何使用此工具的详细信息，请参阅 [Repadmin](https://go.microsoft.com/fwlink/p/?linkid=257879)。
 
@@ -119,7 +119,9 @@ Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
 
 2.  运行以下命令：
     
-        Setup.exe /PrepareAD /OrganizationName:"<organization name>" /IAcceptExchangeServerLicenseTerms
+    ```powershell
+    Setup.exe /PrepareAD /OrganizationName:"<organization name>" /IAcceptExchangeServerLicenseTerms
+    ```
 
 安装程序为 Exchange 准备好 Active Directory 之后，ni 需要等待 Active Directory 将更改复制到所有域控制器。如果ni 想查看复制进展，可以使用 `repadmin` 工具。`repadmin` 是 Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 中 Active Directory 域服务工具功能的一部分。有关如何使用此工具的详细信息，请参阅 [Repadmin](https://go.microsoft.com/fwlink/p/?linkid=257879)。
 
@@ -146,8 +148,8 @@ Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
 2.  运行以下命令：
     
     ```powershell
-Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
-```
+    Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
+    ```
 
 ## 让我选择想要准备的 Active Directory 域
 
@@ -173,8 +175,10 @@ Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
 
 2.  运行以下命令。包含您想准备的域的 FQDN。如果您想准备在其中运行命令的域，则无需包含 FQDN。
     
-        Setup.exe /PrepareDomain:<FQDN of the domain you want to prepare> /IAcceptExchangeServerLicenseTerms
-
+    ```powershell
+    Setup.exe /PrepareDomain:<FQDN of the domain you want to prepare> /IAcceptExchangeServerLicenseTerms
+    ```
+    
 3.  为您将安装 Exchange 服务器或启用邮件的用户将位于的每个 Active Directory 域重复这些步骤。
 
 ## 您如何知道操作成功？

@@ -114,24 +114,48 @@ kathleen@contoso.com<br />
 <td><p>组织外部，如果原始邮件中不包含免责声明中的文本，如“CONTOSO 法律声明”</p></td>
 <td><p>条件：“收件人位于”&gt;“组织外部”</p>
 <p>例外：“主题或正文”&gt;“主题或正文与这些文本模式匹配”&gt; <strong>CONTOSO LEGAL NOTICE</strong></p></td>
-<td><pre><code>-FromScope NotInOrganization -ExceptIf -SubjectOrBodyMatches &quot;CONTOSO LEGAL NOTICE&quot;</code></pre></td>
+<td>
+
+``` powershell
+-FromScope NotInOrganization -ExceptIf -SubjectOrBodyMatches "CONTOSO LEGAL NOTICE"
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>带有可执行性附件的传入邮件</p></td>
 <td><p>条件 1：“发件人位于”&gt;“组织外部”</p>
 <p>条件 2：“任何附件”&gt;“具有可执行内容”</p></td>
-<td><pre><code>-FromScope NotInOrganization -AttachmentHasExecutableContent</code></pre></td>
+<td>
+
+``` powershell
+-FromScope NotInOrganization -AttachmentHasExecutableContent
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>发件人是市场营销部</p></td>
 <td><p>条件：“发件人”&gt;“是此组的成员”&gt; <strong>group name</strong></p></td>
-<td><pre><code>-FromMemberOf &quot;Marketing Team&quot;</code></pre></td>
+<td>
+
+``` powershell
+-FromMemberOf "Marketing Team"
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>从外部发件人发送到销售讨论组的每封邮件</p></td>
 <td><p>条件 1：“发件人位于”&gt;“组织外部”</p>
 <p>条件 2：“邮件”&gt;“‘收件人’或‘抄送’框包含此人”&gt; <strong>group name</strong></p></td>
-<td><pre><code>-FromScope NotInOrganization -SentTo &quot;Sales Discussion Group&quot; -PrependSubject &quot;Sent to Sales Discussion Group: &quot;</code></pre></td>
+<td>
+
+``` powershell
+-FromScope NotInOrganization -SentTo "Sales Discussion Group" -PrependSubject "Sent to Sales Discussion Group: "
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>在长达一个月的时间内将广告预加在传出邮件上</p></td>
@@ -194,6 +218,7 @@ kathleen@contoso.com<br />
 
 例如，下面是一个 HTML 免责声明示例，其中包括签名、 `IMG` 标记和嵌入的 CSS。
 
+``` HTML
     <div style="font-size:9pt;  font-family: 'Calibri',sans-serif;">
     %%displayname%%</br>
     %%title%%</br>
@@ -207,6 +232,7 @@ kathleen@contoso.com<br />
     <p style="font-size:8pt; line-height:10pt; font-family: 'Cambria','times roman',serif;">This message contains confidential information and is intended only for the individual(s) addressed in the message. If you are not the named addressee, you should not disseminate, distribute, or copy this e-mail. If you are not the intended recipient, you are notified that disclosing, distributing, or copying this e-mail is strictly prohibited.  </p>
     <span style="padding-top:10px; font-weight:bold; color:#CC0000; font-size:10pt; font-family: 'Calibri',Arial,sans-serif; "><a href="http://www.fabrikam.com">Fabrikam, Inc. </a></span></br></br>
     </div>
+```
 
 ## 不能添加免责声明时的回退选项
 

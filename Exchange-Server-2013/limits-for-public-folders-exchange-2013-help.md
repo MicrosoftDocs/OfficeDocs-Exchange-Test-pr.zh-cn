@@ -45,7 +45,7 @@ _**上一次修改主题：** 2016-12-09_
 <tr class="odd">
 <td><p>公用文件夹邮箱总数</p></td>
 <td><p>100</p></td>
-<td><p>尽管您可以创建超过 100 个公用文件夹邮箱，但不受支持。<a href="create-a-public-folder-mailbox-exchange-2013-help.md">创建公用文件夹邮箱</a></p></td>
+<td><p>尽管您可以创建超过 100 个公用文件夹邮箱，但不受支持。<a href="https://technet.microsoft.com/zh-cn/library/jj552410(v=exchg.150)">创建公用文件夹邮箱</a></p></td>
 </tr>
 <tr class="even">
 <td><p>层次结构中的公用文件夹总数</p></td>

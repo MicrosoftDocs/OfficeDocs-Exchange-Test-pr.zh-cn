@@ -56,8 +56,8 @@ Exchange Search 可对 Exchange 邮箱中的邮箱和受支持附件编制索引
 2.  **检查邮箱数据库配置：** 用户邮箱数据库的 *IndexEnabled* 参数是否设置为 true？如果是，请转至步骤 3。如果不是，请在命令行管理程序中运行以下命令以验证 *IndexEnabled* 标志是否设置为 true。
     
     ```powershell
-Get-MailboxDatabase | Format-Table Name,IndexEnabled
-```
+    Get-MailboxDatabase | Format-Table Name,IndexEnabled
+    ```
     
     有关语法和参数的详细信息，请参阅 [Get-MailboxDatabase](https://technet.microsoft.com/zh-cn/library/bb124924\(v=exchg.150\))。
 
@@ -85,15 +85,17 @@ Get-MailboxDatabase | Format-Table Name,IndexEnabled
 
 4.  **检查数据库副本索引运行状况：** 内容索引状态是否正常？使用 **Get-MailboxDatabaseCopyStatus** cmdlet 可检查数据库副本的内容索引运行状况。
     
-        Get-MailboxDatabaseCopyStatus -Server $env:ComputerName | Format-Table Name,Status,ContentIndex* -Auto
+    ```PowerShell
+    Get-MailboxDatabaseCopyStatus -Server $env:ComputerName | Format-Table Name,Status,ContentIndex* -Auto
+    ```
     
     有关语法和参数的详细信息，请参阅 [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/zh-cn/library/dd298044\(v=exchg.150\))。
 
 5.  **运行 Test-ExchangeSearch cmdlet：** 如果邮箱数据库已爬网，则可以对邮箱数据库或特定邮箱运行 **Test-ExchangeSearch** cmdlet。
     
     ```powershell
-Test-ExchangeSearch -Identity AlanBrewer@contoso.com
-```
+    Test-ExchangeSearch -Identity AlanBrewer@contoso.com
+    ```
     
     有关语法和参数的详细信息，请参阅 [Test-ExchangeSearch](https://technet.microsoft.com/zh-cn/library/bb124733\(v=exchg.150\))。
 

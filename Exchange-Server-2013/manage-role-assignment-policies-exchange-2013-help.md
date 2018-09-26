@@ -63,7 +63,9 @@ New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign>
 
 本示例将创建显式分配策略 Limited Mailbox Configuration，并将 `MyBaseOptions`、`MyAddressInformation` 和 `MyDisplayName` 角色分配给它。
 
-    New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName
+```powershell
+New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName
+```
 
 有关语法和参数的详细信息，请参阅 [New-RoleAssignmentPolicy](https://technet.microsoft.com/zh-cn/library/dd638101\(v=exchg.150\))。
 
@@ -77,7 +79,9 @@ New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign> -IsDe
 
 本示例将创建默认分配策略 Limited Mailbox Configuration，并将 `MyBaseOptions`、`MyAddressInformation` 和 `MyDisplayName` 角色分配给它。
 
-    New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName -IsDefault
+```powershell
+New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName -IsDefault
+```
 
 有关语法和参数的详细信息，请参阅 [New-RoleAssignmentPolicy](https://technet.microsoft.com/zh-cn/library/dd638101\(v=exchg.150\))。
 
@@ -267,11 +271,15 @@ Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
 
 若要在角色与分配策略之间创建管理角色分配，请使用以下语法。
 
-    New-ManagementRoleAssignment -Name <role assignment name> -Role <role name> -Policy <assignment policy name>
+```powershell
+New-ManagementRoleAssignment -Name <role assignment name> -Role <role name> -Policy <assignment policy name>
+```
 
 本示例在 MyVoicemail 角色与 Seattle Users 分配策略之间创建角色分配 Seattle Users - Voicemail。
 
-    New-ManagementRoleAssignment -Name "Seattle Users - Voicemail" -Role MyVoicemail -Policy "Seattle Users"
+```powershell
+New-ManagementRoleAssignment -Name "Seattle Users - Voicemail" -Role MyVoicemail -Policy "Seattle Users"
+```
 
 有关语法和参数的详细信息，请参阅 [New-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd335193\(v=exchg.150\))。
 
@@ -299,11 +307,15 @@ Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
 
 若要从分配策略中删除角色，请使用以下语法。
 
-    Get-ManagementRoleAssignment -RoleAssignee <assignment policy name> -Role <role name> | Remove-ManagementRoleAssignment
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <assignment policy name> -Role <role name> | Remove-ManagementRoleAssignment
+```
 
 本示例将从 Seattle Users 分配策略中删除 MyVoicemail 管理角色，该角色使用户能够管理其语音邮件选项。
 
-    Get-ManagementRoleAssignment -RoleAssignee "Seattle Users" -Role MyVoicemail | Remove-ManagementRoleAssignment
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee "Seattle Users" -Role MyVoicemail | Remove-ManagementRoleAssignment
+```
 
 有关语法和参数的详细信息，请参阅 [Remove-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd351205\(v=exchg.150\))。
 

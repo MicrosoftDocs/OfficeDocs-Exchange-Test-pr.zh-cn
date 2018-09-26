@@ -960,8 +960,10 @@ Exchange 功能可能需要管理服务器作用域和/或数据库作用域。�
 
 数据库作用域起初在 Microsoft Exchange 2010 Service Pack 1 (SP1) 中引入，并且在 Exchange 2013 中继续受到支持。Exchange 2010 SP1 之前的 Exchange 版本仅支持收件人作用域和服务器配置作用域。如果您在 Exchange 2010 SP1 或更高版本的服务器上新建数据库作用域，则会看到以下警告：
 
+  ```powershell
     WARNING: Database management scopes will only be applied when a user connects to a server running Exchange 2010 SP1 or later. Servers running a version of Exchange prior to Exchange 2010 SP1 won't apply any roles from a role assignment linked to a database scope. Database management scopes also won't be visible to the Get-ManagementScope cmdlet when it's run from a pre-Exchange 2010 SP1 server.
-
+  ```
+  
 您创建的数据库作用域仅应用于连接到运行 Exchange 2010 SP1 或更高版本的服务器的用户。系统不会向连接到 Exchange 2010 SP1 之前的服务器的用户应用任何与数据库作用域相关的角色分配。也就是说，如果用户连接到 Exchange 2010 SP1 之前的服务器，则系统不会向此类用户授予这些角色分配所提供的任何权限。不能使用 Exchange 2010 SP1 之前的服务器创建、删除、修改或查看数据库作用域。
 
 数据库作用域可以包含 Exchange 组织中的任何数据库。这包括 Exchange Server 2007、Exchange 2010 和 Exchange 2013 服务器。这样，您便可以控制用户可以管理的数据库，而不必考虑 Exchange 版本。与其他数据库作用域一样，与包含 Exchange 2007 和 Exchange 2010 数据库的数据库作用域相关联的角色分配仅应用于连接到 Exchange 2010 SP1 或更高版本服务器的用户。

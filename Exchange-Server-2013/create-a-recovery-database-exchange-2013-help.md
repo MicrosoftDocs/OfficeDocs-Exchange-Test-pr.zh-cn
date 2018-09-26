@@ -43,7 +43,9 @@ New-MailboxDatabase -Recovery -Name RDB1 -Server MBX2
 
 本示例使用数据库文件和日志文件夹的自定义路径在邮箱服务器 MBX1 上创建恢复数据库 RDB2。
 
-    New-MailboxDatabase -Recovery -Name RDB2 -Server MBX1 -EdbFilePath "C:\Recovery\RDB2\RDB2.EDB" -LogFolderPath "C:\Recovery\RDB2"
+```powershell
+New-MailboxDatabase -Recovery -Name RDB2 -Server MBX1 -EdbFilePath "C:\Recovery\RDB2\RDB2.EDB" -LogFolderPath "C:\Recovery\RDB2"
+```
 
 有关语法和参数的详细信息，请参阅 [New-MailboxDatabase](https://technet.microsoft.com/zh-cn/library/aa997976\(v=exchg.150\))。
 
@@ -54,8 +56,8 @@ New-MailboxDatabase -Recovery -Name RDB1 -Server MBX2
   - 在命令行管理程序中，运行下列命令来显示恢复数据库的配置信息。
     
     ```powershell
-Get-MailboxDatabase <RecoveryDatabaseName> | Format-List
-```
+    Get-MailboxDatabase <RecoveryDatabaseName> | Format-List
+    ```
 
 ## 其他任务
 

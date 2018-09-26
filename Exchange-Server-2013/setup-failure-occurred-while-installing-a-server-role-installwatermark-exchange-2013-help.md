@@ -34,8 +34,8 @@ Exchange 2007 安装程序要求先成功地重新安装之前安装失败的服
 2.  运行以下命令：
     
     ```powershell
-Setup /roles:<Failed Server Role>
-```
+    Setup /roles:<Failed Server Role>
+    ```
     
     在逗号分隔的列表中选择下列一个或多个角色：
     

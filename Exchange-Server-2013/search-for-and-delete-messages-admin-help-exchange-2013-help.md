@@ -31,11 +31,11 @@ _**上一次修改主题：** 2017-12-20_
 
   - 您需要分配有以下两个管理角色才能在用户邮箱中搜索和删除邮件：
     
-      - **邮箱搜索**   利用此角色，您可以跨组织中的多个邮箱搜索邮件。默认情况下不会向管理员分配此角色。要向自己分配此角色以便搜索邮箱，请将您自己添加为\&quot;发现管理\&quot;角色组的成员。请参阅[在 Exchange 中分配电子数据展示权限](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)。
+      - **邮箱搜索**   利用此角色，您可以跨组织中的多个邮箱搜索邮件。默认情况下不会向管理员分配此角色。要向自己分配此角色以便搜索邮箱，请将您自己添加为\&quot;发现管理\&quot;角色组的成员。请参阅[在 Exchange 中分配电子数据展示权限](https://technet.microsoft.com/zh-cn/library/dd298059(v=exchg.150))。
     
       - **邮箱导入导出**   此角色允许您从用户邮箱删除邮件。默认情况下，不向任何角色组分配此角色。若要从用户邮箱删除邮件，您可以将\&quot;邮箱导入导出\&quot;角色添加到\&quot;组织管理\&quot;角色组。有关详细信息，请参阅[管理角色组](manage-role-groups-exchange-2013-help.md)中的\&quot;将角色添加到角色组\&quot;部分。
 
-  - 如果要从中删除邮件的邮箱启用了单个项目恢复，则必须首先禁用该功能。有关详细信息，请参阅[启用或禁用邮箱的单个项目恢复](enable-or-disable-single-item-recovery-for-a-mailbox-exchange-2013-help.md)。
+  - 如果要从中删除邮件的邮箱启用了单个项目恢复，则必须首先禁用该功能。有关详细信息，请参阅[启用或禁用邮箱的单个项目恢复](https://technet.microsoft.com/zh-cn/library/ee633460(v=exchg.150))。
 
   - 如果要从中删除邮件的邮箱已置于保留状态，建议您在删除保留和删除邮箱内容之前，与记录管理或法律部门进行核实。在获得审批之后，按照主题[清理\&quot;可恢复的项目\&quot;文件夹](clean-up-the-recoverable-items-folder-exchange-2013-help.md)中列出的步骤执行。
 
@@ -49,11 +49,15 @@ _**上一次修改主题：** 2017-12-20_
 
 本示例在 April Stewart 的邮箱中搜索 Subject 字段中包含\&quot;Your bank statement\&quot;短语的邮件，并将搜索结果记录在管理员邮箱的 SearchAndDeleteLog 文件夹中。不会将邮件复制到目标邮箱或从目标邮箱删除。
 
+```powershell
     Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -TargetMailbox administrator -TargetFolder "SearchAndDeleteLog" -LogOnly -LogLevel Full
+```
 
 此示例将搜索组织的所有邮箱，查找文件名中包含\&quot;特洛伊木马\&quot;一词的任何类型的附加文件的邮件，并向管理员的邮箱发送一封日志邮件。
 
+```powershell
     Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery attachment:trojan* -TargetMailbox administrator -TargetFolder "SearchAndDeleteLog" -LogOnly -LogLevel Full
+```
 
 有关详细的语法和参数信息，请参阅 [Search-Mailbox](https://technet.microsoft.com/zh-cn/library/dd298173\(v=exchg.150\))。
 
@@ -73,11 +77,15 @@ Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statem
 
 本示例在 April Stewart 的邮箱中搜索 Subject 字段中包含\&quot;Your bank statement\&quot;短语的邮件，将搜索结果复制到 BackupMailbox 邮箱中的 AprilStewart-DeletedMessages 文件夹，然后从 April 的邮箱中删除这些邮件。
 
+```powershell
     Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -TargetMailbox "BackupMailbox" -TargetFolder "AprilStewart-DeletedMessages" -LogLevel Full -DeleteContent
+```
 
 此示例将搜索组织的所有邮箱，查找主题行为\&quot;下载此文件\&quot;邮件，然后将其永久删除。
 
+```powershell
     Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery 'Subject:"Download this file"' -DeleteContent
+```
 
 有关详细的语法和参数信息，请参阅 [Search-Mailbox](https://technet.microsoft.com/zh-cn/library/dd298173\(v=exchg.150\))。
 

@@ -70,7 +70,7 @@ _**上一次修改主题：** 2015-03-09_
 此示例针对服务器 CAS01 上的所有 POP3 用户将邮件检索格式选项设置为“仅文本”。
 
 ```powershell
-Set-PopSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
+    Set-PopSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
 ```
 
 可从以下设置中进行选择。 您可以通过使用数字值或文本字符串为 *MessageRetrievalMimeFormat* 参数指定值。
@@ -129,8 +129,8 @@ Set-PopSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
 1.  在命令行管理程序中运行以下命令。
     
     ```powershell
-Get-PopSettings | format-list
-```
+    Get-PopSettings | format-list
+    ```
 
 2.  验证 *MessageRetrievalMimeFormat* 设置是否正确。
 
@@ -228,8 +228,8 @@ Set-ImapSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
 1.  在命令行管理程序中运行以下命令。
     
     ```powershell
-Get-ImapSettings | format-list
-```
+    Get-ImapSettings | format-list
+    ```
 
 2.  验证 *MessageRetrievalMimeFormat* 设置是否正确。
 
@@ -240,7 +240,7 @@ Get-ImapSettings | format-list
 此示例针对 `USER01` 的 POP3 访问权限将邮件检索格式设置为“仅文本”。
 
 ```powershell
-Set-CASMailbox -Identity USER01 -PopMessagesRetrievalMimeFormat TextOnly
+    Set-CASMailbox -Identity USER01 -PopMessagesRetrievalMimeFormat TextOnly
 ```
 
 可从以下设置中进行选择。 您可以通过使用数字值或文本字符串为 *PopMessagesRetrievalMimeFormat* 参数指定值。
@@ -299,8 +299,8 @@ Set-CASMailbox -Identity USER01 -PopMessagesRetrievalMimeFormat TextOnly
 1.  在命令行管理程序中运行以下命令。
     
     ```powershell
-Get-CAS Mailbox <identity> | format-list
-```
+    Get-CAS Mailbox <identity> | format-list
+    ```
 
 2.  验证 *PopMessagesRetrievalMimeFormat* 的值是否正确。
 
@@ -311,7 +311,7 @@ Get-CAS Mailbox <identity> | format-list
 此示例针对 `USER01` 的 IMAP4 访问权限将邮件检索格式设置为“仅文本”。
 
 ```powershell
-Set-CASMailbox -Identity USER01 -ImapMessagesRetrievalMimeFormat TextOnly
+    Set-CASMailbox -Identity USER01 -ImapMessagesRetrievalMimeFormat TextOnly
 ```
 
 您可以通过使用数字值或文本字符串为 *ImapMessagesRetrievalMimeFormat* 参数指定值。
@@ -370,8 +370,8 @@ Set-CASMailbox -Identity USER01 -ImapMessagesRetrievalMimeFormat TextOnly
 1.  在命令行管理程序中运行以下命令。
     
     ```powershell
-Get-CAS Mailbox <identity> | format-list
-```
+    Get-CAS Mailbox <identity> | format-list
+    ```
 
 2.  验证 *ImapMessagesRetrievalMimeFormat* 的值是否正确。
 

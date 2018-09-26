@@ -73,5 +73,6 @@ Set-Mailbox -Identity "Chris Ashton" -ArchiveQuota 10GB -ArchiveWarningQuota 9.5
 
   - 在命令行管理程序中，运行以下命令可显示有关存档的配额信息。
     
+    ```powershell
         Get-Mailbox <Name> | FL Name,Archive*Quota
-
+    ```

@@ -77,7 +77,9 @@ Set-PopSettings -Identity CAS01 -MaxConnectionsFromSingleIP Value
 
 此示例设置用户的连接限制。
 
-    Set-PopSettings -MaxConnectionsPerUser Value 
+```powershell
+Set-PopSettings -MaxConnectionsPerUser Value 
+```
 
 此示例设置了最大命令大小。
 
@@ -108,8 +110,8 @@ Set-PopSettings -MaxCommandSize Value
 1.  在命令行管理程序中运行以下命令。
     
     ```powershell
-Get-PopSettings | format-list
-```
+    Get-PopSettings | format-list
+    ```
 
 2.  验证连接设置是否正确。
 

@@ -160,7 +160,9 @@ _**上一次修改主题：** 2016-12-09_
 
 此示例设置 Outlook Web App 的默认主题，其中服务器名称为 `fourthcoffee`，虚拟目录名称为 `owa`，网站名称为 `default web site`，主题位于名为 `Custom` 的文件夹中。
 
+```powershell
     set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -defaulttheme Custom 
+```
 
 有关语法和参数的详细信息，请参阅[Set-OwaVirtualDirectory](https://technet.microsoft.com/zh-cn/library/bb123515\(v=exchg.150\))。
 
@@ -168,11 +170,15 @@ _**上一次修改主题：** 2016-12-09_
 
 此示例在 Outlook Web App 中禁用主题选择，其中服务器名称为 `fourthcoffee`，虚拟目录名称为 `owa`，网站名称为 `default web site`。
 
+```powershell
     set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -themeselectionenabled $false 
+```
 
 也可以按以下示例中所示，同时完成这两个命令：
 
+```powershell
     set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -defaulttheme Custom -themeselectionenabled $false
+```
 
 有关语法和参数的详细信息，请参阅[Set-OwaVirtualDirectory](https://technet.microsoft.com/zh-cn/library/bb123515\(v=exchg.150\))。
 

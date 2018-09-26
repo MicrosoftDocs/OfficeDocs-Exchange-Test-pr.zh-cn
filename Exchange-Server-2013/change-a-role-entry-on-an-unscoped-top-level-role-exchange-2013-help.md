@@ -59,11 +59,15 @@ _**上一次修改主题：** 2012-10-03_
 
 若要向角色条目添加参数，请使用以下语法。
 
+```powershell
     Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -AddParameter -UnscopedTopLevel
+```
 
 本示例将 *EmailAddress* 和 *City* 参数添加到 Recipient Administrators 无作用域角色上的 **CreateUsers.ps1** 脚本。
 
+```powershell
     Set-ManagementRoleEntry "Recipient Administrators\CreateUsers.ps1" -Parameters EmailAddress, City -AddParameter -UnscopedTopLevel
+```
 
 有关语法和参数的详细信息，请参阅 [Set-ManagementRoleEntry](https://technet.microsoft.com/zh-cn/library/dd351162\(v=exchg.150\))。
 
@@ -83,11 +87,15 @@ _**上一次修改主题：** 2012-10-03_
 
 若要删除角色条目中的参数，请使用以下语法。
 
+```powershell
     Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -RemoveParameter -UnscopedTopLevel
+```
 
 本示例将 *Delay*、*Force* 及 *Credential* 参数从 Tier 1 Server Administrators 角色上的 **Start-Widget** 非 Exchange cmdlet 中删除。
 
+```powershell
     Set-ManagementRoleEntry "Tier 1 Server Administrators\Start-Widget" -Parameters Delay, Force, Credential -RemoveParameter -UnscopedTopLevel
+```
 
 有关语法和参数的详细信息，请参阅 [Set-ManagementRoleEntry](https://technet.microsoft.com/zh-cn/library/dd351162\(v=exchg.150\))。
 
@@ -109,11 +117,15 @@ _**上一次修改主题：** 2012-10-03_
 
 若要删除角色条目中的所有参数，请使用以下语法。
 
+```powershell
     Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters $Null -UnscopedTopLevel
+```
 
 本示例将从 Recipient Administrators 角色上的 FindMailboxesOverQuota.ps1 脚本中删除所有参数。
 
+```powershell
     Set-ManagementRoleEntry "Recipient Administrators\FindMailboxesOverQuota.ps1" -Parameters $Null -UnscopedTopLevel
+```
 
 有关语法和参数的详细信息，请参阅 [Set-ManagementRoleEntry](https://technet.microsoft.com/zh-cn/library/dd351162\(v=exchg.150\))。
 
@@ -131,11 +143,15 @@ _**上一次修改主题：** 2012-10-03_
 
 若要指定一组特定的参数，请使用以下语法。
 
+```powershell
     Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -UnscopedTopLevel
+```
 
 本示例仅包括 Seattle Mail Recipient Admins 角色上 **Set-Widget** cmdlet 中的 *Alias*、*DisplayName*、*WidgetConfig* 和 *Enabled* 参数。
 
+```powershell
     Set-ManagementRoleEntry "Seattle Mail Recipient Admins\Set-UMMailbox" -Parameters Alias, DisplayName, WidgetConfig, Enabled -UnscopedTopLevel
+```
 
 有关语法和参数的详细信息，请参阅 [Set-ManagementRoleEntry](https://technet.microsoft.com/zh-cn/library/dd351162\(v=exchg.150\))。
 

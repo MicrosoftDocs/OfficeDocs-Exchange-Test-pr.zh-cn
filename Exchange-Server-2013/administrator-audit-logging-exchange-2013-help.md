@@ -140,11 +140,11 @@ Cmdlet，无论他们在哪里运行，审核如果 cmdlet 是在审核列表和
 </tr>
 <tr class="even">
 <td><p><code>CmdletParameters</code></p></td>
-<td><p>此字段包含在运行 <code>CmdletName</code> 字段中的 cmdlet 时指定的参数。使用参数指定的值（如果有）也存储在此字段中，但是在默认输出中不可见。有关如何访问此字段中的其他信息的详细信息，请参阅<a href="search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md">搜索角色组更改或管理员审核日志</a>。</p></td>
+<td><p>此字段包含在运行 <code>CmdletName</code> 字段中的 cmdlet 时指定的参数。使用参数指定的值（如果有）也存储在此字段中，但是在默认输出中不可见。有关如何访问此字段中的其他信息的详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/ff459262(v=exchg.150)">搜索角色组更改或管理员审核日志</a>。</p></td>
 </tr>
 <tr class="odd">
 <td><p><code>ModifiedProperties</code></p></td>
-<td><p>此字段包含在 <code>ObjectModified</code> 字段中的对象上修改的属性。属性的旧值和存储的新值也存储在此字段中，但是在默认输出中不可见。有关如何访问此字段中的其他信息的详细信息，请参阅<a href="search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md">搜索角色组更改或管理员审核日志</a>。</p>
+<td><p>此字段包含在 <code>ObjectModified</code> 字段中的对象上修改的属性。属性的旧值和存储的新值也存储在此字段中，但是在默认输出中不可见。有关如何访问此字段中的其他信息的详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/ff459262(v=exchg.150)">搜索角色组更改或管理员审核日志</a>。</p>
 
 > [!IMPORTANT]  
 > 仅当 <strong>Set-AdminAuditLogConfig</strong> cmdlet 中的 <em>LogLevel</em> 参数设置为 <code>Verbose</code> 时，此字段才会填充。
@@ -197,7 +197,7 @@ EAC 中的\&quot;审核\&quot;页面包括若干个报告，提供有关各种�
 
   - **管理员审核日志**   使用此报告可以将指定时间段内记录的审核日志条目导出到一个 XML 文件，然后通过电子邮件将该文件发送给您指定的收件人。有关 XML 文件内容的详细信息，请参阅[管理员审核日志结构](administrator-audit-log-structure-exchange-2013-help.md)。
 
-有关如何使用这些报告的信息，请参阅[搜索角色组更改或管理员审核日志](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)。
+有关如何使用这些报告的信息，请参阅[搜索角色组更改或管理员审核日志](https://technet.microsoft.com/zh-cn/library/ff459262(v=exchg.150))。
 
 有关\&quot;审核\&quot;页面中包括的其他报告的信息，请参阅[Exchange 审核报告](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)。
 
@@ -221,7 +221,7 @@ EAC 中的\&quot;审核\&quot;页面包括若干个报告，提供有关各种�
 
 返回的每个审核日志条目都包含Audit Log Contents中的表所述的信息。默认情况下，仅返回与指定条件匹配的前 1,000 个日志条目。不过，可以使用 *ResultSize* 参数覆盖此默认设置并返回更多或更少的条目。可以使用 *ResultSize* 参数指定值 `Unlimited`，以返回与指定条件匹配的所有日志条目。
 
-有关如何使用 **Search-AdminAuditLog** cmdlet 的信息，请参阅[搜索角色组更改或管理员审核日志](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)。
+有关如何使用 **Search-AdminAuditLog** cmdlet 的信息，请参阅[搜索角色组更改或管理员审核日志](https://technet.microsoft.com/zh-cn/library/ff459262(v=exchg.150))。
 
 ## New-AdminAuditLogSearch cmdlet
 
@@ -235,7 +235,7 @@ EAC 中的\&quot;审核\&quot;页面包括若干个报告，提供有关各种�
 > 默认情况下，Outlook Web App 不允许您打开 XML 附件。您可以将 Exchange 配置为允许使用 Outlook Web App 查看 XML 附件，也可以使用其他电子邮件客户端（例如，Microsoft Outlook）查看该附件。有关如何将 Outlook Web App 配置为允许查看 XML 附件的信息，请参阅<a href="view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md">查看或配置 Outlook Web App 虚拟目录</a>。
 
 
-有关如何使用 **New-AdminAuditLogSearch** cmdlet 的信息，请参阅[搜索角色组更改或管理员审核日志](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)。
+有关如何使用 **New-AdminAuditLogSearch** cmdlet 的信息，请参阅[搜索角色组更改或管理员审核日志](https://technet.microsoft.com/zh-cn/library/ff459262(v=exchg.150))。
 
 返回顶部
 
@@ -253,7 +253,7 @@ EAC 中的\&quot;审核\&quot;页面包括若干个报告，提供有关各种�
 
 可以使用 EAC\&quot;审核\&quot;页面或者使用 **Search-AdminAuditLog** 或 **New-AdminAuditLogSearch** cmdlet，按照与检索任何其他日志条目相同的方式来检索手动审核日志条目。
 
-若要查看手动审核日志条目中 **Write-AdminAuditLog** cmdlet 的 *Comment* 参数的内容，请参阅[搜索角色组更改或管理员审核日志](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)。
+若要查看手动审核日志条目中 **Write-AdminAuditLog** cmdlet 的 *Comment* 参数的内容，请参阅[搜索角色组更改或管理员审核日志](https://technet.microsoft.com/zh-cn/library/ff459262(v=exchg.150))。
 
 ## Active Directory 复制
 

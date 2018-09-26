@@ -57,14 +57,16 @@ _**上一次修改主题：** 2016-12-09_
 
 如果已经创建并配置为 AD RMS 群集中的超级用户组的通讯组，您可以为该组的成员添加Exchange 2013联盟邮箱。如果没有配置超级用户组，必须创建一个通讯组并将联盟邮箱添加为成员。
 
-1.  创建通讯组用作 AD RMS 超级用户组专用。有关详细信息，请参阅[创建和管理通讯组](create-and-manage-distribution-groups-exchange-2013-help.md)。
+1.  创建通讯组用作 AD RMS 超级用户组专用。有关详细信息，请参阅[创建和管理通讯组](https://technet.microsoft.com/zh-cn/library/bb124513(v=exchg.150))。
 
 2.  新建通讯组中添加用户**FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042** 。联合身份验证邮箱是系统邮箱，因此 EAC 中不可见。若要将它添加到通讯组，必须使用[Add-DistributionGroupMember](https://technet.microsoft.com/zh-cn/library/bb124340\(v=exchg.150\)) cmdlet 从外壳。
     
     此示例将联合邮箱添加到 ADRMSSuperUsers 通讯组。
     
+    ```powershell
         Add-DistributionGroupMember ADRMSSuperUsers -Member FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042
-
+    ```
+    
 有关语法和参数的详细信息，请参阅 [Add-DistributionGroupMember](https://technet.microsoft.com/zh-cn/library/bb124340\(v=exchg.150\))。
 
 ## 步骤 2︰ 使用 AD RMS 设置超级用户组
@@ -96,7 +98,8 @@ AD RMS 群集上执行下列步骤。若要执行此过程时使用的帐户必�
     > [!IMPORTANT]  
     > 在 Windows Server 2008 R2 和更高版本上提供了 ADRMSAdmin PowerShell 模块。
     
+    ```powershell
         Import-Module ADRMSAdmin
         New-PSDrive -Name MyRmsAdmin -PsProvider AdRmsAdmin -Root https://localhost 
         Get-ItemProperty -Path MyRmsAdmin:\SecurityPolicy\SuperUser
-
+    ```

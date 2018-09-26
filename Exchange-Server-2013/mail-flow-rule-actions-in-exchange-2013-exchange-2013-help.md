@@ -61,7 +61,7 @@ _**上一次修改主题：** 2017-05-03_
 <p><strong>将要审批的邮件转发给</strong> &gt; <strong>这些人</strong></p></td>
 <td><p><em>ModerateMessageByUser</em></p></td>
 <td><p><code>Addresses</code></p></td>
-<td><p>将邮件转发到指定审查方，作为包装在审批请求的附件。有关详细信息，请参阅<a href="common-message-approval-scenarios-exchange-2013-help.md">常见邮件审批方案</a>。不能使用的通讯组作为仲裁人。</p></td>
+<td><p>将邮件转发到指定审查方，作为包装在审批请求的附件。有关详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/dd298007(v=exchg.150)">常见邮件审批方案</a>。不能使用的通讯组作为仲裁人。</p></td>
 <td><p>Exchange 2010 或更高版本</p></td>
 </tr>
 <tr class="even">
@@ -632,7 +632,7 @@ _**上一次修改主题：** 2017-05-03_
 
 ## 详细信息
 
-[管理邮件流规则](manage-mail-flow-rules-exchange-2013-help.md)
+[管理邮件流规则](https://technet.microsoft.com/zh-cn/library/jj657505(v=exchg.150))
 
 [邮件流或传输规则](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 

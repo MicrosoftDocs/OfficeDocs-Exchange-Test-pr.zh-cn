@@ -17,7 +17,7 @@ _**适用于：** Exchange Server 2013_
 
 _**上一次修改主题：** 2015-04-07_
 
-在 Microsoft Exchange Server 2013 中，邮件传递记录管理 (MRM) 的执行通过使用保留标记和保留策略来进行。保留策略是一组可以应用到邮箱的保留标记。有关更多详细信息，请参阅[保留标记和保留策略](retention-tags-and-retention-policies-exchange-2013-help.md)。作为在 Exchange Server 2007 中引入的 MRM 技术，托管文件夹在此处不受支持。
+在 Microsoft Exchange Server 2013 中，邮件传递记录管理 (MRM) 的执行通过使用保留标记和保留策略来进行。保留策略是一组可以应用到邮箱的保留标记。有关更多详细信息，请参阅[保留标记和保留策略](https://technet.microsoft.com/zh-cn/library/dd297955(v=exchg.150))。作为在 Exchange Server 2007 中引入的 MRM 技术，托管文件夹在此处不受支持。
 
 应用了托管文件夹邮箱策略的邮箱可以进行迁移，从而使用保留策略。为此，必须创建与链接至用户托管文件夹邮箱策略的托管文件夹等效的保留标记。
 
@@ -251,6 +251,7 @@ _**上一次修改主题：** 2015-04-07_
 
 本示例根据 Contoso 托管文件夹邮箱策略中显示的相应托管内容设置创建保留标记。
 
+```PowerShell    
     New-RetentionPolicyTag Corp-DeletedItems -ManagedFolderToUpgrade Corp-DeletedItems
     New-RetentionPolicyTag Corp-SentItems -ManagedFolderToUpgrade Corp-SentItems
     New-RetentionPolicyTag Corp-JunkMail -ManagedFolderToUpgrade Corp-JunkMail
@@ -258,6 +259,7 @@ _**上一次修改主题：** 2015-04-07_
     New-RetentionPolicyTag 30Days -ManagedFolderToUpgrade 30Days
     New-RetentionPolicyTag 5Years -ManagedFolderToUpgrade 5Years
     New-RetentionPolicyTag NeverExpire -ManagedFolderToUpgrade NeverExpire
+```    
 
 有关语法和参数的详细信息，请参阅 [New-RetentionPolicyTag](https://technet.microsoft.com/zh-cn/library/dd335226\(v=exchg.150\))。
 
@@ -269,6 +271,7 @@ _**上一次修改主题：** 2015-04-07_
 
 本示例根据托管文件夹及 Contoso 托管文件夹邮箱策略中显示的相应托管内容设置创建保留标记。手动指定保留设置，无需使用 *ManagedFolderToUpgrade* 参数。
 
+```PowerShell
     New-RetentionPolicyTag Corp-DeletedItems -Type DeletedItems -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction DeleteAndAllowRecovery
     New-RetentionPolicyTag Corp-SentItems -Type SentItems -RetentionEnabled $true -AgeLimitforRetention 1825 -RetentionAction MoveToDeletedItems
     New-RetentionPolicyTag Corp-JunkMail -Type JunkMail -RetentionEnabled $true -AgeLimitforRetention 30 -RetentionAction PermanentlyDelete
@@ -276,6 +279,7 @@ _**上一次修改主题：** 2015-04-07_
     New-RetentionPolicyTag 30Days -Type Personal -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction MoveToDeletedItems
     New-RetentionPolicyTag 5Years -Type Personal -RetentionEnabled $true -AgeLimitForRetention 1825 -RetentionAction MoveToDeletedItems
     New-RetentionPolicyTag NeverExpire -Type Personal -RetentionEnabled $false
+```    
 
 有关语法和参数的详细信息，请参阅 [New-RetentionPolicyTag](https://technet.microsoft.com/zh-cn/library/dd335226\(v=exchg.150\))。
 
@@ -289,7 +293,9 @@ _**上一次修改主题：** 2015-04-07_
 
 本示例创建了保留策略 RP-Corp，并将新建的保留标记链接至策略。
 
-    New-RetentionPolicy RP-Corp -RetentionPolicyTagLinks Corp-DeletedItems,Corp-SentItems,Corp-JunkMail,Corp-EntireMailbox,30Days,NeverExpire
+```PowerShell
+New-RetentionPolicy RP-Corp -RetentionPolicyTagLinks Corp-DeletedItems,Corp-SentItems,Corp-JunkMail,Corp-EntireMailbox,30Days,NeverExpire
+```            
 
 有关语法和参数的详细信息，请参阅 [New-RetentionPolicy](https://technet.microsoft.com/zh-cn/library/dd297970\(v=exchg.150\))。
 
@@ -327,13 +333,17 @@ Set-Mailbox -Identity Kwok -RetentionPolicy RP-Corp
     
     此命令可以检索应用于组织中所有邮箱的保留策略，及其保留挂起状态。
     
-        Get-Mailbox -ResultSize unlimited -Filter {Name -NotLike "DiscoverySearch*�?} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
+
+    ```PowerShell 
+    Get-Mailbox -ResultSize unlimited -Filter {Name -NotLike "DiscoverySearch*�?} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
+    ```
 
   - 在托管文件夹助理采用保留策略处理邮箱之后，使用 [Get-RetentionPolicyTag](https://technet.microsoft.com/zh-cn/library/dd298009\(v=exchg.150\)) cmdlet 检索用户邮箱中设置的保留标记。
     
     此命令可检索实际应用于 April Stewart 邮箱的保留标记。
     
     ```powershell
-Get-RetentionPolicyTag -Mailbox astewart
-```
+    Get-RetentionPolicyTag -Mailbox astewart
+    ```
+
 

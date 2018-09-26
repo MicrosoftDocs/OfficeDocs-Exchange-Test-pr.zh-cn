@@ -64,11 +64,11 @@ _**上一次修改主题：** 2015-03-09_
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="address-lists-exchange-2013-help.md">地址列表</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/bb232119(v=exchg.150)">地址列表</a></p></td>
 <td><p>了解更多有关用于组织您的收件人以便最终用户轻松访问的方法的地址列表和 GAL 的信息。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="address-book-policies-exchange-2013-help.md">通讯簿策略</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/hh529948(v=exchg.150)">通讯簿策略</a></p></td>
 <td><p>了解更多有关如何将您的地址列表和 GAL 分开放入不同虚拟组织的信息。</p></td>
 </tr>
 <tr class="odd">

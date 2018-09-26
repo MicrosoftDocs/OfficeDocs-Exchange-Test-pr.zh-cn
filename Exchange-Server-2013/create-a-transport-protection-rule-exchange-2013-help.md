@@ -71,8 +71,8 @@ _**上一次修改主题：** 2016-12-09_
   - 若要创建传输保护规则，必须在 AD RMS 部署现有 RMS 模板。本示例检索来自 AD RMS 群集可用的模板。
     
     ```powershell
-Get-RMSTemplate | format-list
-```
+    Get-RMSTemplate | format-list
+    ```
     
     有关语法和参数的详细信息，请参阅 [Get-RMSTemplate](https://technet.microsoft.com/zh-cn/library/dd297960\(v=exchg.150\))。
 
@@ -81,8 +81,10 @@ Get-RMSTemplate | format-list
     > [!NOTE]  
     > 在此示例中使用<code>SubjectContainsWords</code>谓词。可以使用传输规则谓词的任意组合以形成条件和例外的规则。有关可用的谓词的信息，请参阅<a href="mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md">传输规则条件（谓词）</a>。
     
+      ```powershell
         New-TransportRule -Name "Protect-BusinessCriticalProject" -SubjectContainsWords "Business Critical" -ApplyRightsProtectionTemplate "Do Not Forward"
-    
+      ```
+      
     有关语法和参数的详细信息，请参阅 [New-TransportRule](https://technet.microsoft.com/zh-cn/library/bb125138\(v=exchg.150\))。
 
 ## 您如何知道这有效？

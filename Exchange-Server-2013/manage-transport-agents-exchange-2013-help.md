@@ -50,16 +50,16 @@ _**上一次修改主题：** 2015-04-08_
 1.  在客户端访问服务器上，打开 Windows PowerShell 并运行以下命令：
     
     ```powershell
-Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
-```
+    Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+    ```
 
 2.  运行所述命令，并向命令中添加下列值：`-TransportService FrontEnd`.
     
     例如，要查看客户端访问服务器上的前端传输服务中的传输代理，应运行以下命令：
     
     ```powershell
-Get-TransportAgent -TransportService FrontEnd
-```
+    Get-TransportAgent -TransportService FrontEnd
+    ```
 
 ## 使用命令行管理程序安装传输代理
 
@@ -71,11 +71,15 @@ Get-TransportAgent -TransportService FrontEnd
 
 使用以下语法安装传输代理。
 
+```powershell
     Install-TransportAgent -Name <TransportAgentIdentity> -TransportAgentFactory <"TransportAgentFactory"> -AssemblyPath <"FilePath">
+```
 
 本示例将在邮箱服务器上的传输服务中安装一个名为 Contoso Transport Agent 的虚假传输代理。
 
+```powershell
     Install-TransportAgent -Name "Contoso Transport Agent" -TransportAgentFactory "vendor.exchange.ContosoTransportAgentfactory" -AssemblyPath "C:\Program Files\Vendor\TransportAgent\ContosoTransportAgentFactory.dll"
+```
 
 ## 您如何知道这有效？
 

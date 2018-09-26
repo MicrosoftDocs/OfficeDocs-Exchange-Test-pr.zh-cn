@@ -19,7 +19,7 @@ _**上一次修改主题：** 2015-04-08_
 
 在 Microsoft Exchange Server 2013 中，创建对 Exchange 组织中的收件人或发件人接收或发送的电子邮件进行日志记录的日记规则时，由统一消息 (UM) 服务生成的语音邮件和未接来电通知将包括在内。使用本主题中的过程可为整个组织关闭或打开此功能。
 
-若要了解与日记功能相关的其他管理任务，请查看[管理日记](manage-journaling-exchange-2013-help.md)。
+若要了解与日记功能相关的其他管理任务，请查看[管理日记](https://technet.microsoft.com/zh-cn/library/jj651670(v=exchg.150))。
 
 ## 在开始之前，您需要知道什么？
 
@@ -55,5 +55,5 @@ Set-TransportConfig -VoicemailJournalingEnabled $true
 
 [日记](journaling-exchange-2013-help.md)
 
-[管理日记](manage-journaling-exchange-2013-help.md)
+[管理日记](https://technet.microsoft.com/zh-cn/library/jj651670(v=exchg.150))
 

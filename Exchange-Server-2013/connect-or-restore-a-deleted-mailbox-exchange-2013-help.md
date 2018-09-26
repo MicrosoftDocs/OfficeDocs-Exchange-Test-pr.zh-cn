@@ -47,7 +47,9 @@ _**上一次修改主题：** 2015-05-04_
 
   - 若要验证邮箱数据库中存在要将用户帐户连接到的已删除邮箱，并且这些邮箱不是软删除的邮箱，请运行以下命令。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,Database,DisconnectReason
+    ```PowerShell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,Database,DisconnectReason
+    ```
     
     邮箱数据库中必须存在删除的邮箱，并且 *DisconnectReason* 属性的值必须为 `Disabled`。如果已将邮箱从数据库中清除，则该命令不会返回任何结果。
 
@@ -105,19 +107,27 @@ Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Al
 
 本示例将连接链接的邮箱。*Identity* 参数指定邮箱数据库 MBXDB02 上的已删除邮箱。*LinkedMasterAccount* 参数指定帐户林中要将邮箱连接到的 Active Directory 用户帐户。*LinkedDomainController* 参数指定帐户林中的域控制器。
 
-    Connect-Mailbox -Identity "Temp User" -Database MBXDB02 -LinkedDomainController FabrikamDC01 -LinkedMasterAccount danpark@fabrikam.com -Alias dpark
+```powershell
+Connect-Mailbox -Identity "Temp User" -Database MBXDB02 -LinkedDomainController FabrikamDC01 -LinkedMasterAccount danpark@fabrikam.com -Alias dpark
+```
 
 本示例将连接会议室邮箱。
 
-    Connect-Mailbox -Identity "rm2121" -Database "MBXResourceDB" -User "Conference Room 2121" -Alias ConfRm2121 -Room
+```powershell
+Connect-Mailbox -Identity "rm2121" -Database "MBXResourceDB" -User "Conference Room 2121" -Alias ConfRm2121 -Room
+```        
 
 本示例将连接设备邮箱。
 
-    Connect-Mailbox -Identity "MotorPool01" -Database "MBXResourceDB" -User "Van01 (12 passengers)" -Alias van01 -Equipment
+```powershell
+Connect-Mailbox -Identity "MotorPool01" -Database "MBXResourceDB" -User "Van01 (12 passengers)" -Alias van01 -Equipment
+```        
 
 此示例将连接共享邮箱。
 
-    Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printer Support" -Alias corpprint -Shared
+```powershell
+Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printer Support" -Alias corpprint -Shared
+```
 
 > [!NOTE]  
 > 还可以使用 <code>LegacyDN</code> 或 <code>MailboxGuid</code> 值来标识删除的邮箱。
@@ -136,8 +146,8 @@ Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Al
   - 在此命令行管理程序中，运行以下命令。
     
     ```powershell
-Get-User <identity>
-```
+    Get-User <identity>
+    ```
     
     *RecipientType* 属性的 **UserMailbox** 值表示用户帐户和邮箱已经连接。也可以运行 **Get-Mailbox \<identity\>** 命令来验证邮箱是否已连接。
 
@@ -155,15 +165,21 @@ Get-User <identity>
 
 若要创建邮箱还原请求，必须使用已删除邮箱的显示名、旧版可分辨名称 (DN) 或邮箱 GUID。使用 **Get-MailboxStatistics** cmdlet 可显示要还原的已删除邮箱的 `DisplayName`、`MailboxGuid` 和 `LegacyDN` 属性的值。例如，运行以下命令可为组织中所有已禁用和已删除的邮箱返回此信息。
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "Disabled"} | fl DisplayName,MailboxGuid,LegacyDN,Database
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "Disabled"} | fl DisplayName,MailboxGuid,LegacyDN,Database
+```            
 
 此示例将已删除的邮箱还原到目标邮箱 Debra Garcia；已删除的邮箱用 *SourceStoreMailbox* 参数标识，并且位于 MBXDB01 邮箱数据库上。因为使用了 *AllowLegacyDNMismatch* 参数，因此可将源邮箱还原到一个不同的邮箱（没有相同的旧 DN 值的邮箱）。
 
-    New-MailboxRestoreRequest -SourceStoreMailbox e4890ee7-79a2-4f94-9569-91e61eac372b -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+```powershell
+New-MailboxRestoreRequest -SourceStoreMailbox e4890ee7-79a2-4f94-9569-91e61eac372b -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+```            
 
 此示例将 Pilar Pinilla 的已删除存档邮箱还原到其当前的存档邮箱。*AllowLegacyDNMismatch* 参数不是必需的，因为主邮箱及其对应的存档邮箱有相同的旧 DN。
 
-    New-MailboxRestoreRequest -SourceStoreMailbox "Personal Archive - Pilar Pinilla" -SourceDatabase "MDB01" -TargetMailbox pilarp@contoso.com -TargetIsArchive
+```powershell
+New-MailboxRestoreRequest -SourceStoreMailbox "Personal Archive - Pilar Pinilla" -SourceDatabase "MDB01" -TargetMailbox pilarp@contoso.com -TargetIsArchive
+```        
 
 有关语法和参数的详细信息，请参阅 [New-MailboxRestoreRequest](https://technet.microsoft.com/zh-cn/library/ff829875\(v=exchg.150\))。
 
@@ -176,8 +192,8 @@ Get-User <identity>
 1.  通过运行以下 cmdlet 获取 Active Directory 林和域控制器完全限定的域名 (FQDN)：
     
     ```powershell
-Get-OrganizationConfig | fl OriginatingServer
-```
+    Get-OrganizationConfig | fl OriginatingServer
+    ```
 
 2.  利用步骤 1 返回的信息，搜索 Active Directory 中的“已删除对象”容器以获取公用文件夹邮箱的 GUID 和包含已删除公用文件夹邮箱的邮箱数据库的 GUID 或名称。
     
@@ -189,15 +205,18 @@ Get-OrganizationConfig | fl OriginatingServer
 
 1.  通过运行以下命令新建一个 Active Directory 对象（可能会提示您提供适当的凭据）：
     
-        New-MailUser <mailUserName> -ExternalEmailAddress <emailAddress> 
-        
-        Get-MailUser <mailUserName> | Disable-MailUser
+    ```powershell
+    New-MailUser <mailUserName> -ExternalEmailAddress <emailAddress> 
+    Get-MailUser <mailUserName> | Disable-MailUser
+    ```
     
     其中 `<mailUserName>`、`<emailAddress>` 以及 `<mailUserName>` 是您选择的值。在下一个步骤中，您将需要用到相同的 `<mailUserName>` 值。
 
 2.  运行以下命令将已删除公用文件夹邮箱连接至刚才创建的 Active Directory 对象：
     
-        Connect-Mailbox -Identity <public folder mailbox GUID> -Database <database name or GUID> -User <mailUserName>
+    ```powershell
+    Connect-Mailbox -Identity <public folder mailbox GUID> -Database <database name or GUID> -User <mailUserName>
+    ```
     
     > [!NOTE]  
     > <code>Identity</code> 参数指定 Exchange 数据库中要连接到 Active Directory 用户对象的邮箱对象。上面的示例指定了公用文件夹邮箱的 GUID，但您也可以使用“显示名称”值或 LegacyExchangeDN 值。
@@ -205,7 +224,9 @@ Get-OrganizationConfig | fl OriginatingServer
 
 3.  根据下面的示例，在公用文件夹邮箱上运行 `Update-StoreMailboxState`：
     
-        Update-StoreMailboxState -Identity <public folder mailbox GUID> -Database <database name or GUID>
+    ```powershell
+    Update-StoreMailboxState -Identity <public folder mailbox GUID> -Database <database name or GUID>
+    ```
     
     如步骤 2 所示，`Identity` 参数将接受公用文件夹邮箱的 GUID、显示名称或 LegacyExchangeDN 值。
 

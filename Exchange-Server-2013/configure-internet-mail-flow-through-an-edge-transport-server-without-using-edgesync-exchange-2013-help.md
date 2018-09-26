@@ -71,7 +71,9 @@ _**上一次修改主题：** 2017-01-23_
 
 若要创建配置为将邮件发送到 Internet 的发送连接器，请运行以下命令。
 
+```powershell
     New-SendConnector -Name "To Internet" -AddressSpaces * -Usage Internet -DNSRoutingEnabled $true
+```
 
 有关语法和参数的详细信息，请参阅 [New-SendConnector](https://technet.microsoft.com/zh-cn/library/aa998936\(v=exchg.150\))。
 
@@ -101,8 +103,10 @@ _**上一次修改主题：** 2017-01-23_
 
 若要创建配置为将邮件发送到 Exchange 组织的发送连接器，请运行以下命令。
 
+```powershell
     $MailboxCredentials = Get-Credential
     New-SendConnector -Name "To Internal Org" -Usage Internal -AddressSpaces *.contoso.com -DNSRoutingEnabled $false -SmartHosts mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $MailboxCredentials
+```
 
 有关语法和参数的详细信息，请参阅 [New-SendConnector](https://technet.microsoft.com/zh-cn/library/aa998936\(v=exchg.150\))。
 
@@ -116,7 +120,9 @@ _**上一次修改主题：** 2017-01-23_
 
 若要将默认接收连接器修改为仅接受来自 Internet 的邮件，请运行以下命令。
 
+```powershell
     Set-ReceiveConnector "Default internal Receive connector Edge01" -Name "From Internet" -Bindings 10.1.1.1:25
+```
 
 有关语法和参数的详细信息，请参阅 [Set-ReceiveConnector](https://technet.microsoft.com/zh-cn/library/bb125140\(v=exchg.150\))。
 
@@ -136,7 +142,9 @@ _**上一次修改主题：** 2017-01-23_
 
 若要创建配置为仅接受来自 Exchange 组织的邮件的接收服务器，请运行以下命令。
 
+```powershell
     New-ReceiveConnector -Name "From Internal Org" -Usage Internal -AuthMechanism TLS,BasicAuth,BasicAuthRequireTLS,ExchangeServer -Bindings 10.1.1.2:25 -RemoteIPRanges 192.168.5.10,192.168.5.20
+```
 
 有关语法和参数的详细信息，请参阅 [New-ReceiveConnector](https://technet.microsoft.com/zh-cn/library/bb125139\(v=exchg.150\))。
 
@@ -144,8 +152,10 @@ _**上一次修改主题：** 2017-01-23_
 
 若要验证是否已成功配置所需的发送连接器和接收连接器，请在边缘传输服务器上运行以下命令，并验证显示的值是否为您配置的值。
 
+```powershell
     Get-SendConnector | Format-List Name,Usage,AddressSpaces,SourceTransportServers,DSNRoutingEnabled,SmartHosts,SmartHostAuthMechanism
     Get-ReceiveConnector | Format-List Name,Usage,AuthMechanism,Bindings,RemoteIPRanges
+```
 
 ## 邮箱服务器步骤
 
@@ -175,8 +185,10 @@ _**上一次修改主题：** 2017-01-23_
 
 若要创建配置为将传出邮件发送到边缘传输服务器的发送连接器，请运行以下命令。
 
+```powershell
     $EdgeCredentials = Get-Credential
     New-SendConnector -Name "To Edge" -Usage Internal -AddressSpaces * -DNSRoutingEnabled $false -SmartHosts edge01.contoso.com -SourceTransportServers mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $EdgeCredentials
+```
 
 有关语法和参数的详细信息，请参阅 [New-SendConnector](https://technet.microsoft.com/zh-cn/library/aa998936\(v=exchg.150\))。
 
@@ -184,5 +196,6 @@ _**上一次修改主题：** 2017-01-23_
 
 若要验证是否已成功创建配置为将传出邮件发送到边缘传输服务器的发送连接器，请在邮箱服务器上运行以下命令，并验证显示的值是否为您配置的值。
 
+```powershell
     Get-SendConnector | Format-List Name,Usage,AddressSpaces,DSNRoutingEnabled,SmartHosts,SourceTransportServers,SmartHostAuthMechanism
-
+```

@@ -63,7 +63,9 @@ Set-DatabaseAvailabilityGroup DAG1 -AutoDagVolumesRootFolderPath "C:\ExchVols"
 
 若要验证是否已成功配置数据库和卷的根路径，请运行以下命令。
 
-    Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+```powershell
+Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+```
 
 *AutoDagDatabasesRootFolderPath* 和 *AutoDagVolumesRootFolderPath* 的输出应反映已配置的路径。
 
@@ -81,7 +83,9 @@ Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
 
 要验证是否已成功配置每个卷的数据库数量，请运行以下命令。
 
-    Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+```powershell
+Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+```
 
 *AutoDagDatabaseCopiesPerVolume* 的输出应反映已配置的值。
 
@@ -89,8 +93,10 @@ Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
 
 下一步，创建与步骤 1 中配置的根目录相对应的目录。本示例显示了如何使用命令提示符创建默认目录。
 
-    md C:\ExchangeDatabases
-    md C:\ExchangeVolumes
+```powershell
+md C:\ExchangeDatabases
+md C:\ExchangeVolumes
+```
 
 ## 您如何知道此步骤有效？
 
@@ -128,19 +134,19 @@ Dir C:\
 
 下一步，在根路径 C:\\ExchangeDatabases 下创建数据库目录。此示例展示了如何针对每个卷上有 4 个数据库的存储配置创建目录。
 
-```
+```powershell
 md c:\ExchangeDatabases\db001
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db002
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db003
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db004
 ```
 
@@ -158,7 +164,9 @@ Dir C:\ExchangeDatabases
 
 为每个数据库创建装载点，然后将装载点链接到正确的卷。例如，db001 的已装载文件夹应位于 C:\\ExchangeDatabases\\db001。可以使用 diskmgmt.msc 或 mountvol.exe 执行此操作。此示例展示了如何使用 mountvol.exe 将 db001 装载到 C:\\ExchangeDatabases\\db001。
 
-    Mountvol.exe c:\ExchangeDatabases\db001 \\?\Volume (GUID)
+```powershell
+Mountvol.exe c:\ExchangeDatabases\db001 \\?\Volume (GUID)
+```
 
 ## 您如何知道此步骤有效？
 
@@ -180,35 +188,35 @@ C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.log
 
 本示例说明了如何为即将存储在卷 1 中的 4 个数据库创建目录：
 
-```
+```powershell
 md c:\ExchangeDatabases\db001\db001.db
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db001\db001.log
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db002\db002.db
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db002\db002.log
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db003\db003.db
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db003\db003.log
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db004\db004.db
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db004\db004.log
 ```
 
@@ -228,13 +236,17 @@ Dir C:\ExchangeDatabases /s
 
 创建数据库，其日志和数据库路径已通过相应的文件夹进行配置。此示例展示了如何创建存储在新建的目录和装载点结构中的数据库。
 
-    New-MailboxDatabase -Name db001 -Server MBX1 -LogFolderPath C:\ExchangeDatabases\db001\db001.log -EdbFilePath C:\ExchangeDatabases\db001\db001.db\db001.edb
+```powershell
+New-MailboxDatabase -Name db001 -Server MBX1 -LogFolderPath C:\ExchangeDatabases\db001\db001.log -EdbFilePath C:\ExchangeDatabases\db001\db001.db\db001.edb
+```
 
 ## 您如何知道此步骤有效？
 
 要验证是否已成功在相应的文件夹中创建数据库，请运行以下命令。
 
-    Get-MailboxDatabase db001 | Format List *path*
+```powershell
+Get-MailboxDatabase db001 | Format List *path*
+```
 
 返回的数据库属性应指示数据库文件和日志文件正存储在上述文件夹中。
 
@@ -244,16 +256,18 @@ Dir C:\ExchangeDatabases /s
 
 1.  运行以下命令来验证 DAG 配置是否正确。
     
+    ```powershell
         Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+    ```
 
 2.  运行以下命令来验证目录结构配置是否正确（下面是默认路径，如果有必要，将这些路径替换为您正在使用的路径）。
-    ```
+    
     ```powershell
-Dir C:\ExchangeDatabases /s
-```
+    Dir C:\ExchangeDatabases /s
     ```
-    ```
+    
+    
     ```powershell
-Dir c:\ExchangeVolumes /s
-```
+    Dir c:\ExchangeVolumes /s
     ```
+    

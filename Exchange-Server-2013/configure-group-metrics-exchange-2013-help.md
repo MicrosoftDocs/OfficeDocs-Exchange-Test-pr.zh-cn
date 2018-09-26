@@ -17,7 +17,7 @@ _**适用于：** Exchange Server 2013_
 
 _**上一次修改主题：** 2015-04-08_
 
-提供有关通讯组及动态通讯组大小的信息的邮件提示依赖于组指标数据。在指定的邮箱服务器上生成组指标数据。有关组指标的详细信息，请参阅[组的指标和邮件提醒](group-metrics-and-mailtips-exchange-2013-help.md)。
+提供有关通讯组及动态通讯组大小的信息的邮件提示依赖于组指标数据。在指定的邮箱服务器上生成组指标数据。有关组指标的详细信息，请参阅[组的指标和邮件提醒](group-metrics-and-https://technet.microsoft.com/zh-cn/library/jj649091(v=exchg.150))。
 
 可以在邮箱服务器上启用或禁用组指标生成。
 
@@ -27,7 +27,7 @@ _**上一次修改主题：** 2015-04-08_
 
   - 您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅 [收件人权限](recipients-permissions-exchange-2013-help.md)主题中的\&quot;组指标\&quot;条目。
 
-  - 组指标数据仅用于邮件提示。请确保在您的组织中已启用组指标邮件提示。有关详细步骤，请参阅[针对组织关系管理邮件提示](manage-mailtips-for-organization-relationships-exchange-2013-help.md)。
+  - 组指标数据仅用于邮件提示。请确保在您的组织中已启用组指标邮件提示。有关详细步骤，请参阅[针对组织关系管理邮件提示](https://technet.microsoft.com/zh-cn/library/jj649324(v=exchg.150))。
 
   - 只能使用命令行管理程序执行此过程。
 
@@ -62,8 +62,8 @@ Set-MailboxServer MBX1 -ForceGroupMetricsGeneration $true
 1.  运行以下命令：
     
     ```powershell
-Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
-```
+    Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
+    ```
 
 2.  验证显示的设置是否为您配置的设置。
 

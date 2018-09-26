@@ -43,7 +43,9 @@ _**上一次修改主题：** 2016-12-09_
 
 本示例创建项目 Contoso 的Outlook保护规则。该规则保护发送到 ContosoPMs 通讯组与 AD RMS 模板关键业务的消息。
 
-    New-OutlookProtectionRule -Name "Project Contoso" -SentTo "DL-ContosoPMs@contoso.com" -ApplyRightsProtectionTemplate "Business Critical"
+```powershell
+New-OutlookProtectionRule -Name "Project Contoso" -SentTo "DL-ContosoPMs@contoso.com" -ApplyRightsProtectionTemplate "Business Critical"
+```
 
 > [!NOTE]  
 > 当您使用<code>SentTo</code>谓词的Outlook保护规则和指定通讯组，仅将邮件发送到通讯组在收件人、 抄送或密件抄送字段是受 IRM 保护。IRM 保护不被应用于邮件发送到通讯组中的单个成员。

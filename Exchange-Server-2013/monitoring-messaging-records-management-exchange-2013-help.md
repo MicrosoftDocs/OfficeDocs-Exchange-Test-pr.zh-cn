@@ -17,9 +17,9 @@ _**适用于：** Exchange Server 2013_
 
 _**上一次修改主题：** 2009-11-03_
 
-[查看邮件记录管理的性能计数器](view-performance-counters-for-messaging-records-management-exchange-2013-help.md)
+[查看邮件记录管理的性能计数器](view-performance-counters-for-https://technet.microsoft.com/zh-cn/library/dd335093(v=exchg.150))
 
-[可用于邮件记录管理的性能计数器](performance-counters-for-messaging-records-management-exchange-2013-help.md)
+[可用于邮件记录管理的性能计数器](performance-counters-for-https://technet.microsoft.com/zh-cn/library/dd335093(v=exchg.150))
 
 [邮件记录管理错误和事件](messaging-records-management-errors-and-events-exchange-2013-help.md)
 

@@ -61,9 +61,11 @@ _**上一次修改主题：** 2016-08-09_
 
 此示例在文件 C:\\My Documents\\DLP Backup.xml 中导入自定义 DLP 策略模板文件。从 XML 文件导入 DLP 策略集合会删除或覆盖组织中已定义的所有预先存在的 DLP 策略。在导入并覆盖当前 DLP 策略前，请确保对当前 DLP 策略集合进行了备份。
 
+   ```PowerShell
     Import-DlpPolicyCollection -FileData ([Byte[]]$(Get-Content -Path " C:\My Documents\DLP Backup.xml " -Encoding Byte -ReadCount 0))
+   ```
 
 ## 详细信息
 
-[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[数据丢失预防](https://technet.microsoft.com/zh-cn/library/jj150527(v=exchg.150))
 

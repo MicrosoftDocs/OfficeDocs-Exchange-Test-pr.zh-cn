@@ -59,17 +59,21 @@ DAG 利用了“增量部署”这一概念，这是指能够在安装 Exchange 
 
 本例显示如何使用命令行管理程序创建包含群集管理访问点并包含三个服务器的 DAG。其中两台服务器（EX1 和 EX2）位于同一个子网 (10.0.0.0) 中，第三台服务器 (EX3) 位于另一个子网 (192.168.0.0) 中。
 
+```powershell
     New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer EX4 -DatabaseAvailabilityGroupIPAddresses 10.0.0.5,192.168.0.5
     Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX1
     Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX2
     Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX3
+```
 
 用于创建不包含群集管理访问点的 DAG 的命令非常相似：
 
+```powershell
     New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer EX4 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress])::None
     Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX1
     Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX2
     Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX3
+```
 
 将 EX1 添加到 DAG 后会为 DAG1 创建群集。在创建群集期间，**Add-DatabaseAvailabilityGroupServer** cmdlet 将检索为 DAG 配置的 IP 地址，并忽略与在 EX1 上找到的任何子网不匹配的 IP 地址。在上述第一个示例中，将使用 IP 地址 10.0.0.5 创建 DAG1 的群集，而忽略 192.168.0.5。在上述第二个示例中，*DatabaseAvailabilityGroupIPAddresses* 参数的值指示任务为不包含群集管理访问点的 DAG 创建故障转移群集。因此，将使用核心群集资源组中的 IP 地址或网络名称资源创建群集。
 

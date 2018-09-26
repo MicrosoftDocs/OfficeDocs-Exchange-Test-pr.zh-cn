@@ -64,11 +64,15 @@ _**上一次修改主题：** 2012-10-02_
 
 此示例将创建一个委派角色分配，以便 Senior Admins 角色组的成员将 Mail Recipients 角色分配给 Exchange 组织中的任何角色受理人。
 
+```powershell
     New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admin - Delegate" -Delegating
+```
 
 此示例将创建一个委派角色分配，以便 Senior Admins 角色组的成员将 Mail Recipients 角色只分配给 contoso.com 域的 Sales/Users OU 中的用户。
 
+```powershell
     New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admins - Delegate" -RecipientOrganizationalUnitScope contoso.com/sales/users -Delegating
+```
 
 有关详细的语法和参数信息，请参阅[New-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd335193\(v=exchg.150\))。
 

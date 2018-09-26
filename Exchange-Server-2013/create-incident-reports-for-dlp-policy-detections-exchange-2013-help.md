@@ -139,5 +139,5 @@ _**上一次修改主题：** 2015-04-07_
 
 [查看 DLP 策略检测报告](view-dlp-policy-detection-reports-exchange-2013-help.md)
 
-[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[数据丢失预防](https://technet.microsoft.com/zh-cn/library/jj150527(v=exchg.150))
 

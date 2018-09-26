@@ -23,9 +23,9 @@ _**上一次修改主题：** 2014-10-03_
 
 Exchange 2013 中的数据丢失预防 (DLP) 功能可以帮助组织减少敏感数据的意外泄露。传输规则已进行更新，可支持创建随 DLP 策略附带并强制执行 DLP 策略的规则。若要了解有关传输规则中的 DLP 支持的详细信息，请参阅下列主题：
 
-[将敏感信息规则与传输规则集成](integrating-sensitive-information-rules-with-transport-rules-exchange-2013-help.md)
+[将敏感信息规则与传输规则集成](https://technet.microsoft.com/zh-cn/library/jj150583(v=exchg.150))
 
-[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[数据丢失预防](https://technet.microsoft.com/zh-cn/library/jj150527(v=exchg.150))
 
 ## 新谓词和操作
 

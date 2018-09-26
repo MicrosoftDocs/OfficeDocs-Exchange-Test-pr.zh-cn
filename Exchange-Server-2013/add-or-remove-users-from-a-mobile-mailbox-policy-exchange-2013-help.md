@@ -63,8 +63,10 @@ _**上一次修改主题：** 2015-07-16_
 
 1.  在此命令行管理程序中，运行以下命令。
     
-        Get-CASMailbox -Identity tony@contoso.com -ActiveSyncMailboxPolicy "Sales" 
-
+    ```powershell
+    Get-CASMailbox -Identity tony@contoso.com -ActiveSyncMailboxPolicy "Sales" 
+    ```
+    
 ## 您如何知道这有效？
 
 若要验证是否已成功更改了用户的移动设备邮箱策略，请执行以下操作之一：
@@ -73,7 +75,9 @@ _**上一次修改主题：** 2015-07-16_
 
 2.  在此命令行管理程序中，运行以下命令。
     
+    ```powershell
         Get-CASMailbox -Identity tony@contoso.com 
+    ```
 
 ## 在同一时间为多个用户更改移动设备邮箱策略
 
@@ -99,9 +103,11 @@ _**上一次修改主题：** 2015-07-16_
 
 1.  在此命令行管理程序中，运行以下命令。
     
+    ```powershell
         Get-Mailbox | where { $_.CustomAttribute1 -match "Manager"
          } | Set-CASMailbox -activesyncmailboxpolicy(Get-ActiveSyncMailboxPolicy "Contoso").Identity
-    
+    ```
+
     > [!NOTE]  
     > 可以用 <code>CustomAttribute1</code> 替换 <strong>Get-Mailbox</strong> 对象的任何属性。若要查看完整列表，请键入：<code>Get-Mailbox username |fl</code>.
 
@@ -115,6 +121,6 @@ _**上一次修改主题：** 2015-07-16_
 2.  在此命令行管理程序中，运行以下命令。
     
     ```powershell
-Get-CASMailbox -Identity tony@contoso.com
-```
+        Get-CASMailbox -Identity tony@contoso.com
+    ```
 

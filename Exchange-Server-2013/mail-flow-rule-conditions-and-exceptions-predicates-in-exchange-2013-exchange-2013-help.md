@@ -168,7 +168,7 @@ _**上一次修改主题：** 2017-12-20_
 <td><p><em>HasSenderOverride</em></p>
 <p><em>ExceptIfHasSenderOverride</em></p></td>
 <td><p>无</p></td>
-<td><p>发件人已选择覆盖数据丢失防护 (DLP) 策略的邮件。有关 DLP 策略的详细信息，请参阅 <a href="technical-overview-of-dlp-data-loss-prevention-in-exchange.md">数据丢失预防</a>。</p></td>
+<td><p>发件人已选择覆盖数据丢失防护 (DLP) 策略的邮件。有关 DLP 策略的详细信息，请参阅 <a href="https://technet.microsoft.com/zh-cn/library/jj150527(v=exchg.150)">数据丢失预防</a>。</p></td>
 <td><p>Exchange 2013 或更高版本</p></td>
 </tr>
 <tr class="odd">

@@ -35,12 +35,14 @@ _**上一次修改主题：** 2012-10-04_
 
 运行命令时如果带有 *WhatIf* 开关，则要将 *WhatIf* 开关放在命令的末尾，如下例所示：
 
+  ```powershell
     New-AcceptedDomain -Name "Contoso Domain" -DomainName "contoso.com" -WhatIf 
+  ```
 
 运行此示例命令时，命令行管理程序将返回以下文本：
 
 ```powershell
-What if: Creating Accepted Domain "Contoso Domain" with domain name "contoso.com".
+  What if: Creating Accepted Domain "Contoso Domain" with domain name "contoso.com".
 ```
 
 ## Confirm 开关
@@ -75,11 +77,13 @@ Get-JournalRule | Enable-JournalRule -Confirm
 
 运行此示例命令时，命令行管理程序将返回以下确认提示：
 
+  ```powershell
     Confirm
     Are you sure you want to perform this action?
     Enabling journal rule "Litigation Journal Rule".
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help
     (default is "Y"):
+  ```
 
 确认提示提供以下选择：
 

@@ -171,7 +171,7 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>传输日志记录在邮件流过传输管道时邮件遇到的情况。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="manage-message-approval-exchange-2013-help.md">管理邮件审批</a></p></td>
+<td><p><a href="https://technet.microsoft.com/zh-cn/library/dd297936(v=exchg.150)">管理邮件审批</a></p></td>
 <td><p>仲裁传输要求对发送到特定收件人的邮件进行审批。</p></td>
 </tr>
 <tr class="even">

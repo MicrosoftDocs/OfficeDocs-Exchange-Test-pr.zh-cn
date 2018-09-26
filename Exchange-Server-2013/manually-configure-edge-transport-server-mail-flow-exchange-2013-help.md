@@ -65,11 +65,15 @@ _**上一次修改主题：** 2014-02-21_
 
   - 对于出站边缘传输服务器，在邮箱服务器上运行以下命令：
     
+    ```powershell
         New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $false -CreateInternetSendConnector $true
+    ```
 
   - 对于入站边缘传输服务器，在邮箱服务器上运行以下命令：
     
+    ```powershell
         New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $true -CreateInternetSendConnector $false
+    ```
 
 ## 将出站电子邮件路由到智能主机
 
@@ -77,13 +81,17 @@ _**上一次修改主题：** 2014-02-21_
 
 在邮箱服务器上运行以下命令，以禁止自动创建 Internet 发送连接器。
 
+```powershell
     New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInternetSendConnector $false
+```
 
 完成边缘订阅进程后，手动创建 Internet 发送连接器。在 Exchange 组织内部创建发送连接器，并选择边缘订阅作为连接器的源服务器。选择 `Custom` 使用类型并配置一个或多个智能主机。下次 EdgeSync 同步配置数据时，此新发送连接器将被复制到边缘传输服务器上的 AD LDS 实例。通过在邮箱服务器上运行 **Start-EdgeSynchronization** cmdlet 可以强制执行即时 EdgeSync 同步。
 
 示例：使用命令行管理程序为订阅的边缘传输服务器配置发送连接器，以便通过智能主机路由所有 Internet 地址空间的邮件。在 Exchange 组织内的邮箱服务器（而非边缘传输服务器）上运行此项任务。
 
+```powershell
     New-SendConnector -Name "EdgeSync - Site-A to Internet" -Usage Custom -AddressSpaces SMTP:*;100 -DNSRoutingEnabled $false -SmartHosts 192.168.10.1 -SmartHostAuthMechanism None -SourceTransportServers EdgeSubscriptionName
+```
 
 > [!IMPORTANT]  
 > 此示例未指定任何智能主机身份验证机制。在您自己的 Exchange 组织中创建智能主机连接器时，确保配置了正确的身份验证机制并提供了所有必要的凭据。

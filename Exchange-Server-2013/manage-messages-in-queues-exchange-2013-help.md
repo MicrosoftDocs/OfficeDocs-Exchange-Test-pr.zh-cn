@@ -57,7 +57,9 @@ _**上一次修改主题：** 2014-05-07_
 
 若要删除邮件，请使用以下语法。
 
-    Remove-Message <-Identity MessageIdentity | -Filter {MessageFilter}> -WithNDR <$true | $false>
+```powershell
+Remove-Message <-Identity MessageIdentity | -Filter {MessageFilter}> -WithNDR <$true | $false>
+```
 
 此示例删除队列中主题为&#34;Win Big&#34;的邮件且不发送 NDR。
 
@@ -113,7 +115,9 @@ Resume-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
 
 本示例将恢复 Contoso.com 域中从任意发件人发送的所有邮件。
 
-    Resume-Message -Filter {FromAddress -eq "*contoso.com"}
+```powershell
+Resume-Message -Filter {FromAddress -eq "*contoso.com"}
+```
 
 本示例将恢复服务器 Hub01 上无法访问的队列中邮件 ID 为 3 的邮件。
 
@@ -159,7 +163,9 @@ Suspend-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
 
 此示例挂起队列中所有来自域 contoso.com 中所有发件人的邮件。
 
-    Suspend-Message -Filter {FromAddress -eq "*contoso.com"}
+```powershell
+Suspend-Message -Filter {FromAddress -eq "*contoso.com"}
+```
 
 此示例挂起名为 Mailbox01 的服务器上无法访问的队列中邮件 ID 为 3 的邮件：
 

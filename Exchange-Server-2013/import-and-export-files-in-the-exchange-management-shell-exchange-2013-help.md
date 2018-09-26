@@ -47,11 +47,15 @@ Exchange 2013 中的远程命令行管理程序包含两个会话，本地会话
 
 命令行管理程序必须知道您要发送到 Exchange 2013 cmdlet 的文件以及接受数据的参数。为此，请使用以下语法。
 
+```command line
     <Cmdlet> -FileData ([Byte[]]$(Get-Content -Path <local path to file> -Encoding Byte -ReadCount 0))
+```
 
 例如，以下命令将文件 C:\\MyData.dat 导入到 **Import-SomeData** 虚构 cmdlet 上的 *FileData* 参数。
 
+```command line
     Import-SomeData -FileData (Byte[]]$(Get-Content -Path "C:\MyData.dat" -Encoding Byte -ReadCount 0))
+```
 
 运行该命令时将执行下列操作：
 
@@ -69,8 +73,10 @@ Exchange 2013 中的远程命令行管理程序包含两个会话，本地会话
 
 某些 cmdlet 使用以下替代语法，来完成与上述语法相同的操作。
 
+```command line
     [Byte[]]$Data = Get-Content -Path <local path to file> -Encoding Byte -ReadCount 0
     Import-SomeData -FileData $Data
+```
 
 使用此替代语法会出现相同的操作过程。唯一的区别是不会一次执行整个操作，从本地文件检索的数据存储在可以在创建后引用的变量中。接着将该变量用在导入命令中，以将本地文件的内容传递到 **Import-SomeData** cmdlet 中。如果您希望在多个命令中使用来自本地文件的数据，则此两步过程非常有用。
 
@@ -141,7 +147,7 @@ Exchange 2013 中的远程命令行管理程序包含两个会话，本地会话
 命令行管理程序必须知道您要将存储在 **FileData** 属性中的数据保存到本地计算机。为此，请使用以下语法。
 
 ```command line
-<cmdlet> | ForEach {     <cmdlet> | ForEach { $_.FileData | Add-Content <local path to file> -Encoding Byte }.FileData | Add-Content <local path to file> -Encoding Byte }
+    <cmdlet> | ForEach {     <cmdlet> | ForEach { $_.FileData | Add-Content <local path to file> -Encoding Byte }.FileData | Add-Content <local path to file> -Encoding Byte }
 ```
 
 例如，以下命令导出存储在由 **Export-SomeData** 虚构 cmdlet 创建的对象上的 **FileData** 属性中的数据。导出的数据存储在您在本地计算机上指定的文件中，在此示例中为 MyData.dat。
@@ -151,7 +157,7 @@ Exchange 2013 中的远程命令行管理程序包含两个会话，本地会话
 
 
 ```powershell
-Export-SomeData | ForEach {     Export-SomeData | ForEach { $_.FileData | Add-Content C:\MyData.dat -Encoding Byte }.FileData | Add-Content C:\MyData.dat -Encoding Byte }
+    Export-SomeData | ForEach {     Export-SomeData | ForEach { $_.FileData | Add-Content C:\MyData.dat -Encoding Byte }.FileData | Add-Content C:\MyData.dat -Encoding Byte }
 ```
 
 运行该命令时将执行下列操作：

@@ -96,7 +96,7 @@ _**上一次修改主题：** 2012-11-27_
     
       - **邮箱数据库**   使用此选项可指定邮箱数据库，而不是让 Exchange 为您选择数据库。 单击“浏览”打开“选择邮箱数据库”对话框。 此对话框列出 Exchange 组织中的所有邮箱数据库。 默认情况下，按名称对邮箱数据库进行排序。 还可以单击相应列标题，按服务器名称或版本对数据库进行排序。 选择要使用的邮箱数据库，然后单击“确定”。
     
-      - **通讯簿策略**   使用此选项可为链接邮箱指定通讯簿策略 (ABP)。 ABP 包含一个全局地址列表 (GAL)、一个脱机通讯簿 (OAB)、一个会议室列表以及一组地址列表。 在分配给用户时，ABP 使这些用户可以访问 Outlook 和 Outlook Web App 中的自定义 GAL。 若要了解更多信息，请参阅[通讯簿策略](address-book-policies-exchange-2013-help.md)。
+      - **通讯簿策略**   使用此选项可为链接邮箱指定通讯簿策略 (ABP)。 ABP 包含一个全局地址列表 (GAL)、一个脱机通讯簿 (OAB)、一个会议室列表以及一组地址列表。 在分配给用户时，ABP 使这些用户可以访问 Outlook 和 Outlook Web App 中的自定义 GAL。 若要了解更多信息，请参阅[通讯簿策略](https://technet.microsoft.com/zh-cn/library/hh529948(v=exchg.150))。
         
         在下拉列表中，选择要与此邮箱关联的策略。
 
@@ -106,7 +106,9 @@ _**上一次修改主题：** 2012-11-27_
 
 此示例为 CONTOSO Exchange 资源林中的 Ayla Kol 创建链接邮箱。 FABRIKAM 域位于帐户林中。 管理员帐户 FABRIKAM \\administrator 用于访问链接域控制器。
 
+```powershell
     New-Mailbox -Name "Ayla Kol" -LinkedDomainController "DC1_FABRIKAM" -LinkedMasterAccount " FABRIKAM\aylak" -OrganizationalUnit Users -UserPrincipalName aylak@contoso.com -LinkedCredential:(Get-Credential FABRIKAM\administrator)
+```
 
 有关语法和参数的信息，请参阅 [New-Mailbox](https://technet.microsoft.com/zh-cn/library/aa997663\(v=exchg.150\))。
 
@@ -119,8 +121,8 @@ _**上一次修改主题：** 2012-11-27_
   - 在命令行管理程序中，运行以下命令可显示有关新链接邮箱的信息。
     
     ```powershell
-Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
-```
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
+    ```
 
 ## 更改链接邮箱属性
 
@@ -242,7 +244,7 @@ Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
 
   - **通讯簿策略**   此框显示应用于邮箱的通讯簿策略。 通过通讯簿策略可以将用户分为特定组以提供通讯簿的自定义视图。 要应用或更改应用于邮箱的通讯簿策略，请从下拉列表中选择一个通讯簿策略。
 
-  - **统一消息** 默认情况下禁用此功能。 启用统一消息 (UM) 时，用户将能够使用组织的 UM 功能，并且向用户应用一组默认的 UM 属性。 单击“启用”为邮箱启用 UM。 有关如何启用 UM 的信息，请参阅[为用户启用语音邮件](enable-a-user-for-voice-mail-exchange-2013-help.md)。
+  - **统一消息** 默认情况下禁用此功能。 启用统一消息 (UM) 时，用户将能够使用组织的 UM 功能，并且向用户应用一组默认的 UM 属性。 单击“启用”为邮箱启用 UM。 有关如何启用 UM 的信息，请参阅[为用户启用语音邮件](https://technet.microsoft.com/zh-cn/library/bb124147(v=exchg.150))。
     
     > [!NOTE]  
     > 必须有 UM 拨号计划以及 UM 邮箱策略方可启用 UM。
@@ -354,15 +356,21 @@ Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
 
 此示例使用 **Get-Mailbox** 命令查找组织中的所有链接邮箱。
 
+```powershell
     Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')}
+```
 
 此示例使用 **Set-Mailbox** 命令将电子邮件的“收件人:”、“抄送:”和“密件抄送:”行上允许的收件人数 限制为 500。此限制应用于组织中的所有链接邮箱。
 
+```powershell
     Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | Set-Mailbox -RecipientLimits 500
+```
 
 此示例更改 fabrikam.com 帐户林中与 Exchange 林中的链接邮箱相关联的链接主帐户。
 
+```powershell
     Set-Mailbox -Identity "Ayla Kol" -LinkedDomainController DC1.fabrikam.com -LinkedMasterAccount "fabrikam\robinw" -LinkedCredential:(Get-Credential fabrikam\administrator)
+```
 
 ## 您如何知道这有效？
 
@@ -372,11 +380,13 @@ Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
 
   - 在命令行管理程序中，使用 **Get-Mailbox** cmdlet 验证更改。 使用命令行管理程序的一个好处是，您可查看多个链接邮箱的多个属性。 在上面的示例中，收件人限制有所更改，运行以下命令将验证新值。
     
+    ```powershell
         Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | fl Name,RecipientLimits
-    
+    ```
+
     对于上面的示例，链接主帐户有所更改，运行以下命令来验证新值。
     
     ```powershell
-Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
-```
+    Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
+    ```
 

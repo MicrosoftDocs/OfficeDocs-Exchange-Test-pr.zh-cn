@@ -102,7 +102,7 @@ Exchange 中的 SMTP 电子邮件地址的最大长度为 571 个字符。此限
 </tr>
 <tr class="even">
 <td><p>DynamicDistributionGroup</p></td>
-<td><p>具有 Active Directory 类 <strong>msExchDynamicDistributionList</strong> 的对象。有关详细信息，请参阅<a href="manage-dynamic-distribution-groups-exchange-2013-help.md">管理动态通讯组</a>。</p></td>
+<td><p>具有 Active Directory 类 <strong>msExchDynamicDistributionList</strong> 的对象。有关详细信息，请参阅<a href="https://technet.microsoft.com/zh-cn/library/bb123722(v=exchg.150)">管理动态通讯组</a>。</p></td>
 </tr>
 <tr class="odd">
 <td><p>Mailbox</p></td>

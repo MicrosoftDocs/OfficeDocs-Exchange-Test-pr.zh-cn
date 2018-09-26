@@ -79,7 +79,9 @@ Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessDirectory C:\DAG1DIR
 
 本示例预配置 CAS3 的备用见证服务器，以及为 DAG DAG1 的 C:\\DAGFileShareWitnesses\\DAG1.contoso.com 预配置备用见证目录。
 
+```powershell
     Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGFileShareWitnesses\DAG1.contoso.com -AlternateWitnessServer CAS3
+```
 
 本示例配置名为 DAG1 的 DAG 以使用动态主机配置协议 (DHCP) 获得 IP 地址。
 
@@ -122,8 +124,8 @@ Set-DatabaseAvailabilityGroup -Identity DAG1 -ReplicationPort 63132
   - 在命令行管理程序中，运行以下命令来显示 DAG 配置设置并验证是否成功配置了 DAG。
     
     ```powershell
-Get-DatabaseAvailabilityGroup <DAGName> | Format-List
-```
+    Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+    ```
 
 ## 详细信息
 

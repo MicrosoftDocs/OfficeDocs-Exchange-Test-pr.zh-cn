@@ -27,7 +27,7 @@ _**上一次修改主题：** 2013-04-16_
 
   - 您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅 [统一消息权限](unified-messaging-permissions-exchange-2013-help.md)主题中的\&quot;UM 拨号计划\&quot;条目。
 
-  - 在执行这些步骤之前，请确认已创建了 SIP URI 的拨号计划。有关详细步骤，请参阅[创建 UM 拨号计划](create-a-um-dial-plan-exchange-2013-help.md)。
+  - 在执行这些步骤之前，请确认已创建了 SIP URI 的拨号计划。有关详细步骤，请参阅[创建 UM 拨号计划](https://technet.microsoft.com/zh-cn/library/bb123819(v=exchg.150))。
 
   - 若要了解可能适用于此主题中过程的键盘快捷键，请参阅 [Exchange 管理中心内的键盘快捷键](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)。
 
@@ -51,10 +51,12 @@ _**上一次修改主题：** 2013-04-16_
 
 此示例从名为 `MySIPDialPlan` 的拨号计划中删除名为 `MyMailboxServer` 的邮箱服务器。
 
-    $dp= Get-UMDialPlan "MySIPDialPlan"
-    $s=Get-UMService MyMailboxServer
-    $s.dialplans-=$dp.identity
-    Set-UMService -id MyMailboxServer -dialplans:$s.dialplans
+```powershell
+$dp= Get-UMDialPlan "MySIPDialPlan"
+$s=Get-UMService MyMailboxServer
+$s.dialplans-=$dp.identity
+Set-UMService -id MyMailboxServer -dialplans:$s.dialplans
+```
 
 在此示例中，有三个 SIP URI 拨号计划 ︰ SipDP1、 SipDP2 和 SipDP3。本示例删除名为`MyMailboxServer` SipDP3 拨号计划中的邮箱服务器。
 
@@ -88,10 +90,12 @@ Set-UMService -id MyUMServer -DialPlans $null
 
 此示例从名为 `MySIPDialPlan` 的 SIP URI 拨号计划中删除名为 `MyClientAccessServer` 的客户端访问服务器。
 
-    $dp= Get-UMDialPlan "MySIPDialPlan"
-    $s=Get-UMCallRouterSettings MyClientAccessServer
-    $s.dialplans-=$dp.identity
-    Set-UMCallRouterSettings -id MyClientAccessServer -dialplans:$s.dialplans
+```powershell
+$dp= Get-UMDialPlan "MySIPDialPlan"
+$s=Get-UMCallRouterSettings MyClientAccessServer
+$s.dialplans-=$dp.identity
+Set-UMCallRouterSettings -id MyClientAccessServer -dialplans:$s.dialplans
+```
 
 在此示例中，有三个 SIP URI 拨号计划 ︰ SipDP1、 SipDP2 和 SipDP3。本示例删除名为`MyClientAccessServer` SipDP3 拨号计划中的客户端访问服务器。
 

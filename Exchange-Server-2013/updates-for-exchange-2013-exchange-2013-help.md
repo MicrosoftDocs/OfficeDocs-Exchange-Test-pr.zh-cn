@@ -154,9 +154,9 @@ Outlook Web App 客户可以使用其内置的垃圾电子邮件报告选项将�
 
 ## Outlook Web App 的桌面和移动版本中提供的 DLP 策略提示
 
-数据丢失预防 (DLP) [策略提示](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)为信息性通知，将在发件人发送敏感信息时在 Outlook 中对其显示。在 Exchange 2013 SP1 中，此功能已扩展到 Outlook Web App 的桌面版本和移动版本（即 适用于设备的 OWA）。如果您已经有 DLP 策略并为 Outlook 开启了策略提示，您将看到实际运行情况。如果您的策略已经包含 Outlook 的策略提示，则不需要进行其他任何设置。继续尝试吧！
+数据丢失预防 (DLP) [策略提示](https://technet.microsoft.com/zh-cn/library/jj150512(v=exchg.150))为信息性通知，将在发件人发送敏感信息时在 Outlook 中对其显示。在 Exchange 2013 SP1 中，此功能已扩展到 Outlook Web App 的桌面版本和移动版本（即 适用于设备的 OWA）。如果您已经有 DLP 策略并为 Outlook 开启了策略提示，您将看到实际运行情况。如果您的策略已经包含 Outlook 的策略提示，则不需要进行其他任何设置。继续尝试吧！
 
-当前没有使用策略提示？若要开始使用，[从模板创建 DLP 策略](how-to-new-dlp-data-loss-prevention-policy-template.md)，然后通过编辑该策略并添加“使用策略提示通知发件人”操作添加策略提示。
+当前没有使用策略提示？若要开始使用，[从模板创建 DLP 策略](https://technet.microsoft.com/zh-cn/library/jj150515(v=exchg.150))，然后通过编辑该策略并添加“使用策略提示通知发件人”操作添加策略提示。
 
 ## 基于文档指纹的 DLP 分类
 

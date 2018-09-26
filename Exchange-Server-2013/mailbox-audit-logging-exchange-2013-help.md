@@ -159,7 +159,7 @@ _**上一次修改主题：** 2016-12-09_
 
   - **使用 Exchange 管理中心 (EAC) 中的审核报告**   您可以使用 EAC 中的“审核”选项卡运行非所有者邮箱访问报告，或者从邮箱审核日志中导出条目。有关详细信息，请参阅：
     
-      - [运行非所有者邮箱访问报告](run-a-non-owner-mailbox-access-report-exchange-online-help.md)
+      - [运行非所有者邮箱访问报告](https://technet.microsoft.com/zh-cn/library/jj150575(v=exchg.150))
     
       - [导出邮箱审核日志](https://docs.microsoft.com/zh-cn/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
 

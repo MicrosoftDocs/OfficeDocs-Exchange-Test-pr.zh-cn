@@ -27,7 +27,7 @@ _**上一次修改主题：** 2014-07-14_
 
   - 估计完成时间：2-5 分钟。
 
-  - 要删除启用了就地保留的就地电子数据展示搜索，必须首先从搜索中删除就地保留。有关详细信息，请参阅[创建或删除就地保留](create-or-remove-an-in-place-hold-exchange-2013-help.md)。
+  - 要删除启用了就地保留的就地电子数据展示搜索，必须首先从搜索中删除就地保留。有关详细信息，请参阅[创建或删除就地保留](https://technet.microsoft.com/zh-cn/library/dd979797(v=exchg.150))。
 
   - 您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅 [邮件策略和遵从性权限](messaging-policy-and-compliance-permissions-exchange-2013-help.md)主题中的\&quot;就地电子数据展示\&quot;条目。
 

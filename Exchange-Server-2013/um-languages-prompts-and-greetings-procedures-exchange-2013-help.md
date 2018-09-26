@@ -21,7 +21,7 @@ _**上一次修改主题：** 2013-04-17_
 
 [拨号计划中设置的默认语言](https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/set-dial-plan-default-language)
 
-[选择的语言的自动助理](select-the-language-for-an-auto-attendant-exchange-2013-help.md)
+[选择的语言的自动助理](https://technet.microsoft.com/zh-cn/library/aa997306(v=exchg.150))
 
 [删除 UM 语言包](remove-a-um-language-pack-exchange-2013-help.md)
 
@@ -29,5 +29,5 @@ _**上一次修改主题：** 2013-04-17_
 
 [将自定义提示从 Exchange 2007 导入 Exchange 2013](import-custom-prompts-from-exchange-2007-to-exchange-2013-exchange-2013-help.md)
 
-[允许使用电话用户界面录制自定义提示语](enable-custom-prompt-recording-using-the-telephone-user-interface-exchange-2013-help.md)
+[允许使用电话用户界面录制自定义提示语](https://technet.microsoft.com/zh-cn/library/bb691404(v=exchg.150))
 

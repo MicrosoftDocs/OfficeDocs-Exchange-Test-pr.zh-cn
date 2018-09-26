@@ -49,11 +49,15 @@ _**上一次修改主题：** 2012-10-03_
 
 若要更改作用域的名称，请使用以下语法。
 
-    Set-ManagementScope <current scope name> -Name <new scope name>
+```PowerShell
+Set-ManagementScope <current scope name> -Name <new scope name>
+```            
 
 本示例将 Seattle Servers 作用域更改为 Seattle Exchange Servers。
 
-    Set-ManagementScope "Seattle Servers" -Name "Seattle Exchange Servers"
+```PowerShell
+Set-ManagementScope "Seattle Servers" -Name "Seattle Exchange Servers"
+```
 
 有关语法和参数的详细信息，请参阅 [Set-ManagementScope](https://technet.microsoft.com/zh-cn/library/dd297996\(v=exchg.150\))。
 
@@ -61,11 +65,15 @@ _**上一次修改主题：** 2012-10-03_
 
 若要更改作用域的收件人筛选器，请使用以下语法。
 
-    Set-ManagementScope <scope name> -RecipientRestrictionFilter { <new recipient filter> }
+```PowerShell
+Set-ManagementScope <scope name> -RecipientRestrictionFilter { <new recipient filter> }
+```
 
 本示例将更改收件人筛选器，以使其与 **Company** 属性设置为 Contoso 的所有收件人对象相匹配。
 
-    Set-ManagementScope "Company Scope" -RecipientRestrictionFilter { Company -eq 'contoso' }
+```PowerShell
+Set-ManagementScope "Company Scope" -RecipientRestrictionFilter { Company -eq 'contoso' }
+```
 
 有关语法和参数的详细信息，请参阅 [Set-ManagementScope](https://technet.microsoft.com/zh-cn/library/dd297996\(v=exchg.150\))。
 
@@ -75,11 +83,15 @@ _**上一次修改主题：** 2012-10-03_
 
 若要更改作用域的组织单位根目录，请使用以下语法。
 
-    Set-ManagementScope <scope name> -RecipientRoot <OU>
+```PowerShell
+Set-ManagementScope <scope name> -RecipientRoot <OU>
+```
 
 本示例将组织单位根目录更改为 contoso.com 域下的 North America/Sales 的 Sales Users OU。
 
-    Set-ManagementScope "Sales Users" -RecipientRoot "contoso.com/North America/Sales"
+```PowerShell
+Set-ManagementScope "Sales Users" -RecipientRoot "contoso.com/North America/Sales"
+```
 
 有关语法和参数的详细信息，请参阅 [Set-ManagementScope](https://technet.microsoft.com/zh-cn/library/dd297996\(v=exchg.150\))。
 
@@ -87,11 +99,15 @@ _**上一次修改主题：** 2012-10-03_
 
 要更改作用域的服务器筛选器，请使用以下语法。
 
-    Set-ManagementScope <scope name> -ServerRestrictionFilter { <new server filter> }
+```PowerShell
+Set-ManagementScope <scope name> -ServerRestrictionFilter { <new server filter> }
+```
 
 本示例更改服务器筛选器，以匹配所有将 **ServerSite** 属性设置为 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' 的服务器对象。
 
-    Set-ManagementScope "Company Scope" -ServerRestrictionFilter { ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' }
+```PowerShell
+Set-ManagementScope "Company Scope" -ServerRestrictionFilter { ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' }
+```
 
 有关语法和参数的详细信息，请参阅 [Set-ManagementScope](https://technet.microsoft.com/zh-cn/library/dd297996\(v=exchg.150\))。
 
@@ -113,11 +129,16 @@ _**上一次修改主题：** 2012-10-03_
 
 要更改作用域的数据库筛选器，请使用以下语法。
 
-    Set-ManagementScope <scope name> -DatabaseRestrictionFilter { <new database filter> }
+```PowerShell
+Set-ManagementScope <scope name> -DatabaseRestrictionFilter { <new database filter> }
+```
 
 本示例将更改数据库筛选器，以使其与 **Name** 属性包含字符串\&quot;Executive\&quot;的所有数据库对象相匹配。
 
-    Set-ManagementScope "Database Executive Scope" -DatabaseRestrictionFilter { Name -Like "*Executive*" }
+
+```PowerShell
+Set-ManagementScope "Database Executive Scope" -DatabaseRestrictionFilter { Name -Like "*Executive*" }
+```
 
 有关语法和参数的详细信息，请参阅 [Set-ManagementScope](https://technet.microsoft.com/zh-cn/library/dd297996\(v=exchg.150\))。
 

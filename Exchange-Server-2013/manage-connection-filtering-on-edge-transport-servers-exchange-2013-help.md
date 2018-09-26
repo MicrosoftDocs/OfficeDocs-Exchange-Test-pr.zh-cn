@@ -85,7 +85,9 @@ Get-TransportAgent "Connection Filtering Agent" | Format-List Enabled
 
 若要查看 IP 阻止列表的配置，请运行以下命令：
 
-    Get-IPBlockListConfig | Format-List *Enabled,*Response
+```powershell
+Get-IPBlockListConfig | Format-List *Enabled,*Response
+```
 
 ## 使用命令行管理程序启用或禁用 IP 阻止列表
 
@@ -113,7 +115,9 @@ Get-IPBlockListConfig | Format-List Enabled
 
 若要配置 IP 阻止列表，请使用以下语法：
 
-    Set-IPBlockListConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false> -MachineEntryRejectionResponse "<Custom response text>"] [-StaticEntryRejectionResponse "<Custom response text>"]
+```powershell
+Set-IPBlockListConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false> -MachineEntryRejectionResponse "<Custom response text>"] [-StaticEntryRejectionResponse "<Custom response text>"]
+```
 
 本示例使用以下设置配置 IP 阻止列表：
 
@@ -125,13 +129,17 @@ Get-IPBlockListConfig | Format-List Enabled
 
 <!-- end list -->
 
-    Set-IPBlockListConfig -InternalMailEnabled $true -MachineEntryRejectionResponse "Connection from IP address {0} was rejected by sender reputation." -StaticEntryRejectionResponse "Connection from IP address {0} was rejected by connection filtering."
+```powershell
+Set-IPBlockListConfig -InternalMailEnabled $true -MachineEntryRejectionResponse "Connection from IP address {0} was rejected by sender reputation." -StaticEntryRejectionResponse "Connection from IP address {0} was rejected by connection filtering."
+```
 
 ## 您如何知道这有效？
 
 若要验证是否已成功配置 IP 阻止列表，请运行以下命令并验证显示的值是否是您配置的值。
 
-    Get-IPBlockListConfig | Format-List *MailEnabled,*Response
+```powershell
+Get-IPBlockListConfig | Format-List *MailEnabled,*Response
+```
 
 ## 使用命令行管理程序查看 IP 阻止列表条目
 
@@ -163,7 +171,9 @@ Get-IPBlockListEntry -IPAddress 192.168.1.13
 
 若要添加 IP 阻止列表条目，请使用以下语法：
 
-    Add-IPBlockListEntry <-IPAddress IPAddress | -IPRange IP range or CIDR IP> [-ExpirationTime <DateTime>] [-comment "<Descriptive Comment>"]
+```powershell
+Add-IPBlockListEntry <-IPAddress IPAddress | -IPRange IP range or CIDR IP> [-ExpirationTime <DateTime>] [-comment "<Descriptive Comment>"]
+```
 
 以下示例添加了 IP 地址范围为 192.168.1.10 到 192.168.1.15 的 IP 阻止列表条目，并将 IP 阻止列表条目配置为于 2014 年 7 月 4 日 15:00 过期。
 
@@ -217,7 +227,9 @@ Get-IPBlockListEntry
 
 若要查看连接筛选使用所有 IP 阻止列表提供程序的方式，请运行以下命令：
 
-    Get-IPBlockListProvidersConfig | Format-List *Enabled,Bypassed*
+```powershell
+Get-IPBlockListProvidersConfig | Format-List *Enabled,Bypassed*
+```
 
 ## 使用命令行管理程序启用或禁用所有 IP 阻止列表提供程序
 
@@ -245,7 +257,9 @@ Get-IPBlockListProvidersConfig | Format-List Enabled
 
 若要配置连接筛选使用所有 IP 阻止列表提供程序的方式，请使用以下语法：
 
-    Set-IPBlockListProvidersConfig [-BypassedRecipients <recipient1,recipient2...>] [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>]
+```powershell
+Set-IPBlockListProvidersConfig [-BypassedRecipients <recipient1,recipient2...>] [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>]
+```
 
 以下示例使用以下设置配置所有 IP 阻止列表提供程序：
 
@@ -255,7 +269,9 @@ Get-IPBlockListProvidersConfig | Format-List Enabled
 
 <!-- end list -->
 
-    Set-IPBlockListProvidersConfig -BypassedRecipients chris@fabrikam.com,michelle@fabrikam.com -InternalMailEnabled $true
+```powershell
+Set-IPBlockListProvidersConfig -BypassedRecipients chris@fabrikam.com,michelle@fabrikam.com -InternalMailEnabled $true
+```
 
 有关详细信息，请参阅 [Set-IPBlockListProvidersConfig](https://technet.microsoft.com/zh-cn/library/aa998543\(v=exchg.150\))。
 
@@ -263,7 +279,9 @@ Get-IPBlockListProvidersConfig | Format-List Enabled
 
 若要验证是否已成功配置所有 IP 阻止列表提供程序，请运行以下命令并验证显示的值是否是您配置的值。
 
-    Get-IPBlockListProvidersConfig | Format-List *MailEnabled,Bypassed*
+```powershell
+Get-IPBlockListProvidersConfig | Format-List *MailEnabled,Bypassed*
+```
 
 ## 使用命令行管理程序查看 IP 阻止列表提供程序
 
@@ -281,13 +299,17 @@ Get-IPBlockListProvider <IPBlockListProviderIdentity>
 
 以下示例显示名为\&quot;Contoso IP Block List Provider\&quot;的提供程序的详细信息。
 
-    Get-IPBlockListProvider "Contoso IP Block List Provider" | Format-List Name,Enabled,Priority,LookupDomain,*Match,*Response
+```powershell
+Get-IPBlockListProvider "Contoso IP Block List Provider" | Format-List Name,Enabled,Priority,LookupDomain,*Match,*Response
+```
 
 ## 使用命令行管理程序添加 IP 阻止列表提供程序
 
 若要添加 IP 阻止列表提供程序，请使用以下语法：
 
-    Add-IPBlockListProvider -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-Enabled <$true | $false>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>] [-RejectionResponse "<Custom Text>"]
+```powershell
+Add-IPBlockListProvider -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-Enabled <$true | $false>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>] [-RejectionResponse "<Custom Text>"]
+```
 
 本示例使用以下选项创建名为\&quot;Contoso IP Block List Provider\&quot;的 IP 阻止列表提供程序：
 
@@ -297,7 +319,9 @@ Get-IPBlockListProvider <IPBlockListProviderIdentity>
 
 <!-- end list -->
 
-    Add-IPBlockListProvider -Name "Contoso IP Block List Provider" -LookupDomain rbl.contoso.com -BitmaskMatch 127.0.0.1
+```powershell
+Add-IPBlockListProvider -Name "Contoso IP Block List Provider" -LookupDomain rbl.contoso.com -BitmaskMatch 127.0.0.1
+```
 
 > [!NOTE]  
 > 添加新 IP 阻止列表提供程序后，它会默认启用（<em>Enabled</em> 的值为 <code>$true</code>），并且会递增优先级值（第一个条目具有 <em>Priority</em> 值 1）。
@@ -347,7 +371,9 @@ Get-IPBlockListProvider <IPBlockListProviderIdentity> | Format-List Enabled
 
 若要配置现有 IP 阻止列表提供程序，请使用以下语法：
 
-    Set-IPBlockListProvider <IPBlockListProviderIdentity> -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>] [-RejectionResponse "<Custom Text>"]
+```powershell
+Set-IPBlockListProvider <IPBlockListProviderIdentity> -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>] [-RejectionResponse "<Custom Text>"]
+```
 
 例如，若要将 IP 地址状态代码 127.0.0.1 添加到名为\&quot;Contoso IP Block List Provider\&quot;的提供程序的现有状态代码列表中，请运行以下命令：
 
@@ -411,7 +437,9 @@ Get-IPBlockListProvider
 
 若要查看 IP 允许列表的配置，请运行以下命令。
 
-    Get-IPAllowListConfig | Format-List *Enabled
+```powershell
+Get-IPAllowListConfig | Format-List *Enabled
+```
 
 ## 使用命令行管理程序启用或禁用 IP 允许列表
 
@@ -439,7 +467,9 @@ Get-IPAllowListConfig | Format-List *Enabled
 
 若要配置 IP 允许列表，请使用以下语法：
 
-    Set-IPAllowListConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>
+```powershell
+Set-IPAllowListConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>
+```
 
 本示例将 IP 允许列表配置为筛选来自内部和外部邮件服务器的传入连接。默认情况下，仅筛选来自外部邮件服务器的连接（*ExternalMailEnabled* 设置为 `$true`，*InternalMailEnabled* 设置为 `$false`）。来自外部合作伙伴的未经过身份验证的连接和经过身份验证的连接都将被视为外部连接。
 
@@ -451,7 +481,9 @@ Set-IPAllowListConfig -InternalMailEnabled $true
 
 若要验证是否已成功配置 IP 允许列表，请运行以下命令并验证显示的值是否是您配置的值。
 
-    Get-IPAllowListConfig | Format-List *MailEnabled
+```powershell
+Get-IPAllowListConfig | Format-List *MailEnabled
+```
 
 ## 使用命令行管理程序查看 IP 允许列表条目
 
@@ -483,7 +515,9 @@ Get-IPAllowListEntry -IPAddress 192.168.1.13
 
 若要添加 IP 允许列表条目，请使用以下语法：
 
-    Add-IPAllowListEntry <-IPAddress IPAddress | -IPRange IP range or CIDR IP> [-ExpirationTime <DateTime>] [-Comment "<Descriptive Comment>"]
+```powershell
+Add-IPAllowListEntry <-IPAddress IPAddress | -IPRange IP range or CIDR IP> [-ExpirationTime <DateTime>] [-Comment "<Descriptive Comment>"]
+```
 
 本示例添加了 IP 地址范围为 192.168.1.10 到 192.168.1.15 的 IP 允许列表条目，并将 IP 允许列表条目配置为于 2014 年 7 月 4 日 15:00 过期。
 
@@ -537,7 +571,9 @@ Get-IPAllowListEntry
 
 若要查看连接筛选使用所有 IP 允许列表提供程序的方式，请运行以下命令：
 
-    Get-IPAllowListProvidersConfig | Format-List *Enabled
+```powershell
+Get-IPAllowListProvidersConfig | Format-List *Enabled
+```
 
 ## 使用命令行管理程序启用或禁用所有 IP 允许列表提供程序
 
@@ -565,7 +601,9 @@ Get-IPAllowListProvidersConfig | Format-List *Enabled
 
 若要配置连接筛选使用所有 IP 允许列表提供程序的方式，请使用以下语法：
 
-    Set-IPAllowListProvidersConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>]
+```powershell
+Set-IPAllowListProvidersConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>]
+```
 
 本示例将所有 IP 允许列表提供程序配置为筛选来自内部和外部邮件服务器的传入连接。默认情况下，仅筛选来自外部邮件服务器的连接（*ExternalMailEnabled* 设置为 `$true`，*InternalMailEnabled* 设置为 `$false`）。来自外部合作伙伴的未经过身份验证的连接和经过身份验证的连接都将被视为外部连接。
 
@@ -579,7 +617,9 @@ Set-IPAllowListProvidersConfig -InternalMailEnabled $true
 
 若要验证是否已成功配置所有 IP 允许列表提供程序，请运行以下命令并验证显示的值是否是您配置的值。
 
-    Get-IPAllowListProvidersConfig | Format-List *MailEnabled
+```powershell
+Get-IPAllowListProvidersConfig | Format-List *MailEnabled
+```
 
 ## 使用命令行管理程序查看 IP 允许列表提供程序
 
@@ -597,13 +637,17 @@ Get-IPAllowListProvider <IPAllowListProviderIdentity>
 
 本示例显示名为\&quot;Contoso IP Allow List Provider\&quot;的提供程序的详细信息。
 
-    Get-IPAllowListProvider "Contoso IP Allow List Provider" | Format-List Name,Enabled,Priority,LookupDomain,*Match
+```powershell
+Get-IPAllowListProvider "Contoso IP Allow List Provider" | Format-List Name,Enabled,Priority,LookupDomain,*Match
+```
 
 ## 使用命令行管理程序添加 IP 允许列表提供程序
 
 若要添加 IP 允许列表提供程序，请使用以下语法：
 
-    Add-IPAllowListProvider -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-Enabled <$true | $false>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>]
+```powershell
+Add-IPAllowListProvider -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-Enabled <$true | $false>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>]
+```
 
 本示例使用以下选项创建名为\&quot;Contoso IP Allow List Provider\&quot;的 IP 允许列表提供程序：
 
@@ -613,7 +657,9 @@ Get-IPAllowListProvider <IPAllowListProviderIdentity>
 
 <!-- end list -->
 
-    Add-IPAllowListProvider -Name "Contoso IP Allow List Provider" -LookupDomain allow.contoso.com -BitmaskMatch 127.0.0.1
+```powershell
+Add-IPAllowListProvider -Name "Contoso IP Allow List Provider" -LookupDomain allow.contoso.com -BitmaskMatch 127.0.0.1
+```
 
 > [!NOTE]  
 > 添加新 IP 允许列表提供程序后，它会默认启用（<em>Enabled</em> 的值为 <code>$true</code>），并且会递增优先级值（第一个条目具有 <em>Priority</em> 值 1）。
@@ -663,7 +709,9 @@ Get-IPAllowListProvider <IPAllowListProviderIdentity> | Format-List Enabled
 
 若要配置现有 IP 允许列表提供程序，请使用以下语法：
 
-    Set-IPAllowListProvider <IPAllowListProviderIdentity> -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>]
+```powershell
+Set-IPAllowListProvider <IPAllowListProviderIdentity> -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>]
+```
 
 例如，若要将 IP 地址状态代码 127.0.0.1 添加到名为\&quot;Contoso IP Allow List Provider\&quot;的提供程序的现有状态代码列表中，请运行以下命令：
 

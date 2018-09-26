@@ -69,11 +69,15 @@ _**上一次修改主题：** 2012-10-12_
 
 此示例使用 *RecipientFilter* 参数创建地址列表 MyAddressList，包括作为邮箱用户的收件人，并将 `StateOrProvince` 设置为 `Washington` 或 `Oregon`。
 
+```powershell
     New-AddressList -Name MyAddressList -RecipientFilter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}
+```
 
 此示例使用内置条件在 All Rooms 父容器中创建 Building 34 Meeting Rooms 子地址列表。
 
+```powershell
     New-AddressList -Name "Building 34 Meeting Rooms" -Container "\All Rooms" -IncludedRecipients Resources -ConditionalCustomAttribute1 "Building 34"
+```
 
 有关语法和参数的详细信息，请参阅 [New-AddressList](https://technet.microsoft.com/zh-cn/library/aa996912\(v=exchg.150\))。
 

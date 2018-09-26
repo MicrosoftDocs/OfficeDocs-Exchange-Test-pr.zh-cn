@@ -81,7 +81,7 @@ _**上一次修改主题：** 2017-03-27_
 
   - 在 Exchange 命令行管理程序中，使用 **\*-Mailbox** cmdlet 集。为了支持公用文件夹邮箱，下列参数已添加到 [New-Mailbox](https://technet.microsoft.com/zh-cn/library/aa997663\(v=exchg.150\)) cmdlet 中：
     
-      - *PublicFolder*   此参数与 **New-Mailbox** cmdlet 一起用于创建公用文件夹邮箱。当创建公用文件夹邮箱时，使用 `PublicFolder` 邮箱类型来创建新邮箱。有关详细信息，请参阅 [创建公用文件夹邮箱](create-a-public-folder-mailbox-exchange-2013-help.md)。
+      - *PublicFolder*   此参数与 **New-Mailbox** cmdlet 一起用于创建公用文件夹邮箱。当创建公用文件夹邮箱时，使用 `PublicFolder` 邮箱类型来创建新邮箱。有关详细信息，请参阅 [创建公用文件夹邮箱](https://technet.microsoft.com/zh-cn/library/jj552410(v=exchg.150))。
     
       - *HoldForMigration*   只有当将公用文件夹从以前版本迁移到 Exchange 2013 时才使用此参数。有关详细信息，请参阅本主题后面的迁移公用文件夹。
     
@@ -117,7 +117,7 @@ _**上一次修改主题：** 2017-03-27_
 
 在大型组织中，当您创建新公用文件夹邮箱时，层次结构必须在用户连接到该公用文件夹之前与它同步。否则，用户在与 Outlook 连接时可能看到不完整的公用文件夹结构。要在用户未尝试连接到新公用文件夹邮箱的情况下允许一定时间让此同步发生，请在创建公用文件夹邮箱时在 **New-Mailbox** cmdlet 中设置 *IsExcludedFromServingHierarchy* 参数。此参数阻止用户连接到新创建的公用文件夹邮箱。当同步完成时，运行 [Set-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123981\(v=exchg.150\)) cmdlet，其中 *IsExcludedFromServingHierarchy* 参数设置为 `false` 以指示已可以连接到公用文件夹邮箱。还可以使用 [Get-PublicFolderMailboxDiagnostics](https://technet.microsoft.com/zh-cn/library/jj218720\(v=exchg.150\)) cmdlet 按 *SyncInfo* 和 *AssistantInfo* 属性查看同步状态。
 
-有关详细信息，请参阅 [创建公用文件夹](create-a-public-folder-exchange-2013-help.md)。
+有关详细信息，请参阅 [创建公用文件夹](https://technet.microsoft.com/zh-cn/library/bb691104(v=exchg.150))。
 
 ## 公用文件夹内容
 
@@ -131,7 +131,7 @@ _**上一次修改主题：** 2017-03-27_
 
 可以将公共文件夹从以前版本的 Exchange Server 迁移至 Exchange 2013，或从以前版本的 Exchange Server 迁移至 Exchange Online。此外，可以将 Exchange 2013 公用文件夹迁移到 Exchange Online。
 
-如果在安装 Exchange 2013 之前组织中已经有 Exchange 2010 SP3 或 Exchange 2007 SP3 RU10 公用文件夹，则必须将这些文件夹迁移到 Exchange 2013。为此，请使用 **PublicFolderMigrationRequst** cmdlet。有关详细信息，请参阅[使用批处理迁移将公用文件夹从以前版本迁移到 Exchange 2013](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)。如果你的组织正在移动到 Exchange Online，你可以将公用文件夹迁移到云，同时对它们进行升级。有关详细信息，请参阅[使用批处理迁移将旧版公用文件夹迁移到 Office 365 和 Exchange Online](use-batch-migration-to-migrate-legacy-public-folders-to-office-365-and-exchange-online-exchange-online-help.md) 和[使用批处理迁移将 Exchange 2013 公用文件夹迁移到 Exchange Online](use-batch-migration-to-migrate-exchange-2013-public-folders-to-exchange-online-exchange-online-help.md)。
+如果在安装 Exchange 2013 之前组织中已经有 Exchange 2010 SP3 或 Exchange 2007 SP3 RU10 公用文件夹，则必须将这些文件夹迁移到 Exchange 2013。为此，请使用 **PublicFolderMigrationRequst** cmdlet。有关详细信息，请参阅[使用批处理迁移将公用文件夹从以前版本迁移到 Exchange 2013](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)。如果你的组织正在移动到 Exchange Online，你可以将公用文件夹迁移到云，同时对它们进行升级。有关详细信息，请参阅[使用批处理迁移将旧版公用文件夹迁移到 Office 365 和 Exchange Online](https://technet.microsoft.com/zh-cn/library/dn874017(v=exchg.150)) 和[使用批处理迁移将 Exchange 2013 公用文件夹迁移到 Exchange Online](https://technet.microsoft.com/zh-cn/library/mt798260(v=exchg.150))。
 
 由于公用文件夹的存储方式发生更改，因此旧版 Exchange 邮箱无法访问 Exchange 2013 服务器或 Exchange Online 上的公用文件夹层次结构。不过，Exchange 2013 服务器或 Exchange Online 上的用户邮箱可以连接到旧版公用文件夹。Exchange 2013 公用文件夹和旧版公用文件夹不能在 Exchange 组织中同时存在。这实际意味着版本间不能共存。将公用文件夹迁移到 Exchange Server 2013 或 Exchange Online 目前是一次性转换过程。
 

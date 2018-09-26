@@ -93,8 +93,10 @@ _**上一次修改主题：** 2016-12-09_
         
         若要配置可用性地址空间，请在 Exchange 2007 组织中的 Exchange 2010 客户端访问服务器的 Exchange 命令行管理程序中运行以下命令：
         
+          ```powershell
             Add-AvailabilityAddressSpace -AccessMethod InternalProxy -ProxyUrl https://<Exchange 2010 CAS server name>/ews/exchange.asmx -ForestName <SMTP domain of the remote Exchange organization> -UseServiceAccount $True
-        
+          ```
+
         有关语法和参数的详细信息，请参阅 [Add-AvailabilityAddressSpace](https://go.microsoft.com/fwlink/p/?linkid=268413)
 
 ## 配置 Exchange 2013 组织与 Exchange 2003 组织之间的忙/闲共享

@@ -23,7 +23,7 @@ _**上一次修改主题：** 2017-03-27_
 
 ## 有关公用文件夹迁移的常见问题
 
-本部分包含公用文件夹迁移有关的常见问题。有关详细信息，请参阅[使用批处理迁移将公用文件夹从以前版本迁移到 Exchange 2013](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)、 [使用批处理迁移将旧版公用文件夹迁移到 Office 365 和 Exchange Online](use-batch-migration-to-migrate-legacy-public-folders-to-office-365-and-exchange-online-exchange-online-help.md)或[使用批处理迁移将 Exchange 2013 公用文件夹迁移到 Exchange Online](use-batch-migration-to-migrate-exchange-2013-public-folders-to-exchange-online-exchange-online-help.md)。
+本部分包含公用文件夹迁移有关的常见问题。有关详细信息，请参阅[使用批处理迁移将公用文件夹从以前版本迁移到 Exchange 2013](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)、 [使用批处理迁移将旧版公用文件夹迁移到 Office 365 和 Exchange Online](https://technet.microsoft.com/zh-cn/library/dn874017(v=exchg.150))或[使用批处理迁移将 Exchange 2013 公用文件夹迁移到 Exchange Online](https://technet.microsoft.com/zh-cn/library/mt798260(v=exchg.150))。
 
 ## 受支持的公用文件夹迁移方案是什么？
 
@@ -117,7 +117,7 @@ Get-OrganizationConfig | Format-List RootPublicFolderMailbox
 New-Mailbox -PublicFolder -Name <name of public folder>
 ```
 
-有关详细信息，请参阅[创建公用文件夹](create-a-public-folder-exchange-2013-help.md)。
+有关详细信息，请参阅[创建公用文件夹](https://technet.microsoft.com/zh-cn/library/bb691104(v=exchg.150))。
 
 ## 在早期版本的 Exchange 中，可以通过一个选项指定每个邮箱数据库的公用文件夹数据库。在 Exchange 2013 中的工作方式如何？
 

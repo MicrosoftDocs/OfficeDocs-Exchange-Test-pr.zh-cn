@@ -64,19 +64,27 @@ Get-SystemMessage En\Internal\5.1.2 | Format-List
 
 运行以下命令：
 
+```powershell
     New-SystemMessage -Internal <$true | $false> -Language <Locale> -DSNCode <x.y.z> -Text "<DSN text>"
+```
 
 此示例创建以英语形式发送给内部发件人的 DSN 代码 5.1.2 自定义纯文本 DSN 邮件。
 
+```powershell
     New-SystemMessage -Internal $true -Language En -DSNCode 5.1.2 -Text "You tried to send a message to a disabled mailbox that's no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
+```
 
 此示例创建以英语形式发送给外部发件人的 DSN 代码 5.1.2 自定义纯文本 DSN 邮件。
 
+```powershell
     New-SystemMessage -Internal $false -Language En -DSNCode 5.1.2 -Text "You tried to send a message to a disabled mailbox that's no longer accepting messages. Please contact your System Administrator for more information."
+```
 
 此示例创建以英语形式发送给内部发件人的 DSN 代码 5.1.2 自定义 HTML DSN 邮件。
 
+```powershell
     New-SystemMessage -DSNCode 5.1.2 -Internal $true -Language En -Text 'You tried to send a message to a <B>disabled</B> mailbox. Please visit <A HREF="http://it.contoso.com">Internal Support</A> or contact &quot;InfoSec&quot; for more information.'
+```
 
 ## 您如何知道这有效？
 
@@ -85,8 +93,8 @@ Get-SystemMessage En\Internal\5.1.2 | Format-List
 1.  运行以下命令：
     
     ```powershell
-Get-SystemMessge -DSNCode <x.y.z> | Format-List Name,Internal,Text,Language
-```
+    Get-SystemMessge -DSNCode <x.y.z> | Format-List Name,Internal,Text,Language
+    ```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -96,11 +104,15 @@ Get-SystemMessge -DSNCode <x.y.z> | Format-List Name,Internal,Text,Language
 
 要更改自定义 DSN 邮件的文本，请运行以下命令：
 
+```powershell
     Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> -Text "<DSN text>"
+```
 
 此示例更改分配到以英语形式发送给内部发件人的 DSN 代码 5.1.2 自定义 DSN 邮件的文本。
 
+```powershell
     Set-SystemMessage En\Internal\5.1.2 -Text "The mailbox you tried to send an e-mail message to is disabled and is no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
+```
 
 ## 您如何知道这有效？
 
@@ -109,8 +121,8 @@ Get-SystemMessge -DSNCode <x.y.z> | Format-List Name,Internal,Text,Language
 1.  运行以下命令：`Get-SystemMessage`.
     
     ```powershell
-Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> | Format-List -Text
-```
+    Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> | Format-List -Text
+    ```
 
 2.  验证显示的值是否为您配置的值。
 
@@ -149,14 +161,14 @@ Remove-SystemMessage En\Internal\5.1.2
 2.  运行以下命令：
     
     ```powershell
-Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient <MailboxIdentity>
-```
+    Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient <MailboxIdentity>
+    ```
     
     例如，要将名为“Contoso System Mailbox”的现有邮箱分配给 Exchange 收件人，请运行以下命令：
     
     ```powershell
-Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient "Contoso System Mailbox"
-```
+    Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient "Contoso System Mailbox"
+    ```
 
 ## 步骤 2：指定要监视的 DSN 代码
 
@@ -182,7 +194,9 @@ Set-TransportConfig -GenerateCopyOfDSNFor 5.7.1,5.7.2,5.7.3
 
 要在不修改任何现有值的情况下添加或删除条目，请运行以下命令：
 
+```powershell
     Set-TransportConfig -GenerateCopyOfDSNFor @{Add="<x.y.z>","<x.y.z>"...; Remove="<x.y.z>","<x.y.z>"...}
+```
 
 此示例在转发到 Exchange 收件人的现有 DSN 邮件列表中添加 DSN 代码 5.7.5 并删除 DSN 代码 5.7.1。
 

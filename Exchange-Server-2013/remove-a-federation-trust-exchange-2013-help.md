@@ -52,7 +52,7 @@ _**上一次修改主题：** 2015-01-04_
 本示例删除联合身份验证信任。
 
 ```powershell
-Remove-FederationTrust
+  Remove-FederationTrust
 ```
 
 有关语法和参数的详细信息，请参阅 [Remove-FederationTrust](https://technet.microsoft.com/zh-cn/library/dd351153\(v=exchg.150\))。
@@ -66,8 +66,8 @@ Remove-FederationTrust
   - 在命令行管理程序中，运行以下命令检查是否不再为您的 Exchange 组织返回联合身份验证信任信息。
     
     ```powershell
-Get-FederationTrust
-```
+    Get-FederationTrust
+    ```
     
     有关语法和参数的详细信息，请参阅 [Get-FederationTrust](https://technet.microsoft.com/zh-cn/library/dd351262\(v=exchg.150\))。
 

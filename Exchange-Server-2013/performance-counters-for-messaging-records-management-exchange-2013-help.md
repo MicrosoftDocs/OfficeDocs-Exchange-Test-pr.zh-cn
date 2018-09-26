@@ -19,7 +19,7 @@ _**上一次修改主题：** 2015-03-09_
 
 本主题中的性能计数器监视托管文件夹助理它实现 Microsoft Exchange Server 2010的邮件记录管理 (MRM)。因为运行托管文件夹助理是一个非常耗费资源的过程，您应该仅在您的服务器可以承受额外增加的负载时运行它。托管文件夹助理正在运行时，还应监视服务器的性能。除了本主题中列出的性能计数器，您可以监视监视磁盘性能和 CPU 使用率等项目的其他性能计数器。
 
-有关监视运行 MRM 的计算机的详细信息，请参阅[监视邮件记录管理](monitoring-messaging-records-management-exchange-2013-help.md)。
+有关监视运行 MRM 的计算机的详细信息，请参阅[监视邮件记录管理](monitoring-https://technet.microsoft.com/zh-cn/library/dd335093(v=exchg.150))。
 
 ## MRM 的性能计数器
 

@@ -130,19 +130,16 @@ _**上一次修改主题：** 2012-12-10_
     
       - **指定将应用此电子邮件地址的收件人类型**
 
-3.  
+3.  单击\&quot;**添加规则**\&quot;，进一步限制对其应用此策略的收件人。这会创建 **And** 布尔语句。
     
-    单击\&quot;**添加规则**\&quot;，进一步限制对其应用此策略的收件人。这会创建 **And** 布尔语句。
-    
+
     > [!CAUTION]  
     > 如果应用过多规则，则可能将电子邮件地址策略限制到不包含任何用户的程度。
 
 
 4.  单击\&quot;预览应用策略的收件人\&quot;来查看将向其应用该策略的收件人。
 
-5.  
-    
-    单击\&quot;保存\&quot;保存更改并创建策略。
+5.  单击\&quot;保存\&quot;保存更改并创建策略。
 
 6.  您将收到警告，在更新电子邮件地址策略之前，将不会应用该策略。在创建策略后，选择它，然后在详细信息窗格中，单击\&quot;应用\&quot;。
 
@@ -150,7 +147,9 @@ _**上一次修改主题：** 2012-12-10_
 
 本示例创建一个涵盖东南办事处邮箱用户（其电子邮件地址由他们的姓加上名的前两个字母组成）的电子邮件地址策略。
 
+```powershell
     New-EmailAddressPolicy -Name "southeast offices" -IncludedRecipients MailboxUsers -ConditionalStateorProvince "Georgia","Alabama","Louisiana" -EnabledEmailAddressTemplates "SMTP:%s%2g@southeast.contoso.com"
+```
 
 有关语法和参数的详细信息，请参阅 [New-EmailAddressPolicy](https://technet.microsoft.com/zh-cn/library/aa996800\(v=exchg.150\))。
 

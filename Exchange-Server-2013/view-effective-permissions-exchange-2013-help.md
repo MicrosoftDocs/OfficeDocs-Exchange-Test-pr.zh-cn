@@ -67,11 +67,15 @@ Get-ManagementRoleAssignment -Role "Mail Recipients" -GetEffectiveUsers
 
 若要查找管理角色授予其权限的特定用户，必须使用 **Get-ManagementRoleAssignment** cmdlet 检索所有有效用户的列表，然后通过管道将 cmdlet 的输出传递给 **Where** cmdlet。**Where** cmdlet 筛选输出并只返回指定的用户。请使用以下语法：
 
+```powershell
     Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "<name of user>" }
+```
 
 此示例查找日记角色中的用户 David Strome。
 
+```powershell
     Get-ManagementRoleAssignment -Role Journaling -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" }
+```
 
 如果要更改列表中返回的属性或将列表导出到 .csv 文件，请参阅本主题后面的使用命令行管理程序自定义输出并显示该输出。
 
@@ -81,7 +85,9 @@ Get-ManagementRoleAssignment -Role "Mail Recipients" -GetEffectiveUsers
 
 若要了解用户可以从其接收权限的每个角色，必须使用 **Get-ManagementRoleAssignment** cmdlet 检索所有管理角色中的所有有效用户，然后通过管道将 cmdlet 的输出传递给 **Where** cmdlet。**Where** cmdlet 筛选输出并且只返回授予用户权限的角色分配。
 
+```powershell
     Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "<name of user>" }
+```
 
 此示例查找向用户 Kim Akers 授予权限的所有角色分配。
 
@@ -139,11 +145,15 @@ Get-ManagementRoleAssignment -GetEffectiveUsers | Where {     Get-ManagementRole
 
 3.  使用以下语法查看列表：
     
+    ```powershell
         <command to retrieve list > | Format-Table <property 1>, <property 2>, <property ...>
+    ```
 
 本示例在所有角色中查找用户 David Strome，并显示 `EffectiveUserName`、`Role`、`CustomRecipientWriteScope` 和 `CustomConfigWriteScope` 属性。
 
+```powershell
     Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" } | Format-Table EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope
+```
 
 有关语法和参数的详细信息，请参阅 [Get-ManagementRoleAssignment](https://technet.microsoft.com/zh-cn/library/dd351024\(v=exchg.150\))。
 
@@ -163,11 +173,15 @@ Get-ManagementRoleAssignment -GetEffectiveUsers | Where {     Get-ManagementRole
 
 3.  使用以下语法将列表导出到 .csv 文件：
     
+    ```powershell
         <command to retrieve list > | Select-Object <property 1>, <property 2>, <property ...> | Export-CSV <filename>
+    ```
 
 本示例在所有角色中查找用户 David Strome，并显示 `EffectiveUserName`、`Role`、`CustomRecipientWriteScope` 和 `CustomConfigWriteScope` 属性。
 
+```powershell
     Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" } | Select-Object EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope | Export-CSV c:\output.csv
+```
 
 现在，您可以在所选查看器中查看 .csv 文件。
 

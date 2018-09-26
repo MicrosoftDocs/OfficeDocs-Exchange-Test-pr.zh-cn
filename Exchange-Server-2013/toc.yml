@@ -756,14 +756,14 @@
           - name: 从托管文件夹迁移
             href: migrate-from-managed-folders-exchange-2013-help.md
           - name: 请关闭或挂起邮件记录管理
-            href: turn-off-or-suspend-messaging-records-management-exchange-2013-help.md
+            href: turn-off-or-suspend-https://technet.microsoft.com/zh-cn/library/dd335093(v=exchg.150)
       - name: 监视邮件记录管理
-        href: monitoring-messaging-records-management-exchange-2013-help.md
+        href: monitoring-https://technet.microsoft.com/zh-cn/library/dd335093(v=exchg.150)
         items:
         - name: 查看邮件记录管理的性能计数器
-          href: view-performance-counters-for-messaging-records-management-exchange-2013-help.md
+          href: view-performance-counters-for-https://technet.microsoft.com/zh-cn/library/dd335093(v=exchg.150)
         - name: 可用于邮件记录管理的性能计数器
-          href: performance-counters-for-messaging-records-management-exchange-2013-help.md
+          href: performance-counters-for-https://technet.microsoft.com/zh-cn/library/dd335093(v=exchg.150)
         - name: 邮件记录管理错误和事件
           href: messaging-records-management-errors-and-events-exchange-2013-help.md
     - name: 日记
@@ -1415,7 +1415,7 @@
       href: https://docs.microsoft.com/zh-cn/exchange/address-books/address-book-policies/address-book-policies
       items:
       - name: 方案：部署通讯簿策略
-        href: scenario-deploying-address-book-policies-exchange-2013-help.md
+        href: scenario-deploying-https://technet.microsoft.com/zh-cn/library/hh529948(v=exchg.150)
       - name: 通讯簿策略程序
         href: address-book-policy-procedures-exchange-2013-help.md
         items:
@@ -1688,7 +1688,7 @@
       href: https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips
       items:
       - name: 启用或禁用邮件提示
-        href: enable-or-disable-mailtips-exchange-2013-help.md
+        href: enable-or-disable-https://technet.microsoft.com/zh-cn/library/jj649091(v=exchg.150)
       - name: 为您的组织配置大型受众规模
         href: https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/mailtips/configure-large-audience-size
       - name: 为收件人配置自定义邮件提示
@@ -1699,7 +1699,7 @@
         - name: 针对组织关系管理邮件提示
           href: https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/mailtips/manage-mailtips-for-organization-relationships
       - name: 组的指标和邮件提醒
-        href: group-metrics-and-mailtips-exchange-2013-help.md
+        href: group-metrics-and-https://technet.microsoft.com/zh-cn/library/jj649091(v=exchg.150)
         items:
         - name: 配置组指标
           href: configure-group-metrics-exchange-2013-help.md
@@ -2197,7 +2197,7 @@
         href: allow-message-waiting-indicator-exchange-2013-help.md
         items:
         - name: 允许消息等待指示符过程
-          href: allow-message-waiting-indicator-procedures-exchange-2013-help.md
+          href: https://technet.microsoft.com/zh-cn/library/dn135233(v=exchg.150)
           items:
           - name: 在 UM IP 网关允许消息等待指示符 (MWI)
             href: https://docs.microsoft.com/zh-cn/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-mwi-on-um-ip-gateway

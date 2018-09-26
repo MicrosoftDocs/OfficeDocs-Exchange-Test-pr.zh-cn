@@ -57,11 +57,15 @@ _**上一次修改主题：** 2012-10-03_
 
 若要向角色条目添加参数，请使用以下语法。
 
-    Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -AddParameter
+```powershell
+Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -AddParameter
+```
 
 此示例将 *EmailAddresses* 和 *Type* 参数添加到收件人管理员角色上的 **Set-Mailbox** cmdlet。
 
-    Set-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" -Parameters EmailAddresses, Type -AddParameter
+```powershell
+Set-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" -Parameters EmailAddresses, Type -AddParameter
+```
 
 有关语法和参数的详细信息，请参阅 [Set-ManagementRoleEntry](https://technet.microsoft.com/zh-cn/library/dd351162\(v=exchg.150\))。
 
@@ -71,11 +75,15 @@ _**上一次修改主题：** 2012-10-03_
 
 若要删除角色条目中的参数，请使用以下语法。
 
-    Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -RemoveParameter
+```powershell
+Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -RemoveParameter
+```
 
 此示例将 *Port*、*ProtocolLoggingLevel* 及 *SmartHostAuthMechanism* 参数从 Tier 1 Server Administrators 角色上的 **Set-SendConnector** cmdlet 中删除。
 
-    Set-ManagementRoleEntry "Tier 1 Server Administrators\Set-SendConnector" -Parameters Port, ProtocolLoggingLevel, SmartHostAuthMechanism -RemoveParameter
+```powershell
+Set-ManagementRoleEntry "Tier 1 Server Administrators\Set-SendConnector" -Parameters Port, ProtocolLoggingLevel, SmartHostAuthMechanism -RemoveParameter
+```
 
 有关语法和参数的详细信息，请参阅 [Set-ManagementRoleEntry](https://technet.microsoft.com/zh-cn/library/dd351162\(v=exchg.150\))。
 
@@ -91,11 +99,15 @@ _**上一次修改主题：** 2012-10-03_
 
 若要删除角色条目中的所有参数，请使用以下语法。
 
-    Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters $Null 
+```powershell
+Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters $Null 
+```
 
 此示例对 Recipient Administrators 角色删除 **Set-CASMailbox** cmdlet 中的所有参数。
 
-    Set-ManagementRoleEntry "Recipient Administrators\Set-CASMailbox" -Parameters $Null 
+```powershell
+Set-ManagementRoleEntry "Recipient Administrators\Set-CASMailbox" -Parameters $Null 
+```
 
 有关语法和参数的详细信息，请参阅 [Set-ManagementRoleEntry](https://technet.microsoft.com/zh-cn/library/dd351162\(v=exchg.150\))。
 
@@ -105,11 +117,15 @@ _**上一次修改主题：** 2012-10-03_
 
 若要指定一组特定的参数，请使用以下语法。
 
+```powershell
     Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...>
+```
 
 此示例使 Seattle Mail Recipients 角色上的 **Set-UMMailbox** cmdlet 中仅包括 *Identity*、*DisplayName*、*MissedCallNotificationEnabled* 和 *PersonalAuthAttendantEnabled* 参数。
 
-    Set-ManagementRoleEntry "Seattle Mail Recipients\Set-UMMailbox" -Parameters Identity, DisplayName, MissedCallNotificationEnabled, PersonalAutoAttendantEnabled
+```powershell
+Set-ManagementRoleEntry "Seattle Mail Recipients\Set-UMMailbox" -Parameters Identity, DisplayName, MissedCallNotificationEnabled, PersonalAutoAttendantEnabled
+```
 
 有关语法和参数的详细信息，请参阅 [Set-ManagementRoleEntry](https://technet.microsoft.com/zh-cn/library/dd351162\(v=exchg.150\))。
 

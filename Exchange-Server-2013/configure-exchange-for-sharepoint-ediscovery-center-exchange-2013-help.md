@@ -45,7 +45,9 @@ Microsoft Exchange Server 2013 包括使用 Microsoft SharePoint Server 2013 和
 
 运行以下命令创建 Exchange 2013 作为 SharePoint 2013 中的可信安全令牌颁发者。
 
+```powershell
     New-SPTrustedSecurityTokenIssuer -Name Exchange -MetadataEndPoint https://<Exchange Server Name or FQDN>/autodiscover/metadata/json/1
+```
 
 ## 步骤 2：在运行 Exchange 2013 的服务器上为 SharePoint 2013 配置服务器到服务器的身份验证
 
@@ -53,12 +55,14 @@ Microsoft Exchange Server 2013 包括使用 Microsoft SharePoint Server 2013 和
 
 运行此命令配置 SharePoint 合作伙伴应用程序。
 
+```powershell
     cd c:\'Program Files'\Microsoft\'Exchange Server'\V15\Scripts
     .\Configure-EnterprisePartnerApplication.ps1 -AuthMetadataUrl <path to SharePoint AuthMetadataUrl> -ApplicationType SharePoint
+```
 
 ## 步骤 3：将授权用户添加到发现管理角色组
 
-将需要使用 SharePoint 2013 执行电子数据展示搜索的用户添加到 Exchange 2013 中的发现管理角色组。有关详细信息，请参阅[在 Exchange 中分配电子数据展示权限](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)。
+将需要使用 SharePoint 2013 执行电子数据展示搜索的用户添加到 Exchange 2013 中的发现管理角色组。有关详细信息，请参阅[在 Exchange 中分配电子数据展示权限](https://technet.microsoft.com/zh-cn/library/dd298059(v=exchg.150))。
 
 > [!CAUTION]  
 > 将用户添加到发现管理角色组之后，用户即可使用就地电子数据展示来搜索所有 Exchange 2013 邮箱并访问用户邮箱中可能敏感的电子邮件内容。默认情况下，不向任何用户分配此权限，包括组织管理角色组的成员。向任何用户分配此权限之前，与组织的法律或 HR 部门进行核查。

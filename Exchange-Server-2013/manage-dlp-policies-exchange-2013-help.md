@@ -129,7 +129,7 @@ Remove-DlpPolicy "Employee Numbers"
 
 ## 详细信息
 
-[数据丢失预防](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[数据丢失预防](https://technet.microsoft.com/zh-cn/library/jj150527(v=exchg.150))
 
-[策略提示](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)
+[策略提示](https://technet.microsoft.com/zh-cn/library/jj150512(v=exchg.150))
 

@@ -47,9 +47,8 @@ _**上一次修改主题：** 2012-12-10_
 
 2.  在此列表视图中，选择您要更改的电子邮件地址策略，然后单击“编辑”![编辑图标](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "编辑图标")。
 
-3.  
-    
-    在“电子邮件地址策略”中，单击“应用至”并修改设置。
+3.  在“电子邮件地址策略”中，单击“应用至”并修改设置。
+
 
 ## 使用 EAC 更改电子邮件地址策略的优先级
 
@@ -63,7 +62,9 @@ _**上一次修改主题：** 2012-12-10_
 
 本示例编辑当前包含 Georgia、Alabama 和 Louisiana 的收件人的 South East Offices 电子邮件地址策略，使其同时包含 Texas 的收件人。
 
+```powershell
     Set-EmailAddressPolicy -Identity "South East Offices" -ConditionalStateorProvince "Georgia","Alabama","Louisiana","Texas"
+```
 
 > [!NOTE]  
 > 虽然已经将电子邮件地址策略应用到 Georgia、Alabama、和 Louisiana 中的收件人，但必须将它们包含在参数中，因为参数会覆盖值；参数不会将值附加到现有值。

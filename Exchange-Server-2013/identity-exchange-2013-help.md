@@ -35,8 +35,10 @@ Exchange 2013 中对象的主要唯一标识符始终是 GUID。GUID 是一个 1
 
 以下示例通过使用接收连接器的唯一 *Name* 参数值说明 *Identity* 参数的用法。此示例还说明如何省略 *Identity* 参数名（因为 *Identity* 是一个位置参数）。
 
-    Get-ReceiveConnector -Identity "From the Internet"
-    Get-ReceiveConnector "From the Internet"
+```powershell
+Get-ReceiveConnector -Identity "From the Internet"
+Get-ReceiveConnector "From the Internet"
+```
 
 与 Exchange 2013 中的所有对象一样，也可以使用此接收连接器的唯一 GUID 来引用它。例如，如果还向名为 `"From the Internet"` 的接收连接器分配了 GUID `63d64005-42c5-4f8f-b310-14f6cb125bf3`，则也可以使用以下命令来检索该接收连接器：
 
@@ -90,15 +92,21 @@ Mail Recipients\Set-Mailbox
 
 `Mail Recipients\Set-Mailbox` 角色条目是 `Mail Recipients` 角色中的若干个角色条目之一。若要查看 `Mail Recipients` 角色中的所有角色项，可以使用以下命令：
 
-    Get-ManagementRoleEntry "Mail Recipients\*"
+```powershell
+Get-ManagementRoleEntry "Mail Recipients\*"
+```
 
 若要查看 `Mail Recipients` 角色中包含字符串\&quot;`Mailbox`\&quot;的所有角色项，可以使用以下命令：
 
-    Get-ManagementRoleEntry "Mail Recipients\*Mailbox*"
+```powershell
+Get-ManagementRoleEntry "Mail Recipients\*Mailbox*"
+```
 
 若要查看其中一个角色项为 **Set-Mailbox** 的所有管理角色，可以使用以下命令：
 
-    Get-ManagementRoleEntry *\Set-Mailbox
+```powershell
+Get-ManagementRoleEntry *\Set-Mailbox
+```
 
 借助角色项，可以按多种方式使用通配符在 Exchange 2013 查询您感兴趣的信息。
 

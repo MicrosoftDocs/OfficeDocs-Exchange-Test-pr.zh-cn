@@ -31,7 +31,7 @@ Exchange 2013 通过利用下列主要组件和功能支持多租户：
 
   - **通讯簿策略 (ABP)**   在 Exchange 2010 SP2 中引入的 ABP 在 Exchange 2013 中用于控制用户对 Exchange 组织中的地址列表、全局地址列表 (GAL) 和脱机通讯簿 (OAB) 的访问。ABP 将这些不同的 Active Directory 对象分组为可分配给个别用户的单个虚拟对象，以便按多租户组织结构创建这些资源的逻辑分组。Exchange 2013 中的 ABP 功能类似于其在 Exchange 2010 SP2 中的功能。
     
-    有关 Exchange 2013 中 ABP 的详细信息，请参阅[通讯簿策略](address-book-policies-exchange-2013-help.md)。
+    有关 Exchange 2013 中 ABP 的详细信息，请参阅[通讯簿策略](https://technet.microsoft.com/zh-cn/library/hh529948(v=exchg.150))。
 
   - **托管管理解决方案**   有些使用 Exchange 2013 提供托管 Exchange 解决方案的管理员将从使用自定义托管管理方法中受益。由于 Exchange 管理中心 (EAC) 的一些限制，Microsoft 与第三方供应商合作，帮助他们开发符合托管的 Exchange 2013 组织的指导原则和批准的框架的控制面板和自动化解决方案。我们建议配置托管 Exchange 解决方案的组织在需要的情况下，利用这些工具管理其托管组织。
     

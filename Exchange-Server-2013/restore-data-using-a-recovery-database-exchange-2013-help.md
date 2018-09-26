@@ -42,58 +42,66 @@ _**上一次修改主题：** 2014-10-01_
 2.  使用 Eseutil 将该数据库置于干净关闭状态。在以下示例中，EXX 是数据库的日志生成前缀（例如，E00、E01、E02 等等）。
     
     ```powershell
-Eseutil /R EXX /l <RDBLogFilePath> /d <RDBEdbFolder>
-```
+    Eseutil /R EXX /l <RDBLogFilePath> /d <RDBEdbFolder>
+    ```
     
     以下示例说明了 E01 日志生成前缀、恢复数据库和日志文件路径 E:\\Databases\\RDB1：
     
     ```powershell
-Eseutil /R E01 /l E:\Databases\RDB1 /d E:\Databases\RDB1
-```
+    Eseutil /R E01 /l E:\Databases\RDB1 /d E:\Databases\RDB1
+    ```
 
 3.  创建一个恢复数据库。为该恢复数据库指定一个唯一的名称，但要将数据库文件的名称和路径用于 EdbFilePath 参数，将恢复的日志文件的位置用于 LogFolderPath 参数。
     
-        New-MailboxDatabase -Recovery -Name <RDBName> -Server <ServerName> -EdbFilePath <RDBPathandFileName> -LogFolderPath <LogFilePath>
+    ```powershell
+       New-MailboxDatabase -Recovery -Name <RDBName> -Server <ServerName> -EdbFilePath <RDBPathandFileName> -LogFolderPath <LogFilePath>
+    ```        
     
     以下示例说明了创建一个将用来恢复 DB1.edb 及其日志文件（位于 E:\\Databases\\RDB1）的恢复数据库。
     
+    ```powershell
         New-MailboxDatabase -Recovery -Name <RDBName> -Server <ServerName> -EdbFilePath "E:\Databases\RDB1\DB1.EDB" -LogFolderPath "E:\Databases\RDB1"
+    ```        
 
 4.  重新启动 Microsoft Exchange 信息存储服务：
     
     ```powershell
-Restart-Service MSExchangeIS
-```
+    Restart-Service MSExchangeIS
+    ```
 
 5.  装入恢复数据库：
     
     ```powershell
-Mount-database <RDBName>
-```
+    Mount-database <RDBName>
+    ```
 
 6.  验证已装入的数据库包含您希望还原的邮箱：
     
     ```powershell
-Get-MailboxStatistics -Database <RDBName> | ft -auto
-```
+    Get-MailboxStatistics -Database <RDBName> | ft -auto
+    ```
 
 7.  使用 New-MailboxRestoreRequest cmdlet 将邮箱或项目从恢复数据库还原到生产邮箱中。
     
     以下示例将邮箱数据库 DB1 上具有 MailboxGUID 1d20855f-fd54-4681-98e6-e249f7326ddd 的源邮箱还原到具有别名 Morris 的目标邮箱。
     
-        New-MailboxRestoreRequest -SourceDatabase DB1 -SourceStoreMailbox 1d20855f-fd54-4681-98e6-e249f7326ddd -TargetMailbox Morris
+    ```powershell
+    New-MailboxRestoreRequest -SourceDatabase DB1 -SourceStoreMailbox 1d20855f-fd54-4681-98e6-e249f7326ddd -TargetMailbox Morris
+    ```
     
     以下示例将邮箱数据库 DB1 上具有显示名称 Morris Cornejo 的源邮箱的内容还原至 Morris@contoso.com 存档邮箱。
     
-        New-MaiboxRestoreRequest -SourceDatabase DB1 -SourceStoreMailbox "Morris Cornejo" -TargetMailbox Morris@contoso.com -TargetIsArchive
+    ```powershell
+    New-MaiboxRestoreRequest -SourceDatabase DB1 -SourceStoreMailbox "Morris Cornejo" -TargetMailbox Morris@contoso.com -TargetIsArchive
+    ```
 
 8.  使用 [Get-MailboxRestoreRequest](https://technet.microsoft.com/zh-cn/library/ff829907\(v=exchg.150\)) 定期检查邮箱还原请求的状态。
     
     当还原状态为\&quot;已完成\&quot;时，使用 [Remove-MailboxRestoreRequest](https://technet.microsoft.com/zh-cn/library/ff829910\(v=exchg.150\)) 删除还原请求。例如：
     
     ```powershell
-Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest
-```
+    Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest
+    ```
 
 ## 您如何知道这有效？
 

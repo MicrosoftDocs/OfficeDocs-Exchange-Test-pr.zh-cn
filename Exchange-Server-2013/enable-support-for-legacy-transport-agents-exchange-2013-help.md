@@ -111,23 +111,25 @@ _**上一次修改主题：** 2015-03-09_
 1.  在命令提示符窗口中，在要配置旧版传输代理支持的 Exchange 2013 服务器上，通过运行以下命令在记事本中打开相应的应用程序配置文件：
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\<AppConfigFile>
-```
+    Notepad %ExchangeInstallPath%Bin\<AppConfigFile>
+    ```
     
     例如，若要在邮箱服务器上打开 EdgeTransport.exe.config 文件，请运行以下命令：
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
-```
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 2.  在文件末尾处找到 *\</configuration\>* 项，然后将以下项粘贴到 *\</configuration\>* 项之前：
     
+    ```XML
         <startup useLegacyV2RuntimeActivationPolicy="true">
            <supportedRuntime version="v4.0" />
            <supportedRuntime version="v3.5" />
            <supportedRuntime version="v3.0" />
            <supportedRuntime version="v2.0" />
         </startup>
+    ```
 
 3.  完成后，保存并关闭应用程序配置文件。
 
@@ -135,12 +137,16 @@ Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
 
 5.  通过运行以下命令重新启动关联的 Windows 服务：
     
+    ```powershell
         net stop <service> && net start <service>
-    
+    ```
+
     例如，如果修改了 EdgeTransport.exe.config 文件，则需要通过运行以下命令来重新启动 Microsoft Exchange 传输服务：
     
+    ```powershell
         net stop MSExchangeTransport && net start MSExchangeTransport
-
+    ```
+    
 6.  重复步骤 5 以重新启动与其他修改的应用程序配置文件关联的服务。
 
 ## 您如何知道这有效？

@@ -39,7 +39,9 @@ _**上一次修改主题：** 2015-04-08_
 
 运行以下命令：
 
+  ```powershell
     Set-TransportService <ServerIdentity> -AgentLogEnabled <$true | $false> -AgentLogMaxAge <dd.hh:mm:ss> -AgentLogMaxDirectorySize <Size> -AgentLogMaxFileSize <Size> -AgentLogPath <LocalFilePath>
+  ```
 
 本示例将在名为 Mailbox01 的邮箱服务器上设置以下代理日志：
 
@@ -53,7 +55,9 @@ _**上一次修改主题：** 2015-04-08_
 
 <!-- end list -->
 
+  ```powershell
     Set-TransportService Mailbox01 -AgentLogPath "D:\Anti-Spam Agent Log" -AgentLogMaxFileSize 20MB -AgentLogMaxDirectorySize 400MB -AgentLogMaxAge 14.00:00:00
+  ```
 
 > [!NOTE]  
 > <ul>
@@ -69,8 +73,10 @@ _**上一次修改主题：** 2015-04-08_
 要验证是否已成功配置反垃圾邮件代理日志记录，请执行以下操作：
 
 1.  在此命令行管理程序中，运行以下命令：
-    
-        Get-TransportService <ServerIdentity> | Format-List AgentLog*
 
+    ```powershell 
+      Get-TransportService <ServerIdentity> | Format-List AgentLog*
+    ```
+    
 2.  验证显示的值是否为您配置的值。
 

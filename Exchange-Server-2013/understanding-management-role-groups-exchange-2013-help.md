@@ -250,7 +250,10 @@ _**上一次修改主题：** 2015-03-09_
 
 如前所述，角色组由若干层组成。为了帮助您了解创建角色组时的操作，请参阅以下示例，此示例将创建新角色组。
 
+```PowerShell
+
     New-RoleGroup -Name "Seattle Recipient Management" -Roles "Mail Recipients", "Distribution Groups", "Move Mailboxes", "UM Mailboxes" -CustomRecipientWriteScope "Seattle Users", -ManagedBy "Brian", "David", "Katie" -Members "Ray", "Jenn", "Maria", "Chris", "Maija", "Carter", "Jenny", "Sam", "Lukas", "Isabel", "Katie"
+```    
 
 运行上述命令时，会发生下列情况：
 

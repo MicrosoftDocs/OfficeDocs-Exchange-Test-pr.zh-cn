@@ -73,5 +73,6 @@ Set-TransportService -Identity EXCH01 -IRMLogEnabled $false
 
 本示例检索服务器 EXCH01 上的所有 IRM 日志记录属性。
 
+  ```powershell
     Get-TransportService -Identity EXCH01 | Format-List IRMLog*
-
+  ```

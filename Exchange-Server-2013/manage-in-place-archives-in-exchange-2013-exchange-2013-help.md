@@ -69,7 +69,7 @@ _**上一次修改主题：** 2016-02-01_
         
         若要了解详细信息，请参阅[Exchange 2013 中的就地存档](in-place-archiving-in-exchange-2013-exchange-2013-help.md)。
     
-      - **通讯簿策略**   使用此列表可为邮箱选择通讯簿策略 (ABP)。ABP 包含一个全局地址列表 (GAL)、一个脱机通讯簿 (OAB)、一个会议室列表以及一组地址列表。在分配给邮箱用户时，ABP 使这些用户可以访问 Outlook 和 Outlook Web App 中的自定义 GAL。若要了解详细信息，请参阅[通讯簿策略](address-book-policies-exchange-2013-help.md)。
+      - **通讯簿策略**   使用此列表可为邮箱选择通讯簿策略 (ABP)。ABP 包含一个全局地址列表 (GAL)、一个脱机通讯簿 (OAB)、一个会议室列表以及一组地址列表。在分配给邮箱用户时，ABP 使这些用户可以访问 Outlook 和 Outlook Web App 中的自定义 GAL。若要了解详细信息，请参阅[通讯簿策略](https://technet.microsoft.com/zh-cn/library/hh529948(v=exchg.150))。
 
 6.  完成后，请单击“保存”创建邮箱。
 
@@ -77,8 +77,10 @@ _**上一次修改主题：** 2016-02-01_
 
 此示例在 Active Directory 中创建用户 Chris Ashton，在邮箱数据库 DB01 中创建邮箱并启用存档。下次登录时，必须重置密码。为了设置密码的初始值，此示例创建变量 ($password)，并提示您输入密码，然后将该密码作为 SecureString 对象指定给此变量。
 
-    $password = Read-Host "Enter password" -AsSecureString
-    New-Mailbox -UserPrincipalName chris@contoso.com -Alias chris -Archive -Database "DB01" -Name ChrisAshton -OrganizationalUnit Users -Password $password -FirstName Chris -LastName Ashton -DisplayName "Chris Ashton" 
+```powershell
+$password = Read-Host "Enter password" -AsSecureString
+New-Mailbox -UserPrincipalName chris@contoso.com -Alias chris -Archive -Database "DB01" -Name ChrisAshton -OrganizationalUnit Users -Password $password -FirstName Chris -LastName Ashton -DisplayName "Chris Ashton" 
+```
 
 有关语法和参数的详细信息，请参阅 [New-Mailbox](https://technet.microsoft.com/zh-cn/library/aa997663\(v=exchg.150\))。
 
@@ -90,7 +92,9 @@ _**上一次修改主题：** 2016-02-01_
 
   - 在此命令行管理程序中，运行以下命令可显示有关新用户邮箱和存档的相关信息。
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress,*Archive*
+    ```powershell
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress,*Archive*
+    ```
 
   - 在此命令行管理程序中，使用 **Test-ArchiveConnectivity** cmdlet 测试存档连接情况。有关如何测试存档连接情况的示例，请参阅 [Test-ArchiveConnectivity](https://technet.microsoft.com/zh-cn/library/hh529914\(v=exchg.150\)) 中的示例部分。
 
@@ -122,7 +126,9 @@ Enable-Mailbox "Tony Smith" -Archive
 
 本示例在未启用内部部署或基于云的存档以及没有以 DiscoverySearchMailbox 开头的名称的数据库 DB01 中检索邮箱。它通过管道将结果传递给 **Enable-Mailbox** cmdlet，以对邮箱数据库 DB01 中的所有邮箱启用存档。
 
-    Get-Mailbox -Database DB01 -Filter {ArchiveGuid -Eq $null -AND ArchiveDomain -eq $null -AND Name -NotLike "DiscoverySearchMailbox*"} | Enable-Mailbox -Archive
+```powershell
+Get-Mailbox -Database DB01 -Filter {ArchiveGuid -Eq $null -AND ArchiveDomain -eq $null -AND Name -NotLike "DiscoverySearchMailbox*"} | Enable-Mailbox -Archive
+```
 
 有关语法和参数的详细信息，请参阅 [Enable-Mailbox](https://technet.microsoft.com/zh-cn/library/aa998251\(v=exchg.150\)) 和 [Get-Mailbox](https://technet.microsoft.com/zh-cn/library/bb123685\(v=exchg.150\))。
 
@@ -134,7 +140,9 @@ Enable-Mailbox "Tony Smith" -Archive
 
   - 在此命令行管理程序中，运行以下命令可显示有关新存档的相关信息。
     
+    ```powershell
         Get-Mailbox <Name> | FL Name,*Archive*
+    ```
 
   - 在此命令行管理程序中，使用 **Test-ArchiveConnectivity** cmdlet 测试存档连接情况。有关如何测试存档连接情况的示例，请参阅 [Test-ArchiveConnectivity](https://technet.microsoft.com/zh-cn/library/hh529914\(v=exchg.150\)) 中的示例。
 
@@ -178,8 +186,10 @@ Disable-Mailbox -Identity "Chris Ashton" -Archive
 
   - 在此命令行管理程序中，运行以下命令检查邮箱用户的存档属性。
     
-        Get-Mailbox -Identity "Chris Ashton" | Format-List *Archive*
-    
+    ```powershell
+    Get-Mailbox -Identity "Chris Ashton" | Format-List *Archive*
+    ```
+
     如果已禁用存档，则会返回下列与存档相关的属性值。
     
     
@@ -231,11 +241,15 @@ Disable-Mailbox -Identity "Chris Ashton" -Archive
 
 1.  如果您不知道存档的名称，则可以通过运行以下命令在命令行管理程序中对其进行查看。本示例检索邮箱数据库 DB01，并将它通过管道传递给 **Get-MailboxStatistics** cmdlet，以检索数据库中所有邮箱的邮箱统计信息，然后使用 **Where-Object** cmdlet 筛选结果，并检索已断开连接的存档列表。此命令会显示有关每个存档的其他信息（如 GUID 和项目计数）。
     
-        Get-MailboxDatabase "DB01" | Get-MailboxStatistics | Where {($_.DisconnectDate -ne $null) -and ($_.IsArchiveMailbox -eq $true)} | Format-List
+    ```powershell
+    Get-MailboxDatabase "DB01" | Get-MailboxStatistics | Where {($_.DisconnectDate -ne $null) -and ($_.IsArchiveMailbox -eq $true)} | Format-List
+    ```
 
 2.  将存档连接到主邮箱。本示例将 Chris Ashton 的存档连接到其主邮箱，并将 GUID 用作该存档的标识。
     
-        Enable-Mailbox -ArchiveGuid "8734c04e-981e-4ccf-a547-1c1ac7ebf3e2" -ArchiveDatabase "DB01" -Identity "Chris Ashton"
+    ```powershell
+    Enable-Mailbox -ArchiveGuid "8734c04e-981e-4ccf-a547-1c1ac7ebf3e2" -ArchiveDatabase "DB01" -Identity "Chris Ashton"
+    ```
 
 有关语法和参数的详细信息，请参阅下列主题：
 
@@ -249,5 +263,6 @@ Disable-Mailbox -Identity "Chris Ashton" -Archive
 
 要验证是否已将断开连接的存档成功连接到邮箱用户，请运行以下命令行管理程序命令检索邮箱用户的存档属性，并验证 *ArchiveGuid* 和 *ArchiveDatabase* 返回的属性值：
 
-    Get-Mailbox -Identity "Chris Ashton" | Format-List *Archive*
-
+```powershell
+Get-Mailbox -Identity "Chris Ashton" | Format-List *Archive*
+```
